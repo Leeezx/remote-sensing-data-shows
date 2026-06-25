@@ -7,7 +7,7 @@
     "unit": "index",
     "range": { "min": 0.0, "max": 1.0 },
     "timeRange": { "start": "2025-01", "end": "2025-12", "step": "month" },
-    "tileTemplate": "/data/tiles/ndvi/{time}/{z}/{x}/{y}.png",
+    "tileTemplate": "data/tiles/ndvi/{time}/{z}/{x}/{y}.png",
     "legend": [
       { "color": "#d73027", "label": "bare (0.0)" },
       { "color": "#fc8d59", "label": "sparse (0.2)" },
@@ -24,7 +24,7 @@
     "unit": "mm",
     "range": { "min": 0.0, "max": 500.0 },
     "timeRange": { "start": "2025-01", "end": "2025-12", "step": "month" },
-    "tileTemplate": "/data/tiles/precipitation/{time}/{z}/{x}/{y}.png",
+    "tileTemplate": "data/tiles/precipitation/{time}/{z}/{x}/{y}.png",
     "legend": [
       { "color": "#8c510a", "label": "dry (0 mm)" },
       { "color": "#dfc27d", "label": "moderate (100 mm)" },
@@ -42,7 +42,7 @@
     "unit": "%",
     "range": { "min": 0.0, "max": 100.0 },
     "timeRange": { "start": "2025-01", "end": "2025-12", "step": "month" },
-    "tileTemplate": "/data/tiles/soil_moisture/{time}/{z}/{x}/{y}.png",
+    "tileTemplate": "data/tiles/soil_moisture/{time}/{z}/{x}/{y}.png",
     "legend": [
       { "color": "#d53e4f", "label": "arid (0%)" },
       { "color": "#fc8d59", "label": "dry (20%)" },
@@ -60,7 +60,7 @@
     "unit": "°C",
     "range": { "min": -20.0, "max": 50.0 },
     "timeRange": { "start": "2025-01", "end": "2025-12", "step": "month" },
-    "tileTemplate": "/data/tiles/lst/{time}/{z}/{x}/{y}.png",
+    "tileTemplate": "data/tiles/lst/{time}/{z}/{x}/{y}.png",
     "legend": [
       { "color": "#313695", "label": "cold (-20°C)" },
       { "color": "#74add1", "label": "cool (0°C)" },
