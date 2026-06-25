@@ -2,7 +2,7 @@
 
 from fastapi import APIRouter, HTTPException, Query, status
 
-from backend.data_loader import get_layer, get_series
+from backend.data_loader import get_layer, get_region_series
 
 router = APIRouter(tags=["series"])
 
@@ -14,9 +14,11 @@ def list_series(
     start: str | None = Query(default=None),
     end: str | None = Query(default=None),
 ):
-    """Return time series data for a layer, optionally filtered by date range.
+    """Return time series data for a layer and optionally a region.
 
-    The data is read from data/series/{layerId}_series.json.
+    When regionId is provided, returns per-region series data.
+    Falls back to default (North China Plain) series if region not found.
+    Supports date range filtering with start/end parameters.
     """
     # Validate layer exists
     layer = get_layer(layerId)
@@ -27,7 +29,7 @@ def list_series(
         )
 
     try:
-        data = get_series(layerId)
+        data = get_region_series(layerId, regionId)
     except FileNotFoundError:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,

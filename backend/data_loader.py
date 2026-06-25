@@ -57,3 +57,18 @@ def get_region(region_id: str) -> dict | None:
         if region["id"] == region_id:
             return region
     return None
+
+
+def get_region_series(layer_id: str, region_id: str | None = None) -> list[dict]:
+    """Return time series data for a layer, optionally filtered by region.
+
+    If region_id is provided and per-region data exists, returns that region's data.
+    Otherwise falls back to the default (North China Plain) series.
+    """
+    if region_id:
+        region_data = _load_json("data/series/region_series.json")
+        if region_id in region_data and layer_id in region_data[region_id]:
+            return region_data[region_id][layer_id]
+
+    # Fallback to default series for the layer
+    return _load_json(f"data/series/{layer_id}_series.json")

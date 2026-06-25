@@ -7,7 +7,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query, status
 from fastapi.responses import Response
 
 from backend.auth import require_role
-from backend.data_loader import get_layer, get_series
+from backend.data_loader import get_layer, get_region_series
 
 router = APIRouter(tags=["export"])
 
@@ -29,7 +29,7 @@ def export_csv(
         )
 
     try:
-        data = get_series(layerId)
+        data = get_region_series(layerId, regionId)
     except FileNotFoundError:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,

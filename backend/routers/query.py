@@ -114,7 +114,7 @@ def area_query(body: AreaQueryRequest):
     # Compute bounding box from geometry
     if body.geometry.type != "Polygon":
         raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail="Only Polygon geometry type is supported for area queries",
         )
 
@@ -122,7 +122,7 @@ def area_query(body: AreaQueryRequest):
         west, south, east, north = _get_bbox_from_polygon(body.geometry.coordinates)
     except (IndexError, TypeError):
         raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail="Invalid geometry coordinates",
         )
 
