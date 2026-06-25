@@ -1,7 +1,46 @@
-.worktrees/
+# Dependencies
 node_modules/
 __pycache__/
 *.pyc
+.venv/
+venv/
+
+# Build output
+frontend/dist/
+
+# Environment
 .env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+*.egg-info/
 dist/
-.vite/
+build/
+
+# Test
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Worktrees
+.worktrees/
+
+# Claude
+.claude/
+
+# Superpowers
+.superpowers/
+
+# CodeGraph
+.codegraph/
+.agents/
