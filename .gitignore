@@ -35,5 +35,12 @@ htmlcov/
 # Worktrees
 .worktrees/
 
+# Claude
+.claude/
+
+# Superpowers
+.superpowers/
+
 # CodeGraph
 .codegraph/
+.agents/
