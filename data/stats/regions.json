@@ -1,0 +1,26 @@
+[
+  {
+    "id": "north_china",
+    "name": "华北平原",
+    "description": "North China Plain — major agricultural region covering Beijing, Tianjin, Hebei, Henan, and Shandong",
+    "bounds": { "north": 40.1, "south": 39.7, "east": 116.7, "west": 116.1 }
+  },
+  {
+    "id": "yangtze_delta",
+    "name": "长江三角洲",
+    "description": "Yangtze River Delta — densely populated region including Shanghai, Jiangsu, and Zhejiang",
+    "bounds": { "north": 31.5, "south": 30.7, "east": 122.0, "west": 120.5 }
+  },
+  {
+    "id": "sichuan_basin",
+    "name": "四川盆地",
+    "description": "Sichuan Basin — inland basin known for agriculture and persistent cloud cover",
+    "bounds": { "north": 31.0, "south": 29.5, "east": 105.0, "west": 103.0 }
+  },
+  {
+    "id": "northeast_plain",
+    "name": "东北平原",
+    "description": "Northeast China Plain — major grain production base in Heilongjiang, Jilin, and Liaoning",
+    "bounds": { "north": 46.5, "south": 43.5, "east": 127.5, "west": 124.0 }
+  }
+]

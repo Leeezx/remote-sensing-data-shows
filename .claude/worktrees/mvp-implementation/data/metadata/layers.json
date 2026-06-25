@@ -1,0 +1,73 @@
+[
+  {
+    "id": "ndvi",
+    "name": "NDVI",
+    "description": "Normalized Difference Vegetation Index — measures vegetation greenness and health",
+    "type": "vegetation",
+    "unit": "index",
+    "range": { "min": 0.0, "max": 1.0 },
+    "timeRange": { "start": "2025-01", "end": "2025-12", "step": "month" },
+    "tileTemplate": "data/tiles/ndvi/{time}/{z}/{x}/{y}.png",
+    "legend": [
+      { "color": "#d73027", "label": "bare (0.0)" },
+      { "color": "#fc8d59", "label": "sparse (0.2)" },
+      { "color": "#fee08b", "label": "moderate (0.4)" },
+      { "color": "#91cf60", "label": "dense (0.6)" },
+      { "color": "#1a9850", "label": "lush (0.8+)" }
+    ]
+  },
+  {
+    "id": "precipitation",
+    "name": "Precipitation",
+    "description": "Monthly total precipitation / rainfall",
+    "type": "climate",
+    "unit": "mm",
+    "range": { "min": 0.0, "max": 500.0 },
+    "timeRange": { "start": "2025-01", "end": "2025-12", "step": "month" },
+    "tileTemplate": "data/tiles/precipitation/{time}/{z}/{x}/{y}.png",
+    "legend": [
+      { "color": "#8c510a", "label": "dry (0 mm)" },
+      { "color": "#dfc27d", "label": "moderate (100 mm)" },
+      { "color": "#f6e8c3", "label": "light (200 mm)" },
+      { "color": "#80cdc1", "label": "wet (300 mm)" },
+      { "color": "#35978f", "label": "very wet (400 mm)" },
+      { "color": "#01665e", "label": "extreme (500 mm)" }
+    ]
+  },
+  {
+    "id": "soil_moisture",
+    "name": "Soil Moisture",
+    "description": "Volumetric soil water content at surface layer",
+    "type": "soil",
+    "unit": "%",
+    "range": { "min": 0.0, "max": 100.0 },
+    "timeRange": { "start": "2025-01", "end": "2025-12", "step": "month" },
+    "tileTemplate": "data/tiles/soil_moisture/{time}/{z}/{x}/{y}.png",
+    "legend": [
+      { "color": "#d53e4f", "label": "arid (0%)" },
+      { "color": "#fc8d59", "label": "dry (20%)" },
+      { "color": "#fee08b", "label": "moderate (40%)" },
+      { "color": "#99d594", "label": "moist (60%)" },
+      { "color": "#3288bd", "label": "wet (80%)" },
+      { "color": "#016c59", "label": "saturated (100%)" }
+    ]
+  },
+  {
+    "id": "lst",
+    "name": "Land Surface Temperature",
+    "description": "Daytime land surface temperature from thermal infrared",
+    "type": "temperature",
+    "unit": "°C",
+    "range": { "min": -20.0, "max": 50.0 },
+    "timeRange": { "start": "2025-01", "end": "2025-12", "step": "month" },
+    "tileTemplate": "data/tiles/lst/{time}/{z}/{x}/{y}.png",
+    "legend": [
+      { "color": "#313695", "label": "cold (-20°C)" },
+      { "color": "#74add1", "label": "cool (0°C)" },
+      { "color": "#fee090", "label": "mild (15°C)" },
+      { "color": "#fdae61", "label": "warm (30°C)" },
+      { "color": "#f46d43", "label": "hot (40°C)" },
+      { "color": "#a50026", "label": "extreme (50°C)" }
+    ]
+  }
+]
