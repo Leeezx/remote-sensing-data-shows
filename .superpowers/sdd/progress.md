@@ -3,7 +3,7 @@
 - Task 1: complete (commits 70106b3..6c46a67) — Project skeleton
 - Task 2: complete (commits 6c46a67..c1fabf6) — Sample data specs
 - Task 3: complete (commits c1fabf6..cf84dd3) — FastAPI backend, 29 tests
-- Task 4: complete — Types, API service, Auth context, component architecture
+- Task 4: complete (reviewed + fixed: 9f7e80f) — Layout with sidebar export, API consistency, error handling
 - Task 5: complete — Leaflet map with tile overlays, layer switching, opacity, legend, time slider, playback
 - Task 6: complete — Point query (click), area query (Shift+drag rectangle), Polygon API
 - Task 7: complete — ECharts time series (line/bar), chart PNG export, CSV export

@@ -6,6 +6,7 @@ import type {
   AreaQueryResult,
   TimeSeriesPoint,
   LoginResponse,
+  Region,
 } from '../types'
 
 const client = axios.create({
@@ -43,6 +44,13 @@ export async function getLayers(): Promise<Layer[]> {
 
 export async function getLayerTimes(layerId: string): Promise<string[]> {
   const { data } = await client.get(`/layers/${layerId}/times`)
+  return data
+}
+
+// ===== Regions =====
+
+export async function getRegions(): Promise<Region[]> {
+  const { data } = await client.get('/regions')
   return data
 }
 

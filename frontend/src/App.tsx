@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { AuthProvider } from './contexts/AuthContext'
-import { getLayers } from './services/api'
+import { getLayers, getLayerTimes, getRegions } from './services/api'
 import type { Layer, PointQueryResult, Region } from './types'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
@@ -13,17 +13,20 @@ import ExportPanel from './components/ExportPanel'
 import './App.css'
 
 function MainPage() {
+  // Loading / error state
+  const [loading, setLoading] = useState(true)
+  const [loadError, setLoadError] = useState('')
+
   // Data from backend
   const [layers, setLayers] = useState<Layer[]>([])
   const [regions, setRegions] = useState<Region[]>([])
-  const [layersLoaded, setLayersLoaded] = useState(false)
 
   // Layer selection
   const [activeLayerId, setActiveLayerId] = useState<string | null>(null)
   const [opacity, setOpacity] = useState(0.7)
 
   // Time control
-  const [currentTime, setCurrentTime] = useState('2025-06')
+  const [currentTime, setCurrentTime] = useState('')
   const [times, setTimes] = useState<string[]>([])
   const [isPlaying, setIsPlaying] = useState(false)
   const playIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
@@ -35,53 +38,55 @@ function MainPage() {
   const [pointResult, setPointResult] = useState<PointQueryResult | null>(null)
   const [areaCoords, setAreaCoords] = useState<[number, number][] | null>(null)
 
-  // Load layers on mount
+  // Load layers and regions on mount
   useEffect(() => {
-    getLayers()
-      .then((data) => {
-        setLayers(data)
-        if (data.length > 0 && !activeLayerId) {
-          setActiveLayerId(data[0].id)
-        }
-        setLayersLoaded(true)
-      })
-      .catch(console.error)
-    // Regions come from a static fetch — use layers data or a separate endpoint
-    fetch('/api/regions')
-      .then((r) => r.json())
-      .then(setRegions)
-      .catch(() => {
-        // Fallback: regions may not have an endpoint; use embedded list
-        setRegions([])
-      })
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+    let cancelled = false
+    setLoading(true)
+    setLoadError('')
 
-  // Load times when layer changes
+    Promise.all([getLayers(), getRegions()])
+      .then(([layerData, regionData]) => {
+        if (cancelled) return
+        setLayers(layerData)
+        setRegions(regionData)
+        if (layerData.length > 0) {
+          setActiveLayerId(layerData[0].id)
+        }
+        setLoading(false)
+      })
+      .catch((err: unknown) => {
+        if (cancelled) return
+        const msg = err instanceof Error ? err.message : '数据加载失败'
+        setLoadError(msg)
+        setLoading(false)
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
+  // Load times from backend when layer changes
   useEffect(() => {
     if (!activeLayerId) return
-    const layer = layers.find((l) => l.id === activeLayerId)
-    if (!layer) return
-    const start = layer.timeRange.start
-    const end = layer.timeRange.end
-    // Generate time array from range (monthly steps)
-    const generated: string[] = []
-    const [startY, startM] = start.split('-').map(Number)
-    const [endY, endM] = end.split('-').map(Number)
-    let y = startY,
-      m = startM
-    while (y < endY || (y === endY && m <= endM)) {
-      generated.push(`${y}-${String(m).padStart(2, '0')}`)
-      m++
-      if (m > 12) {
-        m = 1
-        y++
-      }
+    let cancelled = false
+
+    getLayerTimes(activeLayerId)
+      .then((data) => {
+        if (cancelled) return
+        setTimes(data)
+        if (data.length > 0) {
+          setCurrentTime((prev) => (data.includes(prev) ? prev : data[0]))
+        }
+      })
+      .catch(() => {
+        if (!cancelled) setTimes([])
+      })
+
+    return () => {
+      cancelled = true
     }
-    setTimes(generated)
-    if (generated.length > 0 && !generated.includes(currentTime)) {
-      setCurrentTime(generated[0])
-    }
-  }, [activeLayerId, layers]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [activeLayerId])
 
   // Play/pause animation
   useEffect(() => {
@@ -129,24 +134,37 @@ function MainPage() {
     <div className="app">
       <Header />
       <main className="app-main">
-        <Sidebar
-          layers={layers}
-          regions={regions}
-          activeLayerId={activeLayerId}
-          onLayerChange={handleLayerChange}
-          opacity={opacity}
-          onOpacityChange={setOpacity}
-          currentTime={currentTime}
-          times={times}
-          onTimeChange={handleTimeChange}
-          isPlaying={isPlaying}
-          onPlayToggle={handlePlayToggle}
-          regionId={regionId}
-          onRegionChange={setRegionId}
-        />
+        <div className="sidebar-area">
+          <Sidebar
+            layers={layers}
+            regions={regions}
+            activeLayerId={activeLayerId}
+            onLayerChange={handleLayerChange}
+            opacity={opacity}
+            onOpacityChange={setOpacity}
+            currentTime={currentTime}
+            times={times}
+            onTimeChange={handleTimeChange}
+            isPlaying={isPlaying}
+            onPlayToggle={handlePlayToggle}
+            regionId={regionId}
+            onRegionChange={setRegionId}
+          />
+          <ExportPanel
+            activeLayerId={activeLayerId}
+            regionId={regionId}
+            startTime={times.length > 0 ? times[0] : '2025-01'}
+            endTime={times.length > 0 ? times[times.length - 1] : '2025-12'}
+            hasData={activeLayerId !== null && times.length > 0}
+          />
+        </div>
 
         <div className="map-area">
-          {layersLoaded ? (
+          {loading ? (
+            <div className="loading">加载地图数据...</div>
+          ) : loadError ? (
+            <div className="loading error">{loadError}</div>
+          ) : (
             <MapView
               layers={layers}
               activeLayerId={activeLayerId}
@@ -155,8 +173,6 @@ function MainPage() {
               onPointResult={handlePointResult}
               onAreaCoords={handleAreaCoords}
             />
-          ) : (
-            <div className="loading">加载地图数据...</div>
           )}
           <Legend layer={layers.find((l) => l.id === activeLayerId) ?? null} />
         </div>
@@ -176,13 +192,6 @@ function MainPage() {
             regions={regions}
             startTime={times.length > 0 ? times[0] : '2025-01'}
             endTime={times.length > 0 ? times[times.length - 1] : '2025-12'}
-          />
-          <ExportPanel
-            activeLayerId={activeLayerId}
-            regionId={regionId}
-            startTime={times.length > 0 ? times[0] : '2025-01'}
-            endTime={times.length > 0 ? times[times.length - 1] : '2025-12'}
-            hasData={true}
           />
         </div>
       </main>
