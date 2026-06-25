@@ -148,4 +148,4 @@ Validation rules:
 | `data/series/soil_moisture_series.json` | 12 | ~500 B | Soil moisture values for North China Plain |
 | `data/series/lst_series.json` | 12 | ~500 B | LST values for North China Plain |
 | `data/stats/regions.json` | ~30 | ~1.5 KB | 4 predefined regions |
-| `data/stats/area_stats.json` | ~60 | ~3 KB | Stats for 2 regions × 4 layers × 3 time points |
+| `data/stats/area_stats.json` | ~60 | ~3 KB | Stats for 4 regions × 4 layers × 3 time points |
