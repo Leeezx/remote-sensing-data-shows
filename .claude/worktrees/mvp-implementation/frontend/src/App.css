@@ -1,0 +1,21 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: #1a365d;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.app-main {
+  flex: 1;
+  padding: 1rem;
+}

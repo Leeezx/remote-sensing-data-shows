@@ -13,10 +13,5 @@ body {
 }
 
 #root {
-  height: 100vh;
-}
-
-/* Leaflet overrides */
-.leaflet-container {
-  font-family: inherit;
+  min-height: 100vh;
 }

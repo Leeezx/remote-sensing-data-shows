@@ -5,6 +5,6 @@ import App from '../App'
 describe('App', () => {
   it('renders without crashing', () => {
     render(<App />)
-    expect(screen.getByText(/遥感数据展示平台/)).toBeInTheDocument()
+    expect(screen.getByText('遥感数据展示平台')).toBeInTheDocument()
   })
 })
