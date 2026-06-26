@@ -14,8 +14,12 @@ def list_layers():
 
 
 @router.get("/layers/{layer_id}/times")
-def layer_times(layer_id: str):
-    """Return available time points for a given layer."""
+def layer_times(layer_id: str, resolution: str = "month"):
+    """Return available time points for a given layer.
+
+    Query params:
+        resolution: 'month' (default) or '8day' for 8-day composite data.
+    """
     layer = get_layer(layer_id)
     if layer is None:
         raise HTTPException(
@@ -23,7 +27,7 @@ def layer_times(layer_id: str):
             detail=f"Layer '{layer_id}' not found",
         )
     try:
-        return get_layer_times(layer_id)
+        return get_layer_times(layer_id, resolution=resolution)
     except FileNotFoundError:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,

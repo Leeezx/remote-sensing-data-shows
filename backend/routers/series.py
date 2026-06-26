@@ -13,12 +13,16 @@ def list_series(
     regionId: str | None = Query(default=None),
     start: str | None = Query(default=None),
     end: str | None = Query(default=None),
+    resolution: str = Query(default="month"),
 ):
     """Return time series data for a layer and optionally a region.
 
     When regionId is provided, returns per-region series data.
     Falls back to default (North China Plain) series if region not found.
     Supports date range filtering with start/end parameters.
+
+    Query params:
+        resolution: 'month' (default) or '8day'.
     """
     # Validate layer exists
     layer = get_layer(layerId)
@@ -29,7 +33,7 @@ def list_series(
         )
 
     try:
-        data = get_region_series(layerId, regionId)
+        data = get_region_series(layerId, regionId, resolution=resolution)
     except FileNotFoundError:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
