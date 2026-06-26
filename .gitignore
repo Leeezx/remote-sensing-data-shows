@@ -44,3 +44,6 @@ htmlcov/
 # CodeGraph
 .codegraph/
 .agents/
+
+# Intermediate processing
+temp_ssm/
