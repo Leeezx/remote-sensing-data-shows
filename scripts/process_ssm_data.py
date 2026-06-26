@@ -29,9 +29,10 @@ SERIES_DIR = DATA_DIR / "series"
 TILES_DIR = DATA_DIR / "tiles" / "ssm"
 TEMP_DIR = PROJECT_ROOT / "temp_ssm"
 
-# GDAL executables (installed in base conda, accessible via PATH from irrigation_water env)
-GDALWARP = "/c/ProgramData/miniconda3/Library/bin/gdalwarp.exe"
-GDALDEM = "/c/ProgramData/miniconda3/Library/bin/gdaldem.exe"
+# GDAL executables (Windows paths required for subprocess)
+GDALWARP = r"C:\ProgramData\miniconda3\Library\bin\gdalwarp.exe"
+GDALDEM = r"C:\ProgramData\miniconda3\Library\bin\gdaldem.exe"
+GDAL2TILES_PYTHON = r"C:\ProgramData\miniconda3\envs\irrigation_water\python.exe"
 
 # Color ramp for SSM visualization (matches legend in layers.json)
 COLOR_RAMP = """0.09 213 62 79 255
@@ -203,6 +204,8 @@ def generate_tiles(input_tif: Path, tile_output_dir: Path, zoom_range: str = "0-
     subprocess.run(
         [GDALWARP, "-t_srs", "EPSG:3857", "-r", "average",
          "-srcnodata", "-9999", "-dstnodata", "-9999",
+         "-co", "COMPRESS=DEFLATE", "-co", "PREDICTOR=2", "-co", "TILED=YES",
+         "-tr", "500", "500",
          str(input_tif), str(warped)],
         check=True, capture_output=True,
     )
@@ -211,6 +214,7 @@ def generate_tiles(input_tif: Path, tile_output_dir: Path, zoom_range: str = "0-
     print(f"    Applying color relief...")
     subprocess.run(
         [GDALDEM, "color-relief", "-alpha",
+         "-co", "COMPRESS=DEFLATE", "-co", "PREDICTOR=2", "-co", "TILED=YES",
          str(warped), str(ramp_file), str(colored)],
         check=True, capture_output=True,
     )
@@ -218,7 +222,7 @@ def generate_tiles(input_tif: Path, tile_output_dir: Path, zoom_range: str = "0-
     # Step 3: Generate XYZ tiles
     print(f"    Generating tiles → {tile_output_dir}")
     subprocess.run(
-        ["/c/ProgramData/miniconda3/envs/irrigation_water/python.exe",
+        [GDAL2TILES_PYTHON,
          "-m", "osgeo_utils.gdal2tiles",
          "--xyz",
          f"--zoom={zoom_range}",
