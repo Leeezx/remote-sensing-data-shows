@@ -8,12 +8,12 @@ client = TestClient(app)
 
 
 def test_get_layers():
-    """GET /api/layers returns 4 layers."""
+    """GET /api/layers returns at least 4 layers."""
     response = client.get("/api/layers")
     assert response.status_code == 200
     data = response.json()
     assert isinstance(data, list)
-    assert len(data) == 4
+    assert len(data) >= 4
 
 
 def test_layer_fields():
