@@ -11,7 +11,6 @@ Phases:
 """
 
 import json
-import os
 import re
 import subprocess
 import sys
@@ -21,8 +20,6 @@ from pathlib import Path
 
 import numpy as np
 import rasterio
-from rasterio.io import MemoryFile
-from rasterio.warp import calculate_default_transform, reproject, Resampling
 
 # === Configuration ===
 SOURCE_DIR = Path("F:/全国灌溉用水反演/数据2010-2013/SSM预测结果")
@@ -126,14 +123,16 @@ def write_8day_json(records: list[dict]):
     times = [r["time"] for r in records]
     times_path = SERIES_DIR / "ssm_8day_times.json"
     with open(times_path, "w", encoding="utf-8") as f:
-        json.dump(times, f, ensure_ascii=False)
+        json.dump(times, f, ensure_ascii=False, indent=2)
+        f.write("\n")
     print(f"Wrote {times_path} ({len(times)} entries)")
 
     # Series file
-    series = [{"time": r["time"], "value": r["value"]} for r in records]
+    series = [{"time": r["time"], "value": r["value"], "min": r["min"], "max": r["max"], "count": r["count"]} for r in records]
     series_path = SERIES_DIR / "ssm_8day_series.json"
     with open(series_path, "w", encoding="utf-8") as f:
-        json.dump(series, f, ensure_ascii=False)
+        json.dump(series, f, ensure_ascii=False, indent=2)
+        f.write("\n")
     print(f"Wrote {series_path} ({len(series)} entries)")
 
 
@@ -280,13 +279,15 @@ def process_monthly(records: list[dict], source_dir: Path, skip_tiles: bool = Fa
     # Write monthly JSON
     times_path = SERIES_DIR / "ssm_times.json"
     with open(times_path, "w", encoding="utf-8") as f:
-        json.dump([r["time"] for r in monthly_records], f, ensure_ascii=False)
+        json.dump([r["time"] for r in monthly_records], f, ensure_ascii=False, indent=2)
+        f.write("\n")
     print(f"Wrote {times_path} ({len(monthly_records)} entries)")
 
     series_path = SERIES_DIR / "ssm_series.json"
     with open(series_path, "w", encoding="utf-8") as f:
-        json.dump([{"time": r["time"], "value": r["value"]} for r in monthly_records],
-                  f, ensure_ascii=False)
+        json.dump([{"time": r["time"], "value": r["value"], "min": r["min"], "max": r["max"], "count": r["count"]} for r in monthly_records],
+                  f, ensure_ascii=False, indent=2)
+        f.write("\n")
     print(f"Wrote {series_path} ({len(monthly_records)} entries)")
 
 
