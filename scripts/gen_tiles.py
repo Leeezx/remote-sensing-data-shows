@@ -40,7 +40,7 @@ for i, comp in enumerate(composites):
         capture_output=True, timeout=120)
 
     subprocess.run([GDAL2TILES, "-m", "osgeo_utils.gdal2tiles",
-        "--xyz", "--zoom=0-6", "--processes=4", "--resampling=average",
+        "--xyz", "--zoom=0-8", "--processes=4", "--resampling=average",
         str(colored), str(tile_dir)],
         capture_output=True, timeout=600)
 

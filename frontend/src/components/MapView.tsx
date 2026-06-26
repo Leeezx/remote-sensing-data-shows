@@ -46,7 +46,7 @@ function TileOverlay({
       opacity,
       minZoom: 4,
       maxZoom: 13,
-      maxNativeZoom: 6,
+      maxNativeZoom: 8,
       errorTileUrl: '',
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } as any)

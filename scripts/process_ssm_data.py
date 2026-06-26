@@ -182,7 +182,7 @@ def average_rasters(filepaths: list[Path], output_path: Path, nodata_val: float 
     return {"mean": None, "min": None, "max": None, "count": 0}
 
 
-def generate_tiles(input_tif: Path, tile_output_dir: Path, zoom_range: str = "0-6"):
+def generate_tiles(input_tif: Path, tile_output_dir: Path, zoom_range: str = "0-8"):
     """Generate XYZ tile pyramid from a GeoTIFF.
 
     Steps:
