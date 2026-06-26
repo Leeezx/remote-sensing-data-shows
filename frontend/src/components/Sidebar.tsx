@@ -18,8 +18,15 @@ interface SidebarProps {
 
 function formatTime(t: string): string {
   // e.g. "2025-06" → "2025年06月"
-  const [y, m] = t.split('-')
-  return `${y}年${m}月`
+  // e.g. "2010-01-01" → "2010年01月01日"
+  const parts = t.split('-')
+  if (parts.length === 3) {
+    return `${parts[0]}年${parts[1]}月${parts[2]}日`
+  }
+  if (parts.length === 2) {
+    return `${parts[0]}年${parts[1]}月`
+  }
+  return t
 }
 
 export default function Sidebar({
