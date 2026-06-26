@@ -132,7 +132,12 @@ def validate_times_files():
     """Validate all *_times.json files."""
     print("[2/5] Validating *_times.json files...")
     errors = []
-    layer_ids = ["ndvi", "precipitation", "soil_moisture", "lst"]
+
+    # Discover layer IDs from layers.json
+    layers, _ = load_json("data/metadata/layers.json")
+    layer_ids = [la["id"] for la in layers] if isinstance(layers, list) else []
+    if not layer_ids:
+        return ["Cannot read layer IDs from layers.json"]
 
     for lid in layer_ids:
         path = f"data/series/{lid}_times.json"
@@ -144,8 +149,6 @@ def validate_times_files():
         if not isinstance(data, list):
             errors.append(f"{path}: must be a JSON array")
             continue
-        if len(data) != 12:
-            errors.append(f"{path}: expected 12 entries, found {len(data)}")
 
         seen = set()
         for i, entry in enumerate(data):
@@ -164,7 +167,7 @@ def validate_times_files():
             if data != sorted_data:
                 errors.append(f"{path}: entries must be chronologically sorted")
 
-    print(f"  >> 4 files checked, {len(errors)} errors")
+    print(f"  >> {len(layer_ids)} files checked, {len(errors)} errors")
     return errors
 
 
@@ -186,7 +189,13 @@ def validate_series_files():
     """Validate all *_series.json files."""
     print("[3/5] Validating *_series.json files...")
     errors = []
-    layer_ids = ["ndvi", "precipitation", "soil_moisture", "lst"]
+
+    # Discover layer IDs from layers.json
+    layers, _ = load_json("data/metadata/layers.json")
+    layer_ids = [la["id"] for la in layers] if isinstance(layers, list) else []
+    if not layer_ids:
+        return ["Cannot read layer IDs from layers.json"]
+
     ranges = get_layer_ranges()
 
     for lid in layer_ids:
@@ -199,8 +208,6 @@ def validate_series_files():
         if not isinstance(data, list):
             errors.append(f"{path}: must be a JSON array")
             continue
-        if len(data) != 12:
-            errors.append(f"{path}: expected 12 entries, found {len(data)}")
 
         seen_times = set()
         for i, point in enumerate(data):
@@ -239,7 +246,7 @@ def validate_series_files():
                             f"[{rmin}, {rmax}] for {lid}"
                         )
 
-    print(f"  >> 4 files checked, {len(errors)} errors")
+    print(f"  >> {len(layer_ids)} files checked, {len(errors)} errors")
     return errors
 
 
@@ -413,7 +420,11 @@ def validate_times_series_consistency():
     """Check that times files and series files have matching time points."""
     print("[5/5] Validating time-series consistency...")
     errors = []
-    layer_ids = ["ndvi", "precipitation", "soil_moisture", "lst"]
+
+    layers, _ = load_json("data/metadata/layers.json")
+    layer_ids = [la["id"] for la in layers] if isinstance(layers, list) else []
+    if not layer_ids:
+        return ["Cannot read layer IDs from layers.json"]
 
     for lid in layer_ids:
         times_data, times_err = load_json(f"data/series/{lid}_times.json")

@@ -69,5 +69,23 @@
       { "color": "#f46d43", "label": "hot (40°C)" },
       { "color": "#a50026", "label": "extreme (50°C)" }
     ]
+  },
+  {
+    "id": "ssm",
+    "name": "表层土壤水分",
+    "description": "Surface Soil Moisture (0-5cm) from SSM prediction model, 8-day composite, 2010-2013",
+    "type": "soil",
+    "unit": "m³/m³",
+    "range": { "min": 0.0, "max": 0.5 },
+    "timeRange": { "start": "2010-01", "end": "2013-12", "step": "month" },
+    "tileTemplate": "data/tiles/ssm/{time}/{z}/{x}/{y}.png",
+    "legend": [
+      { "color": "#d53e4f", "label": "dry (0.09)" },
+      { "color": "#fc8d59", "label": "low (0.15)" },
+      { "color": "#fee08b", "label": "moderate (0.22)" },
+      { "color": "#99d594", "label": "moist (0.28)" },
+      { "color": "#3288bd", "label": "wet (0.35)" },
+      { "color": "#016c59", "label": "saturated (0.40)" }
+    ]
   }
 ]
