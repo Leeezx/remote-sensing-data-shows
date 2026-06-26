@@ -80,18 +80,34 @@ def point_query(
     stats = get_area_stats()
     try:
         region_stats = stats[region["id"]][layerId][time]
+        value = region_stats["mean"]
     except KeyError:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"No data available for layer '{layerId}' at time '{time}' in this region",
-        )
+        # Fallback to series data for layers not in area_stats (e.g. SSM)
+        from backend.data_loader import get_series as _get_series
+        try:
+            series = _get_series(layerId)
+        except FileNotFoundError:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"No data available for layer '{layerId}'",
+            )
+        value = None
+        for entry in series:
+            if entry["time"] == time:
+                value = entry["value"]
+                break
+        if value is None:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"No data available for layer '{layerId}' at time '{time}' in this region",
+            )
 
     return {
         "layerId": layerId,
         "time": time,
         "lng": lng,
         "lat": lat,
-        "value": region_stats["mean"],
+        "value": value,
         "unit": layer["unit"],
     }
 
@@ -139,15 +155,30 @@ def area_query(body: AreaQueryRequest):
     stats = get_area_stats()
     try:
         region_stats = stats[region["id"]][body.layerId][body.time]
+        return {
+            "mean": region_stats["mean"],
+            "max": region_stats["max"],
+            "min": region_stats["min"],
+            "count": region_stats["count"],
+        }
     except KeyError:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"No data available for layer '{body.layerId}' at time '{body.time}' in this region",
-        )
-
-    return {
-        "mean": region_stats["mean"],
-        "max": region_stats["max"],
-        "min": region_stats["min"],
-        "count": region_stats["count"],
-    }
+        # Fallback to series data for layers not in area_stats (e.g. SSM)
+        from backend.data_loader import get_series as _get_series
+        try:
+            series = _get_series(body.layerId)
+        except FileNotFoundError:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"No data available for layer '{body.layerId}'",
+            )
+        val = None
+        for entry in series:
+            if entry["time"] == body.time:
+                val = entry["value"]
+                break
+        if val is None:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"No data available for layer '{body.layerId}' at time '{body.time}' in this region",
+            )
+        return {"mean": val, "max": val, "min": val, "count": 1}
