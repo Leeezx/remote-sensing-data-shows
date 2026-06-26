@@ -33,7 +33,7 @@ function TileOverlay({
       tileLayerRef.current = null
     }
 
-    if (!layer) return
+    if (!layer || !time) return
 
     const url = layer.tileTemplate
       .replace('{time}', time)
