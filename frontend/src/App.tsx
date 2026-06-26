@@ -71,12 +71,15 @@ function MainPage() {
     if (!activeLayerId) return
     let cancelled = false
 
+    // Immediately clear time to prevent stale tile requests
+    setCurrentTime('')
+
     getLayerTimes(activeLayerId)
       .then((data) => {
         if (cancelled) return
         setTimes(data)
         if (data.length > 0) {
-          setCurrentTime((prev) => (data.includes(prev) ? prev : data[0]))
+          setCurrentTime(data[0])
         }
       })
       .catch(() => {
