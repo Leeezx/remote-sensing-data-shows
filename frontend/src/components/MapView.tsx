@@ -44,8 +44,9 @@ function TileOverlay({
     // _r suffix to avoid cache on missing tiles
     const tileLayer = L.tileLayer(url, {
       opacity,
-      minZoom: 5,
-      maxZoom: 12,
+      minZoom: 4,
+      maxZoom: 13,
+      maxNativeZoom: 6,
       errorTileUrl: '',
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } as any)
