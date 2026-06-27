@@ -31,6 +31,9 @@ app.include_router(query.router, prefix="/api")
 app.include_router(series.router, prefix="/api")
 app.include_router(regions.router, prefix="/api")
 app.include_router(export.router, prefix="/api")
+# TiTiler dynamic COG tile endpoints (for SSM layer)
+app.include_router(tiles.cog_tiler, prefix="/cog")
+# Legacy static tile endpoints (for pre-generated PNG tiles of other layers)
 app.include_router(tiles.router, prefix="/data")
 
 
