@@ -35,11 +35,21 @@ function TileOverlay({
 
     if (!layer || !time) return
 
-    const url = layer.tileTemplate
-      .replace('{time}', time)
-      .replace('{z}', '{z}')
-      .replace('{x}', '{x}')
-      .replace('{y}', '{y}')
+    let url: string
+    if (layer.id === 'ssm') {
+      // SSM: TiTiler dynamic COG tile URL
+      url = `/cog/tiles/WebMercatorQuad/{z}/{x}/{y}.png?` + new URLSearchParams({
+        url: `data/rasters/ssm/${time}_cog.tif`,
+        colormap_name: 'rdylgn',
+        rescale: `${layer.range.min},${layer.range.max}`,
+      }).toString()
+    } else {
+      url = layer.tileTemplate
+        .replace('{time}', time)
+        .replace('{z}', '{z}')
+        .replace('{x}', '{x}')
+        .replace('{y}', '{y}')
+    }
 
     // _r suffix to avoid cache on missing tiles
     const tileLayer = L.tileLayer(url, {
