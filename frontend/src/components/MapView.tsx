@@ -37,9 +37,9 @@ function TileOverlay({
 
     let url: string
     if (layer.id === 'ssm') {
-      // SSM: TiTiler dynamic COG tile URL
-      url = `/cog/tiles/WebMercatorQuad/{z}/{x}/{y}.png?` + new URLSearchParams({
-        url: `data/rasters/ssm/${time}_cog.tif`,
+      // SSM: proxy endpoint resolves time→COG filename, then TiTiler renders
+      url = `/data/ssm-tiles/WebMercatorQuad/{z}/{x}/{y}.png?` + new URLSearchParams({
+        time: time,
         colormap_name: 'rdylgn',
         rescale: `${layer.range.min},${layer.range.max}`,
       }).toString()

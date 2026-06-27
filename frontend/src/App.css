@@ -197,6 +197,20 @@
   border-color: #e55;
 }
 
+/* ===== Resolution toggle ===== */
+
+.resolution-toggle {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.resolution-toggle .btn-sm {
+  flex: 1;
+  font-size: 12px;
+  padding: 2px 8px;
+}
+
 /* ===== Timeline ===== */
 
 .timeline {

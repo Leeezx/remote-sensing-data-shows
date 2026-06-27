@@ -28,6 +28,7 @@ function MainPage() {
   // Time control
   const [currentTime, setCurrentTime] = useState('')
   const [times, setTimes] = useState<string[]>([])
+  const [timeResolution, setTimeResolution] = useState<'month' | '8day'>('month')
   const [isPlaying, setIsPlaying] = useState(false)
   const playIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
@@ -70,7 +71,7 @@ function MainPage() {
     }
   }, [])
 
-  // Load times from backend when layer changes
+  // Load times from backend when layer changes or resolution changes
   useEffect(() => {
     if (!activeLayerId) return
     let cancelled = false
@@ -78,7 +79,7 @@ function MainPage() {
     // Immediately clear time to prevent stale tile requests
     setCurrentTime('')
 
-    getLayerTimes(activeLayerId)
+    getLayerTimes(activeLayerId, timeResolution)
       .then((data) => {
         if (cancelled) return
         setTimes(data)
@@ -93,7 +94,7 @@ function MainPage() {
     return () => {
       cancelled = true
     }
-  }, [activeLayerId])
+  }, [activeLayerId, timeResolution])
 
   // Play/pause animation
   useEffect(() => {
@@ -155,6 +156,8 @@ function MainPage() {
             currentTime={currentTime}
             times={times}
             onTimeChange={handleTimeChange}
+            timeResolution={timeResolution}
+            onTimeResolutionChange={setTimeResolution}
             isPlaying={isPlaying}
             onPlayToggle={handlePlayToggle}
             regionId={regionId}

@@ -1,9 +1,11 @@
 """Dynamic tile serving via TiTiler — Cloud-Optimized GeoTIFF (COG) rendering."""
 
+import math
+from datetime import date
 from pathlib import Path
 
-from fastapi import APIRouter, HTTPException, status
-from fastapi.responses import FileResponse
+from fastapi import APIRouter, HTTPException, Query, status
+from fastapi.responses import FileResponse, RedirectResponse
 from titiler.core.factory import TilerFactory
 
 router = APIRouter(tags=["tiles"])
@@ -13,15 +15,70 @@ router = APIRouter(tags=["tiles"])
 #   GET  /cog/tiles/{z}/{x}/{y}.{ext}
 #   GET  /cog/info
 #   etc.
-# Frontend uses: /cog/tiles/{z}/{x}/{y}.png?url=data/rasters/ssm/2010_05_cog.tif&colormap_name=rdylgn&rescale=0.0,0.5
+# Direct use: /cog/tiles/{z}/{x}/{y}.png?url=data/rasters/ssm/2010_05_cog.tif&colormap_name=rdylgn&rescale=0.0,0.5
 
 cog = TilerFactory(router_prefix="/cog")
 cog_tiler = cog.router
 
-# ===== Legacy static tile serving (for pre-generated PNG tiles of non-SSM layers) =====
+# ===== SSM Tile Proxy =====
+# Maps human-readable time strings (8day dates, monthly, period index) to COG paths,
+# then redirects to the TiTiler tile endpoint.
+# Frontend uses: /data/ssm-tiles/{z}/{x}/{y}.png?time=2010-02-02&colormap_name=rdylgn&rescale=0.0,0.5
 
 # Project root is two levels up from routers/tiles.py → backend/routers/ → project/
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+
+
+def _ssm_time_to_cog_name(time: str) -> str:
+    """Convert a time string to SSM COG filename (e.g., '2010-02-02' → '2010_05_cog.tif')."""
+    if "_" in time:
+        return f"{time}_cog.tif"
+    if len(time) == 10:
+        year_s = int(time[:4])
+        month_s = int(time[5:7])
+        day_s = int(time[8:10])
+        d = date(year_s, month_s, day_s)
+        start = date(year_s, 1, 1)
+        period = (d - start).days // 8 + 1
+        return f"{year_s}_{period:02d}_cog.tif"
+    if len(time) == 7:
+        year_s = int(time[:4])
+        month_s = int(time[5:7])
+        d = date(year_s, month_s, 15)
+        start = date(year_s, 1, 1)
+        period = (d - start).days // 8 + 1
+        return f"{year_s}_{period:02d}_cog.tif"
+    return f"{time}_cog.tif"
+
+
+@router.get("/ssm-tiles/{tileMatrixSetId}/{z}/{x}/{y}.png")
+def ssm_tile_proxy(
+    tileMatrixSetId: str,
+    z: int, x: int, y: int,
+    time: str = Query(...),
+    colormap_name: str = Query(default="rdylgn"),
+    rescale: str = Query(default="0,0.5"),
+):
+    """Proxy endpoint: resolve SSM time → COG path → redirect to TiTiler."""
+    cog_name = _ssm_time_to_cog_name(time)
+    cog_rel = f"data/rasters/ssm/{cog_name}"
+    cog_path = PROJECT_ROOT / cog_rel
+    if not cog_path.is_file():
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"COG file not found for time '{time}' (looked for: {cog_name})",
+        )
+    redirect_url = (
+        f"/cog/tiles/{tileMatrixSetId}/{z}/{x}/{y}.png"
+        f"?url={cog_rel}"
+        f"&colormap_name={colormap_name}"
+        f"&rescale={rescale}"
+    )
+    return RedirectResponse(url=redirect_url)
+
+
+# ===== Legacy static tile serving (for pre-generated PNG tiles of non-SSM layers) =====
+
 TILES_ROOT = PROJECT_ROOT / "data" / "tiles"
 
 

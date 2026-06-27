@@ -10,6 +10,8 @@ interface SidebarProps {
   currentTime: string
   times: string[]
   onTimeChange: (t: string) => void
+  timeResolution: 'month' | '8day'
+  onTimeResolutionChange: (r: 'month' | '8day') => void
   isPlaying: boolean
   onPlayToggle: () => void
   regionId: string | null
@@ -39,6 +41,8 @@ export default function Sidebar({
   currentTime,
   times,
   onTimeChange,
+  timeResolution,
+  onTimeResolutionChange,
   isPlaying,
   onPlayToggle,
   regionId,
@@ -89,6 +93,22 @@ export default function Sidebar({
       <section className="sidebar-section">
         <h3>⏱️ 时间轴</h3>
         <div className="time-display">{formatTime(currentTime)}</div>
+        {activeLayerId === 'ssm' && (
+          <div className="resolution-toggle">
+            <button
+              className={`btn btn-sm ${timeResolution === '8day' ? 'btn-primary' : ''}`}
+              onClick={() => onTimeResolutionChange('8day')}
+            >
+              8天
+            </button>
+            <button
+              className={`btn btn-sm ${timeResolution === 'month' ? 'btn-primary' : ''}`}
+              onClick={() => onTimeResolutionChange('month')}
+            >
+              月度
+            </button>
+          </div>
+        )}
         <div className="timeline">
           <div className="timeline-track">
             <button

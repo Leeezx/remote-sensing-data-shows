@@ -42,8 +42,13 @@ export async function getLayers(): Promise<Layer[]> {
   return data
 }
 
-export async function getLayerTimes(layerId: string): Promise<string[]> {
-  const { data } = await client.get(`/layers/${layerId}/times`)
+export async function getLayerTimes(
+  layerId: string,
+  resolution: 'month' | '8day' = 'month',
+): Promise<string[]> {
+  const { data } = await client.get(`/layers/${layerId}/times`, {
+    params: { resolution },
+  })
   return data
 }
 
