@@ -28,7 +28,7 @@ function MainPage() {
   // Time control
   const [currentTime, setCurrentTime] = useState('')
   const [times, setTimes] = useState<string[]>([])
-  const [timeResolution, setTimeResolution] = useState<'month' | '8day'>('month')
+  const [timeResolution, setTimeResolution] = useState<'month' | '8day'>('8day')
   const [isPlaying, setIsPlaying] = useState(false)
   const playIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
@@ -55,7 +55,8 @@ function MainPage() {
         setLayers(layerData)
         setRegions(regionData)
         if (layerData.length > 0) {
-          setActiveLayerId(layerData[0].id)
+          // Prefer SSM as default (has COG data); fallback to first layer
+          setActiveLayerId(layerData.find((l) => l.id === 'ssm')?.id ?? layerData[0].id)
         }
         setLoading(false)
       })

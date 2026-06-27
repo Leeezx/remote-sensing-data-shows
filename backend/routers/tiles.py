@@ -1,11 +1,11 @@
 """Dynamic tile serving via TiTiler — Cloud-Optimized GeoTIFF (COG) rendering."""
 
-import math
 from datetime import date
 from pathlib import Path
 
+import httpx
 from fastapi import APIRouter, HTTPException, Query, status
-from fastapi.responses import FileResponse, RedirectResponse
+from fastapi.responses import FileResponse, StreamingResponse
 from titiler.core.factory import TilerFactory
 
 router = APIRouter(tags=["tiles"])
@@ -15,14 +15,13 @@ router = APIRouter(tags=["tiles"])
 #   GET  /cog/tiles/{z}/{x}/{y}.{ext}
 #   GET  /cog/info
 #   etc.
-# Direct use: /cog/tiles/{z}/{x}/{y}.png?url=data/rasters/ssm/2010_05_cog.tif&colormap_name=rdylgn&rescale=0.0,0.5
 
 cog = TilerFactory(router_prefix="/cog")
 cog_tiler = cog.router
 
 # ===== SSM Tile Proxy =====
 # Maps human-readable time strings (8day dates, monthly, period index) to COG paths,
-# then redirects to the TiTiler tile endpoint.
+# then fetches the tile from TiTiler and streams it directly.
 # Frontend uses: /data/ssm-tiles/{z}/{x}/{y}.png?time=2010-02-02&colormap_name=rdylgn&rescale=0.0,0.5
 
 # Project root is two levels up from routers/tiles.py → backend/routers/ → project/
@@ -52,14 +51,14 @@ def _ssm_time_to_cog_name(time: str) -> str:
 
 
 @router.get("/ssm-tiles/{tileMatrixSetId}/{z}/{x}/{y}.png")
-def ssm_tile_proxy(
+async def ssm_tile_proxy(
     tileMatrixSetId: str,
     z: int, x: int, y: int,
     time: str = Query(...),
     colormap_name: str = Query(default="rdylgn"),
     rescale: str = Query(default="0,0.5"),
 ):
-    """Proxy endpoint: resolve SSM time → COG path → redirect to TiTiler."""
+    """Stream SSM tile: resolve time → COG path → render via TiTiler → return PNG."""
     cog_name = _ssm_time_to_cog_name(time)
     cog_rel = f"data/rasters/ssm/{cog_name}"
     cog_path = PROJECT_ROOT / cog_rel
@@ -68,13 +67,26 @@ def ssm_tile_proxy(
             status_code=status.HTTP_404_NOT_FOUND,
             detail=f"COG file not found for time '{time}' (looked for: {cog_name})",
         )
-    redirect_url = (
+    # Build TiTiler internal URL and fetch tile
+    ti_url = (
         f"/cog/tiles/{tileMatrixSetId}/{z}/{x}/{y}.png"
         f"?url={cog_rel}"
         f"&colormap_name={colormap_name}"
         f"&rescale={rescale}"
     )
-    return RedirectResponse(url=redirect_url)
+    async with httpx.AsyncClient(base_url="http://127.0.0.1:8000") as client:
+        ti_resp = await client.get(ti_url,
+            timeout=httpx.Timeout(30.0))
+        if ti_resp.status_code != 200:
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail=f"TiTiler rendering failed for {cog_name}",
+            )
+        return StreamingResponse(
+            ti_resp.aiter_bytes(),
+            media_type="image/png",
+            status_code=200,
+        )
 
 
 # ===== Legacy static tile serving (for pre-generated PNG tiles of non-SSM layers) =====
