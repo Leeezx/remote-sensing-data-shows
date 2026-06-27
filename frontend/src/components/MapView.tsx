@@ -190,10 +190,10 @@ export default function MapView({
         style={{ height: '100%', width: '100%' }}
         attributionControl={true}
       >
-        {/* OpenStreetMap base layer */}
+        {/* ArcGIS World Street Map base layer (WGS84, matches SSM data CRS) */}
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ'
+          url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"
         />
 
         {/* Remote sensing overlay */}
