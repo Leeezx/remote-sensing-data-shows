@@ -190,7 +190,11 @@ export default function MapView({
         style={{ height: '100%', width: '100%' }}
         attributionControl={true}
       >
-        {/* Base layer — plain background via CSS, no external tiles */}
+        {/* OpenStreetMap base layer */}
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
 
         {/* Remote sensing overlay */}
         <TileOverlay layer={activeLayer} time={currentTime} opacity={opacity} />
