@@ -197,6 +197,90 @@
   border-color: #e55;
 }
 
+/* ===== Timeline ===== */
+
+.timeline {
+  margin: 4px 0 8px;
+}
+
+.timeline-track {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.timeline-prev,
+.timeline-next {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #fff;
+  font-size: 9px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-prev:hover,
+.timeline-next:hover {
+  background: #e8ecf1;
+}
+
+.timeline-bar-wrapper {
+  flex: 1;
+  min-width: 0;
+}
+
+.timeline-bar {
+  position: relative;
+  height: 8px;
+  background: #d0d0d0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.timeline-filled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #1a73e8;
+  border-radius: 4px;
+  transition: width 0.2s;
+}
+
+.timeline-thumb {
+  position: absolute;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  background: #1a73e8;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: left 0.2s;
+  pointer-events: none;
+}
+
+.timeline-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.timeline-label-start,
+.timeline-label-end {
+  font-size: 9px;
+  color: #888;
+  white-space: nowrap;
+}
+
 /* Region select */
 
 .sidebar select {

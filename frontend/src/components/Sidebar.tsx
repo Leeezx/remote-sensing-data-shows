@@ -87,16 +87,52 @@ export default function Sidebar({
 
       {/* Time Control */}
       <section className="sidebar-section">
-        <h3>⏱️ 时间控制</h3>
+        <h3>⏱️ 时间轴</h3>
         <div className="time-display">{formatTime(currentTime)}</div>
-        <input
-          type="range"
-          min="0"
-          max={times.length - 1}
-          step="1"
-          value={Math.max(0, times.indexOf(currentTime))}
-          onChange={(e) => onTimeChange(times[Number(e.target.value)])}
-        />
+        <div className="timeline">
+          <div className="timeline-track">
+            <button
+              className="timeline-prev"
+              onClick={() => {
+                const idx = times.indexOf(currentTime)
+                if (idx > 0) onTimeChange(times[idx - 1])
+              }}
+              title="上一个"
+            >
+              ◀
+            </button>
+            <div className="timeline-bar-wrapper">
+              <div className="timeline-bar">
+                <div
+                  className="timeline-filled"
+                  style={{
+                    width: `${(Math.max(0, times.indexOf(currentTime)) / Math.max(1, times.length - 1)) * 100}%`,
+                  }}
+                />
+                <div
+                  className="timeline-thumb"
+                  style={{
+                    left: `${(Math.max(0, times.indexOf(currentTime)) / Math.max(1, times.length - 1)) * 100}%`,
+                  }}
+                />
+              </div>
+              <div className="timeline-labels">
+                <span className="timeline-label-start">{times.length > 0 ? formatTime(times[0]) : ''}</span>
+                <span className="timeline-label-end">{times.length > 0 ? formatTime(times[times.length - 1]) : ''}</span>
+              </div>
+            </div>
+            <button
+              className="timeline-next"
+              onClick={() => {
+                const idx = times.indexOf(currentTime)
+                if (idx < times.length - 1) onTimeChange(times[idx + 1])
+              }}
+              title="下一个"
+            >
+              ▶
+            </button>
+          </div>
+        </div>
         <button className={`btn btn-play ${isPlaying ? 'playing' : ''}`} onClick={onPlayToggle}>
           {isPlaying ? '⏸ 暂停' : '▶ 播放'}
         </button>
