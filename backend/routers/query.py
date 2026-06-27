@@ -16,6 +16,49 @@ router = APIRouter(tags=["query"])
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
 
+# ===== SSM COG filename mapping =====
+# COG files are named YYYY_NN_cog.tif (e.g., 2010_05_cog.tif)
+# where NN is the 8-day period index (1-46) within the year.
+# The 8-day times in ssm_8day_times.json use date strings (e.g., "2010-02-02").
+# This function maps from either format to the correct COG filename.
+
+def _ssm_time_to_cog_path(time: str) -> Path:
+    """Convert a time string to the corresponding SSM COG file path.
+
+    Supports two formats:
+      - Period index: "YYYY_NN" (e.g., "2010_05") — maps directly
+      - 8-day date:   "YYYY-MM-DD" (e.g., "2010-02-02") — computes period index
+      - Monthly:      "YYYY-MM" (e.g., "2010-02") — uses first 8-day period of month
+    """
+    # Already in YYYY_NN format — direct COG filename
+    if "_" in time:
+        cog_name = f"{time}_cog.tif"
+    elif len(time) == 10:
+        # 8-day date: "YYYY-MM-DD"
+        from datetime import date
+        year_s = int(time[:4])
+        month_s = int(time[5:7])
+        day_s = int(time[8:10])
+        d = date(year_s, month_s, day_s)
+        start = date(year_s, 1, 1)
+        period = (d - start).days // 8 + 1
+        cog_name = f"{year_s}_{period:02d}_cog.tif"
+    elif len(time) == 7:
+        # Monthly: "YYYY-MM" — use the 8-day period closest to mid-month
+        from datetime import date
+        year_s = int(time[:4])
+        month_s = int(time[5:7])
+        d = date(year_s, month_s, 15)
+        start = date(year_s, 1, 1)
+        period = (d - start).days // 8 + 1
+        cog_name = f"{year_s}_{period:02d}_cog.tif"
+    else:
+        # Unknown format — try as-is
+        cog_name = f"{time}_cog.tif"
+
+    return PROJECT_ROOT / "data" / "rasters" / "ssm" / cog_name
+
+
 class GeoJSONGeometry(BaseModel):
     type: str
     coordinates: list
@@ -61,12 +104,12 @@ def _query_point_SSM(layer: dict, time: str, lng: float, lat: float) -> dict:
     """Real-time point query for SSM layer using rasterio."""
     import numpy as np
 
-    cog_path = PROJECT_ROOT / "data" / "rasters" / "ssm" / f"{time}_cog.tif"
+    cog_path = _ssm_time_to_cog_path(time)
 
     if not cog_path.is_file():
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"COG file not found for time '{time}'",
+            detail=f"COG file not found for time '{time}' (looked for: {cog_path.name})",
         )
 
     try:
@@ -107,12 +150,12 @@ def _query_area_SSM(layer: dict, time: str, west: float, south: float, east: flo
     """Real-time area query for SSM layer using rasterio."""
     import numpy as np
 
-    cog_path = PROJECT_ROOT / "data" / "rasters" / "ssm" / f"{time}_cog.tif"
+    cog_path = _ssm_time_to_cog_path(time)
 
     if not cog_path.is_file():
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"COG file not found for time '{time}'",
+            detail=f"COG file not found for time '{time}' (looked for: {cog_path.name})",
         )
 
     try:
