@@ -31,6 +31,10 @@ function MainPage() {
   const [isPlaying, setIsPlaying] = useState(false)
   const playIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
+  // Tile loading overlay
+  const [tileLoading, setTileLoading] = useState(false)
+  const tileLoadTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
   // Region
   const [regionId, setRegionId] = useState<string | null>(null)
 
@@ -113,6 +117,9 @@ function MainPage() {
     setActiveLayerId(id)
     setPointResult(null)
     setAreaCoords(null)
+    setTileLoading(true)
+    if (tileLoadTimerRef.current) clearTimeout(tileLoadTimerRef.current)
+    tileLoadTimerRef.current = setTimeout(() => setTileLoading(false), 2000)
   }, [])
 
   const handleTimeChange = useCallback((t: string) => {
@@ -168,14 +175,22 @@ function MainPage() {
           ) : loadError ? (
             <div className="loading error">{loadError}</div>
           ) : (
-            <MapView
-              layers={layers}
-              activeLayerId={activeLayerId}
-              opacity={opacity}
-              currentTime={currentTime}
-              onPointResult={handlePointResult}
-              onAreaCoords={handleAreaCoords}
-            />
+            <div className="map-area-wrapper">
+              {tileLoading && (
+                <div className="tile-loading-overlay">
+                  <div className="tile-loading-spinner" />
+                  <span>加载瓦片中...</span>
+                </div>
+              )}
+              <MapView
+                layers={layers}
+                activeLayerId={activeLayerId}
+                opacity={opacity}
+                currentTime={currentTime}
+                onPointResult={handlePointResult}
+                onAreaCoords={handleAreaCoords}
+              />
+            </div>
           )}
           <Legend layer={layers.find((l) => l.id === activeLayerId) ?? null} />
         </div>
