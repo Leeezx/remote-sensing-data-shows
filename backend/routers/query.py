@@ -1,11 +1,19 @@
 """Spatial query router — point and area queries."""
 
+import math
+from pathlib import Path
+
+import rasterio
+import rasterio.errors
 from fastapi import APIRouter, HTTPException, Query, status
 from pydantic import BaseModel
+from pyproj import Transformer
 
 from backend.data_loader import get_area_stats, get_layer, get_regions
 
 router = APIRouter(tags=["query"])
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
 
 class GeoJSONGeometry(BaseModel):
@@ -49,6 +57,99 @@ def _get_bbox_from_polygon(coordinates: list) -> tuple[float, float, float, floa
     return min(lngs), min(lats), max(lngs), max(lats)
 
 
+def _query_point_SSM(layer: dict, time: str, lng: float, lat: float) -> dict:
+    """Real-time point query for SSM layer using rasterio."""
+    import numpy as np
+
+    cog_path = PROJECT_ROOT / "data" / "rasters" / "ssm" / f"{time}_cog.tif"
+
+    if not cog_path.is_file():
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"COG file not found for time '{time}'",
+        )
+
+    try:
+        with rasterio.open(cog_path) as src:
+            # EPSG:4326 → raster CRS (same, but ensure correctness)
+            transformer = Transformer.from_crs("EPSG:4326", src.crs, always_xy=True)
+            x, y = transformer.transform(lng, lat)
+            row, col = src.index(x, y)
+            if row < 0 or row >= src.height or col < 0 or col >= src.width:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="Point is outside the raster extent",
+                )
+            val = src.read(1, window=((row, row + 1), (col, col + 1)))
+            value = float(val[0, 0])
+            if math.isnan(value):
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="No valid data at this point",
+                )
+    except rasterio.errors.RasterioIOError as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to read raster: {e}",
+        )
+
+    return {
+        "layerId": layer["id"],
+        "time": time,
+        "lng": lng,
+        "lat": lat,
+        "value": value,
+        "unit": layer["unit"],
+    }
+
+
+def _query_area_SSM(layer: dict, time: str, west: float, south: float, east: float, north: float) -> dict:
+    """Real-time area query for SSM layer using rasterio."""
+    import numpy as np
+
+    cog_path = PROJECT_ROOT / "data" / "rasters" / "ssm" / f"{time}_cog.tif"
+
+    if not cog_path.is_file():
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"COG file not found for time '{time}'",
+        )
+
+    try:
+        with rasterio.open(cog_path) as src:
+            # WGS84 bbox → raster row/col indices
+            row_min, col_min = src.index(west, north)
+            row_max, col_max = src.index(east, south)
+            # Clamp to valid range
+            row_min, row_max = max(0, row_min), min(src.height, row_max + 1)
+            col_min, col_max = max(0, col_min), min(src.width, col_max + 1)
+            if row_min >= row_max or col_min >= col_max:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="Area is outside the raster extent",
+                )
+            data = src.read(1, window=((row_min, row_max), (col_min, col_max)))
+            valid = data[~np.isnan(data)]
+            if src.nodata is not None:
+                valid = valid[valid != src.nodata]
+            if valid.size == 0:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="No valid data in the specified area",
+                )
+            return {
+                "mean": float(valid.mean()),
+                "max": float(valid.max()),
+                "min": float(valid.min()),
+                "count": int(valid.size),
+            }
+    except rasterio.errors.RasterioIOError as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to read raster: {e}",
+        )
+
+
 @router.get("/query/point")
 def point_query(
     layerId: str = Query(...),
@@ -58,8 +159,8 @@ def point_query(
 ):
     """Query a value at a specific point and time.
 
-    Finds the nearest predefined region containing the point and returns
-    the mean value from area statistics for that region/layer/time.
+    For SSM layer: reads the actual pixel value from the COG file.
+    For other layers: returns the nearest region's pre-computed statistics.
     """
     # Validate layer exists
     layer = get_layer(layerId)
@@ -69,6 +170,11 @@ def point_query(
             detail=f"Layer '{layerId}' not found",
         )
 
+    # ---- SSM layer: use rasterio to read pixel from COG file ----
+    if layerId == "ssm":
+        return _query_point_SSM(layer, time, lng, lat)
+
+    # ---- Other layers: fall through to JSON stats lookup ----
     # Find region containing the point
     region = _find_region_for_point(lng, lat)
     if region is None:
@@ -82,7 +188,7 @@ def point_query(
         region_stats = stats[region["id"]][layerId][time]
         value = region_stats["mean"]
     except KeyError:
-        # Fallback to series data for layers not in area_stats (e.g. SSM)
+        # Fallback to series data for layers not in area_stats
         from backend.data_loader import get_series as _get_series
         try:
             series = _get_series(layerId)
@@ -116,8 +222,8 @@ def point_query(
 def area_query(body: AreaQueryRequest):
     """Query statistics for a geographic area.
 
-    Accepts a GeoJSON geometry and returns aggregated statistics
-    from the predefined area statistics data.
+    For SSM layer: reads actual pixels from the COG file and computes stats.
+    For other layers: returns pre-computed area statistics from JSON.
     """
     # Validate layer exists
     layer = get_layer(body.layerId)
@@ -142,6 +248,11 @@ def area_query(body: AreaQueryRequest):
             detail="Invalid geometry coordinates",
         )
 
+    # ---- SSM layer: use rasterio to read and compute stats from COG ----
+    if body.layerId == "ssm":
+        return _query_area_SSM(layer, body.time, west, south, east, north)
+
+    # ---- Other layers: fall through to JSON stats lookup ----
     # Find intersecting regions
     regions = _find_regions_for_bbox(west, south, east, north)
     if not regions:
@@ -162,7 +273,7 @@ def area_query(body: AreaQueryRequest):
             "count": region_stats["count"],
         }
     except KeyError:
-        # Fallback to series data for layers not in area_stats (e.g. SSM)
+        # Fallback to series data for layers not in area_stats
         from backend.data_loader import get_series as _get_series
         try:
             series = _get_series(body.layerId)
