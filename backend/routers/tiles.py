@@ -27,6 +27,13 @@ cog_tiler = cog.router
 # Project root is two levels up from routers/tiles.py → backend/routers/ → project/
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
+# Small transparent PNG (1×1 pixel) returned for out-of-bounds or missing tiles
+TRANSPARENT_PNG = (
+    b"\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x00\x01\x00\x00\x00\x01"
+    b"\x08\x06\x00\x00\x00\x1f\x15\xc4\x89\x00\x00\x00\nIDATx\x9cc\x00"
+    b"\x01\x00\x00\x05\x00\x01\r\n\xb4\x00\x00\x00\x00IEND\xaeB`\x82"
+)
+
 
 def _ssm_time_to_cog_name(time: str) -> str:
     """Convert a time string to SSM COG filename (e.g., '2010-02-02' → '2010_05_cog.tif')."""
@@ -78,9 +85,12 @@ async def ssm_tile_proxy(
         ti_resp = await client.get(ti_url,
             timeout=httpx.Timeout(30.0))
         if ti_resp.status_code != 200:
-            raise HTTPException(
-                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                detail=f"TiTiler rendering failed for {cog_name}",
+            # Return transparent PNG for out-of-bounds / rendering errors
+            # so Leaflet shows blank tile instead of broken image
+            return StreamingResponse(
+                iter([TRANSPARENT_PNG]),
+                media_type="image/png",
+                status_code=200,
             )
         return StreamingResponse(
             ti_resp.aiter_bytes(),
