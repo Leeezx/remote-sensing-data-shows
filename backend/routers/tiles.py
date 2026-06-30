@@ -3,10 +3,14 @@
 from datetime import date
 from pathlib import Path
 
-import httpx
 from fastapi import APIRouter, HTTPException, Query, status
-from fastapi.responses import FileResponse, StreamingResponse
+from fastapi.responses import FileResponse, Response
+from rio_tiler.errors import TileOutsideBounds
+from rio_tiler.io import COGReader
 from titiler.core.factory import TilerFactory
+
+from backend.data_loader import get_layer
+from backend.raster_rendering import colorize, render_png
 
 router = APIRouter(tags=["tiles"])
 
@@ -19,10 +23,10 @@ router = APIRouter(tags=["tiles"])
 cog = TilerFactory(router_prefix="/cog")
 cog_tiler = cog.router
 
-# ===== SSM Tile Proxy =====
+# ===== SSM Tiles =====
 # Maps human-readable time strings (8day dates, monthly, period index) to COG paths,
-# then fetches the tile from TiTiler and streams it directly.
-# Frontend uses: /data/ssm-tiles/{z}/{x}/{y}.png?time=2010-02-02&colormap_name=rdylgn&rescale=0.0,0.5
+# then renders the tile locally with the layer metadata palette.
+# Frontend uses: /data/ssm-tiles/{tileMatrixSetId}/{z}/{x}/{y}.png?time=2010-02-02
 
 # Project root is two levels up from routers/tiles.py → backend/routers/ → project/
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
@@ -57,15 +61,22 @@ def _ssm_time_to_cog_name(time: str) -> str:
     return f"{time}_cog.tif"
 
 
+def _render_ssm_tile(cog_path: Path, x: int, y: int, z: int) -> bytes:
+    """Render one SSM COG tile using the shared metadata legend and source mask."""
+    layer = get_layer("ssm")
+    with COGReader(str(cog_path)) as reader:
+        image = reader.tile(x, y, z)
+    rgba = colorize(image.data[0], layer["legend"], source_mask=image.mask)
+    return render_png(rgba)
+
+
 @router.get("/ssm-tiles/{tileMatrixSetId}/{z}/{x}/{y}.png")
 async def ssm_tile_proxy(
     tileMatrixSetId: str,
     z: int, x: int, y: int,
     time: str = Query(...),
-    colormap_name: str = Query(default="rdylgn"),
-    rescale: str = Query(default="0,0.5"),
 ):
-    """Stream SSM tile: resolve time → COG path → render via TiTiler → return PNG."""
+    """Resolve an SSM time to a COG, render it locally, and return PNG bytes."""
     cog_name = _ssm_time_to_cog_name(time)
     cog_rel = f"data/rasters/ssm/{cog_name}"
     cog_path = PROJECT_ROOT / cog_rel
@@ -74,29 +85,11 @@ async def ssm_tile_proxy(
             status_code=status.HTTP_404_NOT_FOUND,
             detail=f"COG file not found for time '{time}' (looked for: {cog_name})",
         )
-    # Build TiTiler internal URL and fetch tile
-    ti_url = (
-        f"/cog/tiles/{tileMatrixSetId}/{z}/{x}/{y}.png"
-        f"?url={cog_rel}"
-        f"&colormap_name={colormap_name}"
-        f"&rescale={rescale}"
-    )
-    async with httpx.AsyncClient(base_url="http://127.0.0.1:8000") as client:
-        ti_resp = await client.get(ti_url,
-            timeout=httpx.Timeout(30.0))
-        if ti_resp.status_code != 200:
-            # Return transparent PNG for out-of-bounds / rendering errors
-            # so Leaflet shows blank tile instead of broken image
-            return StreamingResponse(
-                iter([TRANSPARENT_PNG]),
-                media_type="image/png",
-                status_code=200,
-            )
-        return StreamingResponse(
-            ti_resp.aiter_bytes(),
-            media_type="image/png",
-            status_code=200,
-        )
+    try:
+        png = _render_ssm_tile(cog_path, x, y, z)
+    except TileOutsideBounds:
+        png = TRANSPARENT_PNG
+    return Response(content=png, media_type="image/png")
 
 
 # ===== Legacy static tile serving (for pre-generated PNG tiles of non-SSM layers) =====
