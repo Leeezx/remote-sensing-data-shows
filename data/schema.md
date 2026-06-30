@@ -23,11 +23,12 @@ Each layer object:
 | `range`        | object | yes      | `{ "min": number, "max": number }` expected data range |
 | `timeRange`    | object | yes      | `{ "start": "YYYY-MM", "end": "YYYY-MM", "step": "month" }` |
 | `tileTemplate` | string | yes      | URL/path template with `{time}`, `{z}`, `{x}`, `{y}` placeholders |
-| `legend`       | array  | yes      | Array of `{ "color": "#hex", "label": string }` gradient stops |
+| `legend`       | array  | yes      | Array of `{ "value": number, "color": "#hex", "label": string }` gradient stops |
 
 Validation rules:
 - `id` must match `^[a-z][a-z0-9_]*$`
 - `legend` must have at least 3 entries
+- Every legend stop must have a numeric `value`
 - All `color` values must be valid hex colors (`#rrggbb`)
 - `timeRange.step` must be `"month"` (current MVP constraint)
 

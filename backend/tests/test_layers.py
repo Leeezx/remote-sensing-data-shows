@@ -25,6 +25,18 @@ def test_layer_fields():
         assert required_fields.issubset(layer.keys()), f"Layer {layer.get('id')} missing fields"
 
 
+def test_legend_items_have_numeric_values_and_string_colors():
+    """Every legend stop exposes a numeric value and color."""
+    response = client.get("/api/layers")
+    data = response.json()
+
+    for layer in data:
+        for item in layer["legend"]:
+            assert isinstance(item.get("value"), (int, float))
+            assert not isinstance(item.get("value"), bool)
+            assert isinstance(item.get("color"), str)
+
+
 def test_get_layer_times():
     """GET /api/layers/{layerId}/times returns 12 monthly timestamps."""
     response = client.get("/api/layers/ndvi/times")

@@ -112,10 +112,12 @@ def validate_layers():
             if len(layer["legend"]) < 3:
                 errors.append(f"{prefix}: legend needs at least 3 entries, found {len(layer['legend'])}")
             for j, stop in enumerate(layer["legend"]):
-                if not isinstance(stop, dict) or "color" not in stop or "label" not in stop:
-                    errors.append(f"{prefix}: legend[{j}] missing 'color' or 'label'")
+                if not isinstance(stop, dict) or not {"value", "color", "label"}.issubset(stop):
+                    errors.append(f"{prefix}: legend[{j}] missing 'value', 'color', or 'label'")
                 elif not re.match(r"^#[0-9a-fA-F]{6}$", str(stop["color"])):
                     errors.append(f"{prefix}: legend[{j}].color '{stop['color']}' must be #rrggbb")
+                elif not isinstance(stop["value"], (int, float)) or isinstance(stop["value"], bool):
+                    errors.append(f"{prefix}: legend[{j}].value must be a number")
 
         # tileTemplate placeholders
         if "tileTemplate" in layer and isinstance(layer["tileTemplate"], str):

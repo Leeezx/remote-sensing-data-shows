@@ -13,6 +13,7 @@ export interface Layer {
 }
 
 export interface LegendItem {
+  value: number
   color: string
   label: string
 }
