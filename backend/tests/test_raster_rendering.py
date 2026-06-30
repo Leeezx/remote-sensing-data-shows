@@ -1,10 +1,11 @@
 """Tests for metadata-driven raster colorization."""
 
-from io import BytesIO
+import warnings
 
 import numpy as np
 import pytest
-from PIL import Image
+from rasterio.errors import NotGeoreferencedWarning
+from rasterio.io import MemoryFile
 
 from backend.raster_rendering import colorize, render_png, valid_data_mask
 
@@ -109,10 +110,15 @@ def test_render_png_encodes_rgba_bytes():
 
     png = render_png(rgba)
 
-    with Image.open(BytesIO(png)) as image:
-        assert image.mode == "RGBA"
-        assert image.size == (2, 1)
-        np.testing.assert_array_equal(image, rgba)
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", NotGeoreferencedWarning)
+        with MemoryFile(png) as memory_file:
+            with memory_file.open() as dataset:
+                assert dataset.count == 4
+                assert (dataset.width, dataset.height) == (2, 1)
+                decoded = np.moveaxis(dataset.read(), 0, -1)
+
+    np.testing.assert_array_equal(decoded, rgba)
 
 
 def test_render_png_rejects_non_uint8_data():

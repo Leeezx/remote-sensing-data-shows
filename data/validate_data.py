@@ -112,6 +112,7 @@ def validate_layers():
         elif isinstance(layer["legend"], list):
             if len(layer["legend"]) < 3:
                 errors.append(f"{prefix}: legend needs at least 3 entries, found {len(layer['legend'])}")
+            legend_values = set()
             for j, stop in enumerate(layer["legend"]):
                 if not isinstance(stop, dict) or not {"value", "color", "label"}.issubset(stop):
                     errors.append(f"{prefix}: legend[{j}] missing 'value', 'color', or 'label'")
@@ -121,6 +122,10 @@ def validate_layers():
                     errors.append(f"{prefix}: legend[{j}].value must be a number")
                 elif not math.isfinite(stop["value"]):
                     errors.append(f"{prefix}: legend[{j}].value must be finite")
+                elif stop["value"] in legend_values:
+                    errors.append(f"{prefix}: legend values must be unique")
+                else:
+                    legend_values.add(stop["value"])
         else:
             errors.append(f"{prefix}: legend must be a list")
 

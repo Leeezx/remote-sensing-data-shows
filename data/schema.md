@@ -29,6 +29,7 @@ Validation rules:
 - `id` must match `^[a-z][a-z0-9_]*$`
 - `legend` must have at least 3 entries
 - Every legend stop must have a numeric `value`
+- Legend stop values must be unique within each layer
 - All `color` values must be valid hex colors (`#rrggbb`)
 - `timeRange.step` must be `"month"` (current MVP constraint)
 

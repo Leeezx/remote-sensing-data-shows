@@ -64,6 +64,18 @@ def test_layer_validation_rejects_non_finite_legend_value(monkeypatch):
     assert any("legend[0].value must be finite" in error for error in errors)
 
 
+def test_layer_validation_rejects_duplicate_legend_values(monkeypatch):
+    layers, error = validate_data.load_json("data/metadata/layers.json")
+    assert error is None
+    malformed = deepcopy(layers)
+    malformed[0]["legend"][1]["value"] = malformed[0]["legend"][0]["value"]
+    monkeypatch.setattr(validate_data, "load_json", lambda _path: (malformed, None))
+
+    errors = validate_data.validate_layers()
+
+    assert any("legend values must be unique" in error for error in errors)
+
+
 def test_get_layer_times():
     """GET /api/layers/{layerId}/times returns 12 monthly timestamps."""
     response = client.get("/api/layers/ndvi/times")
