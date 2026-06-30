@@ -121,9 +121,13 @@ def _query_point_SSM(layer: dict, time: str, lng: float, lat: float) -> dict:
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail="Point is outside the raster extent",
                 )
-            val = src.read(1, window=((row, row + 1), (col, col + 1)))
+            window = ((row, row + 1), (col, col + 1))
+            val = src.read(1, window=window)
+            source_mask = src.read_masks(1, window=window)
             value = float(val[0, 0])
-            if not valid_data_mask(value, nodata=src.nodata).item():
+            if not valid_data_mask(
+                val, source_mask=source_mask, nodata=src.nodata
+            )[0, 0]:
                 raise HTTPException(
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail="No valid data at this point",
@@ -167,8 +171,10 @@ def _query_area_SSM(layer: dict, time: str, west: float, south: float, east: flo
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail="Area is outside the raster extent",
                 )
-            data = src.read(1, window=((row_min, row_max), (col_min, col_max)))
-            mask = valid_data_mask(data, nodata=src.nodata)
+            window = ((row_min, row_max), (col_min, col_max))
+            data = src.read(1, window=window)
+            source_mask = src.read_masks(1, window=window)
+            mask = valid_data_mask(data, source_mask=source_mask, nodata=src.nodata)
             valid = data[mask]
             if valid.size == 0:
                 raise HTTPException(

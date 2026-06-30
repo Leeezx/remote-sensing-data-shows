@@ -15,11 +15,15 @@ client = TestClient(app)
 class FakeRaster:
     """Minimal rasterio dataset context for SSM helper tests."""
 
-    def __init__(self, data, nodata=None):
+    def __init__(self, data, nodata=None, source_mask=None):
         self.data = np.asarray(data, dtype=float)
         self.nodata = nodata
         self.crs = "EPSG:4326"
         self.height, self.width = self.data.shape
+        if source_mask is None:
+            source_mask = np.full(self.data.shape, 255, dtype=np.uint8)
+        self.source_mask = np.asarray(source_mask, dtype=np.uint8)
+        self.data_window = None
 
     def __enter__(self):
         return self
@@ -33,13 +37,20 @@ class FakeRaster:
         return self.height - 1, self.width - 1
 
     def read(self, band, window):
-        return self.data
+        self.data_window = window
+        rows, cols = window
+        return self.data[slice(*rows), slice(*cols)]
+
+    def read_masks(self, band, window):
+        assert window == self.data_window
+        rows, cols = window
+        return self.source_mask[slice(*rows), slice(*cols)]
 
 
-def patch_ssm_raster(monkeypatch, tmp_path, data, nodata=None):
+def patch_ssm_raster(monkeypatch, tmp_path, data, nodata=None, source_mask=None):
     cog_path = tmp_path / "test_cog.tif"
     cog_path.touch()
-    raster = FakeRaster(data, nodata=nodata)
+    raster = FakeRaster(data, nodata=nodata, source_mask=source_mask)
     monkeypatch.setattr(query, "_ssm_time_to_cog_path", lambda time: cog_path)
     monkeypatch.setattr(query.rasterio, "open", lambda path: raster)
 
@@ -59,6 +70,30 @@ def test_ssm_point_query_rejects_invalid_values(monkeypatch, tmp_path, value):
 
 def test_ssm_point_query_rejects_declared_nodata(monkeypatch, tmp_path):
     patch_ssm_raster(monkeypatch, tmp_path, [[-32768.0]], nodata=-32768.0)
+
+    with pytest.raises(HTTPException) as exc_info:
+        query._query_point_SSM(
+            {"id": "ssm", "unit": "m3/m3"}, "2025_01", 0.0, 0.0
+        )
+
+    assert exc_info.value.status_code == 404
+    assert exc_info.value.detail == "No valid data at this point"
+
+
+def test_ssm_point_query_rejects_finite_masked_pixel(monkeypatch, tmp_path):
+    patch_ssm_raster(monkeypatch, tmp_path, [[0.2]], source_mask=[[0]])
+
+    with pytest.raises(HTTPException) as exc_info:
+        query._query_point_SSM(
+            {"id": "ssm", "unit": "m3/m3"}, "2025_01", 0.0, 0.0
+        )
+
+    assert exc_info.value.status_code == 404
+    assert exc_info.value.detail == "No valid data at this point"
+
+
+def test_ssm_point_query_rejects_nan_declared_nodata(monkeypatch, tmp_path):
+    patch_ssm_raster(monkeypatch, tmp_path, [[np.nan]], nodata=np.nan)
 
     with pytest.raises(HTTPException) as exc_info:
         query._query_point_SSM(
@@ -94,6 +129,35 @@ def test_ssm_area_query_rejects_all_invalid_values(monkeypatch, tmp_path):
 def test_ssm_area_query_excludes_declared_nodata(monkeypatch, tmp_path):
     patch_ssm_raster(
         monkeypatch, tmp_path, [[0.2, -32768.0], [0.4, -32768.0]], nodata=-32768.0
+    )
+
+    result = query._query_area_SSM(
+        {"id": "ssm", "unit": "m3/m3"}, "2025_01", 0.0, 0.0, 1.0, 1.0
+    )
+
+    assert result == pytest.approx({"mean": 0.3, "min": 0.2, "max": 0.4, "count": 2})
+
+
+def test_ssm_area_query_excludes_finite_masked_pixel(monkeypatch, tmp_path):
+    patch_ssm_raster(
+        monkeypatch,
+        tmp_path,
+        [[0.2, 0.3], [0.4, 0.5]],
+        source_mask=[[255, 0], [255, 255]],
+    )
+
+    result = query._query_area_SSM(
+        {"id": "ssm", "unit": "m3/m3"}, "2025_01", 0.0, 0.0, 1.0, 1.0
+    )
+
+    assert result == pytest.approx(
+        {"mean": 11 / 30, "min": 0.2, "max": 0.5, "count": 3}
+    )
+
+
+def test_ssm_area_query_excludes_nan_declared_nodata(monkeypatch, tmp_path):
+    patch_ssm_raster(
+        monkeypatch, tmp_path, [[0.2, np.nan], [0.4, np.nan]], nodata=np.nan
     )
 
     result = query._query_area_SSM(
