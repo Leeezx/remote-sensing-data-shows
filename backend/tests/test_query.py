@@ -1,10 +1,106 @@
 """Tests for spatial query endpoints (point and area)."""
 
+import numpy as np
+import pytest
+from fastapi import HTTPException
+
 from fastapi.testclient import TestClient
 
 from backend.main import app
+from backend.routers import query
 
 client = TestClient(app)
+
+
+class FakeRaster:
+    """Minimal rasterio dataset context for SSM helper tests."""
+
+    def __init__(self, data, nodata=None):
+        self.data = np.asarray(data, dtype=float)
+        self.nodata = nodata
+        self.crs = "EPSG:4326"
+        self.height, self.width = self.data.shape
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        return False
+
+    def index(self, x, y):
+        if x == 0 and y == 1:
+            return 0, 0
+        return self.height - 1, self.width - 1
+
+    def read(self, band, window):
+        return self.data
+
+
+def patch_ssm_raster(monkeypatch, tmp_path, data, nodata=None):
+    cog_path = tmp_path / "test_cog.tif"
+    cog_path.touch()
+    raster = FakeRaster(data, nodata=nodata)
+    monkeypatch.setattr(query, "_ssm_time_to_cog_path", lambda time: cog_path)
+    monkeypatch.setattr(query.rasterio, "open", lambda path: raster)
+
+
+@pytest.mark.parametrize("value", [np.nan, -999.0])
+def test_ssm_point_query_rejects_invalid_values(monkeypatch, tmp_path, value):
+    patch_ssm_raster(monkeypatch, tmp_path, [[value]])
+
+    with pytest.raises(HTTPException) as exc_info:
+        query._query_point_SSM(
+            {"id": "ssm", "unit": "m3/m3"}, "2025_01", 0.0, 0.0
+        )
+
+    assert exc_info.value.status_code == 404
+    assert exc_info.value.detail == "No valid data at this point"
+
+
+def test_ssm_point_query_rejects_declared_nodata(monkeypatch, tmp_path):
+    patch_ssm_raster(monkeypatch, tmp_path, [[-32768.0]], nodata=-32768.0)
+
+    with pytest.raises(HTTPException) as exc_info:
+        query._query_point_SSM(
+            {"id": "ssm", "unit": "m3/m3"}, "2025_01", 0.0, 0.0
+        )
+
+    assert exc_info.value.status_code == 404
+    assert exc_info.value.detail == "No valid data at this point"
+
+
+def test_ssm_area_query_excludes_nan_and_sentinel(monkeypatch, tmp_path):
+    patch_ssm_raster(monkeypatch, tmp_path, [[0.2, -999.0], [np.nan, 0.4]])
+
+    result = query._query_area_SSM(
+        {"id": "ssm", "unit": "m3/m3"}, "2025_01", 0.0, 0.0, 1.0, 1.0
+    )
+
+    assert result == pytest.approx({"mean": 0.3, "min": 0.2, "max": 0.4, "count": 2})
+
+
+def test_ssm_area_query_rejects_all_invalid_values(monkeypatch, tmp_path):
+    patch_ssm_raster(monkeypatch, tmp_path, [[np.nan, -999.0]])
+
+    with pytest.raises(HTTPException) as exc_info:
+        query._query_area_SSM(
+            {"id": "ssm", "unit": "m3/m3"}, "2025_01", 0.0, 0.0, 1.0, 1.0
+        )
+
+    assert exc_info.value.status_code == 404
+    assert exc_info.value.detail == "No valid data in the specified area"
+
+
+def test_ssm_area_query_excludes_declared_nodata(monkeypatch, tmp_path):
+    patch_ssm_raster(
+        monkeypatch, tmp_path, [[0.2, -32768.0], [0.4, -32768.0]], nodata=-32768.0
+    )
+
+    result = query._query_area_SSM(
+        {"id": "ssm", "unit": "m3/m3"}, "2025_01", 0.0, 0.0, 1.0, 1.0
+    )
+
+    assert result == pytest.approx({"mean": 0.3, "min": 0.2, "max": 0.4, "count": 2})
 
 
 def test_point_query_ndvi():

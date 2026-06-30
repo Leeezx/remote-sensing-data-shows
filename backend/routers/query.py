@@ -1,6 +1,5 @@
 """Spatial query router — point and area queries."""
 
-import math
 from pathlib import Path
 
 import rasterio
@@ -10,6 +9,7 @@ from pydantic import BaseModel
 from pyproj import Transformer
 
 from backend.data_loader import get_area_stats, get_layer, get_regions
+from backend.raster_rendering import valid_data_mask
 
 router = APIRouter(tags=["query"])
 
@@ -102,8 +102,6 @@ def _get_bbox_from_polygon(coordinates: list) -> tuple[float, float, float, floa
 
 def _query_point_SSM(layer: dict, time: str, lng: float, lat: float) -> dict:
     """Real-time point query for SSM layer using rasterio."""
-    import numpy as np
-
     cog_path = _ssm_time_to_cog_path(time)
 
     if not cog_path.is_file():
@@ -125,7 +123,7 @@ def _query_point_SSM(layer: dict, time: str, lng: float, lat: float) -> dict:
                 )
             val = src.read(1, window=((row, row + 1), (col, col + 1)))
             value = float(val[0, 0])
-            if math.isnan(value):
+            if not valid_data_mask(value, nodata=src.nodata).item():
                 raise HTTPException(
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail="No valid data at this point",
@@ -148,8 +146,6 @@ def _query_point_SSM(layer: dict, time: str, lng: float, lat: float) -> dict:
 
 def _query_area_SSM(layer: dict, time: str, west: float, south: float, east: float, north: float) -> dict:
     """Real-time area query for SSM layer using rasterio."""
-    import numpy as np
-
     cog_path = _ssm_time_to_cog_path(time)
 
     if not cog_path.is_file():
@@ -172,9 +168,8 @@ def _query_area_SSM(layer: dict, time: str, west: float, south: float, east: flo
                     detail="Area is outside the raster extent",
                 )
             data = src.read(1, window=((row_min, row_max), (col_min, col_max)))
-            valid = data[~np.isnan(data)]
-            if src.nodata is not None:
-                valid = valid[valid != src.nodata]
+            mask = valid_data_mask(data, nodata=src.nodata)
+            valid = data[mask]
             if valid.size == 0:
                 raise HTTPException(
                     status_code=status.HTTP_404_NOT_FOUND,
