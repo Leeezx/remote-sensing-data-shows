@@ -11,6 +11,7 @@ Exits with code 0 if all checks pass, code 1 if any fail.
 """
 
 import json
+import math
 import os
 import re
 import sys
@@ -118,6 +119,10 @@ def validate_layers():
                     errors.append(f"{prefix}: legend[{j}].color '{stop['color']}' must be #rrggbb")
                 elif not isinstance(stop["value"], (int, float)) or isinstance(stop["value"], bool):
                     errors.append(f"{prefix}: legend[{j}].value must be a number")
+                elif not math.isfinite(stop["value"]):
+                    errors.append(f"{prefix}: legend[{j}].value must be finite")
+        else:
+            errors.append(f"{prefix}: legend must be a list")
 
         # tileTemplate placeholders
         if "tileTemplate" in layer and isinstance(layer["tileTemplate"], str):

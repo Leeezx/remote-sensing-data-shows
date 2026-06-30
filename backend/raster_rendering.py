@@ -31,6 +31,10 @@ def colorize(values, legend, source_mask=None, nodata=None):
     values = np.asarray(values)
     if values.ndim != 2:
         raise ValueError("values must be a 2D raster band")
+    try:
+        legend = list(legend)
+    except TypeError as exc:
+        raise ValueError("legend must be an iterable of stops") from exc
     if not legend:
         raise ValueError("legend must contain at least one stop")
 
@@ -45,6 +49,8 @@ def colorize(values, legend, source_mask=None, nodata=None):
         stops.append((float(value), tuple(bytes.fromhex(color[1:]))))
 
     stops.sort(key=lambda stop: stop[0])
+    if any(current[0] == previous[0] for previous, current in zip(stops, stops[1:])):
+        raise ValueError("legend must not contain duplicate values")
     stop_values = np.array([stop[0] for stop in stops])
     stop_colors = np.array([stop[1] for stop in stops])
     valid = valid_data_mask(values, source_mask=source_mask, nodata=nodata)
@@ -68,5 +74,6 @@ def render_png(rgba):
     rgba = np.asarray(rgba)
     if rgba.ndim != 3 or rgba.shape[2] != 4:
         raise ValueError("rgba must have dimensions HxWx4")
+    if rgba.dtype != np.uint8:
+        raise ValueError("rgba must use uint8 data")
     return render(np.moveaxis(rgba, -1, 0), img_format="PNG")
-

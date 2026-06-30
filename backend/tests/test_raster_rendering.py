@@ -1,7 +1,10 @@
 """Tests for metadata-driven raster colorization."""
 
+from io import BytesIO
+
 import numpy as np
 import pytest
+from PIL import Image
 
 from backend.raster_rendering import colorize, render_png, valid_data_mask
 
@@ -79,10 +82,41 @@ def test_colorize_rejects_malformed_dimensions_and_colors(values, legend, messag
         colorize(values, legend)
 
 
+def test_colorize_rejects_empty_legend_iterator():
+    with pytest.raises(ValueError, match="at least one stop"):
+        colorize(np.zeros((1, 1)), iter(()))
+
+
+def test_colorize_rejects_non_finite_legend_values():
+    legend = [{"value": np.inf, "color": "#000000"}]
+
+    with pytest.raises(ValueError, match="finite numbers"):
+        colorize(np.zeros((1, 1)), legend)
+
+
+def test_colorize_rejects_duplicate_legend_values():
+    legend = [
+        {"value": 0, "color": "#000000"},
+        {"value": 0.0, "color": "#ffffff"},
+    ]
+
+    with pytest.raises(ValueError, match="duplicate"):
+        colorize(np.zeros((1, 1)), legend)
+
+
 def test_render_png_encodes_rgba_bytes():
     rgba = np.array([[[1, 2, 3, 255], [4, 5, 6, 0]]], dtype=np.uint8)
 
     png = render_png(rgba)
 
-    assert png.startswith(b"\x89PNG\r\n\x1a\n")
+    with Image.open(BytesIO(png)) as image:
+        assert image.mode == "RGBA"
+        assert image.size == (2, 1)
+        np.testing.assert_array_equal(image, rgba)
 
+
+def test_render_png_rejects_non_uint8_data():
+    rgba = np.zeros((1, 1, 4), dtype=np.uint16)
+
+    with pytest.raises(ValueError, match="uint8"):
+        render_png(rgba)
