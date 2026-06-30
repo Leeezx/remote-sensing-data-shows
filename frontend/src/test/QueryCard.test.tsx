@@ -52,7 +52,7 @@ describe('QueryCard', () => {
       },
     })
 
-    expect(screen.getByRole('heading', { name: '点位查询结果' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: '点查询结果' })).toBeInTheDocument()
     expect(screen.getByText('116.3913')).toBeInTheDocument()
     expect(screen.getByText('39.9075')).toBeInTheDocument()
     expect(screen.getByText('植被指数')).toBeInTheDocument()
@@ -82,7 +82,7 @@ describe('QueryCard', () => {
       result: { mean: 0.45678, max: 0.98765, min: 0.12345, count: 321 },
     })
 
-    expect(screen.getByRole('heading', { name: '区域统计结果' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: '框选区域统计' })).toBeInTheDocument()
     expect(screen.getByText('0.4568')).toBeInTheDocument()
     expect(screen.getByText('0.9877')).toBeInTheDocument()
     expect(screen.getByText('0.1235')).toBeInTheDocument()

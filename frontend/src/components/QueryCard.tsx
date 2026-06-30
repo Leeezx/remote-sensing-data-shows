@@ -33,7 +33,7 @@ export default function QueryCard({ state, activeLayer, onClose }: QueryCardProp
 
         {state.status === 'point' && (
           <>
-            <h3>点位查询结果</h3>
+            <h3>点查询结果</h3>
             <dl>
               <dt>经度</dt>
               <dd>{state.result.lng}</dd>
@@ -51,7 +51,7 @@ export default function QueryCard({ state, activeLayer, onClose }: QueryCardProp
 
         {state.status === 'area' && (
           <>
-            <h3>区域统计结果</h3>
+            <h3>框选区域统计</h3>
             <dl>
               <dt>平均值</dt>
               <dd>{state.result.mean.toFixed(4)}</dd>
