@@ -395,6 +395,78 @@
   white-space: nowrap;
 }
 
+/* ===== Floating query card ===== */
+
+.query-card {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1100;
+  width: min(280px, calc(100% - 24px));
+  max-width: calc(100% - 24px);
+  box-sizing: border-box;
+  padding: 12px 36px 12px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  color: #222;
+  font-size: 12px;
+}
+
+.query-card h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.query-card-close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #555;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.query-card-close:hover,
+.query-card-close:focus-visible {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.query-card-message {
+  margin: 2px 0;
+}
+
+.query-card-error {
+  color: #d32f2f;
+}
+
+.query-card dl {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 5px 12px;
+  margin: 0;
+}
+
+.query-card dt {
+  color: #666;
+}
+
+.query-card dd {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+  text-align: right;
+  font-weight: 600;
+}
+
 /* ===== Right panel ===== */
 
 .right-panel {
@@ -567,6 +639,8 @@
 
 .map-area-wrapper {
   flex: 1;
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 

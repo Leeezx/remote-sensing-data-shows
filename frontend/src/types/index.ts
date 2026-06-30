@@ -61,6 +61,13 @@ export interface AreaQueryResult {
   count: number
 }
 
+export type MapQueryState =
+  | { status: 'idle' }
+  | { status: 'loading'; kind: 'point' | 'area' }
+  | { status: 'error'; kind: 'point' | 'area'; message: string }
+  | { status: 'point'; result: PointQueryResult }
+  | { status: 'area'; result: AreaQueryResult }
+
 // ===== Auth =====
 
 export interface User {
