@@ -64,19 +64,32 @@ def _ssm_time_to_cog_name(time: str) -> str:
 def _render_ssm_tile(cog_path: Path, x: int, y: int, z: int) -> bytes:
     """Render one SSM COG tile using the shared metadata legend and source mask."""
     layer = get_layer("ssm")
+    if layer is None:
+        raise RuntimeError("SSM layer metadata is missing")
+    legend = layer.get("legend")
+    if not legend:
+        raise RuntimeError("SSM layer legend is missing or empty")
     with COGReader(str(cog_path)) as reader:
-        image = reader.tile(x, y, z)
-    rgba = colorize(image.data[0], layer["legend"], source_mask=image.mask)
+        image = reader.tile(x, y, z, indexes=1)
+    rgba = colorize(image.data[0], legend, source_mask=image.mask)
     return render_png(rgba)
 
 
 @router.get("/ssm-tiles/{tileMatrixSetId}/{z}/{x}/{y}.png")
-async def ssm_tile_proxy(
+def ssm_tile_proxy(
     tileMatrixSetId: str,
     z: int, x: int, y: int,
     time: str = Query(...),
 ):
     """Resolve an SSM time to a COG, render it locally, and return PNG bytes."""
+    if tileMatrixSetId != "WebMercatorQuad":
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=(
+                f"Unsupported tile matrix set '{tileMatrixSetId}'; "
+                "only WebMercatorQuad is supported"
+            ),
+        )
     cog_name = _ssm_time_to_cog_name(time)
     cog_rel = f"data/rasters/ssm/{cog_name}"
     cog_path = PROJECT_ROOT / cog_rel

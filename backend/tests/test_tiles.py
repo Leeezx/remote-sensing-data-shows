@@ -1,9 +1,11 @@
 """Tests for the tile serving endpoint."""
 
+import inspect
 from types import SimpleNamespace
 import warnings
 
 import numpy as np
+import pytest
 
 from fastapi.testclient import TestClient
 from rasterio.errors import NotGeoreferencedWarning
@@ -14,6 +16,10 @@ from backend.main import app
 from backend.routers import tiles
 
 client = TestClient(app)
+
+
+def test_ssm_tile_route_is_synchronous():
+    assert not inspect.iscoroutinefunction(tiles.ssm_tile_proxy)
 
 
 def test_tile_not_found():
@@ -44,8 +50,8 @@ def test_render_ssm_tile_reads_first_band_and_mask_from_cog(monkeypatch, tmp_pat
         def __exit__(self, *_args):
             return None
 
-        def tile(self, x, y, z):
-            calls.append(("tile", x, y, z))
+        def tile(self, x, y, z, indexes=None):
+            calls.append(("tile", x, y, z, indexes))
             return SimpleNamespace(data=values, mask=mask)
 
     monkeypatch.setattr(tiles, "COGReader", FakeCOGReader)
@@ -53,7 +59,7 @@ def test_render_ssm_tile_reads_first_band_and_mask_from_cog(monkeypatch, tmp_pat
     cog_path = tmp_path / "ssm.tif"
     png = tiles._render_ssm_tile(cog_path, x=3, y=4, z=5)
 
-    assert calls == [("open", str(cog_path)), ("tile", 3, 4, 5)]
+    assert calls == [("open", str(cog_path)), ("tile", 3, 4, 5, 1)]
     assert png.startswith(b"\x89PNG\r\n\x1a\n")
     with warnings.catch_warnings():
         warnings.simplefilter("ignore", NotGeoreferencedWarning)
@@ -64,6 +70,21 @@ def test_render_ssm_tile_reads_first_band_and_mask_from_cog(monkeypatch, tmp_pat
         decoded,
         np.array([[[213, 62, 79, 255], [0, 0, 0, 0]]], dtype=np.uint8),
     )
+
+
+def test_render_ssm_tile_reports_missing_layer(monkeypatch, tmp_path):
+    monkeypatch.setattr(tiles, "get_layer", lambda _layer_id: None)
+
+    with pytest.raises(RuntimeError, match="SSM layer metadata is missing"):
+        tiles._render_ssm_tile(tmp_path / "ssm.tif", x=3, y=4, z=5)
+
+
+@pytest.mark.parametrize("layer", [{}, {"legend": []}])
+def test_render_ssm_tile_reports_missing_or_empty_legend(monkeypatch, tmp_path, layer):
+    monkeypatch.setattr(tiles, "get_layer", lambda _layer_id: layer)
+
+    with pytest.raises(RuntimeError, match="SSM layer legend is missing or empty"):
+        tiles._render_ssm_tile(tmp_path / "ssm.tif", x=3, y=4, z=5)
 
 
 def test_ssm_tile_route_renders_existing_cog_without_titiler_parameters(monkeypatch, tmp_path):
@@ -85,6 +106,30 @@ def test_ssm_tile_route_renders_existing_cog_without_titiler_parameters(monkeypa
     assert response.headers["content-type"] == "image/png"
     assert response.content == rendered
     assert calls == [(cog_path, 3, 4, 5)]
+
+
+@pytest.mark.parametrize("tile_matrix_set", ["WorldCRS84Quad", "unknown"])
+def test_ssm_tile_route_rejects_unsupported_tile_matrix_set_without_rendering(
+    monkeypatch, tmp_path, tile_matrix_set
+):
+    cog_path = tmp_path / "data" / "rasters" / "ssm" / "2010_01_cog.tif"
+    cog_path.parent.mkdir(parents=True)
+    cog_path.touch()
+    calls = []
+    monkeypatch.setattr(tiles, "PROJECT_ROOT", tmp_path)
+    monkeypatch.setattr(
+        tiles,
+        "_render_ssm_tile",
+        lambda *_args: calls.append(_args),
+    )
+
+    response = client.get(
+        f"/data/ssm-tiles/{tile_matrix_set}/5/3/4.png?time=2010_01"
+    )
+
+    assert 400 <= response.status_code < 500
+    assert "WebMercatorQuad" in response.text
+    assert calls == []
 
 
 def test_ssm_tile_route_returns_transparent_png_outside_bounds(monkeypatch, tmp_path):
