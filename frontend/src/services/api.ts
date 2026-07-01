@@ -55,9 +55,10 @@ export async function getLayerLegend(
   layerId: string,
   time: string,
 ): Promise<LayerLegendResponse> {
-  const { data } = await client.get(`/layers/${layerId}/legend`, {
-    params: { time },
-  })
+  const { data } = await client.get<LayerLegendResponse>(
+    `/layers/${layerId}/legend`,
+    { params: { time } },
+  )
   return data
 }
 

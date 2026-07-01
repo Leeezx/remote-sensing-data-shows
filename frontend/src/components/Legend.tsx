@@ -17,9 +17,13 @@ export default function Legend({
     <div className="legend">
       <h4>{layer.name}</h4>
       {status === 'loading' ? (
-        <div className="legend-status">正在加载图例...</div>
+        <div className="legend-status" role="status" aria-live="polite">
+          正在加载图例...
+        </div>
       ) : status === 'error' ? (
-        <div className="legend-status">图例暂不可用</div>
+        <div className="legend-status" role="alert">
+          图例暂不可用
+        </div>
       ) : (
         <div className="legend-items">
           {items.map((item) => (

@@ -44,7 +44,8 @@ describe('Legend', () => {
     render(<Legend layer={layer} status="loading" />)
 
     expect(screen.getByRole('heading', { name: layer.name })).toBeInTheDocument()
-    expect(screen.getByText('正在加载图例...')).toBeInTheDocument()
+    expect(screen.getByRole('status')).toHaveTextContent('正在加载图例...')
+    expect(screen.getByRole('status')).toHaveAttribute('aria-live', 'polite')
     expect(screen.queryByText('静态图例')).not.toBeInTheDocument()
   })
 
@@ -52,7 +53,7 @@ describe('Legend', () => {
     render(<Legend layer={layer} status="error" />)
 
     expect(screen.getByRole('heading', { name: layer.name })).toBeInTheDocument()
-    expect(screen.getByText('图例暂不可用')).toBeInTheDocument()
+    expect(screen.getByRole('alert')).toHaveTextContent('图例暂不可用')
     expect(screen.queryByText('静态图例')).not.toBeInTheDocument()
   })
 

@@ -24,13 +24,14 @@ vi.mock('axios', async (importOriginal) => {
 })
 
 import { getExportCsvUrl, getLayerLegend } from '../services/api'
+import type { LayerLegendResponse } from '../types'
+
+beforeEach(() => {
+  localStorage.clear()
+  clientGet.mockReset()
+})
 
 describe('getExportCsvUrl', () => {
-  beforeEach(() => {
-    localStorage.clear()
-    clientGet.mockReset()
-  })
-
   it('includes the layer and time range without a region parameter', () => {
     const url = getExportCsvUrl('ssm', '2025-01', '2025-12')
 
@@ -49,7 +50,7 @@ describe('getLayerLegend', () => {
         { value: 0.15, color: '#f7fbff', label: '≤ 0.15' },
         { value: 0.3, color: '#08306b', label: '> 0.15' },
       ],
-    }
+    } satisfies LayerLegendResponse
     clientGet.mockResolvedValueOnce({ data: response })
 
     await expect(getLayerLegend('ssm', '2025-06')).resolves.toEqual(response)
