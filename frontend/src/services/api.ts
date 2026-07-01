@@ -5,6 +5,7 @@ import type {
   AreaQueryRequest,
   AreaQueryResult,
   LoginResponse,
+  LayerLegendResponse,
 } from '../types'
 
 const client = axios.create({
@@ -46,6 +47,16 @@ export async function getLayerTimes(
 ): Promise<string[]> {
   const { data } = await client.get(`/layers/${layerId}/times`, {
     params: { resolution },
+  })
+  return data
+}
+
+export async function getLayerLegend(
+  layerId: string,
+  time: string,
+): Promise<LayerLegendResponse> {
+  const { data } = await client.get(`/layers/${layerId}/legend`, {
+    params: { time },
   })
   return data
 }

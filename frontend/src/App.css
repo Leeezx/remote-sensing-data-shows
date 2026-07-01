@@ -384,6 +384,11 @@
   white-space: nowrap;
 }
 
+.legend-status {
+  color: #666;
+  white-space: nowrap;
+}
+
 /* ===== Floating query card ===== */
 
 .query-card {

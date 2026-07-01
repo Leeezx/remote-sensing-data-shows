@@ -18,6 +18,15 @@ export interface LegendItem {
   label: string
 }
 
+export interface LayerLegendResponse {
+  layerId: string
+  time: string
+  unit: string
+  legend: LegendItem[]
+}
+
+export type LegendStatus = 'ready' | 'loading' | 'error'
+
 // ===== Query Results =====
 
 export interface PointQueryResult {
