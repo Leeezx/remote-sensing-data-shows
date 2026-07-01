@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
   MapContainer,
   TileLayer,
@@ -6,11 +6,11 @@ import {
   useMapEvents,
   Rectangle,
   Marker,
-  Popup,
 } from 'react-leaflet'
 import L from 'leaflet'
-import type { Layer, PointQueryResult } from '../types'
-import { queryPoint } from '../services/api'
+import type { Layer } from '../types'
+import { useMapQuery } from '../hooks/useMapQuery'
+import QueryCard from './QueryCard'
 
 // ===== Internal hook: tile overlay =====
 
@@ -37,11 +37,9 @@ function TileOverlay({
 
     let url: string
     if (layer.id === 'ssm') {
-      // SSM: proxy endpoint resolves time→COG filename, then TiTiler renders
+      // SSM: backend metadata renderer resolves the time and rendering parameters
       url = `/data/ssm-tiles/WebMercatorQuad/{z}/{x}/{y}.png?` + new URLSearchParams({
         time: time,
-        colormap_name: 'rdylgn',
-        rescale: `${layer.range.min},${layer.range.max}`,
       }).toString()
     } else {
       url = layer.tileTemplate
@@ -51,7 +49,6 @@ function TileOverlay({
         .replace('{y}', '{y}')
     }
 
-    // _r suffix to avoid cache on missing tiles
     const tileLayer = L.tileLayer(url, {
       opacity,
       minZoom: 4,
@@ -85,40 +82,63 @@ function TileOverlay({
 // ===== Internal hook: map events (click, shift+drag) =====
 
 function MapEvents({
-  activeLayerId,
-  currentTime,
-  onPointResult,
+  enabled,
+  onPointCoords,
   onAreaCoords,
 }: {
-  activeLayerId: string | null
-  currentTime: string
-  onPointResult: (r: PointQueryResult) => void
-  onAreaCoords: (coords: [number, number][]) => void
+  enabled: boolean
+  onPointCoords: (lat: number, lng: number) => void
+  onAreaCoords: (coords: [[number, number], [number, number]]) => void
 }) {
+  const map = useMap()
   const drawingRef = useRef(false)
   const rectRef = useRef<[number, number][]>([])
+  const enabledRef = useRef(enabled)
+  const onAreaCoordsRef = useRef(onAreaCoords)
+  const globalMouseupRef = useRef<(() => void) | null>(null)
+
+  enabledRef.current = enabled
+  onAreaCoordsRef.current = onAreaCoords
+
+  const removeGlobalMouseupListener = useCallback(() => {
+    if (!globalMouseupRef.current) return
+    document.removeEventListener('mouseup', globalMouseupRef.current)
+    globalMouseupRef.current = null
+  }, [])
+
+  const finishDrawing = useCallback(() => {
+    if (!drawingRef.current) return
+    drawingRef.current = false
+    removeGlobalMouseupListener()
+    map.dragging.enable()
+    if (enabledRef.current && rectRef.current.length === 2) {
+      onAreaCoordsRef.current(
+        rectRef.current as [[number, number], [number, number]],
+      )
+    }
+  }, [map, removeGlobalMouseupListener])
+
+  useEffect(() => () => {
+    removeGlobalMouseupListener()
+    if (drawingRef.current) {
+      drawingRef.current = false
+      map.dragging.enable()
+    }
+  }, [map, removeGlobalMouseupListener])
 
   useMapEvents({
-    click: async (e) => {
-      if (!activeLayerId) return
-      const { lat, lng } = e.latlng
-      try {
-        const result = await queryPoint(
-          activeLayerId,
-          currentTime,
-          Number(lng.toFixed(4)),
-          Number(lat.toFixed(4)),
-        )
-        onPointResult(result)
-      } catch {
-        // Point outside any region — silently ignore
-      }
+    click: (e) => {
+      if (!enabled) return
+      onPointCoords(e.latlng.lat, e.latlng.lng)
     },
 
     mousedown: (e) => {
-      if (!e.originalEvent.shiftKey || !activeLayerId) return
+      if (!enabled || !e.originalEvent.shiftKey) return
       drawingRef.current = true
       rectRef.current = [[e.latlng.lat, e.latlng.lng]]
+      map.dragging.disable()
+      globalMouseupRef.current = finishDrawing
+      document.addEventListener('mouseup', finishDrawing)
     },
 
     mousemove: (e) => {
@@ -126,13 +146,7 @@ function MapEvents({
       rectRef.current = [rectRef.current[0], [e.latlng.lat, e.latlng.lng]]
     },
 
-    mouseup: () => {
-      if (!drawingRef.current) return
-      drawingRef.current = false
-      if (rectRef.current.length === 2) {
-        onAreaCoords(rectRef.current)
-      }
-    },
+    mouseup: finishDrawing,
   })
 
   return null
@@ -154,8 +168,6 @@ interface MapViewProps {
   activeLayerId: string | null
   opacity: number
   currentTime: string
-  onPointResult: (r: PointQueryResult) => void
-  onAreaCoords: (coords: [number, number][]) => void
 }
 
 export default function MapView({
@@ -163,20 +175,44 @@ export default function MapView({
   activeLayerId,
   opacity,
   currentTime,
-  onPointResult,
-  onAreaCoords,
 }: MapViewProps) {
+  const [marker, setMarker] = useState<L.LatLng | null>(null)
   const [rect, setRect] = useState<L.LatLngBoundsExpression | null>(null)
-  const activeLayer = layers.find((l) => l.id === activeLayerId) ?? null
+  const { state, queryPointAt, queryAreaBounds, reset } = useMapQuery(
+    activeLayerId,
+    currentTime,
+  )
+  const activeLayer = useMemo(
+    () => layers.find((l) => l.id === activeLayerId) ?? null,
+    [layers, activeLayerId],
+  )
 
-  const handleAreaCoords = useCallback((coords: [number, number][]) => {
+  useEffect(() => {
+    setMarker(null)
+    setRect(null)
+  }, [activeLayerId, currentTime])
+
+  const handlePointCoords = useCallback((lat: number, lng: number) => {
+    setMarker(L.latLng(lat, lng))
+    setRect(null)
+    void queryPointAt(lat, lng)
+  }, [queryPointAt])
+
+  const handleAreaCoords = useCallback((coords: [[number, number], [number, number]]) => {
     const [p1, p2] = coords
     setRect([
       [p1[0], p1[1]],
       [p2[0], p2[1]],
     ])
-    onAreaCoords(coords)
-  }, [onAreaCoords])
+    setMarker(null)
+    void queryAreaBounds(coords)
+  }, [queryAreaBounds])
+
+  const handleCloseQuery = useCallback(() => {
+    reset()
+    setMarker(null)
+    setRect(null)
+  }, [reset])
 
   return (
     <div className="map-container">
@@ -201,9 +237,8 @@ export default function MapView({
 
         {/* Point click + rectangle drawing */}
         <MapEvents
-          activeLayerId={activeLayerId}
-          currentTime={currentTime}
-          onPointResult={onPointResult}
+          enabled={Boolean(activeLayerId && currentTime)}
+          onPointCoords={handlePointCoords}
           onAreaCoords={handleAreaCoords}
         />
 
@@ -216,28 +251,9 @@ export default function MapView({
         )}
 
         {/* Point marker */}
-        <PointMarker />
+        {marker && <Marker position={marker} />}
       </MapContainer>
+      <QueryCard state={state} activeLayer={activeLayer} onClose={handleCloseQuery} />
     </div>
   )
-}
-
-// ===== Point marker sub-component =====
-
-function PointMarker() {
-  const [marker, setMarker] = useState<L.LatLng | null>(null)
-
-  useMapEvents({
-    click: (e) => {
-      setMarker(e.latlng)
-    },
-  })
-
-  return marker ? (
-    <Marker position={marker}>
-      <Popup>
-        {marker.lat.toFixed(4)}, {marker.lng.toFixed(4)}
-      </Popup>
-    </Marker>
-  ) : null
 }

@@ -1,6 +1,5 @@
 """Dynamic tile serving via TiTiler — Cloud-Optimized GeoTIFF (COG) rendering."""
 
-from datetime import date
 from pathlib import Path
 
 from fastapi import APIRouter, HTTPException, Query, status
@@ -11,6 +10,7 @@ from titiler.core.factory import TilerFactory
 
 from backend.data_loader import get_layer
 from backend.raster_rendering import colorize, render_png
+from backend.ssm_time import ssm_time_to_cog_path
 
 router = APIRouter(tags=["tiles"])
 
@@ -37,28 +37,6 @@ TRANSPARENT_PNG = (
     b"\x08\x06\x00\x00\x00\x1f\x15\xc4\x89\x00\x00\x00\nIDATx\x9cc\x00"
     b"\x01\x00\x00\x05\x00\x01\r\n\xb4\x00\x00\x00\x00IEND\xaeB`\x82"
 )
-
-
-def _ssm_time_to_cog_name(time: str) -> str:
-    """Convert a time string to SSM COG filename (e.g., '2010-02-02' → '2010_05_cog.tif')."""
-    if "_" in time:
-        return f"{time}_cog.tif"
-    if len(time) == 10:
-        year_s = int(time[:4])
-        month_s = int(time[5:7])
-        day_s = int(time[8:10])
-        d = date(year_s, month_s, day_s)
-        start = date(year_s, 1, 1)
-        period = (d - start).days // 8 + 1
-        return f"{year_s}_{period:02d}_cog.tif"
-    if len(time) == 7:
-        year_s = int(time[:4])
-        month_s = int(time[5:7])
-        d = date(year_s, month_s, 15)
-        start = date(year_s, 1, 1)
-        period = (d - start).days // 8 + 1
-        return f"{year_s}_{period:02d}_cog.tif"
-    return f"{time}_cog.tif"
 
 
 def _render_ssm_tile(cog_path: Path, x: int, y: int, z: int) -> bytes:
@@ -90,9 +68,16 @@ def ssm_tile_proxy(
                 "only WebMercatorQuad is supported"
             ),
         )
-    cog_name = _ssm_time_to_cog_name(time)
-    cog_rel = f"data/rasters/ssm/{cog_name}"
-    cog_path = PROJECT_ROOT / cog_rel
+    try:
+        cog_path = ssm_time_to_cog_path(
+            PROJECT_ROOT / "data" / "rasters" / "ssm", time
+        )
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            detail=str(exc),
+        ) from exc
+    cog_name = cog_path.name
     if not cog_path.is_file():
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,

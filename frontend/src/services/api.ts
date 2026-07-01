@@ -4,9 +4,7 @@ import type {
   PointQueryResult,
   AreaQueryRequest,
   AreaQueryResult,
-  TimeSeriesPoint,
   LoginResponse,
-  Region,
 } from '../types'
 
 const client = axios.create({
@@ -52,13 +50,6 @@ export async function getLayerTimes(
   return data
 }
 
-// ===== Regions =====
-
-export async function getRegions(): Promise<Region[]> {
-  const { data } = await client.get('/regions')
-  return data
-}
-
 // ===== Spatial Queries =====
 
 export async function queryPoint(
@@ -80,30 +71,14 @@ export async function queryArea(
   return data
 }
 
-// ===== Time Series =====
-
-export async function getSeries(
-  layerId: string,
-  regionId?: string,
-  start?: string,
-  end?: string,
-): Promise<TimeSeriesPoint[]> {
-  const { data } = await client.get('/series', {
-    params: { layerId, regionId, start, end },
-  })
-  return data
-}
-
 // ===== Export =====
 
 export function getExportCsvUrl(
   layerId: string,
-  regionId?: string,
   start?: string,
   end?: string,
 ): string {
   const params = new URLSearchParams({ layerId })
-  if (regionId) params.set('regionId', regionId)
   if (start) params.set('start', start)
   if (end) params.set('end', end)
   // Include token in URL for download links (Authorization header is not sent on

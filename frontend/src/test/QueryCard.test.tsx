@@ -76,6 +76,40 @@ describe('QueryCard', () => {
     expect(screen.getByText('lst')).toBeInTheDocument()
   })
 
+  it('uses the result layer id when the active layer belongs to another result', () => {
+    renderCard({
+      status: 'point',
+      result: {
+        layerId: 'lst',
+        time: '2025-06',
+        lng: 1,
+        lat: 2,
+        value: 3,
+        unit: '°C',
+      },
+    })
+
+    expect(screen.getByText('lst')).toBeInTheDocument()
+    expect(screen.queryByText('植被指数')).not.toBeInTheDocument()
+  })
+
+  it('replaces non-finite point numbers with a localized fallback', () => {
+    renderCard({
+      status: 'point',
+      result: {
+        layerId: 'ndvi',
+        time: '2025-06',
+        lng: Number.NaN,
+        lat: Number.POSITIVE_INFINITY,
+        value: Number.NEGATIVE_INFINITY,
+        unit: '指数',
+      },
+    })
+
+    expect(screen.getAllByText('—')).toHaveLength(3)
+    expect(screen.queryByText(/NaN|Infinity/)).not.toBeInTheDocument()
+  })
+
   it('shows all four area statistics', () => {
     renderCard({
       status: 'area',
@@ -89,10 +123,27 @@ describe('QueryCard', () => {
     expect(screen.getByText('321')).toBeInTheDocument()
   })
 
-  it('shows query errors', () => {
+  it('replaces non-finite area statistics and count with a localized fallback', () => {
+    renderCard({
+      status: 'area',
+      result: {
+        mean: Number.NaN,
+        max: Number.POSITIVE_INFINITY,
+        min: Number.NEGATIVE_INFINITY,
+        count: Number.NaN,
+      },
+    })
+
+    expect(screen.getAllByText('—')).toHaveLength(4)
+    expect(screen.queryByText(/NaN|Infinity/)).not.toBeInTheDocument()
+  })
+
+  it('labels the query result region and announces errors assertively', () => {
     renderCard({ status: 'error', kind: 'area', message: '区域统计失败' })
 
-    expect(screen.getByText('区域统计失败')).toBeInTheDocument()
+    expect(screen.getByRole('region', { name: '查询结果' })).toBeInTheDocument()
+    expect(screen.getByRole('alert')).toHaveTextContent('区域统计失败')
+    expect(screen.queryByRole('status')).not.toBeInTheDocument()
   })
 
   it('calls onClose from the accessible close button', async () => {

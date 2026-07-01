@@ -1,8 +1,7 @@
-import type { Layer, Region } from '../types'
+import type { Layer } from '../types'
 
 interface SidebarProps {
   layers: Layer[]
-  regions: Region[]
   activeLayerId: string | null
   onLayerChange: (id: string) => void
   opacity: number
@@ -14,8 +13,6 @@ interface SidebarProps {
   onTimeResolutionChange: (r: 'month' | '8day') => void
   isPlaying: boolean
   onPlayToggle: () => void
-  regionId: string | null
-  onRegionChange: (id: string | null) => void
 }
 
 function formatTime(t: string): string {
@@ -33,7 +30,6 @@ function formatTime(t: string): string {
 
 export default function Sidebar({
   layers,
-  regions,
   activeLayerId,
   onLayerChange,
   opacity,
@@ -45,8 +41,6 @@ export default function Sidebar({
   onTimeResolutionChange,
   isPlaying,
   onPlayToggle,
-  regionId,
-  onRegionChange,
 }: SidebarProps) {
   const activeLayer = layers.find((l) => l.id === activeLayerId)
 
@@ -156,22 +150,6 @@ export default function Sidebar({
         <button className={`btn btn-play ${isPlaying ? 'playing' : ''}`} onClick={onPlayToggle}>
           {isPlaying ? '⏸ 暂停' : '▶ 播放'}
         </button>
-      </section>
-
-      {/* Region Filter */}
-      <section className="sidebar-section">
-        <h3>📍 区域筛选</h3>
-        <select
-          value={regionId ?? ''}
-          onChange={(e) => onRegionChange(e.target.value || null)}
-        >
-          <option value="">全部区域</option>
-          {regions.map((r) => (
-            <option key={r.id} value={r.id}>
-              {r.name}
-            </option>
-          ))}
-        </select>
       </section>
 
       {/* Query Actions */}

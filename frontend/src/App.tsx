@@ -1,14 +1,12 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { AuthProvider } from './contexts/AuthContext'
-import { getLayers, getLayerTimes, getRegions } from './services/api'
-import type { Layer, PointQueryResult, Region } from './types'
+import { getLayers, getLayerTimes } from './services/api'
+import type { Layer } from './types'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import MapView from './components/MapView'
 import Legend from './components/Legend'
-import QueryPanel from './components/QueryPanel'
-import ChartPanel from './components/ChartPanel'
 import ExportPanel from './components/ExportPanel'
 import './App.css'
 
@@ -19,7 +17,6 @@ function MainPage() {
 
   // Data from backend
   const [layers, setLayers] = useState<Layer[]>([])
-  const [regions, setRegions] = useState<Region[]>([])
 
   // Layer selection
   const [activeLayerId, setActiveLayerId] = useState<string | null>(null)
@@ -36,24 +33,16 @@ function MainPage() {
   const [tileLoading, setTileLoading] = useState(false)
   const tileLoadTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
-  // Region
-  const [regionId, setRegionId] = useState<string | null>(null)
-
-  // Query results
-  const [pointResult, setPointResult] = useState<PointQueryResult | null>(null)
-  const [areaCoords, setAreaCoords] = useState<[number, number][] | null>(null)
-
-  // Load layers and regions on mount
+  // Load layers on mount
   useEffect(() => {
     let cancelled = false
     setLoading(true)
     setLoadError('')
 
-    Promise.all([getLayers(), getRegions()])
-      .then(([layerData, regionData]) => {
+    getLayers()
+      .then((layerData) => {
         if (cancelled) return
         setLayers(layerData)
-        setRegions(regionData)
         if (layerData.length > 0) {
           // Prefer SSM as default (has COG data); fallback to first layer
           setActiveLayerId(layerData.find((l) => l.id === 'ssm')?.id ?? layerData[0].id)
@@ -79,6 +68,7 @@ function MainPage() {
 
     // Immediately clear time to prevent stale tile requests
     setCurrentTime('')
+    setTimes([])
 
     getLayerTimes(activeLayerId, timeResolution)
       .then((data) => {
@@ -117,8 +107,6 @@ function MainPage() {
 
   const handleLayerChange = useCallback((id: string) => {
     setActiveLayerId(id)
-    setPointResult(null)
-    setAreaCoords(null)
     setTileLoading(true)
     if (tileLoadTimerRef.current) clearTimeout(tileLoadTimerRef.current)
     tileLoadTimerRef.current = setTimeout(() => setTileLoading(false), 2000)
@@ -126,20 +114,10 @@ function MainPage() {
 
   const handleTimeChange = useCallback((t: string) => {
     setCurrentTime(t)
-    setPointResult(null)
-    setAreaCoords(null)
   }, [])
 
   const handlePlayToggle = useCallback(() => {
     setIsPlaying((p) => !p)
-  }, [])
-
-  const handlePointResult = useCallback((r: PointQueryResult) => {
-    setPointResult(r)
-  }, [])
-
-  const handleAreaCoords = useCallback((coords: [number, number][]) => {
-    setAreaCoords(coords)
   }, [])
 
   return (
@@ -149,7 +127,6 @@ function MainPage() {
         <div className="sidebar-area">
           <Sidebar
             layers={layers}
-            regions={regions}
             activeLayerId={activeLayerId}
             onLayerChange={handleLayerChange}
             opacity={opacity}
@@ -161,12 +138,9 @@ function MainPage() {
             onTimeResolutionChange={setTimeResolution}
             isPlaying={isPlaying}
             onPlayToggle={handlePlayToggle}
-            regionId={regionId}
-            onRegionChange={setRegionId}
           />
           <ExportPanel
             activeLayerId={activeLayerId}
-            regionId={regionId}
             startTime={times.length > 0 ? times[0] : '2025-01'}
             endTime={times.length > 0 ? times[times.length - 1] : '2025-12'}
             hasData={activeLayerId !== null && times.length > 0}
@@ -191,30 +165,10 @@ function MainPage() {
                 activeLayerId={activeLayerId}
                 opacity={opacity}
                 currentTime={currentTime}
-                onPointResult={handlePointResult}
-                onAreaCoords={handleAreaCoords}
               />
             </div>
           )}
           <Legend layer={layers.find((l) => l.id === activeLayerId) ?? null} />
-        </div>
-
-        <div className="right-panel">
-          <QueryPanel
-            pointResult={pointResult}
-            areaCoords={areaCoords}
-            activeLayerId={activeLayerId}
-            currentTime={currentTime}
-            layers={layers}
-          />
-          <ChartPanel
-            activeLayerId={activeLayerId}
-            layers={layers}
-            regionId={regionId}
-            regions={regions}
-            startTime={times.length > 0 ? times[0] : '2025-01'}
-            endTime={times.length > 0 ? times[times.length - 1] : '2025-12'}
-          />
         </div>
       </main>
     </div>

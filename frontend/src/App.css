@@ -295,17 +295,6 @@
   white-space: nowrap;
 }
 
-/* Region select */
-
-.sidebar select {
-  width: 100%;
-  padding: 4px;
-  font-size: 13px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: #fff;
-}
-
 /* Layer info */
 
 .layer-desc {
@@ -404,6 +393,8 @@
   z-index: 1100;
   width: min(280px, calc(100% - 24px));
   max-width: calc(100% - 24px);
+  max-height: calc(100% - 24px);
+  overflow-y: auto;
   box-sizing: border-box;
   padding: 12px 36px 12px 14px;
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -465,85 +456,6 @@
   overflow-wrap: anywhere;
   text-align: right;
   font-weight: 600;
-}
-
-/* ===== Right panel ===== */
-
-.right-panel {
-  width: 320px;
-  min-width: 320px;
-  background: #fafbfc;
-  border-left: 1px solid #ddd;
-  overflow-y: auto;
-  padding: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  flex-shrink: 0;
-}
-
-/* ===== Query panel ===== */
-
-.query-panel {
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  padding: 10px;
-}
-
-.query-panel h4 {
-  margin: 0 0 6px;
-  font-size: 13px;
-}
-
-.query-result table {
-  width: 100%;
-  font-size: 12px;
-  border-collapse: collapse;
-}
-
-.query-result td {
-  padding: 3px 6px;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.query-result td:first-child {
-  color: #666;
-  width: 60px;
-}
-
-.query-result .value {
-  font-weight: 600;
-  color: #1a73e8;
-}
-
-.query-panel .error {
-  color: #d32f2f;
-  font-size: 12px;
-}
-
-/* ===== Chart panel ===== */
-
-.chart-panel {
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  padding: 10px;
-  flex: 1;
-  min-height: 200px;
-}
-
-.chart-controls {
-  display: flex;
-  gap: 4px;
-  margin-bottom: 6px;
-}
-
-.chart-panel .hint {
-  color: #888;
-  font-size: 12px;
-  text-align: center;
-  padding: 20px 0;
 }
 
 /* ===== Export panel ===== */
@@ -626,13 +538,6 @@
     border-bottom: none;
   }
 
-  .right-panel {
-    width: 100%;
-    min-width: 0;
-    max-height: 40vh;
-    border-left: none;
-    border-top: 1px solid #ddd;
-  }
 }
 
 /* ===== Tile Loading Overlay ===== */

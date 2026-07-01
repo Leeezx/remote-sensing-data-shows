@@ -14,8 +14,39 @@ from rio_tiler.errors import TileOutsideBounds
 
 from backend.main import app
 from backend.routers import tiles
+from backend.ssm_time import ssm_time_to_cog_name
 
 client = TestClient(app)
+
+
+@pytest.mark.parametrize(
+    ("time", "expected"),
+    [
+        ("2010_01", "2010_01_cog.tif"),
+        ("2010_005", "2010_005_cog.tif"),
+        ("2010-02-02", "2010_05_cog.tif"),
+        ("2010-02", "2010_06_cog.tif"),
+    ],
+)
+def test_ssm_time_to_cog_name_preserves_supported_mappings(time, expected):
+    assert ssm_time_to_cog_name(time) == expected
+
+
+@pytest.mark.parametrize(
+    "time",
+    [
+        "",
+        "../secret_01",
+        ".._..",
+        "2010_01/../../x",
+        "2010-13",
+        "2010-02-30",
+        "foo_bar",
+    ],
+)
+def test_ssm_time_to_cog_name_rejects_unsupported_values(time):
+    with pytest.raises(ValueError, match="Invalid SSM time"):
+        ssm_time_to_cog_name(time)
 
 
 def test_ssm_tile_route_is_synchronous():
@@ -159,3 +190,33 @@ def test_ssm_tile_route_reports_missing_cog(monkeypatch, tmp_path):
     assert response.json()["detail"] == (
         "COG file not found for time '2010_01' (looked for: 2010_01_cog.tif)"
     )
+
+
+@pytest.mark.parametrize(
+    "time",
+    [
+        "",
+        "../secret_01",
+        ".._..",
+        "2010_01/../../x",
+        "2010-13",
+        "2010-02-30",
+        "foo_bar",
+    ],
+)
+def test_ssm_tile_route_rejects_invalid_time_without_rendering(
+    monkeypatch, tmp_path, time
+):
+    calls = []
+    monkeypatch.setattr(tiles, "PROJECT_ROOT", tmp_path)
+    monkeypatch.setattr(
+        tiles, "_render_ssm_tile", lambda *_args: calls.append(_args)
+    )
+
+    response = client.get(
+        "/data/ssm-tiles/WebMercatorQuad/5/3/4.png", params={"time": time}
+    )
+
+    assert response.status_code == 422
+    assert "Invalid SSM time" in response.json()["detail"]
+    assert calls == []

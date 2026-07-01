@@ -18,22 +18,6 @@ export interface LegendItem {
   label: string
 }
 
-// ===== Region =====
-
-export interface Region {
-  id: string
-  name: string
-  description: string
-  bounds: { north: number; south: number; east: number; west: number }
-}
-
-// ===== Time Series =====
-
-export interface TimeSeriesPoint {
-  time: string
-  value: number
-}
-
 // ===== Query Results =====
 
 export interface PointQueryResult {

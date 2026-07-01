@@ -3,7 +3,6 @@ import { getExportCsvUrl } from '../services/api'
 
 interface ExportPanelProps {
   activeLayerId: string | null
-  regionId: string | null
   startTime: string
   endTime: string
   hasData: boolean
@@ -11,7 +10,6 @@ interface ExportPanelProps {
 
 export default function ExportPanel({
   activeLayerId,
-  regionId,
   startTime,
   endTime,
   hasData,
@@ -42,14 +40,13 @@ export default function ExportPanel({
   if (!activeLayerId || !hasData) {
     return (
       <div className="export-panel">
-        <p className="hint">选择图层和区域后可导出数据</p>
+        <p className="hint">选择图层后可导出数据</p>
       </div>
     )
   }
 
   const csvUrl = getExportCsvUrl(
     activeLayerId,
-    regionId ?? undefined,
     startTime,
     endTime,
   )

@@ -10,53 +10,29 @@ from pyproj import Transformer
 
 from backend.data_loader import get_area_stats, get_layer, get_regions
 from backend.raster_rendering import valid_data_mask
+from backend.ssm_time import ssm_time_to_cog_path
 
 router = APIRouter(tags=["query"])
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+SSM_AREA_CHUNK_ROWS = 512
 
-
-# ===== SSM COG filename mapping =====
-# COG files are named YYYY_NN_cog.tif (e.g., 2010_05_cog.tif)
-# where NN is the 8-day period index (1-46) within the year.
-# The 8-day times in ssm_8day_times.json use date strings (e.g., "2010-02-02").
-# This function maps from either format to the correct COG filename.
 
 def _ssm_time_to_cog_path(time: str) -> Path:
-    """Convert a time string to the corresponding SSM COG file path.
+    """Resolve a validated SSM time beneath the fixed raster root."""
+    return ssm_time_to_cog_path(
+        PROJECT_ROOT / "data" / "rasters" / "ssm", time
+    )
 
-    Supports two formats:
-      - Period index: "YYYY_NN" (e.g., "2010_05") — maps directly
-      - 8-day date:   "YYYY-MM-DD" (e.g., "2010-02-02") — computes period index
-      - Monthly:      "YYYY-MM" (e.g., "2010-02") — uses first 8-day period of month
-    """
-    # Already in YYYY_NN format — direct COG filename
-    if "_" in time:
-        cog_name = f"{time}_cog.tif"
-    elif len(time) == 10:
-        # 8-day date: "YYYY-MM-DD"
-        from datetime import date
-        year_s = int(time[:4])
-        month_s = int(time[5:7])
-        day_s = int(time[8:10])
-        d = date(year_s, month_s, day_s)
-        start = date(year_s, 1, 1)
-        period = (d - start).days // 8 + 1
-        cog_name = f"{year_s}_{period:02d}_cog.tif"
-    elif len(time) == 7:
-        # Monthly: "YYYY-MM" — use the 8-day period closest to mid-month
-        from datetime import date
-        year_s = int(time[:4])
-        month_s = int(time[5:7])
-        d = date(year_s, month_s, 15)
-        start = date(year_s, 1, 1)
-        period = (d - start).days // 8 + 1
-        cog_name = f"{year_s}_{period:02d}_cog.tif"
-    else:
-        # Unknown format — try as-is
-        cog_name = f"{time}_cog.tif"
 
-    return PROJECT_ROOT / "data" / "rasters" / "ssm" / cog_name
+def _validated_ssm_cog_path(time: str) -> Path:
+    try:
+        return _ssm_time_to_cog_path(time)
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            detail=str(exc),
+        ) from exc
 
 
 class GeoJSONGeometry(BaseModel):
@@ -102,7 +78,7 @@ def _get_bbox_from_polygon(coordinates: list) -> tuple[float, float, float, floa
 
 def _query_point_SSM(layer: dict, time: str, lng: float, lat: float) -> dict:
     """Real-time point query for SSM layer using rasterio."""
-    cog_path = _ssm_time_to_cog_path(time)
+    cog_path = _validated_ssm_cog_path(time)
 
     if not cog_path.is_file():
         raise HTTPException(
@@ -150,7 +126,7 @@ def _query_point_SSM(layer: dict, time: str, lng: float, lat: float) -> dict:
 
 def _query_area_SSM(layer: dict, time: str, west: float, south: float, east: float, north: float) -> dict:
     """Real-time area query for SSM layer using rasterio."""
-    cog_path = _ssm_time_to_cog_path(time)
+    cog_path = _validated_ssm_cog_path(time)
 
     if not cog_path.is_file():
         raise HTTPException(
@@ -171,21 +147,38 @@ def _query_area_SSM(layer: dict, time: str, west: float, south: float, east: flo
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail="Area is outside the raster extent",
                 )
-            window = ((row_min, row_max), (col_min, col_max))
-            data = src.read(1, window=window)
-            source_mask = src.read_masks(1, window=window)
-            mask = valid_data_mask(data, source_mask=source_mask, nodata=src.nodata)
-            valid = data[mask]
-            if valid.size == 0:
+            count = 0
+            total = 0.0
+            minimum = None
+            maximum = None
+            for chunk_start in range(row_min, row_max, SSM_AREA_CHUNK_ROWS):
+                chunk_end = min(chunk_start + SSM_AREA_CHUNK_ROWS, row_max)
+                window = ((chunk_start, chunk_end), (col_min, col_max))
+                data = src.read(1, window=window)
+                source_mask = src.read_masks(1, window=window)
+                mask = valid_data_mask(
+                    data, source_mask=source_mask, nodata=src.nodata
+                )
+                valid = data[mask]
+                if valid.size == 0:
+                    continue
+                count += int(valid.size)
+                total += float(valid.sum(dtype="float64"))
+                chunk_min = float(valid.min())
+                chunk_max = float(valid.max())
+                minimum = chunk_min if minimum is None else min(minimum, chunk_min)
+                maximum = chunk_max if maximum is None else max(maximum, chunk_max)
+
+            if count == 0:
                 raise HTTPException(
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail="No valid data in the specified area",
                 )
             return {
-                "mean": float(valid.mean()),
-                "max": float(valid.max()),
-                "min": float(valid.min()),
-                "count": int(valid.size),
+                "mean": total / count,
+                "max": maximum,
+                "min": minimum,
+                "count": count,
             }
     except rasterio.errors.RasterioIOError as e:
         raise HTTPException(
