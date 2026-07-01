@@ -21,6 +21,15 @@ def list_layers():
 @router.get("/layers/ssm/legend")
 def ssm_legend(time: str):
     """Return the data-driven SSM legend for one strict time value."""
+    try:
+        cog_path = ssm_time_to_cog_path(
+            PROJECT_ROOT / "data" / "rasters" / "ssm", time
+        )
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            detail=str(exc),
+        ) from exc
     layer = get_layer("ssm")
     if layer is None:
         raise HTTPException(
@@ -31,15 +40,6 @@ def ssm_legend(time: str):
     if not base_legend:
         raise RuntimeError("SSM layer legend is missing or empty")
     unit = layer.get("unit") or ""
-    try:
-        cog_path = ssm_time_to_cog_path(
-            PROJECT_ROOT / "data" / "rasters" / "ssm", time
-        )
-    except ValueError as exc:
-        raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
-            detail=str(exc),
-        ) from exc
     if not cog_path.is_file():
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,

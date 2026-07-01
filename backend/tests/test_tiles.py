@@ -70,6 +70,7 @@ def test_render_ssm_tile_reads_first_band_and_mask_from_cog(monkeypatch, tmp_pat
     values = np.array([[[0.09, 0.40, 0.25]]], dtype=np.float32)
     mask = np.array([[255, 255, 0]], dtype=np.uint8)
     calls = []
+    legend_calls = []
     dynamic_legend = [
         {"value": 0.09, "color": "#010203", "label": "low"},
         {"value": 0.40, "color": "#a0b0c0", "label": "high"},
@@ -93,14 +94,15 @@ def test_render_ssm_tile_reads_first_band_and_mask_from_cog(monkeypatch, tmp_pat
     monkeypatch.setattr(
         tiles,
         "get_dynamic_legend",
-        lambda *_args: dynamic_legend,
-        raising=False,
+        lambda *args: legend_calls.append(args) or dynamic_legend,
     )
 
     cog_path = tmp_path / "ssm.tif"
     png = tiles._render_ssm_tile(cog_path, x=3, y=4, z=5)
 
     assert calls == [("open", str(cog_path)), ("tile", 3, 4, 5, 1)]
+    layer = tiles.get_layer("ssm")
+    assert legend_calls == [(cog_path, layer["legend"], layer["unit"])]
     assert png.startswith(b"\x89PNG\r\n\x1a\n")
     with warnings.catch_warnings():
         warnings.simplefilter("ignore", NotGeoreferencedWarning)

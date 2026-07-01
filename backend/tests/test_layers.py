@@ -98,7 +98,13 @@ def test_get_ssm_legend_returns_dynamic_legend_with_exact_arguments(monkeypatch,
     cog_path = tmp_path / "data" / "rasters" / "ssm" / "2010_01_cog.tif"
     cog_path.parent.mkdir(parents=True)
     cog_path.touch()
-    base_legend = [{"value": 0.09, "color": "#010203", "label": "base"}]
+    base_legend = [
+        {"value": value, "color": color, "label": f"base {value}"}
+        for value, color in zip(
+            [0.09, 0.15, 0.22, 0.28, 0.35, 0.40],
+            ["#010203", "#111213", "#212223", "#313233", "#414243", "#515253"],
+        )
+    ]
     dynamic_legend = [{"value": 0.12, "color": "#010203", "label": "0.120 m³/m³"}]
     calls = []
     monkeypatch.setattr(layers_router, "PROJECT_ROOT", tmp_path, raising=False)
@@ -185,3 +191,21 @@ def test_get_ssm_legend_reports_missing_metadata_without_computation(
     assert response.status_code == 404
     assert response.json()["detail"] == "SSM layer metadata is missing"
     assert calls == []
+
+
+def test_get_ssm_legend_rejects_invalid_time_before_missing_metadata(
+    monkeypatch, tmp_path
+):
+    metadata_calls = []
+    monkeypatch.setattr(layers_router, "PROJECT_ROOT", tmp_path)
+    monkeypatch.setattr(
+        layers_router,
+        "get_layer",
+        lambda layer_id: metadata_calls.append(layer_id),
+    )
+
+    response = client.get("/api/layers/ssm/legend", params={"time": "../secret_01"})
+
+    assert response.status_code == 422
+    assert "Invalid SSM time" in response.json()["detail"]
+    assert metadata_calls == []
