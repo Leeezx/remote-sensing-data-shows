@@ -26,7 +26,7 @@ def valid_data_mask(values, source_mask=None, nodata=None):
     return mask
 
 
-def colorize(values, legend, source_mask=None, nodata=None):
+def colorize(values, legend, source_mask=None, nodata=None, nodata_color=None):
     """Colorize one 2D raster band using numeric legend stops."""
     values = np.asarray(values)
     if values.ndim != 2:
@@ -55,6 +55,8 @@ def colorize(values, legend, source_mask=None, nodata=None):
     stop_colors = np.array([stop[1] for stop in stops])
     valid = valid_data_mask(values, source_mask=source_mask, nodata=nodata)
     rgba = np.zeros((*values.shape, 4), dtype=np.uint8)
+    if nodata_color is not None:
+        rgba[..., :] = nodata_color
 
     for channel in range(3):
         interpolated = np.interp(

@@ -105,6 +105,33 @@ def test_colorize_rejects_duplicate_legend_values():
         colorize(np.zeros((1, 1)), legend)
 
 
+def test_colorize_fills_nodata_pixels_with_nodata_color():
+    values = np.array([[0.1, 0.5, np.nan]], dtype=float)
+    source_mask = np.array([[255, 255, 255]], dtype=np.uint8)
+    legend = [
+        {"value": 0.0, "color": "#ff0000"},
+        {"value": 1.0, "color": "#0000ff"},
+    ]
+    nodata_color = (100, 150, 200, 80)
+
+    rgba = colorize(values, legend, source_mask=source_mask, nodata_color=nodata_color)
+
+    # Valid pixels get computed color, not nodata_color
+    assert tuple(rgba[0, 0]) != nodata_color
+    assert rgba[0, 0, 3] == 255
+    # Invalid pixel gets nodata_color
+    assert tuple(rgba[0, 2]) == nodata_color
+
+
+def test_colorize_without_nodata_color_keeps_invalid_pixels_transparent():
+    values = np.array([[0.1, np.nan]], dtype=float)
+    legend = [{"value": 0.0, "color": "#ff0000"}, {"value": 1.0, "color": "#0000ff"}]
+
+    rgba = colorize(values, legend)
+
+    assert tuple(rgba[0, 1]) == (0, 0, 0, 0)
+
+
 def test_render_png_encodes_rgba_bytes():
     rgba = np.array([[[1, 2, 3, 255], [4, 5, 6, 0]]], dtype=np.uint8)
 
