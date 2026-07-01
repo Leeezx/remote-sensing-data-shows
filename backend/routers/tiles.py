@@ -49,9 +49,22 @@ def _render_ssm_tile(cog_path: Path, x: int, y: int, z: int) -> bytes:
     if not base_legend:
         raise RuntimeError("SSM layer legend is missing or empty")
     legend = get_dynamic_legend(cog_path, base_legend, layer.get("unit") or "")
+
+    # Parse nodata color from layer config with defaults
+    nodata_color_hex = layer.get("nodataColor", "#e8e8e8")
+    nodata_opacity = float(layer.get("nodataOpacity", 0.5))
+    try:
+        nodata_rgb = tuple(bytes.fromhex(nodata_color_hex.lstrip("#")))
+        nodata_alpha = int(round(nodata_opacity * 255))
+        nodata_color = (*nodata_rgb, nodata_alpha)
+    except (ValueError, TypeError):
+        nodata_color = (0xE8, 0xE8, 0xE8, 128)
+
     with COGReader(str(cog_path)) as reader:
         image = reader.tile(x, y, z, indexes=1)
-    rgba = colorize(image.data[0], legend, source_mask=image.mask)
+    rgba = colorize(
+        image.data[0], legend, source_mask=image.mask, nodata_color=nodata_color
+    )
     return render_png(rgba)
 
 

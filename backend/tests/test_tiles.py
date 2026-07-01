@@ -112,10 +112,91 @@ def test_render_ssm_tile_reads_first_band_and_mask_from_cog(monkeypatch, tmp_pat
     np.testing.assert_array_equal(
         decoded,
         np.array(
-            [[[1, 2, 3, 255], [160, 176, 192, 255], [0, 0, 0, 0]]],
+            [[[1, 2, 3, 255], [160, 176, 192, 255], [232, 232, 232, 128]]],
             dtype=np.uint8,
         ),
     )
+
+
+def test_render_ssm_tile_passes_nodata_color_to_colorize(monkeypatch, tmp_path):
+    """_render_ssm_tile reads nodataColor/nodataOpacity from layer and forwards to colorize."""
+    cog_path = tmp_path / "fake.tif"
+    cog_path.write_bytes(b"fake")
+
+    fake_legend = [
+        {"value": 0.0, "color": "#ff0000", "label": ""},
+        {"value": 1.0, "color": "#0000ff", "label": ""},
+    ]
+    fake_layer = {
+        "id": "ssm",
+        "legend": fake_legend,
+        "unit": "m3/m3",
+        "nodataColor": "#aabbcc",
+        "nodataOpacity": 0.3,
+    }
+
+    colorize_args = {}
+
+    def fake_colorize(values, legend, source_mask=None, nodata=None, nodata_color=None):
+        colorize_args["nodata_color"] = nodata_color
+        return np.zeros((*values.shape, 4), dtype=np.uint8)
+
+    def fake_cog_tile(path, x, y, z, indexes=1):
+
+        class Image:
+            data = [np.zeros((256, 256), dtype=np.float32)]
+            mask = np.ones((256, 256), dtype=np.uint8)
+        return Image()
+
+    monkeypatch.setattr(tiles, "get_layer", lambda _id: fake_layer)
+    monkeypatch.setattr(tiles, "get_dynamic_legend", lambda p, bl, u: fake_legend)
+    monkeypatch.setattr(tiles, "colorize", fake_colorize)
+    monkeypatch.setattr(tiles, "COGReader", lambda path: type(
+        "FakeReader", (), {"__enter__": lambda s: s, "__exit__": lambda *a: None,
+         "tile": fake_cog_tile}
+    )())
+
+    tiles._render_ssm_tile(cog_path, 0, 0, 0)
+
+    assert colorize_args["nodata_color"] == (0xAA, 0xBB, 0xCC, 76)
+
+
+def test_render_ssm_tile_uses_default_nodata_color_when_not_configured(monkeypatch, tmp_path):
+    """_render_ssm_tile uses #e8e8e8 at 0.5 opacity when layer has no nodataColor."""
+    cog_path = tmp_path / "fake.tif"
+    cog_path.write_bytes(b"fake")
+
+    fake_legend = [
+        {"value": 0.0, "color": "#ff0000", "label": ""},
+        {"value": 1.0, "color": "#0000ff", "label": ""},
+    ]
+    # Layer WITHOUT nodataColor/nodataOpacity
+    fake_layer = {"id": "ssm", "legend": fake_legend, "unit": "m3/m3"}
+
+    colorize_args = {}
+
+    def fake_colorize(values, legend, source_mask=None, nodata=None, nodata_color=None):
+        colorize_args["nodata_color"] = nodata_color
+        return np.zeros((*values.shape, 4), dtype=np.uint8)
+
+    def fake_cog_tile(path, x, y, z, indexes=1):
+
+        class Image:
+            data = [np.zeros((256, 256), dtype=np.float32)]
+            mask = np.ones((256, 256), dtype=np.uint8)
+        return Image()
+
+    monkeypatch.setattr(tiles, "get_layer", lambda _id: fake_layer)
+    monkeypatch.setattr(tiles, "get_dynamic_legend", lambda p, bl, u: fake_legend)
+    monkeypatch.setattr(tiles, "colorize", fake_colorize)
+    monkeypatch.setattr(tiles, "COGReader", lambda path: type(
+        "FakeReader", (), {"__enter__": lambda s: s, "__exit__": lambda *a: None,
+         "tile": fake_cog_tile}
+    )())
+
+    tiles._render_ssm_tile(cog_path, 0, 0, 0)
+
+    assert colorize_args["nodata_color"] == (0xE8, 0xE8, 0xE8, 128)
 
 
 def test_render_ssm_tile_reports_missing_layer(monkeypatch, tmp_path):
