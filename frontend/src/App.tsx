@@ -1,14 +1,20 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { AuthProvider } from './contexts/AuthContext'
-import { getLayers, getLayerTimes } from './services/api'
-import type { Layer } from './types'
+import { getLayerLegend, getLayers, getLayerTimes } from './services/api'
+import type { Layer, LegendItem, LegendStatus } from './types'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import MapView from './components/MapView'
 import Legend from './components/Legend'
 import ExportPanel from './components/ExportPanel'
 import './App.css'
+
+interface DynamicLegendState {
+  key: string | null
+  status: LegendStatus
+  items: LegendItem[]
+}
 
 function MainPage() {
   // Loading / error state
@@ -28,6 +34,16 @@ function MainPage() {
   const [timeResolution, setTimeResolution] = useState<'month' | '8day'>('8day')
   const [isPlaying, setIsPlaying] = useState(false)
   const playIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
+
+  const activeLayer = layers.find((layer) => layer.id === activeLayerId) ?? null
+  const legendKey = activeLayer?.id === 'ssm' && currentTime
+    ? `${activeLayer.id}:${currentTime}`
+    : null
+  const [dynamicLegend, setDynamicLegend] = useState<DynamicLegendState>({
+    key: null,
+    status: 'loading',
+    items: [],
+  })
 
   // Tile loading overlay
   const [tileLoading, setTileLoading] = useState(false)
@@ -87,6 +103,38 @@ function MainPage() {
     }
   }, [activeLayerId, timeResolution])
 
+  // SSM thresholds depend on the selected acquisition time.
+  useEffect(() => {
+    if (activeLayerId !== 'ssm') {
+      setDynamicLegend({ key: null, status: 'ready', items: [] })
+      return
+    }
+
+    if (!currentTime || !legendKey) {
+      setDynamicLegend({ key: null, status: 'loading', items: [] })
+      return
+    }
+
+    let cancelled = false
+    setDynamicLegend({ key: legendKey, status: 'loading', items: [] })
+
+    getLayerLegend(activeLayerId, currentTime)
+      .then((data) => {
+        if (!cancelled) {
+          setDynamicLegend({ key: legendKey, status: 'ready', items: data.legend })
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setDynamicLegend({ key: legendKey, status: 'error', items: [] })
+        }
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [activeLayerId, currentTime, legendKey])
+
   // Play/pause animation
   useEffect(() => {
     if (isPlaying && times.length > 0) {
@@ -116,9 +164,23 @@ function MainPage() {
     setCurrentTime(t)
   }, [])
 
+  const handleTimeResolutionChange = useCallback((resolution: 'month' | '8day') => {
+    if (resolution === timeResolution) return
+    setCurrentTime('')
+    setTimes([])
+    setTimeResolution(resolution)
+  }, [timeResolution])
+
   const handlePlayToggle = useCallback(() => {
     setIsPlaying((p) => !p)
   }, [])
+
+  const legendItems = activeLayer?.id === 'ssm'
+    ? dynamicLegend.key === legendKey ? dynamicLegend.items : []
+    : activeLayer?.legend ?? []
+  const legendStatus: LegendStatus = activeLayer?.id === 'ssm'
+    ? dynamicLegend.key === legendKey ? dynamicLegend.status : 'loading'
+    : 'ready'
 
   return (
     <div className="app">
@@ -135,7 +197,7 @@ function MainPage() {
             times={times}
             onTimeChange={handleTimeChange}
             timeResolution={timeResolution}
-            onTimeResolutionChange={setTimeResolution}
+            onTimeResolutionChange={handleTimeResolutionChange}
             isPlaying={isPlaying}
             onPlayToggle={handlePlayToggle}
           />
@@ -168,7 +230,11 @@ function MainPage() {
               />
             </div>
           )}
-          <Legend layer={layers.find((l) => l.id === activeLayerId) ?? null} />
+          <Legend
+            layer={activeLayer}
+            items={legendItems}
+            status={legendStatus}
+          />
         </div>
       </main>
     </div>

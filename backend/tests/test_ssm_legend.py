@@ -9,6 +9,7 @@ import numpy as np
 import pytest
 
 import backend.ssm_legend as ssm_legend
+from backend.raster_rendering import colorize
 from backend.ssm_legend import build_dynamic_legend, get_dynamic_legend
 
 
@@ -102,6 +103,24 @@ def test_build_dynamic_legend_falls_back_when_percentiles_overflow():
     assert result == BASE_LEGEND
     assert result is not BASE_LEGEND
     assert all(actual is not original for actual, original in zip(result, BASE_LEGEND))
+
+
+def test_build_dynamic_legend_falls_back_when_stops_are_not_strictly_increasing():
+    low = 1e300
+    high = np.nextafter(low, np.inf)
+    values = np.array([low] * 50 + [high] * 50)
+    percentile_low, percentile_high = np.percentile(values, [2, 98])
+
+    assert percentile_low < percentile_high
+    assert len(np.unique(np.linspace(percentile_low, percentile_high, 6))) < 6
+
+    result = build_dynamic_legend(values, BASE_LEGEND, "m3/m3")
+
+    assert result == BASE_LEGEND
+    assert result is not BASE_LEGEND
+    assert all(actual is not original for actual, original in zip(result, BASE_LEGEND))
+    rgba = colorize(np.array([[0.1, 0.2]]), result)
+    np.testing.assert_array_equal(rgba[..., 3], np.array([[255, 255]], dtype=np.uint8))
 
 
 class _FakeDataset:
