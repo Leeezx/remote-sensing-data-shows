@@ -1,6 +1,9 @@
 """Tests for data-driven SSM legend thresholds."""
 
+from concurrent.futures import ThreadPoolExecutor
 import os
+import threading
+import time
 
 import numpy as np
 import pytest
@@ -86,6 +89,21 @@ def test_build_dynamic_legend_falls_back_when_base_legend_is_not_six_stops():
     assert result is not short_legend
 
 
+def test_build_dynamic_legend_falls_back_when_percentiles_overflow():
+    maximum = np.finfo(float).max
+
+    with np.errstate(over="ignore", invalid="ignore"):
+        result = build_dynamic_legend(
+            np.array([-maximum] * 50 + [maximum] * 50),
+            BASE_LEGEND,
+            "m3/m3",
+        )
+
+    assert result == BASE_LEGEND
+    assert result is not BASE_LEGEND
+    assert all(actual is not original for actual, original in zip(result, BASE_LEGEND))
+
+
 class _FakeDataset:
     nodata = -32768.0
 
@@ -129,6 +147,50 @@ def test_get_dynamic_legend_reuses_cache_and_returns_fresh_defensive_results(tmp
     assert all(left is not right for left, right in zip(first, second))
     first[0]["value"] = -1
     assert second[0]["value"] == pytest.approx(1.98)
+
+
+def test_get_dynamic_legend_coalesces_concurrent_cold_cache_misses(tmp_path, monkeypatch):
+    path = tmp_path / "ssm.tif"
+    path.write_bytes(b"fake")
+    reader_started = threading.Event()
+    release_reader = threading.Event()
+    calls = 0
+    calls_lock = threading.Lock()
+
+    def slow_reader(resolved_path):
+        nonlocal calls
+        assert resolved_path == str(path.resolve())
+        with calls_lock:
+            calls += 1
+        reader_started.set()
+        assert release_reader.wait(timeout=5)
+        return (
+            np.arange(100, dtype=float).reshape(10, 10),
+            np.full((10, 10), 255, dtype=np.uint8),
+            -32768.0,
+        )
+
+    monkeypatch.setattr(ssm_legend, "_read_dynamic_legend", slow_reader)
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        first_future = executor.submit(get_dynamic_legend, path, BASE_LEGEND, "m3/m3")
+        assert reader_started.wait(timeout=5)
+        other_futures = [
+            executor.submit(get_dynamic_legend, path, BASE_LEGEND, "m3/m3")
+            for _ in range(3)
+        ]
+        deadline = time.monotonic() + 0.5
+        while calls == 1 and time.monotonic() < deadline:
+            time.sleep(0.01)
+        release_reader.set()
+        results = [first_future.result(), *(future.result() for future in other_futures)]
+
+    assert calls == 1
+    assert all(result == results[0] for result in results)
+    assert len({id(result) for result in results}) == len(results)
+    assert all(
+        len({id(result[index]) for result in results}) == len(results)
+        for index in range(6)
+    )
 
 
 def test_get_dynamic_legend_invalidates_cache_when_mtime_changes(tmp_path, monkeypatch):
