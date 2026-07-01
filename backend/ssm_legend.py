@@ -33,7 +33,7 @@ def build_dynamic_legend(values, base_legend, unit, source_mask=None, nodata=Non
     if not np.all(np.isfinite((low, high))) or low >= high:
         return _copy_legend(base_legend)
 
-    stops = np.linspace(low, high, 6)
+    stops = np.percentile(valid_values, np.linspace(2, 98, 6))
     if not np.all(np.isfinite(stops)) or not np.all(np.diff(stops) > 0):
         return _copy_legend(base_legend)
     return [

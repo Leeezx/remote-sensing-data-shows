@@ -30,12 +30,12 @@ def clear_legend_cache():
     ssm_legend._cached_dynamic_legend.cache_clear()
 
 
-def test_build_dynamic_legend_uses_p2_p98_and_six_even_stops():
+def test_build_dynamic_legend_uses_quantile_stops_spanning_p2_to_p98():
     values = np.arange(100, dtype=float)
 
     result = build_dynamic_legend(values, BASE_LEGEND, "m3/m3")
 
-    expected = np.linspace(1.98, 97.02, 6)
+    expected = np.percentile(values, np.linspace(2, 98, 6))
     np.testing.assert_allclose([item["value"] for item in result], expected)
     assert all(type(item["value"]) is float for item in result)
 
@@ -61,9 +61,10 @@ def test_build_dynamic_legend_excludes_all_invalid_pixel_types():
         nodata=-32768.0,
     )
 
-    assert result[0]["value"] == pytest.approx(2.0)
-    assert result[-1]["value"] == pytest.approx(98.0)
-    assert result[0]["label"] == "2.000"
+    # Valid values after filtering: [0.0, 100.0] (-999 excluded as sentinel)
+    expected = np.percentile(np.array([0.0, 100.0]), np.linspace(2, 98, 6))
+    np.testing.assert_allclose([item["value"] for item in result], expected)
+    assert result[0]["label"] == f"{expected[0]:.3f}"
 
 
 @pytest.mark.parametrize(
