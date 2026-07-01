@@ -6,6 +6,7 @@ from fastapi.testclient import TestClient
 
 from data import validate_data
 from backend.main import app
+from backend.routers import layers as layers_router
 
 client = TestClient(app)
 
@@ -91,3 +92,96 @@ def test_get_layer_times_invalid_layer():
     """Unknown layer returns 404."""
     response = client.get("/api/layers/unknown_layer/times")
     assert response.status_code == 404
+
+
+def test_get_ssm_legend_returns_dynamic_legend_with_exact_arguments(monkeypatch, tmp_path):
+    cog_path = tmp_path / "data" / "rasters" / "ssm" / "2010_01_cog.tif"
+    cog_path.parent.mkdir(parents=True)
+    cog_path.touch()
+    base_legend = [{"value": 0.09, "color": "#010203", "label": "base"}]
+    dynamic_legend = [{"value": 0.12, "color": "#010203", "label": "0.120 m³/m³"}]
+    calls = []
+    monkeypatch.setattr(layers_router, "PROJECT_ROOT", tmp_path, raising=False)
+    monkeypatch.setattr(
+        layers_router,
+        "get_layer",
+        lambda layer_id: {
+            "id": layer_id,
+            "unit": "m³/m³",
+            "legend": base_legend,
+        },
+    )
+    monkeypatch.setattr(
+        layers_router,
+        "get_dynamic_legend",
+        lambda path, legend, unit: calls.append((path, legend, unit))
+        or dynamic_legend,
+        raising=False,
+    )
+
+    response = client.get("/api/layers/ssm/legend?time=2010_01")
+
+    assert response.status_code == 200
+    assert response.json() == {
+        "layerId": "ssm",
+        "time": "2010_01",
+        "unit": "m³/m³",
+        "legend": dynamic_legend,
+    }
+    assert calls == [(cog_path, base_legend, "m³/m³")]
+
+
+def test_get_ssm_legend_rejects_invalid_time_without_computation(monkeypatch, tmp_path):
+    calls = []
+    monkeypatch.setattr(layers_router, "PROJECT_ROOT", tmp_path, raising=False)
+    monkeypatch.setattr(
+        layers_router,
+        "get_dynamic_legend",
+        lambda *_args: calls.append(_args),
+        raising=False,
+    )
+
+    response = client.get("/api/layers/ssm/legend", params={"time": "../secret_01"})
+
+    assert response.status_code == 422
+    assert "Invalid SSM time" in response.json()["detail"]
+    assert calls == []
+
+
+def test_get_ssm_legend_reports_missing_cog_without_computation(monkeypatch, tmp_path):
+    calls = []
+    monkeypatch.setattr(layers_router, "PROJECT_ROOT", tmp_path, raising=False)
+    monkeypatch.setattr(
+        layers_router,
+        "get_dynamic_legend",
+        lambda *_args: calls.append(_args),
+        raising=False,
+    )
+
+    response = client.get("/api/layers/ssm/legend?time=2010_01")
+
+    assert response.status_code == 404
+    assert response.json()["detail"] == (
+        "COG file not found for time '2010_01' (looked for: 2010_01_cog.tif)"
+    )
+    assert calls == []
+
+
+def test_get_ssm_legend_reports_missing_metadata_without_computation(
+    monkeypatch, tmp_path
+):
+    calls = []
+    monkeypatch.setattr(layers_router, "PROJECT_ROOT", tmp_path, raising=False)
+    monkeypatch.setattr(layers_router, "get_layer", lambda _layer_id: None)
+    monkeypatch.setattr(
+        layers_router,
+        "get_dynamic_legend",
+        lambda *_args: calls.append(_args),
+        raising=False,
+    )
+
+    response = client.get("/api/layers/ssm/legend?time=2010_01")
+
+    assert response.status_code == 404
+    assert response.json()["detail"] == "SSM layer metadata is missing"
+    assert calls == []

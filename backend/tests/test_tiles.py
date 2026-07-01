@@ -67,9 +67,13 @@ def test_tile_invalid_layer():
 
 
 def test_render_ssm_tile_reads_first_band_and_mask_from_cog(monkeypatch, tmp_path):
-    values = np.array([[[0.09, 0.40]]], dtype=np.float32)
-    mask = np.array([[255, 0]], dtype=np.uint8)
+    values = np.array([[[0.09, 0.40, 0.25]]], dtype=np.float32)
+    mask = np.array([[255, 255, 0]], dtype=np.uint8)
     calls = []
+    dynamic_legend = [
+        {"value": 0.09, "color": "#010203", "label": "low"},
+        {"value": 0.40, "color": "#a0b0c0", "label": "high"},
+    ]
 
     class FakeCOGReader:
         def __init__(self, path):
@@ -86,6 +90,12 @@ def test_render_ssm_tile_reads_first_band_and_mask_from_cog(monkeypatch, tmp_pat
             return SimpleNamespace(data=values, mask=mask)
 
     monkeypatch.setattr(tiles, "COGReader", FakeCOGReader)
+    monkeypatch.setattr(
+        tiles,
+        "get_dynamic_legend",
+        lambda *_args: dynamic_legend,
+        raising=False,
+    )
 
     cog_path = tmp_path / "ssm.tif"
     png = tiles._render_ssm_tile(cog_path, x=3, y=4, z=5)
@@ -99,7 +109,10 @@ def test_render_ssm_tile_reads_first_band_and_mask_from_cog(monkeypatch, tmp_pat
                 decoded = np.moveaxis(dataset.read(), 0, -1)
     np.testing.assert_array_equal(
         decoded,
-        np.array([[[213, 62, 79, 255], [0, 0, 0, 0]]], dtype=np.uint8),
+        np.array(
+            [[[1, 2, 3, 255], [160, 176, 192, 255], [0, 0, 0, 0]]],
+            dtype=np.uint8,
+        ),
     )
 
 

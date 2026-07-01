@@ -10,6 +10,7 @@ from titiler.core.factory import TilerFactory
 
 from backend.data_loader import get_layer
 from backend.raster_rendering import colorize, render_png
+from backend.ssm_legend import get_dynamic_legend
 from backend.ssm_time import ssm_time_to_cog_path
 
 router = APIRouter(tags=["tiles"])
@@ -44,9 +45,10 @@ def _render_ssm_tile(cog_path: Path, x: int, y: int, z: int) -> bytes:
     layer = get_layer("ssm")
     if layer is None:
         raise RuntimeError("SSM layer metadata is missing")
-    legend = layer.get("legend")
-    if not legend:
+    base_legend = layer.get("legend")
+    if not base_legend:
         raise RuntimeError("SSM layer legend is missing or empty")
+    legend = get_dynamic_legend(cog_path, base_legend, layer.get("unit") or "")
     with COGReader(str(cog_path)) as reader:
         image = reader.tile(x, y, z, indexes=1)
     rgba = colorize(image.data[0], legend, source_mask=image.mask)
