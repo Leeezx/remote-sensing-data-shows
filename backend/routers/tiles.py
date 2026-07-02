@@ -8,7 +8,16 @@ from rio_tiler.errors import TileOutsideBounds
 from rio_tiler.io import COGReader
 from titiler.core.factory import TilerFactory
 
-from backend.data_loader import get_layer
+from backend.data_loader import (
+    IRRIGATION_8DAY_ROOT,
+    IRRIGATION_ANNUAL_ROOT,
+    IRRIGATION_ANNUAL_COG_ROOT,
+    IRRIGATION_8DAY_COG_ROOT,
+    get_irrigation_layer,
+    get_layer,
+)
+from backend.irrigation_time import irrigation_time_to_cog_path, irrigation_time_to_path
+from backend.irrigation_legend import get_irrigation_dynamic_legend, valid_irrigation_mask
 from backend.raster_rendering import colorize, render_png
 from backend.ssm_legend import get_dynamic_legend
 from backend.ssm_time import ssm_time_to_cog_path
@@ -100,6 +109,74 @@ def ssm_tile_proxy(
         )
     try:
         png = _render_ssm_tile(cog_path, x, y, z)
+    except TileOutsideBounds:
+        png = TRANSPARENT_PNG
+    return Response(content=png, media_type="image/png")
+
+
+# ===== Irrigation water tiles =====
+
+
+def _render_irrigation_tile(raster_path: Path, x: int, y: int, z: int, time: str = "") -> bytes:
+    """Render one irrigation water raster tile using the irrigation legend."""
+    layer = get_irrigation_layer()
+    base_legend = layer.get("legend")
+    if not base_legend:
+        raise RuntimeError("Irrigation layer legend is missing or empty")
+    legend = get_irrigation_dynamic_legend(raster_path, base_legend, layer.get("unit") or "", time=time)
+    nodata_color = (0xE8, 0xE8, 0xE8, 128)
+    with COGReader(str(raster_path)) as reader:
+        image = reader.tile(x, y, z, indexes=1)
+    source_mask = image.mask & valid_irrigation_mask(image.data[0])
+    rgba = colorize(
+        image.data[0],
+        legend,
+        source_mask=source_mask,
+        nodata_color=nodata_color,
+    )
+    return render_png(rgba)
+
+
+@router.get("/irrigation-tiles/{tileMatrixSetId}/{z}/{x}/{y}.png")
+def irrigation_tile_proxy(
+    tileMatrixSetId: str,
+    z: int,
+    x: int,
+    y: int,
+    time: str = Query(...),
+):
+    """Resolve an irrigation time to a configured raster and render a PNG tile."""
+    if tileMatrixSetId != "WebMercatorQuad":
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=(
+                f"Unsupported tile matrix set '{tileMatrixSetId}'; "
+                "only WebMercatorQuad is supported"
+            ),
+        )
+    try:
+        raster_path = irrigation_time_to_cog_path(
+            IRRIGATION_ANNUAL_ROOT,
+            IRRIGATION_ANNUAL_COG_ROOT,
+            IRRIGATION_8DAY_ROOT,
+            IRRIGATION_8DAY_COG_ROOT,
+            time,
+        )
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            detail=str(exc),
+        ) from exc
+    if not raster_path.is_file():
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=(
+                f"Irrigation raster not found for time '{time}' "
+                f"(looked for: {raster_path.name})"
+            ),
+        )
+    try:
+        png = _render_irrigation_tile(raster_path, x, y, z, time=time)
     except TileOutsideBounds:
         png = TRANSPARENT_PNG
     return Response(content=png, media_type="image/png")

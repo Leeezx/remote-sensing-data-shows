@@ -235,6 +235,58 @@ def test_ssm_tile_route_renders_existing_cog_without_titiler_parameters(monkeypa
     assert calls == [(cog_path, 3, 4, 5)]
 
 
+def test_render_irrigation_tile_uses_dynamic_legend_and_mask(monkeypatch, tmp_path):
+    values = np.array([[[0.0, 5.0, 10.0]]], dtype=np.float32)
+    mask = np.array([[255, 0, 255]], dtype=np.uint8)
+    calls = []
+    legend_calls = []
+    dynamic_legend = [
+        {"value": 0.0, "color": "#000000", "label": "0"},
+        {"value": 10.0, "color": "#ffffff", "label": "10"},
+    ]
+
+    class FakeReader:
+        def __init__(self, path):
+            calls.append(("open", path))
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_args):
+            return None
+
+        def tile(self, x, y, z, indexes=None):
+            calls.append(("tile", x, y, z, indexes))
+            return SimpleNamespace(data=values, mask=mask)
+
+    monkeypatch.setattr(tiles, "COGReader", FakeReader)
+    monkeypatch.setattr(
+        tiles,
+        "get_irrigation_dynamic_legend",
+        lambda *args, **kwargs: legend_calls.append(args) or dynamic_legend,
+    )
+
+    raster_path = tmp_path / "IWU_2024.TIF"
+    png = tiles._render_irrigation_tile(raster_path, x=3, y=4, z=5, time="2024")
+
+    assert calls == [("open", str(raster_path)), ("tile", 3, 4, 5, 1)]
+    layer = tiles.get_irrigation_layer()
+    assert legend_calls == [(raster_path, layer["legend"], layer["unit"])]
+    assert png.startswith(b"\x89PNG\r\n\x1a\n")
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", NotGeoreferencedWarning)
+        with MemoryFile(png) as memory_file:
+            with memory_file.open() as dataset:
+                decoded = np.moveaxis(dataset.read(), 0, -1)
+    np.testing.assert_array_equal(
+        decoded,
+        np.array(
+            [[[0, 0, 0, 255], [232, 232, 232, 128], [255, 255, 255, 255]]],
+            dtype=np.uint8,
+        ),
+    )
+
+
 @pytest.mark.parametrize("tile_matrix_set", ["WorldCRS84Quad", "unknown"])
 def test_ssm_tile_route_rejects_unsupported_tile_matrix_set_without_rendering(
     monkeypatch, tmp_path, tile_matrix_set

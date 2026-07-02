@@ -3,10 +3,36 @@
 import json
 import os
 from pathlib import Path
+import re
+from datetime import date, timedelta
 from typing import Any
 
 # Project root is two levels up from this file (backend/data_loader.py -> project/)
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+IRRIGATION_ANNUAL_ROOT = Path(os.getenv("IRRIGATION_ANNUAL_ROOT", r"F:\IWU_RS_2025"))
+IRRIGATION_8DAY_ROOT = Path(
+    os.getenv(
+        "IRRIGATION_8DAY_ROOT",
+        r"F:\全国灌溉用水反演\数据2010-2013\全作物灌溉用水估计\IWU_calculate3",
+    )
+)
+IRRIGATION_ANNUAL_COG_ROOT = Path(
+    os.getenv(
+        "IRRIGATION_ANNUAL_COG_ROOT",
+        str(PROJECT_ROOT / "data" / "rasters" / "irrigation_annual"),
+    )
+)
+IRRIGATION_8DAY_COG_ROOT = Path(
+    os.getenv(
+        "IRRIGATION_8DAY_COG_ROOT",
+        str(PROJECT_ROOT / "data" / "rasters" / "irrigation_8day"),
+    )
+)
+
+_IRRIGATION_ANNUAL_FILE = re.compile(r"^IWU_(?P<year>[0-9]{4})\.TIF$", re.IGNORECASE)
+_IRRIGATION_8DAY_FILE = re.compile(
+    r"^IWU_(?P<year>[0-9]{4})_(?P<period>[0-9]{1,3})\.tif$", re.IGNORECASE
+)
 
 
 def _load_json(relative_path: str) -> Any:
@@ -62,6 +88,59 @@ def get_layer(layer_id: str) -> dict | None:
         if layer["id"] == layer_id:
             return layer
     return None
+
+
+def get_irrigation_layer() -> dict:
+    """Return irrigation water layer metadata."""
+    layer = _load_json("data/metadata/irrigation_layer.json")
+    layer["tileTemplate"] = (
+        "/data/irrigation-tiles/WebMercatorQuad/{z}/{x}/{y}.png?time={time}"
+    )
+    annual_times = get_irrigation_times("annual")
+    if annual_times:
+        layer["timeRange"] = {
+            "start": annual_times[0],
+            "end": annual_times[-1],
+            "step": "annual",
+        }
+    return layer
+
+
+def get_irrigation_times(resolution: str) -> list[str]:
+    """Return available irrigation raster time points."""
+    if resolution == "annual":
+        if IRRIGATION_ANNUAL_ROOT.is_dir():
+            years = []
+            for path in IRRIGATION_ANNUAL_ROOT.iterdir():
+                match = _IRRIGATION_ANNUAL_FILE.fullmatch(path.name)
+                if match:
+                    years.append(match.group("year"))
+            return sorted(set(years))
+        return _load_json("data/series/irrigation_annual_times.json")
+    if resolution == "month":
+        if IRRIGATION_8DAY_ROOT.is_dir():
+            months = []
+            for path in IRRIGATION_8DAY_ROOT.iterdir():
+                match = _IRRIGATION_8DAY_FILE.fullmatch(path.name)
+                if not match:
+                    continue
+                year = int(match.group("year"))
+                period = int(match.group("period"))
+                period_date = date(year, 1, 1) + timedelta(days=(period - 1) * 8)
+                months.append(period_date.strftime("%Y-%m"))
+            return sorted(set(months))
+        return _load_json("data/series/irrigation_8day_times.json")
+    raise ValueError("resolution must be 'annual' or 'month'")
+
+
+def get_irrigation_regions() -> list[dict]:
+    """Return irrigation administrative regions."""
+    return _load_json("data/stats/irrigation_regions.json")
+
+
+def get_irrigation_region_series() -> dict:
+    """Return precomputed irrigation water totals by administrative region."""
+    return _load_json("data/stats/irrigation_region_series.json")
 
 
 def get_region(region_id: str) -> dict | None:
