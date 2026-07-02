@@ -1,0 +1,18 @@
+{
+  "id": "irrigation_water",
+  "name": "灌溉用水量",
+  "description": "年度与8天时间分辨率灌溉用水栅格数据",
+  "type": "irrigation",
+  "unit": "万m³",
+  "range": { "min": 0.0, "max": 220.0 },
+  "timeRange": { "start": "2021", "end": "2023", "step": "annual" },
+  "tileTemplate": "data/tiles/irrigation_water/{time}/{z}/{x}/{y}.png",
+  "legend": [
+    { "value": 0, "color": "#eff3ff", "label": "0 万m³" },
+    { "value": 20, "color": "#bdd7e7", "label": "20 万m³" },
+    { "value": 50, "color": "#6baed6", "label": "50 万m³" },
+    { "value": 90, "color": "#3182bd", "label": "90 万m³" },
+    { "value": 150, "color": "#08519c", "label": "150 万m³" },
+    { "value": 220, "color": "#042d60", "label": "220 万m³" }
+  ]
+}
