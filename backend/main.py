@@ -4,7 +4,17 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.routers import auth, export, health, layers, query, regions, series, tiles
+from backend.routers import (
+    auth,
+    export,
+    health,
+    irrigation,
+    layers,
+    query,
+    regions,
+    series,
+    tiles,
+)
 
 load_dotenv()
 
@@ -31,6 +41,7 @@ app.include_router(query.router, prefix="/api")
 app.include_router(series.router, prefix="/api")
 app.include_router(regions.router, prefix="/api")
 app.include_router(export.router, prefix="/api")
+app.include_router(irrigation.router, prefix="/api")
 # TiTiler dynamic COG tile endpoints (for SSM layer)
 app.include_router(tiles.cog_tiler, prefix="/cog")
 # Legacy static tile endpoints (for pre-generated PNG tiles of other layers)

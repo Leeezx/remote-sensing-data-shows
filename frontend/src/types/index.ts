@@ -27,6 +27,62 @@ export interface LayerLegendResponse {
 
 export type LegendStatus = 'ready' | 'loading' | 'error'
 
+// ===== Irrigation Water =====
+
+export type IrrigationRasterResolution = 'annual' | 'month'
+export type IrrigationRegionLevel = 'county' | 'village'
+export type IrrigationSeriesPeriod = 'annual' | 'monthly'
+
+export interface IrrigationRegion {
+  id: string
+  name: string
+  level: IrrigationRegionLevel
+  parentId: string | null
+}
+
+export interface IrrigationSeriesPoint {
+  time: string
+  value: number
+}
+
+export interface IrrigationSeriesResponse {
+  region: IrrigationRegion
+  period: IrrigationSeriesPeriod
+  unit: string
+  series: IrrigationSeriesPoint[]
+  summary: {
+    total: number
+    average: number
+    max: number
+    min: number
+  }
+}
+
+export interface IrrigationVectorStatus {
+  level: IrrigationRegionLevel
+  available: boolean
+  url: string | null
+  message: string
+}
+
+export interface IrrigationVectorFeature {
+  type: 'Feature'
+  properties: {
+    id?: string
+    name?: string
+    [key: string]: unknown
+  }
+  geometry: {
+    type: string
+    coordinates: unknown
+  }
+}
+
+export interface IrrigationVectorGeoJSON {
+  type: 'FeatureCollection'
+  features: IrrigationVectorFeature[]
+}
+
 // ===== Query Results =====
 
 export interface PointQueryResult {

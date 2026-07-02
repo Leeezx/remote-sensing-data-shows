@@ -8,6 +8,8 @@ import Sidebar from './components/Sidebar'
 import MapView from './components/MapView'
 import Legend from './components/Legend'
 import ExportPanel from './components/ExportPanel'
+import IrrigationPage from './pages/IrrigationPage'
+import PlaceholderPage from './pages/PlaceholderPage'
 import './App.css'
 
 interface DynamicLegendState {
@@ -183,9 +185,7 @@ function MainPage() {
     : 'ready'
 
   return (
-    <div className="app">
-      <Header />
-      <main className="app-main">
+    <main className="app-main">
         <div className="sidebar-area">
           <Sidebar
             layers={layers}
@@ -237,7 +237,6 @@ function MainPage() {
           />
         </div>
       </main>
-    </div>
   )
 }
 
@@ -245,9 +244,23 @@ function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
-        <Routes>
-          <Route path="/*" element={<MainPage />} />
-        </Routes>
+        <div className="app">
+          <Header />
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/base" element={<MainPage />} />
+            <Route path="/irrigation" element={<IrrigationPage />} />
+            <Route
+              path="/reclamation"
+              element={<PlaceholderPage title="复耕潜力评估" />}
+            />
+            <Route
+              path="/water-demand"
+              element={<PlaceholderPage title="需水补水计算与评估" />}
+            />
+            <Route path="*" element={<MainPage />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </AuthProvider>
   )

@@ -259,6 +259,61 @@ def test_ssm_area_query_all_invalid_chunks_return_404(monkeypatch, tmp_path):
     assert exc_info.value.detail == "No valid data in the specified area"
 
 
+def test_irrigation_point_query_reads_raster_value(monkeypatch, tmp_path):
+    raster_path = tmp_path / "IWU_2024.TIF"
+    raster_path.touch()
+    raster = FakeRaster([[12.5]])
+    monkeypatch.setattr(
+        query,
+        "_validated_irrigation_raster_path",
+        lambda time: raster_path,
+        raising=False,
+    )
+    monkeypatch.setattr(query.rasterio, "open", lambda path: raster)
+
+    response = client.get(
+        "/api/query/point",
+        params={
+            "layerId": "irrigation_water",
+            "time": "2024",
+            "lng": 0,
+            "lat": 1,
+        },
+    )
+
+    assert response.status_code == 200
+    assert response.json()["value"] == 12.5
+    assert response.json()["unit"] == "万m³"
+
+
+def test_irrigation_area_query_reads_raster_statistics(monkeypatch, tmp_path):
+    raster_path = tmp_path / "IWU_2024.TIF"
+    raster_path.touch()
+    raster = FakeRaster([[1.0, 2.0], [3.0, -999.0]])
+    monkeypatch.setattr(
+        query,
+        "_validated_irrigation_raster_path",
+        lambda time: raster_path,
+        raising=False,
+    )
+    monkeypatch.setattr(query.rasterio, "open", lambda path: raster)
+
+    response = client.post(
+        "/api/query/area",
+        json={
+            "layerId": "irrigation_water",
+            "time": "2024",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [[[0, 0], [1, 0], [1, 1], [0, 1], [0, 0]]],
+            },
+        },
+    )
+
+    assert response.status_code == 200
+    assert response.json() == {"mean": 2.0, "max": 3.0, "min": 1.0, "count": 3}
+
+
 @pytest.mark.parametrize("time", INVALID_SSM_TIMES)
 def test_ssm_area_route_rejects_invalid_time_without_opening_raster(
     monkeypatch, time

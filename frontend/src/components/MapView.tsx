@@ -6,9 +6,10 @@ import {
   useMapEvents,
   Rectangle,
   Marker,
+  GeoJSON,
 } from 'react-leaflet'
 import L from 'leaflet'
-import type { Layer } from '../types'
+import type { IrrigationVectorGeoJSON, Layer } from '../types'
 import { useMapQuery } from '../hooks/useMapQuery'
 import QueryCard from './QueryCard'
 
@@ -152,6 +153,66 @@ function MapEvents({
   return null
 }
 
+// ===== Administrative region overlay =====
+
+function RegionOverlay({
+  data,
+  selectedRegionId,
+  onRegionSelect,
+}: {
+  data: IrrigationVectorGeoJSON | null
+  selectedRegionId?: string | null
+  onRegionSelect?: (region: { id: string; name: string }) => void
+}) {
+  if (!data || !onRegionSelect) return null
+
+  const featureStyle = (feature?: { properties?: Record<string, unknown> }) => {
+    const featureId = String(feature?.properties?.id ?? '')
+    const selected = featureId && featureId === selectedRegionId
+    return {
+      color: selected ? '#b45309' : '#1d4ed8',
+      opacity: selected ? 0.75 : 0.42,
+      weight: selected ? 2.6 : 1.2,
+      fillColor: selected ? '#f59e0b' : '#60a5fa',
+      fillOpacity: selected ? 0.18 : 0.035,
+    }
+  }
+
+  return (
+    <GeoJSON
+      key={`${selectedRegionId ?? 'none'}:${data.features.length}`}
+      data={data as never}
+      style={featureStyle}
+      onEachFeature={(feature, layer) => {
+        layer.on('mouseover', () => {
+          const pathLayer = layer as L.Path
+          pathLayer.setStyle({
+            color: '#0f766e',
+            opacity: 0.85,
+            weight: 2.4,
+            fillColor: '#14b8a6',
+            fillOpacity: 0.16,
+          })
+          pathLayer.bringToFront()
+        })
+        layer.on('mouseout', () => {
+          ;(layer as L.Path).setStyle(featureStyle(feature))
+        })
+        layer.on('click', (event) => {
+          if (event.originalEvent) {
+            L.DomEvent.stopPropagation(event.originalEvent)
+          }
+          const id = String(
+            feature.properties?.id ?? feature.properties?.gb ?? feature.properties?.name ?? '',
+          )
+          const name = String(feature.properties?.name ?? feature.properties?.NAME ?? id)
+          if (id) onRegionSelect({ id, name })
+        })
+      }}
+    />
+  )
+}
+
 // ===== Bounds for China =====
 
 const CHINA_BOUNDS: L.LatLngBoundsLiteral = [
@@ -168,6 +229,9 @@ interface MapViewProps {
   activeLayerId: string | null
   opacity: number
   currentTime: string
+  regionVector?: IrrigationVectorGeoJSON | null
+  selectedRegionId?: string | null
+  onRegionSelect?: (region: { id: string; name: string }) => void
 }
 
 export default function MapView({
@@ -175,6 +239,9 @@ export default function MapView({
   activeLayerId,
   opacity,
   currentTime,
+  regionVector = null,
+  selectedRegionId = null,
+  onRegionSelect,
 }: MapViewProps) {
   const [marker, setMarker] = useState<L.LatLng | null>(null)
   const [rect, setRect] = useState<L.LatLngBoundsExpression | null>(null)
@@ -234,6 +301,12 @@ export default function MapView({
 
         {/* Remote sensing overlay */}
         <TileOverlay layer={activeLayer} time={currentTime} opacity={opacity} />
+
+        <RegionOverlay
+          data={regionVector}
+          selectedRegionId={selectedRegionId}
+          onRegionSelect={onRegionSelect}
+        />
 
         {/* Point click + rectangle drawing */}
         <MapEvents
