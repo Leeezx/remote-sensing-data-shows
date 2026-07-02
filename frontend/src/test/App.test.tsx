@@ -2,12 +2,20 @@ import { act, render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import App from '../App'
+import type { IrrigationRegion, IrrigationSeriesPeriod } from '../types'
 
 const apiMocks = vi.hoisted(() => ({
   getLayers: vi.fn(),
   getLayerTimes: vi.fn(),
   getLayerLegend: vi.fn(),
   getRegions: vi.fn(),
+  getIrrigationLayer: vi.fn(),
+  getIrrigationLegend: vi.fn(),
+  getIrrigationTimes: vi.fn(),
+  getIrrigationRegions: vi.fn(),
+  getIrrigationSeries: vi.fn(),
+  getIrrigationVectorStatus: vi.fn(),
+  getIrrigationVectorGeoJSON: vi.fn(),
 }))
 
 vi.mock('../services/api', () => ({
@@ -19,7 +27,21 @@ vi.mock('../services/api', () => ({
 }))
 
 vi.mock('../components/MapView', () => ({
-  default: () => <div data-testid="map-view">地图</div>,
+  default: (props: {
+    onRegionSelect?: (region: { id: string; name: string }) => void
+    regionVector?: unknown
+  }) => (
+    <div data-testid="map-view">
+      地图
+      {props.regionVector ? <span>行政区矢量已加载</span> : null}
+      <button
+        type="button"
+        onClick={() => props.onRegionSelect?.({ id: 'county_a', name: '示范县A' })}
+      >
+        选择示范县A
+      </button>
+    </div>
+  ),
 }))
 
 const layers = [
@@ -47,6 +69,50 @@ const layers = [
   },
 ]
 
+const irrigationLayer = {
+  id: 'irrigation_water',
+  name: '灌溉用水量',
+  description: '年度与8天时间分辨率灌溉用水栅格数据',
+  type: 'irrigation',
+  unit: '万m³',
+  range: { min: 0, max: 220 },
+  timeRange: { start: '2021', end: '2023', step: 'annual' },
+  tileTemplate: '/data/tiles/irrigation_water/{time}/{z}/{x}/{y}.png',
+  legend: [{ value: 80, color: '#2b8cbe', label: '80 万m³' }],
+}
+
+const countyRegions: IrrigationRegion[] = [
+  { id: 'county_a', name: '示范县A', level: 'county' as const, parentId: null },
+  { id: 'county_b', name: '示范县B', level: 'county' as const, parentId: null },
+]
+
+const villageRegions: IrrigationRegion[] = [
+  { id: 'village_a1', name: '灌区村A1', level: 'village' as const, parentId: 'county_a' },
+]
+
+function irrigationSeries(
+  region: IrrigationRegion = countyRegions[0],
+  period: IrrigationSeriesPeriod = 'monthly',
+) {
+  return {
+    region,
+    period,
+    unit: '万m³',
+    series: period === 'monthly'
+      ? [
+          { time: '2023-01', value: 118.4 },
+          { time: '2023-02', value: 101.8 },
+          { time: '2023-03', value: 109.6 },
+        ]
+      : [
+          { time: '2021', value: 1420.5 },
+          { time: '2022', value: 1488.7 },
+          { time: '2023', value: 1532.2 },
+        ],
+    summary: { total: 1532.2, average: 127.7, max: 214.5, min: 101.8 },
+  }
+}
+
 function deferred<T>() {
   let resolve!: (value: T) => void
   let reject!: (reason?: unknown) => void
@@ -69,6 +135,7 @@ function legendResponse(time: string, label: string) {
 describe('App', () => {
   beforeEach(() => {
     vi.clearAllMocks()
+    window.history.pushState({}, '', '/')
     apiMocks.getLayers.mockResolvedValue(layers)
     apiMocks.getLayerTimes.mockResolvedValue([
       '2025-01-01',
@@ -79,6 +146,130 @@ describe('App', () => {
       legendResponse('2025-01-01', '首期动态图例'),
     )
     apiMocks.getRegions.mockResolvedValue([])
+    apiMocks.getIrrigationLayer.mockResolvedValue(irrigationLayer)
+    apiMocks.getIrrigationLegend.mockImplementation((time: string) => (
+      Promise.resolve({
+        layerId: 'irrigation_water',
+        time,
+        unit: '万m³',
+        legend: [{ value: 9.5, color: '#123456', label: `${time} 动态图例` }],
+      })
+    ))
+    apiMocks.getIrrigationTimes.mockResolvedValue(['2021', '2022', '2023'])
+    apiMocks.getIrrigationRegions.mockImplementation((level: 'county' | 'village') => (
+      Promise.resolve(level === 'county' ? countyRegions : villageRegions)
+    ))
+    apiMocks.getIrrigationSeries.mockImplementation(
+      (level: 'county' | 'village', _regionId: string, period: 'annual' | 'monthly') => (
+        Promise.resolve(irrigationSeries(
+          level === 'county' ? countyRegions[0] : villageRegions[0],
+          period,
+        ))
+      ),
+    )
+    apiMocks.getIrrigationVectorStatus.mockImplementation((level: 'county' | 'village') => (
+      Promise.resolve(level === 'county'
+        ? {
+            level: 'county',
+            available: true,
+            url: '/api/irrigation/vectors/county',
+            message: '县级行政区矢量可用',
+          }
+        : {
+            level: 'village',
+            available: false,
+            url: null,
+            message: '村级行政区矢量暂未配置',
+          })
+    ))
+    apiMocks.getIrrigationVectorGeoJSON.mockResolvedValue({
+      type: 'FeatureCollection',
+      features: [
+        {
+          type: 'Feature',
+          properties: { id: 'county_a', name: '示范县A' },
+          geometry: {
+            type: 'Polygon',
+            coordinates: [[[100, 30], [101, 30], [101, 31], [100, 30]]],
+          },
+        },
+      ],
+    })
+  })
+
+  it('shows navigation for the four platform sections', async () => {
+    render(<App />)
+
+    expect(await screen.findByRole('link', { name: '基础数据展示' })).toHaveAttribute('href', '/base')
+    expect(screen.getByRole('link', { name: '灌溉用水数据展示' })).toHaveAttribute('href', '/irrigation')
+    expect(screen.getByRole('link', { name: '复耕潜力评估' })).toHaveAttribute('href', '/reclamation')
+    expect(screen.getByRole('link', { name: '需水补水计算与评估' })).toHaveAttribute('href', '/water-demand')
+  })
+
+  it('loads the irrigation page with annual/monthly timeline and leaves statistics off by default', async () => {
+    window.history.pushState({}, '', '/irrigation')
+
+    render(<App />)
+
+    expect(await screen.findByRole('heading', { name: '灌溉用水数据展示' })).toBeInTheDocument()
+    expect(apiMocks.getIrrigationLayer).toHaveBeenCalledOnce()
+    expect(apiMocks.getIrrigationTimes).toHaveBeenCalledWith('annual')
+    await waitFor(() => {
+      expect(apiMocks.getIrrigationLegend).toHaveBeenCalledWith('2021')
+    })
+    expect(apiMocks.getIrrigationVectorStatus).not.toHaveBeenCalled()
+    expect(apiMocks.getIrrigationVectorGeoJSON).not.toHaveBeenCalled()
+    expect(apiMocks.getIrrigationSeries).not.toHaveBeenCalled()
+    expect(screen.getByRole('button', { name: '年度' })).toHaveClass('btn-primary')
+    expect(screen.getByRole('button', { name: '月度' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: '县级统计' })).not.toHaveClass('btn-primary')
+    expect(screen.queryByText('行政区矢量已加载')).not.toBeInTheDocument()
+    expect((await screen.findAllByText('未开启行政区统计')).length).toBeGreaterThan(0)
+  })
+
+  it('loads county statistics after selecting a county on the map', async () => {
+    window.history.pushState({}, '', '/irrigation')
+    const user = userEvent.setup()
+
+    render(<App />)
+
+    await user.click(await screen.findByRole('button', { name: '县级统计' }))
+    await screen.findByText('行政区矢量已加载')
+    await user.click(await screen.findByRole('button', { name: '选择示范县A' }))
+
+    await waitFor(() => {
+      expect(apiMocks.getIrrigationSeries).toHaveBeenCalledWith(
+        'county',
+        'county_a',
+        'monthly',
+      )
+    })
+    expect(screen.getByText('月度总量 1532.2 万m³')).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: '示范县A 月度灌溉用水量折线图' })).toBeInTheDocument()
+  })
+
+  it('switches monthly raster timeline and reports missing village vector data', async () => {
+    window.history.pushState({}, '', '/irrigation')
+    const user = userEvent.setup()
+
+    render(<App />)
+    expect(await screen.findByRole('button', { name: '月度' })).toBeInTheDocument()
+
+    await user.click(screen.getByRole('button', { name: '月度' }))
+
+    await waitFor(() => {
+      expect(apiMocks.getIrrigationTimes).toHaveBeenLastCalledWith('month')
+    })
+    await waitFor(() => {
+      expect(apiMocks.getIrrigationLegend).toHaveBeenCalledWith('2021')
+    })
+
+    await user.click(screen.getByRole('button', { name: '村级统计' }))
+
+    await waitFor(() => {
+      expect(apiMocks.getIrrigationVectorStatus).toHaveBeenCalledWith('village')
+    })
+    expect((await screen.findAllByText('村级行政区矢量暂未配置')).length).toBeGreaterThan(0)
   })
 
   it('loads the map without legacy region or chart panels', async () => {

@@ -6,6 +6,13 @@ import type {
   AreaQueryResult,
   LoginResponse,
   LayerLegendResponse,
+  IrrigationRasterResolution,
+  IrrigationRegion,
+  IrrigationRegionLevel,
+  IrrigationSeriesPeriod,
+  IrrigationSeriesResponse,
+  IrrigationVectorGeoJSON,
+  IrrigationVectorStatus,
 } from '../types'
 
 const client = axios.create({
@@ -59,6 +66,67 @@ export async function getLayerLegend(
     `/layers/${layerId}/legend`,
     { params: { time } },
   )
+  return data
+}
+
+// ===== Irrigation Water =====
+
+export async function getIrrigationLayer(): Promise<Layer> {
+  const { data } = await client.get('/irrigation/layer')
+  return data
+}
+
+export async function getIrrigationTimes(
+  resolution: IrrigationRasterResolution,
+): Promise<string[]> {
+  const { data } = await client.get('/irrigation/times', {
+    params: { resolution },
+  })
+  return data
+}
+
+export async function getIrrigationLegend(
+  time: string,
+): Promise<LayerLegendResponse> {
+  const { data } = await client.get<LayerLegendResponse>('/irrigation/legend', {
+    params: { time },
+  })
+  return data
+}
+
+export async function getIrrigationRegions(
+  level: IrrigationRegionLevel,
+): Promise<IrrigationRegion[]> {
+  const { data } = await client.get('/irrigation/regions', {
+    params: { level },
+  })
+  return data
+}
+
+export async function getIrrigationSeries(
+  level: IrrigationRegionLevel,
+  regionId: string,
+  period: IrrigationSeriesPeriod,
+): Promise<IrrigationSeriesResponse> {
+  const { data } = await client.get('/irrigation/series', {
+    params: { level, regionId, period },
+  })
+  return data
+}
+
+export async function getIrrigationVectorStatus(
+  level: IrrigationRegionLevel,
+): Promise<IrrigationVectorStatus> {
+  const { data } = await client.get('/irrigation/vectors', {
+    params: { level },
+  })
+  return data
+}
+
+export async function getIrrigationVectorGeoJSON(
+  level: IrrigationRegionLevel,
+): Promise<IrrigationVectorGeoJSON> {
+  const { data } = await client.get(`/irrigation/vectors/${level}`)
   return data
 }
 

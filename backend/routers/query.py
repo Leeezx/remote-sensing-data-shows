@@ -8,7 +8,16 @@ from fastapi import APIRouter, HTTPException, Query, status
 from pydantic import BaseModel
 from pyproj import Transformer
 
-from backend.data_loader import get_area_stats, get_layer, get_regions
+from backend.data_loader import (
+    IRRIGATION_8DAY_ROOT,
+    IRRIGATION_ANNUAL_ROOT,
+    get_area_stats,
+    get_irrigation_layer,
+    get_layer,
+    get_regions,
+)
+from backend.irrigation_time import irrigation_time_to_path
+from backend.irrigation_legend import valid_irrigation_mask
 from backend.raster_rendering import valid_data_mask
 from backend.ssm_time import ssm_time_to_cog_path
 
@@ -33,6 +42,29 @@ def _validated_ssm_cog_path(time: str) -> Path:
             status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
             detail=str(exc),
         ) from exc
+
+
+def _validated_irrigation_raster_path(time: str) -> Path:
+    try:
+        raster_path = irrigation_time_to_path(
+            IRRIGATION_ANNUAL_ROOT,
+            IRRIGATION_8DAY_ROOT,
+            time,
+        )
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            detail=str(exc),
+        ) from exc
+    if not raster_path.is_file():
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=(
+                f"Irrigation raster not found for time '{time}' "
+                f"(looked for: {raster_path.name})"
+            ),
+        )
+    return raster_path
 
 
 class GeoJSONGeometry(BaseModel):
@@ -187,6 +219,87 @@ def _query_area_SSM(layer: dict, time: str, west: float, south: float, east: flo
         )
 
 
+def _query_point_irrigation(layer: dict, time: str, lng: float, lat: float) -> dict:
+    """Real-time point query for irrigation water rasters."""
+    raster_path = _validated_irrigation_raster_path(time)
+    try:
+        with rasterio.open(raster_path) as src:
+            transformer = Transformer.from_crs("EPSG:4326", src.crs, always_xy=True)
+            x, y = transformer.transform(lng, lat)
+            row, col = src.index(x, y)
+            if row < 0 or row >= src.height or col < 0 or col >= src.width:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="Point is outside the raster extent",
+                )
+            window = ((row, row + 1), (col, col + 1))
+            val = src.read(1, window=window)
+            source_mask = src.read_masks(1, window=window)
+            value = float(val[0, 0])
+            if not valid_irrigation_mask(val, source_mask=source_mask, nodata=src.nodata)[0, 0]:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="No valid data at this point",
+                )
+    except rasterio.errors.RasterioIOError as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to read raster: {e}",
+        )
+
+    return {
+        "layerId": layer["id"],
+        "time": time,
+        "lng": lng,
+        "lat": lat,
+        "value": value,
+        "unit": layer["unit"],
+    }
+
+
+def _query_area_irrigation(
+    layer: dict,
+    time: str,
+    west: float,
+    south: float,
+    east: float,
+    north: float,
+) -> dict:
+    """Real-time rectangular area query for irrigation water rasters."""
+    raster_path = _validated_irrigation_raster_path(time)
+    try:
+        with rasterio.open(raster_path) as src:
+            row_min, col_min = src.index(west, north)
+            row_max, col_max = src.index(east, south)
+            row_min, row_max = max(0, row_min), min(src.height, row_max + 1)
+            col_min, col_max = max(0, col_min), min(src.width, col_max + 1)
+            if row_min >= row_max or col_min >= col_max:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="Area is outside the raster extent",
+                )
+            window = ((row_min, row_max), (col_min, col_max))
+            data = src.read(1, window=window)
+            source_mask = src.read_masks(1, window=window)
+            valid = data[valid_irrigation_mask(data, source_mask=source_mask, nodata=src.nodata)]
+            if valid.size == 0:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="No valid data in the specified area",
+                )
+            return {
+                "mean": float(valid.mean()),
+                "max": float(valid.max()),
+                "min": float(valid.min()),
+                "count": int(valid.size),
+            }
+    except rasterio.errors.RasterioIOError as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to read raster: {e}",
+        )
+
+
 @router.get("/query/point")
 def point_query(
     layerId: str = Query(...),
@@ -200,7 +313,7 @@ def point_query(
     For other layers: returns the nearest region's pre-computed statistics.
     """
     # Validate layer exists
-    layer = get_layer(layerId)
+    layer = get_irrigation_layer() if layerId == "irrigation_water" else get_layer(layerId)
     if layer is None:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
@@ -210,6 +323,8 @@ def point_query(
     # ---- SSM layer: use rasterio to read pixel from COG file ----
     if layerId == "ssm":
         return _query_point_SSM(layer, time, lng, lat)
+    if layerId == "irrigation_water":
+        return _query_point_irrigation(layer, time, lng, lat)
 
     # ---- Other layers: fall through to JSON stats lookup ----
     # Find region containing the point
@@ -263,7 +378,11 @@ def area_query(body: AreaQueryRequest):
     For other layers: returns pre-computed area statistics from JSON.
     """
     # Validate layer exists
-    layer = get_layer(body.layerId)
+    layer = (
+        get_irrigation_layer()
+        if body.layerId == "irrigation_water"
+        else get_layer(body.layerId)
+    )
     if layer is None:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
@@ -288,6 +407,8 @@ def area_query(body: AreaQueryRequest):
     # ---- SSM layer: use rasterio to read and compute stats from COG ----
     if body.layerId == "ssm":
         return _query_area_SSM(layer, body.time, west, south, east, north)
+    if body.layerId == "irrigation_water":
+        return _query_area_irrigation(layer, body.time, west, south, east, north)
 
     # ---- Other layers: fall through to JSON stats lookup ----
     # Find intersecting regions

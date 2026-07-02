@@ -23,8 +23,16 @@ vi.mock('axios', async (importOriginal) => {
   }
 })
 
-import { getExportCsvUrl, getLayerLegend } from '../services/api'
-import type { LayerLegendResponse } from '../types'
+import {
+  getExportCsvUrl,
+  getIrrigationRegions,
+  getIrrigationLegend,
+  getIrrigationSeries,
+  getIrrigationTimes,
+  getIrrigationVectorStatus,
+  getLayerLegend,
+} from '../services/api'
+import type { IrrigationSeriesResponse, LayerLegendResponse } from '../types'
 
 beforeEach(() => {
   localStorage.clear()
@@ -57,6 +65,77 @@ describe('getLayerLegend', () => {
     expect(clientGet).toHaveBeenCalledOnce()
     expect(clientGet).toHaveBeenCalledWith('/layers/ssm/legend', {
       params: { time: '2025-06' },
+    })
+  })
+})
+
+describe('irrigation API helpers', () => {
+  it('requests irrigation raster times by resolution', async () => {
+    clientGet.mockResolvedValueOnce({ data: ['2021', '2022'] })
+
+    await expect(getIrrigationTimes('annual')).resolves.toEqual(['2021', '2022'])
+    expect(clientGet).toHaveBeenCalledWith('/irrigation/times', {
+      params: { resolution: 'annual' },
+    })
+  })
+
+  it('requests irrigation dynamic legend for a raster time', async () => {
+    const response = {
+      layerId: 'irrigation_water',
+      time: '2010-05',
+      unit: '万m³',
+      legend: [{ value: 3.2, color: '#123456', label: '3.200 万m³' }],
+    } satisfies LayerLegendResponse
+    clientGet.mockResolvedValueOnce({ data: response })
+
+    await expect(getIrrigationLegend('2010-05')).resolves.toEqual(response)
+    expect(clientGet).toHaveBeenCalledWith('/irrigation/legend', {
+      params: { time: '2010-05' },
+    })
+  })
+
+  it('requests irrigation vector status by administrative level', async () => {
+    const response = {
+      level: 'county',
+      available: true,
+      url: '/api/irrigation/vectors/county',
+      message: '县级行政区矢量可用',
+    }
+    clientGet.mockResolvedValueOnce({ data: response })
+
+    await expect(getIrrigationVectorStatus('county')).resolves.toEqual(response)
+    expect(clientGet).toHaveBeenCalledWith('/irrigation/vectors', {
+      params: { level: 'county' },
+    })
+  })
+
+  it('requests irrigation regions by administrative level', async () => {
+    const regions = [
+      { id: 'county_a', name: '示范县A', level: 'county' as const, parentId: null },
+    ]
+    clientGet.mockResolvedValueOnce({ data: regions })
+
+    await expect(getIrrigationRegions('county')).resolves.toEqual(regions)
+    expect(clientGet).toHaveBeenCalledWith('/irrigation/regions', {
+      params: { level: 'county' },
+    })
+  })
+
+  it('requests precomputed irrigation series for one region', async () => {
+    const response = {
+      region: { id: 'county_a', name: '示范县A', level: 'county', parentId: null },
+      period: 'monthly',
+      unit: '万m³',
+      series: [{ time: '2023-01', value: 118.4 }],
+      summary: { total: 1532.2, average: 127.7, max: 214.5, min: 101.8 },
+    } satisfies IrrigationSeriesResponse
+    clientGet.mockResolvedValueOnce({ data: response })
+
+    await expect(
+      getIrrigationSeries('county', 'county_a', 'monthly'),
+    ).resolves.toEqual(response)
+    expect(clientGet).toHaveBeenCalledWith('/irrigation/series', {
+      params: { level: 'county', regionId: 'county_a', period: 'monthly' },
     })
   })
 })
