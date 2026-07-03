@@ -20,3 +20,26 @@ body {
 .leaflet-container {
   font-family: inherit;
 }
+
+/* Region label tooltips — only created at sufficient zoom */
+.region-label {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #1e293b;
+  font-size: 10px;
+  font-weight: 600;
+  text-shadow:
+    1px 1px 0 rgba(255, 255, 255, 0.7),
+    -1px -1px 0 rgba(255, 255, 255, 0.7),
+    1px -1px 0 rgba(255, 255, 255, 0.7),
+    -1px 1px 0 rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.region-label::before {
+  display: none;
+}

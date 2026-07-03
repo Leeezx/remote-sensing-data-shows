@@ -281,7 +281,7 @@ def test_render_irrigation_tile_uses_dynamic_legend_and_mask(monkeypatch, tmp_pa
     np.testing.assert_array_equal(
         decoded,
         np.array(
-            [[[0, 0, 0, 255], [232, 232, 232, 128], [255, 255, 255, 255]]],
+            [[[232, 232, 232, 128], [232, 232, 232, 128], [255, 255, 255, 255]]],
             dtype=np.uint8,
         ),
     )

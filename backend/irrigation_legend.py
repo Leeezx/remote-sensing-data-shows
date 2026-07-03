@@ -46,7 +46,7 @@ def _save_legend_disk_cache(disk_cache: dict) -> None:
 def valid_irrigation_mask(values, source_mask=None, nodata=None):
     """Return valid irrigation pixels, excluding negative water volumes."""
     values = np.asarray(values)
-    return valid_data_mask(values, source_mask=source_mask, nodata=nodata) & (values >= 0)
+    return valid_data_mask(values, source_mask=source_mask, nodata=nodata) & (values > 0)
 
 
 def build_irrigation_dynamic_legend(values, base_legend, unit, source_mask=None, nodata=None):

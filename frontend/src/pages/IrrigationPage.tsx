@@ -420,6 +420,7 @@ export default function IrrigationPage() {
               disableQuery={isAdminStatsMode}
               hideRaster={isAdminStatsMode}
               regionColorMap={regionColorMap}
+              regionLevel={regionLevel}
             />
           </div>
         )}

@@ -160,12 +160,96 @@ function RegionOverlay({
   selectedRegionId,
   onRegionSelect,
   colorMap,
+  regionLevel,
 }: {
   data: IrrigationVectorGeoJSON | null
   selectedRegionId?: string | null
   onRegionSelect?: (region: { id: string; name: string }) => void
   colorMap?: Map<string, string> | null
+  regionLevel?: string | null
 }) {
+  const map = useMap()
+  const [showLabels, setShowLabels] = useState(false)
+  const geoLayersRef = useRef<L.Layer[]>([])
+  const rafRef = useRef(0)
+
+  // Reset layer ref when data changes (render-phase, before child effects)
+  const nextLen = data?.features.length ?? 0
+  const prevLenRef = useRef(nextLen)
+  if (prevLenRef.current !== nextLen) {
+    prevLenRef.current = nextLen
+    cancelAnimationFrame(rafRef.current)
+    // Unbind tooltips from old layers before clearing
+    for (const layer of geoLayersRef.current) {
+      try { layer.unbindTooltip() } catch { /* ignore */ }
+    }
+    geoLayersRef.current = []
+  }
+
+  // Zoom → label visibility
+  useEffect(() => {
+    if (!regionLevel) {
+      setShowLabels(false)
+      return
+    }
+    const handler = () => {
+      const zoom = map.getZoom()
+      setShowLabels(regionLevel === 'village' ? zoom >= 11 : zoom >= 9)
+    }
+    map.on('zoomend', handler)
+    handler()
+    return () => {
+      map.off('zoomend', handler)
+    }
+  }, [map, regionLevel])
+
+  // Batch-create or remove tooltips when showLabels changes
+  useEffect(() => {
+    cancelAnimationFrame(rafRef.current)
+    const layers = geoLayersRef.current
+
+    if (!showLabels || layers.length === 0) {
+      for (const layer of layers) {
+        try { layer.unbindTooltip() } catch { /* ignore */ }
+      }
+      return
+    }
+
+    let i = 0
+    const BATCH = 60
+    const createBatch = () => {
+      const end = Math.min(i + BATCH, layers.length)
+      for (; i < end; i++) {
+        const layer = layers[i]
+        const feature: { properties?: Record<string, unknown> } | undefined =
+          (layer as L.Path)?.feature
+        if (feature?.properties) {
+          const name = String(
+            feature.properties.name ?? feature.properties.NAME ?? ''
+          )
+          if (name) {
+            layer.bindTooltip(name, {
+              permanent: true,
+              direction: 'center',
+              className: 'region-label',
+            })
+          }
+        }
+      }
+      if (i < layers.length) {
+        rafRef.current = requestAnimationFrame(createBatch)
+      }
+    }
+    rafRef.current = requestAnimationFrame(createBatch)
+
+    return () => {
+      cancelAnimationFrame(rafRef.current)
+      for (const layer of layers) {
+        try { layer.unbindTooltip() } catch { /* ignore */ }
+      }
+    }
+  }, [showLabels])
+
   if (!data || !onRegionSelect) return null
 
   const hasColorMap = colorMap !== null && colorMap !== undefined && colorMap.size > 0
@@ -190,10 +274,12 @@ function RegionOverlay({
 
   return (
     <GeoJSON
-      key={`${selectedRegionId ?? 'none'}:${data.features.length}`}
+      key={data.features.length}
       data={data as never}
       style={featureStyle}
       onEachFeature={(feature, layer) => {
+        // Collect layer reference for later tooltip binding
+        geoLayersRef.current.push(layer)
         layer.on('mouseover', () => {
           const pathLayer = layer as L.Path
           pathLayer.setStyle({
@@ -245,6 +331,7 @@ interface MapViewProps {
   disableQuery?: boolean
   hideRaster?: boolean
   regionColorMap?: Map<string, string> | null
+  regionLevel?: string | null
 }
 
 export default function MapView({
@@ -258,6 +345,7 @@ export default function MapView({
   disableQuery = false,
   hideRaster = false,
   regionColorMap = null,
+  regionLevel = null,
 }: MapViewProps) {
   const [marker, setMarker] = useState<L.LatLng | null>(null)
   const [rect, setRect] = useState<L.LatLngBoundsExpression | null>(null)
@@ -325,6 +413,7 @@ export default function MapView({
           selectedRegionId={selectedRegionId}
           onRegionSelect={onRegionSelect}
           colorMap={regionColorMap}
+          regionLevel={regionLevel}
         />
 
         {/* Point click + rectangle drawing */}
