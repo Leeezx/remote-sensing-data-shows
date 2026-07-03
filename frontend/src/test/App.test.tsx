@@ -16,6 +16,7 @@ const apiMocks = vi.hoisted(() => ({
   getIrrigationSeries: vi.fn(),
   getIrrigationVectorStatus: vi.fn(),
   getIrrigationVectorGeoJSON: vi.fn(),
+  getIrrigationRegionAverages: vi.fn(),
 }))
 
 vi.mock('../services/api', () => ({
@@ -24,6 +25,7 @@ vi.mock('../services/api', () => ({
   queryArea: vi.fn(),
   getExportCsvUrl: vi.fn(() => '/api/export/csv'),
   login: vi.fn(),
+  getIrrigationRegionAverages: apiMocks.getIrrigationRegionAverages,
 }))
 
 vi.mock('../components/MapView', () => ({
@@ -193,6 +195,22 @@ describe('App', () => {
             coordinates: [[[100, 30], [101, 30], [101, 31], [100, 30]]],
           },
         },
+      ],
+    })
+    apiMocks.getIrrigationRegionAverages.mockResolvedValue({
+      level: 'county',
+      unit: '万m³',
+      averages: [
+        { regionId: 'county_a', name: '示范县A', average: 1480.5 },
+        { regionId: 'county_b', name: '示范县B', average: 320.0 },
+      ],
+      legend: [
+        { value: 100, color: '#eff3ff', label: '100 万m³' },
+        { value: 400, color: '#bdd7e7', label: '400 万m³' },
+        { value: 700, color: '#6baed6', label: '700 万m³' },
+        { value: 1000, color: '#3182bd', label: '1000 万m³' },
+        { value: 1300, color: '#08519c', label: '1300 万m³' },
+        { value: 1600, color: '#042d60', label: '1600 万m³' },
       ],
     })
   })
@@ -426,5 +444,27 @@ describe('App', () => {
 
     expect(await screen.findByText('NDVI 静态图例')).toBeInTheDocument()
     expect(apiMocks.getLayerLegend).not.toHaveBeenCalled()
+  })
+
+  it('shows admin stats controls when county statistics is enabled', async () => {
+    window.history.pushState({}, '', '/irrigation')
+    render(<App />)
+
+    await waitFor(() => {
+      expect(screen.getByText('县级统计')).toBeInTheDocument()
+    })
+    // Click admin stats button
+    const countyBtn = screen.getByText('县级统计')
+    await userEvent.click(countyBtn)
+    // After click, averages should have been requested
+    await waitFor(() => {
+      expect(apiMocks.getIrrigationRegionAverages).toHaveBeenCalledWith('county')
+    })
+    // Click again to disable
+    await userEvent.click(countyBtn)
+    // Should restore to initial state
+    await waitFor(() => {
+      expect(screen.getAllByText('未开启行政区统计').length).toBeGreaterThan(0)
+    })
   })
 })

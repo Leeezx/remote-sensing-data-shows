@@ -156,6 +156,13 @@ def village_vector_geojson():
     return read_shapefile_geojson(VILLAGE_VECTOR_PATH)
 
 
+@router.get("/irrigation/regions/averages")
+def irrigation_region_averages(level: RegionLevel = Query(...)):
+    """Return per-region annual-average irrigation water and a choropleth legend."""
+    from backend.irrigation_stats import get_irrigation_region_averages
+    return get_irrigation_region_averages(level)
+
+
 @router.get("/irrigation/regions")
 def irrigation_regions(level: RegionLevel | None = Query(default=None)):
     """Return county and village administrative units for irrigation statistics."""

@@ -13,6 +13,7 @@ import type {
   IrrigationSeriesResponse,
   IrrigationVectorGeoJSON,
   IrrigationVectorStatus,
+  IrrigationRegionAveragesResponse,
 } from '../types'
 
 const client = axios.create({
@@ -127,6 +128,16 @@ export async function getIrrigationVectorGeoJSON(
   level: IrrigationRegionLevel,
 ): Promise<IrrigationVectorGeoJSON> {
   const { data } = await client.get(`/irrigation/vectors/${level}`)
+  return data
+}
+
+export async function getIrrigationRegionAverages(
+  level: IrrigationRegionLevel,
+): Promise<IrrigationRegionAveragesResponse> {
+  const { data } = await client.get<IrrigationRegionAveragesResponse>(
+    '/irrigation/regions/averages',
+    { params: { level } },
+  )
   return data
 }
 

@@ -124,7 +124,14 @@ def _render_irrigation_tile(raster_path: Path, x: int, y: int, z: int, time: str
     if not base_legend:
         raise RuntimeError("Irrigation layer legend is missing or empty")
     legend = get_irrigation_dynamic_legend(raster_path, base_legend, layer.get("unit") or "", time=time)
-    nodata_color = (0xE8, 0xE8, 0xE8, 128)
+    nodata_color_hex = layer.get("nodataColor", "#e8e8e8")
+    nodata_opacity = float(layer.get("nodataOpacity", 0.5))
+    try:
+        nodata_rgb = tuple(bytes.fromhex(nodata_color_hex.lstrip("#")))
+        nodata_alpha = int(round(nodata_opacity * 255))
+        nodata_color = (*nodata_rgb, nodata_alpha)
+    except (ValueError, TypeError):
+        nodata_color = (0xE8, 0xE8, 0xE8, 128)
     with COGReader(str(raster_path)) as reader:
         image = reader.tile(x, y, z, indexes=1)
     source_mask = image.mask & valid_irrigation_mask(image.data[0])

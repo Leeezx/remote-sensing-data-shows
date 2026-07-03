@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import Legend from '../components/Legend'
 import MapView from '../components/MapView'
 import {
@@ -6,11 +6,13 @@ import {
   getIrrigationLegend,
   getIrrigationSeries,
   getIrrigationTimes,
+  getIrrigationRegionAverages,
   getIrrigationVectorGeoJSON,
   getIrrigationVectorStatus,
 } from '../services/api'
 import type {
   IrrigationRasterResolution,
+  IrrigationRegionAverage,
   IrrigationRegionLevel,
   IrrigationSeriesPeriod,
   IrrigationSeriesPoint,
@@ -27,6 +29,32 @@ function formatTime(time: string): string {
   if (parts.length === 3) return `${parts[0]}年${parts[1]}月${parts[2]}日`
   if (parts.length === 2) return `${parts[0]}年${parts[1]}月`
   return time
+}
+
+/** Interpolate a value into a hex color using legend stops (emulates np.interp). */
+function interpolateColor(value: number, legend: LegendItem[]): string {
+  if (legend.length === 0) return '#cccccc'
+  // legend expected sorted ascending by value
+  const stops = [...legend].sort((a, b) => a.value - b.value)
+  if (value <= stops[0].value) return stops[0].color
+  if (value >= stops[stops.length - 1].value) return stops[stops.length - 1].color
+
+  // Find bracket
+  let lo = stops[0], hi = stops[stops.length - 1]
+  for (let i = 0; i < stops.length - 1; i++) {
+    if (value >= stops[i].value && value <= stops[i + 1].value) {
+      lo = stops[i]
+      hi = stops[i + 1]
+      break
+    }
+  }
+
+  const t = (value - lo.value) / (hi.value - lo.value)
+  const toByte = (hex: string, offset: number) => parseInt(hex.slice(1 + offset * 2, 3 + offset * 2), 16)
+  const r = Math.round(toByte(lo.color, 0) + t * (toByte(hi.color, 0) - toByte(lo.color, 0)))
+  const g = Math.round(toByte(lo.color, 1) + t * (toByte(hi.color, 1) - toByte(lo.color, 1)))
+  const b = Math.round(toByte(lo.color, 2) + t * (toByte(hi.color, 2) - toByte(lo.color, 2)))
+  return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`
 }
 
 function SeriesChart({
@@ -105,6 +133,9 @@ export default function IrrigationPage() {
   const [monthlySeries, setMonthlySeries] = useState<IrrigationSeriesResponse | null>(null)
   const [annualSeries, setAnnualSeries] = useState<IrrigationSeriesResponse | null>(null)
   const [seriesError, setSeriesError] = useState('')
+  const [adminAverages, setAdminAverages] = useState<IrrigationRegionAverage[]>([])
+  const [adminLegend, setAdminLegend] = useState<LegendItem[]>([])
+  const [adminStatsLoading, setAdminStatsLoading] = useState(false)
 
   const activeIndex = Math.max(0, times.indexOf(currentTime))
 
@@ -168,6 +199,9 @@ export default function IrrigationPage() {
       setMonthlySeries(null)
       setAnnualSeries(null)
       setSeriesError('')
+      setAdminAverages([])
+      setAdminLegend([])
+      setAdminStatsLoading(false)
       return
     }
     let cancelled = false
@@ -177,6 +211,7 @@ export default function IrrigationPage() {
     setMonthlySeries(null)
     setAnnualSeries(null)
     setSeriesError('')
+    setAdminStatsLoading(true)
     getIrrigationVectorStatus(regionLevel)
       .then((status) => {
         if (cancelled) return
@@ -197,6 +232,22 @@ export default function IrrigationPage() {
             url: null,
             message: '行政区矢量暂不可用',
           })
+        }
+      })
+    // Fetch region averages for choropleth coloring
+    getIrrigationRegionAverages(regionLevel)
+      .then((avgData) => {
+        if (!cancelled) {
+          setAdminAverages(avgData.averages)
+          setAdminLegend(avgData.legend)
+          setAdminStatsLoading(false)
+        }
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setAdminAverages([])
+          setAdminLegend([])
+          setAdminStatsLoading(false)
         }
       })
     return () => {
@@ -234,6 +285,19 @@ export default function IrrigationPage() {
     }
   }, [regionLevel, selectedRegion])
 
+  const regionColorMap = useMemo(() => {
+    if (adminAverages.length === 0 || adminLegend.length === 0) return null
+    const map = new Map<string, string>()
+    for (const item of adminAverages) {
+      if (item.average !== null) {
+        map.set(item.regionId, interpolateColor(item.average, adminLegend))
+      }
+    }
+    return map
+  }, [adminAverages, adminLegend])
+
+  const isAdminStatsMode = regionLevel !== null && adminAverages.length > 0
+
   const setPreviousTime = useCallback(() => {
     if (activeIndex > 0) setCurrentTime(times[activeIndex - 1])
   }, [activeIndex, times])
@@ -258,19 +322,21 @@ export default function IrrigationPage() {
             <button
               className={`btn btn-sm ${rasterResolution === 'annual' ? 'btn-primary' : ''}`}
               onClick={() => setRasterResolution('annual')}
+              disabled={isAdminStatsMode}
             >
               年度
             </button>
             <button
               className={`btn btn-sm ${rasterResolution === 'month' ? 'btn-primary' : ''}`}
               onClick={() => setRasterResolution('month')}
+              disabled={isAdminStatsMode}
             >
               月度
             </button>
           </div>
           <div className="time-display">{currentTime ? formatTime(currentTime) : '暂无时间'}</div>
           <div className="timeline-track">
-            <button className="timeline-prev" onClick={setPreviousTime} title="上一个">
+            <button className="timeline-prev" onClick={setPreviousTime} title="上一个" disabled={isAdminStatsMode}>
               ◀
             </button>
             <div className="timeline-bar-wrapper">
@@ -289,7 +355,7 @@ export default function IrrigationPage() {
                 />
               </div>
             </div>
-            <button className="timeline-next" onClick={setNextTime} title="下一个">
+            <button className="timeline-next" onClick={setNextTime} title="下一个" disabled={isAdminStatsMode}>
               ▶
             </button>
           </div>
@@ -351,13 +417,24 @@ export default function IrrigationPage() {
               regionVector={regionVector}
               selectedRegionId={selectedRegion?.id ?? null}
               onRegionSelect={setSelectedRegion}
+              disableQuery={isAdminStatsMode}
+              hideRaster={isAdminStatsMode}
+              regionColorMap={regionColorMap}
             />
           </div>
         )}
         <Legend
           layer={layer}
-          items={legendState.key === `irrigation_water:${currentTime}` ? legendState.items : []}
-          status={legendState.key === `irrigation_water:${currentTime}` ? legendState.status : 'loading'}
+          items={
+            isAdminStatsMode
+              ? adminLegend
+              : (legendState.key === `irrigation_water:${currentTime}` ? legendState.items : [])
+          }
+          status={
+            isAdminStatsMode
+              ? 'ready'
+              : (legendState.key === `irrigation_water:${currentTime}` ? legendState.status : 'loading')
+          }
         />
       </section>
 
@@ -391,6 +468,8 @@ export default function IrrigationPage() {
           </>
         ) : selectedRegion ? (
           <div className="loading">加载统计数据...</div>
+        ) : (regionLevel && adminStatsLoading) ? (
+          <div className="loading">加载行政区统计数据...</div>
         ) : !regionLevel ? (
           <div className="chart-empty">未开启行政区统计</div>
         ) : (

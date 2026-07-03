@@ -159,22 +159,32 @@ function RegionOverlay({
   data,
   selectedRegionId,
   onRegionSelect,
+  colorMap,
 }: {
   data: IrrigationVectorGeoJSON | null
   selectedRegionId?: string | null
   onRegionSelect?: (region: { id: string; name: string }) => void
+  colorMap?: Map<string, string> | null
 }) {
   if (!data || !onRegionSelect) return null
 
+  const hasColorMap = colorMap !== null && colorMap !== undefined && colorMap.size > 0
+
   const featureStyle = (feature?: { properties?: Record<string, unknown> }) => {
-    const featureId = String(feature?.properties?.id ?? '')
+    const featureId = String(
+      feature?.properties?.id ??
+      feature?.properties?.gb ??
+      feature?.properties?.name ??
+      '',
+    )
     const selected = featureId && featureId === selectedRegionId
+    const fillFromMap = colorMap?.get(featureId)
     return {
-      color: selected ? '#b45309' : '#1d4ed8',
-      opacity: selected ? 0.75 : 0.42,
-      weight: selected ? 2.6 : 1.2,
-      fillColor: selected ? '#f59e0b' : '#60a5fa',
-      fillOpacity: selected ? 0.18 : 0.035,
+      color: selected ? '#b45309' : (hasColorMap ? '#334155' : '#1d4ed8'),
+      opacity: selected ? 0.75 : (hasColorMap ? 0.7 : 0.42),
+      weight: selected ? 2.6 : (hasColorMap ? 1.0 : 1.2),
+      fillColor: selected ? '#f59e0b' : (fillFromMap ?? '#60a5fa'),
+      fillOpacity: selected ? 0.4 : (hasColorMap ? 0.65 : 0.035),
     }
   }
 
@@ -232,6 +242,9 @@ interface MapViewProps {
   regionVector?: IrrigationVectorGeoJSON | null
   selectedRegionId?: string | null
   onRegionSelect?: (region: { id: string; name: string }) => void
+  disableQuery?: boolean
+  hideRaster?: boolean
+  regionColorMap?: Map<string, string> | null
 }
 
 export default function MapView({
@@ -242,6 +255,9 @@ export default function MapView({
   regionVector = null,
   selectedRegionId = null,
   onRegionSelect,
+  disableQuery = false,
+  hideRaster = false,
+  regionColorMap = null,
 }: MapViewProps) {
   const [marker, setMarker] = useState<L.LatLng | null>(null)
   const [rect, setRect] = useState<L.LatLngBoundsExpression | null>(null)
@@ -300,17 +316,20 @@ export default function MapView({
         />
 
         {/* Remote sensing overlay */}
-        <TileOverlay layer={activeLayer} time={currentTime} opacity={opacity} />
+        {!hideRaster && (
+          <TileOverlay layer={activeLayer} time={currentTime} opacity={opacity} />
+        )}
 
         <RegionOverlay
           data={regionVector}
           selectedRegionId={selectedRegionId}
           onRegionSelect={onRegionSelect}
+          colorMap={regionColorMap}
         />
 
         {/* Point click + rectangle drawing */}
         <MapEvents
-          enabled={Boolean(activeLayerId && currentTime)}
+          enabled={Boolean(activeLayerId && currentTime && !disableQuery)}
           onPointCoords={handlePointCoords}
           onAreaCoords={handleAreaCoords}
         />

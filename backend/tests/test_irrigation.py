@@ -250,3 +250,47 @@ def test_get_irrigation_series_rejects_mismatched_region_level():
     )
 
     assert response.status_code == 404
+
+
+def test_get_irrigation_region_averages_returns_legend_and_averages():
+    response = client.get("/api/irrigation/regions/averages?level=county")
+
+    assert response.status_code == 200
+    data = response.json()
+    assert data["level"] == "county"
+    assert data["unit"] == "万m³"
+    assert isinstance(data["averages"], list)
+    assert len(data["averages"]) > 0
+    assert isinstance(data["legend"], list)
+    assert len(data["legend"]) == 6
+    for item in data["averages"]:
+        assert "regionId" in item
+        assert "name" in item
+        assert "average" in item
+    for item in data["legend"]:
+        assert "value" in item
+        assert "color" in item
+        assert "label" in item
+
+
+def test_get_irrigation_region_averages_legend_has_six_stops():
+    response = client.get("/api/irrigation/regions/averages?level=county")
+
+    assert response.status_code == 200
+    data = response.json()
+    legend = data["legend"]
+    assert len(legend) == 6
+    # values must be strictly increasing
+    values = [item["value"] for item in legend]
+    assert all(values[i] < values[i + 1] for i in range(len(values) - 1))
+    # colors must be valid hex
+    import re
+    hex_color = re.compile(r"^#[0-9a-fA-F]{6}$")
+    for item in legend:
+        assert hex_color.fullmatch(item["color"])
+
+
+def test_get_irrigation_region_averages_bad_level():
+    response = client.get("/api/irrigation/regions/averages?level=province")
+    # Literal type validation should reject non-county/non-village
+    assert response.status_code == 422
