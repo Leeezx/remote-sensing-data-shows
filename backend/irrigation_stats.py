@@ -131,3 +131,62 @@ def compute_irrigation_region_series(
     region_cache[period] = series
     _write_cache(cache)
     return series
+
+
+def get_irrigation_region_averages(level: str) -> dict:
+    """Return per-region multi-year average irrigation water and a dynamic legend.
+
+    Computes the mean of each region's annual series values, then builds a
+    6-stop legend from the distribution of those means using the same
+    percentile method as the raster dynamic legend.
+    """
+    import numpy as np
+
+    from backend.data_loader import (
+        get_irrigation_layer,
+        get_irrigation_regions,
+        get_irrigation_region_series,
+    )
+    from backend.ssm_legend import build_dynamic_legend
+
+    series_data = get_irrigation_region_series()
+    unit = series_data.get("unit", "万m³")
+    regions = get_irrigation_regions()
+    level_regions = [r for r in regions if r["level"] == level]
+    level_series = series_data.get(level, {})
+
+    averages = []
+    for region in level_regions:
+        region_id = region["id"]
+        region_name = region["name"]
+        region_entry = level_series.get(region_id, {})
+        annual_series = region_entry.get("annual") if isinstance(region_entry, dict) else None
+        if annual_series and len(annual_series) > 0:
+            avg = sum(float(p["value"]) for p in annual_series) / len(annual_series)
+            averages.append({
+                "regionId": region_id,
+                "name": region_name,
+                "average": round(avg, 1),
+            })
+        else:
+            averages.append({
+                "regionId": region_id,
+                "name": region_name,
+                "average": None,
+            })
+
+    # Build legend from valid averages
+    valid_averages = np.array([a["average"] for a in averages if a["average"] is not None])
+    layer = get_irrigation_layer()
+    base_legend = layer.get("legend", [])
+    if valid_averages.size > 0 and base_legend:
+        legend = build_dynamic_legend(valid_averages, base_legend, unit)
+    else:
+        legend = [dict(item) for item in base_legend]
+
+    return {
+        "level": level,
+        "unit": unit,
+        "averages": averages,
+        "legend": legend,
+    }
