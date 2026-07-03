@@ -83,6 +83,19 @@ export interface IrrigationVectorGeoJSON {
   features: IrrigationVectorFeature[]
 }
 
+export interface IrrigationRegionAverage {
+  regionId: string
+  name: string
+  average: number | null
+}
+
+export interface IrrigationRegionAveragesResponse {
+  level: IrrigationRegionLevel
+  unit: string
+  averages: IrrigationRegionAverage[]
+  legend: LegendItem[]
+}
+
 // ===== Query Results =====
 
 export interface PointQueryResult {
