@@ -333,6 +333,27 @@ describe('App', () => {
     expect(screen.getByRole('img', { name: '示范县A 月度灌溉用水量折线图' })).toBeInTheDocument()
   })
 
+  it('reuses the mounted county layer when switching from county to township statistics', async () => {
+    window.history.pushState({}, '', '/irrigation')
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(await screen.findByRole('button', { name: '县级统计' }))
+    await waitFor(() => expect(screen.getByTestId('county-layer')).toHaveTextContent('loaded'))
+    const vectorCalls = apiMocks.getIrrigationVectorGeoJSON.mock.calls
+      .filter(([level]) => level === 'county').length
+    const averageCalls = apiMocks.getIrrigationRegionAverages.mock.calls
+      .filter(([level]) => level === 'county').length
+
+    await user.click(screen.getByRole('button', { name: '乡镇级统计' }))
+
+    expect(screen.getByTestId('county-layer')).toHaveTextContent('loaded')
+    expect(apiMocks.getIrrigationVectorGeoJSON.mock.calls.filter(([level]) => level === 'county'))
+      .toHaveLength(vectorCalls)
+    expect(apiMocks.getIrrigationRegionAverages.mock.calls.filter(([level]) => level === 'county'))
+      .toHaveLength(averageCalls)
+  })
+
   it('loads townships only after selecting a county and then selects a township', async () => {
     window.history.pushState({}, '', '/irrigation')
     const user = userEvent.setup()
@@ -387,7 +408,28 @@ describe('App', () => {
         'township_a1',
         'monthly',
       )
+      expect(apiMocks.getIrrigationSeries).toHaveBeenCalledWith(
+        'township',
+        'township_a1',
+        'annual',
+      )
     })
+    expect(screen.getByRole('img', { name: '示范镇A1 月度灌溉用水量折线图' })).toBeInTheDocument()
+  })
+
+  it('keeps township layers visible when JSON statistics are unavailable', async () => {
+    window.history.pushState({}, '', '/irrigation')
+    apiMocks.getIrrigationSeries.mockRejectedValueOnce({ response: { status: 404 } })
+    const user = userEvent.setup()
+    render(<App />)
+    await user.click(await screen.findByRole('button', { name: '乡镇级统计' }))
+    await user.click(screen.getByRole('button', { name: '选择示范县A' }))
+    await screen.findByText('已加载示范县A 1 个乡镇')
+    await user.click(screen.getByRole('button', { name: '选择示范镇A1' }))
+
+    expect(await screen.findByText('暂无统计数据')).toBeInTheDocument()
+    expect(screen.getByTestId('county-layer')).toHaveTextContent('loaded')
+    expect(screen.getByTestId('township-layer')).toHaveTextContent('loaded')
   })
 
   it('keeps counties visible while switching the township detail to another county', async () => {

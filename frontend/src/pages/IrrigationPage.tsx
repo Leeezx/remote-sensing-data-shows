@@ -69,6 +69,12 @@ function buildRegionColorMap(
   return result.size > 0 ? result : null
 }
 
+function isNotFoundError(error: unknown): boolean {
+  if (!error || typeof error !== 'object' || !('response' in error)) return false
+  const response = (error as { response?: { status?: number } }).response
+  return response?.status === 404
+}
+
 function SeriesChart({
   regionName,
   period,
@@ -157,6 +163,7 @@ export default function IrrigationPage() {
   const [countyLegend, setCountyLegend] = useState<LegendItem[]>([])
   const [countyLegendStatus, setCountyLegendStatus] = useState<LegendStatus>('loading')
   const [adminStatsLoading, setAdminStatsLoading] = useState(false)
+  const isAdminStatsMode = regionLevel !== null
 
   const activeIndex = Math.max(0, times.indexOf(currentTime))
 
@@ -271,92 +278,66 @@ export default function IrrigationPage() {
   }, [currentTime])
 
   useEffect(() => {
-    if (!regionLevel) {
+    if (!isAdminStatsMode) {
       townshipRequestIdRef.current += 1
-      setVectorStatus(null)
       setCountyVector(null)
-      setTownshipVector(null)
-      setTownshipAverages([])
-      setTownshipLegend([])
-      setTownshipLegendStatus('loading')
-      setTownshipCounty(null)
-      setPendingTownshipCounty(null)
-      setSelectedRegion(null)
-      setMonthlySeries(null)
-      setAnnualSeries(null)
-      setSeriesError('')
       setCountyAverages([])
       setCountyLegend([])
       setCountyLegendStatus('loading')
-      setAdminStatsLoading(false)
+      setTownshipVector(null)
+      setTownshipCounty(null)
+      setSelectedRegion(null)
       return
     }
+
     let cancelled = false
-    townshipRequestIdRef.current += 1
-    setVectorStatus(null)
-    setCountyVector(null)
-    setTownshipVector(null)
-    setTownshipAverages([])
-    setTownshipLegend([])
-    setTownshipLegendStatus('loading')
-    setTownshipCounty(null)
-    setPendingTownshipCounty(null)
-    setSelectedRegion(null)
-    setMonthlySeries(null)
-    setAnnualSeries(null)
-    setSeriesError('')
     setAdminStatsLoading(true)
-    setCountyAverages([])
-    setCountyLegend([])
     setCountyLegendStatus('loading')
-    const loadInitialAdminLayer = async () => {
-      const statusAndVector = getIrrigationVectorStatus(regionLevel)
-        .then(async (status) => {
-          if (cancelled) return
-          setVectorStatus(status)
-          if (!status.available) return
-          try {
-            const vector = await loadVector('county')
-            if (!cancelled) setCountyVector(vector)
-          } catch {
-            if (!cancelled) {
-              setVectorStatus({
-                level: regionLevel,
-                available: false,
-                url: null,
-                message: '行政区矢量暂不可用',
-              })
-            }
-          }
-        })
-        .catch(() => {
-          if (!cancelled) {
-            setVectorStatus({
-              level: regionLevel,
-              available: false,
-              url: null,
-              message: '行政区矢量暂不可用',
-            })
-          }
-        })
-      const averages = getIrrigationRegionAverages('county')
-        .then((avgData) => {
-          if (cancelled) return
-          setCountyAverages(avgData.averages)
-          setCountyLegend(avgData.legend)
-          setCountyLegendStatus('ready')
-        })
-        .catch(() => {
-          if (!cancelled) setCountyLegendStatus('error')
-        })
-      await Promise.all([statusAndVector, averages])
+    const vectorRequest = getIrrigationVectorStatus('county').then(async (status) => {
+      if (cancelled) return
+      setVectorStatus(status)
+      if (!status.available) return
+      const vector = await loadVector('county')
+      if (!cancelled) setCountyVector(vector)
+    }).catch(() => {
+      if (!cancelled) setVectorStatus({
+        level: 'county',
+        available: false,
+        url: null,
+        message: '行政区矢量暂不可用',
+      })
+    })
+    const averagesRequest = getIrrigationRegionAverages('county').then((result) => {
+      if (cancelled) return
+      setCountyAverages(result.averages)
+      setCountyLegend(result.legend)
+      setCountyLegendStatus('ready')
+    }).catch(() => {
+      if (!cancelled) setCountyLegendStatus('error')
+    })
+    void Promise.all([vectorRequest, averagesRequest]).finally(() => {
       if (!cancelled) setAdminStatsLoading(false)
-    }
-    void loadInitialAdminLayer()
-    return () => {
-      cancelled = true
-    }
-  }, [loadVector, regionLevel])
+    })
+    return () => { cancelled = true }
+  }, [isAdminStatsMode, loadVector])
+
+  useEffect(() => {
+    if (regionLevel !== 'township') return
+    let cancelled = false
+    getIrrigationVectorStatus('township')
+      .then((status) => {
+        if (!cancelled) setVectorStatus(status)
+      })
+      .catch(() => {
+        if (!cancelled) setVectorStatus({
+          level: 'township',
+          available: false,
+          url: null,
+          message: '乡镇行政区矢量暂不可用',
+        })
+      })
+    return () => { cancelled = true }
+  }, [regionLevel])
 
   useEffect(() => {
     if (!regionLevel || !selectedRegion) {
@@ -376,11 +357,11 @@ export default function IrrigationPage() {
           setAnnualSeries(annual)
         }
       })
-      .catch(() => {
+      .catch((error: unknown) => {
         if (!cancelled) {
           setMonthlySeries(null)
           setAnnualSeries(null)
-          setSeriesError('行政区灌溉用水统计暂不可用')
+          setSeriesError(isNotFoundError(error) ? '暂无统计数据' : '行政区灌溉用水统计暂不可用')
         }
       })
     return () => {
@@ -398,8 +379,6 @@ export default function IrrigationPage() {
     [townshipAverages, townshipLegend],
   )
 
-  const isAdminStatsMode = regionLevel !== null
-
   const handleCountySelect = useCallback((region: { id: string; name: string }) => {
     if (regionLevel === 'township') {
       void loadTownshipCounty(region)
@@ -407,6 +386,25 @@ export default function IrrigationPage() {
     }
     setSelectedRegion(region)
   }, [loadTownshipCounty, regionLevel])
+
+  const toggleAdminMode = useCallback((target: IrrigationRegionLevel) => {
+    const nextLevel = regionLevel === target ? null : target
+    townshipRequestIdRef.current += 1
+    setSelectedRegion(null)
+    setMonthlySeries(null)
+    setAnnualSeries(null)
+    setSeriesError('')
+
+    if (nextLevel !== 'township') {
+      setTownshipVector(null)
+      setTownshipAverages([])
+      setTownshipLegend([])
+      setTownshipLegendStatus('loading')
+      setTownshipCounty(null)
+      setPendingTownshipCounty(null)
+    }
+    setRegionLevel(nextLevel)
+  }, [regionLevel])
 
   const returnToCountySelection = useCallback(() => {
     townshipRequestIdRef.current += 1
@@ -516,13 +514,13 @@ export default function IrrigationPage() {
           <div className="resolution-toggle">
             <button
               className={`btn btn-sm ${regionLevel === 'county' ? 'btn-primary' : ''}`}
-              onClick={() => setRegionLevel((level) => (level === 'county' ? null : 'county'))}
+              onClick={() => toggleAdminMode('county')}
             >
               县级统计
             </button>
             <button
               className={`btn btn-sm ${regionLevel === 'township' ? 'btn-primary' : ''}`}
-              onClick={() => setRegionLevel((level) => (level === 'township' ? null : 'township'))}
+              onClick={() => toggleAdminMode('township')}
             >
               乡镇级统计
             </button>
