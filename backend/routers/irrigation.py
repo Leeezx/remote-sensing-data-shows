@@ -1,9 +1,11 @@
 """Irrigation water router — raster metadata and administrative statistics."""
 
+import json
 from typing import Literal
 from pathlib import Path
 
 from fastapi import APIRouter, HTTPException, Query, status
+from fastapi.responses import FileResponse
 
 from backend.data_loader import (
     IRRIGATION_8DAY_ROOT,
@@ -15,18 +17,30 @@ from backend.data_loader import (
     get_irrigation_regions,
     get_irrigation_times,
 )
-from backend.irrigation_stats import compute_irrigation_region_series
 from backend.irrigation_time import irrigation_time_to_cog_path, irrigation_time_to_path
 from backend.irrigation_legend import get_irrigation_dynamic_legend
 from backend.shapefile_geojson import read_shapefile_geojson
+from backend.township_chunks import (
+    MAX_TOWNSHIP_CHUNK_BYTES,
+    MAX_TOWNSHIP_FEATURES,
+    find_township_feature,
+    load_township_chunk,
+    township_chunk_path,
+)
 
 router = APIRouter(tags=["irrigation"])
 
-RegionLevel = Literal["county", "village"]
+RegionLevel = Literal["county", "township"]
 SeriesPeriod = Literal["annual", "monthly"]
 RasterResolution = Literal["annual", "month"]
 COUNTY_VECTOR_PATH = Path(r"F:\矢量底图\中国_县\中国_县.shp")
-VILLAGE_VECTOR_PATH: Path | None = None
+TOWNSHIP_CHUNK_ROOT = (
+    Path(__file__).resolve().parents[2]
+    / "data"
+    / "vectors"
+    / "irrigation"
+    / "township_by_county"
+)
 
 
 def _find_region(region_id: str, level: RegionLevel) -> dict | None:
@@ -38,10 +52,11 @@ def _find_region(region_id: str, level: RegionLevel) -> dict | None:
 
 def find_irrigation_vector_feature(level: RegionLevel, region_id: str) -> dict | None:
     """Find an administrative vector feature by id."""
-    path = COUNTY_VECTOR_PATH if level == "county" else VILLAGE_VECTOR_PATH
-    if not path or not path.is_file():
+    if level == "township":
+        return find_township_feature(TOWNSHIP_CHUNK_ROOT, region_id)
+    if not COUNTY_VECTOR_PATH.is_file():
         return None
-    data = read_shapefile_geojson(path)
+    data = read_shapefile_geojson(COUNTY_VECTOR_PATH)
     for feature in data.get("features", []):
         properties = feature.get("properties", {})
         feature_id = str(
@@ -124,13 +139,16 @@ def irrigation_vector_status(level: RegionLevel = Query(...)):
             if COUNTY_VECTOR_PATH.is_file()
             else "县级行政区矢量文件不存在",
         }
+    chunks_available = (TOWNSHIP_CHUNK_ROOT / "manifest.json").is_file()
     return {
         "level": level,
-        "available": bool(VILLAGE_VECTOR_PATH and VILLAGE_VECTOR_PATH.is_file()),
-        "url": "/api/irrigation/vectors/village"
-        if VILLAGE_VECTOR_PATH and VILLAGE_VECTOR_PATH.is_file()
+        "available": chunks_available,
+        "url": "/api/irrigation/vectors/township?countyId={countyId}"
+        if chunks_available
         else None,
-        "message": "村级行政区矢量暂未配置",
+        "message": "请先在地图上选择县域，再加载该县乡镇"
+        if chunks_available
+        else "乡镇矢量分片尚未生成",
     }
 
 
@@ -145,27 +163,70 @@ def county_vector_geojson():
     return read_shapefile_geojson(COUNTY_VECTOR_PATH)
 
 
-@router.get("/irrigation/vectors/village")
-def village_vector_geojson():
-    """Return village administrative boundaries as GeoJSON when configured."""
-    if not VILLAGE_VECTOR_PATH or not VILLAGE_VECTOR_PATH.is_file():
+@router.get("/irrigation/vectors/township")
+def township_vector_geojson(countyId: str = Query(...)):
+    """Return one county-scoped township GeoJSON chunk."""
+    try:
+        chunk_path = township_chunk_path(TOWNSHIP_CHUNK_ROOT, countyId)
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            detail=str(exc),
+        ) from exc
+    if not chunk_path.is_file():
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="Village vector file is not configured",
+            detail=f"Township vector chunk not found for county '{countyId}'",
         )
-    return read_shapefile_geojson(VILLAGE_VECTOR_PATH)
+    chunk_bytes = chunk_path.stat().st_size
+    try:
+        data = load_township_chunk(TOWNSHIP_CHUNK_ROOT, countyId)
+    except (OSError, ValueError, json.JSONDecodeError) as exc:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Township vector chunk is unreadable",
+        ) from exc
+    feature_count = len(data.get("features", []))
+    if chunk_bytes > MAX_TOWNSHIP_CHUNK_BYTES or feature_count > MAX_TOWNSHIP_FEATURES:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Township vector chunk exceeds the configured delivery limits",
+        )
+    return FileResponse(
+        chunk_path,
+        media_type="application/geo+json",
+        headers={
+            "Cache-Control": "public, max-age=86400",
+            "X-Chunk-Bytes": str(chunk_bytes),
+            "X-Feature-Count": str(feature_count),
+        },
+    )
 
 
 @router.get("/irrigation/regions/averages")
-def irrigation_region_averages(level: RegionLevel = Query(...)):
+def irrigation_region_averages(
+    level: RegionLevel = Query(...),
+    countyId: str | None = Query(default=None),
+):
     """Return per-region annual-average irrigation water and a choropleth legend."""
     from backend.irrigation_stats import get_irrigation_region_averages
-    return get_irrigation_region_averages(level)
+    if level == "township" and countyId is None:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            detail="countyId is required for township averages",
+        )
+    try:
+        return get_irrigation_region_averages(level, county_id=countyId)
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            detail=str(exc),
+        ) from exc
 
 
 @router.get("/irrigation/regions")
 def irrigation_regions(level: RegionLevel | None = Query(default=None)):
-    """Return county and village administrative units for irrigation statistics."""
+    """Return county and township administrative units for irrigation statistics."""
     regions = get_irrigation_regions()
     if level is None:
         return regions
@@ -180,44 +241,34 @@ def irrigation_series(
 ):
     """Return precomputed irrigation water totals for one administrative region."""
     series_data = get_irrigation_region_series()
-    region = _find_region(regionId, level)
-    try:
-        series = series_data[level][regionId][period]
-    except KeyError as exc:
-        feature = find_irrigation_vector_feature(level, regionId)
-        if feature is None:
-            raise HTTPException(
-                status_code=status.HTTP_404_NOT_FOUND,
-                detail=f"Irrigation {level} region '{regionId}' not found",
-            ) from exc
-        properties = feature.get("properties", {})
-        region_name = str(properties.get("name") or properties.get("NAME") or regionId)
-        region = {
-            "id": regionId,
-            "name": region_name,
-            "level": level,
-            "parentId": None,
-        }
-        try:
-            series = compute_irrigation_region_series(
-                level,
-                regionId,
-                region_name,
-                feature["geometry"],
-                period,
-            )
-        except ValueError as compute_error:
-            raise HTTPException(
-                status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
-                detail=str(compute_error),
-            ) from compute_error
+    level_data = series_data.get(level)
+    region_data = level_data.get(regionId) if isinstance(level_data, dict) else None
+    if not isinstance(region_data, dict):
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=(
+                f"Irrigation {level} region '{regionId}' was not found "
+                "in precomputed irrigation statistics"
+            ),
+        )
 
+    series = region_data.get(period)
+    if not isinstance(series, list):
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=(
+                f"Irrigation {period} series for {level} region "
+                f"'{regionId}' was not found in precomputed irrigation statistics"
+            ),
+        )
+
+    region = _find_region(regionId, level)
     if region is None:
         region = {
             "id": regionId,
-            "name": regionId,
+            "name": str(region_data.get("name") or regionId),
             "level": level,
-            "parentId": None,
+            "parentId": region_data.get("parentId"),
         }
 
     values = [float(entry["value"]) for entry in series]

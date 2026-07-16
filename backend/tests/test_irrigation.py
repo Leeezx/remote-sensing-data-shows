@@ -287,44 +287,50 @@ def test_get_irrigation_series_returns_precomputed_monthly_county_values():
     assert data["summary"]["total"] == 1532.2
 
 
-def test_get_irrigation_series_computes_missing_vector_region(monkeypatch):
+def test_get_irrigation_series_returns_404_without_realtime_fallback(monkeypatch):
     monkeypatch.setattr(
         irrigation_router,
         "find_irrigation_vector_feature",
-        lambda level, region_id: {
-            "type": "Feature",
-            "properties": {"id": region_id, "name": "鄂城区"},
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [[[114.8, 30.3], [114.9, 30.3], [114.9, 30.4], [114.8, 30.3]]],
-            },
-        },
-        raising=False,
-    )
-    monkeypatch.setattr(
-        irrigation_router,
-        "compute_irrigation_region_series",
-        lambda level, region_id, region_name, geometry, period: [
-            {"time": "2024", "value": 42.5}
-        ],
-        raising=False,
+        lambda *_args, **_kwargs: (_ for _ in ()).throw(
+            AssertionError("vector fallback must not run")
+        ),
     )
 
     response = client.get(
         "/api/irrigation/series",
-        params={"level": "county", "regionId": "nonexistent_county_99999", "period": "annual"},
+        params={
+            "level": "county",
+            "regionId": "nonexistent_county_99999",
+            "period": "annual",
+        },
     )
 
-    assert response.status_code == 200
-    data = response.json()
-    assert data["region"] == {
-        "id": "nonexistent_county_99999",
-        "name": "鄂城区",
-        "level": "county",
-        "parentId": None,
-    }
-    assert data["series"] == [{"time": "2024", "value": 42.5}]
-    assert data["summary"]["total"] == 42.5
+    assert response.status_code == 404
+    assert "not found in precomputed irrigation statistics" in response.json()["detail"]
+
+
+def test_get_irrigation_series_returns_404_when_period_is_missing(monkeypatch):
+    monkeypatch.setattr(
+        irrigation_router,
+        "get_irrigation_region_series",
+        lambda: {
+            "unit": "万m³",
+            "county": {"county_without_month": {"annual": []}},
+            "township": {},
+        },
+    )
+
+    response = client.get(
+        "/api/irrigation/series",
+        params={
+            "level": "county",
+            "regionId": "county_without_month",
+            "period": "monthly",
+        },
+    )
+
+    assert response.status_code == 404
+    assert "monthly" in response.json()["detail"]
 
 
 def test_get_irrigation_series_rejects_mismatched_region_level():
