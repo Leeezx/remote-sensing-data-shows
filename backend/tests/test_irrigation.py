@@ -287,6 +287,28 @@ def test_get_irrigation_series_returns_precomputed_monthly_county_values():
     assert data["summary"]["total"] == 1532.2
 
 
+def test_get_irrigation_series_returns_precomputed_annual_township_values():
+    response = client.get(
+        "/api/irrigation/series",
+        params={
+            "level": "township",
+            "regionId": "village_a1",
+            "period": "annual",
+        },
+    )
+
+    assert response.status_code == 200
+    data = response.json()
+    assert data["region"]["id"] == "village_a1"
+    assert data["region"]["level"] == "township"
+    assert data["period"] == "annual"
+    assert data["series"] == [
+        {"time": "2021", "value": 328.4},
+        {"time": "2022", "value": 346.5},
+        {"time": "2023", "value": 358.8},
+    ]
+
+
 def test_get_irrigation_series_returns_404_without_realtime_fallback(monkeypatch):
     monkeypatch.setattr(
         irrigation_router,
