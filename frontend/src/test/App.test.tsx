@@ -2,7 +2,12 @@ import { act, render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import App from '../App'
-import type { IrrigationRegion, IrrigationSeriesPeriod } from '../types'
+import type {
+  IrrigationRegion,
+  IrrigationRegionAveragesResponse,
+  IrrigationSeriesPeriod,
+  IrrigationVectorGeoJSON,
+} from '../types'
 
 const apiMocks = vi.hoisted(() => ({
   getLayers: vi.fn(),
@@ -19,6 +24,10 @@ const apiMocks = vi.hoisted(() => ({
   getIrrigationRegionAverages: vi.fn(),
 }))
 
+const mapViewMocks = vi.hoisted(() => ({
+  props: null as Record<string, unknown> | null,
+}))
+
 vi.mock('../services/api', () => ({
   ...apiMocks,
   queryPoint: vi.fn(),
@@ -31,19 +40,44 @@ vi.mock('../services/api', () => ({
 vi.mock('../components/MapView', () => ({
   default: (props: {
     onRegionSelect?: (region: { id: string; name: string }) => void
-    regionVector?: unknown
-  }) => (
-    <div data-testid="map-view">
-      地图
-      {props.regionVector ? <span>行政区矢量已加载</span> : null}
-      <button
-        type="button"
-        onClick={() => props.onRegionSelect?.({ id: 'county_a', name: '示范县A' })}
-      >
-        选择示范县A
-      </button>
-    </div>
-  ),
+    onDetailRegionSelect?: (region: { id: string; name: string }) => void
+    regionVector?: IrrigationVectorGeoJSON | null
+    detailRegionVector?: IrrigationVectorGeoJSON | null
+    regionLevel?: string | null
+    disableQuery?: boolean
+    hideRaster?: boolean
+    regionColorMap?: Map<string, string> | null
+  }) => {
+    mapViewMocks.props = props
+    return (
+      <div data-testid="map-view">
+        地图
+        <span data-testid="query-disabled">{String(Boolean(props.disableQuery))}</span>
+        <span data-testid="raster-hidden">{String(Boolean(props.hideRaster))}</span>
+        <span data-testid="county-layer">{props.regionVector ? 'loaded' : 'empty'}</span>
+        <span data-testid="township-layer">{props.detailRegionVector ? 'loaded' : 'empty'}</span>
+        <span data-testid="map-region-level">{props.regionLevel ?? 'none'}</span>
+        <button
+          type="button"
+          onClick={() => props.onRegionSelect?.({ id: 'county_a', name: '示范县A' })}
+        >
+          选择示范县A
+        </button>
+        <button
+          type="button"
+          onClick={() => props.onRegionSelect?.({ id: 'county_b', name: '示范县B' })}
+        >
+          选择示范县B
+        </button>
+        <button
+          type="button"
+          onClick={() => props.onDetailRegionSelect?.({ id: 'township_a1', name: '示范镇A1' })}
+        >
+          选择示范镇A1
+        </button>
+      </div>
+    )
+  },
 }))
 
 const layers = [
@@ -71,6 +105,18 @@ const layers = [
   },
 ]
 
+const etLayer = {
+  id: 'et',
+  name: '蒸散发',
+  description: '8天蒸散发',
+  type: 'evapotranspiration',
+  unit: 'mm/8天',
+  range: { min: 0, max: 120 },
+  timeRange: { start: '2025-01-01', end: '2025-01-09', step: '8day' },
+  tileTemplate: '/tiles/et/{time}/{z}/{x}/{y}.png',
+  legend: [{ value: 0, color: '#d53e4f', label: 'ET 静态图例' }],
+}
+
 const irrigationLayer = {
   id: 'irrigation_water',
   name: '灌溉用水量',
@@ -88,8 +134,8 @@ const countyRegions: IrrigationRegion[] = [
   { id: 'county_b', name: '示范县B', level: 'county' as const, parentId: null },
 ]
 
-const villageRegions: IrrigationRegion[] = [
-  { id: 'village_a1', name: '灌区村A1', level: 'village' as const, parentId: 'county_a' },
+const townshipRegions: IrrigationRegion[] = [
+  { id: 'township_a1', name: '示范镇A1', level: 'township' as const, parentId: 'county_a' },
 ]
 
 function irrigationSeries(
@@ -137,6 +183,7 @@ function legendResponse(time: string, label: string) {
 describe('App', () => {
   beforeEach(() => {
     vi.clearAllMocks()
+    mapViewMocks.props = null
     window.history.pushState({}, '', '/')
     apiMocks.getLayers.mockResolvedValue(layers)
     apiMocks.getLayerTimes.mockResolvedValue([
@@ -158,18 +205,18 @@ describe('App', () => {
       })
     ))
     apiMocks.getIrrigationTimes.mockResolvedValue(['2021', '2022', '2023'])
-    apiMocks.getIrrigationRegions.mockImplementation((level: 'county' | 'village') => (
-      Promise.resolve(level === 'county' ? countyRegions : villageRegions)
+    apiMocks.getIrrigationRegions.mockImplementation((level: 'county' | 'township') => (
+      Promise.resolve(level === 'county' ? countyRegions : townshipRegions)
     ))
     apiMocks.getIrrigationSeries.mockImplementation(
-      (level: 'county' | 'village', _regionId: string, period: 'annual' | 'monthly') => (
+      (level: 'county' | 'township', _regionId: string, period: 'annual' | 'monthly') => (
         Promise.resolve(irrigationSeries(
-          level === 'county' ? countyRegions[0] : villageRegions[0],
+          level === 'county' ? countyRegions[0] : townshipRegions[0],
           period,
         ))
       ),
     )
-    apiMocks.getIrrigationVectorStatus.mockImplementation((level: 'county' | 'village') => (
+    apiMocks.getIrrigationVectorStatus.mockImplementation((level: 'county' | 'township') => (
       Promise.resolve(level === 'county'
         ? {
             level: 'county',
@@ -178,41 +225,49 @@ describe('App', () => {
             message: '县级行政区矢量可用',
           }
         : {
-            level: 'village',
-            available: false,
-            url: null,
-            message: '村级行政区矢量暂未配置',
+            level: 'township',
+            available: true,
+            url: '/api/irrigation/vectors/township?countyId={countyId}',
+            message: '请先在地图上选择县域，再加载该县乡镇',
           })
     ))
-    apiMocks.getIrrigationVectorGeoJSON.mockResolvedValue({
-      type: 'FeatureCollection',
-      features: [
-        {
-          type: 'Feature',
-          properties: { id: 'county_a', name: '示范县A' },
-          geometry: {
-            type: 'Polygon',
-            coordinates: [[[100, 30], [101, 30], [101, 31], [100, 30]]],
+    apiMocks.getIrrigationVectorGeoJSON.mockImplementation(
+      (level: 'county' | 'township') => Promise.resolve({
+        type: 'FeatureCollection',
+        features: [
+          {
+            type: 'Feature',
+            properties: level === 'county'
+              ? { id: 'county_a', name: '示范县A' }
+              : { id: 'township_a1', name: '示范镇A1', parentId: 'county_a' },
+            geometry: {
+              type: 'Polygon',
+              coordinates: [[[100, 30], [101, 30], [101, 31], [100, 30]]],
+            },
           },
-        },
-      ],
-    })
-    apiMocks.getIrrigationRegionAverages.mockResolvedValue({
-      level: 'county',
-      unit: '万m³',
-      averages: [
-        { regionId: 'county_a', name: '示范县A', average: 1480.5 },
-        { regionId: 'county_b', name: '示范县B', average: 320.0 },
-      ],
-      legend: [
-        { value: 100, color: '#eff3ff', label: '100 万m³' },
-        { value: 400, color: '#bdd7e7', label: '400 万m³' },
-        { value: 700, color: '#6baed6', label: '700 万m³' },
-        { value: 1000, color: '#3182bd', label: '1000 万m³' },
-        { value: 1300, color: '#08519c', label: '1300 万m³' },
-        { value: 1600, color: '#042d60', label: '1600 万m³' },
-      ],
-    })
+        ],
+      }),
+    )
+    apiMocks.getIrrigationRegionAverages.mockImplementation(
+      (level: 'county' | 'township') => Promise.resolve({
+        level,
+        unit: '万m³',
+        averages: level === 'county'
+          ? [
+              { regionId: 'county_a', name: '示范县A', average: 1480.5 },
+              { regionId: 'county_b', name: '示范县B', average: 320.0 },
+            ]
+          : [{ regionId: 'township_a1', name: '示范镇A1', average: 118.5 }],
+        legend: [
+          { value: 100, color: '#eff3ff', label: '100 万m³' },
+          { value: 400, color: '#bdd7e7', label: '400 万m³' },
+          { value: 700, color: '#6baed6', label: '700 万m³' },
+          { value: 1000, color: '#3182bd', label: '1000 万m³' },
+          { value: 1300, color: '#08519c', label: '1300 万m³' },
+          { value: 1600, color: '#042d60', label: '1600 万m³' },
+        ],
+      }),
+    )
   })
 
   it('shows navigation for the four platform sections', async () => {
@@ -252,7 +307,7 @@ describe('App', () => {
     render(<App />)
 
     await user.click(await screen.findByRole('button', { name: '县级统计' }))
-    await screen.findByText('行政区矢量已加载')
+    await waitFor(() => expect(screen.getByTestId('county-layer')).toHaveTextContent('loaded'))
     await user.click(await screen.findByRole('button', { name: '选择示范县A' }))
 
     await waitFor(() => {
@@ -266,7 +321,7 @@ describe('App', () => {
     expect(screen.getByRole('img', { name: '示范县A 月度灌溉用水量折线图' })).toBeInTheDocument()
   })
 
-  it('switches monthly raster timeline and reports missing village vector data', async () => {
+  it('loads townships only after selecting a county and then selects a township', async () => {
     window.history.pushState({}, '', '/irrigation')
     const user = userEvent.setup()
 
@@ -282,12 +337,37 @@ describe('App', () => {
       expect(apiMocks.getIrrigationLegend).toHaveBeenCalledWith('2021')
     })
 
-    await user.click(screen.getByRole('button', { name: '村级统计' }))
+    await user.click(screen.getByRole('button', { name: '乡镇级统计' }))
 
     await waitFor(() => {
-      expect(apiMocks.getIrrigationVectorStatus).toHaveBeenCalledWith('village')
+      expect(apiMocks.getIrrigationVectorStatus).toHaveBeenCalledWith('township')
     })
-    expect((await screen.findAllByText('村级行政区矢量暂未配置')).length).toBeGreaterThan(0)
+    await waitFor(() => {
+      expect(apiMocks.getIrrigationVectorGeoJSON).toHaveBeenCalledWith('county', undefined)
+    })
+    expect(apiMocks.getIrrigationVectorGeoJSON).not.toHaveBeenCalledWith('township', undefined)
+    expect(apiMocks.getIrrigationRegionAverages).not.toHaveBeenCalledWith('township')
+    expect(screen.getByTestId('map-region-level')).toHaveTextContent('county')
+
+    await user.click(screen.getByRole('button', { name: '选择示范县A' }))
+
+    await waitFor(() => {
+      expect(apiMocks.getIrrigationVectorGeoJSON).toHaveBeenCalledWith('township', 'county_a')
+      expect(apiMocks.getIrrigationRegionAverages).toHaveBeenCalledWith('township', 'county_a')
+    })
+    expect(await screen.findByText('已加载示范县A 1 个乡镇')).toBeInTheDocument()
+    expect(screen.getByTestId('map-region-level')).toHaveTextContent('county')
+    expect(screen.getByRole('button', { name: '返回县级选择' })).toBeInTheDocument()
+
+    await user.click(screen.getByRole('button', { name: '选择示范镇A1' }))
+
+    await waitFor(() => {
+      expect(apiMocks.getIrrigationSeries).toHaveBeenCalledWith(
+        'township',
+        'township_a1',
+        'monthly',
+      )
+    })
   })
 
   it('loads the map without legacy region or chart panels', async () => {
@@ -446,6 +526,29 @@ describe('App', () => {
     expect(apiMocks.getLayerLegend).not.toHaveBeenCalled()
   })
 
+  it('loads a per-time dynamic legend for ET', async () => {
+    apiMocks.getLayers.mockResolvedValue([...layers, etLayer])
+    apiMocks.getLayerLegend.mockImplementation((layerId: string) => Promise.resolve(
+      layerId === 'et'
+        ? {
+            layerId: 'et',
+            time: '2025-01-01',
+            unit: 'mm/8天',
+            legend: [{ value: 12.3, color: '#d53e4f', label: 'ET 动态图例' }],
+          }
+        : legendResponse('2025-01-01', '首期动态图例'),
+    ))
+    const user = userEvent.setup()
+    render(<App />)
+    await screen.findByText('首期动态图例')
+
+    await user.click(screen.getByRole('radio', { name: /蒸散发/ }))
+
+    expect(await screen.findByText('ET 动态图例')).toBeInTheDocument()
+    expect(apiMocks.getLayerLegend).toHaveBeenCalledWith('et', '2025-01-01')
+    expect(screen.queryByText('ET 静态图例')).not.toBeInTheDocument()
+  })
+
   it('shows admin stats controls when county statistics is enabled', async () => {
     window.history.pushState({}, '', '/irrigation')
     render(<App />)
@@ -466,5 +569,48 @@ describe('App', () => {
     await waitFor(() => {
       expect(screen.getAllByText('未开启行政区统计').length).toBeGreaterThan(0)
     })
+  })
+
+  it('disables raster queries immediately while county averages are still loading', async () => {
+    window.history.pushState({}, '', '/irrigation')
+    const averages = deferred<IrrigationRegionAveragesResponse>()
+    apiMocks.getIrrigationRegionAverages.mockReturnValueOnce(averages.promise)
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(await screen.findByRole('button', { name: '县级统计' }))
+
+    expect(screen.getByTestId('query-disabled')).toHaveTextContent('true')
+    expect(screen.getByTestId('raster-hidden')).toHaveTextContent('true')
+    expect(screen.getByRole('button', { name: '年度' })).toBeDisabled()
+  })
+
+  it('keeps county statistics mode active and colors counties after averages arrive', async () => {
+    window.history.pushState({}, '', '/irrigation')
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(await screen.findByRole('button', { name: '县级统计' }))
+    await waitFor(() => expect(apiMocks.getIrrigationRegionAverages).toHaveBeenCalledWith('county'))
+    await waitFor(() => {
+      const colorMap = mapViewMocks.props?.regionColorMap as Map<string, string> | null
+      expect(colorMap?.has('county_a')).toBe(true)
+      expect(colorMap?.has('county_b')).toBe(true)
+    })
+    expect(screen.getByRole('heading', { name: '县级年平均' })).toBeInTheDocument()
+  })
+
+  it('keeps raster queries disabled when county averages fail', async () => {
+    window.history.pushState({}, '', '/irrigation')
+    apiMocks.getIrrigationRegionAverages.mockRejectedValueOnce(new Error('averages unavailable'))
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(await screen.findByRole('button', { name: '县级统计' }))
+    await waitFor(() => expect(apiMocks.getIrrigationRegionAverages).toHaveBeenCalledWith('county'))
+
+    expect(screen.getByTestId('query-disabled')).toHaveTextContent('true')
+    expect(screen.getByTestId('raster-hidden')).toHaveTextContent('true')
+    expect(screen.getByRole('alert')).toHaveTextContent('图例暂不可用')
   })
 })
