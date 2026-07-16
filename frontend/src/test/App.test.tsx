@@ -43,6 +43,7 @@ vi.mock('../components/MapView', () => ({
     onDetailRegionSelect?: (region: { id: string; name: string }) => void
     regionVector?: IrrigationVectorGeoJSON | null
     detailRegionVector?: IrrigationVectorGeoJSON | null
+    detailSelectedRegionId?: string | null
     regionLevel?: string | null
     disableQuery?: boolean
     hideRaster?: boolean
@@ -56,6 +57,7 @@ vi.mock('../components/MapView', () => ({
         <span data-testid="raster-hidden">{String(Boolean(props.hideRaster))}</span>
         <span data-testid="county-layer">{props.regionVector ? 'loaded' : 'empty'}</span>
         <span data-testid="township-layer">{props.detailRegionVector ? 'loaded' : 'empty'}</span>
+        <span data-testid="detail-first-id">{props.detailRegionVector?.features[0]?.properties?.id ?? 'none'}</span>
         <span data-testid="map-region-level">{props.regionLevel ?? 'none'}</span>
         <button
           type="button"
@@ -137,6 +139,30 @@ const countyRegions: IrrigationRegion[] = [
 const townshipRegions: IrrigationRegion[] = [
   { id: 'township_a1', name: '示范镇A1', level: 'township' as const, parentId: 'county_a' },
 ]
+
+function vectorFixture(
+  level: 'county' | 'township',
+  countyId?: string,
+): IrrigationVectorGeoJSON {
+  const isCountyB = countyId === 'county_b'
+  const id = level === 'county' ? 'county_a' : isCountyB ? 'township_b1' : 'township_a1'
+  const name = level === 'county' ? '示范县A' : isCountyB ? '示范镇B1' : '示范镇A1'
+  return {
+    type: 'FeatureCollection',
+    features: [{
+      type: 'Feature',
+      properties: {
+        id,
+        name,
+        ...(level === 'township' ? { parentId: countyId ?? 'county_a' } : {}),
+      },
+      geometry: {
+        type: 'Polygon',
+        coordinates: [[[100, 30], [101, 30], [101, 31], [100, 30]]],
+      },
+    }],
+  }
+}
 
 function irrigationSeries(
   region: IrrigationRegion = countyRegions[0],
@@ -232,21 +258,7 @@ describe('App', () => {
           })
     ))
     apiMocks.getIrrigationVectorGeoJSON.mockImplementation(
-      (level: 'county' | 'township') => Promise.resolve({
-        type: 'FeatureCollection',
-        features: [
-          {
-            type: 'Feature',
-            properties: level === 'county'
-              ? { id: 'county_a', name: '示范县A' }
-              : { id: 'township_a1', name: '示范镇A1', parentId: 'county_a' },
-            geometry: {
-              type: 'Polygon',
-              coordinates: [[[100, 30], [101, 30], [101, 31], [100, 30]]],
-            },
-          },
-        ],
-      }),
+      (level: 'county' | 'township', countyId?: string) => Promise.resolve(vectorFixture(level, countyId)),
     )
     apiMocks.getIrrigationRegionAverages.mockImplementation(
       (level: 'county' | 'township') => Promise.resolve({
@@ -339,6 +351,10 @@ describe('App', () => {
 
     await user.click(screen.getByRole('button', { name: '乡镇级统计' }))
 
+    expect(screen.getByTestId('county-layer')).toHaveTextContent('loaded')
+    expect(screen.getByTestId('township-layer')).toHaveTextContent('empty')
+    expect(apiMocks.getIrrigationRegionAverages).toHaveBeenCalledWith('county')
+
     await waitFor(() => {
       expect(apiMocks.getIrrigationVectorStatus).toHaveBeenCalledWith('township')
     })
@@ -356,6 +372,10 @@ describe('App', () => {
       expect(apiMocks.getIrrigationRegionAverages).toHaveBeenCalledWith('township', 'county_a')
     })
     expect(await screen.findByText('已加载示范县A 1 个乡镇')).toBeInTheDocument()
+    expect(screen.getByTestId('county-layer')).toHaveTextContent('loaded')
+    expect(screen.getByTestId('township-layer')).toHaveTextContent('loaded')
+    expect(screen.getByRole('heading', { name: '县级年平均' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: '当前县乡镇年平均' })).toBeInTheDocument()
     expect(screen.getByTestId('map-region-level')).toHaveTextContent('county')
     expect(screen.getByRole('button', { name: '返回县级选择' })).toBeInTheDocument()
 
@@ -368,6 +388,78 @@ describe('App', () => {
         'monthly',
       )
     })
+  })
+
+  it('keeps counties visible while switching the township detail to another county', async () => {
+    window.history.pushState({}, '', '/irrigation')
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(await screen.findByRole('button', { name: '乡镇级统计' }))
+    await user.click(await screen.findByRole('button', { name: '选择示范县A' }))
+    await screen.findByText('已加载示范县A 1 个乡镇')
+
+    await user.click(screen.getByRole('button', { name: '选择示范县B' }))
+    expect(screen.getByTestId('county-layer')).toHaveTextContent('loaded')
+    expect(screen.getByTestId('township-layer')).toHaveTextContent('loaded')
+
+    await waitFor(() => {
+      expect(apiMocks.getIrrigationVectorGeoJSON).toHaveBeenCalledWith('township', 'county_b')
+    })
+    expect(await screen.findByText('已加载示范县B 1 个乡镇')).toBeInTheDocument()
+    expect(screen.getByTestId('county-layer')).toHaveTextContent('loaded')
+  })
+
+  it('ignores a stale township response after a newer county finishes first', async () => {
+    window.history.pushState({}, '', '/irrigation')
+    const countyAChunk = deferred<IrrigationVectorGeoJSON>()
+    const countyBChunk = deferred<IrrigationVectorGeoJSON>()
+    apiMocks.getIrrigationVectorGeoJSON.mockImplementation(
+      (level: 'county' | 'township', countyId?: string) => {
+        if (level === 'township' && countyId === 'county_a') return countyAChunk.promise
+        if (level === 'township' && countyId === 'county_b') return countyBChunk.promise
+        return Promise.resolve(vectorFixture(level, countyId))
+      },
+    )
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(await screen.findByRole('button', { name: '乡镇级统计' }))
+    await screen.findByText('请在地图上点击一个县域')
+    await user.click(screen.getByRole('button', { name: '选择示范县A' }))
+    await user.click(screen.getByRole('button', { name: '选择示范县B' }))
+
+    countyBChunk.resolve(vectorFixture('township', 'county_b'))
+    expect(await screen.findByText('已加载示范县B 1 个乡镇')).toBeInTheDocument()
+
+    countyAChunk.resolve(vectorFixture('township', 'county_a'))
+    await waitFor(() => {
+      expect(screen.getByTestId('detail-first-id')).toHaveTextContent('township_b1')
+    })
+    expect(screen.queryByText(/已加载示范县A/)).not.toBeInTheDocument()
+  })
+
+  it('keeps the previous township layer when a new county chunk fails', async () => {
+    window.history.pushState({}, '', '/irrigation')
+    apiMocks.getIrrigationVectorGeoJSON.mockImplementation(
+      (level: 'county' | 'township', countyId?: string) => {
+        if (level === 'township' && countyId === 'county_b') {
+          return Promise.reject(new Error('县B分片不可用'))
+        }
+        return Promise.resolve(vectorFixture(level, countyId))
+      },
+    )
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(await screen.findByRole('button', { name: '乡镇级统计' }))
+    await user.click(await screen.findByRole('button', { name: '选择示范县A' }))
+    await screen.findByText('已加载示范县A 1 个乡镇')
+    await user.click(screen.getByRole('button', { name: '选择示范县B' }))
+
+    expect(await screen.findByText('县B分片不可用')).toBeInTheDocument()
+    expect(screen.getByTestId('county-layer')).toHaveTextContent('loaded')
+    expect(screen.getByTestId('detail-first-id')).toHaveTextContent('township_a1')
   })
 
   it('loads the map without legacy region or chart panels', async () => {
