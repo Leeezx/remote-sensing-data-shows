@@ -19,6 +19,12 @@ interface RectangleProps {
   bounds: [[number, number], [number, number]]
 }
 
+interface VectorFeature {
+  type: 'Feature'
+  properties: { id: string; name: string }
+  geometry: { type: 'Polygon'; coordinates: number[][][] }
+}
+
 const mapMocks = vi.hoisted(() => {
   const dragging = {
     disable: vi.fn(),
@@ -31,7 +37,12 @@ const mapMocks = vi.hoisted(() => {
     map: {
       dragging,
       removeLayer: vi.fn(),
+      getZoom: vi.fn(() => 10),
+      on: vi.fn(),
+      off: vi.fn(),
+      fitBounds: vi.fn(),
     },
+    geoJsonFeatureIds: [] as string[][],
   }
 })
 
@@ -43,6 +54,10 @@ const leafletMocks = vi.hoisted(() => {
   return {
     tileLayerInstance,
     tileLayer: vi.fn((_url: string) => tileLayerInstance),
+    bounds: {
+      extend: vi.fn(),
+      isValid: vi.fn(() => true),
+    },
   }
 })
 
@@ -50,6 +65,7 @@ vi.mock('leaflet', () => ({
   default: {
     tileLayer: leafletMocks.tileLayer,
     latLng: (lat: number, lng: number) => ({ lat, lng }),
+    latLngBounds: () => leafletMocks.bounds,
   },
 }))
 
@@ -61,6 +77,36 @@ vi.mock('react-leaflet', () => ({
     return null
   },
   Marker: () => null,
+  GeoJSON: ({
+    data,
+    onEachFeature,
+  }: {
+    data: { features: VectorFeature[] }
+    onEachFeature: (feature: VectorFeature, layer: {
+      on: ReturnType<typeof vi.fn>
+      unbindTooltip: ReturnType<typeof vi.fn>
+    }) => void
+  }) => {
+    const ids = data.features.map((feature) => feature.properties.id)
+    if (!mapMocks.geoJsonFeatureIds.some((existing) => (
+      existing.length === ids.length && existing.every((id, index) => id === ids[index])
+    ))) {
+      mapMocks.geoJsonFeatureIds.push(ids)
+    }
+    for (const feature of data.features) {
+      onEachFeature(feature, {
+        on: vi.fn(),
+        unbindTooltip: vi.fn(),
+      })
+    }
+    return (
+      <div
+        data-testid="region-geojson"
+        data-first-feature-id={ids[0] ?? ''}
+        data-feature-count={data.features.length}
+      />
+    )
+  },
   useMap: () => mapMocks.map,
   useMapEvents: (handlers: MapEventHandlers) => {
     mapMocks.handlers = handlers
@@ -86,6 +132,7 @@ describe('MapView interactions', () => {
     vi.clearAllMocks()
     mapMocks.handlers = null
     mapMocks.rectangleProps = null
+    mapMocks.geoJsonFeatureIds = []
     mockedQueryArea.mockReturnValue(new Promise(() => undefined))
   })
 
@@ -226,5 +273,105 @@ describe('MapView interactions', () => {
     expect(url).not.toContain('colormap_name')
     expect(url).not.toContain('rescale')
     expect(url).not.toContain('rdylgn')
+  })
+
+  it('mounts the largest real county feature count well within one second', () => {
+    const features: VectorFeature[] = Array.from({ length: 81 }, (_, index) => ({
+      type: 'Feature',
+      properties: { id: `township_${index}`, name: `乡镇${index}` },
+      geometry: {
+        type: 'Polygon',
+        coordinates: [[[100, 30], [101, 30], [101, 31], [100, 30]]],
+      },
+    }))
+    const started = performance.now()
+
+    render(
+      <MapView
+        {...baseProps}
+        regionVector={{ type: 'FeatureCollection', features }}
+        regionLevel="township"
+        onRegionSelect={vi.fn()}
+      />,
+    )
+
+    expect(performance.now() - started).toBeLessThan(1000)
+    expect(screen.getByTestId('region-geojson')).toHaveAttribute('data-feature-count', '81')
+    expect(mapMocks.geoJsonFeatureIds).toEqual([features.map((feature) => feature.properties.id)])
+    expect(mapMocks.map.fitBounds).toHaveBeenCalledOnce()
+  })
+
+  it('refuses to mount a township payload above the 499-layer guard', () => {
+    const features: VectorFeature[] = Array.from({ length: 500 }, (_, index) => ({
+      type: 'Feature',
+      properties: { id: `township_${index}`, name: `乡镇${index}` },
+      geometry: {
+        type: 'Polygon',
+        coordinates: [[[100, 30], [101, 30], [101, 31], [100, 30]]],
+      },
+    }))
+
+    render(
+      <MapView
+        {...baseProps}
+        regionVector={{ type: 'FeatureCollection', features }}
+        regionLevel="township"
+        onRegionSelect={vi.fn()}
+      />,
+    )
+
+    expect(screen.queryByTestId('region-geojson')).not.toBeInTheDocument()
+    expect(mapMocks.geoJsonFeatureIds).toEqual([])
+  })
+
+  it('keeps the county overlay while mounting the township detail overlay above it', () => {
+    const county = {
+      type: 'FeatureCollection' as const,
+      features: [{
+        type: 'Feature' as const,
+        properties: { id: 'county_a', name: '示范县A' },
+        geometry: { type: 'Polygon' as const, coordinates: [[[100, 30], [101, 30], [100, 30]]] },
+      }],
+    }
+    const township = {
+      type: 'FeatureCollection' as const,
+      features: [{
+        type: 'Feature' as const,
+        properties: { id: 'township_a1', name: '示范镇A1' },
+        geometry: { type: 'Polygon' as const, coordinates: [[[100, 30], [100.5, 30], [100, 30]]] },
+      }],
+    }
+
+    render(
+      <MapView
+        {...baseProps}
+        regionVector={county}
+        regionLevel="county"
+        onRegionSelect={vi.fn()}
+        detailRegionVector={township}
+        detailRegionLevel="township"
+        onDetailRegionSelect={vi.fn()}
+      />,
+    )
+
+    expect(mapMocks.geoJsonFeatureIds).toEqual([['county_a'], ['township_a1']])
+    expect(screen.getAllByTestId('region-geojson')).toHaveLength(2)
+    expect(mapMocks.map.fitBounds).toHaveBeenCalledOnce()
+  })
+
+  it('clears an existing point result when administrative statistics disables queries', async () => {
+    mockedQueryPoint.mockResolvedValueOnce({
+      layerId: 'ndvi', time: '2025-06', lng: 116, lat: 39, value: 0.5, unit: '指数',
+    })
+    const { rerender } = render(<MapView {...baseProps} />)
+
+    act(() => mapMocks.handlers!.click?.({ latlng: { lat: 39, lng: 116 } }))
+    expect(await screen.findByRole('heading', { name: '点查询结果' })).toBeInTheDocument()
+
+    rerender(<MapView {...baseProps} disableQuery />)
+
+    expect(screen.queryByRole('heading', { name: '点查询结果' })).not.toBeInTheDocument()
+    act(() => mapMocks.handlers!.click?.({ latlng: { lat: 40, lng: 117 } }))
+    expect(mockedQueryPoint).toHaveBeenCalledOnce()
   })
 })

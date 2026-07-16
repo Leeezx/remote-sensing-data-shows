@@ -127,6 +127,14 @@ function MapEvents({
     }
   }, [map, removeGlobalMouseupListener])
 
+  useEffect(() => {
+    if (enabled || !drawingRef.current) return
+    drawingRef.current = false
+    rectRef.current = []
+    removeGlobalMouseupListener()
+    map.dragging.enable()
+  }, [enabled, map, removeGlobalMouseupListener])
+
   useMapEvents({
     click: (e) => {
       if (!enabled) return
@@ -173,11 +181,10 @@ function RegionOverlay({
   const geoLayersRef = useRef<L.Layer[]>([])
   const rafRef = useRef(0)
 
-  // Reset layer ref when data changes (render-phase, before child effects)
-  const nextLen = data?.features.length ?? 0
-  const prevLenRef = useRef(nextLen)
-  if (prevLenRef.current !== nextLen) {
-    prevLenRef.current = nextLen
+  // Reset layer refs for every new chunk, including equal-sized county chunks.
+  const prevDataRef = useRef(data)
+  if (prevDataRef.current !== data) {
+    prevDataRef.current = data
     cancelAnimationFrame(rafRef.current)
     // Unbind tooltips from old layers before clearing
     for (const layer of geoLayersRef.current) {
@@ -185,6 +192,31 @@ function RegionOverlay({
     }
     geoLayersRef.current = []
   }
+
+  // A township chunk represents an explicit county drill-down. Fit that county
+  // without creating a second temporary Leaflet GeoJSON layer.
+  useEffect(() => {
+    if (regionLevel !== 'township' || !data || data.features.length === 0) return
+    const bounds = L.latLngBounds([])
+    const extendCoordinates = (coordinates: unknown) => {
+      if (!Array.isArray(coordinates)) return
+      if (
+        coordinates.length >= 2
+        && typeof coordinates[0] === 'number'
+        && typeof coordinates[1] === 'number'
+      ) {
+        bounds.extend([coordinates[1], coordinates[0]])
+        return
+      }
+      for (const child of coordinates) extendCoordinates(child)
+    }
+    for (const feature of data.features) {
+      extendCoordinates(feature.geometry.coordinates)
+    }
+    if (bounds.isValid()) {
+      map.fitBounds(bounds, { padding: [24, 24], maxZoom: 10 })
+    }
+  }, [data, map, regionLevel])
 
   // Zoom → label visibility
   useEffect(() => {
@@ -194,7 +226,7 @@ function RegionOverlay({
     }
     const handler = () => {
       const zoom = map.getZoom()
-      setShowLabels(regionLevel === 'village' ? zoom >= 11 : zoom >= 9)
+      setShowLabels(regionLevel === 'township' ? zoom >= 11 : zoom >= 9)
     }
     map.on('zoomend', handler)
     handler()
@@ -221,8 +253,11 @@ function RegionOverlay({
       const end = Math.min(i + BATCH, layers.length)
       for (; i < end; i++) {
         const layer = layers[i]
-        const feature: { properties?: Record<string, unknown> } | undefined =
-          (layer as L.Path)?.feature
+        const feature = (
+          layer as L.Path & {
+            feature?: { properties?: Record<string, unknown> }
+          }
+        ).feature
         if (feature?.properties) {
           const name = String(
             feature.properties.name ?? feature.properties.NAME ?? ''
@@ -252,6 +287,8 @@ function RegionOverlay({
 
   if (!data || !onRegionSelect) return null
 
+  if (regionLevel === 'township' && data.features.length > 499) return null
+
   const hasColorMap = colorMap !== null && colorMap !== undefined && colorMap.size > 0
 
   const featureStyle = (feature?: { properties?: Record<string, unknown> }) => {
@@ -274,7 +311,7 @@ function RegionOverlay({
 
   return (
     <GeoJSON
-      key={data.features.length}
+      key={`${regionLevel}:${String(data.features[0]?.properties?.id ?? '')}:${data.features.length}`}
       data={data as never}
       style={featureStyle}
       onEachFeature={(feature, layer) => {
@@ -332,6 +369,11 @@ interface MapViewProps {
   hideRaster?: boolean
   regionColorMap?: Map<string, string> | null
   regionLevel?: string | null
+  detailRegionVector?: IrrigationVectorGeoJSON | null
+  detailSelectedRegionId?: string | null
+  onDetailRegionSelect?: (region: { id: string; name: string }) => void
+  detailRegionColorMap?: Map<string, string> | null
+  detailRegionLevel?: string | null
 }
 
 export default function MapView({
@@ -346,6 +388,11 @@ export default function MapView({
   hideRaster = false,
   regionColorMap = null,
   regionLevel = null,
+  detailRegionVector = null,
+  detailSelectedRegionId = null,
+  onDetailRegionSelect,
+  detailRegionColorMap = null,
+  detailRegionLevel = null,
 }: MapViewProps) {
   const [marker, setMarker] = useState<L.LatLng | null>(null)
   const [rect, setRect] = useState<L.LatLngBoundsExpression | null>(null)
@@ -362,6 +409,13 @@ export default function MapView({
     setMarker(null)
     setRect(null)
   }, [activeLayerId, currentTime])
+
+  useEffect(() => {
+    if (!disableQuery) return
+    reset()
+    setMarker(null)
+    setRect(null)
+  }, [disableQuery, reset])
 
   const handlePointCoords = useCallback((lat: number, lng: number) => {
     setMarker(L.latLng(lat, lng))
@@ -414,6 +468,14 @@ export default function MapView({
           onRegionSelect={onRegionSelect}
           colorMap={regionColorMap}
           regionLevel={regionLevel}
+        />
+
+        <RegionOverlay
+          data={detailRegionVector}
+          selectedRegionId={detailSelectedRegionId}
+          onRegionSelect={onDetailRegionSelect}
+          colorMap={detailRegionColorMap}
+          regionLevel={detailRegionLevel}
         />
 
         {/* Point click + rectangle drawing */}
