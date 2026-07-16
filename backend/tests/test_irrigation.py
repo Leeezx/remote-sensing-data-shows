@@ -1,5 +1,6 @@
 """Tests for irrigation water display endpoints."""
 
+import json
 from pathlib import Path
 
 from fastapi.testclient import TestClient
@@ -107,17 +108,90 @@ def test_irrigation_times_scan_configured_raster_directories(monkeypatch, tmp_pa
     assert data_loader.get_irrigation_times("month") == ["2010-05"]
 
 
-def test_get_irrigation_vectors_reports_county_availability_and_missing_village():
+def test_get_irrigation_vectors_reports_county_availability_and_township_chunks(
+    monkeypatch,
+    tmp_path,
+):
+    county_path = tmp_path / "county.shp"
+    county_path.touch()
+    chunk_root = tmp_path / "township_by_county"
+    chunk_root.mkdir()
+    (chunk_root / "manifest.json").write_text("{}", encoding="utf-8")
+    monkeypatch.setattr(irrigation_router, "COUNTY_VECTOR_PATH", county_path)
+    monkeypatch.setattr(irrigation_router, "TOWNSHIP_CHUNK_ROOT", chunk_root)
+
     county = client.get("/api/irrigation/vectors?level=county")
-    village = client.get("/api/irrigation/vectors?level=village")
+    township = client.get("/api/irrigation/vectors?level=township")
 
     assert county.status_code == 200
     assert county.json()["level"] == "county"
     assert county.json()["available"] is True
     assert county.json()["url"] == "/api/irrigation/vectors/county"
-    assert village.status_code == 200
-    assert village.json()["available"] is False
-    assert "暂未配置" in village.json()["message"]
+    assert township.status_code == 200
+    assert township.json()["available"] is True
+    assert "{countyId}" in township.json()["url"]
+    assert "选择县域" in township.json()["message"]
+
+
+def test_township_vector_requires_county_id():
+    response = client.get("/api/irrigation/vectors/township")
+
+    assert response.status_code == 422
+
+
+def test_township_vector_serves_one_small_cached_county_chunk(monkeypatch, tmp_path):
+    chunk_root = tmp_path / "township_by_county"
+    chunk_root.mkdir()
+    chunk = {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "properties": {
+                    "id": "511011111000",
+                    "name": "石子镇",
+                    "parentId": "156511011",
+                },
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [[[104, 29], [105, 29], [105, 30], [104, 29]]],
+                },
+            }
+        ],
+    }
+    chunk_path = chunk_root / "511011.geojson"
+    chunk_path.write_text(
+        json.dumps(chunk, ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(irrigation_router, "TOWNSHIP_CHUNK_ROOT", chunk_root)
+    monkeypatch.setattr(
+        irrigation_router,
+        "read_shapefile_geojson",
+        lambda _path: (_ for _ in ()).throw(AssertionError("must not read nationwide shp")),
+    )
+
+    response = client.get(
+        "/api/irrigation/vectors/township",
+        params={"countyId": "156511011"},
+    )
+
+    assert response.status_code == 200
+    assert response.json() == chunk
+    assert response.headers["cache-control"] == "public, max-age=86400"
+    assert int(response.headers["x-chunk-bytes"]) < 1_000_000
+    assert response.headers["x-feature-count"] == "1"
+
+
+def test_township_vector_rejects_invalid_county_id(monkeypatch, tmp_path):
+    monkeypatch.setattr(irrigation_router, "TOWNSHIP_CHUNK_ROOT", tmp_path)
+
+    response = client.get(
+        "/api/irrigation/vectors/township",
+        params={"countyId": "../../all"},
+    )
+
+    assert response.status_code == 422
 
 
 def test_county_vector_geojson_uses_configured_shapefile(monkeypatch, tmp_path):
@@ -176,8 +250,22 @@ def test_get_irrigation_regions_filters_by_level():
 
     assert response.status_code == 200
     data = response.json()
-    assert [region["level"] for region in data] == ["county", "county"]
-    assert data[0]["name"] == "示范县A"
+    assert len(data) > 0
+    assert all(region["level"] == "county" for region in data)
+    ids = [region["id"] for region in data]
+    assert "county_a" in ids
+
+
+def test_irrigation_region_catalog_contains_both_supported_levels():
+    county = client.get("/api/irrigation/regions?level=county")
+    township = client.get("/api/irrigation/regions?level=township")
+
+    assert county.status_code == 200
+    assert township.status_code == 200
+    assert len(county.json()) > 0
+    assert len(township.json()) > 0
+    assert {item["level"] for item in county.json()} == {"county"}
+    assert {item["level"] for item in township.json()} == {"township"}
 
 
 def test_get_irrigation_series_returns_precomputed_monthly_county_values():
@@ -224,13 +312,13 @@ def test_get_irrigation_series_computes_missing_vector_region(monkeypatch):
 
     response = client.get(
         "/api/irrigation/series",
-        params={"level": "county", "regionId": "156420704", "period": "annual"},
+        params={"level": "county", "regionId": "nonexistent_county_99999", "period": "annual"},
     )
 
     assert response.status_code == 200
     data = response.json()
     assert data["region"] == {
-        "id": "156420704",
+        "id": "nonexistent_county_99999",
         "name": "鄂城区",
         "level": "county",
         "parentId": None,
@@ -243,7 +331,7 @@ def test_get_irrigation_series_rejects_mismatched_region_level():
     response = client.get(
         "/api/irrigation/series",
         params={
-            "level": "village",
+            "level": "township",
             "regionId": "county_a",
             "period": "annual",
         },
@@ -292,5 +380,11 @@ def test_get_irrigation_region_averages_legend_has_six_stops():
 
 def test_get_irrigation_region_averages_bad_level():
     response = client.get("/api/irrigation/regions/averages?level=province")
-    # Literal type validation should reject non-county/non-village
+    # Literal type validation should reject non-county/non-township
+    assert response.status_code == 422
+
+
+def test_get_township_region_averages_requires_county_id():
+    response = client.get("/api/irrigation/regions/averages?level=township")
+
     assert response.status_code == 422
