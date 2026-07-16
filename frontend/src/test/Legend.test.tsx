@@ -57,6 +57,50 @@ describe('Legend', () => {
     expect(screen.queryByText('静态图例')).not.toBeInTheDocument()
   })
 
+  it('renders separately titled county and township legend groups', () => {
+    render(
+      <Legend
+        layer={layer}
+        groups={[
+          {
+            title: '县级年平均',
+            items: [{ value: 100, color: '#111111', label: '县级 100' }],
+            status: 'ready',
+          },
+          {
+            title: '当前县乡镇年平均',
+            items: [{ value: 10, color: '#222222', label: '乡镇 10' }],
+            status: 'ready',
+          },
+        ]}
+      />,
+    )
+
+    expect(screen.getByRole('heading', { name: '县级年平均' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: '当前县乡镇年平均' })).toBeInTheDocument()
+    expect(screen.getByText('县级 100')).toBeInTheDocument()
+    expect(screen.getByText('乡镇 10')).toBeInTheDocument()
+  })
+
+  it('shows an error only inside the failed legend group', () => {
+    render(
+      <Legend
+        layer={layer}
+        groups={[
+          { title: '县级年平均', items: [], status: 'error' },
+          {
+            title: '当前县乡镇年平均',
+            items: [{ value: 10, color: '#222222', label: '乡镇 10' }],
+            status: 'ready',
+          },
+        ]}
+      />,
+    )
+
+    expect(screen.getByRole('alert')).toHaveTextContent('图例暂不可用')
+    expect(screen.getByText('乡镇 10')).toBeInTheDocument()
+  })
+
   it('renders nothing without a layer', () => {
     const { container } = render(<Legend layer={null} />)
 

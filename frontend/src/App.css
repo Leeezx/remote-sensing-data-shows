@@ -392,6 +392,23 @@
   font-size: 13px;
 }
 
+.legend-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.legend-group + .legend-group {
+  border-top: 1px solid rgba(51, 65, 85, 0.18);
+  padding-top: 7px;
+}
+
+.legend-group h5 {
+  margin: 0 0 4px;
+  color: #334155;
+  font-size: 12px;
+}
+
 .legend-items {
   display: flex;
   flex-direction: column;
