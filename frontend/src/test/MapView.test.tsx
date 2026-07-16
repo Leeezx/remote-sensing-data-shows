@@ -444,10 +444,39 @@ describe('MapView interactions', () => {
     expect(Number(townshipPane.zIndex)).toBeGreaterThan(Number(countyPane.zIndex))
 
     const township = mapMocks.featureLayers.find((item) => item.id === 'township_a1')!
+    expect(township.pane).toBe('township-regions')
     act(() => township.handlers.mouseover?.())
     expect(township.setStyle).toHaveBeenCalled()
     act(() => township.handlers.click?.({ originalEvent: new MouseEvent('click') }))
     expect(onTownshipSelect).toHaveBeenCalledWith({ id: 'township_a1', name: '示范镇A1' })
+  })
+
+  it('restores the latest county style after a color and selection rerender', () => {
+    const county = vectorFixture('county_a', '示范县A')
+    const onRegionSelect = vi.fn()
+    const { rerender } = render(<MapView
+      {...baseProps}
+      regionVector={county}
+      regionLevel="county"
+      regionColorMap={new Map([['county_a', '#2563eb']])}
+      onRegionSelect={onRegionSelect}
+    />)
+
+    const layer = mapMocks.featureLayers.find((item) => item.id === 'county_a')!
+    rerender(<MapView
+      {...baseProps}
+      regionVector={county}
+      regionLevel="county"
+      selectedRegionId="county_a"
+      regionColorMap={new Map([['county_a', '#dc2626']])}
+      onRegionSelect={onRegionSelect}
+    />)
+
+    act(() => layer.handlers.mouseout?.())
+    expect(layer.setStyle).toHaveBeenLastCalledWith(expect.objectContaining({
+      color: '#b45309',
+      fillColor: '#f59e0b',
+    }))
   })
 
   it('clears an existing point result when administrative statistics disables queries', async () => {

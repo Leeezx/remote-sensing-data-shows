@@ -293,22 +293,29 @@ function RegionOverlay({
   if (regionLevel === 'township' && data.features.length > 499) return null
 
   const hasColorMap = colorMap !== null && colorMap !== undefined && colorMap.size > 0
+  const styleInputsRef = useRef({ selectedRegionId, colorMap, hasColorMap })
+  styleInputsRef.current = { selectedRegionId, colorMap, hasColorMap }
 
   const featureStyle = (feature?: { properties?: Record<string, unknown> }) => {
+    const {
+      selectedRegionId: currentSelectedRegionId,
+      colorMap: currentColorMap,
+      hasColorMap: currentHasColorMap,
+    } = styleInputsRef.current
     const featureId = String(
       feature?.properties?.id ??
       feature?.properties?.gb ??
       feature?.properties?.name ??
       '',
     )
-    const selected = featureId && featureId === selectedRegionId
-    const fillFromMap = colorMap?.get(featureId)
+    const selected = featureId && featureId === currentSelectedRegionId
+    const fillFromMap = currentColorMap?.get(featureId)
     return {
-      color: selected ? '#b45309' : (hasColorMap ? '#334155' : '#1d4ed8'),
-      opacity: selected ? 0.75 : (hasColorMap ? 0.7 : 0.42),
-      weight: selected ? 2.6 : (hasColorMap ? 1.0 : 1.2),
+      color: selected ? '#b45309' : (currentHasColorMap ? '#334155' : '#1d4ed8'),
+      opacity: selected ? 0.75 : (currentHasColorMap ? 0.7 : 0.42),
+      weight: selected ? 2.6 : (currentHasColorMap ? 1.0 : 1.2),
       fillColor: selected ? '#f59e0b' : (fillFromMap ?? '#60a5fa'),
-      fillOpacity: selected ? 0.4 : (hasColorMap ? 0.65 : 0.035),
+      fillOpacity: selected ? 0.4 : (currentHasColorMap ? 0.65 : 0.035),
     }
   }
 
