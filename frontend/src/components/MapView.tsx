@@ -288,13 +288,13 @@ function RegionOverlay({
     }
   }, [showLabels])
 
-  if (!data || !onRegionSelect) return null
-
-  if (regionLevel === 'township' && data.features.length > 499) return null
-
   const hasColorMap = colorMap !== null && colorMap !== undefined && colorMap.size > 0
   const styleInputsRef = useRef({ selectedRegionId, colorMap, hasColorMap })
   styleInputsRef.current = { selectedRegionId, colorMap, hasColorMap }
+
+  if (!data || !onRegionSelect) return null
+
+  if (regionLevel === 'township' && data.features.length > 499) return null
 
   const featureStyle = (feature?: { properties?: Record<string, unknown> }) => {
     const {

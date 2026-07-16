@@ -479,6 +479,22 @@ describe('MapView interactions', () => {
     }))
   })
 
+  it('keeps region overlay hooks stable while region data loads', () => {
+    const { rerender } = render(<MapView
+      {...baseProps}
+      regionLevel="county"
+    />)
+
+    rerender(<MapView
+      {...baseProps}
+      regionVector={vectorFixture('county_a', '示范县A')}
+      regionLevel="county"
+      onRegionSelect={vi.fn()}
+    />)
+
+    expect(screen.getByTestId('region-geojson')).toHaveAttribute('data-first-feature-id', 'county_a')
+  })
+
   it('clears an existing point result when administrative statistics disables queries', async () => {
     mockedQueryPoint.mockResolvedValueOnce({
       layerId: 'ndvi', time: '2025-06', lng: 116, lat: 39, value: 0.5, unit: '指数',
