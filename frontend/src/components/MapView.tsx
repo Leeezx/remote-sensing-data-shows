@@ -6,6 +6,7 @@ import {
   useMapEvents,
   Rectangle,
   Marker,
+  Pane,
   GeoJSON,
 } from 'react-leaflet'
 import L from 'leaflet'
@@ -164,12 +165,14 @@ function MapEvents({
 // ===== Administrative region overlay =====
 
 function RegionOverlay({
+  pane,
   data,
   selectedRegionId,
   onRegionSelect,
   colorMap,
   regionLevel,
 }: {
+  pane: string
   data: IrrigationVectorGeoJSON | null
   selectedRegionId?: string | null
   onRegionSelect?: (region: { id: string; name: string }) => void
@@ -311,35 +314,37 @@ function RegionOverlay({
 
   return (
     <GeoJSON
+      pane={pane}
       key={`${regionLevel}:${String(data.features[0]?.properties?.id ?? '')}:${data.features.length}`}
       data={data as never}
       style={featureStyle}
       onEachFeature={(feature, layer) => {
         // Collect layer reference for later tooltip binding
         geoLayersRef.current.push(layer)
-        layer.on('mouseover', () => {
-          const pathLayer = layer as L.Path
-          pathLayer.setStyle({
-            color: '#0f766e',
-            opacity: 0.85,
-            weight: 2.4,
-            fillColor: '#14b8a6',
-            fillOpacity: 0.16,
-          })
-          pathLayer.bringToFront()
-        })
-        layer.on('mouseout', () => {
-          ;(layer as L.Path).setStyle(featureStyle(feature))
-        })
-        layer.on('click', (event) => {
-          if (event.originalEvent) {
-            L.DomEvent.stopPropagation(event.originalEvent)
-          }
-          const id = String(
-            feature.properties?.id ?? feature.properties?.gb ?? feature.properties?.name ?? '',
-          )
-          const name = String(feature.properties?.name ?? feature.properties?.NAME ?? id)
-          if (id) onRegionSelect({ id, name })
+        layer.on({
+          mouseover: () => {
+            const pathLayer = layer as L.Path
+            pathLayer.setStyle({
+              color: '#0f766e',
+              opacity: 0.85,
+              weight: 2.4,
+              fillColor: '#14b8a6',
+              fillOpacity: 0.16,
+            })
+          },
+          mouseout: () => {
+            ;(layer as L.Path).setStyle(featureStyle(feature))
+          },
+          click: (event) => {
+            if (event.originalEvent) {
+              L.DomEvent.stopPropagation(event.originalEvent)
+            }
+            const id = String(
+              feature.properties?.id ?? feature.properties?.gb ?? feature.properties?.name ?? '',
+            )
+            const name = String(feature.properties?.name ?? feature.properties?.NAME ?? id)
+            if (id) onRegionSelect({ id, name })
+          },
         })
       }}
     />
@@ -462,21 +467,27 @@ export default function MapView({
           <TileOverlay layer={activeLayer} time={currentTime} opacity={opacity} />
         )}
 
-        <RegionOverlay
-          data={regionVector}
-          selectedRegionId={selectedRegionId}
-          onRegionSelect={onRegionSelect}
-          colorMap={regionColorMap}
-          regionLevel={regionLevel}
-        />
+        <Pane name="county-regions" style={{ zIndex: 410 }}>
+          <RegionOverlay
+            pane="county-regions"
+            data={regionVector}
+            selectedRegionId={selectedRegionId}
+            onRegionSelect={onRegionSelect}
+            colorMap={regionColorMap}
+            regionLevel={regionLevel}
+          />
+        </Pane>
 
-        <RegionOverlay
-          data={detailRegionVector}
-          selectedRegionId={detailSelectedRegionId}
-          onRegionSelect={onDetailRegionSelect}
-          colorMap={detailRegionColorMap}
-          regionLevel={detailRegionLevel}
-        />
+        <Pane name="township-regions" style={{ zIndex: 420 }}>
+          <RegionOverlay
+            pane="township-regions"
+            data={detailRegionVector}
+            selectedRegionId={detailSelectedRegionId}
+            onRegionSelect={onDetailRegionSelect}
+            colorMap={detailRegionColorMap}
+            regionLevel={detailRegionLevel}
+          />
+        </Pane>
 
         {/* Point click + rectangle drawing */}
         <MapEvents

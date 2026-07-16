@@ -25,6 +25,14 @@ interface VectorFeature {
   geometry: { type: 'Polygon'; coordinates: number[][][] }
 }
 
+interface FeatureLayerMocks {
+  id: string
+  pane: string | undefined
+  handlers: Record<string, (event?: { originalEvent?: Event }) => void>
+  setStyle: ReturnType<typeof vi.fn>
+  bringToFront: ReturnType<typeof vi.fn>
+}
+
 const mapMocks = vi.hoisted(() => {
   const dragging = {
     disable: vi.fn(),
@@ -43,6 +51,8 @@ const mapMocks = vi.hoisted(() => {
       fitBounds: vi.fn(),
     },
     geoJsonFeatureIds: [] as string[][],
+    featureLayers: [] as FeatureLayerMocks[],
+    panes: [] as Array<{ name: string; zIndex: number | string | undefined }>,
   }
 })
 
@@ -66,11 +76,20 @@ vi.mock('leaflet', () => ({
     tileLayer: leafletMocks.tileLayer,
     latLng: (lat: number, lng: number) => ({ lat, lng }),
     latLngBounds: () => leafletMocks.bounds,
+    DomEvent: { stopPropagation: vi.fn() },
   },
 }))
 
 vi.mock('react-leaflet', () => ({
   MapContainer: ({ children }: { children: ReactNode }) => <div>{children}</div>,
+  Pane: ({ name, style, children }: {
+    name: string
+    style?: { zIndex?: number | string }
+    children: ReactNode
+  }) => {
+    mapMocks.panes.push({ name, zIndex: style?.zIndex })
+    return <>{children}</>
+  },
   TileLayer: () => null,
   Rectangle: (props: RectangleProps) => {
     mapMocks.rectangleProps = props
@@ -80,10 +99,14 @@ vi.mock('react-leaflet', () => ({
   GeoJSON: ({
     data,
     onEachFeature,
+    pane,
   }: {
     data: { features: VectorFeature[] }
+    pane?: string
     onEachFeature: (feature: VectorFeature, layer: {
-      on: ReturnType<typeof vi.fn>
+      on: (handlers: Record<string, (event?: { originalEvent?: Event }) => void>) => void
+      setStyle: ReturnType<typeof vi.fn>
+      bringToFront: ReturnType<typeof vi.fn>
       unbindTooltip: ReturnType<typeof vi.fn>
     }) => void
   }) => {
@@ -94,9 +117,21 @@ vi.mock('react-leaflet', () => ({
       mapMocks.geoJsonFeatureIds.push(ids)
     }
     for (const feature of data.features) {
+      const handlers: Record<string, (event?: { originalEvent?: Event }) => void> = {}
+      const setStyle = vi.fn()
+      const bringToFront = vi.fn()
       onEachFeature(feature, {
-        on: vi.fn(),
+        on: (next) => Object.assign(handlers, next),
+        setStyle,
+        bringToFront,
         unbindTooltip: vi.fn(),
+      })
+      mapMocks.featureLayers.push({
+        id: feature.properties.id,
+        pane,
+        handlers,
+        setStyle,
+        bringToFront,
       })
     }
     return (
@@ -127,12 +162,26 @@ const baseProps = {
   currentTime: '2025-06',
 }
 
+const vectorFixture = (id: string, name: string) => ({
+  type: 'FeatureCollection' as const,
+  features: [{
+    type: 'Feature' as const,
+    properties: { id, name },
+    geometry: {
+      type: 'Polygon' as const,
+      coordinates: [[[100, 30], [101, 30], [101, 31], [100, 30]]],
+    },
+  }],
+})
+
 describe('MapView interactions', () => {
   beforeEach(() => {
     vi.clearAllMocks()
     mapMocks.handlers = null
     mapMocks.rectangleProps = null
     mapMocks.geoJsonFeatureIds = []
+    mapMocks.featureLayers = []
+    mapMocks.panes = []
     mockedQueryArea.mockReturnValue(new Promise(() => undefined))
   })
 
@@ -357,6 +406,48 @@ describe('MapView interactions', () => {
     expect(mapMocks.geoJsonFeatureIds).toEqual([['county_a'], ['township_a1']])
     expect(screen.getAllByTestId('region-geojson')).toHaveLength(2)
     expect(mapMocks.map.fitBounds).toHaveBeenCalledOnce()
+  })
+
+  it('restores county color after hover without moving the layer to front', () => {
+    const countyColorMap = new Map([['county_a', '#2563eb']])
+    render(<MapView
+      {...baseProps}
+      regionVector={vectorFixture('county_a', '示范县A')}
+      regionLevel="county"
+      regionColorMap={countyColorMap}
+      onRegionSelect={vi.fn()}
+    />)
+
+    const layer = mapMocks.featureLayers.find((item) => item.id === 'county_a')!
+    act(() => layer.handlers.mouseover?.())
+    expect(layer.setStyle).toHaveBeenLastCalledWith(expect.objectContaining({ fillColor: '#14b8a6' }))
+
+    act(() => layer.handlers.mouseout?.())
+    expect(layer.setStyle).toHaveBeenLastCalledWith(expect.objectContaining({ fillColor: '#2563eb' }))
+    expect(layer.bringToFront).not.toHaveBeenCalled()
+  })
+
+  it('renders township features in a higher fixed pane and forwards their click', () => {
+    const onTownshipSelect = vi.fn()
+    render(<MapView
+      {...baseProps}
+      regionVector={vectorFixture('county_a', '示范县A')}
+      regionLevel="county"
+      onRegionSelect={vi.fn()}
+      detailRegionVector={vectorFixture('township_a1', '示范镇A1')}
+      detailRegionLevel="township"
+      onDetailRegionSelect={onTownshipSelect}
+    />)
+
+    const countyPane = mapMocks.panes.find((item) => item.name === 'county-regions')!
+    const townshipPane = mapMocks.panes.find((item) => item.name === 'township-regions')!
+    expect(Number(townshipPane.zIndex)).toBeGreaterThan(Number(countyPane.zIndex))
+
+    const township = mapMocks.featureLayers.find((item) => item.id === 'township_a1')!
+    act(() => township.handlers.mouseover?.())
+    expect(township.setStyle).toHaveBeenCalled()
+    act(() => township.handlers.click?.({ originalEvent: new MouseEvent('click') }))
+    expect(onTownshipSelect).toHaveBeenCalledWith({ id: 'township_a1', name: '示范镇A1' })
   })
 
   it('clears an existing point result when administrative statistics disables queries', async () => {
