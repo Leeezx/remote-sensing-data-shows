@@ -1,3 +1,6 @@
+import json
+from pathlib import Path
+
 import pytest
 
 import backend.shapefile_geojson as shapefile_geojson
@@ -178,3 +181,292 @@ def test_builder_requires_the_committed_streaming_shapefile_reader():
 
     assert streaming_reader is not None
     assert chunk_builder.iter_shapefile_geojson_features is streaming_reader
+
+
+def test_build_chunks_publishes_old_township_under_current_county(
+    monkeypatch,
+    tmp_path,
+):
+    township_source = tmp_path / "township.shp"
+    county_source = tmp_path / "county.shp"
+    series_path = tmp_path / "series.json"
+    output = tmp_path / "township_by_county"
+    township_source.touch()
+    county_source.touch()
+    series_path.write_text(json.dumps({
+        "township": {"231121100001": {"monthly": [], "annual": []}},
+    }), encoding="utf-8")
+
+    county_feature = feature(
+        "156231183",
+        "嫩江市",
+        polygon([[[120, 45], [130, 45], [130, 55], [120, 55], [120, 45]]]),
+    )
+    township_feature = feature(
+        "231121100001",
+        "旧嫩江县乡镇",
+        polygon([[[125, 49], [126, 49], [126, 50], [125, 49]]]),
+    )
+
+    def fake_features(path):
+        return iter([county_feature] if path == county_source else [township_feature])
+
+    monkeypatch.setattr(chunk_builder, "iter_shapefile_geojson_features", fake_features)
+
+    manifest = chunk_builder.build_chunks(
+        township_source,
+        county_source,
+        series_path,
+        output,
+        tolerance=0,
+        max_bytes=1_000_000,
+        max_features=499,
+        force=False,
+    )
+
+    assert not (output / "231121.geojson").exists()
+    chunk = json.loads((output / "231183.geojson").read_text(encoding="utf-8"))
+    assert chunk["features"][0]["properties"] == {
+        "id": "231121100001",
+        "name": "旧嫩江县乡镇",
+        "level": "township",
+        "parentId": "156231183",
+    }
+    assert manifest["alignment"] == {
+        "direct": 0,
+        "spatial": 1,
+        "excluded": 0,
+        "unmatched": 0,
+        "ambiguous": 0,
+        "invalidGeometry": 0,
+        "missingSeries": 0,
+    }
+
+
+def test_build_chunks_audits_unmatched_and_preserves_existing_output(
+    monkeypatch,
+    tmp_path,
+):
+    township_source = tmp_path / "township.shp"
+    county_source = tmp_path / "county.shp"
+    series_path = tmp_path / "series.json"
+    output = tmp_path / "township_by_county"
+    township_source.touch()
+    county_source.touch()
+    series_path.write_text(json.dumps({
+        "township": {"231121100001": {}},
+    }), encoding="utf-8")
+    output.mkdir()
+    (output / "sentinel.geojson").write_text("old", encoding="utf-8")
+
+    township = feature(
+        "231121100001",
+        "无匹配镇",
+        polygon([[[125, 49], [126, 49], [126, 50], [125, 49]]]),
+    )
+    monkeypatch.setattr(
+        chunk_builder,
+        "iter_shapefile_geojson_features",
+        lambda path: iter([] if path == county_source else [township]),
+    )
+
+    with pytest.raises(ValueError, match="alignment audit"):
+        chunk_builder.build_chunks(
+            township_source,
+            county_source,
+            series_path,
+            output,
+            0,
+            1_000_000,
+            499,
+            force=True,
+        )
+
+    assert (output / "sentinel.geojson").read_text(encoding="utf-8") == "old"
+    audit = json.loads(
+        (tmp_path / "township_by_county.alignment-audit.json").read_text(
+            encoding="utf-8",
+        ),
+    )
+    assert audit["issues"][0]["reason"] == "unmatched"
+
+
+def test_build_chunks_requires_every_output_id_in_township_series(
+    monkeypatch,
+    tmp_path,
+):
+    township_source = tmp_path / "township.shp"
+    county_source = tmp_path / "county.shp"
+    series_path = tmp_path / "series.json"
+    output = tmp_path / "out"
+    township_source.touch()
+    county_source.touch()
+    series_path.write_text('{"township": {}}', encoding="utf-8")
+    county = feature(
+        "156231183",
+        "嫩江市",
+        polygon([[[120, 45], [130, 45], [130, 55], [120, 55], [120, 45]]]),
+    )
+    township = feature(
+        "231121100001",
+        "缺序列镇",
+        polygon([[[125, 49], [126, 49], [126, 50], [125, 49]]]),
+    )
+    monkeypatch.setattr(
+        chunk_builder,
+        "iter_shapefile_geojson_features",
+        lambda path: iter([county] if path == county_source else [township]),
+    )
+
+    with pytest.raises(ValueError, match="missing township series"):
+        chunk_builder.build_chunks(
+            township_source,
+            county_source,
+            series_path,
+            output,
+            0,
+            1_000_000,
+            499,
+            force=False,
+        )
+
+    assert not output.exists()
+
+
+def test_explicit_exclusion_requires_a_nonempty_reason():
+    with pytest.raises(ValueError, match="non-empty reason"):
+        chunk_builder.validate_exclusions({"231121100001": ""})
+
+    assert chunk_builder.validate_exclusions({
+        "231121100001": "source does not cover this jurisdiction",
+    }) == {
+        "231121100001": "source does not cover this jurisdiction",
+    }
+
+
+def test_build_chunks_records_a_reviewed_exclusion(monkeypatch, tmp_path):
+    township_source = tmp_path / "township.shp"
+    county_source = tmp_path / "county.shp"
+    series_path = tmp_path / "series.json"
+    output = tmp_path / "out"
+    township_source.touch()
+    county_source.touch()
+    series_path.write_text('{"township": {}}', encoding="utf-8")
+    excluded = feature(
+        "231121100001",
+        "明确排除镇",
+        polygon([[[125, 49], [126, 49], [126, 50], [125, 49]]]),
+    )
+    monkeypatch.setattr(
+        chunk_builder,
+        "iter_shapefile_geojson_features",
+        lambda path: iter([] if path == county_source else [excluded]),
+    )
+
+    manifest = chunk_builder.build_chunks(
+        township_source,
+        county_source,
+        series_path,
+        output,
+        0,
+        1_000_000,
+        499,
+        force=False,
+        exclusions={"231121100001": "unsupported source jurisdiction"},
+    )
+
+    assert manifest["alignment"]["excluded"] == 1
+    assert manifest["excludedTownships"] == {
+        "231121100001": "unsupported source jurisdiction",
+    }
+    assert manifest["featureCount"] == 0
+
+
+def test_fit_chunk_rejects_payload_that_cannot_meet_the_byte_limit():
+    oversized_feature = feature(
+        "231121100001",
+        "字节上限测试镇",
+        polygon([[[0, 0], [10, 0], [10, 10], [0, 0]]]),
+    )
+
+    with pytest.raises(ValueError, match="limit is 20"):
+        chunk_builder._fit_chunk_to_limit([oversized_feature], 0, 20)
+
+
+def test_build_chunks_rejects_a_county_above_the_feature_limit(
+    monkeypatch,
+    tmp_path,
+):
+    township_source = tmp_path / "township.shp"
+    county_source = tmp_path / "county.shp"
+    series_path = tmp_path / "series.json"
+    output = tmp_path / "out"
+    township_source.touch()
+    county_source.touch()
+    ids = ["231121100001", "231121100002"]
+    series_path.write_text(json.dumps({
+        "township": {region_id: {} for region_id in ids},
+    }), encoding="utf-8")
+    county = feature(
+        "156231183",
+        "嫩江市",
+        polygon([[[120, 45], [130, 45], [130, 55], [120, 55], [120, 45]]]),
+    )
+    townships = [
+        feature(
+            region_id,
+            f"测试镇{index}",
+            polygon([[
+                [125 + index, 49],
+                [125.4 + index, 49],
+                [125 + index, 49.4],
+                [125 + index, 49],
+            ]]),
+        )
+        for index, region_id in enumerate(ids)
+    ]
+    monkeypatch.setattr(
+        chunk_builder,
+        "iter_shapefile_geojson_features",
+        lambda path: iter([county] if path == county_source else townships),
+    )
+
+    with pytest.raises(ValueError, match="limit is 1"):
+        chunk_builder.build_chunks(
+            township_source,
+            county_source,
+            series_path,
+            output,
+            0,
+            1_000_000,
+            1,
+            force=False,
+        )
+
+    assert not output.exists()
+
+
+def test_publish_staged_directory_restores_old_output_when_swap_fails(
+    monkeypatch,
+    tmp_path,
+):
+    output = tmp_path / "township_by_county"
+    staged = tmp_path / "staged"
+    output.mkdir()
+    staged.mkdir()
+    (output / "old.geojson").write_text("old", encoding="utf-8")
+    (staged / "new.geojson").write_text("new", encoding="utf-8")
+    real_replace = Path.replace
+
+    def failing_replace(path, target):
+        if path == staged:
+            raise OSError("simulated staged swap failure")
+        return real_replace(path, target)
+
+    monkeypatch.setattr(Path, "replace", failing_replace)
+
+    with pytest.raises(OSError, match="simulated staged swap failure"):
+        chunk_builder._publish_staged_directory(staged, output)
+
+    assert (output / "old.geojson").read_text(encoding="utf-8") == "old"
+    assert not (output / "new.geojson").exists()

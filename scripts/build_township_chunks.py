@@ -428,21 +428,90 @@ def _fit_chunk_to_limit(
     )
 
 
+def validate_exclusions(exclusions: dict[str, str] | None) -> dict[str, str]:
+    """Validate explicit, reviewed township exclusions before a build."""
+    result: dict[str, str] = {}
+    for township_id, reason in (exclusions or {}).items():
+        normalized_id = str(township_id)
+        normalized_reason = str(reason).strip()
+        township_parent_code(normalized_id)
+        if not normalized_reason:
+            raise ValueError("Every excluded township id needs a non-empty reason")
+        result[normalized_id] = normalized_reason
+    return result
+
+
+def _township_series_ids(series_path: Path) -> set[str]:
+    payload = json.loads(series_path.read_text(encoding="utf-8"))
+    township = payload.get("township", {})
+    if not isinstance(township, dict):
+        raise ValueError("Series JSON must contain a township object")
+    return {str(region_id) for region_id in township}
+
+
+def _audit_path(output: Path) -> Path:
+    return output.with_name(f"{output.name}.alignment-audit.json")
+
+
+def _publish_staged_directory(staged: Path, output: Path) -> None:
+    """Atomically swap the complete chunk directory, restoring failures."""
+    backup = output.with_name(f".{output.name}.backup")
+    if backup.exists():
+        shutil.rmtree(backup)
+    if output.exists():
+        output.replace(backup)
+    try:
+        staged.replace(output)
+    except Exception:
+        if output.exists():
+            shutil.rmtree(output)
+        if backup.exists():
+            backup.replace(output)
+        raise
+    else:
+        if backup.exists():
+            shutil.rmtree(backup)
+
+
 def build_chunks(
     source: Path,
+    county_source: Path,
+    series_path: Path,
     output: Path,
     tolerance: float,
     max_bytes: int,
     max_features: int,
     force: bool,
+    exclusions: dict[str, str] | None = None,
 ) -> dict:
     if not source.is_file():
         raise FileNotFoundError(f"Township Shapefile not found: {source}")
-    if output.exists() and (output / "manifest.json").exists() and not force:
+    if not county_source.is_file():
+        raise FileNotFoundError(f"County Shapefile not found: {county_source}")
+    if not series_path.is_file():
+        raise FileNotFoundError(f"Township series JSON not found: {series_path}")
+    if output.exists() and not force:
         raise FileExistsError(f"Output already exists; pass --force to rebuild: {output}")
 
     started = time.perf_counter()
     output.parent.mkdir(parents=True, exist_ok=True)
+    county_features = list(iter_shapefile_geojson_features(county_source))
+    county_index = CountySpatialIndex.from_features(county_features)
+    series_ids = _township_series_ids(series_path)
+    excluded = validate_exclusions(exclusions)
+    alignment_counts = {
+        "direct": 0,
+        "spatial": 0,
+        "excluded": 0,
+        "unmatched": 0,
+        "ambiguous": 0,
+        "invalidGeometry": 0,
+        "missingSeries": 0,
+    }
+    issues: list[dict] = []
+    assigned_counties: dict[str, str] = {}
+    output_township_ids: set[str] = set()
+
     with tempfile.TemporaryDirectory(prefix="township-chunks-", dir=output.parent) as temp:
         temp_root = Path(temp)
         records_root = temp_root / "records"
@@ -453,25 +522,82 @@ def build_chunks(
         counts: dict[str, int] = {}
         try:
             for feature in iter_shapefile_geojson_features(source):
-                township_id = str(feature.get("properties", {}).get("id", ""))
-                county_code = township_parent_code(township_id)
-                county_id = county_id_from_code(county_code)
+                properties = feature.get("properties", {})
+                township_id = str(properties.get("id", ""))
+                name = str(properties.get("name", township_id))
+                if township_id in excluded:
+                    alignment_counts["excluded"] += 1
+                    continue
+                try:
+                    county, mode = county_index.match(feature)
+                    previous_code = assigned_counties.get(township_id)
+                    if previous_code is not None and previous_code != county.code:
+                        raise TownshipAlignmentError(
+                            "ambiguous",
+                            township_id,
+                            name,
+                            representative_point(feature["geometry"]),
+                            sorted({previous_code, county.code}),
+                        )
+                except TownshipAlignmentError as exc:
+                    issues.append(exc.as_dict())
+                    count_key = (
+                        "invalidGeometry"
+                        if exc.reason == "invalid_geometry"
+                        else exc.reason
+                    )
+                    alignment_counts[count_key] += 1
+                    continue
+
+                assigned_counties[township_id] = county.code
+                alignment_counts[mode] += 1
+                output_township_ids.add(township_id)
                 compact_feature = {
                     "type": "Feature",
                     "properties": {
                         "id": township_id,
-                        "name": str(feature.get("properties", {}).get("name", township_id)),
-                        "parentId": county_id,
+                        "name": name,
+                        "level": "township",
+                        "parentId": county.county_id,
                     },
                     "geometry": simplify_geometry(feature["geometry"], tolerance),
                 }
                 pool.write(
-                    records_root / f"{county_code}.ndjson",
+                    records_root / f"{county.code}.ndjson",
                     json.dumps(compact_feature, ensure_ascii=False, separators=(",", ":")),
                 )
-                counts[county_code] = counts.get(county_code, 0) + 1
+                counts[county.code] = counts.get(county.code, 0) + 1
         finally:
             pool.close()
+
+        for township_id in sorted(output_township_ids - series_ids):
+            alignment_counts["missingSeries"] += 1
+            issues.append({
+                "reason": "missing_series",
+                "townshipId": township_id,
+                "name": township_id,
+                "point": None,
+                "candidateCountyCodes": [assigned_counties[township_id]],
+            })
+
+        if issues:
+            audit = {
+                "status": "failed",
+                "source": str(source),
+                "countySource": str(county_source),
+                "seriesSource": str(series_path),
+                "alignment": alignment_counts,
+                "issues": issues,
+            }
+            _audit_path(output).write_text(
+                json.dumps(audit, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+            if alignment_counts["missingSeries"]:
+                raise ValueError(
+                    "Build blocked by missing township series; see alignment audit",
+                )
+            raise ValueError("Build blocked by alignment audit")
 
         manifest_chunks = {}
         for records_path in sorted(records_root.glob("*.ndjson")):
@@ -502,8 +628,15 @@ def build_chunks(
         manifest = {
             "source": str(source),
             "sourceMtime": source.stat().st_mtime,
+            "countySource": str(county_source),
+            "countySourceMtime": county_source.stat().st_mtime,
+            "countyFeatureCount": len(county_features),
+            "seriesSource": str(series_path),
             "chunkCount": len(manifest_chunks),
             "featureCount": sum(counts.values()),
+            "townshipIdCount": len(output_township_ids),
+            "alignment": alignment_counts,
+            "excludedTownships": excluded,
             "maxChunkBytes": max(
                 (item["bytes"] for item in manifest_chunks.values()),
                 default=0,
@@ -520,15 +653,10 @@ def build_chunks(
             encoding="utf-8",
         )
 
-        output.mkdir(parents=True, exist_ok=True)
-        if force:
-            for old_path in output.glob("*.geojson"):
-                old_path.unlink()
-            manifest_path = output / "manifest.json"
-            if manifest_path.exists():
-                manifest_path.unlink()
-        for built_path in chunks_root.iterdir():
-            shutil.move(str(built_path), output / built_path.name)
+        _publish_staged_directory(chunks_root, output)
+        audit_path = _audit_path(output)
+        if audit_path.exists():
+            audit_path.unlink()
     return manifest
 
 
