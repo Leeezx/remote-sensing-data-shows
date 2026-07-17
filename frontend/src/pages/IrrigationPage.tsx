@@ -75,6 +75,27 @@ function isNotFoundError(error: unknown): boolean {
   return response?.status === 404
 }
 
+type SelectedAdminRegion = {
+  id: string
+  name: string
+  level: IrrigationRegionLevel
+}
+
+function isTownshipVectorNotFound(error: unknown): boolean {
+  if (!error || typeof error !== 'object') return false
+  const ownCode = 'code' in error ? (error as { code?: unknown }).code : null
+  if (ownCode === 'township_vector_not_found') return true
+  if (!('response' in error)) return false
+  const response = (error as {
+    response?: {
+      status?: number
+      data?: { detail?: { code?: string } }
+    }
+  }).response
+  return response?.status === 404
+    && response.data?.detail?.code === 'township_vector_not_found'
+}
+
 function SeriesChart({
   regionName,
   period,
@@ -155,7 +176,7 @@ export default function IrrigationPage() {
   const [townshipLegendStatus, setTownshipLegendStatus] = useState<LegendStatus>('loading')
   const [townshipCounty, setTownshipCounty] = useState<{ id: string; name: string } | null>(null)
   const [pendingTownshipCounty, setPendingTownshipCounty] = useState<{ id: string; name: string } | null>(null)
-  const [selectedRegion, setSelectedRegion] = useState<{ id: string; name: string } | null>(null)
+  const [selectedRegion, setSelectedRegion] = useState<SelectedAdminRegion | null>(null)
   const [monthlySeries, setMonthlySeries] = useState<IrrigationSeriesResponse | null>(null)
   const [annualSeries, setAnnualSeries] = useState<IrrigationSeriesResponse | null>(null)
   const [seriesError, setSeriesError] = useState('')
@@ -190,6 +211,11 @@ export default function IrrigationPage() {
     setAdminStatsLoading(true)
     try {
       const vector = await loadVector('township', county.id)
+      if (vector.features.length === 0) {
+        throw Object.assign(new Error('该县暂无乡镇矢量'), {
+          code: 'township_vector_not_found',
+        })
+      }
       if (requestId !== townshipRequestIdRef.current) return
       setTownshipVector(vector)
       setTownshipCounty(county)
@@ -213,11 +239,16 @@ export default function IrrigationPage() {
       }
     } catch (error) {
       if (requestId !== townshipRequestIdRef.current) return
+      const message = isTownshipVectorNotFound(error)
+        ? '该县暂无乡镇矢量'
+        : error instanceof Error
+          ? error.message
+          : '该县乡镇矢量暂不可用'
       setVectorStatus({
         level: 'township',
         available: false,
         url: null,
-        message: error instanceof Error ? error.message : '该县乡镇矢量暂不可用',
+        message,
       })
     } finally {
       if (requestId === townshipRequestIdRef.current) setPendingTownshipCounty(null)
@@ -340,7 +371,10 @@ export default function IrrigationPage() {
   }, [regionLevel])
 
   useEffect(() => {
-    if (!regionLevel || !selectedRegion) {
+    if (!regionLevel || !selectedRegion || selectedRegion.level !== regionLevel) {
+      if (selectedRegion && selectedRegion.level !== regionLevel) {
+        setSelectedRegion(null)
+      }
       setMonthlySeries(null)
       setAnnualSeries(null)
       return
@@ -348,8 +382,8 @@ export default function IrrigationPage() {
     let cancelled = false
     setSeriesError('')
     Promise.all([
-      getIrrigationSeries(regionLevel, selectedRegion.id, 'monthly'),
-      getIrrigationSeries(regionLevel, selectedRegion.id, 'annual'),
+      getIrrigationSeries(selectedRegion.level, selectedRegion.id, 'monthly'),
+      getIrrigationSeries(selectedRegion.level, selectedRegion.id, 'annual'),
     ])
       .then(([monthly, annual]) => {
         if (!cancelled) {
@@ -384,8 +418,13 @@ export default function IrrigationPage() {
       void loadTownshipCounty(region)
       return
     }
-    setSelectedRegion(region)
+    setSelectedRegion({ ...region, level: 'county' })
   }, [loadTownshipCounty, regionLevel])
+
+  const handleTownshipSelect = useCallback((region: { id: string; name: string }) => {
+    if (regionLevel !== 'township') return
+    setSelectedRegion({ ...region, level: 'township' })
+  }, [regionLevel])
 
   const toggleAdminMode = useCallback((target: IrrigationRegionLevel) => {
     const nextLevel = regionLevel === target ? null : target
@@ -568,8 +607,10 @@ export default function IrrigationPage() {
               detailRegionVector={regionLevel === 'township' ? townshipVector : null}
               detailRegionLevel={regionLevel === 'township' && townshipVector ? 'township' : null}
               detailRegionColorMap={townshipColorMap}
-              detailSelectedRegionId={regionLevel === 'township' ? selectedRegion?.id : null}
-              onDetailRegionSelect={regionLevel === 'township' ? setSelectedRegion : undefined}
+              detailSelectedRegionId={regionLevel === 'township' && selectedRegion?.level === 'township'
+                ? selectedRegion.id
+                : null}
+              onDetailRegionSelect={regionLevel === 'township' ? handleTownshipSelect : undefined}
             />
           </div>
         )}

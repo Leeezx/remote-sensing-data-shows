@@ -354,6 +354,120 @@ describe('App', () => {
       .toHaveLength(averageCalls)
   })
 
+  it('never queries township series from a callback captured in county mode', async () => {
+    window.history.pushState({}, '', '/irrigation')
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(await screen.findByRole('button', { name: '县级统计' }))
+    await waitFor(() => expect(screen.getByTestId('county-layer')).toHaveTextContent('loaded'))
+    const capturedCountyCallback = mapViewMocks.props?.onRegionSelect as
+      | ((region: { id: string; name: string }) => void)
+      | undefined
+
+    await user.click(screen.getByRole('button', { name: '乡镇级统计' }))
+    await act(async () => {
+      capturedCountyCallback?.({ id: 'county_a', name: '示范县A' })
+      await Promise.resolve()
+    })
+
+    expect(apiMocks.getIrrigationSeries).not.toHaveBeenCalledWith(
+      'township',
+      'county_a',
+      expect.any(String),
+    )
+  })
+
+  it('loads a township chunk after switching from county mode and queries only after a township click', async () => {
+    window.history.pushState({}, '', '/irrigation')
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(await screen.findByRole('button', { name: '县级统计' }))
+    await waitFor(() => expect(screen.getByTestId('county-layer')).toHaveTextContent('loaded'))
+    await user.click(screen.getByRole('button', { name: '乡镇级统计' }))
+    await user.click(screen.getByRole('button', { name: '选择示范县A' }))
+
+    expect(await screen.findByText('已加载示范县A 1 个乡镇')).toBeInTheDocument()
+    expect(apiMocks.getIrrigationVectorGeoJSON).toHaveBeenCalledWith(
+      'township',
+      'county_a',
+    )
+    expect(apiMocks.getIrrigationSeries).not.toHaveBeenCalledWith(
+      'township',
+      'county_a',
+      expect.any(String),
+    )
+
+    await user.click(screen.getByRole('button', { name: '选择示范镇A1' }))
+    await waitFor(() => {
+      expect(apiMocks.getIrrigationSeries).toHaveBeenCalledWith(
+        'township',
+        'township_a1',
+        'monthly',
+      )
+      expect(apiMocks.getIrrigationSeries).toHaveBeenCalledWith(
+        'township',
+        'township_a1',
+        'annual',
+      )
+    })
+  })
+
+  it('shows a township-vector message for a missing county chunk', async () => {
+    window.history.pushState({}, '', '/irrigation')
+    apiMocks.getIrrigationVectorGeoJSON.mockImplementation(
+      (level: 'county' | 'township', countyId?: string) => {
+        if (level === 'township' && countyId === 'county_a') {
+          return Promise.reject({
+            response: {
+              status: 404,
+              data: {
+                detail: {
+                  code: 'township_vector_not_found',
+                  message: '该县暂无乡镇矢量',
+                },
+              },
+            },
+          })
+        }
+        return Promise.resolve(vectorFixture(level, countyId))
+      },
+    )
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(await screen.findByRole('button', { name: '乡镇级统计' }))
+    await user.click(screen.getByRole('button', { name: '选择示范县A' }))
+
+    expect((await screen.findAllByText('该县暂无乡镇矢量')).length).toBeGreaterThan(0)
+    expect(screen.queryByText('暂无统计数据')).not.toBeInTheDocument()
+    expect(apiMocks.getIrrigationSeries).not.toHaveBeenCalled()
+  })
+
+  it('treats an empty county chunk as unavailable township geometry', async () => {
+    window.history.pushState({}, '', '/irrigation')
+    apiMocks.getIrrigationVectorGeoJSON.mockImplementation(
+      (level: 'county' | 'township', countyId?: string) => Promise.resolve(
+        level === 'township'
+          ? { type: 'FeatureCollection', features: [] }
+          : vectorFixture(level, countyId),
+      ),
+    )
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(await screen.findByRole('button', { name: '乡镇级统计' }))
+    await user.click(screen.getByRole('button', { name: '选择示范县A' }))
+
+    expect((await screen.findAllByText('该县暂无乡镇矢量')).length).toBeGreaterThan(0)
+    expect(apiMocks.getIrrigationRegionAverages).not.toHaveBeenCalledWith(
+      'township',
+      'county_a',
+    )
+    expect(apiMocks.getIrrigationSeries).not.toHaveBeenCalled()
+  })
+
   it('loads townships only after selecting a county and then selects a township', async () => {
     window.history.pushState({}, '', '/irrigation')
     const user = userEvent.setup()
