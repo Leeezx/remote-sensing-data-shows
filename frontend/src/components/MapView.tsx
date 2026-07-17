@@ -290,7 +290,9 @@ function RegionOverlay({
 
   const hasColorMap = colorMap !== null && colorMap !== undefined && colorMap.size > 0
   const styleInputsRef = useRef({ selectedRegionId, colorMap, hasColorMap })
+  const onRegionSelectRef = useRef(onRegionSelect)
   styleInputsRef.current = { selectedRegionId, colorMap, hasColorMap }
+  onRegionSelectRef.current = onRegionSelect
 
   if (!data || !onRegionSelect) return null
 
@@ -350,7 +352,7 @@ function RegionOverlay({
               feature.properties?.id ?? feature.properties?.gb ?? feature.properties?.name ?? '',
             )
             const name = String(feature.properties?.name ?? feature.properties?.NAME ?? id)
-            if (id) onRegionSelect({ id, name })
+            if (id) onRegionSelectRef.current?.({ id, name })
           },
         })
       }}

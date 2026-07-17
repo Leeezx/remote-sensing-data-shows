@@ -479,6 +479,44 @@ describe('MapView interactions', () => {
     }))
   })
 
+  it('dispatches an existing county layer click through the latest callback', () => {
+    const county = vectorFixture('county_a', '示范县A')
+    const countyModeSelect = vi.fn()
+    const townshipModeSelect = vi.fn()
+    const { rerender } = render(
+      <MapView
+        {...baseProps}
+        regionVector={county}
+        regionLevel="county"
+        onRegionSelect={countyModeSelect}
+      />,
+    )
+    const mountedCountyLayer = mapMocks.featureLayers.find(
+      (item) => item.id === 'county_a',
+    )!
+
+    rerender(
+      <MapView
+        {...baseProps}
+        regionVector={county}
+        regionLevel="county"
+        onRegionSelect={townshipModeSelect}
+      />,
+    )
+
+    act(() => {
+      mountedCountyLayer.handlers.click?.({
+        originalEvent: new MouseEvent('click'),
+      })
+    })
+
+    expect(countyModeSelect).not.toHaveBeenCalled()
+    expect(townshipModeSelect).toHaveBeenCalledWith({
+      id: 'county_a',
+      name: '示范县A',
+    })
+  })
+
   it('keeps region overlay hooks stable while region data loads', () => {
     const { rerender } = render(<MapView
       {...baseProps}
