@@ -49,20 +49,21 @@ def _read_dbf_records(dbf_path: Path) -> list[dict]:
 
 
 def _shape_records(shp_path: Path):
-    data = shp_path.read_bytes()
-    pos = 100
-    while pos + 8 <= len(data):
-        record_number, content_words = struct.unpack(">2i", data[pos:pos + 8])
-        pos += 8
-        content_length = content_words * 2
-        content = data[pos:pos + content_length]
-        pos += content_length
-        if len(content) < 4:
-            continue
-        shape_type = struct.unpack("<i", content[:4])[0]
-        if shape_type == 0:
-            continue
-        yield record_number, shape_type, content
+    """Yield shape records without loading the entire .shp into memory."""
+    with shp_path.open("rb") as source:
+        source.seek(100)
+        while True:
+            header = source.read(8)
+            if len(header) < 8:
+                return
+            record_number, content_words = struct.unpack(">2i", header)
+            content = source.read(content_words * 2)
+            if len(content) < 4:
+                continue
+            shape_type = struct.unpack("<i", content[:4])[0]
+            if shape_type == 0:
+                continue
+            yield record_number, shape_type, content
 
 
 def _polygon_geometry(content: bytes) -> dict | None:
@@ -97,11 +98,10 @@ def _polygon_geometry(content: bytes) -> dict | None:
     }
 
 
-def read_shapefile_geojson(shp_path: Path) -> dict:
-    """Read polygon features from a .shp/.dbf pair into GeoJSON."""
+def iter_shapefile_geojson_features(shp_path: Path):
+    """Yield GeoJSON polygon features from a .shp/.dbf pair."""
     dbf_path = shp_path.with_suffix(".dbf")
     records = _read_dbf_records(dbf_path) if dbf_path.is_file() else []
-    features = []
     for record_index, (_record_number, _shape_type, content) in enumerate(
         _shape_records(shp_path)
     ):
@@ -111,7 +111,7 @@ def read_shapefile_geojson(shp_path: Path) -> dict:
         properties = records[record_index] if record_index < len(records) else {}
         region_name = properties.get("name") or properties.get("NAME") or ""
         region_id = properties.get("gb") or properties.get("GB") or str(record_index + 1)
-        features.append({
+        yield {
             "type": "Feature",
             "properties": {
                 **properties,
@@ -119,5 +119,12 @@ def read_shapefile_geojson(shp_path: Path) -> dict:
                 "name": region_name or region_id,
             },
             "geometry": geometry,
-        })
-    return {"type": "FeatureCollection", "features": features}
+        }
+
+
+def read_shapefile_geojson(shp_path: Path) -> dict:
+    """Read polygon features from a .shp/.dbf pair into GeoJSON."""
+    return {
+        "type": "FeatureCollection",
+        "features": list(iter_shapefile_geojson_features(shp_path)),
+    }

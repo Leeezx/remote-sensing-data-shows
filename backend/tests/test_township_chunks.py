@@ -1,5 +1,7 @@
 import pytest
 
+import backend.shapefile_geojson as shapefile_geojson
+import scripts.build_township_chunks as chunk_builder
 from backend.township_chunks import (
     county_code_from_id,
     county_id_from_code,
@@ -148,3 +150,31 @@ def test_county_index_fails_for_unmatched_or_multiple_counties():
             "properties": {"id": "231121100003", "name": "坏几何镇"},
             "geometry": {"type": "LineString", "coordinates": [[0, 0], [1, 1]]},
         })
+
+
+@pytest.mark.parametrize("ring", [
+    [[1, 1], [2, 2], [3, 3], [1, 1]],
+    [[1, 1], [2, 1], [2, 2], [1, 2]],
+    [[1, 1], [2, 1], [1, 1], [1, 1]],
+    [[1, 1], [float("inf"), 1], [1, 2], [1, 1]],
+])
+def test_county_index_rejects_invalid_exterior_rings(ring):
+    index = CountySpatialIndex.from_features([
+        feature(
+            "156231183",
+            "嫩江市",
+            polygon([[[120, 45], [130, 45], [130, 55], [120, 55], [120, 45]]]),
+        ),
+    ])
+
+    with pytest.raises(TownshipAlignmentError) as error:
+        index.match(feature("231121100004", "退化镇", polygon([ring])))
+
+    assert error.value.reason == "invalid_geometry"
+
+
+def test_builder_requires_the_committed_streaming_shapefile_reader():
+    streaming_reader = getattr(shapefile_geojson, "iter_shapefile_geojson_features", None)
+
+    assert streaming_reader is not None
+    assert chunk_builder.iter_shapefile_geojson_features is streaming_reader

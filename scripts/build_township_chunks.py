@@ -23,13 +23,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-try:
-    from backend.shapefile_geojson import iter_shapefile_geojson_features
-except ImportError:  # Compatibility with the committed reader baseline.
-    from backend.shapefile_geojson import read_shapefile_geojson
-
-    def iter_shapefile_geojson_features(shp_path: Path):
-        yield from read_shapefile_geojson(shp_path).get("features", [])
+from backend.shapefile_geojson import iter_shapefile_geojson_features
 from backend.township_chunks import (
     MAX_TOWNSHIP_CHUNK_BYTES,
     MAX_TOWNSHIP_FEATURES,
@@ -49,8 +43,39 @@ Point = tuple[float, float]
 Ring = list[list[float]]
 
 
+def _validated_ring(ring) -> Ring:
+    if not isinstance(ring, (list, tuple)) or len(ring) < 4:
+        raise ValueError("Polygon ring must contain at least four coordinates")
+
+    normalized: Ring = []
+    for coordinate in ring:
+        if (
+            not isinstance(coordinate, (list, tuple))
+            or len(coordinate) < 2
+            or isinstance(coordinate[0], bool)
+            or isinstance(coordinate[1], bool)
+        ):
+            raise ValueError("Polygon ring has an invalid coordinate")
+        try:
+            x = float(coordinate[0])
+            y = float(coordinate[1])
+        except (TypeError, ValueError) as exc:
+            raise ValueError("Polygon ring has a non-numeric coordinate") from exc
+        if not math.isfinite(x) or not math.isfinite(y):
+            raise ValueError("Polygon ring has a non-finite coordinate")
+        normalized.append([x, y])
+
+    if normalized[0] != normalized[-1]:
+        raise ValueError("Polygon ring is not closed")
+    if len({tuple(point) for point in normalized[:-1]}) < 3:
+        raise ValueError("Polygon ring has fewer than three distinct vertices")
+    if _signed_ring_area(normalized) == 0:
+        raise ValueError("Polygon ring has zero signed area")
+    return normalized
+
+
 def geometry_rings(geometry: dict) -> list[Ring]:
-    """Return all valid polygon rings, including MultiPolygon parts."""
+    """Return validated polygon rings, including MultiPolygon parts."""
     geometry_type = geometry.get("type")
     coordinates = geometry.get("coordinates", [])
     if geometry_type == "Polygon":
@@ -59,10 +84,9 @@ def geometry_rings(geometry: dict) -> list[Ring]:
         rings = [ring for polygon in coordinates for ring in polygon]
     else:
         raise ValueError(f"Unsupported polygon geometry: {geometry_type}")
-    valid = [ring for ring in rings if len(ring) >= 4]
-    if not valid:
-        raise ValueError("Polygon geometry has no valid rings")
-    return valid
+    if not rings:
+        raise ValueError("Polygon geometry has no rings")
+    return [_validated_ring(ring) for ring in rings]
 
 
 def _point_on_segment(point: Point, start: list[float], end: list[float]) -> bool:
