@@ -309,15 +309,7 @@ def test_get_irrigation_series_returns_precomputed_annual_township_values():
     ]
 
 
-def test_get_irrigation_series_returns_404_without_realtime_fallback(monkeypatch):
-    monkeypatch.setattr(
-        irrigation_router,
-        "find_irrigation_vector_feature",
-        lambda *_args, **_kwargs: (_ for _ in ()).throw(
-            AssertionError("vector fallback must not run")
-        ),
-    )
-
+def test_get_irrigation_series_returns_404_for_unknown_precomputed_region():
     response = client.get(
         "/api/irrigation/series",
         params={
