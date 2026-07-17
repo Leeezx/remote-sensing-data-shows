@@ -279,6 +279,12 @@ class CountySpatialIndex:
         township_id = str(properties.get("id", ""))
         name = str(properties.get("name", township_id))
         try:
+            township_code = township_parent_code(township_id)
+        except ValueError as exc:
+            raise TownshipAlignmentError(
+                "invalid_township_id", township_id, name, None, [],
+            ) from exc
+        try:
             point = representative_point(feature.get("geometry", {}))
         except (TypeError, ValueError) as exc:
             raise TownshipAlignmentError(
@@ -300,7 +306,7 @@ class CountySpatialIndex:
                 sorted(county.code for county in matches),
             )
         county = matches[0]
-        mode = "direct" if township_parent_code(township_id) == county.code else "spatial"
+        mode = "direct" if township_code == county.code else "spatial"
         return county, mode
 
 
@@ -521,6 +527,7 @@ def build_chunks(
         "unmatched": 0,
         "ambiguous": 0,
         "invalidGeometry": 0,
+        "invalidTownshipId": 0,
         "missingSeries": 0,
     }
     issues: list[dict] = []
@@ -559,7 +566,11 @@ def build_chunks(
                     count_key = (
                         "invalidGeometry"
                         if exc.reason == "invalid_geometry"
-                        else exc.reason
+                        else (
+                            "invalidTownshipId"
+                            if exc.reason == "invalid_township_id"
+                            else exc.reason
+                        )
                     )
                     alignment_counts[count_key] += 1
                     continue

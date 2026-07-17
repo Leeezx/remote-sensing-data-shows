@@ -183,6 +183,47 @@ def test_builder_requires_the_committed_streaming_shapefile_reader():
     assert chunk_builder.iter_shapefile_geojson_features is streaming_reader
 
 
+@pytest.mark.parametrize(
+    ("id_field", "name_field"),
+    [
+        ("code", "Name"),
+        ("Code", "name"),
+    ],
+)
+def test_shapefile_reader_normalizes_township_code_and_name_fields(
+    monkeypatch,
+    tmp_path,
+    id_field,
+    name_field,
+):
+    source = tmp_path / "township.shp"
+    source.touch()
+    source.with_suffix(".dbf").touch()
+    expected_id = "231121100001"
+    expected_name = "石子镇"
+
+    monkeypatch.setattr(
+        shapefile_geojson,
+        "_read_dbf_records",
+        lambda _path: [{id_field: expected_id, name_field: expected_name}],
+    )
+    monkeypatch.setattr(
+        shapefile_geojson,
+        "_shape_records",
+        lambda _path: iter([(1, 5, b"minimal-shape")]),
+    )
+    monkeypatch.setattr(
+        shapefile_geojson,
+        "_polygon_geometry",
+        lambda _content: polygon([[[0, 0], [1, 0], [1, 1], [0, 0]]]),
+    )
+
+    features = list(shapefile_geojson.iter_shapefile_geojson_features(source))
+
+    assert features[0]["properties"]["id"] == expected_id
+    assert features[0]["properties"]["name"] == expected_name
+
+
 def test_build_chunks_publishes_old_township_under_current_county(
     monkeypatch,
     tmp_path,
@@ -239,6 +280,7 @@ def test_build_chunks_publishes_old_township_under_current_county(
         "unmatched": 0,
         "ambiguous": 0,
         "invalidGeometry": 0,
+        "invalidTownshipId": 0,
         "missingSeries": 0,
     }
 
@@ -289,6 +331,63 @@ def test_build_chunks_audits_unmatched_and_preserves_existing_output(
         ),
     )
     assert audit["issues"][0]["reason"] == "unmatched"
+
+
+def test_build_chunks_audits_invalid_township_id_without_publishing(
+    monkeypatch,
+    tmp_path,
+):
+    township_source = tmp_path / "township.shp"
+    county_source = tmp_path / "county.shp"
+    series_path = tmp_path / "series.json"
+    output = tmp_path / "township_by_county"
+    township_source.touch()
+    county_source.touch()
+    series_path.write_text('{"township": {}}', encoding="utf-8")
+    output.mkdir()
+    (output / "sentinel.geojson").write_text("old", encoding="utf-8")
+    county = feature(
+        "156231183",
+        "嫩江市",
+        polygon([[[120, 45], [130, 45], [130, 55], [120, 55], [120, 45]]]),
+    )
+    malformed = feature(
+        "1",
+        "字段漂移镇",
+        polygon([[[125, 49], [126, 49], [126, 50], [125, 49]]]),
+    )
+    monkeypatch.setattr(
+        chunk_builder,
+        "iter_shapefile_geojson_features",
+        lambda path: iter([county] if path == county_source else [malformed]),
+    )
+
+    with pytest.raises(ValueError, match="alignment audit"):
+        chunk_builder.build_chunks(
+            township_source,
+            county_source,
+            series_path,
+            output,
+            0,
+            1_000_000,
+            499,
+            force=True,
+        )
+
+    assert (output / "sentinel.geojson").read_text(encoding="utf-8") == "old"
+    audit = json.loads(
+        (tmp_path / "township_by_county.alignment-audit.json").read_text(
+            encoding="utf-8",
+        ),
+    )
+    assert audit["alignment"]["invalidTownshipId"] == 1
+    assert audit["issues"] == [{
+        "reason": "invalid_township_id",
+        "townshipId": "1",
+        "name": "字段漂移镇",
+        "point": None,
+        "candidateCountyCodes": [],
+    }]
 
 
 def test_build_chunks_requires_every_output_id_in_township_series(

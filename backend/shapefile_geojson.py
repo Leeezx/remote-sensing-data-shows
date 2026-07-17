@@ -109,8 +109,19 @@ def iter_shapefile_geojson_features(shp_path: Path):
         if geometry is None:
             continue
         properties = records[record_index] if record_index < len(records) else {}
-        region_name = properties.get("name") or properties.get("NAME") or ""
-        region_id = properties.get("gb") or properties.get("GB") or str(record_index + 1)
+        region_name = (
+            properties.get("name")
+            or properties.get("NAME")
+            or properties.get("Name")
+            or ""
+        )
+        region_id = (
+            properties.get("gb")
+            or properties.get("GB")
+            or properties.get("code")
+            or properties.get("Code")
+            or str(record_index + 1)
+        )
         yield {
             "type": "Feature",
             "properties": {
