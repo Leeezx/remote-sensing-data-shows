@@ -97,7 +97,7 @@
 
 ### 6.3 输出与发布
 
-每个当前县输出 `data/regions/township/by-county/{currentCountyCode}.geojson`。单个乡镇要素至少包含原始乡镇 `id`、`name`、`level='township'` 和当前县 `parentId`。
+每个当前县输出 `data/vectors/irrigation/township_by_county/{currentCountyCode}.geojson`，与现有后端 `TOWNSHIP_CHUNK_ROOT` 保持一致。单个乡镇要素至少包含原始乡镇 `id`、`name`、`level='township'` 和当前县 `parentId`。
 
 构建仍需满足：
 
