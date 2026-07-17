@@ -126,17 +126,27 @@ export async function getIrrigationVectorStatus(
 
 export async function getIrrigationVectorGeoJSON(
   level: IrrigationRegionLevel,
+  countyId?: string,
 ): Promise<IrrigationVectorGeoJSON> {
-  const { data } = await client.get(`/irrigation/vectors/${level}`)
+  if (level === 'township' && !countyId) {
+    throw new Error('countyId is required for township vectors')
+  }
+  const { data } = await client.get(`/irrigation/vectors/${level}`, {
+    params: countyId ? { countyId } : undefined,
+  })
   return data
 }
 
 export async function getIrrigationRegionAverages(
   level: IrrigationRegionLevel,
+  countyId?: string,
 ): Promise<IrrigationRegionAveragesResponse> {
+  if (level === 'township' && !countyId) {
+    throw new Error('countyId is required for township averages')
+  }
   const { data } = await client.get<IrrigationRegionAveragesResponse>(
     '/irrigation/regions/averages',
-    { params: { level } },
+    { params: { level, ...(countyId ? { countyId } : {}) } },
   )
   return data
 }

@@ -30,7 +30,7 @@ export type LegendStatus = 'ready' | 'loading' | 'error'
 // ===== Irrigation Water =====
 
 export type IrrigationRasterResolution = 'annual' | 'month'
-export type IrrigationRegionLevel = 'county' | 'village'
+export type IrrigationRegionLevel = 'county' | 'township'
 export type IrrigationSeriesPeriod = 'annual' | 'monthly'
 
 export interface IrrigationRegion {
