@@ -34,6 +34,8 @@ from backend.township_chunks import (
 
 
 DEFAULT_SOURCE = Path(r"F:\矢量底图\中国_乡镇\乡镇街道\乡镇街道.shp")
+DEFAULT_COUNTY_SOURCE = Path(r"F:\矢量底图\中国_县\中国_县.shp")
+DEFAULT_SERIES = PROJECT_ROOT / "data" / "stats" / "irrigation_region_series.json"
 DEFAULT_OUTPUT = (
     PROJECT_ROOT / "data" / "vectors" / "irrigation" / "township_by_county"
 )
@@ -441,6 +443,19 @@ def validate_exclusions(exclusions: dict[str, str] | None) -> dict[str, str]:
     return result
 
 
+def _load_exclusion_file(path: Path | None) -> dict[str, str]:
+    """Load an audited township-id-to-reason exclusion mapping."""
+    if path is None:
+        return {}
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(payload, dict):
+        raise ValueError("Exclusion file must contain a JSON object")
+    return validate_exclusions({
+        str(township_id): str(reason)
+        for township_id, reason in payload.items()
+    })
+
+
 def _township_series_ids(series_path: Path) -> set[str]:
     payload = json.loads(series_path.read_text(encoding="utf-8"))
     township = payload.get("township", {})
@@ -663,7 +678,10 @@ def build_chunks(
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
+    parser.add_argument("--county-source", type=Path, default=DEFAULT_COUNTY_SOURCE)
+    parser.add_argument("--series", type=Path, default=DEFAULT_SERIES)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--exclude-file", type=Path)
     parser.add_argument("--tolerance", type=float, default=0.0005)
     parser.add_argument("--max-bytes", type=int, default=MAX_TOWNSHIP_CHUNK_BYTES)
     parser.add_argument("--max-features", type=int, default=MAX_TOWNSHIP_FEATURES)
@@ -671,11 +689,14 @@ def main() -> None:
     args = parser.parse_args()
     manifest = build_chunks(
         args.source.resolve(),
+        args.county_source.resolve(),
+        args.series.resolve(),
         args.output.resolve(),
         args.tolerance,
         args.max_bytes,
         args.max_features,
         args.force,
+        exclusions=_load_exclusion_file(args.exclude_file),
     )
     print(json.dumps({key: value for key, value in manifest.items() if key != "chunks"}, ensure_ascii=False, indent=2))
 

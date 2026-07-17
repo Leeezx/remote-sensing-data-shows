@@ -470,3 +470,14 @@ def test_publish_staged_directory_restores_old_output_when_swap_fails(
 
     assert (output / "old.geojson").read_text(encoding="utf-8") == "old"
     assert not (output / "new.geojson").exists()
+
+
+def test_exclusion_file_is_a_reasoned_id_mapping(tmp_path):
+    path = tmp_path / "excluded.json"
+    path.write_text(json.dumps({
+        "231121100001": "unsupported source jurisdiction",
+    }), encoding="utf-8")
+
+    assert chunk_builder._load_exclusion_file(path) == {
+        "231121100001": "unsupported source jurisdiction",
+    }
