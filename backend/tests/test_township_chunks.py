@@ -285,6 +285,110 @@ def test_build_chunks_publishes_old_township_under_current_county(
     }
 
 
+def test_build_chunks_keeps_multipart_records_with_the_same_id_in_each_matched_county(
+    monkeypatch,
+    tmp_path,
+):
+    township_source = tmp_path / "township.shp"
+    county_source = tmp_path / "county.shp"
+    series_path = tmp_path / "series.json"
+    output = tmp_path / "township_by_county"
+    township_source.touch()
+    county_source.touch()
+    township_id = "110000111000"
+    series_path.write_text(json.dumps({
+        "township": {township_id: {"monthly": [], "annual": []}},
+    }), encoding="utf-8")
+    counties = [
+        feature(
+            "156110000",
+            "甲县",
+            polygon([[[0, 0], [10, 0], [10, 10], [0, 0]]]),
+        ),
+        feature(
+            "156120000",
+            "乙县",
+            polygon([[[20, 0], [30, 0], [30, 10], [20, 0]]]),
+        ),
+    ]
+    multipart_records = [
+        feature(
+            township_id,
+            "跨县多部件镇",
+            polygon([[[1, 1], [2, 1], [2, 2], [1, 1]]]),
+        ),
+        feature(
+            township_id,
+            "跨县多部件镇",
+            polygon([[[21, 1], [22, 1], [22, 2], [21, 1]]]),
+        ),
+    ]
+    monkeypatch.setattr(
+        chunk_builder,
+        "iter_shapefile_geojson_features",
+        lambda path: iter(counties if path == county_source else multipart_records),
+    )
+
+    manifest = chunk_builder.build_chunks(
+        township_source,
+        county_source,
+        series_path,
+        output,
+        0,
+        1_000_000,
+        499,
+        force=False,
+    )
+
+    first = json.loads((output / "110000.geojson").read_text(encoding="utf-8"))
+    second = json.loads((output / "120000.geojson").read_text(encoding="utf-8"))
+    assert first["features"][0]["properties"]["id"] == township_id
+    assert first["features"][0]["properties"]["parentId"] == "156110000"
+    assert second["features"][0]["properties"]["id"] == township_id
+    assert second["features"][0]["properties"]["parentId"] == "156120000"
+    assert manifest["featureCount"] == 2
+    assert manifest["townshipIdCount"] == 1
+
+
+def test_county_index_skips_degenerate_multipolygon_parts_but_rejects_all_degenerate_parts():
+    index = CountySpatialIndex.from_features([
+        feature(
+            "156231183",
+            "嫩江市",
+            polygon([[[120, 45], [130, 45], [130, 55], [120, 55], [120, 45]]]),
+        ),
+    ])
+    valid_with_degenerate_part = {
+        "type": "MultiPolygon",
+        "coordinates": [
+            [[[125, 49], [126, 49], [126, 50], [125, 49]]],
+            [[[1, 1], [2, 2], [3, 3], [1, 1]]],
+        ],
+    }
+    all_degenerate_parts = {
+        "type": "MultiPolygon",
+        "coordinates": [
+            [[[1, 1], [2, 2], [3, 3], [1, 1]]],
+            [[[4, 4], [5, 5], [6, 6], [4, 4]]],
+        ],
+    }
+
+    county, mode = index.match(feature(
+        "231121100001",
+        "带碎片镇",
+        valid_with_degenerate_part,
+    ))
+
+    assert (county.code, mode) == ("231183", "spatial")
+    with pytest.raises(TownshipAlignmentError) as error:
+        index.match(feature(
+            "231121100002",
+            "全退化镇",
+            all_degenerate_parts,
+        ))
+    assert error.value.reason == "invalid_geometry"
+
+
 def test_build_chunks_audits_unmatched_and_preserves_existing_output(
     monkeypatch,
     tmp_path,

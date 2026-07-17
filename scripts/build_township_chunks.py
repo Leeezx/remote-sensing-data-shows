@@ -71,8 +71,6 @@ def _validated_ring(ring) -> Ring:
         raise ValueError("Polygon ring is not closed")
     if len({tuple(point) for point in normalized[:-1]}) < 3:
         raise ValueError("Polygon ring has fewer than three distinct vertices")
-    if _signed_ring_area(normalized) == 0:
-        raise ValueError("Polygon ring has zero signed area")
     return normalized
 
 
@@ -88,7 +86,13 @@ def geometry_rings(geometry: dict) -> list[Ring]:
         raise ValueError(f"Unsupported polygon geometry: {geometry_type}")
     if not rings:
         raise ValueError("Polygon geometry has no rings")
-    return [_validated_ring(ring) for ring in rings]
+    validated_rings = [_validated_ring(ring) for ring in rings]
+    non_degenerate_rings = [
+        ring for ring in validated_rings if _signed_ring_area(ring) != 0
+    ]
+    if not non_degenerate_rings:
+        raise ValueError("Polygon geometry has no non-degenerate rings")
+    return non_degenerate_rings
 
 
 def _point_on_segment(point: Point, start: list[float], end: list[float]) -> bool:
@@ -531,7 +535,7 @@ def build_chunks(
         "missingSeries": 0,
     }
     issues: list[dict] = []
-    assigned_counties: dict[str, str] = {}
+    assigned_counties: dict[str, set[str]] = {}
     output_township_ids: set[str] = set()
 
     with tempfile.TemporaryDirectory(prefix="township-chunks-", dir=output.parent) as temp:
@@ -552,15 +556,6 @@ def build_chunks(
                     continue
                 try:
                     county, mode = county_index.match(feature)
-                    previous_code = assigned_counties.get(township_id)
-                    if previous_code is not None and previous_code != county.code:
-                        raise TownshipAlignmentError(
-                            "ambiguous",
-                            township_id,
-                            name,
-                            representative_point(feature["geometry"]),
-                            sorted({previous_code, county.code}),
-                        )
                 except TownshipAlignmentError as exc:
                     issues.append(exc.as_dict())
                     count_key = (
@@ -575,7 +570,7 @@ def build_chunks(
                     alignment_counts[count_key] += 1
                     continue
 
-                assigned_counties[township_id] = county.code
+                assigned_counties.setdefault(township_id, set()).add(county.code)
                 alignment_counts[mode] += 1
                 output_township_ids.add(township_id)
                 compact_feature = {
@@ -603,7 +598,7 @@ def build_chunks(
                 "townshipId": township_id,
                 "name": township_id,
                 "point": None,
-                "candidateCountyCodes": [assigned_counties[township_id]],
+                "candidateCountyCodes": sorted(assigned_counties[township_id]),
             })
 
         if issues:
