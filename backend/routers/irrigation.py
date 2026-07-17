@@ -23,7 +23,6 @@ from backend.shapefile_geojson import read_shapefile_geojson
 from backend.township_chunks import (
     MAX_TOWNSHIP_CHUNK_BYTES,
     MAX_TOWNSHIP_FEATURES,
-    find_township_feature,
     load_township_chunk,
     township_chunk_path,
 )
@@ -47,27 +46,6 @@ def _find_region(region_id: str, level: RegionLevel) -> dict | None:
     for region in get_irrigation_regions():
         if region["id"] == region_id and region["level"] == level:
             return region
-    return None
-
-
-def find_irrigation_vector_feature(level: RegionLevel, region_id: str) -> dict | None:
-    """Find an administrative vector feature by id."""
-    if level == "township":
-        return find_township_feature(TOWNSHIP_CHUNK_ROOT, region_id)
-    if not COUNTY_VECTOR_PATH.is_file():
-        return None
-    data = read_shapefile_geojson(COUNTY_VECTOR_PATH)
-    for feature in data.get("features", []):
-        properties = feature.get("properties", {})
-        feature_id = str(
-            properties.get("id")
-            or properties.get("gb")
-            or properties.get("GB")
-            or properties.get("name")
-            or ""
-        )
-        if feature_id == region_id:
-            return feature
     return None
 
 
@@ -176,7 +154,11 @@ def township_vector_geojson(countyId: str = Query(...)):
     if not chunk_path.is_file():
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Township vector chunk not found for county '{countyId}'",
+            detail={
+                "code": "township_vector_not_found",
+                "message": "该县暂无乡镇矢量",
+                "countyId": countyId,
+            },
         )
     chunk_bytes = chunk_path.stat().st_size
     try:
