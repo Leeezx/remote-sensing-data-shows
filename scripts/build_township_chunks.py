@@ -74,25 +74,53 @@ def _validated_ring(ring) -> Ring:
     return normalized
 
 
+def _validated_polygon_part(
+    polygon,
+    *,
+    allow_degenerate_part: bool,
+) -> list[Ring]:
+    """Validate one polygon while retaining its exterior-ring role."""
+    if not isinstance(polygon, (list, tuple)) or not polygon:
+        raise ValueError("Polygon geometry has no rings")
+
+    rings = [_validated_ring(ring) for ring in polygon]
+    exterior = rings[0]
+    if _signed_ring_area(exterior) == 0:
+        if allow_degenerate_part and all(
+            _signed_ring_area(ring) == 0 for ring in rings
+        ):
+            return []
+        raise ValueError("Polygon exterior ring is degenerate")
+
+    return [
+        exterior,
+        *(ring for ring in rings[1:] if _signed_ring_area(ring) != 0),
+    ]
+
+
 def geometry_rings(geometry: dict) -> list[Ring]:
-    """Return validated polygon rings, including MultiPolygon parts."""
+    """Return validated polygon rings without promoting interior rings."""
     geometry_type = geometry.get("type")
     coordinates = geometry.get("coordinates", [])
     if geometry_type == "Polygon":
-        rings = list(coordinates)
+        polygon_parts = [_validated_polygon_part(
+            coordinates,
+            allow_degenerate_part=False,
+        )]
     elif geometry_type == "MultiPolygon":
-        rings = [ring for polygon in coordinates for ring in polygon]
+        if not isinstance(coordinates, (list, tuple)) or not coordinates:
+            raise ValueError("Polygon geometry has no rings")
+        polygon_parts = [
+            _validated_polygon_part(polygon, allow_degenerate_part=True)
+            for polygon in coordinates
+        ]
     else:
         raise ValueError(f"Unsupported polygon geometry: {geometry_type}")
+
+    rings = [ring for polygon in polygon_parts for ring in polygon]
     if not rings:
-        raise ValueError("Polygon geometry has no rings")
-    validated_rings = [_validated_ring(ring) for ring in rings]
-    non_degenerate_rings = [
-        ring for ring in validated_rings if _signed_ring_area(ring) != 0
-    ]
-    if not non_degenerate_rings:
         raise ValueError("Polygon geometry has no non-degenerate rings")
-    return non_degenerate_rings
+    return rings
 
 
 def _point_on_segment(point: Point, start: list[float], end: list[float]) -> bool:

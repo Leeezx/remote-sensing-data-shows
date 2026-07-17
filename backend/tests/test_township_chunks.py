@@ -155,6 +155,29 @@ def test_county_index_fails_for_unmatched_or_multiple_counties():
         })
 
 
+def test_county_index_rejects_polygon_with_degenerate_exterior_and_valid_later_ring():
+    index = CountySpatialIndex.from_features([
+        feature(
+            "156231183",
+            "嫩江市",
+            polygon([[[120, 45], [130, 45], [130, 55], [120, 55], [120, 45]]]),
+        ),
+    ])
+    malformed_polygon = polygon([
+        [[125, 49], [126, 50], [127, 51], [125, 49]],
+        [[125, 49], [126, 49], [126, 50], [125, 49]],
+    ])
+
+    with pytest.raises(TownshipAlignmentError) as error:
+        index.match(feature(
+            "231121100005",
+            "退化外环镇",
+            malformed_polygon,
+        ))
+
+    assert error.value.reason == "invalid_geometry"
+
+
 @pytest.mark.parametrize("ring", [
     [[1, 1], [2, 2], [3, 3], [1, 1]],
     [[1, 1], [2, 1], [2, 2], [1, 2]],
