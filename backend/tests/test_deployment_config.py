@@ -71,3 +71,23 @@ def test_caddy_site_address_is_environment_driven():
     assert (ROOT / "Caddyfile").read_text(encoding="utf-8").splitlines()[0] == (
         "{$SITE_ADDRESS} {"
     )
+
+
+def test_runtime_requirements_exclude_test_and_removed_auth_packages():
+    runtime = (ROOT / "backend" / "requirements.txt").read_text(
+        encoding="utf-8"
+    )
+    for removed in ("pytest", "httpx", "PyJWT", "bcrypt", "python-multipart"):
+        assert removed not in runtime
+    for direct in ("numpy==", "rasterio==", "pyproj==", "rio-tiler=="):
+        assert direct in runtime
+
+
+def test_ci_does_not_build_docker_images():
+    workflow = (ROOT / ".github" / "workflows" / "ci.yml").read_text(
+        encoding="utf-8"
+    )
+    assert "pytest backend/tests/" in workflow
+    assert "npm run build" in workflow
+    assert "docker build" not in workflow
+    assert "docker compose build" not in workflow
