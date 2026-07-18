@@ -24,11 +24,12 @@ vi.mock('axios', async (importOriginal) => {
 })
 
 import {
-  getExportCsvUrl,
   getIrrigationRegions,
   getIrrigationLegend,
   getIrrigationSeries,
   getIrrigationTimes,
+  getIrrigationRegionAverages,
+  getIrrigationVectorGeoJSON,
   getIrrigationVectorStatus,
   getLayerLegend,
 } from '../services/api'
@@ -37,15 +38,6 @@ import type { IrrigationSeriesResponse, LayerLegendResponse } from '../types'
 beforeEach(() => {
   localStorage.clear()
   clientGet.mockReset()
-})
-
-describe('getExportCsvUrl', () => {
-  it('includes the layer and time range without a region parameter', () => {
-    const url = getExportCsvUrl('ssm', '2025-01', '2025-12')
-
-    expect(url).toBe('/api/export/csv?layerId=ssm&start=2025-01&end=2025-12')
-    expect(url).not.toContain('regionId')
-  })
 })
 
 describe('getLayerLegend', () => {
@@ -106,6 +98,33 @@ describe('irrigation API helpers', () => {
     await expect(getIrrigationVectorStatus('county')).resolves.toEqual(response)
     expect(clientGet).toHaveBeenCalledWith('/irrigation/vectors', {
       params: { level: 'county' },
+    })
+  })
+
+  it('requires and sends a county id for a township vector chunk', async () => {
+    const response = { type: 'FeatureCollection', features: [] }
+    clientGet.mockResolvedValueOnce({ data: response })
+
+    await expect(
+      getIrrigationVectorGeoJSON('township', '156511011'),
+    ).resolves.toEqual(response)
+    expect(clientGet).toHaveBeenCalledWith('/irrigation/vectors/township', {
+      params: { countyId: '156511011' },
+    })
+    await expect(getIrrigationVectorGeoJSON('township')).rejects.toThrow(
+      'countyId is required',
+    )
+  })
+
+  it('requests only one county of township averages', async () => {
+    const response = { level: 'township', unit: '万m³', averages: [], legend: [] }
+    clientGet.mockResolvedValueOnce({ data: response })
+
+    await expect(
+      getIrrigationRegionAverages('township', '156511011'),
+    ).resolves.toEqual(response)
+    expect(clientGet).toHaveBeenCalledWith('/irrigation/regions/averages', {
+      params: { level: 'township', countyId: '156511011' },
     })
   })
 

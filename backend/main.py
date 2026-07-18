@@ -5,8 +5,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from backend.routers import (
-    auth,
-    export,
     health,
     irrigation,
     layers,
@@ -35,12 +33,10 @@ app.add_middleware(
 )
 
 app.include_router(health.router, prefix="/api")
-app.include_router(auth.router, prefix="/api/auth")
 app.include_router(layers.router, prefix="/api")
 app.include_router(query.router, prefix="/api")
 app.include_router(series.router, prefix="/api")
 app.include_router(regions.router, prefix="/api")
-app.include_router(export.router, prefix="/api")
 app.include_router(irrigation.router, prefix="/api")
 # TiTiler dynamic COG tile endpoints (for SSM layer)
 app.include_router(tiles.cog_tiler, prefix="/cog")

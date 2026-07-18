@@ -1,0 +1,45 @@
+# Data directories (mounted at runtime, not copied into image)
+data/rasters/
+data/vectors/
+data/tiles/
+data/stats/*.checkpoint
+data/stats/irrigation_region_series.json
+
+# Dev environment
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Build output (frontend gets its own .dockerignore via multi-stage)
+frontend/dist/
+frontend/node_modules/
+
+# Version control
+.git/
+.gitignore
+.worktrees/
+
+# IDE & config
+.vscode/
+.idea/
+.claude/
+.superpowers/
+.codegraph/
+.agents/
+.codex-runtime/
+.planning/
+
+# Docs & plans (not needed in image)
+docs/
+*.md
+!README.md
+
+# Temp & test files
+temp_ssm/
+test_tile*.png
+findings.md
+progress.md
+task_plan.md

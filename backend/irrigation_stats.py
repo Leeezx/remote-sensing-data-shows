@@ -29,11 +29,11 @@ _CACHE_PATH = PROJECT_ROOT / "data" / "stats" / "irrigation_computed_series.json
 
 def _read_cache() -> dict:
     if not _CACHE_PATH.is_file():
-        return {"unit": "万m³", "county": {}, "village": {}}
+        return {"unit": "万m³", "county": {}, "township": {}}
     try:
         return json.loads(_CACHE_PATH.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
-        return {"unit": "万m³", "county": {}, "village": {}}
+        return {"unit": "万m³", "county": {}, "township": {}}
 
 
 def _write_cache(cache: dict) -> None:
@@ -133,7 +133,7 @@ def compute_irrigation_region_series(
     return series
 
 
-def get_irrigation_region_averages(level: str) -> dict:
+def get_irrigation_region_averages(level: str, county_id: str | None = None) -> dict:
     """Return per-region multi-year average irrigation water and a dynamic legend.
 
     Computes the mean of each region's annual series values, then builds a
@@ -153,6 +153,17 @@ def get_irrigation_region_averages(level: str) -> dict:
     unit = series_data.get("unit", "万m³")
     regions = get_irrigation_regions()
     level_regions = [r for r in regions if r["level"] == level]
+    if level == "township":
+        if county_id is None:
+            raise ValueError("countyId is required for township averages")
+        from backend.township_chunks import county_code_from_id
+
+        county_code = county_code_from_id(county_id)
+        level_regions = [
+            region
+            for region in level_regions
+            if str(region.get("id", "")).startswith(county_code)
+        ]
     level_series = series_data.get(level, {})
 
     averages = []

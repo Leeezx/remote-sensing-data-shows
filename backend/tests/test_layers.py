@@ -7,17 +7,20 @@ from fastapi.testclient import TestClient
 from data import validate_data
 from backend.main import app
 from backend.routers import layers as layers_router
+from backend.external_rasters import RasterSource
 
 client = TestClient(app)
 
 
 def test_get_layers():
-    """GET /api/layers returns at least 4 layers."""
+    """GET /api/layers returns the configured real-data layers only."""
     response = client.get("/api/layers")
     assert response.status_code == 200
     data = response.json()
     assert isinstance(data, list)
-    assert len(data) >= 4
+    ids = {layer["id"] for layer in data}
+    assert ids == {"ssm", "et", "sm_10cm", "sm_30cm", "sm_60cm", "sm_100cm"}
+    assert not ids.intersection({"ndvi", "precipitation", "soil_moisture", "lst"})
 
 
 def test_layer_fields():
@@ -77,15 +80,10 @@ def test_layer_validation_rejects_duplicate_legend_values(monkeypatch):
     assert any("legend values must be unique" in error for error in errors)
 
 
-def test_get_layer_times():
-    """GET /api/layers/{layerId}/times returns 12 monthly timestamps."""
+def test_removed_layer_times_returns_404():
+    """Removed example layers are no longer exposed by the API."""
     response = client.get("/api/layers/ndvi/times")
-    assert response.status_code == 200
-    data = response.json()
-    assert isinstance(data, list)
-    assert len(data) == 12
-    assert data[0] == "2025-01"
-    assert data[-1] == "2025-12"
+    assert response.status_code == 404
 
 
 def test_get_layer_times_invalid_layer():
@@ -209,3 +207,29 @@ def test_get_ssm_legend_rejects_invalid_time_before_missing_metadata(
     assert response.status_code == 422
     assert "Invalid SSM time" in response.json()["detail"]
     assert metadata_calls == []
+
+
+def test_get_et_legend_uses_the_resolved_time_source(monkeypatch, tmp_path):
+    et_path = tmp_path / "2010_cog.tif"
+    et_path.touch()
+    base_legend = [{"value": 0, "color": "#d53e4f", "label": "低"}]
+    dynamic_legend = [{"value": 12.3, "color": "#d53e4f", "label": "12.3 mm/8天"}]
+    source = RasterSource(et_path, 1)
+    calls = []
+    monkeypatch.setattr(
+        layers_router,
+        "get_layer",
+        lambda layer_id: {"id": layer_id, "unit": "mm/8天", "legend": base_legend},
+    )
+    monkeypatch.setattr(layers_router, "resolve_external_raster", lambda *_args: source)
+    monkeypatch.setattr(
+        layers_router,
+        "get_external_dynamic_legend",
+        lambda *args: calls.append(args) or dynamic_legend,
+    )
+
+    response = client.get("/api/layers/et/legend", params={"time": "2010-01-01"})
+
+    assert response.status_code == 200
+    assert response.json()["legend"] == dynamic_legend
+    assert calls == [("et", source, base_legend, "mm/8天")]

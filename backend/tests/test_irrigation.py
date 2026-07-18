@@ -268,6 +268,60 @@ def test_irrigation_region_catalog_contains_both_supported_levels():
     assert {item["level"] for item in township.json()} == {"township"}
 
 
+def test_irrigation_region_series_reuses_cached_json(monkeypatch, tmp_path):
+    stats_dir = tmp_path / "data" / "stats"
+    stats_dir.mkdir(parents=True)
+    source_path = stats_dir / "irrigation_region_series.json"
+    source_path.write_text('{"version": 1}', encoding="utf-8")
+    monkeypatch.setattr(data_loader, "PROJECT_ROOT", tmp_path)
+    monkeypatch.setattr(data_loader, "_IRRIGATION_REGION_SERIES_CACHE", None)
+    monkeypatch.setattr(data_loader, "_IRRIGATION_REGION_SERIES_SIGNATURE", None)
+
+    original_load_json = data_loader._load_json
+    calls = 0
+
+    def count_loads(relative_path):
+        nonlocal calls
+        calls += 1
+        return original_load_json(relative_path)
+
+    monkeypatch.setattr(data_loader, "_load_json", count_loads)
+
+    first = data_loader.get_irrigation_region_series()
+    second = data_loader.get_irrigation_region_series()
+
+    assert first == {"version": 1}
+    assert second is first
+    assert calls == 1
+
+
+def test_irrigation_region_series_refreshes_when_file_changes(monkeypatch, tmp_path):
+    stats_dir = tmp_path / "data" / "stats"
+    stats_dir.mkdir(parents=True)
+    source_path = stats_dir / "irrigation_region_series.json"
+    source_path.write_text('{"version": 1}', encoding="utf-8")
+    monkeypatch.setattr(data_loader, "PROJECT_ROOT", tmp_path)
+    monkeypatch.setattr(data_loader, "_IRRIGATION_REGION_SERIES_CACHE", None)
+    monkeypatch.setattr(data_loader, "_IRRIGATION_REGION_SERIES_SIGNATURE", None)
+
+    assert data_loader.get_irrigation_region_series() == {"version": 1}
+
+    source_path.write_text('{"version": 200}', encoding="utf-8")
+
+    assert data_loader.get_irrigation_region_series() == {"version": 200}
+
+
+def test_load_json_remains_uncached(monkeypatch, tmp_path):
+    source_path = tmp_path / "sample.json"
+    source_path.write_text('{"version": 1}', encoding="utf-8")
+    monkeypatch.setattr(data_loader, "PROJECT_ROOT", tmp_path)
+
+    assert data_loader._load_json("sample.json") == {"version": 1}
+    source_path.write_text('{"version": 2}', encoding="utf-8")
+
+    assert data_loader._load_json("sample.json") == {"version": 2}
+
+
 def test_get_irrigation_series_returns_precomputed_monthly_county_values():
     response = client.get(
         "/api/irrigation/series",

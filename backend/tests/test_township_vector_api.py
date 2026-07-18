@@ -78,6 +78,7 @@ def test_township_vector_serves_current_county_code(monkeypatch, tmp_path):
 def test_township_vector_rejects_a_chunk_above_the_byte_limit(
     monkeypatch,
     tmp_path,
+
 ):
     (tmp_path / "231183.geojson").write_text(
         '{"type":"FeatureCollection","features":[]}',

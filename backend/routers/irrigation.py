@@ -78,6 +78,7 @@ def irrigation_legend(time: str):
             IRRIGATION_8DAY_COG_ROOT,
             time,
         )
+
     except ValueError as exc:
         raise HTTPException(
             status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
@@ -158,6 +159,7 @@ def township_vector_geojson(countyId: str = Query(...)):
                 "code": "township_vector_not_found",
                 "message": "该县暂无乡镇矢量",
                 "countyId": countyId,
+
             },
         )
     chunk_bytes = chunk_path.stat().st_size
@@ -238,6 +240,7 @@ def irrigation_series(
     if not isinstance(series, list):
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
+
             detail=(
                 f"Irrigation {period} series for {level} region "
                 f"'{regionId}' was not found in precomputed irrigation statistics"

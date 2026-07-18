@@ -4,8 +4,11 @@ import json
 import os
 from pathlib import Path
 import re
+from threading import Lock
 from datetime import date, timedelta
 from typing import Any
+
+from backend.external_rasters import EXTERNAL_RASTERS, discover_external_times
 
 # Project root is two levels up from this file (backend/data_loader.py -> project/)
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -33,6 +36,10 @@ _IRRIGATION_ANNUAL_FILE = re.compile(r"^IWU_(?P<year>[0-9]{4})\.TIF$", re.IGNORE
 _IRRIGATION_8DAY_FILE = re.compile(
     r"^IWU_(?P<year>[0-9]{4})_(?P<period>[0-9]{1,3})\.tif$", re.IGNORECASE
 )
+_IRRIGATION_REGION_SERIES_PATH = Path("data/stats/irrigation_region_series.json")
+_IRRIGATION_REGION_SERIES_CACHE: dict | None = None
+_IRRIGATION_REGION_SERIES_SIGNATURE: tuple[int, int] | None = None
+_IRRIGATION_REGION_SERIES_LOCK = Lock()
 
 
 def _load_json(relative_path: str) -> Any:
@@ -64,6 +71,11 @@ def get_layer_times(layer_id: str, resolution: str = "month") -> list[str]:
         layer_id: Layer identifier (e.g. 'ssm').
         resolution: 'month' (default) or '8day'.
     """
+    if layer_id in EXTERNAL_RASTERS:
+        # These sources only expose 8-day observations.  Returning their
+        # discovered dates for the default request keeps the endpoint useful
+        # to clients that do not yet know the layer's resolution.
+        return discover_external_times(layer_id)
     if resolution == "8day":
         return _load_json(f"data/series/{layer_id}_8day_times.json")
     return _load_json(f"data/series/{layer_id}_times.json")
@@ -139,8 +151,27 @@ def get_irrigation_regions() -> list[dict]:
 
 
 def get_irrigation_region_series() -> dict:
-    """Return precomputed irrigation water totals by administrative region."""
-    return _load_json("data/stats/irrigation_region_series.json")
+    """Return cached precomputed irrigation totals, refreshing after file changes."""
+    global _IRRIGATION_REGION_SERIES_CACHE
+    global _IRRIGATION_REGION_SERIES_SIGNATURE
+
+    source_path = PROJECT_ROOT / _IRRIGATION_REGION_SERIES_PATH
+    stat = source_path.stat()
+    signature = (stat.st_mtime_ns, stat.st_size)
+    if _IRRIGATION_REGION_SERIES_SIGNATURE == signature:
+        assert _IRRIGATION_REGION_SERIES_CACHE is not None
+        return _IRRIGATION_REGION_SERIES_CACHE
+
+    with _IRRIGATION_REGION_SERIES_LOCK:
+        stat = source_path.stat()
+        signature = (stat.st_mtime_ns, stat.st_size)
+        if _IRRIGATION_REGION_SERIES_SIGNATURE != signature:
+            _IRRIGATION_REGION_SERIES_CACHE = _load_json(
+                str(_IRRIGATION_REGION_SERIES_PATH)
+            )
+            _IRRIGATION_REGION_SERIES_SIGNATURE = signature
+        assert _IRRIGATION_REGION_SERIES_CACHE is not None
+        return _IRRIGATION_REGION_SERIES_CACHE
 
 
 def get_region(region_id: str) -> dict | None:

@@ -340,19 +340,12 @@ def test_ssm_area_route_rejects_invalid_time_without_opening_raster(
     assert calls == []
 
 
-def test_point_query_ndvi():
-    """Point query at known coordinates returns a value."""
-    # Coordinates in North China Plain region
+def test_point_query_removed_layer_returns_404():
+    """Point queries cannot use removed example layers."""
     response = client.get(
         "/api/query/point?layerId=ndvi&time=2025-01&lng=116.4&lat=39.9"
     )
-    assert response.status_code == 200
-    data = response.json()
-    assert data["layerId"] == "ndvi"
-    assert data["time"] == "2025-01"
-    assert "value" in data
-    assert "unit" in data
-    assert isinstance(data["value"], (int, float))
+    assert response.status_code == 404
 
 
 def test_point_query_missing_params():
@@ -371,7 +364,7 @@ def test_point_query_no_data():
 
 
 def test_area_query_rectangle():
-    """Area query with a valid rectangle returns statistics."""
+    """Area queries cannot use removed example layers."""
     response = client.post(
         "/api/query/area",
         json={
@@ -391,10 +384,7 @@ def test_area_query_rectangle():
             },
         },
     )
-    assert response.status_code == 200
-    data = response.json()
-    for field in ["mean", "max", "min", "count"]:
-        assert field in data, f"Missing field: {field}"
+    assert response.status_code == 404
 
 
 def test_area_query_unknown_region():

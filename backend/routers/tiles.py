@@ -16,6 +16,14 @@ from backend.data_loader import (
     get_irrigation_layer,
     get_layer,
 )
+from backend.external_rasters import (
+    EXTERNAL_RASTERS,
+    RasterSource,
+    external_valid_data_mask,
+    external_value_scale,
+    get_external_dynamic_legend,
+    resolve_external_raster,
+)
 from backend.irrigation_time import irrigation_time_to_cog_path, irrigation_time_to_path
 from backend.irrigation_legend import get_irrigation_dynamic_legend, valid_irrigation_mask
 from backend.raster_rendering import colorize, render_png
@@ -109,6 +117,85 @@ def ssm_tile_proxy(
         )
     try:
         png = _render_ssm_tile(cog_path, x, y, z)
+    except TileOutsideBounds:
+        png = TRANSPARENT_PNG
+    return Response(content=png, media_type="image/png")
+
+
+# ===== External ET and layered soil-moisture tiles =====
+
+
+def _render_external_tile(
+    layer_id: str, source: RasterSource, x: int, y: int, z: int
+) -> bytes:
+    """Render an externally stored raster band using its layer palette."""
+    layer = get_layer(layer_id)
+    if layer is None:
+        raise RuntimeError(f"Layer metadata is missing for '{layer_id}'")
+    legend = layer.get("legend")
+    if not legend:
+        raise RuntimeError(f"Layer legend is missing for '{layer_id}'")
+    if layer_id == "et":
+        legend = get_external_dynamic_legend(
+            layer_id, source, legend, layer.get("unit") or ""
+        )
+    nodata_color_hex = layer.get("nodataColor", "#e8e8e8")
+    nodata_opacity = float(layer.get("nodataOpacity", 0.5))
+    try:
+        nodata_rgb = tuple(bytes.fromhex(nodata_color_hex.lstrip("#")))
+        nodata_color = (*nodata_rgb, int(round(nodata_opacity * 255)))
+    except (ValueError, TypeError):
+        nodata_color = (0xE8, 0xE8, 0xE8, 128)
+    with COGReader(str(source.path)) as reader:
+        image = reader.tile(x, y, z, indexes=source.band)
+    values = image.data[0]
+    source_mask = external_valid_data_mask(layer_id, values, source_mask=image.mask)
+    rgba = colorize(
+        values * external_value_scale(layer_id),
+        legend,
+        source_mask=source_mask,
+        nodata_color=nodata_color,
+    )
+    return render_png(rgba)
+
+
+@router.get("/raster-tiles/{layer_id}/{tileMatrixSetId}/{z}/{x}/{y}.png")
+def external_raster_tile(
+    layer_id: str,
+    tileMatrixSetId: str,
+    z: int,
+    x: int,
+    y: int,
+    time: str = Query(...),
+):
+    """Resolve and render one band from an external ET/soil-moisture raster."""
+    if layer_id not in EXTERNAL_RASTERS:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"External raster layer '{layer_id}' not found",
+        )
+    if tileMatrixSetId != "WebMercatorQuad":
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=(
+                f"Unsupported tile matrix set '{tileMatrixSetId}'; "
+                "only WebMercatorQuad is supported"
+            ),
+        )
+    try:
+        source = resolve_external_raster(layer_id, time)
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            detail=str(exc),
+        ) from exc
+    except FileNotFoundError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=str(exc),
+        ) from exc
+    try:
+        png = _render_external_tile(layer_id, source, x, y, z)
     except TileOutsideBounds:
         png = TRANSPARENT_PNG
     return Response(content=png, media_type="image/png")

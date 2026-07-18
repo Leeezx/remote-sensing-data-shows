@@ -79,6 +79,7 @@ def test_representative_point_stays_inside_a_concave_polygon_with_a_hole():
     assert point_in_geometry(point, geometry) is True
 
 
+
 def test_representative_point_handles_multipolygon_parts():
     geometry = {
         "type": "MultiPolygon",
@@ -158,6 +159,7 @@ def test_county_index_fails_for_unmatched_or_multiple_counties():
 def test_county_index_rejects_polygon_with_degenerate_exterior_and_valid_later_ring():
     index = CountySpatialIndex.from_features([
         feature(
+
             "156231183",
             "嫩江市",
             polygon([[[120, 45], [130, 45], [130, 55], [120, 55], [120, 45]]]),
@@ -238,6 +240,7 @@ def test_shapefile_reader_normalizes_township_code_and_name_fields(
     monkeypatch.setattr(
         shapefile_geojson,
         "_polygon_geometry",
+
         lambda _content: polygon([[[0, 0], [1, 0], [1, 1], [0, 0]]]),
     )
 
@@ -318,6 +321,7 @@ def test_build_chunks_keeps_multipart_records_with_the_same_id_in_each_matched_c
     output = tmp_path / "township_by_county"
     township_source.touch()
     county_source.touch()
+
     township_id = "110000111000"
     series_path.write_text(json.dumps({
         "township": {township_id: {"monthly": [], "annual": []}},
@@ -398,6 +402,7 @@ def test_county_index_skips_degenerate_multipolygon_parts_but_rejects_all_degene
 
     county, mode = index.match(feature(
         "231121100001",
+
         "带碎片镇",
         valid_with_degenerate_part,
     ))
@@ -478,6 +483,7 @@ def test_build_chunks_audits_invalid_township_id_without_publishing(
         "嫩江市",
         polygon([[[120, 45], [130, 45], [130, 55], [120, 55], [120, 45]]]),
     )
+
     malformed = feature(
         "1",
         "字段漂移镇",
@@ -559,6 +565,7 @@ def test_build_chunks_requires_every_output_id_in_township_series(
     assert not output.exists()
 
 
+
 def test_explicit_exclusion_requires_a_nonempty_reason():
     with pytest.raises(ValueError, match="non-empty reason"):
         chunk_builder.validate_exclusions({"231121100001": ""})
@@ -638,6 +645,7 @@ def test_build_chunks_rejects_a_county_above_the_feature_limit(
         "嫩江市",
         polygon([[[120, 45], [130, 45], [130, 55], [120, 55], [120, 45]]]),
     )
+
     townships = [
         feature(
             region_id,
