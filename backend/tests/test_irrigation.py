@@ -3,6 +3,7 @@
 import json
 from pathlib import Path
 
+import pytest
 from fastapi.testclient import TestClient
 
 from backend.main import app
@@ -11,6 +12,49 @@ from backend.routers import irrigation as irrigation_router
 from backend.shapefile_geojson import _read_dbf_records
 
 client = TestClient(app)
+
+
+@pytest.fixture
+def precomputed_irrigation_series(monkeypatch):
+    """Provide deterministic endpoint data without the untracked runtime dataset."""
+    series_data = {
+        "unit": "万m³",
+        "county": {
+            "county_a": {
+                "name": "测试县",
+                "annual": [
+                    {"time": "2021", "value": 500.0},
+                    {"time": "2022", "value": 510.0},
+                    {"time": "2023", "value": 522.2},
+                ],
+                "monthly": [
+                    {"time": "2023-01", "value": 118.4},
+                    {"time": "2023-02", "value": 1413.8},
+                ],
+            },
+        },
+        "township": {
+            "village_a1": {
+                "name": "测试乡镇",
+                "parentId": "county_a",
+                "annual": [
+                    {"time": "2021", "value": 328.4},
+                    {"time": "2022", "value": 346.5},
+                    {"time": "2023", "value": 358.8},
+                ],
+            },
+        },
+    }
+    monkeypatch.setattr(
+        irrigation_router,
+        "get_irrigation_region_series",
+        lambda: series_data,
+    )
+    monkeypatch.setattr(
+        data_loader,
+        "get_irrigation_region_series",
+        lambda: series_data,
+    )
 
 
 def test_get_irrigation_layer_metadata():
@@ -318,7 +362,9 @@ def test_load_json_remains_uncached(monkeypatch, tmp_path):
     assert data_loader._load_json("sample.json") == {"version": 2}
 
 
-def test_get_irrigation_series_returns_precomputed_monthly_county_values():
+def test_get_irrigation_series_returns_precomputed_monthly_county_values(
+    precomputed_irrigation_series,
+):
     response = client.get(
         "/api/irrigation/series",
         params={
@@ -337,7 +383,9 @@ def test_get_irrigation_series_returns_precomputed_monthly_county_values():
     assert data["summary"]["total"] == 1532.2
 
 
-def test_get_irrigation_series_returns_precomputed_annual_township_values():
+def test_get_irrigation_series_returns_precomputed_annual_township_values(
+    precomputed_irrigation_series,
+):
     response = client.get(
         "/api/irrigation/series",
         params={
@@ -359,7 +407,9 @@ def test_get_irrigation_series_returns_precomputed_annual_township_values():
     ]
 
 
-def test_get_irrigation_series_returns_404_for_unknown_precomputed_region():
+def test_get_irrigation_series_returns_404_for_unknown_precomputed_region(
+    precomputed_irrigation_series,
+):
     response = client.get(
         "/api/irrigation/series",
         params={
@@ -397,7 +447,9 @@ def test_get_irrigation_series_returns_404_when_period_is_missing(monkeypatch):
     assert "monthly" in response.json()["detail"]
 
 
-def test_get_irrigation_series_rejects_mismatched_region_level():
+def test_get_irrigation_series_rejects_mismatched_region_level(
+    precomputed_irrigation_series,
+):
     response = client.get(
         "/api/irrigation/series",
         params={
@@ -410,7 +462,9 @@ def test_get_irrigation_series_rejects_mismatched_region_level():
     assert response.status_code == 404
 
 
-def test_get_irrigation_region_averages_returns_legend_and_averages():
+def test_get_irrigation_region_averages_returns_legend_and_averages(
+    precomputed_irrigation_series,
+):
     response = client.get("/api/irrigation/regions/averages?level=county")
 
     assert response.status_code == 200
@@ -431,7 +485,9 @@ def test_get_irrigation_region_averages_returns_legend_and_averages():
         assert "label" in item
 
 
-def test_get_irrigation_region_averages_legend_has_six_stops():
+def test_get_irrigation_region_averages_legend_has_six_stops(
+    precomputed_irrigation_series,
+):
     response = client.get("/api/irrigation/regions/averages?level=county")
 
     assert response.status_code == 200
