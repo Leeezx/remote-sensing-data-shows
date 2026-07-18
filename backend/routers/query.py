@@ -26,12 +26,26 @@ from backend.external_rasters import (
 from backend.irrigation_time import irrigation_time_to_path
 from backend.irrigation_legend import valid_irrigation_mask
 from backend.raster_rendering import valid_data_mask
-from backend.runtime_config import RASTER_ROOT
+from backend.runtime_config import MAX_AREA_QUERY_PIXELS, RASTER_ROOT
 from backend.ssm_time import ssm_time_to_cog_path
 
 router = APIRouter(tags=["query"])
 
 SSM_AREA_CHUNK_ROWS = 512
+
+
+def _enforce_area_pixel_limit(
+    row_min: int, row_max: int, col_min: int, col_max: int
+) -> None:
+    pixels = max(0, row_max - row_min) * max(0, col_max - col_min)
+    if pixels > MAX_AREA_QUERY_PIXELS:
+        raise HTTPException(
+            status_code=status.HTTP_413_CONTENT_TOO_LARGE,
+            detail={
+                "code": "query_window_too_large",
+                "maxPixels": MAX_AREA_QUERY_PIXELS,
+            },
+        )
 
 
 def _ssm_time_to_cog_path(time: str) -> Path:
@@ -184,6 +198,7 @@ def _query_area_SSM(layer: dict, time: str, west: float, south: float, east: flo
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail="Area is outside the raster extent",
                 )
+            _enforce_area_pixel_limit(row_min, row_max, col_min, col_max)
             count = 0
             total = 0.0
             minimum = None
@@ -330,6 +345,7 @@ def _query_area_external(
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail="Area is outside the raster extent",
                 )
+            _enforce_area_pixel_limit(row_min, row_max, col_min, col_max)
             count = 0
             total = 0.0
             minimum = None
@@ -431,6 +447,7 @@ def _query_area_irrigation(
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail="Area is outside the raster extent",
                 )
+            _enforce_area_pixel_limit(row_min, row_max, col_min, col_max)
             window = ((row_min, row_max), (col_min, col_max))
             data = src.read(1, window=window)
             source_mask = src.read_masks(1, window=window)

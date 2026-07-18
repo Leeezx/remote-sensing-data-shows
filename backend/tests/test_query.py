@@ -70,6 +70,70 @@ def patch_ssm_raster(monkeypatch, tmp_path, data, nodata=None, source_mask=None)
     return raster
 
 
+def assert_query_window_too_large(exc_info):
+    assert exc_info.value.status_code == 413
+    assert exc_info.value.detail == {
+        "code": "query_window_too_large",
+        "maxPixels": 4,
+    }
+
+
+def test_area_pixel_limit_returns_stable_413(monkeypatch):
+    monkeypatch.setattr(query, "MAX_AREA_QUERY_PIXELS", 4)
+    with pytest.raises(HTTPException) as exc_info:
+        query._enforce_area_pixel_limit(0, 3, 0, 2)
+    assert_query_window_too_large(exc_info)
+
+
+def test_ssm_oversized_area_fails_before_raster_read(monkeypatch, tmp_path):
+    raster = patch_ssm_raster(monkeypatch, tmp_path, np.ones((3, 2)))
+    monkeypatch.setattr(query, "MAX_AREA_QUERY_PIXELS", 4)
+    with pytest.raises(HTTPException) as exc_info:
+        query._query_area_SSM({"id": "ssm"}, "2025_01", 0, 0, 1, 1)
+    assert_query_window_too_large(exc_info)
+    assert raster.read_windows == []
+
+
+def test_external_oversized_area_fails_before_raster_read(monkeypatch, tmp_path):
+    raster_path = tmp_path / "external.tif"
+    raster_path.touch()
+    raster = FakeRaster(np.ones((3, 2)))
+    monkeypatch.setattr(
+        query,
+        "_validated_external_source",
+        lambda _layer_id, _time: query.RasterSource(path=raster_path, band=1),
+    )
+    monkeypatch.setattr(query.rasterio, "open", lambda _path: raster)
+    monkeypatch.setattr(query, "MAX_AREA_QUERY_PIXELS", 4)
+
+    with pytest.raises(HTTPException) as exc_info:
+        query._query_area_external("et", "2025-01-01", 0, 0, 1, 1)
+
+    assert_query_window_too_large(exc_info)
+    assert raster.read_windows == []
+
+
+def test_irrigation_oversized_area_fails_before_raster_read(monkeypatch, tmp_path):
+    raster_path = tmp_path / "irrigation.tif"
+    raster_path.touch()
+    raster = FakeRaster(np.ones((3, 2)))
+    monkeypatch.setattr(
+        query,
+        "_validated_irrigation_raster_path",
+        lambda _time: raster_path,
+    )
+    monkeypatch.setattr(query.rasterio, "open", lambda _path: raster)
+    monkeypatch.setattr(query, "MAX_AREA_QUERY_PIXELS", 4)
+
+    with pytest.raises(HTTPException) as exc_info:
+        query._query_area_irrigation(
+            {"id": "irrigation_water"}, "2025", 0, 0, 1, 1
+        )
+
+    assert_query_window_too_large(exc_info)
+    assert raster.read_windows == []
+
+
 @pytest.mark.parametrize("value", [np.nan, -999.0])
 def test_ssm_point_query_rejects_invalid_values(monkeypatch, tmp_path, value):
     patch_ssm_raster(monkeypatch, tmp_path, [[value]])
