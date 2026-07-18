@@ -26,19 +26,17 @@ from backend.external_rasters import (
 from backend.irrigation_time import irrigation_time_to_path
 from backend.irrigation_legend import valid_irrigation_mask
 from backend.raster_rendering import valid_data_mask
+from backend.runtime_config import RASTER_ROOT
 from backend.ssm_time import ssm_time_to_cog_path
 
 router = APIRouter(tags=["query"])
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 SSM_AREA_CHUNK_ROWS = 512
 
 
 def _ssm_time_to_cog_path(time: str) -> Path:
     """Resolve a validated SSM time beneath the fixed raster root."""
-    return ssm_time_to_cog_path(
-        PROJECT_ROOT / "data" / "rasters" / "ssm", time
-    )
+    return ssm_time_to_cog_path(RASTER_ROOT / "ssm", time)
 
 
 def _validated_ssm_cog_path(time: str) -> Path:

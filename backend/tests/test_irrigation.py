@@ -25,16 +25,16 @@ def test_get_irrigation_layer_metadata():
     assert data["timeRange"]["step"] == "annual"
 
 
-def test_get_irrigation_times_for_annual_and_8day_rasters():
+def test_get_irrigation_times_for_annual_and_8day_rasters(monkeypatch, tmp_path):
+    monkeypatch.setattr(data_loader, "IRRIGATION_ANNUAL_ROOT", tmp_path / "annual")
+    monkeypatch.setattr(data_loader, "IRRIGATION_8DAY_ROOT", tmp_path / "8day")
     annual = client.get("/api/irrigation/times?resolution=annual")
     monthly = client.get("/api/irrigation/times?resolution=month")
 
     assert annual.status_code == 200
-    assert "2004" in annual.json()
-    assert "2024" in annual.json()
-    assert "2010" in annual.json()
+    assert annual.json() == ["2021", "2022", "2023"]
     assert monthly.status_code == 200
-    assert monthly.json()[0].startswith("2010-")
+    assert monthly.json()[0].startswith("2023-")
 
 
 def test_get_irrigation_legend_uses_time_specific_raster(monkeypatch, tmp_path):
@@ -269,23 +269,21 @@ def test_irrigation_region_catalog_contains_both_supported_levels():
 
 
 def test_irrigation_region_series_reuses_cached_json(monkeypatch, tmp_path):
-    stats_dir = tmp_path / "data" / "stats"
-    stats_dir.mkdir(parents=True)
-    source_path = stats_dir / "irrigation_region_series.json"
+    source_path = tmp_path / "irrigation_region_series.json"
     source_path.write_text('{"version": 1}', encoding="utf-8")
-    monkeypatch.setattr(data_loader, "PROJECT_ROOT", tmp_path)
+    monkeypatch.setattr(data_loader, "IRRIGATION_REGION_SERIES_PATH", source_path)
     monkeypatch.setattr(data_loader, "_IRRIGATION_REGION_SERIES_CACHE", None)
     monkeypatch.setattr(data_loader, "_IRRIGATION_REGION_SERIES_SIGNATURE", None)
 
-    original_load_json = data_loader._load_json
+    original_load_json = data_loader.json.load
     calls = 0
 
-    def count_loads(relative_path):
+    def count_loads(handle):
         nonlocal calls
         calls += 1
-        return original_load_json(relative_path)
+        return original_load_json(handle)
 
-    monkeypatch.setattr(data_loader, "_load_json", count_loads)
+    monkeypatch.setattr(data_loader.json, "load", count_loads)
 
     first = data_loader.get_irrigation_region_series()
     second = data_loader.get_irrigation_region_series()
@@ -296,11 +294,9 @@ def test_irrigation_region_series_reuses_cached_json(monkeypatch, tmp_path):
 
 
 def test_irrigation_region_series_refreshes_when_file_changes(monkeypatch, tmp_path):
-    stats_dir = tmp_path / "data" / "stats"
-    stats_dir.mkdir(parents=True)
-    source_path = stats_dir / "irrigation_region_series.json"
+    source_path = tmp_path / "irrigation_region_series.json"
     source_path.write_text('{"version": 1}', encoding="utf-8")
-    monkeypatch.setattr(data_loader, "PROJECT_ROOT", tmp_path)
+    monkeypatch.setattr(data_loader, "IRRIGATION_REGION_SERIES_PATH", source_path)
     monkeypatch.setattr(data_loader, "_IRRIGATION_REGION_SERIES_CACHE", None)
     monkeypatch.setattr(data_loader, "_IRRIGATION_REGION_SERIES_SIGNATURE", None)
 

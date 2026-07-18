@@ -105,7 +105,7 @@ def test_get_ssm_legend_returns_dynamic_legend_with_exact_arguments(monkeypatch,
     ]
     dynamic_legend = [{"value": 0.12, "color": "#010203", "label": "0.120 m³/m³"}]
     calls = []
-    monkeypatch.setattr(layers_router, "PROJECT_ROOT", tmp_path, raising=False)
+    monkeypatch.setattr(layers_router, "RASTER_ROOT", tmp_path / "data" / "rasters")
     monkeypatch.setattr(
         layers_router,
         "get_layer",
@@ -137,7 +137,7 @@ def test_get_ssm_legend_returns_dynamic_legend_with_exact_arguments(monkeypatch,
 
 def test_get_ssm_legend_rejects_invalid_time_without_computation(monkeypatch, tmp_path):
     calls = []
-    monkeypatch.setattr(layers_router, "PROJECT_ROOT", tmp_path, raising=False)
+    monkeypatch.setattr(layers_router, "RASTER_ROOT", tmp_path / "data" / "rasters")
     monkeypatch.setattr(
         layers_router,
         "get_dynamic_legend",
@@ -154,7 +154,7 @@ def test_get_ssm_legend_rejects_invalid_time_without_computation(monkeypatch, tm
 
 def test_get_ssm_legend_reports_missing_cog_without_computation(monkeypatch, tmp_path):
     calls = []
-    monkeypatch.setattr(layers_router, "PROJECT_ROOT", tmp_path, raising=False)
+    monkeypatch.setattr(layers_router, "RASTER_ROOT", tmp_path / "data" / "rasters")
     monkeypatch.setattr(
         layers_router,
         "get_dynamic_legend",
@@ -175,7 +175,7 @@ def test_get_ssm_legend_reports_missing_metadata_without_computation(
     monkeypatch, tmp_path
 ):
     calls = []
-    monkeypatch.setattr(layers_router, "PROJECT_ROOT", tmp_path, raising=False)
+    monkeypatch.setattr(layers_router, "RASTER_ROOT", tmp_path / "data" / "rasters")
     monkeypatch.setattr(layers_router, "get_layer", lambda _layer_id: None)
     monkeypatch.setattr(
         layers_router,
@@ -195,7 +195,7 @@ def test_get_ssm_legend_rejects_invalid_time_before_missing_metadata(
     monkeypatch, tmp_path
 ):
     metadata_calls = []
-    monkeypatch.setattr(layers_router, "PROJECT_ROOT", tmp_path)
+    monkeypatch.setattr(layers_router, "RASTER_ROOT", tmp_path / "data" / "rasters")
     monkeypatch.setattr(
         layers_router,
         "get_layer",

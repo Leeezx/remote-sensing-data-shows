@@ -14,6 +14,7 @@ from rasterio.enums import Resampling
 from rasterio.errors import RasterioIOError
 
 from backend.raster_rendering import valid_data_mask
+from backend.runtime_config import RASTER_ROOT
 
 
 @dataclass(frozen=True)
@@ -34,9 +35,6 @@ class RasterSource:
     band: int
 
 
-_PROJECT_RASTER_ROOT = Path(__file__).resolve().parent.parent / "data" / "rasters"
-
-
 def _external_spec(
     cog_directory: str,
     layout: str,
@@ -45,7 +43,7 @@ def _external_spec(
 ) -> ExternalRasterSpec:
     """Describe a deployable project-local COG data source."""
     return ExternalRasterSpec(
-        root=_PROJECT_RASTER_ROOT / cog_directory,
+        root=RASTER_ROOT / cog_directory,
         layout=layout,
         value_scale=value_scale,
         nodata_values=nodata_values,

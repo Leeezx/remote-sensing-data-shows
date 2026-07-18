@@ -1,7 +1,6 @@
 """Shared data loading utilities for reading JSON data files."""
 
 import json
-import os
 from pathlib import Path
 import re
 from threading import Lock
@@ -9,34 +8,19 @@ from datetime import date, timedelta
 from typing import Any
 
 from backend.external_rasters import EXTERNAL_RASTERS, discover_external_times
-
-# Project root is two levels up from this file (backend/data_loader.py -> project/)
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-IRRIGATION_ANNUAL_ROOT = Path(os.getenv("IRRIGATION_ANNUAL_ROOT", r"F:\IWU_RS_2025"))
-IRRIGATION_8DAY_ROOT = Path(
-    os.getenv(
-        "IRRIGATION_8DAY_ROOT",
-        r"F:\全国灌溉用水反演\数据2010-2013\全作物灌溉用水估计\IWU_calculate3",
-    )
-)
-IRRIGATION_ANNUAL_COG_ROOT = Path(
-    os.getenv(
-        "IRRIGATION_ANNUAL_COG_ROOT",
-        str(PROJECT_ROOT / "data" / "rasters" / "irrigation_annual"),
-    )
-)
-IRRIGATION_8DAY_COG_ROOT = Path(
-    os.getenv(
-        "IRRIGATION_8DAY_COG_ROOT",
-        str(PROJECT_ROOT / "data" / "rasters" / "irrigation_8day"),
-    )
+from backend.runtime_config import (
+    IRRIGATION_8DAY_COG_ROOT,
+    IRRIGATION_8DAY_ROOT,
+    IRRIGATION_ANNUAL_COG_ROOT,
+    IRRIGATION_ANNUAL_ROOT,
+    IRRIGATION_REGION_SERIES_PATH,
+    PROJECT_ROOT,
 )
 
 _IRRIGATION_ANNUAL_FILE = re.compile(r"^IWU_(?P<year>[0-9]{4})\.TIF$", re.IGNORECASE)
 _IRRIGATION_8DAY_FILE = re.compile(
     r"^IWU_(?P<year>[0-9]{4})_(?P<period>[0-9]{1,3})\.tif$", re.IGNORECASE
 )
-_IRRIGATION_REGION_SERIES_PATH = Path("data/stats/irrigation_region_series.json")
 _IRRIGATION_REGION_SERIES_CACHE: dict | None = None
 _IRRIGATION_REGION_SERIES_SIGNATURE: tuple[int, int] | None = None
 _IRRIGATION_REGION_SERIES_LOCK = Lock()
@@ -155,7 +139,7 @@ def get_irrigation_region_series() -> dict:
     global _IRRIGATION_REGION_SERIES_CACHE
     global _IRRIGATION_REGION_SERIES_SIGNATURE
 
-    source_path = PROJECT_ROOT / _IRRIGATION_REGION_SERIES_PATH
+    source_path = IRRIGATION_REGION_SERIES_PATH
     stat = source_path.stat()
     signature = (stat.st_mtime_ns, stat.st_size)
     if _IRRIGATION_REGION_SERIES_SIGNATURE == signature:
@@ -166,9 +150,8 @@ def get_irrigation_region_series() -> dict:
         stat = source_path.stat()
         signature = (stat.st_mtime_ns, stat.st_size)
         if _IRRIGATION_REGION_SERIES_SIGNATURE != signature:
-            _IRRIGATION_REGION_SERIES_CACHE = _load_json(
-                str(_IRRIGATION_REGION_SERIES_PATH)
-            )
+            with source_path.open("r", encoding="utf-8") as handle:
+                _IRRIGATION_REGION_SERIES_CACHE = json.load(handle)
             _IRRIGATION_REGION_SERIES_SIGNATURE = signature
         assert _IRRIGATION_REGION_SERIES_CACHE is not None
         return _IRRIGATION_REGION_SERIES_CACHE

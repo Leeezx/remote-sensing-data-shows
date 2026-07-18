@@ -2,7 +2,6 @@
 
 import json
 from typing import Literal
-from pathlib import Path
 
 from fastapi import APIRouter, HTTPException, Query, status
 from fastapi.responses import FileResponse
@@ -19,6 +18,7 @@ from backend.data_loader import (
 )
 from backend.irrigation_time import irrigation_time_to_cog_path, irrigation_time_to_path
 from backend.irrigation_legend import get_irrigation_dynamic_legend
+from backend.runtime_config import COUNTY_VECTOR_PATH, TOWNSHIP_CHUNK_ROOT
 from backend.shapefile_geojson import read_shapefile_geojson
 from backend.township_chunks import (
     MAX_TOWNSHIP_CHUNK_BYTES,
@@ -32,14 +32,6 @@ router = APIRouter(tags=["irrigation"])
 RegionLevel = Literal["county", "township"]
 SeriesPeriod = Literal["annual", "monthly"]
 RasterResolution = Literal["annual", "month"]
-COUNTY_VECTOR_PATH = Path(r"F:\矢量底图\中国_县\中国_县.shp")
-TOWNSHIP_CHUNK_ROOT = (
-    Path(__file__).resolve().parents[2]
-    / "data"
-    / "vectors"
-    / "irrigation"
-    / "township_by_county"
-)
 
 
 def _find_region(region_id: str, level: RegionLevel) -> dict | None:

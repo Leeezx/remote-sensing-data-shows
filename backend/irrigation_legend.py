@@ -8,12 +8,14 @@ import threading
 import numpy as np
 import rasterio
 
-from backend.data_loader import PROJECT_ROOT
+from backend.cache_io import atomic_write_json
 from backend.raster_rendering import valid_data_mask
+from backend.runtime_config import CACHE_ROOT, PROJECT_ROOT
 from backend.ssm_legend import build_dynamic_legend
 
 _CACHE_LOCKS = tuple(threading.Lock() for _ in range(64))
-_LEGEND_CACHE_PATH = PROJECT_ROOT / "data" / "stats" / "irrigation_legends.json"
+_LEGEND_SEED_PATH = PROJECT_ROOT / "data" / "stats" / "irrigation_legends.json"
+_LEGEND_CACHE_PATH = CACHE_ROOT / "irrigation_legends.json"
 _legend_disk_cache: dict | None = None
 
 
@@ -22,13 +24,15 @@ def _load_legend_disk_cache() -> dict:
     global _legend_disk_cache
     if _legend_disk_cache is not None:
         return _legend_disk_cache
-    if not _LEGEND_CACHE_PATH.is_file():
-        _legend_disk_cache = {}
-        return _legend_disk_cache
-    try:
-        _legend_disk_cache = json.loads(_LEGEND_CACHE_PATH.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        _legend_disk_cache = {}
+    for path in (_LEGEND_CACHE_PATH, _LEGEND_SEED_PATH):
+        if not path.is_file():
+            continue
+        try:
+            _legend_disk_cache = json.loads(path.read_text(encoding="utf-8"))
+            return _legend_disk_cache
+        except (OSError, json.JSONDecodeError):
+            continue
+    _legend_disk_cache = {}
     return _legend_disk_cache
 
 
@@ -36,11 +40,7 @@ def _save_legend_disk_cache(disk_cache: dict) -> None:
     """Write the legend cache to disk."""
     global _legend_disk_cache
     _legend_disk_cache = disk_cache
-    _LEGEND_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    _LEGEND_CACHE_PATH.write_text(
-        json.dumps(disk_cache, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    atomic_write_json(_LEGEND_CACHE_PATH, disk_cache)
 
 
 def valid_irrigation_mask(values, source_mask=None, nodata=None):

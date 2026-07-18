@@ -12,36 +12,36 @@ from rasterio.errors import WindowError
 from rasterio.features import geometry_mask, geometry_window
 from rasterio.warp import transform_geom
 
+from backend.cache_io import atomic_write_json
 from backend.data_loader import (
     IRRIGATION_8DAY_ROOT,
     IRRIGATION_ANNUAL_ROOT,
-    PROJECT_ROOT,
     get_irrigation_times,
 )
 from backend.irrigation_legend import valid_irrigation_mask
+from backend.runtime_config import CACHE_ROOT, PROJECT_ROOT
 
 
 _IRRIGATION_8DAY_FILE = re.compile(
     r"^IWU_(?P<year>[0-9]{4})_(?P<period>[0-9]{1,3})\.tif$", re.IGNORECASE
 )
-_CACHE_PATH = PROJECT_ROOT / "data" / "stats" / "irrigation_computed_series.json"
+_CACHE_SEED_PATH = PROJECT_ROOT / "data" / "stats" / "irrigation_computed_series.json"
+_CACHE_PATH = CACHE_ROOT / "irrigation_computed_series.json"
 
 
 def _read_cache() -> dict:
-    if not _CACHE_PATH.is_file():
-        return {"unit": "万m³", "county": {}, "township": {}}
-    try:
-        return json.loads(_CACHE_PATH.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return {"unit": "万m³", "county": {}, "township": {}}
+    for path in (_CACHE_PATH, _CACHE_SEED_PATH):
+        if not path.is_file():
+            continue
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+    return {"unit": "万m³", "county": {}, "township": {}}
 
 
 def _write_cache(cache: dict) -> None:
-    _CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    _CACHE_PATH.write_text(
-        json.dumps(cache, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    atomic_write_json(_CACHE_PATH, cache)
 
 
 def _sum_raster_geometry(raster_path: Path, geometry: dict) -> float:

@@ -1,7 +1,5 @@
 """Layers router — layer listing and time point retrieval."""
 
-from pathlib import Path
-
 from fastapi import APIRouter, HTTPException, status
 
 from backend.data_loader import get_layer, get_layer_times, get_layers
@@ -11,9 +9,9 @@ from backend.external_rasters import (
 )
 from backend.ssm_legend import get_dynamic_legend
 from backend.ssm_time import ssm_time_to_cog_path
+from backend.runtime_config import RASTER_ROOT
 
 router = APIRouter(tags=["layers"])
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
 
 @router.get("/layers")
@@ -26,9 +24,7 @@ def list_layers():
 def ssm_legend(time: str):
     """Return the data-driven SSM legend for one strict time value."""
     try:
-        cog_path = ssm_time_to_cog_path(
-            PROJECT_ROOT / "data" / "rasters" / "ssm", time
-        )
+        cog_path = ssm_time_to_cog_path(RASTER_ROOT / "ssm", time)
     except ValueError as exc:
         raise HTTPException(
             status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,

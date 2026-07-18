@@ -27,6 +27,7 @@ from backend.external_rasters import (
 from backend.irrigation_time import irrigation_time_to_cog_path, irrigation_time_to_path
 from backend.irrigation_legend import get_irrigation_dynamic_legend, valid_irrigation_mask
 from backend.raster_rendering import colorize, render_png
+from backend.runtime_config import PROJECT_ROOT, RASTER_ROOT
 from backend.ssm_legend import get_dynamic_legend
 from backend.ssm_time import ssm_time_to_cog_path
 
@@ -45,9 +46,6 @@ cog_tiler = cog.router
 # Maps human-readable time strings (8day dates, monthly, period index) to COG paths,
 # then renders the tile locally with the layer metadata palette.
 # Frontend uses: /data/ssm-tiles/{tileMatrixSetId}/{z}/{x}/{y}.png?time=2010-02-02
-
-# Project root is two levels up from routers/tiles.py → backend/routers/ → project/
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
 # Small transparent PNG (1×1 pixel) returned for out-of-bounds or missing tiles
 TRANSPARENT_PNG = (
@@ -101,9 +99,7 @@ def ssm_tile_proxy(
             ),
         )
     try:
-        cog_path = ssm_time_to_cog_path(
-            PROJECT_ROOT / "data" / "rasters" / "ssm", time
-        )
+        cog_path = ssm_time_to_cog_path(RASTER_ROOT / "ssm", time)
     except ValueError as exc:
         raise HTTPException(
             status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
