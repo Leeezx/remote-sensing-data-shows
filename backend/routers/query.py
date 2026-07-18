@@ -40,7 +40,7 @@ def _enforce_area_pixel_limit(
     pixels = max(0, row_max - row_min) * max(0, col_max - col_min)
     if pixels > MAX_AREA_QUERY_PIXELS:
         raise HTTPException(
-            status_code=status.HTTP_413_CONTENT_TOO_LARGE,
+            status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
             detail={
                 "code": "query_window_too_large",
                 "maxPixels": MAX_AREA_QUERY_PIXELS,
@@ -58,7 +58,7 @@ def _validated_ssm_cog_path(time: str) -> Path:
         return _ssm_time_to_cog_path(time)
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
 
@@ -72,7 +72,7 @@ def _validated_irrigation_raster_path(time: str) -> Path:
         )
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
     if not raster_path.is_file():
@@ -244,7 +244,7 @@ def _validated_external_source(layer_id: str, time: str) -> RasterSource:
         return resolve_external_raster(layer_id, time)
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
     except FileNotFoundError as exc:

@@ -54,7 +54,7 @@ def irrigation_times(resolution: RasterResolution = Query(default="annual")):
         return get_irrigation_times(resolution)
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
 
@@ -73,7 +73,7 @@ def irrigation_legend(time: str):
 
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
     if not raster_path.is_file():
@@ -141,7 +141,7 @@ def township_vector_geojson(countyId: str = Query(...)):
         chunk_path = township_chunk_path(TOWNSHIP_CHUNK_ROOT, countyId)
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
     if not chunk_path.is_file():
@@ -188,14 +188,14 @@ def irrigation_region_averages(
     from backend.irrigation_stats import get_irrigation_region_averages
     if level == "township" and countyId is None:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail="countyId is required for township averages",
         )
     try:
         return get_irrigation_region_averages(level, county_id=countyId)
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
 

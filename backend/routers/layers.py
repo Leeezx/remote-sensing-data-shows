@@ -27,7 +27,7 @@ def ssm_legend(time: str):
         cog_path = ssm_time_to_cog_path(RASTER_ROOT / "ssm", time)
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
     layer = get_layer("ssm")
@@ -72,7 +72,7 @@ def et_legend(time: str):
         source = resolve_external_raster("et", time)
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
     except FileNotFoundError as exc:

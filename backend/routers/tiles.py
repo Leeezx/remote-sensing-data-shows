@@ -103,7 +103,7 @@ def ssm_tile_proxy(
         cog_path = ssm_time_to_cog_path(RASTER_ROOT / "ssm", time)
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
     cog_name = cog_path.name
@@ -185,7 +185,7 @@ def external_raster_tile(
         source = resolve_external_raster(layer_id, time)
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
     except FileNotFoundError as exc:
@@ -259,7 +259,7 @@ def irrigation_tile_proxy(
         )
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
     if not raster_path.is_file():
