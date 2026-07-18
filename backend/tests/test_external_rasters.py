@@ -190,4 +190,7 @@ def test_external_tile_route_renders_matching_band(monkeypatch, tmp_path):
 
     assert response.status_code == 200
     assert response.headers["content-type"] == "image/png"
+    assert response.headers["cache-control"] == (
+        "public, max-age=604800, immutable"
+    )
     assert response.content.startswith(b"\x89PNG")
