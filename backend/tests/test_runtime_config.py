@@ -21,3 +21,9 @@ def test_positive_int_env_rejects_zero_and_non_numeric(monkeypatch):
 def test_runtime_paths_are_absolute(monkeypatch, tmp_path):
     monkeypatch.setenv("CACHE_ROOT", str(tmp_path / "cache"))
     assert runtime_config.path_env("CACHE_ROOT", Path("unused")).is_absolute()
+
+
+def test_runtime_path_rejects_empty_value(monkeypatch):
+    monkeypatch.setenv("CACHE_ROOT", "   ")
+    with pytest.raises(RuntimeError, match="CACHE_ROOT"):
+        runtime_config.path_env("CACHE_ROOT", Path("unused"))

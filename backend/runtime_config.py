@@ -10,7 +10,12 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 
 def path_env(name: str, default: Path) -> Path:
-    return Path(os.getenv(name, str(default))).expanduser().resolve()
+    raw = os.getenv(name)
+    if raw is None:
+        raw = str(default)
+    if not raw.strip():
+        raise RuntimeError(f"{name} must not be empty")
+    return Path(raw).expanduser().resolve()
 
 
 def positive_int_env(name: str, default: int) -> int:

@@ -94,6 +94,18 @@ def test_ssm_oversized_area_fails_before_raster_read(monkeypatch, tmp_path):
     assert raster.read_windows == []
 
 
+def test_area_at_pixel_limit_proceeds(monkeypatch, tmp_path):
+    raster = patch_ssm_raster(monkeypatch, tmp_path, np.ones((2, 2)))
+    monkeypatch.setattr(query, "MAX_AREA_QUERY_PIXELS", 4)
+
+    result = query._query_area_SSM(
+        {"id": "ssm"}, "2025_01", 0, 0, 1, 1
+    )
+
+    assert result == {"mean": 1.0, "max": 1.0, "min": 1.0, "count": 4}
+    assert raster.read_windows == [((0, 2), (0, 2))]
+
+
 def test_external_oversized_area_fails_before_raster_read(monkeypatch, tmp_path):
     raster_path = tmp_path / "external.tif"
     raster_path.touch()

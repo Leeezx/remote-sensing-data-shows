@@ -1,5 +1,7 @@
 import json
 
+import pytest
+
 from backend import readiness
 
 
@@ -46,3 +48,40 @@ def test_readiness_uses_identifiers_not_host_paths(monkeypatch, tmp_path):
     failures = readiness.collect_readiness_failures()
     assert failures == ["irrigation_region_series"]
     assert str(tmp_path) not in json.dumps(failures)
+
+
+def test_malformed_series_json_is_not_ready(monkeypatch, tmp_path):
+    install_complete_runtime(monkeypatch, tmp_path)
+    readiness.IRRIGATION_REGION_SERIES_PATH.write_text("{", encoding="utf-8")
+
+    assert readiness.collect_readiness_failures() == [
+        "irrigation_region_series"
+    ]
+
+
+@pytest.mark.parametrize(
+    ("dependency", "remove_dependency"),
+    [
+        ("county_vector", lambda: readiness.COUNTY_VECTOR_PATH.unlink()),
+        (
+            "township_chunks",
+            lambda: (readiness.TOWNSHIP_CHUNK_ROOT / "manifest.json").unlink(),
+        ),
+    ],
+)
+def test_missing_vector_dependency_is_reported(
+    monkeypatch, tmp_path, dependency, remove_dependency
+):
+    install_complete_runtime(monkeypatch, tmp_path)
+    remove_dependency()
+
+    assert readiness.collect_readiness_failures() == [dependency]
+
+
+def test_missing_raster_root_is_reported(monkeypatch, tmp_path):
+    install_complete_runtime(monkeypatch, tmp_path)
+    raster_roots = readiness.required_raster_roots()
+    missing_identifier, missing_root = raster_roots[0]
+    (missing_root / "sample.tif").unlink()
+
+    assert readiness.collect_readiness_failures() == [missing_identifier]
