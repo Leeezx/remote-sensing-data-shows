@@ -18,6 +18,19 @@ def test_only_caddy_publishes_host_ports():
     assert "ports" not in services["backend"]
 
 
+def test_edge_healthcheck_does_not_depend_on_the_site_hostname():
+    edge = compose()["services"]["edge"]
+    assert edge["healthcheck"]["test"] == [
+        "CMD",
+        "caddy",
+        "validate",
+        "--config",
+        "/etc/caddy/Caddyfile",
+        "--adapter",
+        "caddyfile",
+    ]
+
+
 def test_backend_runtime_mounts_and_defaults_are_safe():
     backend = compose()["services"]["backend"]
     volumes = backend["volumes"]
@@ -57,6 +70,8 @@ def test_proxy_contract_contains_limits_cache_and_internal_port():
     assert "proxy_cache_valid 200 7d" in nginx
     assert "location = /api/query/area" in nginx
     assert "real_ip_header X-Forwarded-For" in nginx
+    assert "proxy_set_header X-Forwarded-Proto $http_x_forwarded_proto" in nginx
+    assert "proxy_set_header X-Forwarded-Proto $scheme" not in nginx
 
 
 def test_runtime_images_are_versioned_and_unprivileged():
