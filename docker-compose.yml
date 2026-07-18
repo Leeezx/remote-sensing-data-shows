@@ -1,87 +1,123 @@
-# ===== Docker Compose — 遥感数据展示平台 =====
-#
-# 快速启动:
-#   1. 复制 .env.example 为 .env 并修改配置
-#   2. 确保 data/rasters/ 下有 COG 栅格数据
-#   3. docker compose up -d --build
-#   4. 访问 http://<服务器IP>
-
 services:
-  # ===== Backend: FastAPI + TiTiler =====
-  backend:
-    build:
-      context: .
-      dockerfile: Dockerfile.backend
-    container_name: rs-backend
+  edge:
+    image: caddy:2.10-alpine
     restart: unless-stopped
     ports:
-      - "127.0.0.1:8000:8000"   # 仅本地回环暴露，通过 nginx 代理访问
-    volumes:
-      # 栅格数据（45GB+ COG 文件，不需要打包进镜像）
-      - ./data/rasters:/app/data/rasters:ro
-      # 矢量数据（shapefile/GeoJSON）
-      - ./data/vectors:/app/data/vectors:ro
+      - "80:80"
+      - "443:443"
     environment:
-      # ---- 安全配置 ----
-      - SECRET_KEY=${SECRET_KEY:-}
-      # ---- CORS ----
-      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost}
-      # ---- 灌溉数据源路径（用于扫描可用时间）----
-      # 如果源栅格也在 data/rasters/ 下，可以设为:
-      #   IRRIGATION_ANNUAL_ROOT=/app/data/rasters/irrigation_annual_source
-      #   IRRIGATION_8DAY_ROOT=/app/data/rasters/irrigation_8day_source
-      - IRRIGATION_ANNUAL_ROOT=${IRRIGATION_ANNUAL_ROOT:-/app/data/rasters/irrigation_annual}
-      - IRRIGATION_8DAY_ROOT=${IRRIGATION_8DAY_ROOT:-/app/data/rasters/irrigation_8day}
-      # ---- COG 瓦片数据路径 ----
-      - IRRIGATION_ANNUAL_COG_ROOT=${IRRIGATION_ANNUAL_COG_ROOT:-/app/data/rasters/irrigation_annual}
-      - IRRIGATION_8DAY_COG_ROOT=${IRRIGATION_8DAY_COG_ROOT:-/app/data/rasters/irrigation_8day}
-      # ---- GDAL 配置 ----
-      - GDAL_DISABLE_READDIR_ON_OPEN=EMPTY_DIR
-      - GDAL_CACHEMAX=${GDAL_CACHEMAX:-512}
-      - CPL_VSIL_CURL_ALLOWED_EXTENSIONS=.tif
+      SITE_ADDRESS: ${SITE_ADDRESS:-:80}
+    volumes:
+      - type: bind
+        source: ./Caddyfile
+        target: /etc/caddy/Caddyfile
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: volume
+        source: caddy_data
+        target: /data
+      - type: volume
+        source: caddy_config
+        target: /config
+    depends_on:
+      frontend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
     logging:
-      driver: "json-file"
+      driver: json-file
       options:
-        max-size: "50m"
+        max-size: 20m
         max-file: "3"
 
-  # ===== Frontend: Nginx + React SPA =====
   frontend:
     build:
       context: .
       dockerfile: Dockerfile.frontend
-    container_name: rs-frontend
     restart: unless-stopped
-    ports:
-      - "80:80"
+    expose:
+      - "8080"
     depends_on:
       backend:
         condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8080/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
     logging:
-      driver: "json-file"
+      driver: json-file
       options:
-        max-size: "20m"
+        max-size: 20m
         max-file: "3"
 
-  # ===== 可选: HTTPS 证书自动续期 =====
-  # 使用前请:
-  #   1. 取消下方注释
-  #   2. 将 your-domain.com 替换为实际域名
-  #   3. 将 frontend ports 改为 "80:80"（certbot 需要 80 端口验证）
-  #   4. 运行: docker compose up -d
-  #   5. 首次获取证书:
-  #      docker compose run --rm certbot certonly --webroot -w /var/www/certbot \
-  #        -d your-domain.com --email your-email@example.com --agree-tos --non-interactive
-  #   6. 将 frontend ports 改为以下映射:
-  #      - "80:80"
-  #      - "443:443"
-  #   7. 取消 nginx.conf 中 SSL 相关配置注释
-  #   8. 重新部署: docker compose up -d --build
-  #
-  # certbot:
-  #   image: certbot/certbot:latest
-  #   container_name: rs-certbot
-  #   volumes:
-  #     - ./certbot/conf:/etc/letsencrypt
-  #     - ./certbot/www:/var/www/certbot
-  #   entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew --quiet; sleep 12h & wait $${!}; done'"
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    restart: unless-stopped
+    expose:
+      - "8000"
+    volumes:
+      - type: bind
+        source: ./data/rasters
+        target: /app/data/rasters
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./data/vectors
+        target: /app/data/vectors
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./data/stats
+        target: /app/runtime-data/stats
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: volume
+        source: backend_cache
+        target: /app/cache
+    environment:
+      RASTER_ROOT: /app/data/rasters
+      IRRIGATION_ANNUAL_ROOT: /app/data/rasters/irrigation_annual
+      IRRIGATION_8DAY_ROOT: /app/data/rasters/irrigation_8day
+      IRRIGATION_ANNUAL_COG_ROOT: /app/data/rasters/irrigation_annual
+      IRRIGATION_8DAY_COG_ROOT: /app/data/rasters/irrigation_8day
+      IRRIGATION_REGION_SERIES_PATH: /app/runtime-data/stats/irrigation_region_series.json
+      COUNTY_VECTOR_PATH: /app/data/vectors/irrigation/county/china_county.shp
+      TOWNSHIP_CHUNK_ROOT: /app/data/vectors/irrigation/township_by_county
+      CACHE_ROOT: /app/cache
+      UVICORN_WORKERS: ${UVICORN_WORKERS:-1}
+      GDAL_CACHEMAX: ${GDAL_CACHEMAX:-256}
+      MAX_AREA_QUERY_PIXELS: ${MAX_AREA_QUERY_PIXELS:-4000000}
+      ENABLE_API_DOCS: ${ENABLE_API_DOCS:-false}
+      CORS_ORIGINS: ${CORS_ORIGINS:-}
+      GDAL_DISABLE_READDIR_ON_OPEN: EMPTY_DIR
+      CPL_VSIL_CURL_ALLOWED_EXTENSIONS: .tif,.tiff
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - import urllib.request; urllib.request.urlopen('http://localhost:8000/api/ready', timeout=4)
+      interval: 30s
+      timeout: 5s
+      start_period: 120s
+      retries: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: 50m
+        max-file: "3"
+
+volumes:
+  backend_cache:
+  caddy_data:
+  caddy_config:
