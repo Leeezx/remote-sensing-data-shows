@@ -78,6 +78,7 @@ function isNotFoundError(error: unknown): boolean {
 type SelectedAdminRegion = {
   id: string
   name: string
+
   level: IrrigationRegionLevel
 }
 
@@ -158,6 +159,7 @@ export default function IrrigationPage() {
   const [opacity, setOpacity] = useState(0.72)
   const [rasterResolution, setRasterResolution] =
     useState<IrrigationRasterResolution>('annual')
+
   const [times, setTimes] = useState<string[]>([])
   const [currentTime, setCurrentTime] = useState('')
   const [legendState, setLegendState] = useState<{
@@ -238,6 +240,7 @@ export default function IrrigationPage() {
         if (requestId === townshipRequestIdRef.current) setTownshipLegendStatus('error')
       }
     } catch (error) {
+
       if (requestId !== townshipRequestIdRef.current) return
       const message = isTownshipVectorNotFound(error)
         ? '该县暂无乡镇矢量'
@@ -318,6 +321,7 @@ export default function IrrigationPage() {
       setTownshipVector(null)
       setTownshipCounty(null)
       setSelectedRegion(null)
+
       return
     }
 
@@ -398,6 +402,7 @@ export default function IrrigationPage() {
           setSeriesError(isNotFoundError(error) ? '暂无统计数据' : '行政区灌溉用水统计暂不可用')
         }
       })
+
     return () => {
       cancelled = true
     }
@@ -478,6 +483,7 @@ export default function IrrigationPage() {
 
   const setNextTime = useCallback(() => {
     if (activeIndex < times.length - 1) setCurrentTime(times[activeIndex + 1])
+
   }, [activeIndex, times])
 
   return (
@@ -558,6 +564,7 @@ export default function IrrigationPage() {
               县级统计
             </button>
             <button
+
               className={`btn btn-sm ${regionLevel === 'township' ? 'btn-primary' : ''}`}
               onClick={() => toggleAdminMode('township')}
             >
@@ -638,6 +645,7 @@ export default function IrrigationPage() {
                 : regionLevel
                   ? '等待地图选择'
                   : '未开启行政区统计'}</p>
+
         </section>
         {seriesError ? (
           <div className="loading error">{seriesError}</div>

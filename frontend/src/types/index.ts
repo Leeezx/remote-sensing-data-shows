@@ -10,6 +10,7 @@ export interface Layer {
   timeRange: { start: string; end: string; step: string }
   tileTemplate: string
   legend: LegendItem[]
+  exportable?: boolean
 }
 
 export interface LegendItem {
@@ -129,15 +130,3 @@ export type MapQueryState =
   | { status: 'error'; kind: 'point' | 'area'; message: string }
   | { status: 'point'; result: PointQueryResult }
   | { status: 'area'; result: AreaQueryResult }
-
-// ===== Auth =====
-
-export interface User {
-  username: string
-  role: 'viewer' | 'researcher'
-}
-
-export interface LoginResponse {
-  access_token: string
-  user: User
-}

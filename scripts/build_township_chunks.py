@@ -78,6 +78,7 @@ def _validated_polygon_part(
     polygon,
     *,
     allow_degenerate_part: bool,
+
 ) -> list[Ring]:
     """Validate one polygon while retaining its exterior-ring role."""
     if not isinstance(polygon, (list, tuple)) or not polygon:
@@ -160,6 +161,7 @@ def point_in_geometry(point: Point, geometry: dict) -> bool:
     return inside
 
 
+
 def _signed_ring_area(ring: Ring) -> float:
     return 0.5 * sum(
         start[0] * end[1] - end[0] * start[1]
@@ -238,6 +240,7 @@ class TownshipAlignmentError(ValueError):
         township_id: str,
         name: str,
         point: Point | None,
+
         candidates: list[str],
     ):
         super().__init__(f"{reason}: {township_id} {name}")
@@ -318,6 +321,7 @@ class CountySpatialIndex:
             ) from exc
         try:
             point = representative_point(feature.get("geometry", {}))
+
         except (TypeError, ValueError) as exc:
             raise TownshipAlignmentError(
                 "invalid_geometry", township_id, name, None, [],
@@ -398,6 +402,7 @@ def simplify_ring(ring: list[list[float]], tolerance: float) -> list[list[float]
     simplified = first_half[:-1] + second_half
     if simplified[0] != simplified[-1]:
         simplified.append(simplified[0])
+
     return simplified if len(simplified) >= 4 else ring
 
 
@@ -478,6 +483,7 @@ def validate_exclusions(exclusions: dict[str, str] | None) -> dict[str, str]:
         if not normalized_reason:
             raise ValueError("Every excluded township id needs a non-empty reason")
         result[normalized_id] = normalized_reason
+
     return result
 
 
@@ -558,6 +564,7 @@ def build_chunks(
         "excluded": 0,
         "unmatched": 0,
         "ambiguous": 0,
+
         "invalidGeometry": 0,
         "invalidTownshipId": 0,
         "missingSeries": 0,
@@ -638,6 +645,7 @@ def build_chunks(
                 "alignment": alignment_counts,
                 "issues": issues,
             }
+
             _audit_path(output).write_text(
                 json.dumps(audit, ensure_ascii=False, indent=2),
                 encoding="utf-8",
@@ -718,6 +726,7 @@ def main() -> None:
     parser.add_argument("--exclude-file", type=Path)
     parser.add_argument("--tolerance", type=float, default=0.0005)
     parser.add_argument("--max-bytes", type=int, default=MAX_TOWNSHIP_CHUNK_BYTES)
+
     parser.add_argument("--max-features", type=int, default=MAX_TOWNSHIP_FEATURES)
     parser.add_argument("--force", action="store_true")
     args = parser.parse_args()

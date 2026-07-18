@@ -1,10 +1,9 @@
-import axios, { AxiosError } from 'axios'
+import axios from 'axios'
 import type {
   Layer,
   PointQueryResult,
   AreaQueryRequest,
   AreaQueryResult,
-  LoginResponse,
   LayerLegendResponse,
   IrrigationRasterResolution,
   IrrigationRegion,
@@ -20,27 +19,6 @@ const client = axios.create({
   baseURL: '/api',
   headers: { 'Content-Type': 'application/json' },
 })
-
-// Attach JWT token to every request if present
-client.interceptors.request.use((config) => {
-  const token = localStorage.getItem('access_token')
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`
-  }
-  return config
-})
-
-// On 401, clear stored token
-client.interceptors.response.use(
-  (res) => res,
-  (error: AxiosError) => {
-    if (error.response?.status === 401) {
-      localStorage.removeItem('access_token')
-      localStorage.removeItem('user')
-    }
-    return Promise.reject(error)
-  },
-)
 
 // ===== Layers =====
 
@@ -169,32 +147,5 @@ export async function queryArea(
   body: AreaQueryRequest,
 ): Promise<AreaQueryResult> {
   const { data } = await client.post('/query/area', body)
-  return data
-}
-
-// ===== Export =====
-
-export function getExportCsvUrl(
-  layerId: string,
-  start?: string,
-  end?: string,
-): string {
-  const params = new URLSearchParams({ layerId })
-  if (start) params.set('start', start)
-  if (end) params.set('end', end)
-  // Include token in URL for download links (Authorization header is not sent on
-  // <a> clicks / window.open)
-  const token = localStorage.getItem('access_token')
-  if (token) params.set('token', token)
-  return `/api/export/csv?${params.toString()}`
-}
-
-// ===== Auth =====
-
-export async function login(
-  username: string,
-  password: string,
-): Promise<LoginResponse> {
-  const { data } = await client.post('/auth/login', { username, password })
   return data
 }

@@ -78,6 +78,7 @@ function TileOverlay({
     }
   }, [opacity])
 
+
   return null
 }
 
@@ -159,6 +160,7 @@ function MapEvents({
     mouseup: finishDrawing,
   })
 
+
   return null
 }
 
@@ -237,6 +239,7 @@ function RegionOverlay({
       map.off('zoomend', handler)
     }
   }, [map, regionLevel])
+
 
   // Batch-create or remove tooltips when showLabels changes
   useEffect(() => {
@@ -318,6 +321,7 @@ function RegionOverlay({
       weight: selected ? 2.6 : (currentHasColorMap ? 1.0 : 1.2),
       fillColor: selected ? '#f59e0b' : (fillFromMap ?? '#60a5fa'),
       fillOpacity: selected ? 0.4 : (currentHasColorMap ? 0.65 : 0.035),
+
     }
   }
 
@@ -398,6 +402,7 @@ export default function MapView({
   regionVector = null,
   selectedRegionId = null,
   onRegionSelect,
+
   disableQuery = false,
   hideRaster = false,
   regionColorMap = null,
@@ -478,6 +483,7 @@ export default function MapView({
 
         <Pane name="county-regions" style={{ zIndex: 410 }}>
           <RegionOverlay
+
             pane="county-regions"
             data={regionVector}
             selectedRegionId={selectedRegionId}

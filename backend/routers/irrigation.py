@@ -2,7 +2,6 @@
 
 import json
 from typing import Literal
-from pathlib import Path
 
 from fastapi import APIRouter, HTTPException, Query, status
 from fastapi.responses import FileResponse
@@ -19,6 +18,7 @@ from backend.data_loader import (
 )
 from backend.irrigation_time import irrigation_time_to_cog_path, irrigation_time_to_path
 from backend.irrigation_legend import get_irrigation_dynamic_legend
+from backend.runtime_config import COUNTY_VECTOR_PATH, TOWNSHIP_CHUNK_ROOT
 from backend.shapefile_geojson import read_shapefile_geojson
 from backend.township_chunks import (
     MAX_TOWNSHIP_CHUNK_BYTES,
@@ -32,14 +32,6 @@ router = APIRouter(tags=["irrigation"])
 RegionLevel = Literal["county", "township"]
 SeriesPeriod = Literal["annual", "monthly"]
 RasterResolution = Literal["annual", "month"]
-COUNTY_VECTOR_PATH = Path(r"F:\矢量底图\中国_县\中国_县.shp")
-TOWNSHIP_CHUNK_ROOT = (
-    Path(__file__).resolve().parents[2]
-    / "data"
-    / "vectors"
-    / "irrigation"
-    / "township_by_county"
-)
 
 
 def _find_region(region_id: str, level: RegionLevel) -> dict | None:
@@ -62,7 +54,7 @@ def irrigation_times(resolution: RasterResolution = Query(default="annual")):
         return get_irrigation_times(resolution)
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
 
@@ -78,9 +70,10 @@ def irrigation_legend(time: str):
             IRRIGATION_8DAY_COG_ROOT,
             time,
         )
+
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
     if not raster_path.is_file():
@@ -148,7 +141,7 @@ def township_vector_geojson(countyId: str = Query(...)):
         chunk_path = township_chunk_path(TOWNSHIP_CHUNK_ROOT, countyId)
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
     if not chunk_path.is_file():
@@ -158,6 +151,7 @@ def township_vector_geojson(countyId: str = Query(...)):
                 "code": "township_vector_not_found",
                 "message": "该县暂无乡镇矢量",
                 "countyId": countyId,
+
             },
         )
     chunk_bytes = chunk_path.stat().st_size
@@ -194,14 +188,14 @@ def irrigation_region_averages(
     from backend.irrigation_stats import get_irrigation_region_averages
     if level == "township" and countyId is None:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail="countyId is required for township averages",
         )
     try:
         return get_irrigation_region_averages(level, county_id=countyId)
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
 
@@ -238,6 +232,7 @@ def irrigation_series(
     if not isinstance(series, list):
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
+
             detail=(
                 f"Irrigation {period} series for {level} region "
                 f"'{regionId}' was not found in precomputed irrigation statistics"

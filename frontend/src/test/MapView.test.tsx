@@ -78,6 +78,7 @@ vi.mock('leaflet', () => ({
     latLngBounds: () => leafletMocks.bounds,
     DomEvent: { stopPropagation: vi.fn() },
   },
+
 }))
 
 vi.mock('react-leaflet', () => ({
@@ -158,6 +159,7 @@ const mockedQueryArea = vi.mocked(queryArea)
 const baseProps = {
   layers: [],
   activeLayerId: 'ndvi',
+
   opacity: 1,
   currentTime: '2025-06',
 }
@@ -239,6 +241,7 @@ describe('MapView interactions', () => {
     })
     expect(mapMocks.dragging.disable).not.toHaveBeenCalled()
 
+
     act(() => {
       mapMocks.handlers!.mousedown?.({
         originalEvent: { shiftKey: true },
@@ -318,6 +321,7 @@ describe('MapView interactions', () => {
     expect(leafletMocks.tileLayer).toHaveBeenCalledOnce()
     const url = leafletMocks.tileLayer.mock.calls[0][0]
     expect(url).toContain('/data/ssm-tiles/WebMercatorQuad/{z}/{x}/{y}.png?')
+
     expect(url).toContain('time=2025-06')
     expect(url).not.toContain('colormap_name')
     expect(url).not.toContain('rescale')
@@ -398,6 +402,7 @@ describe('MapView interactions', () => {
         regionLevel="county"
         onRegionSelect={vi.fn()}
         detailRegionVector={township}
+
         detailRegionLevel="township"
         onDetailRegionSelect={vi.fn()}
       />,
@@ -478,6 +483,7 @@ describe('MapView interactions', () => {
       fillColor: '#f59e0b',
     }))
   })
+
 
   it('dispatches an existing county layer click through the latest callback', () => {
     const county = vectorFixture('county_a', '示范县A')

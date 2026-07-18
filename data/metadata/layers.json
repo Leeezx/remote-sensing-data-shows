@@ -1,91 +1,127 @@
 [
   {
-    "id": "ndvi",
-    "name": "NDVI",
-    "description": "Normalized Difference Vegetation Index — measures vegetation greenness and health",
-    "type": "vegetation",
-    "unit": "index",
-    "range": { "min": 0.0, "max": 1.0 },
-    "timeRange": { "start": "2025-01", "end": "2025-12", "step": "month" },
-    "tileTemplate": "data/tiles/ndvi/{time}/{z}/{x}/{y}.png",
-    "legend": [
-      { "value": 0.0, "color": "#d73027", "label": "bare (0.0)" },
-      { "value": 0.2, "color": "#fc8d59", "label": "sparse (0.2)" },
-      { "value": 0.4, "color": "#fee08b", "label": "moderate (0.4)" },
-      { "value": 0.6, "color": "#91cf60", "label": "dense (0.6)" },
-      { "value": 0.8, "color": "#1a9850", "label": "lush (0.8+)" }
-    ]
-  },
-  {
-    "id": "precipitation",
-    "name": "Precipitation",
-    "description": "Monthly total precipitation / rainfall",
-    "type": "climate",
-    "unit": "mm",
-    "range": { "min": 0.0, "max": 500.0 },
-    "timeRange": { "start": "2025-01", "end": "2025-12", "step": "month" },
-    "tileTemplate": "data/tiles/precipitation/{time}/{z}/{x}/{y}.png",
-    "legend": [
-      { "value": 0, "color": "#8c510a", "label": "dry (0 mm)" },
-      { "value": 100, "color": "#dfc27d", "label": "moderate (100 mm)" },
-      { "value": 200, "color": "#f6e8c3", "label": "light (200 mm)" },
-      { "value": 300, "color": "#80cdc1", "label": "wet (300 mm)" },
-      { "value": 400, "color": "#35978f", "label": "very wet (400 mm)" },
-      { "value": 500, "color": "#01665e", "label": "extreme (500 mm)" }
-    ]
-  },
-  {
-    "id": "soil_moisture",
-    "name": "Soil Moisture",
-    "description": "Volumetric soil water content at surface layer",
-    "type": "soil",
-    "unit": "%",
-    "range": { "min": 0.0, "max": 100.0 },
-    "timeRange": { "start": "2025-01", "end": "2025-12", "step": "month" },
-    "tileTemplate": "data/tiles/soil_moisture/{time}/{z}/{x}/{y}.png",
-    "legend": [
-      { "value": 0, "color": "#d53e4f", "label": "arid (0%)" },
-      { "value": 20, "color": "#fc8d59", "label": "dry (20%)" },
-      { "value": 40, "color": "#fee08b", "label": "moderate (40%)" },
-      { "value": 60, "color": "#99d594", "label": "moist (60%)" },
-      { "value": 80, "color": "#3288bd", "label": "wet (80%)" },
-      { "value": 100, "color": "#016c59", "label": "saturated (100%)" }
-    ]
-  },
-  {
-    "id": "lst",
-    "name": "Land Surface Temperature",
-    "description": "Daytime land surface temperature from thermal infrared",
-    "type": "temperature",
-    "unit": "°C",
-    "range": { "min": -20.0, "max": 50.0 },
-    "timeRange": { "start": "2025-01", "end": "2025-12", "step": "month" },
-    "tileTemplate": "data/tiles/lst/{time}/{z}/{x}/{y}.png",
-    "legend": [
-      { "value": -20, "color": "#313695", "label": "cold (-20°C)" },
-      { "value": 0, "color": "#74add1", "label": "cool (0°C)" },
-      { "value": 15, "color": "#fee090", "label": "mild (15°C)" },
-      { "value": 30, "color": "#fdae61", "label": "warm (30°C)" },
-      { "value": 40, "color": "#f46d43", "label": "hot (40°C)" },
-      { "value": 50, "color": "#a50026", "label": "extreme (50°C)" }
-    ]
-  },
-  {
     "id": "ssm",
     "name": "表层土壤水分",
     "description": "Surface Soil Moisture (0-5cm) from SSM prediction model, 8-day composite, 2010-2013",
     "type": "soil",
     "unit": "m³/m³",
     "range": { "min": 0.0, "max": 0.5 },
-    "timeRange": { "start": "2010-01", "end": "2013-12", "step": "month" },
+    "timeRange": { "start": "2010-02-02", "end": "2013-12-27", "step": "8day" },
     "tileTemplate": "data/tiles/ssm/{time}/{z}/{x}/{y}.png",
+    "nodataColor": "#e8e8e8",
+    "nodataOpacity": 0.5,
     "legend": [
-      { "value": 0.09, "color": "#d53e4f", "label": "dry (0.09)" },
-      { "value": 0.15, "color": "#fc8d59", "label": "low (0.15)" },
-      { "value": 0.22, "color": "#fee08b", "label": "moderate (0.22)" },
-      { "value": 0.28, "color": "#99d594", "label": "moist (0.28)" },
-      { "value": 0.35, "color": "#3288bd", "label": "wet (0.35)" },
-      { "value": 0.40, "color": "#016c59", "label": "saturated (0.40)" }
+      { "value": 0.09, "color": "#d53e4f", "label": "干旱 (0.09)" },
+      { "value": 0.15, "color": "#fc8d59", "label": "偏干 (0.15)" },
+      { "value": 0.22, "color": "#fee08b", "label": "适中 (0.22)" },
+      { "value": 0.28, "color": "#99d594", "label": "湿润 (0.28)" },
+      { "value": 0.35, "color": "#3288bd", "label": "较湿 (0.35)" },
+      { "value": 0.40, "color": "#016c59", "label": "饱和 (0.40)" }
+    ]
+  },
+  {
+    "id": "et",
+    "name": "蒸散发",
+    "description": "500m ET data with one annual GeoTIFF per year and one band per 8-day period",
+    "type": "evapotranspiration",
+    "exportable": false,
+    "unit": "mm/8天",
+    "range": { "min": 0.0, "max": 100.0 },
+    "timeRange": { "start": "2010-01-01", "end": "2013-12-27", "step": "8day" },
+    "tileTemplate": "/data/raster-tiles/et/WebMercatorQuad/{z}/{x}/{y}.png?time={time}",
+    "nodataColor": "#e8e8e8",
+    "nodataOpacity": 0.5,
+    "legend": [
+      { "value": 0, "color": "#d53e4f", "label": "低" },
+      { "value": 20, "color": "#fc8d59", "label": "较低" },
+      { "value": 40, "color": "#fee08b", "label": "中等" },
+      { "value": 60, "color": "#99d594", "label": "较高" },
+      { "value": 80, "color": "#3288bd", "label": "高" },
+      { "value": 100, "color": "#016c59", "label": "很高" }
+    ]
+  },
+  {
+    "id": "sm_10cm",
+    "name": "土壤水分-10cm",
+    "description": "500m soil moisture at 10cm depth, one GeoTIFF per 8-day period",
+    "type": "soil",
+    "exportable": false,
+    "unit": "m³/m³",
+    "range": { "min": 0.0, "max": 0.5 },
+    "timeRange": { "start": "2010-01-01", "end": "2013-12-27", "step": "8day" },
+    "tileTemplate": "/data/raster-tiles/sm_10cm/WebMercatorQuad/{z}/{x}/{y}.png?time={time}",
+    "nodataColor": "#e8e8e8",
+    "nodataOpacity": 0.5,
+    "legend": [
+      { "value": 0.09, "color": "#d53e4f", "label": "干旱 (0.09)" },
+      { "value": 0.15, "color": "#fc8d59", "label": "偏干 (0.15)" },
+      { "value": 0.22, "color": "#fee08b", "label": "适中 (0.22)" },
+      { "value": 0.28, "color": "#99d594", "label": "湿润 (0.28)" },
+      { "value": 0.35, "color": "#3288bd", "label": "较湿 (0.35)" },
+      { "value": 0.40, "color": "#016c59", "label": "饱和 (0.40)" }
+    ]
+  },
+  {
+    "id": "sm_30cm",
+    "name": "土壤水分-30cm",
+    "description": "500m soil moisture at 30cm depth, one GeoTIFF per 8-day period",
+    "type": "soil",
+    "exportable": false,
+    "unit": "m³/m³",
+    "range": { "min": 0.0, "max": 0.5 },
+    "timeRange": { "start": "2010-01-01", "end": "2013-12-27", "step": "8day" },
+    "tileTemplate": "/data/raster-tiles/sm_30cm/WebMercatorQuad/{z}/{x}/{y}.png?time={time}",
+    "nodataColor": "#e8e8e8",
+    "nodataOpacity": 0.5,
+    "legend": [
+      { "value": 0.09, "color": "#d53e4f", "label": "干旱 (0.09)" },
+      { "value": 0.15, "color": "#fc8d59", "label": "偏干 (0.15)" },
+      { "value": 0.22, "color": "#fee08b", "label": "适中 (0.22)" },
+      { "value": 0.28, "color": "#99d594", "label": "湿润 (0.28)" },
+      { "value": 0.35, "color": "#3288bd", "label": "较湿 (0.35)" },
+      { "value": 0.40, "color": "#016c59", "label": "饱和 (0.40)" }
+    ]
+  },
+  {
+    "id": "sm_60cm",
+    "name": "土壤水分-60cm",
+    "description": "500m soil moisture at 60cm depth, one GeoTIFF per 8-day period",
+    "type": "soil",
+    "exportable": false,
+    "unit": "m³/m³",
+    "range": { "min": 0.0, "max": 0.5 },
+    "timeRange": { "start": "2010-01-01", "end": "2013-12-27", "step": "8day" },
+    "tileTemplate": "/data/raster-tiles/sm_60cm/WebMercatorQuad/{z}/{x}/{y}.png?time={time}",
+    "nodataColor": "#e8e8e8",
+    "nodataOpacity": 0.5,
+    "legend": [
+      { "value": 0.09, "color": "#d53e4f", "label": "干旱 (0.09)" },
+      { "value": 0.15, "color": "#fc8d59", "label": "偏干 (0.15)" },
+      { "value": 0.22, "color": "#fee08b", "label": "适中 (0.22)" },
+      { "value": 0.28, "color": "#99d594", "label": "湿润 (0.28)" },
+      { "value": 0.35, "color": "#3288bd", "label": "较湿 (0.35)" },
+      { "value": 0.40, "color": "#016c59", "label": "饱和 (0.40)" }
+    ]
+  },
+  {
+    "id": "sm_100cm",
+    "name": "土壤水分-100cm",
+    "description": "500m soil moisture at 100cm depth, one GeoTIFF per 8-day period",
+    "type": "soil",
+    "exportable": false,
+    "unit": "m³/m³",
+    "range": { "min": 0.0, "max": 0.5 },
+    "timeRange": { "start": "2010-01-01", "end": "2013-12-27", "step": "8day" },
+    "tileTemplate": "/data/raster-tiles/sm_100cm/WebMercatorQuad/{z}/{x}/{y}.png?time={time}",
+    "nodataColor": "#e8e8e8",
+    "nodataOpacity": 0.5,
+    "legend": [
+      { "value": 0.09, "color": "#d53e4f", "label": "干旱 (0.09)" },
+      { "value": 0.15, "color": "#fc8d59", "label": "偏干 (0.15)" },
+      { "value": 0.22, "color": "#fee08b", "label": "适中 (0.22)" },
+      { "value": 0.28, "color": "#99d594", "label": "湿润 (0.28)" },
+      { "value": 0.35, "color": "#3288bd", "label": "较湿 (0.35)" },
+      { "value": 0.40, "color": "#016c59", "label": "饱和 (0.40)" }
     ]
   }
 ]

@@ -1,13 +1,11 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { AuthProvider } from './contexts/AuthContext'
 import { getLayerLegend, getLayers, getLayerTimes } from './services/api'
 import type { Layer, LegendItem, LegendStatus } from './types'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import MapView from './components/MapView'
 import Legend from './components/Legend'
-import ExportPanel from './components/ExportPanel'
 import IrrigationPage from './pages/IrrigationPage'
 import PlaceholderPage from './pages/PlaceholderPage'
 import './App.css'
@@ -38,8 +36,12 @@ function MainPage() {
   const playIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
   const activeLayer = layers.find((layer) => layer.id === activeLayerId) ?? null
-  const legendKey = activeLayer?.id === 'ssm' && currentTime
-    ? `${activeLayer.id}:${currentTime}`
+  const dynamicLayerId = activeLayer?.id === 'ssm' || activeLayer?.id === 'et'
+    ? activeLayer.id
+    : null
+  const hasDynamicLegend = dynamicLayerId !== null
+  const legendKey = dynamicLayerId && currentTime
+    ? `${dynamicLayerId}:${currentTime}`
     : null
   const [dynamicLegend, setDynamicLegend] = useState<DynamicLegendState>({
     key: null,
@@ -105,9 +107,9 @@ function MainPage() {
     }
   }, [activeLayerId, timeResolution])
 
-  // SSM thresholds depend on the selected acquisition time.
+  // SSM and ET thresholds depend on the selected acquisition time.
   useEffect(() => {
-    if (activeLayerId !== 'ssm') {
+    if (!dynamicLayerId) {
       setDynamicLegend({ key: null, status: 'ready', items: [] })
       return
     }
@@ -120,7 +122,7 @@ function MainPage() {
     let cancelled = false
     setDynamicLegend({ key: legendKey, status: 'loading', items: [] })
 
-    getLayerLegend(activeLayerId, currentTime)
+    getLayerLegend(dynamicLayerId, currentTime)
       .then((data) => {
         if (!cancelled) {
           setDynamicLegend({ key: legendKey, status: 'ready', items: data.legend })
@@ -135,7 +137,7 @@ function MainPage() {
     return () => {
       cancelled = true
     }
-  }, [activeLayerId, currentTime, legendKey])
+  }, [dynamicLayerId, currentTime, legendKey])
 
   // Play/pause animation
   useEffect(() => {
@@ -177,10 +179,10 @@ function MainPage() {
     setIsPlaying((p) => !p)
   }, [])
 
-  const legendItems = activeLayer?.id === 'ssm'
+  const legendItems = hasDynamicLegend
     ? dynamicLegend.key === legendKey ? dynamicLegend.items : []
     : activeLayer?.legend ?? []
-  const legendStatus: LegendStatus = activeLayer?.id === 'ssm'
+  const legendStatus: LegendStatus = hasDynamicLegend
     ? dynamicLegend.key === legendKey ? dynamicLegend.status : 'loading'
     : 'ready'
 
@@ -200,12 +202,6 @@ function MainPage() {
             onTimeResolutionChange={handleTimeResolutionChange}
             isPlaying={isPlaying}
             onPlayToggle={handlePlayToggle}
-          />
-          <ExportPanel
-            activeLayerId={activeLayerId}
-            startTime={times.length > 0 ? times[0] : '2025-01'}
-            endTime={times.length > 0 ? times[times.length - 1] : '2025-12'}
-            hasData={activeLayerId !== null && times.length > 0}
           />
         </div>
 
@@ -242,27 +238,25 @@ function MainPage() {
 
 function App() {
   return (
-    <AuthProvider>
-      <BrowserRouter>
-        <div className="app">
-          <Header />
-          <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/base" element={<MainPage />} />
-            <Route path="/irrigation" element={<IrrigationPage />} />
-            <Route
-              path="/reclamation"
-              element={<PlaceholderPage title="复耕潜力评估" />}
-            />
-            <Route
-              path="/water-demand"
-              element={<PlaceholderPage title="需水补水计算与评估" />}
-            />
-            <Route path="*" element={<MainPage />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </AuthProvider>
+    <BrowserRouter>
+      <div className="app">
+        <Header />
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/base" element={<MainPage />} />
+          <Route path="/irrigation" element={<IrrigationPage />} />
+          <Route
+            path="/reclamation"
+            element={<PlaceholderPage title="复耕潜力评估" />}
+          />
+          <Route
+            path="/water-demand"
+            element={<PlaceholderPage title="需水补水计算与评估" />}
+          />
+          <Route path="*" element={<MainPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   )
 }
 

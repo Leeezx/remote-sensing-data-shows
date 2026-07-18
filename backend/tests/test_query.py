@@ -70,6 +70,82 @@ def patch_ssm_raster(monkeypatch, tmp_path, data, nodata=None, source_mask=None)
     return raster
 
 
+def assert_query_window_too_large(exc_info):
+    assert exc_info.value.status_code == 413
+    assert exc_info.value.detail == {
+        "code": "query_window_too_large",
+        "maxPixels": 4,
+    }
+
+
+def test_area_pixel_limit_returns_stable_413(monkeypatch):
+    monkeypatch.setattr(query, "MAX_AREA_QUERY_PIXELS", 4)
+    with pytest.raises(HTTPException) as exc_info:
+        query._enforce_area_pixel_limit(0, 3, 0, 2)
+    assert_query_window_too_large(exc_info)
+
+
+def test_ssm_oversized_area_fails_before_raster_read(monkeypatch, tmp_path):
+    raster = patch_ssm_raster(monkeypatch, tmp_path, np.ones((3, 2)))
+    monkeypatch.setattr(query, "MAX_AREA_QUERY_PIXELS", 4)
+    with pytest.raises(HTTPException) as exc_info:
+        query._query_area_SSM({"id": "ssm"}, "2025_01", 0, 0, 1, 1)
+    assert_query_window_too_large(exc_info)
+    assert raster.read_windows == []
+
+
+def test_area_at_pixel_limit_proceeds(monkeypatch, tmp_path):
+    raster = patch_ssm_raster(monkeypatch, tmp_path, np.ones((2, 2)))
+    monkeypatch.setattr(query, "MAX_AREA_QUERY_PIXELS", 4)
+
+    result = query._query_area_SSM(
+        {"id": "ssm"}, "2025_01", 0, 0, 1, 1
+    )
+
+    assert result == {"mean": 1.0, "max": 1.0, "min": 1.0, "count": 4}
+    assert raster.read_windows == [((0, 2), (0, 2))]
+
+
+def test_external_oversized_area_fails_before_raster_read(monkeypatch, tmp_path):
+    raster_path = tmp_path / "external.tif"
+    raster_path.touch()
+    raster = FakeRaster(np.ones((3, 2)))
+    monkeypatch.setattr(
+        query,
+        "_validated_external_source",
+        lambda _layer_id, _time: query.RasterSource(path=raster_path, band=1),
+    )
+    monkeypatch.setattr(query.rasterio, "open", lambda _path: raster)
+    monkeypatch.setattr(query, "MAX_AREA_QUERY_PIXELS", 4)
+
+    with pytest.raises(HTTPException) as exc_info:
+        query._query_area_external("et", "2025-01-01", 0, 0, 1, 1)
+
+    assert_query_window_too_large(exc_info)
+    assert raster.read_windows == []
+
+
+def test_irrigation_oversized_area_fails_before_raster_read(monkeypatch, tmp_path):
+    raster_path = tmp_path / "irrigation.tif"
+    raster_path.touch()
+    raster = FakeRaster(np.ones((3, 2)))
+    monkeypatch.setattr(
+        query,
+        "_validated_irrigation_raster_path",
+        lambda _time: raster_path,
+    )
+    monkeypatch.setattr(query.rasterio, "open", lambda _path: raster)
+    monkeypatch.setattr(query, "MAX_AREA_QUERY_PIXELS", 4)
+
+    with pytest.raises(HTTPException) as exc_info:
+        query._query_area_irrigation(
+            {"id": "irrigation_water"}, "2025", 0, 0, 1, 1
+        )
+
+    assert_query_window_too_large(exc_info)
+    assert raster.read_windows == []
+
+
 @pytest.mark.parametrize("value", [np.nan, -999.0])
 def test_ssm_point_query_rejects_invalid_values(monkeypatch, tmp_path, value):
     patch_ssm_raster(monkeypatch, tmp_path, [[value]])
@@ -340,19 +416,12 @@ def test_ssm_area_route_rejects_invalid_time_without_opening_raster(
     assert calls == []
 
 
-def test_point_query_ndvi():
-    """Point query at known coordinates returns a value."""
-    # Coordinates in North China Plain region
+def test_point_query_removed_layer_returns_404():
+    """Point queries cannot use removed example layers."""
     response = client.get(
         "/api/query/point?layerId=ndvi&time=2025-01&lng=116.4&lat=39.9"
     )
-    assert response.status_code == 200
-    data = response.json()
-    assert data["layerId"] == "ndvi"
-    assert data["time"] == "2025-01"
-    assert "value" in data
-    assert "unit" in data
-    assert isinstance(data["value"], (int, float))
+    assert response.status_code == 404
 
 
 def test_point_query_missing_params():
@@ -371,7 +440,7 @@ def test_point_query_no_data():
 
 
 def test_area_query_rectangle():
-    """Area query with a valid rectangle returns statistics."""
+    """Area queries cannot use removed example layers."""
     response = client.post(
         "/api/query/area",
         json={
@@ -391,10 +460,7 @@ def test_area_query_rectangle():
             },
         },
     )
-    assert response.status_code == 200
-    data = response.json()
-    for field in ["mean", "max", "min", "count"]:
-        assert field in data, f"Missing field: {field}"
+    assert response.status_code == 404
 
 
 def test_area_query_unknown_region():

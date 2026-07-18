@@ -45,9 +45,19 @@ htmlcov/
 .codegraph/
 .agents/
 
+# Codex runtime/planning artifacts
+.codex-runtime/
+.planning/
+test_tile*.png
+
 # Intermediate processing
 temp_ssm/
 
 # Large data files (local only)
 data/rasters/
 data/tiles/
+data/vectors/irrigation/township_by_county/
+data/stats/*.checkpoint
+
+# Generated deployment data (uploaded separately)
+data/stats/irrigation_region_series.json

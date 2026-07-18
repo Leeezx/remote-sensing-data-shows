@@ -1,15 +1,17 @@
 """Layers router — layer listing and time point retrieval."""
 
-from pathlib import Path
-
 from fastapi import APIRouter, HTTPException, status
 
 from backend.data_loader import get_layer, get_layer_times, get_layers
+from backend.external_rasters import (
+    get_external_dynamic_legend,
+    resolve_external_raster,
+)
 from backend.ssm_legend import get_dynamic_legend
 from backend.ssm_time import ssm_time_to_cog_path
+from backend.runtime_config import RASTER_ROOT
 
 router = APIRouter(tags=["layers"])
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
 
 @router.get("/layers")
@@ -22,12 +24,10 @@ def list_layers():
 def ssm_legend(time: str):
     """Return the data-driven SSM legend for one strict time value."""
     try:
-        cog_path = ssm_time_to_cog_path(
-            PROJECT_ROOT / "data" / "rasters" / "ssm", time
-        )
+        cog_path = ssm_time_to_cog_path(RASTER_ROOT / "ssm", time)
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
     layer = get_layer("ssm")
@@ -53,6 +53,39 @@ def ssm_legend(time: str):
         "time": time,
         "unit": unit,
         "legend": get_dynamic_legend(cog_path, base_legend, unit),
+    }
+
+
+@router.get("/layers/et/legend")
+def et_legend(time: str):
+    """Return ET's per-time six-class legend in its displayed mm/8-day unit."""
+    layer = get_layer("et")
+    if layer is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="ET layer metadata is missing",
+        )
+    base_legend = layer.get("legend")
+    if not base_legend:
+        raise RuntimeError("ET layer legend is missing or empty")
+    try:
+        source = resolve_external_raster("et", time)
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail=str(exc),
+        ) from exc
+    except FileNotFoundError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=str(exc),
+        ) from exc
+    unit = layer.get("unit") or ""
+    return {
+        "layerId": "et",
+        "time": time,
+        "unit": unit,
+        "legend": get_external_dynamic_legend("et", source, base_legend, unit),
     }
 
 

@@ -220,7 +220,7 @@ def test_ssm_tile_route_renders_existing_cog_without_titiler_parameters(monkeypa
     cog_path.touch()
     rendered = b"\x89PNG\r\n\x1a\nrendered"
     calls = []
-    monkeypatch.setattr(tiles, "PROJECT_ROOT", tmp_path)
+    monkeypatch.setattr(tiles, "RASTER_ROOT", tmp_path / "data" / "rasters")
     monkeypatch.setattr(
         tiles,
         "_render_ssm_tile",
@@ -231,8 +231,37 @@ def test_ssm_tile_route_renders_existing_cog_without_titiler_parameters(monkeypa
 
     assert response.status_code == 200
     assert response.headers["content-type"] == "image/png"
+    assert response.headers["cache-control"] == (
+        "public, max-age=604800, immutable"
+    )
     assert response.content == rendered
     assert calls == [(cog_path, 3, 4, 5)]
+
+
+def test_irrigation_tile_route_uses_long_lived_cache_header(monkeypatch, tmp_path):
+    raster_path = tmp_path / "IWU_2024.TIF"
+    raster_path.touch()
+    rendered = b"\x89PNG\r\n\x1a\nirrigation"
+    monkeypatch.setattr(
+        tiles,
+        "irrigation_time_to_cog_path",
+        lambda *_args: raster_path,
+    )
+    monkeypatch.setattr(
+        tiles,
+        "_render_irrigation_tile",
+        lambda *_args, **_kwargs: rendered,
+    )
+
+    response = client.get(
+        "/data/irrigation-tiles/WebMercatorQuad/5/3/4.png?time=2024"
+    )
+
+    assert response.status_code == 200
+    assert response.headers["cache-control"] == (
+        "public, max-age=604800, immutable"
+    )
+    assert response.content == rendered
 
 
 def test_render_irrigation_tile_uses_dynamic_legend_and_mask(monkeypatch, tmp_path):
@@ -295,7 +324,7 @@ def test_ssm_tile_route_rejects_unsupported_tile_matrix_set_without_rendering(
     cog_path.parent.mkdir(parents=True)
     cog_path.touch()
     calls = []
-    monkeypatch.setattr(tiles, "PROJECT_ROOT", tmp_path)
+    monkeypatch.setattr(tiles, "RASTER_ROOT", tmp_path / "data" / "rasters")
     monkeypatch.setattr(
         tiles,
         "_render_ssm_tile",
@@ -315,7 +344,7 @@ def test_ssm_tile_route_returns_transparent_png_outside_bounds(monkeypatch, tmp_
     cog_path = tmp_path / "data" / "rasters" / "ssm" / "2010_01_cog.tif"
     cog_path.parent.mkdir(parents=True)
     cog_path.touch()
-    monkeypatch.setattr(tiles, "PROJECT_ROOT", tmp_path)
+    monkeypatch.setattr(tiles, "RASTER_ROOT", tmp_path / "data" / "rasters")
 
     def outside_bounds(*_args):
         raise TileOutsideBounds("outside raster bounds")
@@ -326,11 +355,14 @@ def test_ssm_tile_route_returns_transparent_png_outside_bounds(monkeypatch, tmp_
 
     assert response.status_code == 200
     assert response.headers["content-type"] == "image/png"
+    assert response.headers["cache-control"] == (
+        "public, max-age=604800, immutable"
+    )
     assert response.content == tiles.TRANSPARENT_PNG
 
 
 def test_ssm_tile_route_reports_missing_cog(monkeypatch, tmp_path):
-    monkeypatch.setattr(tiles, "PROJECT_ROOT", tmp_path)
+    monkeypatch.setattr(tiles, "RASTER_ROOT", tmp_path / "data" / "rasters")
 
     response = client.get("/data/ssm-tiles/WebMercatorQuad/5/3/4.png?time=2010_01")
 
@@ -356,7 +388,7 @@ def test_ssm_tile_route_rejects_invalid_time_without_rendering(
     monkeypatch, tmp_path, time
 ):
     calls = []
-    monkeypatch.setattr(tiles, "PROJECT_ROOT", tmp_path)
+    monkeypatch.setattr(tiles, "RASTER_ROOT", tmp_path / "data" / "rasters")
     monkeypatch.setattr(
         tiles, "_render_ssm_tile", lambda *_args: calls.append(_args)
     )

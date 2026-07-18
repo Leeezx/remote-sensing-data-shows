@@ -1,0 +1,130 @@
+services:
+  edge:
+    image: caddy:2.10-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      SITE_ADDRESS: ${SITE_ADDRESS:-:80}
+    volumes:
+      - type: bind
+        source: ./Caddyfile
+        target: /etc/caddy/Caddyfile
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: volume
+        source: caddy_data
+        target: /data
+      - type: volume
+        source: caddy_config
+        target: /config
+    depends_on:
+      frontend:
+        condition: service_healthy
+    healthcheck:
+      test:
+        - CMD
+        - caddy
+        - validate
+        - --config
+        - /etc/caddy/Caddyfile
+        - --adapter
+        - caddyfile
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: 20m
+        max-file: "3"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    restart: unless-stopped
+    expose:
+      - "8080"
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8080/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: 20m
+        max-file: "3"
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    restart: unless-stopped
+    expose:
+      - "8000"
+    volumes:
+      - type: bind
+        source: ./data/rasters
+        target: /app/data/rasters
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./data/vectors
+        target: /app/data/vectors
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: bind
+        source: ./data/stats
+        target: /app/runtime-data/stats
+        read_only: true
+        bind:
+          create_host_path: false
+      - type: volume
+        source: backend_cache
+        target: /app/cache
+    environment:
+      RASTER_ROOT: /app/data/rasters
+      IRRIGATION_ANNUAL_ROOT: /app/data/rasters/irrigation_annual
+      IRRIGATION_8DAY_ROOT: /app/data/rasters/irrigation_8day
+      IRRIGATION_ANNUAL_COG_ROOT: /app/data/rasters/irrigation_annual
+      IRRIGATION_8DAY_COG_ROOT: /app/data/rasters/irrigation_8day
+      IRRIGATION_REGION_SERIES_PATH: /app/runtime-data/stats/irrigation_region_series.json
+      COUNTY_VECTOR_PATH: /app/data/vectors/irrigation/county/china_county.shp
+      TOWNSHIP_CHUNK_ROOT: /app/data/vectors/irrigation/township_by_county
+      CACHE_ROOT: /app/cache
+      UVICORN_WORKERS: ${UVICORN_WORKERS:-1}
+      GDAL_CACHEMAX: ${GDAL_CACHEMAX:-256}
+      MAX_AREA_QUERY_PIXELS: ${MAX_AREA_QUERY_PIXELS:-4000000}
+      ENABLE_API_DOCS: ${ENABLE_API_DOCS:-false}
+      CORS_ORIGINS: ${CORS_ORIGINS:-}
+      GDAL_DISABLE_READDIR_ON_OPEN: EMPTY_DIR
+      CPL_VSIL_CURL_ALLOWED_EXTENSIONS: .tif,.tiff
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - import urllib.request; urllib.request.urlopen('http://localhost:8000/api/ready', timeout=4)
+      interval: 30s
+      timeout: 5s
+      start_period: 120s
+      retries: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: 50m
+        max-file: "3"
+
+volumes:
+  backend_cache:
+  caddy_data:
+  caddy_config:

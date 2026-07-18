@@ -109,6 +109,8 @@ def iter_shapefile_geojson_features(shp_path: Path):
         if geometry is None:
             continue
         properties = records[record_index] if record_index < len(records) else {}
+        # Case-insensitive field lookup: GIS data uses different casings (name/Name/NAME, gb/GB/code/CODE)
+        props_lower = {k.lower(): v for k, v in properties.items()}
         region_name = (
             properties.get("name")
             or properties.get("NAME")
@@ -118,8 +120,8 @@ def iter_shapefile_geojson_features(shp_path: Path):
         region_id = (
             properties.get("gb")
             or properties.get("GB")
-            or properties.get("code")
-            or properties.get("Code")
+            or props_lower.get("code")
+            or props_lower.get("id")
             or str(record_index + 1)
         )
         yield {

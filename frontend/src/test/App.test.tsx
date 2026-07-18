@@ -32,8 +32,6 @@ vi.mock('../services/api', () => ({
   ...apiMocks,
   queryPoint: vi.fn(),
   queryArea: vi.fn(),
-  getExportCsvUrl: vi.fn(() => '/api/export/csv'),
-  login: vi.fn(),
   getIrrigationRegionAverages: apiMocks.getIrrigationRegionAverages,
 }))
 
@@ -78,6 +76,7 @@ vi.mock('../components/MapView', () => ({
           选择示范镇A1
         </button>
       </div>
+
     )
   },
 }))
@@ -158,6 +157,7 @@ function vectorFixture(
       },
       geometry: {
         type: 'Polygon',
+
         coordinates: [[[100, 30], [101, 30], [101, 31], [100, 30]]],
       },
     }],
@@ -238,6 +238,7 @@ describe('App', () => {
       (level: 'county' | 'township', _regionId: string, period: 'annual' | 'monthly') => (
         Promise.resolve(irrigationSeries(
           level === 'county' ? countyRegions[0] : townshipRegions[0],
+
           period,
         ))
       ),
@@ -317,6 +318,7 @@ describe('App', () => {
     const user = userEvent.setup()
 
     render(<App />)
+
 
     await user.click(await screen.findByRole('button', { name: '县级统计' }))
     await waitFor(() => expect(screen.getByTestId('county-layer')).toHaveTextContent('loaded'))
@@ -399,6 +401,7 @@ describe('App', () => {
       expect.any(String),
     )
 
+
     await user.click(screen.getByRole('button', { name: '选择示范镇A1' }))
     await waitFor(() => {
       expect(apiMocks.getIrrigationSeries).toHaveBeenCalledWith(
@@ -478,6 +481,7 @@ describe('App', () => {
     await user.click(screen.getByRole('button', { name: '月度' }))
 
     await waitFor(() => {
+
       expect(apiMocks.getIrrigationTimes).toHaveBeenLastCalledWith('month')
     })
     await waitFor(() => {
@@ -559,6 +563,7 @@ describe('App', () => {
     expect(screen.getByTestId('county-layer')).toHaveTextContent('loaded')
     expect(screen.getByTestId('township-layer')).toHaveTextContent('loaded')
 
+
     await waitFor(() => {
       expect(apiMocks.getIrrigationVectorGeoJSON).toHaveBeenCalledWith('township', 'county_b')
     })
@@ -638,6 +643,7 @@ describe('App', () => {
     const pendingTimes = new Promise<string[]>(() => undefined)
     apiMocks.getLayerTimes
       .mockReset()
+
       .mockResolvedValueOnce(['2025-01-01', '2025-01-09'])
       .mockReturnValueOnce(pendingTimes)
     const user = userEvent.setup()
@@ -718,6 +724,7 @@ describe('App', () => {
     await user.click(screen.getByTitle('下一个'))
 
     expect(screen.queryByText('旧动态图例')).not.toBeInTheDocument()
+
     expect(screen.getByRole('status')).toHaveTextContent('正在加载图例...')
 
     await act(async () => {
@@ -798,6 +805,7 @@ describe('App', () => {
   })
 
   it('shows admin stats controls when county statistics is enabled', async () => {
+
     window.history.pushState({}, '', '/irrigation')
     render(<App />)
 

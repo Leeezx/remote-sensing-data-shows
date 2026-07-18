@@ -3,6 +3,7 @@
 import json
 from pathlib import Path
 
+import pytest
 from fastapi.testclient import TestClient
 
 from backend.main import app
@@ -11,6 +12,49 @@ from backend.routers import irrigation as irrigation_router
 from backend.shapefile_geojson import _read_dbf_records
 
 client = TestClient(app)
+
+
+@pytest.fixture
+def precomputed_irrigation_series(monkeypatch):
+    """Provide deterministic endpoint data without the untracked runtime dataset."""
+    series_data = {
+        "unit": "万m³",
+        "county": {
+            "county_a": {
+                "name": "测试县",
+                "annual": [
+                    {"time": "2021", "value": 500.0},
+                    {"time": "2022", "value": 510.0},
+                    {"time": "2023", "value": 522.2},
+                ],
+                "monthly": [
+                    {"time": "2023-01", "value": 118.4},
+                    {"time": "2023-02", "value": 1413.8},
+                ],
+            },
+        },
+        "township": {
+            "village_a1": {
+                "name": "测试乡镇",
+                "parentId": "county_a",
+                "annual": [
+                    {"time": "2021", "value": 328.4},
+                    {"time": "2022", "value": 346.5},
+                    {"time": "2023", "value": 358.8},
+                ],
+            },
+        },
+    }
+    monkeypatch.setattr(
+        irrigation_router,
+        "get_irrigation_region_series",
+        lambda: series_data,
+    )
+    monkeypatch.setattr(
+        data_loader,
+        "get_irrigation_region_series",
+        lambda: series_data,
+    )
 
 
 def test_get_irrigation_layer_metadata():
@@ -25,16 +69,16 @@ def test_get_irrigation_layer_metadata():
     assert data["timeRange"]["step"] == "annual"
 
 
-def test_get_irrigation_times_for_annual_and_8day_rasters():
+def test_get_irrigation_times_for_annual_and_8day_rasters(monkeypatch, tmp_path):
+    monkeypatch.setattr(data_loader, "IRRIGATION_ANNUAL_ROOT", tmp_path / "annual")
+    monkeypatch.setattr(data_loader, "IRRIGATION_8DAY_ROOT", tmp_path / "8day")
     annual = client.get("/api/irrigation/times?resolution=annual")
     monthly = client.get("/api/irrigation/times?resolution=month")
 
     assert annual.status_code == 200
-    assert "2004" in annual.json()
-    assert "2024" in annual.json()
-    assert "2010" in annual.json()
+    assert annual.json() == ["2021", "2022", "2023"]
     assert monthly.status_code == 200
-    assert monthly.json()[0].startswith("2010-")
+    assert monthly.json()[0].startswith("2023-")
 
 
 def test_get_irrigation_legend_uses_time_specific_raster(monkeypatch, tmp_path):
@@ -268,7 +312,59 @@ def test_irrigation_region_catalog_contains_both_supported_levels():
     assert {item["level"] for item in township.json()} == {"township"}
 
 
-def test_get_irrigation_series_returns_precomputed_monthly_county_values():
+def test_irrigation_region_series_reuses_cached_json(monkeypatch, tmp_path):
+    source_path = tmp_path / "irrigation_region_series.json"
+    source_path.write_text('{"version": 1}', encoding="utf-8")
+    monkeypatch.setattr(data_loader, "IRRIGATION_REGION_SERIES_PATH", source_path)
+    monkeypatch.setattr(data_loader, "_IRRIGATION_REGION_SERIES_CACHE", None)
+    monkeypatch.setattr(data_loader, "_IRRIGATION_REGION_SERIES_SIGNATURE", None)
+
+    original_load_json = data_loader.json.load
+    calls = 0
+
+    def count_loads(handle):
+        nonlocal calls
+        calls += 1
+        return original_load_json(handle)
+
+    monkeypatch.setattr(data_loader.json, "load", count_loads)
+
+    first = data_loader.get_irrigation_region_series()
+    second = data_loader.get_irrigation_region_series()
+
+    assert first == {"version": 1}
+    assert second is first
+    assert calls == 1
+
+
+def test_irrigation_region_series_refreshes_when_file_changes(monkeypatch, tmp_path):
+    source_path = tmp_path / "irrigation_region_series.json"
+    source_path.write_text('{"version": 1}', encoding="utf-8")
+    monkeypatch.setattr(data_loader, "IRRIGATION_REGION_SERIES_PATH", source_path)
+    monkeypatch.setattr(data_loader, "_IRRIGATION_REGION_SERIES_CACHE", None)
+    monkeypatch.setattr(data_loader, "_IRRIGATION_REGION_SERIES_SIGNATURE", None)
+
+    assert data_loader.get_irrigation_region_series() == {"version": 1}
+
+    source_path.write_text('{"version": 200}', encoding="utf-8")
+
+    assert data_loader.get_irrigation_region_series() == {"version": 200}
+
+
+def test_load_json_remains_uncached(monkeypatch, tmp_path):
+    source_path = tmp_path / "sample.json"
+    source_path.write_text('{"version": 1}', encoding="utf-8")
+    monkeypatch.setattr(data_loader, "PROJECT_ROOT", tmp_path)
+
+    assert data_loader._load_json("sample.json") == {"version": 1}
+    source_path.write_text('{"version": 2}', encoding="utf-8")
+
+    assert data_loader._load_json("sample.json") == {"version": 2}
+
+
+def test_get_irrigation_series_returns_precomputed_monthly_county_values(
+    precomputed_irrigation_series,
+):
     response = client.get(
         "/api/irrigation/series",
         params={
@@ -287,7 +383,9 @@ def test_get_irrigation_series_returns_precomputed_monthly_county_values():
     assert data["summary"]["total"] == 1532.2
 
 
-def test_get_irrigation_series_returns_precomputed_annual_township_values():
+def test_get_irrigation_series_returns_precomputed_annual_township_values(
+    precomputed_irrigation_series,
+):
     response = client.get(
         "/api/irrigation/series",
         params={
@@ -309,7 +407,9 @@ def test_get_irrigation_series_returns_precomputed_annual_township_values():
     ]
 
 
-def test_get_irrigation_series_returns_404_for_unknown_precomputed_region():
+def test_get_irrigation_series_returns_404_for_unknown_precomputed_region(
+    precomputed_irrigation_series,
+):
     response = client.get(
         "/api/irrigation/series",
         params={
@@ -347,7 +447,9 @@ def test_get_irrigation_series_returns_404_when_period_is_missing(monkeypatch):
     assert "monthly" in response.json()["detail"]
 
 
-def test_get_irrigation_series_rejects_mismatched_region_level():
+def test_get_irrigation_series_rejects_mismatched_region_level(
+    precomputed_irrigation_series,
+):
     response = client.get(
         "/api/irrigation/series",
         params={
@@ -360,7 +462,9 @@ def test_get_irrigation_series_rejects_mismatched_region_level():
     assert response.status_code == 404
 
 
-def test_get_irrigation_region_averages_returns_legend_and_averages():
+def test_get_irrigation_region_averages_returns_legend_and_averages(
+    precomputed_irrigation_series,
+):
     response = client.get("/api/irrigation/regions/averages?level=county")
 
     assert response.status_code == 200
@@ -381,7 +485,9 @@ def test_get_irrigation_region_averages_returns_legend_and_averages():
         assert "label" in item
 
 
-def test_get_irrigation_region_averages_legend_has_six_stops():
+def test_get_irrigation_region_averages_legend_has_six_stops(
+    precomputed_irrigation_series,
+):
     response = client.get("/api/irrigation/regions/averages?level=county")
 
     assert response.status_code == 200

@@ -16,22 +16,41 @@ from backend.data_loader import (
     get_layer,
     get_regions,
 )
+from backend.external_rasters import (
+    EXTERNAL_RASTERS,
+    RasterSource,
+    external_valid_data_mask,
+    external_value_scale,
+    resolve_external_raster,
+)
 from backend.irrigation_time import irrigation_time_to_path
 from backend.irrigation_legend import valid_irrigation_mask
 from backend.raster_rendering import valid_data_mask
+from backend.runtime_config import MAX_AREA_QUERY_PIXELS, RASTER_ROOT
 from backend.ssm_time import ssm_time_to_cog_path
 
 router = APIRouter(tags=["query"])
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 SSM_AREA_CHUNK_ROWS = 512
+
+
+def _enforce_area_pixel_limit(
+    row_min: int, row_max: int, col_min: int, col_max: int
+) -> None:
+    pixels = max(0, row_max - row_min) * max(0, col_max - col_min)
+    if pixels > MAX_AREA_QUERY_PIXELS:
+        raise HTTPException(
+            status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
+            detail={
+                "code": "query_window_too_large",
+                "maxPixels": MAX_AREA_QUERY_PIXELS,
+            },
+        )
 
 
 def _ssm_time_to_cog_path(time: str) -> Path:
     """Resolve a validated SSM time beneath the fixed raster root."""
-    return ssm_time_to_cog_path(
-        PROJECT_ROOT / "data" / "rasters" / "ssm", time
-    )
+    return ssm_time_to_cog_path(RASTER_ROOT / "ssm", time)
 
 
 def _validated_ssm_cog_path(time: str) -> Path:
@@ -39,7 +58,7 @@ def _validated_ssm_cog_path(time: str) -> Path:
         return _ssm_time_to_cog_path(time)
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
 
@@ -53,7 +72,7 @@ def _validated_irrigation_raster_path(time: str) -> Path:
         )
     except ValueError as exc:
         raise HTTPException(
-            status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
     if not raster_path.is_file():
@@ -179,6 +198,7 @@ def _query_area_SSM(layer: dict, time: str, west: float, south: float, east: flo
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail="Area is outside the raster extent",
                 )
+            _enforce_area_pixel_limit(row_min, row_max, col_min, col_max)
             count = 0
             total = 0.0
             minimum = None
@@ -217,6 +237,155 @@ def _query_area_SSM(layer: dict, time: str, west: float, south: float, east: flo
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Failed to read raster: {e}",
         )
+
+
+def _validated_external_source(layer_id: str, time: str) -> RasterSource:
+    try:
+        return resolve_external_raster(layer_id, time)
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail=str(exc),
+        ) from exc
+    except FileNotFoundError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=str(exc),
+        ) from exc
+
+
+def _raster_bbox_from_wgs84(
+    source: rasterio.DatasetReader,
+    west: float,
+    south: float,
+    east: float,
+    north: float,
+) -> tuple[int, int, int, int]:
+    transformer = Transformer.from_crs("EPSG:4326", source.crs, always_xy=True)
+    points = [
+        transformer.transform(west, south),
+        transformer.transform(west, north),
+        transformer.transform(east, south),
+        transformer.transform(east, north),
+    ]
+    xs = [point[0] for point in points]
+    ys = [point[1] for point in points]
+    row_min, col_min = source.index(min(xs), max(ys))
+    row_max, col_max = source.index(max(xs), min(ys))
+    return (
+        max(0, row_min),
+        min(source.height, row_max + 1),
+        max(0, col_min),
+        min(source.width, col_max + 1),
+    )
+
+
+def _query_point_external(
+    layer: dict, layer_id: str, time: str, lng: float, lat: float
+) -> dict:
+    """Read one pixel from an ET or layered soil-moisture raster."""
+    source_info = _validated_external_source(layer_id, time)
+    try:
+        with rasterio.open(source_info.path) as source:
+            transformer = Transformer.from_crs(
+                "EPSG:4326", source.crs, always_xy=True
+            )
+            x, y = transformer.transform(lng, lat)
+            row, col = source.index(x, y)
+            if row < 0 or row >= source.height or col < 0 or col >= source.width:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="Point is outside the raster extent",
+                )
+            window = ((row, row + 1), (col, col + 1))
+            values = source.read(source_info.band, window=window)
+            source_mask = source.read_masks(source_info.band, window=window)
+            value = float(values[0, 0])
+            if not external_valid_data_mask(
+                layer_id,
+                values, source_mask=source_mask, nodata=source.nodata
+            )[0, 0]:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="No valid data at this point",
+                )
+    except rasterio.errors.RasterioIOError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to read raster: {exc}",
+        ) from exc
+
+    return {
+        "layerId": layer["id"],
+        "time": time,
+        "lng": lng,
+        "lat": lat,
+        "value": value * external_value_scale(layer_id),
+        "unit": layer["unit"],
+    }
+
+
+def _query_area_external(
+    layer_id: str,
+    time: str,
+    west: float,
+    south: float,
+    east: float,
+    north: float,
+) -> dict:
+    """Aggregate valid pixels in an ET or layered soil-moisture raster."""
+    source_info = _validated_external_source(layer_id, time)
+    try:
+        with rasterio.open(source_info.path) as source:
+            row_min, row_max, col_min, col_max = _raster_bbox_from_wgs84(
+                source, west, south, east, north
+            )
+            if row_min >= row_max or col_min >= col_max:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="Area is outside the raster extent",
+                )
+            _enforce_area_pixel_limit(row_min, row_max, col_min, col_max)
+            count = 0
+            total = 0.0
+            minimum = None
+            maximum = None
+            for chunk_start in range(row_min, row_max, SSM_AREA_CHUNK_ROWS):
+                chunk_end = min(chunk_start + SSM_AREA_CHUNK_ROWS, row_max)
+                window = ((chunk_start, chunk_end), (col_min, col_max))
+                values = source.read(source_info.band, window=window)
+                source_mask = source.read_masks(source_info.band, window=window)
+                mask = external_valid_data_mask(
+                    layer_id,
+                    values, source_mask=source_mask, nodata=source.nodata
+                )
+                valid = values[mask]
+                if valid.size == 0:
+                    continue
+                count += int(valid.size)
+                scale = external_value_scale(layer_id)
+                total += float(valid.sum(dtype="float64")) * scale
+                chunk_min = float(valid.min()) * scale
+                chunk_max = float(valid.max()) * scale
+                minimum = chunk_min if minimum is None else min(minimum, chunk_min)
+                maximum = chunk_max if maximum is None else max(maximum, chunk_max)
+
+            if count == 0:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="No valid data in the specified area",
+                )
+            return {
+                "mean": total / count,
+                "max": maximum,
+                "min": minimum,
+                "count": count,
+            }
+    except rasterio.errors.RasterioIOError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to read raster: {exc}",
+        ) from exc
 
 
 def _query_point_irrigation(layer: dict, time: str, lng: float, lat: float) -> dict:
@@ -278,6 +447,7 @@ def _query_area_irrigation(
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail="Area is outside the raster extent",
                 )
+            _enforce_area_pixel_limit(row_min, row_max, col_min, col_max)
             window = ((row_min, row_max), (col_min, col_max))
             data = src.read(1, window=window)
             source_mask = src.read_masks(1, window=window)
@@ -323,6 +493,8 @@ def point_query(
     # ---- SSM layer: use rasterio to read pixel from COG file ----
     if layerId == "ssm":
         return _query_point_SSM(layer, time, lng, lat)
+    if layerId in EXTERNAL_RASTERS:
+        return _query_point_external(layer, layerId, time, lng, lat)
     if layerId == "irrigation_water":
         return _query_point_irrigation(layer, time, lng, lat)
 
@@ -407,6 +579,10 @@ def area_query(body: AreaQueryRequest):
     # ---- SSM layer: use rasterio to read and compute stats from COG ----
     if body.layerId == "ssm":
         return _query_area_SSM(layer, body.time, west, south, east, north)
+    if body.layerId in EXTERNAL_RASTERS:
+        return _query_area_external(
+            body.layerId, body.time, west, south, east, north
+        )
     if body.layerId == "irrigation_water":
         return _query_area_irrigation(layer, body.time, west, south, east, north)
 
