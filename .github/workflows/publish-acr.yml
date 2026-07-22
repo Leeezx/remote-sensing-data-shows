@@ -1,12 +1,18 @@
 name: Publish images to ACR
 
-on:
+"on":
   workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  ACR_REGISTRY: ${{ secrets.ACR_REGISTRY }}
+  ACR_NAMESPACE: ${{ secrets.ACR_NAMESPACE }}
 
 jobs:
   publish:
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
@@ -18,37 +24,43 @@ jobs:
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
 
-      - name: Build and push backend
-        env:
-          REGISTRY: ${{ secrets.ACR_REGISTRY }}
-          NAMESPACE: ${{ secrets.ACR_NAMESPACE }}
-        run: |
-          docker build \
-            --platform linux/amd64 \
-            -f Dockerfile.backend \
-            -t "$REGISTRY/$NAMESPACE/backend:latest" \
-            .
-          docker push "$REGISTRY/$NAMESPACE/backend:latest"
+      - name: Compute immutable tag
+        id: tags
+        shell: bash
+        run: echo "sha_tag=sha-${GITHUB_SHA::12}" >> "$GITHUB_OUTPUT"
 
-      - name: Build and push frontend
-        env:
-          REGISTRY: ${{ secrets.ACR_REGISTRY }}
-          NAMESPACE: ${{ secrets.ACR_NAMESPACE }}
+      - name: Build backend image
         run: |
-          docker build \
-            --platform linux/amd64 \
-            -f Dockerfile.frontend \
-            -t "$REGISTRY/$NAMESPACE/frontend:latest" \
+          docker build --platform linux/amd64 \
+            --file Dockerfile.backend \
+            --tag "${{ env.ACR_REGISTRY }}/${{ env.ACR_NAMESPACE }}/backend:${{ steps.tags.outputs.sha_tag }}" \
+            --tag "${{ env.ACR_REGISTRY }}/${{ env.ACR_NAMESPACE }}/backend:latest" \
             .
-          docker push "$REGISTRY/$NAMESPACE/frontend:latest"
 
-      - name: Mirror Caddy to ACR
-        env:
-          REGISTRY: ${{ secrets.ACR_REGISTRY }}
-          NAMESPACE: ${{ secrets.ACR_NAMESPACE }}
+      - name: Build frontend image
+        run: |
+          docker build --platform linux/amd64 \
+            --file Dockerfile.frontend \
+            --tag "${{ env.ACR_REGISTRY }}/${{ env.ACR_NAMESPACE }}/frontend:${{ steps.tags.outputs.sha_tag }}" \
+            --tag "${{ env.ACR_REGISTRY }}/${{ env.ACR_NAMESPACE }}/frontend:latest" \
+            .
+
+      - name: Mirror edge image
         run: |
           docker pull --platform linux/amd64 caddy:2.10-alpine
-          docker tag \
-            caddy:2.10-alpine \
-            "$REGISTRY/$NAMESPACE/edge:2.10-alpine"
-          docker push "$REGISTRY/$NAMESPACE/edge:2.10-alpine"
+          docker tag caddy:2.10-alpine \
+            "${{ env.ACR_REGISTRY }}/${{ env.ACR_NAMESPACE }}/edge:${{ steps.tags.outputs.sha_tag }}"
+          docker tag caddy:2.10-alpine \
+            "${{ env.ACR_REGISTRY }}/${{ env.ACR_NAMESPACE }}/edge:latest"
+
+      - name: Push immutable images
+        run: |
+          docker push "${{ env.ACR_REGISTRY }}/${{ env.ACR_NAMESPACE }}/backend:${{ steps.tags.outputs.sha_tag }}"
+          docker push "${{ env.ACR_REGISTRY }}/${{ env.ACR_NAMESPACE }}/frontend:${{ steps.tags.outputs.sha_tag }}"
+          docker push "${{ env.ACR_REGISTRY }}/${{ env.ACR_NAMESPACE }}/edge:${{ steps.tags.outputs.sha_tag }}"
+
+      - name: Update latest images
+        run: |
+          docker push "${{ env.ACR_REGISTRY }}/${{ env.ACR_NAMESPACE }}/backend:latest"
+          docker push "${{ env.ACR_REGISTRY }}/${{ env.ACR_NAMESPACE }}/frontend:latest"
+          docker push "${{ env.ACR_REGISTRY }}/${{ env.ACR_NAMESPACE }}/edge:latest"

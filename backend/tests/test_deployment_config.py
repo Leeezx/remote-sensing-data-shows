@@ -3,6 +3,11 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
+PUBLISH_WORKFLOW = ROOT / ".github" / "workflows" / "publish-acr.yml"
+
+
+def publish_workflow_text():
+    return PUBLISH_WORKFLOW.read_text(encoding="utf-8")
 
 
 def compose():
@@ -106,3 +111,33 @@ def test_ci_does_not_build_docker_images():
     assert "npm run build" in workflow
     assert "docker build" not in workflow
     assert "docker compose build" not in workflow
+
+
+def test_acr_publish_workflow_is_manual_only_and_uses_secrets():
+    workflow = yaml.safe_load(publish_workflow_text())
+    assert set(workflow["on"]) == {"workflow_dispatch"}
+
+    text = publish_workflow_text()
+    for secret in (
+        "ACR_REGISTRY",
+        "ACR_NAMESPACE",
+        "ACR_USERNAME",
+        "ACR_PASSWORD",
+    ):
+        assert f"secrets.{secret}" in text
+
+
+def test_acr_publish_workflow_publishes_all_runtime_images():
+    text = publish_workflow_text()
+    assert "--platform linux/amd64" in text
+    assert "caddy:2.10-alpine" in text
+    for repository in ("backend", "frontend", "edge"):
+        assert f"/${{{{ env.ACR_NAMESPACE }}}}/{repository}" in text
+    assert "latest" in text
+    assert "sha-${GITHUB_SHA::12}" in text
+    assert "docker push" in text
+
+
+def test_server_acr_compose_override_is_ignored():
+    gitignore = (ROOT / ".gitignore").read_text(encoding="utf-8").splitlines()
+    assert "docker-compose.acr.yml" in gitignore

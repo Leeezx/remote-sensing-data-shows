@@ -12,6 +12,9 @@ frontend/dist/
 .env
 .env.local
 
+# Server-local deployment overrides
+docker-compose.acr.yml
+
 # IDE
 .vscode/
 .idea/
