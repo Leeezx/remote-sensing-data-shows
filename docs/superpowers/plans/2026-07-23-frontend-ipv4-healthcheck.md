@@ -236,39 +236,141 @@ Expected: `origin/main` advances to a merge commit that contains the fix and the
 
 - [ ] **Step 1: Run the ACR workflow on merged `main`**
 
-In GitHub, open **Actions → Publish images to ACR → Run workflow**, select `main`, and run it.
+In GitHub, open **Actions → Publish images to ACR → Run workflow**, select `main`, and run it. Wait for that manually dispatched run to finish successfully before continuing.
 
 Expected: checkout, ACR login, backend build, frontend build, edge mirror, immutable pushes, and latest pushes all succeed.
 
-- [ ] **Step 2: Derive the immutable tag from merged main**
+- [ ] **Step 2: Record the exact successful workflow SHA and immutable image tag**
 
-From the local repository:
+Run this PowerShell from the local repository. It uses GitHub's public Actions API rather than `gh`, selects the newest successful `workflow_dispatch` run for `publish-acr.yml` on `main`, and records the run's immutable `head_sha` exactly once.
 
 ```powershell
-git fetch origin
-$mergedSha = git rev-parse origin/main
-$imageTag = "sha-$($mergedSha.Substring(0, 12))"
-$imageTag
+$originUrl = (git remote get-url origin).Trim()
+if ($originUrl -notmatch 'github\.com[:/](?<repo>[^/]+/[^/]+?)(?:\.git)?/?$') {
+    throw "Cannot derive the GitHub owner/repository from origin: $originUrl"
+}
+$repository = $Matches['repo']
+$headers = @{
+    Accept = 'application/vnd.github+json'
+    'X-GitHub-Api-Version' = '2022-11-28'
+    'User-Agent' = 'remote-sensing-rollout'
+}
+$runsUri = "https://api.github.com/repos/$repository/actions/workflows/publish-acr.yml/runs?branch=main&event=workflow_dispatch&status=success&per_page=1"
+$response = Invoke-RestMethod -Uri $runsUri -Headers $headers
+$workflowRun = $response.workflow_runs | Sort-Object created_at -Descending | Select-Object -First 1
+if ($null -eq $workflowRun) {
+    throw 'No successful manual publish-acr.yml run was found on main.'
+}
+if ($workflowRun.event -ne 'workflow_dispatch' -or $workflowRun.head_branch -ne 'main' -or $workflowRun.conclusion -ne 'success') {
+    throw 'The selected workflow run does not meet the required main/workflow_dispatch/success criteria.'
+}
+$workflowSha = [string]$workflowRun.head_sha
+if ($workflowSha -notmatch '^[0-9a-f]{40}$') {
+    throw "Unexpected workflow head_sha: $workflowSha"
+}
+$imageTag = "sha-$($workflowSha.Substring(0, 12))"
+[pscustomobject]@{
+    html_url = $workflowRun.html_url
+    head_sha = $workflowSha
+    image_tag = $imageTag
+} | Format-List
 ```
 
-Expected: output is one exact tag in `sha-xxxxxxxxxxxx` format; use this value in the following server step.
+Copy the printed `html_url`, `head_sha`, and `image_tag` to the deployment record. Keep `$workflowSha` and `$imageTag` in the same PowerShell session; they are the sole deployment identity for every remaining step. Do not derive a tag from a later `origin/main`, local `HEAD`, or server `HEAD`.
 
-- [ ] **Step 3: Pull the merged code on the server**
+Expected: one `html_url`, a 40-character `head_sha`, and exactly one `sha-xxxxxxxxxxxx` tag, all tied to the selected successful workflow run.
+
+- [ ] **Step 3: Verify that the successful run contains the healthcheck fix**
+
+Use the SHA captured in Step 2; fetching `main` only obtains the commit object and is not a tag derivation.
+
+```powershell
+git fetch origin main
+git cat-file -e "$workflowSha^{commit}"
+if ($LASTEXITCODE -ne 0) {
+    throw "The selected workflow head_sha is not available locally: $workflowSha"
+}
+git merge-base --is-ancestor b1a417d $workflowSha
+if ($LASTEXITCODE -ne 0) {
+    throw "Workflow run $($workflowRun.html_url) does not contain b1a417d in its ancestry."
+}
+Write-Host "Verified b1a417d is an ancestor of $workflowSha; deploying $imageTag."
+```
+
+Expected: the ancestry check exits `0`; the workflow-run SHA, not a moving branch reference, remains the recorded source of `$imageTag`.
+
+- [ ] **Step 4: Pull merged code on the server while retaining the temporary IPv4 override**
+
+On the server, paste the exact `$imageTag` printed in Step 2 as the quoted value below. Do not calculate it with Git on the server. Keep the existing `docker-compose.acr.yml` intact: it must still define the explicit IPv4 frontend healthcheck during this first deployment verification.
 
 ```bash
 cd /opt/remote-sensing
+imageTag='sha-REPLACE-WITH-THE-STEP-2-IMAGE-TAG'
+case "$imageTag" in
+  sha-[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]) ;;
+  *) echo "Invalid recorded image tag: $imageTag" >&2; exit 1 ;;
+esac
 git status --short
 git pull --ff-only origin main
+grep -F 'http://127.0.0.1:8080/' docker-compose.acr.yml
+sudo docker compose \
+  -f docker-compose.yml \
+  -f docker-compose.acr.yml \
+  config | sed -n '/frontend:/,/logging:/p'
 findmnt /opt/remote-sensing/data
 ```
 
-Expected: Git remains clean, pull fast-forwards, and the data bind mount remains `/dev/vdb1[/remote-sensing/data]`.
+Expected: Git fast-forwards without changing `docker-compose.acr.yml`, the effective frontend healthcheck is explicitly `http://127.0.0.1:8080/`, and the data bind mount remains `/dev/vdb1[/remote-sensing/data]`.
 
-- [ ] **Step 4: Remove the temporary healthcheck override**
+- [ ] **Step 5: Pull all three recorded immutable ACR images before changing `.env`**
 
-Replace `/opt/remote-sensing/docker-compose.acr.yml` with image-only overrides:
+Read the registry and namespace from the existing `.env`, but use only the `imageTag` variable recorded in Step 4 for every image pull. Do not run `docker compose pull` in this step because the `.env` file still contains the previous release tag.
 
 ```bash
+cd /opt/remote-sensing
+set -a
+. ./.env
+set +a
+sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/backend:${imageTag}"
+sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/frontend:${imageTag}"
+sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/edge:${imageTag}"
+```
+
+Expected: Docker reports a successful pull for backend, frontend, and edge with the same exact `sha-xxxxxxxxxxxx` tag from Step 2; `.env` remains unchanged.
+
+- [ ] **Step 6: Persist the recorded tag and verify the release with the temporary override**
+
+Update `.env` from the existing `imageTag` variable, start all three services without any additional pulls, and verify the first deployment while the server-local explicit IPv4 override is still present.
+
+```bash
+cd /opt/remote-sensing
+sed -i '/^IMAGE_TAG=/d' .env
+printf '%s\n' "IMAGE_TAG=$imageTag" >> .env
+chmod 600 .env
+export IMAGE_TAG="$imageTag"
+printf 'Deploying recorded workflow tag %s\n' "$imageTag"
+sudo docker compose \
+  -f docker-compose.yml \
+  -f docker-compose.acr.yml \
+  up -d --no-build --pull never --force-recreate backend frontend edge
+sudo docker compose \
+  -f docker-compose.yml \
+  -f docker-compose.acr.yml \
+  ps
+curl -fsS http://127.0.0.1/api/ready
+echo
+curl -fsSI http://127.0.0.1/
+findmnt /opt/remote-sensing/data
+```
+
+Expected: backend, frontend, and edge are healthy; readiness returns `{"status":"ready","dependencies":[]}`; Caddy returns HTTP 200 for `/`; and the data mount is intact. Do not remove the temporary override unless every check passes.
+
+- [ ] **Step 7: Replace the temporary override with image-only overrides and confirm the base healthcheck**
+
+Only after Step 6 passes, replace `/opt/remote-sensing/docker-compose.acr.yml` with these image-only service overrides. The base `docker-compose.yml` must now supply the frontend healthcheck.
+
+```bash
+cd /opt/remote-sensing
 tee docker-compose.acr.yml >/dev/null <<'EOF'
 services:
   edge:
@@ -278,79 +380,77 @@ services:
   backend:
     image: ${ACR_REGISTRY}/${ACR_NAMESPACE}/backend:${IMAGE_TAG:-latest}
 EOF
-```
-
-- [ ] **Step 5: Set the new immutable tag**
-
-Derive the tag from the merged commit now checked out on the server, then persist it:
-
-```bash
-cd /opt/remote-sensing
-IMAGE_TAG="sha-$(git rev-parse --short=12 HEAD)"
-sed -i '/^IMAGE_TAG=/d' /opt/remote-sensing/.env
-printf '%s\n' "IMAGE_TAG=$IMAGE_TAG" >> /opt/remote-sensing/.env
-chmod 600 /opt/remote-sensing/.env
-printf 'Deploying %s\n' "$IMAGE_TAG"
-```
-
-Expected: the printed value exactly matches the tag derived in Task 4 Step 2 and published by the successful workflow run.
-
-- [ ] **Step 6: Verify the merged healthcheck before deployment**
-
-```bash
 sudo docker compose \
   -f docker-compose.yml \
   -f docker-compose.acr.yml \
   config | sed -n '/frontend:/,/logging:/p'
 ```
 
-Expected: the effective frontend healthcheck contains `http://127.0.0.1:8080/` even though `docker-compose.acr.yml` no longer defines a healthcheck.
+Expected: `docker-compose.acr.yml` contains no `healthcheck`, while the effective frontend service displays `http://127.0.0.1:8080/` from the base Compose file.
 
-- [ ] **Step 7: Pull and start the corrected release**
+- [ ] **Step 8: Force-recreate frontend and edge with image-only overrides, then verify again**
+
+Use the same exported recorded `IMAGE_TAG` from Step 6. Do not recompute or replace it.
 
 ```bash
+cd /opt/remote-sensing
+test "$IMAGE_TAG" = "$imageTag"
 sudo docker compose \
   -f docker-compose.yml \
   -f docker-compose.acr.yml \
-  pull
-sudo docker compose \
-  -f docker-compose.yml \
-  -f docker-compose.acr.yml \
-  up -d --no-build --pull never
-```
-
-Expected: all three ACR images pull and Compose starts backend, frontend, and edge without the temporary healthcheck override.
-
-- [ ] **Step 8: Verify services, routing, and data**
-
-```bash
+  up -d --no-build --pull never --force-recreate frontend edge
 sudo docker compose \
   -f docker-compose.yml \
   -f docker-compose.acr.yml \
   ps
 curl -fsS http://127.0.0.1/api/ready
 echo
-curl -I http://127.0.0.1/
+curl -fsSI http://127.0.0.1/
 findmnt /opt/remote-sensing/data
 ```
 
-Expected: all three containers are healthy, readiness returns `{"status":"ready","dependencies":[]}`, the root path returns HTTP 200 via Caddy, and the data mount is intact.
+Expected: frontend and edge are recreated from the recorded immutable images, all three containers are healthy, readiness returns `{"status":"ready","dependencies":[]}`, Caddy returns HTTP 200 for `/`, and the data mount remains intact.
 
-- [ ] **Step 9: Preserve the rollback command**
+- [ ] **Step 9: Roll back exactly if either verification fails**
 
-If verification fails, restore the known-good release:
+Before returning to the known-good release, restore the temporary explicit IPv4 frontend healthcheck override. Then set the preserved rollback tag, pull its exact three ACR images, start the services, and run the same health, routing, and data checks. Do not reset the data disk.
 
 ```bash
-sed -i '/^IMAGE_TAG=/d' /opt/remote-sensing/.env
-printf '%s\n' 'IMAGE_TAG=sha-cbc85d334080' >> /opt/remote-sensing/.env
+cd /opt/remote-sensing
+tee docker-compose.acr.yml >/dev/null <<'EOF'
+services:
+  edge:
+    image: ${ACR_REGISTRY}/${ACR_NAMESPACE}/edge:${IMAGE_TAG:-latest}
+  frontend:
+    image: ${ACR_REGISTRY}/${ACR_NAMESPACE}/frontend:${IMAGE_TAG:-latest}
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8080/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+  backend:
+    image: ${ACR_REGISTRY}/${ACR_NAMESPACE}/backend:${IMAGE_TAG:-latest}
+EOF
+imageTag='sha-cbc85d334080'
+sed -i '/^IMAGE_TAG=/d' .env
+printf '%s\n' "IMAGE_TAG=$imageTag" >> .env
+chmod 600 .env
+export IMAGE_TAG="$imageTag"
+sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/backend:${imageTag}"
+sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/frontend:${imageTag}"
+sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/edge:${imageTag}"
 sudo docker compose \
   -f docker-compose.yml \
   -f docker-compose.acr.yml \
-  pull
+  up -d --no-build --pull never --force-recreate backend frontend edge
 sudo docker compose \
   -f docker-compose.yml \
   -f docker-compose.acr.yml \
-  up -d --no-build --pull never
+  ps
+curl -fsS http://127.0.0.1/api/ready
+echo
+curl -fsSI http://127.0.0.1/
+findmnt /opt/remote-sensing/data
 ```
 
-Expected: the previously verified release returns to service without modifying the data disk.
+Expected: the previously verified `sha-cbc85d334080` release is healthy with the explicit IPv4 protection restored, Caddy returns HTTP 200, and the data disk is unchanged.
