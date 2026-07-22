@@ -1,0 +1,54 @@
+name: Publish images to ACR
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Log in to Alibaba Cloud ACR
+        uses: docker/login-action@v4
+        with:
+          registry: ${{ secrets.ACR_REGISTRY }}
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+
+      - name: Build and push backend
+        env:
+          REGISTRY: ${{ secrets.ACR_REGISTRY }}
+          NAMESPACE: ${{ secrets.ACR_NAMESPACE }}
+        run: |
+          docker build \
+            --platform linux/amd64 \
+            -f Dockerfile.backend \
+            -t "$REGISTRY/$NAMESPACE/backend:latest" \
+            .
+          docker push "$REGISTRY/$NAMESPACE/backend:latest"
+
+      - name: Build and push frontend
+        env:
+          REGISTRY: ${{ secrets.ACR_REGISTRY }}
+          NAMESPACE: ${{ secrets.ACR_NAMESPACE }}
+        run: |
+          docker build \
+            --platform linux/amd64 \
+            -f Dockerfile.frontend \
+            -t "$REGISTRY/$NAMESPACE/frontend:latest" \
+            .
+          docker push "$REGISTRY/$NAMESPACE/frontend:latest"
+
+      - name: Mirror Caddy to ACR
+        env:
+          REGISTRY: ${{ secrets.ACR_REGISTRY }}
+          NAMESPACE: ${{ secrets.ACR_NAMESPACE }}
+        run: |
+          docker pull --platform linux/amd64 caddy:2.10-alpine
+          docker tag \
+            caddy:2.10-alpine \
+            "$REGISTRY/$NAMESPACE/edge:2.10-alpine"
+          docker push "$REGISTRY/$NAMESPACE/edge:2.10-alpine"
