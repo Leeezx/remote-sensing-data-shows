@@ -141,3 +141,12 @@ def test_acr_publish_workflow_publishes_all_runtime_images():
 def test_server_acr_compose_override_is_ignored():
     gitignore = (ROOT / ".gitignore").read_text(encoding="utf-8").splitlines()
     assert "docker-compose.acr.yml" in gitignore
+
+
+def test_acr_deployment_guide_uses_override_and_disables_builds():
+    guide = (ROOT / "docs" / "deployment-acr.md").read_text(encoding="utf-8")
+    assert "docker-compose.acr.yml" in guide
+    assert "--no-build" in guide
+    assert "IMAGE_TAG=sha-" in guide
+    assert "docker login" in guide
+    assert "registry-1.docker.io" not in guide
