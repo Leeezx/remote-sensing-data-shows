@@ -274,9 +274,11 @@ $imageTag = "sha-$($workflowSha.Substring(0, 12))"
     head_sha = $workflowSha
     image_tag = $imageTag
 } | Format-List
+Write-Output "WORKFLOW_SHA=$workflowSha"
+Write-Output "IMAGE_TAG=$imageTag"
 ```
 
-Copy the printed `html_url`, `head_sha`, and `image_tag` to the deployment record. Keep `$workflowSha` and `$imageTag` in the same PowerShell session; they are the sole deployment identity for every remaining step. Do not derive a tag from a later `origin/main`, local `HEAD`, or server `HEAD`.
+Copy the printed `html_url`, `head_sha`, and `image_tag` to the deployment record. Copy the two final output lines, exactly as printed, to the server operator: `WORKFLOW_SHA=<40 hex>` and `IMAGE_TAG=sha-<12 hex>`. Keep `$workflowSha` and `$imageTag` in the same PowerShell session; they are the sole deployment identity for every remaining step. Do not derive a tag from a later `origin/main`, local `HEAD`, or server `HEAD`.
 
 Expected: one `html_url`, a 40-character `head_sha`, and exactly one `sha-xxxxxxxxxxxx` tag, all tied to the selected successful workflow run.
 
@@ -299,19 +301,46 @@ Write-Host "Verified b1a417d is an ancestor of $workflowSha; deploying $imageTag
 
 Expected: the ancestry check exits `0`; the workflow-run SHA, not a moving branch reference, remains the recorded source of `$imageTag`.
 
-- [ ] **Step 4: Pull merged code on the server while retaining the temporary IPv4 override**
+- [ ] **Step 4: Fast-forward the server checkout to the exact workflow commit while retaining the temporary IPv4 override**
 
-On the server, paste the exact `$imageTag` printed in Step 2 as the quoted value below. Do not calculate it with Git on the server. Keep the existing `docker-compose.acr.yml` intact: it must still define the explicit IPv4 frontend healthcheck during this first deployment verification.
+On the server, paste the two exact assignment lines printed in Step 2. Do not calculate either value with Git on the server. Before reading Compose configuration or changing `.env`, validate both values, require a clean tracked worktree, fetch from origin, switch to `main`, and fast-forward only to `WORKFLOW_SHA`. Keep this SSH shell open through Step 8 so the validated variables remain in scope. Keep the existing `docker-compose.acr.yml` intact: it must still define the explicit IPv4 frontend healthcheck during this first deployment verification.
 
 ```bash
 cd /opt/remote-sensing
-imageTag='sha-REPLACE-WITH-THE-STEP-2-IMAGE-TAG'
-case "$imageTag" in
-  sha-[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]) ;;
-  *) echo "Invalid recorded image tag: $imageTag" >&2; exit 1 ;;
-esac
-git status --short
-git pull --ff-only origin main
+WORKFLOW_SHA='REPLACE-WITH-THE-STEP-2-WORKFLOW_SHA'
+IMAGE_TAG='REPLACE-WITH-THE-STEP-2-IMAGE_TAG'
+if ! [[ "$WORKFLOW_SHA" =~ ^[0-9a-f]{40}$ ]]; then
+  echo "Invalid recorded workflow SHA: $WORKFLOW_SHA" >&2
+  exit 1
+fi
+if ! [[ "$IMAGE_TAG" =~ ^sha-[0-9a-f]{12}$ ]]; then
+  echo "Invalid recorded image tag: $IMAGE_TAG" >&2
+  exit 1
+fi
+if [[ "$IMAGE_TAG" != "sha-${WORKFLOW_SHA:0:12}" ]]; then
+  echo 'IMAGE_TAG does not match the first 12 characters of WORKFLOW_SHA.' >&2
+  exit 1
+fi
+if [[ -n "$(git status --porcelain)" ]]; then
+  echo 'Tracked files are dirty; refusing to change the server checkout.' >&2
+  git status --short
+  exit 1
+fi
+git fetch origin main
+git switch main
+if ! git cat-file -e "${WORKFLOW_SHA}^{commit}"; then
+  echo "Origin did not provide recorded workflow commit $WORKFLOW_SHA." >&2
+  exit 1
+fi
+if ! git merge-base --is-ancestor HEAD "$WORKFLOW_SHA"; then
+  echo "Current main cannot fast-forward to recorded workflow commit $WORKFLOW_SHA." >&2
+  exit 1
+fi
+git merge --ff-only "$WORKFLOW_SHA"
+if [[ "$(git rev-parse HEAD)" != "$WORKFLOW_SHA" ]]; then
+  echo "Server HEAD is not the recorded workflow commit $WORKFLOW_SHA." >&2
+  exit 1
+fi
 grep -F 'http://127.0.0.1:8080/' docker-compose.acr.yml
 sudo docker compose \
   -f docker-compose.yml \
@@ -320,35 +349,42 @@ sudo docker compose \
 findmnt /opt/remote-sensing/data
 ```
 
-Expected: Git fast-forwards without changing `docker-compose.acr.yml`, the effective frontend healthcheck is explicitly `http://127.0.0.1:8080/`, and the data bind mount remains `/dev/vdb1[/remote-sensing/data]`.
+Expected: the checkout fast-forwards only to the exact recorded `WORKFLOW_SHA`, `git rev-parse HEAD` matches it byte-for-byte, the existing override retains the explicit IPv4 healthcheck, and the data bind mount remains `/dev/vdb1[/remote-sensing/data]`.
 
-- [ ] **Step 5: Pull all three recorded immutable ACR images before changing `.env`**
+- [ ] **Step 5: Validate ACR variables and pull all three recorded immutable images before changing `.env`**
 
-Read the registry and namespace from the existing `.env`, but use only the `imageTag` variable recorded in Step 4 for every image pull. Do not run `docker compose pull` in this step because the `.env` file still contains the previous release tag.
+Source the existing `.env` only to obtain the registry and namespace, validate them, then restore the recorded `IMAGE_TAG` before every image pull. Do not run `docker compose pull` in this step because `.env` still contains the previous release tag.
 
 ```bash
 cd /opt/remote-sensing
+recordedImageTag="$IMAGE_TAG"
 set -a
 . ./.env
 set +a
-sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/backend:${imageTag}"
-sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/frontend:${imageTag}"
-sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/edge:${imageTag}"
+if [[ -z "$ACR_REGISTRY" || -z "$ACR_NAMESPACE" ]]; then
+  echo 'ACR_REGISTRY and ACR_NAMESPACE must both be set in .env.' >&2
+  exit 1
+fi
+IMAGE_TAG="$recordedImageTag"
+export IMAGE_TAG
+sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/backend:${IMAGE_TAG}"
+sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/frontend:${IMAGE_TAG}"
+sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/edge:${IMAGE_TAG}"
 ```
 
 Expected: Docker reports a successful pull for backend, frontend, and edge with the same exact `sha-xxxxxxxxxxxx` tag from Step 2; `.env` remains unchanged.
 
 - [ ] **Step 6: Persist the recorded tag and verify the release with the temporary override**
 
-Update `.env` from the existing `imageTag` variable, start all three services without any additional pulls, and verify the first deployment while the server-local explicit IPv4 override is still present.
+Update `.env` from the validated recorded `IMAGE_TAG`, start all three services without any additional pulls, and verify the first deployment while the server-local explicit IPv4 override is still present.
 
 ```bash
 cd /opt/remote-sensing
 sed -i '/^IMAGE_TAG=/d' .env
-printf '%s\n' "IMAGE_TAG=$imageTag" >> .env
+printf '%s\n' "IMAGE_TAG=$IMAGE_TAG" >> .env
 chmod 600 .env
-export IMAGE_TAG="$imageTag"
-printf 'Deploying recorded workflow tag %s\n' "$imageTag"
+export IMAGE_TAG
+printf 'Deploying recorded workflow tag %s\n' "$IMAGE_TAG"
 sudo docker compose \
   -f docker-compose.yml \
   -f docker-compose.acr.yml \
@@ -394,7 +430,7 @@ Use the same exported recorded `IMAGE_TAG` from Step 6. Do not recompute or repl
 
 ```bash
 cd /opt/remote-sensing
-test "$IMAGE_TAG" = "$imageTag"
+test "$IMAGE_TAG" = "sha-${WORKFLOW_SHA:0:12}"
 sudo docker compose \
   -f docker-compose.yml \
   -f docker-compose.acr.yml \
@@ -413,10 +449,18 @@ Expected: frontend and edge are recreated from the recorded immutable images, al
 
 - [ ] **Step 9: Roll back exactly if either verification fails**
 
-Before returning to the known-good release, restore the temporary explicit IPv4 frontend healthcheck override. Then set the preserved rollback tag, pull its exact three ACR images, start the services, and run the same health, routing, and data checks. Do not reset the data disk.
+This rollback is self-contained and may be run from a fresh SSH shell. Source and validate the ACR variables before changing `.env` or pulling. Then restore the temporary explicit IPv4 frontend healthcheck override first, set the separate exact rollback tag, pull its three images, start the services, and run the same health, routing, and data checks. Do not reset the data disk.
 
 ```bash
 cd /opt/remote-sensing
+set -a
+. /opt/remote-sensing/.env
+set +a
+if [[ -z "$ACR_REGISTRY" || -z "$ACR_NAMESPACE" ]]; then
+  echo 'ACR_REGISTRY and ACR_NAMESPACE must both be set in .env.' >&2
+  exit 1
+fi
+ROLLBACK_IMAGE_TAG='sha-cbc85d334080'
 tee docker-compose.acr.yml >/dev/null <<'EOF'
 services:
   edge:
@@ -431,14 +475,13 @@ services:
   backend:
     image: ${ACR_REGISTRY}/${ACR_NAMESPACE}/backend:${IMAGE_TAG:-latest}
 EOF
-imageTag='sha-cbc85d334080'
 sed -i '/^IMAGE_TAG=/d' .env
-printf '%s\n' "IMAGE_TAG=$imageTag" >> .env
+printf '%s\n' "IMAGE_TAG=$ROLLBACK_IMAGE_TAG" >> .env
 chmod 600 .env
-export IMAGE_TAG="$imageTag"
-sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/backend:${imageTag}"
-sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/frontend:${imageTag}"
-sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/edge:${imageTag}"
+export IMAGE_TAG="$ROLLBACK_IMAGE_TAG"
+sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/backend:${ROLLBACK_IMAGE_TAG}"
+sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/frontend:${ROLLBACK_IMAGE_TAG}"
+sudo docker pull "${ACR_REGISTRY}/${ACR_NAMESPACE}/edge:${ROLLBACK_IMAGE_TAG}"
 sudo docker compose \
   -f docker-compose.yml \
   -f docker-compose.acr.yml \
