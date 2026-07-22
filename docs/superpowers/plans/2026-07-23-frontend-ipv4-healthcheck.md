@@ -430,7 +430,10 @@ Use the same exported recorded `IMAGE_TAG` from Step 6. Do not recompute or repl
 
 ```bash
 cd /opt/remote-sensing
-test "$IMAGE_TAG" = "sha-${WORKFLOW_SHA:0:12}"
+if [[ "$IMAGE_TAG" != "sha-${WORKFLOW_SHA:0:12}" ]]; then
+  echo "Refusing to recreate services: IMAGE_TAG=$IMAGE_TAG does not match WORKFLOW_SHA=$WORKFLOW_SHA." >&2
+  exit 1
+fi
 sudo docker compose \
   -f docker-compose.yml \
   -f docker-compose.acr.yml \
