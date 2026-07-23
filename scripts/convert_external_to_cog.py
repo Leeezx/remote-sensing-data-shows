@@ -175,6 +175,7 @@ def _translate_cog(
     nodata: float | None,
     overview_level: int | None,
     overview_resampling: str,
+    additional_cog_metadata: dict[str, str] | None,
 ) -> None:
     from rio_cogeo.cogeo import cog_translate
 
@@ -187,8 +188,78 @@ def _translate_cog(
         nodata=nodata,
         overview_level=overview_level,
         overview_resampling=overview_resampling,
+        additional_cog_metadata=additional_cog_metadata,
         quiet=True,
     )
+
+
+def _et_provenance(job: ConversionJob) -> dict[str, str] | None:
+    if job.indexes is None or len(job.indexes) != 1:
+        return None
+    return {
+        "ET_SOURCE_NAME": job.source.name,
+        "ET_SOURCE_YEAR": str(source_year(job.source)),
+        "ET_SOURCE_BAND": str(job.indexes[0]),
+    }
+
+
+def _artifact_validation_error(
+    job: ConversionJob, artifact: Path
+) -> str | None:
+    from rio_cogeo.cogeo import cog_validate
+
+    try:
+        valid, errors, _warnings = cog_validate(artifact)
+        if not valid:
+            return f"COG validation failed: {errors}"
+
+        with (
+            rasterio.open(job.source) as source,
+            rasterio.open(artifact) as destination,
+        ):
+            if destination.crs != source.crs:
+                return "CRS does not match source"
+            if (
+                destination.width != source.width
+                or destination.height != source.height
+            ):
+                return "Raster dimensions do not match source"
+            if destination.transform != source.transform:
+                return "Transform does not match source"
+            if not destination.profile.get("tiled", False):
+                return "Output is not tiled"
+            if any(
+                shape != (COG_BLOCKSIZE, COG_BLOCKSIZE)
+                for shape in destination.block_shapes
+            ):
+                return f"Output blocks are not {COG_BLOCKSIZE}x{COG_BLOCKSIZE}"
+
+            expected_count = (
+                len(job.indexes) if job.indexes is not None else source.count
+            )
+            if destination.count != expected_count:
+                return (
+                    f"Expected {expected_count} output band(s); "
+                    f"found {destination.count}"
+                )
+
+            expected_provenance = _et_provenance(job)
+            if expected_provenance is not None:
+                if destination.dtypes != ("uint16",):
+                    return "ET output dtype must be uint16"
+                if destination.nodata != 0:
+                    return "ET output NoData must be 0"
+                if destination.profile.get("interleave") != "band":
+                    return "ET output interleave must be band"
+                if destination.overviews(1) != [2, 4, 8, 16, 32]:
+                    return "ET output overviews must be [2, 4, 8, 16, 32]"
+                tags = destination.tags()
+                for key, expected in expected_provenance.items():
+                    if tags.get(key) != expected:
+                        return f"ET provenance {key} does not match job"
+    except (OSError, ValueError, rasterio.errors.RasterioError) as exc:
+        return f"Artifact validation failed: {exc}"
+    return None
 
 
 def convert_one(
@@ -200,9 +271,16 @@ def convert_one(
     overview_level: int | None = None,
 ) -> tuple[str, bool, str]:
     """Convert one source to a validated COG using an atomic replacement."""
-    from rio_cogeo.cogeo import cog_validate
     from rio_cogeo.profiles import cog_profiles
 
+    job = ConversionJob(
+        source,
+        destination,
+        nodata,
+        overview_resampling,
+        indexes,
+        overview_level,
+    )
     profile = dict(cog_profiles.get(COG_PROFILE))
     profile["blockxsize"] = COG_BLOCKSIZE
     profile["blockysize"] = COG_BLOCKSIZE
@@ -223,15 +301,11 @@ def convert_one(
             nodata=nodata,
             overview_level=overview_level,
             overview_resampling=overview_resampling,
+            additional_cog_metadata=_et_provenance(job),
         )
-        valid, errors, _warnings = cog_validate(temporary)
-        if not valid:
-            raise RuntimeError(f"COG validation failed: {errors}")
-        with rasterio.open(temporary) as dataset:
-            if indexes is not None and len(indexes) == 1 and dataset.count != 1:
-                raise RuntimeError(
-                    f"Expected one output band; found {dataset.count}"
-                )
+        validation_error = _artifact_validation_error(job, temporary)
+        if validation_error is not None:
+            raise RuntimeError(validation_error)
         os.replace(temporary, destination)
         return source.name, True, ""
     except Exception as exc:
@@ -254,47 +328,9 @@ def run_conversion_job(job: ConversionJob) -> tuple[str, bool, str]:
 
 
 def destination_is_complete(job: ConversionJob) -> bool:
-    from rio_cogeo.cogeo import cog_validate
-
     if not job.destination.is_file():
         return False
-    try:
-        valid, _errors, _warnings = cog_validate(job.destination)
-        if not valid:
-            return False
-        with (
-            rasterio.open(job.source) as source,
-            rasterio.open(job.destination) as destination,
-        ):
-            if (
-                destination.crs != source.crs
-                or destination.width != source.width
-                or destination.height != source.height
-                or not destination.is_tiled
-                or any(
-                    shape != (COG_BLOCKSIZE, COG_BLOCKSIZE)
-                    for shape in destination.block_shapes
-                )
-            ):
-                return False
-
-            expected_count = (
-                len(job.indexes) if job.indexes is not None else source.count
-            )
-            if destination.count != expected_count:
-                return False
-
-            if job.indexes is not None and len(job.indexes) == 1:
-                return (
-                    destination.count == 1
-                    and destination.nodata == 0
-                    and destination.profile.get("interleave") == "band"
-                    and destination.dtypes == ("uint16",)
-                    and destination.overviews(1) == [2, 4, 8, 16, 32]
-                )
-    except (OSError, rasterio.errors.RasterioError):
-        return False
-    return True
+    return _artifact_validation_error(job, job.destination) is None
 
 
 def needs_job_conversion(job: ConversionJob, force: bool = False) -> bool:

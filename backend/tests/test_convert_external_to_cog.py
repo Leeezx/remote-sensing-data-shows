@@ -1,6 +1,8 @@
 """Tests for external-raster COG conversion planning and execution."""
 
 from pathlib import Path
+import shutil
+import sys
 
 import numpy as np
 import pytest
@@ -18,11 +20,14 @@ def _write_raster(
     nodata: int | float | None = 0,
     height: int = 32,
     width: int = 32,
+    transform=None,
 ) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     values = np.arange(count * height * width, dtype=dtype).reshape(
         count, height, width
     )
+    if transform is None:
+        transform = from_origin(100, 40, 0.01, 0.01)
     with rasterio.open(
         path,
         "w",
@@ -32,7 +37,7 @@ def _write_raster(
         count=count,
         dtype=dtype,
         crs="EPSG:4326",
-        transform=from_origin(100, 40, 0.01, 0.01),
+        transform=transform,
         nodata=nodata,
     ) as dataset:
         dataset.write(values)
@@ -141,7 +146,7 @@ def test_et_job_writes_atomic_valid_single_band_cog(tmp_path):
         assert dataset.count == 1
         assert dataset.dtypes == ("uint16",)
         assert dataset.nodata == 0
-        assert dataset.is_tiled
+        assert dataset.profile["tiled"]
         assert dataset.block_shapes == [(512, 512)]
         assert dataset.profile["interleave"] == "band"
         assert dataset.overviews(1) == [2, 4, 8, 16, 32]
@@ -187,3 +192,126 @@ def test_complete_destination_is_skipped_unless_forced(tmp_path):
     assert converter.destination_is_complete(job)
     assert not converter.needs_job_conversion(job, force=False)
     assert converter.needs_job_conversion(job, force=True)
+
+
+def test_valid_cog_from_wrong_et_period_is_not_complete(tmp_path):
+    source = tmp_path / "source" / "ET_2010.tif"
+    _write_raster(source, count=46)
+    first_destination = tmp_path / "out" / "2010_8day_01_cog.tif"
+    first_job = converter.ConversionJob(
+        source, first_destination, 0, "average", (1,), 5
+    )
+    assert converter.run_conversion_job(first_job)[1]
+
+    second_destination = tmp_path / "out" / "2010_8day_02_cog.tif"
+    shutil.copy2(first_destination, second_destination)
+    second_job = converter.ConversionJob(
+        source, second_destination, 0, "average", (2,), 5
+    )
+
+    assert not converter.destination_is_complete(second_job)
+    assert converter.needs_job_conversion(second_job, force=False)
+
+
+def test_invalid_temporary_artifact_does_not_replace_destination(
+    monkeypatch, tmp_path
+):
+    source = tmp_path / "source" / "ET_2010.tif"
+    _write_raster(source, count=46)
+    wrong_source = tmp_path / "source" / "wrong-transform.tif"
+    _write_raster(
+        wrong_source,
+        count=1,
+        transform=from_origin(120, 50, 0.01, 0.01),
+    )
+    destination = tmp_path / "out" / "2010_8day_01_cog.tif"
+    destination.parent.mkdir(parents=True)
+    destination.write_bytes(b"previous")
+    job = converter.ConversionJob(
+        source, destination, 0, "average", (1,), 5
+    )
+    translate_cog = converter._translate_cog
+
+    def translate_wrong_transform(
+        _source, temporary, profile, **kwargs
+    ):
+        translate_cog(wrong_source, temporary, profile, **kwargs)
+
+    monkeypatch.setattr(
+        converter, "_translate_cog", translate_wrong_transform
+    )
+
+    _name, ok, error = converter.run_conversion_job(job)
+
+    assert not ok
+    assert "transform" in error.lower()
+    assert destination.read_bytes() == b"previous"
+    assert list(destination.parent.glob(f".{destination.name}.*.tmp.tif")) == []
+
+
+def test_replace_failure_preserves_destination_and_cleans_temporary(
+    monkeypatch, tmp_path
+):
+    source = tmp_path / "source" / "ET_2010.tif"
+    _write_raster(source, count=46)
+    destination = tmp_path / "out" / "2010_8day_01_cog.tif"
+    destination.parent.mkdir(parents=True)
+    destination.write_bytes(b"previous")
+    job = converter.ConversionJob(
+        source, destination, 0, "average", (1,), 5
+    )
+
+    def fail_replace(temporary, _destination):
+        with rasterio.open(temporary) as dataset:
+            tags = dataset.tags()
+        assert tags["ET_SOURCE_NAME"] == source.name
+        assert tags["ET_SOURCE_YEAR"] == "2010"
+        assert tags["ET_SOURCE_BAND"] == "1"
+        raise OSError("injected replace failure")
+
+    monkeypatch.setattr(converter.os, "replace", fail_replace)
+
+    _name, ok, error = converter.run_conversion_job(job)
+
+    assert not ok
+    assert "injected replace failure" in error
+    assert destination.read_bytes() == b"previous"
+    assert list(destination.parent.glob(f".{destination.name}.*.tmp.tif")) == []
+
+
+def test_et_dry_run_limit_applies_after_period_expansion_without_writes(
+    monkeypatch, tmp_path, capsys
+):
+    source = tmp_path / "source" / "ET_2010.tif"
+    _write_raster(source, count=46)
+    destination = tmp_path / "out"
+    monkeypatch.setitem(
+        converter.DATASETS,
+        "et",
+        converter.DatasetConfig("et", source.parent, destination, nodata=0),
+    )
+    monkeypatch.setattr(
+        sys,
+        "argv",
+        [
+            "convert_external_to_cog.py",
+            "--dataset",
+            "et",
+            "--dry-run",
+            "--limit",
+            "1",
+        ],
+    )
+
+    def fail_if_called(_job):
+        raise AssertionError("dry-run attempted conversion")
+
+    monkeypatch.setattr(converter, "run_conversion_job", fail_if_called)
+
+    assert converter.main() == 0
+
+    output = capsys.readouterr().out
+    assert "Planned conversion: 1 COG(s)" in output
+    assert "2010_8day_01_cog.tif" in output
+    assert "2010_8day_02_cog.tif" not in output
+    assert not destination.exists()
