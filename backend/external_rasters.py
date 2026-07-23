@@ -137,22 +137,12 @@ def _period_file_candidates(
     return files
 
 
-def _et_period_file_candidates(root: Path) -> dict[tuple[int, int], list[Path]]:
-    files: dict[tuple[int, int], list[Path]] = {}
-    for path in _iter_rasters(root):
-        match = _ET_PERIOD_FILE.fullmatch(path.name)
-        if not match:
-            continue
-        key = (int(match.group("year")), int(match.group("period")))
-        files.setdefault(key, []).append(path)
-    return files
-
-
 def discover_period_sources(
     root: Path, *, reject_duplicates: bool = False
 ) -> dict[str, RasterSource]:
     """Map ISO dates to period-file band-1 sources under an explicit root."""
-    candidates = _et_period_file_candidates(root)
+    spec = ExternalRasterSpec(root, "period_files")
+    candidates = _period_file_candidates(spec)
     if reject_duplicates:
         duplicates = {
             _period_date(year, period).isoformat(): paths
@@ -162,12 +152,17 @@ def discover_period_sources(
         if duplicates:
             dates = ", ".join(sorted(duplicates))
             raise ValueError(f"Duplicate raster files for ET time(s): {dates}")
+    canonical_candidates = {
+        key: [path for path in paths if _ET_PERIOD_FILE.fullmatch(path.name)]
+        for key, paths in candidates.items()
+    }
     return {
         _period_date(year, period).isoformat(): RasterSource(
             path=paths[0].resolve(),
             band=1,
         )
-        for (year, period), paths in sorted(candidates.items())
+        for (year, period), paths in sorted(canonical_candidates.items())
+        if paths
     }
 
 
