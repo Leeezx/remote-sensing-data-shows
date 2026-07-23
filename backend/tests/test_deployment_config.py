@@ -150,3 +150,17 @@ def test_acr_deployment_guide_uses_override_and_disables_builds():
     assert "IMAGE_TAG=sha-" in guide
     assert "docker login" in guide
     assert "registry-1.docker.io" not in guide
+
+
+def test_frontend_healthchecks_use_explicit_ipv4_loopback():
+    compose_healthcheck = compose()["services"]["frontend"]["healthcheck"]["test"]
+    assert compose_healthcheck == [
+        "CMD",
+        "wget",
+        "-qO-",
+        "http://127.0.0.1:8080/",
+    ]
+
+    dockerfile = (ROOT / "Dockerfile.frontend").read_text(encoding="utf-8")
+    assert "wget -qO- http://127.0.0.1:8080/" in dockerfile
+    assert "http://localhost:8080/" not in dockerfile
