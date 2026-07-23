@@ -10,6 +10,8 @@ RUN npm run build
 
 FROM nginxinc/nginx-unprivileged:1.28-alpine
 
+RUN mkdir -p /tmp/nginx-cache
+
 COPY --from=builder /app/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
