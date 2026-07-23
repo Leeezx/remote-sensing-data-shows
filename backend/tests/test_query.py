@@ -1,5 +1,7 @@
 """Tests for spatial query endpoints (point and area)."""
 
+import logging
+
 import numpy as np
 import pytest
 from fastapi import HTTPException
@@ -388,6 +390,110 @@ def test_irrigation_area_query_reads_raster_statistics(monkeypatch, tmp_path):
 
     assert response.status_code == 200
     assert response.json() == {"mean": 2.0, "max": 3.0, "min": 1.0, "count": 3}
+
+
+def test_external_point_raster_error_is_sanitized_and_safely_logged(
+    caplog, monkeypatch, tmp_path
+):
+    private_parent = tmp_path / "private-parent-secret"
+    source = query.RasterSource(
+        private_parent / "2010_8day_01_cog.tif",
+        1,
+    )
+    raw_error = (
+        f"raw-private-exception-token opening {source.path}"
+    )
+    monkeypatch.setattr(
+        query,
+        "_validated_external_source",
+        lambda *_args: source,
+    )
+    monkeypatch.setattr(
+        query.rasterio,
+        "open",
+        lambda _path: (_ for _ in ()).throw(
+            query.rasterio.errors.RasterioIOError(raw_error)
+        ),
+    )
+
+    with caplog.at_level(logging.ERROR, logger=query.__name__):
+        response = client.get(
+            "/api/query/point",
+            params={
+                "layerId": "et",
+                "time": "2010-01-01",
+                "lng": 104,
+                "lat": 35,
+            },
+        )
+
+    assert response.status_code == 500
+    assert response.json()["detail"] == "Failed to read raster data"
+    log_text = "\n".join(
+        record.getMessage()
+        for record in caplog.records
+        if record.name == query.__name__
+    )
+    assert "layer=et" in log_text
+    assert "time=2010-01-01" in log_text
+    assert "file=2010_8day_01_cog.tif" in log_text
+    assert "category=rasterio-io-error" in log_text
+    assert str(private_parent) not in log_text
+    assert "raw-private-exception-token" not in log_text
+
+
+def test_external_area_raster_error_is_sanitized_and_safely_logged(
+    caplog, monkeypatch, tmp_path
+):
+    private_parent = tmp_path / "private-parent-secret"
+    source = query.RasterSource(
+        private_parent / "2010_8day_01_cog.tif",
+        1,
+    )
+    raw_error = (
+        f"raw-private-exception-token reading {source.path}"
+    )
+    monkeypatch.setattr(
+        query,
+        "_validated_external_source",
+        lambda *_args: source,
+    )
+    monkeypatch.setattr(
+        query.rasterio,
+        "open",
+        lambda _path: (_ for _ in ()).throw(
+            query.rasterio.errors.RasterioIOError(raw_error)
+        ),
+    )
+
+    with caplog.at_level(logging.ERROR, logger=query.__name__):
+        response = client.post(
+            "/api/query/area",
+            json={
+                "layerId": "et",
+                "time": "2010-01-01",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [[103, 34], [105, 34], [105, 36], [103, 36], [103, 34]]
+                    ],
+                },
+            },
+        )
+
+    assert response.status_code == 500
+    assert response.json()["detail"] == "Failed to read raster data"
+    log_text = "\n".join(
+        record.getMessage()
+        for record in caplog.records
+        if record.name == query.__name__
+    )
+    assert "layer=et" in log_text
+    assert "time=2010-01-01" in log_text
+    assert "file=2010_8day_01_cog.tif" in log_text
+    assert "category=rasterio-io-error" in log_text
+    assert str(private_parent) not in log_text
+    assert "raw-private-exception-token" not in log_text
 
 
 @pytest.mark.parametrize("time", INVALID_SSM_TIMES)

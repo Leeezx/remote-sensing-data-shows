@@ -3,6 +3,7 @@
 from datetime import date
 from functools import lru_cache
 import json
+import logging
 import math
 from numbers import Real
 from pathlib import Path
@@ -17,14 +18,34 @@ ET_LEGEND_CACHE_PATH = (
     Path(__file__).resolve().parents[1] / "data" / "stats" / "et_legends.json"
 )
 _CACHE_LOCK = threading.Lock()
+LOGGER = logging.getLogger(__name__)
+ET_LEGEND_COLORS = (
+    "#d53e4f",
+    "#fc8d59",
+    "#fee08b",
+    "#99d594",
+    "#3288bd",
+    "#016c59",
+)
 
 
 class ETLegendUnavailableError(RuntimeError):
     """The persisted ET legend document cannot serve the requested time."""
 
+    def __init__(self, message: str, *, category: str = "invalid-document"):
+        super().__init__(message)
+        self.category = category
+
 
 def _copy_legend(legend):
     return [dict(item) for item in legend]
+
+
+def _with_fixed_palette(legend):
+    return [
+        {**dict(item), "color": color}
+        for item, color in zip(legend, ET_LEGEND_COLORS)
+    ]
 
 
 def build_et_legend(
@@ -41,6 +62,7 @@ def build_et_legend(
     base_legend = list(base_legend)
     if len(base_legend) != 6:
         return _copy_legend(base_legend)
+    base_legend = _with_fixed_palette(base_legend)
 
     raw_values = np.asarray(values)
     valid = valid_data_mask(
@@ -82,7 +104,10 @@ def validate_et_legend_document(
         isinstance(document.get("version"), bool)
         or document.get("version") != 1
     ):
-        raise ETLegendUnavailableError("Unsupported ET legend version")
+        raise ETLegendUnavailableError(
+            "Unsupported ET legend version",
+            category="unsupported-version",
+        )
 
     legends = document.get("legends")
     if not isinstance(legends, dict):
@@ -134,6 +159,11 @@ def validate_et_legend_document(
                 raise ETLegendUnavailableError(
                     f"ET legend item {index} color must be a string"
                 )
+            if color != ET_LEGEND_COLORS[index - 1]:
+                raise ETLegendUnavailableError(
+                    "ET legend colors must match the canonical ET palette",
+                    category="invalid-palette",
+                )
             label = item.get("label")
             if not isinstance(label, str):
                 raise ETLegendUnavailableError(
@@ -162,11 +192,32 @@ def _load_et_legend_document(
     try:
         serialized = Path(resolved_path).read_text(encoding="utf-8")
         document = json.loads(serialized)
-    except (OSError, UnicodeError, json.JSONDecodeError):
+    except FileNotFoundError:
         raise ETLegendUnavailableError(
-            "Unable to load ET legend document"
+            "Unable to load ET legend document",
+            category="missing-file",
+        ) from None
+    except OSError:
+        raise ETLegendUnavailableError(
+            "Unable to load ET legend document",
+            category="read-error",
+        ) from None
+    except (UnicodeError, json.JSONDecodeError):
+        raise ETLegendUnavailableError(
+            "Unable to load ET legend document",
+            category="invalid-json",
         ) from None
     return validate_et_legend_document(document)
+
+
+@lru_cache(maxsize=128)
+def _log_legend_failure(category: str, basename: str, time: str) -> None:
+    LOGGER.error(
+        "ET legend unavailable category=%s file=%s time=%s",
+        category,
+        basename,
+        time,
+    )
 
 
 def get_precomputed_et_legend(
@@ -175,26 +226,41 @@ def get_precomputed_et_legend(
 ) -> list[dict]:
     """Return a cached persisted ET legend as fresh mutable dictionaries."""
     selected_path = ET_LEGEND_CACHE_PATH if path is None else path
+    basename = Path(selected_path).name
     try:
         resolved_path = Path(selected_path).resolve()
         stat = resolved_path.stat()
-    except OSError:
+    except FileNotFoundError:
+        _log_legend_failure("missing-file", basename, time)
         raise ETLegendUnavailableError(
-            "Unable to access ET legend document"
+            "Unable to access ET legend document",
+            category="missing-file",
+        ) from None
+    except OSError:
+        _log_legend_failure("access-error", basename, time)
+        raise ETLegendUnavailableError(
+            "Unable to access ET legend document",
+            category="access-error",
         ) from None
 
-    with _CACHE_LOCK:
-        legends = _load_et_legend_document(
-            str(resolved_path),
-            stat.st_mtime_ns,
-            stat.st_size,
-        )
+    try:
+        with _CACHE_LOCK:
+            legends = _load_et_legend_document(
+                str(resolved_path),
+                stat.st_mtime_ns,
+                stat.st_size,
+            )
+    except ETLegendUnavailableError as exc:
+        _log_legend_failure(exc.category, basename, time)
+        raise
 
     try:
         legend = legends[time]
     except (KeyError, TypeError):
+        _log_legend_failure("missing-time", basename, time)
         raise ETLegendUnavailableError(
-            f"No precomputed ET legend for time '{time}'"
+            f"No precomputed ET legend for time '{time}'",
+            category="missing-time",
         ) from None
 
     return [

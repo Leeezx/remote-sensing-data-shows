@@ -343,10 +343,10 @@ def test_get_et_legend_does_not_compute_runtime_percentiles(
     persisted_legend = [
         {
             "value": float(index),
-            "color": f"#{index:06x}",
+            "color": color,
             "label": f"{index:.1f} mm/8天",
         }
-        for index in range(1, 7)
+        for index, color in enumerate(et_legends.ET_LEGEND_COLORS, start=1)
     ]
     legend_path.write_text(
         json.dumps(

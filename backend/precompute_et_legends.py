@@ -8,12 +8,14 @@ import json
 import logging
 import os
 from pathlib import Path
+import re
 import sys
 import tempfile
 
 import numpy as np
 import rasterio
 from rasterio.enums import Resampling
+from rio_cogeo.cogeo import cog_validate
 
 from backend.data_loader import get_layer
 from backend.et_legends import build_et_legend, validate_et_legend_document
@@ -24,6 +26,7 @@ LOGGER = logging.getLogger(__name__)
 _START_YEAR = 2010
 _END_YEAR = 2013
 _PERIODS_PER_YEAR = 46
+_EXPECTED_OVERVIEWS = [2, 4, 8, 16, 32]
 
 
 def _copy_legend(legend: list[dict]) -> list[dict]:
@@ -36,6 +39,104 @@ def _canonical_times() -> list[str]:
         for year in range(_START_YEAR, _END_YEAR + 1)
         for period in range(_PERIODS_PER_YEAR)
     ]
+
+
+def _canonical_source_details(time: str) -> tuple[int, int, str]:
+    canonical_times = _canonical_times()
+    try:
+        index = canonical_times.index(time)
+    except ValueError:
+        raise ValueError(f"ET time '{time}' is not canonical") from None
+    year = _START_YEAR + index // _PERIODS_PER_YEAR
+    period = index % _PERIODS_PER_YEAR + 1
+    return year, period, f"{year}_8day_{period:02d}_cog.tif"
+
+
+def validate_et_period_source(time: str, source: RasterSource) -> None:
+    """Reject any ET source that is not the expected validated period COG."""
+    year, period, expected_name = _canonical_source_details(time)
+    if source.path.name != expected_name or source.band != 1:
+        raise ValueError(
+            f"ET source for {time} must be canonical single-band "
+            f"'{expected_name}'"
+        )
+
+    try:
+        valid_cog, _errors, _warnings = cog_validate(source.path)
+    except (OSError, ValueError, rasterio.errors.RasterioError):
+        raise ValueError(
+            f"ET source '{source.path.name}' failed COG validation"
+        ) from None
+    if not valid_cog:
+        raise ValueError(
+            f"ET source '{source.path.name}' must be a valid COG"
+        )
+
+    try:
+        with rasterio.open(source.path) as dataset:
+            if dataset.count != 1:
+                raise ValueError(
+                    f"ET source '{source.path.name}' must be single-band"
+                )
+            if dataset.dtypes != ("uint16",):
+                raise ValueError(
+                    f"ET source '{source.path.name}' must use uint16"
+                )
+            if dataset.nodata != 0:
+                raise ValueError(
+                    f"ET source '{source.path.name}' must use NoData 0"
+                )
+            if not dataset.profile.get("tiled", False):
+                raise ValueError(
+                    f"ET source '{source.path.name}' must be tiled"
+                )
+            if dataset.block_shapes != [(512, 512)]:
+                raise ValueError(
+                    f"ET source '{source.path.name}' must use 512x512 blocks"
+                )
+            if str(dataset.profile.get("compress", "")).lower() != "deflate":
+                raise ValueError(
+                    f"ET source '{source.path.name}' must use DEFLATE"
+                )
+            if dataset.overviews(1) != _EXPECTED_OVERVIEWS:
+                raise ValueError(
+                    f"ET source '{source.path.name}' overviews must be "
+                    f"{_EXPECTED_OVERVIEWS}"
+                )
+
+            tags = dataset.tags()
+    except ValueError:
+        raise
+    except (OSError, rasterio.errors.RasterioError):
+        raise ValueError(
+            f"ET source '{source.path.name}' could not be inspected"
+        ) from None
+
+    expected_tags = {
+        "ET_SOURCE_YEAR": str(year),
+        "ET_SOURCE_BAND": str(period),
+        "ET_OVERVIEW_RESAMPLING": "average",
+    }
+    for key, expected in expected_tags.items():
+        if tags.get(key) != expected:
+            raise ValueError(
+                f"ET source '{source.path.name}' provenance {key} "
+                "does not match its canonical name"
+            )
+
+    source_name = tags.get("ET_SOURCE_NAME", "")
+    provenance_years = re.findall(
+        r"(?<!\d)(20\d{2})(?!\d)", Path(source_name).stem
+    )
+    if (
+        not source_name
+        or Path(source_name).name != source_name
+        or provenance_years != [str(year)]
+    ):
+        raise ValueError(
+            f"ET source '{source.path.name}' provenance ET_SOURCE_NAME "
+            "does not match its canonical name"
+        )
 
 
 def read_et_sample(
@@ -67,28 +168,27 @@ def build_et_legend_document(
     """Build a validated, deterministic document for all 184 ET periods."""
     root = Path(root)
     sources = discover_period_sources(root, reject_duplicates=True)
-    if not sources:
-        raise ValueError(f"No ET period rasters found under '{root}'")
-
     canonical_times = _canonical_times()
     canonical_time_set = set(canonical_times)
-    unexpected_times = sorted(set(sources) - canonical_time_set)
-    if unexpected_times:
-        joined = ", ".join(unexpected_times)
+    source_times = set(sources)
+    if source_times != canonical_time_set:
+        missing_times = sorted(canonical_time_set - source_times)
+        unexpected_times = sorted(source_times - canonical_time_set)
+        details = []
+        if missing_times:
+            details.append(f"missing {len(missing_times)}")
+        if unexpected_times:
+            details.append(f"extra {len(unexpected_times)}")
         raise ValueError(
-            "ET period raster(s) outside the 2010-2013 timeline: "
-            f"{joined}"
+            "ET period raster keys must be exactly the canonical 184 periods "
+            f"({', '.join(details)})"
         )
 
     base_values = _copy_legend(base_legend)
     legends: dict[str, list[dict]] = {}
     for time in canonical_times:
-        source = sources.get(time)
-        if source is None:
-            LOGGER.warning("Missing ET raster for %s; using base legend", time)
-            legends[time] = _copy_legend(base_values)
-            continue
-
+        source = sources[time]
+        validate_et_period_source(time, source)
         values, source_mask, nodata = read_et_sample(source)
         legend = build_et_legend(
             values,

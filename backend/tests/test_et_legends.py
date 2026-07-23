@@ -1,5 +1,6 @@
 import importlib
 import json
+import logging
 import os
 from pathlib import Path
 
@@ -65,6 +66,24 @@ def test_build_et_legend_falls_back_when_six_distinct_stops_are_impossible():
 
     assert result == BASE_LEGEND
     assert result is not BASE_LEGEND
+
+
+def test_build_et_legend_uses_fixed_et_palette():
+    et_legends = _et_legends()
+    base_legend = [
+        {**item, "color": f"#00000{index}"}
+        for index, item in enumerate(BASE_LEGEND)
+    ]
+
+    result = et_legends.build_et_legend(
+        np.arange(1, 101),
+        base_legend,
+        "mm/8天",
+    )
+
+    assert [item["color"] for item in result] == list(
+        et_legends.ET_LEGEND_COLORS
+    )
 
 
 def _document(value_offset: float = 0) -> dict:
@@ -151,6 +170,52 @@ def test_missing_time_is_rejected_without_dynamic_fallback(tmp_path):
         match="No precomputed ET legend for time '2010-01-09'",
     ):
         et_legends.get_precomputed_et_legend("2010-01-09", path)
+
+
+@pytest.mark.parametrize(
+    ("case", "category"),
+    [
+        ("missing-file", "missing-file"),
+        ("bad-json", "invalid-json"),
+        ("bad-version", "unsupported-version"),
+        ("missing-time", "missing-time"),
+    ],
+)
+def test_legend_failures_log_safe_categorized_diagnostics_once(
+    caplog, tmp_path, case, category
+):
+    et_legends = _et_legends()
+    private_parent = tmp_path / "private-parent-secret"
+    private_parent.mkdir()
+    path = private_parent / f"{case}.json"
+    time = "2010-01-09"
+    if case == "bad-json":
+        path.write_text("{raw-private-exception-token", encoding="utf-8")
+    elif case == "bad-version":
+        path.write_text(
+            json.dumps({"version": 99, "legends": {}}),
+            encoding="utf-8",
+        )
+    elif case == "missing-time":
+        path.write_text(json.dumps(_document()), encoding="utf-8")
+
+    with caplog.at_level(logging.ERROR, logger=et_legends.__name__):
+        for _ in range(2):
+            with pytest.raises(et_legends.ETLegendUnavailableError):
+                et_legends.get_precomputed_et_legend(time, path)
+
+    records = [
+        record
+        for record in caplog.records
+        if record.name == et_legends.__name__
+    ]
+    assert len(records) == 1
+    message = records[0].getMessage()
+    assert f"category={category}" in message
+    assert f"file={path.name}" in message
+    assert f"time={time}" in message
+    assert str(private_parent) not in message
+    assert "raw-private-exception-token" not in message
 
 
 def test_validate_et_legend_document_returns_normalized_immutable_entries():
@@ -258,4 +323,16 @@ def test_validate_et_legend_document_rejects_malformed_entries(document, message
     et_legends = _et_legends()
 
     with pytest.raises(et_legends.ETLegendUnavailableError, match=message):
+        et_legends.validate_et_legend_document(document)
+
+
+def test_validate_et_legend_document_rejects_noncanonical_palette():
+    et_legends = _et_legends()
+    document = _document()
+    document["legends"]["2010-01-01"][0]["color"] = "#000000"
+
+    with pytest.raises(
+        et_legends.ETLegendUnavailableError,
+        match="canonical ET palette",
+    ):
         et_legends.validate_et_legend_document(document)

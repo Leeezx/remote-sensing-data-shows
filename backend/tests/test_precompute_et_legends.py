@@ -1,6 +1,7 @@
 import importlib
 import json
 from pathlib import Path
+from types import SimpleNamespace
 
 import numpy as np
 import pytest
@@ -44,12 +45,79 @@ def _write_period(path: Path, values: np.ndarray) -> None:
         dataset.write(values.astype("uint16"), 1)
 
 
-def test_build_document_is_sorted_complete_and_scaled(tmp_path):
+def _canonical_sources(precompute_et_legends, root: Path):
+    return {
+        time: RasterSource(
+            root
+            / (
+                f"{time[:4]}_8day_"
+                f"{(index % 46 + 1):02d}_cog.tif"
+            ),
+            1,
+        )
+        for index, time in enumerate(precompute_et_legends._canonical_times())
+    }
+
+
+def _fake_period_dataset(**overrides):
+    values = {
+        "count": 1,
+        "dtypes": ("uint16",),
+        "nodata": 0,
+        "profile": {"tiled": True, "compress": "deflate"},
+        "block_shapes": [(512, 512)],
+        "overview_values": [2, 4, 8, 16, 32],
+        "tag_values": {
+            "ET_SOURCE_NAME": "2010_cog.tif",
+            "ET_SOURCE_YEAR": "2010",
+            "ET_SOURCE_BAND": "1",
+            "ET_OVERVIEW_RESAMPLING": "average",
+        },
+    }
+    values.update(overrides)
+
+    class FakeDataset(SimpleNamespace):
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_args):
+            return False
+
+        def overviews(self, band):
+            assert band == 1
+            return self.overview_values
+
+        def tags(self):
+            return self.tag_values
+
+    return FakeDataset(**values)
+
+
+def test_build_document_is_sorted_complete_and_scaled(monkeypatch, tmp_path):
     precompute_et_legends = _precomputer()
     root = tmp_path / "et"
     values = np.arange(1, 257, dtype=np.uint16).reshape(16, 16)
-    _write_period(root / "2010_8day_02_cog.tif", values + 10)
-    _write_period(root / "2010_8day_01_cog.tif", values)
+    sources = _canonical_sources(precompute_et_legends, root)
+    monkeypatch.setattr(
+        precompute_et_legends,
+        "discover_period_sources",
+        lambda *_args, **_kwargs: dict(reversed(list(sources.items()))),
+    )
+    monkeypatch.setattr(
+        precompute_et_legends,
+        "validate_et_period_source",
+        lambda *_args: None,
+        raising=False,
+    )
+    monkeypatch.setattr(
+        precompute_et_legends,
+        "read_et_sample",
+        lambda source: (
+            values + (10 if source.path.name.endswith("02_cog.tif") else 0),
+            np.full(values.shape, 255, dtype=np.uint8),
+            0,
+        ),
+    )
 
     document = precompute_et_legends.build_et_legend_document(
         root, BASE_LEGEND, "mm/8天"
@@ -61,7 +129,9 @@ def test_build_document_is_sorted_complete_and_scaled(tmp_path):
     assert list(document["legends"])[-1] == "2013-12-27"
     assert len(document["legends"]["2010-01-01"]) == 6
     assert document["legends"]["2010-01-01"][0]["value"] < 10
-    assert document["legends"]["2010-01-17"] == BASE_LEGEND
+    assert document["legends"]["2010-01-09"][0]["value"] > (
+        document["legends"]["2010-01-01"][0]["value"]
+    )
 
 
 def test_duplicate_period_files_are_a_hard_failure(tmp_path):
@@ -81,11 +151,13 @@ def test_empty_root_is_a_hard_failure(tmp_path):
     precompute_et_legends = _precomputer()
     root = tmp_path / "missing-et"
 
-    with pytest.raises(ValueError) as exc_info:
+    with pytest.raises(
+        ValueError,
+        match=r"exactly the canonical 184 periods \(missing 184\)",
+    ):
         precompute_et_legends.build_et_legend_document(
             root, BASE_LEGEND, "mm/8天"
         )
-    assert str(exc_info.value) == f"No ET period rasters found under '{root}'"
 
 
 def test_period_outside_canonical_timeline_is_a_hard_failure(tmp_path):
@@ -96,18 +168,40 @@ def test_period_outside_canonical_timeline_is_a_hard_failure(tmp_path):
         np.arange(1, 257, dtype=np.uint16).reshape(16, 16),
     )
 
-    with pytest.raises(ValueError, match="outside the 2010-2013 timeline"):
+    with pytest.raises(
+        ValueError,
+        match=r"canonical 184 periods \(missing 184, extra 1\)",
+    ):
         precompute_et_legends.build_et_legend_document(
             root, BASE_LEGEND, "mm/8天"
         )
 
 
-def test_constant_period_uses_base_legend_and_logs_warning(caplog, tmp_path):
+def test_constant_period_uses_base_legend_and_logs_warning(
+    caplog, monkeypatch, tmp_path
+):
     precompute_et_legends = _precomputer()
     root = tmp_path / "et"
-    _write_period(
-        root / "2010_8day_01_cog.tif",
-        np.ones((16, 16), dtype=np.uint16),
+    sources = _canonical_sources(precompute_et_legends, root)
+    monkeypatch.setattr(
+        precompute_et_legends,
+        "discover_period_sources",
+        lambda *_args, **_kwargs: sources,
+    )
+    monkeypatch.setattr(
+        precompute_et_legends,
+        "validate_et_period_source",
+        lambda *_args: None,
+        raising=False,
+    )
+    monkeypatch.setattr(
+        precompute_et_legends,
+        "read_et_sample",
+        lambda _source: (
+            np.ones((16, 16), dtype=np.uint16),
+            np.full((16, 16), 255, dtype=np.uint8),
+            0,
+        ),
     )
 
     document = precompute_et_legends.build_et_legend_document(
@@ -118,9 +212,7 @@ def test_constant_period_uses_base_legend_and_logs_warning(caplog, tmp_path):
     assert "base legend" in caplog.text
 
 
-def test_missing_period_uses_independent_base_copy_and_logs_warning(
-    caplog, tmp_path
-):
+def test_missing_period_is_a_hard_failure(tmp_path):
     precompute_et_legends = _precomputer()
     root = tmp_path / "et"
     _write_period(
@@ -128,17 +220,110 @@ def test_missing_period_uses_independent_base_copy_and_logs_warning(
         np.arange(1, 257, dtype=np.uint16).reshape(16, 16),
     )
 
-    document = precompute_et_legends.build_et_legend_document(
-        root, BASE_LEGEND, "mm/8天"
+    with pytest.raises(ValueError, match="exactly the canonical 184 periods"):
+        precompute_et_legends.build_et_legend_document(
+            root, BASE_LEGEND, "mm/8天"
+        )
+
+
+@pytest.mark.parametrize(
+    ("overrides", "message"),
+    [
+        ({"count": 2}, "single-band"),
+        ({"dtypes": ("float32",)}, "uint16"),
+        ({"nodata": None}, "NoData 0"),
+        ({"profile": {"tiled": False, "compress": "deflate"}}, "tiled"),
+        ({"block_shapes": [(256, 256)]}, "512x512"),
+        ({"profile": {"tiled": True, "compress": "lzw"}}, "DEFLATE"),
+        ({"overview_values": [2, 4, 8, 16]}, "overviews"),
+        (
+            {
+                "tag_values": {
+                    "ET_SOURCE_NAME": "2010_cog.tif",
+                    "ET_SOURCE_YEAR": "2010",
+                    "ET_SOURCE_BAND": "2",
+                    "ET_OVERVIEW_RESAMPLING": "average",
+                }
+            },
+            "ET_SOURCE_BAND",
+        ),
+        (
+            {
+                "tag_values": {
+                    "ET_SOURCE_NAME": "2011_cog.tif",
+                    "ET_SOURCE_YEAR": "2010",
+                    "ET_SOURCE_BAND": "1",
+                    "ET_OVERVIEW_RESAMPLING": "average",
+                }
+            },
+            "ET_SOURCE_NAME",
+        ),
+        (
+            {
+                "tag_values": {
+                    "ET_SOURCE_NAME": "2010_cog.tif",
+                    "ET_SOURCE_YEAR": "2011",
+                    "ET_SOURCE_BAND": "1",
+                    "ET_OVERVIEW_RESAMPLING": "average",
+                }
+            },
+            "ET_SOURCE_YEAR",
+        ),
+        (
+            {
+                "tag_values": {
+                    "ET_SOURCE_NAME": "2010_cog.tif",
+                    "ET_SOURCE_YEAR": "2010",
+                    "ET_SOURCE_BAND": "1",
+                    "ET_OVERVIEW_RESAMPLING": "nearest",
+                }
+            },
+            "ET_OVERVIEW_RESAMPLING",
+        ),
+    ],
+)
+def test_period_structure_and_provenance_are_hard_requirements(
+    monkeypatch, tmp_path, overrides, message
+):
+    precompute_et_legends = _precomputer()
+    source = RasterSource(tmp_path / "2010_8day_01_cog.tif", 1)
+    monkeypatch.setattr(
+        precompute_et_legends.rasterio,
+        "open",
+        lambda _path: _fake_period_dataset(**overrides),
+    )
+    monkeypatch.setattr(
+        precompute_et_legends,
+        "cog_validate",
+        lambda _path: (True, [], []),
+        raising=False,
     )
 
-    missing = document["legends"]["2010-01-09"]
-    another_missing = document["legends"]["2010-01-17"]
-    assert missing == BASE_LEGEND
-    assert missing is not BASE_LEGEND
-    assert missing is not another_missing
-    assert missing[0] is not another_missing[0]
-    assert "Missing ET raster for 2010-01-09; using base legend" in caplog.text
+    with pytest.raises(ValueError, match=message):
+        precompute_et_legends.validate_et_period_source(
+            "2010-01-01", source
+        )
+
+
+def test_invalid_cog_is_a_hard_failure(monkeypatch, tmp_path):
+    precompute_et_legends = _precomputer()
+    source = RasterSource(tmp_path / "2010_8day_01_cog.tif", 1)
+    monkeypatch.setattr(
+        precompute_et_legends.rasterio,
+        "open",
+        lambda _path: _fake_period_dataset(),
+    )
+    monkeypatch.setattr(
+        precompute_et_legends,
+        "cog_validate",
+        lambda _path: (False, ["not a COG"], []),
+        raising=False,
+    )
+
+    with pytest.raises(ValueError, match="valid COG"):
+        precompute_et_legends.validate_et_period_source(
+            "2010-01-01", source
+        )
 
 
 def test_read_et_sample_limits_each_dimension_to_512(tmp_path):
@@ -226,10 +411,12 @@ def test_atomic_write_fsyncs_before_replace(monkeypatch, tmp_path):
     }
 
 
-def test_cli_writes_complete_document_and_reports_source_count(capsys, tmp_path):
+def test_cli_missing_period_preserves_previous_document(capsys, tmp_path):
     precompute_et_legends = _precomputer()
     root = tmp_path / "et"
     output = tmp_path / "stats" / "et_legends.json"
+    output.parent.mkdir(parents=True)
+    output.write_text('{"previous": true}', encoding="utf-8")
     _write_period(
         root / "2010_8day_01_cog.tif",
         np.arange(1, 257, dtype=np.uint16).reshape(16, 16),
@@ -240,10 +427,11 @@ def test_cli_writes_complete_document_and_reports_source_count(capsys, tmp_path)
     )
 
     captured = capsys.readouterr()
-    assert result == 0
-    assert "1 ET period raster" in captured.out
-    assert str(output) in captured.out
-    assert len(json.loads(output.read_text(encoding="utf-8"))["legends"]) == 184
+    assert result == 1
+    assert "canonical 184 periods" in captured.err
+    assert json.loads(output.read_text(encoding="utf-8")) == {
+        "previous": True
+    }
 
 
 def test_cli_returns_nonzero_when_et_metadata_is_missing(
