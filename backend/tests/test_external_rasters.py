@@ -129,6 +129,31 @@ def test_default_et_runtime_spec_uses_period_files():
     assert external_rasters.EXTERNAL_RASTERS["et"].layout == "period_files"
 
 
+def test_et_resolution_does_not_open_raster_to_select_a_band(
+    monkeypatch, tmp_path
+):
+    root = tmp_path / "et"
+    root.mkdir()
+    path = root / "2010_8day_02_cog.tif"
+    path.touch()
+    monkeypatch.setitem(
+        external_rasters.EXTERNAL_RASTERS,
+        "et",
+        ExternalRasterSpec(root, "period_files", 0.1, (0,)),
+    )
+    monkeypatch.setattr(
+        external_rasters.rasterio,
+        "open",
+        lambda *_args, **_kwargs: pytest.fail(
+            "ET resolution must not inspect multi-band raster metadata"
+        ),
+    )
+
+    source = external_rasters.resolve_external_raster("et", "2010-01-09")
+
+    assert source == RasterSource(path.resolve(), 1)
+
+
 def test_discover_period_sources_uses_explicit_root(tmp_path):
     root = tmp_path / "et"
     _write_raster(

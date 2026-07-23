@@ -4,13 +4,10 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from datetime import date, timedelta
-from functools import lru_cache
 from pathlib import Path
 import re
 
-import numpy as np
 import rasterio
-from rasterio.enums import Resampling
 from rasterio.errors import RasterioIOError
 
 from backend.raster_rendering import valid_data_mask
@@ -254,102 +251,3 @@ def external_valid_data_mask(layer_id: str, values, source_mask=None, nodata=Non
     for value in EXTERNAL_RASTERS[layer_id].nodata_values:
         mask &= values != value
     return mask
-
-
-def _legend_signature(legend) -> tuple[tuple[float, str, str], ...]:
-    return tuple(
-        (float(item["value"]), str(item["color"]), str(item["label"]))
-        for item in legend
-    )
-
-
-def _build_external_dynamic_legend(
-    values, base_legend, unit: str, nodata_values=(), source_mask=None, nodata=None
-) -> list[dict]:
-    """Create six distinct ET classes after excluding layer NoData values."""
-    valid = valid_data_mask(values, source_mask=source_mask, nodata=nodata)
-    for value in nodata_values:
-        valid &= values != value
-    valid_values = values[valid]
-    positive_values = valid_values[valid_values > 0]
-    if len(base_legend) != 6 or positive_values.size < 6:
-        return [dict(item) for item in base_legend]
-
-    stops = np.percentile(positive_values, np.linspace(2, 98, 6))
-    if not np.all(np.isfinite(stops)) or not np.all(np.diff(stops) > 0):
-        return [dict(item) for item in base_legend]
-    return [
-        {
-            "value": float(value),
-            "color": item["color"],
-            "label": f"{value:.1f} {unit}".strip(),
-        }
-        for value, item in zip(stops, base_legend)
-    ]
-
-
-@lru_cache(maxsize=64)
-def _cached_external_dynamic_legend(
-    path_text: str,
-    mtime_ns: int,
-    band: int,
-    value_scale: float,
-    nodata_values: tuple[float, ...],
-    base_signature: tuple[tuple[float, str, str], ...],
-    unit: str,
-) -> tuple[tuple[float, str, str], ...]:
-    """Build a compact, cached six-stop legend from a representative sample."""
-    del mtime_ns
-    with rasterio.open(path_text) as source:
-        height = min(source.height, 512)
-        width = min(source.width, 512)
-        values = source.read(
-            band,
-            out_shape=(height, width),
-            resampling=Resampling.average,
-        ) * value_scale
-        source_mask = source.read_masks(
-            band,
-            out_shape=(height, width),
-            resampling=Resampling.nearest,
-        )
-        nodata = source.nodata
-
-    if nodata is not None:
-        nodata *= value_scale
-    base_legend = [
-        {"value": value, "color": color, "label": label}
-        for value, color, label in base_signature
-    ]
-    return tuple(
-        (item["value"], item["color"], item["label"])
-        for item in _build_external_dynamic_legend(
-            values,
-            base_legend,
-            unit,
-            nodata_values=nodata_values,
-            source_mask=source_mask,
-            nodata=nodata,
-        )
-    )
-
-
-def get_external_dynamic_legend(
-    layer_id: str, source: RasterSource, base_legend, unit: str
-) -> list[dict]:
-    """Return a per-time ET legend using the shared six-class color scheme."""
-    scale = external_value_scale(layer_id)
-    path = source.path.resolve()
-    cached = _cached_external_dynamic_legend(
-        str(path),
-        path.stat().st_mtime_ns,
-        source.band,
-        scale,
-        EXTERNAL_RASTERS[layer_id].nodata_values,
-        _legend_signature(base_legend),
-        unit,
-    )
-    return [
-        {"value": value, "color": color, "label": label}
-        for value, color, label in cached
-    ]

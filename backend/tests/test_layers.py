@@ -1,10 +1,15 @@
 """Tests for layer listing and time point endpoints."""
 
+import json
 from copy import deepcopy
+from types import SimpleNamespace
 
 from fastapi.testclient import TestClient
+import pytest
 
 from data import validate_data
+from backend import et_legends
+from backend.et_legends import ETLegendUnavailableError
 from backend.main import app
 from backend.routers import layers as layers_router
 from backend.external_rasters import RasterSource
@@ -209,30 +214,169 @@ def test_get_ssm_legend_rejects_invalid_time_before_missing_metadata(
     assert metadata_calls == []
 
 
-def test_get_et_legend_uses_the_resolved_time_source(monkeypatch, tmp_path):
-    et_path = tmp_path / "2010_cog.tif"
+def test_get_et_legend_uses_precomputed_time_entry(monkeypatch, tmp_path):
+    et_path = tmp_path / "2010_8day_01_cog.tif"
     et_path.touch()
-    base_legend = [{"value": 0, "color": "#d53e4f", "label": "低"}]
-    dynamic_legend = [{"value": 12.3, "color": "#d53e4f", "label": "12.3 mm/8天"}]
-    source = RasterSource(et_path, 1)
+    dynamic_legend = [
+        {"value": 12.3, "color": "#d53e4f", "label": "12.3 mm/8天"}
+    ]
     calls = []
     monkeypatch.setattr(
         layers_router,
         "get_layer",
-        lambda layer_id: {"id": layer_id, "unit": "mm/8天", "legend": base_legend},
+        lambda layer_id: {
+            "id": layer_id,
+            "unit": "mm/8天",
+            "legend": [{"value": 0, "color": "#d53e4f", "label": "低"}],
+        },
     )
-    monkeypatch.setattr(layers_router, "resolve_external_raster", lambda *_args: source)
     monkeypatch.setattr(
         layers_router,
-        "get_external_dynamic_legend",
-        lambda *args: calls.append(args) or dynamic_legend,
+        "resolve_external_raster",
+        lambda *_args: RasterSource(et_path, 1),
+    )
+    monkeypatch.setattr(
+        layers_router,
+        "get_precomputed_et_legend",
+        lambda time: calls.append(time) or dynamic_legend,
     )
 
     response = client.get("/api/layers/et/legend", params={"time": "2010-01-01"})
 
     assert response.status_code == 200
     assert response.json()["legend"] == dynamic_legend
-    assert calls == [("et", source, base_legend, "mm/8天")]
+    assert calls == ["2010-01-01"]
+
+
+def test_get_et_legend_returns_503_when_precomputed_entry_is_unavailable(
+    monkeypatch, tmp_path
+):
+    et_path = tmp_path / "2010_8day_01_cog.tif"
+    et_path.touch()
+    monkeypatch.setattr(
+        layers_router,
+        "get_layer",
+        lambda layer_id: {
+            "id": layer_id,
+            "unit": "mm/8天",
+            "legend": [{"value": 0, "color": "#d53e4f", "label": "低"}],
+        },
+    )
+    monkeypatch.setattr(
+        layers_router,
+        "resolve_external_raster",
+        lambda *_args: RasterSource(et_path, 1),
+    )
+
+    def unavailable(_time):
+        raise ETLegendUnavailableError("missing test entry")
+
+    monkeypatch.setattr(
+        layers_router, "get_precomputed_et_legend", unavailable
+    )
+
+    response = client.get("/api/layers/et/legend", params={"time": "2010-01-01"})
+
+    assert response.status_code == 503
+    assert response.json()["detail"] == (
+        "ET legend is unavailable for time '2010-01-01'"
+    )
+
+
+def test_get_et_legend_keeps_missing_period_404_before_legend_lookup(
+    monkeypatch,
+):
+    legend_calls = []
+
+    def missing_period(*_args):
+        raise FileNotFoundError("missing period")
+
+    monkeypatch.setattr(
+        layers_router,
+        "resolve_external_raster",
+        missing_period,
+    )
+    monkeypatch.setattr(
+        layers_router,
+        "get_precomputed_et_legend",
+        lambda time: legend_calls.append(time),
+    )
+
+    response = client.get("/api/layers/et/legend", params={"time": "2010-01-01"})
+
+    assert response.status_code == 404
+    assert response.json()["detail"] == "missing period"
+    assert legend_calls == []
+
+
+@pytest.mark.parametrize("persisted_contents", [None, "{bad json"])
+def test_get_et_legend_returns_safe_503_for_missing_or_bad_json(
+    monkeypatch, tmp_path, persisted_contents
+):
+    et_path = tmp_path / "2010_8day_01_cog.tif"
+    et_path.touch()
+    legend_path = tmp_path / "et_legends.json"
+    if persisted_contents is not None:
+        legend_path.write_text(persisted_contents, encoding="utf-8")
+    monkeypatch.setattr(et_legends, "ET_LEGEND_CACHE_PATH", legend_path)
+    monkeypatch.setattr(
+        layers_router,
+        "resolve_external_raster",
+        lambda *_args: RasterSource(et_path, 1),
+    )
+
+    response = client.get("/api/layers/et/legend", params={"time": "2010-01-01"})
+
+    assert response.status_code == 503
+    assert response.json()["detail"] == (
+        "ET legend is unavailable for time '2010-01-01'"
+    )
+    assert str(legend_path) not in response.text
+
+
+def test_get_et_legend_does_not_compute_runtime_percentiles(
+    monkeypatch, tmp_path
+):
+    et_path = tmp_path / "2010_8day_01_cog.tif"
+    et_path.touch()
+    legend_path = tmp_path / "et_legends.json"
+    persisted_legend = [
+        {
+            "value": float(index),
+            "color": f"#{index:06x}",
+            "label": f"{index:.1f} mm/8天",
+        }
+        for index in range(1, 7)
+    ]
+    legend_path.write_text(
+        json.dumps(
+            {
+                "version": 1,
+                "legends": {"2010-01-01": persisted_legend},
+            }
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(et_legends, "ET_LEGEND_CACHE_PATH", legend_path)
+    monkeypatch.setattr(
+        layers_router,
+        "resolve_external_raster",
+        lambda *_args: RasterSource(et_path, 1),
+    )
+    monkeypatch.setattr(
+        et_legends,
+        "np",
+        SimpleNamespace(
+            percentile=lambda *_args, **_kwargs: pytest.fail(
+                "runtime percentile calculation is forbidden"
+            )
+        ),
+    )
+
+    response = client.get("/api/layers/et/legend", params={"time": "2010-01-01"})
+
+    assert response.status_code == 200
+    assert response.json()["legend"] == persisted_legend
 
 
 def test_et_metadata_describes_single_period_cogs():
