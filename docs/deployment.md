@@ -64,13 +64,15 @@ python3 scripts/check_deployment_data.py
 
 ```dotenv
 SITE_ADDRESS=:80
-UVICORN_WORKERS=1
+UVICORN_WORKERS=2
 GDAL_CACHEMAX=256
 MAX_AREA_QUERY_PIXELS=4000000
 ENABLE_API_DOCS=false
 ```
 
-单工作进程是有意的默认值：栅格目录和行政统计会占用较多内存。不要在没有观测实际内存峰值前增加工作进程。
+两个工作进程与 2 核服务器匹配；每个进程的 GDAL 块缓存上限为
+256MB。上线后应通过 `docker stats` 观察代表性地图浏览和区域查询时的
+实际内存峰值。
 
 ## 5. 启动与检查
 
@@ -100,7 +102,8 @@ docker compose logs -f backend
 docker stats
 ```
 
-若后端接近内存上限，优先保持 `UVICORN_WORKERS=1`，并逐步降低 `GDAL_CACHEMAX`。只有在代表性查询压测后仍有足够余量时，才逐个增加工作进程。
+若后端接近内存上限，先将 `UVICORN_WORKERS` 从 `2` 降为 `1`；仍有
+压力时再逐步降低 `GDAL_CACHEMAX`。
 
 ## 7. 数据与缓存备份
 

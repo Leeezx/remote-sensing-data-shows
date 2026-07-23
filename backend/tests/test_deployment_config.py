@@ -66,6 +66,15 @@ def test_backend_runtime_mounts_and_defaults_are_safe():
     assert backend["healthcheck"]["start_period"] == "120s"
     assert "/api/ready" in " ".join(backend["healthcheck"]["test"])
 
+    env_example = (ROOT / ".env.example").read_text(encoding="utf-8")
+    dockerfile = (ROOT / "Dockerfile.backend").read_text(encoding="utf-8")
+    deployment_guide = (ROOT / "docs" / "deployment.md").read_text(
+        encoding="utf-8"
+    )
+    assert "UVICORN_WORKERS=2" in env_example
+    assert "--workers ${UVICORN_WORKERS:-2}" in dockerfile
+    assert "UVICORN_WORKERS=2" in deployment_guide
+
 
 def test_proxy_contract_contains_limits_cache_and_internal_port():
     nginx = (ROOT / "nginx.conf").read_text(encoding="utf-8")
