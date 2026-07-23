@@ -20,6 +20,15 @@ def _et_legends():
     return importlib.import_module("backend.et_legends")
 
 
+def test_default_et_legend_cache_path_is_project_stats_file():
+    et_legends = _et_legends()
+    project_root = Path(__file__).resolve().parents[2]
+
+    assert et_legends.ET_LEGEND_CACHE_PATH == (
+        project_root / "data" / "stats" / "et_legends.json"
+    )
+
+
 def test_build_et_legend_masks_invalid_raw_values_before_scaling():
     et_legends = _et_legends()
     values = np.array([0, 100, 200, 300, 400, 500, 600, -999, np.nan])

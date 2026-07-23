@@ -14,7 +14,7 @@ from backend.raster_rendering import valid_data_mask
 
 
 ET_LEGEND_CACHE_PATH = (
-    Path(__file__).resolve().parents[1] / "data" / "et_legends.json"
+    Path(__file__).resolve().parents[1] / "data" / "stats" / "et_legends.json"
 )
 _CACHE_LOCK = threading.Lock()
 
