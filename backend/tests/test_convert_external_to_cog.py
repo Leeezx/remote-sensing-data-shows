@@ -16,15 +16,19 @@ def _write_raster(
     count: int,
     dtype: str = "uint16",
     nodata: int | float | None = 0,
+    height: int = 32,
+    width: int = 32,
 ) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    values = np.arange(count * 32 * 32, dtype=dtype).reshape(count, 32, 32)
+    values = np.arange(count * height * width, dtype=dtype).reshape(
+        count, height, width
+    )
     with rasterio.open(
         path,
         "w",
         driver="GTiff",
-        height=32,
-        width=32,
+        height=height,
+        width=width,
         count=count,
         dtype=dtype,
         crs="EPSG:4326",
@@ -109,3 +113,77 @@ def test_et_source_and_destination_must_be_different(tmp_path):
 
     with pytest.raises(ValueError, match="must be different"):
         converter.validate_conversion_roots(config)
+
+
+def test_et_job_writes_atomic_valid_single_band_cog(tmp_path):
+    from rio_cogeo.cogeo import cog_validate
+
+    source = tmp_path / "source" / "ET_2010.tif"
+    _write_raster(source, count=46, height=512, width=1024)
+    destination = tmp_path / "out" / "2010_8day_02_cog.tif"
+    job = converter.ConversionJob(
+        source=source,
+        destination=destination,
+        nodata=0,
+        overview_resampling="average",
+        indexes=(2,),
+        overview_level=5,
+    )
+
+    name, ok, error = converter.run_conversion_job(job)
+
+    assert (name, ok, error) == (source.name, True, "")
+    assert destination.is_file()
+    assert list(destination.parent.glob(f".{destination.name}.*.tmp.tif")) == []
+    valid, errors, _warnings = cog_validate(destination)
+    assert valid, errors
+    with rasterio.open(destination) as dataset:
+        assert dataset.count == 1
+        assert dataset.dtypes == ("uint16",)
+        assert dataset.nodata == 0
+        assert dataset.is_tiled
+        assert dataset.block_shapes == [(512, 512)]
+        assert dataset.profile["interleave"] == "band"
+        assert dataset.overviews(1) == [2, 4, 8, 16, 32]
+        with rasterio.open(source) as source_dataset:
+            expected = source_dataset.read(2)
+        np.testing.assert_array_equal(dataset.read(1), expected)
+
+
+def test_failed_conversion_does_not_replace_existing_destination(
+    monkeypatch, tmp_path
+):
+    source = tmp_path / "ET_2010.tif"
+    _write_raster(source, count=46)
+    destination = tmp_path / "out" / "2010_8day_01_cog.tif"
+    destination.parent.mkdir(parents=True)
+    destination.write_bytes(b"previous")
+    job = converter.ConversionJob(
+        source, destination, 0, "average", (1,), 5
+    )
+
+    def fail_translate(*_args, **_kwargs):
+        raise RuntimeError("injected conversion failure")
+
+    monkeypatch.setattr(converter, "_translate_cog", fail_translate)
+
+    _name, ok, error = converter.run_conversion_job(job)
+
+    assert not ok
+    assert "injected conversion failure" in error
+    assert destination.read_bytes() == b"previous"
+    assert list(destination.parent.glob(f".{destination.name}.*.tmp.tif")) == []
+
+
+def test_complete_destination_is_skipped_unless_forced(tmp_path):
+    source = tmp_path / "source" / "ET_2010.tif"
+    _write_raster(source, count=46)
+    destination = tmp_path / "out" / "2010_8day_01_cog.tif"
+    job = converter.ConversionJob(
+        source, destination, 0, "average", (1,), 5
+    )
+    assert converter.run_conversion_job(job)[1]
+
+    assert converter.destination_is_complete(job)
+    assert not converter.needs_job_conversion(job, force=False)
+    assert converter.needs_job_conversion(job, force=True)

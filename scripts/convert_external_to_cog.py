@@ -18,10 +18,12 @@ from __future__ import annotations
 import argparse
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from dataclasses import dataclass
+import os
 from pathlib import Path
 import re
 import sys
 import time
+import uuid
 
 import rasterio
 
@@ -164,39 +166,141 @@ def needs_conversion(source: Path, destination: Path, force: bool = False) -> bo
     return source.stat().st_mtime > destination.stat().st_mtime
 
 
+def _translate_cog(
+    source: Path,
+    destination: Path,
+    profile: dict,
+    *,
+    indexes: tuple[int, ...] | None,
+    nodata: float | None,
+    overview_level: int | None,
+    overview_resampling: str,
+) -> None:
+    from rio_cogeo.cogeo import cog_translate
+
+    cog_translate(
+        str(source),
+        str(destination),
+        profile,
+        indexes=indexes,
+        add_mask=True,
+        nodata=nodata,
+        overview_level=overview_level,
+        overview_resampling=overview_resampling,
+        quiet=True,
+    )
+
+
 def convert_one(
     source: Path,
     destination: Path,
     nodata: float | None,
     overview_resampling: str = "average",
+    indexes: tuple[int, ...] | None = None,
+    overview_level: int | None = None,
 ) -> tuple[str, bool, str]:
-    """Convert one source to a lossless COG while preserving every band."""
-    from rio_cogeo.cogeo import cog_translate
+    """Convert one source to a validated COG using an atomic replacement."""
+    from rio_cogeo.cogeo import cog_validate
     from rio_cogeo.profiles import cog_profiles
 
-    destination.parent.mkdir(parents=True, exist_ok=True)
     profile = dict(cog_profiles.get(COG_PROFILE))
     profile["blockxsize"] = COG_BLOCKSIZE
     profile["blockysize"] = COG_BLOCKSIZE
+    profile["interleave"] = "band"
     if nodata is not None:
         profile["nodata"] = nodata
 
+    temporary = destination.with_name(
+        f".{destination.name}.{uuid.uuid4().hex}.tmp.tif"
+    )
     try:
-        cog_translate(
-            str(source),
-            str(destination),
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        _translate_cog(
+            source,
+            temporary,
             profile,
-            indexes=None,  # Preserve all 46 ET bands; do not reduce to band 1.
-            add_mask=True,
+            indexes=indexes,
             nodata=nodata,
+            overview_level=overview_level,
             overview_resampling=overview_resampling,
-            quiet=True,
         )
+        valid, errors, _warnings = cog_validate(temporary)
+        if not valid:
+            raise RuntimeError(f"COG validation failed: {errors}")
+        with rasterio.open(temporary) as dataset:
+            if indexes is not None and len(indexes) == 1 and dataset.count != 1:
+                raise RuntimeError(
+                    f"Expected one output band; found {dataset.count}"
+                )
+        os.replace(temporary, destination)
         return source.name, True, ""
-    except Exception as exc:  # pragma: no cover - exact GDAL errors vary by host
-        if destination.is_file():
-            destination.unlink()
+    except Exception as exc:
+        try:
+            temporary.unlink(missing_ok=True)
+        except OSError:
+            pass
         return source.name, False, str(exc)
+
+
+def run_conversion_job(job: ConversionJob) -> tuple[str, bool, str]:
+    return convert_one(
+        job.source,
+        job.destination,
+        job.nodata,
+        job.overview_resampling,
+        job.indexes,
+        job.overview_level,
+    )
+
+
+def destination_is_complete(job: ConversionJob) -> bool:
+    from rio_cogeo.cogeo import cog_validate
+
+    if not job.destination.is_file():
+        return False
+    try:
+        valid, _errors, _warnings = cog_validate(job.destination)
+        if not valid:
+            return False
+        with (
+            rasterio.open(job.source) as source,
+            rasterio.open(job.destination) as destination,
+        ):
+            if (
+                destination.crs != source.crs
+                or destination.width != source.width
+                or destination.height != source.height
+                or not destination.is_tiled
+                or any(
+                    shape != (COG_BLOCKSIZE, COG_BLOCKSIZE)
+                    for shape in destination.block_shapes
+                )
+            ):
+                return False
+
+            expected_count = (
+                len(job.indexes) if job.indexes is not None else source.count
+            )
+            if destination.count != expected_count:
+                return False
+
+            if job.indexes is not None and len(job.indexes) == 1:
+                return (
+                    destination.count == 1
+                    and destination.nodata == 0
+                    and destination.profile.get("interleave") == "band"
+                    and destination.dtypes == ("uint16",)
+                    and destination.overviews(1) == [2, 4, 8, 16, 32]
+                )
+    except (OSError, rasterio.errors.RasterioError):
+        return False
+    return True
+
+
+def needs_job_conversion(job: ConversionJob, force: bool = False) -> bool:
+    if force or not destination_is_complete(job):
+        return True
+    return job.source.stat().st_mtime > job.destination.stat().st_mtime
 
 
 def parse_args() -> argparse.Namespace:
@@ -274,7 +378,7 @@ def selected_datasets(args: argparse.Namespace) -> list[DatasetConfig]:
 
 def main() -> int:
     args = parse_args()
-    jobs: list[tuple[Path, Path, float | None, str]] = []
+    jobs: list[ConversionJob] = []
 
     for config in selected_datasets(args):
         validate_conversion_roots(config)
@@ -285,29 +389,28 @@ def main() -> int:
         if not sources:
             print("  WARNING: source directory is missing or empty")
             continue
-        if args.dry_run:
-            for source in sources[:5]:
-                print(f"  {source.name} -> {output_path(source, config.default_destination).name}")
-            if len(sources) > 5:
-                print(f"  ... and {len(sources) - 5} more")
-            continue
-        for source in sources:
-            destination = output_path(source, config.default_destination)
-            if needs_conversion(source, destination, force=args.force):
-                jobs.append(
-                    (source, destination, config.nodata, config.overview_resampling)
-                )
+        planned_jobs = build_conversion_jobs(config, sources)
+        jobs.extend(
+            job
+            for job in planned_jobs
+            if needs_job_conversion(job, force=args.force)
+        )
 
-    if args.dry_run:
-        return 0
     if args.limit is not None:
         jobs = jobs[:args.limit]
+    if args.dry_run:
+        print(f"Planned conversion: {len(jobs)} COG(s)")
+        for job in jobs[:10]:
+            print(f"  {job.source.name} -> {job.destination.name}")
+        if len(jobs) > 10:
+            print(f"  ... and {len(jobs) - 10} more")
+        return 0
     if not jobs:
         print("No conversion needed.")
         return 0
 
     total = len(jobs)
-    total_size = sum(source.stat().st_size for source, _, _, _ in jobs)
+    total_size = sum(job.source.stat().st_size for job in jobs)
     print(f"Converting {total} file(s), {total_size / 2**30:.2f} GiB")
     print(f"Profile: {COG_PROFILE}, block size: {COG_BLOCKSIZE}, workers: {args.workers}")
 
@@ -316,10 +419,7 @@ def main() -> int:
     started = time.time()
 
     if args.workers == 1:
-        results = (
-            convert_one(source, destination, nodata, overview_resampling)
-            for source, destination, nodata, overview_resampling in jobs
-        )
+        results = (run_conversion_job(job) for job in jobs)
         for index, (name, ok, error) in enumerate(results, 1):
             success += int(ok)
             failed += int(not ok)
@@ -328,8 +428,8 @@ def main() -> int:
     else:
         with ProcessPoolExecutor(max_workers=args.workers) as pool:
             futures = {
-                pool.submit(convert_one, source, destination, nodata, overview_resampling): source.name
-                for source, destination, nodata, overview_resampling in jobs
+                pool.submit(run_conversion_job, job): job.source.name
+                for job in jobs
             }
             for index, future in enumerate(as_completed(futures), 1):
                 name, ok, error = future.result()
