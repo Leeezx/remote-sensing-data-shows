@@ -62,6 +62,9 @@ _PERIOD_FILE = re.compile(
     r"(?P<year>20\d{2})[_-](?:8day[_-])?(?P<period>\d{1,3})(?:[_-].*)?$",
     re.IGNORECASE,
 )
+_ET_PERIOD_FILE = re.compile(
+    r"(?P<year>20\d{2})_8day_(?P<period>0[1-9]|[1-3]\d|4[0-6])_cog\.tif$"
+)
 _DATE_TIME = re.compile(r"^(?P<year>20\d{2})-(?P<month>\d{2})-(?P<day>\d{2})$")
 _PERIOD_TIME = re.compile(r"^(?P<year>20\d{2})_(?P<period>\d{1,3})$")
 _SUPPORTED_EXTENSIONS = {".tif", ".tiff"}
@@ -134,12 +137,22 @@ def _period_file_candidates(
     return files
 
 
+def _et_period_file_candidates(root: Path) -> dict[tuple[int, int], list[Path]]:
+    files: dict[tuple[int, int], list[Path]] = {}
+    for path in _iter_rasters(root):
+        match = _ET_PERIOD_FILE.fullmatch(path.name)
+        if not match:
+            continue
+        key = (int(match.group("year")), int(match.group("period")))
+        files.setdefault(key, []).append(path)
+    return files
+
+
 def discover_period_sources(
     root: Path, *, reject_duplicates: bool = False
 ) -> dict[str, RasterSource]:
     """Map ISO dates to period-file band-1 sources under an explicit root."""
-    spec = ExternalRasterSpec(root, "period_files")
-    candidates = _period_file_candidates(spec)
+    candidates = _et_period_file_candidates(root)
     if reject_duplicates:
         duplicates = {
             _period_date(year, period).isoformat(): paths
@@ -177,6 +190,8 @@ def discover_external_times(layer_id: str) -> list[str]:
 
     periods: set[tuple[int, int]] = set()
     if spec.layout == "period_files":
+        if layer_id == "et":
+            return list(discover_period_sources(spec.root))
         periods.update(_period_files(spec))
     else:
         for year, path in _annual_files(spec).items():
@@ -197,6 +212,15 @@ def resolve_external_raster(layer_id: str, time: str) -> RasterSource:
     year, period = _time_to_period(time)
 
     if spec.layout == "period_files":
+        if layer_id == "et":
+            source = discover_period_sources(spec.root).get(
+                _period_date(year, period).isoformat()
+            )
+            if source is None:
+                raise FileNotFoundError(
+                    f"No raster found for layer '{layer_id}' at time '{time}'"
+                )
+            return source
         paths = _period_file_candidates(spec).get((year, period))
         if not paths:
             raise FileNotFoundError(

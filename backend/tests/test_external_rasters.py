@@ -144,6 +144,43 @@ def test_discover_period_sources_uses_explicit_root(tmp_path):
     )
 
 
+def test_et_ignores_noncanonical_and_out_of_range_period_files(
+    monkeypatch, tmp_path
+):
+    root = tmp_path / "et"
+    _write_raster(
+        root / "2010_8day_01_cog.tif",
+        np.ones((1, 2, 2), dtype=np.float32),
+    )
+    _write_raster(
+        root / "2010_8day_46_cog.tif",
+        np.full((1, 2, 2), 46, dtype=np.float32),
+    )
+    for filename in (
+        "2010_01.tif",
+        "2010_8day_1_cog.tif",
+        "2010_8day_02_500m.tif",
+        "2010_8day_47_cog.tif",
+    ):
+        _write_raster(root / filename, np.ones((1, 2, 2), dtype=np.float32))
+    monkeypatch.setitem(
+        external_rasters.EXTERNAL_RASTERS,
+        "et",
+        ExternalRasterSpec(root, "period_files", 0.1, (0,)),
+    )
+
+    assert external_rasters.discover_external_times("et") == [
+        "2010-01-01",
+        "2010-12-27",
+    ]
+    first_source = external_rasters.resolve_external_raster("et", "2010-01-01")
+    assert first_source == RasterSource((root / "2010_8day_01_cog.tif").resolve(), 1)
+    source = external_rasters.resolve_external_raster("et", "2010-12-27")
+    assert source == RasterSource((root / "2010_8day_46_cog.tif").resolve(), 1)
+    with pytest.raises(FileNotFoundError, match="No raster found"):
+        external_rasters.resolve_external_raster("et", "2010-01-09")
+
+
 def test_external_point_query_uses_matching_band(monkeypatch, tmp_path):
     root = tmp_path / "et"
     _write_raster(
