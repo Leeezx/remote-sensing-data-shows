@@ -1,13 +1,14 @@
 """Batch-convert ET and layered soil-moisture rasters to COG.
 
 The source rasters stay untouched. By default, COGs are written under the
-project's ``data/rasters`` directory. ET annual files keep all bands; one
-band represents one 8-day period.
+project's ``data/rasters`` directory. ET annual files are planned as one COG
+per 8-day period.
 
 Examples:
     python scripts/convert_external_to_cog.py --dry-run
     python scripts/convert_external_to_cog.py --dataset sm30
-    python scripts/convert_external_to_cog.py --dataset et --workers 2
+    python scripts/convert_external_to_cog.py --dataset et \
+      --src data/rasters/et --dst data/rasters/et_period --workers 1
     python scripts/convert_external_to_cog.py --dataset sm30 --limit 1 \
         --src "F:\\...\\SM30cm预测结果" --dst "E:\\tmp\\sm30_cog"
 """
@@ -18,12 +19,17 @@ import argparse
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from dataclasses import dataclass
 from pathlib import Path
+import re
 import sys
 import time
+
+import rasterio
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_ROOT = Path(r"F:\全国灌溉用水反演\数据2010-2013")
+ET_PERIODS_PER_YEAR = 46
+ET_OVERVIEW_LEVEL = 5
 
 
 @dataclass(frozen=True)
@@ -33,6 +39,16 @@ class DatasetConfig:
     default_destination: Path
     nodata: float | None = None
     overview_resampling: str = "average"
+
+
+@dataclass(frozen=True)
+class ConversionJob:
+    source: Path
+    destination: Path
+    nodata: float | None
+    overview_resampling: str
+    indexes: tuple[int, ...] | None = None
+    overview_level: int | None = None
 
 
 DATASETS = {
@@ -72,6 +88,73 @@ def collect_sources(source_dir: Path) -> list[Path]:
 def output_path(source: Path, destination: Path) -> Path:
     """Build a COG filename without overwriting the source TIFF."""
     return destination / f"{source.stem}_cog.tif"
+
+
+def source_year(source: Path) -> int:
+    years = re.findall(r"(?<!\d)(20\d{2})(?!\d)", source.stem)
+    if len(years) != 1:
+        raise ValueError(
+            f"ET source '{source.name}' must contain exactly one year"
+        )
+    return int(years[0])
+
+
+def et_output_path(source: Path, destination: Path, band: int) -> Path:
+    year = source_year(source)
+    return destination / f"{year}_8day_{band:02d}_cog.tif"
+
+
+def build_conversion_jobs(
+    config: DatasetConfig, sources: list[Path]
+) -> list[ConversionJob]:
+    jobs: list[ConversionJob] = []
+    et_years: set[int] = set()
+    for source in sources:
+        if config.key == "et":
+            year = source_year(source)
+            if year in et_years:
+                raise ValueError(f"Duplicate ET source year {year}")
+            et_years.add(year)
+            with rasterio.open(source) as dataset:
+                count = dataset.count
+            if count != ET_PERIODS_PER_YEAR:
+                raise ValueError(
+                    f"ET source '{source.name}' must contain exactly 46 bands; "
+                    f"found {count}"
+                )
+            for band in range(1, ET_PERIODS_PER_YEAR + 1):
+                jobs.append(
+                    ConversionJob(
+                        source=source,
+                        destination=et_output_path(
+                            source, config.default_destination, band
+                        ),
+                        nodata=config.nodata,
+                        overview_resampling=config.overview_resampling,
+                        indexes=(band,),
+                        overview_level=ET_OVERVIEW_LEVEL,
+                    )
+                )
+            continue
+        jobs.append(
+            ConversionJob(
+                source=source,
+                destination=output_path(source, config.default_destination),
+                nodata=config.nodata,
+                overview_resampling=config.overview_resampling,
+            )
+        )
+    return jobs
+
+
+def validate_conversion_roots(config: DatasetConfig) -> None:
+    if (
+        config.key == "et"
+        and config.source.resolve() == config.default_destination.resolve()
+    ):
+        raise ValueError(
+            "ET source and destination directories must be different"
+        )
 
 
 def needs_conversion(source: Path, destination: Path, force: bool = False) -> bool:
@@ -194,6 +277,7 @@ def main() -> int:
     jobs: list[tuple[Path, Path, float | None, str]] = []
 
     for config in selected_datasets(args):
+        validate_conversion_roots(config)
         sources = collect_sources(config.source)
         print(f"{config.key}: {len(sources)} source TIFF(s)")
         print(f"  source: {config.source}")
