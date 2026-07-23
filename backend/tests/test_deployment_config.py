@@ -58,7 +58,7 @@ def test_backend_runtime_mounts_and_defaults_are_safe():
         item["bind"]["create_host_path"] is False for item in bind_mounts
     )
     environment = backend["environment"]
-    assert environment["UVICORN_WORKERS"] == "${UVICORN_WORKERS:-1}"
+    assert environment["UVICORN_WORKERS"] == "${UVICORN_WORKERS:-2}"
     assert environment["GDAL_CACHEMAX"] == "${GDAL_CACHEMAX:-256}"
     assert environment["MAX_AREA_QUERY_PIXELS"] == (
         "${MAX_AREA_QUERY_PIXELS:-4000000}"
@@ -66,13 +66,61 @@ def test_backend_runtime_mounts_and_defaults_are_safe():
     assert backend["healthcheck"]["start_period"] == "120s"
     assert "/api/ready" in " ".join(backend["healthcheck"]["test"])
 
+    env_example = (ROOT / ".env.example").read_text(encoding="utf-8")
+    dockerfile = (ROOT / "Dockerfile.backend").read_text(encoding="utf-8")
+    deployment_guide = (ROOT / "docs" / "deployment.md").read_text(
+        encoding="utf-8"
+    )
+    assert "UVICORN_WORKERS=2" in env_example
+    assert "--workers ${UVICORN_WORKERS:-2}" in dockerfile
+    assert "UVICORN_WORKERS=2" in deployment_guide
+
 
 def test_proxy_contract_contains_limits_cache_and_internal_port():
     nginx = (ROOT / "nginx.conf").read_text(encoding="utf-8")
     assert "listen 8080" in nginx
     assert "limit_req_zone" in nginx
     assert "limit_conn_zone" in nginx
-    assert "proxy_cache_valid 200 7d" in nginx
+    assert (
+        "proxy_cache_path /tmp/nginx-cache levels=1:2 "
+        "keys_zone=tile_cache:32m max_size=8g inactive=14d "
+        "use_temp_path=off;"
+    ) in nginx
+    assert nginx.count("proxy_cache tile_cache;") == 2
+    assert nginx.count("proxy_cache_methods GET HEAD;") == 2
+    assert (
+        nginx.count('proxy_cache_key "$scheme$proxy_host$request_uri";') == 2
+    )
+    assert nginx.count("proxy_cache_valid 200 24h;") == 2
+    assert nginx.count("proxy_cache_lock on;") == 2
+    assert nginx.count("proxy_cache_lock_timeout 60s;") == 2
+    assert nginx.count("proxy_cache_lock_age 60s;") == 2
+    assert nginx.count("proxy_cache_background_update on;") == 2
+    assert nginx.count(
+        "proxy_cache_use_stale error timeout updating "
+        "http_500 http_502 http_503 http_504;"
+    ) == 2
+    assert "map $status $tile_browser_cache_control" in nginx
+    assert '200 "public, max-age=3600";' in nginx
+    assert 'default "no-store";' in nginx
+    assert (
+        nginx.count(
+            "add_header Cache-Control $tile_browser_cache_control always;"
+        )
+        == 2
+    )
+    assert (
+        nginx.count(
+            "add_header X-Tile-Cache $upstream_cache_status always;"
+        )
+        == 2
+    )
+    for header in (
+        'add_header X-Frame-Options "SAMEORIGIN" always;',
+        'add_header X-Content-Type-Options "nosniff" always;',
+        'add_header Referrer-Policy "strict-origin-when-cross-origin" always;',
+    ):
+        assert nginx.count(header) == 3
     assert "location = /api/query/area" in nginx
     assert "real_ip_header X-Forwarded-For" in nginx
     assert "proxy_set_header X-Forwarded-Proto $http_x_forwarded_proto" in nginx
@@ -85,6 +133,19 @@ def test_runtime_images_are_versioned_and_unprivileged():
     assert "FROM python:3.12-slim-bookworm" in backend
     assert "USER app" in backend
     assert "FROM nginxinc/nginx-unprivileged:1.28-alpine" in frontend
+    assert "RUN mkdir -p /tmp/nginx-cache" in frontend
+
+
+def test_frontend_uses_persistent_tile_cache_volume():
+    config = compose()
+    frontend_volumes = config["services"]["frontend"]["volumes"]
+
+    assert {
+        "type": "volume",
+        "source": "nginx_tile_cache",
+        "target": "/tmp/nginx-cache",
+    } in frontend_volumes
+    assert "nginx_tile_cache" in config["volumes"]
 
 
 def test_caddy_site_address_is_environment_driven():
