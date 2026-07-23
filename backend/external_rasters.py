@@ -51,7 +51,7 @@ def _external_spec(
 
 
 EXTERNAL_RASTERS: dict[str, ExternalRasterSpec] = {
-    "et": _external_spec("et", "annual_bands", 0.1, (0,)),
+    "et": _external_spec("et", "period_files", 0.1, (0,)),
     "sm_10cm": _external_spec("sm_10cm", "period_files", 0.001),
     "sm_30cm": _external_spec("sm_30cm", "period_files"),
     "sm_60cm": _external_spec("sm_60cm", "period_files"),
@@ -132,6 +132,30 @@ def _period_file_candidates(
             key = (int(match.group("year")), int(match.group("period")))
             files.setdefault(key, []).append(path)
     return files
+
+
+def discover_period_sources(
+    root: Path, *, reject_duplicates: bool = False
+) -> dict[str, RasterSource]:
+    """Map ISO dates to period-file band-1 sources under an explicit root."""
+    spec = ExternalRasterSpec(root, "period_files")
+    candidates = _period_file_candidates(spec)
+    if reject_duplicates:
+        duplicates = {
+            _period_date(year, period).isoformat(): paths
+            for (year, period), paths in candidates.items()
+            if len(paths) != 1
+        }
+        if duplicates:
+            dates = ", ".join(sorted(duplicates))
+            raise ValueError(f"Duplicate raster files for ET time(s): {dates}")
+    return {
+        _period_date(year, period).isoformat(): RasterSource(
+            path=paths[0].resolve(),
+            band=1,
+        )
+        for (year, period), paths in sorted(candidates.items())
+    }
 
 
 def _annual_files(spec: ExternalRasterSpec) -> dict[int, Path]:

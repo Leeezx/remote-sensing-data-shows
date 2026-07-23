@@ -233,3 +233,11 @@ def test_get_et_legend_uses_the_resolved_time_source(monkeypatch, tmp_path):
     assert response.status_code == 200
     assert response.json()["legend"] == dynamic_legend
     assert calls == [("et", source, base_legend, "mm/8天")]
+
+
+def test_et_metadata_describes_single_period_cogs():
+    layer = next(item for item in client.get("/api/layers").json() if item["id"] == "et")
+
+    assert "single-band" in layer["description"]
+    assert "per 8-day period" in layer["description"]
+    assert "annual GeoTIFF" not in layer["description"]

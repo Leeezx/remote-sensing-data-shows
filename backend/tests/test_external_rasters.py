@@ -3,11 +3,12 @@
 from pathlib import Path
 
 import numpy as np
+import pytest
 import rasterio
 from rasterio.transform import from_origin
 from fastapi.testclient import TestClient
 
-from backend.external_rasters import ExternalRasterSpec
+from backend.external_rasters import ExternalRasterSpec, RasterSource
 from backend.main import app
 from backend import external_rasters
 
@@ -80,34 +81,79 @@ def test_resolve_uses_project_cog_even_when_it_contains_only_nodata(monkeypatch,
     assert source.path == (cog_root / "2010_13_cog.tif").resolve()
 
 
-def test_discover_annual_et_bands(monkeypatch, tmp_path):
+def test_discover_single_period_et_files_and_resolve_band_one(
+    monkeypatch, tmp_path
+):
     root = tmp_path / "et"
-    _write_raster(root / "ET_2010.tif", np.ones((3, 2, 2), dtype=np.float32))
+    _write_raster(
+        root / "2010_8day_01_cog.tif",
+        np.ones((1, 2, 2), dtype=np.float32),
+    )
+    _write_raster(
+        root / "2010_8day_02_cog.tif",
+        np.full((1, 2, 2), 2, dtype=np.float32),
+    )
     monkeypatch.setitem(
         external_rasters.EXTERNAL_RASTERS,
         "et",
-        ExternalRasterSpec(root, "annual_bands"),
+        ExternalRasterSpec(root, "period_files", 0.1, (0,)),
     )
 
     assert external_rasters.discover_external_times("et") == [
         "2010-01-01",
         "2010-01-09",
-        "2010-01-17",
     ]
-    source = external_rasters.resolve_external_raster("et", "2010_03")
-    assert source.path == (root / "ET_2010.tif").resolve()
-    assert source.band == 3
+    source = external_rasters.resolve_external_raster("et", "2010-01-09")
+    assert source.path == (root / "2010_8day_02_cog.tif").resolve()
+    assert source.band == 1
+
+
+def test_old_annual_et_file_is_not_discovered(monkeypatch, tmp_path):
+    root = tmp_path / "et"
+    _write_raster(
+        root / "2010_cog.tif",
+        np.ones((46, 2, 2), dtype=np.float32),
+    )
+    monkeypatch.setitem(
+        external_rasters.EXTERNAL_RASTERS,
+        "et",
+        ExternalRasterSpec(root, "period_files", 0.1, (0,)),
+    )
+
+    assert external_rasters.discover_external_times("et") == []
+    with pytest.raises(FileNotFoundError, match="No raster found"):
+        external_rasters.resolve_external_raster("et", "2010-01-01")
+
+
+def test_default_et_runtime_spec_uses_period_files():
+    assert external_rasters.EXTERNAL_RASTERS["et"].layout == "period_files"
+
+
+def test_discover_period_sources_uses_explicit_root(tmp_path):
+    root = tmp_path / "et"
+    _write_raster(
+        root / "2010_8day_01_cog.tif",
+        np.ones((1, 2, 2), dtype=np.float32),
+    )
+
+    sources = external_rasters.discover_period_sources(root)
+
+    assert list(sources) == ["2010-01-01"]
+    assert sources["2010-01-01"] == RasterSource(
+        (root / "2010_8day_01_cog.tif").resolve(), 1
+    )
 
 
 def test_external_point_query_uses_matching_band(monkeypatch, tmp_path):
     root = tmp_path / "et"
-    values = np.zeros((2, 2, 2), dtype=np.float32)
-    values[1, :, :] = 42
-    _write_raster(root / "2010.tif", values)
+    _write_raster(
+        root / "2010_8day_02_cog.tif",
+        np.full((1, 2, 2), 42, dtype=np.float32),
+    )
     monkeypatch.setitem(
         external_rasters.EXTERNAL_RASTERS,
         "et",
-        ExternalRasterSpec(root, "annual_bands"),
+        ExternalRasterSpec(root, "period_files"),
     )
 
     response = client.get(
@@ -150,11 +196,13 @@ def test_external_point_query_applies_configured_value_scale(monkeypatch, tmp_pa
 
 def test_external_point_query_treats_zero_et_as_nodata(monkeypatch, tmp_path):
     root = tmp_path / "et"
-    _write_raster(root / "2010.tif", np.zeros((1, 2, 2), dtype=np.float32))
+    _write_raster(
+        root / "2010_8day_01_cog.tif", np.zeros((1, 2, 2), dtype=np.float32)
+    )
     monkeypatch.setitem(
         external_rasters.EXTERNAL_RASTERS,
         "et",
-        ExternalRasterSpec(root, "annual_bands", 0.1, (0,)),
+        ExternalRasterSpec(root, "period_files", 0.1, (0,)),
     )
 
     response = client.get(

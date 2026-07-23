@@ -22,7 +22,7 @@
   {
     "id": "et",
     "name": "蒸散发",
-    "description": "500m ET data with one annual GeoTIFF per year and one band per 8-day period",
+    "description": "500m ET data with one single-band Cloud-Optimized GeoTIFF per 8-day period",
     "type": "evapotranspiration",
     "exportable": false,
     "unit": "mm/8天",
