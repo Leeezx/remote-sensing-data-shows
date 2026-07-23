@@ -200,6 +200,7 @@ def _et_provenance(job: ConversionJob) -> dict[str, str] | None:
         "ET_SOURCE_NAME": job.source.name,
         "ET_SOURCE_YEAR": str(source_year(job.source)),
         "ET_SOURCE_BAND": str(job.indexes[0]),
+        "ET_OVERVIEW_RESAMPLING": job.overview_resampling,
     }
 
 
@@ -245,6 +246,8 @@ def _artifact_validation_error(
 
             expected_provenance = _et_provenance(job)
             if expected_provenance is not None:
+                if destination.profile.get("compress", "").lower() != "deflate":
+                    return "ET output compression must be DEFLATE"
                 if destination.dtypes != ("uint16",):
                     return "ET output dtype must be uint16"
                 if destination.nodata != 0:
@@ -253,6 +256,8 @@ def _artifact_validation_error(
                     return "ET output interleave must be band"
                 if destination.overviews(1) != [2, 4, 8, 16, 32]:
                     return "ET output overviews must be [2, 4, 8, 16, 32]"
+                if job.overview_resampling != "average":
+                    return "ET overview resampling must be average"
                 tags = destination.tags()
                 for key, expected in expected_provenance.items():
                     if tags.get(key) != expected:

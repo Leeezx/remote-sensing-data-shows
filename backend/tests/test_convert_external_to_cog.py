@@ -43,6 +43,41 @@ def _write_raster(
         dataset.write(values)
 
 
+def _write_et_cog(
+    source: Path,
+    destination: Path,
+    *,
+    profile_name: str = "deflate",
+    overview_resampling_tag: str = "average",
+) -> None:
+    from rio_cogeo.cogeo import cog_translate
+    from rio_cogeo.profiles import cog_profiles
+
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    profile = dict(cog_profiles.get(profile_name))
+    profile["blockxsize"] = converter.COG_BLOCKSIZE
+    profile["blockysize"] = converter.COG_BLOCKSIZE
+    profile["interleave"] = "band"
+    profile["nodata"] = 0
+    cog_translate(
+        str(source),
+        str(destination),
+        profile,
+        indexes=(1,),
+        add_mask=True,
+        nodata=0,
+        overview_level=5,
+        overview_resampling="average",
+        additional_cog_metadata={
+            "ET_SOURCE_NAME": source.name,
+            "ET_SOURCE_YEAR": "2010",
+            "ET_SOURCE_BAND": "1",
+            "ET_OVERVIEW_RESAMPLING": overview_resampling_tag,
+        },
+        quiet=True,
+    )
+
+
 def test_et_source_expands_to_46_zero_padded_single_band_jobs(tmp_path):
     source = tmp_path / "source" / "ET_2010.tif"
     _write_raster(source, count=46)
@@ -148,8 +183,10 @@ def test_et_job_writes_atomic_valid_single_band_cog(tmp_path):
         assert dataset.nodata == 0
         assert dataset.profile["tiled"]
         assert dataset.block_shapes == [(512, 512)]
+        assert dataset.profile["compress"] == "deflate"
         assert dataset.profile["interleave"] == "band"
         assert dataset.overviews(1) == [2, 4, 8, 16, 32]
+        assert dataset.tags()["ET_OVERVIEW_RESAMPLING"] == "average"
         with rasterio.open(source) as source_dataset:
             expected = source_dataset.read(2)
         np.testing.assert_array_equal(dataset.read(1), expected)
@@ -315,3 +352,33 @@ def test_et_dry_run_limit_applies_after_period_expansion_without_writes(
     assert "2010_8day_01_cog.tif" in output
     assert "2010_8day_02_cog.tif" not in output
     assert not destination.exists()
+
+
+def test_et_cog_with_non_deflate_compression_is_not_complete(tmp_path):
+    source = tmp_path / "source" / "ET_2010.tif"
+    _write_raster(source, count=46)
+    destination = tmp_path / "out" / "2010_8day_01_cog.tif"
+    _write_et_cog(source, destination, profile_name="lzw")
+    job = converter.ConversionJob(
+        source, destination, 0, "average", (1,), 5
+    )
+
+    assert not converter.destination_is_complete(job)
+
+
+def test_et_cog_with_non_average_overview_provenance_is_not_complete(
+    tmp_path,
+):
+    source = tmp_path / "source" / "ET_2010.tif"
+    _write_raster(source, count=46)
+    destination = tmp_path / "out" / "2010_8day_01_cog.tif"
+    _write_et_cog(
+        source,
+        destination,
+        overview_resampling_tag="nearest",
+    )
+    job = converter.ConversionJob(
+        source, destination, 0, "average", (1,), 5
+    )
+
+    assert not converter.destination_is_complete(job)
