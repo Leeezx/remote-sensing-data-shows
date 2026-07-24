@@ -1,13 +1,14 @@
 """Batch-convert ET and layered soil-moisture rasters to COG.
 
 The source rasters stay untouched. By default, COGs are written under the
-project's ``data/rasters`` directory. ET annual files keep all bands; one
-band represents one 8-day period.
+project's ``data/rasters`` directory. ET annual files are planned as one COG
+per 8-day period.
 
 Examples:
     python scripts/convert_external_to_cog.py --dry-run
     python scripts/convert_external_to_cog.py --dataset sm30
-    python scripts/convert_external_to_cog.py --dataset et --workers 2
+    python scripts/convert_external_to_cog.py --dataset et \
+      --src data/rasters/et --dst data/rasters/et_period --workers 1
     python scripts/convert_external_to_cog.py --dataset sm30 --limit 1 \
         --src "F:\\...\\SM30cm预测结果" --dst "E:\\tmp\\sm30_cog"
 """
@@ -17,13 +18,20 @@ from __future__ import annotations
 import argparse
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from dataclasses import dataclass
+import os
 from pathlib import Path
+import re
 import sys
 import time
+import uuid
+
+import rasterio
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DATA_ROOT = Path(r"F:\全国灌溉用水反演\数据2010-2013")
+ET_PERIODS_PER_YEAR = 46
+ET_OVERVIEW_LEVEL = 5
 
 
 @dataclass(frozen=True)
@@ -33,6 +41,16 @@ class DatasetConfig:
     default_destination: Path
     nodata: float | None = None
     overview_resampling: str = "average"
+
+
+@dataclass(frozen=True)
+class ConversionJob:
+    source: Path
+    destination: Path
+    nodata: float | None
+    overview_resampling: str
+    indexes: tuple[int, ...] | None = None
+    overview_level: int | None = None
 
 
 DATASETS = {
@@ -74,6 +92,73 @@ def output_path(source: Path, destination: Path) -> Path:
     return destination / f"{source.stem}_cog.tif"
 
 
+def source_year(source: Path) -> int:
+    years = re.findall(r"(?<!\d)(20\d{2})(?!\d)", source.stem)
+    if len(years) != 1:
+        raise ValueError(
+            f"ET source '{source.name}' must contain exactly one year"
+        )
+    return int(years[0])
+
+
+def et_output_path(source: Path, destination: Path, band: int) -> Path:
+    year = source_year(source)
+    return destination / f"{year}_8day_{band:02d}_cog.tif"
+
+
+def build_conversion_jobs(
+    config: DatasetConfig, sources: list[Path]
+) -> list[ConversionJob]:
+    jobs: list[ConversionJob] = []
+    et_years: set[int] = set()
+    for source in sources:
+        if config.key == "et":
+            year = source_year(source)
+            if year in et_years:
+                raise ValueError(f"Duplicate ET source year {year}")
+            et_years.add(year)
+            with rasterio.open(source) as dataset:
+                count = dataset.count
+            if count != ET_PERIODS_PER_YEAR:
+                raise ValueError(
+                    f"ET source '{source.name}' must contain exactly 46 bands; "
+                    f"found {count}"
+                )
+            for band in range(1, ET_PERIODS_PER_YEAR + 1):
+                jobs.append(
+                    ConversionJob(
+                        source=source,
+                        destination=et_output_path(
+                            source, config.default_destination, band
+                        ),
+                        nodata=config.nodata,
+                        overview_resampling=config.overview_resampling,
+                        indexes=(band,),
+                        overview_level=ET_OVERVIEW_LEVEL,
+                    )
+                )
+            continue
+        jobs.append(
+            ConversionJob(
+                source=source,
+                destination=output_path(source, config.default_destination),
+                nodata=config.nodata,
+                overview_resampling=config.overview_resampling,
+            )
+        )
+    return jobs
+
+
+def validate_conversion_roots(config: DatasetConfig) -> None:
+    if (
+        config.key == "et"
+        and config.source.resolve() == config.default_destination.resolve()
+    ):
+        raise ValueError(
+            "ET source and destination directories must be different"
+        )
+
+
 def needs_conversion(source: Path, destination: Path, force: bool = False) -> bool:
     """Return whether the destination is missing, stale, or forced."""
     if force or not destination.is_file():
@@ -81,39 +166,182 @@ def needs_conversion(source: Path, destination: Path, force: bool = False) -> bo
     return source.stat().st_mtime > destination.stat().st_mtime
 
 
+def _translate_cog(
+    source: Path,
+    destination: Path,
+    profile: dict,
+    *,
+    indexes: tuple[int, ...] | None,
+    nodata: float | None,
+    overview_level: int | None,
+    overview_resampling: str,
+    additional_cog_metadata: dict[str, str] | None,
+) -> None:
+    from rio_cogeo.cogeo import cog_translate
+
+    cog_translate(
+        str(source),
+        str(destination),
+        profile,
+        indexes=indexes,
+        add_mask=True,
+        nodata=nodata,
+        overview_level=overview_level,
+        overview_resampling=overview_resampling,
+        additional_cog_metadata=additional_cog_metadata,
+        quiet=True,
+    )
+
+
+def _et_provenance(job: ConversionJob) -> dict[str, str] | None:
+    if job.indexes is None or len(job.indexes) != 1:
+        return None
+    return {
+        "ET_SOURCE_NAME": job.source.name,
+        "ET_SOURCE_YEAR": str(source_year(job.source)),
+        "ET_SOURCE_BAND": str(job.indexes[0]),
+        "ET_OVERVIEW_RESAMPLING": job.overview_resampling,
+    }
+
+
+def _artifact_validation_error(
+    job: ConversionJob, artifact: Path
+) -> str | None:
+    from rio_cogeo.cogeo import cog_validate
+
+    try:
+        valid, errors, _warnings = cog_validate(artifact)
+        if not valid:
+            return f"COG validation failed: {errors}"
+
+        with (
+            rasterio.open(job.source) as source,
+            rasterio.open(artifact) as destination,
+        ):
+            if destination.crs != source.crs:
+                return "CRS does not match source"
+            if (
+                destination.width != source.width
+                or destination.height != source.height
+            ):
+                return "Raster dimensions do not match source"
+            if destination.transform != source.transform:
+                return "Transform does not match source"
+            if not destination.profile.get("tiled", False):
+                return "Output is not tiled"
+            if any(
+                shape != (COG_BLOCKSIZE, COG_BLOCKSIZE)
+                for shape in destination.block_shapes
+            ):
+                return f"Output blocks are not {COG_BLOCKSIZE}x{COG_BLOCKSIZE}"
+
+            expected_count = (
+                len(job.indexes) if job.indexes is not None else source.count
+            )
+            if destination.count != expected_count:
+                return (
+                    f"Expected {expected_count} output band(s); "
+                    f"found {destination.count}"
+                )
+
+            expected_provenance = _et_provenance(job)
+            if expected_provenance is not None:
+                if destination.profile.get("compress", "").lower() != "deflate":
+                    return "ET output compression must be DEFLATE"
+                if destination.dtypes != ("uint16",):
+                    return "ET output dtype must be uint16"
+                if destination.nodata != 0:
+                    return "ET output NoData must be 0"
+                if destination.profile.get("interleave") != "band":
+                    return "ET output interleave must be band"
+                if destination.overviews(1) != [2, 4, 8, 16, 32]:
+                    return "ET output overviews must be [2, 4, 8, 16, 32]"
+                if job.overview_resampling != "average":
+                    return "ET overview resampling must be average"
+                tags = destination.tags()
+                for key, expected in expected_provenance.items():
+                    if tags.get(key) != expected:
+                        return f"ET provenance {key} does not match job"
+    except (OSError, ValueError, rasterio.errors.RasterioError) as exc:
+        return f"Artifact validation failed: {exc}"
+    return None
+
+
 def convert_one(
     source: Path,
     destination: Path,
     nodata: float | None,
     overview_resampling: str = "average",
+    indexes: tuple[int, ...] | None = None,
+    overview_level: int | None = None,
 ) -> tuple[str, bool, str]:
-    """Convert one source to a lossless COG while preserving every band."""
-    from rio_cogeo.cogeo import cog_translate
+    """Convert one source to a validated COG using an atomic replacement."""
     from rio_cogeo.profiles import cog_profiles
 
-    destination.parent.mkdir(parents=True, exist_ok=True)
+    job = ConversionJob(
+        source,
+        destination,
+        nodata,
+        overview_resampling,
+        indexes,
+        overview_level,
+    )
     profile = dict(cog_profiles.get(COG_PROFILE))
     profile["blockxsize"] = COG_BLOCKSIZE
     profile["blockysize"] = COG_BLOCKSIZE
+    profile["interleave"] = "band"
     if nodata is not None:
         profile["nodata"] = nodata
 
+    temporary = destination.with_name(
+        f".{destination.name}.{uuid.uuid4().hex}.tmp.tif"
+    )
     try:
-        cog_translate(
-            str(source),
-            str(destination),
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        _translate_cog(
+            source,
+            temporary,
             profile,
-            indexes=None,  # Preserve all 46 ET bands; do not reduce to band 1.
-            add_mask=True,
+            indexes=indexes,
             nodata=nodata,
+            overview_level=overview_level,
             overview_resampling=overview_resampling,
-            quiet=True,
+            additional_cog_metadata=_et_provenance(job),
         )
+        validation_error = _artifact_validation_error(job, temporary)
+        if validation_error is not None:
+            raise RuntimeError(validation_error)
+        os.replace(temporary, destination)
         return source.name, True, ""
-    except Exception as exc:  # pragma: no cover - exact GDAL errors vary by host
-        if destination.is_file():
-            destination.unlink()
+    except Exception as exc:
+        try:
+            temporary.unlink(missing_ok=True)
+        except OSError:
+            pass
         return source.name, False, str(exc)
+
+
+def run_conversion_job(job: ConversionJob) -> tuple[str, bool, str]:
+    return convert_one(
+        job.source,
+        job.destination,
+        job.nodata,
+        job.overview_resampling,
+        job.indexes,
+        job.overview_level,
+    )
+
+
+def destination_is_complete(job: ConversionJob) -> bool:
+    if not job.destination.is_file():
+        return False
+    return _artifact_validation_error(job, job.destination) is None
+
+
+def needs_job_conversion(job: ConversionJob, force: bool = False) -> bool:
+    if force or not destination_is_complete(job):
+        return True
+    return job.source.stat().st_mtime > job.destination.stat().st_mtime
 
 
 def parse_args() -> argparse.Namespace:
@@ -191,9 +419,10 @@ def selected_datasets(args: argparse.Namespace) -> list[DatasetConfig]:
 
 def main() -> int:
     args = parse_args()
-    jobs: list[tuple[Path, Path, float | None, str]] = []
+    jobs: list[ConversionJob] = []
 
     for config in selected_datasets(args):
+        validate_conversion_roots(config)
         sources = collect_sources(config.source)
         print(f"{config.key}: {len(sources)} source TIFF(s)")
         print(f"  source: {config.source}")
@@ -201,29 +430,28 @@ def main() -> int:
         if not sources:
             print("  WARNING: source directory is missing or empty")
             continue
-        if args.dry_run:
-            for source in sources[:5]:
-                print(f"  {source.name} -> {output_path(source, config.default_destination).name}")
-            if len(sources) > 5:
-                print(f"  ... and {len(sources) - 5} more")
-            continue
-        for source in sources:
-            destination = output_path(source, config.default_destination)
-            if needs_conversion(source, destination, force=args.force):
-                jobs.append(
-                    (source, destination, config.nodata, config.overview_resampling)
-                )
+        planned_jobs = build_conversion_jobs(config, sources)
+        jobs.extend(
+            job
+            for job in planned_jobs
+            if needs_job_conversion(job, force=args.force)
+        )
 
-    if args.dry_run:
-        return 0
     if args.limit is not None:
         jobs = jobs[:args.limit]
+    if args.dry_run:
+        print(f"Planned conversion: {len(jobs)} COG(s)")
+        for job in jobs[:10]:
+            print(f"  {job.source.name} -> {job.destination.name}")
+        if len(jobs) > 10:
+            print(f"  ... and {len(jobs) - 10} more")
+        return 0
     if not jobs:
         print("No conversion needed.")
         return 0
 
     total = len(jobs)
-    total_size = sum(source.stat().st_size for source, _, _, _ in jobs)
+    total_size = sum(job.source.stat().st_size for job in jobs)
     print(f"Converting {total} file(s), {total_size / 2**30:.2f} GiB")
     print(f"Profile: {COG_PROFILE}, block size: {COG_BLOCKSIZE}, workers: {args.workers}")
 
@@ -232,10 +460,7 @@ def main() -> int:
     started = time.time()
 
     if args.workers == 1:
-        results = (
-            convert_one(source, destination, nodata, overview_resampling)
-            for source, destination, nodata, overview_resampling in jobs
-        )
+        results = (run_conversion_job(job) for job in jobs)
         for index, (name, ok, error) in enumerate(results, 1):
             success += int(ok)
             failed += int(not ok)
@@ -244,8 +469,8 @@ def main() -> int:
     else:
         with ProcessPoolExecutor(max_workers=args.workers) as pool:
             futures = {
-                pool.submit(convert_one, source, destination, nodata, overview_resampling): source.name
-                for source, destination, nodata, overview_resampling in jobs
+                pool.submit(run_conversion_job, job): job.source.name
+                for job in jobs
             }
             for index, future in enumerate(as_completed(futures), 1):
                 name, ok, error = future.result()

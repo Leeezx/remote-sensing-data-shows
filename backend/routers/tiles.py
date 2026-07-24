@@ -16,12 +16,15 @@ from backend.data_loader import (
     get_irrigation_layer,
     get_layer,
 )
+from backend.et_legends import (
+    ETLegendUnavailableError,
+    get_precomputed_et_legend,
+)
 from backend.external_rasters import (
     EXTERNAL_RASTERS,
     RasterSource,
     external_valid_data_mask,
     external_value_scale,
-    get_external_dynamic_legend,
     resolve_external_raster,
 )
 from backend.irrigation_time import irrigation_time_to_cog_path, irrigation_time_to_path
@@ -125,19 +128,25 @@ def ssm_tile_proxy(
 
 
 def _render_external_tile(
-    layer_id: str, source: RasterSource, x: int, y: int, z: int
+    layer_id: str,
+    source: RasterSource,
+    x: int,
+    y: int,
+    z: int,
+    time: str = "",
 ) -> bytes:
     """Render an externally stored raster band using its layer palette."""
     layer = get_layer(layer_id)
     if layer is None:
         raise RuntimeError(f"Layer metadata is missing for '{layer_id}'")
-    legend = layer.get("legend")
-    if not legend:
-        raise RuntimeError(f"Layer legend is missing for '{layer_id}'")
     if layer_id == "et":
-        legend = get_external_dynamic_legend(
-            layer_id, source, legend, layer.get("unit") or ""
-        )
+        if not time:
+            raise ETLegendUnavailableError("ET legend time is required")
+        legend = get_precomputed_et_legend(time)
+    else:
+        legend = layer.get("legend")
+        if not legend:
+            raise RuntimeError(f"Layer legend is missing for '{layer_id}'")
     nodata_color_hex = layer.get("nodataColor", "#e8e8e8")
     nodata_opacity = float(layer.get("nodataOpacity", 0.5))
     try:
@@ -194,9 +203,14 @@ def external_raster_tile(
             detail=str(exc),
         ) from exc
     try:
-        png = _render_external_tile(layer_id, source, x, y, z)
+        png = _render_external_tile(layer_id, source, x, y, z, time=time)
     except TileOutsideBounds:
         png = TRANSPARENT_PNG
+    except ETLegendUnavailableError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail=f"ET legend is unavailable for time '{time}'",
+        ) from exc
     return Response(
         content=png, media_type="image/png", headers=TILE_CACHE_HEADERS
     )

@@ -3,10 +3,11 @@
 from fastapi import APIRouter, HTTPException, status
 
 from backend.data_loader import get_layer, get_layer_times, get_layers
-from backend.external_rasters import (
-    get_external_dynamic_legend,
-    resolve_external_raster,
+from backend.et_legends import (
+    ETLegendUnavailableError,
+    get_precomputed_et_legend,
 )
+from backend.external_rasters import resolve_external_raster
 from backend.ssm_legend import get_dynamic_legend
 from backend.ssm_time import ssm_time_to_cog_path
 from backend.runtime_config import RASTER_ROOT
@@ -69,7 +70,7 @@ def et_legend(time: str):
     if not base_legend:
         raise RuntimeError("ET layer legend is missing or empty")
     try:
-        source = resolve_external_raster("et", time)
+        resolve_external_raster("et", time)
     except ValueError as exc:
         raise HTTPException(
             status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
@@ -81,11 +82,18 @@ def et_legend(time: str):
             detail=str(exc),
         ) from exc
     unit = layer.get("unit") or ""
+    try:
+        legend = get_precomputed_et_legend(time)
+    except ETLegendUnavailableError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail=f"ET legend is unavailable for time '{time}'",
+        ) from exc
     return {
         "layerId": "et",
         "time": time,
         "unit": unit,
-        "legend": get_external_dynamic_legend("et", source, base_legend, unit),
+        "legend": legend,
     }
 
 

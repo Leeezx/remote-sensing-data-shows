@@ -12,6 +12,8 @@ from rasterio.errors import NotGeoreferencedWarning
 from rasterio.io import MemoryFile
 from rio_tiler.errors import TileOutsideBounds
 
+from backend.et_legends import ETLegendUnavailableError
+from backend.external_rasters import RasterSource
 from backend.main import app
 from backend.routers import tiles
 from backend.ssm_time import ssm_time_to_cog_name
@@ -400,3 +402,74 @@ def test_ssm_tile_route_rejects_invalid_time_without_rendering(
     assert response.status_code == 422
     assert "Invalid SSM time" in response.json()["detail"]
     assert calls == []
+
+
+def test_render_et_tile_uses_precomputed_time_legend(monkeypatch, tmp_path):
+    source = RasterSource(tmp_path / "2010_8day_01_cog.tif", 1)
+    expected = [{"value": 1, "color": "#d53e4f", "label": "1.0 mm/8天"}]
+    calls = []
+    monkeypatch.setattr(
+        tiles,
+        "get_layer",
+        lambda layer_id: {
+            "id": layer_id,
+            "unit": "mm/8天",
+            "legend": expected,
+        },
+    )
+    monkeypatch.setattr(
+        tiles,
+        "get_precomputed_et_legend",
+        lambda time: calls.append(time) or expected,
+    )
+
+    class FakeReader:
+        def __init__(self, _path):
+            pass
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_args):
+            return None
+
+        def tile(self, *_args, **_kwargs):
+            return SimpleNamespace(
+                data=np.ones((1, 2, 2), dtype=np.uint16),
+                mask=np.full((2, 2), 255, dtype=np.uint8),
+            )
+
+    monkeypatch.setattr(tiles, "COGReader", FakeReader)
+    monkeypatch.setattr(
+        tiles, "colorize", lambda values, legend, **_kwargs: np.zeros((4, 2, 2))
+    )
+    monkeypatch.setattr(tiles, "render_png", lambda _rgba: b"png")
+
+    assert tiles._render_external_tile(
+        "et", source, 1, 2, 3, time="2010-01-01"
+    ) == b"png"
+    assert calls == ["2010-01-01"]
+
+
+def test_et_tile_route_returns_503_for_missing_precomputed_legend(
+    monkeypatch, tmp_path
+):
+    source = RasterSource(tmp_path / "2010_8day_01_cog.tif", 1)
+    monkeypatch.setattr(
+        tiles, "resolve_external_raster", lambda *_args: source
+    )
+
+    def unavailable(*_args, **_kwargs):
+        raise ETLegendUnavailableError("missing test entry")
+
+    monkeypatch.setattr(tiles, "_render_external_tile", unavailable)
+
+    response = client.get(
+        "/data/raster-tiles/et/WebMercatorQuad/5/25/12.png",
+        params={"time": "2010-01-01"},
+    )
+
+    assert response.status_code == 503
+    assert response.json()["detail"] == (
+        "ET legend is unavailable for time '2010-01-01'"
+    )

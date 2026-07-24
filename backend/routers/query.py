@@ -1,5 +1,6 @@
 """Spatial query router — point and area queries."""
 
+import logging
 from pathlib import Path
 
 import rasterio
@@ -30,6 +31,7 @@ from backend.runtime_config import MAX_AREA_QUERY_PIXELS, RASTER_ROOT
 from backend.ssm_time import ssm_time_to_cog_path
 
 router = APIRouter(tags=["query"])
+LOGGER = logging.getLogger(__name__)
 
 SSM_AREA_CHUNK_ROWS = 512
 
@@ -46,6 +48,24 @@ def _enforce_area_pixel_limit(
                 "maxPixels": MAX_AREA_QUERY_PIXELS,
             },
         )
+
+
+def _raster_read_error(
+    layer_id: str,
+    time: str,
+    raster_path: Path,
+) -> HTTPException:
+    LOGGER.error(
+        "Raster read failed layer=%s time=%s file=%s "
+        "category=rasterio-io-error",
+        layer_id,
+        time,
+        Path(raster_path).name,
+    )
+    return HTTPException(
+        status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+        detail="Failed to read raster data",
+    )
 
 
 def _ssm_time_to_cog_path(time: str) -> Path:
@@ -159,11 +179,8 @@ def _query_point_SSM(layer: dict, time: str, lng: float, lat: float) -> dict:
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail="No valid data at this point",
                 )
-    except rasterio.errors.RasterioIOError as e:
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Failed to read raster: {e}",
-        )
+    except rasterio.errors.RasterioIOError:
+        raise _raster_read_error("ssm", time, cog_path) from None
 
     return {
         "layerId": layer["id"],
@@ -232,11 +249,8 @@ def _query_area_SSM(layer: dict, time: str, west: float, south: float, east: flo
                 "min": minimum,
                 "count": count,
             }
-    except rasterio.errors.RasterioIOError as e:
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Failed to read raster: {e}",
-        )
+    except rasterio.errors.RasterioIOError:
+        raise _raster_read_error("ssm", time, cog_path) from None
 
 
 def _validated_external_source(layer_id: str, time: str) -> RasterSource:
@@ -309,11 +323,10 @@ def _query_point_external(
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail="No valid data at this point",
                 )
-    except rasterio.errors.RasterioIOError as exc:
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Failed to read raster: {exc}",
-        ) from exc
+    except rasterio.errors.RasterioIOError:
+        raise _raster_read_error(
+            layer_id, time, source_info.path
+        ) from None
 
     return {
         "layerId": layer["id"],
@@ -381,11 +394,10 @@ def _query_area_external(
                 "min": minimum,
                 "count": count,
             }
-    except rasterio.errors.RasterioIOError as exc:
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Failed to read raster: {exc}",
-        ) from exc
+    except rasterio.errors.RasterioIOError:
+        raise _raster_read_error(
+            layer_id, time, source_info.path
+        ) from None
 
 
 def _query_point_irrigation(layer: dict, time: str, lng: float, lat: float) -> dict:
@@ -410,11 +422,10 @@ def _query_point_irrigation(layer: dict, time: str, lng: float, lat: float) -> d
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail="No valid data at this point",
                 )
-    except rasterio.errors.RasterioIOError as e:
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Failed to read raster: {e}",
-        )
+    except rasterio.errors.RasterioIOError:
+        raise _raster_read_error(
+            "irrigation_water", time, raster_path
+        ) from None
 
     return {
         "layerId": layer["id"],
@@ -463,11 +474,10 @@ def _query_area_irrigation(
                 "min": float(valid.min()),
                 "count": int(valid.size),
             }
-    except rasterio.errors.RasterioIOError as e:
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Failed to read raster: {e}",
-        )
+    except rasterio.errors.RasterioIOError:
+        raise _raster_read_error(
+            "irrigation_water", time, raster_path
+        ) from None
 
 
 @router.get("/query/point")
