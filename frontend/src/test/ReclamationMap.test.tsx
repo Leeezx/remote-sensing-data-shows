@@ -1,4 +1,5 @@
-import type { ReactNode } from 'react'
+// oxlint-disable react-hooks/exhaustive-deps -- the GeoJSON mock intentionally binds only on mount.
+import { useEffect, useRef, type ReactNode } from 'react'
 import { act, render, screen } from '@testing-library/react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import ReclamationMap from '../components/ReclamationMap'
@@ -39,14 +40,29 @@ vi.mock('react-leaflet', () => ({
   TileLayer: () => null,
   Pane: ({ children }: { children: ReactNode }) => <>{children}</>,
   GeoJSON: ({ data, style, onEachFeature }: GeoJsonLayer) => {
-    geoJsonLayers.push({ data, style, onEachFeature })
-    if (onEachFeature && typeof data === 'object' && data !== null && 'features' in data) {
-      for (const feature of (data as { features: ReclamationFeature[] }).features) {
-        const handlers: Record<string, (event?: { originalEvent?: Event }) => void> = {}
-        onEachFeature(feature, { on: (next) => Object.assign(handlers, next) })
-        featureLayers.push({ feature, handlers })
+    const initialOnEachFeature = useRef(onEachFeature)
+
+    useEffect(() => {
+      geoJsonLayers.push({ data, style, onEachFeature: initialOnEachFeature.current })
+      const createdLayers: typeof featureLayers = []
+      if (initialOnEachFeature.current && typeof data === 'object' && data !== null && 'features' in data) {
+        for (const feature of (data as { features: ReclamationFeature[] }).features) {
+          const handlers: Record<string, (event?: { originalEvent?: Event }) => void> = {}
+          initialOnEachFeature.current(feature, { on: (next) => Object.assign(handlers, next) })
+          const createdLayer = { feature, handlers }
+          createdLayers.push(createdLayer)
+          featureLayers.push(createdLayer)
+        }
       }
-    }
+
+      return () => {
+        for (const createdLayer of createdLayers) {
+          const index = featureLayers.indexOf(createdLayer)
+          if (index >= 0) featureLayers.splice(index, 1)
+        }
+      }
+    }, [])
+
     return null
   },
   useMap: () => fakeMap,
@@ -167,5 +183,20 @@ describe('ReclamationMap', () => {
     />)
 
     expect(featureLayers).toHaveLength(0)
+  })
+
+  it('removes overview region click handlers when transitioning to a selected region', () => {
+    const { rerender } = render(<ReclamationMap {...overviewProps} selectedRegion={null} points={[]} />)
+
+    expect(featureLayers).toHaveLength(4)
+
+    rerender(<ReclamationMap
+      {...overviewProps}
+      selectedRegion={overview.regions.features[0].properties}
+    />)
+
+    expect(featureLayers).toHaveLength(0)
+    act(() => featureLayers[0]?.handlers.click?.({ originalEvent: new MouseEvent('click') }))
+    expect(onRegionSelect).not.toHaveBeenCalled()
   })
 })

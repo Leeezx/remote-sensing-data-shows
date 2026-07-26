@@ -113,6 +113,7 @@ export default function ReclamationMap({
 
         <Pane name="reclamation-regions" style={{ zIndex: 410 }}>
           <GeoJSON
+            key={isOverview ? 'overview-regions' : `selected-region-${selectedRegion.id}`}
             data={selectedRegions as never}
             style={regionStyle}
             onEachFeature={isOverview ? (feature, layer) => {
