@@ -24,6 +24,8 @@ vi.mock('axios', async (importOriginal) => {
 })
 
 import {
+  getReclamationOverview,
+  getReclamationPoints,
   getIrrigationRegions,
   getIrrigationLegend,
   getIrrigationSeries,
@@ -33,7 +35,11 @@ import {
   getIrrigationVectorStatus,
   getLayerLegend,
 } from '../services/api'
-import type { IrrigationSeriesResponse, LayerLegendResponse } from '../types'
+import type {
+  IrrigationSeriesResponse,
+  LayerLegendResponse,
+  ReclamationOverviewWireResponse,
+} from '../types'
 
 beforeEach(() => {
   localStorage.clear()
@@ -156,5 +162,88 @@ describe('irrigation API helpers', () => {
     expect(clientGet).toHaveBeenCalledWith('/irrigation/series', {
       params: { level: 'county', regionId: 'county_a', period: 'monthly' },
     })
+  })
+})
+
+describe('reclamation API helpers', () => {
+  it('requests the overview with an abort signal', async () => {
+    const response = {
+      schemaVersion: 1,
+      unit: 'thousand_usd',
+      chinaOutline: { type: 'Polygon', coordinates: [] },
+      regions: { type: 'FeatureCollection', features: [] },
+      metrics: [],
+    } satisfies ReclamationOverviewWireResponse
+    clientGet.mockResolvedValueOnce({ data: response })
+    const controller = new AbortController()
+
+    await expect(getReclamationOverview(controller.signal)).resolves.toEqual(response)
+    expect(clientGet).toHaveBeenCalledWith('/reclamation/regions', {
+      signal: controller.signal,
+    })
+  })
+
+  it('maps the compact point tuple into named current and future metrics', async () => {
+    clientGet.mockResolvedValueOnce({
+      data: {
+        schemaVersion: 1,
+        region: { id: 'A', name: '区域A' },
+        unit: 'thousand_usd',
+        fields: [],
+        points: [[101, 31, 1, 2, 3, 4, 5, 6, 7, 8]],
+      },
+    })
+    const controller = new AbortController()
+
+    const result = await getReclamationPoints('A', controller.signal)
+
+    expect(clientGet).toHaveBeenCalledWith('/reclamation/points/A', {
+      signal: controller.signal,
+    })
+    expect(result.points[0]).toEqual({
+      id: 'A:0',
+      longitude: 101,
+      latitude: 31,
+      current: {
+        reclamationValue: 1,
+        waterConsumption: 2,
+        yieldValue: 3,
+        soilCarbonValue: 4,
+      },
+      future: {
+        reclamationValue: 5,
+        waterConsumption: 6,
+        yieldValue: 7,
+        soilCarbonValue: 8,
+      },
+    })
+  })
+
+  it('rejects malformed tuples before page state sees them', async () => {
+    clientGet.mockResolvedValueOnce({
+      data: {
+        schemaVersion: 1,
+        region: { id: 'A', name: '区域A' },
+        unit: 'thousand_usd',
+        fields: [],
+        points: [[101, 31, 1]],
+      },
+    })
+
+    await expect(getReclamationPoints('A')).rejects.toThrow('10 numeric values')
+  })
+
+  it('rejects scenarios that mix sentinel and finite metrics', async () => {
+    clientGet.mockResolvedValueOnce({
+      data: {
+        schemaVersion: 1,
+        region: { id: 'A', name: '区域A' },
+        unit: 'thousand_usd',
+        fields: [],
+        points: [[101, 31, -999, 2, 3, 4, 5, 6, 7, 8]],
+      },
+    })
+
+    await expect(getReclamationPoints('A')).rejects.toThrow('mixed -999 and finite values')
   })
 })

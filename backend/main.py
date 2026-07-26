@@ -6,6 +6,7 @@ from backend.routers import (
     irrigation,
     layers,
     query,
+    reclamation,
     regions,
     series,
     tiles,
@@ -47,6 +48,7 @@ def create_app(
     application.include_router(series.router, prefix="/api")
     application.include_router(regions.router, prefix="/api")
     application.include_router(irrigation.router, prefix="/api")
+    application.include_router(reclamation.router, prefix="/api")
     application.include_router(tiles.cog_tiler, prefix="/cog")
     application.include_router(tiles.router, prefix="/data")
 

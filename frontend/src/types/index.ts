@@ -97,6 +97,85 @@ export interface IrrigationRegionAveragesResponse {
   legend: LegendItem[]
 }
 
+// ===== Reclamation Potential Assessment =====
+
+export type ReclamationScenario = 'current' | 'future'
+export type ReclamationUnit = 'thousand_usd'
+
+export interface ReclamationMetrics {
+  reclamationValue: number
+  waterConsumption: number
+  yieldValue: number
+  soilCarbonValue: number
+}
+
+export interface ReclamationPoint {
+  id: string
+  longitude: number
+  latitude: number
+  current: ReclamationMetrics
+  future: ReclamationMetrics
+}
+
+export type ReclamationPointTuple = [
+  number, number, number, number, number,
+  number, number, number, number, number,
+]
+
+export interface ReclamationRegionProperties {
+  id: string
+  name: string
+  pointCount: number
+  /** Leaflet order: [[south, west], [north, east]]. */
+  bounds: [[number, number], [number, number]]
+}
+
+export interface ReclamationFeature<P> {
+  type: 'Feature'
+  properties: P
+  geometry: { type: string; coordinates: unknown }
+}
+
+export interface ReclamationFeatureCollection<P> {
+  type: 'FeatureCollection'
+  features: ReclamationFeature<P>[]
+}
+
+export interface ReclamationGeometry {
+  type: string
+  coordinates: unknown
+}
+
+export interface ReclamationMetricDefinition {
+  field: keyof ReclamationMetrics
+  label: string
+  unit: ReclamationUnit
+}
+
+export interface ReclamationOverviewWireResponse {
+  schemaVersion: 1
+  unit: ReclamationUnit
+  chinaOutline: ReclamationGeometry
+  metrics: ReclamationMetricDefinition[]
+  regions: ReclamationFeatureCollection<ReclamationRegionProperties>
+}
+
+export interface ReclamationPointsWireResponse {
+  schemaVersion: 1
+  region: Pick<ReclamationRegionProperties, 'id' | 'name'>
+  unit: ReclamationUnit
+  fields: string[]
+  points: ReclamationPointTuple[]
+}
+
+export interface ReclamationPointsResponse {
+  schemaVersion: 1
+  region: Pick<ReclamationRegionProperties, 'id' | 'name'>
+  unit: ReclamationUnit
+  fields: string[]
+  points: ReclamationPoint[]
+}
+
 // ===== Query Results =====
 
 export interface PointQueryResult {

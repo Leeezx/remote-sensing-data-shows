@@ -22,6 +22,8 @@ const apiMocks = vi.hoisted(() => ({
   getIrrigationVectorStatus: vi.fn(),
   getIrrigationVectorGeoJSON: vi.fn(),
   getIrrigationRegionAverages: vi.fn(),
+  getReclamationOverview: vi.fn(),
+  getReclamationPoints: vi.fn(),
 }))
 
 const mapViewMocks = vi.hoisted(() => ({
@@ -79,6 +81,10 @@ vi.mock('../components/MapView', () => ({
 
     )
   },
+}))
+
+vi.mock('../components/ReclamationMap', () => ({
+  default: () => <div data-testid="reclamation-map">复耕地图</div>,
 }))
 
 const layers = [
@@ -281,6 +287,13 @@ describe('App', () => {
         ],
       }),
     )
+    apiMocks.getReclamationOverview.mockResolvedValue({
+      schemaVersion: 1,
+      unit: 'thousand_usd',
+      chinaOutline: { type: 'Polygon', coordinates: [] },
+      metrics: [],
+      regions: { type: 'FeatureCollection', features: [] },
+    })
   })
 
   it('shows navigation for the four platform sections', async () => {
@@ -290,6 +303,24 @@ describe('App', () => {
     expect(screen.getByRole('link', { name: '灌溉用水数据展示' })).toHaveAttribute('href', '/irrigation')
     expect(screen.getByRole('link', { name: '复耕潜力评估' })).toHaveAttribute('href', '/reclamation')
     expect(screen.getByRole('link', { name: '需水补水计算与评估' })).toHaveAttribute('href', '/water-demand')
+  })
+
+  it('loads the reclamation page instead of its placeholder', async () => {
+    window.history.pushState({}, '', '/reclamation')
+
+    render(<App />)
+
+    expect(await screen.findByRole('heading', { name: '复耕潜力评估' })).toBeInTheDocument()
+    expect(screen.queryByText('该板块暂未实现。')).not.toBeInTheDocument()
+  })
+
+  it('keeps the water-demand route on its placeholder', async () => {
+    window.history.pushState({}, '', '/water-demand')
+
+    render(<App />)
+
+    expect(await screen.findByRole('heading', { name: '需水补水计算与评估' })).toBeInTheDocument()
+    expect(screen.getByText('该板块暂未实现。')).toBeInTheDocument()
   })
 
   it('loads the irrigation page with annual/monthly timeline and leaves statistics off by default', async () => {

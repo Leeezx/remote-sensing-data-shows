@@ -13,6 +13,11 @@ import type {
   IrrigationVectorGeoJSON,
   IrrigationVectorStatus,
   IrrigationRegionAveragesResponse,
+  ReclamationMetrics,
+  ReclamationOverviewWireResponse,
+  ReclamationPoint,
+  ReclamationPointsResponse,
+  ReclamationPointsWireResponse,
 } from '../types'
 
 const client = axios.create({
@@ -127,6 +132,69 @@ export async function getIrrigationRegionAverages(
     { params: { level, ...(countyId ? { countyId } : {}) } },
   )
   return data
+}
+
+// ===== Reclamation Potential Assessment =====
+
+export async function getReclamationOverview(
+  signal?: AbortSignal,
+): Promise<ReclamationOverviewWireResponse> {
+  const { data } = await client.get<ReclamationOverviewWireResponse>(
+    '/reclamation/regions',
+    { signal },
+  )
+  return data
+}
+
+function parseScenarioMetrics(values: number[]): ReclamationMetrics {
+  const sentinelCount = values.filter((value) => value === -999).length
+  if (sentinelCount > 0 && sentinelCount < values.length) {
+    throw new Error('Reclamation point scenario has mixed -999 and finite values')
+  }
+
+  return {
+    reclamationValue: values[0],
+    waterConsumption: values[1],
+    yieldValue: values[2],
+    soilCarbonValue: values[3],
+  }
+}
+
+export function parseReclamationPointTuple(
+  tuple: unknown,
+): Omit<ReclamationPoint, 'id'> {
+  if (
+    !Array.isArray(tuple) ||
+    tuple.length !== 10 ||
+    !tuple.every((value) => typeof value === 'number' && Number.isFinite(value))
+  ) {
+    throw new Error('Reclamation point tuples must contain exactly 10 numeric values')
+  }
+
+  return {
+    longitude: tuple[0],
+    latitude: tuple[1],
+    current: parseScenarioMetrics(tuple.slice(2, 6)),
+    future: parseScenarioMetrics(tuple.slice(6, 10)),
+  }
+}
+
+export async function getReclamationPoints(
+  regionId: string,
+  signal?: AbortSignal,
+): Promise<ReclamationPointsResponse> {
+  const { data } = await client.get<ReclamationPointsWireResponse>(
+    `/reclamation/points/${encodeURIComponent(regionId)}`,
+    { signal },
+  )
+
+  return {
+    ...data,
+    points: data.points.map((tuple, index) => ({
+      id: `${regionId}:${index}`,
+      ...parseReclamationPointTuple(tuple),
+    })),
+  }
 }
 
 // ===== Spatial Queries =====
