@@ -988,6 +988,8 @@
   .reclamation-scenario-switch button { white-space: nowrap; }
   .reclamation-overview-instruction,
   .reclamation-region-controls { top: 96px; }
+  .reclamation-region-selector { top: 96px; }
+  .reclamation-point-selector { top: 144px; }
   .reclamation-info-card { top: 138px; right: 8px; width: calc(100% - 16px); max-width: calc(100% - 16px); }
   .reclamation-legend { right: 8px; bottom: 42px; max-width: calc(100% - 16px); }
 }
