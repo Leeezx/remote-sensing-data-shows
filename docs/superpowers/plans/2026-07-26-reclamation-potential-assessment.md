@@ -18,6 +18,7 @@
 - Clicking a polygon displays only points whose centers fall inside that polygon; the audited real counts are 2,471, 8,702, 4,392, and 3,735, with 32 unassigned and zero overlapping points.
 - Default scenario is `current`; current color is `#16A34A`, future color is `#2563EB`.
 - All four metrics use unit `thousand_usd` and display label `千美元`; cards show metric values to two decimals and coordinates to six decimals.
+- The supplied workbook’s seventh header is a duplicate `EV` (semantically the future `EV.1` column); the builder accepts only this exact duplicate-`EV` source variant or the canonical `EV.1` spelling and normalizes both to `future.reclamationValue`.
 - The legend has four reclamation-value classes: hollow `不可复耕`; valid values `0-5` labeled `一般复耕区`, `5-10` labeled `建议复耕区`, and values `>10` labeled `优先复耕区`.
 - A scenario is non-reclaimable only when all four metrics equal `-999`; mixed `-999`/finite metrics block the build.
 - Each circle represents about 1 km²: geographic radius is 564.19 m, clamped to a minimum screen radius of 3 px.
@@ -68,7 +69,7 @@
 - Modify: `backend/requirements.txt`
 
 **Interfaces:**
-- Consumes: `.xlsx` with exact columns `longitude`, `latitude`, `EV`, `optimal_irr`, `optimal_npp`, `optimal_soc`, `EV.1`, `irr`, `npp`, `soc`; region GeoJSON features with `WRRCD` and `WRRNM`.
+- Consumes: `.xlsx` with columns `longitude`, `latitude`, `EV`, `optimal_irr`, `optimal_npp`, `optimal_soc`, followed by either canonical `EV.1` or the supplied file’s duplicate `EV`, then `irr`, `npp`, `soc`; region GeoJSON features with `WRRCD` and `WRRNM`.
 - Produces: `SourcePoint`, `ScenarioMetrics`, `RegionAssignment`, `read_workbook_points(path)`, `normalize_region_features(features)`, and `assign_points(points, regions)` for Task 2.
 
 - [ ] **Step 1: Add build dependencies and write failing parsing/validation tests**

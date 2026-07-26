@@ -32,7 +32,7 @@
 | `optimal_irr` | `waterConsumption` | 用水消耗 | 当前 | 千美元 |
 | `optimal_npp` | `yieldValue` | 产量价值 | 当前 | 千美元 |
 | `optimal_soc` | `soilCarbonValue` | 土壤碳价值 | 当前 | 千美元 |
-| `EV.1` | `reclamationValue` | 复耕价值 | 未来 | 千美元 |
+| `EV.1`（实际文件表头为重复的 `EV`） | `reclamationValue` | 复耕价值 | 未来 | 千美元 |
 | `irr` | `waterConsumption` | 用水消耗 | 未来 | 千美元 |
 | `npp` | `yieldValue` | 产量价值 | 未来 | 千美元 |
 | `soc` | `soilCarbonValue` | 土壤碳价值 | 未来 | 千美元 |
