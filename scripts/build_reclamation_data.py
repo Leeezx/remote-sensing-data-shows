@@ -80,8 +80,8 @@ def read_workbook_points(path: str | Path) -> list[SourcePoint]:
     """Read a strictly validated reclamation workbook into source points."""
     workbook = load_workbook(path, read_only=True, data_only=True)
     try:
-        if 'pixel_values' not in workbook.sheetnames:
-            raise ValueError('row 1: workbook must contain a pixel_values sheet')
+        if workbook.sheetnames != ['pixel_values']:
+            raise ValueError('row 1: workbook must contain exactly one pixel_values sheet')
         sheet = workbook['pixel_values']
         header = next(sheet.iter_rows(min_row=1, max_row=1, values_only=True), ())
         if list(header) != EXPECTED_COLUMNS:
@@ -120,24 +120,30 @@ def normalize_region_features(features) -> list[DemoRegion]:
     """Normalize WRRCD/WRRNM GeoJSON properties for deterministic assignment."""
     regions: list[DemoRegion] = []
     region_ids: set[str] = set()
+    region_names: set[str] = set()
     for index, feature in enumerate(features):
         if not isinstance(feature, dict):
             raise ValueError(f'region {index}: feature must be an object')
         properties = feature.get('properties')
         if not isinstance(properties, dict):
             raise ValueError(f'region {index}: properties must be an object')
-        region_id = str(properties.get('WRRCD', '')).strip()
-        name = str(properties.get('WRRNM', '')).strip()
+        raw_region_id = properties.get('WRRCD')
+        raw_name = properties.get('WRRNM')
+        region_id = '' if raw_region_id is None else str(raw_region_id).strip()
+        name = '' if raw_name is None else str(raw_name).strip()
         if not region_id:
             raise ValueError(f'region {index}: WRRCD must be non-empty')
         if not name:
             raise ValueError(f'region {index}: WRRNM must be non-empty')
         if region_id in region_ids:
             raise ValueError(f'region {index}: duplicate WRRCD {region_id}')
+        if name in region_names:
+            raise ValueError(f'region {index}: duplicate WRRNM {name}')
         geometry = feature.get('geometry')
         if not isinstance(geometry, dict):
             raise ValueError(f'region {index}: geometry must be an object')
         region_ids.add(region_id)
+        region_names.add(name)
         normalized_feature = {
             **feature,
             'properties': {**properties, 'id': region_id, 'name': name},

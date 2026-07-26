@@ -1,4 +1,4 @@
-from openpyxl import Workbook
+from openpyxl import Workbook, load_workbook
 import pytest
 
 from scripts.build_reclamation_data import (
@@ -38,6 +38,41 @@ def test_read_workbook_maps_both_scenarios_and_rejects_mixed_nodata(tmp_path):
     write_workbook(source, [[105.0, 38.0, 1, -999, 3, 4, 5, 6, 7, 8]])
     with pytest.raises(ValueError, match='row 2.*mixed -999'):
         read_workbook_points(source)
+
+
+def test_read_workbook_rejects_extra_sheets(tmp_path):
+    source = tmp_path / 'values.xlsx'
+    write_workbook(source, [])
+    workbook = load_workbook(source)
+    workbook.create_sheet('notes')
+    workbook.save(source)
+
+    with pytest.raises(ValueError, match='exactly one pixel_values sheet'):
+        read_workbook_points(source)
+
+
+def test_normalize_region_features_rejects_duplicate_or_missing_identifiers():
+    feature = {
+        'type': 'Feature',
+        'properties': {'WRRCD': 'A', 'WRRNM': '区域A'},
+        'geometry': {'type': 'Polygon', 'coordinates': []},
+    }
+
+    duplicate_name = {**feature, 'properties': {'WRRCD': 'B', 'WRRNM': '区域A'}}
+    with pytest.raises(ValueError, match='duplicate WRRNM 区域A'):
+        normalize_region_features([feature, duplicate_name])
+
+    duplicate_id = {**feature, 'properties': {'WRRCD': 'A', 'WRRNM': '区域B'}}
+    with pytest.raises(ValueError, match='duplicate WRRCD A'):
+        normalize_region_features([feature, duplicate_id])
+
+    null_id = {**feature, 'properties': {'WRRCD': None, 'WRRNM': '区域A'}}
+    with pytest.raises(ValueError, match='WRRCD must be non-empty'):
+        normalize_region_features([null_id])
+
+    null_name = {**feature, 'properties': {'WRRCD': 'A', 'WRRNM': None}}
+    with pytest.raises(ValueError, match='WRRNM must be non-empty'):
+        normalize_region_features([null_name])
 
 
 def test_assign_points_uses_polygon_centers_and_audits_outside_points():
