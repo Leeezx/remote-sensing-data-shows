@@ -26,6 +26,7 @@ const CHINA_BOUNDS: [[number, number], [number, number]] = [
 
 interface ReclamationMapProps {
   overview: ReclamationOverviewWireResponse
+  overallRegion: ReclamationRegionProperties
   selectedRegion: ReclamationRegionProperties | null
   points: ReclamationPoint[]
   scenario: ReclamationScenario
@@ -52,6 +53,7 @@ function ReclamationViewController({
 
 export default function ReclamationMap({
   overview,
+  overallRegion,
   selectedRegion,
   points,
   scenario,
@@ -60,10 +62,8 @@ export default function ReclamationMap({
 }: ReclamationMapProps) {
   const selectedRegions = useMemo<ReclamationFeatureCollection<ReclamationRegionProperties>>(() => ({
     type: 'FeatureCollection',
-    features: selectedRegion
-      ? overview.regions.features.filter((feature) => feature.properties.id === selectedRegion.id)
-      : overview.regions.features,
-  }), [overview.regions.features, selectedRegion])
+    features: overview.regions.features,
+  }), [overview.regions.features])
   const isOverview = selectedRegion === null
   const pointColor = scenario === 'current'
     ? CURRENT_SCENARIO_COLOR
@@ -116,9 +116,9 @@ export default function ReclamationMap({
             key={isOverview ? 'overview-regions' : `selected-region-${selectedRegion.id}`}
             data={selectedRegions as never}
             style={regionStyle}
-            onEachFeature={isOverview ? (feature, layer) => {
+            onEachFeature={isOverview ? (_feature, layer) => {
               layer.on({
-                click: () => onRegionSelect(feature.properties as ReclamationRegionProperties),
+                click: () => onRegionSelect(overallRegion),
               })
             } : undefined}
           />

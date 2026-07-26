@@ -28,6 +28,29 @@ function isAbort(error: unknown) {
   return axios.isCancel(error) || (error instanceof Error && error.name === 'AbortError')
 }
 
+const OVERALL_REGION_ID = 'DEMO'
+
+function buildOverallRegion(
+  overview: ReclamationOverviewWireResponse,
+): ReclamationRegionProperties {
+  const features = overview.regions.features
+  const initialBounds: ReclamationRegionProperties['bounds'] = [[90, 180], [-90, -180]]
+  const bounds = features.reduce<ReclamationRegionProperties['bounds']>((current, feature) => {
+    const [[south, west], [north, east]] = feature.properties.bounds
+    return [
+      [Math.min(current[0][0], south), Math.min(current[0][1], west)],
+      [Math.max(current[1][0], north), Math.max(current[1][1], east)],
+    ]
+  }, initialBounds)
+
+  return {
+    id: OVERALL_REGION_ID,
+    name: '示范区域',
+    pointCount: features.reduce((sum, feature) => sum + feature.properties.pointCount, 0),
+    bounds: features.length > 0 ? bounds : [[15, 73], [54, 135]],
+  }
+}
+
 export default function ReclamationPage() {
   const [overview, setOverview] = useState<ReclamationOverviewWireResponse | null>(null)
   const [overviewStatus, setOverviewStatus] = useState<'loading' | 'ready' | 'error'>('loading')
@@ -81,9 +104,23 @@ export default function ReclamationPage() {
     const controller = new AbortController()
     requestRef.current = { id, controller }
     setPointsState({ status: 'loading' })
-    getReclamationPoints(region.id, controller.signal)
-      .then((data) => {
+    const regionRequests = region.id === OVERALL_REGION_ID && overview
+      ? overview.regions.features.map((feature) => (
+        getReclamationPoints(feature.properties.id, controller.signal)
+      ))
+      : [getReclamationPoints(region.id, controller.signal)]
+
+    Promise.all(regionRequests)
+      .then((responses) => {
         if (requestRef.current?.id !== id || controller.signal.aborted) return
+        const firstResponse = responses[0]
+        const data: ReclamationPointsResponse = {
+          schemaVersion: firstResponse?.schemaVersion ?? 1,
+          region: { id: region.id, name: region.name },
+          unit: firstResponse?.unit ?? 'thousand_usd',
+          fields: firstResponse?.fields ?? [],
+          points: responses.flatMap((response) => response.points),
+        }
         cacheRef.current.set(region.id, data)
         requestRef.current = null
         setPointsState({ status: 'ready', data })
@@ -93,7 +130,7 @@ export default function ReclamationPage() {
         requestRef.current = null
         setPointsState({ status: 'error', message: errorMessage(error, '复耕点位加载失败') })
       })
-  }, [])
+  }, [overview])
 
   const retryPoints = useCallback(() => {
     if (selectedRegion) selectRegion(selectedRegion)
@@ -132,6 +169,7 @@ export default function ReclamationPage() {
     )
   }
 
+  const overallRegion = buildOverallRegion(overview)
   const points = pointsState.status === 'ready' ? pointsState.data.points : []
   const reclaimablePoints = points.filter((point) => (
     isReclaimable(scenarioMetrics(point, scenario))
@@ -153,6 +191,7 @@ export default function ReclamationPage() {
       <h2 className="reclamation-page-heading">复耕潜力评估</h2>
       <ReclamationMap
         overview={overview}
+        overallRegion={overallRegion}
         selectedRegion={selectedRegion}
         points={points}
         scenario={scenario}
@@ -168,19 +207,13 @@ export default function ReclamationPage() {
         <>
           <p className="reclamation-overview-instruction">点击高亮区域查看复耕潜力</p>
           <nav className="reclamation-region-selector" aria-label="选择复耕评估区域">
-            {overview.regions.features.map((feature) => {
-              const region = feature.properties
-              return (
-                <button
-                  key={region.id}
-                  type="button"
-                  aria-label={`选择区域：${region.name}`}
-                  onClick={() => selectRegion(region)}
-                >
-                  {region.name}
-                </button>
-              )
-            })}
+            <button
+              type="button"
+              aria-label="选择示范区域"
+              onClick={() => selectRegion(overallRegion)}
+            >
+              进入示范区域
+            </button>
           </nav>
         </>
       )}

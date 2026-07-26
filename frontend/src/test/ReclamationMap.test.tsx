@@ -121,11 +121,19 @@ const points: ReclamationPoint[] = [{
   future: { reclamationValue: 15, waterConsumption: 2, yieldValue: 3, soilCarbonValue: 4 },
 }]
 
+const overallRegion: ReclamationRegionProperties = {
+  id: 'DEMO',
+  name: '示范区域',
+  pointCount: 5,
+  bounds: [[30, 90], [41.8, 112.8]],
+}
+
 const onRegionSelect = vi.fn()
 const onPointSelect = vi.fn()
 
 const overviewProps = {
   overview,
+  overallRegion,
   points,
   scenario: 'current' as const,
   onRegionSelect,
@@ -150,27 +158,22 @@ describe('ReclamationMap', () => {
     expect(screen.queryByTestId('reclamation-canvas-layer')).not.toBeInTheDocument()
   })
 
-  it('selects a typed demo region when its polygon is clicked', () => {
+  it('selects the overall demo region when any polygon is clicked', () => {
     render(<ReclamationMap {...overviewProps} selectedRegion={null} points={[]} />)
 
     act(() => featureLayers[0].handlers.click?.({ originalEvent: new MouseEvent('click') }))
 
-    expect(onRegionSelect).toHaveBeenCalledWith({
-      id: 'ningxia',
-      name: '宁夏示范区',
-      pointCount: 2,
-      bounds: [[37.2, 104.6], [41.8, 112.8]],
-    })
+    expect(onRegionSelect).toHaveBeenCalledWith(overallRegion)
   })
 
   it('fits the clicked region and mounts one canvas layer after data arrives', () => {
     render(<ReclamationMap
       {...overviewProps}
-      selectedRegion={overview.regions.features[0].properties}
+      selectedRegion={overallRegion}
     />)
 
     expect(fakeMap.fitBounds).toHaveBeenCalledWith(
-      [[37.2, 104.6], [41.8, 112.8]],
+      [[30, 90], [41.8, 112.8]],
       expect.objectContaining({ padding: [32, 32], animate: true }),
     )
     expect(screen.getByTestId('reclamation-canvas-layer')).toBeInTheDocument()
@@ -179,7 +182,7 @@ describe('ReclamationMap', () => {
   it('does not bind region click handlers after a region is selected', () => {
     render(<ReclamationMap
       {...overviewProps}
-      selectedRegion={overview.regions.features[0].properties}
+      selectedRegion={overallRegion}
     />)
 
     expect(featureLayers).toHaveLength(0)
@@ -192,7 +195,7 @@ describe('ReclamationMap', () => {
 
     rerender(<ReclamationMap
       {...overviewProps}
-      selectedRegion={overview.regions.features[0].properties}
+      selectedRegion={overallRegion}
     />)
 
     expect(featureLayers).toHaveLength(0)

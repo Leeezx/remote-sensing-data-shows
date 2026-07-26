@@ -31,8 +31,6 @@ vi.mock('../components/ReclamationMap', () => ({
     const point = props.points[0]
     return (
       <div data-testid="reclamation-map">
-        <button type="button" onClick={() => props.onRegionSelect(regionA)}>选择区域A</button>
-        <button type="button" onClick={() => props.onRegionSelect(regionB)}>选择区域B</button>
         <button type="button" disabled={!point} onClick={() => point && props.onPointSelect(point)}>选择点位</button>
         <button type="button" onClick={() => props.onPointSelect(nonReclaimablePoint)}>选择不可复耕点</button>
         <span>{props.selectedRegion?.name ?? '全国'}</span>
@@ -119,13 +117,13 @@ function deferred<T>() {
   return { promise, resolve, reject }
 }
 
-async function selectRegion(name: 'A' | 'B') {
-  await userEvent.setup().click(screen.getByRole('button', { name: `选择区域${name}` }))
+async function selectRegion() {
+  await userEvent.setup().click(screen.getByRole('button', { name: '选择示范区域' }))
 }
 
-async function backAndSelectRegion(name: 'A' | 'B') {
+async function backAndSelectRegion() {
   await userEvent.setup().click(screen.getByRole('button', { name: '返回全国' }))
-  await selectRegion(name)
+  await selectRegion()
 }
 
 async function renderLoadedRegionAndSelectPoint() {
@@ -133,7 +131,7 @@ async function renderLoadedRegionAndSelectPoint() {
   render(<ReclamationPage />)
   await screen.findByText('点击高亮区域查看复耕潜力')
   expect(screen.getByRole('heading', { name: '复耕潜力评估' })).toBeInTheDocument()
-  await user.click(screen.getByRole('button', { name: '选择区域A' }))
+  await user.click(screen.getByRole('button', { name: '选择示范区域' }))
   await screen.findByRole('button', { name: '返回全国' })
   await user.click(screen.getByRole('button', { name: '选择点位' }))
   return user
@@ -149,14 +147,16 @@ describe('ReclamationPage', () => {
     ))
   })
 
-  it('loads only the overview and defaults to current after a region click', async () => {
+  it('loads only the overview and merges all demo regions after one overall click', async () => {
     const user = userEvent.setup()
     render(<ReclamationPage />)
     expect(await screen.findByText('点击高亮区域查看复耕潜力')).toBeInTheDocument()
     expect(apiMocks.getReclamationPoints).not.toHaveBeenCalled()
 
-    await user.click(screen.getByRole('button', { name: '选择区域A' }))
+    await user.click(screen.getByRole('button', { name: '选择示范区域' }))
     expect(apiMocks.getReclamationPoints).toHaveBeenCalledWith('A', expect.any(AbortSignal))
+    expect(apiMocks.getReclamationPoints).toHaveBeenCalledWith('B', expect.any(AbortSignal))
+    expect(await screen.findByTestId('loaded-point')).toHaveTextContent('A:0')
     expect(await screen.findByRole('button', { name: '当前情景' })).toHaveAttribute('aria-pressed', 'true')
   })
 
@@ -165,7 +165,7 @@ describe('ReclamationPage', () => {
     render(<ReclamationPage />)
     await screen.findByText('点击高亮区域查看复耕潜力')
 
-    const regionButton = screen.getByRole('button', { name: '选择区域：区域A' })
+    const regionButton = screen.getByRole('button', { name: '选择示范区域' })
     regionButton.focus()
     await user.keyboard('{Enter}')
 
@@ -179,33 +179,38 @@ describe('ReclamationPage', () => {
 
     await user.click(screen.getByRole('button', { name: '未来情景' }))
 
-    expect(apiMocks.getReclamationPoints).toHaveBeenCalledTimes(1)
+    expect(apiMocks.getReclamationPoints).toHaveBeenCalledTimes(2)
     expect(screen.queryByRole('heading', { name: '点位信息' })).not.toBeInTheDocument()
     expect(screen.getByRole('button', { name: '未来情景' })).toHaveAttribute('aria-pressed', 'true')
   })
 
   it('aborts stale region requests and reuses successful cached regions', async () => {
-    const first = deferred<ReclamationPointsResponse>()
-    const second = deferred<ReclamationPointsResponse>()
-    const observedSignals = new Map<string, AbortSignal | undefined>()
+    const requests: Array<{
+      id: string
+      signal: AbortSignal | undefined
+      deferred: ReturnType<typeof deferred<ReclamationPointsResponse>>
+    }> = []
     apiMocks.getReclamationPoints.mockImplementation((id: string, signal?: AbortSignal) => {
-      observedSignals.set(id, signal)
-      return id === 'A' ? first.promise : second.promise
+      const pending = deferred<ReclamationPointsResponse>()
+      requests.push({ id, signal, deferred: pending })
+      return pending.promise
     })
     render(<ReclamationPage />)
     await screen.findByText('点击高亮区域查看复耕潜力')
-    await selectRegion('A')
-    await selectRegion('B')
-    expect(observedSignals.get('A')?.aborted).toBe(true)
+    await selectRegion()
+    await userEvent.setup().click(screen.getByRole('button', { name: '返回全国' }))
+    await selectRegion()
+    expect(requests).toHaveLength(4)
+    expect(requests[0].signal?.aborted).toBe(true)
     await act(async () => {
-      second.resolve(pointsFor(regionB))
-      first.resolve(pointsFor(regionA))
+      requests[2].deferred.resolve(pointsFor(regionA))
+      requests[3].deferred.resolve(pointsFor(regionB))
     })
     expect(await screen.findByRole('button', { name: '返回全国' })).toBeInTheDocument()
-    expect(screen.getByTestId('loaded-point')).toHaveTextContent('B:0')
+    expect(screen.getByTestId('loaded-point')).toHaveTextContent('A:0')
 
-    await backAndSelectRegion('B')
-    expect(apiMocks.getReclamationPoints).toHaveBeenCalledTimes(2)
+    await backAndSelectRegion()
+    expect(apiMocks.getReclamationPoints).toHaveBeenCalledTimes(4)
   })
 
   it('aborts a pending point request when the page unmounts', async () => {
@@ -217,7 +222,7 @@ describe('ReclamationPage', () => {
     })
     const { unmount } = render(<ReclamationPage />)
     await screen.findByText('点击高亮区域查看复耕潜力')
-    await selectRegion('A')
+    await selectRegion()
 
     unmount()
 
@@ -242,9 +247,9 @@ describe('ReclamationPage', () => {
       .mockResolvedValueOnce(pointsFor(regionA))
     render(<ReclamationPage />)
     await screen.findByText('点击高亮区域查看复耕潜力')
-    await user.click(screen.getByRole('button', { name: '选择区域A' }))
+    await user.click(screen.getByRole('button', { name: '选择示范区域' }))
     expect(await screen.findByText('点位失败')).toBeInTheDocument()
-    expect(mapMocks.props?.selectedRegion).toEqual(regionA)
+    expect(mapMocks.props?.selectedRegion).toMatchObject({ id: 'DEMO', name: '示范区域' })
     await user.click(screen.getByRole('button', { name: '重试' }))
     expect(await screen.findByRole('button', { name: '选择点位' })).toBeEnabled()
   })
@@ -260,7 +265,7 @@ describe('ReclamationPage', () => {
     const user = userEvent.setup()
     render(<ReclamationPage />)
     await screen.findByText('点击高亮区域查看复耕潜力')
-    await user.click(screen.getByRole('button', { name: '选择区域A' }))
+    await user.click(screen.getByRole('button', { name: '选择示范区域' }))
 
     const nextPoint = await screen.findByRole('button', { name: '下一个可复耕点位' })
     expect(screen.queryByRole('combobox')).not.toBeInTheDocument()
