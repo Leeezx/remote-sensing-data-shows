@@ -28,7 +28,6 @@ export default function ReclamationLegend({ scenario }: ReclamationLegendProps) 
         <li><span className="reclamation-legend-dot reclamation-legend-dot-recommended" style={dotStyle('recommended')} />5-10 建议复耕区</li>
         <li><span className="reclamation-legend-dot reclamation-legend-dot-priority" style={dotStyle('priority')} />&gt;10 优先复耕区</li>
       </ul>
-      <p className="reclamation-legend-scale">每个圆代表约 1 km × 1 km 范围</p>
     </aside>
   )
 }

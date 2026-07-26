@@ -286,7 +286,7 @@ describe('ReclamationPage', () => {
     expect(screen.getByText('0-5 一般复耕区')).toBeInTheDocument()
     expect(screen.getByText('5-10 建议复耕区')).toBeInTheDocument()
     expect(screen.getByText('>10 优先复耕区')).toBeInTheDocument()
-    expect(screen.getByText('每个圆代表约 1 km × 1 km 范围')).toBeInTheDocument()
+    expect(screen.queryByText('每个圆代表约 1 km × 1 km 范围')).not.toBeInTheDocument()
     expect(screen.getByText('情景：当前情景')).toBeInTheDocument()
 
     await user.click(screen.getByRole('button', { name: '返回全国' }))
