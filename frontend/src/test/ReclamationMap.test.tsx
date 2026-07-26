@@ -29,6 +29,11 @@ const fakeMap = vi.hoisted(() => ({
   fitBounds: vi.fn(),
 }))
 
+const tileLayerProps = vi.hoisted(() => ({
+  maxZoom: null as number | null,
+  maxNativeZoom: null as number | null,
+}))
+
 const geoJsonLayers = vi.hoisted((): GeoJsonLayer[] => [])
 const featureLayers = vi.hoisted((): Array<{
   feature: ReclamationFeature
@@ -37,7 +42,11 @@ const featureLayers = vi.hoisted((): Array<{
 
 vi.mock('react-leaflet', () => ({
   MapContainer: ({ children }: { children: ReactNode }) => <div>{children}</div>,
-  TileLayer: () => null,
+  TileLayer: (props: { maxZoom?: number; maxNativeZoom?: number }) => {
+    tileLayerProps.maxZoom = props.maxZoom ?? null
+    tileLayerProps.maxNativeZoom = props.maxNativeZoom ?? null
+    return null
+  },
   Pane: ({ children }: { children: ReactNode }) => <>{children}</>,
   GeoJSON: ({ data, style, onEachFeature }: GeoJsonLayer) => {
     const initialOnEachFeature = useRef(onEachFeature)
@@ -143,6 +152,8 @@ const overviewProps = {
 describe('ReclamationMap', () => {
   beforeEach(() => {
     vi.clearAllMocks()
+    tileLayerProps.maxZoom = null
+    tileLayerProps.maxNativeZoom = null
     geoJsonLayers.length = 0
     featureLayers.length = 0
   })
@@ -156,6 +167,13 @@ describe('ReclamationMap', () => {
     expect(geoJsonLayers[1].style(overview.regions.features[0]).className)
       .toContain('reclamation-region-pulse')
     expect(screen.queryByTestId('reclamation-canvas-layer')).not.toBeInTheDocument()
+  })
+
+  it('limits the base map to available native tiles while allowing smooth zooming', () => {
+    render(<ReclamationMap {...overviewProps} selectedRegion={null} points={[]} />)
+
+    expect(tileLayerProps.maxZoom).toBe(13)
+    expect(tileLayerProps.maxNativeZoom).toBe(8)
   })
 
   it('selects the overall demo region when any polygon is clicked', () => {

@@ -91,7 +91,7 @@ export default function ReclamationMap({
         center={[35.5, 104]}
         zoom={4}
         minZoom={3}
-        maxZoom={14}
+        maxZoom={13}
         maxBounds={CHINA_BOUNDS}
         maxBoundsViscosity={0.8}
         style={{ height: '100%', width: '100%' }}
@@ -100,6 +100,8 @@ export default function ReclamationMap({
         <TileLayer
           attribution="&copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ"
           url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"
+          maxZoom={13}
+          maxNativeZoom={8}
         />
 
         <ReclamationViewController selectedRegion={selectedRegion} />
