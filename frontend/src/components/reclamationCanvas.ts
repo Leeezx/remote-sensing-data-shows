@@ -4,7 +4,7 @@ import type {
   ReclamationScenario,
 } from '../types'
 
-export const RECLAMATION_RADIUS_METERS = 450
+export const RECLAMATION_RADIUS_METERS = 400
 export const MIN_RADIUS_PX = 3
 export const SCREEN_BUCKET_PX = 32
 export const CURRENT_SCENARIO_COLOR = '#16A34A'

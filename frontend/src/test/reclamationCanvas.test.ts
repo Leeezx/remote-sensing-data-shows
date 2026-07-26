@@ -87,8 +87,8 @@ describe('reclamation Canvas engine', () => {
     expect(classifyReclamationValue({ ...finiteMetrics, reclamationValue: 10.1 })).toBe('priority')
   })
 
-  it('uses a 450 m radius with a 3 px minimum', () => {
-    expect(RECLAMATION_RADIUS_METERS).toBe(450)
+  it('uses a 400 m radius with a 3 px minimum', () => {
+    expect(RECLAMATION_RADIUS_METERS).toBe(400)
     expect(circleRadiusPixels(40, 12)).toBeGreaterThan(3)
     expect(circleRadiusPixels(40, 4)).toBe(3)
   })
