@@ -3,6 +3,7 @@ import json
 import shutil
 
 from openpyxl import Workbook, load_workbook
+from pyproj import CRS
 import pytest
 from shapely.geometry import Polygon
 
@@ -55,6 +56,14 @@ def square_region(region_id, name):
     feature = square_feature(100, 30, 102, 32)
     feature['properties'] = {'id': region_id, 'name': name}
     return builder.DemoRegion(region_id, name, feature)
+
+
+def write_shapefile_crs(path, crs):
+    path.touch()
+    path.with_suffix('.prj').write_text(
+        crs.to_wkt(version='WKT1_ESRI'),
+        encoding='utf-8',
+    )
 
 
 def test_read_workbook_maps_both_scenarios_and_rejects_mixed_nodata(tmp_path):
@@ -144,6 +153,23 @@ def test_assign_points_uses_polygon_centers_and_audits_outside_points():
     assert [point.longitude for point in result.by_region['A']] == [101.0]
     assert result.unassigned_indexes == [1]
     assert result.overlapping_indexes == []
+
+
+@pytest.mark.parametrize('reader', [builder.read_demo_regions, builder.read_county_features])
+def test_shapefile_readers_reject_non_wgs84_prj(reader, tmp_path):
+    source = tmp_path / 'projected.shp'
+    write_shapefile_crs(source, CRS.from_epsg(3857))
+
+    with pytest.raises(ValueError, match='EPSG:4326'):
+        reader(source)
+
+
+def test_demo_region_reader_accepts_wgs84_prj(monkeypatch, tmp_path):
+    source = tmp_path / 'wgs84.shp'
+    write_shapefile_crs(source, CRS.from_epsg(4326))
+    monkeypatch.setattr(builder, 'iter_shapefile_geojson_features', lambda _path: [])
+
+    assert builder.read_demo_regions(source) == []
 
 
 def test_build_china_outline_preserves_topology_and_stays_compact(monkeypatch):

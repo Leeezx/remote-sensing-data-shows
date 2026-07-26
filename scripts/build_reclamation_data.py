@@ -16,6 +16,10 @@ import tempfile
 from uuid import uuid4
 
 from openpyxl import load_workbook
+try:
+    from pyproj import CRS
+except ImportError:
+    CRS = None
 from shapely.geometry import mapping, shape
 from shapely.ops import unary_union
 
@@ -51,6 +55,32 @@ METRICS = [
 ]
 SHAPEFILE_SIDECARS = ('.shp', '.shx', '.dbf', '.prj', '.cpg')
 MAX_CHINA_OUTLINE_BYTES = 1_000_000
+
+
+def validate_wgs84_shapefile(path: str | Path) -> None:
+    """Require a Shapefile .prj that resolves to WGS 84 longitude/latitude."""
+    shapefile_path = Path(path)
+    prj_path = shapefile_path.with_suffix('.prj')
+    if not prj_path.is_file():
+        raise ValueError(
+            f'Shapefile CRS must be EPSG:4326 (WGS84); missing .prj: {prj_path}'
+        )
+    if CRS is None:
+        raise ValueError(
+            'Shapefile CRS must be EPSG:4326 (WGS84), but pyproj is unavailable '
+            f'to validate {prj_path}'
+        )
+    try:
+        source_crs = CRS.from_wkt(prj_path.read_text(encoding='utf-8-sig'))
+    except Exception as exc:
+        raise ValueError(
+            f'Shapefile CRS must be EPSG:4326 (WGS84); could not parse {prj_path}'
+        ) from exc
+    if not source_crs.equals(CRS.from_epsg(4326), ignore_axis_order=True):
+        raise ValueError(
+            'Shapefile CRS must be EPSG:4326 (WGS84); '
+            f'{shapefile_path} declares {source_crs.to_string()}'
+        )
 
 
 @dataclass(frozen=True)
@@ -232,12 +262,16 @@ def encode_gzip(raw: bytes) -> bytes:
 
 def read_demo_regions(path: str | Path) -> list[DemoRegion]:
     """Read and normalize the demo-region Shapefile."""
-    return normalize_region_features(iter_shapefile_geojson_features(Path(path)))
+    shapefile_path = Path(path)
+    validate_wgs84_shapefile(shapefile_path)
+    return normalize_region_features(iter_shapefile_geojson_features(shapefile_path))
 
 
 def read_county_features(path: str | Path) -> list[dict]:
     """Read county boundaries as GeoJSON features for the China overview."""
-    return list(iter_shapefile_geojson_features(Path(path)))
+    shapefile_path = Path(path)
+    validate_wgs84_shapefile(shapefile_path)
+    return list(iter_shapefile_geojson_features(shapefile_path))
 
 
 def build_china_outline(features, tolerance: float = 0.05) -> dict:
