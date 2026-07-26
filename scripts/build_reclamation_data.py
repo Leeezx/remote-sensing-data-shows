@@ -2,12 +2,24 @@
 
 from __future__ import annotations
 
+import argparse
 from dataclasses import dataclass
+from datetime import datetime, timezone
+import gzip
+import hashlib
+import json
 import math
+import os
 from pathlib import Path
+import shutil
+import tempfile
+from uuid import uuid4
 
 from openpyxl import load_workbook
+from shapely.geometry import mapping, shape
+from shapely.ops import unary_union
 
+from backend.shapefile_geojson import iter_shapefile_geojson_features
 from scripts.build_township_chunks import point_in_geometry
 
 
@@ -16,7 +28,29 @@ EXPECTED_COLUMNS = [
     'EV', 'optimal_irr', 'optimal_npp', 'optimal_soc',
     'EV.1', 'irr', 'npp', 'soc',
 ]
+REAL_DUPLICATE_EV_COLUMNS = [
+    'longitude', 'latitude',
+    'EV', 'optimal_irr', 'optimal_npp', 'optimal_soc',
+    'EV', 'irr', 'npp', 'soc',
+]
 NODATA = -999.0
+SCHEMA_VERSION = 1
+UNIT = 'thousand_usd'
+POINT_FIELDS = [
+    'longitude', 'latitude',
+    'current.reclamationValue', 'current.waterConsumption',
+    'current.yieldValue', 'current.soilCarbonValue',
+    'future.reclamationValue', 'future.waterConsumption',
+    'future.yieldValue', 'future.soilCarbonValue',
+]
+METRICS = [
+    {'field': 'reclamationValue', 'label': '复耕价值', 'unit': UNIT},
+    {'field': 'waterConsumption', 'label': '用水消耗', 'unit': UNIT},
+    {'field': 'yieldValue', 'label': '产量价值', 'unit': UNIT},
+    {'field': 'soilCarbonValue', 'label': '土壤碳价值', 'unit': UNIT},
+]
+SHAPEFILE_SIDECARS = ('.shp', '.shx', '.dbf', '.prj', '.cpg')
+MAX_CHINA_OUTLINE_BYTES = 1_000_000
 
 
 @dataclass(frozen=True)
@@ -84,7 +118,7 @@ def read_workbook_points(path: str | Path) -> list[SourcePoint]:
             raise ValueError('row 1: workbook must contain exactly one pixel_values sheet')
         sheet = workbook['pixel_values']
         header = next(sheet.iter_rows(min_row=1, max_row=1, values_only=True), ())
-        if list(header) != EXPECTED_COLUMNS:
+        if list(header) not in (EXPECTED_COLUMNS, REAL_DUPLICATE_EV_COLUMNS):
             raise ValueError('row 1: pixel_values header must exactly match EXPECTED_COLUMNS')
 
         points: list[SourcePoint] = []
@@ -169,3 +203,252 @@ def assign_points(points: list[SourcePoint], regions: list[DemoRegion]) -> Regio
         elif len(matches) > 1:
             overlapping_indexes.append(index)
     return RegionAssignment(by_region, unassigned_indexes, overlapping_indexes)
+
+
+def compact_point(point: SourcePoint) -> list[float]:
+    """Encode one validated source point in the stable transport-field order."""
+    return [
+        round(point.longitude, 6),
+        round(point.latitude, 6),
+        *(round(value, 6) for value in point.current.as_tuple()),
+        *(round(value, 6) for value in point.future.as_tuple()),
+    ]
+
+
+def encode_json(payload: object) -> bytes:
+    """Serialize artifacts deterministically and without whitespace overhead."""
+    return json.dumps(
+        payload,
+        ensure_ascii=False,
+        separators=(',', ':'),
+        sort_keys=True,
+    ).encode('utf-8')
+
+
+def encode_gzip(raw: bytes) -> bytes:
+    """Create a reproducible gzip representation of an artifact."""
+    return gzip.compress(raw, compresslevel=6, mtime=0)
+
+
+def read_demo_regions(path: str | Path) -> list[DemoRegion]:
+    """Read and normalize the demo-region Shapefile."""
+    return normalize_region_features(iter_shapefile_geojson_features(Path(path)))
+
+
+def read_county_features(path: str | Path) -> list[dict]:
+    """Read county boundaries as GeoJSON features for the China overview."""
+    return list(iter_shapefile_geojson_features(Path(path)))
+
+
+def build_china_outline(features, tolerance: float = 0.05) -> dict:
+    """Dissolve and topology-preservingly simplify county geometry."""
+    geometries = [shape(feature['geometry']) for feature in features if feature.get('geometry')]
+    if not geometries:
+        raise ValueError('county source contains no polygon geometry')
+    outline = unary_union(geometries).simplify(tolerance, preserve_topology=True)
+    if outline.geom_type not in {'Polygon', 'MultiPolygon'}:
+        raise ValueError(f'county dissolve produced unsupported geometry {outline.geom_type}')
+    return mapping(outline)
+
+
+def _region_bounds(region: DemoRegion) -> list[list[float]]:
+    min_longitude, min_latitude, max_longitude, max_latitude = shape(
+        region.feature['geometry']
+    ).bounds
+    return [
+        [round(min_latitude, 6), round(min_longitude, 6)],
+        [round(max_latitude, 6), round(max_longitude, 6)],
+    ]
+
+
+def _region_feature(region: DemoRegion, point_count: int) -> dict:
+    return {
+        'type': 'Feature',
+        'properties': {
+            'id': region.region_id,
+            'name': region.name,
+            'pointCount': point_count,
+            'bounds': _region_bounds(region),
+        },
+        'geometry': region.feature['geometry'],
+    }
+
+
+def _source_files(workbook: Path, regions_shp: Path, counties_shp: Path) -> list[Path]:
+    files = [workbook]
+    for shapefile in (regions_shp, counties_shp):
+        files.extend(
+            shapefile.with_suffix(suffix)
+            for suffix in SHAPEFILE_SIDECARS
+            if shapefile.with_suffix(suffix).is_file()
+        )
+    return files
+
+
+def _source_manifest(files: list[Path]) -> list[dict]:
+    result = []
+    for source in sorted(files, key=lambda item: item.name):
+        result.append({
+            'name': source.name,
+            'sha256': hashlib.sha256(source.read_bytes()).hexdigest(),
+        })
+    return result
+
+
+def _built_at(files: list[Path]) -> str:
+    newest_mtime = max(path.stat().st_mtime for path in files)
+    return datetime.fromtimestamp(newest_mtime, timezone.utc).isoformat(
+        timespec='microseconds'
+    ).replace('+00:00', 'Z')
+
+
+def _write_json(path: Path, payload: object, *, gzip_copy: bool = False) -> bytes:
+    raw = encode_json(payload)
+    path.write_bytes(raw)
+    if gzip_copy:
+        path.with_suffix(path.suffix + '.gz').write_bytes(encode_gzip(raw))
+    return raw
+
+
+def _validate_staged_artifacts(stage: Path, point_ids: list[str]) -> None:
+    outline = stage / 'china_outline.geojson'
+    if outline.stat().st_size >= MAX_CHINA_OUTLINE_BYTES:
+        raise ValueError('simplified China outline must be smaller than 1,000,000 bytes')
+    gzip_pairs = [stage / 'overview.json'] + [stage / 'points' / f'{region_id}.json' for region_id in point_ids]
+    for raw_path in gzip_pairs:
+        compressed_path = raw_path.with_suffix(raw_path.suffix + '.gz')
+        if gzip.decompress(compressed_path.read_bytes()) != raw_path.read_bytes():
+            raise ValueError(f'gzip artifact does not match raw JSON: {raw_path.name}')
+
+
+def _replace_output(stage: Path, output: Path, force: bool) -> None:
+    """Publish a fully validated stage directory without exposing partial artifacts."""
+    if output.exists() and not force:
+        raise FileExistsError(f'output already exists; pass --force to rebuild: {output}')
+    backup = None
+    try:
+        if output.exists():
+            backup = output.with_name(f'.{output.name}.backup-{uuid4().hex}')
+            os.replace(output, backup)
+        os.replace(stage, output)
+    except Exception:
+        if backup is not None and backup.exists() and not output.exists():
+            os.replace(backup, output)
+        raise
+    else:
+        if backup is not None:
+            shutil.rmtree(backup)
+
+
+def build_reclamation_data(
+    workbook: str | Path,
+    regions_shp: str | Path,
+    counties_shp: str | Path,
+    output: str | Path,
+    force: bool,
+) -> dict:
+    """Build complete, deterministic offline artifacts for the reclamation map."""
+    workbook_path = Path(workbook)
+    regions_path = Path(regions_shp)
+    counties_path = Path(counties_shp)
+    output_path = Path(output)
+    for label, source in (
+        ('workbook', workbook_path),
+        ('regions Shapefile', regions_path),
+        ('counties Shapefile', counties_path),
+    ):
+        if not source.is_file():
+            raise FileNotFoundError(f'{label} not found: {source}')
+    if output_path.exists() and not force:
+        raise FileExistsError(f'output already exists; pass --force to rebuild: {output_path}')
+
+    points = read_workbook_points(workbook_path)
+    regions = sorted(read_demo_regions(regions_path), key=lambda region: region.region_id)
+    counties = read_county_features(counties_path)
+    assignment = assign_points(points, regions)
+    if assignment.overlapping_indexes:
+        raise ValueError(f'overlapping point assignments: {assignment.overlapping_indexes}')
+
+    source_files = _source_files(workbook_path, regions_path, counties_path)
+    region_features = [
+        _region_feature(region, len(assignment.by_region[region.region_id]))
+        for region in regions
+    ]
+    regions_geojson = {'type': 'FeatureCollection', 'features': region_features}
+    china_outline = build_china_outline(counties)
+    overview = {
+        'schemaVersion': SCHEMA_VERSION,
+        'unit': UNIT,
+        'metrics': METRICS,
+        'chinaOutline': china_outline,
+        'regions': regions_geojson,
+    }
+    manifest = {
+        'schemaVersion': SCHEMA_VERSION,
+        'builtAt': _built_at(source_files),
+        'sourceFiles': _source_manifest(source_files),
+        'unit': UNIT,
+        'metrics': METRICS,
+        'fields': POINT_FIELDS,
+        'inputPointCount': len(points),
+        'assignedPointCount': sum(len(points) for points in assignment.by_region.values()),
+        'unassignedPointCount': len(assignment.unassigned_indexes),
+        'overlappingPointCount': len(assignment.overlapping_indexes),
+        'unassignedIndexes': assignment.unassigned_indexes,
+        'regions': [feature['properties'] for feature in region_features],
+    }
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    stage = Path(tempfile.mkdtemp(prefix=f'.{output_path.name}.stage-', dir=output_path.parent))
+    try:
+        points_dir = stage / 'points'
+        points_dir.mkdir()
+        _write_json(stage / 'regions.geojson', regions_geojson)
+        _write_json(stage / 'china_outline.geojson', china_outline)
+        _write_json(stage / 'overview.json', overview, gzip_copy=True)
+        for region in regions:
+            region_id = region.region_id
+            if Path(region_id).name != region_id or region_id in {'.', '..'}:
+                raise ValueError(f'unsafe region ID for output path: {region_id}')
+            payload = {
+                'schemaVersion': SCHEMA_VERSION,
+                'region': {'id': region_id, 'name': region.name},
+                'unit': UNIT,
+                'fields': POINT_FIELDS,
+                'points': [compact_point(point) for point in assignment.by_region[region_id]],
+            }
+            _write_json(points_dir / f'{region_id}.json', payload, gzip_copy=True)
+        _write_json(stage / 'manifest.json', manifest)
+        _validate_staged_artifacts(stage, [region.region_id for region in regions])
+        _replace_output(stage, output_path, force)
+    except Exception:
+        if stage.exists():
+            shutil.rmtree(stage)
+        raise
+    return manifest
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--workbook', type=Path, required=True)
+    parser.add_argument('--regions-shp', type=Path, required=True)
+    parser.add_argument('--counties-shp', type=Path, required=True)
+    parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--force', action='store_true')
+    return parser.parse_args()
+
+
+def main() -> None:
+    args = parse_args()
+    manifest = build_reclamation_data(
+        args.workbook,
+        args.regions_shp,
+        args.counties_shp,
+        args.output,
+        args.force,
+    )
+    print(json.dumps(manifest, ensure_ascii=False, indent=2))
+
+
+if __name__ == '__main__':
+    main()
