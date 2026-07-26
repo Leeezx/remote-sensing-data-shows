@@ -7,6 +7,7 @@ import Sidebar from './components/Sidebar'
 import MapView from './components/MapView'
 import Legend from './components/Legend'
 import IrrigationPage from './pages/IrrigationPage'
+import ReclamationPage from './pages/ReclamationPage'
 import PlaceholderPage from './pages/PlaceholderPage'
 import './App.css'
 
@@ -245,10 +246,7 @@ function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/base" element={<MainPage />} />
           <Route path="/irrigation" element={<IrrigationPage />} />
-          <Route
-            path="/reclamation"
-            element={<PlaceholderPage title="复耕潜力评估" />}
-          />
+          <Route path="/reclamation" element={<ReclamationPage />} />
           <Route
             path="/water-demand"
             element={<PlaceholderPage title="需水补水计算与评估" />}
