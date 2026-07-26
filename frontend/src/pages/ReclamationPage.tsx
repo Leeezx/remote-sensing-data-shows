@@ -136,6 +136,17 @@ export default function ReclamationPage() {
   const reclaimablePoints = points.filter((point) => (
     isReclaimable(scenarioMetrics(point, scenario))
   ))
+  const selectedPointIndex = selectedPoint
+    ? reclaimablePoints.findIndex((point) => point.id === selectedPoint.id)
+    : -1
+
+  const selectRelativePoint = (offset: -1 | 1) => {
+    const nextIndex = offset === 1
+      ? Math.min(selectedPointIndex + 1, reclaimablePoints.length - 1)
+      : Math.max(selectedPointIndex - 1, 0)
+    const point = reclaimablePoints[nextIndex]
+    if (point) selectPoint(point)
+  }
 
   return (
     <main className="reclamation-page">
@@ -174,33 +185,24 @@ export default function ReclamationPage() {
         </>
       )}
       {selectedRegion && pointsState.status === 'ready' && (
-        <div className="reclamation-point-selector">
-          <label htmlFor="reclamation-point-select">选择可复耕点位</label>
-          <select
-            id="reclamation-point-select"
-            value={selectedPoint?.id ?? ''}
-            onChange={(event) => {
-              const point = reclaimablePoints.find((candidate) => candidate.id === event.currentTarget.value)
-              if (point) {
-                selectPoint(point)
-              } else {
-                setSelectedPoint(null)
-              }
-            }}
-            onKeyDown={(event) => {
-              if (event.key === 'ArrowDown' && event.currentTarget.value === '' && reclaimablePoints[0]) {
-                event.preventDefault()
-                selectPoint(reclaimablePoints[0])
-              }
-            }}
-          >
-            <option value="">选择点位</option>
-            {reclaimablePoints.map((point) => (
-              <option key={point.id} value={point.id}>
-                {point.id}（{point.longitude.toFixed(6)}, {point.latitude.toFixed(6)}）
-              </option>
-            ))}
-          </select>
+        <div className="reclamation-point-selector" aria-label="选择可复耕点位">
+          <span className="reclamation-point-selector-status" role="status" aria-live="polite">
+            {selectedPointIndex >= 0
+              ? `点位 ${selectedPointIndex + 1}/${reclaimablePoints.length}：${selectedPoint?.id}`
+              : `未选择点位（${reclaimablePoints.length} 个可复耕点位）`}
+          </span>
+          <button
+            type="button"
+            aria-label="上一个可复耕点位"
+            disabled={selectedPointIndex <= 0}
+            onClick={() => selectRelativePoint(-1)}
+          >上一点</button>
+          <button
+            type="button"
+            aria-label="下一个可复耕点位"
+            disabled={reclaimablePoints.length === 0 || selectedPointIndex >= reclaimablePoints.length - 1}
+            onClick={() => selectRelativePoint(1)}
+          >下一点</button>
         </div>
       )}
       <ScenarioSwitch scenario={scenario} onChange={changeScenario} />

@@ -4,6 +4,7 @@ import { useMap } from 'react-leaflet'
 import {
   buildScreenIndex,
   circleRadiusPixels,
+  classifyReclamationValue,
   drawBasePoints,
   drawHoverPoint,
   hitTestScreenIndex,
@@ -101,6 +102,7 @@ export default function ReclamationCanvasLayer({
         y: screen.y,
         radius: circleRadiusPixels(point.latitude, map.getZoom()),
         reclaimable: isReclaimable(metrics),
+        reclamationValueClass: classifyReclamationValue(metrics),
       }
     })
 

@@ -256,18 +256,18 @@ describe('ReclamationPage', () => {
     expect(screen.queryByRole('heading', { name: '点位信息' })).not.toBeInTheDocument()
   })
 
-  it('lets keyboard users choose a valid point and excludes non-reclaimable points', async () => {
+  it('lets keyboard users cycle valid points without rendering an option for every point', async () => {
     const user = userEvent.setup()
     render(<ReclamationPage />)
     await screen.findByText('点击高亮区域查看复耕潜力')
     await user.click(screen.getByRole('button', { name: '选择区域A' }))
 
-    const pointSelector = await screen.findByRole('combobox', { name: '选择可复耕点位' })
-    expect(screen.getByRole('option', { name: /A:0/ })).toBeInTheDocument()
-    expect(screen.queryByRole('option', { name: /A:non-reclaimable/ })).not.toBeInTheDocument()
+    const nextPoint = await screen.findByRole('button', { name: '下一个可复耕点位' })
+    expect(screen.queryByRole('combobox')).not.toBeInTheDocument()
+    expect(screen.queryByRole('option')).not.toBeInTheDocument()
 
-    pointSelector.focus()
-    await user.keyboard('{ArrowDown}')
+    nextPoint.focus()
+    await user.keyboard('{Enter}')
 
     expect(await screen.findByRole('heading', { name: '点位信息' })).toBeInTheDocument()
   })
@@ -282,6 +282,7 @@ describe('ReclamationPage', () => {
     expect(screen.getByText('5-10 建议复耕区')).toBeInTheDocument()
     expect(screen.getByText('>10 优先复耕区')).toBeInTheDocument()
     expect(screen.getByText('每个圆代表约 1 km × 1 km 范围')).toBeInTheDocument()
+    expect(screen.getByText('情景：当前情景')).toBeInTheDocument()
 
     await user.click(screen.getByRole('button', { name: '返回全国' }))
     expect(await screen.findByText('点击高亮区域查看复耕潜力')).toBeInTheDocument()

@@ -7,6 +7,7 @@ import {
   drawHoverPoint,
   hitTestScreenIndex,
   isReclaimable,
+  reclamationValueStyle,
   scenarioMetrics,
   type ScreenPoint,
 } from '../components/reclamationCanvas'
@@ -32,7 +33,14 @@ function screenPoint(
   y: number,
   reclaimable: boolean,
 ): ScreenPoint {
-  return { sourceIndex, x, y, radius: 4, reclaimable }
+  return {
+    sourceIndex,
+    x,
+    y,
+    radius: 4,
+    reclaimable,
+    reclamationValueClass: reclaimable ? 'general' : 'non-reclaimable',
+  }
 }
 
 function fakeCanvasContext(): CanvasRenderingContext2D {
@@ -94,6 +102,15 @@ describe('reclamation Canvas engine', () => {
     expect(hitTestScreenIndex(index, 32, 32, { reclaimableOnly: true })).not.toBe(2)
   })
 
+  it('finds a visible high-zoom circle beyond adjacent buckets', () => {
+    const index = buildScreenIndex([{
+      ...screenPoint(0, 0, 32, true),
+      radius: 80,
+    }])
+
+    expect(hitTestScreenIndex(index, 79, 32)).toBe(0)
+  })
+
   it('skips a nearer non-reclaimable point when a valid point is also hittable', () => {
     const index = buildScreenIndex([
       screenPoint(0, 32, 32, false),
@@ -125,9 +142,19 @@ describe('reclamation Canvas engine', () => {
 
     expect(context.fill).toHaveBeenCalledTimes(1)
     expect(context.stroke).toHaveBeenCalledTimes(2)
-    expect(context.fillStyle).toBe('rgba(22, 163, 74, 0.76)')
+    expect(context.fillStyle).toBe('rgba(22, 163, 74, 0.4)')
     expect(context.strokeStyle).toBe('rgba(22, 163, 74, 0.95)')
     expect(context.lineWidth).toBe(1.25)
+  })
+
+  it('maps valid value classes to distinguishable opacity while retaining the scenario hue', () => {
+    expect(reclamationValueStyle('non-reclaimable', '#16A34A')).toEqual({
+      fill: null,
+      stroke: 'rgba(22, 163, 74, 0.95)',
+    })
+    expect(reclamationValueStyle('general', '#16A34A').fill).toBe('rgba(22, 163, 74, 0.4)')
+    expect(reclamationValueStyle('recommended', '#16A34A').fill).toBe('rgba(22, 163, 74, 0.64)')
+    expect(reclamationValueStyle('priority', '#2563EB').fill).toBe('rgba(37, 99, 235, 0.82)')
   })
 
   it('clears and outlines a reclaimable hover point', () => {

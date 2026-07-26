@@ -19,10 +19,12 @@ export interface ScreenPoint {
   y: number
   radius: number
   reclaimable: boolean
+  reclamationValueClass: ReclamationValueClass
 }
 
 export interface ScreenIndex {
   buckets: Map<string, ScreenPoint[]>
+  maxHitRadius: number
 }
 
 export interface HitTestOptions {
@@ -74,15 +76,17 @@ function bucketKey(x: number, y: number): string {
 
 export function buildScreenIndex(points: ScreenPoint[]): ScreenIndex {
   const buckets = new Map<string, ScreenPoint[]>()
+  let maxHitRadius = 5
 
   for (const point of points) {
+    maxHitRadius = Math.max(maxHitRadius, point.radius)
     const key = bucketKey(point.x, point.y)
     const bucket = buckets.get(key)
     if (bucket) bucket.push(point)
     else buckets.set(key, [point])
   }
 
-  return { buckets }
+  return { buckets, maxHitRadius }
 }
 
 export function hitTestScreenIndex(
@@ -96,8 +100,10 @@ export function hitTestScreenIndex(
   let nearest: ScreenPoint | null = null
   let nearestDistanceSquared = Number.POSITIVE_INFINITY
 
-  for (let offsetY = -1; offsetY <= 1; offsetY += 1) {
-    for (let offsetX = -1; offsetX <= 1; offsetX += 1) {
+  const bucketRadius = Math.ceil(index.maxHitRadius / SCREEN_BUCKET_PX)
+
+  for (let offsetY = -bucketRadius; offsetY <= bucketRadius; offsetY += 1) {
+    for (let offsetX = -bucketRadius; offsetX <= bucketRadius; offsetX += 1) {
       const bucket = index.buckets.get(`${bucketX + offsetX},${bucketY + offsetY}`)
       if (!bucket) continue
 
@@ -132,20 +138,40 @@ function rgba(hexColor: string, alpha: number): string {
   return `rgba(${red}, ${green}, ${blue}, ${alpha})`
 }
 
+export function reclamationValueStyle(
+  valueClass: ReclamationValueClass,
+  color: string,
+): { fill: string | null; stroke: string } {
+  const opacityByValueClass: Partial<Record<ReclamationValueClass, number>> = {
+    general: 0.4,
+    recommended: 0.64,
+    priority: 0.82,
+  }
+  const opacity = opacityByValueClass[valueClass]
+
+  return {
+    fill: opacity === undefined ? null : rgba(color, opacity),
+    stroke: rgba(color, 0.95),
+  }
+}
+
 export function drawBasePoints(
   context: CanvasRenderingContext2D,
   points: ScreenPoint[],
   _scenario: ReclamationScenario,
   color: string,
 ): void {
-  context.fillStyle = rgba(color, 0.76)
-  context.strokeStyle = rgba(color, 0.95)
   context.lineWidth = 1.25
 
   for (const point of points) {
+    const style = reclamationValueStyle(point.reclamationValueClass, color)
+    context.strokeStyle = style.stroke
     context.beginPath()
     context.arc(point.x, point.y, point.radius, 0, FULL_CIRCLE_RADIANS)
-    if (point.reclaimable) context.fill()
+    if (style.fill) {
+      context.fillStyle = style.fill
+      context.fill()
+    }
     context.stroke()
   }
 }

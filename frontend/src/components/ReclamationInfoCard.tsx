@@ -28,6 +28,7 @@ export default function ReclamationInfoCard({ point, scenario, onClose }: Reclam
         ×
       </button>
       <h2>点位信息</h2>
+      <p className="reclamation-info-card-scenario">情景：{scenario === 'current' ? '当前情景' : '未来情景'}</p>
       <dl>
         {metrics.map(([label, key]) => (
           <div key={key}>

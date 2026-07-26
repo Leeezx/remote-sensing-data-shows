@@ -159,4 +159,13 @@ describe('ReclamationMap', () => {
     )
     expect(screen.getByTestId('reclamation-canvas-layer')).toBeInTheDocument()
   })
+
+  it('does not bind region click handlers after a region is selected', () => {
+    render(<ReclamationMap
+      {...overviewProps}
+      selectedRegion={overview.regions.features[0].properties}
+    />)
+
+    expect(featureLayers).toHaveLength(0)
+  })
 })

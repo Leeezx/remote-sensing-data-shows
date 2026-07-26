@@ -50,6 +50,21 @@ def test_reclamation_overview_and_points_prefer_gzip(monkeypatch, artifact_root)
     assert points.headers["etag"]
 
 
+def test_reclamation_respects_a_zero_gzip_quality_value(monkeypatch, artifact_root):
+    monkeypatch.setattr(reclamation_router, "RECLAMATION_ROOT", artifact_root)
+
+    response = client.get(
+        "/api/reclamation/regions",
+        headers={"Accept-Encoding": "br, gzip;q=0, identity;q=1"},
+    )
+
+    assert response.status_code == 200
+    assert "content-encoding" not in response.headers
+    assert response.headers["vary"] == "Accept-Encoding"
+    assert response.headers["cache-control"] == "public, max-age=300"
+    assert response.headers["etag"]
+
+
 def test_reclamation_points_reject_unknown_and_corrupt_artifacts(monkeypatch, artifact_root):
     monkeypatch.setattr(reclamation_router, "RECLAMATION_ROOT", artifact_root)
 

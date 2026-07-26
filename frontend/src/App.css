@@ -770,7 +770,7 @@
 }
 
 .reclamation-region-selector button,
-.reclamation-point-selector select {
+.reclamation-point-selector button {
   padding: 5px 10px;
   border: 1px solid #cbd5e1;
   border-radius: 4px;
@@ -788,6 +788,15 @@
   align-items: center;
   color: #334155;
   font-size: 12px;
+}
+
+.reclamation-point-selector-status {
+  min-width: 130px;
+}
+
+.reclamation-point-selector button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
 }
 
 .reclamation-region-controls button,
@@ -845,6 +854,12 @@
   margin: 0 0 10px;
   color: #1f2937;
   font-size: 16px;
+}
+
+.reclamation-info-card-scenario {
+  margin: -5px 0 10px;
+  color: #475569;
+  font-size: 12px;
 }
 
 .reclamation-info-card-close {
@@ -988,7 +1003,7 @@
   .reclamation-scenario-switch button { white-space: nowrap; }
   .reclamation-overview-instruction,
   .reclamation-region-controls { top: 96px; }
-  .reclamation-region-selector { top: 96px; }
+  .reclamation-region-selector { top: 132px; }
   .reclamation-point-selector { top: 144px; }
   .reclamation-info-card {
     top: 200px;

@@ -7,6 +7,26 @@ from pathlib import Path
 SCHEMA_VERSION = 1
 
 
+def _accepts_gzip(accept_encoding: str) -> bool:
+    """Return whether the request permits a gzip representation."""
+    for entry in accept_encoding.split(","):
+        parts = [part.strip() for part in entry.split(";")]
+        if not parts or parts[0].lower() != "gzip":
+            continue
+        quality = 1.0
+        for parameter in parts[1:]:
+            name, separator, value = parameter.partition("=")
+            if name.strip().lower() != "q" or not separator:
+                continue
+            try:
+                quality = float(value.strip())
+            except ValueError:
+                quality = 0.0
+        if 0 < quality <= 1:
+            return True
+    return False
+
+
 def load_manifest(root: Path) -> dict:
     """Load and validate the reclamation artifact manifest."""
     data = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
@@ -31,7 +51,7 @@ def choose_representation(
         raise FileNotFoundError(relative_json)
     gzip_path = raw.with_suffix(raw.suffix + ".gz")
     headers = {"Vary": "Accept-Encoding"}
-    if "gzip" in accept_encoding.lower() and gzip_path.is_file():
+    if _accepts_gzip(accept_encoding) and gzip_path.is_file():
         headers["Content-Encoding"] = "gzip"
         return gzip_path, headers
     return raw, headers

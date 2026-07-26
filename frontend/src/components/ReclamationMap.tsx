@@ -115,11 +115,11 @@ export default function ReclamationMap({
           <GeoJSON
             data={selectedRegions as never}
             style={regionStyle}
-            onEachFeature={(feature, layer) => {
+            onEachFeature={isOverview ? (feature, layer) => {
               layer.on({
                 click: () => onRegionSelect(feature.properties as ReclamationRegionProperties),
               })
-            }}
+            } : undefined}
           />
         </Pane>
 
