@@ -89,7 +89,7 @@ export function hitTestScreenIndex(
   index: ScreenIndex,
   x: number,
   y: number,
-  options: HitTestOptions = {},
+  _options: HitTestOptions = {},
 ): number | null {
   const bucketX = Math.floor(x / SCREEN_BUCKET_PX)
   const bucketY = Math.floor(y / SCREEN_BUCKET_PX)
@@ -102,7 +102,7 @@ export function hitTestScreenIndex(
       if (!bucket) continue
 
       for (const candidate of bucket) {
-        if (options.reclaimableOnly && !candidate.reclaimable) continue
+        if (!candidate.reclaimable) continue
 
         const distanceX = candidate.x - x
         const distanceY = candidate.y - y

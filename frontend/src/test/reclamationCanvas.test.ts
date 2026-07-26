@@ -94,6 +94,21 @@ describe('reclamation Canvas engine', () => {
     expect(hitTestScreenIndex(index, 32, 32, { reclaimableOnly: true })).not.toBe(2)
   })
 
+  it('skips a nearer non-reclaimable point when a valid point is also hittable', () => {
+    const index = buildScreenIndex([
+      screenPoint(0, 32, 32, false),
+      screenPoint(1, 34, 32, true),
+    ])
+
+    expect(hitTestScreenIndex(index, 32, 32)).toBe(1)
+  })
+
+  it('returns null when an index contains only non-reclaimable hits', () => {
+    const index = buildScreenIndex([screenPoint(0, 32, 32, false)])
+
+    expect(hitTestScreenIndex(index, 32, 32)).toBeNull()
+  })
+
   it('breaks equal-distance hits by lower source index', () => {
     const index = buildScreenIndex([
       screenPoint(4, 30, 32, true),
