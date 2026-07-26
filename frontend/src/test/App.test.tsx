@@ -83,8 +83,8 @@ vi.mock('../components/MapView', () => ({
   },
 }))
 
-vi.mock('../pages/ReclamationPage', () => ({
-  default: () => <main><h2>复耕潜力评估</h2></main>,
+vi.mock('../components/ReclamationMap', () => ({
+  default: () => <div data-testid="reclamation-map">复耕地图</div>,
 }))
 
 const layers = [
@@ -287,6 +287,13 @@ describe('App', () => {
         ],
       }),
     )
+    apiMocks.getReclamationOverview.mockResolvedValue({
+      schemaVersion: 1,
+      unit: 'thousand_usd',
+      chinaOutline: { type: 'Polygon', coordinates: [] },
+      metrics: [],
+      regions: { type: 'FeatureCollection', features: [] },
+    })
   })
 
   it('shows navigation for the four platform sections', async () => {
@@ -305,6 +312,15 @@ describe('App', () => {
 
     expect(await screen.findByRole('heading', { name: '复耕潜力评估' })).toBeInTheDocument()
     expect(screen.queryByText('该板块暂未实现。')).not.toBeInTheDocument()
+  })
+
+  it('keeps the water-demand route on its placeholder', async () => {
+    window.history.pushState({}, '', '/water-demand')
+
+    render(<App />)
+
+    expect(await screen.findByRole('heading', { name: '需水补水计算与评估' })).toBeInTheDocument()
+    expect(screen.getByText('该板块暂未实现。')).toBeInTheDocument()
   })
 
   it('loads the irrigation page with annual/monthly timeline and leaves statistics off by default', async () => {

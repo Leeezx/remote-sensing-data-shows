@@ -160,6 +160,19 @@ describe('ReclamationPage', () => {
     expect(await screen.findByRole('button', { name: '当前情景' })).toHaveAttribute('aria-pressed', 'true')
   })
 
+  it('lets keyboard users select an overview region from the region selector', async () => {
+    const user = userEvent.setup()
+    render(<ReclamationPage />)
+    await screen.findByText('点击高亮区域查看复耕潜力')
+
+    const regionButton = screen.getByRole('button', { name: '选择区域：区域A' })
+    regionButton.focus()
+    await user.keyboard('{Enter}')
+
+    expect(apiMocks.getReclamationPoints).toHaveBeenCalledWith('A', expect.any(AbortSignal))
+    expect(await screen.findByRole('button', { name: '返回全国' })).toBeInTheDocument()
+  })
+
   it('switches scenarios locally and closes the old point card', async () => {
     const user = await renderLoadedRegionAndSelectPoint()
     expect(screen.getByText('1.00 千美元')).toBeInTheDocument()
@@ -241,6 +254,22 @@ describe('ReclamationPage', () => {
     await user.click(screen.getByRole('button', { name: '关闭点位信息' }))
     await user.click(screen.getByRole('button', { name: '选择不可复耕点' }))
     expect(screen.queryByRole('heading', { name: '点位信息' })).not.toBeInTheDocument()
+  })
+
+  it('lets keyboard users choose a valid point and excludes non-reclaimable points', async () => {
+    const user = userEvent.setup()
+    render(<ReclamationPage />)
+    await screen.findByText('点击高亮区域查看复耕潜力')
+    await user.click(screen.getByRole('button', { name: '选择区域A' }))
+
+    const pointSelector = await screen.findByRole('combobox', { name: '选择可复耕点位' })
+    expect(screen.getByRole('option', { name: /A:0/ })).toBeInTheDocument()
+    expect(screen.queryByRole('option', { name: /A:non-reclaimable/ })).not.toBeInTheDocument()
+
+    pointSelector.focus()
+    await user.keyboard('{ArrowDown}')
+
+    expect(await screen.findByRole('heading', { name: '点位信息' })).toBeInTheDocument()
   })
 
   it('formats point metrics and coordinates, exposes scale legend text, and returns to overview', async () => {

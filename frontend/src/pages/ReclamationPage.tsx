@@ -133,6 +133,9 @@ export default function ReclamationPage() {
   }
 
   const points = pointsState.status === 'ready' ? pointsState.data.points : []
+  const reclaimablePoints = points.filter((point) => (
+    isReclaimable(scenarioMetrics(point, scenario))
+  ))
 
   return (
     <main className="reclamation-page">
@@ -150,7 +153,56 @@ export default function ReclamationPage() {
           <button type="button" onClick={returnToOverview}>返回全国</button>
           <span>{selectedRegion.name}</span>
         </div>
-      ) : <p className="reclamation-overview-instruction">点击高亮区域查看复耕潜力</p>}
+      ) : (
+        <>
+          <p className="reclamation-overview-instruction">点击高亮区域查看复耕潜力</p>
+          <nav className="reclamation-region-selector" aria-label="选择复耕评估区域">
+            {overview.regions.features.map((feature) => {
+              const region = feature.properties
+              return (
+                <button
+                  key={region.id}
+                  type="button"
+                  aria-label={`选择区域：${region.name}`}
+                  onClick={() => selectRegion(region)}
+                >
+                  {region.name}
+                </button>
+              )
+            })}
+          </nav>
+        </>
+      )}
+      {selectedRegion && pointsState.status === 'ready' && (
+        <div className="reclamation-point-selector">
+          <label htmlFor="reclamation-point-select">选择可复耕点位</label>
+          <select
+            id="reclamation-point-select"
+            value={selectedPoint?.id ?? ''}
+            onChange={(event) => {
+              const point = reclaimablePoints.find((candidate) => candidate.id === event.currentTarget.value)
+              if (point) {
+                selectPoint(point)
+              } else {
+                setSelectedPoint(null)
+              }
+            }}
+            onKeyDown={(event) => {
+              if (event.key === 'ArrowDown' && event.currentTarget.value === '' && reclaimablePoints[0]) {
+                event.preventDefault()
+                selectPoint(reclaimablePoints[0])
+              }
+            }}
+          >
+            <option value="">选择点位</option>
+            {reclaimablePoints.map((point) => (
+              <option key={point.id} value={point.id}>
+                {point.id}（{point.longitude.toFixed(6)}, {point.latitude.toFixed(6)}）
+              </option>
+            ))}
+          </select>
+        </div>
+      )}
       <ScenarioSwitch scenario={scenario} onChange={changeScenario} />
       {pointsState.status === 'loading' && <div className="reclamation-state reclamation-inline-state" aria-live="polite">加载区域点位...</div>}
       {pointsState.status === 'error' && (

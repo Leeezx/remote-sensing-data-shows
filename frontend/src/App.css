@@ -753,6 +753,43 @@
   gap: 8px;
 }
 
+.reclamation-region-selector,
+.reclamation-point-selector {
+  position: absolute;
+  z-index: 600;
+  top: 92px;
+  left: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: calc(100% - 24px);
+  padding: 7px 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 1px 5px rgba(15, 23, 42, 0.18);
+}
+
+.reclamation-region-selector button,
+.reclamation-point-selector select {
+  padding: 5px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  background: #fff;
+  color: #334155;
+  font-size: 12px;
+}
+
+.reclamation-region-selector button {
+  cursor: pointer;
+}
+
+.reclamation-point-selector {
+  top: 92px;
+  align-items: center;
+  color: #334155;
+  font-size: 12px;
+}
+
 .reclamation-region-controls button,
 .reclamation-state button,
 .reclamation-scenario-switch button {
