@@ -20,6 +20,7 @@ COPY --chown=app:app backend/ ./backend/
 COPY --chown=app:app data/metadata/ ./data/metadata/
 COPY --chown=app:app data/stats/ ./data/stats/
 COPY --chown=app:app data/series/ ./data/series/
+COPY --chown=app:app data/reclamation/ ./data/reclamation/
 
 USER app
 
