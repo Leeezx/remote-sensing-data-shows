@@ -53,7 +53,7 @@ npm run build
 
 ## 运行数据不进入 Git
 
-大型栅格、行政区矢量及 `data/stats/irrigation_region_series.json` 被明确忽略，应通过 SFTP、rsync 或其他文件传输方式单独上传服务器。提交代码前可以确认忽略规则：
+大型栅格、行政区矢量及离线源数据 `data/stats/irrigation_region_series.json` 被明确忽略。栅格和矢量通过 SFTP、rsync 或其他文件传输方式单独上传服务器；大型统计源文件只在构建工作站使用，不需要上传到运行服务器。提交代码前可以确认忽略规则：
 
 ```powershell
 git check-ignore -v data/stats/irrigation_region_series.json
@@ -64,7 +64,16 @@ git check-ignore -v data/stats/irrigation_region_series.json
 - `data/rasters/{ssm,et,sm_10cm,sm_30cm,sm_60cm,sm_100cm,irrigation_annual,irrigation_8day}/`
 - `data/vectors/irrigation/county/china_county.{shp,shx,dbf}`
 - `data/vectors/irrigation/township_by_county/manifest.json` 及县级 GeoJSON 分块
-- `data/stats/irrigation_region_series.json`
+- `data/stats/irrigation_runtime/`（由 Git 跟踪的运行时统计分片）
+
+在拥有大型统计源文件和乡镇矢量分块的构建工作站生成并校验运行时统计：
+
+```powershell
+python scripts/build_irrigation_runtime_stats.py
+python scripts/build_irrigation_runtime_stats.py --check
+```
+
+生成目录 `data/stats/irrigation_runtime/` 随代码发布；服务请求不会读取大型统计源文件。
 
 上传后运行：
 

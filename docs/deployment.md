@@ -38,11 +38,18 @@ Compose 使用 `create_host_path: false`，因此这些目录必须在启动前�
 ```bash
 rsync -av --info=progress2 data/rasters/ user@server:/opt/remote-sensing/app/data/rasters/
 rsync -av --info=progress2 data/vectors/ user@server:/opt/remote-sensing/app/data/vectors/
-rsync -av --info=progress2 data/stats/irrigation_region_series.json \
-  user@server:/opt/remote-sensing/app/data/stats/
 ```
 
 Windows 环境也可以使用 SFTP 客户端，目标目录保持一致。县级 Shapefile 至少要同时上传 `.shp`、`.shx` 和 `.dbf`；乡镇分块目录必须包含 `manifest.json`。
+
+`data/stats/irrigation_region_series.json` 是离线构建输入，不上传到运行服务器。在拥有该源文件和乡镇矢量分块的构建工作站执行：
+
+```powershell
+python scripts/build_irrigation_runtime_stats.py
+python scripts/build_irrigation_runtime_stats.py --check
+```
+
+校验通过后提交生成的 `data/stats/irrigation_runtime/`。该目录随代码部署，FastAPI 运行时只读取其中的小型分片。
 
 ## 4. 配置与数据预检
 

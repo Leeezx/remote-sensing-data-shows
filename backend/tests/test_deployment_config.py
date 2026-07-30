@@ -16,6 +16,13 @@ def compose():
     )
 
 
+def nginx_location_block(nginx: str, declaration: str) -> str:
+    marker = f"location {declaration} {{"
+    start = nginx.index(marker)
+    end = nginx.index("\n    }", start)
+    return nginx[start:end]
+
+
 def test_only_caddy_publishes_host_ports():
     services = compose()["services"]
     assert services["edge"]["ports"] == ["80:80", "443:443"]
@@ -58,6 +65,9 @@ def test_backend_runtime_mounts_and_defaults_are_safe():
         item["bind"]["create_host_path"] is False for item in bind_mounts
     )
     environment = backend["environment"]
+    assert environment["IRRIGATION_RUNTIME_STATS_ROOT"] == (
+        "/app/runtime-data/stats/irrigation_runtime"
+    )
     assert environment["UVICORN_WORKERS"] == "${UVICORN_WORKERS:-2}"
     assert environment["GDAL_CACHEMAX"] == "${GDAL_CACHEMAX:-256}"
     assert environment["MAX_AREA_QUERY_PIXELS"] == (
@@ -72,8 +82,18 @@ def test_backend_runtime_mounts_and_defaults_are_safe():
         encoding="utf-8"
     )
     assert "UVICORN_WORKERS=2" in env_example
+    assert (
+        "IRRIGATION_RUNTIME_STATS_ROOT="
+        "data/stats/irrigation_runtime"
+    ) in env_example
     assert "--workers ${UVICORN_WORKERS:-2}" in dockerfile
     assert "UVICORN_WORKERS=2" in deployment_guide
+    for guide in (
+        (ROOT / "README.md").read_text(encoding="utf-8"),
+        deployment_guide,
+    ):
+        assert "python scripts/build_irrigation_runtime_stats.py" in guide
+        assert "data/stats/irrigation_runtime/" in guide
 
 
 def test_proxy_contract_contains_limits_cache_and_internal_port():
@@ -86,20 +106,23 @@ def test_proxy_contract_contains_limits_cache_and_internal_port():
         "keys_zone=tile_cache:32m max_size=8g inactive=14d "
         "use_temp_path=off;"
     ) in nginx
-    assert nginx.count("proxy_cache tile_cache;") == 2
-    assert nginx.count("proxy_cache_methods GET HEAD;") == 2
-    assert (
-        nginx.count('proxy_cache_key "$scheme$proxy_host$request_uri";') == 2
-    )
-    assert nginx.count("proxy_cache_valid 200 24h;") == 2
-    assert nginx.count("proxy_cache_lock on;") == 2
-    assert nginx.count("proxy_cache_lock_timeout 60s;") == 2
-    assert nginx.count("proxy_cache_lock_age 60s;") == 2
-    assert nginx.count("proxy_cache_background_update on;") == 2
-    assert nginx.count(
-        "proxy_cache_use_stale error timeout updating "
-        "http_500 http_502 http_503 http_504;"
-    ) == 2
+    for declaration in (
+        "/cog/",
+        "~ ^/data/(?:ssm|raster|irrigation)-tiles/",
+    ):
+        block = nginx_location_block(nginx, declaration)
+        assert "proxy_cache tile_cache;" in block
+        assert "proxy_cache_methods GET HEAD;" in block
+        assert 'proxy_cache_key "$scheme$proxy_host$request_uri";' in block
+        assert "proxy_cache_valid 200 24h;" in block
+        assert "proxy_cache_lock on;" in block
+        assert "proxy_cache_lock_timeout 60s;" in block
+        assert "proxy_cache_lock_age 60s;" in block
+        assert "proxy_cache_background_update on;" in block
+        assert (
+            "proxy_cache_use_stale error timeout updating "
+            "http_500 http_502 http_503 http_504;"
+        ) in block
     assert "map $status $tile_browser_cache_control" in nginx
     assert '200 "public, max-age=3600";' in nginx
     assert 'default "no-store";' in nginx
@@ -120,11 +143,38 @@ def test_proxy_contract_contains_limits_cache_and_internal_port():
         'add_header X-Content-Type-Options "nosniff" always;',
         'add_header Referrer-Policy "strict-origin-when-cross-origin" always;',
     ):
-        assert nginx.count(header) == 3
+        assert nginx.count(header) == 5
     assert "location = /api/query/area" in nginx
     assert "real_ip_header X-Forwarded-For" in nginx
     assert "proxy_set_header X-Forwarded-Proto $http_x_forwarded_proto" in nginx
     assert "proxy_set_header X-Forwarded-Proto $scheme" not in nginx
+
+
+def test_proxy_caches_irrigation_statistics_by_full_uri():
+    nginx = (ROOT / "nginx.conf").read_text(encoding="utf-8")
+    for endpoint in (
+        "/api/irrigation/regions/averages",
+        "/api/irrigation/series",
+    ):
+        block = nginx_location_block(nginx, f"= {endpoint}")
+        assert "proxy_cache tile_cache;" in block
+        assert "proxy_cache_methods GET HEAD;" in block
+        assert 'proxy_cache_key "$scheme$proxy_host$request_uri";' in block
+        assert "proxy_cache_valid 200 1h;" in block
+        assert "proxy_cache_lock on;" in block
+        assert (
+            "add_header X-Stats-Cache $upstream_cache_status always;"
+            in block
+        )
+        for header in (
+            'add_header X-Frame-Options "SAMEORIGIN" always;',
+            'add_header X-Content-Type-Options "nosniff" always;',
+            (
+                'add_header Referrer-Policy '
+                '"strict-origin-when-cross-origin" always;'
+            ),
+        ):
+            assert header in block
 
 
 def test_runtime_images_are_versioned_and_unprivileged():
