@@ -1,9 +1,10 @@
 """Irrigation water router — raster metadata and administrative statistics."""
 
+import hashlib
 import json
 from typing import Literal
 
-from fastapi import APIRouter, HTTPException, Query, status
+from fastapi import APIRouter, HTTPException, Query, Request, Response, status
 from fastapi.responses import FileResponse
 
 from backend.data_loader import (
@@ -12,9 +13,13 @@ from backend.data_loader import (
     IRRIGATION_ANNUAL_COG_ROOT,
     IRRIGATION_8DAY_COG_ROOT,
     get_irrigation_layer,
-    get_irrigation_region_series,
     get_irrigation_regions,
     get_irrigation_times,
+)
+from backend.irrigation_runtime_stats import (
+    IrrigationRuntimeDataError,
+    load_region_averages,
+    load_region_series_entry,
 )
 from backend.irrigation_time import irrigation_time_to_cog_path, irrigation_time_to_path
 from backend.irrigation_legend import get_irrigation_dynamic_legend
@@ -32,6 +37,29 @@ router = APIRouter(tags=["irrigation"])
 RegionLevel = Literal["county", "township"]
 SeriesPeriod = Literal["annual", "monthly"]
 RasterResolution = Literal["annual", "month"]
+
+
+def _cached_json_response(request: Request, payload: dict) -> Response:
+    body = json.dumps(
+        payload,
+        ensure_ascii=False,
+        separators=(",", ":"),
+    ).encode("utf-8")
+    etag = f'"{hashlib.sha256(body).hexdigest()}"'
+    headers = {
+        "Cache-Control": "public, max-age=3600",
+        "ETag": etag,
+    }
+    if request.headers.get("if-none-match") == etag:
+        return Response(
+            status_code=status.HTTP_304_NOT_MODIFIED,
+            headers=headers,
+        )
+    return Response(
+        content=body,
+        media_type="application/json",
+        headers=headers,
+    )
 
 
 def _find_region(region_id: str, level: RegionLevel) -> dict | None:
@@ -181,23 +209,29 @@ def township_vector_geojson(countyId: str = Query(...)):
 
 @router.get("/irrigation/regions/averages")
 def irrigation_region_averages(
+    request: Request,
     level: RegionLevel = Query(...),
     countyId: str | None = Query(default=None),
 ):
     """Return per-region annual-average irrigation water and a choropleth legend."""
-    from backend.irrigation_stats import get_irrigation_region_averages
     if level == "township" and countyId is None:
         raise HTTPException(
             status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail="countyId is required for township averages",
         )
     try:
-        return get_irrigation_region_averages(level, county_id=countyId)
+        payload = load_region_averages(level, county_id=countyId)
+    except IrrigationRuntimeDataError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Irrigation runtime statistics are unavailable",
+        ) from exc
     except ValueError as exc:
         raise HTTPException(
             status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
+    return _cached_json_response(request, payload)
 
 
 @router.get("/irrigation/regions")
@@ -211,15 +245,20 @@ def irrigation_regions(level: RegionLevel | None = Query(default=None)):
 
 @router.get("/irrigation/series")
 def irrigation_series(
+    request: Request,
     level: RegionLevel = Query(...),
     regionId: str = Query(...),
     period: SeriesPeriod = Query(default="annual"),
 ):
     """Return precomputed irrigation water totals for one administrative region."""
-    series_data = get_irrigation_region_series()
-    level_data = series_data.get(level)
-    region_data = level_data.get(regionId) if isinstance(level_data, dict) else None
-    if not isinstance(region_data, dict):
+    try:
+        loaded = load_region_series_entry(level, regionId)
+    except IrrigationRuntimeDataError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Irrigation runtime statistics are unavailable",
+        ) from exc
+    if loaded is None:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
             detail=(
@@ -227,6 +266,7 @@ def irrigation_series(
                 "in precomputed irrigation statistics"
             ),
         )
+    unit, region_data = loaded
 
     series = region_data.get(period)
     if not isinstance(series, list):
@@ -249,10 +289,10 @@ def irrigation_series(
         }
 
     values = [float(entry["value"]) for entry in series]
-    return {
+    payload = {
         "region": region,
         "period": period,
-        "unit": series_data["unit"],
+        "unit": unit,
         "series": series,
         "summary": {
             "total": round(sum(values), 1),
@@ -261,3 +301,4 @@ def irrigation_series(
             "min": min(values) if values else 0,
         },
     }
+    return _cached_json_response(request, payload)
