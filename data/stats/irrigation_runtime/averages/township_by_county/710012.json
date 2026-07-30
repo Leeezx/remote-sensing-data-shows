@@ -1,0 +1,183 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "710200010000",
+      "name": "板橋區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200020000",
+      "name": "三重區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200030000",
+      "name": "中和區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200040000",
+      "name": "永和區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200050000",
+      "name": "新莊區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200060000",
+      "name": "新店區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200070000",
+      "name": "樹林區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200080000",
+      "name": "鶯歌區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200090000",
+      "name": "三峽區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200100000",
+      "name": "淡水區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200110000",
+      "name": "汐止區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200120000",
+      "name": "瑞芳區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200130000",
+      "name": "土城區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200140000",
+      "name": "蘆洲區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200150000",
+      "name": "五股區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200160000",
+      "name": "泰山區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200170000",
+      "name": "林口區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200180000",
+      "name": "深坑區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200190000",
+      "name": "石碇區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200200000",
+      "name": "坪林區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200210000",
+      "name": "三芝區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200220000",
+      "name": "石門區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200230000",
+      "name": "八里區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200240000",
+      "name": "平溪區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200250000",
+      "name": "雙溪區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200260000",
+      "name": "貢寮區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200270000",
+      "name": "金山區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200280000",
+      "name": "萬里區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710200290000",
+      "name": "烏來區",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

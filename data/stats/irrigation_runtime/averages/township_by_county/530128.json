@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513425103000",
+      "name": "通安镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513425107000",
+      "name": "新发镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513425226000",
+      "name": "江普乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513425230000",
+      "name": "芭蕉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513426212000",
+      "name": "龙树乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "530128001000",
+      "name": "屏山街道",
+      "average": 23047.7
+    },
+    {
+      "regionId": "530128102000",
+      "name": "撒营盘镇",
+      "average": 15602.5
+    },
+    {
+      "regionId": "530128103000",
+      "name": "转龙镇",
+      "average": 14320.4
+    },
+    {
+      "regionId": "530128104000",
+      "name": "茂山镇",
+      "average": 21544.3
+    },
+    {
+      "regionId": "530128105000",
+      "name": "团街镇",
+      "average": 8362.2
+    },
+    {
+      "regionId": "530128106000",
+      "name": "中屏镇",
+      "average": 8143.2
+    },
+    {
+      "regionId": "530128107000",
+      "name": "皎平渡镇",
+      "average": 7807.3
+    },
+    {
+      "regionId": "530128108000",
+      "name": "乌东德镇",
+      "average": 229.1
+    },
+    {
+      "regionId": "530128109000",
+      "name": "翠华镇",
+      "average": 20378.9
+    },
+    {
+      "regionId": "530128110000",
+      "name": "九龙镇",
+      "average": 15389.8
+    },
+    {
+      "regionId": "530128204000",
+      "name": "云龙乡",
+      "average": 13196.2
+    },
+    {
+      "regionId": "530128207000",
+      "name": "汤郎乡",
+      "average": 2392.0
+    },
+    {
+      "regionId": "530128208000",
+      "name": "马鹿塘乡",
+      "average": 1682.7
+    },
+    {
+      "regionId": "530128211000",
+      "name": "则黑乡",
+      "average": 3723.4
+    },
+    {
+      "regionId": "530128212000",
+      "name": "乌蒙乡",
+      "average": 4847.9
+    },
+    {
+      "regionId": "530128213000",
+      "name": "雪山乡",
+      "average": 373.8
+    },
+    {
+      "regionId": "530128401000",
+      "name": "禄劝工业园区管理委员会",
+      "average": 81.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 36.9736,
+      "color": "#bdd7e7",
+      "label": "36.974 万m³"
+    },
+    {
+      "value": 2026.0012000000002,
+      "color": "#6baed6",
+      "label": "2026.001 万m³"
+    },
+    {
+      "value": 7980.6244,
+      "color": "#3182bd",
+      "label": "7980.624 万m³"
+    },
+    {
+      "value": 14906.431199999997,
+      "color": "#08519c",
+      "label": "14906.431 万m³"
+    },
+    {
+      "value": 22416.271999999997,
+      "color": "#042d60",
+      "label": "22416.272 万m³"
+    }
+  ]
+}

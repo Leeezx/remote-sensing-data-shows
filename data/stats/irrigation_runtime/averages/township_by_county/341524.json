@@ -1,0 +1,208 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "341524100000",
+      "name": "梅山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341524101000",
+      "name": "麻埠镇",
+      "average": 976.2
+    },
+    {
+      "regionId": "341524102000",
+      "name": "青山镇",
+      "average": 8004.8
+    },
+    {
+      "regionId": "341524103000",
+      "name": "燕子河镇",
+      "average": 14151.3
+    },
+    {
+      "regionId": "341524104000",
+      "name": "天堂寨镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341524105000",
+      "name": "古碑镇",
+      "average": 31177.2
+    },
+    {
+      "regionId": "341524106000",
+      "name": "吴家店镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341524107000",
+      "name": "斑竹园镇",
+      "average": 11787.7
+    },
+    {
+      "regionId": "341524108000",
+      "name": "汤家汇镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341524109000",
+      "name": "南溪镇",
+      "average": 45213.7
+    },
+    {
+      "regionId": "341524110000",
+      "name": "双河镇",
+      "average": 22128.1
+    },
+    {
+      "regionId": "341524111000",
+      "name": "白塔畈镇",
+      "average": 24143.1
+    },
+    {
+      "regionId": "341524201000",
+      "name": "张冲乡",
+      "average": 3603.6
+    },
+    {
+      "regionId": "341524202000",
+      "name": "油坊店乡",
+      "average": 10303.7
+    },
+    {
+      "regionId": "341524203000",
+      "name": "长岭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341524204000",
+      "name": "槐树湾乡",
+      "average": 26902.6
+    },
+    {
+      "regionId": "341524205000",
+      "name": "花石乡",
+      "average": 9643.7
+    },
+    {
+      "regionId": "341524206000",
+      "name": "沙河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341524207000",
+      "name": "桃岭乡",
+      "average": 16254.3
+    },
+    {
+      "regionId": "341524208000",
+      "name": "果子园乡",
+      "average": 15479.1
+    },
+    {
+      "regionId": "341524209000",
+      "name": "关庙乡",
+      "average": 5954.8
+    },
+    {
+      "regionId": "341524211000",
+      "name": "全军乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341524214000",
+      "name": "铁冲乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341524400000",
+      "name": "现代产业园（经济开发区）",
+      "average": 5534.5
+    },
+    {
+      "regionId": "411524207000",
+      "name": "苏仙石乡",
+      "average": 3355.4
+    },
+    {
+      "regionId": "411525109000",
+      "name": "段集镇",
+      "average": 10457.0
+    },
+    {
+      "regionId": "411525113000",
+      "name": "武庙集镇",
+      "average": 6806.5
+    },
+    {
+      "regionId": "421123103000",
+      "name": "九资河镇",
+      "average": 13801.5
+    },
+    {
+      "regionId": "421123104000",
+      "name": "胜利镇",
+      "average": 20475.2
+    },
+    {
+      "regionId": "421123501000",
+      "name": "天堂寨林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "421123503000",
+      "name": "黄狮寨林场",
+      "average": 5.1
+    },
+    {
+      "regionId": "421181109000",
+      "name": "木子店镇",
+      "average": 20931.7
+    },
+    {
+      "regionId": "421181110000",
+      "name": "三河口镇",
+      "average": 12607.9
+    },
+    {
+      "regionId": "421181404000",
+      "name": "狮子峰林场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

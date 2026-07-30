@@ -1,0 +1,193 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "440982001000",
+      "name": "河西街道",
+      "average": 11999.7
+    },
+    {
+      "regionId": "440982002000",
+      "name": "东山街道",
+      "average": 20291.3
+    },
+    {
+      "regionId": "440982003000",
+      "name": "下郭街道",
+      "average": 10810.0
+    },
+    {
+      "regionId": "440982004000",
+      "name": "南盛街道",
+      "average": 46591.3
+    },
+    {
+      "regionId": "440982005000",
+      "name": "石湾街道",
+      "average": 24600.6
+    },
+    {
+      "regionId": "440982100000",
+      "name": "长岐镇",
+      "average": 26731.3
+    },
+    {
+      "regionId": "440982101000",
+      "name": "同庆镇",
+      "average": 62019.5
+    },
+    {
+      "regionId": "440982102000",
+      "name": "杨梅镇",
+      "average": 47612.3
+    },
+    {
+      "regionId": "440982103000",
+      "name": "良光镇",
+      "average": 57548.5
+    },
+    {
+      "regionId": "440982104000",
+      "name": "笪桥镇",
+      "average": 37302.6
+    },
+    {
+      "regionId": "440982106000",
+      "name": "丽岗镇",
+      "average": 39960.3
+    },
+    {
+      "regionId": "440982107000",
+      "name": "新安镇",
+      "average": 59997.3
+    },
+    {
+      "regionId": "440982108000",
+      "name": "官桥镇",
+      "average": 25645.6
+    },
+    {
+      "regionId": "440982110000",
+      "name": "林尘镇",
+      "average": 51624.9
+    },
+    {
+      "regionId": "440982112000",
+      "name": "合江镇",
+      "average": 35754.5
+    },
+    {
+      "regionId": "440982113000",
+      "name": "那务镇",
+      "average": 25257.8
+    },
+    {
+      "regionId": "440982114000",
+      "name": "播扬镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440982115000",
+      "name": "宝圩镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440982116000",
+      "name": "平定镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440982117000",
+      "name": "文楼镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440982118000",
+      "name": "江湖镇",
+      "average": 30386.1
+    },
+    {
+      "regionId": "440982120000",
+      "name": "中垌镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440982400000",
+      "name": "鉴江开发区",
+      "average": 33903.6
+    },
+    {
+      "regionId": "440982401000",
+      "name": "新时代农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "440982402000",
+      "name": "新华农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "440982403000",
+      "name": "和平农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "440982404000",
+      "name": "红阳农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "440982405000",
+      "name": "红峰农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "440982406000",
+      "name": "建设农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "440982407000",
+      "name": "石滩农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "450922108000",
+      "name": "乌石镇",
+      "average": 39165.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

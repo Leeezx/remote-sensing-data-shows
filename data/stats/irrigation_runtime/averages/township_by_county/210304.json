@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210303001000",
+      "name": "启明街道",
+      "average": 325.5
+    },
+    {
+      "regionId": "210304001000",
+      "name": "友好街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210304004000",
+      "name": "双山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210304006000",
+      "name": "立山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210304008000",
+      "name": "曙光街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210304009000",
+      "name": "灵山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210304013000",
+      "name": "深南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210304014000",
+      "name": "深北街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210304015000",
+      "name": "沙河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210304016000",
+      "name": "滨河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210304017000",
+      "name": "千山街道",
+      "average": 2.5
+    },
+    {
+      "regionId": "210304018000",
+      "name": "红旗街道",
+      "average": 372.7
+    },
+    {
+      "regionId": "210304019000",
+      "name": "齐大山街道",
+      "average": 149.3
+    },
+    {
+      "regionId": "210304020000",
+      "name": "汪峪街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

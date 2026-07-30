@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540531100000",
+      "name": "浪卡子镇",
+      "average": 3127.4
+    },
+    {
+      "regionId": "540531101000",
+      "name": "打隆镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540531200000",
+      "name": "普玛江塘乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540531201000",
+      "name": "多却乡",
+      "average": 192.2
+    },
+    {
+      "regionId": "540531202000",
+      "name": "卡龙乡",
+      "average": 899.1
+    },
+    {
+      "regionId": "540531203000",
+      "name": "阿扎乡",
+      "average": 502.6
+    },
+    {
+      "regionId": "540531204000",
+      "name": "工布学乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540531205000",
+      "name": "卡热乡",
+      "average": 311.6
+    },
+    {
+      "regionId": "540531206000",
+      "name": "白地乡",
+      "average": 294.6
+    },
+    {
+      "regionId": "540531207000",
+      "name": "张达乡",
+      "average": 497.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

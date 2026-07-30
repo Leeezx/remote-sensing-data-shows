@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "330303010000",
+      "name": "灵昆街道",
+      "average": 3407.9
+    },
+    {
+      "regionId": "330305001000",
+      "name": "北岙街道",
+      "average": 294.8
+    },
+    {
+      "regionId": "330305002000",
+      "name": "东屏街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330305003000",
+      "name": "元觉街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330305101000",
+      "name": "大门镇",
+      "average": 592.3
+    },
+    {
+      "regionId": "330305202000",
+      "name": "鹿西乡",
+      "average": 37.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2.220000000000002,
+      "color": "#bdd7e7",
+      "label": "2.220 万m³"
+    },
+    {
+      "value": 42.156000000000006,
+      "color": "#6baed6",
+      "label": "42.156 万m³"
+    },
+    {
+      "value": 289.644,
+      "color": "#3182bd",
+      "label": "289.644 万m³"
+    },
+    {
+      "value": 574.4499999999998,
+      "color": "#08519c",
+      "label": "574.450 万m³"
+    },
+    {
+      "value": 3126.340000000001,
+      "color": "#042d60",
+      "label": "3126.340 万m³"
+    }
+  ]
+}

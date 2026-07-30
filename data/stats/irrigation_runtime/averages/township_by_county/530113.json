@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513426105000",
+      "name": "淌塘镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513426221000",
+      "name": "岩坝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513426223000",
+      "name": "新田乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513426245000",
+      "name": "黄坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "530113001000",
+      "name": "铜都街道",
+      "average": 18741.7
+    },
+    {
+      "regionId": "530113102000",
+      "name": "汤丹镇",
+      "average": 514.0
+    },
+    {
+      "regionId": "530113103000",
+      "name": "因民镇",
+      "average": 396.8
+    },
+    {
+      "regionId": "530113104000",
+      "name": "阿旺镇",
+      "average": 6854.3
+    },
+    {
+      "regionId": "530113105000",
+      "name": "乌龙镇",
+      "average": 8694.4
+    },
+    {
+      "regionId": "530113106000",
+      "name": "红土地镇",
+      "average": 3075.4
+    },
+    {
+      "regionId": "530113107000",
+      "name": "拖布卡镇",
+      "average": 1585.1
+    },
+    {
+      "regionId": "530113201000",
+      "name": "舍块乡",
+      "average": 24.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

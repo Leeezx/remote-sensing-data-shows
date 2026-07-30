@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "211403001000",
+      "name": "葫芦岛街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211403002000",
+      "name": "东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211403003000",
+      "name": "西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211403004000",
+      "name": "望海寺街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211403005000",
+      "name": "龙湾街道",
+      "average": 17.6
+    },
+    {
+      "regionId": "211403006000",
+      "name": "滨海街道",
+      "average": 20.4
+    },
+    {
+      "regionId": "211403007000",
+      "name": "双龙街道",
+      "average": 55.2
+    },
+    {
+      "regionId": "211403008000",
+      "name": "玉皇街道",
+      "average": 115.8
+    },
+    {
+      "regionId": "211403009000",
+      "name": "连湾街道",
+      "average": 188.2
+    },
+    {
+      "regionId": "211403010000",
+      "name": "北港街道",
+      "average": 1827.9
+    },
+    {
+      "regionId": "211403201000",
+      "name": "双树乡",
+      "average": 538.0
+    },
+    {
+      "regionId": "211403400000",
+      "name": "葫芦岛经济开发区",
+      "average": 47.3
+    },
+    {
+      "regionId": "211403401000",
+      "name": "葫芦岛市专利技术园区",
+      "average": 24.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

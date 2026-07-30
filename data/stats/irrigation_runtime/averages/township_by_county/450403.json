@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "441225101000",
+      "name": "江川镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "450403001000",
+      "name": "城东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450403002000",
+      "name": "城南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450403003000",
+      "name": "城中办街道事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "450403004000",
+      "name": "城北办街道事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "450403006000",
+      "name": "东兴街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450403007000",
+      "name": "富民街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450403101000",
+      "name": "城东镇",
+      "average": 5823.4
+    },
+    {
+      "regionId": "450403103000",
+      "name": "龙湖镇",
+      "average": 2102.3
+    },
+    {
+      "regionId": "450403104000",
+      "name": "夏郢镇",
+      "average": 51628.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

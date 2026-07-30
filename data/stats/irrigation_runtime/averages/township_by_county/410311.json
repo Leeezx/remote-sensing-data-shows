@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410311001000",
+      "name": "安乐街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410311002000",
+      "name": "开元路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410311003000",
+      "name": "龙门石窟街道",
+      "average": 1205.3
+    },
+    {
+      "regionId": "410311004000",
+      "name": "关林街道",
+      "average": 417.5
+    },
+    {
+      "regionId": "410311005000",
+      "name": "太康东路街道",
+      "average": 709.8
+    },
+    {
+      "regionId": "410311006000",
+      "name": "古城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410311007000",
+      "name": "科技园街道",
+      "average": 4972.4
+    },
+    {
+      "regionId": "410311101000",
+      "name": "龙门镇",
+      "average": 1802.2
+    },
+    {
+      "regionId": "410311102000",
+      "name": "安乐镇",
+      "average": 802.4
+    },
+    {
+      "regionId": "410311103000",
+      "name": "白马寺镇",
+      "average": 7058.7
+    },
+    {
+      "regionId": "410311107000",
+      "name": "李楼镇",
+      "average": 6912.4
+    },
+    {
+      "regionId": "410311108000",
+      "name": "丰李镇",
+      "average": 10348.6
+    },
+    {
+      "regionId": "410311195000",
+      "name": "诸葛镇",
+      "average": 4123.3
+    },
+    {
+      "regionId": "410311196000",
+      "name": "李村镇",
+      "average": 13982.2
+    },
+    {
+      "regionId": "410311197000",
+      "name": "庞村镇",
+      "average": 9304.9
+    },
+    {
+      "regionId": "410311198000",
+      "name": "寇店镇",
+      "average": 4884.6
+    },
+    {
+      "regionId": "410311199000",
+      "name": "佃庄镇",
+      "average": 15854.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 532.0816,
+      "color": "#bdd7e7",
+      "label": "532.082 万m³"
+    },
+    {
+      "value": 1482.2615999999998,
+      "color": "#6baed6",
+      "label": "1482.262 万m³"
+    },
+    {
+      "value": 4931.6608,
+      "color": "#3182bd",
+      "label": "4931.661 万m³"
+    },
+    {
+      "value": 8424.389599999997,
+      "color": "#08519c",
+      "label": "8424.390 万m³"
+    },
+    {
+      "value": 15255.16,
+      "color": "#042d60",
+      "label": "15255.160 万m³"
+    }
+  ]
+}

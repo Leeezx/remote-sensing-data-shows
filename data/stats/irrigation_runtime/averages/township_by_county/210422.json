@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210422100000",
+      "name": "新宾镇",
+      "average": 2967.1
+    },
+    {
+      "regionId": "210422101000",
+      "name": "旺清门镇",
+      "average": 3553.7
+    },
+    {
+      "regionId": "210422102000",
+      "name": "永陵镇",
+      "average": 2594.5
+    },
+    {
+      "regionId": "210422103000",
+      "name": "平顶山镇",
+      "average": 1120.6
+    },
+    {
+      "regionId": "210422104000",
+      "name": "大四平镇",
+      "average": 422.7
+    },
+    {
+      "regionId": "210422105000",
+      "name": "苇子峪镇",
+      "average": 692.5
+    },
+    {
+      "regionId": "210422106000",
+      "name": "木奇镇",
+      "average": 847.9
+    },
+    {
+      "regionId": "210422108000",
+      "name": "上夹河镇",
+      "average": 832.4
+    },
+    {
+      "regionId": "210422109000",
+      "name": "南杂木镇",
+      "average": 119.4
+    },
+    {
+      "regionId": "210422202000",
+      "name": "红升乡",
+      "average": 664.1
+    },
+    {
+      "regionId": "210422203000",
+      "name": "响水河子乡",
+      "average": 869.6
+    },
+    {
+      "regionId": "210422204000",
+      "name": "红庙子乡",
+      "average": 1665.1
+    },
+    {
+      "regionId": "210422205000",
+      "name": "北四平乡",
+      "average": 489.0
+    },
+    {
+      "regionId": "210422207000",
+      "name": "榆树乡",
+      "average": 504.2
+    },
+    {
+      "regionId": "210422208000",
+      "name": "下夹河乡",
+      "average": 651.8
+    },
+    {
+      "regionId": "220521200000",
+      "name": "富江乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 35.82,
+      "color": "#eff3ff",
+      "label": "35.820 万m³"
+    },
+    {
+      "value": 491.736,
+      "color": "#bdd7e7",
+      "label": "491.736 万m³"
+    },
+    {
+      "value": 665.804,
+      "color": "#6baed6",
+      "label": "665.804 万m³"
+    },
+    {
+      "value": 846.9699999999999,
+      "color": "#3182bd",
+      "label": "846.970 万m³"
+    },
+    {
+      "value": 1567.089999999999,
+      "color": "#08519c",
+      "label": "1567.090 万m³"
+    },
+    {
+      "value": 3377.7199999999993,
+      "color": "#042d60",
+      "label": "3377.720 万m³"
+    }
+  ]
+}

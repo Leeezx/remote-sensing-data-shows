@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "152526100000",
+      "name": "巴拉嘎尔高勒镇",
+      "average": 783.7
+    },
+    {
+      "regionId": "152526101000",
+      "name": "巴彦花镇",
+      "average": 347.3
+    },
+    {
+      "regionId": "152526102000",
+      "name": "吉仁高勒镇",
+      "average": 158.7
+    },
+    {
+      "regionId": "152526103000",
+      "name": "浩勒图高勒镇",
+      "average": 539.7
+    },
+    {
+      "regionId": "152526104000",
+      "name": "高日罕镇",
+      "average": 118.6
+    },
+    {
+      "regionId": "152526200000",
+      "name": "巴彦胡舒苏木乡",
+      "average": 46.4
+    },
+    {
+      "regionId": "152526201000",
+      "name": "乌兰哈拉嘎苏木",
+      "average": 0.0
+    },
+    {
+      "regionId": "152526400000",
+      "name": "西乌旗白音华能源化工园区",
+      "average": 0.0
+    },
+    {
+      "regionId": "152526500000",
+      "name": "林业总场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

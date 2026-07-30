@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140525100000",
+      "name": "南村镇",
+      "average": 5940.1
+    },
+    {
+      "regionId": "140525101000",
+      "name": "下村镇",
+      "average": 2019.4
+    },
+    {
+      "regionId": "140525102000",
+      "name": "大东沟镇",
+      "average": 4566.4
+    },
+    {
+      "regionId": "140525103000",
+      "name": "周村镇",
+      "average": 5871.5
+    },
+    {
+      "regionId": "140525104000",
+      "name": "犁川镇",
+      "average": 2536.2
+    },
+    {
+      "regionId": "140525105000",
+      "name": "晋庙铺镇",
+      "average": 6153.5
+    },
+    {
+      "regionId": "140525106000",
+      "name": "金村镇",
+      "average": 11298.8
+    },
+    {
+      "regionId": "140525107000",
+      "name": "高都镇",
+      "average": 6051.1
+    },
+    {
+      "regionId": "140525108000",
+      "name": "巴公镇",
+      "average": 15801.0
+    },
+    {
+      "regionId": "140525109000",
+      "name": "大阳镇",
+      "average": 4133.8
+    },
+    {
+      "regionId": "140525110000",
+      "name": "山河镇",
+      "average": 7549.9
+    },
+    {
+      "regionId": "140525111000",
+      "name": "大箕镇",
+      "average": 7057.2
+    },
+    {
+      "regionId": "140525112000",
+      "name": "柳树口镇",
+      "average": 5210.9
+    },
+    {
+      "regionId": "140525113000",
+      "name": "北义城镇",
+      "average": 7229.7
+    },
+    {
+      "regionId": "140525200000",
+      "name": "川底乡",
+      "average": 6965.6
+    },
+    {
+      "regionId": "140525201000",
+      "name": "李寨乡",
+      "average": 3725.4
+    },
+    {
+      "regionId": "140525202000",
+      "name": "南岭乡",
+      "average": 4012.1
+    },
+    {
+      "regionId": "410822200000",
+      "name": "博爱县寨豁乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "410882101000",
+      "name": "西向镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "410882200000",
+      "name": "常平乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "419001100000",
+      "name": "济源市克井镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "419001101000",
+      "name": "济源市五龙口镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 912.7687999999999,
+      "color": "#bdd7e7",
+      "label": "912.769 万m³"
+    },
+    {
+      "value": 4071.0028,
+      "color": "#6baed6",
+      "label": "4071.003 万m³"
+    },
+    {
+      "value": 5906.8976,
+      "color": "#3182bd",
+      "label": "5906.898 万m³"
+    },
+    {
+      "value": 7015.7968,
+      "color": "#08519c",
+      "label": "7015.797 万m³"
+    },
+    {
+      "value": 13910.075999999992,
+      "color": "#042d60",
+      "label": "13910.076 万m³"
+    }
+  ]
+}

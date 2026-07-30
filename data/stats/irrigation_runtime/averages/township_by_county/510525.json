@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510525100000",
+      "name": "古蔺镇",
+      "average": 11448.4
+    },
+    {
+      "regionId": "510525101000",
+      "name": "龙山镇",
+      "average": 5963.3
+    },
+    {
+      "regionId": "510525102000",
+      "name": "永乐镇",
+      "average": 6779.5
+    },
+    {
+      "regionId": "510525103000",
+      "name": "太平镇",
+      "average": 1093.7
+    },
+    {
+      "regionId": "510525104000",
+      "name": "二郎镇",
+      "average": 1283.9
+    },
+    {
+      "regionId": "510525105000",
+      "name": "大村镇",
+      "average": 4445.7
+    },
+    {
+      "regionId": "510525106000",
+      "name": "石宝镇",
+      "average": 14530.3
+    },
+    {
+      "regionId": "510525107000",
+      "name": "丹桂镇",
+      "average": 8834.8
+    },
+    {
+      "regionId": "510525108000",
+      "name": "水口镇",
+      "average": 11090.0
+    },
+    {
+      "regionId": "510525109000",
+      "name": "观文镇",
+      "average": 6447.3
+    },
+    {
+      "regionId": "510525110000",
+      "name": "双沙镇",
+      "average": 9279.4
+    },
+    {
+      "regionId": "510525111000",
+      "name": "德耀镇",
+      "average": 1989.9
+    },
+    {
+      "regionId": "510525201000",
+      "name": "护家乡",
+      "average": 4258.1
+    },
+    {
+      "regionId": "510525202000",
+      "name": "鱼化乡",
+      "average": 5219.7
+    },
+    {
+      "regionId": "510525203000",
+      "name": "石屏乡",
+      "average": 4977.7
+    },
+    {
+      "regionId": "510525204000",
+      "name": "东新乡",
+      "average": 4347.6
+    },
+    {
+      "regionId": "510525205000",
+      "name": "土城乡",
+      "average": 3020.7
+    },
+    {
+      "regionId": "510525206000",
+      "name": "金星乡",
+      "average": 7802.1
+    },
+    {
+      "regionId": "510525207000",
+      "name": "白泥乡",
+      "average": 3352.1
+    },
+    {
+      "regionId": "510525208000",
+      "name": "椒园乡",
+      "average": 4499.2
+    },
+    {
+      "regionId": "510525209000",
+      "name": "马嘶苗族乡",
+      "average": 1863.8
+    },
+    {
+      "regionId": "510525211000",
+      "name": "马蹄乡",
+      "average": 10507.9
+    },
+    {
+      "regionId": "510525212000",
+      "name": "箭竹苗族乡",
+      "average": 2412.9
+    },
+    {
+      "regionId": "510525214000",
+      "name": "大寨苗族乡",
+      "average": 1222.0
+    },
+    {
+      "regionId": "510525215000",
+      "name": "桂花乡",
+      "average": 2244.9
+    },
+    {
+      "regionId": "510525216000",
+      "name": "黄荆乡",
+      "average": 28.3
+    },
+    {
+      "regionId": "520330102000",
+      "name": "同民镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520330105000",
+      "name": "习酒镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520382100000",
+      "name": "茅台镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520382205000",
+      "name": "沙滩乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1231.1612,
+      "color": "#bdd7e7",
+      "label": "1231.161 万m³"
+    },
+    {
+      "value": 2848.0847999999996,
+      "color": "#6baed6",
+      "label": "2848.085 万m³"
+    },
+    {
+      "value": 4635.093999999999,
+      "color": "#3182bd",
+      "label": "4635.094 万m³"
+    },
+    {
+      "value": 7650.755199999997,
+      "color": "#08519c",
+      "label": "7650.755 万m³"
+    },
+    {
+      "value": 12742.797999999993,
+      "color": "#042d60",
+      "label": "12742.798 万m³"
+    }
+  ]
+}

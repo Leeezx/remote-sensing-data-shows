@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540530100000",
+      "name": "错那镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540530200000",
+      "name": "勒门巴民族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540530201000",
+      "name": "贡日门巴民族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540530202000",
+      "name": "吉巴门巴民族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540530203000",
+      "name": "麻玛门巴民族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540530204000",
+      "name": "库局乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540530205000",
+      "name": "曲卓木乡",
+      "average": 211.3
+    },
+    {
+      "regionId": "540530206000",
+      "name": "浪坡乡",
+      "average": 1610.3
+    },
+    {
+      "regionId": "540530207000",
+      "name": "觉拉乡",
+      "average": 136.6
+    },
+    {
+      "regionId": "540530208000",
+      "name": "卡达乡",
+      "average": 110602.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

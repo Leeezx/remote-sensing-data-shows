@@ -1,0 +1,53 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "450512100000",
+      "name": "南康镇",
+      "average": 47207.3
+    },
+    {
+      "regionId": "450512101000",
+      "name": "营盘镇",
+      "average": 52248.2
+    },
+    {
+      "regionId": "450512102000",
+      "name": "兴港镇",
+      "average": 30793.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 31450.436,
+      "color": "#eff3ff",
+      "label": "31450.436 万m³"
+    },
+    {
+      "value": 37753.1816,
+      "color": "#bdd7e7",
+      "label": "37753.182 万m³"
+    },
+    {
+      "value": 44055.9272,
+      "color": "#6baed6",
+      "label": "44055.927 万m³"
+    },
+    {
+      "value": 48175.1528,
+      "color": "#3182bd",
+      "label": "48175.153 万m³"
+    },
+    {
+      "value": 50110.8584,
+      "color": "#08519c",
+      "label": "50110.858 万m³"
+    },
+    {
+      "value": 52046.564,
+      "color": "#042d60",
+      "label": "52046.564 万m³"
+    }
+  ]
+}

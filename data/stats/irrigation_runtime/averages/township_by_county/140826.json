@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140826100000",
+      "name": "古绛镇",
+      "average": 24236.2
+    },
+    {
+      "regionId": "140826101000",
+      "name": "横水镇",
+      "average": 16788.4
+    },
+    {
+      "regionId": "140826102000",
+      "name": "陈村镇",
+      "average": 5949.8
+    },
+    {
+      "regionId": "140826103000",
+      "name": "卫庄镇",
+      "average": 4486.9
+    },
+    {
+      "regionId": "140826104000",
+      "name": "磨里镇",
+      "average": 3186.0
+    },
+    {
+      "regionId": "140826105000",
+      "name": "南樊镇",
+      "average": 21852.2
+    },
+    {
+      "regionId": "140826106000",
+      "name": "安峪镇",
+      "average": 27628.5
+    },
+    {
+      "regionId": "140826107000",
+      "name": "大交镇",
+      "average": 24669.5
+    },
+    {
+      "regionId": "140826200000",
+      "name": "郝庄乡",
+      "average": 4814.8
+    },
+    {
+      "regionId": "140826201000",
+      "name": "冷口乡",
+      "average": 6855.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 3420.162,
+      "color": "#eff3ff",
+      "label": "3420.162 万m³"
+    },
+    {
+      "value": 4784.6332,
+      "color": "#bdd7e7",
+      "label": "4784.633 万m³"
+    },
+    {
+      "value": 6525.9524,
+      "color": "#6baed6",
+      "label": "6525.952 万m³"
+    },
+    {
+      "value": 18631.6232,
+      "color": "#3182bd",
+      "label": "18631.623 万m³"
+    },
+    {
+      "value": 24276.0636,
+      "color": "#08519c",
+      "label": "24276.064 万m³"
+    },
+    {
+      "value": 27095.88,
+      "color": "#042d60",
+      "label": "27095.880 万m³"
+    }
+  ]
+}

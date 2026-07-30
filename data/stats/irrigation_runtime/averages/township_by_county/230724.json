@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230707001000",
+      "name": "新青街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230707003000",
+      "name": "兴安街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230707400000",
+      "name": "红林经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230707401000",
+      "name": "松林林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230707402000",
+      "name": "泉林林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230707406000",
+      "name": "汤林林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230707407000",
+      "name": "桦林经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230707408000",
+      "name": "青林林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230710001000",
+      "name": "五营街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230710011000",
+      "name": "五星街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230710401000",
+      "name": "前丰林场",
+      "average": 3.3
+    },
+    {
+      "regionId": "230710402000",
+      "name": "永丰经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230710403000",
+      "name": "平原经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230710404000",
+      "name": "丽丰经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230710405000",
+      "name": "杨树河经营所",
+      "average": 14.4
+    },
+    {
+      "regionId": "230710406000",
+      "name": "平山经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230710407000",
+      "name": "丽林经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230712001000",
+      "name": "河南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230715001000",
+      "name": "红星街道",
+      "average": 3.6
+    },
+    {
+      "regionId": "230715400000",
+      "name": "清水河经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230715401000",
+      "name": "五星河经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230715402000",
+      "name": "汤洪岭林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230715403000",
+      "name": "汤北林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230715405000",
+      "name": "二杨经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230715406000",
+      "name": "三杨林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230715407000",
+      "name": "汤南林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230715408000",
+      "name": "共青经营所",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

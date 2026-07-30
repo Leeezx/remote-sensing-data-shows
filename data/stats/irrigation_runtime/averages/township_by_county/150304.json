@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150302007000",
+      "name": "滨河街道",
+      "average": 2793.1
+    },
+    {
+      "regionId": "150304002000",
+      "name": "三道坎街道",
+      "average": 307.5
+    },
+    {
+      "regionId": "150304003000",
+      "name": "五虎山街道",
+      "average": 1.6
+    },
+    {
+      "regionId": "150304008000",
+      "name": "新达街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150304009000",
+      "name": "巴音赛街道",
+      "average": 57.9
+    },
+    {
+      "regionId": "150304010000",
+      "name": "梁家沟街道",
+      "average": 659.1
+    },
+    {
+      "regionId": "150304011000",
+      "name": "苏海图街道",
+      "average": 85.5
+    },
+    {
+      "regionId": "150304012000",
+      "name": "滨海街道",
+      "average": 994.2
+    },
+    {
+      "regionId": "150304101000",
+      "name": "乌兰淖尔镇",
+      "average": 4850.2
+    },
+    {
+      "regionId": "150304400000",
+      "name": "乌达经济开发区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1.4527999999999999,
+      "color": "#bdd7e7",
+      "label": "1.453 万m³"
+    },
+    {
+      "value": 75.4536,
+      "color": "#6baed6",
+      "label": "75.454 万m³"
+    },
+    {
+      "value": 435.4824,
+      "color": "#3182bd",
+      "label": "435.482 万m³"
+    },
+    {
+      "value": 1159.6987999999994,
+      "color": "#08519c",
+      "label": "1159.699 万m³"
+    },
+    {
+      "value": 4479.9220000000005,
+      "color": "#042d60",
+      "label": "4479.922 万m³"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "710300010000",
+      "name": "桃園區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710300020000",
+      "name": "中壢區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710300030000",
+      "name": "大溪區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710300040000",
+      "name": "楊梅區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710300050000",
+      "name": "蘆竹區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710300060000",
+      "name": "大園區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710300070000",
+      "name": "龜山區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710300080000",
+      "name": "八德區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710300090000",
+      "name": "龍潭區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710300100000",
+      "name": "平鎮區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710300110000",
+      "name": "新屋區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710300120000",
+      "name": "觀音區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710300130000",
+      "name": "復興區",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

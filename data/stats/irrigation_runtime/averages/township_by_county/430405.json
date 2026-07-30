@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "430405001000",
+      "name": "广东路街道",
+      "average": 27.0
+    },
+    {
+      "regionId": "430405002000",
+      "name": "东风路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430405003000",
+      "name": "冶金街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430405004000",
+      "name": "苗圃街道",
+      "average": 677.6
+    },
+    {
+      "regionId": "430405005000",
+      "name": "粤汉街道",
+      "average": 155.9
+    },
+    {
+      "regionId": "430405006000",
+      "name": "新湘街道",
+      "average": 479.0
+    },
+    {
+      "regionId": "430405007000",
+      "name": "衡州路街道",
+      "average": 3658.8
+    },
+    {
+      "regionId": "430405100000",
+      "name": "茶山坳镇",
+      "average": 16394.6
+    },
+    {
+      "regionId": "430405101000",
+      "name": "东阳渡镇",
+      "average": 23413.3
+    },
+    {
+      "regionId": "430405200000",
+      "name": "和平乡",
+      "average": 5779.1
+    },
+    {
+      "regionId": "430405201000",
+      "name": "酃湖乡",
+      "average": 9197.0
+    },
+    {
+      "regionId": "430405400000",
+      "name": "金甲岭农场",
+      "average": 990.7
+    },
+    {
+      "regionId": "430405401000",
+      "name": "白渔潭园艺场",
+      "average": 66.8
+    },
+    {
+      "regionId": "430405402000",
+      "name": "酃湖渔场",
+      "average": 199.6
+    },
+    {
+      "regionId": "430405403000",
+      "name": "松林茶场",
+      "average": 204.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 65.5264,
+      "color": "#bdd7e7",
+      "label": "65.526 万m³"
+    },
+    {
+      "value": 203.0112,
+      "color": "#6baed6",
+      "label": "203.011 万m³"
+    },
+    {
+      "value": 785.3063999999998,
+      "color": "#3182bd",
+      "label": "785.306 万m³"
+    },
+    {
+      "value": 5888.472799999994,
+      "color": "#08519c",
+      "label": "5888.473 万m³"
+    },
+    {
+      "value": 21448.06399999999,
+      "color": "#042d60",
+      "label": "21448.064 万m³"
+    }
+  ]
+}

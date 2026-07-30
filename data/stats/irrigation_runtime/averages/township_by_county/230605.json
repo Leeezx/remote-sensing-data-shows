@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230605001000",
+      "name": "红岗街道",
+      "average": 54.9
+    },
+    {
+      "regionId": "230605004000",
+      "name": "八百垧街道",
+      "average": 36.9
+    },
+    {
+      "regionId": "230605005000",
+      "name": "杏南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230605006000",
+      "name": "解放街道",
+      "average": 17.2
+    },
+    {
+      "regionId": "230605007000",
+      "name": "创业街道",
+      "average": 2.2
+    },
+    {
+      "regionId": "230605100000",
+      "name": "杏树岗镇",
+      "average": 3807.4
+    },
+    {
+      "regionId": "230605480000",
+      "name": "红岗区铁人生态工业园区",
+      "average": 64.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.264,
+      "color": "#eff3ff",
+      "label": "0.264 万m³"
+    },
+    {
+      "value": 6.28,
+      "color": "#bdd7e7",
+      "label": "6.280 万m³"
+    },
+    {
+      "value": 25.552799999999998,
+      "color": "#6baed6",
+      "label": "25.553 万m³"
+    },
+    {
+      "value": 47.267999999999994,
+      "color": "#3182bd",
+      "label": "47.268 万m³"
+    },
+    {
+      "value": 61.888799999999996,
+      "color": "#08519c",
+      "label": "61.889 万m³"
+    },
+    {
+      "value": 3358.2519999999995,
+      "color": "#042d60",
+      "label": "3358.252 万m³"
+    }
+  ]
+}

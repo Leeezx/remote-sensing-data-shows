@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500156100000",
+      "name": "巷口镇",
+      "average": 1861.9
+    },
+    {
+      "regionId": "500156101000",
+      "name": "火炉镇",
+      "average": 2418.8
+    },
+    {
+      "regionId": "500156102000",
+      "name": "白马镇",
+      "average": 2756.3
+    },
+    {
+      "regionId": "500156103000",
+      "name": "鸭江镇",
+      "average": 622.2
+    },
+    {
+      "regionId": "500156104000",
+      "name": "长坝镇",
+      "average": 1820.0
+    },
+    {
+      "regionId": "500156105000",
+      "name": "江口镇",
+      "average": 52.4
+    },
+    {
+      "regionId": "500156106000",
+      "name": "平桥镇",
+      "average": 1061.2
+    },
+    {
+      "regionId": "500156107000",
+      "name": "羊角镇",
+      "average": 1549.1
+    },
+    {
+      "regionId": "500156108000",
+      "name": "仙女山镇",
+      "average": 441.2
+    },
+    {
+      "regionId": "500156109000",
+      "name": "桐梓镇",
+      "average": 2390.3
+    },
+    {
+      "regionId": "500156110000",
+      "name": "土坎镇",
+      "average": 1040.2
+    },
+    {
+      "regionId": "500156111000",
+      "name": "和顺镇",
+      "average": 719.5
+    },
+    {
+      "regionId": "500156200000",
+      "name": "凤来乡",
+      "average": 368.0
+    },
+    {
+      "regionId": "500156202000",
+      "name": "庙垭乡",
+      "average": 416.3
+    },
+    {
+      "regionId": "500156203000",
+      "name": "石桥苗族土家族乡",
+      "average": 235.4
+    },
+    {
+      "regionId": "500156204000",
+      "name": "双河乡",
+      "average": 4869.1
+    },
+    {
+      "regionId": "500156205000",
+      "name": "黄莺乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500156206000",
+      "name": "沧沟乡",
+      "average": 2497.1
+    },
+    {
+      "regionId": "500156207000",
+      "name": "文复苗族土家族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500156208000",
+      "name": "土地乡",
+      "average": 1144.5
+    },
+    {
+      "regionId": "500156209000",
+      "name": "白云乡",
+      "average": 68.4
+    },
+    {
+      "regionId": "500156210000",
+      "name": "后坪苗族土家族乡",
+      "average": 2523.5
+    },
+    {
+      "regionId": "500156211000",
+      "name": "浩口苗族仡佬族乡",
+      "average": 198.3
+    },
+    {
+      "regionId": "500156212000",
+      "name": "接龙乡",
+      "average": 1189.2
+    },
+    {
+      "regionId": "500156213000",
+      "name": "赵家乡",
+      "average": 242.2
+    },
+    {
+      "regionId": "500156214000",
+      "name": "铁矿乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520325105000",
+      "name": "洛龙镇",
+      "average": 19.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 134.90879999999996,
+      "color": "#bdd7e7",
+      "label": "134.909 万m³"
+    },
+    {
+      "value": 428.8496,
+      "color": "#6baed6",
+      "label": "428.850 万m³"
+    },
+    {
+      "value": 1102.5167999999999,
+      "color": "#3182bd",
+      "label": "1102.517 万m³"
+    },
+    {
+      "value": 2119.7592,
+      "color": "#08519c",
+      "label": "2119.759 万m³"
+    },
+    {
+      "value": 3770.4440000000013,
+      "color": "#042d60",
+      "label": "3770.444 万m³"
+    }
+  ]
+}

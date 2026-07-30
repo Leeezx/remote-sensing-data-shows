@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "370306001000",
+      "name": "丝绸路街道",
+      "average": 148.3
+    },
+    {
+      "regionId": "370306002000",
+      "name": "大街街道",
+      "average": 99.7
+    },
+    {
+      "regionId": "370306003000",
+      "name": "青年路街道",
+      "average": 806.6
+    },
+    {
+      "regionId": "370306004000",
+      "name": "永安街道",
+      "average": 92.4
+    },
+    {
+      "regionId": "370306005000",
+      "name": "城北路街道",
+      "average": 7743.3
+    },
+    {
+      "regionId": "370306100000",
+      "name": "北郊镇",
+      "average": 31376.3
+    },
+    {
+      "regionId": "370306101000",
+      "name": "南郊镇",
+      "average": 23359.9
+    },
+    {
+      "regionId": "370306102000",
+      "name": "王村镇",
+      "average": 6272.6
+    },
+    {
+      "regionId": "370306103000",
+      "name": "萌水镇",
+      "average": 8382.0
+    },
+    {
+      "regionId": "370306104000",
+      "name": "商家镇",
+      "average": 2156.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 93.714,
+      "color": "#eff3ff",
+      "label": "93.714 万m³"
+    },
+    {
+      "value": 143.8288,
+      "color": "#bdd7e7",
+      "label": "143.829 万m³"
+    },
+    {
+      "value": 1665.0727999999995,
+      "color": "#6baed6",
+      "label": "1665.073 万m³"
+    },
+    {
+      "value": 6807.9348,
+      "color": "#3182bd",
+      "label": "6807.935 万m³"
+    },
+    {
+      "value": 9759.966799999995,
+      "color": "#08519c",
+      "label": "9759.967 万m³"
+    },
+    {
+      "value": 29933.348,
+      "color": "#042d60",
+      "label": "29933.348 万m³"
+    }
+  ]
+}

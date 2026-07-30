@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "530926100000",
+      "name": "耿马镇",
+      "average": 12497.0
+    },
+    {
+      "regionId": "530926101000",
+      "name": "勐永镇",
+      "average": 664.6
+    },
+    {
+      "regionId": "530926102000",
+      "name": "勐撒镇",
+      "average": 11589.1
+    },
+    {
+      "regionId": "530926103000",
+      "name": "孟定镇",
+      "average": 62381.0
+    },
+    {
+      "regionId": "530926200000",
+      "name": "大兴乡",
+      "average": 208.9
+    },
+    {
+      "regionId": "530926201000",
+      "name": "芒洪乡",
+      "average": 260.9
+    },
+    {
+      "regionId": "530926202000",
+      "name": "四排山乡",
+      "average": 241.4
+    },
+    {
+      "regionId": "530926203000",
+      "name": "贺派乡",
+      "average": 3903.4
+    },
+    {
+      "regionId": "530926204000",
+      "name": "勐简乡",
+      "average": 6899.9
+    },
+    {
+      "regionId": "530926401000",
+      "name": "耿马华侨农场",
+      "average": 898.8
+    },
+    {
+      "regionId": "530926402000",
+      "name": "勐撒农场",
+      "average": 129.5
+    },
+    {
+      "regionId": "530926403000",
+      "name": "孟定农场",
+      "average": 4729.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 146.968,
+      "color": "#eff3ff",
+      "label": "146.968 万m³"
+    },
+    {
+      "value": 247.874,
+      "color": "#bdd7e7",
+      "label": "247.874 万m³"
+    },
+    {
+      "value": 768.5848,
+      "color": "#6baed6",
+      "label": "768.585 万m³"
+    },
+    {
+      "value": 4362.4892,
+      "color": "#3182bd",
+      "label": "4362.489 万m³"
+    },
+    {
+      "value": 10032.285599999997,
+      "color": "#08519c",
+      "label": "10032.286 万m³"
+    },
+    {
+      "value": 51406.51999999997,
+      "color": "#042d60",
+      "label": "51406.520 万m³"
+    }
+  ]
+}

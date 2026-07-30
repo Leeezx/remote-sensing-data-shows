@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210422101000",
+      "name": "旺清门镇",
+      "average": 3553.7
+    },
+    {
+      "regionId": "210422203000",
+      "name": "响水河子乡",
+      "average": 869.6
+    },
+    {
+      "regionId": "210422205000",
+      "name": "北四平乡",
+      "average": 489.0
+    },
+    {
+      "regionId": "210522111000",
+      "name": "古城镇",
+      "average": 2275.5
+    },
+    {
+      "regionId": "220521100000",
+      "name": "快大茂镇",
+      "average": 956.5
+    },
+    {
+      "regionId": "220521101000",
+      "name": "二密镇",
+      "average": 242.1
+    },
+    {
+      "regionId": "220521102000",
+      "name": "果松镇",
+      "average": 806.6
+    },
+    {
+      "regionId": "220521103000",
+      "name": "石湖镇",
+      "average": 39.4
+    },
+    {
+      "regionId": "220521104000",
+      "name": "大安镇",
+      "average": 139.6
+    },
+    {
+      "regionId": "220521105000",
+      "name": "光华镇",
+      "average": 325.3
+    },
+    {
+      "regionId": "220521106000",
+      "name": "兴林镇",
+      "average": 76.4
+    },
+    {
+      "regionId": "220521107000",
+      "name": "英额布镇",
+      "average": 850.7
+    },
+    {
+      "regionId": "220521108000",
+      "name": "三棵榆树镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220521109000",
+      "name": "西江镇",
+      "average": 2407.0
+    },
+    {
+      "regionId": "220521120000",
+      "name": "通化聚鑫经济开发区管理委员会（特殊乡镇）",
+      "average": 340.6
+    },
+    {
+      "regionId": "220521200000",
+      "name": "富江乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "220521201000",
+      "name": "四棚乡",
+      "average": 435.3
+    },
+    {
+      "regionId": "220521202000",
+      "name": "东来乡",
+      "average": 153.2
+    },
+    {
+      "regionId": "220521203000",
+      "name": "大泉源满族朝鲜族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "220521204000",
+      "name": "金斗朝鲜族满族乡",
+      "average": 947.6
+    },
+    {
+      "regionId": "220521401000",
+      "name": "东宝新村",
+      "average": 8.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 48.28000000000001,
+      "color": "#bdd7e7",
+      "label": "48.280 万m³"
+    },
+    {
+      "value": 248.756,
+      "color": "#6baed6",
+      "label": "248.756 万m³"
+    },
+    {
+      "value": 484.704,
+      "color": "#3182bd",
+      "label": "484.704 万m³"
+    },
+    {
+      "value": 928.8799999999999,
+      "color": "#08519c",
+      "label": "928.880 万m³"
+    },
+    {
+      "value": 3095.0200000000013,
+      "color": "#042d60",
+      "label": "3095.020 万m³"
+    }
+  ]
+}

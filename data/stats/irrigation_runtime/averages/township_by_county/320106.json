@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "320106001000",
+      "name": "宁海路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320106002000",
+      "name": "华侨路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320106003000",
+      "name": "湖南路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320106004000",
+      "name": "中央门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320106005000",
+      "name": "挹江门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320106006000",
+      "name": "江东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320106007000",
+      "name": "凤凰街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320106008000",
+      "name": "阅江楼街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320106009000",
+      "name": "热河南路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320106010000",
+      "name": "幕府山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320106011000",
+      "name": "建宁路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320106012000",
+      "name": "宝塔桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320106013000",
+      "name": "小市街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

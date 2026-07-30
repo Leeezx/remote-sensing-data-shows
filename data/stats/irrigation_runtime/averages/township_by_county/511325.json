@@ -1,0 +1,258 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511325100000",
+      "name": "晋城镇",
+      "average": 6716.1
+    },
+    {
+      "regionId": "511325101000",
+      "name": "太平镇",
+      "average": 8075.2
+    },
+    {
+      "regionId": "511325102000",
+      "name": "大全镇",
+      "average": 3939.9
+    },
+    {
+      "regionId": "511325103000",
+      "name": "仙林镇",
+      "average": 7907.1
+    },
+    {
+      "regionId": "511325104000",
+      "name": "古楼镇",
+      "average": 10633.5
+    },
+    {
+      "regionId": "511325105000",
+      "name": "义兴镇",
+      "average": 11711.0
+    },
+    {
+      "regionId": "511325106000",
+      "name": "关文镇",
+      "average": 7198.8
+    },
+    {
+      "regionId": "511325107000",
+      "name": "凤鸣镇",
+      "average": 5006.5
+    },
+    {
+      "regionId": "511325108000",
+      "name": "青狮镇",
+      "average": 9803.8
+    },
+    {
+      "regionId": "511325109000",
+      "name": "槐树镇",
+      "average": 6096.4
+    },
+    {
+      "regionId": "511325110000",
+      "name": "鸣龙镇",
+      "average": 8307.0
+    },
+    {
+      "regionId": "511325111000",
+      "name": "双凤镇",
+      "average": 7776.6
+    },
+    {
+      "regionId": "511325112000",
+      "name": "高院镇",
+      "average": 3194.9
+    },
+    {
+      "regionId": "511325113000",
+      "name": "仁和镇",
+      "average": 8310.2
+    },
+    {
+      "regionId": "511325114000",
+      "name": "多扶镇",
+      "average": 5371.7
+    },
+    {
+      "regionId": "511325202000",
+      "name": "常林乡",
+      "average": 9685.3
+    },
+    {
+      "regionId": "511325203000",
+      "name": "占山乡",
+      "average": 6462.0
+    },
+    {
+      "regionId": "511325204000",
+      "name": "莲池乡",
+      "average": 5572.9
+    },
+    {
+      "regionId": "511325205000",
+      "name": "宏桥乡",
+      "average": 6667.9
+    },
+    {
+      "regionId": "511325207000",
+      "name": "金泉乡",
+      "average": 4975.2
+    },
+    {
+      "regionId": "511325208000",
+      "name": "华光乡",
+      "average": 5737.6
+    },
+    {
+      "regionId": "511325209000",
+      "name": "金源乡",
+      "average": 6520.3
+    },
+    {
+      "regionId": "511325210000",
+      "name": "岱林乡",
+      "average": 3486.9
+    },
+    {
+      "regionId": "511325211000",
+      "name": "李桥乡",
+      "average": 3151.4
+    },
+    {
+      "regionId": "511325212000",
+      "name": "中岭乡",
+      "average": 4841.0
+    },
+    {
+      "regionId": "511325213000",
+      "name": "西碾乡",
+      "average": 2567.3
+    },
+    {
+      "regionId": "511325214000",
+      "name": "紫岩乡",
+      "average": 652.9
+    },
+    {
+      "regionId": "511325215000",
+      "name": "复安乡",
+      "average": 5876.0
+    },
+    {
+      "regionId": "511325216000",
+      "name": "观凤乡",
+      "average": 5041.6
+    },
+    {
+      "regionId": "511325217000",
+      "name": "青龙乡",
+      "average": 5080.9
+    },
+    {
+      "regionId": "511325218000",
+      "name": "双洛乡",
+      "average": 2970.0
+    },
+    {
+      "regionId": "511325219000",
+      "name": "义和乡",
+      "average": 1959.1
+    },
+    {
+      "regionId": "511325221000",
+      "name": "中南乡",
+      "average": 2775.4
+    },
+    {
+      "regionId": "511325222000",
+      "name": "双江乡",
+      "average": 1120.9
+    },
+    {
+      "regionId": "511325223000",
+      "name": "凤和乡",
+      "average": 4353.9
+    },
+    {
+      "regionId": "511325224000",
+      "name": "东岱乡",
+      "average": 2238.0
+    },
+    {
+      "regionId": "511325225000",
+      "name": "同德乡",
+      "average": 2851.1
+    },
+    {
+      "regionId": "511325226000",
+      "name": "祥龙乡",
+      "average": 2651.8
+    },
+    {
+      "regionId": "511325227000",
+      "name": "车龙乡",
+      "average": 6245.3
+    },
+    {
+      "regionId": "511325228000",
+      "name": "扶君乡",
+      "average": 3177.5
+    },
+    {
+      "regionId": "511325229000",
+      "name": "东太乡",
+      "average": 7273.8
+    },
+    {
+      "regionId": "511325230000",
+      "name": "永清乡",
+      "average": 6277.7
+    },
+    {
+      "regionId": "511325231000",
+      "name": "金山乡",
+      "average": 3117.5
+    },
+    {
+      "regionId": "511325232000",
+      "name": "罐垭乡",
+      "average": 6042.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 1055.38,
+      "color": "#eff3ff",
+      "label": "1055.380 万m³"
+    },
+    {
+      "value": 3121.4324,
+      "color": "#bdd7e7",
+      "label": "3121.432 万m³"
+    },
+    {
+      "value": 4986.8436,
+      "color": "#6baed6",
+      "label": "4986.844 万m³"
+    },
+    {
+      "value": 6076.312,
+      "color": "#3182bd",
+      "label": "6076.312 万m³"
+    },
+    {
+      "value": 7265.099999999999,
+      "color": "#08519c",
+      "label": "7265.100 万m³"
+    },
+    {
+      "value": 10784.35,
+      "color": "#042d60",
+      "label": "10784.350 万m³"
+    }
+  ]
+}

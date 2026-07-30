@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "411502001000",
+      "name": "老城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411502002000",
+      "name": "民权街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411502003000",
+      "name": "车站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411502004000",
+      "name": "五里墩街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411502005000",
+      "name": "五星街道",
+      "average": 761.0
+    },
+    {
+      "regionId": "411502006000",
+      "name": "湖东街道",
+      "average": 26.9
+    },
+    {
+      "regionId": "411502007000",
+      "name": "南湾街道",
+      "average": 1533.6
+    },
+    {
+      "regionId": "411502008000",
+      "name": "金牛山街道",
+      "average": 394.1
+    },
+    {
+      "regionId": "411502009000",
+      "name": "双井街道",
+      "average": 10083.8
+    },
+    {
+      "regionId": "411502100000",
+      "name": "李家寨镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411502102000",
+      "name": "东双河镇",
+      "average": 5876.6
+    },
+    {
+      "regionId": "411502103000",
+      "name": "董家河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411502104000",
+      "name": "浉河港镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411502203000",
+      "name": "游河乡",
+      "average": 20723.9
+    },
+    {
+      "regionId": "411502206000",
+      "name": "谭家河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "411502207000",
+      "name": "柳林乡",
+      "average": 959.8
+    },
+    {
+      "regionId": "411502208000",
+      "name": "十三里桥乡",
+      "average": 3897.2
+    },
+    {
+      "regionId": "421381107000",
+      "name": "吴店镇",
+      "average": 23866.4
+    },
+    {
+      "regionId": "421381108000",
+      "name": "郝店镇",
+      "average": 17325.8
+    },
+    {
+      "regionId": "421381109000",
+      "name": "蔡河镇",
+      "average": 11181.1
+    },
+    {
+      "regionId": "421381400000",
+      "name": "中华山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "421381401000",
+      "name": "三潭风景区",
+      "average": 370.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

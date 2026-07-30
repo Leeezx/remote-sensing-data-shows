@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "630224100000",
+      "name": "巴燕镇",
+      "average": 286.5
+    },
+    {
+      "regionId": "630224102000",
+      "name": "牙什尕镇",
+      "average": 1000.3
+    },
+    {
+      "regionId": "630224103000",
+      "name": "甘都镇",
+      "average": 3046.0
+    },
+    {
+      "regionId": "630224104000",
+      "name": "扎巴镇",
+      "average": 3030.6
+    },
+    {
+      "regionId": "630224105000",
+      "name": "昂思多镇",
+      "average": 1537.7
+    },
+    {
+      "regionId": "630224200000",
+      "name": "雄先藏族乡",
+      "average": 72.6
+    },
+    {
+      "regionId": "630224202000",
+      "name": "查甫乡",
+      "average": 334.5
+    },
+    {
+      "regionId": "630224205000",
+      "name": "二塘乡",
+      "average": 81.7
+    },
+    {
+      "regionId": "630224206000",
+      "name": "谢家滩乡",
+      "average": 38.1
+    },
+    {
+      "regionId": "630224207000",
+      "name": "德恒隆乡",
+      "average": 2046.1
+    },
+    {
+      "regionId": "630224208000",
+      "name": "沙连堡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "630224209000",
+      "name": "阿什努乡",
+      "average": 95.0
+    },
+    {
+      "regionId": "630224210000",
+      "name": "石大仓乡",
+      "average": 180.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 9.144,
+      "color": "#eff3ff",
+      "label": "9.144 万m³"
+    },
+    {
+      "value": 77.5504,
+      "color": "#bdd7e7",
+      "label": "77.550 万m³"
+    },
+    {
+      "value": 167.16479999999999,
+      "color": "#6baed6",
+      "label": "167.165 万m³"
+    },
+    {
+      "value": 435.7015999999995,
+      "color": "#3182bd",
+      "label": "435.702 万m³"
+    },
+    {
+      "value": 1769.5303999999996,
+      "color": "#08519c",
+      "label": "1769.530 万m³"
+    },
+    {
+      "value": 3042.304,
+      "color": "#042d60",
+      "label": "3042.304 万m³"
+    }
+  ]
+}

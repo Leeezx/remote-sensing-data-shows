@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130203001000",
+      "name": "乔屯街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130203002000",
+      "name": "文化路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130203003000",
+      "name": "钓鱼台街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130203004000",
+      "name": "东新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130203005000",
+      "name": "缸窑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130203006000",
+      "name": "机场路街道",
+      "average": 13.2
+    },
+    {
+      "regionId": "130203007000",
+      "name": "河北路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130203008000",
+      "name": "龙东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130203009000",
+      "name": "大里街道",
+      "average": 6.9
+    },
+    {
+      "regionId": "130203010000",
+      "name": "光明街道",
+      "average": 31.4
+    },
+    {
+      "regionId": "130203011000",
+      "name": "翔云道街道",
+      "average": 39.9
+    },
+    {
+      "regionId": "130203200000",
+      "name": "果园乡",
+      "average": 13116.6
+    },
+    {
+      "regionId": "130203450000",
+      "name": "唐山高新技术产业开发区",
+      "average": 1634.6
+    },
+    {
+      "regionId": "130208107000",
+      "name": "韩城镇",
+      "average": 12327.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

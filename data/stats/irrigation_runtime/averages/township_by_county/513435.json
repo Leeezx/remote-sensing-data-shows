@@ -1,0 +1,178 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513435100000",
+      "name": "新市坝镇",
+      "average": 4574.0
+    },
+    {
+      "regionId": "513435101000",
+      "name": "田坝镇",
+      "average": 2572.8
+    },
+    {
+      "regionId": "513435102000",
+      "name": "海棠镇",
+      "average": 19.2
+    },
+    {
+      "regionId": "513435103000",
+      "name": "吉米镇",
+      "average": 67.9
+    },
+    {
+      "regionId": "513435104000",
+      "name": "斯觉镇",
+      "average": 309.6
+    },
+    {
+      "regionId": "513435105000",
+      "name": "普昌镇",
+      "average": 624.3
+    },
+    {
+      "regionId": "513435106000",
+      "name": "玉田镇",
+      "average": 848.0
+    },
+    {
+      "regionId": "513435200000",
+      "name": "前进乡",
+      "average": 339.6
+    },
+    {
+      "regionId": "513435201000",
+      "name": "胜利乡",
+      "average": 513.7
+    },
+    {
+      "regionId": "513435202000",
+      "name": "新茶乡",
+      "average": 159.2
+    },
+    {
+      "regionId": "513435203000",
+      "name": "两河乡",
+      "average": 119.0
+    },
+    {
+      "regionId": "513435204000",
+      "name": "里克乡",
+      "average": 393.6
+    },
+    {
+      "regionId": "513435205000",
+      "name": "尼尔觉乡",
+      "average": 844.4
+    },
+    {
+      "regionId": "513435206000",
+      "name": "拉莫乡",
+      "average": 63.6
+    },
+    {
+      "regionId": "513435207000",
+      "name": "波波乡",
+      "average": 46.7
+    },
+    {
+      "regionId": "513435208000",
+      "name": "阿嘎乡",
+      "average": 131.8
+    },
+    {
+      "regionId": "513435209000",
+      "name": "阿尔乡",
+      "average": 362.5
+    },
+    {
+      "regionId": "513435210000",
+      "name": "石海乡",
+      "average": 220.6
+    },
+    {
+      "regionId": "513435211000",
+      "name": "团结乡",
+      "average": 1200.9
+    },
+    {
+      "regionId": "513435212000",
+      "name": "嘎日乡",
+      "average": 757.8
+    },
+    {
+      "regionId": "513435213000",
+      "name": "则拉乡",
+      "average": 92.1
+    },
+    {
+      "regionId": "513435214000",
+      "name": "坪坝乡",
+      "average": 4.2
+    },
+    {
+      "regionId": "513435215000",
+      "name": "蓼坪乡",
+      "average": 87.6
+    },
+    {
+      "regionId": "513435216000",
+      "name": "阿兹觉乡",
+      "average": 234.0
+    },
+    {
+      "regionId": "513435217000",
+      "name": "乌史大桥乡",
+      "average": 102.5
+    },
+    {
+      "regionId": "513435218000",
+      "name": "黑马乡",
+      "average": 286.2
+    },
+    {
+      "regionId": "513435219000",
+      "name": "沙岱乡",
+      "average": 13.8
+    },
+    {
+      "regionId": "513435220000",
+      "name": "苏雄乡",
+      "average": 27.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 9.384,
+      "color": "#eff3ff",
+      "label": "9.384 万m³"
+    },
+    {
+      "value": 66.7132,
+      "color": "#bdd7e7",
+      "label": "66.713 万m³"
+    },
+    {
+      "value": 130.6224,
+      "color": "#6baed6",
+      "label": "130.622 万m³"
+    },
+    {
+      "value": 312.36,
+      "color": "#3182bd",
+      "label": "312.360 万m³"
+    },
+    {
+      "value": 661.1459999999995,
+      "color": "#08519c",
+      "label": "661.146 万m³"
+    },
+    {
+      "value": 3493.3520000000017,
+      "color": "#042d60",
+      "label": "3493.352 万m³"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "522625100000",
+      "name": "舞阳镇",
+      "average": 19688.9
+    },
+    {
+      "regionId": "522625101000",
+      "name": "蕉溪镇",
+      "average": 14659.4
+    },
+    {
+      "regionId": "522625102000",
+      "name": "青溪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522625103000",
+      "name": "羊坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522625104000",
+      "name": "羊场镇",
+      "average": 21882.1
+    },
+    {
+      "regionId": "522625105000",
+      "name": "都坪镇",
+      "average": 18174.4
+    },
+    {
+      "regionId": "522625106000",
+      "name": "金堡镇",
+      "average": 13775.6
+    },
+    {
+      "regionId": "522625107000",
+      "name": "江古镇",
+      "average": 20783.3
+    },
+    {
+      "regionId": "522625201000",
+      "name": "涌溪乡",
+      "average": 10984.8
+    },
+    {
+      "regionId": "522625203000",
+      "name": "报京乡",
+      "average": 2063.8
+    },
+    {
+      "regionId": "522625204000",
+      "name": "大地乡",
+      "average": 7765.9
+    },
+    {
+      "regionId": "522625205000",
+      "name": "尚寨乡",
+      "average": 4295.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2804.8571999999995,
+      "color": "#bdd7e7",
+      "label": "2804.857 万m³"
+    },
+    {
+      "value": 9195.0916,
+      "color": "#6baed6",
+      "label": "9195.092 万m³"
+    },
+    {
+      "value": 14266.9928,
+      "color": "#3182bd",
+      "label": "14266.993 万m³"
+    },
+    {
+      "value": 19186.086,
+      "color": "#08519c",
+      "label": "19186.086 万m³"
+    },
+    {
+      "value": 21640.363999999998,
+      "color": "#042d60",
+      "label": "21640.364 万m³"
+    }
+  ]
+}

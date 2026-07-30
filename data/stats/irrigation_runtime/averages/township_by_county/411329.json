@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "411329001000",
+      "name": "汉城街道",
+      "average": 1694.3
+    },
+    {
+      "regionId": "411329002000",
+      "name": "汉华街道",
+      "average": 7120.9
+    },
+    {
+      "regionId": "411329101000",
+      "name": "王庄镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411329102000",
+      "name": "沙堰镇",
+      "average": 50985.3
+    },
+    {
+      "regionId": "411329103000",
+      "name": "新甸铺镇",
+      "average": 551.7
+    },
+    {
+      "regionId": "411329104000",
+      "name": "施庵镇",
+      "average": 98626.8
+    },
+    {
+      "regionId": "411329105000",
+      "name": "歪子镇",
+      "average": 69992.7
+    },
+    {
+      "regionId": "411329106000",
+      "name": "五星镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411329107000",
+      "name": "溧河铺镇",
+      "average": 80751.1
+    },
+    {
+      "regionId": "411329108000",
+      "name": "王集镇",
+      "average": 39947.0
+    },
+    {
+      "regionId": "411329300000",
+      "name": "城郊乡",
+      "average": 43157.4
+    },
+    {
+      "regionId": "411329303000",
+      "name": "前高庙乡",
+      "average": 42727.4
+    },
+    {
+      "regionId": "411329305000",
+      "name": "樊集乡",
+      "average": 15782.3
+    },
+    {
+      "regionId": "411329307000",
+      "name": "上庄乡",
+      "average": 49837.3
+    },
+    {
+      "regionId": "411329309000",
+      "name": "上港乡",
+      "average": 33031.8
+    },
+    {
+      "regionId": "420607106000",
+      "name": "程河镇",
+      "average": 49503.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2671.0879999999984,
+      "color": "#bdd7e7",
+      "label": "2671.088 万m³"
+    },
+    {
+      "value": 33446.712,
+      "color": "#6baed6",
+      "label": "33446.712 万m³"
+    },
+    {
+      "value": 43131.6,
+      "color": "#3182bd",
+      "label": "43131.600 万m³"
+    },
+    {
+      "value": 50778.66,
+      "color": "#08519c",
+      "label": "50778.660 万m³"
+    },
+    {
+      "value": 93264.09,
+      "color": "#042d60",
+      "label": "93264.090 万m³"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420325100000",
+      "name": "城关镇",
+      "average": 11966.3
+    },
+    {
+      "regionId": "420325101000",
+      "name": "军店镇",
+      "average": 9131.5
+    },
+    {
+      "regionId": "420325102000",
+      "name": "化龙堰镇",
+      "average": 4392.4
+    },
+    {
+      "regionId": "420325103000",
+      "name": "土城镇",
+      "average": 1973.7
+    },
+    {
+      "regionId": "420325104000",
+      "name": "大木厂镇",
+      "average": 4008.2
+    },
+    {
+      "regionId": "420325105000",
+      "name": "青峰镇",
+      "average": 18941.3
+    },
+    {
+      "regionId": "420325106000",
+      "name": "门古寺镇",
+      "average": 5507.3
+    },
+    {
+      "regionId": "420325107000",
+      "name": "白鹤镇",
+      "average": 11542.8
+    },
+    {
+      "regionId": "420325108000",
+      "name": "野人谷镇",
+      "average": 559.9
+    },
+    {
+      "regionId": "420325109000",
+      "name": "红塔镇",
+      "average": 28324.5
+    },
+    {
+      "regionId": "420325110000",
+      "name": "窑淮镇",
+      "average": 2945.4
+    },
+    {
+      "regionId": "420325111000",
+      "name": "尹吉甫镇",
+      "average": 16936.6
+    },
+    {
+      "regionId": "420325203000",
+      "name": "姚坪乡",
+      "average": 2854.7
+    },
+    {
+      "regionId": "420325205000",
+      "name": "沙河乡",
+      "average": 533.6
+    },
+    {
+      "regionId": "420325206000",
+      "name": "万峪河乡",
+      "average": 7359.1
+    },
+    {
+      "regionId": "420325208000",
+      "name": "上龛乡",
+      "average": 1112.8
+    },
+    {
+      "regionId": "420325209000",
+      "name": "中坝乡",
+      "average": 1494.3
+    },
+    {
+      "regionId": "420325210000",
+      "name": "九道乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420325211000",
+      "name": "回龙乡",
+      "average": 286.1
+    },
+    {
+      "regionId": "420325212000",
+      "name": "五台乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420325501000",
+      "name": "国营杨岔山林场",
+      "average": 74.8
+    },
+    {
+      "regionId": "420325502000",
+      "name": "国营九口山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420325503000",
+      "name": "国营毛家山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420325504000",
+      "name": "国营代东河林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420325505000",
+      "name": "房县西蒿漆场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420325506000",
+      "name": "房县园艺场",
+      "average": 2101.0
+    },
+    {
+      "regionId": "420325507000",
+      "name": "谭家湾水库管养所",
+      "average": 0.0
+    },
+    {
+      "regionId": "420325508000",
+      "name": "温泉风景区",
+      "average": 0.0
+    },
+    {
+      "regionId": "420325509000",
+      "name": "房县旱粮粮种场",
+      "average": 809.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

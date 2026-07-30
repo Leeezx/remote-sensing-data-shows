@@ -8,6 +8,7 @@ from fastapi.testclient import TestClient
 
 from backend.main import app
 from backend import data_loader
+from backend.irrigation_runtime_stats import IrrigationRuntimeDataError
 from backend.routers import irrigation as irrigation_router
 from backend.shapefile_geojson import _read_dbf_records
 
@@ -17,43 +18,79 @@ client = TestClient(app)
 @pytest.fixture
 def precomputed_irrigation_series(monkeypatch):
     """Provide deterministic endpoint data without the untracked runtime dataset."""
-    series_data = {
-        "unit": "万m³",
-        "county": {
-            "county_a": {
-                "name": "测试县",
-                "annual": [
-                    {"time": "2021", "value": 500.0},
-                    {"time": "2022", "value": 510.0},
-                    {"time": "2023", "value": 522.2},
-                ],
-                "monthly": [
-                    {"time": "2023-01", "value": 118.4},
-                    {"time": "2023-02", "value": 1413.8},
-                ],
-            },
+    entries = {
+        ("county", "county_a"): {
+            "name": "测试县",
+            "annual": [
+                {"time": "2021", "value": 500.0},
+                {"time": "2022", "value": 510.0},
+                {"time": "2023", "value": 522.2},
+            ],
+            "monthly": [
+                {"time": "2023-01", "value": 118.4},
+                {"time": "2023-02", "value": 1413.8},
+            ],
         },
-        "township": {
-            "village_a1": {
-                "name": "测试乡镇",
-                "parentId": "county_a",
-                "annual": [
-                    {"time": "2021", "value": 328.4},
-                    {"time": "2022", "value": 346.5},
-                    {"time": "2023", "value": 358.8},
-                ],
-            },
+        ("township", "village_a1"): {
+            "name": "测试乡镇",
+            "parentId": "county_a",
+            "annual": [
+                {"time": "2021", "value": 328.4},
+                {"time": "2022", "value": 346.5},
+                {"time": "2023", "value": 358.8},
+            ],
         },
     }
+    averages = {
+        "level": "county",
+        "unit": "万m³",
+        "averages": [
+            {"regionId": "county_a", "name": "测试县", "average": 510.7}
+        ],
+        "legend": [
+            {
+                "value": float(index),
+                "color": f"#{index + 1:06x}",
+                "label": f"{index} 万m³",
+            }
+            for index in range(6)
+        ],
+    }
+
+    def load_series_entry(level, region_id):
+        entry = entries.get((level, region_id))
+        return ("万m³", entry) if entry is not None else None
+
+    def fail_legacy_loader():
+        raise AssertionError(
+            "runtime API must not load the monolithic series file"
+        )
+
+    monkeypatch.setattr(
+        irrigation_router,
+        "load_region_series_entry",
+        load_series_entry,
+        raising=False,
+    )
+    monkeypatch.setattr(
+        irrigation_router,
+        "load_region_averages",
+        lambda level, county_id=None: {
+            **averages,
+            "level": level,
+        },
+        raising=False,
+    )
     monkeypatch.setattr(
         irrigation_router,
         "get_irrigation_region_series",
-        lambda: series_data,
+        fail_legacy_loader,
+        raising=False,
     )
     monkeypatch.setattr(
         data_loader,
         "get_irrigation_region_series",
-        lambda: series_data,
+        fail_legacy_loader,
     )
 
 
@@ -426,12 +463,12 @@ def test_get_irrigation_series_returns_404_for_unknown_precomputed_region(
 def test_get_irrigation_series_returns_404_when_period_is_missing(monkeypatch):
     monkeypatch.setattr(
         irrigation_router,
-        "get_irrigation_region_series",
-        lambda: {
-            "unit": "万m³",
-            "county": {"county_without_month": {"annual": []}},
-            "township": {},
-        },
+        "load_region_series_entry",
+        lambda level, region_id: (
+            "万m³",
+            {"name": "无月序列县", "annual": []},
+        ),
+        raising=False,
     )
 
     response = client.get(
@@ -502,6 +539,89 @@ def test_get_irrigation_region_averages_legend_has_six_stops(
     hex_color = re.compile(r"^#[0-9a-fA-F]{6}$")
     for item in legend:
         assert hex_color.fullmatch(item["color"])
+
+
+@pytest.mark.parametrize(
+    ("path", "params"),
+    [
+        (
+            "/api/irrigation/regions/averages",
+            {"level": "county"},
+        ),
+        (
+            "/api/irrigation/series",
+            {
+                "level": "county",
+                "regionId": "county_a",
+                "period": "annual",
+            },
+        ),
+    ],
+)
+def test_statistics_responses_support_etag_revalidation(
+    precomputed_irrigation_series,
+    path,
+    params,
+):
+    response = client.get(path, params=params)
+
+    assert response.status_code == 200
+    assert response.headers["cache-control"] == "public, max-age=3600"
+    etag = response.headers["etag"]
+    assert etag.startswith('"') and etag.endswith('"')
+
+    revalidated = client.get(
+        path,
+        params=params,
+        headers={"If-None-Match": etag},
+    )
+
+    assert revalidated.status_code == 304
+    assert revalidated.content == b""
+    assert revalidated.headers["etag"] == etag
+
+
+@pytest.mark.parametrize(
+    ("path", "params", "loader_name"),
+    [
+        (
+            "/api/irrigation/regions/averages",
+            {"level": "county"},
+            "load_region_averages",
+        ),
+        (
+            "/api/irrigation/series",
+            {
+                "level": "county",
+                "regionId": "county_a",
+                "period": "annual",
+            },
+            "load_region_series_entry",
+        ),
+    ],
+)
+def test_statistics_runtime_failure_returns_503(
+    monkeypatch,
+    path,
+    params,
+    loader_name,
+):
+    def fail(*args, **kwargs):
+        raise IrrigationRuntimeDataError("broken runtime")
+
+    monkeypatch.setattr(
+        irrigation_router,
+        loader_name,
+        fail,
+        raising=False,
+    )
+
+    response = client.get(path, params=params)
+
+    assert response.status_code == 503
+    assert response.json()["detail"] == (
+        "Irrigation runtime statistics are unavailable"
+    )
 
 
 def test_get_irrigation_region_averages_bad_level():

@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130104001000",
+      "name": "东里街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130104002000",
+      "name": "中山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130104004000",
+      "name": "南长街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130104005000",
+      "name": "维明街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130104007000",
+      "name": "友谊街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130104008000",
+      "name": "红旗街道",
+      "average": 229.4
+    },
+    {
+      "regionId": "130104009000",
+      "name": "新石街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130104010000",
+      "name": "苑东街道",
+      "average": 404.2
+    },
+    {
+      "regionId": "130104011000",
+      "name": "西里街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130104012000",
+      "name": "振头街道",
+      "average": 645.8
+    },
+    {
+      "regionId": "130104013000",
+      "name": "留营街道",
+      "average": 85.0
+    },
+    {
+      "regionId": "130104014000",
+      "name": "长兴街道",
+      "average": 271.0
+    },
+    {
+      "regionId": "130104015000",
+      "name": "彭后街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130104016000",
+      "name": "东风街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130104017000",
+      "name": "东华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130104018000",
+      "name": "休门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130104019000",
+      "name": "汇通街道",
+      "average": 351.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

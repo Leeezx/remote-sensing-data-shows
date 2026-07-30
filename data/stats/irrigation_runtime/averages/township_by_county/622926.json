@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "622926100000",
+      "name": "锁南镇",
+      "average": 444.7
+    },
+    {
+      "regionId": "622926101000",
+      "name": "达板镇",
+      "average": 2125.1
+    },
+    {
+      "regionId": "622926102000",
+      "name": "河滩镇",
+      "average": 3863.2
+    },
+    {
+      "regionId": "622926103000",
+      "name": "那勒寺镇",
+      "average": 2762.9
+    },
+    {
+      "regionId": "622926104000",
+      "name": "唐汪镇",
+      "average": 2209.1
+    },
+    {
+      "regionId": "622926200000",
+      "name": "春台乡",
+      "average": 479.8
+    },
+    {
+      "regionId": "622926201000",
+      "name": "柳树乡",
+      "average": 295.7
+    },
+    {
+      "regionId": "622926202000",
+      "name": "东塬乡",
+      "average": 1230.7
+    },
+    {
+      "regionId": "622926204000",
+      "name": "坪庄乡",
+      "average": 1127.5
+    },
+    {
+      "regionId": "622926205000",
+      "name": "百和乡",
+      "average": 3225.3
+    },
+    {
+      "regionId": "622926206000",
+      "name": "关卜乡",
+      "average": 3310.8
+    },
+    {
+      "regionId": "622926208000",
+      "name": "赵家乡",
+      "average": 467.4
+    },
+    {
+      "regionId": "622926209000",
+      "name": "五家乡",
+      "average": 652.0
+    },
+    {
+      "regionId": "622926210000",
+      "name": "果园乡",
+      "average": 644.8
+    },
+    {
+      "regionId": "622926212000",
+      "name": "沿岭乡",
+      "average": 172.9
+    },
+    {
+      "regionId": "622926213000",
+      "name": "汪集乡",
+      "average": 37.3
+    },
+    {
+      "regionId": "622926214000",
+      "name": "风山乡",
+      "average": 25.7
+    },
+    {
+      "regionId": "622926215000",
+      "name": "车家湾乡",
+      "average": 105.5
+    },
+    {
+      "regionId": "622926216000",
+      "name": "高山乡",
+      "average": 120.7
+    },
+    {
+      "regionId": "622926219000",
+      "name": "大树乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "622926220000",
+      "name": "北岭乡",
+      "average": 81.1
+    },
+    {
+      "regionId": "622926221000",
+      "name": "龙泉乡",
+      "average": 247.3
+    },
+    {
+      "regionId": "622926222000",
+      "name": "考勒乡",
+      "average": 285.3
+    },
+    {
+      "regionId": "622926223000",
+      "name": "董岭乡",
+      "average": 34.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 11.822000000000001,
+      "color": "#eff3ff",
+      "label": "11.822 万m³"
+    },
+    {
+      "value": 102.47439999999999,
+      "color": "#bdd7e7",
+      "label": "102.474 万m³"
+    },
+    {
+      "value": 288.3368,
+      "color": "#6baed6",
+      "label": "288.337 万m³"
+    },
+    {
+      "value": 596.62,
+      "color": "#3182bd",
+      "label": "596.620 万m³"
+    },
+    {
+      "value": 2135.5159999999996,
+      "color": "#08519c",
+      "label": "2135.516 万m³"
+    },
+    {
+      "value": 3609.0959999999995,
+      "color": "#042d60",
+      "label": "3609.096 万m³"
+    }
+  ]
+}

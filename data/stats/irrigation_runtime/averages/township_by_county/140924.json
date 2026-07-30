@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140924100000",
+      "name": "繁城镇",
+      "average": 1721.5
+    },
+    {
+      "regionId": "140924101000",
+      "name": "砂河镇",
+      "average": 3479.4
+    },
+    {
+      "regionId": "140924102000",
+      "name": "大营镇",
+      "average": 4076.2
+    },
+    {
+      "regionId": "140924200000",
+      "name": "下茹越乡",
+      "average": 453.8
+    },
+    {
+      "regionId": "140924201000",
+      "name": "杏园乡",
+      "average": 2589.0
+    },
+    {
+      "regionId": "140924202000",
+      "name": "光裕堡乡",
+      "average": 814.4
+    },
+    {
+      "regionId": "140924203000",
+      "name": "集义庄乡",
+      "average": 3980.7
+    },
+    {
+      "regionId": "140924204000",
+      "name": "东山乡",
+      "average": 3414.4
+    },
+    {
+      "regionId": "140924205000",
+      "name": "金山铺乡",
+      "average": 2729.1
+    },
+    {
+      "regionId": "140924206000",
+      "name": "柏家庄乡",
+      "average": 847.2
+    },
+    {
+      "regionId": "140924207000",
+      "name": "横涧乡",
+      "average": 2026.6
+    },
+    {
+      "regionId": "140924208000",
+      "name": "神堂堡乡",
+      "average": 94.0
+    },
+    {
+      "regionId": "140924209000",
+      "name": "岩头乡",
+      "average": 246.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 130.48,
+      "color": "#eff3ff",
+      "label": "130.480 万m³"
+    },
+    {
+      "value": 649.9664,
+      "color": "#bdd7e7",
+      "label": "649.966 万m³"
+    },
+    {
+      "value": 1588.6064,
+      "color": "#6baed6",
+      "label": "1588.606 万m³"
+    },
+    {
+      "value": 2610.2952,
+      "color": "#3182bd",
+      "label": "2610.295 万m³"
+    },
+    {
+      "value": 3444.04,
+      "color": "#08519c",
+      "label": "3444.040 万m³"
+    },
+    {
+      "value": 4053.2799999999997,
+      "color": "#042d60",
+      "label": "4053.280 万m³"
+    }
+  ]
+}

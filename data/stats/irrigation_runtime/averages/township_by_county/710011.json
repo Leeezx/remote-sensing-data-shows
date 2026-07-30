@@ -1,0 +1,198 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "711600010000",
+      "name": "屏東市",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600020000",
+      "name": "潮州鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600030000",
+      "name": "東港鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600040000",
+      "name": "恆春鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600050000",
+      "name": "萬丹鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600060000",
+      "name": "長治鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600070000",
+      "name": "麟洛鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600080000",
+      "name": "九如鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600090000",
+      "name": "里港鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600100000",
+      "name": "鹽埔鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600110000",
+      "name": "高樹鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600120000",
+      "name": "萬巒鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600130000",
+      "name": "內埔鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600140000",
+      "name": "竹田鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600150000",
+      "name": "新埤鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600160000",
+      "name": "枋寮鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600170000",
+      "name": "新園鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600180000",
+      "name": "崁頂鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600190000",
+      "name": "林邊鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600200000",
+      "name": "南州鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600210000",
+      "name": "佳冬鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600230000",
+      "name": "車城鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600240000",
+      "name": "滿州鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600250000",
+      "name": "枋山鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600260000",
+      "name": "三地門鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600270000",
+      "name": "霧臺鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600280000",
+      "name": "瑪家鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600290000",
+      "name": "泰武鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600300000",
+      "name": "來義鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600310000",
+      "name": "春日鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600320000",
+      "name": "獅子鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711600330000",
+      "name": "牡丹鄉",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

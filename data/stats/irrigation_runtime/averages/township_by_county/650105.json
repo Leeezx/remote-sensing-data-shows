@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "650105001000",
+      "name": "水磨沟街道",
+      "average": 291.0
+    },
+    {
+      "regionId": "650105002000",
+      "name": "六道湾街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650105003000",
+      "name": "苇湖梁街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650105004000",
+      "name": "八道湾街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650105005000",
+      "name": "新民路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650105006000",
+      "name": "南湖南路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650105007000",
+      "name": "南湖北路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650105008000",
+      "name": "七道湾街道",
+      "average": 18.9
+    },
+    {
+      "regionId": "650105400000",
+      "name": "水磨沟区农村事务管理办公室",
+      "average": 1767.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

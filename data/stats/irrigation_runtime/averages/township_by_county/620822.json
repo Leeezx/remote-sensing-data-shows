@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610327101000",
+      "name": "东风镇",
+      "average": 9324.6
+    },
+    {
+      "regionId": "610327112000",
+      "name": "河北镇",
+      "average": 1395.6
+    },
+    {
+      "regionId": "610328103000",
+      "name": "张家塬镇",
+      "average": 6643.5
+    },
+    {
+      "regionId": "610328107000",
+      "name": "高崖镇",
+      "average": 504.2
+    },
+    {
+      "regionId": "610329101000",
+      "name": "崔木镇",
+      "average": 985.6
+    },
+    {
+      "regionId": "610329103000",
+      "name": "两亭镇",
+      "average": 1664.9
+    },
+    {
+      "regionId": "610329106000",
+      "name": "丈八镇",
+      "average": 557.2
+    },
+    {
+      "regionId": "610428102000",
+      "name": "巨家镇",
+      "average": 4313.9
+    },
+    {
+      "regionId": "610428108000",
+      "name": "枣元镇",
+      "average": 2722.4
+    },
+    {
+      "regionId": "620822001000",
+      "name": "街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620822100000",
+      "name": "中台镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620822101000",
+      "name": "邵寨镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620822102000",
+      "name": "独店镇",
+      "average": 39.4
+    },
+    {
+      "regionId": "620822103000",
+      "name": "什字镇",
+      "average": 5452.0
+    },
+    {
+      "regionId": "620822104000",
+      "name": "朝那镇",
+      "average": 1744.0
+    },
+    {
+      "regionId": "620822201000",
+      "name": "新开乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620822202000",
+      "name": "西屯乡",
+      "average": 5058.7
+    },
+    {
+      "regionId": "620822203000",
+      "name": "上良乡",
+      "average": 2804.3
+    },
+    {
+      "regionId": "620822204000",
+      "name": "梁原乡",
+      "average": 528.6
+    },
+    {
+      "regionId": "620822205000",
+      "name": "龙门乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620822206000",
+      "name": "星火乡",
+      "average": 3300.2
+    },
+    {
+      "regionId": "620822207000",
+      "name": "百里乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620822208000",
+      "name": "蒲窝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620822400000",
+      "name": "万宝川农场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

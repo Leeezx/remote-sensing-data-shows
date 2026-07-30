@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130131212000",
+      "name": "合河口乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130624101000",
+      "name": "龙泉关镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "140922100000",
+      "name": "台城镇",
+      "average": 1339.5
+    },
+    {
+      "regionId": "140922101000",
+      "name": "台怀镇",
+      "average": 110.9
+    },
+    {
+      "regionId": "140922102000",
+      "name": "耿镇镇",
+      "average": 539.0
+    },
+    {
+      "regionId": "140922103000",
+      "name": "豆村镇",
+      "average": 3887.1
+    },
+    {
+      "regionId": "140922104000",
+      "name": "白家庄镇",
+      "average": 289.4
+    },
+    {
+      "regionId": "140922105000",
+      "name": "东冶镇",
+      "average": 1153.1
+    },
+    {
+      "regionId": "140922200000",
+      "name": "沟南乡",
+      "average": 2153.5
+    },
+    {
+      "regionId": "140922201000",
+      "name": "东雷乡",
+      "average": 2387.7
+    },
+    {
+      "regionId": "140922202000",
+      "name": "高洪口乡",
+      "average": 694.0
+    },
+    {
+      "regionId": "140922203000",
+      "name": "门限石乡",
+      "average": 1447.7
+    },
+    {
+      "regionId": "140922204000",
+      "name": "陈家庄乡",
+      "average": 1034.4
+    },
+    {
+      "regionId": "140922205000",
+      "name": "建安乡",
+      "average": 1972.9
+    },
+    {
+      "regionId": "140922206000",
+      "name": "神西乡",
+      "average": 73.3
+    },
+    {
+      "regionId": "140922207000",
+      "name": "蒋坊乡",
+      "average": 2146.1
+    },
+    {
+      "regionId": "140922208000",
+      "name": "灵境乡",
+      "average": 168.3
+    },
+    {
+      "regionId": "140922209000",
+      "name": "阳白乡",
+      "average": 1712.9
+    },
+    {
+      "regionId": "140922210000",
+      "name": "茹村乡",
+      "average": 4766.5
+    },
+    {
+      "regionId": "140922211000",
+      "name": "石咀乡",
+      "average": 663.0
+    },
+    {
+      "regionId": "140922212000",
+      "name": "金岗库乡",
+      "average": 121.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 132.428,
+      "color": "#bdd7e7",
+      "label": "132.428 万m³"
+    },
+    {
+      "value": 665.48,
+      "color": "#6baed6",
+      "label": "665.480 万m³"
+    },
+    {
+      "value": 1324.588,
+      "color": "#3182bd",
+      "label": "1324.588 万m³"
+    },
+    {
+      "value": 2104.5319999999997,
+      "color": "#08519c",
+      "label": "2104.532 万m³"
+    },
+    {
+      "value": 4414.740000000002,
+      "color": "#042d60",
+      "label": "4414.740 万m³"
+    }
+  ]
+}

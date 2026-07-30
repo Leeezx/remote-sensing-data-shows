@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540522100000",
+      "name": "吉雄镇",
+      "average": 7404.9
+    },
+    {
+      "regionId": "540522101000",
+      "name": "岗堆镇",
+      "average": 3517.4
+    },
+    {
+      "regionId": "540522102000",
+      "name": "甲竹林镇",
+      "average": 4507.8
+    },
+    {
+      "regionId": "540522103000",
+      "name": "江塘镇",
+      "average": 1646.8
+    },
+    {
+      "regionId": "540522104000",
+      "name": "杰德秀镇",
+      "average": 2273.4
+    },
+    {
+      "regionId": "540522200000",
+      "name": "朗杰学乡",
+      "average": 724.4
+    },
+    {
+      "regionId": "540522201000",
+      "name": "昌果乡",
+      "average": 1905.3
+    },
+    {
+      "regionId": "540522202000",
+      "name": "东拉乡",
+      "average": 2461.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 853.536,
+      "color": "#eff3ff",
+      "label": "853.536 万m³"
+    },
+    {
+      "value": 1771.914,
+      "color": "#bdd7e7",
+      "label": "1771.914 万m³"
+    },
+    {
+      "value": 2210.0868,
+      "color": "#6baed6",
+      "label": "2210.087 万m³"
+    },
+    {
+      "value": 2643.3632,
+      "color": "#3182bd",
+      "label": "2643.363 万m³"
+    },
+    {
+      "value": 4028.4463999999994,
+      "color": "#08519c",
+      "label": "4028.446 万m³"
+    },
+    {
+      "value": 6999.305999999998,
+      "color": "#042d60",
+      "label": "6999.306 万m³"
+    }
+  ]
+}

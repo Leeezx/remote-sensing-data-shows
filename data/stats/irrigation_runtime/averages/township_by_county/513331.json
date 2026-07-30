@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513331100000",
+      "name": "建设镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513331101000",
+      "name": "阿察镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513331200000",
+      "name": "金沙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513331201000",
+      "name": "绒盖乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513331202000",
+      "name": "章都乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513331203000",
+      "name": "麻绒乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513331204000",
+      "name": "河坡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513331205000",
+      "name": "热加乡",
+      "average": 86.6
+    },
+    {
+      "regionId": "513331206000",
+      "name": "登龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513331207000",
+      "name": "赠科乡",
+      "average": 57.6
+    },
+    {
+      "regionId": "513331209000",
+      "name": "麻邛乡",
+      "average": 43.0
+    },
+    {
+      "regionId": "513331210000",
+      "name": "辽西乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513331211000",
+      "name": "纳塔乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513331212000",
+      "name": "安孜乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513331213000",
+      "name": "盖玉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513331214000",
+      "name": "沙马乡",
+      "average": 53.4
+    },
+    {
+      "regionId": "513331215000",
+      "name": "山岩乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540321201000",
+      "name": "岩比乡",
+      "average": 64.7
+    },
+    {
+      "regionId": "540321210000",
+      "name": "波罗乡",
+      "average": 316.0
+    },
+    {
+      "regionId": "540322200000",
+      "name": "敏都乡",
+      "average": 20.5
+    },
+    {
+      "regionId": "540322202000",
+      "name": "罗麦乡",
+      "average": 177.7
+    },
+    {
+      "regionId": "540322203000",
+      "name": "沙东乡",
+      "average": 157.5
+    },
+    {
+      "regionId": "540322208000",
+      "name": "雄松乡",
+      "average": 118.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

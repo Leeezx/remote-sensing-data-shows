@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451029100000",
+      "name": "乐里镇",
+      "average": 5887.6
+    },
+    {
+      "regionId": "451029101000",
+      "name": "旧州镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451029102000",
+      "name": "定安镇",
+      "average": 2043.6
+    },
+    {
+      "regionId": "451029103000",
+      "name": "六隆镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451029200000",
+      "name": "潞城瑶族乡",
+      "average": 13000.0
+    },
+    {
+      "regionId": "451029201000",
+      "name": "利周瑶族乡",
+      "average": 9508.9
+    },
+    {
+      "regionId": "451029202000",
+      "name": "平塘乡",
+      "average": 4789.7
+    },
+    {
+      "regionId": "451029203000",
+      "name": "浪平乡",
+      "average": 13293.5
+    },
+    {
+      "regionId": "451029204000",
+      "name": "八桂瑶族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451029205000",
+      "name": "八渡瑶族乡",
+      "average": 2314.6
+    },
+    {
+      "regionId": "451029206000",
+      "name": "那比乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451029207000",
+      "name": "高龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451029208000",
+      "name": "百乐乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451029209000",
+      "name": "者苗乡",
+      "average": 2126.4
+    },
+    {
+      "regionId": "522327108000",
+      "name": "八渡镇",
+      "average": 1428.5
+    },
+    {
+      "regionId": "522327204000",
+      "name": "百口乡",
+      "average": 417.7
+    },
+    {
+      "regionId": "532628103000",
+      "name": "剥隘镇",
+      "average": 3421.8
+    },
+    {
+      "regionId": "532628204000",
+      "name": "那能乡",
+      "average": 7540.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

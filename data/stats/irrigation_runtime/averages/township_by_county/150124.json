@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140932102000",
+      "name": "老营镇",
+      "average": 215.8
+    },
+    {
+      "regionId": "140932103000",
+      "name": "万家寨镇",
+      "average": 87.8
+    },
+    {
+      "regionId": "140932204000",
+      "name": "水泉乡",
+      "average": 92.0
+    },
+    {
+      "regionId": "150124100000",
+      "name": "城关镇",
+      "average": 215.8
+    },
+    {
+      "regionId": "150124101000",
+      "name": "宏河镇",
+      "average": 542.5
+    },
+    {
+      "regionId": "150124102000",
+      "name": "喇嘛湾镇",
+      "average": 214.2
+    },
+    {
+      "regionId": "150124200000",
+      "name": "窑沟乡",
+      "average": 76.0
+    },
+    {
+      "regionId": "150124201000",
+      "name": "北堡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "150124202000",
+      "name": "韮菜庄乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "150124203000",
+      "name": "五良太乡",
+      "average": 291.2
+    },
+    {
+      "regionId": "150124204000",
+      "name": "单台子乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 9.120000000000008,
+      "color": "#bdd7e7",
+      "label": "9.120 万m³"
+    },
+    {
+      "value": 87.968,
+      "color": "#6baed6",
+      "label": "87.968 万m³"
+    },
+    {
+      "value": 209.31199999999998,
+      "color": "#3182bd",
+      "label": "209.312 万m³"
+    },
+    {
+      "value": 215.8,
+      "color": "#08519c",
+      "label": "215.800 万m³"
+    },
+    {
+      "value": 492.2400000000002,
+      "color": "#042d60",
+      "label": "492.240 万m³"
+    }
+  ]
+}

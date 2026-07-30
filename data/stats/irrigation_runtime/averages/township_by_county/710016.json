@@ -1,0 +1,183 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "710400010000",
+      "name": "中區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400020000",
+      "name": "東區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400030000",
+      "name": "南區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400040000",
+      "name": "西區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400050000",
+      "name": "北區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400060000",
+      "name": "西屯區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400070000",
+      "name": "南屯區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400080000",
+      "name": "北屯區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400090000",
+      "name": "豐原區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400100000",
+      "name": "東勢區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400110000",
+      "name": "大甲區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400120000",
+      "name": "清水區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400130000",
+      "name": "沙鹿區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400140000",
+      "name": "梧棲區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400150000",
+      "name": "后里區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400160000",
+      "name": "神岡區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400170000",
+      "name": "潭子區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400180000",
+      "name": "大雅區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400190000",
+      "name": "新社區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400200000",
+      "name": "石岡區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400210000",
+      "name": "外埔區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400220000",
+      "name": "大安區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400230000",
+      "name": "烏日區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400240000",
+      "name": "大肚區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400250000",
+      "name": "龍井區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400260000",
+      "name": "霧峰區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400270000",
+      "name": "太平區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400280000",
+      "name": "大里區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710400290000",
+      "name": "和平區",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

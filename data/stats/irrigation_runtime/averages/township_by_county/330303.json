@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "330303001000",
+      "name": "永中街道",
+      "average": 7878.1
+    },
+    {
+      "regionId": "330303002000",
+      "name": "蒲州街道",
+      "average": 984.5
+    },
+    {
+      "regionId": "330303003000",
+      "name": "海滨街道",
+      "average": 7284.6
+    },
+    {
+      "regionId": "330303004000",
+      "name": "永兴街道",
+      "average": 7363.8
+    },
+    {
+      "regionId": "330303005000",
+      "name": "海城街道",
+      "average": 2479.5
+    },
+    {
+      "regionId": "330303006000",
+      "name": "状元街道",
+      "average": 1281.8
+    },
+    {
+      "regionId": "330303007000",
+      "name": "瑶溪街道",
+      "average": 7900.4
+    },
+    {
+      "regionId": "330303008000",
+      "name": "沙城街道",
+      "average": 2486.8
+    },
+    {
+      "regionId": "330303009000",
+      "name": "天河街道",
+      "average": 4151.4
+    },
+    {
+      "regionId": "330303011000",
+      "name": "星海街道",
+      "average": 2525.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 1038.014,
+      "color": "#eff3ff",
+      "label": "1038.014 万m³"
+    },
+    {
+      "value": 2369.3116,
+      "color": "#bdd7e7",
+      "label": "2369.312 万m³"
+    },
+    {
+      "value": 2511.286,
+      "color": "#6baed6",
+      "label": "2511.286 万m³"
+    },
+    {
+      "value": 5291.8848,
+      "color": "#3182bd",
+      "label": "5291.885 万m³"
+    },
+    {
+      "value": 7411.1156,
+      "color": "#08519c",
+      "label": "7411.116 万m³"
+    },
+    {
+      "value": 7896.3859999999995,
+      "color": "#042d60",
+      "label": "7896.386 万m³"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513338100000",
+      "name": "松麦镇",
+      "average": 153.6
+    },
+    {
+      "regionId": "513338101000",
+      "name": "瓦卡镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513338200000",
+      "name": "斯闸乡",
+      "average": 53.7
+    },
+    {
+      "regionId": "513338201000",
+      "name": "徐龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513338202000",
+      "name": "日龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513338203000",
+      "name": "曲雅贡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513338204000",
+      "name": "奔都乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513338205000",
+      "name": "八日乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513338206000",
+      "name": "古学乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513338208000",
+      "name": "贡波乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513338209000",
+      "name": "白松乡",
+      "average": 303.9
+    },
+    {
+      "regionId": "513338210000",
+      "name": "茨巫乡",
+      "average": 417.3
+    },
+    {
+      "regionId": "533401008000",
+      "name": "尼西乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "533401010000",
+      "name": "东旺乡",
+      "average": 86.3
+    },
+    {
+      "regionId": "533422002000",
+      "name": "奔子栏镇",
+      "average": 152.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

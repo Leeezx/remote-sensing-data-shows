@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "310116001000",
+      "name": "石化街道",
+      "average": 116.5
+    },
+    {
+      "regionId": "310116101000",
+      "name": "朱泾镇",
+      "average": 50207.6
+    },
+    {
+      "regionId": "310116102000",
+      "name": "枫泾镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "310116103000",
+      "name": "张堰镇",
+      "average": 24082.5
+    },
+    {
+      "regionId": "310116104000",
+      "name": "亭林镇",
+      "average": 62076.6
+    },
+    {
+      "regionId": "310116105000",
+      "name": "吕巷镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "310116107000",
+      "name": "廊下镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "310116109000",
+      "name": "金山卫镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "310116112000",
+      "name": "漕泾镇",
+      "average": 19563.4
+    },
+    {
+      "regionId": "310116113000",
+      "name": "山阳镇",
+      "average": 16056.1
+    },
+    {
+      "regionId": "310116503000",
+      "name": "金山工业区",
+      "average": 26311.9
+    },
+    {
+      "regionId": "330421001000",
+      "name": "魏塘街道",
+      "average": 30359.0
+    },
+    {
+      "regionId": "330421003000",
+      "name": "惠民街道",
+      "average": 47109.6
+    },
+    {
+      "regionId": "330482102000",
+      "name": "新埭镇",
+      "average": 55307.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

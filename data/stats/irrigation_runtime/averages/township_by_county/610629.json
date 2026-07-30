@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610629100000",
+      "name": "凤栖镇",
+      "average": 8623.0
+    },
+    {
+      "regionId": "610629101000",
+      "name": "旧县镇",
+      "average": 6354.5
+    },
+    {
+      "regionId": "610629102000",
+      "name": "交口河镇",
+      "average": 6631.9
+    },
+    {
+      "regionId": "610629103000",
+      "name": "老庙镇",
+      "average": 2577.7
+    },
+    {
+      "regionId": "610629104000",
+      "name": "土基镇",
+      "average": 8455.4
+    },
+    {
+      "regionId": "610629105000",
+      "name": "石头镇",
+      "average": 12775.5
+    },
+    {
+      "regionId": "610629106000",
+      "name": "槐柏镇",
+      "average": 13080.0
+    },
+    {
+      "regionId": "610629200000",
+      "name": "菩堤乡",
+      "average": 4105.0
+    },
+    {
+      "regionId": "610629201000",
+      "name": "黄章乡",
+      "average": 2990.6
+    },
+    {
+      "regionId": "610629202000",
+      "name": "永乡",
+      "average": 8478.2
+    },
+    {
+      "regionId": "610629204000",
+      "name": "杨舒乡",
+      "average": 5624.5
+    },
+    {
+      "regionId": "610629208000",
+      "name": "朱牛乡",
+      "average": 2700.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 2604.672,
+      "color": "#eff3ff",
+      "label": "2604.672 万m³"
+    },
+    {
+      "value": 3360.5807999999997,
+      "color": "#bdd7e7",
+      "label": "3360.581 万m³"
+    },
+    {
+      "value": 5948.62,
+      "color": "#6baed6",
+      "label": "5948.620 万m³"
+    },
+    {
+      "value": 7645.766,
+      "color": "#3182bd",
+      "label": "7645.766 万m³"
+    },
+    {
+      "value": 8574.9264,
+      "color": "#08519c",
+      "label": "8574.926 万m³"
+    },
+    {
+      "value": 13013.01,
+      "color": "#042d60",
+      "label": "13013.010 万m³"
+    }
+  ]
+}

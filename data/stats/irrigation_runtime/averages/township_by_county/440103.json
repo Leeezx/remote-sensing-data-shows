@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "440103001000",
+      "name": "沙面街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440103002000",
+      "name": "岭南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440103003000",
+      "name": "华林街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440103004000",
+      "name": "多宝街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440103005000",
+      "name": "昌华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440103006000",
+      "name": "逢源街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440103007000",
+      "name": "龙津街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440103008000",
+      "name": "金花街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440103009000",
+      "name": "彩虹街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440103010000",
+      "name": "南源街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440103011000",
+      "name": "西村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440103012000",
+      "name": "站前街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440103013000",
+      "name": "桥中街道",
+      "average": 336.7
+    },
+    {
+      "regionId": "440103014000",
+      "name": "白鹤洞街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440103015000",
+      "name": "冲口街道",
+      "average": 827.2
+    },
+    {
+      "regionId": "440103016000",
+      "name": "花地街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440103017000",
+      "name": "石围塘街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440103018000",
+      "name": "茶滘街道",
+      "average": 1978.5
+    },
+    {
+      "regionId": "440103019000",
+      "name": "东漖街道",
+      "average": 490.5
+    },
+    {
+      "regionId": "440103020000",
+      "name": "海龙街道",
+      "average": 872.7
+    },
+    {
+      "regionId": "440103021000",
+      "name": "东沙街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440103022000",
+      "name": "中南街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

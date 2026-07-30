@@ -1,0 +1,218 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "621202100000",
+      "name": "城关镇",
+      "average": 1549.1
+    },
+    {
+      "regionId": "621202101000",
+      "name": "安化镇",
+      "average": 1046.3
+    },
+    {
+      "regionId": "621202102000",
+      "name": "东江镇",
+      "average": 52.6
+    },
+    {
+      "regionId": "621202103000",
+      "name": "两水镇",
+      "average": 4356.8
+    },
+    {
+      "regionId": "621202104000",
+      "name": "汉王镇",
+      "average": 3144.0
+    },
+    {
+      "regionId": "621202105000",
+      "name": "洛塘镇",
+      "average": 5538.4
+    },
+    {
+      "regionId": "621202106000",
+      "name": "角弓镇",
+      "average": 5694.0
+    },
+    {
+      "regionId": "621202107000",
+      "name": "马街镇",
+      "average": 1332.1
+    },
+    {
+      "regionId": "621202108000",
+      "name": "三河镇",
+      "average": 826.3
+    },
+    {
+      "regionId": "621202109000",
+      "name": "甘泉镇",
+      "average": 832.7
+    },
+    {
+      "regionId": "621202110000",
+      "name": "鱼龙镇",
+      "average": 571.9
+    },
+    {
+      "regionId": "621202111000",
+      "name": "琵琶镇",
+      "average": 1194.2
+    },
+    {
+      "regionId": "621202200000",
+      "name": "城郊乡",
+      "average": 2650.8
+    },
+    {
+      "regionId": "621202201000",
+      "name": "坪垭藏族乡",
+      "average": 1608.3
+    },
+    {
+      "regionId": "621202203000",
+      "name": "蒲池乡",
+      "average": 803.2
+    },
+    {
+      "regionId": "621202204000",
+      "name": "石门乡",
+      "average": 2359.7
+    },
+    {
+      "regionId": "621202207000",
+      "name": "汉林乡",
+      "average": 85.2
+    },
+    {
+      "regionId": "621202208000",
+      "name": "柏林乡",
+      "average": 839.0
+    },
+    {
+      "regionId": "621202210000",
+      "name": "马营乡",
+      "average": 734.7
+    },
+    {
+      "regionId": "621202211000",
+      "name": "池坝乡",
+      "average": 517.6
+    },
+    {
+      "regionId": "621202213000",
+      "name": "佛崖乡",
+      "average": 2062.6
+    },
+    {
+      "regionId": "621202215000",
+      "name": "黄坪乡",
+      "average": 892.0
+    },
+    {
+      "regionId": "621202217000",
+      "name": "隆兴乡",
+      "average": 207.1
+    },
+    {
+      "regionId": "621202218000",
+      "name": "龙坝乡",
+      "average": 498.1
+    },
+    {
+      "regionId": "621202219000",
+      "name": "龙凤乡",
+      "average": 499.5
+    },
+    {
+      "regionId": "621202220000",
+      "name": "桔柑乡",
+      "average": 1133.7
+    },
+    {
+      "regionId": "621202221000",
+      "name": "磨坝藏族乡",
+      "average": 1256.0
+    },
+    {
+      "regionId": "621202223000",
+      "name": "外纳乡",
+      "average": 1164.1
+    },
+    {
+      "regionId": "621202225000",
+      "name": "玉皇乡",
+      "average": 1068.1
+    },
+    {
+      "regionId": "621202226000",
+      "name": "郭河乡",
+      "average": 438.3
+    },
+    {
+      "regionId": "621202229000",
+      "name": "枫相乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621202230000",
+      "name": "三仓乡",
+      "average": 1344.8
+    },
+    {
+      "regionId": "621202231000",
+      "name": "五库乡",
+      "average": 863.4
+    },
+    {
+      "regionId": "621202233000",
+      "name": "月照乡",
+      "average": 232.8
+    },
+    {
+      "regionId": "621202235000",
+      "name": "五马乡",
+      "average": 1546.0
+    },
+    {
+      "regionId": "621202237000",
+      "name": "裕河乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 498.688,
+      "color": "#bdd7e7",
+      "label": "498.688 万m³"
+    },
+    {
+      "value": 833.582,
+      "color": "#6baed6",
+      "label": "833.582 万m³"
+    },
+    {
+      "value": 1159.8439999999998,
+      "color": "#3182bd",
+      "label": "1159.844 万m³"
+    },
+    {
+      "value": 1583.436,
+      "color": "#08519c",
+      "label": "1583.436 万m³"
+    },
+    {
+      "value": 5585.079999999999,
+      "color": "#042d60",
+      "label": "5585.080 万m³"
+    }
+  ]
+}

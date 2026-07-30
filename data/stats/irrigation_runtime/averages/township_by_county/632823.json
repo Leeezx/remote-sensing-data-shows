@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620721205000",
+      "name": "祁丰蔵族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620923202000",
+      "name": "石包城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632823100000",
+      "name": "新源镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632823101000",
+      "name": "木里镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632823102000",
+      "name": "江河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632823200000",
+      "name": "快尔玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632823201000",
+      "name": "舟群乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632823202000",
+      "name": "织合玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632823203000",
+      "name": "苏里乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632823204000",
+      "name": "生格乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632823205000",
+      "name": "阳康乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632823206000",
+      "name": "龙门乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

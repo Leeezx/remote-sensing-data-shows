@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "469028100000",
+      "name": "椰林镇",
+      "average": 9887.0
+    },
+    {
+      "regionId": "469028101000",
+      "name": "光坡镇",
+      "average": 19637.6
+    },
+    {
+      "regionId": "469028102000",
+      "name": "三才镇",
+      "average": 8871.4
+    },
+    {
+      "regionId": "469028103000",
+      "name": "英州镇",
+      "average": 24379.6
+    },
+    {
+      "regionId": "469028104000",
+      "name": "隆广镇",
+      "average": 16180.2
+    },
+    {
+      "regionId": "469028105000",
+      "name": "文罗镇",
+      "average": 8765.2
+    },
+    {
+      "regionId": "469028106000",
+      "name": "本号镇",
+      "average": 12334.1
+    },
+    {
+      "regionId": "469028107000",
+      "name": "新村镇",
+      "average": 9898.6
+    },
+    {
+      "regionId": "469028108000",
+      "name": "黎安镇",
+      "average": 44.1
+    },
+    {
+      "regionId": "469028200000",
+      "name": "提蒙乡",
+      "average": 13189.0
+    },
+    {
+      "regionId": "469028201000",
+      "name": "群英乡",
+      "average": 701.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 175.52,
+      "color": "#eff3ff",
+      "label": "175.520 万m³"
+    },
+    {
+      "value": 8777.944000000001,
+      "color": "#bdd7e7",
+      "label": "8777.944 万m³"
+    },
+    {
+      "value": 9887.464,
+      "color": "#6baed6",
+      "label": "9887.464 万m³"
+    },
+    {
+      "value": 12236.68,
+      "color": "#3182bd",
+      "label": "12236.680 万m³"
+    },
+    {
+      "value": 15821.255999999998,
+      "color": "#08519c",
+      "label": "15821.256 万m³"
+    },
+    {
+      "value": 23431.2,
+      "color": "#042d60",
+      "label": "23431.200 万m³"
+    }
+  ]
+}

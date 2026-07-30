@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210602001000",
+      "name": "六道口街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210602002000",
+      "name": "七道街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210602003000",
+      "name": "八道街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210602004000",
+      "name": "九道街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210602005000",
+      "name": "广济街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210602006000",
+      "name": "兴东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210602101000",
+      "name": "金山镇",
+      "average": 46.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

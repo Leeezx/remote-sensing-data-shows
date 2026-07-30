@@ -1,0 +1,208 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513428100000",
+      "name": "普基镇",
+      "average": 5250.7
+    },
+    {
+      "regionId": "513428101000",
+      "name": "荞窝镇",
+      "average": 5082.9
+    },
+    {
+      "regionId": "513428102000",
+      "name": "螺髻山镇",
+      "average": 3021.5
+    },
+    {
+      "regionId": "513428200000",
+      "name": "永安乡",
+      "average": 1828.9
+    },
+    {
+      "regionId": "513428201000",
+      "name": "向阳乡",
+      "average": 406.5
+    },
+    {
+      "regionId": "513428202000",
+      "name": "文坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513428203000",
+      "name": "黎安乡",
+      "average": 1073.8
+    },
+    {
+      "regionId": "513428204000",
+      "name": "花山乡",
+      "average": 2925.6
+    },
+    {
+      "regionId": "513428205000",
+      "name": "东山乡",
+      "average": 715.5
+    },
+    {
+      "regionId": "513428206000",
+      "name": "大坪乡",
+      "average": 1201.5
+    },
+    {
+      "regionId": "513428207000",
+      "name": "辉隆乡",
+      "average": 245.6
+    },
+    {
+      "regionId": "513428208000",
+      "name": "洛乌沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513428209000",
+      "name": "雨水乡",
+      "average": 938.2
+    },
+    {
+      "regionId": "513428210000",
+      "name": "甘天地乡",
+      "average": 63.0
+    },
+    {
+      "regionId": "513428211000",
+      "name": "洛乌乡",
+      "average": 601.4
+    },
+    {
+      "regionId": "513428212000",
+      "name": "孟甘乡",
+      "average": 2502.1
+    },
+    {
+      "regionId": "513428213000",
+      "name": "特兹乡",
+      "average": 2057.2
+    },
+    {
+      "regionId": "513428214000",
+      "name": "吉乐乡",
+      "average": 1892.4
+    },
+    {
+      "regionId": "513428215000",
+      "name": "特口乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513428216000",
+      "name": "耶底乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513428217000",
+      "name": "夹铁乡",
+      "average": 1606.1
+    },
+    {
+      "regionId": "513428218000",
+      "name": "瓦洛乡",
+      "average": 73.2
+    },
+    {
+      "regionId": "513428219000",
+      "name": "哈力洛乡",
+      "average": 198.1
+    },
+    {
+      "regionId": "513428220000",
+      "name": "菜子乡",
+      "average": 845.4
+    },
+    {
+      "regionId": "513428221000",
+      "name": "祝联乡",
+      "average": 464.3
+    },
+    {
+      "regionId": "513428222000",
+      "name": "刘家坪乡",
+      "average": 191.3
+    },
+    {
+      "regionId": "513428223000",
+      "name": "月吾乡",
+      "average": 501.0
+    },
+    {
+      "regionId": "513428224000",
+      "name": "特补乡",
+      "average": 1269.4
+    },
+    {
+      "regionId": "513428225000",
+      "name": "五道箐乡",
+      "average": 283.3
+    },
+    {
+      "regionId": "513428226000",
+      "name": "特尔果乡",
+      "average": 249.8
+    },
+    {
+      "regionId": "513428227000",
+      "name": "大槽乡",
+      "average": 442.0
+    },
+    {
+      "regionId": "513428228000",
+      "name": "马洪乡",
+      "average": 147.0
+    },
+    {
+      "regionId": "513428229000",
+      "name": "洛甘乡",
+      "average": 6.7
+    },
+    {
+      "regionId": "513428230000",
+      "name": "红莫依达乡",
+      "average": 25.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 73.1592,
+      "color": "#bdd7e7",
+      "label": "73.159 万m³"
+    },
+    {
+      "value": 324.2023999999999,
+      "color": "#6baed6",
+      "label": "324.202 万m³"
+    },
+    {
+      "value": 802.2731999999999,
+      "color": "#3182bd",
+      "label": "802.273 万m³"
+    },
+    {
+      "value": 1829.154,
+      "color": "#08519c",
+      "label": "1829.154 万m³"
+    },
+    {
+      "value": 5139.951999999999,
+      "color": "#042d60",
+      "label": "5139.952 万m³"
+    }
+  ]
+}

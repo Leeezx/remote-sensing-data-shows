@@ -1,0 +1,183 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620826001000",
+      "name": "城区街道",
+      "average": 5.8
+    },
+    {
+      "regionId": "620826100000",
+      "name": "城关镇",
+      "average": 670.6
+    },
+    {
+      "regionId": "620826101000",
+      "name": "威戎镇",
+      "average": 4497.6
+    },
+    {
+      "regionId": "620826102000",
+      "name": "界石铺镇",
+      "average": 1609.8
+    },
+    {
+      "regionId": "620826103000",
+      "name": "八里镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620826104000",
+      "name": "李店镇",
+      "average": 2780.7
+    },
+    {
+      "regionId": "620826200000",
+      "name": "城川乡",
+      "average": 3624.5
+    },
+    {
+      "regionId": "620826201000",
+      "name": "司桥乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620826202000",
+      "name": "曹务乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620826203000",
+      "name": "古城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620826204000",
+      "name": "双岘乡",
+      "average": 2155.9
+    },
+    {
+      "regionId": "620826205000",
+      "name": "雷大乡",
+      "average": 1832.7
+    },
+    {
+      "regionId": "620826206000",
+      "name": "余湾乡",
+      "average": 1213.5
+    },
+    {
+      "regionId": "620826207000",
+      "name": "仁大乡",
+      "average": 3054.3
+    },
+    {
+      "regionId": "620826208000",
+      "name": "贾河乡",
+      "average": 2291.7
+    },
+    {
+      "regionId": "620826209000",
+      "name": "深沟乡",
+      "average": 1595.4
+    },
+    {
+      "regionId": "620826210000",
+      "name": "治平乡",
+      "average": 2838.6
+    },
+    {
+      "regionId": "620826211000",
+      "name": "新店乡",
+      "average": 741.3
+    },
+    {
+      "regionId": "620826212000",
+      "name": "甘沟乡",
+      "average": 3948.9
+    },
+    {
+      "regionId": "620826213000",
+      "name": "四河乡",
+      "average": 573.2
+    },
+    {
+      "regionId": "620826214000",
+      "name": "红寺乡",
+      "average": 805.3
+    },
+    {
+      "regionId": "620826215000",
+      "name": "细巷乡",
+      "average": 1461.9
+    },
+    {
+      "regionId": "620826216000",
+      "name": "三合乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620826217000",
+      "name": "原安乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620826218000",
+      "name": "灵芝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640422101000",
+      "name": "兴隆镇",
+      "average": 5603.6
+    },
+    {
+      "regionId": "640422102000",
+      "name": "平峰乡",
+      "average": 874.1
+    },
+    {
+      "regionId": "640423102000",
+      "name": "联材镇",
+      "average": 976.9
+    },
+    {
+      "regionId": "640423206000",
+      "name": "凤岭乡",
+      "average": 2713.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

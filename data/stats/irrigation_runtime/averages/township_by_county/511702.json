@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511702001000",
+      "name": "东城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511702002000",
+      "name": "西城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511702003000",
+      "name": "朝阳街道",
+      "average": 1217.7
+    },
+    {
+      "regionId": "511702100000",
+      "name": "西外镇",
+      "average": 6430.9
+    },
+    {
+      "regionId": "511702101000",
+      "name": "北外镇",
+      "average": 1899.8
+    },
+    {
+      "regionId": "511702102000",
+      "name": "罗江镇",
+      "average": 2989.8
+    },
+    {
+      "regionId": "511702103000",
+      "name": "蒲家镇",
+      "average": 8706.1
+    },
+    {
+      "regionId": "511702104000",
+      "name": "复兴镇",
+      "average": 7509.0
+    },
+    {
+      "regionId": "511702105000",
+      "name": "双龙镇",
+      "average": 2762.0
+    },
+    {
+      "regionId": "511702106000",
+      "name": "魏兴镇",
+      "average": 960.6
+    },
+    {
+      "regionId": "511702107000",
+      "name": "江陵镇",
+      "average": 7635.3
+    },
+    {
+      "regionId": "511702108000",
+      "name": "碑庙镇",
+      "average": 14055.4
+    },
+    {
+      "regionId": "511702200000",
+      "name": "盘石乡",
+      "average": 4445.5
+    },
+    {
+      "regionId": "511702201000",
+      "name": "东岳乡",
+      "average": 1939.1
+    },
+    {
+      "regionId": "511702202000",
+      "name": "新村乡",
+      "average": 638.0
+    },
+    {
+      "regionId": "511702203000",
+      "name": "檬双乡",
+      "average": 814.2
+    },
+    {
+      "regionId": "511702204000",
+      "name": "龙滩乡",
+      "average": 717.0
+    },
+    {
+      "regionId": "511702205000",
+      "name": "梓桐乡",
+      "average": 2669.7
+    },
+    {
+      "regionId": "511702206000",
+      "name": "北山乡",
+      "average": 4029.4
+    },
+    {
+      "regionId": "511702207000",
+      "name": "金石乡",
+      "average": 3798.5
+    },
+    {
+      "regionId": "511702208000",
+      "name": "安云乡",
+      "average": 4240.8
+    },
+    {
+      "regionId": "511702209000",
+      "name": "青宁乡",
+      "average": 5242.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 880.3728,
+      "color": "#bdd7e7",
+      "label": "880.373 万m³"
+    },
+    {
+      "value": 2292.7104,
+      "color": "#6baed6",
+      "label": "2292.710 万m³"
+    },
+    {
+      "value": 3917.6444,
+      "color": "#3182bd",
+      "label": "3917.644 万m³"
+    },
+    {
+      "value": 5893.652799999998,
+      "color": "#08519c",
+      "label": "5893.653 万m³"
+    },
+    {
+      "value": 11808.69399999999,
+      "color": "#042d60",
+      "label": "11808.694 万m³"
+    }
+  ]
+}

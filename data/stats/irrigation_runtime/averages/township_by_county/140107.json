@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140107001000",
+      "name": "巨轮街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140107002000",
+      "name": "三桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140107003000",
+      "name": "鼓楼街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140107004000",
+      "name": "杏花岭街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140107005000",
+      "name": "坝陵桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140107006000",
+      "name": "大东关街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140107007000",
+      "name": "职工新街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140107008000",
+      "name": "敦化坊街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140107009000",
+      "name": "涧河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140107010000",
+      "name": "杨家峪街道",
+      "average": 67.8
+    },
+    {
+      "regionId": "140107200000",
+      "name": "中涧河乡",
+      "average": 309.5
+    },
+    {
+      "regionId": "140107201000",
+      "name": "小返乡",
+      "average": 571.8
+    },
+    {
+      "regionId": "140107401000",
+      "name": "民营区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

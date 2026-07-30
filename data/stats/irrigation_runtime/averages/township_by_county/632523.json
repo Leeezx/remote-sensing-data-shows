@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "632523100000",
+      "name": "河阴镇",
+      "average": 396.7
+    },
+    {
+      "regionId": "632523101000",
+      "name": "河西镇",
+      "average": 7890.8
+    },
+    {
+      "regionId": "632523102000",
+      "name": "拉西瓦镇",
+      "average": 1179.4
+    },
+    {
+      "regionId": "632523103000",
+      "name": "常牧镇",
+      "average": 903.1
+    },
+    {
+      "regionId": "632523200000",
+      "name": "河东乡",
+      "average": 703.6
+    },
+    {
+      "regionId": "632523201000",
+      "name": "新街回族乡",
+      "average": 964.4
+    },
+    {
+      "regionId": "632523202000",
+      "name": "尕让乡",
+      "average": 1040.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 433.528,
+      "color": "#eff3ff",
+      "label": "433.528 万m³"
+    },
+    {
+      "value": 757.864,
+      "color": "#bdd7e7",
+      "label": "757.864 万m³"
+    },
+    {
+      "value": 929.0912,
+      "color": "#6baed6",
+      "label": "929.091 万m³"
+    },
+    {
+      "value": 1008.3488,
+      "color": "#3182bd",
+      "label": "1008.349 万m³"
+    },
+    {
+      "value": 1141.6736,
+      "color": "#08519c",
+      "label": "1141.674 万m³"
+    },
+    {
+      "value": 7085.432,
+      "color": "#042d60",
+      "label": "7085.432 万m³"
+    }
+  ]
+}

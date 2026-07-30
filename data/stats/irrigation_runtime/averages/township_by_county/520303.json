@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "520302008000",
+      "name": "北京路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "520303001000",
+      "name": "上海路街道",
+      "average": 12.3
+    },
+    {
+      "regionId": "520303002000",
+      "name": "洗马路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "520303003000",
+      "name": "大连路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "520303100000",
+      "name": "高桥镇",
+      "average": 1491.0
+    },
+    {
+      "regionId": "520303101000",
+      "name": "董公寺镇",
+      "average": 1823.2
+    },
+    {
+      "regionId": "520303102000",
+      "name": "团泽镇",
+      "average": 12000.4
+    },
+    {
+      "regionId": "520303103000",
+      "name": "高坪镇",
+      "average": 6580.4
+    },
+    {
+      "regionId": "520303104000",
+      "name": "板桥镇",
+      "average": 3119.7
+    },
+    {
+      "regionId": "520303105000",
+      "name": "泗渡镇",
+      "average": 6559.2
+    },
+    {
+      "regionId": "520303106000",
+      "name": "沙湾镇",
+      "average": 1241.8
+    },
+    {
+      "regionId": "520303107000",
+      "name": "山盆镇",
+      "average": 4882.8
+    },
+    {
+      "regionId": "520303108000",
+      "name": "芝麻镇",
+      "average": 2296.5
+    },
+    {
+      "regionId": "520303109000",
+      "name": "松林镇",
+      "average": 2117.8
+    },
+    {
+      "regionId": "520303110000",
+      "name": "毛石镇",
+      "average": 1084.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 11.9064,
+      "color": "#bdd7e7",
+      "label": "11.906 万m³"
+    },
+    {
+      "value": 1405.2751999999998,
+      "color": "#6baed6",
+      "label": "1405.275 万m³"
+    },
+    {
+      "value": 2179.2728,
+      "color": "#3182bd",
+      "label": "2179.273 万m³"
+    },
+    {
+      "value": 4936.4447999999975,
+      "color": "#08519c",
+      "label": "4936.445 万m³"
+    },
+    {
+      "value": 10482.799999999994,
+      "color": "#042d60",
+      "label": "10482.800 万m³"
+    }
+  ]
+}

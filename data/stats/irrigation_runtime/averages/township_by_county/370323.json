@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "370323001000",
+      "name": "历山街道",
+      "average": 1201.2
+    },
+    {
+      "regionId": "370323100000",
+      "name": "南麻镇",
+      "average": 805.8
+    },
+    {
+      "regionId": "370323102000",
+      "name": "鲁村镇",
+      "average": 5483.4
+    },
+    {
+      "regionId": "370323103000",
+      "name": "东里镇",
+      "average": 3013.2
+    },
+    {
+      "regionId": "370323104000",
+      "name": "悦庄镇",
+      "average": 6952.9
+    },
+    {
+      "regionId": "370323105000",
+      "name": "西里镇",
+      "average": 6607.6
+    },
+    {
+      "regionId": "370323106000",
+      "name": "大张庄镇",
+      "average": 8848.7
+    },
+    {
+      "regionId": "370323107000",
+      "name": "中庄镇",
+      "average": 3826.3
+    },
+    {
+      "regionId": "370323108000",
+      "name": "张家坡镇",
+      "average": 2384.2
+    },
+    {
+      "regionId": "370323109000",
+      "name": "燕崖镇",
+      "average": 1079.8
+    },
+    {
+      "regionId": "370323110000",
+      "name": "石桥镇",
+      "average": 1685.3
+    },
+    {
+      "regionId": "370323111000",
+      "name": "南鲁山镇",
+      "average": 815.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 807.846,
+      "color": "#eff3ff",
+      "label": "807.846 万m³"
+    },
+    {
+      "value": 1120.1048,
+      "color": "#bdd7e7",
+      "label": "1120.105 万m³"
+    },
+    {
+      "value": 1995.6115999999997,
+      "color": "#6baed6",
+      "label": "1995.612 万m³"
+    },
+    {
+      "value": 3465.2836,
+      "color": "#3182bd",
+      "label": "3465.284 万m³"
+    },
+    {
+      "value": 6234.365599999999,
+      "color": "#08519c",
+      "label": "6234.366 万m³"
+    },
+    {
+      "value": 8431.624,
+      "color": "#042d60",
+      "label": "8431.624 万m³"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "220104001000",
+      "name": "前进街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220104002000",
+      "name": "桂林街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220104003000",
+      "name": "南湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220104004000",
+      "name": "永昌街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220104005000",
+      "name": "重庆街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220104006000",
+      "name": "清和街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220104007000",
+      "name": "红旗街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220104008000",
+      "name": "湖西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220104009000",
+      "name": "富锋街道",
+      "average": 46.5
+    },
+    {
+      "regionId": "220104070000",
+      "name": "硅谷街道办事处（长春高新技术产业开发区）",
+      "average": 0.0
+    },
+    {
+      "regionId": "220104100000",
+      "name": "乐山镇",
+      "average": 5025.8
+    },
+    {
+      "regionId": "220104101000",
+      "name": "永春镇",
+      "average": 262.5
+    },
+    {
+      "regionId": "220104270000",
+      "name": "双德乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "220106170000",
+      "name": "长春汽车产业开发区（省级）（特殊乡镇）",
+      "average": 1184.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

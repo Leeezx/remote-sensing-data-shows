@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "341024105000",
+      "name": "闪里镇",
+      "average": 124.3
+    },
+    {
+      "regionId": "341024204000",
+      "name": "祁红乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341024206000",
+      "name": "芦溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341721108000",
+      "name": "官港镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341721200000",
+      "name": "花园乡",
+      "average": 189.5
+    },
+    {
+      "regionId": "341721201000",
+      "name": "木塔乡",
+      "average": 95.5
+    },
+    {
+      "regionId": "360222100000",
+      "name": "浮梁镇",
+      "average": 22549.8
+    },
+    {
+      "regionId": "360222101000",
+      "name": "鹅湖镇",
+      "average": 98994.7
+    },
+    {
+      "regionId": "360222102000",
+      "name": "经公桥镇",
+      "average": 11982.8
+    },
+    {
+      "regionId": "360222103000",
+      "name": "蛟潭镇",
+      "average": 33989.6
+    },
+    {
+      "regionId": "360222104000",
+      "name": "湘湖镇",
+      "average": 47774.5
+    },
+    {
+      "regionId": "360222105000",
+      "name": "瑶里镇",
+      "average": 25537.9
+    },
+    {
+      "regionId": "360222106000",
+      "name": "洪源镇",
+      "average": 40403.5
+    },
+    {
+      "regionId": "360222107000",
+      "name": "寿安镇",
+      "average": 23081.3
+    },
+    {
+      "regionId": "360222108000",
+      "name": "三龙镇",
+      "average": 42672.3
+    },
+    {
+      "regionId": "360222200000",
+      "name": "王港乡",
+      "average": 15222.5
+    },
+    {
+      "regionId": "360222201000",
+      "name": "庄湾乡",
+      "average": 43491.2
+    },
+    {
+      "regionId": "360222203000",
+      "name": "黄坛乡",
+      "average": 20090.6
+    },
+    {
+      "regionId": "360222204000",
+      "name": "兴田乡",
+      "average": 5153.3
+    },
+    {
+      "regionId": "360222205000",
+      "name": "江村乡",
+      "average": 11978.3
+    },
+    {
+      "regionId": "360222206000",
+      "name": "峙滩乡",
+      "average": 15165.5
+    },
+    {
+      "regionId": "360222207000",
+      "name": "勒功乡",
+      "average": 3492.1
+    },
+    {
+      "regionId": "360222208000",
+      "name": "西湖乡",
+      "average": 8843.3
+    },
+    {
+      "regionId": "360222209000",
+      "name": "罗家桥乡",
+      "average": 12443.3
+    },
+    {
+      "regionId": "360222400000",
+      "name": "浮梁工业园区",
+      "average": 276.8
+    },
+    {
+      "regionId": "360222500000",
+      "name": "罗家垦殖场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 143.85999999999999,
+      "color": "#bdd7e7",
+      "label": "143.860 万m³"
+    },
+    {
+      "value": 9156.799999999997,
+      "color": "#6baed6",
+      "label": "9156.800 万m³"
+    },
+    {
+      "value": 15216.8,
+      "color": "#3182bd",
+      "label": "15216.800 万m³"
+    },
+    {
+      "value": 31454.089999999993,
+      "color": "#08519c",
+      "label": "31454.090 万m³"
+    },
+    {
+      "value": 73384.6,
+      "color": "#042d60",
+      "label": "73384.600 万m³"
+    }
+  ]
+}

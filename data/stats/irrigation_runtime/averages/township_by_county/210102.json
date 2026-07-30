@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210102001000",
+      "name": "浑河湾街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210102002000",
+      "name": "新华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210102007000",
+      "name": "西塔街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210102013000",
+      "name": "八经街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210102016000",
+      "name": "马路湾街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210102017000",
+      "name": "集贤街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210102019000",
+      "name": "南湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210102021000",
+      "name": "长白街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210102022000",
+      "name": "太原街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210102023000",
+      "name": "北市场街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210102025000",
+      "name": "南市场街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210102027000",
+      "name": "沈水湾街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210102028000",
+      "name": "浑河站西街道",
+      "average": 89.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

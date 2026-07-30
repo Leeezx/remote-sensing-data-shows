@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350430100000",
+      "name": "濉溪镇",
+      "average": 35639.7
+    },
+    {
+      "regionId": "350430101000",
+      "name": "里心镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350430102000",
+      "name": "溪口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350430103000",
+      "name": "均口镇",
+      "average": 23553.9
+    },
+    {
+      "regionId": "350430201000",
+      "name": "伊家乡",
+      "average": 10187.3
+    },
+    {
+      "regionId": "350430202000",
+      "name": "黄坊乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350430203000",
+      "name": "溪源乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350430204000",
+      "name": "客坊乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350430205000",
+      "name": "黄埠乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350430400000",
+      "name": "福建建宁经济开发区",
+      "average": 709.1
+    },
+    {
+      "regionId": "361022009000",
+      "name": "樟溪乡",
+      "average": 13452.0
+    },
+    {
+      "regionId": "361022014000",
+      "name": "德胜镇",
+      "average": 15300.0
+    },
+    {
+      "regionId": "361022017000",
+      "name": "西城乡",
+      "average": 14018.6
+    },
+    {
+      "regionId": "361023006000",
+      "name": "傅坊乡",
+      "average": 37132.4
+    },
+    {
+      "regionId": "361023011000",
+      "name": "太和镇",
+      "average": 54941.0
+    },
+    {
+      "regionId": "361030004000",
+      "name": "水南圩乡",
+      "average": 4357.6
+    },
+    {
+      "regionId": "361030005000",
+      "name": "尖峰乡",
+      "average": 14608.9
+    },
+    {
+      "regionId": "361030012000",
+      "name": "塘坊乡",
+      "average": 13263.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

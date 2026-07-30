@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "331126003000",
+      "name": "屏都街道",
+      "average": 16511.8
+    },
+    {
+      "regionId": "331126101000",
+      "name": "黄田镇",
+      "average": 13661.9
+    },
+    {
+      "regionId": "350724001000",
+      "name": "松源街道",
+      "average": 23847.7
+    },
+    {
+      "regionId": "350724101000",
+      "name": "郑墩镇",
+      "average": 67182.7
+    },
+    {
+      "regionId": "350724102000",
+      "name": "渭田镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350724200000",
+      "name": "河东乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350724201000",
+      "name": "茶平乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350724202000",
+      "name": "旧县乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350724203000",
+      "name": "溪东乡",
+      "average": 23183.3
+    },
+    {
+      "regionId": "350724204000",
+      "name": "花桥乡",
+      "average": 27522.3
+    },
+    {
+      "regionId": "350724205000",
+      "name": "祖墩乡",
+      "average": 25937.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

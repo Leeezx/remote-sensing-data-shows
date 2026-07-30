@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "340303001000",
+      "name": "天桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340303002000",
+      "name": "青年街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340303003000",
+      "name": "纬二路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340303004000",
+      "name": "黄庄街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340303005000",
+      "name": "宏业村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340303006000",
+      "name": "胜利街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340303007000",
+      "name": "龙湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340303009000",
+      "name": "淮河社区行政事务管理中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "340303200000",
+      "name": "燕山乡",
+      "average": 28011.4
+    },
+    {
+      "regionId": "340303201000",
+      "name": "雪华乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

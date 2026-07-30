@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "650203001000",
+      "name": "天山路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650203002000",
+      "name": "胜利路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650203003000",
+      "name": "昆仑路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650203004000",
+      "name": "银河路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650203005000",
+      "name": "金龙镇街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650203006000",
+      "name": "五五新镇街道",
+      "average": 2341.0
+    },
+    {
+      "regionId": "650203200000",
+      "name": "小拐乡",
+      "average": 97701.9
+    },
+    {
+      "regionId": "650203400000",
+      "name": "农业开发区",
+      "average": 85212.7
+    },
+    {
+      "regionId": "650203530000",
+      "name": "兵团一三六团",
+      "average": 81205.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

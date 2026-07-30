@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "222402001000",
+      "name": "向上街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "222402002000",
+      "name": "新华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "222402003000",
+      "name": "月宫街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "222402100000",
+      "name": "月晴镇",
+      "average": 2535.9
+    },
+    {
+      "regionId": "222402101000",
+      "name": "石岘镇",
+      "average": 1483.9
+    },
+    {
+      "regionId": "222402102000",
+      "name": "长安镇",
+      "average": 2316.1
+    },
+    {
+      "regionId": "222402103000",
+      "name": "凉水镇",
+      "average": 2001.8
+    },
+    {
+      "regionId": "222404400000",
+      "name": "珲春林业局",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

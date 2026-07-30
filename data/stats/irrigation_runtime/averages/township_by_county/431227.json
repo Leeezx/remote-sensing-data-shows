@@ -1,0 +1,198 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "431227100000",
+      "name": "新晃镇",
+      "average": 905.4
+    },
+    {
+      "regionId": "431227101000",
+      "name": "波洲镇",
+      "average": 5939.1
+    },
+    {
+      "regionId": "431227102000",
+      "name": "兴隆镇",
+      "average": 7372.0
+    },
+    {
+      "regionId": "431227103000",
+      "name": "鱼市镇",
+      "average": 6663.0
+    },
+    {
+      "regionId": "431227104000",
+      "name": "凉伞镇",
+      "average": 6685.6
+    },
+    {
+      "regionId": "431227105000",
+      "name": "扶罗镇",
+      "average": 8881.0
+    },
+    {
+      "regionId": "431227106000",
+      "name": "中寨镇",
+      "average": 5250.0
+    },
+    {
+      "regionId": "431227200000",
+      "name": "步头降苗族乡",
+      "average": 7551.0
+    },
+    {
+      "regionId": "431227201000",
+      "name": "洞坪乡",
+      "average": 5147.3
+    },
+    {
+      "regionId": "431227202000",
+      "name": "大湾罗乡",
+      "average": 5019.4
+    },
+    {
+      "regionId": "431227203000",
+      "name": "方家屯乡",
+      "average": 9963.0
+    },
+    {
+      "regionId": "431227204000",
+      "name": "晏家乡",
+      "average": 6131.0
+    },
+    {
+      "regionId": "431227205000",
+      "name": "林冲乡",
+      "average": 1569.2
+    },
+    {
+      "regionId": "431227206000",
+      "name": "天堂乡",
+      "average": 2959.1
+    },
+    {
+      "regionId": "431227207000",
+      "name": "黄雷乡",
+      "average": 3772.6
+    },
+    {
+      "regionId": "431227208000",
+      "name": "凳寨乡",
+      "average": 4012.9
+    },
+    {
+      "regionId": "431227209000",
+      "name": "茶坪乡",
+      "average": 1257.1
+    },
+    {
+      "regionId": "431227210000",
+      "name": "新寨乡",
+      "average": 8108.4
+    },
+    {
+      "regionId": "431227211000",
+      "name": "贡溪乡",
+      "average": 12786.7
+    },
+    {
+      "regionId": "431227212000",
+      "name": "李树乡",
+      "average": 7528.5
+    },
+    {
+      "regionId": "431227213000",
+      "name": "禾滩乡",
+      "average": 4343.9
+    },
+    {
+      "regionId": "431227214000",
+      "name": "碧朗乡",
+      "average": 4624.7
+    },
+    {
+      "regionId": "431227215000",
+      "name": "米贝苗族乡",
+      "average": 5175.6
+    },
+    {
+      "regionId": "520622100000",
+      "name": "平溪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520622103000",
+      "name": "田坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520622200000",
+      "name": "新店乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "522624104000",
+      "name": "雪洞镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522625102000",
+      "name": "青溪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522625103000",
+      "name": "羊坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522627101000",
+      "name": "邦洞镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522627102000",
+      "name": "坪地镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522627103000",
+      "name": "兰田镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

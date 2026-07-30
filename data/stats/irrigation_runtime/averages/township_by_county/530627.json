@@ -1,0 +1,218 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "520502110000",
+      "name": "水箐镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520502111000",
+      "name": "何官屯镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520502112000",
+      "name": "对坡镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520502113000",
+      "name": "大银镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520502114000",
+      "name": "林口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520527211000",
+      "name": "河镇乡",
+      "average": 41.1
+    },
+    {
+      "regionId": "520527215000",
+      "name": "结构乡",
+      "average": 1.4
+    },
+    {
+      "regionId": "520527216000",
+      "name": "古基乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "530627101000",
+      "name": "乌峰镇",
+      "average": 3090.0
+    },
+    {
+      "regionId": "530627102000",
+      "name": "泼机镇",
+      "average": 8541.9
+    },
+    {
+      "regionId": "530627103000",
+      "name": "黑树镇",
+      "average": 3997.8
+    },
+    {
+      "regionId": "530627104000",
+      "name": "母享镇",
+      "average": 2068.0
+    },
+    {
+      "regionId": "530627105000",
+      "name": "大湾镇",
+      "average": 5045.1
+    },
+    {
+      "regionId": "530627106000",
+      "name": "以勒镇",
+      "average": 5150.9
+    },
+    {
+      "regionId": "530627107000",
+      "name": "赤水源镇",
+      "average": 4569.4
+    },
+    {
+      "regionId": "530627108000",
+      "name": "芒部镇",
+      "average": 5739.4
+    },
+    {
+      "regionId": "530627109000",
+      "name": "雨河镇",
+      "average": 8950.7
+    },
+    {
+      "regionId": "530627110000",
+      "name": "罗坎镇",
+      "average": 10567.2
+    },
+    {
+      "regionId": "530627111000",
+      "name": "牛场镇",
+      "average": 3202.7
+    },
+    {
+      "regionId": "530627112000",
+      "name": "五德镇",
+      "average": 4261.0
+    },
+    {
+      "regionId": "530627113000",
+      "name": "坡头镇",
+      "average": 7616.1
+    },
+    {
+      "regionId": "530627114000",
+      "name": "以古镇",
+      "average": 1238.4
+    },
+    {
+      "regionId": "530627115000",
+      "name": "场坝镇",
+      "average": 2913.6
+    },
+    {
+      "regionId": "530627116000",
+      "name": "塘房镇",
+      "average": 3782.4
+    },
+    {
+      "regionId": "530627117000",
+      "name": "中屯镇",
+      "average": 2268.6
+    },
+    {
+      "regionId": "530627118000",
+      "name": "木卓镇",
+      "average": 6652.8
+    },
+    {
+      "regionId": "530627119000",
+      "name": "盐源镇",
+      "average": 4658.7
+    },
+    {
+      "regionId": "530627120000",
+      "name": "碗厂镇",
+      "average": 3857.7
+    },
+    {
+      "regionId": "530627121000",
+      "name": "坪上镇",
+      "average": 3282.9
+    },
+    {
+      "regionId": "530627202000",
+      "name": "鱼洞乡",
+      "average": 423.9
+    },
+    {
+      "regionId": "530627203000",
+      "name": "花朗乡",
+      "average": 2061.9
+    },
+    {
+      "regionId": "530627204000",
+      "name": "尖山乡",
+      "average": 4083.6
+    },
+    {
+      "regionId": "530627208000",
+      "name": "杉树乡",
+      "average": 4892.4
+    },
+    {
+      "regionId": "530627209000",
+      "name": "花山乡",
+      "average": 1088.0
+    },
+    {
+      "regionId": "530627211000",
+      "name": "果珠彝族乡",
+      "average": 1783.3
+    },
+    {
+      "regionId": "530627212000",
+      "name": "林口彝族苗族乡",
+      "average": 2336.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 201.87599999999995,
+      "color": "#bdd7e7",
+      "label": "201.876 万m³"
+    },
+    {
+      "value": 2278.0499999999997,
+      "color": "#6baed6",
+      "label": "2278.050 万m³"
+    },
+    {
+      "value": 3847.158,
+      "color": "#3182bd",
+      "label": "3847.158 万m³"
+    },
+    {
+      "value": 4980.965999999999,
+      "color": "#08519c",
+      "label": "4980.966 万m³"
+    },
+    {
+      "value": 9435.649999999996,
+      "color": "#042d60",
+      "label": "9435.650 万m³"
+    }
+  ]
+}

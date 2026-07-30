@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "632223100000",
+      "name": "三角城镇",
+      "average": 20.3
+    },
+    {
+      "regionId": "632223101000",
+      "name": "西海镇（海北州政府驻地）",
+      "average": 0.0
+    },
+    {
+      "regionId": "632223200000",
+      "name": "金滩乡",
+      "average": 253.2
+    },
+    {
+      "regionId": "632223201000",
+      "name": "哈勒景蒙古族乡",
+      "average": 11.5
+    },
+    {
+      "regionId": "632223202000",
+      "name": "青海湖乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632223203000",
+      "name": "甘子河乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

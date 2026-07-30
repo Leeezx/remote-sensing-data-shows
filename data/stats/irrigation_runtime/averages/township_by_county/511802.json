@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511802001000",
+      "name": "东城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511802002000",
+      "name": "西城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511802003000",
+      "name": "河北街道",
+      "average": 292.6
+    },
+    {
+      "regionId": "511802004000",
+      "name": "青江街道",
+      "average": 717.8
+    },
+    {
+      "regionId": "511802100000",
+      "name": "北郊镇",
+      "average": 1196.4
+    },
+    {
+      "regionId": "511802101000",
+      "name": "草坝镇",
+      "average": 5643.5
+    },
+    {
+      "regionId": "511802102000",
+      "name": "合江镇",
+      "average": 899.1
+    },
+    {
+      "regionId": "511802103000",
+      "name": "大兴镇",
+      "average": 2862.5
+    },
+    {
+      "regionId": "511802104000",
+      "name": "对岩镇",
+      "average": 882.1
+    },
+    {
+      "regionId": "511802105000",
+      "name": "沙坪镇",
+      "average": 976.9
+    },
+    {
+      "regionId": "511802106000",
+      "name": "中里镇",
+      "average": 999.6
+    },
+    {
+      "regionId": "511802107000",
+      "name": "上里镇",
+      "average": 314.9
+    },
+    {
+      "regionId": "511802108000",
+      "name": "严桥镇",
+      "average": 972.8
+    },
+    {
+      "regionId": "511802109000",
+      "name": "晏场镇",
+      "average": 1018.0
+    },
+    {
+      "regionId": "511802110000",
+      "name": "多营镇",
+      "average": 786.0
+    },
+    {
+      "regionId": "511802111000",
+      "name": "碧峰峡镇",
+      "average": 156.1
+    },
+    {
+      "regionId": "511802200000",
+      "name": "南郊乡",
+      "average": 739.7
+    },
+    {
+      "regionId": "511802201000",
+      "name": "八步乡",
+      "average": 1155.0
+    },
+    {
+      "regionId": "511802202000",
+      "name": "观化乡",
+      "average": 47.5
+    },
+    {
+      "regionId": "511802203000",
+      "name": "孔坪乡",
+      "average": 672.4
+    },
+    {
+      "regionId": "511802204000",
+      "name": "凤鸣乡",
+      "average": 42.3
+    },
+    {
+      "regionId": "511802205000",
+      "name": "望鱼乡",
+      "average": 921.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 217.798,
+      "color": "#bdd7e7",
+      "label": "217.798 万m³"
+    },
+    {
+      "value": 728.3996,
+      "color": "#6baed6",
+      "label": "728.400 万m³"
+    },
+    {
+      "value": 910.5036,
+      "color": "#3182bd",
+      "label": "910.504 万m³"
+    },
+    {
+      "value": 1009.6831999999999,
+      "color": "#08519c",
+      "label": "1009.683 万m³"
+    },
+    {
+      "value": 4475.479999999995,
+      "color": "#042d60",
+      "label": "4475.480 万m³"
+    }
+  ]
+}

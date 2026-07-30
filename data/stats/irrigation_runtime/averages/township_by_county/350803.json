@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350803100000",
+      "name": "凤城镇",
+      "average": 5099.9
+    },
+    {
+      "regionId": "350803101000",
+      "name": "坎市镇",
+      "average": 19300.9
+    },
+    {
+      "regionId": "350803102000",
+      "name": "下洋镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350803103000",
+      "name": "湖雷镇",
+      "average": 33298.7
+    },
+    {
+      "regionId": "350803104000",
+      "name": "高陂镇",
+      "average": 34015.6
+    },
+    {
+      "regionId": "350803105000",
+      "name": "抚市镇",
+      "average": 20029.1
+    },
+    {
+      "regionId": "350803106000",
+      "name": "湖坑镇",
+      "average": 20703.4
+    },
+    {
+      "regionId": "350803107000",
+      "name": "培丰镇",
+      "average": 30388.2
+    },
+    {
+      "regionId": "350803108000",
+      "name": "龙潭镇",
+      "average": 10581.7
+    },
+    {
+      "regionId": "350803109000",
+      "name": "峰市镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350803200000",
+      "name": "城郊乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350803201000",
+      "name": "西溪乡",
+      "average": 4985.3
+    },
+    {
+      "regionId": "350803202000",
+      "name": "金砂乡",
+      "average": 4650.8
+    },
+    {
+      "regionId": "350803203000",
+      "name": "仙师乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350803204000",
+      "name": "洪山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350803205000",
+      "name": "湖山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350803206000",
+      "name": "岐岭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350803207000",
+      "name": "古竹乡",
+      "average": 7515.1
+    },
+    {
+      "regionId": "350803208000",
+      "name": "堂堡乡",
+      "average": 4764.5
+    },
+    {
+      "regionId": "350803209000",
+      "name": "合溪乡",
+      "average": 23198.5
+    },
+    {
+      "regionId": "350803210000",
+      "name": "虎岗乡",
+      "average": 16853.9
+    },
+    {
+      "regionId": "350803211000",
+      "name": "大溪乡",
+      "average": 14453.2
+    },
+    {
+      "regionId": "350803212000",
+      "name": "陈东乡",
+      "average": 12028.5
+    },
+    {
+      "regionId": "350803213000",
+      "name": "高头乡",
+      "average": 1116.7
+    },
+    {
+      "regionId": "441403116000",
+      "name": "松源镇",
+      "average": 43423.8
+    },
+    {
+      "regionId": "441403118000",
+      "name": "桃尧镇",
+      "average": 12257.4
+    },
+    {
+      "regionId": "441422103000",
+      "name": "青溪镇",
+      "average": 10276.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

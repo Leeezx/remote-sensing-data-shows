@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "522622100000",
+      "name": "新州镇",
+      "average": 19915.9
+    },
+    {
+      "regionId": "522622101000",
+      "name": "旧州镇",
+      "average": 20937.3
+    },
+    {
+      "regionId": "522622102000",
+      "name": "重安镇",
+      "average": 13144.1
+    },
+    {
+      "regionId": "522622103000",
+      "name": "谷陇镇",
+      "average": 16184.7
+    },
+    {
+      "regionId": "522622104000",
+      "name": "平溪镇",
+      "average": 6975.9
+    },
+    {
+      "regionId": "522622105000",
+      "name": "野洞河镇",
+      "average": 2449.2
+    },
+    {
+      "regionId": "522622106000",
+      "name": "浪洞镇",
+      "average": 5122.4
+    },
+    {
+      "regionId": "522622107000",
+      "name": "上塘镇",
+      "average": 4692.2
+    },
+    {
+      "regionId": "522622203000",
+      "name": "一碗水乡",
+      "average": 11667.0
+    },
+    {
+      "regionId": "522622204000",
+      "name": "纸房乡",
+      "average": 399.2
+    },
+    {
+      "regionId": "522622206000",
+      "name": "翁坪乡",
+      "average": 3933.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 809.2,
+      "color": "#eff3ff",
+      "label": "809.200 万m³"
+    },
+    {
+      "value": 4024.72,
+      "color": "#bdd7e7",
+      "label": "4024.720 万m³"
+    },
+    {
+      "value": 5196.54,
+      "color": "#6baed6",
+      "label": "5196.540 万m³"
+    },
+    {
+      "value": 11479.356,
+      "color": "#3182bd",
+      "label": "11479.356 万m³"
+    },
+    {
+      "value": 15819.827999999998,
+      "color": "#08519c",
+      "label": "15819.828 万m³"
+    },
+    {
+      "value": 20733.02,
+      "color": "#042d60",
+      "label": "20733.020 万m³"
+    }
+  ]
+}

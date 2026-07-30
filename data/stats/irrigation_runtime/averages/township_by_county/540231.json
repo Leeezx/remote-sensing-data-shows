@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540231100000",
+      "name": "江嘎镇",
+      "average": 24.9
+    },
+    {
+      "regionId": "540231101000",
+      "name": "陈塘镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540231102000",
+      "name": "日屋镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540231200000",
+      "name": "确布乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540231201000",
+      "name": "扎西岗乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540231202000",
+      "name": "多布扎乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540231203000",
+      "name": "定结乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540231204000",
+      "name": "琼孜乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540231205000",
+      "name": "萨尔乡",
+      "average": 101.2
+    },
+    {
+      "regionId": "540231206000",
+      "name": "郭加乡",
+      "average": 10.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

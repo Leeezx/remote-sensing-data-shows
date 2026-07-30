@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "530112001000",
+      "name": "西苑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "530112002000",
+      "name": "马街街道",
+      "average": 191.6
+    },
+    {
+      "regionId": "530112003000",
+      "name": "金碧街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "530112004000",
+      "name": "永昌街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "530112005000",
+      "name": "前卫街道",
+      "average": 1723.6
+    },
+    {
+      "regionId": "530112006000",
+      "name": "福海街道",
+      "average": 671.3
+    },
+    {
+      "regionId": "530112007000",
+      "name": "棕树营街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "530112008000",
+      "name": "碧鸡街道",
+      "average": 3278.2
+    },
+    {
+      "regionId": "530112009000",
+      "name": "海口街道",
+      "average": 5896.0
+    },
+    {
+      "regionId": "530112010000",
+      "name": "团结街道",
+      "average": 5223.5
+    },
+    {
+      "regionId": "530112403000",
+      "name": "昆明滇池国家旅游度假区",
+      "average": 1706.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

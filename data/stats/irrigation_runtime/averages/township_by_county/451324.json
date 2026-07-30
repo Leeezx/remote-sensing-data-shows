@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451324100000",
+      "name": "金秀镇",
+      "average": 162.9
+    },
+    {
+      "regionId": "451324101000",
+      "name": "桐木镇",
+      "average": 35978.9
+    },
+    {
+      "regionId": "451324102000",
+      "name": "头排镇",
+      "average": 7146.4
+    },
+    {
+      "regionId": "451324200000",
+      "name": "三角乡",
+      "average": 141.3
+    },
+    {
+      "regionId": "451324201000",
+      "name": "忠良乡",
+      "average": 620.8
+    },
+    {
+      "regionId": "451324202000",
+      "name": "罗香乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451324203000",
+      "name": "长垌乡",
+      "average": 402.1
+    },
+    {
+      "regionId": "451324204000",
+      "name": "大樟乡",
+      "average": 7362.1
+    },
+    {
+      "regionId": "451324205000",
+      "name": "六巷乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451324207000",
+      "name": "三江乡",
+      "average": 6924.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 128.3004,
+      "color": "#bdd7e7",
+      "label": "128.300 万m³"
+    },
+    {
+      "value": 315.03119999999996,
+      "color": "#6baed6",
+      "label": "315.031 万m³"
+    },
+    {
+      "value": 2915.2375999999995,
+      "color": "#3182bd",
+      "label": "2915.238 万m³"
+    },
+    {
+      "value": 7166.2444,
+      "color": "#08519c",
+      "label": "7166.244 万m³"
+    },
+    {
+      "value": 30827.87600000001,
+      "color": "#042d60",
+      "label": "30827.876 万m³"
+    }
+  ]
+}

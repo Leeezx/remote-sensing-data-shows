@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610404001000",
+      "name": "中山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610404002000",
+      "name": "文汇路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610404003000",
+      "name": "新兴街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610404004000",
+      "name": "渭阳街道",
+      "average": 124.4
+    },
+    {
+      "regionId": "610404005000",
+      "name": "渭城街道",
+      "average": 4863.4
+    },
+    {
+      "regionId": "610404006000",
+      "name": "窑店街道",
+      "average": 10037.0
+    },
+    {
+      "regionId": "610404007000",
+      "name": "正阳街道",
+      "average": 21170.7
+    },
+    {
+      "regionId": "610404008000",
+      "name": "周陵街道",
+      "average": 14594.4
+    },
+    {
+      "regionId": "610404009000",
+      "name": "底张街道",
+      "average": 8420.5
+    },
+    {
+      "regionId": "610404105000",
+      "name": "北杜镇",
+      "average": 14902.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130702001000",
+      "name": "红旗楼街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130702002000",
+      "name": "胜利北路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130702003000",
+      "name": "五一路街道",
+      "average": 224.6
+    },
+    {
+      "regionId": "130702004000",
+      "name": "花园街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130702005000",
+      "name": "工业路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130702006000",
+      "name": "南站街道",
+      "average": 122.1
+    },
+    {
+      "regionId": "130702007000",
+      "name": "马路东街道",
+      "average": 154.2
+    },
+    {
+      "regionId": "130702100000",
+      "name": "老鸦庄镇",
+      "average": 3136.9
+    },
+    {
+      "regionId": "130702101000",
+      "name": "姚家庄镇",
+      "average": 8600.4
+    },
+    {
+      "regionId": "130702102000",
+      "name": "大仓盖镇",
+      "average": 16345.1
+    },
+    {
+      "regionId": "130702202000",
+      "name": "东望山乡",
+      "average": 8684.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

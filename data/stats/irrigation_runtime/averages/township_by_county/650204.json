@@ -1,0 +1,48 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "650204001000",
+      "name": "中兴路街道",
+      "average": 15.6
+    },
+    {
+      "regionId": "650204002000",
+      "name": "三平路街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.312,
+      "color": "#eff3ff",
+      "label": "0.312 万m³"
+    },
+    {
+      "value": 3.3072,
+      "color": "#bdd7e7",
+      "label": "3.307 万m³"
+    },
+    {
+      "value": 6.3024,
+      "color": "#6baed6",
+      "label": "6.302 万m³"
+    },
+    {
+      "value": 9.2976,
+      "color": "#3182bd",
+      "label": "9.298 万m³"
+    },
+    {
+      "value": 12.292799999999998,
+      "color": "#08519c",
+      "label": "12.293 万m³"
+    },
+    {
+      "value": 15.288,
+      "color": "#042d60",
+      "label": "15.288 万m³"
+    }
+  ]
+}

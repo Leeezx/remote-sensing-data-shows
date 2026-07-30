@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451002001000",
+      "name": "百城街道",
+      "average": 863.5
+    },
+    {
+      "regionId": "451002002000",
+      "name": "龙景街道",
+      "average": 22763.3
+    },
+    {
+      "regionId": "451002101000",
+      "name": "阳圩镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451002102000",
+      "name": "四塘镇",
+      "average": 9895.4
+    },
+    {
+      "regionId": "451002103000",
+      "name": "龙川镇",
+      "average": 14701.3
+    },
+    {
+      "regionId": "451002104000",
+      "name": "永乐镇",
+      "average": 7868.5
+    },
+    {
+      "regionId": "451002202000",
+      "name": "汪甸瑶族乡",
+      "average": 6035.1
+    },
+    {
+      "regionId": "451002203000",
+      "name": "大楞乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451002204000",
+      "name": "泮水乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "532628202000",
+      "name": "谷拉乡",
+      "average": 3519.2
+    },
+    {
+      "regionId": "532628203000",
+      "name": "者桑乡",
+      "average": 9810.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 103.62000000000009,
+      "color": "#bdd7e7",
+      "label": "103.620 万m³"
+    },
+    {
+      "value": 3619.836,
+      "color": "#6baed6",
+      "label": "3619.836 万m³"
+    },
+    {
+      "value": 7795.164,
+      "color": "#3182bd",
+      "label": "7795.164 万m³"
+    },
+    {
+      "value": 9885.248,
+      "color": "#08519c",
+      "label": "9885.248 万m³"
+    },
+    {
+      "value": 21150.900000000005,
+      "color": "#042d60",
+      "label": "21150.900 万m³"
+    }
+  ]
+}

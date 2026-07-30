@@ -1,0 +1,263 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "120116001000",
+      "name": "新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116002000",
+      "name": "于家堡街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116003000",
+      "name": "新港街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116004000",
+      "name": "向阳街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116005000",
+      "name": "杭州道街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116006000",
+      "name": "新河街道",
+      "average": 259.3
+    },
+    {
+      "regionId": "120116007000",
+      "name": "大沽街道",
+      "average": 5.7
+    },
+    {
+      "regionId": "120116008000",
+      "name": "新北街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116009000",
+      "name": "北塘街道",
+      "average": 8480.0
+    },
+    {
+      "regionId": "120116010000",
+      "name": "渤海石油街道",
+      "average": 45.8
+    },
+    {
+      "regionId": "120116011000",
+      "name": "胡家园街道",
+      "average": 2381.0
+    },
+    {
+      "regionId": "120116031000",
+      "name": "汉沽街道",
+      "average": 93.1
+    },
+    {
+      "regionId": "120116032000",
+      "name": "寨上街道",
+      "average": 12.7
+    },
+    {
+      "regionId": "120116033000",
+      "name": "河西街道",
+      "average": 6.3
+    },
+    {
+      "regionId": "120116051000",
+      "name": "迎宾街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116052000",
+      "name": "胜利街道",
+      "average": 2.7
+    },
+    {
+      "regionId": "120116053000",
+      "name": "古林街道",
+      "average": 679.2
+    },
+    {
+      "regionId": "120116054000",
+      "name": "海滨街道",
+      "average": 1351.1
+    },
+    {
+      "regionId": "120116055000",
+      "name": "港西街道",
+      "average": 2499.5
+    },
+    {
+      "regionId": "120116100000",
+      "name": "新城镇",
+      "average": 691.5
+    },
+    {
+      "regionId": "120116134000",
+      "name": "大田镇",
+      "average": 2024.0
+    },
+    {
+      "regionId": "120116135000",
+      "name": "杨家泊镇",
+      "average": 8007.3
+    },
+    {
+      "regionId": "120116136000",
+      "name": "茶淀镇",
+      "average": 1612.9
+    },
+    {
+      "regionId": "120116156000",
+      "name": "太平镇",
+      "average": 9936.8
+    },
+    {
+      "regionId": "120116157000",
+      "name": "小王庄镇",
+      "average": 11789.9
+    },
+    {
+      "regionId": "120116158000",
+      "name": "中塘镇",
+      "average": 4774.2
+    },
+    {
+      "regionId": "120116400000",
+      "name": "开发区",
+      "average": 435.7
+    },
+    {
+      "regionId": "120116401000",
+      "name": "保税区",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116403000",
+      "name": "东疆保税港区",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116404000",
+      "name": "中心商务区",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116405000",
+      "name": "临港工业区",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116406000",
+      "name": "中新天津生态城",
+      "average": 514.5
+    },
+    {
+      "regionId": "120116407000",
+      "name": "滨海旅游区",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116408000",
+      "name": "南港工业区",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116409000",
+      "name": "临港产业园区一",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116410000",
+      "name": "临港产业园区二",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116411000",
+      "name": "北塘经济区",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116412000",
+      "name": "轻纺经济区",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116413000",
+      "name": "中心渔港经济区",
+      "average": 0.0
+    },
+    {
+      "regionId": "120116414000",
+      "name": "海洋高新技术产业园区",
+      "average": 185.4
+    },
+    {
+      "regionId": "130202451000",
+      "name": "汉沽管理区兴农办事处",
+      "average": 25.9
+    },
+    {
+      "regionId": "130207111000",
+      "name": "黑沿子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130983101000",
+      "name": "南排河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130983102000",
+      "name": "吕桥镇",
+      "average": 12.6
+    },
+    {
+      "regionId": "130983205000",
+      "name": "齐家务乡",
+      "average": 56.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

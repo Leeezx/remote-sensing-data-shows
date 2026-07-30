@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513232100000",
+      "name": "达扎寺镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513232101000",
+      "name": "唐克镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513232200000",
+      "name": "班佑乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513232201000",
+      "name": "阿西乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513232203000",
+      "name": "辖曼乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513232204000",
+      "name": "红星乡",
+      "average": 23.2
+    },
+    {
+      "regionId": "513232205000",
+      "name": "麦溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513232206000",
+      "name": "嫩哇乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513232207000",
+      "name": "冻列乡",
+      "average": 823.9
+    },
+    {
+      "regionId": "513232208000",
+      "name": "崇尔乡",
+      "average": 66.5
+    },
+    {
+      "regionId": "513232209000",
+      "name": "热尔乡",
+      "average": 17.9
+    },
+    {
+      "regionId": "513232210000",
+      "name": "占哇乡",
+      "average": 148.8
+    },
+    {
+      "regionId": "513232211000",
+      "name": "降扎乡",
+      "average": 44.9
+    },
+    {
+      "regionId": "513232212000",
+      "name": "巴西乡",
+      "average": 38.5
+    },
+    {
+      "regionId": "513232213000",
+      "name": "阿西茸乡",
+      "average": 46.1
+    },
+    {
+      "regionId": "513232214000",
+      "name": "求吉乡",
+      "average": 76.1
+    },
+    {
+      "regionId": "513232215000",
+      "name": "包座乡",
+      "average": 141.8
+    },
+    {
+      "regionId": "623022203000",
+      "name": "尼巴乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623024100000",
+      "name": "电尕镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "623025100000",
+      "name": "尼玛镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "623025205000",
+      "name": "采日玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623026100000",
+      "name": "郎木寺镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "623026200000",
+      "name": "尕海乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

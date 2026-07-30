@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140212203000",
+      "name": "花元屯乡",
+      "average": 5271.7
+    },
+    {
+      "regionId": "140221100000",
+      "name": "龙泉镇",
+      "average": 41443.9
+    },
+    {
+      "regionId": "150981005000",
+      "name": "新城区街道",
+      "average": 7.9
+    },
+    {
+      "regionId": "150981006000",
+      "name": "旧城区街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150981007000",
+      "name": "北城区街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150981008000",
+      "name": "工业区街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150981009000",
+      "name": "南城区街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150981107000",
+      "name": "隆盛庄镇",
+      "average": 6011.7
+    },
+    {
+      "regionId": "150981108000",
+      "name": "黑土台镇",
+      "average": 18871.5
+    },
+    {
+      "regionId": "150981109000",
+      "name": "红砂坝镇",
+      "average": 1403.1
+    },
+    {
+      "regionId": "150981110000",
+      "name": "巨宝庄镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150981111000",
+      "name": "三义泉镇",
+      "average": 5345.3
+    },
+    {
+      "regionId": "150981207000",
+      "name": "浑源窑乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "150981208000",
+      "name": "元山子乡",
+      "average": 12.9
+    },
+    {
+      "regionId": "150981209000",
+      "name": "官屯堡乡",
+      "average": 100.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

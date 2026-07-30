@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "360602001000",
+      "name": "江边街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "360602002000",
+      "name": "交通街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "360602003000",
+      "name": "东湖街道",
+      "average": 586.6
+    },
+    {
+      "regionId": "360602004000",
+      "name": "梅园街道",
+      "average": 970.6
+    },
+    {
+      "regionId": "360602005000",
+      "name": "四青街道",
+      "average": 8628.8
+    },
+    {
+      "regionId": "360602006000",
+      "name": "白露街道",
+      "average": 32627.7
+    },
+    {
+      "regionId": "360602100000",
+      "name": "童家镇",
+      "average": 59568.1
+    },
+    {
+      "regionId": "360602200000",
+      "name": "夏埠乡",
+      "average": 8531.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 283.9144,
+      "color": "#bdd7e7",
+      "label": "283.914 万m³"
+    },
+    {
+      "value": 904.5519999999999,
+      "color": "#6baed6",
+      "label": "904.552 万m³"
+    },
+    {
+      "value": 8548.3184,
+      "color": "#3182bd",
+      "label": "8548.318 万m³"
+    },
+    {
+      "value": 21012.23239999998,
+      "color": "#08519c",
+      "label": "21012.232 万m³"
+    },
+    {
+      "value": 55796.44399999998,
+      "color": "#042d60",
+      "label": "55796.444 万m³"
+    }
+  ]
+}

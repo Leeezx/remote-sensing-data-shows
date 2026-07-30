@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "431027100000",
+      "name": "沤江镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "431027101000",
+      "name": "沙田镇",
+      "average": 18236.7
+    },
+    {
+      "regionId": "431027102000",
+      "name": "清泉镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "431027103000",
+      "name": "大塘镇",
+      "average": 6475.6
+    },
+    {
+      "regionId": "431027104000",
+      "name": "四都镇",
+      "average": 16710.1
+    },
+    {
+      "regionId": "431027105000",
+      "name": "寨前镇",
+      "average": 9225.1
+    },
+    {
+      "regionId": "431027106000",
+      "name": "普乐镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "431027200000",
+      "name": "桥头乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "431027201000",
+      "name": "寒口乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "431027204000",
+      "name": "增口乡",
+      "average": 155.1
+    },
+    {
+      "regionId": "431027206000",
+      "name": "流源乡",
+      "average": 1608.0
+    },
+    {
+      "regionId": "431027208000",
+      "name": "新坊乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "431027210000",
+      "name": "东洛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "431027211000",
+      "name": "贝溪乡",
+      "average": 5398.8
+    },
+    {
+      "regionId": "431027213000",
+      "name": "青山乡",
+      "average": 3914.5
+    },
+    {
+      "regionId": "431027400000",
+      "name": "宋坪林场",
+      "average": 501.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

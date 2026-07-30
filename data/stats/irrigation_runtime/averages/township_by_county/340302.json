@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "340302001000",
+      "name": "东风街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340302002000",
+      "name": "延安街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340302003000",
+      "name": "治淮街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340302004000",
+      "name": "东升街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340302005000",
+      "name": "解放街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340302006000",
+      "name": "曹山街道",
+      "average": 259.2
+    },
+    {
+      "regionId": "340302100000",
+      "name": "长淮卫镇",
+      "average": 19395.0
+    },
+    {
+      "regionId": "340302200000",
+      "name": "李楼乡",
+      "average": 19144.3
+    },
+    {
+      "regionId": "340303008000",
+      "name": "湖滨社区行政事务管理中心",
+      "average": 2505.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

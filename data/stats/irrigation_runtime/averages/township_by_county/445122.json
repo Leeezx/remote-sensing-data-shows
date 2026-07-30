@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350624103000",
+      "name": "桥东镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350624106000",
+      "name": "霞葛镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "445122100000",
+      "name": "黄冈镇",
+      "average": 19598.2
+    },
+    {
+      "regionId": "445122102000",
+      "name": "上饶镇",
+      "average": 26426.2
+    },
+    {
+      "regionId": "445122103000",
+      "name": "饶洋镇",
+      "average": 29697.4
+    },
+    {
+      "regionId": "445122104000",
+      "name": "新丰镇",
+      "average": 29869.6
+    },
+    {
+      "regionId": "445122106000",
+      "name": "建饶镇",
+      "average": 1831.9
+    },
+    {
+      "regionId": "445122107000",
+      "name": "三饶镇",
+      "average": 31338.7
+    },
+    {
+      "regionId": "445122108000",
+      "name": "新塘镇",
+      "average": 13758.9
+    },
+    {
+      "regionId": "445122109000",
+      "name": "汤溪镇",
+      "average": 4827.7
+    },
+    {
+      "regionId": "445122110000",
+      "name": "浮滨镇",
+      "average": 30537.5
+    },
+    {
+      "regionId": "445122112000",
+      "name": "浮山镇",
+      "average": 33916.0
+    },
+    {
+      "regionId": "445122113000",
+      "name": "东山镇",
+      "average": 13652.2
+    },
+    {
+      "regionId": "445122114000",
+      "name": "新圩镇",
+      "average": 35528.3
+    },
+    {
+      "regionId": "445122116000",
+      "name": "樟溪镇",
+      "average": 22573.4
+    },
+    {
+      "regionId": "445122117000",
+      "name": "钱东镇",
+      "average": 54244.5
+    },
+    {
+      "regionId": "445122118000",
+      "name": "高堂镇",
+      "average": 12047.4
+    },
+    {
+      "regionId": "445122119000",
+      "name": "联饶镇",
+      "average": 52640.5
+    },
+    {
+      "regionId": "445122120000",
+      "name": "所城镇",
+      "average": 18178.5
+    },
+    {
+      "regionId": "445122123000",
+      "name": "汫洲镇",
+      "average": 4595.5
+    },
+    {
+      "regionId": "445122400000",
+      "name": "韩江林场",
+      "average": 251.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 4651.228,
+      "color": "#bdd7e7",
+      "label": "4651.228 万m³"
+    },
+    {
+      "value": 14112.468,
+      "color": "#6baed6",
+      "label": "14112.468 万m³"
+    },
+    {
+      "value": 26117.976,
+      "color": "#3182bd",
+      "label": "26117.976 万m³"
+    },
+    {
+      "value": 31146.412,
+      "color": "#08519c",
+      "label": "31146.412 万m³"
+    },
+    {
+      "value": 53602.9,
+      "color": "#042d60",
+      "label": "53602.900 万m³"
+    }
+  ]
+}

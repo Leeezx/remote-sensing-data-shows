@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "141028100000",
+      "name": "吉昌镇",
+      "average": 2280.0
+    },
+    {
+      "regionId": "141028101000",
+      "name": "屯里镇",
+      "average": 5724.4
+    },
+    {
+      "regionId": "141028102000",
+      "name": "壶口镇",
+      "average": 1736.2
+    },
+    {
+      "regionId": "141028200000",
+      "name": "车城乡",
+      "average": 1352.6
+    },
+    {
+      "regionId": "141028201000",
+      "name": "文城乡",
+      "average": 3255.3
+    },
+    {
+      "regionId": "141028202000",
+      "name": "东城乡",
+      "average": 301.5
+    },
+    {
+      "regionId": "141028203000",
+      "name": "柏山寺乡",
+      "average": 5492.5
+    },
+    {
+      "regionId": "141028204000",
+      "name": "中垛乡",
+      "average": 4953.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 448.654,
+      "color": "#eff3ff",
+      "label": "448.654 万m³"
+    },
+    {
+      "value": 1538.2624,
+      "color": "#bdd7e7",
+      "label": "1538.262 万m³"
+    },
+    {
+      "value": 2186.4664,
+      "color": "#6baed6",
+      "label": "2186.466 万m³"
+    },
+    {
+      "value": 3547.4248,
+      "color": "#3182bd",
+      "label": "3547.425 万m³"
+    },
+    {
+      "value": 5231.720799999999,
+      "color": "#08519c",
+      "label": "5231.721 万m³"
+    },
+    {
+      "value": 5691.933999999999,
+      "color": "#042d60",
+      "label": "5691.934 万m³"
+    }
+  ]
+}

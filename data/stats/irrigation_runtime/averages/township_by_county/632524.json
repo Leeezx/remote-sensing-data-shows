@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "632524100000",
+      "name": "子科滩镇",
+      "average": 18.9
+    },
+    {
+      "regionId": "632524101000",
+      "name": "河卡镇",
+      "average": 8736.5
+    },
+    {
+      "regionId": "632524102000",
+      "name": "曲什安镇",
+      "average": 349.2
+    },
+    {
+      "regionId": "632524200000",
+      "name": "温泉乡",
+      "average": 20.8
+    },
+    {
+      "regionId": "632524201000",
+      "name": "龙藏乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632524202000",
+      "name": "中铁乡",
+      "average": 22.5
+    },
+    {
+      "regionId": "632524203000",
+      "name": "唐乃亥乡",
+      "average": 308.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 2.268,
+      "color": "#eff3ff",
+      "label": "2.268 万m³"
+    },
+    {
+      "value": 19.4168,
+      "color": "#bdd7e7",
+      "label": "19.417 万m³"
+    },
+    {
+      "value": 21.5208,
+      "color": "#6baed6",
+      "label": "21.521 万m³"
+    },
+    {
+      "value": 187.4087999999999,
+      "color": "#3182bd",
+      "label": "187.409 万m³"
+    },
+    {
+      "value": 338.21119999999996,
+      "color": "#08519c",
+      "label": "338.211 万m³"
+    },
+    {
+      "value": 7730.023999999999,
+      "color": "#042d60",
+      "label": "7730.024 万m³"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620102001000",
+      "name": "酒泉路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620102002000",
+      "name": "张掖路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620102003000",
+      "name": "雁南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620102004000",
+      "name": "临夏路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620102005000",
+      "name": "雁北街道",
+      "average": 25.4
+    },
+    {
+      "regionId": "620102006000",
+      "name": "五泉街道",
+      "average": 11.9
+    },
+    {
+      "regionId": "620102007000",
+      "name": "白银路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620102008000",
+      "name": "皋兰路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620102009000",
+      "name": "广武门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620102010000",
+      "name": "伏龙坪街道",
+      "average": 1604.1
+    },
+    {
+      "regionId": "620102011000",
+      "name": "靖远路街道",
+      "average": 86.5
+    },
+    {
+      "regionId": "620102012000",
+      "name": "草场街街道",
+      "average": 62.1
+    },
+    {
+      "regionId": "620102013000",
+      "name": "火车站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620102014000",
+      "name": "拱星墩街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620102015000",
+      "name": "东岗街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620102016000",
+      "name": "团结新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620102017000",
+      "name": "东岗西路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620102018000",
+      "name": "铁路东村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620102019000",
+      "name": "铁路西村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620102020000",
+      "name": "渭源路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620102021000",
+      "name": "盐场路街道",
+      "average": 197.7
+    },
+    {
+      "regionId": "620102022000",
+      "name": "嘉峪关路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620102023000",
+      "name": "焦家湾街道",
+      "average": 35.9
+    },
+    {
+      "regionId": "620102024000",
+      "name": "青白石街道",
+      "average": 947.8
+    },
+    {
+      "regionId": "620102400000",
+      "name": "高新区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

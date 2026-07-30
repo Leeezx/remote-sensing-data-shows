@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "431125105000",
+      "name": "粗石江镇",
+      "average": 42579.5
+    },
+    {
+      "regionId": "450332100000",
+      "name": "恭城镇",
+      "average": 11676.6
+    },
+    {
+      "regionId": "450332101000",
+      "name": "栗木镇",
+      "average": 77759.0
+    },
+    {
+      "regionId": "450332102000",
+      "name": "莲花镇",
+      "average": 43344.9
+    },
+    {
+      "regionId": "450332200000",
+      "name": "平安乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "450332201000",
+      "name": "三江乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "450332202000",
+      "name": "嘉会乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "450332203000",
+      "name": "西岭乡",
+      "average": 32912.8
+    },
+    {
+      "regionId": "450332204000",
+      "name": "观音乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "450332205000",
+      "name": "龙虎乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

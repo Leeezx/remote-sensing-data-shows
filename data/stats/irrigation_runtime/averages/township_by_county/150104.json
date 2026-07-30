@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150104001000",
+      "name": "小召前街办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "150104002000",
+      "name": "兴隆巷办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "150104003000",
+      "name": "长和廊办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "150104004000",
+      "name": "石东路办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "150104005000",
+      "name": "大南街办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "150104006000",
+      "name": "鄂尔多斯路办事处",
+      "average": 17.4
+    },
+    {
+      "regionId": "150104007000",
+      "name": "西菜园办事处",
+      "average": 14.0
+    },
+    {
+      "regionId": "150104008000",
+      "name": "昭君路办事处",
+      "average": 310.7
+    },
+    {
+      "regionId": "150104100000",
+      "name": "小黑河镇",
+      "average": 18263.0
+    },
+    {
+      "regionId": "150104400000",
+      "name": "裕隆工业园区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

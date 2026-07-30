@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420527101000",
+      "name": "茅坪镇",
+      "average": 3330.5
+    },
+    {
+      "regionId": "420527102000",
+      "name": "归州镇",
+      "average": 300.5
+    },
+    {
+      "regionId": "420527103000",
+      "name": "屈原镇",
+      "average": 1196.2
+    },
+    {
+      "regionId": "420527104000",
+      "name": "沙镇溪镇",
+      "average": 2339.6
+    },
+    {
+      "regionId": "420527105000",
+      "name": "两河口镇",
+      "average": 1134.8
+    },
+    {
+      "regionId": "420527106000",
+      "name": "郭家坝镇",
+      "average": 4481.0
+    },
+    {
+      "regionId": "420527107000",
+      "name": "杨林桥镇",
+      "average": 4218.4
+    },
+    {
+      "regionId": "420527108000",
+      "name": "九畹溪镇",
+      "average": 2672.0
+    },
+    {
+      "regionId": "420527201000",
+      "name": "水田坝乡",
+      "average": 2145.7
+    },
+    {
+      "regionId": "420527202000",
+      "name": "泄滩乡",
+      "average": 585.4
+    },
+    {
+      "regionId": "420527203000",
+      "name": "梅家河乡",
+      "average": 1493.5
+    },
+    {
+      "regionId": "420527204000",
+      "name": "磨坪乡",
+      "average": 3538.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 363.178,
+      "color": "#eff3ff",
+      "label": "363.178 万m³"
+    },
+    {
+      "value": 1155.1848,
+      "color": "#bdd7e7",
+      "label": "1155.185 万m³"
+    },
+    {
+      "value": 1783.0767999999998,
+      "color": "#6baed6",
+      "label": "1783.077 万m³"
+    },
+    {
+      "value": 2524.4144,
+      "color": "#3182bd",
+      "label": "2524.414 万m³"
+    },
+    {
+      "value": 3469.444,
+      "color": "#08519c",
+      "label": "3469.444 万m³"
+    },
+    {
+      "value": 4423.228,
+      "color": "#042d60",
+      "label": "4423.228 万m³"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "370811002000",
+      "name": "许庄街道",
+      "average": 4599.7
+    },
+    {
+      "regionId": "370811003000",
+      "name": "柳行街道",
+      "average": 13798.1
+    },
+    {
+      "regionId": "370811004000",
+      "name": "洸河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370811005000",
+      "name": "李营街道",
+      "average": 41446.0
+    },
+    {
+      "regionId": "370811006000",
+      "name": "南张街道",
+      "average": 25708.9
+    },
+    {
+      "regionId": "370811007000",
+      "name": "仙营街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370811008000",
+      "name": "金城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370811009000",
+      "name": "廿里铺街道",
+      "average": 62229.2
+    },
+    {
+      "regionId": "370811010000",
+      "name": "接庄街道",
+      "average": 41098.4
+    },
+    {
+      "regionId": "370811011000",
+      "name": "古槐街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370811012000",
+      "name": "济阳街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370811013000",
+      "name": "阜桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370811014000",
+      "name": "越河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370811015000",
+      "name": "观音阁街道",
+      "average": 55.6
+    },
+    {
+      "regionId": "370811016000",
+      "name": "南苑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370811017000",
+      "name": "安居街道",
+      "average": 50701.2
+    },
+    {
+      "regionId": "370811018000",
+      "name": "唐口街道",
+      "average": 77479.7
+    },
+    {
+      "regionId": "370811102000",
+      "name": "长沟镇",
+      "average": 57415.3
+    },
+    {
+      "regionId": "370811109000",
+      "name": "石桥镇",
+      "average": 40238.0
+    },
+    {
+      "regionId": "370811111000",
+      "name": "喻屯镇",
+      "average": 140956.6
+    },
+    {
+      "regionId": "370811400000",
+      "name": "济东物业服务中心",
+      "average": 379.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

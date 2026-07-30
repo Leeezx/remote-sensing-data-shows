@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210105001000",
+      "name": "三台子街道",
+      "average": 211.2
+    },
+    {
+      "regionId": "210105003000",
+      "name": "辽河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210105008000",
+      "name": "黄河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210105012000",
+      "name": "三洞桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210105013000",
+      "name": "华山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210105014000",
+      "name": "寿泉街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210105015000",
+      "name": "塔湾街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210105017000",
+      "name": "明廉街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210105019000",
+      "name": "新乐街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210105020000",
+      "name": "舍利塔街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210105021000",
+      "name": "北塔街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210105022000",
+      "name": "陵东街道",
+      "average": 55.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

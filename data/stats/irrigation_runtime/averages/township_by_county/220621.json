@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "220621100000",
+      "name": "抚松镇",
+      "average": 3.6
+    },
+    {
+      "regionId": "220621101000",
+      "name": "松江河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220621102000",
+      "name": "泉阳镇",
+      "average": 1.7
+    },
+    {
+      "regionId": "220621103000",
+      "name": "露水河镇",
+      "average": 0.1
+    },
+    {
+      "regionId": "220621104000",
+      "name": "仙人桥镇",
+      "average": 26.6
+    },
+    {
+      "regionId": "220621105000",
+      "name": "万良镇",
+      "average": 63.0
+    },
+    {
+      "regionId": "220621106000",
+      "name": "新屯子镇",
+      "average": 0.2
+    },
+    {
+      "regionId": "220621107000",
+      "name": "东岗镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220621108000",
+      "name": "漫江镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220621109000",
+      "name": "北岗镇",
+      "average": 9.1
+    },
+    {
+      "regionId": "220621110000",
+      "name": "兴参镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220621120000",
+      "name": "长白山保护开发区管委会池西区（特殊乡镇）",
+      "average": 0.0
+    },
+    {
+      "regionId": "220621121000",
+      "name": "长白山保护开发区管委会池南区（特殊乡镇）",
+      "average": 0.0
+    },
+    {
+      "regionId": "220621200000",
+      "name": "兴隆乡",
+      "average": 4.9
+    },
+    {
+      "regionId": "220621201000",
+      "name": "抽水乡",
+      "average": 3.0
+    },
+    {
+      "regionId": "220621202000",
+      "name": "沿江乡",
+      "average": 5.0
+    },
+    {
+      "regionId": "220621407000",
+      "name": "抚松工业集中区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

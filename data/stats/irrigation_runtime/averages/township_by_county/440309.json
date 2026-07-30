@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "440309001000",
+      "name": "观湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440309002000",
+      "name": "民治街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440309003000",
+      "name": "龙华街道",
+      "average": 683.0
+    },
+    {
+      "regionId": "440309004000",
+      "name": "大浪街道",
+      "average": 152.1
+    },
+    {
+      "regionId": "440309005000",
+      "name": "福城街道",
+      "average": 1863.3
+    },
+    {
+      "regionId": "440309006000",
+      "name": "观澜街道",
+      "average": 822.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 9.126000000000008,
+      "color": "#bdd7e7",
+      "label": "9.126 万m³"
+    },
+    {
+      "value": 162.71800000000002,
+      "color": "#6baed6",
+      "label": "162.718 万m³"
+    },
+    {
+      "value": 672.382,
+      "color": "#3182bd",
+      "label": "672.382 万m³"
+    },
+    {
+      "value": 813.848,
+      "color": "#08519c",
+      "label": "813.848 万m³"
+    },
+    {
+      "value": 1759.1900000000003,
+      "color": "#042d60",
+      "label": "1759.190 万m³"
+    }
+  ]
+}

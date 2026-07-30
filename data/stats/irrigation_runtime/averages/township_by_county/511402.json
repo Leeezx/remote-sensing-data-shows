@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511402001000",
+      "name": "通惠街道",
+      "average": 3374.8
+    },
+    {
+      "regionId": "511402002000",
+      "name": "大石桥街道",
+      "average": 835.0
+    },
+    {
+      "regionId": "511402003000",
+      "name": "苏祠街道",
+      "average": 564.5
+    },
+    {
+      "regionId": "511402100000",
+      "name": "白马镇",
+      "average": 10565.5
+    },
+    {
+      "regionId": "511402101000",
+      "name": "象耳镇",
+      "average": 10765.8
+    },
+    {
+      "regionId": "511402102000",
+      "name": "太和镇",
+      "average": 5069.5
+    },
+    {
+      "regionId": "511402103000",
+      "name": "悦兴镇",
+      "average": 10418.9
+    },
+    {
+      "regionId": "511402104000",
+      "name": "尚义镇",
+      "average": 17681.2
+    },
+    {
+      "regionId": "511402105000",
+      "name": "多悦镇",
+      "average": 9877.2
+    },
+    {
+      "regionId": "511402106000",
+      "name": "秦家镇",
+      "average": 16001.3
+    },
+    {
+      "regionId": "511402107000",
+      "name": "万胜镇",
+      "average": 6919.5
+    },
+    {
+      "regionId": "511402108000",
+      "name": "崇仁镇",
+      "average": 7626.2
+    },
+    {
+      "regionId": "511402109000",
+      "name": "思蒙镇",
+      "average": 10867.8
+    },
+    {
+      "regionId": "511402110000",
+      "name": "修文镇",
+      "average": 20132.2
+    },
+    {
+      "regionId": "511402112000",
+      "name": "松江镇",
+      "average": 12699.9
+    },
+    {
+      "regionId": "511402113000",
+      "name": "崇礼镇",
+      "average": 9150.9
+    },
+    {
+      "regionId": "511402114000",
+      "name": "富牛镇",
+      "average": 7474.0
+    },
+    {
+      "regionId": "511402115000",
+      "name": "永寿镇",
+      "average": 8986.8
+    },
+    {
+      "regionId": "511402204000",
+      "name": "三苏乡",
+      "average": 11168.7
+    },
+    {
+      "regionId": "511402205000",
+      "name": "广济乡",
+      "average": 7191.2
+    },
+    {
+      "regionId": "511402206000",
+      "name": "盘鳌乡",
+      "average": 6597.3
+    },
+    {
+      "regionId": "511402210000",
+      "name": "土地乡",
+      "average": 8727.0
+    },
+    {
+      "regionId": "511402211000",
+      "name": "复盛乡",
+      "average": 2830.4
+    },
+    {
+      "regionId": "511402212000",
+      "name": "复兴乡",
+      "average": 5161.6
+    },
+    {
+      "regionId": "511402213000",
+      "name": "金花乡",
+      "average": 4287.6
+    },
+    {
+      "regionId": "511402214000",
+      "name": "柳圣乡",
+      "average": 3277.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 699.75,
+      "color": "#eff3ff",
+      "label": "699.750 万m³"
+    },
+    {
+      "value": 4522.17,
+      "color": "#bdd7e7",
+      "label": "4522.170 万m³"
+    },
+    {
+      "value": 7219.48,
+      "color": "#6baed6",
+      "label": "7219.480 万m³"
+    },
+    {
+      "value": 9134.49,
+      "color": "#3182bd",
+      "label": "9134.490 万m³"
+    },
+    {
+      "value": 10837.199999999999,
+      "color": "#08519c",
+      "label": "10837.200 万m³"
+    },
+    {
+      "value": 18906.7,
+      "color": "#042d60",
+      "label": "18906.700 万m³"
+    }
+  ]
+}

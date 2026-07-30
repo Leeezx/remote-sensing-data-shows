@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230205001000",
+      "name": "新兴街道",
+      "average": 10.6
+    },
+    {
+      "regionId": "230205002000",
+      "name": "新建街道",
+      "average": 12.2
+    },
+    {
+      "regionId": "230205005000",
+      "name": "林机街道",
+      "average": 356.0
+    },
+    {
+      "regionId": "230205006000",
+      "name": "道北街道",
+      "average": 20.6
+    },
+    {
+      "regionId": "230205100000",
+      "name": "水师营满族镇",
+      "average": 747.2
+    },
+    {
+      "regionId": "230205101000",
+      "name": "榆树屯镇",
+      "average": 14133.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 10.76,
+      "color": "#eff3ff",
+      "label": "10.760 万m³"
+    },
+    {
+      "value": 12.704,
+      "color": "#bdd7e7",
+      "label": "12.704 万m³"
+    },
+    {
+      "value": 27.308000000000007,
+      "color": "#6baed6",
+      "label": "27.308 万m³"
+    },
+    {
+      "value": 349.292,
+      "color": "#3182bd",
+      "label": "349.292 万m³"
+    },
+    {
+      "value": 723.7279999999998,
+      "color": "#08519c",
+      "label": "723.728 万m³"
+    },
+    {
+      "value": 12794.870000000004,
+      "color": "#042d60",
+      "label": "12794.870 万m³"
+    }
+  ]
+}

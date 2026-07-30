@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610482100000",
+      "name": "城关镇",
+      "average": 2490.2
+    },
+    {
+      "regionId": "610482101000",
+      "name": "北极镇",
+      "average": 2571.0
+    },
+    {
+      "regionId": "610482102000",
+      "name": "新民镇",
+      "average": 3338.7
+    },
+    {
+      "regionId": "610482103000",
+      "name": "龙高镇",
+      "average": 3791.9
+    },
+    {
+      "regionId": "610482104000",
+      "name": "小章镇",
+      "average": 1973.8
+    },
+    {
+      "regionId": "610482105000",
+      "name": "永乐镇",
+      "average": 7443.3
+    },
+    {
+      "regionId": "610482106000",
+      "name": "义门镇",
+      "average": 2624.6
+    },
+    {
+      "regionId": "610482107000",
+      "name": "水口镇",
+      "average": 4634.7
+    },
+    {
+      "regionId": "610482108000",
+      "name": "韩家镇",
+      "average": 5239.6
+    },
+    {
+      "regionId": "610482109000",
+      "name": "太峪镇",
+      "average": 4793.4
+    },
+    {
+      "regionId": "610482110000",
+      "name": "香庙镇",
+      "average": 6723.4
+    },
+    {
+      "regionId": "610482111000",
+      "name": "炭店镇",
+      "average": 2592.9
+    },
+    {
+      "regionId": "610482112000",
+      "name": "底店镇",
+      "average": 2874.3
+    },
+    {
+      "regionId": "621025202000",
+      "name": "周家乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 513.188,
+      "color": "#eff3ff",
+      "label": "513.188 万m³"
+    },
+    {
+      "value": 2551.2848,
+      "color": "#bdd7e7",
+      "label": "2551.285 万m³"
+    },
+    {
+      "value": 2687.5244,
+      "color": "#6baed6",
+      "label": "2687.524 万m³"
+    },
+    {
+      "value": 3677.6935999999996,
+      "color": "#3182bd",
+      "label": "3677.694 万m³"
+    },
+    {
+      "value": 4902.2728,
+      "color": "#08519c",
+      "label": "4902.273 万m³"
+    },
+    {
+      "value": 7256.126,
+      "color": "#042d60",
+      "label": "7256.126 万m³"
+    }
+  ]
+}

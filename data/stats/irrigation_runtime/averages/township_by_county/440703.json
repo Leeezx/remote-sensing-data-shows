@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "440703001000",
+      "name": "仓后街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440703002000",
+      "name": "白沙街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440703003000",
+      "name": "堤东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440703004000",
+      "name": "北街街道",
+      "average": 882.2
+    },
+    {
+      "regionId": "440703005000",
+      "name": "潮连街道",
+      "average": 8657.6
+    },
+    {
+      "regionId": "440703006000",
+      "name": "环市街道",
+      "average": 352.8
+    },
+    {
+      "regionId": "440703101000",
+      "name": "棠下镇",
+      "average": 66059.0
+    },
+    {
+      "regionId": "440703102000",
+      "name": "荷塘镇",
+      "average": 8914.1
+    },
+    {
+      "regionId": "440703103000",
+      "name": "杜阮镇",
+      "average": 7591.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

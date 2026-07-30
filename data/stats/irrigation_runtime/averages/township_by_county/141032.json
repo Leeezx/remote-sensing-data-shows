@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "141032100000",
+      "name": "芝河镇",
+      "average": 712.9
+    },
+    {
+      "regionId": "141032101000",
+      "name": "桑壁镇",
+      "average": 1365.2
+    },
+    {
+      "regionId": "141032200000",
+      "name": "阁底乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "141032201000",
+      "name": "南庄乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "141032202000",
+      "name": "打石腰乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "141032203000",
+      "name": "坡头乡",
+      "average": 1336.3
+    },
+    {
+      "regionId": "141032204000",
+      "name": "交口乡",
+      "average": 248.8
+    },
+    {
+      "regionId": "610622102000",
+      "name": "延水关镇",
+      "average": 848.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

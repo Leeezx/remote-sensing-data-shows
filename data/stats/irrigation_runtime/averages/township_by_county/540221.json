@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540221100000",
+      "name": "南木林镇",
+      "average": 2529.5
+    },
+    {
+      "regionId": "540221200000",
+      "name": "普当乡",
+      "average": 347.5
+    },
+    {
+      "regionId": "540221201000",
+      "name": "仁堆乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540221202000",
+      "name": "拉布普乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540221203000",
+      "name": "多角乡",
+      "average": 3292.3
+    },
+    {
+      "regionId": "540221204000",
+      "name": "卡孜乡",
+      "average": 2825.4
+    },
+    {
+      "regionId": "540221205000",
+      "name": "土布加乡",
+      "average": 788.2
+    },
+    {
+      "regionId": "540221206000",
+      "name": "艾玛乡",
+      "average": 2879.4
+    },
+    {
+      "regionId": "540221207000",
+      "name": "奴玛乡",
+      "average": 2386.2
+    },
+    {
+      "regionId": "540221208000",
+      "name": "达孜乡",
+      "average": 1980.0
+    },
+    {
+      "regionId": "540221209000",
+      "name": "索金乡",
+      "average": 226.4
+    },
+    {
+      "regionId": "540221210000",
+      "name": "茶尔乡",
+      "average": 196.7
+    },
+    {
+      "regionId": "540221211000",
+      "name": "秋木乡",
+      "average": 668.7
+    },
+    {
+      "regionId": "540221212000",
+      "name": "达那乡",
+      "average": 436.3
+    },
+    {
+      "regionId": "540221213000",
+      "name": "芒热乡",
+      "average": 1216.9
+    },
+    {
+      "regionId": "540221214000",
+      "name": "热当乡",
+      "average": 1186.3
+    },
+    {
+      "regionId": "540221215000",
+      "name": "甲措乡",
+      "average": 1943.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 273.8712,
+      "color": "#bdd7e7",
+      "label": "273.871 万m³"
+    },
+    {
+      "value": 724.148,
+      "color": "#6baed6",
+      "label": "724.148 万m³"
+    },
+    {
+      "value": 1606.1431999999998,
+      "color": "#3182bd",
+      "label": "1606.143 万m³"
+    },
+    {
+      "value": 2473.3264,
+      "color": "#08519c",
+      "label": "2473.326 万m³"
+    },
+    {
+      "value": 3160.172,
+      "color": "#042d60",
+      "label": "3160.172 万m³"
+    }
+  ]
+}

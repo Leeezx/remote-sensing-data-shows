@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410402401000",
+      "name": "滨湖管委会",
+      "average": 72.7
+    },
+    {
+      "regionId": "410411001000",
+      "name": "马庄街道",
+      "average": 13.4
+    },
+    {
+      "regionId": "410411002000",
+      "name": "南环路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410411003000",
+      "name": "姚孟街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410411004000",
+      "name": "九里山街道",
+      "average": 92.1
+    },
+    {
+      "regionId": "410411005000",
+      "name": "轻工路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410411006000",
+      "name": "高阳路街道",
+      "average": 752.2
+    },
+    {
+      "regionId": "410411100000",
+      "name": "北渡镇",
+      "average": 16039.9
+    },
+    {
+      "regionId": "410411200000",
+      "name": "曹镇乡",
+      "average": 40418.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

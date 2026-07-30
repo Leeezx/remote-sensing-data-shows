@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420528101000",
+      "name": "龙舟坪镇",
+      "average": 11478.0
+    },
+    {
+      "regionId": "420528102000",
+      "name": "高家堰镇",
+      "average": 1426.7
+    },
+    {
+      "regionId": "420528103000",
+      "name": "磨市镇",
+      "average": 4747.9
+    },
+    {
+      "regionId": "420528104000",
+      "name": "都镇湾镇",
+      "average": 454.5
+    },
+    {
+      "regionId": "420528105000",
+      "name": "资丘镇",
+      "average": 1884.1
+    },
+    {
+      "regionId": "420528106000",
+      "name": "渔峡口镇",
+      "average": 2207.9
+    },
+    {
+      "regionId": "420528107000",
+      "name": "榔坪镇",
+      "average": 1694.1
+    },
+    {
+      "regionId": "420528108000",
+      "name": "贺家坪镇",
+      "average": 859.4
+    },
+    {
+      "regionId": "420528201000",
+      "name": "大堰乡",
+      "average": 2553.6
+    },
+    {
+      "regionId": "420528202000",
+      "name": "鸭子口乡",
+      "average": 373.9
+    },
+    {
+      "regionId": "420528203000",
+      "name": "火烧坪乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 74.78,
+      "color": "#eff3ff",
+      "label": "74.780 万m³"
+    },
+    {
+      "value": 503.088,
+      "color": "#bdd7e7",
+      "label": "503.088 万m³"
+    },
+    {
+      "value": 1437.396,
+      "color": "#6baed6",
+      "label": "1437.396 万m³"
+    },
+    {
+      "value": 1876.5,
+      "color": "#3182bd",
+      "label": "1876.500 万m³"
+    },
+    {
+      "value": 2512.1159999999995,
+      "color": "#08519c",
+      "label": "2512.116 万m³"
+    },
+    {
+      "value": 10131.980000000005,
+      "color": "#042d60",
+      "label": "10131.980 万m³"
+    }
+  ]
+}

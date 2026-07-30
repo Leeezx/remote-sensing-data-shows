@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "220105001000",
+      "name": "东盛街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220105002000",
+      "name": "吉林街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220105003000",
+      "name": "荣光街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220105004000",
+      "name": "东站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220105005000",
+      "name": "远达街道",
+      "average": 11.5
+    },
+    {
+      "regionId": "220105006000",
+      "name": "八里堡街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220105007000",
+      "name": "长青街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220105070000",
+      "name": "东方广场街道办事处（长春经济技术开发区）",
+      "average": 0.0
+    },
+    {
+      "regionId": "220105100000",
+      "name": "英俊镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220105173000",
+      "name": "劝农山镇（长春莲花山生态旅游度假区省级）",
+      "average": 690.9
+    },
+    {
+      "regionId": "220105174000",
+      "name": "泉眼镇",
+      "average": 2.3
+    },
+    {
+      "regionId": "220105270000",
+      "name": "四家乡（长春莲花山生态旅游度假区省级）",
+      "average": 1764.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

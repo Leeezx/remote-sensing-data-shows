@@ -1,0 +1,308 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511703001000",
+      "name": "三里坪街道",
+      "average": 1268.2
+    },
+    {
+      "regionId": "511703002000",
+      "name": "翠屏街道",
+      "average": 7071.5
+    },
+    {
+      "regionId": "511703100000",
+      "name": "亭子镇",
+      "average": 9305.2
+    },
+    {
+      "regionId": "511703101000",
+      "name": "福善镇",
+      "average": 4038.4
+    },
+    {
+      "regionId": "511703102000",
+      "name": "麻柳镇",
+      "average": 8068.4
+    },
+    {
+      "regionId": "511703103000",
+      "name": "檀木镇",
+      "average": 3784.7
+    },
+    {
+      "regionId": "511703104000",
+      "name": "大树镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511703105000",
+      "name": "南岳镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511703106000",
+      "name": "万家镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511703107000",
+      "name": "景市镇",
+      "average": 7823.5
+    },
+    {
+      "regionId": "511703108000",
+      "name": "百节镇",
+      "average": 8366.9
+    },
+    {
+      "regionId": "511703109000",
+      "name": "赵家镇",
+      "average": 7284.9
+    },
+    {
+      "regionId": "511703110000",
+      "name": "河市镇",
+      "average": 26459.3
+    },
+    {
+      "regionId": "511703111000",
+      "name": "石板镇",
+      "average": 14638.9
+    },
+    {
+      "regionId": "511703112000",
+      "name": "金垭镇",
+      "average": 7310.5
+    },
+    {
+      "regionId": "511703113000",
+      "name": "渡市镇",
+      "average": 7370.3
+    },
+    {
+      "regionId": "511703114000",
+      "name": "管村镇",
+      "average": 3555.3
+    },
+    {
+      "regionId": "511703115000",
+      "name": "石梯镇",
+      "average": 3324.8
+    },
+    {
+      "regionId": "511703116000",
+      "name": "石桥镇",
+      "average": 2993.4
+    },
+    {
+      "regionId": "511703117000",
+      "name": "堡子镇",
+      "average": 9992.3
+    },
+    {
+      "regionId": "511703200000",
+      "name": "大风乡",
+      "average": 1469.5
+    },
+    {
+      "regionId": "511703201000",
+      "name": "江阳乡",
+      "average": 3900.6
+    },
+    {
+      "regionId": "511703202000",
+      "name": "东兴乡",
+      "average": 6496.7
+    },
+    {
+      "regionId": "511703203000",
+      "name": "安仁乡",
+      "average": 2807.9
+    },
+    {
+      "regionId": "511703204000",
+      "name": "葫芦乡",
+      "average": 703.7
+    },
+    {
+      "regionId": "511703205000",
+      "name": "大滩乡",
+      "average": 2210.2
+    },
+    {
+      "regionId": "511703206000",
+      "name": "花红乡",
+      "average": 4898.0
+    },
+    {
+      "regionId": "511703207000",
+      "name": "黄庭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511703208000",
+      "name": "黄都乡",
+      "average": 8600.6
+    },
+    {
+      "regionId": "511703209000",
+      "name": "平滩乡",
+      "average": 4112.4
+    },
+    {
+      "regionId": "511703210000",
+      "name": "碑高乡",
+      "average": 4427.6
+    },
+    {
+      "regionId": "511703211000",
+      "name": "马家乡",
+      "average": 10755.2
+    },
+    {
+      "regionId": "511703212000",
+      "name": "木子乡",
+      "average": 8211.7
+    },
+    {
+      "regionId": "511703213000",
+      "name": "双庙乡",
+      "average": 12440.2
+    },
+    {
+      "regionId": "511703216000",
+      "name": "陈家乡",
+      "average": 3773.6
+    },
+    {
+      "regionId": "511703217000",
+      "name": "龙会乡",
+      "average": 4156.1
+    },
+    {
+      "regionId": "511703218000",
+      "name": "罐子乡",
+      "average": 7745.5
+    },
+    {
+      "regionId": "511703219000",
+      "name": "申家乡",
+      "average": 5472.9
+    },
+    {
+      "regionId": "511703220000",
+      "name": "草兴乡",
+      "average": 5912.5
+    },
+    {
+      "regionId": "511703221000",
+      "name": "木头乡",
+      "average": 881.1
+    },
+    {
+      "regionId": "511703222000",
+      "name": "金檀乡",
+      "average": 3752.6
+    },
+    {
+      "regionId": "511703223000",
+      "name": "大堰乡",
+      "average": 2454.3
+    },
+    {
+      "regionId": "511703224000",
+      "name": "赵固乡",
+      "average": 1842.1
+    },
+    {
+      "regionId": "511703225000",
+      "name": "九岭乡",
+      "average": 5212.3
+    },
+    {
+      "regionId": "511703226000",
+      "name": "桥湾乡",
+      "average": 3742.2
+    },
+    {
+      "regionId": "511703227000",
+      "name": "五四乡",
+      "average": 14.0
+    },
+    {
+      "regionId": "511703228000",
+      "name": "银铁乡",
+      "average": 206.9
+    },
+    {
+      "regionId": "511703229000",
+      "name": "沿河乡",
+      "average": 1287.2
+    },
+    {
+      "regionId": "511703230000",
+      "name": "香隆乡",
+      "average": 51.2
+    },
+    {
+      "regionId": "511703231000",
+      "name": "永进乡",
+      "average": 4759.2
+    },
+    {
+      "regionId": "511703232000",
+      "name": "洛车乡",
+      "average": 1847.7
+    },
+    {
+      "regionId": "511703233000",
+      "name": "道让乡",
+      "average": 2004.5
+    },
+    {
+      "regionId": "511703234000",
+      "name": "虎让乡",
+      "average": 4134.4
+    },
+    {
+      "regionId": "511703235000",
+      "name": "米城乡",
+      "average": 1713.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1526.9659999999997,
+      "color": "#bdd7e7",
+      "label": "1526.966 万m³"
+    },
+    {
+      "value": 3632.3028,
+      "color": "#6baed6",
+      "label": "3632.303 万m³"
+    },
+    {
+      "value": 4622.580799999999,
+      "color": "#3182bd",
+      "label": "4622.581 万m³"
+    },
+    {
+      "value": 7656.952799999998,
+      "color": "#08519c",
+      "label": "7656.953 万m³"
+    },
+    {
+      "value": 14506.977999999996,
+      "color": "#042d60",
+      "label": "14506.978 万m³"
+    }
+  ]
+}

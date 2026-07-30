@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451202001000",
+      "name": "金城江街道",
+      "average": 2324.2
+    },
+    {
+      "regionId": "451202101000",
+      "name": "东江镇",
+      "average": 5500.7
+    },
+    {
+      "regionId": "451202102000",
+      "name": "六圩镇",
+      "average": 12816.6
+    },
+    {
+      "regionId": "451202103000",
+      "name": "六甲镇",
+      "average": 5400.0
+    },
+    {
+      "regionId": "451202104000",
+      "name": "河池镇",
+      "average": 16350.0
+    },
+    {
+      "regionId": "451202105000",
+      "name": "拔贡镇",
+      "average": 11308.5
+    },
+    {
+      "regionId": "451202106000",
+      "name": "九圩镇",
+      "average": 13459.3
+    },
+    {
+      "regionId": "451202107000",
+      "name": "五圩镇",
+      "average": 5203.9
+    },
+    {
+      "regionId": "451202200000",
+      "name": "白土乡",
+      "average": 5855.5
+    },
+    {
+      "regionId": "451202203000",
+      "name": "侧岭乡",
+      "average": 11407.9
+    },
+    {
+      "regionId": "451202204000",
+      "name": "保平乡",
+      "average": 3342.7
+    },
+    {
+      "regionId": "451202205000",
+      "name": "长老乡",
+      "average": 9095.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 2548.27,
+      "color": "#eff3ff",
+      "label": "2548.270 万m³"
+    },
+    {
+      "value": 5269.0052,
+      "color": "#bdd7e7",
+      "label": "5269.005 万m³"
+    },
+    {
+      "value": 5658.2312,
+      "color": "#6baed6",
+      "label": "5658.231 万m³"
+    },
+    {
+      "value": 10325.928,
+      "color": "#3182bd",
+      "label": "10325.928 万m³"
+    },
+    {
+      "value": 12348.9116,
+      "color": "#08519c",
+      "label": "12348.912 万m³"
+    },
+    {
+      "value": 15714.045999999998,
+      "color": "#042d60",
+      "label": "15714.046 万m³"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "321102004000",
+      "name": "四牌楼街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "321111001000",
+      "name": "宝塔路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "321111002000",
+      "name": "和平路街道",
+      "average": 431.4
+    },
+    {
+      "regionId": "321111003000",
+      "name": "金山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "321111004000",
+      "name": "七里甸街道",
+      "average": 366.7
+    },
+    {
+      "regionId": "321111005000",
+      "name": "蒋乔街道",
+      "average": 1999.5
+    },
+    {
+      "regionId": "321111006000",
+      "name": "官塘桥街道",
+      "average": 5526.9
+    },
+    {
+      "regionId": "321111007000",
+      "name": "韦岗街道",
+      "average": 1285.6
+    },
+    {
+      "regionId": "321111400000",
+      "name": "工业园区管委会",
+      "average": 280.1
+    },
+    {
+      "regionId": "321111450000",
+      "name": "南山联合社区",
+      "average": 857.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

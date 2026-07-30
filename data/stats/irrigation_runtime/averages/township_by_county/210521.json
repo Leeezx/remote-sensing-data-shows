@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210521001000",
+      "name": "观音阁街道",
+      "average": 63.1
+    },
+    {
+      "regionId": "210521100000",
+      "name": "小市镇",
+      "average": 923.7
+    },
+    {
+      "regionId": "210521101000",
+      "name": "草河掌镇",
+      "average": 165.9
+    },
+    {
+      "regionId": "210521102000",
+      "name": "草河城镇",
+      "average": 457.6
+    },
+    {
+      "regionId": "210521103000",
+      "name": "草河口镇",
+      "average": 79.5
+    },
+    {
+      "regionId": "210521104000",
+      "name": "连山关镇",
+      "average": 329.6
+    },
+    {
+      "regionId": "210521106000",
+      "name": "清河城镇",
+      "average": 647.8
+    },
+    {
+      "regionId": "210521109000",
+      "name": "田师傅镇",
+      "average": 6.3
+    },
+    {
+      "regionId": "210521110000",
+      "name": "南甸镇",
+      "average": 329.7
+    },
+    {
+      "regionId": "210521111000",
+      "name": "碱厂镇",
+      "average": 1159.0
+    },
+    {
+      "regionId": "210521112000",
+      "name": "高官镇",
+      "average": 958.0
+    },
+    {
+      "regionId": "210521202000",
+      "name": "东营房乡",
+      "average": 146.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 18.796,
+      "color": "#eff3ff",
+      "label": "18.796 万m³"
+    },
+    {
+      "value": 101.6112,
+      "color": "#bdd7e7",
+      "label": "101.611 万m³"
+    },
+    {
+      "value": 238.58280000000002,
+      "color": "#6baed6",
+      "label": "238.583 万m³"
+    },
+    {
+      "value": 400.8124,
+      "color": "#3182bd",
+      "label": "400.812 万m³"
+    },
+    {
+      "value": 832.1011999999998,
+      "color": "#08519c",
+      "label": "832.101 万m³"
+    },
+    {
+      "value": 1114.78,
+      "color": "#042d60",
+      "label": "1114.780 万m³"
+    }
+  ]
+}

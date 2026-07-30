@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610625100000",
+      "name": "保安镇",
+      "average": 520.5
+    },
+    {
+      "regionId": "610625101000",
+      "name": "杏河镇",
+      "average": 1074.2
+    },
+    {
+      "regionId": "610625102000",
+      "name": "顺宁镇",
+      "average": 1289.5
+    },
+    {
+      "regionId": "610625103000",
+      "name": "旦八镇",
+      "average": 16.8
+    },
+    {
+      "regionId": "610625104000",
+      "name": "金丁镇",
+      "average": 96.4
+    },
+    {
+      "regionId": "610625105000",
+      "name": "永宁镇",
+      "average": 673.2
+    },
+    {
+      "regionId": "610625106000",
+      "name": "义正镇",
+      "average": 582.6
+    },
+    {
+      "regionId": "610625200000",
+      "name": "双河乡",
+      "average": 513.3
+    },
+    {
+      "regionId": "621023103000",
+      "name": "南梁镇",
+      "average": 3.1
+    },
+    {
+      "regionId": "621023210000",
+      "name": "林镇乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621023211000",
+      "name": "紫坊畔乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 4.7440000000000015,
+      "color": "#bdd7e7",
+      "label": "4.744 万m³"
+    },
+    {
+      "value": 113.07600000000002,
+      "color": "#6baed6",
+      "label": "113.076 万m³"
+    },
+    {
+      "value": 520.212,
+      "color": "#3182bd",
+      "label": "520.212 万m³"
+    },
+    {
+      "value": 662.328,
+      "color": "#08519c",
+      "label": "662.328 万m³"
+    },
+    {
+      "value": 1246.44,
+      "color": "#042d60",
+      "label": "1246.440 万m³"
+    }
+  ]
+}

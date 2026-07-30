@@ -1,0 +1,138 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "711400010000",
+      "name": "斗六市",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400020000",
+      "name": "斗南鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400030000",
+      "name": "虎尾鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400040000",
+      "name": "西螺鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400050000",
+      "name": "土庫鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400060000",
+      "name": "北港鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400070000",
+      "name": "古坑鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400080000",
+      "name": "大埤鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400090000",
+      "name": "莿桐鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400100000",
+      "name": "林內鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400110000",
+      "name": "二崙鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400120000",
+      "name": "崙背鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400130000",
+      "name": "麥寮鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400140000",
+      "name": "東勢鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400150000",
+      "name": "褒忠鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400160000",
+      "name": "臺西鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400170000",
+      "name": "元長鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400180000",
+      "name": "四湖鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400190000",
+      "name": "口湖鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711400200000",
+      "name": "水林鄉",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

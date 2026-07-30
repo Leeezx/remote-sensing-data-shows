@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "341825100000",
+      "name": "旌阳镇",
+      "average": 21886.9
+    },
+    {
+      "regionId": "341825101000",
+      "name": "蔡家桥镇",
+      "average": 33481.9
+    },
+    {
+      "regionId": "341825102000",
+      "name": "三溪镇",
+      "average": 22873.4
+    },
+    {
+      "regionId": "341825103000",
+      "name": "庙首镇",
+      "average": 12782.8
+    },
+    {
+      "regionId": "341825104000",
+      "name": "白地镇",
+      "average": 30902.9
+    },
+    {
+      "regionId": "341825105000",
+      "name": "俞村镇",
+      "average": 27994.0
+    },
+    {
+      "regionId": "341825200000",
+      "name": "版书乡",
+      "average": 13634.3
+    },
+    {
+      "regionId": "341825202000",
+      "name": "云乐乡",
+      "average": 15540.9
+    },
+    {
+      "regionId": "341825203000",
+      "name": "兴隆乡",
+      "average": 21694.2
+    },
+    {
+      "regionId": "341825204000",
+      "name": "孙村乡",
+      "average": 19266.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 12936.07,
+      "color": "#eff3ff",
+      "label": "12936.070 万m³"
+    },
+    {
+      "value": 15365.4928,
+      "color": "#bdd7e7",
+      "label": "15365.493 万m³"
+    },
+    {
+      "value": 20810.59,
+      "color": "#6baed6",
+      "label": "20810.590 万m³"
+    },
+    {
+      "value": 22245.986,
+      "color": "#3182bd",
+      "label": "22245.986 万m³"
+    },
+    {
+      "value": 28261.6188,
+      "color": "#08519c",
+      "label": "28261.619 万m³"
+    },
+    {
+      "value": 33017.68,
+      "color": "#042d60",
+      "label": "33017.680 万m³"
+    }
+  ]
+}

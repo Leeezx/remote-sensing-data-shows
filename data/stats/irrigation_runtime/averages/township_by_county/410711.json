@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410711001000",
+      "name": "东干道街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410711002000",
+      "name": "荣校路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410711003000",
+      "name": "北干道街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410711004000",
+      "name": "花园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410711005000",
+      "name": "卫北街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410711006000",
+      "name": "新辉路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410711007000",
+      "name": "和平路街道",
+      "average": 5723.4
+    },
+    {
+      "regionId": "410711100000",
+      "name": "王村镇",
+      "average": 10703.0
+    },
+    {
+      "regionId": "410711201000",
+      "name": "牧野乡",
+      "average": 7352.3
+    },
+    {
+      "regionId": "410711400000",
+      "name": "新乡化学与物理电源产业园区管理委员会",
+      "average": 7987.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

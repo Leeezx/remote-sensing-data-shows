@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "320116001000",
+      "name": "大厂街道",
+      "average": 716.3
+    },
+    {
+      "regionId": "320116004000",
+      "name": "葛塘街道",
+      "average": 7119.7
+    },
+    {
+      "regionId": "320116005000",
+      "name": "长芦街道",
+      "average": 26489.7
+    },
+    {
+      "regionId": "320116006000",
+      "name": "雄州街道",
+      "average": 45021.0
+    },
+    {
+      "regionId": "320116007000",
+      "name": "龙池街道",
+      "average": 23638.9
+    },
+    {
+      "regionId": "320116008000",
+      "name": "程桥街道",
+      "average": 46713.0
+    },
+    {
+      "regionId": "320116009000",
+      "name": "金牛湖街道",
+      "average": 58279.5
+    },
+    {
+      "regionId": "320116010000",
+      "name": "横梁街道",
+      "average": 69788.0
+    },
+    {
+      "regionId": "320116011000",
+      "name": "龙袍街道",
+      "average": 82321.0
+    },
+    {
+      "regionId": "320116012000",
+      "name": "马鞍街道",
+      "average": 82304.5
+    },
+    {
+      "regionId": "320116101000",
+      "name": "冶山镇",
+      "average": 28912.7
+    },
+    {
+      "regionId": "320116110000",
+      "name": "竹镇镇",
+      "average": 67553.9
+    },
+    {
+      "regionId": "320116400000",
+      "name": "六合开发区",
+      "average": 213.0
+    },
+    {
+      "regionId": "320116450000",
+      "name": "化工园区",
+      "average": 1791.1
+    },
+    {
+      "regionId": "341122104000",
+      "name": "大英镇",
+      "average": 214.7
+    },
+    {
+      "regionId": "341122105000",
+      "name": "雷官镇",
+      "average": 853.6
+    },
+    {
+      "regionId": "341122106000",
+      "name": "施官镇",
+      "average": 166.5
+    },
+    {
+      "regionId": "341122201000",
+      "name": "独山乡",
+      "average": 357.1
+    },
+    {
+      "regionId": "341122202000",
+      "name": "张山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341181109000",
+      "name": "冶山镇",
+      "average": 101.2
+    },
+    {
+      "regionId": "341181110000",
+      "name": "郑集镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341181112000",
+      "name": "新街镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 187.518,
+      "color": "#bdd7e7",
+      "label": "187.518 万m³"
+    },
+    {
+      "value": 782.7532,
+      "color": "#6baed6",
+      "label": "782.753 万m³"
+    },
+    {
+      "value": 25109.912800000002,
+      "color": "#3182bd",
+      "label": "25109.913 万m³"
+    },
+    {
+      "value": 53051.44199999998,
+      "color": "#08519c",
+      "label": "53051.442 万m³"
+    },
+    {
+      "value": 82314.07,
+      "color": "#042d60",
+      "label": "82314.070 万m³"
+    }
+  ]
+}

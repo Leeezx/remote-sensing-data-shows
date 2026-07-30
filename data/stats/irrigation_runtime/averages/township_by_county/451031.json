@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451031100000",
+      "name": "新州镇",
+      "average": 3382.4
+    },
+    {
+      "regionId": "451031101000",
+      "name": "桠杈镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451031102000",
+      "name": "天生桥镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451031103000",
+      "name": "平班镇",
+      "average": 2192.8
+    },
+    {
+      "regionId": "451031104000",
+      "name": "德峨镇",
+      "average": 2761.3
+    },
+    {
+      "regionId": "451031200000",
+      "name": "沙梨乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451031201000",
+      "name": "隆或乡",
+      "average": 7958.7
+    },
+    {
+      "regionId": "451031203000",
+      "name": "者保乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451031204000",
+      "name": "者浪乡",
+      "average": 2021.6
+    },
+    {
+      "regionId": "451031205000",
+      "name": "革步乡",
+      "average": 294.2
+    },
+    {
+      "regionId": "451031206000",
+      "name": "金钟山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451031208000",
+      "name": "猪场乡",
+      "average": 12.5
+    },
+    {
+      "regionId": "451031210000",
+      "name": "蛇场乡",
+      "average": 2387.8
+    },
+    {
+      "regionId": "451031211000",
+      "name": "克长乡",
+      "average": 11157.7
+    },
+    {
+      "regionId": "451031213000",
+      "name": "岩茶乡",
+      "average": 2201.8
+    },
+    {
+      "regionId": "451031215000",
+      "name": "介廷乡",
+      "average": 3430.0
+    },
+    {
+      "regionId": "522301101000",
+      "name": "泥凼镇",
+      "average": 4850.5
+    },
+    {
+      "regionId": "522301102000",
+      "name": "南盘江镇",
+      "average": 7955.6
+    },
+    {
+      "regionId": "522301201000",
+      "name": "沧江乡",
+      "average": 3404.8
+    },
+    {
+      "regionId": "522327103000",
+      "name": "丫他镇",
+      "average": 2493.5
+    },
+    {
+      "regionId": "522327104000",
+      "name": "巧马镇",
+      "average": 5012.4
+    },
+    {
+      "regionId": "522328102000",
+      "name": "德卧镇",
+      "average": 3808.3
+    },
+    {
+      "regionId": "522328103000",
+      "name": "万峰湖镇",
+      "average": 3488.1
+    },
+    {
+      "regionId": "522328204000",
+      "name": "坡脚乡",
+      "average": 1033.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 10.949999999999992,
+      "color": "#bdd7e7",
+      "label": "10.950 万m³"
+    },
+    {
+      "value": 2195.4280000000003,
+      "color": "#6baed6",
+      "label": "2195.428 万m³"
+    },
+    {
+      "value": 3201.0388000000003,
+      "color": "#3182bd",
+      "label": "3201.039 万m³"
+    },
+    {
+      "value": 3937.532799999999,
+      "color": "#08519c",
+      "label": "3937.533 万m³"
+    },
+    {
+      "value": 9686.159999999998,
+      "color": "#042d60",
+      "label": "9686.160 万m³"
+    }
+  ]
+}

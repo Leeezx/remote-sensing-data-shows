@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "611026100000",
+      "name": "乾佑镇",
+      "average": 259.0
+    },
+    {
+      "regionId": "611026101000",
+      "name": "老林乡",
+      "average": 70.8
+    },
+    {
+      "regionId": "611026102000",
+      "name": "下梁镇",
+      "average": 619.9
+    },
+    {
+      "regionId": "611026103000",
+      "name": "石瓮镇",
+      "average": 1012.2
+    },
+    {
+      "regionId": "611026104000",
+      "name": "小岭镇",
+      "average": 287.6
+    },
+    {
+      "regionId": "611026105000",
+      "name": "凤凰镇",
+      "average": 751.9
+    },
+    {
+      "regionId": "611026106000",
+      "name": "红岩寺镇",
+      "average": 491.6
+    },
+    {
+      "regionId": "611026107000",
+      "name": "曹坪镇",
+      "average": 14.8
+    },
+    {
+      "regionId": "611026108000",
+      "name": "蔡玉窑镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "611026109000",
+      "name": "杏坪乡",
+      "average": 1486.5
+    },
+    {
+      "regionId": "611026201000",
+      "name": "柴庄乡",
+      "average": 308.1
+    },
+    {
+      "regionId": "611026203000",
+      "name": "瓦房口乡",
+      "average": 861.1
+    },
+    {
+      "regionId": "611026205000",
+      "name": "丰北河乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 45.263999999999996,
+      "color": "#bdd7e7",
+      "label": "45.264 万m³"
+    },
+    {
+      "value": 283.25280000000004,
+      "color": "#6baed6",
+      "label": "283.253 万m³"
+    },
+    {
+      "value": 511.1015999999999,
+      "color": "#3182bd",
+      "label": "511.102 万m³"
+    },
+    {
+      "value": 801.6951999999999,
+      "color": "#08519c",
+      "label": "801.695 万m³"
+    },
+    {
+      "value": 1372.668,
+      "color": "#042d60",
+      "label": "1372.668 万m³"
+    }
+  ]
+}

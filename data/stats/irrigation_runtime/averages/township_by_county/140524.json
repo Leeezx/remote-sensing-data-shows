@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140524100000",
+      "name": "崇文镇",
+      "average": 458.1
+    },
+    {
+      "regionId": "140524101000",
+      "name": "礼义镇",
+      "average": 3767.6
+    },
+    {
+      "regionId": "140524102000",
+      "name": "附城镇",
+      "average": 1127.1
+    },
+    {
+      "regionId": "140524103000",
+      "name": "西河底镇",
+      "average": 706.7
+    },
+    {
+      "regionId": "140524104000",
+      "name": "平城镇",
+      "average": 318.4
+    },
+    {
+      "regionId": "140524105000",
+      "name": "杨村镇",
+      "average": 3768.7
+    },
+    {
+      "regionId": "140524106000",
+      "name": "潞城镇",
+      "average": 209.2
+    },
+    {
+      "regionId": "140524204000",
+      "name": "夺火乡",
+      "average": 267.7
+    },
+    {
+      "regionId": "140524206000",
+      "name": "马圪当乡",
+      "average": 522.4
+    },
+    {
+      "regionId": "140524207000",
+      "name": "古郊乡",
+      "average": 1133.7
+    },
+    {
+      "regionId": "140524209000",
+      "name": "六泉乡",
+      "average": 223.5
+    },
+    {
+      "regionId": "140524212000",
+      "name": "秦家庄乡",
+      "average": 524.3
+    },
+    {
+      "regionId": "410782101000",
+      "name": "薄壁镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "410782208000",
+      "name": "沙窑乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 220.0108,
+      "color": "#bdd7e7",
+      "label": "220.011 万m³"
+    },
+    {
+      "value": 353.60439999999994,
+      "color": "#6baed6",
+      "label": "353.604 万m³"
+    },
+    {
+      "value": 523.8212,
+      "color": "#3182bd",
+      "label": "523.821 万m³"
+    },
+    {
+      "value": 1128.7104,
+      "color": "#08519c",
+      "label": "1128.710 万m³"
+    },
+    {
+      "value": 3768.4139999999998,
+      "color": "#042d60",
+      "label": "3768.414 万m³"
+    }
+  ]
+}

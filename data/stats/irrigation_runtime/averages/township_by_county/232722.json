@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "232722100000",
+      "name": "塔河镇",
+      "average": 137.3
+    },
+    {
+      "regionId": "232722101000",
+      "name": "瓦拉干镇",
+      "average": 3.9
+    },
+    {
+      "regionId": "232722102000",
+      "name": "盘古镇",
+      "average": 26.8
+    },
+    {
+      "regionId": "232722200000",
+      "name": "十八站鄂伦春族民族乡",
+      "average": 104.0
+    },
+    {
+      "regionId": "232722201000",
+      "name": "依西肯乡",
+      "average": 169.3
+    },
+    {
+      "regionId": "232722202000",
+      "name": "开库康乡",
+      "average": 96.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 6.19,
+      "color": "#eff3ff",
+      "label": "6.190 万m³"
+    },
+    {
+      "value": 30.988000000000003,
+      "color": "#bdd7e7",
+      "label": "30.988 万m³"
+    },
+    {
+      "value": 96.74799999999999,
+      "color": "#6baed6",
+      "label": "96.748 万m³"
+    },
+    {
+      "value": 103.852,
+      "color": "#3182bd",
+      "label": "103.852 万m³"
+    },
+    {
+      "value": 135.302,
+      "color": "#08519c",
+      "label": "135.302 万m³"
+    },
+    {
+      "value": 166.10000000000002,
+      "color": "#042d60",
+      "label": "166.100 万m³"
+    }
+  ]
+}

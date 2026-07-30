@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "445222001000",
+      "name": "河婆街道",
+      "average": 31910.6
+    },
+    {
+      "regionId": "445222102000",
+      "name": "龙潭镇",
+      "average": 21272.2
+    },
+    {
+      "regionId": "445222103000",
+      "name": "南山镇",
+      "average": 24391.0
+    },
+    {
+      "regionId": "445222104000",
+      "name": "五经富镇",
+      "average": 31779.2
+    },
+    {
+      "regionId": "445222105000",
+      "name": "京溪园镇",
+      "average": 15919.4
+    },
+    {
+      "regionId": "445222106000",
+      "name": "灰寨镇",
+      "average": 26950.7
+    },
+    {
+      "regionId": "445222107000",
+      "name": "塔头镇",
+      "average": 27123.2
+    },
+    {
+      "regionId": "445222108000",
+      "name": "东园镇",
+      "average": 18296.3
+    },
+    {
+      "regionId": "445222109000",
+      "name": "凤江镇",
+      "average": 32962.9
+    },
+    {
+      "regionId": "445222110000",
+      "name": "棉湖镇",
+      "average": 11499.0
+    },
+    {
+      "regionId": "445222111000",
+      "name": "金和镇",
+      "average": 42228.5
+    },
+    {
+      "regionId": "445222112000",
+      "name": "大溪镇",
+      "average": 14108.1
+    },
+    {
+      "regionId": "445222113000",
+      "name": "钱坑镇",
+      "average": 19736.9
+    },
+    {
+      "regionId": "445222114000",
+      "name": "坪上镇",
+      "average": 30890.6
+    },
+    {
+      "regionId": "445222115000",
+      "name": "五云镇",
+      "average": 42055.6
+    },
+    {
+      "regionId": "445222116000",
+      "name": "上砂镇",
+      "average": 31209.4
+    },
+    {
+      "regionId": "445222201000",
+      "name": "良田乡",
+      "average": 4400.5
+    },
+    {
+      "regionId": "445222401000",
+      "name": "北山农林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "445222402000",
+      "name": "果林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "445222403000",
+      "name": "油桐林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "445222404000",
+      "name": "高田农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "445222405000",
+      "name": "河輋农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "445222406000",
+      "name": "县苗圃场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

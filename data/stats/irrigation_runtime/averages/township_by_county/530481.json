@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "530422001000",
+      "name": "凤麓街道",
+      "average": 1274.6
+    },
+    {
+      "regionId": "530422002000",
+      "name": "龙街街道",
+      "average": 17706.6
+    },
+    {
+      "regionId": "530422101000",
+      "name": "右所镇",
+      "average": 10331.3
+    },
+    {
+      "regionId": "530422102000",
+      "name": "阳宗镇",
+      "average": 6710.9
+    },
+    {
+      "regionId": "530422103000",
+      "name": "海口镇",
+      "average": 5100.3
+    },
+    {
+      "regionId": "530422104000",
+      "name": "九村镇",
+      "average": 5560.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 1657.17,
+      "color": "#eff3ff",
+      "label": "1657.170 万m³"
+    },
+    {
+      "value": 5127.924,
+      "color": "#bdd7e7",
+      "label": "5127.924 万m³"
+    },
+    {
+      "value": 5583.704,
+      "color": "#6baed6",
+      "label": "5583.704 万m³"
+    },
+    {
+      "value": 6687.896,
+      "color": "#3182bd",
+      "label": "6687.896 万m³"
+    },
+    {
+      "value": 10114.075999999997,
+      "color": "#08519c",
+      "label": "10114.076 万m³"
+    },
+    {
+      "value": 16969.07,
+      "color": "#042d60",
+      "label": "16969.070 万m³"
+    }
+  ]
+}

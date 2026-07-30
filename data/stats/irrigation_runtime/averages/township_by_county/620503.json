@@ -1,0 +1,183 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610304111000",
+      "name": "坪头镇",
+      "average": 236.3
+    },
+    {
+      "regionId": "610304114000",
+      "name": "拓石镇",
+      "average": 667.5
+    },
+    {
+      "regionId": "610330102000",
+      "name": "黄牛铺镇",
+      "average": 269.0
+    },
+    {
+      "regionId": "620503001000",
+      "name": "道北街道",
+      "average": 157.7
+    },
+    {
+      "regionId": "620503002000",
+      "name": "北道埠街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620503003000",
+      "name": "桥南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620503100000",
+      "name": "社棠镇",
+      "average": 1343.8
+    },
+    {
+      "regionId": "620503101000",
+      "name": "马跑泉镇",
+      "average": 2891.3
+    },
+    {
+      "regionId": "620503102000",
+      "name": "甘泉镇",
+      "average": 8480.9
+    },
+    {
+      "regionId": "620503103000",
+      "name": "渭南镇",
+      "average": 3942.8
+    },
+    {
+      "regionId": "620503104000",
+      "name": "东岔镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620503105000",
+      "name": "花牛镇",
+      "average": 6559.4
+    },
+    {
+      "regionId": "620503106000",
+      "name": "中滩镇",
+      "average": 1881.8
+    },
+    {
+      "regionId": "620503107000",
+      "name": "新阳镇",
+      "average": 2475.2
+    },
+    {
+      "regionId": "620503108000",
+      "name": "元龙镇",
+      "average": 3779.9
+    },
+    {
+      "regionId": "620503109000",
+      "name": "伯阳镇",
+      "average": 5720.1
+    },
+    {
+      "regionId": "620503110000",
+      "name": "麦积镇",
+      "average": 4557.6
+    },
+    {
+      "regionId": "620503111000",
+      "name": "石佛镇",
+      "average": 2588.7
+    },
+    {
+      "regionId": "620503201000",
+      "name": "五龙乡",
+      "average": 1033.2
+    },
+    {
+      "regionId": "620503202000",
+      "name": "琥珀乡",
+      "average": 992.2
+    },
+    {
+      "regionId": "620503203000",
+      "name": "党川乡",
+      "average": 750.1
+    },
+    {
+      "regionId": "620503204000",
+      "name": "利桥乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620503205000",
+      "name": "三岔乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620503400000",
+      "name": "天水经济开发区",
+      "average": 0.0
+    },
+    {
+      "regionId": "620503401000",
+      "name": "天水市高新技术工业园",
+      "average": 0.0
+    },
+    {
+      "regionId": "620503402000",
+      "name": "天水市农业高新技术示范区",
+      "average": 0.0
+    },
+    {
+      "regionId": "620503403000",
+      "name": "天水市麦积区三阳工业示范区",
+      "average": 0.0
+    },
+    {
+      "regionId": "620503404000",
+      "name": "天水市麦积区廿铺工业示范区",
+      "average": 0.0
+    },
+    {
+      "regionId": "620503405000",
+      "name": "天水市麦积区甘泉科技园区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350824203000",
+      "name": "民主乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350824204000",
+      "name": "下坝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "360734102000",
+      "name": "留车镇",
+      "average": 29604.6
+    },
+    {
+      "regionId": "360734103000",
+      "name": "南桥镇",
+      "average": 34853.7
+    },
+    {
+      "regionId": "360734104000",
+      "name": "吉潭镇",
+      "average": 21347.7
+    },
+    {
+      "regionId": "441426101000",
+      "name": "石正镇",
+      "average": 25333.3
+    },
+    {
+      "regionId": "441426104000",
+      "name": "八尺镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "441426105000",
+      "name": "差干镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "441426107000",
+      "name": "河头镇",
+      "average": 2251.9
+    },
+    {
+      "regionId": "441426108000",
+      "name": "中行镇",
+      "average": 427.7
+    },
+    {
+      "regionId": "441426109000",
+      "name": "上举镇",
+      "average": 6482.4
+    },
+    {
+      "regionId": "441426110000",
+      "name": "泗水镇",
+      "average": 6158.1
+    },
+    {
+      "regionId": "441426114000",
+      "name": "长田镇",
+      "average": 6284.5
+    },
+    {
+      "regionId": "441426115000",
+      "name": "热柘镇",
+      "average": 6115.3
+    },
+    {
+      "regionId": "441426117000",
+      "name": "东石镇",
+      "average": 44686.4
+    },
+    {
+      "regionId": "441426118000",
+      "name": "仁居镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "441426119000",
+      "name": "大柘镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

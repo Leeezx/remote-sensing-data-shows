@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "220282001000",
+      "name": "明桦街道",
+      "average": 2.4
+    },
+    {
+      "regionId": "220282002000",
+      "name": "永吉街道",
+      "average": 443.1
+    },
+    {
+      "regionId": "220282003000",
+      "name": "胜利街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220282004000",
+      "name": "新华街道",
+      "average": 2.7
+    },
+    {
+      "regionId": "220282005000",
+      "name": "启新街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220282100000",
+      "name": "夹皮沟镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220282101000",
+      "name": "二道甸子镇",
+      "average": 684.7
+    },
+    {
+      "regionId": "220282102000",
+      "name": "红石砬子镇",
+      "average": 88.3
+    },
+    {
+      "regionId": "220282103000",
+      "name": "八道河子镇",
+      "average": 2030.7
+    },
+    {
+      "regionId": "220282104000",
+      "name": "常山镇",
+      "average": 355.3
+    },
+    {
+      "regionId": "220282105000",
+      "name": "金沙镇",
+      "average": 1718.8
+    },
+    {
+      "regionId": "220282200000",
+      "name": "桦郊乡",
+      "average": 3611.1
+    },
+    {
+      "regionId": "220282201000",
+      "name": "横道河子乡",
+      "average": 742.7
+    },
+    {
+      "regionId": "220282204000",
+      "name": "公吉乡",
+      "average": 2551.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1.8143999999999996,
+      "color": "#bdd7e7",
+      "label": "1.814 万m³"
+    },
+    {
+      "value": 155.58399999999995,
+      "color": "#6baed6",
+      "label": "155.584 万m³"
+    },
+    {
+      "value": 623.8167999999998,
+      "color": "#3182bd",
+      "label": "623.817 万m³"
+    },
+    {
+      "value": 1794.9035999999999,
+      "color": "#08519c",
+      "label": "1794.904 万m³"
+    },
+    {
+      "value": 3335.5,
+      "color": "#042d60",
+      "label": "3335.500 万m³"
+    }
+  ]
+}

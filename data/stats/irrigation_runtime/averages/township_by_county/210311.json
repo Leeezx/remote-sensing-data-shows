@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210311005000",
+      "name": "对桩石街道",
+      "average": 8.1
+    },
+    {
+      "regionId": "210311006000",
+      "name": "汤岗子街道",
+      "average": 138.3
+    },
+    {
+      "regionId": "210311007000",
+      "name": "东鞍山街道",
+      "average": 526.2
+    },
+    {
+      "regionId": "210311102000",
+      "name": "唐家房镇",
+      "average": 307.6
+    },
+    {
+      "regionId": "210311103000",
+      "name": "大屯镇",
+      "average": 209.3
+    },
+    {
+      "regionId": "210311104000",
+      "name": "甘泉镇",
+      "average": 1101.3
+    },
+    {
+      "regionId": "210311405000",
+      "name": "汤岗子牧场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.972,
+      "color": "#eff3ff",
+      "label": "0.972 万m³"
+    },
+    {
+      "value": 43.51440000000001,
+      "color": "#bdd7e7",
+      "label": "43.514 万m³"
+    },
+    {
+      "value": 168.404,
+      "color": "#6baed6",
+      "label": "168.404 万m³"
+    },
+    {
+      "value": 265.9208,
+      "color": "#3182bd",
+      "label": "265.921 万m³"
+    },
+    {
+      "value": 466.7408,
+      "color": "#08519c",
+      "label": "466.741 万m³"
+    },
+    {
+      "value": 1032.288,
+      "color": "#042d60",
+      "label": "1032.288 万m³"
+    }
+  ]
+}

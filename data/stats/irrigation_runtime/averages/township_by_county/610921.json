@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610921100000",
+      "name": "城关镇",
+      "average": 22912.5
+    },
+    {
+      "regionId": "610921101000",
+      "name": "涧池镇",
+      "average": 6324.5
+    },
+    {
+      "regionId": "610921102000",
+      "name": "蒲溪镇",
+      "average": 5710.2
+    },
+    {
+      "regionId": "610921103000",
+      "name": "平梁镇",
+      "average": 19291.3
+    },
+    {
+      "regionId": "610921104000",
+      "name": "双乳镇",
+      "average": 4256.1
+    },
+    {
+      "regionId": "610921105000",
+      "name": "铁佛寺镇",
+      "average": 14680.9
+    },
+    {
+      "regionId": "610921106000",
+      "name": "龙垭镇",
+      "average": 8853.5
+    },
+    {
+      "regionId": "610921107000",
+      "name": "漩涡镇",
+      "average": 4029.6
+    },
+    {
+      "regionId": "610921108000",
+      "name": "汉阳镇",
+      "average": 210.2
+    },
+    {
+      "regionId": "610921109000",
+      "name": "酒店镇",
+      "average": 9716.5
+    },
+    {
+      "regionId": "610921110000",
+      "name": "双河口镇",
+      "average": 11317.3
+    },
+    {
+      "regionId": "610921111000",
+      "name": "上七镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610921112000",
+      "name": "观音河镇",
+      "average": 9802.4
+    },
+    {
+      "regionId": "610921113000",
+      "name": "双坪镇",
+      "average": 1019.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 54.652,
+      "color": "#eff3ff",
+      "label": "54.652 万m³"
+    },
+    {
+      "value": 3295.184399999999,
+      "color": "#bdd7e7",
+      "label": "3295.184 万m³"
+    },
+    {
+      "value": 5865.0036,
+      "color": "#6baed6",
+      "label": "5865.004 万m³"
+    },
+    {
+      "value": 9499.024,
+      "color": "#3182bd",
+      "label": "9499.024 万m³"
+    },
+    {
+      "value": 12138.018399999999,
+      "color": "#08519c",
+      "label": "12138.018 万m³"
+    },
+    {
+      "value": 21970.988,
+      "color": "#042d60",
+      "label": "21970.988 万m³"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500152107000",
+      "name": "玉溪镇",
+      "average": 5493.6
+    },
+    {
+      "regionId": "500152112000",
+      "name": "花岩镇",
+      "average": 4085.0
+    },
+    {
+      "regionId": "510904001000",
+      "name": "柔刚街道",
+      "average": 1488.6
+    },
+    {
+      "regionId": "510904002000",
+      "name": "凤凰街道",
+      "average": 4572.1
+    },
+    {
+      "regionId": "510904100000",
+      "name": "安居镇",
+      "average": 5067.5
+    },
+    {
+      "regionId": "510904101000",
+      "name": "东禅镇",
+      "average": 8844.7
+    },
+    {
+      "regionId": "510904102000",
+      "name": "分水镇",
+      "average": 9692.0
+    },
+    {
+      "regionId": "510904103000",
+      "name": "石洞镇",
+      "average": 7323.7
+    },
+    {
+      "regionId": "510904104000",
+      "name": "拦江镇",
+      "average": 6282.5
+    },
+    {
+      "regionId": "510904105000",
+      "name": "保石镇",
+      "average": 6887.5
+    },
+    {
+      "regionId": "510904106000",
+      "name": "白马镇",
+      "average": 8579.0
+    },
+    {
+      "regionId": "510904107000",
+      "name": "中兴镇",
+      "average": 5364.9
+    },
+    {
+      "regionId": "510904108000",
+      "name": "横山镇",
+      "average": 10855.2
+    },
+    {
+      "regionId": "510904109000",
+      "name": "会龙镇",
+      "average": 5108.7
+    },
+    {
+      "regionId": "510904110000",
+      "name": "三家镇",
+      "average": 21377.1
+    },
+    {
+      "regionId": "510904111000",
+      "name": "玉丰镇",
+      "average": 8562.7
+    },
+    {
+      "regionId": "510904112000",
+      "name": "西眉镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510904113000",
+      "name": "磨溪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510904200000",
+      "name": "聚贤乡",
+      "average": 6314.8
+    },
+    {
+      "regionId": "510904201000",
+      "name": "莲花乡",
+      "average": 2468.4
+    },
+    {
+      "regionId": "510904202000",
+      "name": "观音乡",
+      "average": 4275.1
+    },
+    {
+      "regionId": "510904203000",
+      "name": "步云乡",
+      "average": 1580.2
+    },
+    {
+      "regionId": "510904204000",
+      "name": "常理乡",
+      "average": 4610.0
+    },
+    {
+      "regionId": "510904205000",
+      "name": "大安乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510904206000",
+      "name": "马家乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1658.3616000000002,
+      "color": "#bdd7e7",
+      "label": "1658.362 万m³"
+    },
+    {
+      "value": 4598.4784,
+      "color": "#6baed6",
+      "label": "4598.478 万m³"
+    },
+    {
+      "value": 5733.425599999999,
+      "color": "#3182bd",
+      "label": "5733.426 万m³"
+    },
+    {
+      "value": 8453.668,
+      "color": "#08519c",
+      "label": "8453.668 万m³"
+    },
+    {
+      "value": 16326.587999999996,
+      "color": "#042d60",
+      "label": "16326.588 万m³"
+    }
+  ]
+}

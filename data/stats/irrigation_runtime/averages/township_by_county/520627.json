@@ -1,0 +1,183 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500242109000",
+      "name": "李溪镇",
+      "average": 1181.4
+    },
+    {
+      "regionId": "500242113000",
+      "name": "小河镇",
+      "average": 19.9
+    },
+    {
+      "regionId": "500242216000",
+      "name": "官清乡",
+      "average": 483.8
+    },
+    {
+      "regionId": "500242217000",
+      "name": "南腰界乡",
+      "average": 915.6
+    },
+    {
+      "regionId": "500243222000",
+      "name": "善感乡",
+      "average": 459.1
+    },
+    {
+      "regionId": "500243223000",
+      "name": "双龙乡",
+      "average": 651.2
+    },
+    {
+      "regionId": "500243224000",
+      "name": "石盘乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520627100000",
+      "name": "和平镇",
+      "average": 6639.5
+    },
+    {
+      "regionId": "520627101000",
+      "name": "沙子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520627102000",
+      "name": "谯家镇",
+      "average": 8504.1
+    },
+    {
+      "regionId": "520627103000",
+      "name": "夹石镇",
+      "average": 7432.8
+    },
+    {
+      "regionId": "520627104000",
+      "name": "淇滩镇",
+      "average": 6242.5
+    },
+    {
+      "regionId": "520627105000",
+      "name": "官舟镇",
+      "average": 16271.8
+    },
+    {
+      "regionId": "520627106000",
+      "name": "土地坳镇",
+      "average": 4269.0
+    },
+    {
+      "regionId": "520627107000",
+      "name": "思渠镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520627108000",
+      "name": "客田镇",
+      "average": 11798.9
+    },
+    {
+      "regionId": "520627109000",
+      "name": "洪渡镇",
+      "average": 8.6
+    },
+    {
+      "regionId": "520627200000",
+      "name": "黑獭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520627201000",
+      "name": "黑水乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520627202000",
+      "name": "中界乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520627203000",
+      "name": "晓景乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520627204000",
+      "name": "甘溪乡",
+      "average": 2911.9
+    },
+    {
+      "regionId": "520627205000",
+      "name": "板场乡",
+      "average": 3436.1
+    },
+    {
+      "regionId": "520627206000",
+      "name": "泉坝乡",
+      "average": 3084.4
+    },
+    {
+      "regionId": "520627207000",
+      "name": "中寨乡",
+      "average": 7415.5
+    },
+    {
+      "regionId": "520627208000",
+      "name": "黄土乡",
+      "average": 9939.3
+    },
+    {
+      "regionId": "520627209000",
+      "name": "新景乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520627210000",
+      "name": "塘坝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520627211000",
+      "name": "后坪乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "330326100000",
+      "name": "昆阳镇",
+      "average": 57499.5
+    },
+    {
+      "regionId": "330326101000",
+      "name": "鳌江镇",
+      "average": 50987.7
+    },
+    {
+      "regionId": "330326102000",
+      "name": "水头镇",
+      "average": 50339.9
+    },
+    {
+      "regionId": "330326103000",
+      "name": "萧江镇",
+      "average": 59102.0
+    },
+    {
+      "regionId": "330326105000",
+      "name": "腾蛟镇",
+      "average": 14259.3
+    },
+    {
+      "regionId": "330326107000",
+      "name": "山门镇",
+      "average": 18175.9
+    },
+    {
+      "regionId": "330326108000",
+      "name": "顺溪镇",
+      "average": 3569.6
+    },
+    {
+      "regionId": "330326109000",
+      "name": "南雁镇",
+      "average": 9031.1
+    },
+    {
+      "regionId": "330326117000",
+      "name": "万全镇",
+      "average": 64449.2
+    },
+    {
+      "regionId": "330326214000",
+      "name": "青街畲族乡",
+      "average": 775.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 1278.684,
+      "color": "#eff3ff",
+      "label": "1278.684 万m³"
+    },
+    {
+      "value": 8528.642,
+      "color": "#bdd7e7",
+      "label": "8528.642 万m³"
+    },
+    {
+      "value": 16750.2576,
+      "color": "#6baed6",
+      "label": "16750.258 万m³"
+    },
+    {
+      "value": 50575.6992,
+      "color": "#3182bd",
+      "label": "50575.699 万m³"
+    },
+    {
+      "value": 57646.93,
+      "color": "#08519c",
+      "label": "57646.930 万m³"
+    },
+    {
+      "value": 63486.704,
+      "color": "#042d60",
+      "label": "63486.704 万m³"
+    }
+  ]
+}

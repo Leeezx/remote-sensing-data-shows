@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451229100000",
+      "name": "大化镇",
+      "average": 18981.9
+    },
+    {
+      "regionId": "451229101000",
+      "name": "都阳镇",
+      "average": 4725.1
+    },
+    {
+      "regionId": "451229102000",
+      "name": "岩滩镇",
+      "average": 3753.0
+    },
+    {
+      "regionId": "451229200000",
+      "name": "共和乡",
+      "average": 6221.1
+    },
+    {
+      "regionId": "451229201000",
+      "name": "贡川乡",
+      "average": 6776.5
+    },
+    {
+      "regionId": "451229202000",
+      "name": "百马乡",
+      "average": 4654.8
+    },
+    {
+      "regionId": "451229203000",
+      "name": "古河乡",
+      "average": 1306.1
+    },
+    {
+      "regionId": "451229204000",
+      "name": "古文乡",
+      "average": 4440.8
+    },
+    {
+      "regionId": "451229205000",
+      "name": "江南乡",
+      "average": 12484.2
+    },
+    {
+      "regionId": "451229206000",
+      "name": "羌圩乡",
+      "average": 2774.1
+    },
+    {
+      "regionId": "451229207000",
+      "name": "乙圩乡",
+      "average": 98.1
+    },
+    {
+      "regionId": "451229208000",
+      "name": "北景乡",
+      "average": 1482.1
+    },
+    {
+      "regionId": "451229210000",
+      "name": "板升乡",
+      "average": 2366.8
+    },
+    {
+      "regionId": "451229211000",
+      "name": "七百弄乡",
+      "average": 2303.1
+    },
+    {
+      "regionId": "451229213000",
+      "name": "雅龙乡",
+      "average": 2709.0
+    },
+    {
+      "regionId": "451229214000",
+      "name": "六也乡",
+      "average": 6069.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 460.5,
+      "color": "#eff3ff",
+      "label": "460.500 万m³"
+    },
+    {
+      "value": 2314.566,
+      "color": "#bdd7e7",
+      "label": "2314.566 万m³"
+    },
+    {
+      "value": 2832.8339999999994,
+      "color": "#6baed6",
+      "label": "2832.834 万m³"
+    },
+    {
+      "value": 4641.96,
+      "color": "#3182bd",
+      "label": "4641.960 万m³"
+    },
+    {
+      "value": 6193.74,
+      "color": "#08519c",
+      "label": "6193.740 万m³"
+    },
+    {
+      "value": 17032.589999999997,
+      "color": "#042d60",
+      "label": "17032.590 万m³"
+    }
+  ]
+}

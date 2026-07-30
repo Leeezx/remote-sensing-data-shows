@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620623100000",
+      "name": "华藏寺镇",
+      "average": 517.7
+    },
+    {
+      "regionId": "620623101000",
+      "name": "打柴沟镇",
+      "average": 860.8
+    },
+    {
+      "regionId": "620623102000",
+      "name": "安远镇",
+      "average": 1493.8
+    },
+    {
+      "regionId": "620623103000",
+      "name": "炭山岭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620623104000",
+      "name": "哈溪镇",
+      "average": 4068.9
+    },
+    {
+      "regionId": "620623105000",
+      "name": "赛什斯镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620623106000",
+      "name": "石门镇",
+      "average": 86.4
+    },
+    {
+      "regionId": "620623107000",
+      "name": "松山镇",
+      "average": 368.1
+    },
+    {
+      "regionId": "620623108000",
+      "name": "天堂镇",
+      "average": 4.0
+    },
+    {
+      "regionId": "620623203000",
+      "name": "东大滩乡",
+      "average": 216.5
+    },
+    {
+      "regionId": "620623204000",
+      "name": "抓喜秀龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620623205000",
+      "name": "西大滩乡",
+      "average": 1028.6
+    },
+    {
+      "regionId": "620623206000",
+      "name": "朵什乡",
+      "average": 1626.8
+    },
+    {
+      "regionId": "620623207000",
+      "name": "大红沟乡",
+      "average": 1334.7
+    },
+    {
+      "regionId": "620623208000",
+      "name": "毛藏乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620623209000",
+      "name": "祁连乡",
+      "average": 238.7
+    },
+    {
+      "regionId": "620623210000",
+      "name": "旦马乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620623400000",
+      "name": "天祝煤电公司",
+      "average": 0.0
+    },
+    {
+      "regionId": "620623401000",
+      "name": "天祝建材厂",
+      "average": 0.0
+    },
+    {
+      "regionId": "630223203000",
+      "name": "巴扎藏族乡",
+      "average": 3900.0
+    },
+    {
+      "regionId": "632221204000",
+      "name": "仙米乡",
+      "average": 2492.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

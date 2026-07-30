@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "110112119000",
+      "name": "潞城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "131028100000",
+      "name": "大厂镇",
+      "average": 14813.5
+    },
+    {
+      "regionId": "131028101000",
+      "name": "夏垫镇",
+      "average": 8833.2
+    },
+    {
+      "regionId": "131028102000",
+      "name": "祁各庄镇",
+      "average": 14603.6
+    },
+    {
+      "regionId": "131028201000",
+      "name": "邵府乡",
+      "average": 9071.0
+    },
+    {
+      "regionId": "131028202000",
+      "name": "陈府乡",
+      "average": 9490.7
+    },
+    {
+      "regionId": "131028400000",
+      "name": "大厂工业园区",
+      "average": 56.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 6.792,
+      "color": "#eff3ff",
+      "label": "6.792 万m³"
+    },
+    {
+      "value": 2443.8352,
+      "color": "#bdd7e7",
+      "label": "2443.835 万m³"
+    },
+    {
+      "value": 8934.0272,
+      "color": "#6baed6",
+      "label": "8934.027 万m³"
+    },
+    {
+      "value": 9312.7472,
+      "color": "#3182bd",
+      "label": "9312.747 万m³"
+    },
+    {
+      "value": 13212.891199999998,
+      "color": "#08519c",
+      "label": "13212.891 万m³"
+    },
+    {
+      "value": 14788.312,
+      "color": "#042d60",
+      "label": "14788.312 万m³"
+    }
+  ]
+}

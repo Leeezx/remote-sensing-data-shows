@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "310113003000",
+      "name": "友谊路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310113007000",
+      "name": "吴淞街道",
+      "average": 164.1
+    },
+    {
+      "regionId": "310113008000",
+      "name": "张庙街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310113101000",
+      "name": "罗店镇",
+      "average": 5330.1
+    },
+    {
+      "regionId": "310113102000",
+      "name": "大场镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "310113103000",
+      "name": "杨行镇",
+      "average": 492.5
+    },
+    {
+      "regionId": "310113104000",
+      "name": "月浦镇",
+      "average": 2632.6
+    },
+    {
+      "regionId": "310113106000",
+      "name": "罗泾镇",
+      "average": 8586.6
+    },
+    {
+      "regionId": "310113109000",
+      "name": "顾村镇",
+      "average": 6007.3
+    },
+    {
+      "regionId": "310113111000",
+      "name": "高境镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "310113112000",
+      "name": "庙行镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "310113113000",
+      "name": "淞南镇",
+      "average": 46.4
+    },
+    {
+      "regionId": "310113501000",
+      "name": "宝山城市工业园区",
+      "average": 396.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

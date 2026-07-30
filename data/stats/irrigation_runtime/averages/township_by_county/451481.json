@@ -1,0 +1,63 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451481100000",
+      "name": "凭祥镇",
+      "average": 2697.4
+    },
+    {
+      "regionId": "451481101000",
+      "name": "友谊镇",
+      "average": 3001.9
+    },
+    {
+      "regionId": "451481102000",
+      "name": "上石镇",
+      "average": 8359.6
+    },
+    {
+      "regionId": "451481103000",
+      "name": "夏石镇",
+      "average": 9445.8
+    },
+    {
+      "regionId": "451481400000",
+      "name": "广西凭祥综合保税区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 215.792,
+      "color": "#eff3ff",
+      "label": "215.792 万m³"
+    },
+    {
+      "value": 2287.3952,
+      "color": "#bdd7e7",
+      "label": "2287.395 万m³"
+    },
+    {
+      "value": 2884.972,
+      "color": "#6baed6",
+      "label": "2884.972 万m³"
+    },
+    {
+      "value": 5059.256799999999,
+      "color": "#3182bd",
+      "label": "5059.257 万m³"
+    },
+    {
+      "value": 8524.7024,
+      "color": "#08519c",
+      "label": "8524.702 万m³"
+    },
+    {
+      "value": 9358.903999999999,
+      "color": "#042d60",
+      "label": "9358.904 万m³"
+    }
+  ]
+}

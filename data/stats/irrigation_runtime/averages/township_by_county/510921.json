@@ -1,0 +1,208 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500152104000",
+      "name": "宝龙镇",
+      "average": 6070.3
+    },
+    {
+      "regionId": "510921100000",
+      "name": "赤城镇",
+      "average": 13126.2
+    },
+    {
+      "regionId": "510921101000",
+      "name": "新会镇",
+      "average": 7873.4
+    },
+    {
+      "regionId": "510921102000",
+      "name": "文井镇",
+      "average": 12698.9
+    },
+    {
+      "regionId": "510921103000",
+      "name": "明月镇",
+      "average": 4205.8
+    },
+    {
+      "regionId": "510921104000",
+      "name": "常乐镇",
+      "average": 6749.0
+    },
+    {
+      "regionId": "510921105000",
+      "name": "天福镇",
+      "average": 4360.7
+    },
+    {
+      "regionId": "510921106000",
+      "name": "红江镇",
+      "average": 1924.1
+    },
+    {
+      "regionId": "510921107000",
+      "name": "宝梵镇",
+      "average": 5913.6
+    },
+    {
+      "regionId": "510921108000",
+      "name": "大石镇",
+      "average": 7508.2
+    },
+    {
+      "regionId": "510921109000",
+      "name": "吉祥镇",
+      "average": 5217.8
+    },
+    {
+      "regionId": "510921110000",
+      "name": "鸣凤镇",
+      "average": 5994.5
+    },
+    {
+      "regionId": "510921111000",
+      "name": "任隆镇",
+      "average": 8402.2
+    },
+    {
+      "regionId": "510921112000",
+      "name": "三凤镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510921113000",
+      "name": "高坪镇",
+      "average": 3784.3
+    },
+    {
+      "regionId": "510921114000",
+      "name": "蓬南镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510921115000",
+      "name": "群利镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510921200000",
+      "name": "下东乡",
+      "average": 4251.5
+    },
+    {
+      "regionId": "510921201000",
+      "name": "新星乡",
+      "average": 3490.1
+    },
+    {
+      "regionId": "510921202000",
+      "name": "罗戈乡",
+      "average": 4538.9
+    },
+    {
+      "regionId": "510921203000",
+      "name": "板桥乡",
+      "average": 4575.2
+    },
+    {
+      "regionId": "510921204000",
+      "name": "槐花乡",
+      "average": 2405.9
+    },
+    {
+      "regionId": "510921205000",
+      "name": "吉星乡",
+      "average": 6864.2
+    },
+    {
+      "regionId": "510921206000",
+      "name": "黄泥乡",
+      "average": 4503.2
+    },
+    {
+      "regionId": "510921207000",
+      "name": "荷叶乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510921208000",
+      "name": "金龙乡",
+      "average": 2299.7
+    },
+    {
+      "regionId": "510921209000",
+      "name": "农兴乡",
+      "average": 4206.5
+    },
+    {
+      "regionId": "510921210000",
+      "name": "新胜乡",
+      "average": 3017.8
+    },
+    {
+      "regionId": "510921211000",
+      "name": "回水乡",
+      "average": 3661.8
+    },
+    {
+      "regionId": "510921212000",
+      "name": "群力乡",
+      "average": 1327.3
+    },
+    {
+      "regionId": "510921213000",
+      "name": "高升乡",
+      "average": 4737.3
+    },
+    {
+      "regionId": "510921214000",
+      "name": "金桥乡",
+      "average": 2179.2
+    },
+    {
+      "regionId": "510921400000",
+      "name": "城南新区",
+      "average": 480.8
+    },
+    {
+      "regionId": "510921401000",
+      "name": "上游工业园管理委员会",
+      "average": 794.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1921.7127999999996,
+      "color": "#bdd7e7",
+      "label": "1921.713 万m³"
+    },
+    {
+      "value": 3702.4700000000003,
+      "color": "#6baed6",
+      "label": "3702.470 万m³"
+    },
+    {
+      "value": 4527.0476,
+      "color": "#3182bd",
+      "label": "4527.048 万m³"
+    },
+    {
+      "value": 6073.014799999999,
+      "color": "#08519c",
+      "label": "6073.015 万m³"
+    },
+    {
+      "value": 12844.181999999999,
+      "color": "#042d60",
+      "label": "12844.182 万m³"
+    }
+  ]
+}

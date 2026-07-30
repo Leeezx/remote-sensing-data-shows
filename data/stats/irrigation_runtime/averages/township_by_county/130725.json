@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130725100000",
+      "name": "南壕堑镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130725101000",
+      "name": "大青沟镇",
+      "average": 4075.4
+    },
+    {
+      "regionId": "130725102000",
+      "name": "八道沟镇",
+      "average": 10017.5
+    },
+    {
+      "regionId": "130725103000",
+      "name": "红土梁镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130725104000",
+      "name": "小蒜沟镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130725105000",
+      "name": "三工地镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130725106000",
+      "name": "满井镇",
+      "average": 3020.5
+    },
+    {
+      "regionId": "130725200000",
+      "name": "大营盘乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130725201000",
+      "name": "大苏计乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130725202000",
+      "name": "石井乡",
+      "average": 2073.9
+    },
+    {
+      "regionId": "130725205000",
+      "name": "七甲乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130725206000",
+      "name": "套里庄乡",
+      "average": 448.2
+    },
+    {
+      "regionId": "130725207000",
+      "name": "甲石河乡",
+      "average": 224.8
+    },
+    {
+      "regionId": "130725208000",
+      "name": "下马圈乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "150923102000",
+      "name": "十八顷镇",
+      "average": 10306.6
+    },
+    {
+      "regionId": "150924106000",
+      "name": "城关镇",
+      "average": 6748.7
+    },
+    {
+      "regionId": "150924211000",
+      "name": "大同夭乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

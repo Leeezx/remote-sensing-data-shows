@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "411521100000",
+      "name": "城关镇",
+      "average": 192.6
+    },
+    {
+      "regionId": "411521101000",
+      "name": "周党镇",
+      "average": 36028.6
+    },
+    {
+      "regionId": "411521102000",
+      "name": "竹竿镇",
+      "average": 131978.5
+    },
+    {
+      "regionId": "411521103000",
+      "name": "灵山镇",
+      "average": 12750.4
+    },
+    {
+      "regionId": "411521104000",
+      "name": "子路镇",
+      "average": 148485.6
+    },
+    {
+      "regionId": "411521105000",
+      "name": "楠杆镇",
+      "average": 94013.5
+    },
+    {
+      "regionId": "411521106000",
+      "name": "青山镇",
+      "average": 60029.3
+    },
+    {
+      "regionId": "411521107000",
+      "name": "潘新镇",
+      "average": 52795.6
+    },
+    {
+      "regionId": "411521108000",
+      "name": "彭新镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411521109000",
+      "name": "莽张镇",
+      "average": 79985.5
+    },
+    {
+      "regionId": "411521110000",
+      "name": "东卜镇",
+      "average": 130116.3
+    },
+    {
+      "regionId": "411521111000",
+      "name": "铁铺镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411521200000",
+      "name": "龙山乡",
+      "average": 55646.1
+    },
+    {
+      "regionId": "411521202000",
+      "name": "庙仙乡",
+      "average": 78126.9
+    },
+    {
+      "regionId": "411521204000",
+      "name": "定远乡",
+      "average": 151.8
+    },
+    {
+      "regionId": "411521205000",
+      "name": "山店乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "411521207000",
+      "name": "朱堂乡",
+      "average": 22942.5
+    },
+    {
+      "regionId": "411521208000",
+      "name": "尤店乡",
+      "average": 71107.2
+    },
+    {
+      "regionId": "411521209000",
+      "name": "高店乡",
+      "average": 119462.2
+    },
+    {
+      "regionId": "411521400000",
+      "name": "河南省五一农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420922113000",
+      "name": "三里镇",
+      "average": 14084.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 161.592,
+      "color": "#bdd7e7",
+      "label": "161.592 万m³"
+    },
+    {
+      "value": 23989.388,
+      "color": "#6baed6",
+      "label": "23989.388 万m³"
+    },
+    {
+      "value": 59678.644,
+      "color": "#3182bd",
+      "label": "59678.644 万m³"
+    },
+    {
+      "value": 90646.77999999997,
+      "color": "#08519c",
+      "label": "90646.780 万m³"
+    },
+    {
+      "value": 141882.76000000004,
+      "color": "#042d60",
+      "label": "141882.760 万m³"
+    }
+  ]
+}

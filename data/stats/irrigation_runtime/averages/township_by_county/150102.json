@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150102001000",
+      "name": "海拉尔东路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150102002000",
+      "name": "锡林路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150102003000",
+      "name": "中山东路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150102004000",
+      "name": "东街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150102005000",
+      "name": "西街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150102006000",
+      "name": "东风路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150102007000",
+      "name": "迎新路街道",
+      "average": 36.6
+    },
+    {
+      "regionId": "150102008000",
+      "name": "成吉思汗大街街道",
+      "average": 1703.2
+    },
+    {
+      "regionId": "150102101000",
+      "name": "保合少镇",
+      "average": 1043.4
+    },
+    {
+      "regionId": "150102400000",
+      "name": "新城区鸿盛高科技园区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

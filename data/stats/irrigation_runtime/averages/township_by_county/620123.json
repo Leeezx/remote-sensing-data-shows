@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620123100000",
+      "name": "城关镇",
+      "average": 5122.0
+    },
+    {
+      "regionId": "620123101000",
+      "name": "夏官营镇",
+      "average": 3395.2
+    },
+    {
+      "regionId": "620123102000",
+      "name": "高崖镇",
+      "average": 585.6
+    },
+    {
+      "regionId": "620123103000",
+      "name": "金崖镇",
+      "average": 1643.4
+    },
+    {
+      "regionId": "620123104000",
+      "name": "和平镇",
+      "average": 2828.9
+    },
+    {
+      "regionId": "620123105000",
+      "name": "甘草店镇",
+      "average": 1697.5
+    },
+    {
+      "regionId": "620123106000",
+      "name": "青城镇",
+      "average": 2210.7
+    },
+    {
+      "regionId": "620123107000",
+      "name": "定远镇",
+      "average": 4411.2
+    },
+    {
+      "regionId": "620123200000",
+      "name": "来紫堡乡",
+      "average": 2845.4
+    },
+    {
+      "regionId": "620123201000",
+      "name": "三角城乡",
+      "average": 19455.2
+    },
+    {
+      "regionId": "620123202000",
+      "name": "小康营乡",
+      "average": 9557.2
+    },
+    {
+      "regionId": "620123203000",
+      "name": "连搭乡",
+      "average": 7698.1
+    },
+    {
+      "regionId": "620123204000",
+      "name": "银山乡",
+      "average": 463.5
+    },
+    {
+      "regionId": "620123205000",
+      "name": "马坡乡",
+      "average": 2555.2
+    },
+    {
+      "regionId": "620123206000",
+      "name": "新营乡",
+      "average": 6763.1
+    },
+    {
+      "regionId": "620123207000",
+      "name": "清水驿乡",
+      "average": 3933.9
+    },
+    {
+      "regionId": "620123208000",
+      "name": "龙泉乡",
+      "average": 1282.6
+    },
+    {
+      "regionId": "620123209000",
+      "name": "韦营乡",
+      "average": 298.5
+    },
+    {
+      "regionId": "620123210000",
+      "name": "中连川乡",
+      "average": 244.3
+    },
+    {
+      "regionId": "620123211000",
+      "name": "贡井乡",
+      "average": 206.8
+    },
+    {
+      "regionId": "620123212000",
+      "name": "园子岔乡",
+      "average": 114.0
+    },
+    {
+      "regionId": "620123213000",
+      "name": "上花岔乡",
+      "average": 19.6
+    },
+    {
+      "regionId": "620123214000",
+      "name": "哈岘乡",
+      "average": 11.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 15.064,
+      "color": "#eff3ff",
+      "label": "15.064 万m³"
+    },
+    {
+      "value": 280.2888,
+      "color": "#bdd7e7",
+      "label": "280.289 万m³"
+    },
+    {
+      "value": 1602.9904000000001,
+      "color": "#6baed6",
+      "label": "1602.990 万m³"
+    },
+    {
+      "value": 2830.748,
+      "color": "#3182bd",
+      "label": "2830.748 万m³"
+    },
+    {
+      "value": 4650.028799999999,
+      "color": "#08519c",
+      "label": "4650.029 万m³"
+    },
+    {
+      "value": 15100.079999999987,
+      "color": "#042d60",
+      "label": "15100.080 万m³"
+    }
+  ]
+}

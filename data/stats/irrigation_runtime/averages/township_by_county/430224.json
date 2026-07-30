@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "360321206000",
+      "name": "荷塘乡",
+      "average": 10056.2
+    },
+    {
+      "regionId": "360830205000",
+      "name": "三湾乡",
+      "average": 1536.2
+    },
+    {
+      "regionId": "360830208000",
+      "name": "高溪乡",
+      "average": 12927.7
+    },
+    {
+      "regionId": "430224100000",
+      "name": "城关镇",
+      "average": 6125.0
+    },
+    {
+      "regionId": "430224101000",
+      "name": "界首镇",
+      "average": 22569.5
+    },
+    {
+      "regionId": "430224103000",
+      "name": "湖口镇",
+      "average": 9277.9
+    },
+    {
+      "regionId": "430224104000",
+      "name": "浣溪镇",
+      "average": 5838.0
+    },
+    {
+      "regionId": "430224105000",
+      "name": "马江镇",
+      "average": 28062.9
+    },
+    {
+      "regionId": "430224106000",
+      "name": "高陇镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "430224108000",
+      "name": "潞水镇",
+      "average": 16556.2
+    },
+    {
+      "regionId": "430224109000",
+      "name": "虎踞镇",
+      "average": 21855.6
+    },
+    {
+      "regionId": "430224110000",
+      "name": "平水镇",
+      "average": 32832.1
+    },
+    {
+      "regionId": "430224111000",
+      "name": "枣市镇",
+      "average": 42089.1
+    },
+    {
+      "regionId": "430224112000",
+      "name": "火田镇",
+      "average": 22688.1
+    },
+    {
+      "regionId": "430224113000",
+      "name": "严塘镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "430224114000",
+      "name": "腰陂镇",
+      "average": 54891.4
+    },
+    {
+      "regionId": "430224115000",
+      "name": "秩堂镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "430224202000",
+      "name": "下东乡",
+      "average": 38779.4
+    },
+    {
+      "regionId": "430224203000",
+      "name": "舲舫乡",
+      "average": 9792.3
+    },
+    {
+      "regionId": "430224204000",
+      "name": "思聪乡",
+      "average": 20512.6
+    },
+    {
+      "regionId": "430224205000",
+      "name": "洣江乡",
+      "average": 19162.6
+    },
+    {
+      "regionId": "430224207000",
+      "name": "八团乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "430224213000",
+      "name": "桃坑乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "430224403000",
+      "name": "茶陵监狱",
+      "average": 2298.3
+    },
+    {
+      "regionId": "430224404000",
+      "name": "汉背办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "430224405000",
+      "name": "利民办事处",
+      "average": 572.2
+    },
+    {
+      "regionId": "430224500000",
+      "name": "茶陵县红色农场",
+      "average": 6072.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 292.9663999999998,
+      "color": "#bdd7e7",
+      "label": "292.966 万m³"
+    },
+    {
+      "value": 6098.96,
+      "color": "#6baed6",
+      "label": "6098.960 万m³"
+    },
+    {
+      "value": 14727.435999999996,
+      "color": "#3182bd",
+      "label": "14727.436 万m³"
+    },
+    {
+      "value": 22627.3768,
+      "color": "#08519c",
+      "label": "22627.377 万m³"
+    },
+    {
+      "value": 48234.204000000005,
+      "color": "#042d60",
+      "label": "48234.204 万m³"
+    }
+  ]
+}

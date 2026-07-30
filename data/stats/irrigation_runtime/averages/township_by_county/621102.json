@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "621102001000",
+      "name": "中华路街道",
+      "average": 84.3
+    },
+    {
+      "regionId": "621102002000",
+      "name": "永定路街道",
+      "average": 45.8
+    },
+    {
+      "regionId": "621102101000",
+      "name": "凤翔镇",
+      "average": 2239.3
+    },
+    {
+      "regionId": "621102102000",
+      "name": "内官镇",
+      "average": 13040.9
+    },
+    {
+      "regionId": "621102103000",
+      "name": "馋口镇",
+      "average": 1681.1
+    },
+    {
+      "regionId": "621102104000",
+      "name": "称钩驿镇",
+      "average": 147.5
+    },
+    {
+      "regionId": "621102105000",
+      "name": "鲁家沟镇",
+      "average": 299.8
+    },
+    {
+      "regionId": "621102106000",
+      "name": "西巩驿镇",
+      "average": 127.2
+    },
+    {
+      "regionId": "621102107000",
+      "name": "宁远镇",
+      "average": 1262.8
+    },
+    {
+      "regionId": "621102108000",
+      "name": "李家堡镇",
+      "average": 967.1
+    },
+    {
+      "regionId": "621102109000",
+      "name": "团结镇",
+      "average": 2565.2
+    },
+    {
+      "regionId": "621102110000",
+      "name": "香泉镇",
+      "average": 6888.7
+    },
+    {
+      "regionId": "621102111000",
+      "name": "符家川镇",
+      "average": 593.1
+    },
+    {
+      "regionId": "621102112000",
+      "name": "葛家岔镇",
+      "average": 72.6
+    },
+    {
+      "regionId": "621102204000",
+      "name": "白碌乡",
+      "average": 184.0
+    },
+    {
+      "regionId": "621102207000",
+      "name": "石峡湾乡",
+      "average": 91.4
+    },
+    {
+      "regionId": "621102208000",
+      "name": "新集乡",
+      "average": 32.2
+    },
+    {
+      "regionId": "621102209000",
+      "name": "青岚山乡",
+      "average": 277.0
+    },
+    {
+      "regionId": "621102210000",
+      "name": "高峰乡",
+      "average": 1167.5
+    },
+    {
+      "regionId": "621102211000",
+      "name": "石泉乡",
+      "average": 503.5
+    },
+    {
+      "regionId": "621102214000",
+      "name": "杏园乡",
+      "average": 1070.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 37.64,
+      "color": "#eff3ff",
+      "label": "37.640 万m³"
+    },
+    {
+      "value": 99.99200000000002,
+      "color": "#bdd7e7",
+      "label": "99.992 万m³"
+    },
+    {
+      "value": 278.824,
+      "color": "#6baed6",
+      "label": "278.824 万m³"
+    },
+    {
+      "value": 937.18,
+      "color": "#3182bd",
+      "label": "937.180 万m³"
+    },
+    {
+      "value": 1580.7079999999992,
+      "color": "#08519c",
+      "label": "1580.708 万m³"
+    },
+    {
+      "value": 10580.020000000008,
+      "color": "#042d60",
+      "label": "10580.020 万m³"
+    }
+  ]
+}

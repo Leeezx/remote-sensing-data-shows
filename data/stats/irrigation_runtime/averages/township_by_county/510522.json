@@ -1,0 +1,223 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500118118000",
+      "name": "朱沱镇",
+      "average": 9228.0
+    },
+    {
+      "regionId": "510522100000",
+      "name": "合江镇",
+      "average": 4807.3
+    },
+    {
+      "regionId": "510522101000",
+      "name": "望龙镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510522102000",
+      "name": "白沙镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510522103000",
+      "name": "佛荫镇",
+      "average": 9921.4
+    },
+    {
+      "regionId": "510522104000",
+      "name": "先市镇",
+      "average": 6116.5
+    },
+    {
+      "regionId": "510522105000",
+      "name": "尧坝镇",
+      "average": 6394.2
+    },
+    {
+      "regionId": "510522106000",
+      "name": "九支镇",
+      "average": 3018.9
+    },
+    {
+      "regionId": "510522107000",
+      "name": "五通镇",
+      "average": 2967.9
+    },
+    {
+      "regionId": "510522108000",
+      "name": "凤鸣镇",
+      "average": 8712.1
+    },
+    {
+      "regionId": "510522109000",
+      "name": "榕山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510522110000",
+      "name": "白鹿镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510522111000",
+      "name": "甘雨镇",
+      "average": 4462.9
+    },
+    {
+      "regionId": "510522112000",
+      "name": "福宝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510522113000",
+      "name": "先滩镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510522114000",
+      "name": "自怀镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510522115000",
+      "name": "大桥镇",
+      "average": 4993.2
+    },
+    {
+      "regionId": "510522116000",
+      "name": "车辋镇",
+      "average": 2785.5
+    },
+    {
+      "regionId": "510522200000",
+      "name": "密溪乡",
+      "average": 6583.8
+    },
+    {
+      "regionId": "510522201000",
+      "name": "白米乡",
+      "average": 5079.7
+    },
+    {
+      "regionId": "510522202000",
+      "name": "焦滩乡",
+      "average": 1733.9
+    },
+    {
+      "regionId": "510522203000",
+      "name": "参宝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510522206000",
+      "name": "二里乡",
+      "average": 4588.5
+    },
+    {
+      "regionId": "510522208000",
+      "name": "实录乡",
+      "average": 3245.6
+    },
+    {
+      "regionId": "510522209000",
+      "name": "虎头乡",
+      "average": 3744.2
+    },
+    {
+      "regionId": "510522210000",
+      "name": "榕右乡",
+      "average": 5897.3
+    },
+    {
+      "regionId": "510522212000",
+      "name": "南滩乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510522213000",
+      "name": "石龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510522400000",
+      "name": "合江县临港工业园区",
+      "average": 0.0
+    },
+    {
+      "regionId": "520330203000",
+      "name": "三岔河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520381100000",
+      "name": "天台镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520381102000",
+      "name": "大同镇",
+      "average": 77.1
+    },
+    {
+      "regionId": "520381103000",
+      "name": "旺隆镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520381106000",
+      "name": "官渡镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520381107000",
+      "name": "长期镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520381108000",
+      "name": "长沙镇",
+      "average": 40.9
+    },
+    {
+      "regionId": "520381204000",
+      "name": "白云乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

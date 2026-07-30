@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "222401001000",
+      "name": "进学街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "222401002000",
+      "name": "北山街道",
+      "average": 47.7
+    },
+    {
+      "regionId": "222401003000",
+      "name": "新兴街道",
+      "average": 50.3
+    },
+    {
+      "regionId": "222401004000",
+      "name": "公园街道",
+      "average": 54.0
+    },
+    {
+      "regionId": "222401005000",
+      "name": "河南街道",
+      "average": 53.6
+    },
+    {
+      "regionId": "222401006000",
+      "name": "建工街道",
+      "average": 328.0
+    },
+    {
+      "regionId": "222401100000",
+      "name": "小营镇",
+      "average": 2930.6
+    },
+    {
+      "regionId": "222401101000",
+      "name": "依兰镇",
+      "average": 7750.2
+    },
+    {
+      "regionId": "222401102000",
+      "name": "三道湾镇",
+      "average": 2935.8
+    },
+    {
+      "regionId": "222401105000",
+      "name": "朝阳川镇",
+      "average": 10885.1
+    },
+    {
+      "regionId": "222401400000",
+      "name": "延吉市林业局",
+      "average": 0.0
+    },
+    {
+      "regionId": "222401401000",
+      "name": "东山农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "222401402000",
+      "name": "延边原种场",
+      "average": 273.4
+    },
+    {
+      "regionId": "222401404000",
+      "name": "延边新兴工业集中区",
+      "average": 355.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 36.06119999999999,
+      "color": "#bdd7e7",
+      "label": "36.061 万m³"
+    },
+    {
+      "value": 53.7008,
+      "color": "#6baed6",
+      "label": "53.701 万m³"
+    },
+    {
+      "value": 314.2408,
+      "color": "#3182bd",
+      "label": "314.241 万m³"
+    },
+    {
+      "value": 2931.8688,
+      "color": "#08519c",
+      "label": "2931.869 万m³"
+    },
+    {
+      "value": 10070.026000000002,
+      "color": "#042d60",
+      "label": "10070.026 万m³"
+    }
+  ]
+}

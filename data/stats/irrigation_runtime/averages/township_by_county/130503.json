@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130503001000",
+      "name": "钢铁路街道",
+      "average": 737.4
+    },
+    {
+      "regionId": "130503002000",
+      "name": "中兴路街道",
+      "average": 320.5
+    },
+    {
+      "regionId": "130503003000",
+      "name": "达活泉街道",
+      "average": 1026.2
+    },
+    {
+      "regionId": "130503004000",
+      "name": "张宽街道",
+      "average": 4227.4
+    },
+    {
+      "regionId": "130503006000",
+      "name": "中华大街街道",
+      "average": 14.3
+    },
+    {
+      "regionId": "130503007000",
+      "name": "团结路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130503008000",
+      "name": "泉西街道",
+      "average": 931.0
+    },
+    {
+      "regionId": "130503100000",
+      "name": "南大郭镇",
+      "average": 5000.5
+    },
+    {
+      "regionId": "130503101000",
+      "name": "李村镇",
+      "average": 9295.4
+    },
+    {
+      "regionId": "130521104000",
+      "name": "南石门镇",
+      "average": 23382.0
+    },
+    {
+      "regionId": "130521105000",
+      "name": "羊范镇",
+      "average": 16956.1
+    },
+    {
+      "regionId": "130521106000",
+      "name": "皇寺镇",
+      "average": 9205.1
+    },
+    {
+      "regionId": "130521107000",
+      "name": "会宁镇",
+      "average": 16455.4
+    },
+    {
+      "regionId": "130521108000",
+      "name": "西黄村镇",
+      "average": 6386.2
+    },
+    {
+      "regionId": "130521109000",
+      "name": "路罗镇",
+      "average": 9647.9
+    },
+    {
+      "regionId": "130521110000",
+      "name": "将军墓镇",
+      "average": 10131.1
+    },
+    {
+      "regionId": "130521111000",
+      "name": "浆水镇",
+      "average": 18459.4
+    },
+    {
+      "regionId": "130521112000",
+      "name": "宋家庄镇",
+      "average": 6428.3
+    },
+    {
+      "regionId": "130521200000",
+      "name": "太子井乡",
+      "average": 2357.9
+    },
+    {
+      "regionId": "130521201000",
+      "name": "龙泉寺乡",
+      "average": 4538.7
+    },
+    {
+      "regionId": "130521202000",
+      "name": "北小庄乡",
+      "average": 2180.4
+    },
+    {
+      "regionId": "130521203000",
+      "name": "城计头乡",
+      "average": 4510.9
+    },
+    {
+      "regionId": "130521204000",
+      "name": "白岸乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130521206000",
+      "name": "冀家村乡",
+      "average": 4804.2
+    },
+    {
+      "regionId": "140723102000",
+      "name": "松烟镇",
+      "average": 5859.8
+    },
+    {
+      "regionId": "140723103000",
+      "name": "青城镇",
+      "average": 5189.3
+    },
+    {
+      "regionId": "140724101000",
+      "name": "皋落镇",
+      "average": 8268.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 979.7424,
+      "color": "#bdd7e7",
+      "label": "979.742 万m³"
+    },
+    {
+      "value": 4524.9112,
+      "color": "#6baed6",
+      "label": "4524.911 万m³"
+    },
+    {
+      "value": 6120.894399999999,
+      "color": "#3182bd",
+      "label": "6120.894 万m³"
+    },
+    {
+      "value": 9467.42,
+      "color": "#08519c",
+      "label": "9467.420 万m³"
+    },
+    {
+      "value": 20822.248000000003,
+      "color": "#042d60",
+      "label": "20822.248 万m³"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "370103002000",
+      "name": "大观园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370103003000",
+      "name": "杆石桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370103004000",
+      "name": "四里村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370103006000",
+      "name": "魏家庄街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370103008000",
+      "name": "二七街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370103009000",
+      "name": "七里山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370103010000",
+      "name": "六里山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370103012000",
+      "name": "舜玉路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370103014000",
+      "name": "泺源街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370103015000",
+      "name": "王官庄街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370103016000",
+      "name": "舜耕街道",
+      "average": 8.9
+    },
+    {
+      "regionId": "370103017000",
+      "name": "白马山街道",
+      "average": 12.1
+    },
+    {
+      "regionId": "370103018000",
+      "name": "七贤街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370103019000",
+      "name": "十六里河街道",
+      "average": 572.8
+    },
+    {
+      "regionId": "370103020000",
+      "name": "兴隆街道",
+      "average": 778.3
+    },
+    {
+      "regionId": "370103021000",
+      "name": "党家街道",
+      "average": 5298.7
+    },
+    {
+      "regionId": "370103022000",
+      "name": "陡沟街道",
+      "average": 14906.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

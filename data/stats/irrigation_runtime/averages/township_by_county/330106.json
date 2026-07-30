@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "330106002000",
+      "name": "北山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330106004000",
+      "name": "西溪街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330106005000",
+      "name": "翠苑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330106007000",
+      "name": "古荡街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330106008000",
+      "name": "西湖街道",
+      "average": 282.6
+    },
+    {
+      "regionId": "330106009000",
+      "name": "留下街道",
+      "average": 927.7
+    },
+    {
+      "regionId": "330106010000",
+      "name": "转塘街道",
+      "average": 5129.4
+    },
+    {
+      "regionId": "330106011000",
+      "name": "蒋村街道",
+      "average": 6149.5
+    },
+    {
+      "regionId": "330106012000",
+      "name": "灵隐街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330106013000",
+      "name": "文新街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330106109000",
+      "name": "三墩镇",
+      "average": 17390.4
+    },
+    {
+      "regionId": "330106110000",
+      "name": "双浦镇",
+      "average": 12424.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "320812001000",
+      "name": "城南街道",
+      "average": 3579.8
+    },
+    {
+      "regionId": "320812002000",
+      "name": "清江街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320812003000",
+      "name": "浦楼街道",
+      "average": 218.1
+    },
+    {
+      "regionId": "320812004000",
+      "name": "闸口街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320812005000",
+      "name": "清浦街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320812006000",
+      "name": "府前街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320812007000",
+      "name": "长西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320812008000",
+      "name": "淮海街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320812009000",
+      "name": "长东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320812010000",
+      "name": "柳树湾街道",
+      "average": 4.2
+    },
+    {
+      "regionId": "320812011000",
+      "name": "水渡口街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320812012000",
+      "name": "清河街道",
+      "average": 80.3
+    },
+    {
+      "regionId": "320812050000",
+      "name": "东湖办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "320812051000",
+      "name": "新港办事处",
+      "average": 321.9
+    },
+    {
+      "regionId": "320812052000",
+      "name": "广州路办事处",
+      "average": 1743.7
+    },
+    {
+      "regionId": "320812053000",
+      "name": "枚乘路办事处",
+      "average": 4916.8
+    },
+    {
+      "regionId": "320812100000",
+      "name": "和平镇",
+      "average": 39718.3
+    },
+    {
+      "regionId": "320812101000",
+      "name": "武墩镇",
+      "average": 18588.0
+    },
+    {
+      "regionId": "320812102000",
+      "name": "盐河镇",
+      "average": 20249.9
+    },
+    {
+      "regionId": "320812201000",
+      "name": "黄码乡",
+      "average": 12896.7
+    },
+    {
+      "regionId": "320812350000",
+      "name": "钵池乡",
+      "average": 990.8
+    },
+    {
+      "regionId": "320812351000",
+      "name": "徐杨乡",
+      "average": 3298.8
+    },
+    {
+      "regionId": "320812352000",
+      "name": "南马厂乡",
+      "average": 8577.2
+    },
+    {
+      "regionId": "320812450000",
+      "name": "宁连路办事处",
+      "average": 24900.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

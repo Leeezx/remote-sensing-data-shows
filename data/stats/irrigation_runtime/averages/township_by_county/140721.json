@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140721100000",
+      "name": "箕城镇",
+      "average": 2714.9
+    },
+    {
+      "regionId": "140721101000",
+      "name": "云簇镇",
+      "average": 5383.5
+    },
+    {
+      "regionId": "140721102000",
+      "name": "郝北镇",
+      "average": 11389.8
+    },
+    {
+      "regionId": "140721103000",
+      "name": "社城镇",
+      "average": 1554.2
+    },
+    {
+      "regionId": "140721200000",
+      "name": "河峪乡",
+      "average": 8777.0
+    },
+    {
+      "regionId": "140721201000",
+      "name": "北寨乡",
+      "average": 3729.9
+    },
+    {
+      "regionId": "140721202000",
+      "name": "西马乡",
+      "average": 2142.1
+    },
+    {
+      "regionId": "140721203000",
+      "name": "岚峪乡",
+      "average": 3145.2
+    },
+    {
+      "regionId": "140721204000",
+      "name": "讲堂乡",
+      "average": 1881.7
+    },
+    {
+      "regionId": "140721400000",
+      "name": "城区管理委员会",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 279.756,
+      "color": "#eff3ff",
+      "label": "279.756 万m³"
+    },
+    {
+      "value": 1851.57,
+      "color": "#bdd7e7",
+      "label": "1851.570 万m³"
+    },
+    {
+      "value": 2506.4008,
+      "color": "#6baed6",
+      "label": "2506.401 万m³"
+    },
+    {
+      "value": 3358.0308,
+      "color": "#3182bd",
+      "label": "3358.031 万m³"
+    },
+    {
+      "value": 5695.701999999998,
+      "color": "#08519c",
+      "label": "5695.702 万m³"
+    },
+    {
+      "value": 10919.496000000001,
+      "color": "#042d60",
+      "label": "10919.496 万m³"
+    }
+  ]
+}

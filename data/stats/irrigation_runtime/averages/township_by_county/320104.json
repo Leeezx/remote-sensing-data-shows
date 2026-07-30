@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "320104001000",
+      "name": "秦虹街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320104002000",
+      "name": "夫子庙街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320104003000",
+      "name": "红花街道",
+      "average": 20.1
+    },
+    {
+      "regionId": "320104004000",
+      "name": "双塘街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320104005000",
+      "name": "中华门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320104006000",
+      "name": "五老村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320104007000",
+      "name": "洪武路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320104008000",
+      "name": "大光路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320104009000",
+      "name": "瑞金路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320104010000",
+      "name": "月牙湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320104011000",
+      "name": "光华路街道",
+      "average": 754.1
+    },
+    {
+      "regionId": "320104012000",
+      "name": "朝天宫街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320104400000",
+      "name": "夫管办",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

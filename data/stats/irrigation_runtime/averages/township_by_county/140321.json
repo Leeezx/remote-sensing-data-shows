@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130121102000",
+      "name": "天长镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130121104000",
+      "name": "南峪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "140302006000",
+      "name": "坡底街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140303006000",
+      "name": "贵石沟街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140321100000",
+      "name": "冠山镇",
+      "average": 598.6
+    },
+    {
+      "regionId": "140321101000",
+      "name": "冶西镇",
+      "average": 296.0
+    },
+    {
+      "regionId": "140321102000",
+      "name": "锁簧镇",
+      "average": 506.1
+    },
+    {
+      "regionId": "140321103000",
+      "name": "张庄镇",
+      "average": 3753.2
+    },
+    {
+      "regionId": "140321104000",
+      "name": "东回镇",
+      "average": 6263.6
+    },
+    {
+      "regionId": "140321105000",
+      "name": "柏井镇",
+      "average": 792.5
+    },
+    {
+      "regionId": "140321106000",
+      "name": "娘子关镇",
+      "average": 390.7
+    },
+    {
+      "regionId": "140321107000",
+      "name": "巨城镇",
+      "average": 1358.0
+    },
+    {
+      "regionId": "140321200000",
+      "name": "石门口乡",
+      "average": 436.2
+    },
+    {
+      "regionId": "140321201000",
+      "name": "岔口乡",
+      "average": 944.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

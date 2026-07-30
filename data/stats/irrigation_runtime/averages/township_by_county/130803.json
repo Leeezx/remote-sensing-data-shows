@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130803001000",
+      "name": "元宝山街道",
+      "average": 80.0
+    },
+    {
+      "regionId": "130803002000",
+      "name": "钢城街道",
+      "average": 66.5
+    },
+    {
+      "regionId": "130803100000",
+      "name": "双塔山镇",
+      "average": 393.4
+    },
+    {
+      "regionId": "130803101000",
+      "name": "滦河镇",
+      "average": 204.0
+    },
+    {
+      "regionId": "130803102000",
+      "name": "大庙镇",
+      "average": 488.5
+    },
+    {
+      "regionId": "130803103000",
+      "name": "偏桥子镇",
+      "average": 435.8
+    },
+    {
+      "regionId": "130803200000",
+      "name": "陈栅子乡",
+      "average": 2690.9
+    },
+    {
+      "regionId": "130803201000",
+      "name": "西地满族乡",
+      "average": 1461.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 68.39,
+      "color": "#eff3ff",
+      "label": "68.390 万m³"
+    },
+    {
+      "value": 140.016,
+      "color": "#bdd7e7",
+      "label": "140.016 万m³"
+    },
+    {
+      "value": 360.82319999999993,
+      "color": "#6baed6",
+      "label": "360.823 万m³"
+    },
+    {
+      "value": 444.8644,
+      "color": "#3182bd",
+      "label": "444.864 万m³"
+    },
+    {
+      "value": 990.5163999999992,
+      "color": "#08519c",
+      "label": "990.516 万m³"
+    },
+    {
+      "value": 2518.7699999999995,
+      "color": "#042d60",
+      "label": "2518.770 万m³"
+    }
+  ]
+}

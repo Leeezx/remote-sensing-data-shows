@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510132100000",
+      "name": "五津镇",
+      "average": 3592.5
+    },
+    {
+      "regionId": "510132101000",
+      "name": "花桥镇",
+      "average": 9856.7
+    },
+    {
+      "regionId": "510132102000",
+      "name": "花源镇",
+      "average": 8949.9
+    },
+    {
+      "regionId": "510132103000",
+      "name": "金华镇",
+      "average": 14755.4
+    },
+    {
+      "regionId": "510132104000",
+      "name": "普兴镇",
+      "average": 8180.4
+    },
+    {
+      "regionId": "510132105000",
+      "name": "兴义镇",
+      "average": 11292.8
+    },
+    {
+      "regionId": "510132106000",
+      "name": "新平镇",
+      "average": 14293.2
+    },
+    {
+      "regionId": "510132107000",
+      "name": "方兴镇",
+      "average": 9843.1
+    },
+    {
+      "regionId": "510132108000",
+      "name": "安西镇",
+      "average": 7362.5
+    },
+    {
+      "regionId": "510132109000",
+      "name": "永商镇",
+      "average": 1617.3
+    },
+    {
+      "regionId": "510132110000",
+      "name": "邓双镇",
+      "average": 6759.0
+    },
+    {
+      "regionId": "510132202000",
+      "name": "文井乡",
+      "average": 4418.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 2051.844,
+      "color": "#eff3ff",
+      "label": "2051.844 万m³"
+    },
+    {
+      "value": 5195.4792,
+      "color": "#bdd7e7",
+      "label": "5195.479 万m³"
+    },
+    {
+      "value": 7725.6476,
+      "color": "#6baed6",
+      "label": "7725.648 万m³"
+    },
+    {
+      "value": 9446.5192,
+      "color": "#3182bd",
+      "label": "9446.519 万m³"
+    },
+    {
+      "value": 10816.014799999999,
+      "color": "#08519c",
+      "label": "10816.015 万m³"
+    },
+    {
+      "value": 14653.716,
+      "color": "#042d60",
+      "label": "14653.716 万m³"
+    }
+  ]
+}

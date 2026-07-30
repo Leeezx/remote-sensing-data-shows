@@ -1,0 +1,133 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150602001000",
+      "name": "交通街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150602002000",
+      "name": "公园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150602003000",
+      "name": "林荫街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150602004000",
+      "name": "建设街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150602005000",
+      "name": "富兴街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150602006000",
+      "name": "天骄街道",
+      "average": 63.6
+    },
+    {
+      "regionId": "150602007000",
+      "name": "诃额伦街道",
+      "average": 97.9
+    },
+    {
+      "regionId": "150602008000",
+      "name": "巴音门克街道",
+      "average": 298.2
+    },
+    {
+      "regionId": "150602010000",
+      "name": "幸福街道",
+      "average": 35.8
+    },
+    {
+      "regionId": "150602011000",
+      "name": "纺织街道",
+      "average": 47.1
+    },
+    {
+      "regionId": "150602012000",
+      "name": "兴盛街道",
+      "average": 255.5
+    },
+    {
+      "regionId": "150602013000",
+      "name": "民族街道",
+      "average": 133.5
+    },
+    {
+      "regionId": "150602100000",
+      "name": "泊尔江海子镇",
+      "average": 7286.7
+    },
+    {
+      "regionId": "150602101000",
+      "name": "罕台镇",
+      "average": 1895.5
+    },
+    {
+      "regionId": "150602102000",
+      "name": "铜川镇",
+      "average": 357.9
+    },
+    {
+      "regionId": "150602400000",
+      "name": "鄂尔多斯市装备制造基地",
+      "average": 604.1
+    },
+    {
+      "regionId": "150602401000",
+      "name": "东胜区轻纺工业园区",
+      "average": 68.0
+    },
+    {
+      "regionId": "150602403000",
+      "name": "鄂尔多斯市云计算产业园区",
+      "average": 177.3
+    },
+    {
+      "regionId": "150602404000",
+      "name": "铜川汽车博览园",
+      "average": 93.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

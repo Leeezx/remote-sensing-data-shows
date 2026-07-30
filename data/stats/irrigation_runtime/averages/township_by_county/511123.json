@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511123100000",
+      "name": "玉津镇",
+      "average": 1009.0
+    },
+    {
+      "regionId": "511123101000",
+      "name": "孝姑镇",
+      "average": 822.5
+    },
+    {
+      "regionId": "511123102000",
+      "name": "石溪镇",
+      "average": 2167.7
+    },
+    {
+      "regionId": "511123103000",
+      "name": "清溪镇",
+      "average": 3578.7
+    },
+    {
+      "regionId": "511123104000",
+      "name": "新民镇",
+      "average": 1442.4
+    },
+    {
+      "regionId": "511123105000",
+      "name": "罗城镇",
+      "average": 5237.0
+    },
+    {
+      "regionId": "511123106000",
+      "name": "芭沟镇",
+      "average": 1176.6
+    },
+    {
+      "regionId": "511123107000",
+      "name": "龙孔镇",
+      "average": 1987.1
+    },
+    {
+      "regionId": "511123108000",
+      "name": "定文镇",
+      "average": 3847.9
+    },
+    {
+      "regionId": "511123109000",
+      "name": "敖家镇",
+      "average": 1880.7
+    },
+    {
+      "regionId": "511123110000",
+      "name": "金石井镇",
+      "average": 2174.0
+    },
+    {
+      "regionId": "511123111000",
+      "name": "泉水镇",
+      "average": 1947.5
+    },
+    {
+      "regionId": "511123200000",
+      "name": "双溪乡",
+      "average": 1899.3
+    },
+    {
+      "regionId": "511123201000",
+      "name": "九井乡",
+      "average": 1201.2
+    },
+    {
+      "regionId": "511123202000",
+      "name": "同兴乡",
+      "average": 1108.9
+    },
+    {
+      "regionId": "511123203000",
+      "name": "榨鼓乡",
+      "average": 1587.0
+    },
+    {
+      "regionId": "511123204000",
+      "name": "铁炉乡",
+      "average": 427.1
+    },
+    {
+      "regionId": "511123205000",
+      "name": "大兴乡",
+      "average": 1298.2
+    },
+    {
+      "regionId": "511123206000",
+      "name": "南阳乡",
+      "average": 1441.7
+    },
+    {
+      "regionId": "511123207000",
+      "name": "纪家乡",
+      "average": 622.7
+    },
+    {
+      "regionId": "511123208000",
+      "name": "新盛乡",
+      "average": 515.3
+    },
+    {
+      "regionId": "511123209000",
+      "name": "寿保乡",
+      "average": 1530.4
+    },
+    {
+      "regionId": "511123210000",
+      "name": "舞雩乡",
+      "average": 2075.8
+    },
+    {
+      "regionId": "511123211000",
+      "name": "下渡乡",
+      "average": 650.4
+    },
+    {
+      "regionId": "511123212000",
+      "name": "玉屏乡",
+      "average": 1047.2
+    },
+    {
+      "regionId": "511123213000",
+      "name": "岷东乡",
+      "average": 948.3
+    },
+    {
+      "regionId": "511123214000",
+      "name": "塘坝乡",
+      "average": 1467.9
+    },
+    {
+      "regionId": "511123215000",
+      "name": "马庙乡",
+      "average": 1491.0
+    },
+    {
+      "regionId": "511123216000",
+      "name": "公平乡",
+      "average": 730.9
+    },
+    {
+      "regionId": "511123217000",
+      "name": "伏龙乡",
+      "average": 1707.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 478.256,
+      "color": "#eff3ff",
+      "label": "478.256 万m³"
+    },
+    {
+      "value": 957.2836,
+      "color": "#bdd7e7",
+      "label": "957.284 万m³"
+    },
+    {
+      "value": 1270.652,
+      "color": "#6baed6",
+      "label": "1270.652 万m³"
+    },
+    {
+      "value": 1546.4744,
+      "color": "#3182bd",
+      "label": "1546.474 万m³"
+    },
+    {
+      "value": 1981.2391999999998,
+      "color": "#08519c",
+      "label": "1981.239 万m³"
+    },
+    {
+      "value": 4431.321999999997,
+      "color": "#042d60",
+      "label": "4431.322 万m³"
+    }
+  ]
+}

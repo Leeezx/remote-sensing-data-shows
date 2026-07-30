@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "370203005000",
+      "name": "辽宁路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203008000",
+      "name": "延安路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203010000",
+      "name": "华阳路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203011000",
+      "name": "登州路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203013000",
+      "name": "宁夏路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203014000",
+      "name": "敦化路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203015000",
+      "name": "辽源路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203016000",
+      "name": "合肥路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203018000",
+      "name": "小港街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203019000",
+      "name": "大港街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203020000",
+      "name": "即墨路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203021000",
+      "name": "台东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203022000",
+      "name": "镇江路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203023000",
+      "name": "洪山坡街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203024000",
+      "name": "同安路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203025000",
+      "name": "浮山新区街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203026000",
+      "name": "阜新路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203027000",
+      "name": "海伦路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203028000",
+      "name": "四方街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203029000",
+      "name": "兴隆路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203030000",
+      "name": "水清沟街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203031000",
+      "name": "洛阳路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370203032000",
+      "name": "河西街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230704001000",
+      "name": "友好街道",
+      "average": 9.2
+    },
+    {
+      "regionId": "230704003000",
+      "name": "双子河街道",
+      "average": 4.7
+    },
+    {
+      "regionId": "230704004000",
+      "name": "铁林街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230704400000",
+      "name": "三合经营所",
+      "average": 7.4
+    },
+    {
+      "regionId": "230704401000",
+      "name": "松园林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230704402000",
+      "name": "中心经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230704403000",
+      "name": "永青经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230704404000",
+      "name": "碧云经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230704405000",
+      "name": "友谊经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230704406000",
+      "name": "青杨经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230704407000",
+      "name": "岭峰林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230704408000",
+      "name": "奋斗林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230704409000",
+      "name": "东卡林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230704410000",
+      "name": "鸡爪河林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230704411000",
+      "name": "绿源林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230704412000",
+      "name": "广川经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230704413000",
+      "name": "朝阳经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230716001000",
+      "name": "红山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230716400000",
+      "name": "山峰林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230716401000",
+      "name": "阳光林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230716402000",
+      "name": "新风林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230716403000",
+      "name": "卫国林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230716404000",
+      "name": "查山经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230716405000",
+      "name": "长青经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230716406000",
+      "name": "青山农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230716407000",
+      "name": "溪水经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230716408000",
+      "name": "蔚兰经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230716409000",
+      "name": "永绪经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230716410000",
+      "name": "美林经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230716411000",
+      "name": "红山经营所",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

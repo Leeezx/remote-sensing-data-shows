@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540329100000",
+      "name": "孜托镇",
+      "average": 60.9
+    },
+    {
+      "regionId": "540329101000",
+      "name": "硕督镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540329102000",
+      "name": "康沙镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540329103000",
+      "name": "马利镇",
+      "average": 225.9
+    },
+    {
+      "regionId": "540329200000",
+      "name": "玉西乡",
+      "average": 21.5
+    },
+    {
+      "regionId": "540329201000",
+      "name": "新荣乡",
+      "average": 73.0
+    },
+    {
+      "regionId": "540329202000",
+      "name": "达龙乡",
+      "average": 70.6
+    },
+    {
+      "regionId": "540329203000",
+      "name": "腊久乡",
+      "average": 226.7
+    },
+    {
+      "regionId": "540329204000",
+      "name": "俄西乡",
+      "average": 305.4
+    },
+    {
+      "regionId": "540329205000",
+      "name": "中亦乡",
+      "average": 26.1
+    },
+    {
+      "regionId": "540329206000",
+      "name": "白达乡",
+      "average": 30.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 22.052,
+      "color": "#bdd7e7",
+      "label": "22.052 万m³"
+    },
+    {
+      "value": 32.1,
+      "color": "#6baed6",
+      "label": "32.100 万m³"
+    },
+    {
+      "value": 70.21199999999999,
+      "color": "#3182bd",
+      "label": "70.212 万m³"
+    },
+    {
+      "value": 207.55199999999985,
+      "color": "#08519c",
+      "label": "207.552 万m³"
+    },
+    {
+      "value": 289.66,
+      "color": "#042d60",
+      "label": "289.660 万m³"
+    }
+  ]
+}

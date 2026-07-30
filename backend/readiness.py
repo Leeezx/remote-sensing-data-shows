@@ -8,7 +8,7 @@ from backend.runtime_config import (
     COUNTY_VECTOR_PATH,
     IRRIGATION_8DAY_ROOT,
     IRRIGATION_ANNUAL_ROOT,
-    IRRIGATION_REGION_SERIES_PATH,
+    IRRIGATION_RUNTIME_STATS_ROOT,
     RASTER_ROOT,
     TOWNSHIP_CHUNK_ROOT,
 )
@@ -32,6 +32,16 @@ def probe_json_object(path: Path) -> bool:
     return stat.st_size > 0 and _cached_json_probe(
         str(path), stat.st_mtime_ns, stat.st_size
     )
+
+
+def probe_irrigation_runtime(root: Path) -> bool:
+    required = (
+        root / "manifest.json",
+        root / "averages" / "county.json",
+        root / "series" / "county.json",
+        root / "series" / "township_index.json",
+    )
+    return all(probe_json_object(path) for path in required)
 
 
 def required_raster_roots() -> list[tuple[str, Path]]:
@@ -64,8 +74,8 @@ def _contains_tiff(root: Path) -> bool:
 
 def collect_readiness_failures() -> list[str]:
     failures = []
-    if not probe_json_object(IRRIGATION_REGION_SERIES_PATH):
-        failures.append("irrigation_region_series")
+    if not probe_irrigation_runtime(IRRIGATION_RUNTIME_STATS_ROOT):
+        failures.append("irrigation_runtime_stats")
     if not all(
         COUNTY_VECTOR_PATH.with_suffix(suffix).is_file()
         for suffix in (".shp", ".shx", ".dbf")

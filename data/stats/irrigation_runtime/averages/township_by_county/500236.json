@@ -1,0 +1,208 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "422801102000",
+      "name": "板桥镇",
+      "average": 84.6
+    },
+    {
+      "regionId": "422801205000",
+      "name": "太阳河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "422802101000",
+      "name": "柏杨坝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500236116000",
+      "name": "永安镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500236117000",
+      "name": "白帝镇",
+      "average": 1225.8
+    },
+    {
+      "regionId": "500236118000",
+      "name": "草堂镇",
+      "average": 592.9
+    },
+    {
+      "regionId": "500236119000",
+      "name": "汾河镇",
+      "average": 1674.9
+    },
+    {
+      "regionId": "500236120000",
+      "name": "康乐镇",
+      "average": 4207.2
+    },
+    {
+      "regionId": "500236121000",
+      "name": "大树镇",
+      "average": 5174.8
+    },
+    {
+      "regionId": "500236122000",
+      "name": "竹园镇",
+      "average": 6361.2
+    },
+    {
+      "regionId": "500236123000",
+      "name": "公平镇",
+      "average": 11388.4
+    },
+    {
+      "regionId": "500236124000",
+      "name": "朱衣镇",
+      "average": 4167.3
+    },
+    {
+      "regionId": "500236125000",
+      "name": "甲高镇",
+      "average": 1430.2
+    },
+    {
+      "regionId": "500236126000",
+      "name": "羊市镇",
+      "average": 1072.9
+    },
+    {
+      "regionId": "500236127000",
+      "name": "吐祥镇",
+      "average": 551.0
+    },
+    {
+      "regionId": "500236128000",
+      "name": "兴隆镇",
+      "average": 350.6
+    },
+    {
+      "regionId": "500236129000",
+      "name": "青龙镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500236130000",
+      "name": "新民镇",
+      "average": 301.4
+    },
+    {
+      "regionId": "500236131000",
+      "name": "永乐镇",
+      "average": 222.2
+    },
+    {
+      "regionId": "500236132000",
+      "name": "安坪镇",
+      "average": 1222.5
+    },
+    {
+      "regionId": "500236133000",
+      "name": "五马镇",
+      "average": 285.6
+    },
+    {
+      "regionId": "500236134000",
+      "name": "青莲镇",
+      "average": 2418.0
+    },
+    {
+      "regionId": "500236265000",
+      "name": "岩湾乡",
+      "average": 2754.4
+    },
+    {
+      "regionId": "500236266000",
+      "name": "平安乡",
+      "average": 264.4
+    },
+    {
+      "regionId": "500236267000",
+      "name": "红土乡",
+      "average": 3488.8
+    },
+    {
+      "regionId": "500236269000",
+      "name": "石岗乡",
+      "average": 13466.7
+    },
+    {
+      "regionId": "500236270000",
+      "name": "康坪乡",
+      "average": 158.7
+    },
+    {
+      "regionId": "500236272000",
+      "name": "太和土家族乡",
+      "average": 330.9
+    },
+    {
+      "regionId": "500236274000",
+      "name": "鹤峰乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500236275000",
+      "name": "冯坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500236276000",
+      "name": "长安土家族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500236277000",
+      "name": "龙桥土家族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500236278000",
+      "name": "云雾土家族乡",
+      "average": 190.5
+    },
+    {
+      "regionId": "500236400000",
+      "name": "白帝城风景区管理委员会",
+      "average": 515.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

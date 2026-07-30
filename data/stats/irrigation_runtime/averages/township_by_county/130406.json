@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130406100000",
+      "name": "临水镇",
+      "average": 3272.2
+    },
+    {
+      "regionId": "130406101000",
+      "name": "峰峰镇",
+      "average": 10568.7
+    },
+    {
+      "regionId": "130406102000",
+      "name": "新坡镇",
+      "average": 13693.8
+    },
+    {
+      "regionId": "130406103000",
+      "name": "大社镇",
+      "average": 15185.1
+    },
+    {
+      "regionId": "130406104000",
+      "name": "和村镇",
+      "average": 7666.8
+    },
+    {
+      "regionId": "130406105000",
+      "name": "义井镇",
+      "average": 4602.8
+    },
+    {
+      "regionId": "130406106000",
+      "name": "彭城镇",
+      "average": 1256.6
+    },
+    {
+      "regionId": "130406107000",
+      "name": "界城镇",
+      "average": 2109.9
+    },
+    {
+      "regionId": "130406108000",
+      "name": "大峪镇",
+      "average": 2336.4
+    },
+    {
+      "regionId": "130427201000",
+      "name": "西固义乡",
+      "average": 28462.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 1410.194,
+      "color": "#eff3ff",
+      "label": "1410.194 万m³"
+    },
+    {
+      "value": 2315.562,
+      "color": "#bdd7e7",
+      "label": "2315.562 万m³"
+    },
+    {
+      "value": 4118.4616,
+      "color": "#6baed6",
+      "label": "4118.462 万m³"
+    },
+    {
+      "value": 8723.0916,
+      "color": "#3182bd",
+      "label": "8723.092 万m³"
+    },
+    {
+      "value": 13830.9996,
+      "color": "#08519c",
+      "label": "13831.000 万m³"
+    },
+    {
+      "value": 26072.404000000002,
+      "color": "#042d60",
+      "label": "26072.404 万m³"
+    }
+  ]
+}

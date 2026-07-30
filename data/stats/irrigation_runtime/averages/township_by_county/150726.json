@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150726101000",
+      "name": "嵯岗镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150726102000",
+      "name": "阿木古郎镇",
+      "average": 4.8
+    },
+    {
+      "regionId": "150726202000",
+      "name": "新宝力格苏木乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "150726203000",
+      "name": "乌布尔宝力格苏木乡",
+      "average": 4727.8
+    },
+    {
+      "regionId": "150726204000",
+      "name": "罕达盖苏木",
+      "average": 5712.8
+    },
+    {
+      "regionId": "150726205000",
+      "name": "吉布胡郎图苏木",
+      "average": 0.0
+    },
+    {
+      "regionId": "150726206000",
+      "name": "甘珠尔苏木",
+      "average": 0.0
+    },
+    {
+      "regionId": "150726400000",
+      "name": "嵯岗双娃牧场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

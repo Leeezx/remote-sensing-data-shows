@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "522730100000",
+      "name": "龙山镇",
+      "average": 11405.4
+    },
+    {
+      "regionId": "522730101000",
+      "name": "三元镇",
+      "average": 11226.4
+    },
+    {
+      "regionId": "522730102000",
+      "name": "猫场镇",
+      "average": 32183.9
+    },
+    {
+      "regionId": "522730103000",
+      "name": "谷脚镇",
+      "average": 38098.5
+    },
+    {
+      "regionId": "522730104000",
+      "name": "羊场镇",
+      "average": 23212.2
+    },
+    {
+      "regionId": "522730105000",
+      "name": "洗马镇",
+      "average": 15965.4
+    },
+    {
+      "regionId": "522730200000",
+      "name": "民主乡",
+      "average": 22935.2
+    },
+    {
+      "regionId": "522730202000",
+      "name": "水场乡",
+      "average": 8217.2
+    },
+    {
+      "regionId": "522730203000",
+      "name": "湾寨乡",
+      "average": 13774.1
+    },
+    {
+      "regionId": "522730204000",
+      "name": "摆省乡",
+      "average": 4657.1
+    },
+    {
+      "regionId": "522730205000",
+      "name": "巴江乡",
+      "average": 4236.7
+    },
+    {
+      "regionId": "522730206000",
+      "name": "谷龙乡",
+      "average": 17208.4
+    },
+    {
+      "regionId": "522730207000",
+      "name": "哪嗙乡",
+      "average": 12909.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 4337.596,
+      "color": "#eff3ff",
+      "label": "4337.596 万m³"
+    },
+    {
+      "value": 9854.2048,
+      "color": "#bdd7e7",
+      "label": "9854.205 万m³"
+    },
+    {
+      "value": 12681.1312,
+      "color": "#6baed6",
+      "label": "12681.131 万m³"
+    },
+    {
+      "value": 16154.336,
+      "color": "#3182bd",
+      "label": "16154.336 万m³"
+    },
+    {
+      "value": 23061.512,
+      "color": "#08519c",
+      "label": "23061.512 万m³"
+    },
+    {
+      "value": 36678.996,
+      "color": "#042d60",
+      "label": "36678.996 万m³"
+    }
+  ]
+}

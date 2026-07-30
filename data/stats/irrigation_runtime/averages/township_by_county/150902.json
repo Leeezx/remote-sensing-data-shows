@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150902001000",
+      "name": "新体路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150902002000",
+      "name": "桥东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150902003000",
+      "name": "前进路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150902004000",
+      "name": "常青街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150902005000",
+      "name": "虎山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150902006000",
+      "name": "桥西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150902007000",
+      "name": "新华街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150902008000",
+      "name": "泉山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150902105000",
+      "name": "白海子镇",
+      "average": 8549.7
+    },
+    {
+      "regionId": "150902205000",
+      "name": "马莲渠乡",
+      "average": 1694.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

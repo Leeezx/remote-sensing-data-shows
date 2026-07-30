@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "520323100000",
+      "name": "洋川镇",
+      "average": 13587.5
+    },
+    {
+      "regionId": "520323101000",
+      "name": "郑场镇",
+      "average": 8294.4
+    },
+    {
+      "regionId": "520323102000",
+      "name": "旺草镇",
+      "average": 11089.3
+    },
+    {
+      "regionId": "520323103000",
+      "name": "蒲场镇",
+      "average": 5442.1
+    },
+    {
+      "regionId": "520323104000",
+      "name": "风华镇",
+      "average": 13806.6
+    },
+    {
+      "regionId": "520323105000",
+      "name": "茅垭镇",
+      "average": 3975.2
+    },
+    {
+      "regionId": "520323106000",
+      "name": "枧坝镇",
+      "average": 4012.1
+    },
+    {
+      "regionId": "520323107000",
+      "name": "宽阔镇",
+      "average": 6600.6
+    },
+    {
+      "regionId": "520323108000",
+      "name": "黄杨镇",
+      "average": 12970.1
+    },
+    {
+      "regionId": "520323109000",
+      "name": "青杠塘镇",
+      "average": 8994.3
+    },
+    {
+      "regionId": "520323110000",
+      "name": "太白镇",
+      "average": 12893.9
+    },
+    {
+      "regionId": "520323111000",
+      "name": "温泉镇",
+      "average": 9797.2
+    },
+    {
+      "regionId": "520323200000",
+      "name": "大路槽乡",
+      "average": 2758.1
+    },
+    {
+      "regionId": "520323201000",
+      "name": "小关乡",
+      "average": 1473.7
+    },
+    {
+      "regionId": "520323202000",
+      "name": "坪乐乡",
+      "average": 10241.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 1833.332,
+      "color": "#eff3ff",
+      "label": "1833.332 万m³"
+    },
+    {
+      "value": 4010.9192,
+      "color": "#bdd7e7",
+      "label": "4010.919 万m³"
+    },
+    {
+      "value": 7711.7328,
+      "color": "#6baed6",
+      "label": "7711.733 万m³"
+    },
+    {
+      "value": 9950.1768,
+      "color": "#3182bd",
+      "label": "9950.177 万m³"
+    },
+    {
+      "value": 12896.338399999999,
+      "color": "#08519c",
+      "label": "12896.338 万m³"
+    },
+    {
+      "value": 13745.252,
+      "color": "#042d60",
+      "label": "13745.252 万m³"
+    }
+  ]
+}

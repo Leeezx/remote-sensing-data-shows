@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500153113000",
+      "name": "清流镇",
+      "average": 363.4
+    },
+    {
+      "regionId": "511011001000",
+      "name": "东兴街道",
+      "average": 560.4
+    },
+    {
+      "regionId": "511011002000",
+      "name": "西林街道",
+      "average": 391.0
+    },
+    {
+      "regionId": "511011003000",
+      "name": "新江街道",
+      "average": 258.4
+    },
+    {
+      "regionId": "511011100000",
+      "name": "田家镇",
+      "average": 3123.5
+    },
+    {
+      "regionId": "511011101000",
+      "name": "郭北镇",
+      "average": 4581.3
+    },
+    {
+      "regionId": "511011102000",
+      "name": "高梁镇",
+      "average": 7149.0
+    },
+    {
+      "regionId": "511011103000",
+      "name": "白合镇",
+      "average": 3685.1
+    },
+    {
+      "regionId": "511011104000",
+      "name": "顺河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511011105000",
+      "name": "胜利镇",
+      "average": 1708.3
+    },
+    {
+      "regionId": "511011106000",
+      "name": "高桥镇",
+      "average": 1549.6
+    },
+    {
+      "regionId": "511011107000",
+      "name": "双才镇",
+      "average": 4378.6
+    },
+    {
+      "regionId": "511011108000",
+      "name": "小河口镇",
+      "average": 1690.4
+    },
+    {
+      "regionId": "511011109000",
+      "name": "杨家镇",
+      "average": 5296.7
+    },
+    {
+      "regionId": "511011110000",
+      "name": "椑木镇",
+      "average": 758.8
+    },
+    {
+      "regionId": "511011111000",
+      "name": "石子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511011200000",
+      "name": "太安乡",
+      "average": 3809.8
+    },
+    {
+      "regionId": "511011201000",
+      "name": "苏家乡",
+      "average": 4116.9
+    },
+    {
+      "regionId": "511011202000",
+      "name": "富溪乡",
+      "average": 967.7
+    },
+    {
+      "regionId": "511011203000",
+      "name": "同福乡",
+      "average": 3055.7
+    },
+    {
+      "regionId": "511011204000",
+      "name": "椑南乡",
+      "average": 4417.6
+    },
+    {
+      "regionId": "511011205000",
+      "name": "永东乡",
+      "average": 2667.5
+    },
+    {
+      "regionId": "511011206000",
+      "name": "永福乡",
+      "average": 4979.6
+    },
+    {
+      "regionId": "511011207000",
+      "name": "新店乡",
+      "average": 5224.7
+    },
+    {
+      "regionId": "511011208000",
+      "name": "双桥乡",
+      "average": 3025.4
+    },
+    {
+      "regionId": "511011209000",
+      "name": "平坦乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511011210000",
+      "name": "中山乡",
+      "average": 1174.4
+    },
+    {
+      "regionId": "511011211000",
+      "name": "大治乡",
+      "average": 2367.4
+    },
+    {
+      "regionId": "511011212000",
+      "name": "柳桥乡",
+      "average": 4060.0
+    },
+    {
+      "regionId": "511011213000",
+      "name": "三烈乡",
+      "average": 1263.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 589.7631999999999,
+      "color": "#bdd7e7",
+      "label": "589.763 万m³"
+    },
+    {
+      "value": 1650.4127999999998,
+      "color": "#6baed6",
+      "label": "1650.413 万m³"
+    },
+    {
+      "value": 3074.9552,
+      "color": "#3182bd",
+      "label": "3074.955 万m³"
+    },
+    {
+      "value": 4339.868399999999,
+      "color": "#08519c",
+      "label": "4339.868 万m³"
+    },
+    {
+      "value": 6074.6659999999965,
+      "color": "#042d60",
+      "label": "6074.666 万m³"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "652827100000",
+      "name": "和静镇",
+      "average": 14521.8
+    },
+    {
+      "regionId": "652827101000",
+      "name": "巴仑台镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "652827102000",
+      "name": "巴润哈尔莫墩镇",
+      "average": 30063.0
+    },
+    {
+      "regionId": "652827103000",
+      "name": "哈尔莫墩镇",
+      "average": 20018.9
+    },
+    {
+      "regionId": "652827104000",
+      "name": "巴音布鲁克镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "652827105000",
+      "name": "巩乃斯镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "652827200000",
+      "name": "乃门莫墩乡",
+      "average": 40231.1
+    },
+    {
+      "regionId": "652827201000",
+      "name": "协比乃尔布呼乡",
+      "average": 20400.0
+    },
+    {
+      "regionId": "652827203000",
+      "name": "克尔古提乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "652827204000",
+      "name": "阿拉沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "652827205000",
+      "name": "额勒再特乌鲁乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "652827206000",
+      "name": "巴音郭愣乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "652827400000",
+      "name": "乌拉斯台农场",
+      "average": 62866.1
+    },
+    {
+      "regionId": "652827501000",
+      "name": "兵团二十一团",
+      "average": 68521.7
+    },
+    {
+      "regionId": "652827504000",
+      "name": "兵团农二师湖光糖厂",
+      "average": 379.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

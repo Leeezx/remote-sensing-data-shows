@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "711700010000",
+      "name": "宜蘭市",
+      "average": 0.0
+    },
+    {
+      "regionId": "711700020000",
+      "name": "羅東鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711700030000",
+      "name": "蘇澳鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711700040000",
+      "name": "頭城鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711700050000",
+      "name": "礁溪鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711700060000",
+      "name": "壯圍鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711700070000",
+      "name": "員山鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711700080000",
+      "name": "冬山鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711700090000",
+      "name": "五結鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711700100000",
+      "name": "三星鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711700110000",
+      "name": "大同鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711700120000",
+      "name": "南澳鄉",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510525104000",
+      "name": "二郎镇",
+      "average": 1283.9
+    },
+    {
+      "regionId": "510525107000",
+      "name": "丹桂镇",
+      "average": 8834.8
+    },
+    {
+      "regionId": "510525108000",
+      "name": "水口镇",
+      "average": 11090.0
+    },
+    {
+      "regionId": "510525205000",
+      "name": "土城乡",
+      "average": 3020.7
+    },
+    {
+      "regionId": "520382001000",
+      "name": "盐津街道",
+      "average": 745.2
+    },
+    {
+      "regionId": "520382002000",
+      "name": "中枢街道",
+      "average": 711.5
+    },
+    {
+      "regionId": "520382003000",
+      "name": "苍龙街道",
+      "average": 3197.8
+    },
+    {
+      "regionId": "520382100000",
+      "name": "茅台镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520382101000",
+      "name": "坛厂镇",
+      "average": 4423.3
+    },
+    {
+      "regionId": "520382102000",
+      "name": "长岗镇",
+      "average": 6504.3
+    },
+    {
+      "regionId": "520382103000",
+      "name": "鲁班镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520382104000",
+      "name": "五马镇",
+      "average": 6216.5
+    },
+    {
+      "regionId": "520382105000",
+      "name": "茅坝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520382106000",
+      "name": "九仓镇",
+      "average": 7932.4
+    },
+    {
+      "regionId": "520382107000",
+      "name": "喜头镇",
+      "average": 4740.3
+    },
+    {
+      "regionId": "520382108000",
+      "name": "大坝镇",
+      "average": 1879.9
+    },
+    {
+      "regionId": "520382109000",
+      "name": "三合镇",
+      "average": 551.0
+    },
+    {
+      "regionId": "520382110000",
+      "name": "合马镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520382111000",
+      "name": "二合镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520382200000",
+      "name": "龙井乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520382201000",
+      "name": "后山苗族布依族乡",
+      "average": 6735.4
+    },
+    {
+      "regionId": "520382202000",
+      "name": "学孔乡",
+      "average": 3672.8
+    },
+    {
+      "regionId": "520382203000",
+      "name": "高大坪乡",
+      "average": 7068.9
+    },
+    {
+      "regionId": "520382204000",
+      "name": "火石岗乡",
+      "average": 411.4
+    },
+    {
+      "regionId": "520382205000",
+      "name": "沙滩乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

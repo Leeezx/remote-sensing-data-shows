@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "450103001000",
+      "name": "新竹街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450103002000",
+      "name": "中山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450103003000",
+      "name": "建政街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450103004000",
+      "name": "南湖街道",
+      "average": 2553.0
+    },
+    {
+      "regionId": "450103005000",
+      "name": "津头街道",
+      "average": 167.3
+    },
+    {
+      "regionId": "450103006000",
+      "name": "仙葫经济开发区管理委员会",
+      "average": 6561.1
+    },
+    {
+      "regionId": "450103100000",
+      "name": "刘圩镇",
+      "average": 37638.1
+    },
+    {
+      "regionId": "450103101000",
+      "name": "南阳镇",
+      "average": 5031.5
+    },
+    {
+      "regionId": "450103102000",
+      "name": "伶俐镇",
+      "average": 17736.5
+    },
+    {
+      "regionId": "450103103000",
+      "name": "长塘镇",
+      "average": 16850.0
+    },
+    {
+      "regionId": "450103451000",
+      "name": "青秀山管理委员会",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "370634001000",
+      "name": "南长山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370634101000",
+      "name": "砣矶镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "370634201000",
+      "name": "北长山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "370634202000",
+      "name": "黑山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "370634203000",
+      "name": "大钦岛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "370634204000",
+      "name": "小钦岛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "370634205000",
+      "name": "南隍城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "370634206000",
+      "name": "北隍城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "370684001000",
+      "name": "登州街道",
+      "average": 231.2
+    },
+    {
+      "regionId": "370684002000",
+      "name": "紫荆山街道",
+      "average": 289.3
+    },
+    {
+      "regionId": "370684003000",
+      "name": "新港街道",
+      "average": 7533.9
+    },
+    {
+      "regionId": "370684005000",
+      "name": "南王街道",
+      "average": 3099.2
+    },
+    {
+      "regionId": "370684102000",
+      "name": "刘家沟镇",
+      "average": 24506.5
+    },
+    {
+      "regionId": "370684103000",
+      "name": "潮水镇",
+      "average": 12987.7
+    },
+    {
+      "regionId": "370684105000",
+      "name": "大柳行镇",
+      "average": 1317.6
+    },
+    {
+      "regionId": "370684106000",
+      "name": "小门家镇",
+      "average": 10592.1
+    },
+    {
+      "regionId": "370684107000",
+      "name": "大辛店镇",
+      "average": 17613.0
+    },
+    {
+      "regionId": "370684108000",
+      "name": "村里集镇",
+      "average": 3108.3
+    },
+    {
+      "regionId": "370684109000",
+      "name": "北沟镇",
+      "average": 15669.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

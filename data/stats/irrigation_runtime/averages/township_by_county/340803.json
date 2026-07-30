@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "340803001000",
+      "name": "德宽路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340803002000",
+      "name": "玉琳路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340803003000",
+      "name": "龙山路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340803004000",
+      "name": "菱湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340803005000",
+      "name": "集贤路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340803006000",
+      "name": "石化路街道",
+      "average": 96.2
+    },
+    {
+      "regionId": "340803007000",
+      "name": "花亭路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340803100000",
+      "name": "海口镇",
+      "average": 44435.5
+    },
+    {
+      "regionId": "340803200000",
+      "name": "十里铺乡",
+      "average": 6489.2
+    },
+    {
+      "regionId": "340803201000",
+      "name": "山口乡",
+      "average": 6453.1
+    },
+    {
+      "regionId": "340803400000",
+      "name": "大观开发区",
+      "average": 546.8
+    },
+    {
+      "regionId": "340803401000",
+      "name": "安徽安庆海口经济开发区",
+      "average": 103.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

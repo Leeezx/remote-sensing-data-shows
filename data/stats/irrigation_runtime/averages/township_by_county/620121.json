@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620121100000",
+      "name": "城关镇",
+      "average": 700.0
+    },
+    {
+      "regionId": "620121101000",
+      "name": "红城镇",
+      "average": 2054.7
+    },
+    {
+      "regionId": "620121102000",
+      "name": "中堡镇",
+      "average": 4303.4
+    },
+    {
+      "regionId": "620121103000",
+      "name": "武胜驿镇",
+      "average": 11018.6
+    },
+    {
+      "regionId": "620121104000",
+      "name": "河桥镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620121105000",
+      "name": "连城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620121106000",
+      "name": "苦水镇",
+      "average": 4178.7
+    },
+    {
+      "regionId": "620121107000",
+      "name": "中川镇",
+      "average": 8276.4
+    },
+    {
+      "regionId": "620121108000",
+      "name": "秦川镇",
+      "average": 10770.3
+    },
+    {
+      "regionId": "620121109000",
+      "name": "大同镇",
+      "average": 5454.3
+    },
+    {
+      "regionId": "620121110000",
+      "name": "龙泉寺镇",
+      "average": 2527.3
+    },
+    {
+      "regionId": "620121111000",
+      "name": "树屏镇",
+      "average": 252.3
+    },
+    {
+      "regionId": "620121112000",
+      "name": "上川镇",
+      "average": 4682.2
+    },
+    {
+      "regionId": "620121200000",
+      "name": "柳树乡",
+      "average": 4966.8
+    },
+    {
+      "regionId": "620121201000",
+      "name": "坪城乡",
+      "average": 2139.4
+    },
+    {
+      "regionId": "620121202000",
+      "name": "民乐乡",
+      "average": 17140.3
+    },
+    {
+      "regionId": "620121203000",
+      "name": "通远乡",
+      "average": 436.7
+    },
+    {
+      "regionId": "620121204000",
+      "name": "七山乡",
+      "average": 280.2
+    },
+    {
+      "regionId": "620623201000",
+      "name": "东坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620623202000",
+      "name": "赛拉隆乡",
+      "average": 202.5
+    },
+    {
+      "regionId": "630202204000",
+      "name": "芦花乡",
+      "average": 1353.1
+    },
+    {
+      "regionId": "630202205000",
+      "name": "马营乡",
+      "average": 1900.6
+    },
+    {
+      "regionId": "630202206000",
+      "name": "马厂乡",
+      "average": 484.4
+    },
+    {
+      "regionId": "630222202000",
+      "name": "松树乡",
+      "average": 4968.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 276.74039999999997,
+      "color": "#bdd7e7",
+      "label": "276.740 万m³"
+    },
+    {
+      "value": 1512.9699999999998,
+      "color": "#6baed6",
+      "label": "1512.970 万m³"
+    },
+    {
+      "value": 3696.4912000000004,
+      "color": "#3182bd",
+      "label": "3696.491 万m³"
+    },
+    {
+      "value": 5028.8268,
+      "color": "#08519c",
+      "label": "5028.827 万m³"
+    },
+    {
+      "value": 14324.317999999996,
+      "color": "#042d60",
+      "label": "14324.318 万m³"
+    }
+  ]
+}

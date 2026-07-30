@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513223100000",
+      "name": "凤仪镇",
+      "average": 1014.7
+    },
+    {
+      "regionId": "513223101000",
+      "name": "南新镇",
+      "average": 91.8
+    },
+    {
+      "regionId": "513223102000",
+      "name": "叠溪镇",
+      "average": 55.3
+    },
+    {
+      "regionId": "513223201000",
+      "name": "渭门乡",
+      "average": 112.3
+    },
+    {
+      "regionId": "513223202000",
+      "name": "永和乡",
+      "average": 444.2
+    },
+    {
+      "regionId": "513223203000",
+      "name": "沟口乡",
+      "average": 195.7
+    },
+    {
+      "regionId": "513223204000",
+      "name": "光明乡",
+      "average": 6132.0
+    },
+    {
+      "regionId": "513223205000",
+      "name": "富顺乡",
+      "average": 5726.9
+    },
+    {
+      "regionId": "513223206000",
+      "name": "土门乡",
+      "average": 3866.2
+    },
+    {
+      "regionId": "513223207000",
+      "name": "东兴乡",
+      "average": 6241.3
+    },
+    {
+      "regionId": "513223208000",
+      "name": "黑虎乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513223209000",
+      "name": "飞虹乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513223210000",
+      "name": "回龙乡",
+      "average": 110.3
+    },
+    {
+      "regionId": "513223211000",
+      "name": "三龙乡",
+      "average": 24.1
+    },
+    {
+      "regionId": "513223212000",
+      "name": "白溪乡",
+      "average": 79.3
+    },
+    {
+      "regionId": "513223213000",
+      "name": "洼底乡",
+      "average": 1.2
+    },
+    {
+      "regionId": "513223214000",
+      "name": "石大关乡",
+      "average": 93.0
+    },
+    {
+      "regionId": "513223215000",
+      "name": "太平乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513223216000",
+      "name": "松坪沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513223217000",
+      "name": "曲谷乡",
+      "average": 35.0
+    },
+    {
+      "regionId": "513223218000",
+      "name": "雅都乡",
+      "average": 7.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2.7600000000000016,
+      "color": "#bdd7e7",
+      "label": "2.760 万m³"
+    },
+    {
+      "value": 57.22,
+      "color": "#6baed6",
+      "label": "57.220 万m³"
+    },
+    {
+      "value": 108.916,
+      "color": "#3182bd",
+      "label": "108.916 万m³"
+    },
+    {
+      "value": 877.779999999999,
+      "color": "#08519c",
+      "label": "877.780 万m³"
+    },
+    {
+      "value": 6197.58,
+      "color": "#042d60",
+      "label": "6197.580 万m³"
+    }
+  ]
+}

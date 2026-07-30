@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "530924101000",
+      "name": "凤尾镇",
+      "average": 2507.9
+    },
+    {
+      "regionId": "530924102000",
+      "name": "勐捧镇",
+      "average": 5268.0
+    },
+    {
+      "regionId": "530924103000",
+      "name": "南伞镇",
+      "average": 4033.7
+    },
+    {
+      "regionId": "530924201000",
+      "name": "忙丙乡",
+      "average": 2034.7
+    },
+    {
+      "regionId": "530924202000",
+      "name": "勐堆乡",
+      "average": 4281.0
+    },
+    {
+      "regionId": "530924204000",
+      "name": "木场乡",
+      "average": 5096.6
+    },
+    {
+      "regionId": "530924205000",
+      "name": "军赛乡",
+      "average": 26894.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 2091.484,
+      "color": "#eff3ff",
+      "label": "2091.484 万m³"
+    },
+    {
+      "value": 2922.9176,
+      "color": "#bdd7e7",
+      "label": "2922.918 万m³"
+    },
+    {
+      "value": 4138.5552,
+      "color": "#6baed6",
+      "label": "4138.555 万m³"
+    },
+    {
+      "value": 4750.7856,
+      "color": "#3182bd",
+      "label": "4750.786 万m³"
+    },
+    {
+      "value": 5221.3792,
+      "color": "#08519c",
+      "label": "5221.379 万m³"
+    },
+    {
+      "value": 24298.879999999997,
+      "color": "#042d60",
+      "label": "24298.880 万m³"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "632323100000",
+      "name": "泽曲镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632323101000",
+      "name": "麦秀镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632323200000",
+      "name": "宁秀乡",
+      "average": 2217.5
+    },
+    {
+      "regionId": "632323201000",
+      "name": "和日镇",
+      "average": 1844.0
+    },
+    {
+      "regionId": "632323202000",
+      "name": "王加乡",
+      "average": 341.0
+    },
+    {
+      "regionId": "632323203000",
+      "name": "西卜沙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632323204000",
+      "name": "多禾茂乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

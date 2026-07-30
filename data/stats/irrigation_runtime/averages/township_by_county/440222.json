@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "440222100000",
+      "name": "太平镇",
+      "average": 28620.2
+    },
+    {
+      "regionId": "440222101000",
+      "name": "马市镇",
+      "average": 49294.8
+    },
+    {
+      "regionId": "440222102000",
+      "name": "澄江镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440222103000",
+      "name": "顿岗镇",
+      "average": 28694.3
+    },
+    {
+      "regionId": "440222104000",
+      "name": "罗坝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440222105000",
+      "name": "司前镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440222106000",
+      "name": "隘子镇",
+      "average": 14254.1
+    },
+    {
+      "regionId": "440222107000",
+      "name": "城南镇",
+      "average": 24689.3
+    },
+    {
+      "regionId": "440222108000",
+      "name": "沈所镇",
+      "average": 34299.1
+    },
+    {
+      "regionId": "440222204000",
+      "name": "深渡水乡",
+      "average": 11295.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

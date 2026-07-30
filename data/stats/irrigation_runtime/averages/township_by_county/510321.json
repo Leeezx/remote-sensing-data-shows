@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510321100000",
+      "name": "旭阳镇",
+      "average": 12656.1
+    },
+    {
+      "regionId": "510321102000",
+      "name": "双石镇",
+      "average": 6419.7
+    },
+    {
+      "regionId": "510321103000",
+      "name": "望佳镇",
+      "average": 3202.8
+    },
+    {
+      "regionId": "510321107000",
+      "name": "鼎新镇",
+      "average": 5225.7
+    },
+    {
+      "regionId": "510321110000",
+      "name": "乐德镇",
+      "average": 3696.8
+    },
+    {
+      "regionId": "510321111000",
+      "name": "过水镇",
+      "average": 4051.1
+    },
+    {
+      "regionId": "510321112000",
+      "name": "古文镇",
+      "average": 3221.7
+    },
+    {
+      "regionId": "510321113000",
+      "name": "河口镇",
+      "average": 2863.0
+    },
+    {
+      "regionId": "510321114000",
+      "name": "新桥镇",
+      "average": 1359.2
+    },
+    {
+      "regionId": "510321115000",
+      "name": "正紫镇",
+      "average": 1342.3
+    },
+    {
+      "regionId": "510321116000",
+      "name": "度佳镇",
+      "average": 4728.8
+    },
+    {
+      "regionId": "510321117000",
+      "name": "东佳镇",
+      "average": 546.6
+    },
+    {
+      "regionId": "510321118000",
+      "name": "长山镇",
+      "average": 8337.7
+    },
+    {
+      "regionId": "510321119000",
+      "name": "保华镇",
+      "average": 5518.6
+    },
+    {
+      "regionId": "510321120000",
+      "name": "留佳镇",
+      "average": 12526.2
+    },
+    {
+      "regionId": "510321121000",
+      "name": "来牟镇",
+      "average": 8148.7
+    },
+    {
+      "regionId": "510321122000",
+      "name": "双古镇",
+      "average": 5384.0
+    },
+    {
+      "regionId": "510321123000",
+      "name": "观山镇",
+      "average": 4020.5
+    },
+    {
+      "regionId": "510321124000",
+      "name": "高山镇",
+      "average": 10280.2
+    },
+    {
+      "regionId": "510321125000",
+      "name": "东兴镇",
+      "average": 1033.8
+    },
+    {
+      "regionId": "510321126000",
+      "name": "铁厂镇",
+      "average": 3213.5
+    },
+    {
+      "regionId": "510321202000",
+      "name": "金花乡",
+      "average": 1500.0
+    },
+    {
+      "regionId": "510321203000",
+      "name": "雷音乡",
+      "average": 1130.7
+    },
+    {
+      "regionId": "510321204000",
+      "name": "古佳乡",
+      "average": 1934.1
+    },
+    {
+      "regionId": "510321205000",
+      "name": "于佳乡",
+      "average": 3731.2
+    },
+    {
+      "regionId": "510321206000",
+      "name": "复兴乡",
+      "average": 3742.7
+    },
+    {
+      "regionId": "510321207000",
+      "name": "墨林乡",
+      "average": 1159.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 799.944,
+      "color": "#eff3ff",
+      "label": "799.944 万m³"
+    },
+    {
+      "value": 1431.2896,
+      "color": "#bdd7e7",
+      "label": "1431.290 万m³"
+    },
+    {
+      "value": 3217.6328,
+      "color": "#6baed6",
+      "label": "3217.633 万m³"
+    },
+    {
+      "value": 4035.6776,
+      "color": "#3182bd",
+      "label": "4035.678 万m³"
+    },
+    {
+      "value": 5958.3368,
+      "color": "#08519c",
+      "label": "5958.337 万m³"
+    },
+    {
+      "value": 12588.552000000001,
+      "color": "#042d60",
+      "label": "12588.552 万m³"
+    }
+  ]
+}

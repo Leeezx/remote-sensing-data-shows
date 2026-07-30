@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410103001000",
+      "name": "淮河路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410103002000",
+      "name": "解放路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410103003000",
+      "name": "铭功路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410103004000",
+      "name": "一马路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410103005000",
+      "name": "蜜蜂张街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410103006000",
+      "name": "五里堡街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410103007000",
+      "name": "大学路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410103008000",
+      "name": "建中街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410103009000",
+      "name": "福华街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410103011000",
+      "name": "嵩山路街道",
+      "average": 999.0
+    },
+    {
+      "regionId": "410103012000",
+      "name": "京广路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410103013000",
+      "name": "长江路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410103100000",
+      "name": "马寨镇",
+      "average": 14450.0
+    },
+    {
+      "regionId": "410103201000",
+      "name": "侯寨乡",
+      "average": 32799.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

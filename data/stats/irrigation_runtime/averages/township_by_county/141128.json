@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "141128100000",
+      "name": "圪洞镇",
+      "average": 2631.5
+    },
+    {
+      "regionId": "141128101000",
+      "name": "马坊镇",
+      "average": 2833.2
+    },
+    {
+      "regionId": "141128102000",
+      "name": "峪口镇",
+      "average": 4025.5
+    },
+    {
+      "regionId": "141128103000",
+      "name": "大武镇",
+      "average": 2206.4
+    },
+    {
+      "regionId": "141128104000",
+      "name": "北武当镇",
+      "average": 2455.1
+    },
+    {
+      "regionId": "141128200000",
+      "name": "积翠乡",
+      "average": 617.0
+    },
+    {
+      "regionId": "141128201000",
+      "name": "麻地会乡",
+      "average": 1944.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 776.24,
+      "color": "#eff3ff",
+      "label": "776.240 万m³"
+    },
+    {
+      "value": 2015.3728,
+      "color": "#bdd7e7",
+      "label": "2015.373 万m³"
+    },
+    {
+      "value": 2311.8488,
+      "color": "#6baed6",
+      "label": "2311.849 万m³"
+    },
+    {
+      "value": 2556.7064,
+      "color": "#3182bd",
+      "label": "2556.706 万m³"
+    },
+    {
+      "value": 2778.3376,
+      "color": "#08519c",
+      "label": "2778.338 万m³"
+    },
+    {
+      "value": 3882.424,
+      "color": "#042d60",
+      "label": "3882.424 万m³"
+    }
+  ]
+}

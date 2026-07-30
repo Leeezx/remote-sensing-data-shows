@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140723100000",
+      "name": "义兴镇",
+      "average": 2361.2
+    },
+    {
+      "regionId": "140723101000",
+      "name": "李阳镇",
+      "average": 2313.8
+    },
+    {
+      "regionId": "140723102000",
+      "name": "松烟镇",
+      "average": 5859.8
+    },
+    {
+      "regionId": "140723103000",
+      "name": "青城镇",
+      "average": 5189.3
+    },
+    {
+      "regionId": "140723104000",
+      "name": "横岭镇",
+      "average": 877.2
+    },
+    {
+      "regionId": "140723200000",
+      "name": "喂马乡",
+      "average": 1493.5
+    },
+    {
+      "regionId": "140723201000",
+      "name": "平松乡",
+      "average": 2680.9
+    },
+    {
+      "regionId": "140723202000",
+      "name": "牛川乡",
+      "average": 762.5
+    },
+    {
+      "regionId": "140723203000",
+      "name": "马坊乡",
+      "average": 1654.4
+    },
+    {
+      "regionId": "140723204000",
+      "name": "阳光占乡",
+      "average": 1174.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 783.146,
+      "color": "#eff3ff",
+      "label": "783.146 万m³"
+    },
+    {
+      "value": 1146.6944,
+      "color": "#bdd7e7",
+      "label": "1146.694 万m³"
+    },
+    {
+      "value": 1595.8324,
+      "color": "#6baed6",
+      "label": "1595.832 万m³"
+    },
+    {
+      "value": 2331.0536,
+      "color": "#3182bd",
+      "label": "2331.054 万m³"
+    },
+    {
+      "value": 2911.6727999999994,
+      "color": "#08519c",
+      "label": "2911.673 万m³"
+    },
+    {
+      "value": 5739.110000000001,
+      "color": "#042d60",
+      "label": "5739.110 万m³"
+    }
+  ]
+}

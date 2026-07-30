@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "422823100000",
+      "name": "信陵镇",
+      "average": 1718.8
+    },
+    {
+      "regionId": "422823101000",
+      "name": "东瀼口镇",
+      "average": 6385.5
+    },
+    {
+      "regionId": "422823102000",
+      "name": "沿渡河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "422823103000",
+      "name": "官渡口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "422823104000",
+      "name": "茶店子镇",
+      "average": 15936.3
+    },
+    {
+      "regionId": "422823105000",
+      "name": "绿葱坡镇",
+      "average": 3370.2
+    },
+    {
+      "regionId": "422823106000",
+      "name": "大支坪镇",
+      "average": 1859.2
+    },
+    {
+      "regionId": "422823107000",
+      "name": "野三关镇",
+      "average": 5384.6
+    },
+    {
+      "regionId": "422823108000",
+      "name": "水布垭镇",
+      "average": 5453.4
+    },
+    {
+      "regionId": "422823109000",
+      "name": "清太坪镇",
+      "average": 2649.3
+    },
+    {
+      "regionId": "422823200000",
+      "name": "溪丘湾乡",
+      "average": 7275.4
+    },
+    {
+      "regionId": "422823201000",
+      "name": "金果坪乡",
+      "average": 510.9
+    },
+    {
+      "regionId": "500237107000",
+      "name": "骡坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237227000",
+      "name": "培石乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

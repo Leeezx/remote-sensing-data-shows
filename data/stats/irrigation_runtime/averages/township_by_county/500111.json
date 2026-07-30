@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500111001000",
+      "name": "龙岗街道",
+      "average": 6463.9
+    },
+    {
+      "regionId": "500111002000",
+      "name": "棠香街道",
+      "average": 5133.1
+    },
+    {
+      "regionId": "500111003000",
+      "name": "龙滩子街道",
+      "average": 359.8
+    },
+    {
+      "regionId": "500111100000",
+      "name": "龙水镇",
+      "average": 16562.7
+    },
+    {
+      "regionId": "500111101000",
+      "name": "智凤镇",
+      "average": 13715.2
+    },
+    {
+      "regionId": "500111102000",
+      "name": "宝顶镇",
+      "average": 6079.9
+    },
+    {
+      "regionId": "500111103000",
+      "name": "中敖镇",
+      "average": 10370.1
+    },
+    {
+      "regionId": "500111104000",
+      "name": "三驱镇",
+      "average": 8528.6
+    },
+    {
+      "regionId": "500111105000",
+      "name": "宝兴镇",
+      "average": 2286.6
+    },
+    {
+      "regionId": "500111106000",
+      "name": "玉龙镇",
+      "average": 3983.4
+    },
+    {
+      "regionId": "500111107000",
+      "name": "石马镇",
+      "average": 8176.7
+    },
+    {
+      "regionId": "500111108000",
+      "name": "拾万镇",
+      "average": 3812.5
+    },
+    {
+      "regionId": "500111109000",
+      "name": "回龙镇",
+      "average": 8893.0
+    },
+    {
+      "regionId": "500111110000",
+      "name": "金山镇",
+      "average": 5453.5
+    },
+    {
+      "regionId": "500111111000",
+      "name": "万古镇",
+      "average": 13182.4
+    },
+    {
+      "regionId": "500111112000",
+      "name": "国梁镇",
+      "average": 8603.6
+    },
+    {
+      "regionId": "500111113000",
+      "name": "雍溪镇",
+      "average": 10644.1
+    },
+    {
+      "regionId": "500111114000",
+      "name": "珠溪镇",
+      "average": 12631.3
+    },
+    {
+      "regionId": "500111115000",
+      "name": "龙石镇",
+      "average": 2037.9
+    },
+    {
+      "regionId": "500111116000",
+      "name": "邮亭镇",
+      "average": 15677.2
+    },
+    {
+      "regionId": "500111117000",
+      "name": "铁山镇",
+      "average": 5814.6
+    },
+    {
+      "regionId": "500111118000",
+      "name": "高升镇",
+      "average": 5780.5
+    },
+    {
+      "regionId": "500111119000",
+      "name": "季家镇",
+      "average": 3959.6
+    },
+    {
+      "regionId": "500111120000",
+      "name": "古龙镇",
+      "average": 1361.3
+    },
+    {
+      "regionId": "500111121000",
+      "name": "高坪镇",
+      "average": 4275.7
+    },
+    {
+      "regionId": "500111122000",
+      "name": "双路镇",
+      "average": 2225.9
+    },
+    {
+      "regionId": "500111123000",
+      "name": "通桥镇",
+      "average": 4286.2
+    },
+    {
+      "regionId": "512021111000",
+      "name": "两板桥镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "512021226000",
+      "name": "忠义乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "512021227000",
+      "name": "合义乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2234.8836,
+      "color": "#bdd7e7",
+      "label": "2234.884 万m³"
+    },
+    {
+      "value": 4283.218,
+      "color": "#6baed6",
+      "label": "4283.218 万m³"
+    },
+    {
+      "value": 6188.955999999999,
+      "color": "#3182bd",
+      "label": "6188.956 万m³"
+    },
+    {
+      "value": 10151.489199999996,
+      "color": "#08519c",
+      "label": "10151.489 万m³"
+    },
+    {
+      "value": 16049.109999999999,
+      "color": "#042d60",
+      "label": "16049.110 万m³"
+    }
+  ]
+}

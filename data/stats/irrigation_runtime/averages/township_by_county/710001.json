@@ -1,0 +1,223 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "710600010000",
+      "name": "鹽埕區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600020000",
+      "name": "鼓山區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600030000",
+      "name": "左營區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600040000",
+      "name": "楠梓區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600050000",
+      "name": "三民區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600060000",
+      "name": "新興區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600070000",
+      "name": "前金區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600080000",
+      "name": "苓雅區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600090000",
+      "name": "前鎮區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600110000",
+      "name": "小港區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600120000",
+      "name": "鳳山區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600130000",
+      "name": "林園區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600140000",
+      "name": "大寮區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600150000",
+      "name": "大樹區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600160000",
+      "name": "大社區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600170000",
+      "name": "仁武區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600180000",
+      "name": "鳥松區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600190000",
+      "name": "岡山區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600200000",
+      "name": "橋頭區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600210000",
+      "name": "燕巢區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600220000",
+      "name": "田寮區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600230000",
+      "name": "阿蓮區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600240000",
+      "name": "路竹區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600250000",
+      "name": "湖內區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600260000",
+      "name": "茄萣區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600270000",
+      "name": "永安區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600280000",
+      "name": "彌陀區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600290000",
+      "name": "梓官區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600300000",
+      "name": "旗山區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600310000",
+      "name": "美濃區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600320000",
+      "name": "六龜區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600330000",
+      "name": "甲仙區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600340000",
+      "name": "杉林區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600350000",
+      "name": "內門區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600360000",
+      "name": "茂林區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600370000",
+      "name": "桃源區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710600380000",
+      "name": "那瑪夏區",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

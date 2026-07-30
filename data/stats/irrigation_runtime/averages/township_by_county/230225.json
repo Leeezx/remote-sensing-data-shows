@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150721203000",
+      "name": "新发朝鲜民族乡",
+      "average": 7045.3
+    },
+    {
+      "regionId": "150783104000",
+      "name": "大河湾镇",
+      "average": 19215.6
+    },
+    {
+      "regionId": "150783403000",
+      "name": "成吉思汗牧场",
+      "average": 3944.5
+    },
+    {
+      "regionId": "230225100000",
+      "name": "甘南镇",
+      "average": 26.4
+    },
+    {
+      "regionId": "230225101000",
+      "name": "兴十四镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "230225102000",
+      "name": "平阳镇",
+      "average": 1.3
+    },
+    {
+      "regionId": "230225103000",
+      "name": "东阳镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "230225104000",
+      "name": "巨宝镇",
+      "average": 9586.9
+    },
+    {
+      "regionId": "230225201000",
+      "name": "长山乡",
+      "average": 37174.3
+    },
+    {
+      "regionId": "230225202000",
+      "name": "中兴乡",
+      "average": 9.1
+    },
+    {
+      "regionId": "230225203000",
+      "name": "兴隆乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "230225204000",
+      "name": "宝山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "230225206000",
+      "name": "查哈阳乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "230225500000",
+      "name": "查哈阳农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230225580000",
+      "name": "北京市双河农场",
+      "average": 57022.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

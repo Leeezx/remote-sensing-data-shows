@@ -1,0 +1,63 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210903001000",
+      "name": "兴隆街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210903002000",
+      "name": "中兴街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210903003000",
+      "name": "益民街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210903004000",
+      "name": "新发街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210903101000",
+      "name": "长营子蒙古族镇",
+      "average": 490.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

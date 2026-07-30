@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610304115000",
+      "name": "凤阁岭镇",
+      "average": 259.8
+    },
+    {
+      "regionId": "610327107000",
+      "name": "天成镇",
+      "average": 807.2
+    },
+    {
+      "regionId": "620521100000",
+      "name": "永清镇",
+      "average": 853.8
+    },
+    {
+      "regionId": "620521101000",
+      "name": "红堡镇",
+      "average": 315.3
+    },
+    {
+      "regionId": "620521102000",
+      "name": "白驼镇",
+      "average": 61.2
+    },
+    {
+      "regionId": "620521103000",
+      "name": "金集镇",
+      "average": 28.7
+    },
+    {
+      "regionId": "620521104000",
+      "name": "秦亭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620521105000",
+      "name": "山门镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620521200000",
+      "name": "白沙乡",
+      "average": 893.0
+    },
+    {
+      "regionId": "620521201000",
+      "name": "松树乡",
+      "average": 114.1
+    },
+    {
+      "regionId": "620521202000",
+      "name": "王河乡",
+      "average": 37.7
+    },
+    {
+      "regionId": "620521203000",
+      "name": "远门乡",
+      "average": 134.1
+    },
+    {
+      "regionId": "620521204000",
+      "name": "土门乡",
+      "average": 419.4
+    },
+    {
+      "regionId": "620521205000",
+      "name": "郭川乡",
+      "average": 171.8
+    },
+    {
+      "regionId": "620521206000",
+      "name": "贾川乡",
+      "average": 13.9
+    },
+    {
+      "regionId": "620521207000",
+      "name": "丰望乡",
+      "average": 453.2
+    },
+    {
+      "regionId": "620521208000",
+      "name": "草川铺乡",
+      "average": 178.4
+    },
+    {
+      "regionId": "620521209000",
+      "name": "陇东乡",
+      "average": 423.7
+    },
+    {
+      "regionId": "620521210000",
+      "name": "黄门乡",
+      "average": 263.5
+    },
+    {
+      "regionId": "620521211000",
+      "name": "新城乡",
+      "average": 69.6
+    },
+    {
+      "regionId": "620521400000",
+      "name": "清水县科技养殖示范园区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 30.860000000000003,
+      "color": "#bdd7e7",
+      "label": "30.860 万m³"
+    },
+    {
+      "value": 115.69999999999999,
+      "color": "#6baed6",
+      "label": "115.700 万m³"
+    },
+    {
+      "value": 253.288,
+      "color": "#3182bd",
+      "label": "253.288 万m³"
+    },
+    {
+      "value": 422.66799999999995,
+      "color": "#08519c",
+      "label": "422.668 万m³"
+    },
+    {
+      "value": 877.32,
+      "color": "#042d60",
+      "label": "877.320 万m³"
+    }
+  ]
+}

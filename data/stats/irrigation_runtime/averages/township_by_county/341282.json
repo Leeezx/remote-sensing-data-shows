@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "341282001000",
+      "name": "东城办事处",
+      "average": 9233.1
+    },
+    {
+      "regionId": "341282002000",
+      "name": "西城办事处",
+      "average": 55.0
+    },
+    {
+      "regionId": "341282003000",
+      "name": "颍南办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "341282100000",
+      "name": "光武镇",
+      "average": 18821.6
+    },
+    {
+      "regionId": "341282101000",
+      "name": "泉阳镇",
+      "average": 54700.2
+    },
+    {
+      "regionId": "341282102000",
+      "name": "芦村镇",
+      "average": 337.7
+    },
+    {
+      "regionId": "341282103000",
+      "name": "新马集镇",
+      "average": 26613.9
+    },
+    {
+      "regionId": "341282104000",
+      "name": "大黄镇",
+      "average": 25989.9
+    },
+    {
+      "regionId": "341282105000",
+      "name": "田营镇",
+      "average": 7043.3
+    },
+    {
+      "regionId": "341282106000",
+      "name": "陶庙镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341282107000",
+      "name": "王集镇",
+      "average": 44935.8
+    },
+    {
+      "regionId": "341282108000",
+      "name": "砖集镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341282109000",
+      "name": "顾集镇",
+      "average": 28657.4
+    },
+    {
+      "regionId": "341282110000",
+      "name": "代桥镇",
+      "average": 25241.8
+    },
+    {
+      "regionId": "341282111000",
+      "name": "舒庄镇",
+      "average": 21118.1
+    },
+    {
+      "regionId": "341282200000",
+      "name": "邴集乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341282201000",
+      "name": "靳寨乡",
+      "average": 12820.6
+    },
+    {
+      "regionId": "341282202000",
+      "name": "任寨乡",
+      "average": 25264.4
+    },
+    {
+      "regionId": "411624105000",
+      "name": "付井镇",
+      "average": 25239.9
+    },
+    {
+      "regionId": "411624109000",
+      "name": "刘湾镇",
+      "average": 11476.2
+    },
+    {
+      "regionId": "411624205000",
+      "name": "冯营乡",
+      "average": 51190.5
+    },
+    {
+      "regionId": "411624207000",
+      "name": "洪山乡",
+      "average": 34829.9
+    },
+    {
+      "regionId": "411625105000",
+      "name": "宜路镇",
+      "average": 29793.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 242.7127999999999,
+      "color": "#bdd7e7",
+      "label": "242.713 万m³"
+    },
+    {
+      "value": 12670.0272,
+      "color": "#6baed6",
+      "label": "12670.027 万m³"
+    },
+    {
+      "value": 25244.3312,
+      "color": "#3182bd",
+      "label": "25244.331 万m³"
+    },
+    {
+      "value": 29039.1632,
+      "color": "#08519c",
+      "label": "29039.163 万m³"
+    },
+    {
+      "value": 53155.93199999999,
+      "color": "#042d60",
+      "label": "53155.932 万m³"
+    }
+  ]
+}

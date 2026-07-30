@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230302001000",
+      "name": "向阳街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230302002000",
+      "name": "南山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230302003000",
+      "name": "立新街道",
+      "average": 47.2
+    },
+    {
+      "regionId": "230302004000",
+      "name": "东风街道",
+      "average": 81.3
+    },
+    {
+      "regionId": "230302005000",
+      "name": "红军路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230302006000",
+      "name": "西鸡西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230302007000",
+      "name": "西山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230302200000",
+      "name": "红星乡",
+      "average": 2036.5
+    },
+    {
+      "regionId": "230302201000",
+      "name": "西郊乡",
+      "average": 447.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

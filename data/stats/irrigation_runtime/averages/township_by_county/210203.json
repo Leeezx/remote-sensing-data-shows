@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210203001000",
+      "name": "香炉礁街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210203004000",
+      "name": "日新街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210203005000",
+      "name": "北京街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210203010000",
+      "name": "八一路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210203011000",
+      "name": "人民广场街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210203013000",
+      "name": "白云街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

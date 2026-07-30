@@ -1,0 +1,53 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "330108001000",
+      "name": "西兴街道",
+      "average": 1464.9
+    },
+    {
+      "regionId": "330108002000",
+      "name": "长河街道",
+      "average": 2193.7
+    },
+    {
+      "regionId": "330108003000",
+      "name": "浦沿街道",
+      "average": 776.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 803.8439999999999,
+      "color": "#eff3ff",
+      "label": "803.844 万m³"
+    },
+    {
+      "value": 1068.2664,
+      "color": "#bdd7e7",
+      "label": "1068.266 万m³"
+    },
+    {
+      "value": 1332.6888,
+      "color": "#6baed6",
+      "label": "1332.689 万m³"
+    },
+    {
+      "value": 1604.8296,
+      "color": "#3182bd",
+      "label": "1604.830 万m³"
+    },
+    {
+      "value": 1884.6888,
+      "color": "#08519c",
+      "label": "1884.689 万m³"
+    },
+    {
+      "value": 2164.548,
+      "color": "#042d60",
+      "label": "2164.548 万m³"
+    }
+  ]
+}

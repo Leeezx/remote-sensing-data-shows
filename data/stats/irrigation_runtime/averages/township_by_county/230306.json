@@ -1,0 +1,63 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230306001000",
+      "name": "城子河街道",
+      "average": 139.3
+    },
+    {
+      "regionId": "230306002000",
+      "name": "正阳街道",
+      "average": 52.3
+    },
+    {
+      "regionId": "230306004000",
+      "name": "城西街道",
+      "average": 71.6
+    },
+    {
+      "regionId": "230306200000",
+      "name": "长青乡",
+      "average": 711.1
+    },
+    {
+      "regionId": "230306201000",
+      "name": "永丰乡",
+      "average": 3730.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 53.843999999999994,
+      "color": "#eff3ff",
+      "label": "53.844 万m³"
+    },
+    {
+      "value": 68.6664,
+      "color": "#bdd7e7",
+      "label": "68.666 万m³"
+    },
+    {
+      "value": 113.3032,
+      "color": "#6baed6",
+      "label": "113.303 万m³"
+    },
+    {
+      "value": 358.87119999999993,
+      "color": "#3182bd",
+      "label": "358.871 万m³"
+    },
+    {
+      "value": 1170.0487999999991,
+      "color": "#08519c",
+      "label": "1170.049 万m³"
+    },
+    {
+      "value": 3488.948,
+      "color": "#042d60",
+      "label": "3488.948 万m³"
+    }
+  ]
+}

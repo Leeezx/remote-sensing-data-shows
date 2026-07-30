@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "711100010000",
+      "name": "苗栗市",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100020000",
+      "name": "苑裡鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100030000",
+      "name": "通霄鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100040000",
+      "name": "竹南鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100050000",
+      "name": "頭份市",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100060000",
+      "name": "後龍鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100070000",
+      "name": "卓蘭鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100080000",
+      "name": "大湖鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100090000",
+      "name": "公館鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100100000",
+      "name": "銅鑼鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100110000",
+      "name": "南庄鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100120000",
+      "name": "頭屋鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100130000",
+      "name": "三義鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100140000",
+      "name": "西湖鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100150000",
+      "name": "造橋鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100160000",
+      "name": "三灣鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100170000",
+      "name": "獅潭鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711100180000",
+      "name": "泰安鄉",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

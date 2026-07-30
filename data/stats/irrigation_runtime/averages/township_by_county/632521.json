@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "632521100000",
+      "name": "恰卜恰镇",
+      "average": 817.5
+    },
+    {
+      "regionId": "632521101000",
+      "name": "倒淌河镇",
+      "average": 2168.7
+    },
+    {
+      "regionId": "632521102000",
+      "name": "龙羊峡镇",
+      "average": 1114.8
+    },
+    {
+      "regionId": "632521103000",
+      "name": "塘格木镇",
+      "average": 1941.7
+    },
+    {
+      "regionId": "632521200000",
+      "name": "黑马河乡",
+      "average": 1554.1
+    },
+    {
+      "regionId": "632521201000",
+      "name": "石乃亥乡",
+      "average": 511.4
+    },
+    {
+      "regionId": "632521202000",
+      "name": "沙珠玉乡",
+      "average": 4354.0
+    },
+    {
+      "regionId": "632521203000",
+      "name": "铁盖乡",
+      "average": 89.3
+    },
+    {
+      "regionId": "632521204000",
+      "name": "廿地乡",
+      "average": 97.6
+    },
+    {
+      "regionId": "632521205000",
+      "name": "切吉乡",
+      "average": 744.9
+    },
+    {
+      "regionId": "632521206000",
+      "name": "江西沟乡",
+      "average": 8251.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 90.96,
+      "color": "#eff3ff",
+      "label": "90.960 万m³"
+    },
+    {
+      "value": 539.42,
+      "color": "#bdd7e7",
+      "label": "539.420 万m³"
+    },
+    {
+      "value": 829.392,
+      "color": "#6baed6",
+      "label": "829.392 万m³"
+    },
+    {
+      "value": 1536.5279999999998,
+      "color": "#3182bd",
+      "label": "1536.528 万m³"
+    },
+    {
+      "value": 2141.4599999999996,
+      "color": "#08519c",
+      "label": "2141.460 万m³"
+    },
+    {
+      "value": 7471.600000000003,
+      "color": "#042d60",
+      "label": "7471.600 万m³"
+    }
+  ]
+}

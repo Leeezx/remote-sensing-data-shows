@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "110101001000",
+      "name": "东华门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110101002000",
+      "name": "景山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110101003000",
+      "name": "交道口街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110101004000",
+      "name": "安定门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110101005000",
+      "name": "北新桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110101006000",
+      "name": "东四街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110101007000",
+      "name": "朝阳门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110101008000",
+      "name": "建国门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110101009000",
+      "name": "东直门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110101010000",
+      "name": "和平里街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110101011000",
+      "name": "前门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110101012000",
+      "name": "崇文门外街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110101013000",
+      "name": "东花市街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110101014000",
+      "name": "龙潭街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110101015000",
+      "name": "体育馆路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110101016000",
+      "name": "天坛街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110101017000",
+      "name": "永定门外街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511602001000",
+      "name": "浓洄街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511602002000",
+      "name": "北辰街道",
+      "average": 169.8
+    },
+    {
+      "regionId": "511602004000",
+      "name": "广福街道",
+      "average": 440.5
+    },
+    {
+      "regionId": "511602005000",
+      "name": "万盛街道",
+      "average": 314.9
+    },
+    {
+      "regionId": "511602006000",
+      "name": "中桥街道",
+      "average": 463.4
+    },
+    {
+      "regionId": "511602100000",
+      "name": "枣山镇",
+      "average": 3536.5
+    },
+    {
+      "regionId": "511602101000",
+      "name": "官盛镇",
+      "average": 768.3
+    },
+    {
+      "regionId": "511602102000",
+      "name": "协兴镇",
+      "average": 4724.0
+    },
+    {
+      "regionId": "511602103000",
+      "name": "浓溪镇",
+      "average": 1628.6
+    },
+    {
+      "regionId": "511602104000",
+      "name": "悦来镇",
+      "average": 10474.9
+    },
+    {
+      "regionId": "511602105000",
+      "name": "兴平镇",
+      "average": 7965.7
+    },
+    {
+      "regionId": "511602106000",
+      "name": "井河镇",
+      "average": 10258.9
+    },
+    {
+      "regionId": "511602107000",
+      "name": "花桥镇",
+      "average": 13480.9
+    },
+    {
+      "regionId": "511602108000",
+      "name": "龙台镇",
+      "average": 11048.3
+    },
+    {
+      "regionId": "511602109000",
+      "name": "肖溪镇",
+      "average": 5207.3
+    },
+    {
+      "regionId": "511602110000",
+      "name": "恒升镇",
+      "average": 5341.9
+    },
+    {
+      "regionId": "511602111000",
+      "name": "石笋镇",
+      "average": 13488.1
+    },
+    {
+      "regionId": "511602112000",
+      "name": "白市镇",
+      "average": 11384.7
+    },
+    {
+      "regionId": "511602113000",
+      "name": "大安镇",
+      "average": 6389.1
+    },
+    {
+      "regionId": "511602200000",
+      "name": "穿石乡",
+      "average": 1086.3
+    },
+    {
+      "regionId": "511602201000",
+      "name": "广门乡",
+      "average": 1643.5
+    },
+    {
+      "regionId": "511602202000",
+      "name": "广罗乡",
+      "average": 1634.4
+    },
+    {
+      "regionId": "511602203000",
+      "name": "方坪乡",
+      "average": 2557.0
+    },
+    {
+      "regionId": "511602204000",
+      "name": "化龙乡",
+      "average": 1539.6
+    },
+    {
+      "regionId": "511602205000",
+      "name": "大龙乡",
+      "average": 7194.8
+    },
+    {
+      "regionId": "511602206000",
+      "name": "崇望乡",
+      "average": 2595.8
+    },
+    {
+      "regionId": "511602207000",
+      "name": "龙安乡",
+      "average": 1666.1
+    },
+    {
+      "regionId": "511602208000",
+      "name": "彭家乡",
+      "average": 3001.3
+    },
+    {
+      "regionId": "511602209000",
+      "name": "杨坪乡",
+      "average": 7332.6
+    },
+    {
+      "regionId": "511602210000",
+      "name": "郑山乡",
+      "average": 2729.5
+    },
+    {
+      "regionId": "511602211000",
+      "name": "蒲莲乡",
+      "average": 4938.3
+    },
+    {
+      "regionId": "511602212000",
+      "name": "大有乡",
+      "average": 5626.6
+    },
+    {
+      "regionId": "511602213000",
+      "name": "消河乡",
+      "average": 6306.7
+    },
+    {
+      "regionId": "511602214000",
+      "name": "东岳乡",
+      "average": 8003.8
+    },
+    {
+      "regionId": "511602215000",
+      "name": "苏溪乡",
+      "average": 3065.5
+    },
+    {
+      "regionId": "511602216000",
+      "name": "白马乡",
+      "average": 8625.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 118.86000000000001,
+      "color": "#eff3ff",
+      "label": "118.860 万m³"
+    },
+    {
+      "value": 1576.98,
+      "color": "#bdd7e7",
+      "label": "1576.980 万m³"
+    },
+    {
+      "value": 2767.5519999999997,
+      "color": "#6baed6",
+      "label": "2767.552 万m³"
+    },
+    {
+      "value": 5323.056,
+      "color": "#3182bd",
+      "label": "5323.056 万m³"
+    },
+    {
+      "value": 7987.798,
+      "color": "#08519c",
+      "label": "7987.798 万m³"
+    },
+    {
+      "value": 13483.06,
+      "color": "#042d60",
+      "label": "13483.060 万m³"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "220323100000",
+      "name": "伊通镇",
+      "average": 6086.2
+    },
+    {
+      "regionId": "220323101000",
+      "name": "二道镇",
+      "average": 889.7
+    },
+    {
+      "regionId": "220323102000",
+      "name": "伊丹镇",
+      "average": 1952.0
+    },
+    {
+      "regionId": "220323103000",
+      "name": "马鞍镇",
+      "average": 4527.9
+    },
+    {
+      "regionId": "220323104000",
+      "name": "景台镇",
+      "average": 74.7
+    },
+    {
+      "regionId": "220323105000",
+      "name": "靠山镇",
+      "average": 6508.5
+    },
+    {
+      "regionId": "220323106000",
+      "name": "大孤山镇",
+      "average": 4431.4
+    },
+    {
+      "regionId": "220323107000",
+      "name": "小孤山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220323108000",
+      "name": "营城子镇",
+      "average": 3948.9
+    },
+    {
+      "regionId": "220323109000",
+      "name": "西苇镇",
+      "average": 1735.4
+    },
+    {
+      "regionId": "220323110000",
+      "name": "河源镇",
+      "average": 2552.2
+    },
+    {
+      "regionId": "220323111000",
+      "name": "黄岭子镇",
+      "average": 2.0
+    },
+    {
+      "regionId": "220323200000",
+      "name": "新兴乡",
+      "average": 2383.7
+    },
+    {
+      "regionId": "220323201000",
+      "name": "莫里青乡",
+      "average": 1015.0
+    },
+    {
+      "regionId": "220323202000",
+      "name": "三道乡",
+      "average": 1312.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.56,
+      "color": "#eff3ff",
+      "label": "0.560 万m³"
+    },
+    {
+      "value": 863.62,
+      "color": "#bdd7e7",
+      "label": "863.620 万m³"
+    },
+    {
+      "value": 1590.0256,
+      "color": "#6baed6",
+      "label": "1590.026 万m³"
+    },
+    {
+      "value": 2441.6639999999998,
+      "color": "#3182bd",
+      "label": "2441.664 万m³"
+    },
+    {
+      "value": 4434.487999999999,
+      "color": "#08519c",
+      "label": "4434.488 万m³"
+    },
+    {
+      "value": 6390.255999999999,
+      "color": "#042d60",
+      "label": "6390.256 万m³"
+    }
+  ]
+}

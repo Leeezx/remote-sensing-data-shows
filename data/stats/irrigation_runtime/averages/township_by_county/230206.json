@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230206001000",
+      "name": "红岸街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230206003000",
+      "name": "沿江街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230206004000",
+      "name": "电力街道",
+      "average": 8.0
+    },
+    {
+      "regionId": "230206005000",
+      "name": "幸福街道",
+      "average": 44.3
+    },
+    {
+      "regionId": "230206006000",
+      "name": "红宝石街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230206007000",
+      "name": "北兴街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230206008000",
+      "name": "铁北街道",
+      "average": 238.3
+    },
+    {
+      "regionId": "230206009000",
+      "name": "和平街道",
+      "average": 506.2
+    },
+    {
+      "regionId": "230206200000",
+      "name": "长青乡",
+      "average": 13811.3
+    },
+    {
+      "regionId": "230206202000",
+      "name": "杜尔门沁达斡尔族乡",
+      "average": 5795.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

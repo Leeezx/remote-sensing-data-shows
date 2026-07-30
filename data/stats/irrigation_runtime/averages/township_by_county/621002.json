@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "621002001000",
+      "name": "北街办事处",
+      "average": 16.3
+    },
+    {
+      "regionId": "621002002000",
+      "name": "南街办事处",
+      "average": 27.2
+    },
+    {
+      "regionId": "621002003000",
+      "name": "西街办事处",
+      "average": 26.0
+    },
+    {
+      "regionId": "621002100000",
+      "name": "肖金镇",
+      "average": 12317.0
+    },
+    {
+      "regionId": "621002101000",
+      "name": "董志镇",
+      "average": 17323.9
+    },
+    {
+      "regionId": "621002200000",
+      "name": "后官寨乡",
+      "average": 2706.1
+    },
+    {
+      "regionId": "621002201000",
+      "name": "彭原乡",
+      "average": 3522.4
+    },
+    {
+      "regionId": "621002202000",
+      "name": "温泉乡",
+      "average": 11277.6
+    },
+    {
+      "regionId": "621002203000",
+      "name": "什社乡",
+      "average": 18172.8
+    },
+    {
+      "regionId": "621002204000",
+      "name": "显胜乡",
+      "average": 10318.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 18.046,
+      "color": "#eff3ff",
+      "label": "18.046 万m³"
+    },
+    {
+      "value": 27.0896,
+      "color": "#bdd7e7",
+      "label": "27.090 万m³"
+    },
+    {
+      "value": 3225.2668,
+      "color": "#6baed6",
+      "label": "3225.267 万m³"
+    },
+    {
+      "value": 10667.4216,
+      "color": "#3182bd",
+      "label": "10667.422 万m³"
+    },
+    {
+      "value": 12777.634799999998,
+      "color": "#08519c",
+      "label": "12777.635 万m³"
+    },
+    {
+      "value": 18019.998,
+      "color": "#042d60",
+      "label": "18019.998 万m³"
+    }
+  ]
+}

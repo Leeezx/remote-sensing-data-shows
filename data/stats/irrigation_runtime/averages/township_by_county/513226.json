@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513226100000",
+      "name": "金川镇",
+      "average": 97.2
+    },
+    {
+      "regionId": "513226101000",
+      "name": "观音桥镇",
+      "average": 10.8
+    },
+    {
+      "regionId": "513226200000",
+      "name": "沙耳乡",
+      "average": 352.5
+    },
+    {
+      "regionId": "513226201000",
+      "name": "庆宁乡",
+      "average": 122.6
+    },
+    {
+      "regionId": "513226202000",
+      "name": "咯尔乡",
+      "average": 132.4
+    },
+    {
+      "regionId": "513226203000",
+      "name": "勒乌乡",
+      "average": 142.4
+    },
+    {
+      "regionId": "513226204000",
+      "name": "万林乡",
+      "average": 111.7
+    },
+    {
+      "regionId": "513226205000",
+      "name": "河东乡",
+      "average": 208.2
+    },
+    {
+      "regionId": "513226206000",
+      "name": "河西乡",
+      "average": 125.7
+    },
+    {
+      "regionId": "513226207000",
+      "name": "集沐乡",
+      "average": 37.8
+    },
+    {
+      "regionId": "513226208000",
+      "name": "撒瓦脚乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513226209000",
+      "name": "卡拉足乡",
+      "average": 55.4
+    },
+    {
+      "regionId": "513226210000",
+      "name": "俄热乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513226211000",
+      "name": "太阳河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513226212000",
+      "name": "二嘎里乡",
+      "average": 53.7
+    },
+    {
+      "regionId": "513226213000",
+      "name": "阿科里乡",
+      "average": 9.1
+    },
+    {
+      "regionId": "513226214000",
+      "name": "安宁乡",
+      "average": 13.0
+    },
+    {
+      "regionId": "513226215000",
+      "name": "卡撒乡",
+      "average": 45.6
+    },
+    {
+      "regionId": "513226216000",
+      "name": "曾达乡",
+      "average": 336.8
+    },
+    {
+      "regionId": "513226217000",
+      "name": "独松乡",
+      "average": 2.1
+    },
+    {
+      "regionId": "513226218000",
+      "name": "马尔邦乡",
+      "average": 37.7
+    },
+    {
+      "regionId": "513226219000",
+      "name": "马奈乡",
+      "average": 14.1
+    },
+    {
+      "regionId": "513226220000",
+      "name": "毛日乡",
+      "average": 300.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 10.2288,
+      "color": "#bdd7e7",
+      "label": "10.229 万m³"
+    },
+    {
+      "value": 37.788799999999995,
+      "color": "#6baed6",
+      "label": "37.789 万m³"
+    },
+    {
+      "value": 98.824,
+      "color": "#3182bd",
+      "label": "98.824 万m³"
+    },
+    {
+      "value": 135.76,
+      "color": "#08519c",
+      "label": "135.760 万m³"
+    },
+    {
+      "value": 345.592,
+      "color": "#042d60",
+      "label": "345.592 万m³"
+    }
+  ]
+}

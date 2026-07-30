@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140214019000",
+      "name": "马口街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214021000",
+      "name": "杏儿沟街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140226100000",
+      "name": "云兴镇",
+      "average": 288.4
+    },
+    {
+      "regionId": "140226101000",
+      "name": "鹊儿山镇",
+      "average": 2.1
+    },
+    {
+      "regionId": "140226102000",
+      "name": "店湾镇",
+      "average": 154.8
+    },
+    {
+      "regionId": "140226200000",
+      "name": "管家堡乡",
+      "average": 918.0
+    },
+    {
+      "regionId": "140226201000",
+      "name": "张家场乡",
+      "average": 1289.0
+    },
+    {
+      "regionId": "140226205000",
+      "name": "三屯乡",
+      "average": 1263.1
+    },
+    {
+      "regionId": "140226206000",
+      "name": "马道头乡",
+      "average": 98.6
+    },
+    {
+      "regionId": "140226207000",
+      "name": "小京庄乡",
+      "average": 1373.4
+    },
+    {
+      "regionId": "140226209000",
+      "name": "水窑乡",
+      "average": 58.9
+    },
+    {
+      "regionId": "150925219000",
+      "name": "曹碾满族乡",
+      "average": 4.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2.8968,
+      "color": "#bdd7e7",
+      "label": "2.897 万m³"
+    },
+    {
+      "value": 76.5268,
+      "color": "#6baed6",
+      "label": "76.527 万m³"
+    },
+    {
+      "value": 229.0816,
+      "color": "#3182bd",
+      "label": "229.082 万m³"
+    },
+    {
+      "value": 1148.5267999999996,
+      "color": "#08519c",
+      "label": "1148.527 万m³"
+    },
+    {
+      "value": 1354.832,
+      "color": "#042d60",
+      "label": "1354.832 万m³"
+    }
+  ]
+}

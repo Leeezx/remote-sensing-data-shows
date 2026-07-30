@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "371302001000",
+      "name": "兰山街道",
+      "average": 978.0
+    },
+    {
+      "regionId": "371302002000",
+      "name": "银雀山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "371302003000",
+      "name": "金雀山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "371302004000",
+      "name": "南坊街道",
+      "average": 543.5
+    },
+    {
+      "regionId": "371302101000",
+      "name": "白沙埠镇",
+      "average": 7219.8
+    },
+    {
+      "regionId": "371302102000",
+      "name": "枣沟头镇",
+      "average": 7547.3
+    },
+    {
+      "regionId": "371302103000",
+      "name": "半程镇",
+      "average": 6918.0
+    },
+    {
+      "regionId": "371302105000",
+      "name": "义堂镇",
+      "average": 8052.6
+    },
+    {
+      "regionId": "371302106000",
+      "name": "马厂湖镇",
+      "average": 4482.8
+    },
+    {
+      "regionId": "371302107000",
+      "name": "李官镇",
+      "average": 2995.1
+    },
+    {
+      "regionId": "371302109000",
+      "name": "方城镇",
+      "average": 9213.3
+    },
+    {
+      "regionId": "371302110000",
+      "name": "汪沟镇",
+      "average": 2773.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 687.7539999999999,
+      "color": "#bdd7e7",
+      "label": "687.754 万m³"
+    },
+    {
+      "value": 2872.1128,
+      "color": "#6baed6",
+      "label": "2872.113 万m³"
+    },
+    {
+      "value": 5836.7712,
+      "color": "#3182bd",
+      "label": "5836.771 万m³"
+    },
+    {
+      "value": 7438.57,
+      "color": "#08519c",
+      "label": "7438.570 万m³"
+    },
+    {
+      "value": 8957.945999999998,
+      "color": "#042d60",
+      "label": "8957.946 万m³"
+    }
+  ]
+}

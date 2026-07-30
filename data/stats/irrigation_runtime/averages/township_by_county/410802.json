@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410802001000",
+      "name": "民生街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410802002000",
+      "name": "民主街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410802003000",
+      "name": "新华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410802004000",
+      "name": "焦西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410802005000",
+      "name": "焦南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410802006000",
+      "name": "焦北街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410802007000",
+      "name": "七百间街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410802008000",
+      "name": "上白作街道",
+      "average": 33.3
+    },
+    {
+      "regionId": "410802009000",
+      "name": "王褚街道",
+      "average": 3817.1
+    },
+    {
+      "regionId": "410811007000",
+      "name": "定和街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

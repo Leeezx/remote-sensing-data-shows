@@ -1,0 +1,183 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510811100000",
+      "name": "元坝镇",
+      "average": 3378.1
+    },
+    {
+      "regionId": "510811101000",
+      "name": "卫子镇",
+      "average": 5346.0
+    },
+    {
+      "regionId": "510811102000",
+      "name": "王家镇",
+      "average": 8117.9
+    },
+    {
+      "regionId": "510811103000",
+      "name": "磨滩镇",
+      "average": 5912.3
+    },
+    {
+      "regionId": "510811104000",
+      "name": "柏林沟镇",
+      "average": 4212.4
+    },
+    {
+      "regionId": "510811105000",
+      "name": "太公镇",
+      "average": 3854.5
+    },
+    {
+      "regionId": "510811106000",
+      "name": "虎跳镇",
+      "average": 2402.5
+    },
+    {
+      "regionId": "510811107000",
+      "name": "红岩镇",
+      "average": 6941.8
+    },
+    {
+      "regionId": "510811108000",
+      "name": "昭化镇",
+      "average": 8505.3
+    },
+    {
+      "regionId": "510811200000",
+      "name": "晋贤乡",
+      "average": 5571.9
+    },
+    {
+      "regionId": "510811201000",
+      "name": "文村乡",
+      "average": 2108.2
+    },
+    {
+      "regionId": "510811202000",
+      "name": "清水乡",
+      "average": 3020.4
+    },
+    {
+      "regionId": "510811203000",
+      "name": "张家乡",
+      "average": 3822.5
+    },
+    {
+      "regionId": "510811204000",
+      "name": "香溪乡",
+      "average": 2887.7
+    },
+    {
+      "regionId": "510811205000",
+      "name": "青牛乡",
+      "average": 4331.0
+    },
+    {
+      "regionId": "510811206000",
+      "name": "陈江乡",
+      "average": 2947.1
+    },
+    {
+      "regionId": "510811207000",
+      "name": "丁家乡",
+      "average": 1483.0
+    },
+    {
+      "regionId": "510811208000",
+      "name": "黄龙乡",
+      "average": 4308.9
+    },
+    {
+      "regionId": "510811209000",
+      "name": "石井铺乡",
+      "average": 7963.7
+    },
+    {
+      "regionId": "510811210000",
+      "name": "白果乡",
+      "average": 4585.6
+    },
+    {
+      "regionId": "510811211000",
+      "name": "梅树乡",
+      "average": 4752.4
+    },
+    {
+      "regionId": "510811212000",
+      "name": "明觉乡",
+      "average": 7971.7
+    },
+    {
+      "regionId": "510811213000",
+      "name": "射箭乡",
+      "average": 7366.1
+    },
+    {
+      "regionId": "510811214000",
+      "name": "朝阳乡",
+      "average": 7348.8
+    },
+    {
+      "regionId": "510811215000",
+      "name": "大朝乡",
+      "average": 1629.0
+    },
+    {
+      "regionId": "510811216000",
+      "name": "沙坝乡",
+      "average": 3917.3
+    },
+    {
+      "regionId": "510811217000",
+      "name": "柳桥乡",
+      "average": 1780.0
+    },
+    {
+      "regionId": "510811218000",
+      "name": "紫云乡",
+      "average": 2995.7
+    },
+    {
+      "regionId": "510811400000",
+      "name": "拣银岩社区街道",
+      "average": 1362.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 1430.068,
+      "color": "#eff3ff",
+      "label": "1430.068 万m³"
+    },
+    {
+      "value": 2856.6472,
+      "color": "#bdd7e7",
+      "label": "2856.647 万m³"
+    },
+    {
+      "value": 3832.484,
+      "color": "#6baed6",
+      "label": "3832.484 万m³"
+    },
+    {
+      "value": 4506.1648,
+      "color": "#3182bd",
+      "label": "4506.165 万m³"
+    },
+    {
+      "value": 6967.847999999999,
+      "color": "#08519c",
+      "label": "6967.848 万m³"
+    },
+    {
+      "value": 8288.355999999998,
+      "color": "#042d60",
+      "label": "8288.356 万m³"
+    }
+  ]
+}

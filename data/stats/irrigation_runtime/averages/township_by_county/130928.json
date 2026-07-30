@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130928100000",
+      "name": "桑园镇",
+      "average": 10688.6
+    },
+    {
+      "regionId": "130928101000",
+      "name": "铁城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130928102000",
+      "name": "于集镇",
+      "average": 20464.9
+    },
+    {
+      "regionId": "130928103000",
+      "name": "梁集镇",
+      "average": 20134.5
+    },
+    {
+      "regionId": "130928104000",
+      "name": "安陵镇",
+      "average": 32304.3
+    },
+    {
+      "regionId": "130928200000",
+      "name": "曹家洼乡",
+      "average": 19333.4
+    },
+    {
+      "regionId": "130928201000",
+      "name": "宋门乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130928202000",
+      "name": "杨家寺乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130928203000",
+      "name": "沟店铺乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130928204000",
+      "name": "何庄乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130928400000",
+      "name": "吴桥经济技术开发区",
+      "average": 800.6
+    },
+    {
+      "regionId": "371402003000",
+      "name": "天衢街道",
+      "average": 4464.4
+    },
+    {
+      "regionId": "371402106000",
+      "name": "赵虎镇",
+      "average": 44770.8
+    },
+    {
+      "regionId": "371422104000",
+      "name": "保店镇",
+      "average": 37718.0
+    },
+    {
+      "regionId": "371422106000",
+      "name": "大曹镇",
+      "average": 35788.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

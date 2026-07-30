@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "411224205000",
+      "name": "瓦窑沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "411323102000",
+      "name": "西坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420304105000",
+      "name": "南化塘镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322401000",
+      "name": "三官洞林区",
+      "average": 0.0
+    },
+    {
+      "regionId": "611023001000",
+      "name": "城关街道",
+      "average": 6839.6
+    },
+    {
+      "regionId": "611023101000",
+      "name": "富水镇",
+      "average": 5130.2
+    },
+    {
+      "regionId": "611023102000",
+      "name": "湘河镇",
+      "average": 1609.1
+    },
+    {
+      "regionId": "611023104000",
+      "name": "赵川镇",
+      "average": 868.6
+    },
+    {
+      "regionId": "611023107000",
+      "name": "过风楼镇",
+      "average": 2033.5
+    },
+    {
+      "regionId": "611023108000",
+      "name": "试马镇",
+      "average": 2494.8
+    },
+    {
+      "regionId": "611023109000",
+      "name": "清油河镇",
+      "average": 1876.2
+    },
+    {
+      "regionId": "611023110000",
+      "name": "十里坪镇",
+      "average": 271.3
+    },
+    {
+      "regionId": "611023111000",
+      "name": "金丝峡镇",
+      "average": 6785.5
+    },
+    {
+      "regionId": "611023112000",
+      "name": "青山镇",
+      "average": 1715.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

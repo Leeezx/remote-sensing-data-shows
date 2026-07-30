@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610630100000",
+      "name": "丹州镇",
+      "average": 3929.0
+    },
+    {
+      "regionId": "610630101000",
+      "name": "秋林镇",
+      "average": 2029.8
+    },
+    {
+      "regionId": "610630102000",
+      "name": "云岩镇",
+      "average": 4721.0
+    },
+    {
+      "regionId": "610630103000",
+      "name": "阁楼镇",
+      "average": 3388.7
+    },
+    {
+      "regionId": "610630104000",
+      "name": "集义镇",
+      "average": 5550.8
+    },
+    {
+      "regionId": "610630105000",
+      "name": "壶口镇",
+      "average": 1782.8
+    },
+    {
+      "regionId": "610630200000",
+      "name": "英旺乡",
+      "average": 4081.5
+    },
+    {
+      "regionId": "610630201000",
+      "name": "交里乡",
+      "average": 2817.4
+    },
+    {
+      "regionId": "610630202000",
+      "name": "牛家细乡",
+      "average": 1144.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 1246.208,
+      "color": "#eff3ff",
+      "label": "1246.208 万m³"
+    },
+    {
+      "value": 1954.712,
+      "color": "#bdd7e7",
+      "label": "1954.712 万m³"
+    },
+    {
+      "value": 2949.9416,
+      "color": "#6baed6",
+      "label": "2949.942 万m³"
+    },
+    {
+      "value": 3803.6504,
+      "color": "#3182bd",
+      "label": "3803.650 万m³"
+    },
+    {
+      "value": 4275.907999999999,
+      "color": "#08519c",
+      "label": "4275.908 万m³"
+    },
+    {
+      "value": 5418.032,
+      "color": "#042d60",
+      "label": "5418.032 万m³"
+    }
+  ]
+}

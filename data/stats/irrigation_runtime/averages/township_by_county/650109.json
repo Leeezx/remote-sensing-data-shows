@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "650104401000",
+      "name": "长春中路街道",
+      "average": 174.0
+    },
+    {
+      "regionId": "650109001000",
+      "name": "石化街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650109002000",
+      "name": "地磅街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650109003000",
+      "name": "卡子湾街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650109004000",
+      "name": "古牧地东路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650109005000",
+      "name": "古牧地西路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650109006000",
+      "name": "南路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650109100000",
+      "name": "古牧地镇",
+      "average": 36669.1
+    },
+    {
+      "regionId": "650109101000",
+      "name": "铁厂沟镇",
+      "average": 1310.3
+    },
+    {
+      "regionId": "650109102000",
+      "name": "长山子镇",
+      "average": 73431.9
+    },
+    {
+      "regionId": "650109103000",
+      "name": "羊毛工镇",
+      "average": 79520.1
+    },
+    {
+      "regionId": "650109104000",
+      "name": "三道坝镇",
+      "average": 26828.0
+    },
+    {
+      "regionId": "650109200000",
+      "name": "柏杨河乡",
+      "average": 9897.3
+    },
+    {
+      "regionId": "650109201000",
+      "name": "芦草沟乡",
+      "average": 1623.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

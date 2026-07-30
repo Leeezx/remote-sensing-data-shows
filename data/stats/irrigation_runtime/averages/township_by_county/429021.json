@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "429021001000",
+      "name": "新华镇",
+      "average": 287.2
+    },
+    {
+      "regionId": "429021002000",
+      "name": "阳日镇",
+      "average": 1480.5
+    },
+    {
+      "regionId": "429021003000",
+      "name": "松柏镇",
+      "average": 757.8
+    },
+    {
+      "regionId": "429021004000",
+      "name": "宋洛乡",
+      "average": 549.2
+    },
+    {
+      "regionId": "429021005000",
+      "name": "红坪镇",
+      "average": 602.3
+    },
+    {
+      "regionId": "429021006000",
+      "name": "木鱼镇",
+      "average": 225.5
+    },
+    {
+      "regionId": "429021007000",
+      "name": "下谷坪土家族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "429021008000",
+      "name": "大九湖镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 109.142,
+      "color": "#bdd7e7",
+      "label": "109.142 万m³"
+    },
+    {
+      "value": 276.58759999999995,
+      "color": "#6baed6",
+      "label": "276.588 万m³"
+    },
+    {
+      "value": 558.3332,
+      "color": "#3182bd",
+      "label": "558.333 万m³"
+    },
+    {
+      "value": 682.5379999999998,
+      "color": "#08519c",
+      "label": "682.538 万m³"
+    },
+    {
+      "value": 1379.3219999999997,
+      "color": "#042d60",
+      "label": "1379.322 万m³"
+    }
+  ]
+}

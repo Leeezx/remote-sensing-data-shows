@@ -1,0 +1,63 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210905001000",
+      "name": "清河街道",
+      "average": 63.0
+    },
+    {
+      "regionId": "210905002000",
+      "name": "六台街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210905004000",
+      "name": "新北街道",
+      "average": 14.5
+    },
+    {
+      "regionId": "210905101000",
+      "name": "河西镇",
+      "average": 666.4
+    },
+    {
+      "regionId": "210905102000",
+      "name": "乌龙坝镇",
+      "average": 2733.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 1.16,
+      "color": "#eff3ff",
+      "label": "1.160 万m³"
+    },
+    {
+      "value": 12.296,
+      "color": "#bdd7e7",
+      "label": "12.296 万m³"
+    },
+    {
+      "value": 44.37599999999999,
+      "color": "#6baed6",
+      "label": "44.376 万m³"
+    },
+    {
+      "value": 294.7055999999999,
+      "color": "#3182bd",
+      "label": "294.706 万m³"
+    },
+    {
+      "value": 980.5687999999993,
+      "color": "#08519c",
+      "label": "980.569 万m³"
+    },
+    {
+      "value": 2567.948,
+      "color": "#042d60",
+      "label": "2567.948 万m³"
+    }
+  ]
+}

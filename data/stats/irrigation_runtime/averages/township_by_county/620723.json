@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620723101000",
+      "name": "沙河镇",
+      "average": 39015.3
+    },
+    {
+      "regionId": "620723102000",
+      "name": "新华镇",
+      "average": 37802.7
+    },
+    {
+      "regionId": "620723103000",
+      "name": "蓼泉镇",
+      "average": 49749.9
+    },
+    {
+      "regionId": "620723104000",
+      "name": "平川镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620723105000",
+      "name": "板桥镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620723201000",
+      "name": "鸭暖乡",
+      "average": 63034.6
+    },
+    {
+      "regionId": "620723202000",
+      "name": "倪家营乡",
+      "average": 10871.8
+    },
+    {
+      "regionId": "620723500000",
+      "name": "国营临泽农场",
+      "average": 6409.8
+    },
+    {
+      "regionId": "620723501000",
+      "name": "五泉林场",
+      "average": 150.5
+    },
+    {
+      "regionId": "620723502000",
+      "name": "沙河林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "620723503000",
+      "name": "小泉子治沙站",
+      "average": 153.1
+    },
+    {
+      "regionId": "620723504000",
+      "name": "园艺场",
+      "average": 2038.6
+    },
+    {
+      "regionId": "620723505000",
+      "name": "良种繁殖场",
+      "average": 151.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 81.872,
+      "color": "#bdd7e7",
+      "label": "81.872 万m³"
+    },
+    {
+      "value": 152.796,
+      "color": "#6baed6",
+      "label": "152.796 万m³"
+    },
+    {
+      "value": 7088.023999999997,
+      "color": "#3182bd",
+      "label": "7088.024 万m³"
+    },
+    {
+      "value": 38355.645599999996,
+      "color": "#08519c",
+      "label": "38355.646 万m³"
+    },
+    {
+      "value": 59846.272,
+      "color": "#042d60",
+      "label": "59846.272 万m³"
+    }
+  ]
+}

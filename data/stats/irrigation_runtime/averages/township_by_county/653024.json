@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "653022101000",
+      "name": "奥依塔克镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "653024100000",
+      "name": "乌恰镇",
+      "average": 112.1
+    },
+    {
+      "regionId": "653024101000",
+      "name": "康苏镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "653024200000",
+      "name": "乌鲁克恰提乡",
+      "average": 983.2
+    },
+    {
+      "regionId": "653024201000",
+      "name": "吾合沙鲁乡",
+      "average": 254.7
+    },
+    {
+      "regionId": "653024202000",
+      "name": "膘尔托阔依乡",
+      "average": 4299.2
+    },
+    {
+      "regionId": "653024203000",
+      "name": "黑孜韦乡",
+      "average": 3934.0
+    },
+    {
+      "regionId": "653024204000",
+      "name": "托云乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "653024205000",
+      "name": "铁列克乡",
+      "average": 153.9
+    },
+    {
+      "regionId": "653024206000",
+      "name": "巴音库鲁提乡",
+      "average": 407.8
+    },
+    {
+      "regionId": "653024207000",
+      "name": "波斯坦铁列克乡",
+      "average": 6217.6
+    },
+    {
+      "regionId": "653024208000",
+      "name": "吉根乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "653024501000",
+      "name": "兵团托云牧场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

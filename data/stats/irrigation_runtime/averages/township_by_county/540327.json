@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540327100000",
+      "name": "旺达镇",
+      "average": 65.5
+    },
+    {
+      "regionId": "540327101000",
+      "name": "田妥镇",
+      "average": 86.8
+    },
+    {
+      "regionId": "540327102000",
+      "name": "扎玉镇",
+      "average": 284.4
+    },
+    {
+      "regionId": "540327200000",
+      "name": "东坝乡",
+      "average": 255.7
+    },
+    {
+      "regionId": "540327201000",
+      "name": "中林卡乡",
+      "average": 311.1
+    },
+    {
+      "regionId": "540327202000",
+      "name": "美玉乡",
+      "average": 36.3
+    },
+    {
+      "regionId": "540327203000",
+      "name": "下林卡乡",
+      "average": 127.3
+    },
+    {
+      "regionId": "540327204000",
+      "name": "碧土乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540327205000",
+      "name": "仁果乡",
+      "average": 6.8
+    },
+    {
+      "regionId": "540327206000",
+      "name": "绕金乡",
+      "average": 184.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 1.224,
+      "color": "#eff3ff",
+      "label": "1.224 万m³"
+    },
+    {
+      "value": 33.586,
+      "color": "#bdd7e7",
+      "label": "33.586 万m³"
+    },
+    {
+      "value": 79.04679999999999,
+      "color": "#6baed6",
+      "label": "79.047 万m³"
+    },
+    {
+      "value": 148.2664,
+      "color": "#3182bd",
+      "label": "148.266 万m³"
+    },
+    {
+      "value": 258.3404,
+      "color": "#08519c",
+      "label": "258.340 万m³"
+    },
+    {
+      "value": 306.29400000000004,
+      "color": "#042d60",
+      "label": "306.294 万m³"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540232100000",
+      "name": "帕羊镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540232200000",
+      "name": "拉让乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540232201000",
+      "name": "帕江乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540232202000",
+      "name": "仁多乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540232203000",
+      "name": "吉玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540232204000",
+      "name": "隆格尔乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540232205000",
+      "name": "霍尔巴乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540232206000",
+      "name": "吉拉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540232207000",
+      "name": "纳久乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540232208000",
+      "name": "偏吉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540232209000",
+      "name": "布多乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540232210000",
+      "name": "亚热乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540232211000",
+      "name": "琼果乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "430103002000",
+      "name": "坡子街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430103004000",
+      "name": "城南路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430103005000",
+      "name": "裕南街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430103006000",
+      "name": "金盆岭街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430103007000",
+      "name": "新开铺街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430103008000",
+      "name": "青园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430103009000",
+      "name": "桂花坪街道",
+      "average": 170.8
+    },
+    {
+      "regionId": "430103010000",
+      "name": "赤岭路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430103011000",
+      "name": "文源街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430103012000",
+      "name": "先锋街道",
+      "average": 503.7
+    },
+    {
+      "regionId": "430103013000",
+      "name": "黑石铺街道",
+      "average": 629.4
+    },
+    {
+      "regionId": "430103014000",
+      "name": "大托铺街道",
+      "average": 5773.2
+    },
+    {
+      "regionId": "430121101000",
+      "name": "暮云镇",
+      "average": 11006.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

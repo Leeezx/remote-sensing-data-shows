@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420526101000",
+      "name": "古夫镇",
+      "average": 2191.9
+    },
+    {
+      "regionId": "420526102000",
+      "name": "昭君镇",
+      "average": 1597.3
+    },
+    {
+      "regionId": "420526103000",
+      "name": "峡口镇",
+      "average": 2816.9
+    },
+    {
+      "regionId": "420526104000",
+      "name": "南阳镇",
+      "average": 62.9
+    },
+    {
+      "regionId": "420526105000",
+      "name": "黄粮镇",
+      "average": 3902.2
+    },
+    {
+      "regionId": "420526106000",
+      "name": "水月寺镇",
+      "average": 2949.0
+    },
+    {
+      "regionId": "420526201000",
+      "name": "高桥乡",
+      "average": 1041.9
+    },
+    {
+      "regionId": "420526202000",
+      "name": "榛子乡",
+      "average": 2279.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 199.96000000000004,
+      "color": "#eff3ff",
+      "label": "199.960 万m³"
+    },
+    {
+      "value": 1310.7136,
+      "color": "#bdd7e7",
+      "label": "1310.714 万m³"
+    },
+    {
+      "value": 2089.6288,
+      "color": "#6baed6",
+      "label": "2089.629 万m³"
+    },
+    {
+      "value": 2371.9328,
+      "color": "#3182bd",
+      "label": "2371.933 万m³"
+    },
+    {
+      "value": 2885.0636,
+      "color": "#08519c",
+      "label": "2885.064 万m³"
+    },
+    {
+      "value": 3768.7519999999995,
+      "color": "#042d60",
+      "label": "3768.752 万m³"
+    }
+  ]
+}

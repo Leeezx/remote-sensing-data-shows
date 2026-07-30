@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "310118001000",
+      "name": "夏阳街道",
+      "average": 11223.1
+    },
+    {
+      "regionId": "310118002000",
+      "name": "盈浦街道",
+      "average": 1175.2
+    },
+    {
+      "regionId": "310118003000",
+      "name": "香花桥街道",
+      "average": 25164.1
+    },
+    {
+      "regionId": "310118102000",
+      "name": "朱家角镇",
+      "average": 39853.2
+    },
+    {
+      "regionId": "310118103000",
+      "name": "练塘镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "310118104000",
+      "name": "金泽镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "310118105000",
+      "name": "赵巷镇",
+      "average": 11492.0
+    },
+    {
+      "regionId": "310118106000",
+      "name": "徐泾镇",
+      "average": 6328.0
+    },
+    {
+      "regionId": "310118107000",
+      "name": "华新镇",
+      "average": 9969.8
+    },
+    {
+      "regionId": "310118109000",
+      "name": "重固镇",
+      "average": 18576.6
+    },
+    {
+      "regionId": "310118110000",
+      "name": "白鹤镇",
+      "average": 25777.7
+    },
+    {
+      "regionId": "320509110000",
+      "name": "黎里镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "320583105000",
+      "name": "淀山湖镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "320583108000",
+      "name": "千灯镇",
+      "average": 288.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

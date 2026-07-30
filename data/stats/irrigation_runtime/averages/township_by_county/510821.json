@@ -1,0 +1,233 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510821100000",
+      "name": "东河镇",
+      "average": 11426.0
+    },
+    {
+      "regionId": "510821101000",
+      "name": "嘉川镇",
+      "average": 6427.7
+    },
+    {
+      "regionId": "510821102000",
+      "name": "木门镇",
+      "average": 13536.0
+    },
+    {
+      "regionId": "510821103000",
+      "name": "白水镇",
+      "average": 1933.5
+    },
+    {
+      "regionId": "510821104000",
+      "name": "尚武镇",
+      "average": 2153.3
+    },
+    {
+      "regionId": "510821105000",
+      "name": "张华镇",
+      "average": 9618.2
+    },
+    {
+      "regionId": "510821106000",
+      "name": "黄洋镇",
+      "average": 8757.3
+    },
+    {
+      "regionId": "510821107000",
+      "name": "普济镇",
+      "average": 12819.9
+    },
+    {
+      "regionId": "510821108000",
+      "name": "三江镇",
+      "average": 5297.6
+    },
+    {
+      "regionId": "510821109000",
+      "name": "金溪镇",
+      "average": 1246.2
+    },
+    {
+      "regionId": "510821110000",
+      "name": "五权镇",
+      "average": 664.4
+    },
+    {
+      "regionId": "510821111000",
+      "name": "高阳镇",
+      "average": 2629.9
+    },
+    {
+      "regionId": "510821112000",
+      "name": "双汇镇",
+      "average": 3744.6
+    },
+    {
+      "regionId": "510821113000",
+      "name": "英萃镇",
+      "average": 110.8
+    },
+    {
+      "regionId": "510821114000",
+      "name": "国华镇",
+      "average": 4664.3
+    },
+    {
+      "regionId": "510821200000",
+      "name": "龙凤乡",
+      "average": 14861.9
+    },
+    {
+      "regionId": "510821201000",
+      "name": "大河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510821202000",
+      "name": "九龙乡",
+      "average": 6044.1
+    },
+    {
+      "regionId": "510821203000",
+      "name": "万家乡",
+      "average": 93.7
+    },
+    {
+      "regionId": "510821204000",
+      "name": "燕子乡",
+      "average": 46.2
+    },
+    {
+      "regionId": "510821205000",
+      "name": "水磨乡",
+      "average": 1159.3
+    },
+    {
+      "regionId": "510821206000",
+      "name": "鼓城乡",
+      "average": 337.7
+    },
+    {
+      "regionId": "510821207000",
+      "name": "檬子乡",
+      "average": 659.8
+    },
+    {
+      "regionId": "510821208000",
+      "name": "福庆乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510821209000",
+      "name": "枣林乡",
+      "average": 2905.2
+    },
+    {
+      "regionId": "510821210000",
+      "name": "麻英乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510821211000",
+      "name": "柳溪乡",
+      "average": 2566.8
+    },
+    {
+      "regionId": "510821212000",
+      "name": "农建乡",
+      "average": 8916.9
+    },
+    {
+      "regionId": "510821213000",
+      "name": "化龙乡",
+      "average": 13171.4
+    },
+    {
+      "regionId": "510821214000",
+      "name": "大两乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510821215000",
+      "name": "万山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510821216000",
+      "name": "正源乡",
+      "average": 3918.1
+    },
+    {
+      "regionId": "510821217000",
+      "name": "天星乡",
+      "average": 1176.3
+    },
+    {
+      "regionId": "510821218000",
+      "name": "盐河乡",
+      "average": 359.0
+    },
+    {
+      "regionId": "510821219000",
+      "name": "大德乡",
+      "average": 2266.8
+    },
+    {
+      "regionId": "510821400000",
+      "name": "静乐寺管理办公室",
+      "average": 0.0
+    },
+    {
+      "regionId": "510821401000",
+      "name": "陈家岭管理办公室",
+      "average": 0.0
+    },
+    {
+      "regionId": "510821402000",
+      "name": "磨岩管理办公室",
+      "average": 0.0
+    },
+    {
+      "regionId": "610703117000",
+      "name": "黎坪镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2.5871999999999615,
+      "color": "#bdd7e7",
+      "label": "2.587 万m³"
+    },
+    {
+      "value": 838.6047999999993,
+      "color": "#6baed6",
+      "label": "838.605 万m³"
+    },
+    {
+      "value": 2607.6888,
+      "color": "#3182bd",
+      "label": "2607.689 万m³"
+    },
+    {
+      "value": 6406.218399999998,
+      "color": "#08519c",
+      "label": "6406.218 万m³"
+    },
+    {
+      "value": 13854.216000000002,
+      "color": "#042d60",
+      "label": "13854.216 万m³"
+    }
+  ]
+}

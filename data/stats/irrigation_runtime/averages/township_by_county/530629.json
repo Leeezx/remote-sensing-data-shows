@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510524211000",
+      "name": "白腊苗族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510524213000",
+      "name": "水潦彝族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511526107000",
+      "name": "王家镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511526211000",
+      "name": "石碑乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511526212000",
+      "name": "观斗苗族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511528200000",
+      "name": "大坝苗族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "530629101000",
+      "name": "扎西镇",
+      "average": 8246.6
+    },
+    {
+      "regionId": "530629102000",
+      "name": "旧城镇",
+      "average": 1513.8
+    },
+    {
+      "regionId": "530629103000",
+      "name": "罗布镇",
+      "average": 6157.1
+    },
+    {
+      "regionId": "530629104000",
+      "name": "林凤镇",
+      "average": 4435.8
+    },
+    {
+      "regionId": "530629105000",
+      "name": "长安镇",
+      "average": 3751.0
+    },
+    {
+      "regionId": "530629106000",
+      "name": "庙沟镇",
+      "average": 2439.8
+    },
+    {
+      "regionId": "530629107000",
+      "name": "水田镇",
+      "average": 2261.8
+    },
+    {
+      "regionId": "530629201000",
+      "name": "双河苗族彝族乡",
+      "average": 4598.2
+    },
+    {
+      "regionId": "530629202000",
+      "name": "高田乡",
+      "average": 2612.9
+    },
+    {
+      "regionId": "530629207000",
+      "name": "三桃乡",
+      "average": 6953.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

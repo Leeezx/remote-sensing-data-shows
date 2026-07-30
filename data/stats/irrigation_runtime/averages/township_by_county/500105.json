@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500105001000",
+      "name": "华新街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500105002000",
+      "name": "江北城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500105003000",
+      "name": "石马河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500105004000",
+      "name": "大石坝街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500105005000",
+      "name": "寸滩街道",
+      "average": 1165.7
+    },
+    {
+      "regionId": "500105006000",
+      "name": "观音桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500105007000",
+      "name": "五里店街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500105008000",
+      "name": "郭家沱街道",
+      "average": 2017.8
+    },
+    {
+      "regionId": "500105009000",
+      "name": "铁山坪街道",
+      "average": 2546.4
+    },
+    {
+      "regionId": "500105100000",
+      "name": "鱼嘴镇人民政府",
+      "average": 3100.5
+    },
+    {
+      "regionId": "500105101000",
+      "name": "复盛镇人民政府",
+      "average": 4621.2
+    },
+    {
+      "regionId": "500105102000",
+      "name": "五宝镇人民政府",
+      "average": 2000.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

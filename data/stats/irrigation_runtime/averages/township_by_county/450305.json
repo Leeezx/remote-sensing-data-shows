@@ -1,0 +1,63 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "450305001000",
+      "name": "七星区街道",
+      "average": 430.1
+    },
+    {
+      "regionId": "450305002000",
+      "name": "东江街道",
+      "average": 583.6
+    },
+    {
+      "regionId": "450305003000",
+      "name": "穿山街道",
+      "average": 6654.5
+    },
+    {
+      "regionId": "450305004000",
+      "name": "漓东街道",
+      "average": 997.1
+    },
+    {
+      "regionId": "450305200000",
+      "name": "朝阳乡",
+      "average": 17327.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 442.38,
+      "color": "#eff3ff",
+      "label": "442.380 万m³"
+    },
+    {
+      "value": 560.268,
+      "color": "#bdd7e7",
+      "label": "560.268 万m³"
+    },
+    {
+      "value": 838.316,
+      "color": "#6baed6",
+      "label": "838.316 万m³"
+    },
+    {
+      "value": 3169.541599999999,
+      "color": "#3182bd",
+      "label": "3169.542 万m³"
+    },
+    {
+      "value": 8276.826399999996,
+      "color": "#08519c",
+      "label": "8276.826 万m³"
+    },
+    {
+      "value": 16473.844,
+      "color": "#042d60",
+      "label": "16473.844 万m³"
+    }
+  ]
+}

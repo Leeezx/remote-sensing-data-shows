@@ -872,6 +872,40 @@ describe('App', () => {
     expect(screen.getByRole('button', { name: '年度' })).toBeDisabled()
   })
 
+  it('renders county vectors while statistical coloring is still loading', async () => {
+    window.history.pushState({}, '', '/irrigation')
+    const averages = deferred<IrrigationRegionAveragesResponse>()
+    apiMocks.getIrrigationRegionAverages.mockReturnValueOnce(averages.promise)
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(await screen.findByRole('button', { name: '县级统计' }))
+
+    await waitFor(() => {
+      expect(screen.getByTestId('county-layer')).toHaveTextContent('loaded')
+    })
+    expect(screen.getByText('加载统计着色...')).toBeInTheDocument()
+
+    averages.resolve({
+      level: 'county',
+      unit: '万m³',
+      averages: [
+        { regionId: 'county_a', name: '示范县A', average: 1480.5 },
+      ],
+      legend: [
+        { value: 100, color: '#eff3ff', label: '100 万m³' },
+        { value: 400, color: '#bdd7e7', label: '400 万m³' },
+        { value: 700, color: '#6baed6', label: '700 万m³' },
+        { value: 1000, color: '#3182bd', label: '1000 万m³' },
+        { value: 1300, color: '#08519c', label: '1300 万m³' },
+        { value: 1600, color: '#042d60', label: '1600 万m³' },
+      ],
+    })
+    await waitFor(() => {
+      expect(screen.queryByText('加载统计着色...')).not.toBeInTheDocument()
+    })
+  })
+
   it('keeps county statistics mode active and colors counties after averages arrive', async () => {
     window.history.pushState({}, '', '/irrigation')
     const user = userEvent.setup()
@@ -899,5 +933,9 @@ describe('App', () => {
     expect(screen.getByTestId('query-disabled')).toHaveTextContent('true')
     expect(screen.getByTestId('raster-hidden')).toHaveTextContent('true')
     expect(screen.getByRole('alert')).toHaveTextContent('图例暂不可用')
+    expect(screen.getByTestId('county-layer')).toHaveTextContent('loaded')
+    expect(
+      screen.getByText('行政区已加载，统计着色暂不可用'),
+    ).toBeInTheDocument()
   })
 })

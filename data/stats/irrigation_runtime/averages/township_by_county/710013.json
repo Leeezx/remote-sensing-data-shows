@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "711900010000",
+      "name": "臺東市",
+      "average": 0.0
+    },
+    {
+      "regionId": "711900020000",
+      "name": "成功鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711900030000",
+      "name": "關山鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711900040000",
+      "name": "卑南鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711900050000",
+      "name": "鹿野鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711900060000",
+      "name": "池上鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711900070000",
+      "name": "東河鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711900080000",
+      "name": "長濱鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711900090000",
+      "name": "太麻里鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711900100000",
+      "name": "大武鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711900110000",
+      "name": "綠島鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711900120000",
+      "name": "海端鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711900130000",
+      "name": "延平鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711900140000",
+      "name": "金峰鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711900150000",
+      "name": "達仁鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711900160000",
+      "name": "蘭嶼鄉",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

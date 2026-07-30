@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230705001000",
+      "name": "西林街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230705003000",
+      "name": "新兴街道",
+      "average": 5.8
+    },
+    {
+      "regionId": "230705005000",
+      "name": "苔青街道",
+      "average": 7.0
+    },
+    {
+      "regionId": "230709002000",
+      "name": "奋斗街道",
+      "average": 35.2
+    },
+    {
+      "regionId": "230709003000",
+      "name": "金山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230709401000",
+      "name": "白山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230709402000",
+      "name": "丰岭林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230709403000",
+      "name": "丰林林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230709404000",
+      "name": "丰沟经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230709405000",
+      "name": "丰茂林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230709406000",
+      "name": "横山经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230709407000",
+      "name": "丰丽林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230709408000",
+      "name": "大昆仑经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230709409000",
+      "name": "小昆仑林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230709410000",
+      "name": "育林经营所",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610102001000",
+      "name": "西一路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610102002000",
+      "name": "长乐中路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610102003000",
+      "name": "中山门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610102004000",
+      "name": "韩森寨街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610102005000",
+      "name": "解放门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610102006000",
+      "name": "自强路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610102007000",
+      "name": "太华路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610102008000",
+      "name": "长乐西路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610102009000",
+      "name": "胡家庙街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

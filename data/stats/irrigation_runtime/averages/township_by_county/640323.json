@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610825102000",
+      "name": "红柳沟镇",
+      "average": 1308.0
+    },
+    {
+      "regionId": "610825108000",
+      "name": "姬塬镇",
+      "average": 546.3
+    },
+    {
+      "regionId": "610825200000",
+      "name": "盐场堡镇",
+      "average": 1504.6
+    },
+    {
+      "regionId": "621022207000",
+      "name": "秦团庄乡",
+      "average": 28.3
+    },
+    {
+      "regionId": "640323100000",
+      "name": "花马池镇",
+      "average": 3.0
+    },
+    {
+      "regionId": "640323101000",
+      "name": "大水坑镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "640323102000",
+      "name": "惠安堡镇",
+      "average": 397.5
+    },
+    {
+      "regionId": "640323103000",
+      "name": "高沙窝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "640323200000",
+      "name": "王乐井乡",
+      "average": 44.0
+    },
+    {
+      "regionId": "640323201000",
+      "name": "冯记沟乡",
+      "average": 145.0
+    },
+    {
+      "regionId": "640323202000",
+      "name": "青山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640323203000",
+      "name": "麻黄山乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

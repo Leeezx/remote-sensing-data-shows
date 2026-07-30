@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "310151101000",
+      "name": "城桥镇",
+      "average": 39433.9
+    },
+    {
+      "regionId": "310151102000",
+      "name": "堡镇",
+      "average": 41472.6
+    },
+    {
+      "regionId": "310151103000",
+      "name": "新河镇",
+      "average": 33078.5
+    },
+    {
+      "regionId": "310151104000",
+      "name": "庙镇",
+      "average": 102672.9
+    },
+    {
+      "regionId": "310151106000",
+      "name": "竖新镇",
+      "average": 29294.2
+    },
+    {
+      "regionId": "310151107000",
+      "name": "向化镇",
+      "average": 37233.9
+    },
+    {
+      "regionId": "310151109000",
+      "name": "三星镇",
+      "average": 50614.7
+    },
+    {
+      "regionId": "310151113000",
+      "name": "港沿镇",
+      "average": 43754.7
+    },
+    {
+      "regionId": "310151114000",
+      "name": "中兴镇",
+      "average": 29964.7
+    },
+    {
+      "regionId": "310151115000",
+      "name": "陈家镇",
+      "average": 41226.2
+    },
+    {
+      "regionId": "310151116000",
+      "name": "绿华镇",
+      "average": 23329.4
+    },
+    {
+      "regionId": "310151118000",
+      "name": "港西镇",
+      "average": 21877.8
+    },
+    {
+      "regionId": "310151119000",
+      "name": "建设镇",
+      "average": 28819.2
+    },
+    {
+      "regionId": "310151121000",
+      "name": "新海镇",
+      "average": 73277.2
+    },
+    {
+      "regionId": "310151122000",
+      "name": "东平镇",
+      "average": 66121.6
+    },
+    {
+      "regionId": "310151123000",
+      "name": "长兴镇",
+      "average": 49718.8
+    },
+    {
+      "regionId": "310151201000",
+      "name": "新村乡",
+      "average": 6973.7
+    },
+    {
+      "regionId": "310151203000",
+      "name": "横沙乡",
+      "average": 46253.9
+    },
+    {
+      "regionId": "310151409000",
+      "name": "前卫农场",
+      "average": 6970.4
+    },
+    {
+      "regionId": "310151410000",
+      "name": "东平林场",
+      "average": 755.8
+    },
+    {
+      "regionId": "310151501000",
+      "name": "上实现代农业园区",
+      "average": 1226.4
+    },
+    {
+      "regionId": "320681102000",
+      "name": "惠萍镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "320681103000",
+      "name": "寅阳镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "320681200000",
+      "name": "启隆乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 6258.143999999997,
+      "color": "#bdd7e7",
+      "label": "6258.144 万m³"
+    },
+    {
+      "value": 28957.9,
+      "color": "#6baed6",
+      "label": "28957.900 万m³"
+    },
+    {
+      "value": 38791.5,
+      "color": "#3182bd",
+      "label": "38791.500 万m³"
+    },
+    {
+      "value": 46683.5476,
+      "color": "#08519c",
+      "label": "46683.548 万m³"
+    },
+    {
+      "value": 89150.87799999997,
+      "color": "#042d60",
+      "label": "89150.878 万m³"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "712000010000",
+      "name": "馬公市",
+      "average": 0.0
+    },
+    {
+      "regionId": "712000020000",
+      "name": "湖西鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "712000030000",
+      "name": "白沙鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "712000040000",
+      "name": "西嶼鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "712000050000",
+      "name": "望安鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "712000060000",
+      "name": "七美鄉",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

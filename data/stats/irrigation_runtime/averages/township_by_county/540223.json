@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540223100000",
+      "name": "协格尔镇",
+      "average": 492.1
+    },
+    {
+      "regionId": "540223101000",
+      "name": "岗嘎镇",
+      "average": 171.0
+    },
+    {
+      "regionId": "540223200000",
+      "name": "加措乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540223201000",
+      "name": "绒辖乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540223202000",
+      "name": "尼辖乡",
+      "average": 65.3
+    },
+    {
+      "regionId": "540223203000",
+      "name": "盆吉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540223204000",
+      "name": "曲当乡",
+      "average": 49.9
+    },
+    {
+      "regionId": "540223205000",
+      "name": "扎果乡",
+      "average": 8.2
+    },
+    {
+      "regionId": "540223206000",
+      "name": "扎西宗乡",
+      "average": 8.6
+    },
+    {
+      "regionId": "540223207000",
+      "name": "长所乡",
+      "average": 73.3
+    },
+    {
+      "regionId": "540223208000",
+      "name": "曲洛乡",
+      "average": 4.1
+    },
+    {
+      "regionId": "540223209000",
+      "name": "措果乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540223210000",
+      "name": "克玛乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

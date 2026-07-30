@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "330903001000",
+      "name": "沈家门街道",
+      "average": 1008.5
+    },
+    {
+      "regionId": "330903003000",
+      "name": "东港街道",
+      "average": 8189.6
+    },
+    {
+      "regionId": "330903004000",
+      "name": "朱家尖街道",
+      "average": 18136.2
+    },
+    {
+      "regionId": "330903005000",
+      "name": "展茅街道",
+      "average": 5709.6
+    },
+    {
+      "regionId": "330903100000",
+      "name": "六横镇",
+      "average": 31665.5
+    },
+    {
+      "regionId": "330903104000",
+      "name": "桃花镇",
+      "average": 6137.6
+    },
+    {
+      "regionId": "330903105000",
+      "name": "东极镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "330903106000",
+      "name": "普陀山镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 488.114,
+      "color": "#bdd7e7",
+      "label": "488.114 万m³"
+    },
+    {
+      "value": 4901.0108,
+      "color": "#6baed6",
+      "label": "4901.011 万m³"
+    },
+    {
+      "value": 6490.544,
+      "color": "#3182bd",
+      "label": "6490.544 万m³"
+    },
+    {
+      "value": 13322.045599999992,
+      "color": "#08519c",
+      "label": "13322.046 万m³"
+    },
+    {
+      "value": 29771.397999999994,
+      "color": "#042d60",
+      "label": "29771.398 万m³"
+    }
+  ]
+}

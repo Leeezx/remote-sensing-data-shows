@@ -1,0 +1,208 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610902001000",
+      "name": "老城街道",
+      "average": 77.1
+    },
+    {
+      "regionId": "610902002000",
+      "name": "新城街道",
+      "average": 7066.8
+    },
+    {
+      "regionId": "610902003000",
+      "name": "江北街道",
+      "average": 6678.3
+    },
+    {
+      "regionId": "610902004000",
+      "name": "建民办事处",
+      "average": 12147.0
+    },
+    {
+      "regionId": "610902100000",
+      "name": "关庙镇",
+      "average": 14453.2
+    },
+    {
+      "regionId": "610902101000",
+      "name": "张滩镇",
+      "average": 6300.7
+    },
+    {
+      "regionId": "610902102000",
+      "name": "瀛湖镇",
+      "average": 5780.9
+    },
+    {
+      "regionId": "610902104000",
+      "name": "五里镇",
+      "average": 14527.2
+    },
+    {
+      "regionId": "610902106000",
+      "name": "大同镇",
+      "average": 14614.2
+    },
+    {
+      "regionId": "610902107000",
+      "name": "恒口镇",
+      "average": 21898.2
+    },
+    {
+      "regionId": "610902109000",
+      "name": "吉河镇",
+      "average": 2233.7
+    },
+    {
+      "regionId": "610902110000",
+      "name": "流水镇",
+      "average": 289.8
+    },
+    {
+      "regionId": "610902111000",
+      "name": "大竹园镇",
+      "average": 2981.3
+    },
+    {
+      "regionId": "610902112000",
+      "name": "洪山镇",
+      "average": 2035.8
+    },
+    {
+      "regionId": "610902113000",
+      "name": "石转镇",
+      "average": 1196.4
+    },
+    {
+      "regionId": "610902114000",
+      "name": "茨沟镇",
+      "average": 7771.2
+    },
+    {
+      "regionId": "610902115000",
+      "name": "大河镇",
+      "average": 8352.8
+    },
+    {
+      "regionId": "610902116000",
+      "name": "沈坝镇",
+      "average": 5988.4
+    },
+    {
+      "regionId": "610902117000",
+      "name": "双龙镇",
+      "average": 1515.0
+    },
+    {
+      "regionId": "610902118000",
+      "name": "叶坪镇",
+      "average": 8317.0
+    },
+    {
+      "regionId": "610902119000",
+      "name": "中原镇",
+      "average": 25494.7
+    },
+    {
+      "regionId": "610902120000",
+      "name": "县河镇",
+      "average": 11986.1
+    },
+    {
+      "regionId": "610902121000",
+      "name": "紫荆镇",
+      "average": 18895.2
+    },
+    {
+      "regionId": "610902122000",
+      "name": "早阳镇",
+      "average": 51.5
+    },
+    {
+      "regionId": "610902123000",
+      "name": "关家镇",
+      "average": 3880.8
+    },
+    {
+      "regionId": "610902124000",
+      "name": "石梯镇",
+      "average": 624.1
+    },
+    {
+      "regionId": "610902125000",
+      "name": "坝河镇",
+      "average": 2525.1
+    },
+    {
+      "regionId": "610902126000",
+      "name": "共进镇",
+      "average": 655.0
+    },
+    {
+      "regionId": "610902127000",
+      "name": "新坝镇",
+      "average": 342.9
+    },
+    {
+      "regionId": "610902128000",
+      "name": "牛蹄镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610902129000",
+      "name": "田坝镇",
+      "average": 583.2
+    },
+    {
+      "regionId": "610902130000",
+      "name": "晏坝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610902131000",
+      "name": "双溪镇",
+      "average": 2014.0
+    },
+    {
+      "regionId": "610902132000",
+      "name": "谭坝镇",
+      "average": 344.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 582.2464,
+      "color": "#bdd7e7",
+      "label": "582.246 万m³"
+    },
+    {
+      "value": 2101.5027999999998,
+      "color": "#6baed6",
+      "label": "2101.503 万m³"
+    },
+    {
+      "value": 6197.0163999999995,
+      "color": "#3182bd",
+      "label": "6197.016 万m³"
+    },
+    {
+      "value": 11986.7436,
+      "color": "#08519c",
+      "label": "11986.744 万m³"
+    },
+    {
+      "value": 23121.009999999987,
+      "color": "#042d60",
+      "label": "23121.010 万m³"
+    }
+  ]
+}

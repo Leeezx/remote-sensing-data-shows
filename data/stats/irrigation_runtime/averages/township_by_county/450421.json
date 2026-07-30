@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "441225103000",
+      "name": "大洲镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "441225111000",
+      "name": "南丰镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "441225113000",
+      "name": "都平镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "450421100000",
+      "name": "石桥镇",
+      "average": 49330.8
+    },
+    {
+      "regionId": "450421101000",
+      "name": "沙头镇",
+      "average": 45003.3
+    },
+    {
+      "regionId": "450421102000",
+      "name": "梨埠镇",
+      "average": 9025.1
+    },
+    {
+      "regionId": "450421105000",
+      "name": "岭脚镇",
+      "average": 17011.3
+    },
+    {
+      "regionId": "450421108000",
+      "name": "京南镇",
+      "average": 14076.8
+    },
+    {
+      "regionId": "450421109000",
+      "name": "狮寨镇",
+      "average": 1806.1
+    },
+    {
+      "regionId": "450421110000",
+      "name": "旺甫镇",
+      "average": 15997.5
+    },
+    {
+      "regionId": "450421112000",
+      "name": "六堡镇",
+      "average": 5736.8
+    },
+    {
+      "regionId": "450421114000",
+      "name": "木双镇",
+      "average": 4687.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 599.6251999999997,
+      "color": "#bdd7e7",
+      "label": "599.625 万m³"
+    },
+    {
+      "value": 5153.3892,
+      "color": "#6baed6",
+      "label": "5153.389 万m³"
+    },
+    {
+      "value": 11833.8452,
+      "color": "#3182bd",
+      "label": "11833.845 万m³"
+    },
+    {
+      "value": 16674.718399999998,
+      "color": "#08519c",
+      "label": "16674.718 万m³"
+    },
+    {
+      "value": 48378.75,
+      "color": "#042d60",
+      "label": "48378.750 万m³"
+    }
+  ]
+}

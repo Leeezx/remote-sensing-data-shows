@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "152223106000",
+      "name": "图牧吉镇",
+      "average": 21260.8
+    },
+    {
+      "regionId": "152223200000",
+      "name": "好力保乡",
+      "average": 95184.0
+    },
+    {
+      "regionId": "152223401000",
+      "name": "保安沼监狱",
+      "average": 30485.7
+    },
+    {
+      "regionId": "220821101000",
+      "name": "坦途镇",
+      "average": 21731.8
+    },
+    {
+      "regionId": "230224100000",
+      "name": "泰来镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "230224101000",
+      "name": "平洋镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "230224102000",
+      "name": "汤池镇",
+      "average": 20596.3
+    },
+    {
+      "regionId": "230224103000",
+      "name": "江桥蒙古族镇",
+      "average": 122.9
+    },
+    {
+      "regionId": "230224104000",
+      "name": "塔子城镇",
+      "average": 93.5
+    },
+    {
+      "regionId": "230224105000",
+      "name": "大兴镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "230224106000",
+      "name": "和平镇",
+      "average": 80.5
+    },
+    {
+      "regionId": "230224107000",
+      "name": "克利镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "230224200000",
+      "name": "胜利蒙古族乡",
+      "average": 24277.5
+    },
+    {
+      "regionId": "230224209000",
+      "name": "宁姜蒙古族乡",
+      "average": 68.5
+    },
+    {
+      "regionId": "230224400000",
+      "name": "葡萄场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230224401000",
+      "name": "果树场",
+      "average": 55.8
+    },
+    {
+      "regionId": "230224402000",
+      "name": "泰来县一苗圃",
+      "average": 0.0
+    },
+    {
+      "regionId": "230224403000",
+      "name": "泰来县二苗圃",
+      "average": 0.0
+    },
+    {
+      "regionId": "230224404000",
+      "name": "东方红机械林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230224480000",
+      "name": "六三监狱",
+      "average": 0.0
+    },
+    {
+      "regionId": "230224500000",
+      "name": "泰来农场",
+      "average": 7223.0
+    },
+    {
+      "regionId": "230224580000",
+      "name": "第一良种场",
+      "average": 39.3
+    },
+    {
+      "regionId": "230224581000",
+      "name": "第二良种场",
+      "average": 277.2
+    },
+    {
+      "regionId": "230224582000",
+      "name": "宏胜种畜场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230224583000",
+      "name": "二龙涛农场",
+      "average": 91.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

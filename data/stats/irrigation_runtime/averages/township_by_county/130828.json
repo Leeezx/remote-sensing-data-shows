@@ -1,0 +1,273 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130828100000",
+      "name": "围场镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828101000",
+      "name": "四合永镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828102000",
+      "name": "克勒沟镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828103000",
+      "name": "棋盘山镇",
+      "average": 275.1
+    },
+    {
+      "regionId": "130828104000",
+      "name": "半截塔镇",
+      "average": 245.3
+    },
+    {
+      "regionId": "130828105000",
+      "name": "朝阳地镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828106000",
+      "name": "朝阳湾镇",
+      "average": 1.8
+    },
+    {
+      "regionId": "130828200000",
+      "name": "道坝子乡",
+      "average": 551.1
+    },
+    {
+      "regionId": "130828201000",
+      "name": "龙头山乡",
+      "average": 44.6
+    },
+    {
+      "regionId": "130828202000",
+      "name": "腰站乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828203000",
+      "name": "黄土坎乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828204000",
+      "name": "四道沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828205000",
+      "name": "兰旗卡伦乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828206000",
+      "name": "银窝沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828207000",
+      "name": "新地乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828208000",
+      "name": "广发永乡",
+      "average": 109.3
+    },
+    {
+      "regionId": "130828209000",
+      "name": "育太和乡",
+      "average": 64.3
+    },
+    {
+      "regionId": "130828210000",
+      "name": "郭家湾乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828211000",
+      "name": "杨家湾乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828212000",
+      "name": "大唤起乡",
+      "average": 766.7
+    },
+    {
+      "regionId": "130828213000",
+      "name": "哈里哈乡",
+      "average": 1028.5
+    },
+    {
+      "regionId": "130828214000",
+      "name": "新拨乡",
+      "average": 1593.0
+    },
+    {
+      "regionId": "130828215000",
+      "name": "张家湾乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828216000",
+      "name": "宝元栈乡",
+      "average": 1492.9
+    },
+    {
+      "regionId": "130828217000",
+      "name": "山湾子乡",
+      "average": 2318.2
+    },
+    {
+      "regionId": "130828218000",
+      "name": "三义永乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828219000",
+      "name": "姜家店乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828220000",
+      "name": "下伙房乡",
+      "average": 456.8
+    },
+    {
+      "regionId": "130828221000",
+      "name": "燕格柏乡",
+      "average": 754.6
+    },
+    {
+      "regionId": "130828222000",
+      "name": "牌楼乡",
+      "average": 986.8
+    },
+    {
+      "regionId": "130828223000",
+      "name": "城子乡",
+      "average": 2725.4
+    },
+    {
+      "regionId": "130828224000",
+      "name": "老窝铺乡",
+      "average": 20.4
+    },
+    {
+      "regionId": "130828225000",
+      "name": "御道口乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828226000",
+      "name": "石桌子乡",
+      "average": 3319.9
+    },
+    {
+      "regionId": "130828227000",
+      "name": "大头山乡",
+      "average": 2053.2
+    },
+    {
+      "regionId": "130828228000",
+      "name": "南山嘴乡",
+      "average": 1212.0
+    },
+    {
+      "regionId": "130828229000",
+      "name": "西龙头乡",
+      "average": 438.1
+    },
+    {
+      "regionId": "130828450000",
+      "name": "塞罕坝机械林场",
+      "average": 77.9
+    },
+    {
+      "regionId": "130828500000",
+      "name": "国营御道口牧场",
+      "average": 0.0
+    },
+    {
+      "regionId": "150404102000",
+      "name": "大庙镇",
+      "average": 9932.2
+    },
+    {
+      "regionId": "150404203000",
+      "name": "大夫营子乡",
+      "average": 1354.4
+    },
+    {
+      "regionId": "150425105000",
+      "name": "芝瑞镇",
+      "average": 21423.2
+    },
+    {
+      "regionId": "150425205000",
+      "name": "乌兰布统苏木",
+      "average": 5101.0
+    },
+    {
+      "regionId": "150428101000",
+      "name": "美林镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150428102000",
+      "name": "王爷府镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "152531200000",
+      "name": "大河口乡",
+      "average": 5129.9
+    },
+    {
+      "regionId": "152531201000",
+      "name": "蔡木山乡",
+      "average": 17949.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510812100000",
+      "name": "朝天镇",
+      "average": 6044.6
+    },
+    {
+      "regionId": "510812101000",
+      "name": "大滩镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510812102000",
+      "name": "羊木镇",
+      "average": 2542.8
+    },
+    {
+      "regionId": "510812103000",
+      "name": "曾家镇",
+      "average": 1504.2
+    },
+    {
+      "regionId": "510812104000",
+      "name": "中子镇",
+      "average": 8039.1
+    },
+    {
+      "regionId": "510812105000",
+      "name": "沙河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510812200000",
+      "name": "陈家乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510812201000",
+      "name": "小安乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510812202000",
+      "name": "鱼洞乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510812203000",
+      "name": "东溪河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510812204000",
+      "name": "花石乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510812205000",
+      "name": "蒲家乡",
+      "average": 32.2
+    },
+    {
+      "regionId": "510812206000",
+      "name": "西北乡",
+      "average": 1367.6
+    },
+    {
+      "regionId": "510812207000",
+      "name": "宣河乡",
+      "average": 3882.2
+    },
+    {
+      "regionId": "510812208000",
+      "name": "转斗乡",
+      "average": 4254.9
+    },
+    {
+      "regionId": "510812209000",
+      "name": "青林乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510812210000",
+      "name": "平溪乡",
+      "average": 579.3
+    },
+    {
+      "regionId": "510812211000",
+      "name": "两河口乡",
+      "average": 647.3
+    },
+    {
+      "regionId": "510812212000",
+      "name": "李家乡",
+      "average": 1688.1
+    },
+    {
+      "regionId": "510812213000",
+      "name": "汪家乡",
+      "average": 1079.4
+    },
+    {
+      "regionId": "510812214000",
+      "name": "麻柳乡",
+      "average": 2434.8
+    },
+    {
+      "regionId": "510812215000",
+      "name": "临溪乡",
+      "average": 946.9
+    },
+    {
+      "regionId": "510812216000",
+      "name": "文安乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510812217000",
+      "name": "马家坝乡",
+      "average": 50.7
+    },
+    {
+      "regionId": "510812218000",
+      "name": "柏杨乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610726105000",
+      "name": "燕子砭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610726210000",
+      "name": "安乐河乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

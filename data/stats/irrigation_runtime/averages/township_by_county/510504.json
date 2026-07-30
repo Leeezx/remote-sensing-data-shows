@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510504001000",
+      "name": "小市街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510504002000",
+      "name": "高坝街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510504003000",
+      "name": "红星街道",
+      "average": 88.7
+    },
+    {
+      "regionId": "510504004000",
+      "name": "莲花池街道",
+      "average": 104.6
+    },
+    {
+      "regionId": "510504100000",
+      "name": "罗汉镇",
+      "average": 813.7
+    },
+    {
+      "regionId": "510504101000",
+      "name": "鱼塘镇",
+      "average": 2629.1
+    },
+    {
+      "regionId": "510504102000",
+      "name": "石洞镇",
+      "average": 7386.3
+    },
+    {
+      "regionId": "510504103000",
+      "name": "胡市镇",
+      "average": 4120.8
+    },
+    {
+      "regionId": "510504104000",
+      "name": "特兴镇",
+      "average": 6138.3
+    },
+    {
+      "regionId": "510504105000",
+      "name": "安宁镇",
+      "average": 5570.8
+    },
+    {
+      "regionId": "510504106000",
+      "name": "双加镇",
+      "average": 5004.5
+    },
+    {
+      "regionId": "510504200000",
+      "name": "金龙乡",
+      "average": 3642.6
+    },
+    {
+      "regionId": "510504201000",
+      "name": "长安乡",
+      "average": 2493.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 97.3496,
+      "color": "#bdd7e7",
+      "label": "97.350 万m³"
+    },
+    {
+      "value": 2238.4248,
+      "color": "#6baed6",
+      "label": "2238.425 万m³"
+    },
+    {
+      "value": 3715.2863999999995,
+      "color": "#3182bd",
+      "label": "3715.286 万m³"
+    },
+    {
+      "value": 5262.7328,
+      "color": "#08519c",
+      "label": "5262.733 万m³"
+    },
+    {
+      "value": 7086.78,
+      "color": "#042d60",
+      "label": "7086.780 万m³"
+    }
+  ]
+}

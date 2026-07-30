@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "310112001000",
+      "name": "江川路街道",
+      "average": 379.1
+    },
+    {
+      "regionId": "310112006000",
+      "name": "古美街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310112008000",
+      "name": "新虹街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310112101000",
+      "name": "莘庄镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "310112102000",
+      "name": "七宝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "310112103000",
+      "name": "颛桥镇",
+      "average": 1234.1
+    },
+    {
+      "regionId": "310112106000",
+      "name": "华漕镇",
+      "average": 3839.1
+    },
+    {
+      "regionId": "310112107000",
+      "name": "虹桥镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "310112108000",
+      "name": "梅陇镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "310112110000",
+      "name": "吴泾镇",
+      "average": 1972.2
+    },
+    {
+      "regionId": "310112112000",
+      "name": "马桥镇",
+      "average": 7843.8
+    },
+    {
+      "regionId": "310112114000",
+      "name": "浦江镇",
+      "average": 24189.3
+    },
+    {
+      "regionId": "310112501000",
+      "name": "莘庄工业区",
+      "average": 1852.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

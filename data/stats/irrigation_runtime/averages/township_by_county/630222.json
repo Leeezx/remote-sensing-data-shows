@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620111102000",
+      "name": "花庄镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "622923203000",
+      "name": "坪沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "622927101000",
+      "name": "大河家镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "630222100000",
+      "name": "川口镇",
+      "average": 3972.4
+    },
+    {
+      "regionId": "630222103000",
+      "name": "官亭镇",
+      "average": 4240.2
+    },
+    {
+      "regionId": "630222105000",
+      "name": "满坪镇",
+      "average": 33022.6
+    },
+    {
+      "regionId": "630222200000",
+      "name": "马场垣乡",
+      "average": 3596.5
+    },
+    {
+      "regionId": "630222202000",
+      "name": "松树乡",
+      "average": 4968.6
+    },
+    {
+      "regionId": "630222205000",
+      "name": "隆治乡",
+      "average": 3798.2
+    },
+    {
+      "regionId": "630222206000",
+      "name": "大庄乡",
+      "average": 1091.4
+    },
+    {
+      "regionId": "630222207000",
+      "name": "转导乡",
+      "average": 1253.3
+    },
+    {
+      "regionId": "630222210000",
+      "name": "中川乡",
+      "average": 7248.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 362.34479999999985,
+      "color": "#bdd7e7",
+      "label": "362.345 万m³"
+    },
+    {
+      "value": 2293.6808,
+      "color": "#6baed6",
+      "label": "2293.681 万m³"
+    },
+    {
+      "value": 3895.0552,
+      "color": "#3182bd",
+      "label": "3895.055 万m³"
+    },
+    {
+      "value": 4726.771199999999,
+      "color": "#08519c",
+      "label": "4726.771 万m³"
+    },
+    {
+      "value": 27352.275999999983,
+      "color": "#042d60",
+      "label": "27352.276 万m³"
+    }
+  ]
+}

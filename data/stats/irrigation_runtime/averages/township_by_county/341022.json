@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "341022100000",
+      "name": "海阳镇",
+      "average": 48717.0
+    },
+    {
+      "regionId": "341022101000",
+      "name": "齐云山镇",
+      "average": 34969.2
+    },
+    {
+      "regionId": "341022102000",
+      "name": "万安镇",
+      "average": 78733.0
+    },
+    {
+      "regionId": "341022103000",
+      "name": "五城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341022104000",
+      "name": "东临溪镇",
+      "average": 32089.1
+    },
+    {
+      "regionId": "341022105000",
+      "name": "兰田镇",
+      "average": 22359.3
+    },
+    {
+      "regionId": "341022106000",
+      "name": "溪口镇",
+      "average": 30307.3
+    },
+    {
+      "regionId": "341022107000",
+      "name": "流口镇",
+      "average": 868.8
+    },
+    {
+      "regionId": "341022108000",
+      "name": "汪村镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341022109000",
+      "name": "商山镇",
+      "average": 42123.4
+    },
+    {
+      "regionId": "341022201000",
+      "name": "山斗乡",
+      "average": 6932.4
+    },
+    {
+      "regionId": "341022202000",
+      "name": "岭南乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341022203000",
+      "name": "渭桥乡",
+      "average": 27079.6
+    },
+    {
+      "regionId": "341022204000",
+      "name": "板桥乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341022205000",
+      "name": "陈霞乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341022206000",
+      "name": "鹤城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341022207000",
+      "name": "源芳乡",
+      "average": 5851.5
+    },
+    {
+      "regionId": "341022208000",
+      "name": "榆村乡",
+      "average": 11166.6
+    },
+    {
+      "regionId": "341022209000",
+      "name": "龙田乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341022210000",
+      "name": "璜尖乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341022211000",
+      "name": "白际乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "360222105000",
+      "name": "瑶里镇",
+      "average": 25537.9
+    },
+    {
+      "regionId": "361130200000",
+      "name": "溪头乡",
+      "average": 9350.3
+    },
+    {
+      "regionId": "361130201000",
+      "name": "段莘乡",
+      "average": 12009.6
+    },
+    {
+      "regionId": "361130204000",
+      "name": "浙源乡",
+      "average": 7426.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

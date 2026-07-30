@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "520304100000",
+      "name": "南白镇",
+      "average": 7081.4
+    },
+    {
+      "regionId": "520304101000",
+      "name": "龙坑镇",
+      "average": 7865.5
+    },
+    {
+      "regionId": "520304102000",
+      "name": "三岔镇",
+      "average": 4360.5
+    },
+    {
+      "regionId": "520304103000",
+      "name": "苟江镇",
+      "average": 5631.2
+    },
+    {
+      "regionId": "520304104000",
+      "name": "三合镇",
+      "average": 10609.5
+    },
+    {
+      "regionId": "520304105000",
+      "name": "乌江镇",
+      "average": 1712.5
+    },
+    {
+      "regionId": "520304110000",
+      "name": "龙坪镇",
+      "average": 8899.9
+    },
+    {
+      "regionId": "520304112000",
+      "name": "团溪镇",
+      "average": 10976.7
+    },
+    {
+      "regionId": "520304113000",
+      "name": "铁厂镇",
+      "average": 2037.9
+    },
+    {
+      "regionId": "520304114000",
+      "name": "西坪镇",
+      "average": 8511.5
+    },
+    {
+      "regionId": "520304115000",
+      "name": "尚嵇镇",
+      "average": 4986.4
+    },
+    {
+      "regionId": "520304116000",
+      "name": "茅栗镇",
+      "average": 4231.2
+    },
+    {
+      "regionId": "520304117000",
+      "name": "新民镇",
+      "average": 4112.0
+    },
+    {
+      "regionId": "520304118000",
+      "name": "鸭溪镇",
+      "average": 10870.0
+    },
+    {
+      "regionId": "520304119000",
+      "name": "石板镇",
+      "average": 6168.2
+    },
+    {
+      "regionId": "520304120000",
+      "name": "乐山镇",
+      "average": 4171.8
+    },
+    {
+      "regionId": "520304121000",
+      "name": "枫香镇",
+      "average": 7431.4
+    },
+    {
+      "regionId": "520304122000",
+      "name": "泮水镇",
+      "average": 11675.6
+    },
+    {
+      "regionId": "520304123000",
+      "name": "马蹄镇",
+      "average": 9240.1
+    },
+    {
+      "regionId": "520304200000",
+      "name": "平正仡佬族乡",
+      "average": 2608.4
+    },
+    {
+      "regionId": "520304201000",
+      "name": "洪关苗族乡",
+      "average": 3355.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 1842.66,
+      "color": "#eff3ff",
+      "label": "1842.660 万m³"
+    },
+    {
+      "value": 4126.352,
+      "color": "#bdd7e7",
+      "label": "4126.352 万m³"
+    },
+    {
+      "value": 5037.9839999999995,
+      "color": "#6baed6",
+      "label": "5037.984 万m³"
+    },
+    {
+      "value": 7403.4,
+      "color": "#3182bd",
+      "label": "7403.400 万m³"
+    },
+    {
+      "value": 9158.452,
+      "color": "#08519c",
+      "label": "9158.452 万m³"
+    },
+    {
+      "value": 11396.04,
+      "color": "#042d60",
+      "label": "11396.040 万m³"
+    }
+  ]
+}

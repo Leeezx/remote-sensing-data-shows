@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "120114114000",
+      "name": "王庆坨镇",
+      "average": 5471.9
+    },
+    {
+      "regionId": "120114120000",
+      "name": "豆张庄镇",
+      "average": 14774.5
+    },
+    {
+      "regionId": "131002001000",
+      "name": "银河南路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "131002002000",
+      "name": "光明西道街道",
+      "average": 11.0
+    },
+    {
+      "regionId": "131002003000",
+      "name": "永华道街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "131002100000",
+      "name": "落垡镇",
+      "average": 22.9
+    },
+    {
+      "regionId": "131002101000",
+      "name": "码头镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "131002102000",
+      "name": "葛渔城镇",
+      "average": 119.5
+    },
+    {
+      "regionId": "131002103000",
+      "name": "东沽港镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "131002200000",
+      "name": "杨税务乡",
+      "average": 12457.7
+    },
+    {
+      "regionId": "131002201000",
+      "name": "仇庄乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "131002202000",
+      "name": "调河头乡",
+      "average": 6348.9
+    },
+    {
+      "regionId": "131002203000",
+      "name": "北史家务乡",
+      "average": 1792.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

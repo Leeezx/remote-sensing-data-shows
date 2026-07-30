@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511424102000",
+      "name": "仁美镇",
+      "average": 6679.5
+    },
+    {
+      "regionId": "511424105000",
+      "name": "丹棱镇",
+      "average": 11763.9
+    },
+    {
+      "regionId": "511424106000",
+      "name": "杨场镇",
+      "average": 11167.7
+    },
+    {
+      "regionId": "511424107000",
+      "name": "双桥镇",
+      "average": 8319.2
+    },
+    {
+      "regionId": "511424108000",
+      "name": "张场镇",
+      "average": 1865.8
+    },
+    {
+      "regionId": "511424200000",
+      "name": "石桥乡",
+      "average": 1479.8
+    },
+    {
+      "regionId": "511424204000",
+      "name": "顺龙乡",
+      "average": 1146.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 1186.848,
+      "color": "#eff3ff",
+      "label": "1186.848 万m³"
+    },
+    {
+      "value": 1584.792,
+      "color": "#bdd7e7",
+      "label": "1584.792 万m³"
+    },
+    {
+      "value": 3906.8088,
+      "color": "#6baed6",
+      "label": "3906.809 万m³"
+    },
+    {
+      "value": 7623.9672,
+      "color": "#3182bd",
+      "label": "7623.967 万m³"
+    },
+    {
+      "value": 10392.908,
+      "color": "#08519c",
+      "label": "10392.908 万m³"
+    },
+    {
+      "value": 11692.356,
+      "color": "#042d60",
+      "label": "11692.356 万m³"
+    }
+  ]
+}

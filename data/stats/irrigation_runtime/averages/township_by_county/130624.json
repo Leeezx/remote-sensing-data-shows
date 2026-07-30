@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130624100000",
+      "name": "阜平镇",
+      "average": 8719.1
+    },
+    {
+      "regionId": "130624101000",
+      "name": "龙泉关镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130624102000",
+      "name": "平阳镇",
+      "average": 4884.2
+    },
+    {
+      "regionId": "130624103000",
+      "name": "城南庄镇",
+      "average": 5014.5
+    },
+    {
+      "regionId": "130624104000",
+      "name": "天生桥镇",
+      "average": 1833.7
+    },
+    {
+      "regionId": "130624201000",
+      "name": "王林口乡",
+      "average": 3072.4
+    },
+    {
+      "regionId": "130624202000",
+      "name": "台峪乡",
+      "average": 2878.6
+    },
+    {
+      "regionId": "130624203000",
+      "name": "大台乡",
+      "average": 1356.7
+    },
+    {
+      "regionId": "130624204000",
+      "name": "史家寨乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130624205000",
+      "name": "砂窝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130624206000",
+      "name": "吴王口乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130624207000",
+      "name": "夏庄乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130624208000",
+      "name": "北果元乡",
+      "average": 10117.2
+    },
+    {
+      "regionId": "140224212000",
+      "name": "下关乡",
+      "average": 803.0
+    },
+    {
+      "regionId": "140922203000",
+      "name": "门限石乡",
+      "average": 1447.7
+    },
+    {
+      "regionId": "140922211000",
+      "name": "石咀乡",
+      "average": 663.0
+    },
+    {
+      "regionId": "140924208000",
+      "name": "神堂堡乡",
+      "average": 94.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

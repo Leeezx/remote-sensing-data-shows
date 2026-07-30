@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511425102000",
+      "name": "汉阳镇",
+      "average": 1096.2
+    },
+    {
+      "regionId": "511425105000",
+      "name": "河坝子镇",
+      "average": 3658.4
+    },
+    {
+      "regionId": "511425106000",
+      "name": "南城镇",
+      "average": 1262.1
+    },
+    {
+      "regionId": "511425107000",
+      "name": "青城镇",
+      "average": 885.4
+    },
+    {
+      "regionId": "511425108000",
+      "name": "瑞峰镇",
+      "average": 3136.4
+    },
+    {
+      "regionId": "511425109000",
+      "name": "黑龙镇",
+      "average": 2351.8
+    },
+    {
+      "regionId": "511425110000",
+      "name": "西龙镇",
+      "average": 8062.1
+    },
+    {
+      "regionId": "511425205000",
+      "name": "高台乡",
+      "average": 1892.9
+    },
+    {
+      "regionId": "511425217000",
+      "name": "白果乡",
+      "average": 4638.7
+    },
+    {
+      "regionId": "511425218000",
+      "name": "罗波乡",
+      "average": 4401.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 923.3439999999999,
+      "color": "#eff3ff",
+      "label": "923.344 万m³"
+    },
+    {
+      "value": 1246.8372,
+      "color": "#bdd7e7",
+      "label": "1246.837 万m³"
+    },
+    {
+      "value": 2184.7604,
+      "color": "#6baed6",
+      "label": "2184.760 万m³"
+    },
+    {
+      "value": 3326.408,
+      "color": "#3182bd",
+      "label": "3326.408 万m³"
+    },
+    {
+      "value": 4423.1408,
+      "color": "#08519c",
+      "label": "4423.141 万m³"
+    },
+    {
+      "value": 7445.888000000001,
+      "color": "#042d60",
+      "label": "7445.888 万m³"
+    }
+  ]
+}

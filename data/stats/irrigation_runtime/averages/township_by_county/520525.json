@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "520525001000",
+      "name": "雍熙街道",
+      "average": 2072.0
+    },
+    {
+      "regionId": "520525002000",
+      "name": "文昌街道",
+      "average": 4313.4
+    },
+    {
+      "regionId": "520525003000",
+      "name": "居仁街道",
+      "average": 3642.2
+    },
+    {
+      "regionId": "520525101000",
+      "name": "中岭镇",
+      "average": 3500.3
+    },
+    {
+      "regionId": "520525102000",
+      "name": "阳长镇",
+      "average": 5753.3
+    },
+    {
+      "regionId": "520525103000",
+      "name": "维新镇",
+      "average": 1488.9
+    },
+    {
+      "regionId": "520525104000",
+      "name": "龙场镇",
+      "average": 5707.7
+    },
+    {
+      "regionId": "520525105000",
+      "name": "乐治镇",
+      "average": 4938.2
+    },
+    {
+      "regionId": "520525107000",
+      "name": "百兴镇",
+      "average": 5253.2
+    },
+    {
+      "regionId": "520525108000",
+      "name": "张家湾镇",
+      "average": 2178.2
+    },
+    {
+      "regionId": "520525200000",
+      "name": "勺窝乡",
+      "average": 4571.9
+    },
+    {
+      "regionId": "520525201000",
+      "name": "新房乡",
+      "average": 8393.7
+    },
+    {
+      "regionId": "520525202000",
+      "name": "厍东关乡",
+      "average": 2065.9
+    },
+    {
+      "regionId": "520525203000",
+      "name": "董地乡",
+      "average": 2237.5
+    },
+    {
+      "regionId": "520525204000",
+      "name": "寨乐乡",
+      "average": 7717.5
+    },
+    {
+      "regionId": "520525205000",
+      "name": "化作乡",
+      "average": 4883.4
+    },
+    {
+      "regionId": "520525206000",
+      "name": "老凹坝乡",
+      "average": 9252.6
+    },
+    {
+      "regionId": "520525207000",
+      "name": "沙包乡",
+      "average": 5592.0
+    },
+    {
+      "regionId": "520525208000",
+      "name": "水东乡",
+      "average": 3096.1
+    },
+    {
+      "regionId": "520525209000",
+      "name": "曙光乡",
+      "average": 4359.5
+    },
+    {
+      "regionId": "520525210000",
+      "name": "姑开乡",
+      "average": 1064.1
+    },
+    {
+      "regionId": "520525211000",
+      "name": "羊场乡",
+      "average": 625.1
+    },
+    {
+      "regionId": "520525212000",
+      "name": "锅圈岩乡",
+      "average": 3151.2
+    },
+    {
+      "regionId": "520525213000",
+      "name": "昆寨乡",
+      "average": 3275.0
+    },
+    {
+      "regionId": "520525214000",
+      "name": "左鸠戛乡",
+      "average": 1546.4
+    },
+    {
+      "regionId": "520525215000",
+      "name": "猪场乡",
+      "average": 3030.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 844.5999999999999,
+      "color": "#eff3ff",
+      "label": "844.600 万m³"
+    },
+    {
+      "value": 2103.86,
+      "color": "#bdd7e7",
+      "label": "2103.860 万m³"
+    },
+    {
+      "value": 3163.58,
+      "color": "#6baed6",
+      "label": "3163.580 万m³"
+    },
+    {
+      "value": 4354.89,
+      "color": "#3182bd",
+      "label": "4354.890 万m³"
+    },
+    {
+      "value": 5490.36,
+      "color": "#08519c",
+      "label": "5490.360 万m³"
+    },
+    {
+      "value": 8823.150000000001,
+      "color": "#042d60",
+      "label": "8823.150 万m³"
+    }
+  ]
+}

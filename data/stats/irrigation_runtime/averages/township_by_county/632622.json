@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513231210000",
+      "name": "柯河乡",
+      "average": 10.6
+    },
+    {
+      "regionId": "513333100000",
+      "name": "色柯镇",
+      "average": 26.1
+    },
+    {
+      "regionId": "513333204000",
+      "name": "大章乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513333206000",
+      "name": "亚龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513333209000",
+      "name": "洛若镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632622100000",
+      "name": "赛来塘镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632622200000",
+      "name": "多贡麻乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632622201000",
+      "name": "马可河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632622202000",
+      "name": "吉卡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632622203000",
+      "name": "达卡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632622204000",
+      "name": "知钦乡",
+      "average": 26.1
+    },
+    {
+      "regionId": "632622205000",
+      "name": "江日堂乡",
+      "average": 294.2
+    },
+    {
+      "regionId": "632622206000",
+      "name": "亚尔堂乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632622207000",
+      "name": "灯塔乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

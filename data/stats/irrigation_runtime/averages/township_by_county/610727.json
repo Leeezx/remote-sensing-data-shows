@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610726208000",
+      "name": "苍社乡",
+      "average": 28.8
+    },
+    {
+      "regionId": "610727101000",
+      "name": "接管亭乡",
+      "average": 5803.6
+    },
+    {
+      "regionId": "610727102000",
+      "name": "横现河镇",
+      "average": 1742.9
+    },
+    {
+      "regionId": "610727103000",
+      "name": "两河口镇",
+      "average": 2584.0
+    },
+    {
+      "regionId": "610727104000",
+      "name": "金家河镇",
+      "average": 734.5
+    },
+    {
+      "regionId": "610727105000",
+      "name": "徐家坪镇",
+      "average": 1848.3
+    },
+    {
+      "regionId": "610727106000",
+      "name": "白水江镇",
+      "average": 170.8
+    },
+    {
+      "regionId": "610727107000",
+      "name": "硖口驿镇",
+      "average": 7812.1
+    },
+    {
+      "regionId": "610727108000",
+      "name": "何家岩镇",
+      "average": 1948.4
+    },
+    {
+      "regionId": "610727109000",
+      "name": "乐素河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610727110000",
+      "name": "郭镇",
+      "average": 1367.7
+    },
+    {
+      "regionId": "610727200000",
+      "name": "白石沟乡",
+      "average": 10847.4
+    },
+    {
+      "regionId": "610727201000",
+      "name": "马蹄湾乡",
+      "average": 179.4
+    },
+    {
+      "regionId": "610727202000",
+      "name": "西淮坝乡",
+      "average": 609.3
+    },
+    {
+      "regionId": "610727203000",
+      "name": "九中金乡",
+      "average": 928.0
+    },
+    {
+      "regionId": "610727204000",
+      "name": "仙台坝乡",
+      "average": 2462.0
+    },
+    {
+      "regionId": "610727205000",
+      "name": "观音寺乡",
+      "average": 3184.8
+    },
+    {
+      "regionId": "610727207000",
+      "name": "黑河坝乡",
+      "average": 10208.4
+    },
+    {
+      "regionId": "610727208000",
+      "name": "白雀寺乡",
+      "average": 3448.3
+    },
+    {
+      "regionId": "621221203000",
+      "name": "宋坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621224104000",
+      "name": "两河镇",
+      "average": 28.8
+    },
+    {
+      "regionId": "621224203000",
+      "name": "大南峪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621224206000",
+      "name": "王坝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621224212000",
+      "name": "白杨乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621227105000",
+      "name": "嘉陵镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "621227211000",
+      "name": "虞关乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

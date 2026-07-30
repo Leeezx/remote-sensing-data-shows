@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350111001000",
+      "name": "茶园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350111002000",
+      "name": "王庄街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350111003000",
+      "name": "象园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350111100000",
+      "name": "鼓山镇",
+      "average": 3218.6
+    },
+    {
+      "regionId": "350111101000",
+      "name": "新店镇",
+      "average": 11679.4
+    },
+    {
+      "regionId": "350111102000",
+      "name": "岳峰镇",
+      "average": 208.2
+    },
+    {
+      "regionId": "350111103000",
+      "name": "宦溪镇",
+      "average": 7022.4
+    },
+    {
+      "regionId": "350111201000",
+      "name": "寿山乡",
+      "average": 8160.7
+    },
+    {
+      "regionId": "350111202000",
+      "name": "日溪乡",
+      "average": 2587.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

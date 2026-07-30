@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "141030100000",
+      "name": "昕水镇",
+      "average": 3190.2
+    },
+    {
+      "regionId": "141030101000",
+      "name": "曲峨镇",
+      "average": 4837.7
+    },
+    {
+      "regionId": "141030200000",
+      "name": "三多乡",
+      "average": 3283.5
+    },
+    {
+      "regionId": "141030201000",
+      "name": "太德乡",
+      "average": 4527.5
+    },
+    {
+      "regionId": "141030202000",
+      "name": "徐家垛乡",
+      "average": 3450.7
+    },
+    {
+      "regionId": "141030203000",
+      "name": "太古乡",
+      "average": 1256.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 1449.51,
+      "color": "#eff3ff",
+      "label": "1449.510 万m³"
+    },
+    {
+      "value": 3195.798,
+      "color": "#bdd7e7",
+      "label": "3195.798 万m³"
+    },
+    {
+      "value": 3286.844,
+      "color": "#6baed6",
+      "label": "3286.844 万m³"
+    },
+    {
+      "value": 3447.3559999999998,
+      "color": "#3182bd",
+      "label": "3447.356 万m³"
+    },
+    {
+      "value": 4462.892,
+      "color": "#08519c",
+      "label": "4462.892 万m³"
+    },
+    {
+      "value": 4806.68,
+      "color": "#042d60",
+      "label": "4806.680 万m³"
+    }
+  ]
+}

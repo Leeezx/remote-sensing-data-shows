@@ -1,0 +1,58 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540526100000",
+      "name": "措美镇",
+      "average": 535.5
+    },
+    {
+      "regionId": "540526101000",
+      "name": "哲古镇",
+      "average": 646.1
+    },
+    {
+      "regionId": "540526200000",
+      "name": "乃西乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540526201000",
+      "name": "古堆乡",
+      "average": 242.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 14.574,
+      "color": "#eff3ff",
+      "label": "14.574 万m³"
+    },
+    {
+      "value": 154.4844,
+      "color": "#bdd7e7",
+      "label": "154.484 万m³"
+    },
+    {
+      "value": 304.9312,
+      "color": "#6baed6",
+      "label": "304.931 万m³"
+    },
+    {
+      "value": 473.46879999999993,
+      "color": "#3182bd",
+      "label": "473.469 万m³"
+    },
+    {
+      "value": 575.7583999999999,
+      "color": "#08519c",
+      "label": "575.758 万m³"
+    },
+    {
+      "value": 639.464,
+      "color": "#042d60",
+      "label": "639.464 万m³"
+    }
+  ]
+}

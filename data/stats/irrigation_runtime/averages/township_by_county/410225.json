@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "371728205000",
+      "name": "焦园乡",
+      "average": 26352.0
+    },
+    {
+      "regionId": "410225100000",
+      "name": "城关镇",
+      "average": 592.9
+    },
+    {
+      "regionId": "410225101000",
+      "name": "堌阳镇",
+      "average": 144.2
+    },
+    {
+      "regionId": "410225102000",
+      "name": "南彰镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "410225103000",
+      "name": "张君墓镇",
+      "average": 75634.9
+    },
+    {
+      "regionId": "410225104000",
+      "name": "红庙镇",
+      "average": 34834.4
+    },
+    {
+      "regionId": "410225200000",
+      "name": "城关乡",
+      "average": 43496.9
+    },
+    {
+      "regionId": "410225201000",
+      "name": "三义寨乡",
+      "average": 37838.2
+    },
+    {
+      "regionId": "410225202000",
+      "name": "东坝头乡",
+      "average": 21033.4
+    },
+    {
+      "regionId": "410225203000",
+      "name": "爪营乡",
+      "average": 19242.4
+    },
+    {
+      "regionId": "410225204000",
+      "name": "谷营乡",
+      "average": 16.4
+    },
+    {
+      "regionId": "410225205000",
+      "name": "小宋乡",
+      "average": 39549.1
+    },
+    {
+      "regionId": "410225206000",
+      "name": "孟寨乡",
+      "average": 346.6
+    },
+    {
+      "regionId": "410225207000",
+      "name": "许河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "410225208000",
+      "name": "葡萄架乡",
+      "average": 27870.0
+    },
+    {
+      "regionId": "410225209000",
+      "name": "阎楼乡",
+      "average": 21851.1
+    },
+    {
+      "regionId": "410225210000",
+      "name": "仪封乡",
+      "average": 38291.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 223.5408,
+      "color": "#bdd7e7",
+      "label": "223.541 万m³"
+    },
+    {
+      "value": 20073.424,
+      "color": "#6baed6",
+      "label": "20073.424 万m³"
+    },
+    {
+      "value": 27165.648,
+      "color": "#3182bd",
+      "label": "27165.648 万m³"
+    },
+    {
+      "value": 38113.7456,
+      "color": "#08519c",
+      "label": "38113.746 万m³"
+    },
+    {
+      "value": 65350.73999999999,
+      "color": "#042d60",
+      "label": "65350.740 万m³"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "431022109000",
+      "name": "栗源镇",
+      "average": 28893.1
+    },
+    {
+      "regionId": "431022110000",
+      "name": "岩泉镇",
+      "average": 29534.6
+    },
+    {
+      "regionId": "431022111000",
+      "name": "玉溪镇",
+      "average": 26920.8
+    },
+    {
+      "regionId": "431022208000",
+      "name": "关溪乡",
+      "average": 10886.0
+    },
+    {
+      "regionId": "431022212000",
+      "name": "赤石乡",
+      "average": 12675.1
+    },
+    {
+      "regionId": "431026110000",
+      "name": "文明镇",
+      "average": 13030.1
+    },
+    {
+      "regionId": "440281001000",
+      "name": "乐城街道",
+      "average": 34432.1
+    },
+    {
+      "regionId": "440281102000",
+      "name": "北乡镇",
+      "average": 28266.1
+    },
+    {
+      "regionId": "440281103000",
+      "name": "九峰镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440281104000",
+      "name": "廊田镇",
+      "average": 64390.2
+    },
+    {
+      "regionId": "440281105000",
+      "name": "长来镇",
+      "average": 29554.3
+    },
+    {
+      "regionId": "440281106000",
+      "name": "梅花镇",
+      "average": 45596.9
+    },
+    {
+      "regionId": "440281107000",
+      "name": "三溪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440281108000",
+      "name": "坪石镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440281110000",
+      "name": "黄圃镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440281111000",
+      "name": "五山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440281112000",
+      "name": "两江镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440281113000",
+      "name": "沙坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440281114000",
+      "name": "云岩镇",
+      "average": 17786.5
+    },
+    {
+      "regionId": "440281115000",
+      "name": "秀水镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440281117000",
+      "name": "大源镇",
+      "average": 3192.7
+    },
+    {
+      "regionId": "440281118000",
+      "name": "庆云镇",
+      "average": 10077.7
+    },
+    {
+      "regionId": "440281119000",
+      "name": "白石镇",
+      "average": 194.0
+    },
+    {
+      "regionId": "440281451000",
+      "name": "坪石办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "440281452000",
+      "name": "梅田办事处",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

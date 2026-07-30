@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350504001000",
+      "name": "万安街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350504002000",
+      "name": "双阳街道",
+      "average": 2868.2
+    },
+    {
+      "regionId": "350504100000",
+      "name": "罗溪镇",
+      "average": 8418.6
+    },
+    {
+      "regionId": "350504101000",
+      "name": "马甲镇",
+      "average": 19978.5
+    },
+    {
+      "regionId": "350504102000",
+      "name": "河市镇",
+      "average": 11248.8
+    },
+    {
+      "regionId": "350504200000",
+      "name": "虹山乡",
+      "average": 1687.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 168.78,
+      "color": "#eff3ff",
+      "label": "168.780 万m³"
+    },
+    {
+      "value": 1758.624,
+      "color": "#bdd7e7",
+      "label": "1758.624 万m³"
+    },
+    {
+      "value": 2979.208,
+      "color": "#6baed6",
+      "label": "2979.208 万m³"
+    },
+    {
+      "value": 8307.592,
+      "color": "#3182bd",
+      "label": "8307.592 万m³"
+    },
+    {
+      "value": 11078.987999999998,
+      "color": "#08519c",
+      "label": "11078.988 万m³"
+    },
+    {
+      "value": 19105.530000000002,
+      "color": "#042d60",
+      "label": "19105.530 万m³"
+    }
+  ]
+}

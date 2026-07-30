@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "611002002000",
+      "name": "市区",
+      "average": 5694.6
+    },
+    {
+      "regionId": "611002003000",
+      "name": "陈塬街办",
+      "average": 2516.3
+    },
+    {
+      "regionId": "611002004000",
+      "name": "三十里铺乡",
+      "average": 126.4
+    },
+    {
+      "regionId": "611002101000",
+      "name": "夜村镇",
+      "average": 7140.0
+    },
+    {
+      "regionId": "611002104000",
+      "name": "沙河子镇",
+      "average": 8035.7
+    },
+    {
+      "regionId": "611002105000",
+      "name": "杨峪河镇",
+      "average": 4048.2
+    },
+    {
+      "regionId": "611002106000",
+      "name": "金陵寺镇",
+      "average": 80.3
+    },
+    {
+      "regionId": "611002107000",
+      "name": "黑山镇",
+      "average": 872.8
+    },
+    {
+      "regionId": "611002108000",
+      "name": "杨斜镇",
+      "average": 1333.5
+    },
+    {
+      "regionId": "611002109000",
+      "name": "麻街镇",
+      "average": 661.5
+    },
+    {
+      "regionId": "611002110000",
+      "name": "黑龙口镇",
+      "average": 1757.8
+    },
+    {
+      "regionId": "611002111000",
+      "name": "牧护关镇",
+      "average": 568.5
+    },
+    {
+      "regionId": "611002112000",
+      "name": "大荆镇",
+      "average": 229.1
+    },
+    {
+      "regionId": "611002113000",
+      "name": "腰市镇",
+      "average": 1514.3
+    },
+    {
+      "regionId": "611002114000",
+      "name": "板桥镇",
+      "average": 207.7
+    },
+    {
+      "regionId": "611002115000",
+      "name": "北宽坪镇",
+      "average": 601.4
+    },
+    {
+      "regionId": "611002200000",
+      "name": "上官坊乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "611002201000",
+      "name": "砚池河乡",
+      "average": 352.3
+    },
+    {
+      "regionId": "611002202000",
+      "name": "麻池河乡",
+      "average": 1301.6
+    },
+    {
+      "regionId": "611002203000",
+      "name": "阎村乡",
+      "average": 739.4
+    },
+    {
+      "regionId": "611002204000",
+      "name": "三岔河乡",
+      "average": 1043.7
+    },
+    {
+      "regionId": "611002206000",
+      "name": "西荆乡",
+      "average": 61.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 25.956,
+      "color": "#eff3ff",
+      "label": "25.956 万m³"
+    },
+    {
+      "value": 217.37279999999998,
+      "color": "#bdd7e7",
+      "label": "217.373 万m³"
+    },
+    {
+      "value": 630.4884,
+      "color": "#6baed6",
+      "label": "630.488 万m³"
+    },
+    {
+      "value": 1176.7764,
+      "color": "#3182bd",
+      "label": "1176.776 万m³"
+    },
+    {
+      "value": 2173.4579999999987,
+      "color": "#08519c",
+      "label": "2173.458 万m³"
+    },
+    {
+      "value": 7659.5059999999985,
+      "color": "#042d60",
+      "label": "7659.506 万m³"
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150521100000",
+      "name": "保康镇",
+      "average": 29123.6
+    },
+    {
+      "regionId": "220722100000",
+      "name": "长岭镇",
+      "average": 9260.9
+    },
+    {
+      "regionId": "220722101000",
+      "name": "太平川镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220722102000",
+      "name": "巨宝镇",
+      "average": 12963.9
+    },
+    {
+      "regionId": "220722103000",
+      "name": "太平山镇",
+      "average": 19035.5
+    },
+    {
+      "regionId": "220722104000",
+      "name": "前七号镇",
+      "average": 13795.2
+    },
+    {
+      "regionId": "220722105000",
+      "name": "新安镇",
+      "average": 14191.1
+    },
+    {
+      "regionId": "220722106000",
+      "name": "三青山镇",
+      "average": 21052.0
+    },
+    {
+      "regionId": "220722107000",
+      "name": "大兴镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220722108000",
+      "name": "北正镇",
+      "average": 7653.3
+    },
+    {
+      "regionId": "220722109000",
+      "name": "流水镇",
+      "average": 18930.4
+    },
+    {
+      "regionId": "220722110000",
+      "name": "永久镇",
+      "average": 14568.4
+    },
+    {
+      "regionId": "220722111000",
+      "name": "利发盛镇",
+      "average": 11013.9
+    },
+    {
+      "regionId": "220722120000",
+      "name": "太平川（镇）农业园区（特殊乡镇）",
+      "average": 0.0
+    },
+    {
+      "regionId": "220722122000",
+      "name": "双龙工业园区（特殊乡镇）",
+      "average": 985.7
+    },
+    {
+      "regionId": "220722123000",
+      "name": "长岭经济开发区（特殊乡镇）",
+      "average": 2030.7
+    },
+    {
+      "regionId": "220722200000",
+      "name": "集体乡",
+      "average": 6246.9
+    },
+    {
+      "regionId": "220722201000",
+      "name": "光明乡",
+      "average": 11805.3
+    },
+    {
+      "regionId": "220722202000",
+      "name": "三县堡乡",
+      "average": 18064.4
+    },
+    {
+      "regionId": "220722203000",
+      "name": "海青乡",
+      "average": 9609.3
+    },
+    {
+      "regionId": "220722204000",
+      "name": "前进乡",
+      "average": 20319.2
+    },
+    {
+      "regionId": "220722205000",
+      "name": "东岭乡",
+      "average": 11463.5
+    },
+    {
+      "regionId": "220722206000",
+      "name": "腰坨子乡",
+      "average": 11843.9
+    },
+    {
+      "regionId": "220722207000",
+      "name": "八十八乡",
+      "average": 4917.3
+    },
+    {
+      "regionId": "220722208000",
+      "name": "三团乡",
+      "average": 2229.7
+    },
+    {
+      "regionId": "220722209000",
+      "name": "三十号乡",
+      "average": 9834.4
+    },
+    {
+      "regionId": "220722400000",
+      "name": "长岭种马场",
+      "average": 2194.2
+    },
+    {
+      "regionId": "220722405000",
+      "name": "太平川机械林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "220722406000",
+      "name": "三团机械林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "220722407000",
+      "name": "东岭机械林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "220722408000",
+      "name": "十四号种畜场",
+      "average": 0.0
+    },
+    {
+      "regionId": "220722409000",
+      "name": "良种繁育场",
+      "average": 0.0
+    },
+    {
+      "regionId": "220722410000",
+      "name": "前七号机械林场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

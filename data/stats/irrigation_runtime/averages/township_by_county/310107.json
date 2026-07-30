@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "310107005000",
+      "name": "曹杨新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310107014000",
+      "name": "长风新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310107015000",
+      "name": "长寿路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310107016000",
+      "name": "甘泉路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310107017000",
+      "name": "石泉路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310107020000",
+      "name": "宜川路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310107101000",
+      "name": "真如镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "310107102000",
+      "name": "长征镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "310107103000",
+      "name": "桃浦镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

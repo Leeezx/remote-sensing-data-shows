@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "411002001000",
+      "name": "西大街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411002002000",
+      "name": "东大街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411002003000",
+      "name": "西关街道",
+      "average": 629.6
+    },
+    {
+      "regionId": "411002004000",
+      "name": "南关街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411002005000",
+      "name": "北大街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411002006000",
+      "name": "五一路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411002007000",
+      "name": "高桥营街道",
+      "average": 13084.7
+    },
+    {
+      "regionId": "411002008000",
+      "name": "丁庄街道",
+      "average": 4232.3
+    },
+    {
+      "regionId": "411002009000",
+      "name": "七里店街道",
+      "average": 11980.2
+    },
+    {
+      "regionId": "411002010000",
+      "name": "文峰街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411002011000",
+      "name": "新兴街道",
+      "average": 549.0
+    },
+    {
+      "regionId": "411002012000",
+      "name": "半截河街道",
+      "average": 4520.6
+    },
+    {
+      "regionId": "411002560000",
+      "name": "许昌经济开发区",
+      "average": 4359.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

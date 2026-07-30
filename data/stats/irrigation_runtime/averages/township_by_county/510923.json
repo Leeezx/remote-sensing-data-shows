@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510923100000",
+      "name": "蓬莱镇",
+      "average": 14344.5
+    },
+    {
+      "regionId": "510923101000",
+      "name": "隆盛镇",
+      "average": 11192.3
+    },
+    {
+      "regionId": "510923102000",
+      "name": "回马镇",
+      "average": 5368.2
+    },
+    {
+      "regionId": "510923103000",
+      "name": "天保镇",
+      "average": 6092.5
+    },
+    {
+      "regionId": "510923104000",
+      "name": "河边镇",
+      "average": 17063.4
+    },
+    {
+      "regionId": "510923105000",
+      "name": "卓筒井镇",
+      "average": 5911.7
+    },
+    {
+      "regionId": "510923106000",
+      "name": "玉峰镇",
+      "average": 11284.5
+    },
+    {
+      "regionId": "510923107000",
+      "name": "象山镇",
+      "average": 9564.2
+    },
+    {
+      "regionId": "510923200000",
+      "name": "通仙乡",
+      "average": 4460.9
+    },
+    {
+      "regionId": "510923201000",
+      "name": "金元乡",
+      "average": 4999.8
+    },
+    {
+      "regionId": "510923202000",
+      "name": "智水乡",
+      "average": 4185.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 4240.34,
+      "color": "#eff3ff",
+      "label": "4240.340 万m³"
+    },
+    {
+      "value": 5044.008,
+      "color": "#bdd7e7",
+      "label": "5044.008 万m³"
+    },
+    {
+      "value": 5918.932,
+      "color": "#6baed6",
+      "label": "5918.932 万m³"
+    },
+    {
+      "value": 9425.332,
+      "color": "#3182bd",
+      "label": "9425.332 万m³"
+    },
+    {
+      "value": 11273.436,
+      "color": "#08519c",
+      "label": "11273.436 万m³"
+    },
+    {
+      "value": 16519.620000000003,
+      "color": "#042d60",
+      "label": "16519.620 万m³"
+    }
+  ]
+}

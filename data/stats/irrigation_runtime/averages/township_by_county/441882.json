@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "431025216000",
+      "name": "西山瑶族乡",
+      "average": 535.2
+    },
+    {
+      "regionId": "431127104000",
+      "name": "所城镇",
+      "average": 16039.2
+    },
+    {
+      "regionId": "431127204000",
+      "name": "大桥瑶族乡",
+      "average": 7977.5
+    },
+    {
+      "regionId": "431129110000",
+      "name": "码市镇",
+      "average": 11135.6
+    },
+    {
+      "regionId": "431129400000",
+      "name": "江华林业采育场",
+      "average": 1750.3
+    },
+    {
+      "regionId": "441882100000",
+      "name": "连州镇",
+      "average": 45675.3
+    },
+    {
+      "regionId": "441882101000",
+      "name": "星子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "441882102000",
+      "name": "大路边镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "441882103000",
+      "name": "龙坪镇",
+      "average": 36303.5
+    },
+    {
+      "regionId": "441882104000",
+      "name": "西岸镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "441882105000",
+      "name": "保安镇",
+      "average": 26600.5
+    },
+    {
+      "regionId": "441882106000",
+      "name": "丰阳镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "441882107000",
+      "name": "东陂镇",
+      "average": 19532.6
+    },
+    {
+      "regionId": "441882109000",
+      "name": "九陂镇",
+      "average": 44465.4
+    },
+    {
+      "regionId": "441882118000",
+      "name": "西江镇",
+      "average": 15039.2
+    },
+    {
+      "regionId": "441882200000",
+      "name": "瑶安瑶族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "441882201000",
+      "name": "三水瑶族乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

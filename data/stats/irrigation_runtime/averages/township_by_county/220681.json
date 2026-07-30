@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "220681001000",
+      "name": "建国街道",
+      "average": 2.5
+    },
+    {
+      "regionId": "220681002000",
+      "name": "新市街道",
+      "average": 24.9
+    },
+    {
+      "regionId": "220681003000",
+      "name": "兴隆街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220681004000",
+      "name": "大湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220681005000",
+      "name": "森工街道",
+      "average": 2.2
+    },
+    {
+      "regionId": "220681006000",
+      "name": "大栗子街道",
+      "average": 4.1
+    },
+    {
+      "regionId": "220681100000",
+      "name": "桦树镇",
+      "average": 5.1
+    },
+    {
+      "regionId": "220681101000",
+      "name": "六道沟镇",
+      "average": 67.9
+    },
+    {
+      "regionId": "220681102000",
+      "name": "苇沙河镇",
+      "average": 143.8
+    },
+    {
+      "regionId": "220681103000",
+      "name": "花山镇",
+      "average": 50.5
+    },
+    {
+      "regionId": "220681104000",
+      "name": "闹枝镇",
+      "average": 15.5
+    },
+    {
+      "regionId": "220681105000",
+      "name": "四道沟镇",
+      "average": 52.0
+    },
+    {
+      "regionId": "220681200000",
+      "name": "蚂蚁河乡",
+      "average": 113.8
+    },
+    {
+      "regionId": "220681401000",
+      "name": "临江硅藻土工业集中区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1.6631999999999998,
+      "color": "#bdd7e7",
+      "label": "1.663 万m³"
+    },
+    {
+      "value": 4.351999999999999,
+      "color": "#6baed6",
+      "label": "4.352 万m³"
+    },
+    {
+      "value": 22.53119999999999,
+      "color": "#3182bd",
+      "label": "22.531 万m³"
+    },
+    {
+      "value": 55.879599999999996,
+      "color": "#08519c",
+      "label": "55.880 万m³"
+    },
+    {
+      "value": 136.0,
+      "color": "#042d60",
+      "label": "136.000 万m³"
+    }
+  ]
+}

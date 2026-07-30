@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "340602001000",
+      "name": "高岳街道",
+      "average": 10772.4
+    },
+    {
+      "regionId": "340602002000",
+      "name": "矿山集街道",
+      "average": 6981.9
+    },
+    {
+      "regionId": "340602100000",
+      "name": "朔里镇",
+      "average": 17716.8
+    },
+    {
+      "regionId": "340602101000",
+      "name": "石台镇",
+      "average": 18502.1
+    },
+    {
+      "regionId": "340602102000",
+      "name": "段圆镇",
+      "average": 213.5
+    },
+    {
+      "regionId": "340603005000",
+      "name": "东山街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 21.35,
+      "color": "#eff3ff",
+      "label": "21.350 万m³"
+    },
+    {
+      "value": 619.6040000000003,
+      "color": "#bdd7e7",
+      "label": "619.604 万m³"
+    },
+    {
+      "value": 7057.71,
+      "color": "#6baed6",
+      "label": "7057.710 万m³"
+    },
+    {
+      "value": 10696.59,
+      "color": "#3182bd",
+      "label": "10696.590 万m³"
+    },
+    {
+      "value": 17300.135999999995,
+      "color": "#08519c",
+      "label": "17300.136 万m³"
+    },
+    {
+      "value": 18423.57,
+      "color": "#042d60",
+      "label": "18423.570 万m³"
+    }
+  ]
+}

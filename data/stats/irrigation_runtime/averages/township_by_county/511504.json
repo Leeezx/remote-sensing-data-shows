@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511504002000",
+      "name": "南岸街道",
+      "average": 186.0
+    },
+    {
+      "regionId": "511504003000",
+      "name": "赵场街道",
+      "average": 13154.1
+    },
+    {
+      "regionId": "511504100000",
+      "name": "柏溪镇",
+      "average": 4450.7
+    },
+    {
+      "regionId": "511504101000",
+      "name": "喜捷镇",
+      "average": 16032.6
+    },
+    {
+      "regionId": "511504102000",
+      "name": "观音镇",
+      "average": 8757.6
+    },
+    {
+      "regionId": "511504103000",
+      "name": "横江镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511504106000",
+      "name": "柳嘉镇",
+      "average": 4756.9
+    },
+    {
+      "regionId": "511504107000",
+      "name": "泥溪镇",
+      "average": 2976.9
+    },
+    {
+      "regionId": "511504108000",
+      "name": "蕨溪镇",
+      "average": 6003.5
+    },
+    {
+      "regionId": "511504109000",
+      "name": "商州镇",
+      "average": 4479.9
+    },
+    {
+      "regionId": "511504110000",
+      "name": "高场镇",
+      "average": 5704.7
+    },
+    {
+      "regionId": "511504111000",
+      "name": "安边镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511504112000",
+      "name": "双龙镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511504113000",
+      "name": "李场镇",
+      "average": 6577.6
+    },
+    {
+      "regionId": "511504114000",
+      "name": "合什镇",
+      "average": 3764.9
+    },
+    {
+      "regionId": "511504115000",
+      "name": "古罗镇",
+      "average": 5482.5
+    },
+    {
+      "regionId": "511504117000",
+      "name": "复龙镇",
+      "average": 2618.9
+    },
+    {
+      "regionId": "511504118000",
+      "name": "普安镇",
+      "average": 7283.2
+    },
+    {
+      "regionId": "511504200000",
+      "name": "古柏乡",
+      "average": 3013.3
+    },
+    {
+      "regionId": "511504203000",
+      "name": "隆兴乡",
+      "average": 2391.2
+    },
+    {
+      "regionId": "511504204000",
+      "name": "泥南乡",
+      "average": 1373.1
+    },
+    {
+      "regionId": "511504205000",
+      "name": "龙池乡",
+      "average": 1496.8
+    },
+    {
+      "regionId": "511504209000",
+      "name": "凤仪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "530681001000",
+      "name": "云富街道",
+      "average": 1193.1
+    },
+    {
+      "regionId": "530681101000",
+      "name": "向家坝镇",
+      "average": 3542.0
+    },
+    {
+      "regionId": "530681103000",
+      "name": "两碗镇",
+      "average": 3394.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1247.1,
+      "color": "#bdd7e7",
+      "label": "1247.100 万m³"
+    },
+    {
+      "value": 2980.54,
+      "color": "#6baed6",
+      "label": "2980.540 万m³"
+    },
+    {
+      "value": 4382.119999999999,
+      "color": "#3182bd",
+      "label": "4382.120 万m³"
+    },
+    {
+      "value": 5913.86,
+      "color": "#08519c",
+      "label": "5913.860 万m³"
+    },
+    {
+      "value": 14593.35,
+      "color": "#042d60",
+      "label": "14593.350 万m³"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540421100000",
+      "name": "工布江达镇",
+      "average": 37.7
+    },
+    {
+      "regionId": "540421101000",
+      "name": "金达镇",
+      "average": 42.6
+    },
+    {
+      "regionId": "540421102000",
+      "name": "巴河镇",
+      "average": 161.9
+    },
+    {
+      "regionId": "540421200000",
+      "name": "错高乡",
+      "average": 1.5
+    },
+    {
+      "regionId": "540421201000",
+      "name": "朱拉乡",
+      "average": 178.7
+    },
+    {
+      "regionId": "540421202000",
+      "name": "仲莎乡",
+      "average": 168.4
+    },
+    {
+      "regionId": "540421203000",
+      "name": "江达乡",
+      "average": 61.0
+    },
+    {
+      "regionId": "540421204000",
+      "name": "娘蒲乡",
+      "average": 31.2
+    },
+    {
+      "regionId": "540421205000",
+      "name": "加兴乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.24,
+      "color": "#eff3ff",
+      "label": "0.240 万m³"
+    },
+    {
+      "value": 22.1712,
+      "color": "#bdd7e7",
+      "label": "22.171 万m³"
+    },
+    {
+      "value": 38.836800000000004,
+      "color": "#6baed6",
+      "label": "38.837 万m³"
+    },
+    {
+      "value": 56.731199999999994,
+      "color": "#3182bd",
+      "label": "56.731 万m³"
+    },
+    {
+      "value": 163.876,
+      "color": "#08519c",
+      "label": "163.876 万m³"
+    },
+    {
+      "value": 177.052,
+      "color": "#042d60",
+      "label": "177.052 万m³"
+    }
+  ]
+}

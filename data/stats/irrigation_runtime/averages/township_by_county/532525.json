@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "532525101000",
+      "name": "异龙镇",
+      "average": 22802.5
+    },
+    {
+      "regionId": "532525102000",
+      "name": "宝秀镇",
+      "average": 9315.0
+    },
+    {
+      "regionId": "532525103000",
+      "name": "坝心镇",
+      "average": 7730.8
+    },
+    {
+      "regionId": "532525104000",
+      "name": "龙朋镇",
+      "average": 9883.6
+    },
+    {
+      "regionId": "532525105000",
+      "name": "龙武镇",
+      "average": 2292.3
+    },
+    {
+      "regionId": "532525106000",
+      "name": "哨冲镇",
+      "average": 4559.6
+    },
+    {
+      "regionId": "532525107000",
+      "name": "牛街镇",
+      "average": 429.5
+    },
+    {
+      "regionId": "532525201000",
+      "name": "新城乡",
+      "average": 1902.3
+    },
+    {
+      "regionId": "532525202000",
+      "name": "大桥乡",
+      "average": 1918.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 665.148,
+      "color": "#eff3ff",
+      "label": "665.148 万m³"
+    },
+    {
+      "value": 1913.6448,
+      "color": "#bdd7e7",
+      "label": "1913.645 万m³"
+    },
+    {
+      "value": 2818.3135999999995,
+      "color": "#6baed6",
+      "label": "2818.314 万m³"
+    },
+    {
+      "value": 6995.0815999999995,
+      "color": "#3182bd",
+      "label": "6995.082 万m³"
+    },
+    {
+      "value": 9487.8544,
+      "color": "#08519c",
+      "label": "9487.854 万m³"
+    },
+    {
+      "value": 20735.476,
+      "color": "#042d60",
+      "label": "20735.476 万m³"
+    }
+  ]
+}

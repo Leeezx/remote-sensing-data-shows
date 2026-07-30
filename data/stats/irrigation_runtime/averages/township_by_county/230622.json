@@ -1,0 +1,203 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "220702100000",
+      "name": "大洼镇",
+      "average": 48230.9
+    },
+    {
+      "regionId": "220702202000",
+      "name": "伯都乡",
+      "average": 31214.5
+    },
+    {
+      "regionId": "220721106000",
+      "name": "八郎镇",
+      "average": 29385.3
+    },
+    {
+      "regionId": "220721408000",
+      "name": "八郎农场",
+      "average": 1209.6
+    },
+    {
+      "regionId": "220781101000",
+      "name": "长春岭镇",
+      "average": 23958.6
+    },
+    {
+      "regionId": "220781400000",
+      "name": "伊家店农场",
+      "average": 3058.2
+    },
+    {
+      "regionId": "220821104000",
+      "name": "沿江镇",
+      "average": 7745.6
+    },
+    {
+      "regionId": "220882100000",
+      "name": "月亮泡镇",
+      "average": 7102.6
+    },
+    {
+      "regionId": "220882200000",
+      "name": "四棵树乡",
+      "average": 12810.8
+    },
+    {
+      "regionId": "220882202000",
+      "name": "大赉乡",
+      "average": 866.3
+    },
+    {
+      "regionId": "230622100000",
+      "name": "肇源镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "230622101000",
+      "name": "三站镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "230622102000",
+      "name": "二站镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "230622103000",
+      "name": "茂兴镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "230622104000",
+      "name": "古龙镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "230622105000",
+      "name": "新站镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "230622106000",
+      "name": "头台镇",
+      "average": 7127.4
+    },
+    {
+      "regionId": "230622107000",
+      "name": "古恰镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "230622200000",
+      "name": "福兴乡",
+      "average": 32020.0
+    },
+    {
+      "regionId": "230622201000",
+      "name": "薄荷台乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "230622203000",
+      "name": "和平乡",
+      "average": 13210.0
+    },
+    {
+      "regionId": "230622207000",
+      "name": "超等乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "230622208000",
+      "name": "民意乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "230622210000",
+      "name": "义顺乡",
+      "average": 2428.2
+    },
+    {
+      "regionId": "230622211000",
+      "name": "浩德乡",
+      "average": 1058.0
+    },
+    {
+      "regionId": "230622212000",
+      "name": "大兴乡",
+      "average": 2279.2
+    },
+    {
+      "regionId": "230622500000",
+      "name": "肇源农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230622581000",
+      "name": "种畜场",
+      "average": 0.9
+    },
+    {
+      "regionId": "230622583000",
+      "name": "新立良种繁育场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230622584000",
+      "name": "立陡山良种场",
+      "average": 914.3
+    },
+    {
+      "regionId": "230622586000",
+      "name": "果树示范场",
+      "average": 455.7
+    },
+    {
+      "regionId": "230622587000",
+      "name": "经济作物示范场",
+      "average": 113.9
+    },
+    {
+      "regionId": "230622588000",
+      "name": "茂兴湖水产养殖场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

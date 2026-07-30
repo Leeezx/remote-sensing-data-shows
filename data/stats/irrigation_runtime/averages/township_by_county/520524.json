@@ -1,0 +1,198 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "520524001000",
+      "name": "双堰街道",
+      "average": 1563.7
+    },
+    {
+      "regionId": "520524002000",
+      "name": "文腾街道",
+      "average": 303.1
+    },
+    {
+      "regionId": "520524003000",
+      "name": "金凤街道",
+      "average": 1229.5
+    },
+    {
+      "regionId": "520524004000",
+      "name": "三甲街道",
+      "average": 6633.8
+    },
+    {
+      "regionId": "520524005000",
+      "name": "绮陌街道",
+      "average": 4853.9
+    },
+    {
+      "regionId": "520524006000",
+      "name": "八步街道",
+      "average": 9602.2
+    },
+    {
+      "regionId": "520524101000",
+      "name": "桂果镇",
+      "average": 9119.2
+    },
+    {
+      "regionId": "520524102000",
+      "name": "牛场镇",
+      "average": 13807.1
+    },
+    {
+      "regionId": "520524103000",
+      "name": "猫场镇",
+      "average": 9284.7
+    },
+    {
+      "regionId": "520524104000",
+      "name": "化起镇",
+      "average": 5434.5
+    },
+    {
+      "regionId": "520524105000",
+      "name": "龙场镇",
+      "average": 3067.3
+    },
+    {
+      "regionId": "520524107000",
+      "name": "以那镇",
+      "average": 8759.3
+    },
+    {
+      "regionId": "520524108000",
+      "name": "三塘镇",
+      "average": 7824.4
+    },
+    {
+      "regionId": "520524109000",
+      "name": "阿弓镇",
+      "average": 5605.4
+    },
+    {
+      "regionId": "520524110000",
+      "name": "珠藏镇",
+      "average": 13389.4
+    },
+    {
+      "regionId": "520524201000",
+      "name": "自强乡",
+      "average": 1650.5
+    },
+    {
+      "regionId": "520524202000",
+      "name": "大平乡",
+      "average": 3670.8
+    },
+    {
+      "regionId": "520524203000",
+      "name": "官寨乡",
+      "average": 6112.0
+    },
+    {
+      "regionId": "520524204000",
+      "name": "茶店乡",
+      "average": 4901.6
+    },
+    {
+      "regionId": "520524205000",
+      "name": "金龙乡",
+      "average": 11544.7
+    },
+    {
+      "regionId": "520524206000",
+      "name": "后寨乡",
+      "average": 4630.6
+    },
+    {
+      "regionId": "520524207000",
+      "name": "鸡场乡",
+      "average": 2037.9
+    },
+    {
+      "regionId": "520524208000",
+      "name": "中寨乡",
+      "average": 3179.5
+    },
+    {
+      "regionId": "520524211000",
+      "name": "实兴乡",
+      "average": 6390.3
+    },
+    {
+      "regionId": "520524212000",
+      "name": "马场乡",
+      "average": 3732.7
+    },
+    {
+      "regionId": "520524213000",
+      "name": "上坪寨乡",
+      "average": 1560.3
+    },
+    {
+      "regionId": "520524215000",
+      "name": "纳雍乡",
+      "average": 2956.2
+    },
+    {
+      "regionId": "520524216000",
+      "name": "板桥乡",
+      "average": 6340.9
+    },
+    {
+      "regionId": "520524217000",
+      "name": "白泥乡",
+      "average": 10251.4
+    },
+    {
+      "regionId": "520524218000",
+      "name": "少普乡",
+      "average": 7364.6
+    },
+    {
+      "regionId": "520524219000",
+      "name": "熊家场乡",
+      "average": 10470.8
+    },
+    {
+      "regionId": "520524220000",
+      "name": "黑土乡",
+      "average": 4218.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 877.4680000000001,
+      "color": "#eff3ff",
+      "label": "877.468 万m³"
+    },
+    {
+      "value": 3019.7492,
+      "color": "#bdd7e7",
+      "label": "3019.749 万m³"
+    },
+    {
+      "value": 4747.6092,
+      "color": "#6baed6",
+      "label": "4747.609 万m³"
+    },
+    {
+      "value": 6364.4144,
+      "color": "#3182bd",
+      "label": "6364.414 万m³"
+    },
+    {
+      "value": 9190.034,
+      "color": "#08519c",
+      "label": "9190.034 万m³"
+    },
+    {
+      "value": 13548.126,
+      "color": "#042d60",
+      "label": "13548.126 万m³"
+    }
+  ]
+}

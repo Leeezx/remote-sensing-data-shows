@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230713001000",
+      "name": "带岭街道",
+      "average": 0.7
+    },
+    {
+      "regionId": "230713400000",
+      "name": "大青川林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230713401000",
+      "name": "东方红林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230713402000",
+      "name": "秀水林场",
+      "average": 5.6
+    },
+    {
+      "regionId": "230713403000",
+      "name": "永翠林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230713404000",
+      "name": "明月林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230713405000",
+      "name": "红光林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230713406000",
+      "name": "秋沙鸭自然保护区",
+      "average": 0.0
+    },
+    {
+      "regionId": "230713407000",
+      "name": "北列林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230713408000",
+      "name": "南列林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230713409000",
+      "name": "寒月林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230713410000",
+      "name": "环山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230713411000",
+      "name": "凉水自然保护区",
+      "average": 0.0
+    },
+    {
+      "regionId": "230781104000",
+      "name": "朗乡镇",
+      "average": 3.2
+    },
+    {
+      "regionId": "230781403000",
+      "name": "朗乡林业局",
+      "average": 176.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

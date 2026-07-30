@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620121104000",
+      "name": "河桥镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "630202100000",
+      "name": "碾伯镇",
+      "average": 1073.5
+    },
+    {
+      "regionId": "630202101000",
+      "name": "雨润镇",
+      "average": 678.1
+    },
+    {
+      "regionId": "630202104000",
+      "name": "洪水镇",
+      "average": 8409.8
+    },
+    {
+      "regionId": "630202106000",
+      "name": "瞿昙镇",
+      "average": 4715.3
+    },
+    {
+      "regionId": "630202200000",
+      "name": "共和乡",
+      "average": 34.6
+    },
+    {
+      "regionId": "630202204000",
+      "name": "芦花乡",
+      "average": 1353.1
+    },
+    {
+      "regionId": "630202205000",
+      "name": "马营乡",
+      "average": 1900.6
+    },
+    {
+      "regionId": "630202206000",
+      "name": "马厂乡",
+      "average": 484.4
+    },
+    {
+      "regionId": "630202209000",
+      "name": "峰堆乡",
+      "average": 49.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 6.228,
+      "color": "#eff3ff",
+      "label": "6.228 万m³"
+    },
+    {
+      "value": 48.401599999999995,
+      "color": "#bdd7e7",
+      "label": "48.402 万m³"
+    },
+    {
+      "value": 607.5931999999999,
+      "color": "#6baed6",
+      "label": "607.593 万m³"
+    },
+    {
+      "value": 1175.2744,
+      "color": "#3182bd",
+      "label": "1175.274 万m³"
+    },
+    {
+      "value": 2159.5523999999987,
+      "color": "#08519c",
+      "label": "2159.552 万m³"
+    },
+    {
+      "value": 7744.790000000001,
+      "color": "#042d60",
+      "label": "7744.790 万m³"
+    }
+  ]
+}

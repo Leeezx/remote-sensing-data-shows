@@ -1,0 +1,248 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500235001000",
+      "name": "双江街道",
+      "average": 1409.3
+    },
+    {
+      "regionId": "500235002000",
+      "name": "青龙街道",
+      "average": 899.6
+    },
+    {
+      "regionId": "500235003000",
+      "name": "人和街道",
+      "average": 4056.7
+    },
+    {
+      "regionId": "500235004000",
+      "name": "盘龙街道",
+      "average": 2400.1
+    },
+    {
+      "regionId": "500235105000",
+      "name": "龙角镇",
+      "average": 161.9
+    },
+    {
+      "regionId": "500235107000",
+      "name": "故陵镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500235108000",
+      "name": "红狮镇",
+      "average": 666.3
+    },
+    {
+      "regionId": "500235115000",
+      "name": "路阳镇",
+      "average": 2388.4
+    },
+    {
+      "regionId": "500235116000",
+      "name": "农坝镇",
+      "average": 2068.3
+    },
+    {
+      "regionId": "500235118000",
+      "name": "渠马镇",
+      "average": 2009.1
+    },
+    {
+      "regionId": "500235121000",
+      "name": "黄石镇",
+      "average": 3880.1
+    },
+    {
+      "regionId": "500235122000",
+      "name": "巴阳镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500235123000",
+      "name": "沙市镇",
+      "average": 4450.0
+    },
+    {
+      "regionId": "500235124000",
+      "name": "鱼泉镇",
+      "average": 2271.8
+    },
+    {
+      "regionId": "500235125000",
+      "name": "凤鸣镇",
+      "average": 6613.0
+    },
+    {
+      "regionId": "500235127000",
+      "name": "宝坪镇",
+      "average": 1831.0
+    },
+    {
+      "regionId": "500235128000",
+      "name": "南溪镇",
+      "average": 11669.3
+    },
+    {
+      "regionId": "500235129000",
+      "name": "双土镇",
+      "average": 10560.8
+    },
+    {
+      "regionId": "500235130000",
+      "name": "桑坪镇",
+      "average": 6651.5
+    },
+    {
+      "regionId": "500235131000",
+      "name": "江口镇",
+      "average": 8720.6
+    },
+    {
+      "regionId": "500235132000",
+      "name": "高阳镇",
+      "average": 3130.1
+    },
+    {
+      "regionId": "500235133000",
+      "name": "平安镇",
+      "average": 6017.8
+    },
+    {
+      "regionId": "500235135000",
+      "name": "云阳镇",
+      "average": 2168.6
+    },
+    {
+      "regionId": "500235136000",
+      "name": "云安镇",
+      "average": 7609.3
+    },
+    {
+      "regionId": "500235137000",
+      "name": "栖霞镇",
+      "average": 3222.9
+    },
+    {
+      "regionId": "500235138000",
+      "name": "双龙镇",
+      "average": 1916.7
+    },
+    {
+      "regionId": "500235139000",
+      "name": "泥溪镇",
+      "average": 198.5
+    },
+    {
+      "regionId": "500235140000",
+      "name": "票草镇",
+      "average": 93.0
+    },
+    {
+      "regionId": "500235141000",
+      "name": "养鹿镇",
+      "average": 2550.3
+    },
+    {
+      "regionId": "500235142000",
+      "name": "水口镇",
+      "average": 1998.6
+    },
+    {
+      "regionId": "500235143000",
+      "name": "堰坪镇",
+      "average": 661.0
+    },
+    {
+      "regionId": "500235144000",
+      "name": "龙洞镇",
+      "average": 972.5
+    },
+    {
+      "regionId": "500235145000",
+      "name": "后叶镇",
+      "average": 3861.8
+    },
+    {
+      "regionId": "500235208000",
+      "name": "外郎乡",
+      "average": 256.6
+    },
+    {
+      "regionId": "500235210000",
+      "name": "耀灵乡",
+      "average": 54.6
+    },
+    {
+      "regionId": "500235215000",
+      "name": "新津乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500235216000",
+      "name": "普安乡",
+      "average": 11.0
+    },
+    {
+      "regionId": "500235218000",
+      "name": "洞鹿乡",
+      "average": 1001.1
+    },
+    {
+      "regionId": "500235219000",
+      "name": "石门乡",
+      "average": 141.0
+    },
+    {
+      "regionId": "500235220000",
+      "name": "大阳乡",
+      "average": 2781.0
+    },
+    {
+      "regionId": "500235239000",
+      "name": "上坝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500235242000",
+      "name": "清水土家族自治乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 155.46280000000002,
+      "color": "#bdd7e7",
+      "label": "155.463 万m³"
+    },
+    {
+      "value": 1231.3248,
+      "color": "#6baed6",
+      "label": "1231.325 万m³"
+    },
+    {
+      "value": 2322.6376,
+      "color": "#3182bd",
+      "label": "2322.638 万m³"
+    },
+    {
+      "value": 3934.4928,
+      "color": "#08519c",
+      "label": "3934.493 万m³"
+    },
+    {
+      "value": 10760.329999999998,
+      "color": "#042d60",
+      "label": "10760.330 万m³"
+    }
+  ]
+}

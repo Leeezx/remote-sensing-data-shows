@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130903001000",
+      "name": "水月寺街道",
+      "average": 109.8
+    },
+    {
+      "regionId": "130903002000",
+      "name": "南环中路街道",
+      "average": 214.1
+    },
+    {
+      "regionId": "130903003000",
+      "name": "南湖街道",
+      "average": 29.7
+    },
+    {
+      "regionId": "130903004000",
+      "name": "市场街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130903005000",
+      "name": "西环中街街道",
+      "average": 148.0
+    },
+    {
+      "regionId": "130903006000",
+      "name": "公园街道",
+      "average": 186.7
+    },
+    {
+      "regionId": "130903100000",
+      "name": "小王庄镇",
+      "average": 11783.4
+    },
+    {
+      "regionId": "130903200000",
+      "name": "南陈屯乡",
+      "average": 12043.5
+    },
+    {
+      "regionId": "130903400000",
+      "name": "沧州高新技术产业开发区",
+      "average": 1576.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 4.752,
+      "color": "#eff3ff",
+      "label": "4.752 万m³"
+    },
+    {
+      "value": 85.4496,
+      "color": "#bdd7e7",
+      "label": "85.450 万m³"
+    },
+    {
+      "value": 156.9784,
+      "color": "#6baed6",
+      "label": "156.978 万m³"
+    },
+    {
+      "value": 207.7432,
+      "color": "#3182bd",
+      "label": "207.743 万m³"
+    },
+    {
+      "value": 4679.1887999999935,
+      "color": "#08519c",
+      "label": "4679.189 万m³"
+    },
+    {
+      "value": 12001.884,
+      "color": "#042d60",
+      "label": "12001.884 万m³"
+    }
+  ]
+}

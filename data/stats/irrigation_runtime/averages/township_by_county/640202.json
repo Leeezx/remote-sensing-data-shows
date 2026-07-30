@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "152921113000",
+      "name": "宗别立镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "640202001000",
+      "name": "长胜街道",
+      "average": 3710.5
+    },
+    {
+      "regionId": "640202002000",
+      "name": "朝阳街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "640202003000",
+      "name": "人民路街道",
+      "average": 183.4
+    },
+    {
+      "regionId": "640202004000",
+      "name": "长城街道",
+      "average": 23.8
+    },
+    {
+      "regionId": "640202005000",
+      "name": "青山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "640202006000",
+      "name": "石炭井街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "640202007000",
+      "name": "白芨沟街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "640202008000",
+      "name": "沟口街道",
+      "average": 11703.1
+    },
+    {
+      "regionId": "640202010000",
+      "name": "长兴街道",
+      "average": 327.8
+    },
+    {
+      "regionId": "640202011000",
+      "name": "锦林街道",
+      "average": 540.4
+    },
+    {
+      "regionId": "640202100000",
+      "name": "星海镇",
+      "average": 20618.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

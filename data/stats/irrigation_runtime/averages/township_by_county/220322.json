@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "211224103000",
+      "name": "三江口镇",
+      "average": 5.0
+    },
+    {
+      "regionId": "211224115000",
+      "name": "傅家镇",
+      "average": 7915.1
+    },
+    {
+      "regionId": "211224126000",
+      "name": "曲家店镇",
+      "average": 8609.5
+    },
+    {
+      "regionId": "211224130000",
+      "name": "平安堡镇",
+      "average": 4050.8
+    },
+    {
+      "regionId": "220322100000",
+      "name": "梨树镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220322101000",
+      "name": "郭家店镇",
+      "average": 1711.6
+    },
+    {
+      "regionId": "220322102000",
+      "name": "榆树台镇",
+      "average": 7007.1
+    },
+    {
+      "regionId": "220322103000",
+      "name": "孤家子镇（四平辽河农垦管理区）",
+      "average": 26173.8
+    },
+    {
+      "regionId": "220322104000",
+      "name": "小城子镇",
+      "average": 12762.9
+    },
+    {
+      "regionId": "220322105000",
+      "name": "喇嘛甸镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220322106000",
+      "name": "蔡家镇",
+      "average": 2300.3
+    },
+    {
+      "regionId": "220322107000",
+      "name": "刘家馆子镇",
+      "average": 42.2
+    },
+    {
+      "regionId": "220322108000",
+      "name": "十家堡镇",
+      "average": 1614.7
+    },
+    {
+      "regionId": "220322109000",
+      "name": "孟家岭镇",
+      "average": 233.9
+    },
+    {
+      "regionId": "220322110000",
+      "name": "万发镇",
+      "average": 3256.5
+    },
+    {
+      "regionId": "220322111000",
+      "name": "东河镇",
+      "average": 5876.2
+    },
+    {
+      "regionId": "220322112000",
+      "name": "沈洋镇",
+      "average": 30684.2
+    },
+    {
+      "regionId": "220322113000",
+      "name": "林海镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220322114000",
+      "name": "小宽镇",
+      "average": 18532.4
+    },
+    {
+      "regionId": "220322200000",
+      "name": "白山乡",
+      "average": 2618.2
+    },
+    {
+      "regionId": "220322201000",
+      "name": "泉眼岭乡",
+      "average": 1907.8
+    },
+    {
+      "regionId": "220322202000",
+      "name": "胜利乡",
+      "average": 1896.9
+    },
+    {
+      "regionId": "220322203000",
+      "name": "四棵树乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "220322204000",
+      "name": "双河乡",
+      "average": 4003.5
+    },
+    {
+      "regionId": "220322205000",
+      "name": "金山乡",
+      "average": 4240.2
+    },
+    {
+      "regionId": "220322400000",
+      "name": "国营梨树农场（四平辽河农垦管理区）",
+      "average": 20973.5
+    },
+    {
+      "regionId": "220322405000",
+      "name": "良种场生产区",
+      "average": 36.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 39.272,
+      "color": "#bdd7e7",
+      "label": "39.272 万m³"
+    },
+    {
+      "value": 1902.3936,
+      "color": "#6baed6",
+      "label": "1902.394 万m³"
+    },
+    {
+      "value": 4026.9608,
+      "color": "#3182bd",
+      "label": "4026.961 万m³"
+    },
+    {
+      "value": 8253.9672,
+      "color": "#08519c",
+      "label": "8253.967 万m³"
+    },
+    {
+      "value": 28338.792,
+      "color": "#042d60",
+      "label": "28338.792 万m³"
+    }
+  ]
+}

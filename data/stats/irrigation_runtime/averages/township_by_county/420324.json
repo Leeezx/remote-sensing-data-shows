@@ -1,0 +1,213 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420324100000",
+      "name": "城关镇",
+      "average": 1485.8
+    },
+    {
+      "regionId": "420324101000",
+      "name": "蒋家堰镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324102000",
+      "name": "中峰镇",
+      "average": 5514.8
+    },
+    {
+      "regionId": "420324103000",
+      "name": "水坪镇",
+      "average": 11780.6
+    },
+    {
+      "regionId": "420324104000",
+      "name": "县河镇",
+      "average": 2834.4
+    },
+    {
+      "regionId": "420324105000",
+      "name": "泉溪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324106000",
+      "name": "丰溪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324107000",
+      "name": "龙坝镇",
+      "average": 5398.5
+    },
+    {
+      "regionId": "420324201000",
+      "name": "新洲乡",
+      "average": 2345.0
+    },
+    {
+      "regionId": "420324202000",
+      "name": "兵营乡",
+      "average": 345.5
+    },
+    {
+      "regionId": "420324203000",
+      "name": "鄂坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324204000",
+      "name": "汇湾乡",
+      "average": 2120.3
+    },
+    {
+      "regionId": "420324205000",
+      "name": "天宝乡",
+      "average": 2476.5
+    },
+    {
+      "regionId": "420324206000",
+      "name": "桃源乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324207000",
+      "name": "向坝乡",
+      "average": 980.3
+    },
+    {
+      "regionId": "420324500000",
+      "name": "龙王垭茶场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324501000",
+      "name": "国营竹溪综合农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324502000",
+      "name": "原种场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324503000",
+      "name": "渔种场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324504000",
+      "name": "种畜场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324505000",
+      "name": "王家山茶场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324506000",
+      "name": "标湖林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324507000",
+      "name": "双竹林场",
+      "average": 193.8
+    },
+    {
+      "regionId": "420324508000",
+      "name": "八卦山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324509000",
+      "name": "源茂林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324510000",
+      "name": "岱王沟林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324511000",
+      "name": "望府座林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324512000",
+      "name": "天池垭林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324513000",
+      "name": "九里岗林场",
+      "average": 65.8
+    },
+    {
+      "regionId": "420324514000",
+      "name": "竹溪县十八里长峡管理局",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238107000",
+      "name": "白鹿镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610926106000",
+      "name": "广佛镇",
+      "average": 9054.8
+    },
+    {
+      "regionId": "610926108000",
+      "name": "长安镇",
+      "average": 9441.5
+    },
+    {
+      "regionId": "610927100000",
+      "name": "城关镇",
+      "average": 125.2
+    },
+    {
+      "regionId": "610927104000",
+      "name": "洪石镇",
+      "average": 513.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

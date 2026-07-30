@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540624100000",
+      "name": "扎仁镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540624101000",
+      "name": "雁石坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540624102000",
+      "name": "强玛镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540624103000",
+      "name": "帕那镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540624200000",
+      "name": "措玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540624201000",
+      "name": "滩堆乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540624202000",
+      "name": "扎曲乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540624203000",
+      "name": "岗尼乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540624204000",
+      "name": "玛曲乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540624205000",
+      "name": "色务乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540624206000",
+      "name": "玛荣乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540624208000",
+      "name": "帮麦乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632801100000",
+      "name": "郭勒木德镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

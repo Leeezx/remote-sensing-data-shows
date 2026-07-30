@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "422822100000",
+      "name": "业州镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "422822101000",
+      "name": "高坪镇",
+      "average": 11075.0
+    },
+    {
+      "regionId": "422822102000",
+      "name": "红岩寺镇",
+      "average": 1794.1
+    },
+    {
+      "regionId": "422822103000",
+      "name": "景阳镇",
+      "average": 6204.1
+    },
+    {
+      "regionId": "422822104000",
+      "name": "官店镇",
+      "average": 6482.8
+    },
+    {
+      "regionId": "422822105000",
+      "name": "花坪镇",
+      "average": 9885.5
+    },
+    {
+      "regionId": "422822200000",
+      "name": "长梁乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "422822201000",
+      "name": "茅田乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "422822202000",
+      "name": "龙坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "422822203000",
+      "name": "三里乡",
+      "average": 9430.4
+    },
+    {
+      "regionId": "500237200000",
+      "name": "红椿乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

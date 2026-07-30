@@ -1,0 +1,138 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130827100000",
+      "name": "宽城镇",
+      "average": 783.8
+    },
+    {
+      "regionId": "130827101000",
+      "name": "龙须门镇",
+      "average": 1664.6
+    },
+    {
+      "regionId": "130827102000",
+      "name": "峪耳崖镇",
+      "average": 529.7
+    },
+    {
+      "regionId": "130827103000",
+      "name": "板城镇",
+      "average": 1712.2
+    },
+    {
+      "regionId": "130827104000",
+      "name": "汤道河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130827105000",
+      "name": "饽罗台镇",
+      "average": 28.7
+    },
+    {
+      "regionId": "130827106000",
+      "name": "碾子峪镇",
+      "average": 390.8
+    },
+    {
+      "regionId": "130827107000",
+      "name": "亮甲台镇",
+      "average": 2494.9
+    },
+    {
+      "regionId": "130827200000",
+      "name": "化皮溜子乡",
+      "average": 564.3
+    },
+    {
+      "regionId": "130827201000",
+      "name": "塌山乡",
+      "average": 177.5
+    },
+    {
+      "regionId": "130827203000",
+      "name": "孟子岭乡",
+      "average": 112.2
+    },
+    {
+      "regionId": "130827204000",
+      "name": "独石沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130827206000",
+      "name": "东大地乡",
+      "average": 241.6
+    },
+    {
+      "regionId": "130827207000",
+      "name": "铧尖乡",
+      "average": 282.1
+    },
+    {
+      "regionId": "130827208000",
+      "name": "东黄花川乡",
+      "average": 382.7
+    },
+    {
+      "regionId": "130827210000",
+      "name": "苇子沟乡",
+      "average": 401.4
+    },
+    {
+      "regionId": "130827211000",
+      "name": "大字沟门乡",
+      "average": 1124.6
+    },
+    {
+      "regionId": "130827212000",
+      "name": "大石柱子乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "211382104000",
+      "name": "杨杖子镇",
+      "average": 111.8
+    },
+    {
+      "regionId": "211382105000",
+      "name": "刀尔登镇",
+      "average": 4801.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 111.8112,
+      "color": "#bdd7e7",
+      "label": "111.811 万m³"
+    },
+    {
+      "value": 268.978,
+      "color": "#6baed6",
+      "label": "268.978 万m³"
+    },
+    {
+      "value": 442.9692,
+      "color": "#3182bd",
+      "label": "442.969 万m³"
+    },
+    {
+      "value": 1115.0575999999992,
+      "color": "#08519c",
+      "label": "1115.058 万m³"
+    },
+    {
+      "value": 3924.6820000000025,
+      "color": "#042d60",
+      "label": "3924.682 万m³"
+    }
+  ]
+}

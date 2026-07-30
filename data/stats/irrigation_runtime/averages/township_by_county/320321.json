@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "320321001000",
+      "name": "中阳里办事处",
+      "average": 4342.9
+    },
+    {
+      "regionId": "320321101000",
+      "name": "凤城镇",
+      "average": 24869.1
+    },
+    {
+      "regionId": "320321102000",
+      "name": "首羡镇",
+      "average": 857.8
+    },
+    {
+      "regionId": "320321103000",
+      "name": "顺河镇",
+      "average": 656.2
+    },
+    {
+      "regionId": "320321104000",
+      "name": "常店镇",
+      "average": 52290.8
+    },
+    {
+      "regionId": "320321105000",
+      "name": "欢口镇",
+      "average": 1785.4
+    },
+    {
+      "regionId": "320321106000",
+      "name": "师寨镇",
+      "average": 76221.2
+    },
+    {
+      "regionId": "320321107000",
+      "name": "华山镇",
+      "average": 61763.6
+    },
+    {
+      "regionId": "320321108000",
+      "name": "梁寨镇",
+      "average": 38798.0
+    },
+    {
+      "regionId": "320321109000",
+      "name": "范楼镇",
+      "average": 43815.0
+    },
+    {
+      "regionId": "320321110000",
+      "name": "孙楼镇",
+      "average": 43915.5
+    },
+    {
+      "regionId": "320321111000",
+      "name": "宋楼镇",
+      "average": 63263.5
+    },
+    {
+      "regionId": "320321112000",
+      "name": "大沙河镇",
+      "average": 31937.1
+    },
+    {
+      "regionId": "320321113000",
+      "name": "王沟镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "320321114000",
+      "name": "赵庄镇",
+      "average": 159.8
+    },
+    {
+      "regionId": "320321401000",
+      "name": "大沙河林场",
+      "average": 633.7
+    },
+    {
+      "regionId": "341321105000",
+      "name": "周寨镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341322104000",
+      "name": "新庄镇",
+      "average": 384.5
+    },
+    {
+      "regionId": "370827102000",
+      "name": "鱼城镇",
+      "average": 17189.6
+    },
+    {
+      "regionId": "370827105000",
+      "name": "王庙镇",
+      "average": 74882.3
+    },
+    {
+      "regionId": "370827107000",
+      "name": "唐马镇",
+      "average": 34023.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 639.1,
+      "color": "#bdd7e7",
+      "label": "639.100 万m³"
+    },
+    {
+      "value": 5370.636,
+      "color": "#6baed6",
+      "label": "5370.636 万m³"
+    },
+    {
+      "value": 33856.22,
+      "color": "#3182bd",
+      "label": "33856.220 万m³"
+    },
+    {
+      "value": 50280.72799999999,
+      "color": "#08519c",
+      "label": "50280.728 万m³"
+    },
+    {
+      "value": 75685.64,
+      "color": "#042d60",
+      "label": "75685.640 万m³"
+    }
+  ]
+}

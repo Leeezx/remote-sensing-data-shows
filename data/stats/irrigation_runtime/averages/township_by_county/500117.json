@@ -1,0 +1,213 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500117001000",
+      "name": "合阳城街道",
+      "average": 5792.4
+    },
+    {
+      "regionId": "500117002000",
+      "name": "钓鱼城街道",
+      "average": 10005.6
+    },
+    {
+      "regionId": "500117003000",
+      "name": "南津街街道",
+      "average": 18889.1
+    },
+    {
+      "regionId": "500117004000",
+      "name": "盐井街道",
+      "average": 8631.6
+    },
+    {
+      "regionId": "500117005000",
+      "name": "草街街道",
+      "average": 12976.1
+    },
+    {
+      "regionId": "500117006000",
+      "name": "云门街道",
+      "average": 18136.4
+    },
+    {
+      "regionId": "500117007000",
+      "name": "大石街道",
+      "average": 19070.9
+    },
+    {
+      "regionId": "500117100000",
+      "name": "沙鱼镇",
+      "average": 7605.8
+    },
+    {
+      "regionId": "500117101000",
+      "name": "官渡镇",
+      "average": 9885.6
+    },
+    {
+      "regionId": "500117102000",
+      "name": "涞滩镇",
+      "average": 16082.0
+    },
+    {
+      "regionId": "500117103000",
+      "name": "肖家镇",
+      "average": 11748.8
+    },
+    {
+      "regionId": "500117104000",
+      "name": "古楼镇",
+      "average": 6780.1
+    },
+    {
+      "regionId": "500117105000",
+      "name": "三庙镇",
+      "average": 13612.8
+    },
+    {
+      "regionId": "500117106000",
+      "name": "二郎镇",
+      "average": 6380.1
+    },
+    {
+      "regionId": "500117107000",
+      "name": "龙凤镇",
+      "average": 11068.2
+    },
+    {
+      "regionId": "500117108000",
+      "name": "隆兴镇",
+      "average": 14318.0
+    },
+    {
+      "regionId": "500117109000",
+      "name": "铜溪镇",
+      "average": 15767.9
+    },
+    {
+      "regionId": "500117112000",
+      "name": "双凤镇",
+      "average": 15281.7
+    },
+    {
+      "regionId": "500117113000",
+      "name": "狮滩镇",
+      "average": 9215.7
+    },
+    {
+      "regionId": "500117114000",
+      "name": "清平镇",
+      "average": 1608.2
+    },
+    {
+      "regionId": "500117115000",
+      "name": "土场镇",
+      "average": 4326.4
+    },
+    {
+      "regionId": "500117116000",
+      "name": "小沔镇",
+      "average": 7931.1
+    },
+    {
+      "regionId": "500117117000",
+      "name": "三汇镇",
+      "average": 3619.5
+    },
+    {
+      "regionId": "500117118000",
+      "name": "香龙镇",
+      "average": 12979.9
+    },
+    {
+      "regionId": "500117120000",
+      "name": "钱塘镇",
+      "average": 35913.0
+    },
+    {
+      "regionId": "500117121000",
+      "name": "龙市镇",
+      "average": 36989.5
+    },
+    {
+      "regionId": "500117123000",
+      "name": "燕窝镇",
+      "average": 10847.8
+    },
+    {
+      "regionId": "500117124000",
+      "name": "太和镇",
+      "average": 17595.2
+    },
+    {
+      "regionId": "500117125000",
+      "name": "渭沱镇",
+      "average": 12821.2
+    },
+    {
+      "regionId": "500117126000",
+      "name": "双槐镇",
+      "average": 24186.3
+    },
+    {
+      "regionId": "511621223000",
+      "name": "伏龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511622101000",
+      "name": "中心镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511622111000",
+      "name": "清平镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511622113000",
+      "name": "万隆镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511622212000",
+      "name": "宝箴塞乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 4631.3279999999995,
+      "color": "#bdd7e7",
+      "label": "4631.328 万m³"
+    },
+    {
+      "value": 9061.4976,
+      "color": "#6baed6",
+      "label": "9061.498 万m³"
+    },
+    {
+      "value": 12862.0936,
+      "color": "#3182bd",
+      "label": "12862.094 万m³"
+    },
+    {
+      "value": 16016.6672,
+      "color": "#08519c",
+      "label": "16016.667 万m³"
+    },
+    {
+      "value": 36257.48,
+      "color": "#042d60",
+      "label": "36257.480 万m³"
+    }
+  ]
+}

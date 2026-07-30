@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "632525100000",
+      "name": "茫曲镇",
+      "average": 10503.8
+    },
+    {
+      "regionId": "632525101000",
+      "name": "过马营镇",
+      "average": 5045.2
+    },
+    {
+      "regionId": "632525102000",
+      "name": "森多镇",
+      "average": 7146.6
+    },
+    {
+      "regionId": "632525200000",
+      "name": "沙沟乡",
+      "average": 742.0
+    },
+    {
+      "regionId": "632525202000",
+      "name": "茫拉乡",
+      "average": 1718.9
+    },
+    {
+      "regionId": "632525203000",
+      "name": "塔秀乡",
+      "average": 11423.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 839.69,
+      "color": "#eff3ff",
+      "label": "839.690 万m³"
+    },
+    {
+      "value": 1918.4780000000003,
+      "color": "#bdd7e7",
+      "label": "1918.478 万m³"
+    },
+    {
+      "value": 5087.228,
+      "color": "#6baed6",
+      "label": "5087.228 万m³"
+    },
+    {
+      "value": 7104.572,
+      "color": "#3182bd",
+      "label": "7104.572 万m³"
+    },
+    {
+      "value": 10302.367999999999,
+      "color": "#08519c",
+      "label": "10302.368 万m³"
+    },
+    {
+      "value": 11331.62,
+      "color": "#042d60",
+      "label": "11331.620 万m³"
+    }
+  ]
+}

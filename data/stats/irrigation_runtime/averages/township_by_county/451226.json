@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451226100000",
+      "name": "思恩镇",
+      "average": 7743.9
+    },
+    {
+      "regionId": "451226101000",
+      "name": "水源镇",
+      "average": 9731.8
+    },
+    {
+      "regionId": "451226102000",
+      "name": "洛阳镇",
+      "average": 10608.2
+    },
+    {
+      "regionId": "451226103000",
+      "name": "川山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451226104000",
+      "name": "明伦镇",
+      "average": 21190.2
+    },
+    {
+      "regionId": "451226105000",
+      "name": "东兴镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451226200000",
+      "name": "大才乡",
+      "average": 15916.1
+    },
+    {
+      "regionId": "451226202000",
+      "name": "下南乡",
+      "average": 3913.0
+    },
+    {
+      "regionId": "451226204000",
+      "name": "大安乡",
+      "average": 2163.2
+    },
+    {
+      "regionId": "451226205000",
+      "name": "长美乡",
+      "average": 857.2
+    },
+    {
+      "regionId": "451226206000",
+      "name": "龙岩乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451226207000",
+      "name": "驯乐苗族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "522722102000",
+      "name": "茂兰镇",
+      "average": 16793.6
+    },
+    {
+      "regionId": "522722103000",
+      "name": "立化镇",
+      "average": 13372.9
+    },
+    {
+      "regionId": "522722105000",
+      "name": "佳荣镇",
+      "average": 29539.4
+    },
+    {
+      "regionId": "522722205000",
+      "name": "翁昂乡",
+      "average": 15162.3
+    },
+    {
+      "regionId": "522722208000",
+      "name": "洞塘乡",
+      "average": 13635.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 336.02239999999995,
+      "color": "#bdd7e7",
+      "label": "336.022 万m³"
+    },
+    {
+      "value": 5690.537599999998,
+      "color": "#6baed6",
+      "label": "5690.538 万m³"
+    },
+    {
+      "value": 12090.079199999998,
+      "color": "#3182bd",
+      "label": "12090.079 万m³"
+    },
+    {
+      "value": 15620.6104,
+      "color": "#08519c",
+      "label": "15620.610 万m³"
+    },
+    {
+      "value": 26867.656,
+      "color": "#042d60",
+      "label": "26867.656 万m³"
+    }
+  ]
+}

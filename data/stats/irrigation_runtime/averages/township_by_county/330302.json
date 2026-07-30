@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "330302006000",
+      "name": "五马街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330302023000",
+      "name": "七都街道",
+      "average": 8512.4
+    },
+    {
+      "regionId": "330302024000",
+      "name": "滨江街道",
+      "average": 1404.1
+    },
+    {
+      "regionId": "330302025000",
+      "name": "南汇街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330302026000",
+      "name": "松台街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330302027000",
+      "name": "双屿街道",
+      "average": 1399.7
+    },
+    {
+      "regionId": "330302028000",
+      "name": "仰义街道",
+      "average": 4258.9
+    },
+    {
+      "regionId": "330302102000",
+      "name": "藤桥镇",
+      "average": 19963.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

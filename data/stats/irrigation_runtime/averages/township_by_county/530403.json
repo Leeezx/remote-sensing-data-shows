@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "530403001000",
+      "name": "大街街道",
+      "average": 12256.6
+    },
+    {
+      "regionId": "530403101000",
+      "name": "江城镇",
+      "average": 14040.2
+    },
+    {
+      "regionId": "530403102000",
+      "name": "前卫镇",
+      "average": 8530.1
+    },
+    {
+      "regionId": "530403103000",
+      "name": "九溪镇",
+      "average": 8965.0
+    },
+    {
+      "regionId": "530403104000",
+      "name": "路居镇",
+      "average": 7197.6
+    },
+    {
+      "regionId": "530403201000",
+      "name": "安化彝族乡",
+      "average": 5114.0
+    },
+    {
+      "regionId": "530403202000",
+      "name": "雄关乡",
+      "average": 4960.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 4979.184,
+      "color": "#eff3ff",
+      "label": "4979.184 万m³"
+    },
+    {
+      "value": 5680.7392,
+      "color": "#bdd7e7",
+      "label": "5680.739 万m³"
+    },
+    {
+      "value": 7762.58,
+      "color": "#6baed6",
+      "label": "7762.580 万m³"
+    },
+    {
+      "value": 8780.6024,
+      "color": "#3182bd",
+      "label": "8780.602 万m³"
+    },
+    {
+      "value": 11361.2848,
+      "color": "#08519c",
+      "label": "11361.285 万m³"
+    },
+    {
+      "value": 13826.168,
+      "color": "#042d60",
+      "label": "13826.168 万m³"
+    }
+  ]
+}

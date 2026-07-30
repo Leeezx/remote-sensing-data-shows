@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420502001000",
+      "name": "西陵街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420502002000",
+      "name": "学院街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420502003000",
+      "name": "云集街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420502004000",
+      "name": "西坝街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420502005000",
+      "name": "葛洲坝街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420502006000",
+      "name": "夜明珠街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420502007000",
+      "name": "东苑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420502008000",
+      "name": "南苑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420502009000",
+      "name": "北苑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420502201000",
+      "name": "窑湾乡",
+      "average": 160.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

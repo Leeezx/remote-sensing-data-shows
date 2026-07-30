@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "711200010000",
+      "name": "彰化市",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200020000",
+      "name": "鹿港鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200030000",
+      "name": "和美鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200040000",
+      "name": "線西鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200050000",
+      "name": "伸港鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200060000",
+      "name": "福興鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200070000",
+      "name": "秀水鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200080000",
+      "name": "花壇鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200090000",
+      "name": "芬園鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200100000",
+      "name": "員林市",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200110000",
+      "name": "溪湖鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200120000",
+      "name": "田中鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200130000",
+      "name": "大村鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200140000",
+      "name": "埔鹽鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200150000",
+      "name": "埔心鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200160000",
+      "name": "永靖鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200170000",
+      "name": "社頭鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200180000",
+      "name": "二水鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200190000",
+      "name": "北斗鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200200000",
+      "name": "二林鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200210000",
+      "name": "田尾鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200220000",
+      "name": "埤頭鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200230000",
+      "name": "芳苑鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200240000",
+      "name": "大城鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200250000",
+      "name": "竹塘鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711200260000",
+      "name": "溪州鄉",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

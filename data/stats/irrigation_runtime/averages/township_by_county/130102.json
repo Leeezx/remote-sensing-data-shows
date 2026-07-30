@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130102001000",
+      "name": "建北街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130102002000",
+      "name": "青园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130102003000",
+      "name": "广安街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130102004000",
+      "name": "育才街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130102005000",
+      "name": "跃进街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130102007000",
+      "name": "河东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130102010000",
+      "name": "长丰街道",
+      "average": 98.1
+    },
+    {
+      "regionId": "130102011000",
+      "name": "谈固街道",
+      "average": 14.1
+    },
+    {
+      "regionId": "130102012000",
+      "name": "中山东路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130102013000",
+      "name": "阜康街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130102014000",
+      "name": "建安街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130102015000",
+      "name": "胜利北街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130102100000",
+      "name": "西兆通镇",
+      "average": 14659.5
+    },
+    {
+      "regionId": "130102101000",
+      "name": "南村镇",
+      "average": 22491.6
+    },
+    {
+      "regionId": "130102102000",
+      "name": "高营镇",
+      "average": 2762.2
+    },
+    {
+      "regionId": "130102103000",
+      "name": "桃园镇",
+      "average": 2294.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

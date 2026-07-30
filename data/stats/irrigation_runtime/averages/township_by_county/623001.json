@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "623001001000",
+      "name": "当周街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "623001002000",
+      "name": "伊合昂街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "623001003000",
+      "name": "坚木克尔街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "623001004000",
+      "name": "通钦街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "623001200000",
+      "name": "卡加曼乡",
+      "average": 31.8
+    },
+    {
+      "regionId": "623001201000",
+      "name": "卡加道乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623001202000",
+      "name": "佐盖多玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623001203000",
+      "name": "佐盖曼玛乡",
+      "average": 15.9
+    },
+    {
+      "regionId": "623001204000",
+      "name": "勒秀乡",
+      "average": 97.2
+    },
+    {
+      "regionId": "623001205000",
+      "name": "那吾乡",
+      "average": 22.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

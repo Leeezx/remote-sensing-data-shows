@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610428100000",
+      "name": "昭仁镇",
+      "average": 1147.8
+    },
+    {
+      "regionId": "610428101000",
+      "name": "相公镇",
+      "average": 1855.1
+    },
+    {
+      "regionId": "610428102000",
+      "name": "巨家镇",
+      "average": 4313.9
+    },
+    {
+      "regionId": "610428103000",
+      "name": "丁家镇",
+      "average": 676.3
+    },
+    {
+      "regionId": "610428104000",
+      "name": "洪家镇",
+      "average": 1325.4
+    },
+    {
+      "regionId": "610428105000",
+      "name": "亭口镇",
+      "average": 8700.4
+    },
+    {
+      "regionId": "610428106000",
+      "name": "彭公镇",
+      "average": 1028.6
+    },
+    {
+      "regionId": "610428107000",
+      "name": "地掌镇",
+      "average": 1335.3
+    },
+    {
+      "regionId": "610428108000",
+      "name": "枣元镇",
+      "average": 2722.4
+    },
+    {
+      "regionId": "620821102000",
+      "name": "高平镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620822101000",
+      "name": "邵寨镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "621026106000",
+      "name": "新庄镇",
+      "average": 8.6
+    },
+    {
+      "regionId": "621026202000",
+      "name": "中村乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 4.6784,
+      "color": "#bdd7e7",
+      "label": "4.678 万m³"
+    },
+    {
+      "value": 975.0503999999999,
+      "color": "#6baed6",
+      "label": "975.050 万m³"
+    },
+    {
+      "value": 1326.9048,
+      "color": "#3182bd",
+      "label": "1326.905 万m³"
+    },
+    {
+      "value": 2250.5887999999995,
+      "color": "#08519c",
+      "label": "2250.589 万m³"
+    },
+    {
+      "value": 7647.6399999999985,
+      "color": "#042d60",
+      "label": "7647.640 万m³"
+    }
+  ]
+}

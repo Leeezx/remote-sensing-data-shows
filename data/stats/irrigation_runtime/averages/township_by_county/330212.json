@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "330212001000",
+      "name": "下应街道",
+      "average": 4828.8
+    },
+    {
+      "regionId": "330212002000",
+      "name": "钟公庙街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330212004000",
+      "name": "梅墟街道",
+      "average": 4887.6
+    },
+    {
+      "regionId": "330212005000",
+      "name": "中河街道",
+      "average": 947.5
+    },
+    {
+      "regionId": "330212006000",
+      "name": "首南街道",
+      "average": 9036.5
+    },
+    {
+      "regionId": "330212007000",
+      "name": "潘火街道",
+      "average": 6846.0
+    },
+    {
+      "regionId": "330212008000",
+      "name": "百丈街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330212009000",
+      "name": "东胜街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330212010000",
+      "name": "明楼街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330212011000",
+      "name": "白鹤街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330212012000",
+      "name": "东柳街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330212013000",
+      "name": "东郊街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330212014000",
+      "name": "福明街道",
+      "average": 2139.8
+    },
+    {
+      "regionId": "330212015000",
+      "name": "新明街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330212100000",
+      "name": "瞻岐镇",
+      "average": 35736.4
+    },
+    {
+      "regionId": "330212101000",
+      "name": "咸祥镇",
+      "average": 22217.0
+    },
+    {
+      "regionId": "330212102000",
+      "name": "塘溪镇",
+      "average": 10082.0
+    },
+    {
+      "regionId": "330212103000",
+      "name": "东钱湖镇",
+      "average": 12058.2
+    },
+    {
+      "regionId": "330212104000",
+      "name": "东吴镇",
+      "average": 5284.1
+    },
+    {
+      "regionId": "330212105000",
+      "name": "五乡镇",
+      "average": 16551.0
+    },
+    {
+      "regionId": "330212106000",
+      "name": "邱隘镇",
+      "average": 14170.5
+    },
+    {
+      "regionId": "330212108000",
+      "name": "云龙镇",
+      "average": 20838.5
+    },
+    {
+      "regionId": "330212109000",
+      "name": "横溪镇",
+      "average": 7810.6
+    },
+    {
+      "regionId": "330212110000",
+      "name": "姜山镇",
+      "average": 83865.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

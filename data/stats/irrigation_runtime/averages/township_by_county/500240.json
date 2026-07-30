@@ -1,0 +1,203 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "422802102000",
+      "name": "汪营镇",
+      "average": 148.0
+    },
+    {
+      "regionId": "500240100000",
+      "name": "南宾镇",
+      "average": 13073.5
+    },
+    {
+      "regionId": "500240101000",
+      "name": "西沱镇",
+      "average": 3906.9
+    },
+    {
+      "regionId": "500240102000",
+      "name": "下路镇",
+      "average": 11076.9
+    },
+    {
+      "regionId": "500240103000",
+      "name": "悦崃镇",
+      "average": 8840.8
+    },
+    {
+      "regionId": "500240104000",
+      "name": "临溪镇",
+      "average": 2030.4
+    },
+    {
+      "regionId": "500240105000",
+      "name": "黄水镇",
+      "average": 1582.1
+    },
+    {
+      "regionId": "500240106000",
+      "name": "马武镇",
+      "average": 5713.1
+    },
+    {
+      "regionId": "500240107000",
+      "name": "沙子镇",
+      "average": 3477.1
+    },
+    {
+      "regionId": "500240108000",
+      "name": "王场镇",
+      "average": 9047.7
+    },
+    {
+      "regionId": "500240109000",
+      "name": "沿溪镇",
+      "average": 8745.2
+    },
+    {
+      "regionId": "500240110000",
+      "name": "龙沙镇",
+      "average": 4636.6
+    },
+    {
+      "regionId": "500240111000",
+      "name": "鱼池镇",
+      "average": 2610.2
+    },
+    {
+      "regionId": "500240112000",
+      "name": "三河镇",
+      "average": 10956.7
+    },
+    {
+      "regionId": "500240113000",
+      "name": "大歇镇",
+      "average": 5637.9
+    },
+    {
+      "regionId": "500240114000",
+      "name": "桥头镇",
+      "average": 10455.1
+    },
+    {
+      "regionId": "500240115000",
+      "name": "万朝镇",
+      "average": 9106.6
+    },
+    {
+      "regionId": "500240116000",
+      "name": "冷水镇",
+      "average": 457.2
+    },
+    {
+      "regionId": "500240203000",
+      "name": "黎场乡",
+      "average": 3725.1
+    },
+    {
+      "regionId": "500240204000",
+      "name": "三星乡",
+      "average": 4639.3
+    },
+    {
+      "regionId": "500240205000",
+      "name": "六塘乡",
+      "average": 3722.2
+    },
+    {
+      "regionId": "500240207000",
+      "name": "三益乡",
+      "average": 5115.3
+    },
+    {
+      "regionId": "500240208000",
+      "name": "王家乡",
+      "average": 670.1
+    },
+    {
+      "regionId": "500240209000",
+      "name": "河嘴乡",
+      "average": 197.4
+    },
+    {
+      "regionId": "500240210000",
+      "name": "石家乡",
+      "average": 3632.9
+    },
+    {
+      "regionId": "500240212000",
+      "name": "枫木乡",
+      "average": 1125.4
+    },
+    {
+      "regionId": "500240213000",
+      "name": "中益乡",
+      "average": 984.3
+    },
+    {
+      "regionId": "500240214000",
+      "name": "洗新乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500240215000",
+      "name": "黄鹤乡",
+      "average": 1077.5
+    },
+    {
+      "regionId": "500240216000",
+      "name": "龙潭乡",
+      "average": 651.9
+    },
+    {
+      "regionId": "500240217000",
+      "name": "新乐乡",
+      "average": 43.9
+    },
+    {
+      "regionId": "500240218000",
+      "name": "金铃乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500240219000",
+      "name": "金竹乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 609.8448,
+      "color": "#bdd7e7",
+      "label": "609.845 万m³"
+    },
+    {
+      "value": 1998.1223999999997,
+      "color": "#6baed6",
+      "label": "1998.122 万m³"
+    },
+    {
+      "value": 3959.4383999999995,
+      "color": "#3182bd",
+      "label": "3959.438 万m³"
+    },
+    {
+      "value": 8765.8496,
+      "color": "#08519c",
+      "label": "8765.850 万m³"
+    },
+    {
+      "value": 11795.676,
+      "color": "#042d60",
+      "label": "11795.676 万m³"
+    }
+  ]
+}

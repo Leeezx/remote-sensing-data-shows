@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620724100000",
+      "name": "城关镇",
+      "average": 1451.0
+    },
+    {
+      "regionId": "620724101000",
+      "name": "宣化镇",
+      "average": 44076.3
+    },
+    {
+      "regionId": "620724102000",
+      "name": "南华镇",
+      "average": 29901.0
+    },
+    {
+      "regionId": "620724200000",
+      "name": "巷道乡",
+      "average": 46923.0
+    },
+    {
+      "regionId": "620724201000",
+      "name": "黑泉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620724202000",
+      "name": "罗城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620724203000",
+      "name": "合黎乡",
+      "average": 12677.5
+    },
+    {
+      "regionId": "620724204000",
+      "name": "骆驼城乡",
+      "average": 65798.0
+    },
+    {
+      "regionId": "620724205000",
+      "name": "新坝乡",
+      "average": 16557.4
+    },
+    {
+      "regionId": "620724400000",
+      "name": "甘肃高台工业园区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

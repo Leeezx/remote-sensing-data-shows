@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513429100000",
+      "name": "特木里镇",
+      "average": 41.5
+    },
+    {
+      "regionId": "513429101000",
+      "name": "龙潭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513429102000",
+      "name": "拖觉镇",
+      "average": 1585.3
+    },
+    {
+      "regionId": "513429200000",
+      "name": "木尔乡",
+      "average": 54.1
+    },
+    {
+      "regionId": "513429201000",
+      "name": "九都乡",
+      "average": 0.7
+    },
+    {
+      "regionId": "513429202000",
+      "name": "拉达乡",
+      "average": 265.9
+    },
+    {
+      "regionId": "513429203000",
+      "name": "乌科乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513429204000",
+      "name": "沙洛乡",
+      "average": 71.8
+    },
+    {
+      "regionId": "513429205000",
+      "name": "洛古乡",
+      "average": 34.3
+    },
+    {
+      "regionId": "513429206000",
+      "name": "补尔乡",
+      "average": 61.5
+    },
+    {
+      "regionId": "513429207000",
+      "name": "觉撒乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513429208000",
+      "name": "美撒乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513429209000",
+      "name": "拉果乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513429210000",
+      "name": "乌依乡",
+      "average": 141.1
+    },
+    {
+      "regionId": "513429211000",
+      "name": "浪珠乡",
+      "average": 17.3
+    },
+    {
+      "regionId": "513429212000",
+      "name": "包谷坪乡",
+      "average": 560.2
+    },
+    {
+      "regionId": "513429213000",
+      "name": "合井乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513429214000",
+      "name": "罗家坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513429215000",
+      "name": "牛角湾乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513429216000",
+      "name": "补洛乡",
+      "average": 55.1
+    },
+    {
+      "regionId": "513429217000",
+      "name": "火烈乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513429218000",
+      "name": "乐安乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513429219000",
+      "name": "四棵乡",
+      "average": 10.1
+    },
+    {
+      "regionId": "513429220000",
+      "name": "地洛乡",
+      "average": 371.7
+    },
+    {
+      "regionId": "513429221000",
+      "name": "俄里坪乡",
+      "average": 331.9
+    },
+    {
+      "regionId": "513429222000",
+      "name": "瓦都乡",
+      "average": 42.4
+    },
+    {
+      "regionId": "513429223000",
+      "name": "采哈乡",
+      "average": 13.1
+    },
+    {
+      "regionId": "513429224000",
+      "name": "委只洛乡",
+      "average": 12.2
+    },
+    {
+      "regionId": "513429225000",
+      "name": "联补乡",
+      "average": 23.4
+    },
+    {
+      "regionId": "513429226000",
+      "name": "基只乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

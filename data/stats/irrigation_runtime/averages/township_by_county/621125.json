@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "621125100000",
+      "name": "武阳镇",
+      "average": 389.5
+    },
+    {
+      "regionId": "621125101000",
+      "name": "三岔镇",
+      "average": 292.5
+    },
+    {
+      "regionId": "621125102000",
+      "name": "新寺镇",
+      "average": 5710.9
+    },
+    {
+      "regionId": "621125103000",
+      "name": "金钟镇",
+      "average": 111.3
+    },
+    {
+      "regionId": "621125201000",
+      "name": "盐井乡",
+      "average": 448.7
+    },
+    {
+      "regionId": "621125202000",
+      "name": "殪虎桥乡",
+      "average": 306.7
+    },
+    {
+      "regionId": "621125203000",
+      "name": "大草滩乡",
+      "average": 369.1
+    },
+    {
+      "regionId": "621125204000",
+      "name": "马泉乡",
+      "average": 510.1
+    },
+    {
+      "regionId": "621125205000",
+      "name": "四族乡",
+      "average": 369.3
+    },
+    {
+      "regionId": "621125206000",
+      "name": "石川乡",
+      "average": 2608.8
+    },
+    {
+      "regionId": "621125207000",
+      "name": "草滩乡",
+      "average": 2022.4
+    },
+    {
+      "regionId": "621125208000",
+      "name": "武当乡",
+      "average": 377.7
+    },
+    {
+      "regionId": "621125209000",
+      "name": "东泉乡",
+      "average": 2230.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 154.78799999999998,
+      "color": "#eff3ff",
+      "label": "154.788 万m³"
+    },
+    {
+      "value": 340.6456,
+      "color": "#bdd7e7",
+      "label": "340.646 万m³"
+    },
+    {
+      "value": 376.4232,
+      "color": "#6baed6",
+      "label": "376.423 万m³"
+    },
+    {
+      "value": 458.03279999999995,
+      "color": "#3182bd",
+      "label": "458.033 万m³"
+    },
+    {
+      "value": 2117.3392,
+      "color": "#08519c",
+      "label": "2117.339 万m³"
+    },
+    {
+      "value": 4966.395999999999,
+      "color": "#042d60",
+      "label": "4966.396 万m³"
+    }
+  ]
+}

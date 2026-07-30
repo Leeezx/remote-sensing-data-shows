@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540424100000",
+      "name": "扎木镇",
+      "average": 205.2
+    },
+    {
+      "regionId": "540424101000",
+      "name": "倾多镇",
+      "average": 762.0
+    },
+    {
+      "regionId": "540424102000",
+      "name": "松宗镇",
+      "average": 463.6
+    },
+    {
+      "regionId": "540424200000",
+      "name": "古乡",
+      "average": 26.6
+    },
+    {
+      "regionId": "540424201000",
+      "name": "玉许乡",
+      "average": 869.1
+    },
+    {
+      "regionId": "540424202000",
+      "name": "多吉乡",
+      "average": 1459.3
+    },
+    {
+      "regionId": "540424203000",
+      "name": "康玉乡",
+      "average": 35.8
+    },
+    {
+      "regionId": "540424204000",
+      "name": "玉普乡",
+      "average": 186.9
+    },
+    {
+      "regionId": "540424205000",
+      "name": "易贡乡",
+      "average": 113.8
+    },
+    {
+      "regionId": "540424206000",
+      "name": "八盖乡",
+      "average": 5.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 9.216000000000001,
+      "color": "#eff3ff",
+      "label": "9.216 万m³"
+    },
+    {
+      "value": 34.953599999999994,
+      "color": "#bdd7e7",
+      "label": "34.954 万m³"
+    },
+    {
+      "value": 160.2916,
+      "color": "#6baed6",
+      "label": "160.292 万m³"
+    },
+    {
+      "value": 299.25759999999997,
+      "color": "#3182bd",
+      "label": "299.258 万m³"
+    },
+    {
+      "value": 771.8532,
+      "color": "#08519c",
+      "label": "771.853 万m³"
+    },
+    {
+      "value": 1353.064,
+      "color": "#042d60",
+      "label": "1353.064 万m³"
+    }
+  ]
+}

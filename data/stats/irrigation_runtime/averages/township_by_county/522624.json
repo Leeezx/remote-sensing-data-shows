@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "522624100000",
+      "name": "八弓镇",
+      "average": 31231.5
+    },
+    {
+      "regionId": "522624101000",
+      "name": "台烈镇",
+      "average": 13785.2
+    },
+    {
+      "regionId": "522624102000",
+      "name": "瓦寨镇",
+      "average": 9735.0
+    },
+    {
+      "regionId": "522624103000",
+      "name": "桐林镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522624104000",
+      "name": "雪洞镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522624200000",
+      "name": "滚马乡",
+      "average": 7252.1
+    },
+    {
+      "regionId": "522624201000",
+      "name": "长吉乡",
+      "average": 14241.2
+    },
+    {
+      "regionId": "522624202000",
+      "name": "款场乡",
+      "average": 7241.3
+    },
+    {
+      "regionId": "522624203000",
+      "name": "良上乡",
+      "average": 5857.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 4076.8896,
+      "color": "#bdd7e7",
+      "label": "4076.890 万m³"
+    },
+    {
+      "value": 7243.805600000001,
+      "color": "#6baed6",
+      "label": "7243.806 万m³"
+    },
+    {
+      "value": 9158.9672,
+      "color": "#3182bd",
+      "label": "9158.967 万m³"
+    },
+    {
+      "value": 13923.824,
+      "color": "#08519c",
+      "label": "13923.824 万m³"
+    },
+    {
+      "value": 28513.051999999996,
+      "color": "#042d60",
+      "label": "28513.052 万m³"
+    }
+  ]
+}

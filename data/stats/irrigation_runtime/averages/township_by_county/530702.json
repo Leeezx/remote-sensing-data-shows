@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "530702001000",
+      "name": "西安街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "530702002000",
+      "name": "大研街道",
+      "average": 1580.5
+    },
+    {
+      "regionId": "530702003000",
+      "name": "祥和街道",
+      "average": 1633.9
+    },
+    {
+      "regionId": "530702004000",
+      "name": "束河街道",
+      "average": 5958.1
+    },
+    {
+      "regionId": "530702101000",
+      "name": "金安镇",
+      "average": 1983.6
+    },
+    {
+      "regionId": "530702102000",
+      "name": "七河镇",
+      "average": 10187.1
+    },
+    {
+      "regionId": "530702203000",
+      "name": "大东乡",
+      "average": 4248.2
+    },
+    {
+      "regionId": "530702204000",
+      "name": "金山白族乡",
+      "average": 8807.7
+    },
+    {
+      "regionId": "530702205000",
+      "name": "金江白族乡",
+      "average": 2312.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 252.88,
+      "color": "#eff3ff",
+      "label": "252.880 万m³"
+    },
+    {
+      "value": 1617.6664,
+      "color": "#bdd7e7",
+      "label": "1617.666 万m³"
+    },
+    {
+      "value": 2059.928,
+      "color": "#6baed6",
+      "label": "2059.928 万m³"
+    },
+    {
+      "value": 3799.140799999999,
+      "color": "#3182bd",
+      "label": "3799.141 万m³"
+    },
+    {
+      "value": 6824.378399999999,
+      "color": "#08519c",
+      "label": "6824.378 万m³"
+    },
+    {
+      "value": 9966.396,
+      "color": "#042d60",
+      "label": "9966.396 万m³"
+    }
+  ]
+}

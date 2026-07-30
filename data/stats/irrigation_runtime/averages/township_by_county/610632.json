@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610632100000",
+      "name": "桥山镇",
+      "average": 5653.3
+    },
+    {
+      "regionId": "610632101000",
+      "name": "店头镇",
+      "average": 3218.3
+    },
+    {
+      "regionId": "610632102000",
+      "name": "隆坊镇",
+      "average": 4338.7
+    },
+    {
+      "regionId": "610632103000",
+      "name": "田庄镇",
+      "average": 4351.9
+    },
+    {
+      "regionId": "610632104000",
+      "name": "阿党镇",
+      "average": 5074.4
+    },
+    {
+      "regionId": "610632105000",
+      "name": "双龙镇",
+      "average": 3196.0
+    },
+    {
+      "regionId": "610632202000",
+      "name": "仓村乡",
+      "average": 2218.7
+    },
+    {
+      "regionId": "621025200000",
+      "name": "西坡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621026208000",
+      "name": "九岘乡",
+      "average": 6.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 1.088,
+      "color": "#eff3ff",
+      "label": "1.088 万m³"
+    },
+    {
+      "value": 1546.2823999999998,
+      "color": "#bdd7e7",
+      "label": "1546.282 万m³"
+    },
+    {
+      "value": 3201.1736,
+      "color": "#6baed6",
+      "label": "3201.174 万m³"
+    },
+    {
+      "value": 4078.7672,
+      "color": "#3182bd",
+      "label": "4078.767 万m³"
+    },
+    {
+      "value": 4571.539999999999,
+      "color": "#08519c",
+      "label": "4571.540 万m³"
+    },
+    {
+      "value": 5560.676,
+      "color": "#042d60",
+      "label": "5560.676 万m³"
+    }
+  ]
+}

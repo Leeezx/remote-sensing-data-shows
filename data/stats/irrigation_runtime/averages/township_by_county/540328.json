@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513335200000",
+      "name": "拉哇乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513335202000",
+      "name": "竹巴龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513335204000",
+      "name": "苏哇龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513335205000",
+      "name": "昌波乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "533422005000",
+      "name": "佛山乡",
+      "average": 148.5
+    },
+    {
+      "regionId": "540328100000",
+      "name": "嘎托镇",
+      "average": 135.9
+    },
+    {
+      "regionId": "540328101000",
+      "name": "如美镇",
+      "average": 193.2
+    },
+    {
+      "regionId": "540328200000",
+      "name": "曲孜卡乡",
+      "average": 57.1
+    },
+    {
+      "regionId": "540328201000",
+      "name": "木许乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540328202000",
+      "name": "纳西民族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540328203000",
+      "name": "朱巴龙乡",
+      "average": 209.3
+    },
+    {
+      "regionId": "540328204000",
+      "name": "曲登乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540328205000",
+      "name": "徐中乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540328206000",
+      "name": "帮达乡",
+      "average": 95.6
+    },
+    {
+      "regionId": "540328207000",
+      "name": "戈波乡",
+      "average": 131.0
+    },
+    {
+      "regionId": "540328208000",
+      "name": "洛尼乡",
+      "average": 154.3
+    },
+    {
+      "regionId": "540328209000",
+      "name": "措瓦乡",
+      "average": 166.1
+    },
+    {
+      "regionId": "540328210000",
+      "name": "昂多乡",
+      "average": 11.3
+    },
+    {
+      "regionId": "540328211000",
+      "name": "宗西乡",
+      "average": 367.9
+    },
+    {
+      "regionId": "540328212000",
+      "name": "莽岭乡",
+      "average": 37.2
+    },
+    {
+      "regionId": "540328213000",
+      "name": "索多西乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "450223100000",
+      "name": "鹿寨镇",
+      "average": 60740.5
+    },
+    {
+      "regionId": "450223102000",
+      "name": "中渡镇",
+      "average": 57929.6
+    },
+    {
+      "regionId": "450223103000",
+      "name": "寨沙镇",
+      "average": 25434.4
+    },
+    {
+      "regionId": "450223104000",
+      "name": "平山镇",
+      "average": 78362.6
+    },
+    {
+      "regionId": "450223200000",
+      "name": "黄冕乡",
+      "average": 22721.1
+    },
+    {
+      "regionId": "450223201000",
+      "name": "江口乡",
+      "average": 8063.3
+    },
+    {
+      "regionId": "450223202000",
+      "name": "导江乡",
+      "average": 4747.2
+    },
+    {
+      "regionId": "450223203000",
+      "name": "拉沟乡",
+      "average": 237.5
+    },
+    {
+      "regionId": "450223204000",
+      "name": "四排乡",
+      "average": 33239.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 959.052,
+      "color": "#eff3ff",
+      "label": "959.052 万m³"
+    },
+    {
+      "value": 7055.2056,
+      "color": "#bdd7e7",
+      "label": "7055.206 万m³"
+    },
+    {
+      "value": 23350.5856,
+      "color": "#6baed6",
+      "label": "23350.586 万m³"
+    },
+    {
+      "value": 31428.64,
+      "color": "#3182bd",
+      "label": "31428.640 万m³"
+    },
+    {
+      "value": 58784.1136,
+      "color": "#08519c",
+      "label": "58784.114 万m³"
+    },
+    {
+      "value": 75543.064,
+      "color": "#042d60",
+      "label": "75543.064 万m³"
+    }
+  ]
+}

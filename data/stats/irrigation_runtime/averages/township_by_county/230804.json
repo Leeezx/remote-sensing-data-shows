@@ -1,0 +1,48 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230804198000",
+      "name": "前进区（镇）直辖",
+      "average": 1002.2
+    },
+    {
+      "regionId": "230804579000",
+      "name": "前进区农垦",
+      "average": 3087.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 1043.912,
+      "color": "#eff3ff",
+      "label": "1043.912 万m³"
+    },
+    {
+      "value": 1444.3472000000002,
+      "color": "#bdd7e7",
+      "label": "1444.347 万m³"
+    },
+    {
+      "value": 1844.7824,
+      "color": "#6baed6",
+      "label": "1844.782 万m³"
+    },
+    {
+      "value": 2245.2176,
+      "color": "#3182bd",
+      "label": "2245.218 万m³"
+    },
+    {
+      "value": 2645.6528,
+      "color": "#08519c",
+      "label": "2645.653 万m³"
+    },
+    {
+      "value": 3046.088,
+      "color": "#042d60",
+      "label": "3046.088 万m³"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130209100000",
+      "name": "唐海镇",
+      "average": 8098.6
+    },
+    {
+      "regionId": "130209112000",
+      "name": "滨海镇",
+      "average": 2456.7
+    },
+    {
+      "regionId": "130209113000",
+      "name": "柳赞镇",
+      "average": 763.4
+    },
+    {
+      "regionId": "130209401000",
+      "name": "一农场",
+      "average": 10285.8
+    },
+    {
+      "regionId": "130209403000",
+      "name": "三农场",
+      "average": 2981.2
+    },
+    {
+      "regionId": "130209404000",
+      "name": "四农场",
+      "average": 4257.0
+    },
+    {
+      "regionId": "130209405000",
+      "name": "五农场",
+      "average": 3101.6
+    },
+    {
+      "regionId": "130209406000",
+      "name": "六农场",
+      "average": 2967.6
+    },
+    {
+      "regionId": "130209407000",
+      "name": "七农场",
+      "average": 1568.6
+    },
+    {
+      "regionId": "130209408000",
+      "name": "八农场",
+      "average": 22308.0
+    },
+    {
+      "regionId": "130209409000",
+      "name": "九农场",
+      "average": 18313.3
+    },
+    {
+      "regionId": "130209410000",
+      "name": "十农场",
+      "average": 9976.0
+    },
+    {
+      "regionId": "130209411000",
+      "name": "十一农场",
+      "average": 4862.5
+    },
+    {
+      "regionId": "130209412000",
+      "name": "八里滩养殖场",
+      "average": 0.0
+    },
+    {
+      "regionId": "130209413000",
+      "name": "十里海养殖场",
+      "average": 0.0
+    },
+    {
+      "regionId": "130209450000",
+      "name": "南堡经济开发区",
+      "average": 0.0
+    },
+    {
+      "regionId": "130209451000",
+      "name": "曹妃甸工业区",
+      "average": 0.0
+    },
+    {
+      "regionId": "130209452000",
+      "name": "唐山湾生态城",
+      "average": 0.0
+    },
+    {
+      "regionId": "130224114000",
+      "name": "南堡镇",
+      "average": 4971.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

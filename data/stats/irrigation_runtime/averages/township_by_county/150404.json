@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130828210000",
+      "name": "郭家湾乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828211000",
+      "name": "杨家湾乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828215000",
+      "name": "张家湾乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "150404001000",
+      "name": "振兴街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150404002000",
+      "name": "向阳街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150404003000",
+      "name": "松州街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150404004000",
+      "name": "铁东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150404100000",
+      "name": "穆家营子镇",
+      "average": 11016.2
+    },
+    {
+      "regionId": "150404101000",
+      "name": "初头朗镇",
+      "average": 8329.5
+    },
+    {
+      "regionId": "150404102000",
+      "name": "大庙镇",
+      "average": 9932.2
+    },
+    {
+      "regionId": "150404103000",
+      "name": "王府镇",
+      "average": 14890.5
+    },
+    {
+      "regionId": "150404104000",
+      "name": "老府镇",
+      "average": 9817.7
+    },
+    {
+      "regionId": "150404105000",
+      "name": "哈拉道口镇",
+      "average": 34385.3
+    },
+    {
+      "regionId": "150404106000",
+      "name": "上官地镇",
+      "average": 7502.2
+    },
+    {
+      "regionId": "150404107000",
+      "name": "安庆镇",
+      "average": 30223.8
+    },
+    {
+      "regionId": "150404108000",
+      "name": "太平地镇",
+      "average": 72757.7
+    },
+    {
+      "regionId": "150404200000",
+      "name": "当铺地满族乡",
+      "average": 22428.3
+    },
+    {
+      "regionId": "150404201000",
+      "name": "夏家店乡",
+      "average": 20910.2
+    },
+    {
+      "regionId": "150404202000",
+      "name": "城子乡",
+      "average": 8161.2
+    },
+    {
+      "regionId": "150404203000",
+      "name": "大夫营子乡",
+      "average": 1354.4
+    },
+    {
+      "regionId": "150404204000",
+      "name": "岗子乡",
+      "average": 986.6
+    },
+    {
+      "regionId": "150404400000",
+      "name": "玉龙街道",
+      "average": 20.1
+    },
+    {
+      "regionId": "150404401000",
+      "name": "全宁街道",
+      "average": 20.6
+    },
+    {
+      "regionId": "150404407000",
+      "name": "兴安街道",
+      "average": 272.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

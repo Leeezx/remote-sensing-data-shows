@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "152921102000",
+      "name": "温都尔勒图镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620423100000",
+      "name": "一条山镇",
+      "average": 37589.4
+    },
+    {
+      "regionId": "620423101000",
+      "name": "芦阳镇",
+      "average": 15114.1
+    },
+    {
+      "regionId": "620423102000",
+      "name": "上沙沃镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620423103000",
+      "name": "喜泉镇",
+      "average": 13904.7
+    },
+    {
+      "regionId": "620423104000",
+      "name": "草窝滩镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620423105000",
+      "name": "红水镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620423200000",
+      "name": "中泉乡",
+      "average": 3296.3
+    },
+    {
+      "regionId": "620423201000",
+      "name": "正路乡",
+      "average": 1341.6
+    },
+    {
+      "regionId": "620423203000",
+      "name": "寺滩乡",
+      "average": 8293.3
+    },
+    {
+      "regionId": "620423205000",
+      "name": "五佛乡",
+      "average": 9995.0
+    },
+    {
+      "regionId": "620423207000",
+      "name": "漫水滩乡",
+      "average": 131.8
+    },
+    {
+      "regionId": "620423400000",
+      "name": "条山集团",
+      "average": 34150.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

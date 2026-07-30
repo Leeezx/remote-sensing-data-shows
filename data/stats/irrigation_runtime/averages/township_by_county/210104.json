@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210104002000",
+      "name": "大北街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210104003000",
+      "name": "万泉街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210104004000",
+      "name": "洮昌街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210104006000",
+      "name": "文官街道",
+      "average": 467.4
+    },
+    {
+      "regionId": "210104007000",
+      "name": "二台子街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210104008000",
+      "name": "津桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210104009000",
+      "name": "东站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210104010000",
+      "name": "北海街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210104012000",
+      "name": "长安街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210104014000",
+      "name": "新东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210104015000",
+      "name": "东塔街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210104016000",
+      "name": "小东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210104017000",
+      "name": "上园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210104018000",
+      "name": "前进街道",
+      "average": 60.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140522100000",
+      "name": "凤城镇",
+      "average": 4325.3
+    },
+    {
+      "regionId": "140522101000",
+      "name": "北留镇",
+      "average": 4607.5
+    },
+    {
+      "regionId": "140522102000",
+      "name": "润城镇",
+      "average": 2620.2
+    },
+    {
+      "regionId": "140522103000",
+      "name": "町店镇",
+      "average": 2028.1
+    },
+    {
+      "regionId": "140522104000",
+      "name": "芹池镇",
+      "average": 8281.4
+    },
+    {
+      "regionId": "140522105000",
+      "name": "次营镇",
+      "average": 2137.3
+    },
+    {
+      "regionId": "140522106000",
+      "name": "横河镇",
+      "average": 2848.2
+    },
+    {
+      "regionId": "140522107000",
+      "name": "河北镇",
+      "average": 3346.7
+    },
+    {
+      "regionId": "140522108000",
+      "name": "蟒河镇",
+      "average": 4037.7
+    },
+    {
+      "regionId": "140522109000",
+      "name": "东冶镇",
+      "average": 6731.2
+    },
+    {
+      "regionId": "140522200000",
+      "name": "白桑乡",
+      "average": 3342.2
+    },
+    {
+      "regionId": "140522201000",
+      "name": "寺头乡",
+      "average": 4227.9
+    },
+    {
+      "regionId": "140522202000",
+      "name": "西河乡",
+      "average": 874.3
+    },
+    {
+      "regionId": "140522203000",
+      "name": "演礼乡",
+      "average": 813.9
+    },
+    {
+      "regionId": "140522204000",
+      "name": "固隆乡",
+      "average": 2628.9
+    },
+    {
+      "regionId": "140522205000",
+      "name": "董封乡",
+      "average": 6510.0
+    },
+    {
+      "regionId": "140522206000",
+      "name": "驾岭乡",
+      "average": 4713.1
+    },
+    {
+      "regionId": "140522400000",
+      "name": "东城街道",
+      "average": 727.8
+    },
+    {
+      "regionId": "140522401000",
+      "name": "林场管理处",
+      "average": 41.0
+    },
+    {
+      "regionId": "419001104000",
+      "name": "济源市邵原镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "419001108000",
+      "name": "济源市思礼镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "419001109000",
+      "name": "济源市王屋镇",
+      "average": 73.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 766.7171999999999,
+      "color": "#bdd7e7",
+      "label": "766.717 万m³"
+    },
+    {
+      "value": 2371.0236,
+      "color": "#6baed6",
+      "label": "2371.024 万m³"
+    },
+    {
+      "value": 3344.522,
+      "color": "#3182bd",
+      "label": "3344.522 万m³"
+    },
+    {
+      "value": 4479.9456,
+      "color": "#08519c",
+      "label": "4479.946 万m³"
+    },
+    {
+      "value": 7630.315999999997,
+      "color": "#042d60",
+      "label": "7630.316 万m³"
+    }
+  ]
+}

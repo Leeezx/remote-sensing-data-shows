@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "321102001000",
+      "name": "正东路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "321102002000",
+      "name": "健康路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "321102003000",
+      "name": "大市口街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "321102005000",
+      "name": "象山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "321102006000",
+      "name": "谏壁街道",
+      "average": 4305.3
+    },
+    {
+      "regionId": "321102050000",
+      "name": "丁卯街道",
+      "average": 2846.7
+    },
+    {
+      "regionId": "321102051000",
+      "name": "大港街道",
+      "average": 9837.4
+    },
+    {
+      "regionId": "321102150000",
+      "name": "姚桥镇",
+      "average": 40378.0
+    },
+    {
+      "regionId": "321102151000",
+      "name": "大路镇",
+      "average": 26777.0
+    },
+    {
+      "regionId": "321102152000",
+      "name": "丁岗镇",
+      "average": 24834.8
+    },
+    {
+      "regionId": "321102400000",
+      "name": "京口工业园区",
+      "average": 1530.2
+    },
+    {
+      "regionId": "321102401000",
+      "name": "共青团农场",
+      "average": 9703.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

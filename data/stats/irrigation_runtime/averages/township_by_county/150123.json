@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150123100000",
+      "name": "城关镇",
+      "average": 7687.5
+    },
+    {
+      "regionId": "150123101000",
+      "name": "盛乐镇",
+      "average": 28701.5
+    },
+    {
+      "regionId": "150123102000",
+      "name": "新店子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150123203000",
+      "name": "舍必崖乡",
+      "average": 34986.9
+    },
+    {
+      "regionId": "150123205000",
+      "name": "大红城乡",
+      "average": 7338.0
+    },
+    {
+      "regionId": "150123206000",
+      "name": "羊群沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "150123207000",
+      "name": "黑老夭乡",
+      "average": 3927.7
+    },
+    {
+      "regionId": "150123208000",
+      "name": "巧什营乡",
+      "average": 12095.1
+    },
+    {
+      "regionId": "150123400000",
+      "name": "盛乐经济工业园区",
+      "average": 3033.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2111.5944,
+      "color": "#bdd7e7",
+      "label": "2111.594 万m³"
+    },
+    {
+      "value": 4718.889599999999,
+      "color": "#6baed6",
+      "label": "4718.890 万m³"
+    },
+    {
+      "value": 7606.416,
+      "color": "#3182bd",
+      "label": "7606.416 万m³"
+    },
+    {
+      "value": 17143.445599999992,
+      "color": "#08519c",
+      "label": "17143.446 万m³"
+    },
+    {
+      "value": 33981.236,
+      "color": "#042d60",
+      "label": "33981.236 万m³"
+    }
+  ]
+}

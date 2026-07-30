@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210323001000",
+      "name": "阜昌街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210323002000",
+      "name": "大宁街道",
+      "average": 166.3
+    },
+    {
+      "regionId": "210323003000",
+      "name": "兴隆街道",
+      "average": 56.3
+    },
+    {
+      "regionId": "210323004000",
+      "name": "雅河街道",
+      "average": 1235.5
+    },
+    {
+      "regionId": "210323005000",
+      "name": "仙人咀街道",
+      "average": 28.0
+    },
+    {
+      "regionId": "210323101000",
+      "name": "三家子镇",
+      "average": 12.9
+    },
+    {
+      "regionId": "210323102000",
+      "name": "石庙子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "210323103000",
+      "name": "黄花甸镇",
+      "average": 179.3
+    },
+    {
+      "regionId": "210323104000",
+      "name": "大营子镇",
+      "average": 134.6
+    },
+    {
+      "regionId": "210323105000",
+      "name": "苏子沟镇",
+      "average": 332.9
+    },
+    {
+      "regionId": "210323106000",
+      "name": "偏岭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "210323107000",
+      "name": "哈达碑镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "210323108000",
+      "name": "新甸镇",
+      "average": 789.0
+    },
+    {
+      "regionId": "210323109000",
+      "name": "洋河镇",
+      "average": 61.4
+    },
+    {
+      "regionId": "210323111000",
+      "name": "杨家堡镇",
+      "average": 189.6
+    },
+    {
+      "regionId": "210323112000",
+      "name": "清凉山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "210323113000",
+      "name": "石灰窑镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "210323114000",
+      "name": "前营子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "210323115000",
+      "name": "龙潭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "210323116000",
+      "name": "牧牛镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "210323117000",
+      "name": "药山镇",
+      "average": 0.7
+    },
+    {
+      "regionId": "210323118000",
+      "name": "大房身镇",
+      "average": 142.0
+    },
+    {
+      "regionId": "210323119000",
+      "name": "朝阳镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "210323206000",
+      "name": "红旗营子乡",
+      "average": 333.3
+    },
+    {
+      "regionId": "210323211000",
+      "name": "岭沟乡",
+      "average": 108.8
+    },
+    {
+      "regionId": "210323212000",
+      "name": "哨子河乡",
+      "average": 381.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

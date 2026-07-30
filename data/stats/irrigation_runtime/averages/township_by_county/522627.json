@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "431225106000",
+      "name": "广坪镇",
+      "average": 11051.4
+    },
+    {
+      "regionId": "431227105000",
+      "name": "扶罗镇",
+      "average": 8881.0
+    },
+    {
+      "regionId": "431227106000",
+      "name": "中寨镇",
+      "average": 5250.0
+    },
+    {
+      "regionId": "431227211000",
+      "name": "贡溪乡",
+      "average": 12786.7
+    },
+    {
+      "regionId": "431227214000",
+      "name": "碧朗乡",
+      "average": 4624.7
+    },
+    {
+      "regionId": "431227215000",
+      "name": "米贝苗族乡",
+      "average": 5175.6
+    },
+    {
+      "regionId": "522627100000",
+      "name": "凤城镇",
+      "average": 16742.8
+    },
+    {
+      "regionId": "522627101000",
+      "name": "邦洞镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522627102000",
+      "name": "坪地镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522627103000",
+      "name": "兰田镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522627104000",
+      "name": "瓮洞镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522627105000",
+      "name": "高酿镇",
+      "average": 13720.3
+    },
+    {
+      "regionId": "522627106000",
+      "name": "石洞镇",
+      "average": 17243.3
+    },
+    {
+      "regionId": "522627107000",
+      "name": "远口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522627108000",
+      "name": "坌处镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522627109000",
+      "name": "白市镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522627200000",
+      "name": "社学乡",
+      "average": 13055.4
+    },
+    {
+      "regionId": "522627201000",
+      "name": "渡马乡",
+      "average": 13450.6
+    },
+    {
+      "regionId": "522627202000",
+      "name": "注溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "522627203000",
+      "name": "地湖乡",
+      "average": 762.2
+    },
+    {
+      "regionId": "522627204000",
+      "name": "竹林乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "522627205000",
+      "name": "江东乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

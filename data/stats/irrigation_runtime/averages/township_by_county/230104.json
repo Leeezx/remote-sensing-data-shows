@@ -1,0 +1,183 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230104001000",
+      "name": "靖宇街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104002000",
+      "name": "太古街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104003000",
+      "name": "东莱街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104004000",
+      "name": "滨江街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104005000",
+      "name": "仁里街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104006000",
+      "name": "南市街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104007000",
+      "name": "崇俭街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104008000",
+      "name": "振江街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104009000",
+      "name": "东原街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104010000",
+      "name": "大兴街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104011000",
+      "name": "胜利街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104012000",
+      "name": "南马街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104021000",
+      "name": "民强街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104022000",
+      "name": "大有坊街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104023000",
+      "name": "南直路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104024000",
+      "name": "化工街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104025000",
+      "name": "火车头街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104026000",
+      "name": "新一街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104027000",
+      "name": "三棵树大街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104028000",
+      "name": "水泥路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104029000",
+      "name": "太平大街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104030000",
+      "name": "黎华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104031000",
+      "name": "新乐街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104102000",
+      "name": "永源镇",
+      "average": 5756.8
+    },
+    {
+      "regionId": "230104109000",
+      "name": "巨源镇",
+      "average": 16440.4
+    },
+    {
+      "regionId": "230104111000",
+      "name": "团结镇",
+      "average": 1772.5
+    },
+    {
+      "regionId": "230104200000",
+      "name": "民主乡",
+      "average": 6685.8
+    },
+    {
+      "regionId": "230104500000",
+      "name": "青年农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230104579000",
+      "name": "道外农垦",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

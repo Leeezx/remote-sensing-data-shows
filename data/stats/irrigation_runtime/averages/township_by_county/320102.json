@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "320102002000",
+      "name": "梅园新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320102003000",
+      "name": "新街口街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320102005000",
+      "name": "玄武门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320102007000",
+      "name": "锁金村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320102008000",
+      "name": "红山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320102009000",
+      "name": "孝陵卫街道",
+      "average": 235.6
+    },
+    {
+      "regionId": "320102010000",
+      "name": "玄武湖街道",
+      "average": 104.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

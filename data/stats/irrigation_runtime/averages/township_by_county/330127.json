@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "330127100000",
+      "name": "千岛湖镇",
+      "average": 5735.3
+    },
+    {
+      "regionId": "330127101000",
+      "name": "文昌镇",
+      "average": 8728.6
+    },
+    {
+      "regionId": "330127102000",
+      "name": "石林镇",
+      "average": 908.1
+    },
+    {
+      "regionId": "330127103000",
+      "name": "临岐镇",
+      "average": 17871.1
+    },
+    {
+      "regionId": "330127104000",
+      "name": "威坪镇",
+      "average": 35726.9
+    },
+    {
+      "regionId": "330127106000",
+      "name": "姜家镇",
+      "average": 15132.6
+    },
+    {
+      "regionId": "330127107000",
+      "name": "梓桐镇",
+      "average": 12492.0
+    },
+    {
+      "regionId": "330127108000",
+      "name": "汾口镇",
+      "average": 41477.8
+    },
+    {
+      "regionId": "330127109000",
+      "name": "中洲镇",
+      "average": 11980.6
+    },
+    {
+      "regionId": "330127110000",
+      "name": "大墅镇",
+      "average": 10952.2
+    },
+    {
+      "regionId": "330127111000",
+      "name": "枫树岭镇",
+      "average": 7989.2
+    },
+    {
+      "regionId": "330127200000",
+      "name": "里商乡",
+      "average": 1443.3
+    },
+    {
+      "regionId": "330127201000",
+      "name": "金峰乡",
+      "average": 1260.6
+    },
+    {
+      "regionId": "330127202000",
+      "name": "富文乡",
+      "average": 3972.2
+    },
+    {
+      "regionId": "330127203000",
+      "name": "左口乡",
+      "average": 9404.5
+    },
+    {
+      "regionId": "330127205000",
+      "name": "屏门乡",
+      "average": 2359.1
+    },
+    {
+      "regionId": "330127206000",
+      "name": "瑶山乡",
+      "average": 13314.1
+    },
+    {
+      "regionId": "330127208000",
+      "name": "王阜乡",
+      "average": 10505.0
+    },
+    {
+      "regionId": "330127210000",
+      "name": "宋村乡",
+      "average": 8119.3
+    },
+    {
+      "regionId": "330127211000",
+      "name": "鸠坑乡",
+      "average": 896.7
+    },
+    {
+      "regionId": "330127212000",
+      "name": "浪川乡",
+      "average": 15807.6
+    },
+    {
+      "regionId": "330127214000",
+      "name": "界首乡",
+      "average": 2342.1
+    },
+    {
+      "regionId": "330127216000",
+      "name": "安阳乡",
+      "average": 8633.0
+    },
+    {
+      "regionId": "341021108000",
+      "name": "杞梓里镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341021110000",
+      "name": "岔口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341021209000",
+      "name": "璜田乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341021210000",
+      "name": "长陔乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341021214000",
+      "name": "狮石乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341022210000",
+      "name": "璜尖乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341022211000",
+      "name": "白际乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 132.71159999999972,
+      "color": "#bdd7e7",
+      "label": "132.712 万m³"
+    },
+    {
+      "value": 2354.272,
+      "color": "#6baed6",
+      "label": "2354.272 万m³"
+    },
+    {
+      "value": 8660.1504,
+      "color": "#3182bd",
+      "label": "8660.150 万m³"
+    },
+    {
+      "value": 12416.312799999998,
+      "color": "#08519c",
+      "label": "12416.313 万m³"
+    },
+    {
+      "value": 38142.27799999999,
+      "color": "#042d60",
+      "label": "38142.278 万m³"
+    }
+  ]
+}

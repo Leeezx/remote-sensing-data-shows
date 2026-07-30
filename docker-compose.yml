@@ -101,7 +101,7 @@ services:
       IRRIGATION_8DAY_ROOT: /app/data/rasters/irrigation_8day
       IRRIGATION_ANNUAL_COG_ROOT: /app/data/rasters/irrigation_annual
       IRRIGATION_8DAY_COG_ROOT: /app/data/rasters/irrigation_8day
-      IRRIGATION_REGION_SERIES_PATH: /app/runtime-data/stats/irrigation_region_series.json
+      IRRIGATION_RUNTIME_STATS_ROOT: /app/runtime-data/stats/irrigation_runtime
       COUNTY_VECTOR_PATH: /app/data/vectors/irrigation/county/china_county.shp
       TOWNSHIP_CHUNK_ROOT: /app/data/vectors/irrigation/township_by_county
       CACHE_ROOT: /app/cache

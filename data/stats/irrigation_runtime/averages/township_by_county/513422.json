@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513422100000",
+      "name": "乔瓦镇",
+      "average": 316.1
+    },
+    {
+      "regionId": "513422101000",
+      "name": "瓦厂镇",
+      "average": 666.4
+    },
+    {
+      "regionId": "513422102000",
+      "name": "茶布朗镇",
+      "average": 115.4
+    },
+    {
+      "regionId": "513422201000",
+      "name": "博科乡",
+      "average": 525.2
+    },
+    {
+      "regionId": "513422202000",
+      "name": "宁朗乡",
+      "average": 375.6
+    },
+    {
+      "regionId": "513422203000",
+      "name": "依吉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513422204000",
+      "name": "俄亚纳西族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513422205000",
+      "name": "水洛乡",
+      "average": 409.3
+    },
+    {
+      "regionId": "513422206000",
+      "name": "牦牛坪乡",
+      "average": 310.9
+    },
+    {
+      "regionId": "513422207000",
+      "name": "屋脚蒙古族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513422208000",
+      "name": "项脚蒙古族乡",
+      "average": 679.0
+    },
+    {
+      "regionId": "513422209000",
+      "name": "李子坪乡",
+      "average": 130.2
+    },
+    {
+      "regionId": "513422210000",
+      "name": "列瓦乡",
+      "average": 565.7
+    },
+    {
+      "regionId": "513422211000",
+      "name": "芽祖乡",
+      "average": 1143.8
+    },
+    {
+      "regionId": "513422212000",
+      "name": "下麦地乡",
+      "average": 579.5
+    },
+    {
+      "regionId": "513422213000",
+      "name": "西秋乡",
+      "average": 1592.1
+    },
+    {
+      "regionId": "513422214000",
+      "name": "克尔乡",
+      "average": 268.3
+    },
+    {
+      "regionId": "513422215000",
+      "name": "白碉苗族乡",
+      "average": 1090.1
+    },
+    {
+      "regionId": "513422216000",
+      "name": "三桷桠乡",
+      "average": 736.2
+    },
+    {
+      "regionId": "513422217000",
+      "name": "倮波乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513422218000",
+      "name": "卡拉乡",
+      "average": 216.7
+    },
+    {
+      "regionId": "513422219000",
+      "name": "后所乡",
+      "average": 2135.7
+    },
+    {
+      "regionId": "513422220000",
+      "name": "沙湾乡",
+      "average": 143.2
+    },
+    {
+      "regionId": "513422222000",
+      "name": "固增苗族乡",
+      "average": 356.5
+    },
+    {
+      "regionId": "513422223000",
+      "name": "麦日乡",
+      "average": 254.9
+    },
+    {
+      "regionId": "513422224000",
+      "name": "东朗乡",
+      "average": 22.0
+    },
+    {
+      "regionId": "513422225000",
+      "name": "唐央乡",
+      "average": 72.8
+    },
+    {
+      "regionId": "513422226000",
+      "name": "博窝乡",
+      "average": 668.7
+    },
+    {
+      "regionId": "513422227000",
+      "name": "麦地龙乡",
+      "average": 77.1
+    },
+    {
+      "regionId": "530724201000",
+      "name": "拉伯乡",
+      "average": 4866.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 82.76839999999999,
+      "color": "#bdd7e7",
+      "label": "82.768 万m³"
+    },
+    {
+      "value": 264.4944,
+      "color": "#6baed6",
+      "label": "264.494 万m³"
+    },
+    {
+      "value": 442.2155999999999,
+      "color": "#3182bd",
+      "label": "442.216 万m³"
+    },
+    {
+      "value": 677.4756,
+      "color": "#08519c",
+      "label": "677.476 万m³"
+    },
+    {
+      "value": 3282.4679999999953,
+      "color": "#042d60",
+      "label": "3282.468 万m³"
+    }
+  ]
+}

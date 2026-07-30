@@ -1,0 +1,248 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "360424100000",
+      "name": "义宁镇",
+      "average": 4081.3
+    },
+    {
+      "regionId": "360424101000",
+      "name": "白岭镇",
+      "average": 57857.0
+    },
+    {
+      "regionId": "360424102000",
+      "name": "全丰镇",
+      "average": 29140.3
+    },
+    {
+      "regionId": "360424103000",
+      "name": "古市镇",
+      "average": 49923.0
+    },
+    {
+      "regionId": "360424104000",
+      "name": "大桥镇",
+      "average": 57041.2
+    },
+    {
+      "regionId": "360424105000",
+      "name": "渣津镇",
+      "average": 51518.8
+    },
+    {
+      "regionId": "360424106000",
+      "name": "马坳镇",
+      "average": 42224.1
+    },
+    {
+      "regionId": "360424107000",
+      "name": "杭口镇",
+      "average": 13653.5
+    },
+    {
+      "regionId": "360424108000",
+      "name": "港口镇",
+      "average": 12047.8
+    },
+    {
+      "regionId": "360424109000",
+      "name": "溪口镇",
+      "average": 13885.1
+    },
+    {
+      "regionId": "360424110000",
+      "name": "西港镇",
+      "average": 30994.1
+    },
+    {
+      "regionId": "360424111000",
+      "name": "山口镇",
+      "average": 30648.1
+    },
+    {
+      "regionId": "360424112000",
+      "name": "黄沙镇",
+      "average": 21993.7
+    },
+    {
+      "regionId": "360424113000",
+      "name": "黄港镇",
+      "average": 15891.9
+    },
+    {
+      "regionId": "360424114000",
+      "name": "何市镇",
+      "average": 31536.2
+    },
+    {
+      "regionId": "360424115000",
+      "name": "上奉镇",
+      "average": 33388.9
+    },
+    {
+      "regionId": "360424116000",
+      "name": "四都镇",
+      "average": 27425.3
+    },
+    {
+      "regionId": "360424117000",
+      "name": "太阳升镇",
+      "average": 40608.2
+    },
+    {
+      "regionId": "360424118000",
+      "name": "宁州镇",
+      "average": 21233.6
+    },
+    {
+      "regionId": "360424200000",
+      "name": "路口乡",
+      "average": 21899.4
+    },
+    {
+      "regionId": "360424201000",
+      "name": "黄龙乡",
+      "average": 26354.4
+    },
+    {
+      "regionId": "360424202000",
+      "name": "上衫乡",
+      "average": 15513.9
+    },
+    {
+      "regionId": "360424203000",
+      "name": "余段乡",
+      "average": 845.7
+    },
+    {
+      "regionId": "360424204000",
+      "name": "水源乡",
+      "average": 19814.1
+    },
+    {
+      "regionId": "360424205000",
+      "name": "石坳乡",
+      "average": 37252.2
+    },
+    {
+      "regionId": "360424206000",
+      "name": "东港乡",
+      "average": 14399.8
+    },
+    {
+      "regionId": "360424207000",
+      "name": "上杭乡",
+      "average": 14928.9
+    },
+    {
+      "regionId": "360424209000",
+      "name": "新湾乡",
+      "average": 5532.3
+    },
+    {
+      "regionId": "360424210000",
+      "name": "布甲乡",
+      "average": 603.8
+    },
+    {
+      "regionId": "360424211000",
+      "name": "漫江乡",
+      "average": 18730.0
+    },
+    {
+      "regionId": "360424212000",
+      "name": "复原乡",
+      "average": 2520.6
+    },
+    {
+      "regionId": "360424213000",
+      "name": "竹坪乡",
+      "average": 5756.3
+    },
+    {
+      "regionId": "360424214000",
+      "name": "征村乡",
+      "average": 19025.3
+    },
+    {
+      "regionId": "360424215000",
+      "name": "庙岭乡",
+      "average": 13352.2
+    },
+    {
+      "regionId": "360424216000",
+      "name": "黄坳乡",
+      "average": 16610.9
+    },
+    {
+      "regionId": "360424217000",
+      "name": "大椿乡",
+      "average": 9439.6
+    },
+    {
+      "regionId": "421222102000",
+      "name": "塘湖镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "421222503000",
+      "name": "黄袍林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "421223106000",
+      "name": "金塘镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "421223202000",
+      "name": "港口乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "421223203000",
+      "name": "高枧乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "430626105000",
+      "name": "龙门镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 3600.6044,
+      "color": "#bdd7e7",
+      "label": "3600.604 万m³"
+    },
+    {
+      "value": 14175.3908,
+      "color": "#6baed6",
+      "label": "14175.391 万m³"
+    },
+    {
+      "value": 20433.001999999997,
+      "color": "#3182bd",
+      "label": "20433.002 万m³"
+    },
+    {
+      "value": 31161.0668,
+      "color": "#08519c",
+      "label": "31161.067 万m³"
+    },
+    {
+      "value": 57188.043999999994,
+      "color": "#042d60",
+      "label": "57188.044 万m³"
+    }
+  ]
+}

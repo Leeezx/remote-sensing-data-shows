@@ -1,0 +1,58 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "632626100000",
+      "name": "玛查理镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632626101000",
+      "name": "花石峡镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632626200000",
+      "name": "黄河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632626201000",
+      "name": "扎陵湖乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

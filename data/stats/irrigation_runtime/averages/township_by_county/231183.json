@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150722101000",
+      "name": "红彦镇",
+      "average": 33382.4
+    },
+    {
+      "regionId": "150722103000",
+      "name": "哈达阳镇",
+      "average": 45858.0
+    },
+    {
+      "regionId": "150722108000",
+      "name": "腾克镇",
+      "average": 14868.5
+    },
+    {
+      "regionId": "231121100000",
+      "name": "嫩江镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "231121101000",
+      "name": "伊拉哈镇",
+      "average": 6440.8
+    },
+    {
+      "regionId": "231121102000",
+      "name": "双山镇",
+      "average": 455.2
+    },
+    {
+      "regionId": "231121103000",
+      "name": "多宝山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "231121104000",
+      "name": "海江镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "231121105000",
+      "name": "前进镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "231121106000",
+      "name": "长福镇",
+      "average": 2053.1
+    },
+    {
+      "regionId": "231121107000",
+      "name": "科洛镇",
+      "average": 3342.6
+    },
+    {
+      "regionId": "231121202000",
+      "name": "临江乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "231121206000",
+      "name": "联兴乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "231121207000",
+      "name": "白云乡",
+      "average": 3212.6
+    },
+    {
+      "regionId": "231121208000",
+      "name": "塔溪乡",
+      "average": 1152.5
+    },
+    {
+      "regionId": "231121210000",
+      "name": "霍龙门乡",
+      "average": 371.3
+    },
+    {
+      "regionId": "231121211000",
+      "name": "长江乡",
+      "average": 3.9
+    },
+    {
+      "regionId": "231121400000",
+      "name": "多宝山铜矿",
+      "average": 0.0
+    },
+    {
+      "regionId": "231121500000",
+      "name": "九三管理局局直",
+      "average": 935.6
+    },
+    {
+      "regionId": "231121501000",
+      "name": "鹤山农场",
+      "average": 7761.7
+    },
+    {
+      "regionId": "231121502000",
+      "name": "大西江农场",
+      "average": 4056.6
+    },
+    {
+      "regionId": "231121503000",
+      "name": "尖山农场",
+      "average": 14774.4
+    },
+    {
+      "regionId": "231121504000",
+      "name": "荣军农场",
+      "average": 8573.6
+    },
+    {
+      "regionId": "231121506000",
+      "name": "七星泡农场",
+      "average": 7684.4
+    },
+    {
+      "regionId": "231121507000",
+      "name": "嫩江农场",
+      "average": 7042.0
+    },
+    {
+      "regionId": "231121508000",
+      "name": "山河农场",
+      "average": 5646.9
+    },
+    {
+      "regionId": "231121509000",
+      "name": "嫩北农场",
+      "average": 6380.5
+    },
+    {
+      "regionId": "231121510000",
+      "name": "建边农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231121581000",
+      "name": "马铃薯原种繁殖场",
+      "average": 303.6
+    },
+    {
+      "regionId": "232701201000",
+      "name": "白桦镇",
+      "average": 7140.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

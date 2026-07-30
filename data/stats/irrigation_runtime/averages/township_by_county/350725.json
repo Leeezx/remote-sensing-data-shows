@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "331126203000",
+      "name": "安南乡",
+      "average": 2152.2
+    },
+    {
+      "regionId": "331126206000",
+      "name": "举水乡",
+      "average": 8800.4
+    },
+    {
+      "regionId": "350725001000",
+      "name": "熊山街道",
+      "average": 9170.5
+    },
+    {
+      "regionId": "350725101000",
+      "name": "东平镇",
+      "average": 50650.6
+    },
+    {
+      "regionId": "350725102000",
+      "name": "石屯镇",
+      "average": 67811.2
+    },
+    {
+      "regionId": "350725103000",
+      "name": "铁山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350725104000",
+      "name": "镇前镇",
+      "average": 6505.8
+    },
+    {
+      "regionId": "350725200000",
+      "name": "星溪乡",
+      "average": 69746.1
+    },
+    {
+      "regionId": "350725201000",
+      "name": "外屯乡",
+      "average": 810.1
+    },
+    {
+      "regionId": "350725202000",
+      "name": "杨源乡",
+      "average": 16859.4
+    },
+    {
+      "regionId": "350725203000",
+      "name": "澄源乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350725204000",
+      "name": "岭腰乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 268.95319999999987,
+      "color": "#bdd7e7",
+      "label": "268.953 万m³"
+    },
+    {
+      "value": 4085.1983999999998,
+      "color": "#6baed6",
+      "label": "4085.198 万m³"
+    },
+    {
+      "value": 9006.1756,
+      "color": "#3182bd",
+      "label": "9006.176 万m³"
+    },
+    {
+      "value": 39431.92159999997,
+      "color": "#08519c",
+      "label": "39431.922 万m³"
+    },
+    {
+      "value": 69320.422,
+      "color": "#042d60",
+      "label": "69320.422 万m³"
+    }
+  ]
+}

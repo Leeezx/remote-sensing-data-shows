@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "653131100000",
+      "name": "塔什库尔干镇",
+      "average": 264.7
+    },
+    {
+      "regionId": "653131101000",
+      "name": "塔吉克阿巴提镇",
+      "average": 663.7
+    },
+    {
+      "regionId": "653131200000",
+      "name": "塔什库尔干乡",
+      "average": 526.3
+    },
+    {
+      "regionId": "653131201000",
+      "name": "塔合曼乡",
+      "average": 104.7
+    },
+    {
+      "regionId": "653131202000",
+      "name": "科克亚尔柯尔克孜族乡",
+      "average": 83.2
+    },
+    {
+      "regionId": "653131203000",
+      "name": "提孜那甫乡",
+      "average": 1333.5
+    },
+    {
+      "regionId": "653131204000",
+      "name": "达布达尔乡",
+      "average": 678.2
+    },
+    {
+      "regionId": "653131205000",
+      "name": "马尔洋乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "653131206000",
+      "name": "瓦恰乡",
+      "average": 507.9
+    },
+    {
+      "regionId": "653131207000",
+      "name": "班迪尔乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "653131208000",
+      "name": "库科西鲁格乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "653131210000",
+      "name": "大同乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "653131400000",
+      "name": "麻扎尔种羊场",
+      "average": 442.8
+    },
+    {
+      "regionId": "653131401000",
+      "name": "巴扎达什牧林场",
+      "average": 45.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

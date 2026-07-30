@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500110102000",
+      "name": "青年镇",
+      "average": 2255.4
+    },
+    {
+      "regionId": "500110103000",
+      "name": "关坝镇",
+      "average": 1312.0
+    },
+    {
+      "regionId": "500110107000",
+      "name": "黑山镇",
+      "average": 2191.7
+    },
+    {
+      "regionId": "500110110000",
+      "name": "赶水镇",
+      "average": 4008.2
+    },
+    {
+      "regionId": "500119110000",
+      "name": "金山镇",
+      "average": 1696.6
+    },
+    {
+      "regionId": "500119111000",
+      "name": "头渡镇",
+      "average": 544.9
+    },
+    {
+      "regionId": "520322100000",
+      "name": "娄山关镇",
+      "average": 4780.7
+    },
+    {
+      "regionId": "520322101000",
+      "name": "楚米镇",
+      "average": 3956.8
+    },
+    {
+      "regionId": "520322102000",
+      "name": "新站镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520322103000",
+      "name": "松坎镇",
+      "average": 5644.7
+    },
+    {
+      "regionId": "520322104000",
+      "name": "高桥镇",
+      "average": 2507.9
+    },
+    {
+      "regionId": "520322105000",
+      "name": "水坝塘镇",
+      "average": 9748.7
+    },
+    {
+      "regionId": "520322106000",
+      "name": "官仓镇",
+      "average": 8564.7
+    },
+    {
+      "regionId": "520322107000",
+      "name": "花秋镇",
+      "average": 6311.4
+    },
+    {
+      "regionId": "520322108000",
+      "name": "羊磴镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520322109000",
+      "name": "九坝镇",
+      "average": 7645.5
+    },
+    {
+      "regionId": "520322110000",
+      "name": "大河镇",
+      "average": 11921.9
+    },
+    {
+      "regionId": "520322111000",
+      "name": "夜郎镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520322112000",
+      "name": "木瓜镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520322113000",
+      "name": "坡渡镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520322114000",
+      "name": "燎原镇",
+      "average": 7642.0
+    },
+    {
+      "regionId": "520322115000",
+      "name": "狮溪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520322116000",
+      "name": "茅石镇",
+      "average": 655.8
+    },
+    {
+      "regionId": "520322117000",
+      "name": "尧龙山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520322201000",
+      "name": "风水乡",
+      "average": 1845.5
+    },
+    {
+      "regionId": "520322202000",
+      "name": "容光乡",
+      "average": 2555.1
+    },
+    {
+      "regionId": "520322203000",
+      "name": "小水乡",
+      "average": 5517.4
+    },
+    {
+      "regionId": "520322205000",
+      "name": "黄莲乡",
+      "average": 1964.7
+    },
+    {
+      "regionId": "520322206000",
+      "name": "芭蕉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520322207000",
+      "name": "马鬃苗族乡",
+      "average": 570.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

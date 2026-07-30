@@ -1,0 +1,63 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "530126001000",
+      "name": "鹿阜街道",
+      "average": 88844.0
+    },
+    {
+      "regionId": "530126105000",
+      "name": "西街口镇",
+      "average": 6000.5
+    },
+    {
+      "regionId": "530126106000",
+      "name": "长湖镇",
+      "average": 5457.5
+    },
+    {
+      "regionId": "530126107000",
+      "name": "圭山镇",
+      "average": 10549.3
+    },
+    {
+      "regionId": "530126201000",
+      "name": "大可乡",
+      "average": 9622.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 5500.94,
+      "color": "#eff3ff",
+      "label": "5500.940 万m³"
+    },
+    {
+      "value": 5917.964,
+      "color": "#bdd7e7",
+      "label": "5917.964 万m³"
+    },
+    {
+      "value": 8231.7752,
+      "color": "#6baed6",
+      "label": "8231.775 万m³"
+    },
+    {
+      "value": 9978.5144,
+      "color": "#3182bd",
+      "label": "9978.514 万m³"
+    },
+    {
+      "value": 22450.094399999973,
+      "color": "#08519c",
+      "label": "22450.094 万m³"
+    },
+    {
+      "value": 82580.424,
+      "color": "#042d60",
+      "label": "82580.424 万m³"
+    }
+  ]
+}

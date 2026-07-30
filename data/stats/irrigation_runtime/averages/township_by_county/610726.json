@@ -1,0 +1,193 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510812101000",
+      "name": "大滩镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510812200000",
+      "name": "陈家乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510812203000",
+      "name": "东溪河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510812204000",
+      "name": "花石乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510812208000",
+      "name": "转斗乡",
+      "average": 4254.9
+    },
+    {
+      "regionId": "510812211000",
+      "name": "两河口乡",
+      "average": 647.3
+    },
+    {
+      "regionId": "510812217000",
+      "name": "马家坝乡",
+      "average": 50.7
+    },
+    {
+      "regionId": "510821203000",
+      "name": "万家乡",
+      "average": 93.7
+    },
+    {
+      "regionId": "610726100000",
+      "name": "汉源镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610726101000",
+      "name": "高寨子镇",
+      "average": 16151.8
+    },
+    {
+      "regionId": "610726102000",
+      "name": "大安镇",
+      "average": 29261.8
+    },
+    {
+      "regionId": "610726103000",
+      "name": "代家坝镇",
+      "average": 1312.3
+    },
+    {
+      "regionId": "610726104000",
+      "name": "阳平关镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610726105000",
+      "name": "燕子砭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610726106000",
+      "name": "广坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610726107000",
+      "name": "青木川镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610726108000",
+      "name": "毛坝河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610726109000",
+      "name": "铁锁关镇",
+      "average": 8578.1
+    },
+    {
+      "regionId": "610726110000",
+      "name": "胡家坝镇",
+      "average": 5318.3
+    },
+    {
+      "regionId": "610726111000",
+      "name": "巴山镇",
+      "average": 25.8
+    },
+    {
+      "regionId": "610726200000",
+      "name": "舒家坝乡",
+      "average": 8559.4
+    },
+    {
+      "regionId": "610726201000",
+      "name": "庙坝乡",
+      "average": 4206.6
+    },
+    {
+      "regionId": "610726204000",
+      "name": "巩家河乡",
+      "average": 1903.6
+    },
+    {
+      "regionId": "610726205000",
+      "name": "东皇沟乡",
+      "average": 1258.1
+    },
+    {
+      "regionId": "610726207000",
+      "name": "太阳岭乡",
+      "average": 3977.6
+    },
+    {
+      "regionId": "610726208000",
+      "name": "苍社乡",
+      "average": 28.8
+    },
+    {
+      "regionId": "610726209000",
+      "name": "巨亭乡",
+      "average": 9810.2
+    },
+    {
+      "regionId": "610726210000",
+      "name": "安乐河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610726211000",
+      "name": "禅家岩乡",
+      "average": 334.7
+    },
+    {
+      "regionId": "610726213000",
+      "name": "二郎坝乡",
+      "average": 3810.7
+    },
+    {
+      "regionId": "621202237000",
+      "name": "裕河乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

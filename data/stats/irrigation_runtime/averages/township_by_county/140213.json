@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140213001000",
+      "name": "南关街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140213002000",
+      "name": "北关街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140213003000",
+      "name": "东街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140213004000",
+      "name": "西街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140213005000",
+      "name": "南街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140213006000",
+      "name": "北街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140213007000",
+      "name": "新建南路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140213008000",
+      "name": "新建北路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140213009000",
+      "name": "大庆路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140213010000",
+      "name": "新华街街道",
+      "average": 55.1
+    },
+    {
+      "regionId": "140213011000",
+      "name": "向阳里街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140213012000",
+      "name": "振华南街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140213013000",
+      "name": "开源街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140213201000",
+      "name": "新旺乡",
+      "average": 17.0
+    },
+    {
+      "regionId": "140213202000",
+      "name": "水泊寺乡",
+      "average": 4360.9
+    },
+    {
+      "regionId": "140213203000",
+      "name": "马军营乡",
+      "average": 1273.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

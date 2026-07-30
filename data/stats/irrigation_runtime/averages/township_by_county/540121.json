@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540121100000",
+      "name": "甘丹曲果镇",
+      "average": 3213.6
+    },
+    {
+      "regionId": "540121200000",
+      "name": "春堆乡",
+      "average": 1083.3
+    },
+    {
+      "regionId": "540121201000",
+      "name": "松盘乡",
+      "average": 796.5
+    },
+    {
+      "regionId": "540121202000",
+      "name": "强嘎乡",
+      "average": 2348.9
+    },
+    {
+      "regionId": "540121203000",
+      "name": "卡孜乡",
+      "average": 1331.1
+    },
+    {
+      "regionId": "540121204000",
+      "name": "边交林乡",
+      "average": 1637.2
+    },
+    {
+      "regionId": "540121205000",
+      "name": "江热夏乡",
+      "average": 2252.6
+    },
+    {
+      "regionId": "540121206000",
+      "name": "阿朗乡",
+      "average": 1126.5
+    },
+    {
+      "regionId": "540121207000",
+      "name": "唐古乡",
+      "average": 791.8
+    },
+    {
+      "regionId": "540121208000",
+      "name": "旁多乡",
+      "average": 343.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 424.276,
+      "color": "#eff3ff",
+      "label": "424.276 万m³"
+    },
+    {
+      "value": 796.0676,
+      "color": "#bdd7e7",
+      "label": "796.068 万m³"
+    },
+    {
+      "value": 1110.7752,
+      "color": "#6baed6",
+      "label": "1110.775 万m³"
+    },
+    {
+      "value": 1442.5203999999999,
+      "color": "#3182bd",
+      "label": "1442.520 万m³"
+    },
+    {
+      "value": 2261.4595999999997,
+      "color": "#08519c",
+      "label": "2261.460 万m³"
+    },
+    {
+      "value": 3057.954,
+      "color": "#042d60",
+      "label": "3057.954 万m³"
+    }
+  ]
+}

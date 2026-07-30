@@ -1,0 +1,273 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513431100000",
+      "name": "新城镇",
+      "average": 3572.9
+    },
+    {
+      "regionId": "513431200000",
+      "name": "城北乡",
+      "average": 1006.7
+    },
+    {
+      "regionId": "513431201000",
+      "name": "树坪乡",
+      "average": 41.9
+    },
+    {
+      "regionId": "513431202000",
+      "name": "谷曲乡",
+      "average": 1445.3
+    },
+    {
+      "regionId": "513431203000",
+      "name": "达洛乡",
+      "average": 301.0
+    },
+    {
+      "regionId": "513431204000",
+      "name": "龙恩乡",
+      "average": 104.4
+    },
+    {
+      "regionId": "513431205000",
+      "name": "美甘乡",
+      "average": 44.8
+    },
+    {
+      "regionId": "513431206000",
+      "name": "四开乡",
+      "average": 1908.6
+    },
+    {
+      "regionId": "513431207000",
+      "name": "大坝乡",
+      "average": 157.5
+    },
+    {
+      "regionId": "513431208000",
+      "name": "地莫乡",
+      "average": 1231.4
+    },
+    {
+      "regionId": "513431209000",
+      "name": "柳且乡",
+      "average": 1127.5
+    },
+    {
+      "regionId": "513431210000",
+      "name": "博洛乡",
+      "average": 58.5
+    },
+    {
+      "regionId": "513431211000",
+      "name": "库莫乡",
+      "average": 4.5
+    },
+    {
+      "regionId": "513431212000",
+      "name": "解放乡",
+      "average": 28.6
+    },
+    {
+      "regionId": "513431213000",
+      "name": "三岗乡",
+      "average": 47.7
+    },
+    {
+      "regionId": "513431214000",
+      "name": "洒拉地坡乡",
+      "average": 12.3
+    },
+    {
+      "regionId": "513431215000",
+      "name": "三岔河乡",
+      "average": 248.0
+    },
+    {
+      "regionId": "513431216000",
+      "name": "尼地乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513431217000",
+      "name": "碗厂乡",
+      "average": 34.3
+    },
+    {
+      "regionId": "513431218000",
+      "name": "普诗乡",
+      "average": 384.4
+    },
+    {
+      "regionId": "513431219000",
+      "name": "玛增依乌乡",
+      "average": 861.5
+    },
+    {
+      "regionId": "513431220000",
+      "name": "塘且乡",
+      "average": 67.3
+    },
+    {
+      "regionId": "513431221000",
+      "name": "久特洛古乡",
+      "average": 36.0
+    },
+    {
+      "regionId": "513431222000",
+      "name": "齿可波西乡",
+      "average": 620.2
+    },
+    {
+      "regionId": "513431223000",
+      "name": "特口甲谷乡",
+      "average": 75.5
+    },
+    {
+      "regionId": "513431224000",
+      "name": "竹核乡",
+      "average": 902.0
+    },
+    {
+      "regionId": "513431225000",
+      "name": "阿并洛古乡",
+      "average": 516.1
+    },
+    {
+      "regionId": "513431226000",
+      "name": "格吾乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513431227000",
+      "name": "特布洛乡",
+      "average": 877.1
+    },
+    {
+      "regionId": "513431228000",
+      "name": "庆恒乡",
+      "average": 345.0
+    },
+    {
+      "regionId": "513431229000",
+      "name": "拉一木乡",
+      "average": 321.9
+    },
+    {
+      "regionId": "513431230000",
+      "name": "色底乡",
+      "average": 4.8
+    },
+    {
+      "regionId": "513431231000",
+      "name": "补约乡",
+      "average": 11.5
+    },
+    {
+      "regionId": "513431232000",
+      "name": "比尔乡",
+      "average": 360.6
+    },
+    {
+      "regionId": "513431233000",
+      "name": "库依乡",
+      "average": 96.4
+    },
+    {
+      "regionId": "513431234000",
+      "name": "金曲乡",
+      "average": 18.4
+    },
+    {
+      "regionId": "513431235000",
+      "name": "宜牧地乡",
+      "average": 3.2
+    },
+    {
+      "regionId": "513431236000",
+      "name": "波洛乡",
+      "average": 45.1
+    },
+    {
+      "regionId": "513431237000",
+      "name": "央摩租乡",
+      "average": 131.0
+    },
+    {
+      "regionId": "513431238000",
+      "name": "则普乡",
+      "average": 91.8
+    },
+    {
+      "regionId": "513431239000",
+      "name": "永乐乡",
+      "average": 10.7
+    },
+    {
+      "regionId": "513431240000",
+      "name": "且莫乡",
+      "average": 12.9
+    },
+    {
+      "regionId": "513431241000",
+      "name": "甘多洛古乡",
+      "average": 52.4
+    },
+    {
+      "regionId": "513431242000",
+      "name": "支尔莫乡",
+      "average": 20.7
+    },
+    {
+      "regionId": "513431243000",
+      "name": "龙沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513431244000",
+      "name": "日哈乡",
+      "average": 8.3
+    },
+    {
+      "regionId": "513431245000",
+      "name": "哈甘乡",
+      "average": 193.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 12.751199999999999,
+      "color": "#bdd7e7",
+      "label": "12.751 万m³"
+    },
+    {
+      "value": 46.6184,
+      "color": "#6baed6",
+      "label": "46.618 万m³"
+    },
+    {
+      "value": 142.024,
+      "color": "#3182bd",
+      "label": "142.024 万m³"
+    },
+    {
+      "value": 541.9167999999997,
+      "color": "#08519c",
+      "label": "541.917 万m³"
+    },
+    {
+      "value": 2041.743999999997,
+      "color": "#042d60",
+      "label": "2041.744 万m³"
+    }
+  ]
+}

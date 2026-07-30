@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230109002000",
+      "name": "太阳岛街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230109003000",
+      "name": "松浦街道",
+      "average": 3973.0
+    },
+    {
+      "regionId": "230109004000",
+      "name": "万宝街道",
+      "average": 10103.1
+    },
+    {
+      "regionId": "230109005000",
+      "name": "松北街道",
+      "average": 276.2
+    },
+    {
+      "regionId": "230109101000",
+      "name": "对青山镇",
+      "average": 8693.4
+    },
+    {
+      "regionId": "230109102000",
+      "name": "乐业镇",
+      "average": 2138.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 27.62,
+      "color": "#eff3ff",
+      "label": "27.620 万m³"
+    },
+    {
+      "value": 387.9080000000001,
+      "color": "#bdd7e7",
+      "label": "387.908 万m³"
+    },
+    {
+      "value": 2174.7,
+      "color": "#6baed6",
+      "label": "2174.700 万m³"
+    },
+    {
+      "value": 3936.3,
+      "color": "#3182bd",
+      "label": "3936.300 万m³"
+    },
+    {
+      "value": 8410.175999999998,
+      "color": "#08519c",
+      "label": "8410.176 万m³"
+    },
+    {
+      "value": 9962.130000000001,
+      "color": "#042d60",
+      "label": "9962.130 万m³"
+    }
+  ]
+}

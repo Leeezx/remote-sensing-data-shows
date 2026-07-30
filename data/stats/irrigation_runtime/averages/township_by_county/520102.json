@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "520102200000",
+      "name": "后巢乡",
+      "average": 67.0
+    },
+    {
+      "regionId": "520102201000",
+      "name": "云关乡",
+      "average": 2411.0
+    },
+    {
+      "regionId": "520102202000",
+      "name": "小碧布依族苗族乡",
+      "average": 21512.5
+    },
+    {
+      "regionId": "520102203000",
+      "name": "永乐乡",
+      "average": 18657.0
+    },
+    {
+      "regionId": "520102400000",
+      "name": "新华社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520102401000",
+      "name": "西湖社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520102402000",
+      "name": "水口寺社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520102403000",
+      "name": "大南社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520102404000",
+      "name": "中南社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520102405000",
+      "name": "市府社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520102406000",
+      "name": "河滨社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520102407000",
+      "name": "遵义社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520102408000",
+      "name": "兴关社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520102409000",
+      "name": "沙冲社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520102410000",
+      "name": "沙南社区服务中心",
+      "average": 12.7
+    },
+    {
+      "regionId": "520102411000",
+      "name": "太慈社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520102412000",
+      "name": "花果园社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520102413000",
+      "name": "油榨社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520102414000",
+      "name": "中曹司社区服务中心",
+      "average": 163.2
+    },
+    {
+      "regionId": "520102415000",
+      "name": "二戈寨社区服务中心",
+      "average": 113.5
+    },
+    {
+      "regionId": "520102416000",
+      "name": "见龙社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520102417000",
+      "name": "龙洞社区服务中心",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

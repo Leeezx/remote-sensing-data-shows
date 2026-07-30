@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350206001000",
+      "name": "湖里街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350206002000",
+      "name": "殿前街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350206003000",
+      "name": "禾山街道",
+      "average": 1428.7
+    },
+    {
+      "regionId": "350206004000",
+      "name": "江头街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350206005000",
+      "name": "金山街道",
+      "average": 853.2
+    },
+    {
+      "regionId": "350206405000",
+      "name": "火炬高技术开发区",
+      "average": 0.0
+    },
+    {
+      "regionId": "350206406000",
+      "name": "象屿保税区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

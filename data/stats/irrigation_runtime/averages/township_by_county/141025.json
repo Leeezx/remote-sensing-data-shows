@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "141025100000",
+      "name": "岳阳镇",
+      "average": 3178.9
+    },
+    {
+      "regionId": "141025101000",
+      "name": "北平镇",
+      "average": 469.0
+    },
+    {
+      "regionId": "141025102000",
+      "name": "古阳镇",
+      "average": 528.3
+    },
+    {
+      "regionId": "141025103000",
+      "name": "旧县镇",
+      "average": 111.2
+    },
+    {
+      "regionId": "141025200000",
+      "name": "石壁乡",
+      "average": 1051.1
+    },
+    {
+      "regionId": "141025201000",
+      "name": "永乐乡",
+      "average": 682.7
+    },
+    {
+      "regionId": "141025202000",
+      "name": "南垣乡",
+      "average": 649.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 154.136,
+      "color": "#eff3ff",
+      "label": "154.136 万m³"
+    },
+    {
+      "value": 485.1296,
+      "color": "#bdd7e7",
+      "label": "485.130 万m³"
+    },
+    {
+      "value": 579.8584,
+      "color": "#6baed6",
+      "label": "579.858 万m³"
+    },
+    {
+      "value": 668.7928,
+      "color": "#3182bd",
+      "label": "668.793 万m³"
+    },
+    {
+      "value": 950.8951999999998,
+      "color": "#08519c",
+      "label": "950.895 万m³"
+    },
+    {
+      "value": 2923.564,
+      "color": "#042d60",
+      "label": "2923.564 万m³"
+    }
+  ]
+}

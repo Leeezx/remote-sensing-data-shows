@@ -1,0 +1,133 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "211402001000",
+      "name": "连山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211402002000",
+      "name": "站前街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211402003000",
+      "name": "渤海街道",
+      "average": 31.4
+    },
+    {
+      "regionId": "211402004000",
+      "name": "兴工街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211402005000",
+      "name": "石油街道",
+      "average": 40.0
+    },
+    {
+      "regionId": "211402006000",
+      "name": "化工街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211402007000",
+      "name": "化机街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211402008000",
+      "name": "水泥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211402011000",
+      "name": "锦郊街道",
+      "average": 571.0
+    },
+    {
+      "regionId": "211402104000",
+      "name": "钢屯镇",
+      "average": 3601.7
+    },
+    {
+      "regionId": "211402105000",
+      "name": "寺儿堡镇",
+      "average": 3284.9
+    },
+    {
+      "regionId": "211402106000",
+      "name": "新台门蒙古族镇",
+      "average": 3372.0
+    },
+    {
+      "regionId": "211402201000",
+      "name": "沙河营乡",
+      "average": 1471.6
+    },
+    {
+      "regionId": "211402202000",
+      "name": "孤竹营子乡",
+      "average": 1294.0
+    },
+    {
+      "regionId": "211402203000",
+      "name": "白马石乡",
+      "average": 871.6
+    },
+    {
+      "regionId": "211402205000",
+      "name": "山神庙子乡",
+      "average": 428.1
+    },
+    {
+      "regionId": "211402206000",
+      "name": "塔山乡",
+      "average": 4973.4
+    },
+    {
+      "regionId": "211402210000",
+      "name": "杨郊乡",
+      "average": 377.0
+    },
+    {
+      "regionId": "211402400000",
+      "name": "杨家杖子经济开发区",
+      "average": 43.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

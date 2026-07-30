@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "430529201000",
+      "name": "长安营乡",
+      "average": 6565.0
+    },
+    {
+      "regionId": "431230103000",
+      "name": "临口镇",
+      "average": 11417.7
+    },
+    {
+      "regionId": "431230211000",
+      "name": "下乡乡",
+      "average": 6139.8
+    },
+    {
+      "regionId": "450328100000",
+      "name": "龙胜镇",
+      "average": 5635.6
+    },
+    {
+      "regionId": "450328101000",
+      "name": "瓢里镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "450328102000",
+      "name": "三门镇",
+      "average": 2915.6
+    },
+    {
+      "regionId": "450328200000",
+      "name": "和平乡",
+      "average": 2419.4
+    },
+    {
+      "regionId": "450328201000",
+      "name": "泗水乡",
+      "average": 1830.2
+    },
+    {
+      "regionId": "450328202000",
+      "name": "江底乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "450328203000",
+      "name": "马堤乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "450328204000",
+      "name": "伟江乡",
+      "average": 378.0
+    },
+    {
+      "regionId": "450328205000",
+      "name": "平等乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "450328206000",
+      "name": "乐江乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

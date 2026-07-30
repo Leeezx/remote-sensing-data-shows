@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "522725100000",
+      "name": "雍阳街道",
+      "average": 12769.0
+    },
+    {
+      "regionId": "522725101000",
+      "name": "平定营镇",
+      "average": 7245.8
+    },
+    {
+      "regionId": "522725102000",
+      "name": "草塘镇",
+      "average": 9284.9
+    },
+    {
+      "regionId": "522725103000",
+      "name": "中坪镇",
+      "average": 17991.4
+    },
+    {
+      "regionId": "522725104000",
+      "name": "建中镇",
+      "average": 7380.4
+    },
+    {
+      "regionId": "522725105000",
+      "name": "永和镇",
+      "average": 9642.5
+    },
+    {
+      "regionId": "522725106000",
+      "name": "珠藏镇",
+      "average": 3633.9
+    },
+    {
+      "regionId": "522725107000",
+      "name": "玉山镇",
+      "average": 9241.5
+    },
+    {
+      "regionId": "522725108000",
+      "name": "天文镇",
+      "average": 6188.9
+    },
+    {
+      "regionId": "522725200000",
+      "name": "玉华乡",
+      "average": 5118.3
+    },
+    {
+      "regionId": "522725201000",
+      "name": "银盏乡",
+      "average": 7706.3
+    },
+    {
+      "regionId": "522725202000",
+      "name": "松坪乡",
+      "average": 11191.2
+    },
+    {
+      "regionId": "522725203000",
+      "name": "小河山乡",
+      "average": 5778.6
+    },
+    {
+      "regionId": "522725204000",
+      "name": "白沙乡",
+      "average": 13917.5
+    },
+    {
+      "regionId": "522725205000",
+      "name": "岚关乡",
+      "average": 6205.9
+    },
+    {
+      "regionId": "522725206000",
+      "name": "老坟嘴乡",
+      "average": 6478.3
+    },
+    {
+      "regionId": "522725207000",
+      "name": "高水乡",
+      "average": 4779.1
+    },
+    {
+      "regionId": "522725208000",
+      "name": "木引槽乡",
+      "average": 2328.9
+    },
+    {
+      "regionId": "522725209000",
+      "name": "铜锣乡",
+      "average": 3396.6
+    },
+    {
+      "regionId": "522725211000",
+      "name": "鱼河乡",
+      "average": 8544.8
+    },
+    {
+      "regionId": "522725212000",
+      "name": "龙塘乡",
+      "average": 3052.2
+    },
+    {
+      "regionId": "522725213000",
+      "name": "木老坪乡",
+      "average": 4755.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 2632.686,
+      "color": "#eff3ff",
+      "label": "2632.686 万m³"
+    },
+    {
+      "value": 4765.8932,
+      "color": "#bdd7e7",
+      "label": "4765.893 万m³"
+    },
+    {
+      "value": 6197.128,
+      "color": "#6baed6",
+      "label": "6197.128 万m³"
+    },
+    {
+      "value": 7548.5644,
+      "color": "#3182bd",
+      "label": "7548.564 万m³"
+    },
+    {
+      "value": 9480.8648,
+      "color": "#08519c",
+      "label": "9480.865 万m³"
+    },
+    {
+      "value": 16280.361999999994,
+      "color": "#042d60",
+      "label": "16280.362 万m³"
+    }
+  ]
+}

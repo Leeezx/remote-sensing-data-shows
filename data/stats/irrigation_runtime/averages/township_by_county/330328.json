@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "330328100000",
+      "name": "大峃镇",
+      "average": 18444.9
+    },
+    {
+      "regionId": "330328101000",
+      "name": "百丈漈镇",
+      "average": 7384.5
+    },
+    {
+      "regionId": "330328102000",
+      "name": "南田镇",
+      "average": 20737.3
+    },
+    {
+      "regionId": "330328103000",
+      "name": "西坑畲族镇",
+      "average": 7009.4
+    },
+    {
+      "regionId": "330328104000",
+      "name": "黄坦镇",
+      "average": 18560.8
+    },
+    {
+      "regionId": "330328105000",
+      "name": "珊溪镇",
+      "average": 7916.0
+    },
+    {
+      "regionId": "330328106000",
+      "name": "巨屿镇",
+      "average": 3336.4
+    },
+    {
+      "regionId": "330328107000",
+      "name": "玉壶镇",
+      "average": 6686.7
+    },
+    {
+      "regionId": "330328108000",
+      "name": "峃口镇",
+      "average": 4556.3
+    },
+    {
+      "regionId": "330328217000",
+      "name": "周山畲族乡",
+      "average": 532.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 1037.53,
+      "color": "#eff3ff",
+      "label": "1037.530 万m³"
+    },
+    {
+      "value": 4444.0692,
+      "color": "#bdd7e7",
+      "label": "4444.069 万m³"
+    },
+    {
+      "value": 6891.937199999999,
+      "color": "#6baed6",
+      "label": "6891.937 万m³"
+    },
+    {
+      "value": 7577.966,
+      "color": "#3182bd",
+      "label": "7577.966 万m³"
+    },
+    {
+      "value": 18455.5628,
+      "color": "#08519c",
+      "label": "18455.563 万m³"
+    },
+    {
+      "value": 20345.53,
+      "color": "#042d60",
+      "label": "20345.530 万m³"
+    }
+  ]
+}

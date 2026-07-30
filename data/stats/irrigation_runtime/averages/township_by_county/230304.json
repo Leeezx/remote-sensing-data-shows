@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230304001000",
+      "name": "东兴街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230304002000",
+      "name": "矿里街道",
+      "average": 133.9
+    },
+    {
+      "regionId": "230304003000",
+      "name": "洗煤街道",
+      "average": 138.2
+    },
+    {
+      "regionId": "230304004000",
+      "name": "大通沟街道",
+      "average": 387.1
+    },
+    {
+      "regionId": "230304200000",
+      "name": "滴道河乡",
+      "average": 2113.1
+    },
+    {
+      "regionId": "230304201000",
+      "name": "兰岭乡",
+      "average": 6944.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 13.39,
+      "color": "#eff3ff",
+      "label": "13.390 万m³"
+    },
+    {
+      "value": 134.15800000000002,
+      "color": "#bdd7e7",
+      "label": "134.158 万m³"
+    },
+    {
+      "value": 143.178,
+      "color": "#6baed6",
+      "label": "143.178 万m³"
+    },
+    {
+      "value": 382.122,
+      "color": "#3182bd",
+      "label": "382.122 万m³"
+    },
+    {
+      "value": 2009.539999999999,
+      "color": "#08519c",
+      "label": "2009.540 万m³"
+    },
+    {
+      "value": 6461.180000000002,
+      "color": "#042d60",
+      "label": "6461.180 万m³"
+    }
+  ]
+}

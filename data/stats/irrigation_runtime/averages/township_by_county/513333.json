@@ -1,0 +1,138 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513333100000",
+      "name": "色柯镇",
+      "average": 26.1
+    },
+    {
+      "regionId": "513333101000",
+      "name": "翁达镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513333200000",
+      "name": "泥朵乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513333201000",
+      "name": "克戈乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513333202000",
+      "name": "然充乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513333203000",
+      "name": "康勒乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513333204000",
+      "name": "大章乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513333205000",
+      "name": "大则乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513333206000",
+      "name": "亚龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513333207000",
+      "name": "塔子乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513333208000",
+      "name": "年龙乡",
+      "average": 14.9
+    },
+    {
+      "regionId": "513333209000",
+      "name": "洛若镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513333210000",
+      "name": "霍西乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513333211000",
+      "name": "旭日乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513333212000",
+      "name": "杨各乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513333213000",
+      "name": "甲学乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513333214000",
+      "name": "歌乐沱乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632622202000",
+      "name": "吉卡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632622203000",
+      "name": "达卡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632624205000",
+      "name": "下红科乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

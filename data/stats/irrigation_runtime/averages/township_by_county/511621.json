@@ -1,0 +1,253 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511621100000",
+      "name": "九龙镇",
+      "average": 18976.9
+    },
+    {
+      "regionId": "511621101000",
+      "name": "花园镇",
+      "average": 2965.8
+    },
+    {
+      "regionId": "511621102000",
+      "name": "坪滩镇",
+      "average": 3816.7
+    },
+    {
+      "regionId": "511621103000",
+      "name": "龙孔镇",
+      "average": 3795.6
+    },
+    {
+      "regionId": "511621104000",
+      "name": "镇裕镇",
+      "average": 108.2
+    },
+    {
+      "regionId": "511621105000",
+      "name": "白庙镇",
+      "average": 8413.6
+    },
+    {
+      "regionId": "511621106000",
+      "name": "酉溪镇",
+      "average": 2861.2
+    },
+    {
+      "regionId": "511621107000",
+      "name": "同兴镇",
+      "average": 1070.8
+    },
+    {
+      "regionId": "511621108000",
+      "name": "兴隆镇",
+      "average": 1473.6
+    },
+    {
+      "regionId": "511621109000",
+      "name": "秦溪镇",
+      "average": 1550.0
+    },
+    {
+      "regionId": "511621110000",
+      "name": "顾县镇",
+      "average": 10065.4
+    },
+    {
+      "regionId": "511621111000",
+      "name": "苟角镇",
+      "average": 9998.4
+    },
+    {
+      "regionId": "511621112000",
+      "name": "天平镇",
+      "average": 9486.6
+    },
+    {
+      "regionId": "511621113000",
+      "name": "石垭镇",
+      "average": 9583.1
+    },
+    {
+      "regionId": "511621114000",
+      "name": "乔家镇",
+      "average": 9135.6
+    },
+    {
+      "regionId": "511621115000",
+      "name": "罗渡镇",
+      "average": 2920.3
+    },
+    {
+      "regionId": "511621116000",
+      "name": "裕民镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511621117000",
+      "name": "中和镇",
+      "average": 3263.7
+    },
+    {
+      "regionId": "511621118000",
+      "name": "新场镇",
+      "average": 6600.9
+    },
+    {
+      "regionId": "511621119000",
+      "name": "普安镇",
+      "average": 6218.9
+    },
+    {
+      "regionId": "511621120000",
+      "name": "赛龙镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511621121000",
+      "name": "临溪镇",
+      "average": 3181.1
+    },
+    {
+      "regionId": "511621200000",
+      "name": "朝阳乡",
+      "average": 3929.1
+    },
+    {
+      "regionId": "511621201000",
+      "name": "北城乡",
+      "average": 1898.1
+    },
+    {
+      "regionId": "511621202000",
+      "name": "镇龙乡",
+      "average": 2200.1
+    },
+    {
+      "regionId": "511621203000",
+      "name": "粽粑乡",
+      "average": 5321.7
+    },
+    {
+      "regionId": "511621205000",
+      "name": "排楼乡",
+      "average": 3310.6
+    },
+    {
+      "regionId": "511621206000",
+      "name": "西板乡",
+      "average": 1832.2
+    },
+    {
+      "regionId": "511621207000",
+      "name": "嘉陵乡",
+      "average": 775.1
+    },
+    {
+      "regionId": "511621208000",
+      "name": "石鼓乡",
+      "average": 405.4
+    },
+    {
+      "regionId": "511621209000",
+      "name": "平安乡",
+      "average": 994.7
+    },
+    {
+      "regionId": "511621210000",
+      "name": "恐龙乡",
+      "average": 1533.2
+    },
+    {
+      "regionId": "511621211000",
+      "name": "团结乡",
+      "average": 206.6
+    },
+    {
+      "regionId": "511621212000",
+      "name": "黄龙乡",
+      "average": 14.1
+    },
+    {
+      "regionId": "511621213000",
+      "name": "双鄢乡",
+      "average": 1932.4
+    },
+    {
+      "regionId": "511621214000",
+      "name": "东板乡",
+      "average": 1813.0
+    },
+    {
+      "regionId": "511621215000",
+      "name": "长田乡",
+      "average": 2494.0
+    },
+    {
+      "regionId": "511621216000",
+      "name": "鱼峰乡",
+      "average": 1979.1
+    },
+    {
+      "regionId": "511621218000",
+      "name": "大石乡",
+      "average": 3399.0
+    },
+    {
+      "regionId": "511621219000",
+      "name": "花板乡",
+      "average": 2079.9
+    },
+    {
+      "regionId": "511621220000",
+      "name": "大佛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511621222000",
+      "name": "齐福乡",
+      "average": 3502.7
+    },
+    {
+      "regionId": "511621223000",
+      "name": "伏龙乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 973.6184000000001,
+      "color": "#bdd7e7",
+      "label": "973.618 万m³"
+    },
+    {
+      "value": 1931.3024,
+      "color": "#6baed6",
+      "label": "1931.302 万m³"
+    },
+    {
+      "value": 3183.7432,
+      "color": "#3182bd",
+      "label": "3183.743 万m³"
+    },
+    {
+      "value": 5407.831199999997,
+      "color": "#08519c",
+      "label": "5407.831 万m³"
+    },
+    {
+      "value": 11491.239999999969,
+      "color": "#042d60",
+      "label": "11491.240 万m³"
+    }
+  ]
+}

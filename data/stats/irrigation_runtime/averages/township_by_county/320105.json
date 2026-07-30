@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "320105001000",
+      "name": "莫愁湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320105002000",
+      "name": "沙洲街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320105003000",
+      "name": "双闸街道",
+      "average": 367.5
+    },
+    {
+      "regionId": "320105004000",
+      "name": "江心洲街道",
+      "average": 909.5
+    },
+    {
+      "regionId": "320105006000",
+      "name": "兴隆街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320105007000",
+      "name": "南苑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320105400000",
+      "name": "建邺区新城科技园",
+      "average": 0.0
+    },
+    {
+      "regionId": "320105401000",
+      "name": "建邺区河西中央商务区",
+      "average": 0.0
+    },
+    {
+      "regionId": "320105402000",
+      "name": "建邺区江东商业文化旅游中心区",
+      "average": 0.0
+    },
+    {
+      "regionId": "320105403000",
+      "name": "中新南京生态科技岛",
+      "average": 108.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

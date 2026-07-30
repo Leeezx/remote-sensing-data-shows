@@ -1,0 +1,228 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420323207000",
+      "name": "柳林乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324206000",
+      "name": "桃源乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324514000",
+      "name": "竹溪县十八里长峡管理局",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238001000",
+      "name": "宁河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238002000",
+      "name": "柏杨街道",
+      "average": 293.8
+    },
+    {
+      "regionId": "500238100000",
+      "name": "城厢镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238101000",
+      "name": "凤凰镇",
+      "average": 1446.3
+    },
+    {
+      "regionId": "500238102000",
+      "name": "宁厂镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238103000",
+      "name": "上磺镇",
+      "average": 2616.3
+    },
+    {
+      "regionId": "500238104000",
+      "name": "古路镇",
+      "average": 3397.4
+    },
+    {
+      "regionId": "500238105000",
+      "name": "文峰镇",
+      "average": 1325.3
+    },
+    {
+      "regionId": "500238106000",
+      "name": "徐家镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238107000",
+      "name": "白鹿镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238108000",
+      "name": "尖山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238109000",
+      "name": "下堡镇",
+      "average": 237.7
+    },
+    {
+      "regionId": "500238110000",
+      "name": "峰灵镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238111000",
+      "name": "塘坊镇",
+      "average": 1390.4
+    },
+    {
+      "regionId": "500238112000",
+      "name": "朝阳镇",
+      "average": 1739.8
+    },
+    {
+      "regionId": "500238113000",
+      "name": "田坝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238114000",
+      "name": "通城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238204000",
+      "name": "胜利乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238205000",
+      "name": "菱角乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238207000",
+      "name": "大河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238208000",
+      "name": "天星乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238210000",
+      "name": "长桂乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238212000",
+      "name": "蒲莲乡",
+      "average": 413.5
+    },
+    {
+      "regionId": "500238226000",
+      "name": "鱼鳞乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238227000",
+      "name": "乌龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238234000",
+      "name": "中岗乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238237000",
+      "name": "花台乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238239000",
+      "name": "兰英乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238240000",
+      "name": "双阳乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238242000",
+      "name": "中梁乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238243000",
+      "name": "天元乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500238245000",
+      "name": "土城乡",
+      "average": 457.2
+    },
+    {
+      "regionId": "500238400000",
+      "name": "红池坝经济开发区",
+      "average": 0.0
+    },
+    {
+      "regionId": "610927103000",
+      "name": "钟宝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610927106000",
+      "name": "华坪镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

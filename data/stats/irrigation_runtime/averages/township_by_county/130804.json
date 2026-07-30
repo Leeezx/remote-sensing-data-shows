@@ -1,0 +1,63 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130804001000",
+      "name": "鹰手营子矿区铁北路街道",
+      "average": 23.1
+    },
+    {
+      "regionId": "130804100000",
+      "name": "鹰手营子镇",
+      "average": 413.4
+    },
+    {
+      "regionId": "130804101000",
+      "name": "北马圈子镇",
+      "average": 370.5
+    },
+    {
+      "regionId": "130804102000",
+      "name": "寿王坟镇",
+      "average": 769.4
+    },
+    {
+      "regionId": "130804103000",
+      "name": "汪家庄镇",
+      "average": 8.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 9.208,
+      "color": "#eff3ff",
+      "label": "9.208 万m³"
+    },
+    {
+      "value": 20.8048,
+      "color": "#bdd7e7",
+      "label": "20.805 万m³"
+    },
+    {
+      "value": 237.09839999999997,
+      "color": "#6baed6",
+      "label": "237.098 万m³"
+    },
+    {
+      "value": 386.9736,
+      "color": "#3182bd",
+      "label": "386.974 万m³"
+    },
+    {
+      "value": 467.5119999999999,
+      "color": "#08519c",
+      "label": "467.512 万m³"
+    },
+    {
+      "value": 740.92,
+      "color": "#042d60",
+      "label": "740.920 万m³"
+    }
+  ]
+}

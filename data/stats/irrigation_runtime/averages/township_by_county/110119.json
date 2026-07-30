@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "110119001000",
+      "name": "百泉街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110119002000",
+      "name": "香水园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110119003000",
+      "name": "儒林街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110119100000",
+      "name": "延庆镇",
+      "average": 6221.5
+    },
+    {
+      "regionId": "110119101000",
+      "name": "康庄镇",
+      "average": 95.7
+    },
+    {
+      "regionId": "110119102000",
+      "name": "八达岭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110119103000",
+      "name": "永宁镇",
+      "average": 5912.5
+    },
+    {
+      "regionId": "110119104000",
+      "name": "旧县镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110119105000",
+      "name": "张山营镇",
+      "average": 27.5
+    },
+    {
+      "regionId": "110119106000",
+      "name": "四海镇",
+      "average": 2623.5
+    },
+    {
+      "regionId": "110119107000",
+      "name": "千家店镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110119108000",
+      "name": "沈家营镇",
+      "average": 3299.0
+    },
+    {
+      "regionId": "110119109000",
+      "name": "大榆树镇",
+      "average": 1748.2
+    },
+    {
+      "regionId": "110119110000",
+      "name": "井庄镇",
+      "average": 3412.5
+    },
+    {
+      "regionId": "110119200000",
+      "name": "大庄科乡",
+      "average": 2149.5
+    },
+    {
+      "regionId": "110119201000",
+      "name": "刘斌堡乡",
+      "average": 3662.7
+    },
+    {
+      "regionId": "110119202000",
+      "name": "香营乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "110119203000",
+      "name": "珍珠泉乡",
+      "average": 1532.5
+    },
+    {
+      "regionId": "130730101000",
+      "name": "北辛堡镇",
+      "average": 6048.3
+    },
+    {
+      "regionId": "130730106000",
+      "name": "存瑞镇",
+      "average": 6389.2
+    },
+    {
+      "regionId": "130730210000",
+      "name": "王家楼回族乡",
+      "average": 2235.9
+    },
+    {
+      "regionId": "130732103000",
+      "name": "雕鄂镇",
+      "average": 1174.7
+    },
+    {
+      "regionId": "130732107000",
+      "name": "后城镇",
+      "average": 4164.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

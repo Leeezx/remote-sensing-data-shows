@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350122100000",
+      "name": "凤城镇",
+      "average": 3432.1
+    },
+    {
+      "regionId": "350122101000",
+      "name": "敖江镇",
+      "average": 9566.3
+    },
+    {
+      "regionId": "350122102000",
+      "name": "东岱镇",
+      "average": 6395.7
+    },
+    {
+      "regionId": "350122103000",
+      "name": "琯头镇",
+      "average": 4908.1
+    },
+    {
+      "regionId": "350122104000",
+      "name": "晓澳镇",
+      "average": 1301.1
+    },
+    {
+      "regionId": "350122105000",
+      "name": "东湖镇",
+      "average": 14881.3
+    },
+    {
+      "regionId": "350122106000",
+      "name": "丹阳镇",
+      "average": 37546.9
+    },
+    {
+      "regionId": "350122107000",
+      "name": "长龙镇",
+      "average": 15101.4
+    },
+    {
+      "regionId": "350122108000",
+      "name": "透堡镇",
+      "average": 8281.6
+    },
+    {
+      "regionId": "350122109000",
+      "name": "马鼻镇",
+      "average": 10188.4
+    },
+    {
+      "regionId": "350122110000",
+      "name": "官坂镇",
+      "average": 11233.7
+    },
+    {
+      "regionId": "350122111000",
+      "name": "筱埕镇",
+      "average": 584.7
+    },
+    {
+      "regionId": "350122112000",
+      "name": "黄岐镇",
+      "average": 99.0
+    },
+    {
+      "regionId": "350122114000",
+      "name": "浦口镇",
+      "average": 7141.9
+    },
+    {
+      "regionId": "350122115000",
+      "name": "坑园镇",
+      "average": 3127.8
+    },
+    {
+      "regionId": "350122200000",
+      "name": "潘渡乡",
+      "average": 25494.3
+    },
+    {
+      "regionId": "350122201000",
+      "name": "江南乡",
+      "average": 12192.1
+    },
+    {
+      "regionId": "350122202000",
+      "name": "蓼沿乡",
+      "average": 39130.7
+    },
+    {
+      "regionId": "350122203000",
+      "name": "安凯乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350122204000",
+      "name": "下宫乡",
+      "average": 1720.9
+    },
+    {
+      "regionId": "350122205000",
+      "name": "小沧畲族乡",
+      "average": 1438.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 39.6,
+      "color": "#eff3ff",
+      "label": "39.600 万m³"
+    },
+    {
+      "value": 1506.428,
+      "color": "#bdd7e7",
+      "label": "1506.428 万m³"
+    },
+    {
+      "value": 5027.108,
+      "color": "#6baed6",
+      "label": "5027.108 万m³"
+    },
+    {
+      "value": 9463.524,
+      "color": "#3182bd",
+      "label": "9463.524 万m³"
+    },
+    {
+      "value": 14235.891999999994,
+      "color": "#08519c",
+      "label": "14235.892 万m³"
+    },
+    {
+      "value": 38497.18,
+      "color": "#042d60",
+      "label": "38497.180 万m³"
+    }
+  ]
+}

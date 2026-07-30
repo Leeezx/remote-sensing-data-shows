@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130902001000",
+      "name": "建设北街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130902002000",
+      "name": "车站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130902003000",
+      "name": "南大街街道",
+      "average": 68.4
+    },
+    {
+      "regionId": "130902004000",
+      "name": "东环街道",
+      "average": 31.3
+    },
+    {
+      "regionId": "130902005000",
+      "name": "道东街道",
+      "average": 80.1
+    },
+    {
+      "regionId": "130902200000",
+      "name": "小赵庄乡",
+      "average": 7976.6
+    },
+    {
+      "regionId": "130902400000",
+      "name": "沧州开发区",
+      "average": 4415.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 8.5136,
+      "color": "#bdd7e7",
+      "label": "8.514 万m³"
+    },
+    {
+      "value": 47.0304,
+      "color": "#6baed6",
+      "label": "47.030 万m³"
+    },
+    {
+      "value": 75.13919999999999,
+      "color": "#3182bd",
+      "label": "75.139 万m³"
+    },
+    {
+      "value": 3235.9071999999987,
+      "color": "#08519c",
+      "label": "3235.907 万m³"
+    },
+    {
+      "value": 7549.208,
+      "color": "#042d60",
+      "label": "7549.208 万m³"
+    }
+  ]
+}

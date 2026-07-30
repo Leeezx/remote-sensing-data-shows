@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150521106000",
+      "name": "腰林毛都镇",
+      "average": 39715.2
+    },
+    {
+      "regionId": "150521109000",
+      "name": "代力吉镇",
+      "average": 24085.0
+    },
+    {
+      "regionId": "152222105000",
+      "name": "好腰苏木镇",
+      "average": 8112.2
+    },
+    {
+      "regionId": "152222201000",
+      "name": "新佳木苏木",
+      "average": 7904.4
+    },
+    {
+      "regionId": "152222205000",
+      "name": "巴彦淖尔苏木",
+      "average": 2276.4
+    },
+    {
+      "regionId": "220822100000",
+      "name": "开通镇",
+      "average": 12216.1
+    },
+    {
+      "regionId": "220822101000",
+      "name": "瞻榆镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220822102000",
+      "name": "双岗镇",
+      "average": 10765.6
+    },
+    {
+      "regionId": "220822103000",
+      "name": "兴隆山镇",
+      "average": 8717.1
+    },
+    {
+      "regionId": "220822104000",
+      "name": "边昭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220822105000",
+      "name": "鸿兴镇",
+      "average": 9713.3
+    },
+    {
+      "regionId": "220822106000",
+      "name": "新华镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220822107000",
+      "name": "乌兰花镇",
+      "average": 9956.5
+    },
+    {
+      "regionId": "220822200000",
+      "name": "新发乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "220822201000",
+      "name": "新兴乡",
+      "average": 9469.8
+    },
+    {
+      "regionId": "220822202000",
+      "name": "向海蒙古族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "220822203000",
+      "name": "包拉温都蒙古族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "220822204000",
+      "name": "团结乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "220822205000",
+      "name": "十花道乡",
+      "average": 7067.4
+    },
+    {
+      "regionId": "220822206000",
+      "name": "八面乡",
+      "average": 12195.4
+    },
+    {
+      "regionId": "220822207000",
+      "name": "苏公坨乡",
+      "average": 12744.9
+    },
+    {
+      "regionId": "220822400000",
+      "name": "通榆经济开发区",
+      "average": 27.8
+    },
+    {
+      "regionId": "220822401000",
+      "name": "三家子种牛场",
+      "average": 503.2
+    },
+    {
+      "regionId": "220822402000",
+      "name": "良井子畜牧场",
+      "average": 0.0
+    },
+    {
+      "regionId": "220822403000",
+      "name": "双岗鹿场",
+      "average": 5659.7
+    },
+    {
+      "regionId": "220822404000",
+      "name": "同发牧场",
+      "average": 0.0
+    },
+    {
+      "regionId": "220822405000",
+      "name": "新华牛场",
+      "average": 1102.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

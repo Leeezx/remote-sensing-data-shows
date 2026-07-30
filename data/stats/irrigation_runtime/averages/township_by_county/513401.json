@@ -1,0 +1,253 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513401001000",
+      "name": "北城街道",
+      "average": 128.5
+    },
+    {
+      "regionId": "513401002000",
+      "name": "西城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "513401003000",
+      "name": "东城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "513401004000",
+      "name": "长安街道",
+      "average": 66.2
+    },
+    {
+      "regionId": "513401005000",
+      "name": "新村街道",
+      "average": 199.6
+    },
+    {
+      "regionId": "513401006000",
+      "name": "长宁街道",
+      "average": 10.8
+    },
+    {
+      "regionId": "513401100000",
+      "name": "马道镇",
+      "average": 331.1
+    },
+    {
+      "regionId": "513401101000",
+      "name": "礼州镇",
+      "average": 4648.2
+    },
+    {
+      "regionId": "513401102000",
+      "name": "安宁镇",
+      "average": 5286.3
+    },
+    {
+      "regionId": "513401103000",
+      "name": "川兴镇",
+      "average": 5777.4
+    },
+    {
+      "regionId": "513401104000",
+      "name": "黄联关镇",
+      "average": 3257.9
+    },
+    {
+      "regionId": "513401105000",
+      "name": "佑君镇",
+      "average": 4385.4
+    },
+    {
+      "regionId": "513401106000",
+      "name": "太和镇",
+      "average": 2532.0
+    },
+    {
+      "regionId": "513401107000",
+      "name": "安哈镇",
+      "average": 518.7
+    },
+    {
+      "regionId": "513401200000",
+      "name": "西郊乡",
+      "average": 1487.0
+    },
+    {
+      "regionId": "513401201000",
+      "name": "高枧乡",
+      "average": 3922.9
+    },
+    {
+      "regionId": "513401202000",
+      "name": "小庙乡",
+      "average": 5745.9
+    },
+    {
+      "regionId": "513401203000",
+      "name": "四合乡",
+      "average": 1604.1
+    },
+    {
+      "regionId": "513401204000",
+      "name": "月华乡",
+      "average": 3556.2
+    },
+    {
+      "regionId": "513401205000",
+      "name": "兴胜乡",
+      "average": 3304.3
+    },
+    {
+      "regionId": "513401206000",
+      "name": "琅环乡",
+      "average": 1529.0
+    },
+    {
+      "regionId": "513401207000",
+      "name": "民胜乡",
+      "average": 1455.8
+    },
+    {
+      "regionId": "513401208000",
+      "name": "西乡乡",
+      "average": 6282.3
+    },
+    {
+      "regionId": "513401209000",
+      "name": "樟木箐乡",
+      "average": 3301.4
+    },
+    {
+      "regionId": "513401210000",
+      "name": "响水乡",
+      "average": 686.1
+    },
+    {
+      "regionId": "513401211000",
+      "name": "开元乡",
+      "average": 1634.4
+    },
+    {
+      "regionId": "513401212000",
+      "name": "大兴乡",
+      "average": 3215.0
+    },
+    {
+      "regionId": "513401213000",
+      "name": "海南乡",
+      "average": 2232.5
+    },
+    {
+      "regionId": "513401214000",
+      "name": "大箐乡",
+      "average": 496.5
+    },
+    {
+      "regionId": "513401215000",
+      "name": "经久乡",
+      "average": 4490.1
+    },
+    {
+      "regionId": "513401216000",
+      "name": "西溪乡",
+      "average": 4651.2
+    },
+    {
+      "regionId": "513401217000",
+      "name": "黄水乡",
+      "average": 3387.4
+    },
+    {
+      "regionId": "513401218000",
+      "name": "洛古波乡",
+      "average": 1294.9
+    },
+    {
+      "regionId": "513401219000",
+      "name": "裕隆回族乡",
+      "average": 4028.6
+    },
+    {
+      "regionId": "513401220000",
+      "name": "高草回族乡",
+      "average": 3270.6
+    },
+    {
+      "regionId": "513401221000",
+      "name": "中坝乡",
+      "average": 2618.2
+    },
+    {
+      "regionId": "513401222000",
+      "name": "阿七乡",
+      "average": 3772.0
+    },
+    {
+      "regionId": "513401223000",
+      "name": "荞地乡",
+      "average": 916.7
+    },
+    {
+      "regionId": "513401224000",
+      "name": "磨盘乡",
+      "average": 2098.2
+    },
+    {
+      "regionId": "513401225000",
+      "name": "巴汝乡",
+      "average": 704.0
+    },
+    {
+      "regionId": "513401226000",
+      "name": "银厂乡",
+      "average": 784.0
+    },
+    {
+      "regionId": "513401227000",
+      "name": "白马乡",
+      "average": 809.8
+    },
+    {
+      "regionId": "513401228000",
+      "name": "马鞍山乡",
+      "average": 922.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 670.0296,
+      "color": "#bdd7e7",
+      "label": "670.030 万m³"
+    },
+    {
+      "value": 1486.0016,
+      "color": "#6baed6",
+      "label": "1486.002 万m³"
+    },
+    {
+      "value": 3216.3728,
+      "color": "#3182bd",
+      "label": "3216.373 万m³"
+    },
+    {
+      "value": 3933.0471999999995,
+      "color": "#08519c",
+      "label": "3933.047 万m³"
+    },
+    {
+      "value": 5858.183999999998,
+      "color": "#042d60",
+      "label": "5858.184 万m³"
+    }
+  ]
+}

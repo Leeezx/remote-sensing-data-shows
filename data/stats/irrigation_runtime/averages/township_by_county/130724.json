@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130724100000",
+      "name": "平定堡镇",
+      "average": 40.9
+    },
+    {
+      "regionId": "130724101000",
+      "name": "小厂镇",
+      "average": 6757.3
+    },
+    {
+      "regionId": "130724102000",
+      "name": "黄盖淖镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130724103000",
+      "name": "九连城镇",
+      "average": 4.7
+    },
+    {
+      "regionId": "130724200000",
+      "name": "高山堡乡",
+      "average": 31.3
+    },
+    {
+      "regionId": "130724201000",
+      "name": "小河子乡",
+      "average": 6907.2
+    },
+    {
+      "regionId": "130724202000",
+      "name": "二道渠乡",
+      "average": 236.7
+    },
+    {
+      "regionId": "130724203000",
+      "name": "大二号回族乡",
+      "average": 11.3
+    },
+    {
+      "regionId": "130724204000",
+      "name": "闪电河乡",
+      "average": 3583.4
+    },
+    {
+      "regionId": "130724205000",
+      "name": "长梁乡",
+      "average": 14888.3
+    },
+    {
+      "regionId": "130724206000",
+      "name": "丰源店乡",
+      "average": 10774.2
+    },
+    {
+      "regionId": "130724207000",
+      "name": "西辛营乡",
+      "average": 3755.9
+    },
+    {
+      "regionId": "130724208000",
+      "name": "莲花滩乡",
+      "average": 3721.3
+    },
+    {
+      "regionId": "130724209000",
+      "name": "白土窑乡",
+      "average": 59.0
+    },
+    {
+      "regionId": "130724501000",
+      "name": "榆树沟",
+      "average": 0.0
+    },
+    {
+      "regionId": "130724502000",
+      "name": "沙梁子",
+      "average": 4797.1
+    },
+    {
+      "regionId": "130724503000",
+      "name": "小城子",
+      "average": 180.2
+    },
+    {
+      "regionId": "130724504000",
+      "name": "东大门",
+      "average": 0.0
+    },
+    {
+      "regionId": "152527101000",
+      "name": "千斤沟镇",
+      "average": 15937.2
+    },
+    {
+      "regionId": "152527103000",
+      "name": "骆驼山镇",
+      "average": 5535.7
+    },
+    {
+      "regionId": "152527201000",
+      "name": "贡宝拉格苏木乡",
+      "average": 1445.9
+    },
+    {
+      "regionId": "152530501000",
+      "name": "黑城子示范区",
+      "average": 10946.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 20.34,
+      "color": "#bdd7e7",
+      "label": "20.340 万m³"
+    },
+    {
+      "value": 207.546,
+      "color": "#6baed6",
+      "label": "207.546 万m³"
+    },
+    {
+      "value": 3739.1536,
+      "color": "#3182bd",
+      "label": "3739.154 万m³"
+    },
+    {
+      "value": 6839.4452,
+      "color": "#08519c",
+      "label": "6839.445 万m³"
+    },
+    {
+      "value": 15496.661999999998,
+      "color": "#042d60",
+      "label": "15496.662 万m³"
+    }
+  ]
+}

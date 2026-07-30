@@ -1,0 +1,138 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "360424101000",
+      "name": "白岭镇",
+      "average": 57857.0
+    },
+    {
+      "regionId": "421222100000",
+      "name": "隽水镇",
+      "average": 25509.7
+    },
+    {
+      "regionId": "421222101000",
+      "name": "麦市镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "421222102000",
+      "name": "塘湖镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "421222103000",
+      "name": "关刀镇",
+      "average": 25881.3
+    },
+    {
+      "regionId": "421222104000",
+      "name": "沙堆镇",
+      "average": 22007.5
+    },
+    {
+      "regionId": "421222105000",
+      "name": "五里镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "421222106000",
+      "name": "石南镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "421222107000",
+      "name": "北港镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "421222108000",
+      "name": "马港镇",
+      "average": 207.0
+    },
+    {
+      "regionId": "421222200000",
+      "name": "四庄乡",
+      "average": 23666.8
+    },
+    {
+      "regionId": "421222201000",
+      "name": "大坪乡",
+      "average": 32608.3
+    },
+    {
+      "regionId": "421222500000",
+      "name": "鹿角山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "421222501000",
+      "name": "锡山森林公园管理处",
+      "average": 0.0
+    },
+    {
+      "regionId": "421222502000",
+      "name": "黄龙林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "421222503000",
+      "name": "黄袍林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "421222504000",
+      "name": "药姑林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "430621109000",
+      "name": "毛田镇",
+      "average": 6294.7
+    },
+    {
+      "regionId": "430621110000",
+      "name": "月田镇",
+      "average": 10582.4
+    },
+    {
+      "regionId": "430626107000",
+      "name": "南江镇",
+      "average": 54142.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

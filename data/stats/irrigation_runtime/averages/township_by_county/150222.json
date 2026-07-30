@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150222102000",
+      "name": "金山镇",
+      "average": 10930.6
+    },
+    {
+      "regionId": "150222103000",
+      "name": "西斗铺镇",
+      "average": 7253.9
+    },
+    {
+      "regionId": "150222104000",
+      "name": "下湿壕镇",
+      "average": 5538.3
+    },
+    {
+      "regionId": "150222105000",
+      "name": "银号镇",
+      "average": 2019.1
+    },
+    {
+      "regionId": "150222106000",
+      "name": "怀朔镇",
+      "average": 11886.9
+    },
+    {
+      "regionId": "150222107000",
+      "name": "兴顺西镇",
+      "average": 9109.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 2371.02,
+      "color": "#eff3ff",
+      "label": "2371.020 万m³"
+    },
+    {
+      "value": 5641.236,
+      "color": "#bdd7e7",
+      "label": "5641.236 万m³"
+    },
+    {
+      "value": 7291.008,
+      "color": "#6baed6",
+      "label": "7291.008 万m³"
+    },
+    {
+      "value": 9072.192,
+      "color": "#3182bd",
+      "label": "9072.192 万m³"
+    },
+    {
+      "value": 10821.322,
+      "color": "#08519c",
+      "label": "10821.322 万m³"
+    },
+    {
+      "value": 11791.27,
+      "color": "#042d60",
+      "label": "11791.270 万m³"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511529100000",
+      "name": "锦屏镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511529101000",
+      "name": "新市镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511529102000",
+      "name": "中都镇",
+      "average": 2086.6
+    },
+    {
+      "regionId": "511529103000",
+      "name": "龙华镇",
+      "average": 5567.3
+    },
+    {
+      "regionId": "511529104000",
+      "name": "大乘镇",
+      "average": 4034.0
+    },
+    {
+      "regionId": "511529106000",
+      "name": "富荣镇",
+      "average": 2803.4
+    },
+    {
+      "regionId": "511529107000",
+      "name": "新安镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511529109000",
+      "name": "书楼镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511529110000",
+      "name": "屏山镇",
+      "average": 5505.9
+    },
+    {
+      "regionId": "511529203000",
+      "name": "鸭池乡",
+      "average": 3347.0
+    },
+    {
+      "regionId": "511529204000",
+      "name": "龙溪乡",
+      "average": 2886.8
+    },
+    {
+      "regionId": "511529205000",
+      "name": "太平乡",
+      "average": 1735.0
+    },
+    {
+      "regionId": "511529208000",
+      "name": "夏溪乡",
+      "average": 541.8
+    },
+    {
+      "regionId": "511529210000",
+      "name": "屏边彝族乡",
+      "average": 574.8
+    },
+    {
+      "regionId": "511529211000",
+      "name": "清平彝族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "530626101000",
+      "name": "中城镇",
+      "average": 7272.7
+    },
+    {
+      "regionId": "530626104000",
+      "name": "会仪镇",
+      "average": 3277.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

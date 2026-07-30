@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350926100000",
+      "name": "双城镇",
+      "average": 8212.7
+    },
+    {
+      "regionId": "350926101000",
+      "name": "富溪镇",
+      "average": 2434.0
+    },
+    {
+      "regionId": "350926200000",
+      "name": "城郊乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350926201000",
+      "name": "乍洋乡",
+      "average": 14950.5
+    },
+    {
+      "regionId": "350926202000",
+      "name": "东源乡",
+      "average": 18154.2
+    },
+    {
+      "regionId": "350926203000",
+      "name": "黄柏乡",
+      "average": 2303.7
+    },
+    {
+      "regionId": "350926204000",
+      "name": "宅中乡",
+      "average": 8573.0
+    },
+    {
+      "regionId": "350926205000",
+      "name": "楮坪乡",
+      "average": 16601.1
+    },
+    {
+      "regionId": "350926206000",
+      "name": "英山乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1603.3751999999997,
+      "color": "#bdd7e7",
+      "label": "1603.375 万m³"
+    },
+    {
+      "value": 3774.658399999999,
+      "color": "#6baed6",
+      "label": "3774.658 万m³"
+    },
+    {
+      "value": 8489.4104,
+      "color": "#3182bd",
+      "label": "8489.410 万m³"
+    },
+    {
+      "value": 15452.282399999998,
+      "color": "#08519c",
+      "label": "15452.282 万m³"
+    },
+    {
+      "value": 17905.704,
+      "color": "#042d60",
+      "label": "17905.704 万m³"
+    }
+  ]
+}

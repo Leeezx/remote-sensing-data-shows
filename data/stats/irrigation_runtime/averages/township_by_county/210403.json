@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210403002000",
+      "name": "东洲街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210403003000",
+      "name": "张甸街道",
+      "average": 4.4
+    },
+    {
+      "regionId": "210403004000",
+      "name": "搭连街道",
+      "average": 53.9
+    },
+    {
+      "regionId": "210403005000",
+      "name": "龙凤街道",
+      "average": 10.1
+    },
+    {
+      "regionId": "210403006000",
+      "name": "新屯街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210403007000",
+      "name": "万新街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210403008000",
+      "name": "老虎台街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210403009000",
+      "name": "平山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210403012000",
+      "name": "章党街道",
+      "average": 62.5
+    },
+    {
+      "regionId": "210403013000",
+      "name": "抚东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210403103000",
+      "name": "章党镇",
+      "average": 533.6
+    },
+    {
+      "regionId": "210403104000",
+      "name": "哈达镇",
+      "average": 2692.7
+    },
+    {
+      "regionId": "210403202000",
+      "name": "碾盘乡",
+      "average": 864.9
+    },
+    {
+      "regionId": "210403215000",
+      "name": "兰山乡",
+      "average": 115.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

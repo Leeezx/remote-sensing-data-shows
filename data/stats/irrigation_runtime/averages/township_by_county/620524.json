@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620524100000",
+      "name": "城关镇",
+      "average": 3752.6
+    },
+    {
+      "regionId": "620524101000",
+      "name": "洛门镇",
+      "average": 4842.6
+    },
+    {
+      "regionId": "620524102000",
+      "name": "鸳鸯镇",
+      "average": 1672.0
+    },
+    {
+      "regionId": "620524103000",
+      "name": "滩歌镇",
+      "average": 5027.5
+    },
+    {
+      "regionId": "620524104000",
+      "name": "四门镇",
+      "average": 3432.6
+    },
+    {
+      "regionId": "620524105000",
+      "name": "马力镇",
+      "average": 5018.2
+    },
+    {
+      "regionId": "620524200000",
+      "name": "山丹乡",
+      "average": 2636.4
+    },
+    {
+      "regionId": "620524201000",
+      "name": "榆盘乡",
+      "average": 905.6
+    },
+    {
+      "regionId": "620524202000",
+      "name": "咀头乡",
+      "average": 2786.6
+    },
+    {
+      "regionId": "620524203000",
+      "name": "桦林乡",
+      "average": 2721.9
+    },
+    {
+      "regionId": "620524204000",
+      "name": "高楼乡",
+      "average": 883.9
+    },
+    {
+      "regionId": "620524205000",
+      "name": "杨河乡",
+      "average": 2772.0
+    },
+    {
+      "regionId": "620524206000",
+      "name": "沿安乡",
+      "average": 1472.5
+    },
+    {
+      "regionId": "620524207000",
+      "name": "温泉乡",
+      "average": 3307.7
+    },
+    {
+      "regionId": "620524208000",
+      "name": "龙台乡",
+      "average": 3264.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 889.976,
+      "color": "#eff3ff",
+      "label": "889.976 万m³"
+    },
+    {
+      "value": 1665.616,
+      "color": "#bdd7e7",
+      "label": "1665.616 万m³"
+    },
+    {
+      "value": 2754.7656,
+      "color": "#6baed6",
+      "label": "2754.766 万m³"
+    },
+    {
+      "value": 3279.2952,
+      "color": "#3182bd",
+      "label": "3279.295 万m³"
+    },
+    {
+      "value": 3787.479999999998,
+      "color": "#08519c",
+      "label": "3787.480 万m³"
+    },
+    {
+      "value": 5024.896,
+      "color": "#042d60",
+      "label": "5024.896 万m³"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420322201000",
+      "name": "关防乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420323201000",
+      "name": "竹坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420323202000",
+      "name": "大庙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610928100000",
+      "name": "城关镇",
+      "average": 3612.5
+    },
+    {
+      "regionId": "610928101000",
+      "name": "棕溪镇",
+      "average": 143.9
+    },
+    {
+      "regionId": "610928102000",
+      "name": "关口镇",
+      "average": 289.0
+    },
+    {
+      "regionId": "610928103000",
+      "name": "蜀河镇",
+      "average": 2612.4
+    },
+    {
+      "regionId": "610928104000",
+      "name": "双河镇",
+      "average": 9065.0
+    },
+    {
+      "regionId": "610928105000",
+      "name": "小河镇",
+      "average": 5176.2
+    },
+    {
+      "regionId": "610928106000",
+      "name": "赵湾镇",
+      "average": 2023.4
+    },
+    {
+      "regionId": "610928107000",
+      "name": "麻坪镇",
+      "average": 3393.0
+    },
+    {
+      "regionId": "610928108000",
+      "name": "甘溪镇",
+      "average": 7135.6
+    },
+    {
+      "regionId": "610928109000",
+      "name": "白柳镇",
+      "average": 2926.0
+    },
+    {
+      "regionId": "610928110000",
+      "name": "吕河镇",
+      "average": 5743.6
+    },
+    {
+      "regionId": "610928111000",
+      "name": "神河镇",
+      "average": 4689.4
+    },
+    {
+      "regionId": "610928112000",
+      "name": "赤岩镇",
+      "average": 1879.7
+    },
+    {
+      "regionId": "610928113000",
+      "name": "段家河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610928114000",
+      "name": "仙河镇",
+      "average": 4375.6
+    },
+    {
+      "regionId": "610928115000",
+      "name": "金寨镇",
+      "average": 888.3
+    },
+    {
+      "regionId": "610928116000",
+      "name": "桐木镇",
+      "average": 7746.7
+    },
+    {
+      "regionId": "610928117000",
+      "name": "构元镇",
+      "average": 206.1
+    },
+    {
+      "regionId": "610928118000",
+      "name": "石门镇",
+      "average": 414.7
+    },
+    {
+      "regionId": "610928119000",
+      "name": "红军镇",
+      "average": 1604.3
+    },
+    {
+      "regionId": "610928120000",
+      "name": "仁河口镇",
+      "average": 2919.0
+    },
+    {
+      "regionId": "610928121000",
+      "name": "铜钱关镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 149.3736,
+      "color": "#bdd7e7",
+      "label": "149.374 万m³"
+    },
+    {
+      "value": 1386.6359999999997,
+      "color": "#6baed6",
+      "label": "1386.636 万m³"
+    },
+    {
+      "value": 2921.128,
+      "color": "#3182bd",
+      "label": "2921.128 万m³"
+    },
+    {
+      "value": 4661.785599999999,
+      "color": "#08519c",
+      "label": "4661.786 万m³"
+    },
+    {
+      "value": 8432.215999999999,
+      "color": "#042d60",
+      "label": "8432.216 万m³"
+    }
+  ]
+}

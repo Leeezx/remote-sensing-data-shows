@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "440402001000",
+      "name": "翠香街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440402002000",
+      "name": "梅华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440402003000",
+      "name": "前山街道",
+      "average": 1135.9
+    },
+    {
+      "regionId": "440402004000",
+      "name": "吉大街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440402005000",
+      "name": "拱北街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440402006000",
+      "name": "香湾街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440402007000",
+      "name": "狮山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440402100000",
+      "name": "唐家湾镇",
+      "average": 4939.9
+    },
+    {
+      "regionId": "440402102000",
+      "name": "南屏镇",
+      "average": 6290.3
+    },
+    {
+      "regionId": "440402105000",
+      "name": "桂山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440402106000",
+      "name": "万山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440402107000",
+      "name": "担杆镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440402400000",
+      "name": "大学园区",
+      "average": 0.0
+    },
+    {
+      "regionId": "440402401000",
+      "name": "南屏科技园",
+      "average": 540.0
+    },
+    {
+      "regionId": "440402402000",
+      "name": "保税区",
+      "average": 1876.0
+    },
+    {
+      "regionId": "440402403000",
+      "name": "前山商贸物流中心",
+      "average": 448.5
+    },
+    {
+      "regionId": "440402404000",
+      "name": "洪湾商贸物流中心",
+      "average": 697.6
+    },
+    {
+      "regionId": "440402405000",
+      "name": "金鼎工业园",
+      "average": 369.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

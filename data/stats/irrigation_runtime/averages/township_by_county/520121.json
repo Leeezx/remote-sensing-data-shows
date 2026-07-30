@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "520121100000",
+      "name": "城关镇",
+      "average": 11429.7
+    },
+    {
+      "regionId": "520121101000",
+      "name": "双流镇",
+      "average": 3497.2
+    },
+    {
+      "regionId": "520121102000",
+      "name": "金中镇",
+      "average": 387.7
+    },
+    {
+      "regionId": "520121103000",
+      "name": "冯三镇",
+      "average": 11050.4
+    },
+    {
+      "regionId": "520121104000",
+      "name": "楠木渡镇",
+      "average": 9035.7
+    },
+    {
+      "regionId": "520121105000",
+      "name": "龙岗镇",
+      "average": 18965.4
+    },
+    {
+      "regionId": "520121106000",
+      "name": "永温镇",
+      "average": 2345.1
+    },
+    {
+      "regionId": "520121107000",
+      "name": "花梨镇",
+      "average": 11198.9
+    },
+    {
+      "regionId": "520121200000",
+      "name": "南龙乡",
+      "average": 11765.3
+    },
+    {
+      "regionId": "520121202000",
+      "name": "宅吉乡",
+      "average": 6375.7
+    },
+    {
+      "regionId": "520121204000",
+      "name": "龙水乡",
+      "average": 4655.8
+    },
+    {
+      "regionId": "520121205000",
+      "name": "米坪乡",
+      "average": 1808.6
+    },
+    {
+      "regionId": "520121206000",
+      "name": "禾丰乡",
+      "average": 4393.4
+    },
+    {
+      "regionId": "520121207000",
+      "name": "南江乡",
+      "average": 7886.9
+    },
+    {
+      "regionId": "520121208000",
+      "name": "高寨乡",
+      "average": 7549.8
+    },
+    {
+      "regionId": "520121209000",
+      "name": "毛云乡",
+      "average": 9911.5
+    },
+    {
+      "regionId": "520121401000",
+      "name": "紫兴社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520121402000",
+      "name": "南山社区服务中心",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2132.6459999999997,
+      "color": "#bdd7e7",
+      "label": "2132.646 万m³"
+    },
+    {
+      "value": 4621.1632,
+      "color": "#6baed6",
+      "label": "4621.163 万m³"
+    },
+    {
+      "value": 8038.5416,
+      "color": "#3182bd",
+      "label": "8038.542 万m³"
+    },
+    {
+      "value": 11109.206,
+      "color": "#08519c",
+      "label": "11109.206 万m³"
+    },
+    {
+      "value": 16517.366,
+      "color": "#042d60",
+      "label": "16517.366 万m³"
+    }
+  ]
+}

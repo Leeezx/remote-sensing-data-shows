@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420529101000",
+      "name": "五峰镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420529102000",
+      "name": "长乐坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420529103000",
+      "name": "渔洋关镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420529104000",
+      "name": "仁和坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420529105000",
+      "name": "湾潭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420529201000",
+      "name": "付家堰乡",
+      "average": 5623.7
+    },
+    {
+      "regionId": "420529202000",
+      "name": "牛庄乡",
+      "average": 414.8
+    },
+    {
+      "regionId": "420529203000",
+      "name": "采花乡",
+      "average": 1049.5
+    },
+    {
+      "regionId": "430726109000",
+      "name": "壶瓶山镇",
+      "average": 7953.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

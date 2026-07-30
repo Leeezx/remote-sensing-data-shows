@@ -1,0 +1,263 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510623100000",
+      "name": "凯江镇",
+      "average": 188.7
+    },
+    {
+      "regionId": "510623101000",
+      "name": "南华镇",
+      "average": 7136.2
+    },
+    {
+      "regionId": "510623102000",
+      "name": "回龙镇",
+      "average": 6310.8
+    },
+    {
+      "regionId": "510623103000",
+      "name": "通济镇",
+      "average": 5179.0
+    },
+    {
+      "regionId": "510623104000",
+      "name": "永太镇",
+      "average": 8126.2
+    },
+    {
+      "regionId": "510623105000",
+      "name": "黄鹿镇",
+      "average": 5501.9
+    },
+    {
+      "regionId": "510623106000",
+      "name": "集凤镇",
+      "average": 2064.9
+    },
+    {
+      "regionId": "510623107000",
+      "name": "富兴镇",
+      "average": 1571.1
+    },
+    {
+      "regionId": "510623108000",
+      "name": "辑庆镇",
+      "average": 18584.0
+    },
+    {
+      "regionId": "510623109000",
+      "name": "兴隆镇",
+      "average": 13781.3
+    },
+    {
+      "regionId": "510623110000",
+      "name": "龙台镇",
+      "average": 16975.1
+    },
+    {
+      "regionId": "510623111000",
+      "name": "永安镇",
+      "average": 9073.6
+    },
+    {
+      "regionId": "510623112000",
+      "name": "双龙镇",
+      "average": 7545.1
+    },
+    {
+      "regionId": "510623113000",
+      "name": "玉兴镇",
+      "average": 11886.0
+    },
+    {
+      "regionId": "510623114000",
+      "name": "永兴镇",
+      "average": 8081.9
+    },
+    {
+      "regionId": "510623115000",
+      "name": "悦来镇",
+      "average": 6956.3
+    },
+    {
+      "regionId": "510623116000",
+      "name": "继光镇",
+      "average": 5052.9
+    },
+    {
+      "regionId": "510623117000",
+      "name": "仓山镇",
+      "average": 7054.7
+    },
+    {
+      "regionId": "510623118000",
+      "name": "广福镇",
+      "average": 7306.9
+    },
+    {
+      "regionId": "510623119000",
+      "name": "会龙镇",
+      "average": 4497.3
+    },
+    {
+      "regionId": "510623120000",
+      "name": "万福镇",
+      "average": 846.1
+    },
+    {
+      "regionId": "510623121000",
+      "name": "普兴镇",
+      "average": 2877.4
+    },
+    {
+      "regionId": "510623122000",
+      "name": "联合镇",
+      "average": 161.7
+    },
+    {
+      "regionId": "510623123000",
+      "name": "冯店镇",
+      "average": 9985.4
+    },
+    {
+      "regionId": "510623124000",
+      "name": "积金镇",
+      "average": 5358.2
+    },
+    {
+      "regionId": "510623125000",
+      "name": "太安镇",
+      "average": 6463.8
+    },
+    {
+      "regionId": "510623127000",
+      "name": "杰兴镇",
+      "average": 4033.9
+    },
+    {
+      "regionId": "510623130000",
+      "name": "南山镇",
+      "average": 7929.0
+    },
+    {
+      "regionId": "510623132000",
+      "name": "东北镇",
+      "average": 8864.9
+    },
+    {
+      "regionId": "510623200000",
+      "name": "古店乡",
+      "average": 1425.2
+    },
+    {
+      "regionId": "510623201000",
+      "name": "青市乡",
+      "average": 2242.1
+    },
+    {
+      "regionId": "510623203000",
+      "name": "瓦店乡",
+      "average": 350.4
+    },
+    {
+      "regionId": "510623204000",
+      "name": "石泉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510623206000",
+      "name": "柏树乡",
+      "average": 4593.4
+    },
+    {
+      "regionId": "510623207000",
+      "name": "白果乡",
+      "average": 5221.4
+    },
+    {
+      "regionId": "510623208000",
+      "name": "清河乡",
+      "average": 10190.5
+    },
+    {
+      "regionId": "510623209000",
+      "name": "高店乡",
+      "average": 3203.4
+    },
+    {
+      "regionId": "510623210000",
+      "name": "石笋乡",
+      "average": 3569.7
+    },
+    {
+      "regionId": "510623211000",
+      "name": "太平乡",
+      "average": 9124.9
+    },
+    {
+      "regionId": "510623212000",
+      "name": "民主乡",
+      "average": 5370.6
+    },
+    {
+      "regionId": "510623214000",
+      "name": "永丰乡",
+      "average": 3968.8
+    },
+    {
+      "regionId": "510623216000",
+      "name": "元兴乡",
+      "average": 2363.4
+    },
+    {
+      "regionId": "510623218000",
+      "name": "通山乡",
+      "average": 2001.1
+    },
+    {
+      "regionId": "510623219000",
+      "name": "石龙乡",
+      "average": 1292.0
+    },
+    {
+      "regionId": "510623221000",
+      "name": "合兴乡",
+      "average": 6548.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 142.296,
+      "color": "#eff3ff",
+      "label": "142.296 万m³"
+    },
+    {
+      "value": 2123.0216,
+      "color": "#bdd7e7",
+      "label": "2123.022 万m³"
+    },
+    {
+      "value": 4571.8736,
+      "color": "#6baed6",
+      "label": "4571.874 万m³"
+    },
+    {
+      "value": 6482.7056,
+      "color": "#3182bd",
+      "label": "6482.706 万m³"
+    },
+    {
+      "value": 8111.669599999999,
+      "color": "#08519c",
+      "label": "8111.670 万m³"
+    },
+    {
+      "value": 17168.167999999994,
+      "color": "#042d60",
+      "label": "17168.168 万m³"
+    }
+  ]
+}

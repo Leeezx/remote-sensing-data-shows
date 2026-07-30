@@ -1,0 +1,213 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513430100000",
+      "name": "天地坝镇",
+      "average": 277.8
+    },
+    {
+      "regionId": "513430101000",
+      "name": "派来镇",
+      "average": 604.3
+    },
+    {
+      "regionId": "513430102000",
+      "name": "芦稿镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513430103000",
+      "name": "对坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513430200000",
+      "name": "桃坪乡",
+      "average": 991.2
+    },
+    {
+      "regionId": "513430201000",
+      "name": "热水河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513430202000",
+      "name": "马依足乡",
+      "average": 876.7
+    },
+    {
+      "regionId": "513430203000",
+      "name": "红峰乡",
+      "average": 159.5
+    },
+    {
+      "regionId": "513430204000",
+      "name": "尔觉西乡",
+      "average": 10.9
+    },
+    {
+      "regionId": "513430205000",
+      "name": "热柯觉乡",
+      "average": 76.0
+    },
+    {
+      "regionId": "513430206000",
+      "name": "甲依乡",
+      "average": 178.6
+    },
+    {
+      "regionId": "513430207000",
+      "name": "木府乡",
+      "average": 330.5
+    },
+    {
+      "regionId": "513430208000",
+      "name": "寨子乡",
+      "average": 42.6
+    },
+    {
+      "regionId": "513430209000",
+      "name": "则祖乡",
+      "average": 140.0
+    },
+    {
+      "regionId": "513430210000",
+      "name": "基觉乡",
+      "average": 646.3
+    },
+    {
+      "regionId": "513430211000",
+      "name": "小银木乡",
+      "average": 426.4
+    },
+    {
+      "regionId": "513430212000",
+      "name": "春江乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513430213000",
+      "name": "红联乡",
+      "average": 1114.4
+    },
+    {
+      "regionId": "513430214000",
+      "name": "青松乡",
+      "average": 662.7
+    },
+    {
+      "regionId": "513430215000",
+      "name": "放马坪乡",
+      "average": 952.6
+    },
+    {
+      "regionId": "513430216000",
+      "name": "梗堡乡",
+      "average": 1752.7
+    },
+    {
+      "regionId": "513430217000",
+      "name": "山江乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513430218000",
+      "name": "洛觉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513430219000",
+      "name": "向岭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513430220000",
+      "name": "谷德乡",
+      "average": 57.7
+    },
+    {
+      "regionId": "513430221000",
+      "name": "高峰乡",
+      "average": 34.8
+    },
+    {
+      "regionId": "513430222000",
+      "name": "老寨子乡",
+      "average": 183.0
+    },
+    {
+      "regionId": "513430223000",
+      "name": "德溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513430224000",
+      "name": "南瓦乡",
+      "average": 145.2
+    },
+    {
+      "regionId": "513430225000",
+      "name": "依莫合乡",
+      "average": 171.7
+    },
+    {
+      "regionId": "513430226000",
+      "name": "土沟乡",
+      "average": 354.2
+    },
+    {
+      "regionId": "513430227000",
+      "name": "丙底乡",
+      "average": 154.9
+    },
+    {
+      "regionId": "513430228000",
+      "name": "依达乡",
+      "average": 42.0
+    },
+    {
+      "regionId": "513430229000",
+      "name": "丝窝乡",
+      "average": 70.0
+    },
+    {
+      "regionId": "530602212000",
+      "name": "大寨子乡",
+      "average": 672.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2.267200000000002,
+      "color": "#bdd7e7",
+      "label": "2.267 万m³"
+    },
+    {
+      "value": 74.416,
+      "color": "#6baed6",
+      "label": "74.416 万m³"
+    },
+    {
+      "value": 179.7616,
+      "color": "#3182bd",
+      "label": "179.762 万m³"
+    },
+    {
+      "value": 637.5639999999999,
+      "color": "#08519c",
+      "label": "637.564 万m³"
+    },
+    {
+      "value": 1318.6560000000002,
+      "color": "#042d60",
+      "label": "1318.656 万m³"
+    }
+  ]
+}

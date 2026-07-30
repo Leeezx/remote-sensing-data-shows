@@ -1,0 +1,178 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140829101000",
+      "name": "常乐镇",
+      "average": 25952.4
+    },
+    {
+      "regionId": "140830101000",
+      "name": "风陵渡镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "140830102000",
+      "name": "陌南镇",
+      "average": 47132.7
+    },
+    {
+      "regionId": "140830104000",
+      "name": "永乐镇",
+      "average": 24737.0
+    },
+    {
+      "regionId": "140830106000",
+      "name": "阳城镇",
+      "average": 20103.5
+    },
+    {
+      "regionId": "140830200000",
+      "name": "东垆乡",
+      "average": 34227.2
+    },
+    {
+      "regionId": "140830201000",
+      "name": "南卫乡",
+      "average": 44906.0
+    },
+    {
+      "regionId": "411282100000",
+      "name": "城关镇",
+      "average": 1695.0
+    },
+    {
+      "regionId": "411282101000",
+      "name": "尹庄镇",
+      "average": 22191.2
+    },
+    {
+      "regionId": "411282102000",
+      "name": "朱阳镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411282103000",
+      "name": "阳平镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411282104000",
+      "name": "故县镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411282105000",
+      "name": "豫灵镇",
+      "average": 223.3
+    },
+    {
+      "regionId": "411282106000",
+      "name": "大王镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411282107000",
+      "name": "阳店镇",
+      "average": 40234.0
+    },
+    {
+      "regionId": "411282108000",
+      "name": "函谷关镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411282109000",
+      "name": "焦村镇",
+      "average": 45822.7
+    },
+    {
+      "regionId": "411282200000",
+      "name": "川口乡",
+      "average": 19869.1
+    },
+    {
+      "regionId": "411282201000",
+      "name": "寺河乡",
+      "average": 6119.3
+    },
+    {
+      "regionId": "411282202000",
+      "name": "苏村乡",
+      "average": 9215.1
+    },
+    {
+      "regionId": "411282203000",
+      "name": "五亩乡",
+      "average": 17126.4
+    },
+    {
+      "regionId": "411282204000",
+      "name": "西阎乡",
+      "average": 952.9
+    },
+    {
+      "regionId": "411282400000",
+      "name": "灵宝市园艺场",
+      "average": 55.4
+    },
+    {
+      "regionId": "411282401000",
+      "name": "涧东区管委会",
+      "average": 0.0
+    },
+    {
+      "regionId": "411282402000",
+      "name": "涧西区管委会",
+      "average": 1540.0
+    },
+    {
+      "regionId": "610522101000",
+      "name": "秦东镇",
+      "average": 5451.9
+    },
+    {
+      "regionId": "610522203000",
+      "name": "代字营乡",
+      "average": 11892.2
+    },
+    {
+      "regionId": "611021106000",
+      "name": "寺耳镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

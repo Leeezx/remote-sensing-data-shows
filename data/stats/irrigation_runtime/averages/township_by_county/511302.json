@@ -1,0 +1,183 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511302001000",
+      "name": "中城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511302002000",
+      "name": "北城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511302003000",
+      "name": "西城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511302004000",
+      "name": "东南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511302005000",
+      "name": "舞凤街道",
+      "average": 180.5
+    },
+    {
+      "regionId": "511302006000",
+      "name": "新建街道",
+      "average": 1390.6
+    },
+    {
+      "regionId": "511302007000",
+      "name": "华凤街道",
+      "average": 4412.4
+    },
+    {
+      "regionId": "511302008000",
+      "name": "和平路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511302009000",
+      "name": "潆溪街道",
+      "average": 10298.3
+    },
+    {
+      "regionId": "511302010000",
+      "name": "荆溪街道",
+      "average": 4633.5
+    },
+    {
+      "regionId": "511302104000",
+      "name": "共兴镇",
+      "average": 8384.0
+    },
+    {
+      "regionId": "511302105000",
+      "name": "金台镇",
+      "average": 8577.5
+    },
+    {
+      "regionId": "511302106000",
+      "name": "芦溪镇",
+      "average": 6897.3
+    },
+    {
+      "regionId": "511302107000",
+      "name": "李家镇",
+      "average": 4273.2
+    },
+    {
+      "regionId": "511302108000",
+      "name": "双桥镇",
+      "average": 788.1
+    },
+    {
+      "regionId": "511302110000",
+      "name": "搬罾镇",
+      "average": 4587.7
+    },
+    {
+      "regionId": "511302200000",
+      "name": "新复乡",
+      "average": 4682.9
+    },
+    {
+      "regionId": "511302201000",
+      "name": "同仁乡",
+      "average": 2897.9
+    },
+    {
+      "regionId": "511302204000",
+      "name": "大林乡",
+      "average": 6409.7
+    },
+    {
+      "regionId": "511302205000",
+      "name": "梵殿乡",
+      "average": 3987.2
+    },
+    {
+      "regionId": "511302206000",
+      "name": "顺河乡",
+      "average": 3600.2
+    },
+    {
+      "regionId": "511302207000",
+      "name": "灯台乡",
+      "average": 2534.1
+    },
+    {
+      "regionId": "511302208000",
+      "name": "辉景乡",
+      "average": 2452.4
+    },
+    {
+      "regionId": "511302209000",
+      "name": "龙桂乡",
+      "average": 2400.7
+    },
+    {
+      "regionId": "511302210000",
+      "name": "永丰乡",
+      "average": 3687.9
+    },
+    {
+      "regionId": "511302211000",
+      "name": "桂花乡",
+      "average": 2102.8
+    },
+    {
+      "regionId": "511302212000",
+      "name": "凤山乡",
+      "average": 1082.9
+    },
+    {
+      "regionId": "511302213000",
+      "name": "渔溪乡",
+      "average": 3510.3
+    },
+    {
+      "regionId": "511302401000",
+      "name": "潆华工业集中区",
+      "average": 131.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 177.3704,
+      "color": "#bdd7e7",
+      "label": "177.370 万m³"
+    },
+    {
+      "value": 2416.8304,
+      "color": "#6baed6",
+      "label": "2416.830 万m³"
+    },
+    {
+      "value": 3660.5376,
+      "color": "#3182bd",
+      "label": "3660.538 万m³"
+    },
+    {
+      "value": 4636.661599999999,
+      "color": "#08519c",
+      "label": "4636.662 万m³"
+    },
+    {
+      "value": 9334.651999999996,
+      "color": "#042d60",
+      "label": "9334.652 万m³"
+    }
+  ]
+}

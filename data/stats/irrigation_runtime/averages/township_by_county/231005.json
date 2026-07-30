@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "231005001000",
+      "name": "先锋街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231005002000",
+      "name": "火炬街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231005003000",
+      "name": "立新街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231005004000",
+      "name": "牡丹街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231005005000",
+      "name": "江滨街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231005006000",
+      "name": "沿江街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231005100000",
+      "name": "温春镇",
+      "average": 2795.8
+    },
+    {
+      "regionId": "231005201000",
+      "name": "海南朝鲜族乡",
+      "average": 8885.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

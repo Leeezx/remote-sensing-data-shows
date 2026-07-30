@@ -1,0 +1,138 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130723100000",
+      "name": "康保镇",
+      "average": 7596.2
+    },
+    {
+      "regionId": "130723101000",
+      "name": "张纪镇",
+      "average": 7925.8
+    },
+    {
+      "regionId": "130723102000",
+      "name": "土城子镇",
+      "average": 3395.8
+    },
+    {
+      "regionId": "130723103000",
+      "name": "邓油坊镇",
+      "average": 2685.2
+    },
+    {
+      "regionId": "130723104000",
+      "name": "李家地镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130723105000",
+      "name": "照阳河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130723106000",
+      "name": "屯垦镇",
+      "average": 6.6
+    },
+    {
+      "regionId": "130723200000",
+      "name": "闫油坊乡",
+      "average": 11.2
+    },
+    {
+      "regionId": "130723201000",
+      "name": "丹清河乡",
+      "average": 8056.1
+    },
+    {
+      "regionId": "130723202000",
+      "name": "哈咇嘎乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130723203000",
+      "name": "二号卜乡",
+      "average": 2.3
+    },
+    {
+      "regionId": "130723204000",
+      "name": "芦家营乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130723205000",
+      "name": "忠义乡",
+      "average": 5316.9
+    },
+    {
+      "regionId": "130723206000",
+      "name": "处长地乡",
+      "average": 6468.0
+    },
+    {
+      "regionId": "130723207000",
+      "name": "满德堂乡",
+      "average": 5.5
+    },
+    {
+      "regionId": "130723500000",
+      "name": "康保牧场",
+      "average": 0.0
+    },
+    {
+      "regionId": "130723501000",
+      "name": "屯垦林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "150922104000",
+      "name": "化德县朝阳镇",
+      "average": 12765.4
+    },
+    {
+      "regionId": "150922105000",
+      "name": "化德县七号镇",
+      "average": 2241.7
+    },
+    {
+      "regionId": "150923103000",
+      "name": "大黑沙土镇",
+      "average": 9838.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

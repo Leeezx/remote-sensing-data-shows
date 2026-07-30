@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "430781001000",
+      "name": "三洲驿街道",
+      "average": 304.3
+    },
+    {
+      "regionId": "430781002000",
+      "name": "汪家桥街道",
+      "average": 2759.1
+    },
+    {
+      "regionId": "430781003000",
+      "name": "襄阳街街道",
+      "average": 1673.7
+    },
+    {
+      "regionId": "430781004000",
+      "name": "金鱼岭街道",
+      "average": 2823.6
+    },
+    {
+      "regionId": "430781100000",
+      "name": "新洲镇",
+      "average": 17000.2
+    },
+    {
+      "regionId": "430781101000",
+      "name": "渡口镇",
+      "average": 31872.9
+    },
+    {
+      "regionId": "430781102000",
+      "name": "保和堤镇",
+      "average": 37412.9
+    },
+    {
+      "regionId": "430781103000",
+      "name": "白衣镇",
+      "average": 24592.9
+    },
+    {
+      "regionId": "430781104000",
+      "name": "灵泉镇",
+      "average": 14538.1
+    },
+    {
+      "regionId": "430781203000",
+      "name": "棠华乡",
+      "average": 24343.9
+    },
+    {
+      "regionId": "430781204000",
+      "name": "李家铺乡",
+      "average": 22877.3
+    },
+    {
+      "regionId": "430781500000",
+      "name": "涔澹农场",
+      "average": 19308.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 605.568,
+      "color": "#eff3ff",
+      "label": "605.568 万m³"
+    },
+    {
+      "value": 2780.514,
+      "color": "#bdd7e7",
+      "label": "2780.514 万m³"
+    },
+    {
+      "value": 15631.2724,
+      "color": "#6baed6",
+      "label": "15631.272 万m³"
+    },
+    {
+      "value": 21292.886,
+      "color": "#3182bd",
+      "label": "21292.886 万m³"
+    },
+    {
+      "value": 24510.232,
+      "color": "#08519c",
+      "label": "24510.232 万m³"
+    },
+    {
+      "value": 36194.1,
+      "color": "#042d60",
+      "label": "36194.100 万m³"
+    }
+  ]
+}

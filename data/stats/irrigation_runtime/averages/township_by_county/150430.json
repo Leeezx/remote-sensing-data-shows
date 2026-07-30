@@ -1,0 +1,178 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150430100000",
+      "name": "新惠镇",
+      "average": 9700.5
+    },
+    {
+      "regionId": "150430101000",
+      "name": "四家子镇",
+      "average": 45849.6
+    },
+    {
+      "regionId": "150430102000",
+      "name": "长胜镇",
+      "average": 54687.8
+    },
+    {
+      "regionId": "150430103000",
+      "name": "贝子府镇",
+      "average": 28479.3
+    },
+    {
+      "regionId": "150430104000",
+      "name": "四道湾子镇",
+      "average": 26855.2
+    },
+    {
+      "regionId": "150430105000",
+      "name": "下洼镇",
+      "average": 18751.4
+    },
+    {
+      "regionId": "150430106000",
+      "name": "金厂沟梁镇",
+      "average": 34662.0
+    },
+    {
+      "regionId": "150430107000",
+      "name": "兴隆洼镇",
+      "average": 13355.4
+    },
+    {
+      "regionId": "150430201000",
+      "name": "牛古吐乡",
+      "average": 15487.8
+    },
+    {
+      "regionId": "150430202000",
+      "name": "木头营子乡",
+      "average": 31235.2
+    },
+    {
+      "regionId": "150430203000",
+      "name": "古鲁板蒿乡",
+      "average": 35058.0
+    },
+    {
+      "regionId": "150430204000",
+      "name": "丰收乡",
+      "average": 8852.9
+    },
+    {
+      "regionId": "150430205000",
+      "name": "玛尼罕乡",
+      "average": 2085.6
+    },
+    {
+      "regionId": "150430206000",
+      "name": "萨力巴乡",
+      "average": 12919.7
+    },
+    {
+      "regionId": "150430207000",
+      "name": "敖润苏莫苏木乡",
+      "average": 633.3
+    },
+    {
+      "regionId": "150430208000",
+      "name": "林家地乡",
+      "average": 29340.7
+    },
+    {
+      "regionId": "150430400000",
+      "name": "国营种羊场",
+      "average": 2750.1
+    },
+    {
+      "regionId": "150430401000",
+      "name": "敖汉旗新惠工业园区",
+      "average": 6.9
+    },
+    {
+      "regionId": "211321212000",
+      "name": "北沟门子乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322104000",
+      "name": "喀喇沁镇",
+      "average": 102.3
+    },
+    {
+      "regionId": "211322105000",
+      "name": "北二十家子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322108000",
+      "name": "哈拉道口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322114000",
+      "name": "马场镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322209000",
+      "name": "罗福沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322211000",
+      "name": "烧锅营子乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "211381110000",
+      "name": "龙潭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "211381111000",
+      "name": "北塔镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "211381471000",
+      "name": "大黑山特别行政管理区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "422828100000",
+      "name": "走马镇",
+      "average": 181.2
+    },
+    {
+      "regionId": "422828101000",
+      "name": "容美镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "422828102000",
+      "name": "太平镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "422828200000",
+      "name": "铁炉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "422828201000",
+      "name": "五里乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "422828202000",
+      "name": "燕子乡",
+      "average": 9112.7
+    },
+    {
+      "regionId": "422828203000",
+      "name": "下坪乡",
+      "average": 1011.4
+    },
+    {
+      "regionId": "422828204000",
+      "name": "邬阳乡",
+      "average": 399.4
+    },
+    {
+      "regionId": "422828205000",
+      "name": "中营乡",
+      "average": 2451.9
+    },
+    {
+      "regionId": "430726207000",
+      "name": "罗坪乡",
+      "average": 5769.1
+    },
+    {
+      "regionId": "430822104000",
+      "name": "龙潭坪镇",
+      "average": 4550.2
+    },
+    {
+      "regionId": "430822500000",
+      "name": "天星山林场",
+      "average": 1859.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

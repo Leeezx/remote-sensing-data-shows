@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540124100000",
+      "name": "曲水镇",
+      "average": 2659.2
+    },
+    {
+      "regionId": "540124200000",
+      "name": "达嘎乡",
+      "average": 6673.9
+    },
+    {
+      "regionId": "540124201000",
+      "name": "才纳乡",
+      "average": 2058.6
+    },
+    {
+      "regionId": "540124202000",
+      "name": "南木乡",
+      "average": 1018.6
+    },
+    {
+      "regionId": "540124203000",
+      "name": "聂当乡",
+      "average": 1333.1
+    },
+    {
+      "regionId": "540124204000",
+      "name": "茶巴拉乡",
+      "average": 1257.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 1042.52,
+      "color": "#eff3ff",
+      "label": "1042.520 万m³"
+    },
+    {
+      "value": 1262.318,
+      "color": "#bdd7e7",
+      "label": "1262.318 万m³"
+    },
+    {
+      "value": 1347.61,
+      "color": "#6baed6",
+      "label": "1347.610 万m³"
+    },
+    {
+      "value": 2044.09,
+      "color": "#3182bd",
+      "label": "2044.090 万m³"
+    },
+    {
+      "value": 2623.1639999999993,
+      "color": "#08519c",
+      "label": "2623.164 万m³"
+    },
+    {
+      "value": 6272.430000000001,
+      "color": "#042d60",
+      "label": "6272.430 万m³"
+    }
+  ]
+}

@@ -166,6 +166,23 @@ def _publish_region_catalog(series_data: dict) -> list[dict]:
     return catalog
 
 
+def publish_runtime_stats() -> dict:
+    """Build deployable runtime shards after a complete precompute run."""
+    from scripts.build_irrigation_runtime_stats import build_runtime_stats
+
+    return build_runtime_stats(
+        OUTPUT_PATH,
+        REGIONS_PATH,
+        PROJECT_ROOT / "data" / "metadata" / "irrigation_layer.json",
+        PROJECT_ROOT
+        / "data"
+        / "vectors"
+        / "irrigation"
+        / "township_by_county",
+        PROJECT_ROOT / "data" / "stats" / "irrigation_runtime",
+    )
+
+
 def main() -> None:
     import argparse
 
@@ -341,6 +358,15 @@ def main() -> None:
     print(f"  Regions: {completed} completed, {skipped} skipped, {errors} errors")
     print(f"  Output:  {OUTPUT_PATH}")
     print(f"  Regions: {REGIONS_PATH}")
+    if errors == 0 and skipped == 0 and not args.limit:
+        manifest = publish_runtime_stats()
+        print(
+            "  Runtime: "
+            f"{manifest['countyCount']} counties, "
+            f"{manifest['mappedTownshipCount']} mapped townships, "
+            f"{manifest['crossCountyTownshipCount']} cross-county IDs, "
+            f"{manifest['unmappedTownshipCount']} unmapped IDs"
+        )
 
 
 if __name__ == "__main__":

@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "441502002000",
+      "name": "香洲街道",
+      "average": 2853.5
+    },
+    {
+      "regionId": "441502003000",
+      "name": "凤山街道",
+      "average": 549.5
+    },
+    {
+      "regionId": "441502004000",
+      "name": "田墘街道",
+      "average": 29491.9
+    },
+    {
+      "regionId": "441502005000",
+      "name": "东洲街道",
+      "average": 15069.7
+    },
+    {
+      "regionId": "441502006000",
+      "name": "遮浪街道",
+      "average": 5025.7
+    },
+    {
+      "regionId": "441502007000",
+      "name": "马宫街道",
+      "average": 6854.9
+    },
+    {
+      "regionId": "441502100000",
+      "name": "红草镇",
+      "average": 29506.9
+    },
+    {
+      "regionId": "441502102000",
+      "name": "东涌镇",
+      "average": 25861.2
+    },
+    {
+      "regionId": "441502103000",
+      "name": "捷胜镇",
+      "average": 26246.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 918.14,
+      "color": "#eff3ff",
+      "label": "918.140 万m³"
+    },
+    {
+      "value": 4365.3512,
+      "color": "#bdd7e7",
+      "label": "4365.351 万m³"
+    },
+    {
+      "value": 8760.733599999998,
+      "color": "#6baed6",
+      "label": "8760.734 万m³"
+    },
+    {
+      "value": 23357.572,
+      "color": "#3182bd",
+      "label": "23357.572 万m³"
+    },
+    {
+      "value": 27232.8232,
+      "color": "#08519c",
+      "label": "27232.823 万m³"
+    },
+    {
+      "value": 29504.5,
+      "color": "#042d60",
+      "label": "29504.500 万m³"
+    }
+  ]
+}

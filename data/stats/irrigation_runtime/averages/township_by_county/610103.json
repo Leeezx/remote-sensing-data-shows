@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610103001000",
+      "name": "南院门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610103002000",
+      "name": "柏树林街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610103003000",
+      "name": "长乐坊街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610103004000",
+      "name": "东关南街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610103005000",
+      "name": "太乙路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610103006000",
+      "name": "文艺路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610103007000",
+      "name": "长安路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610103008000",
+      "name": "张家村街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

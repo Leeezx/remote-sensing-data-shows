@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513331213000",
+      "name": "盖玉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540322100000",
+      "name": "莫洛镇",
+      "average": 1142.9
+    },
+    {
+      "regionId": "540322200000",
+      "name": "敏都乡",
+      "average": 20.5
+    },
+    {
+      "regionId": "540322201000",
+      "name": "则巴乡",
+      "average": 26.1
+    },
+    {
+      "regionId": "540322202000",
+      "name": "罗麦乡",
+      "average": 177.7
+    },
+    {
+      "regionId": "540322203000",
+      "name": "沙东乡",
+      "average": 157.5
+    },
+    {
+      "regionId": "540322204000",
+      "name": "克日乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540322205000",
+      "name": "木协乡",
+      "average": 820.0
+    },
+    {
+      "regionId": "540322206000",
+      "name": "阿旺乡",
+      "average": 170.7
+    },
+    {
+      "regionId": "540322207000",
+      "name": "拉妥乡",
+      "average": 120.6
+    },
+    {
+      "regionId": "540322208000",
+      "name": "雄松乡",
+      "average": 118.2
+    },
+    {
+      "regionId": "540322209000",
+      "name": "哈加乡",
+      "average": 696.8
+    },
+    {
+      "regionId": "540322210000",
+      "name": "相皮乡",
+      "average": 416.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 23.546400000000002,
+      "color": "#bdd7e7",
+      "label": "23.546 万m³"
+    },
+    {
+      "value": 120.23519999999999,
+      "color": "#6baed6",
+      "label": "120.235 万m³"
+    },
+    {
+      "value": 171.76399999999998,
+      "color": "#3182bd",
+      "label": "171.764 万m³"
+    },
+    {
+      "value": 544.5343999999998,
+      "color": "#08519c",
+      "label": "544.534 万m³"
+    },
+    {
+      "value": 1065.404,
+      "color": "#042d60",
+      "label": "1065.404 万m³"
+    }
+  ]
+}

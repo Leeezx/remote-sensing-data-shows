@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "623025200000",
+      "name": "欧拉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623025201000",
+      "name": "欧拉秀玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623026101000",
+      "name": "玛艾镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "623026200000",
+      "name": "尕海乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632324100000",
+      "name": "优干宁镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632324200000",
+      "name": "宁木特镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632324201000",
+      "name": "多松乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632324202000",
+      "name": "赛尔龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632324203000",
+      "name": "柯生乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "370303001000",
+      "name": "车站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370303002000",
+      "name": "公园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370303003000",
+      "name": "杏园街道",
+      "average": 1613.4
+    },
+    {
+      "regionId": "370303004000",
+      "name": "和平街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370303005000",
+      "name": "科苑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370303006000",
+      "name": "体育场街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370303008000",
+      "name": "四宝山街道",
+      "average": 21105.2
+    },
+    {
+      "regionId": "370303100000",
+      "name": "马尚镇",
+      "average": 4416.8
+    },
+    {
+      "regionId": "370303101000",
+      "name": "南定镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "370303102000",
+      "name": "沣水镇",
+      "average": 2948.3
+    },
+    {
+      "regionId": "370303104000",
+      "name": "傅家镇",
+      "average": 1814.6
+    },
+    {
+      "regionId": "370303105000",
+      "name": "中埠镇",
+      "average": 5811.1
+    },
+    {
+      "regionId": "370303107000",
+      "name": "房镇镇",
+      "average": 18799.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

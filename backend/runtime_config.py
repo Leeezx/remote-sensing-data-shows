@@ -57,6 +57,10 @@ IRRIGATION_REGION_SERIES_PATH = path_env(
     "IRRIGATION_REGION_SERIES_PATH",
     PROJECT_ROOT / "data" / "stats" / "irrigation_region_series.json",
 )
+IRRIGATION_RUNTIME_STATS_ROOT = path_env(
+    "IRRIGATION_RUNTIME_STATS_ROOT",
+    PROJECT_ROOT / "data" / "stats" / "irrigation_runtime",
+)
 CACHE_ROOT = path_env("CACHE_ROOT", PROJECT_ROOT / ".runtime-cache")
 COUNTY_VECTOR_PATH = path_env(
     "COUNTY_VECTOR_PATH",

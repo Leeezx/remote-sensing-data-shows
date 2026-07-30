@@ -1,0 +1,208 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500116001000",
+      "name": "几江街道",
+      "average": 447.5
+    },
+    {
+      "regionId": "500116002000",
+      "name": "德感街道",
+      "average": 4973.0
+    },
+    {
+      "regionId": "500116004000",
+      "name": "双福街道",
+      "average": 12151.6
+    },
+    {
+      "regionId": "500116005000",
+      "name": "鼎山街道",
+      "average": 1591.3
+    },
+    {
+      "regionId": "500116101000",
+      "name": "油溪镇",
+      "average": 11246.2
+    },
+    {
+      "regionId": "500116102000",
+      "name": "吴滩镇",
+      "average": 9971.6
+    },
+    {
+      "regionId": "500116103000",
+      "name": "石门镇",
+      "average": 7956.3
+    },
+    {
+      "regionId": "500116104000",
+      "name": "朱杨镇",
+      "average": 4853.0
+    },
+    {
+      "regionId": "500116105000",
+      "name": "石蟆镇",
+      "average": 30345.9
+    },
+    {
+      "regionId": "500116106000",
+      "name": "永兴镇",
+      "average": 5073.5
+    },
+    {
+      "regionId": "500116107000",
+      "name": "塘河镇",
+      "average": 2174.4
+    },
+    {
+      "regionId": "500116108000",
+      "name": "白沙镇",
+      "average": 7385.5
+    },
+    {
+      "regionId": "500116109000",
+      "name": "龙华镇",
+      "average": 2673.1
+    },
+    {
+      "regionId": "500116110000",
+      "name": "李市镇",
+      "average": 5311.5
+    },
+    {
+      "regionId": "500116111000",
+      "name": "慈云镇",
+      "average": 2959.8
+    },
+    {
+      "regionId": "500116112000",
+      "name": "蔡家镇",
+      "average": 11609.1
+    },
+    {
+      "regionId": "500116113000",
+      "name": "中山镇",
+      "average": 5010.4
+    },
+    {
+      "regionId": "500116114000",
+      "name": "嘉平镇",
+      "average": 1460.8
+    },
+    {
+      "regionId": "500116115000",
+      "name": "柏林镇",
+      "average": 4519.1
+    },
+    {
+      "regionId": "500116116000",
+      "name": "先锋镇",
+      "average": 4092.1
+    },
+    {
+      "regionId": "500116117000",
+      "name": "珞璜镇",
+      "average": 7331.3
+    },
+    {
+      "regionId": "500116118000",
+      "name": "贾嗣镇",
+      "average": 1853.1
+    },
+    {
+      "regionId": "500116119000",
+      "name": "夏坝镇",
+      "average": 3339.8
+    },
+    {
+      "regionId": "500116120000",
+      "name": "西湖镇",
+      "average": 3577.5
+    },
+    {
+      "regionId": "500116121000",
+      "name": "杜市镇",
+      "average": 7826.8
+    },
+    {
+      "regionId": "500116122000",
+      "name": "广兴镇",
+      "average": 3261.2
+    },
+    {
+      "regionId": "500116123000",
+      "name": "四面山镇",
+      "average": 751.1
+    },
+    {
+      "regionId": "500116124000",
+      "name": "支坪镇",
+      "average": 1449.9
+    },
+    {
+      "regionId": "510522110000",
+      "name": "白鹿镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510522113000",
+      "name": "先滩镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510522114000",
+      "name": "自怀镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510522213000",
+      "name": "石龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520330203000",
+      "name": "三岔河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520330204000",
+      "name": "大坡乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 749.8855999999998,
+      "color": "#bdd7e7",
+      "label": "749.886 万m³"
+    },
+    {
+      "value": 2768.2843999999996,
+      "color": "#6baed6",
+      "label": "2768.284 万m³"
+    },
+    {
+      "value": 4742.1452,
+      "color": "#3182bd",
+      "label": "4742.145 万m³"
+    },
+    {
+      "value": 7387.265199999999,
+      "color": "#08519c",
+      "label": "7387.265 万m³"
+    },
+    {
+      "value": 18337.661999999935,
+      "color": "#042d60",
+      "label": "18337.662 万m³"
+    }
+  ]
+}

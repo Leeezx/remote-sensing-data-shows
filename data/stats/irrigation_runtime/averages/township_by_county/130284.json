@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130284001000",
+      "name": "滦河街道",
+      "average": 19.6
+    },
+    {
+      "regionId": "130284002000",
+      "name": "古城街道",
+      "average": 2203.4
+    },
+    {
+      "regionId": "130284003000",
+      "name": "滦城路街道",
+      "average": 9699.0
+    },
+    {
+      "regionId": "130284004000",
+      "name": "响堂街道",
+      "average": 9758.5
+    },
+    {
+      "regionId": "130284102000",
+      "name": "东安各庄镇",
+      "average": 13328.4
+    },
+    {
+      "regionId": "130284103000",
+      "name": "雷庄镇",
+      "average": 5895.1
+    },
+    {
+      "regionId": "130284104000",
+      "name": "茨榆坨镇",
+      "average": 9999.6
+    },
+    {
+      "regionId": "130284105000",
+      "name": "榛子镇",
+      "average": 18483.2
+    },
+    {
+      "regionId": "130284106000",
+      "name": "杨柳庄镇",
+      "average": 11391.2
+    },
+    {
+      "regionId": "130284107000",
+      "name": "油榨镇",
+      "average": 9208.3
+    },
+    {
+      "regionId": "130284108000",
+      "name": "古马镇",
+      "average": 5637.5
+    },
+    {
+      "regionId": "130284109000",
+      "name": "小马庄镇",
+      "average": 14153.2
+    },
+    {
+      "regionId": "130284110000",
+      "name": "九百户镇",
+      "average": 6348.2
+    },
+    {
+      "regionId": "130284111000",
+      "name": "王店子镇",
+      "average": 13636.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 587.388,
+      "color": "#eff3ff",
+      "label": "587.388 万m³"
+    },
+    {
+      "value": 5832.2456,
+      "color": "#bdd7e7",
+      "label": "5832.246 万m³"
+    },
+    {
+      "value": 9331.9564,
+      "color": "#6baed6",
+      "label": "9331.956 万m³"
+    },
+    {
+      "value": 9938.8428,
+      "color": "#3182bd",
+      "label": "9938.843 万m³"
+    },
+    {
+      "value": 13403.4544,
+      "color": "#08519c",
+      "label": "13403.454 万m³"
+    },
+    {
+      "value": 17357.4,
+      "color": "#042d60",
+      "label": "17357.400 万m³"
+    }
+  ]
+}

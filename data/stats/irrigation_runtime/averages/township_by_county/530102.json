@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "530102001000",
+      "name": "华山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "530102002000",
+      "name": "护国街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "530102003000",
+      "name": "大观街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "530102004000",
+      "name": "龙翔街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "530102005000",
+      "name": "丰宁街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "530102006000",
+      "name": "莲华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "530102007000",
+      "name": "红云街道",
+      "average": 253.9
+    },
+    {
+      "regionId": "530102008000",
+      "name": "黑林铺街道",
+      "average": 426.2
+    },
+    {
+      "regionId": "530102009000",
+      "name": "普吉街道",
+      "average": 537.9
+    },
+    {
+      "regionId": "530102010000",
+      "name": "西翥街道",
+      "average": 9448.3
+    },
+    {
+      "regionId": "530102401000",
+      "name": "昆明国家高新技术产业开发区",
+      "average": 876.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

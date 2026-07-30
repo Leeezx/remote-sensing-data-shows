@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451221100000",
+      "name": "城关镇",
+      "average": 8583.6
+    },
+    {
+      "regionId": "451221101000",
+      "name": "大厂镇",
+      "average": 3587.7
+    },
+    {
+      "regionId": "451221102000",
+      "name": "车河镇",
+      "average": 3303.7
+    },
+    {
+      "regionId": "451221103000",
+      "name": "芒场镇",
+      "average": 235.8
+    },
+    {
+      "regionId": "451221104000",
+      "name": "六寨镇",
+      "average": 535.5
+    },
+    {
+      "regionId": "451221105000",
+      "name": "月里镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451221106000",
+      "name": "吾隘镇",
+      "average": 2211.9
+    },
+    {
+      "regionId": "451221200000",
+      "name": "罗富乡",
+      "average": 8717.3
+    },
+    {
+      "regionId": "451221202000",
+      "name": "中堡苗族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451221203000",
+      "name": "八圩瑶族乡",
+      "average": 6222.3
+    },
+    {
+      "regionId": "451221204000",
+      "name": "里湖瑶族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "522722203000",
+      "name": "瑶山乡",
+      "average": 3847.2
+    },
+    {
+      "regionId": "522722204000",
+      "name": "捞村乡",
+      "average": 6519.3
+    },
+    {
+      "regionId": "522722206000",
+      "name": "驾欧乡",
+      "average": 15315.6
+    },
+    {
+      "regionId": "522726105000",
+      "name": "下司镇",
+      "average": 23270.8
+    },
+    {
+      "regionId": "522726107000",
+      "name": "麻尾镇",
+      "average": 17281.4
+    },
+    {
+      "regionId": "522726208000",
+      "name": "黄后乡",
+      "average": 17141.9
+    },
+    {
+      "regionId": "522726209000",
+      "name": "董岭乡",
+      "average": 7988.9
+    },
+    {
+      "regionId": "522727107000",
+      "name": "者密镇",
+      "average": 9481.6
+    },
+    {
+      "regionId": "522727108000",
+      "name": "四寨镇",
+      "average": 6317.6
+    },
+    {
+      "regionId": "522727209000",
+      "name": "西凉乡",
+      "average": 6555.9
+    },
+    {
+      "regionId": "522728211000",
+      "name": "平岩乡",
+      "average": 1079.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 781.3879999999999,
+      "color": "#bdd7e7",
+      "label": "781.388 万m³"
+    },
+    {
+      "value": 3713.298,
+      "color": "#6baed6",
+      "label": "3713.298 万m³"
+    },
+    {
+      "value": 6538.1856,
+      "color": "#3182bd",
+      "label": "6538.186 万m³"
+    },
+    {
+      "value": 9136.1364,
+      "color": "#08519c",
+      "label": "9136.136 万m³"
+    },
+    {
+      "value": 20755.25199999999,
+      "color": "#042d60",
+      "label": "20755.252 万m³"
+    }
+  ]
+}

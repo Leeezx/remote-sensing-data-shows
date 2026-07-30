@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410105001000",
+      "name": "经八路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410105002000",
+      "name": "花园路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410105003000",
+      "name": "人民路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410105004000",
+      "name": "杜岭街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410105005000",
+      "name": "大石桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410105006000",
+      "name": "南阳路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410105007000",
+      "name": "南阳新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410105008000",
+      "name": "文化路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410105009000",
+      "name": "丰产路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410105010000",
+      "name": "东风路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410105011000",
+      "name": "北林路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410105012000",
+      "name": "未来路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410105013000",
+      "name": "凤凰台街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410105014000",
+      "name": "龙子湖街道",
+      "average": 7320.0
+    },
+    {
+      "regionId": "410105015000",
+      "name": "祭城路街道",
+      "average": 661.9
+    },
+    {
+      "regionId": "410105016000",
+      "name": "兴达路街道",
+      "average": 15038.3
+    },
+    {
+      "regionId": "410105017000",
+      "name": "国基路街道",
+      "average": 371.9
+    },
+    {
+      "regionId": "410105018000",
+      "name": "杨金路街道",
+      "average": 5227.9
+    },
+    {
+      "regionId": "410105019000",
+      "name": "丰庆路街道",
+      "average": 459.1
+    },
+    {
+      "regionId": "410105560000",
+      "name": "如意湖街道",
+      "average": 1071.1
+    },
+    {
+      "regionId": "410105561000",
+      "name": "博学路街道",
+      "average": 2510.7
+    },
+    {
+      "regionId": "410105562000",
+      "name": "龙湖街道",
+      "average": 7959.5
+    },
+    {
+      "regionId": "410105563000",
+      "name": "龙源路街道",
+      "average": 2937.1
+    },
+    {
+      "regionId": "410105564000",
+      "name": "金光路街道",
+      "average": 7593.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510112001000",
+      "name": "龙泉街道",
+      "average": 5450.2
+    },
+    {
+      "regionId": "510112002000",
+      "name": "大面街道",
+      "average": 6328.6
+    },
+    {
+      "regionId": "510112003000",
+      "name": "十陵街道",
+      "average": 2680.3
+    },
+    {
+      "regionId": "510112004000",
+      "name": "同安街道",
+      "average": 1737.8
+    },
+    {
+      "regionId": "510112102000",
+      "name": "洛带镇",
+      "average": 2440.9
+    },
+    {
+      "regionId": "510112104000",
+      "name": "西河镇",
+      "average": 5150.7
+    },
+    {
+      "regionId": "510112108000",
+      "name": "洪安镇",
+      "average": 2919.7
+    },
+    {
+      "regionId": "510112109000",
+      "name": "柏合镇",
+      "average": 9343.7
+    },
+    {
+      "regionId": "510112110000",
+      "name": "茶店镇",
+      "average": 4398.2
+    },
+    {
+      "regionId": "510112111000",
+      "name": "黄土镇",
+      "average": 5623.2
+    },
+    {
+      "regionId": "510112115000",
+      "name": "山泉镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510112200000",
+      "name": "万兴乡",
+      "average": 682.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 150.172,
+      "color": "#eff3ff",
+      "label": "150.172 万m³"
+    },
+    {
+      "value": 1971.2292,
+      "color": "#bdd7e7",
+      "label": "1971.229 万m³"
+    },
+    {
+      "value": 2786.5936,
+      "color": "#6baed6",
+      "label": "2786.594 万m³"
+    },
+    {
+      "value": 4816.59,
+      "color": "#3182bd",
+      "label": "4816.590 万m³"
+    },
+    {
+      "value": 5565.764,
+      "color": "#08519c",
+      "label": "5565.764 万m³"
+    },
+    {
+      "value": 8680.377999999999,
+      "color": "#042d60",
+      "label": "8680.378 万m³"
+    }
+  ]
+}

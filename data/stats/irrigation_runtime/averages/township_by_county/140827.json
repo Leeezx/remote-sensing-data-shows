@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140827100000",
+      "name": "新城镇",
+      "average": 3507.7
+    },
+    {
+      "regionId": "140827101000",
+      "name": "历山镇",
+      "average": 2911.1
+    },
+    {
+      "regionId": "140827102000",
+      "name": "古城镇",
+      "average": 7488.4
+    },
+    {
+      "regionId": "140827103000",
+      "name": "王茅镇",
+      "average": 6048.5
+    },
+    {
+      "regionId": "140827104000",
+      "name": "毛家湾镇",
+      "average": 2021.1
+    },
+    {
+      "regionId": "140827200000",
+      "name": "蒲掌乡",
+      "average": 7362.7
+    },
+    {
+      "regionId": "140827201000",
+      "name": "英言乡",
+      "average": 4555.2
+    },
+    {
+      "regionId": "140827202000",
+      "name": "解峪乡",
+      "average": 6012.9
+    },
+    {
+      "regionId": "140827203000",
+      "name": "华峰乡",
+      "average": 4256.0
+    },
+    {
+      "regionId": "140827204000",
+      "name": "长直乡",
+      "average": 11867.4
+    },
+    {
+      "regionId": "140827205000",
+      "name": "皋落乡",
+      "average": 10499.2
+    },
+    {
+      "regionId": "410323109000",
+      "name": "石井镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411221210000",
+      "name": "南村乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2505.2599999999998,
+      "color": "#bdd7e7",
+      "label": "2505.260 万m³"
+    },
+    {
+      "value": 4142.2584,
+      "color": "#6baed6",
+      "label": "4142.258 万m³"
+    },
+    {
+      "value": 6018.3112,
+      "color": "#3182bd",
+      "label": "6018.311 万m³"
+    },
+    {
+      "value": 7420.0192,
+      "color": "#08519c",
+      "label": "7420.019 万m³"
+    },
+    {
+      "value": 11539.032,
+      "color": "#042d60",
+      "label": "11539.032 万m³"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "341024100000",
+      "name": "祁山镇",
+      "average": 19100.3
+    },
+    {
+      "regionId": "341024101000",
+      "name": "小路口镇",
+      "average": 3185.0
+    },
+    {
+      "regionId": "341024102000",
+      "name": "金字牌镇",
+      "average": 9526.8
+    },
+    {
+      "regionId": "341024103000",
+      "name": "平里镇",
+      "average": 5609.6
+    },
+    {
+      "regionId": "341024104000",
+      "name": "历口镇",
+      "average": 17088.5
+    },
+    {
+      "regionId": "341024105000",
+      "name": "闪里镇",
+      "average": 124.3
+    },
+    {
+      "regionId": "341024106000",
+      "name": "安凌镇",
+      "average": 30753.3
+    },
+    {
+      "regionId": "341024107000",
+      "name": "凫峰镇",
+      "average": 7719.1
+    },
+    {
+      "regionId": "341024200000",
+      "name": "大坦乡",
+      "average": 2181.4
+    },
+    {
+      "regionId": "341024202000",
+      "name": "柏溪乡",
+      "average": 12146.1
+    },
+    {
+      "regionId": "341024203000",
+      "name": "塔坊乡",
+      "average": 7811.3
+    },
+    {
+      "regionId": "341024204000",
+      "name": "祁红乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341024205000",
+      "name": "溶口乡",
+      "average": 4720.4
+    },
+    {
+      "regionId": "341024206000",
+      "name": "芦溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341024207000",
+      "name": "渚口乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341024208000",
+      "name": "古溪乡",
+      "average": 770.9
+    },
+    {
+      "regionId": "341024209000",
+      "name": "新安乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341024210000",
+      "name": "箬坑乡",
+      "average": 15998.1
+    },
+    {
+      "regionId": "360222205000",
+      "name": "江村乡",
+      "average": 11978.3
+    },
+    {
+      "regionId": "360222207000",
+      "name": "勒功乡",
+      "average": 3492.1
+    },
+    {
+      "regionId": "360222208000",
+      "name": "西湖乡",
+      "average": 8843.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 279.48400000000015,
+      "color": "#bdd7e7",
+      "label": "279.484 万m³"
+    },
+    {
+      "value": 3590.364,
+      "color": "#6baed6",
+      "label": "3590.364 万m³"
+    },
+    {
+      "value": 7803.924,
+      "color": "#3182bd",
+      "label": "7803.924 万m³"
+    },
+    {
+      "value": 12105.828,
+      "color": "#08519c",
+      "label": "12105.828 万m³"
+    },
+    {
+      "value": 26092.100000000017,
+      "color": "#042d60",
+      "label": "26092.100 万m³"
+    }
+  ]
+}

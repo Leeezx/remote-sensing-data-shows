@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "430602001000",
+      "name": "岳阳楼街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430602002000",
+      "name": "三眼桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430602003000",
+      "name": "吕仙亭街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430602004000",
+      "name": "金鹗山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430602005000",
+      "name": "东茅岭街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430602006000",
+      "name": "五里牌街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430602007000",
+      "name": "望岳路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430602008000",
+      "name": "城陵矶街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430602009000",
+      "name": "枫桥湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430602010000",
+      "name": "奇家岭街道",
+      "average": 7833.5
+    },
+    {
+      "regionId": "430602011000",
+      "name": "洞庭街道",
+      "average": 60.6
+    },
+    {
+      "regionId": "430602012000",
+      "name": "洛王街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430602013000",
+      "name": "南湖街道",
+      "average": 21.4
+    },
+    {
+      "regionId": "430602014000",
+      "name": "站前街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430602015000",
+      "name": "王家河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430602016000",
+      "name": "求索街道",
+      "average": 229.0
+    },
+    {
+      "regionId": "430602017000",
+      "name": "湖滨街道",
+      "average": 4191.1
+    },
+    {
+      "regionId": "430602100000",
+      "name": "西塘镇",
+      "average": 26265.7
+    },
+    {
+      "regionId": "430602200000",
+      "name": "梅溪乡",
+      "average": 3082.1
+    },
+    {
+      "regionId": "430602201000",
+      "name": "郭镇乡",
+      "average": 12443.4
+    },
+    {
+      "regionId": "430602202000",
+      "name": "三荷乡",
+      "average": 45580.5
+    },
+    {
+      "regionId": "430602203000",
+      "name": "康王乡",
+      "average": 54008.4
+    },
+    {
+      "regionId": "430602402000",
+      "name": "经济技术开发区通海路管理处",
+      "average": 354.7
+    },
+    {
+      "regionId": "430602406000",
+      "name": "金凤桥管理处",
+      "average": 5464.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

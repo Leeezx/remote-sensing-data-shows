@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "231003001000",
+      "name": "阳明街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231003002000",
+      "name": "前进街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231003003000",
+      "name": "新兴街道",
+      "average": 24.7
+    },
+    {
+      "regionId": "231003004000",
+      "name": "桦林橡胶厂街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231003100000",
+      "name": "铁岭镇",
+      "average": 3242.0
+    },
+    {
+      "regionId": "231003101000",
+      "name": "桦林镇",
+      "average": 2107.3
+    },
+    {
+      "regionId": "231003102000",
+      "name": "磨刀石镇",
+      "average": 1775.0
+    },
+    {
+      "regionId": "231003103000",
+      "name": "五林镇",
+      "average": 6003.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

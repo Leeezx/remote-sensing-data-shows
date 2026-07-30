@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210902002000",
+      "name": "新兴街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210902003000",
+      "name": "和平街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210902004000",
+      "name": "西山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210902005000",
+      "name": "河北街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210902006000",
+      "name": "站前街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210902007000",
+      "name": "西阜新街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210902008000",
+      "name": "五龙街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210902009000",
+      "name": "平安西部街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210902010000",
+      "name": "工人村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210902101000",
+      "name": "韩家店镇",
+      "average": 1006.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

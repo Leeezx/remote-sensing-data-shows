@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150402001000",
+      "name": "西屯街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150402002000",
+      "name": "三中街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150402003000",
+      "name": "永巨街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150402004000",
+      "name": "东城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150402005000",
+      "name": "南新街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150402006000",
+      "name": "站前街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150402007000",
+      "name": "铁南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150402008000",
+      "name": "长青街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150402009000",
+      "name": "哈达街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150402010000",
+      "name": "西城街道",
+      "average": 717.8
+    },
+    {
+      "regionId": "150402011000",
+      "name": "桥北街道",
+      "average": 1894.4
+    },
+    {
+      "regionId": "150402100000",
+      "name": "红庙子镇",
+      "average": 15841.7
+    },
+    {
+      "regionId": "150402102000",
+      "name": "文钟镇",
+      "average": 1052.0
+    },
+    {
+      "regionId": "150402400000",
+      "name": "红山工业园区",
+      "average": 183.9
+    },
+    {
+      "regionId": "150402401000",
+      "name": "红山物流园区",
+      "average": 3.1
+    },
+    {
+      "regionId": "150402402000",
+      "name": "红山区农畜产品加工产业园区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

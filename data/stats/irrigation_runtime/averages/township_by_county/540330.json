@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540330100000",
+      "name": "草卡镇",
+      "average": 27.8
+    },
+    {
+      "regionId": "540330101000",
+      "name": "边坝镇",
+      "average": 3.2
+    },
+    {
+      "regionId": "540330200000",
+      "name": "马武乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540330201000",
+      "name": "热玉乡",
+      "average": 170.1
+    },
+    {
+      "regionId": "540330202000",
+      "name": "尼木乡",
+      "average": 24.4
+    },
+    {
+      "regionId": "540330203000",
+      "name": "沙丁乡",
+      "average": 78.5
+    },
+    {
+      "regionId": "540330204000",
+      "name": "金岭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540330205000",
+      "name": "加贡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540330206000",
+      "name": "马秀乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540330207000",
+      "name": "都瓦乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540330208000",
+      "name": "拉孜乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

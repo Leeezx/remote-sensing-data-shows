@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "231083100000",
+      "name": "海林镇",
+      "average": 12026.5
+    },
+    {
+      "regionId": "231083101000",
+      "name": "长汀镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "231083102000",
+      "name": "横道镇",
+      "average": 506.0
+    },
+    {
+      "regionId": "231083103000",
+      "name": "山市镇",
+      "average": 2216.8
+    },
+    {
+      "regionId": "231083104000",
+      "name": "柴河镇",
+      "average": 754.0
+    },
+    {
+      "regionId": "231083105000",
+      "name": "二道镇",
+      "average": 468.3
+    },
+    {
+      "regionId": "231083106000",
+      "name": "新安朝鲜族镇",
+      "average": 11374.4
+    },
+    {
+      "regionId": "231083107000",
+      "name": "三道镇",
+      "average": 2212.5
+    },
+    {
+      "regionId": "231083400000",
+      "name": "牡林工程公司街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231083401000",
+      "name": "柴河林机厂街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231083403000",
+      "name": "海林林业局",
+      "average": 397.4
+    },
+    {
+      "regionId": "231083404000",
+      "name": "柴河林业局",
+      "average": 1331.5
+    },
+    {
+      "regionId": "231083500000",
+      "name": "海林农场",
+      "average": 850.2
+    },
+    {
+      "regionId": "231083501000",
+      "name": "山市种奶牛场",
+      "average": 9.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 7.030799999999998,
+      "color": "#bdd7e7",
+      "label": "7.031 万m³"
+    },
+    {
+      "value": 477.8004,
+      "color": "#6baed6",
+      "label": "477.800 万m³"
+    },
+    {
+      "value": 825.9576,
+      "color": "#3182bd",
+      "label": "825.958 万m³"
+    },
+    {
+      "value": 2213.5492,
+      "color": "#08519c",
+      "label": "2213.549 万m³"
+    },
+    {
+      "value": 11856.954,
+      "color": "#042d60",
+      "label": "11856.954 万m³"
+    }
+  ]
+}

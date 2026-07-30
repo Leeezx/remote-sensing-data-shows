@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140930100000",
+      "name": "文笔镇",
+      "average": 37.2
+    },
+    {
+      "regionId": "140930101000",
+      "name": "楼子营镇",
+      "average": 567.8
+    },
+    {
+      "regionId": "140930102000",
+      "name": "刘家塔镇",
+      "average": 109.5
+    },
+    {
+      "regionId": "140930103000",
+      "name": "巡镇镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "140930200000",
+      "name": "鹿固乡",
+      "average": 363.7
+    },
+    {
+      "regionId": "140930201000",
+      "name": "前川乡",
+      "average": 413.6
+    },
+    {
+      "regionId": "140930202000",
+      "name": "单寨乡",
+      "average": 1614.3
+    },
+    {
+      "regionId": "140930203000",
+      "name": "土沟乡",
+      "average": 578.9
+    },
+    {
+      "regionId": "140930204000",
+      "name": "旧县乡",
+      "average": 54.7
+    },
+    {
+      "regionId": "140930205000",
+      "name": "沙坪乡",
+      "average": 205.3
+    },
+    {
+      "regionId": "140930206000",
+      "name": "社梁乡",
+      "average": 252.7
+    },
+    {
+      "regionId": "140930207000",
+      "name": "沙泉乡",
+      "average": 725.2
+    },
+    {
+      "regionId": "140930208000",
+      "name": "赵家沟乡",
+      "average": 502.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 8.928,
+      "color": "#eff3ff",
+      "label": "8.928 万m³"
+    },
+    {
+      "value": 84.5112,
+      "color": "#bdd7e7",
+      "label": "84.511 万m³"
+    },
+    {
+      "value": 245.49519999999998,
+      "color": "#6baed6",
+      "label": "245.495 万m³"
+    },
+    {
+      "value": 427.08239999999995,
+      "color": "#3182bd",
+      "label": "427.082 万m³"
+    },
+    {
+      "value": 572.8616,
+      "color": "#08519c",
+      "label": "572.862 万m³"
+    },
+    {
+      "value": 1400.9159999999997,
+      "color": "#042d60",
+      "label": "1400.916 万m³"
+    }
+  ]
+}

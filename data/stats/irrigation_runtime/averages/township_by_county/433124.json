@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "433124001000",
+      "name": "长乐乡",
+      "average": 15967.9
+    },
+    {
+      "regionId": "433124002000",
+      "name": "道二乡",
+      "average": 12897.5
+    },
+    {
+      "regionId": "433124003000",
+      "name": "龙潭镇",
+      "average": 14819.2
+    },
+    {
+      "regionId": "433124004000",
+      "name": "猫儿乡",
+      "average": 14995.8
+    },
+    {
+      "regionId": "433124005000",
+      "name": "民乐镇",
+      "average": 5885.6
+    },
+    {
+      "regionId": "433124006000",
+      "name": "两河乡",
+      "average": 4470.6
+    },
+    {
+      "regionId": "433124008000",
+      "name": "麻栗场镇",
+      "average": 18979.3
+    },
+    {
+      "regionId": "433124009000",
+      "name": "排碧乡",
+      "average": 7276.6
+    },
+    {
+      "regionId": "433124010000",
+      "name": "排料乡",
+      "average": 5806.0
+    },
+    {
+      "regionId": "433124011000",
+      "name": "董马库乡",
+      "average": 7531.2
+    },
+    {
+      "regionId": "433124012000",
+      "name": "雅桥乡",
+      "average": 11227.7
+    },
+    {
+      "regionId": "433124013000",
+      "name": "排吾乡",
+      "average": 4367.3
+    },
+    {
+      "regionId": "433124014000",
+      "name": "吉卫镇",
+      "average": 17941.5
+    },
+    {
+      "regionId": "433124015000",
+      "name": "补抽乡",
+      "average": 23482.7
+    },
+    {
+      "regionId": "433124016000",
+      "name": "雅酉镇",
+      "average": 13530.9
+    },
+    {
+      "regionId": "433124017000",
+      "name": "团结镇",
+      "average": 12976.3
+    },
+    {
+      "regionId": "433124018000",
+      "name": "边城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "433124021000",
+      "name": "花垣镇",
+      "average": 33810.9
+    },
+    {
+      "regionId": "500241109000",
+      "name": "洪安镇",
+      "average": 1067.5
+    },
+    {
+      "regionId": "520628101000",
+      "name": "盘石镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628110000",
+      "name": "迓驾镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628201000",
+      "name": "世昌乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2559.0096,
+      "color": "#bdd7e7",
+      "label": "2559.010 万m³"
+    },
+    {
+      "value": 6558.844,
+      "color": "#6baed6",
+      "label": "6558.844 万m³"
+    },
+    {
+      "value": 12938.1608,
+      "color": "#3182bd",
+      "label": "12938.161 万m³"
+    },
+    {
+      "value": 15528.510799999998,
+      "color": "#08519c",
+      "label": "15528.511 万m³"
+    },
+    {
+      "value": 29473.055999999982,
+      "color": "#042d60",
+      "label": "29473.056 万m³"
+    }
+  ]
+}

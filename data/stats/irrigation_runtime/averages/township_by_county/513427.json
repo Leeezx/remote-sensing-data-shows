@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513427100000",
+      "name": "披砂镇",
+      "average": 5558.0
+    },
+    {
+      "regionId": "513427101000",
+      "name": "松新镇",
+      "average": 3407.8
+    },
+    {
+      "regionId": "513427102000",
+      "name": "竹寿镇",
+      "average": 7277.4
+    },
+    {
+      "regionId": "513427103000",
+      "name": "华弹镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513427104000",
+      "name": "白鹤滩镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513427105000",
+      "name": "葫芦口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513427200000",
+      "name": "景星乡",
+      "average": 4160.3
+    },
+    {
+      "regionId": "513427201000",
+      "name": "俱乐乡",
+      "average": 3966.6
+    },
+    {
+      "regionId": "513427202000",
+      "name": "新村乡",
+      "average": 4764.0
+    },
+    {
+      "regionId": "513427203000",
+      "name": "幸福乡",
+      "average": 10286.1
+    },
+    {
+      "regionId": "513427204000",
+      "name": "海子乡",
+      "average": 714.2
+    },
+    {
+      "regionId": "513427205000",
+      "name": "六铁乡",
+      "average": 1562.3
+    },
+    {
+      "regionId": "513427206000",
+      "name": "新建乡",
+      "average": 1586.8
+    },
+    {
+      "regionId": "513427207000",
+      "name": "稻谷乡",
+      "average": 1197.6
+    },
+    {
+      "regionId": "513427208000",
+      "name": "新华乡",
+      "average": 8369.0
+    },
+    {
+      "regionId": "513427209000",
+      "name": "石梨乡",
+      "average": 8639.0
+    },
+    {
+      "regionId": "513427210000",
+      "name": "松林乡",
+      "average": 4311.2
+    },
+    {
+      "regionId": "513427211000",
+      "name": "杉树乡",
+      "average": 1547.2
+    },
+    {
+      "regionId": "513427212000",
+      "name": "梁子乡",
+      "average": 1037.7
+    },
+    {
+      "regionId": "513427213000",
+      "name": "大同乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513427214000",
+      "name": "西瑶乡",
+      "average": 2359.1
+    },
+    {
+      "regionId": "513427215000",
+      "name": "红星乡",
+      "average": 1423.2
+    },
+    {
+      "regionId": "513427216000",
+      "name": "骑骡沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513427217000",
+      "name": "倮格乡",
+      "average": 2397.3
+    },
+    {
+      "regionId": "513427218000",
+      "name": "跑马乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 62.84960000000006,
+      "color": "#bdd7e7",
+      "label": "62.850 万m³"
+    },
+    {
+      "value": 1509.504,
+      "color": "#6baed6",
+      "label": "1509.504 万m³"
+    },
+    {
+      "value": 2704.491999999999,
+      "color": "#3182bd",
+      "label": "2704.492 万m³"
+    },
+    {
+      "value": 4724.1536,
+      "color": "#08519c",
+      "label": "4724.154 万m³"
+    },
+    {
+      "value": 9495.492,
+      "color": "#042d60",
+      "label": "9495.492 万m³"
+    }
+  ]
+}

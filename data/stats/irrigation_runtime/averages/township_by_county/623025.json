@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513231204000",
+      "name": "求吉玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513231216000",
+      "name": "麦尔玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513231217000",
+      "name": "贾洛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513232203000",
+      "name": "辖曼乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623025100000",
+      "name": "尼玛镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "623025200000",
+      "name": "欧拉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623025201000",
+      "name": "欧拉秀玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623025202000",
+      "name": "阿万仓乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623025203000",
+      "name": "木西合乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623025204000",
+      "name": "齐哈玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623025205000",
+      "name": "采日玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623025206000",
+      "name": "曼日玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632324201000",
+      "name": "多松乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632621101000",
+      "name": "拉加镇",
+      "average": 28.9
+    },
+    {
+      "regionId": "632623205000",
+      "name": "下藏科乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

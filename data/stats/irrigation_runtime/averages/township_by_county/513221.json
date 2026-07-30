@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513221100000",
+      "name": "威州镇",
+      "average": 866.4
+    },
+    {
+      "regionId": "513221101000",
+      "name": "绵虒镇",
+      "average": 502.7
+    },
+    {
+      "regionId": "513221102000",
+      "name": "映秀镇",
+      "average": 353.7
+    },
+    {
+      "regionId": "513221103000",
+      "name": "卧龙镇",
+      "average": 140.2
+    },
+    {
+      "regionId": "513221105000",
+      "name": "水磨镇",
+      "average": 746.0
+    },
+    {
+      "regionId": "513221106000",
+      "name": "漩口镇",
+      "average": 2127.2
+    },
+    {
+      "regionId": "513221107000",
+      "name": "三江镇",
+      "average": 252.7
+    },
+    {
+      "regionId": "513221200000",
+      "name": "龙溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513221201000",
+      "name": "克枯乡",
+      "average": 166.1
+    },
+    {
+      "regionId": "513221202000",
+      "name": "雁门乡",
+      "average": 310.3
+    },
+    {
+      "regionId": "513221203000",
+      "name": "草坡乡",
+      "average": 378.7
+    },
+    {
+      "regionId": "513221204000",
+      "name": "银杏乡",
+      "average": 206.5
+    },
+    {
+      "regionId": "513221205000",
+      "name": "耿达镇",
+      "average": 319.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 33.647999999999996,
+      "color": "#eff3ff",
+      "label": "33.648 万m³"
+    },
+    {
+      "value": 188.0776,
+      "color": "#bdd7e7",
+      "label": "188.078 万m³"
+    },
+    {
+      "value": 301.5448,
+      "color": "#6baed6",
+      "label": "301.545 万m³"
+    },
+    {
+      "value": 357.49999999999994,
+      "color": "#3182bd",
+      "label": "357.500 万m³"
+    },
+    {
+      "value": 613.6447999999999,
+      "color": "#08519c",
+      "label": "613.645 万m³"
+    },
+    {
+      "value": 1824.6079999999997,
+      "color": "#042d60",
+      "label": "1824.608 万m³"
+    }
+  ]
+}

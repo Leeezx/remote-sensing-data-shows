@@ -52,6 +52,12 @@ htmlcov/
 .codex-runtime/
 .planning/
 test_tile*.png
+findings.md
+progress.md
+task_plan.md
+
+# Local working notes
+docs/改进.md
 
 # Intermediate processing
 temp_ssm/

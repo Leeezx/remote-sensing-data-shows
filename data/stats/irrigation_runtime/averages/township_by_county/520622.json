@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "431227103000",
+      "name": "鱼市镇",
+      "average": 6663.0
+    },
+    {
+      "regionId": "431227205000",
+      "name": "林冲乡",
+      "average": 1569.2
+    },
+    {
+      "regionId": "520622100000",
+      "name": "平溪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520622101000",
+      "name": "大龙镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520622102000",
+      "name": "朱家场镇",
+      "average": 28474.5
+    },
+    {
+      "regionId": "520622103000",
+      "name": "田坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520622200000",
+      "name": "新店乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520622201000",
+      "name": "亚鱼乡",
+      "average": 4995.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

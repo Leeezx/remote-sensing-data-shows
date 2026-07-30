@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130723500000",
+      "name": "康保牧场",
+      "average": 0.0
+    },
+    {
+      "regionId": "152529100000",
+      "name": "明安图镇",
+      "average": 14.7
+    },
+    {
+      "regionId": "152529101000",
+      "name": "星耀镇",
+      "average": 36.6
+    },
+    {
+      "regionId": "152529200000",
+      "name": "伊和淖尔苏木乡",
+      "average": 11.0
+    },
+    {
+      "regionId": "152529201000",
+      "name": "乌兰查布苏木乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "152529202000",
+      "name": "宝拉根陶海苏木",
+      "average": 7.9
+    },
+    {
+      "regionId": "152529500000",
+      "name": "额里图种畜场",
+      "average": 0.0
+    },
+    {
+      "regionId": "152529502000",
+      "name": "哲日根图林场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

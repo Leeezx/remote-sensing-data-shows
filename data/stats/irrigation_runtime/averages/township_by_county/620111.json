@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620111001000",
+      "name": "窑街街道",
+      "average": 149.3
+    },
+    {
+      "regionId": "620111002000",
+      "name": "下窑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620111003000",
+      "name": "矿区街道",
+      "average": 86.2
+    },
+    {
+      "regionId": "620111101000",
+      "name": "海石湾镇",
+      "average": 26.5
+    },
+    {
+      "regionId": "620111102000",
+      "name": "花庄镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620111103000",
+      "name": "平安镇",
+      "average": 5762.9
+    },
+    {
+      "regionId": "620111200000",
+      "name": "红古乡",
+      "average": 5.5
+    },
+    {
+      "regionId": "630222100000",
+      "name": "川口镇",
+      "average": 3972.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2.662,
+      "color": "#bdd7e7",
+      "label": "2.662 万m³"
+    },
+    {
+      "value": 22.887999999999998,
+      "color": "#6baed6",
+      "label": "22.888 万m³"
+    },
+    {
+      "value": 97.05319999999999,
+      "color": "#3182bd",
+      "label": "97.053 万m³"
+    },
+    {
+      "value": 2122.019599999997,
+      "color": "#08519c",
+      "label": "2122.020 万m³"
+    },
+    {
+      "value": 5512.229999999999,
+      "color": "#042d60",
+      "label": "5512.230 万m³"
+    }
+  ]
+}

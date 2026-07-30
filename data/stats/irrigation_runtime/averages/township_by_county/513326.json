@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513326100000",
+      "name": "鲜水镇",
+      "average": 70.7
+    },
+    {
+      "regionId": "513326101000",
+      "name": "八美镇",
+      "average": 130.9
+    },
+    {
+      "regionId": "513326200000",
+      "name": "格西乡",
+      "average": 84.8
+    },
+    {
+      "regionId": "513326201000",
+      "name": "麻孜乡",
+      "average": 30.9
+    },
+    {
+      "regionId": "513326202000",
+      "name": "孔色乡",
+      "average": 31.2
+    },
+    {
+      "regionId": "513326203000",
+      "name": "葛卡乡",
+      "average": 635.3
+    },
+    {
+      "regionId": "513326204000",
+      "name": "亚卓乡",
+      "average": 111.9
+    },
+    {
+      "regionId": "513326205000",
+      "name": "仲尼乡",
+      "average": 73.4
+    },
+    {
+      "regionId": "513326206000",
+      "name": "红顶乡",
+      "average": 160.8
+    },
+    {
+      "regionId": "513326207000",
+      "name": "扎拖乡",
+      "average": 115.7
+    },
+    {
+      "regionId": "513326208000",
+      "name": "下拖乡",
+      "average": 25.7
+    },
+    {
+      "regionId": "513326209000",
+      "name": "瓦日乡",
+      "average": 147.8
+    },
+    {
+      "regionId": "513326210000",
+      "name": "木茹乡",
+      "average": 122.0
+    },
+    {
+      "regionId": "513326211000",
+      "name": "甲斯孔乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513326212000",
+      "name": "甲宗乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513326213000",
+      "name": "七美乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513326214000",
+      "name": "银恩乡",
+      "average": 93.6
+    },
+    {
+      "regionId": "513326215000",
+      "name": "维它乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513326216000",
+      "name": "龙灯乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513326217000",
+      "name": "协德乡",
+      "average": 114.9
+    },
+    {
+      "regionId": "513326218000",
+      "name": "色卡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513326219000",
+      "name": "沙冲乡",
+      "average": 83.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

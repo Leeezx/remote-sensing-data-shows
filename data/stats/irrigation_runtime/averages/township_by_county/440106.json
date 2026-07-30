@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "440106001000",
+      "name": "五山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440106002000",
+      "name": "员村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440106003000",
+      "name": "车陂街道",
+      "average": 1340.9
+    },
+    {
+      "regionId": "440106004000",
+      "name": "沙河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440106006000",
+      "name": "石牌街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440106007000",
+      "name": "沙东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440106008000",
+      "name": "天河南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440106009000",
+      "name": "林和街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440106010000",
+      "name": "兴华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440106011000",
+      "name": "棠下街道",
+      "average": 1131.3
+    },
+    {
+      "regionId": "440106012000",
+      "name": "天园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440106013000",
+      "name": "猎德街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440106014000",
+      "name": "冼村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440106015000",
+      "name": "元岗街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440106016000",
+      "name": "黄村街道",
+      "average": 1083.9
+    },
+    {
+      "regionId": "440106017000",
+      "name": "长兴街道",
+      "average": 2890.9
+    },
+    {
+      "regionId": "440106018000",
+      "name": "龙洞街道",
+      "average": 3129.3
+    },
+    {
+      "regionId": "440106019000",
+      "name": "凤凰街道",
+      "average": 1941.0
+    },
+    {
+      "regionId": "440106020000",
+      "name": "前进街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440106021000",
+      "name": "珠吉街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440106022000",
+      "name": "新塘街道",
+      "average": 5721.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "623021100000",
+      "name": "城关镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "623021101000",
+      "name": "新城镇",
+      "average": 167.5
+    },
+    {
+      "regionId": "623021102000",
+      "name": "冶力关镇",
+      "average": 344.8
+    },
+    {
+      "regionId": "623021200000",
+      "name": "初布乡",
+      "average": 26.5
+    },
+    {
+      "regionId": "623021201000",
+      "name": "古战回族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623021202000",
+      "name": "卓洛回族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623021203000",
+      "name": "长川回族乡",
+      "average": 89.2
+    },
+    {
+      "regionId": "623021204000",
+      "name": "羊永乡",
+      "average": 3.7
+    },
+    {
+      "regionId": "623021205000",
+      "name": "流顺乡",
+      "average": 39.1
+    },
+    {
+      "regionId": "623021206000",
+      "name": "店子乡",
+      "average": 175.4
+    },
+    {
+      "regionId": "623021207000",
+      "name": "洮滨乡",
+      "average": 136.5
+    },
+    {
+      "regionId": "623021208000",
+      "name": "三岔乡",
+      "average": 7.1
+    },
+    {
+      "regionId": "623021209000",
+      "name": "王旗乡",
+      "average": 378.9
+    },
+    {
+      "regionId": "623021210000",
+      "name": "石门乡",
+      "average": 152.8
+    },
+    {
+      "regionId": "623021211000",
+      "name": "羊沙乡",
+      "average": 489.4
+    },
+    {
+      "regionId": "623021212000",
+      "name": "八角乡",
+      "average": 211.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 4.311999999999999,
+      "color": "#bdd7e7",
+      "label": "4.312 万m³"
+    },
+    {
+      "value": 42.10599999999998,
+      "color": "#6baed6",
+      "label": "42.106 万m³"
+    },
+    {
+      "value": 151.822,
+      "color": "#3182bd",
+      "label": "151.822 万m³"
+    },
+    {
+      "value": 204.83799999999997,
+      "color": "#08519c",
+      "label": "204.838 万m³"
+    },
+    {
+      "value": 456.2499999999999,
+      "color": "#042d60",
+      "label": "456.250 万m³"
+    }
+  ]
+}

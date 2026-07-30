@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610626100000",
+      "name": "吴起镇",
+      "average": 464.8
+    },
+    {
+      "regionId": "610626101000",
+      "name": "铁边城镇",
+      "average": 259.2
+    },
+    {
+      "regionId": "610626102000",
+      "name": "周湾镇",
+      "average": 151.3
+    },
+    {
+      "regionId": "610626103000",
+      "name": "白豹镇",
+      "average": 779.8
+    },
+    {
+      "regionId": "610626104000",
+      "name": "长官庙镇",
+      "average": 65.5
+    },
+    {
+      "regionId": "610626105000",
+      "name": "长城镇",
+      "average": 309.7
+    },
+    {
+      "regionId": "610626200000",
+      "name": "吴仓堡乡",
+      "average": 37.4
+    },
+    {
+      "regionId": "610626203000",
+      "name": "庙沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610626205000",
+      "name": "五谷城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621023101000",
+      "name": "柔远镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "621023205000",
+      "name": "怀安乡",
+      "average": 8.4
+    },
+    {
+      "regionId": "621023206000",
+      "name": "乔川乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621023207000",
+      "name": "乔河乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

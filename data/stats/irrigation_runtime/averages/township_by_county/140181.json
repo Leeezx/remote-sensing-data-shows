@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140181001000",
+      "name": "东曲街道",
+      "average": 913.7
+    },
+    {
+      "regionId": "140181002000",
+      "name": "西曲街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140181003000",
+      "name": "桃园街道",
+      "average": 232.6
+    },
+    {
+      "regionId": "140181004000",
+      "name": "屯兰街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140181100000",
+      "name": "河口镇",
+      "average": 685.9
+    },
+    {
+      "regionId": "140181101000",
+      "name": "镇城底镇",
+      "average": 75.7
+    },
+    {
+      "regionId": "140181102000",
+      "name": "马兰镇",
+      "average": 349.2
+    },
+    {
+      "regionId": "140181200000",
+      "name": "阁上乡",
+      "average": 311.3
+    },
+    {
+      "regionId": "140181201000",
+      "name": "加乐泉乡",
+      "average": 622.4
+    },
+    {
+      "regionId": "140181202000",
+      "name": "梭峪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "140181203000",
+      "name": "岔口乡",
+      "average": 1166.9
+    },
+    {
+      "regionId": "140181204000",
+      "name": "常安乡",
+      "average": 1604.6
+    },
+    {
+      "regionId": "140181205000",
+      "name": "原相乡",
+      "average": 2620.0
+    },
+    {
+      "regionId": "140181206000",
+      "name": "邢家社乡",
+      "average": 4729.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 57.229199999999985,
+      "color": "#bdd7e7",
+      "label": "57.229 万m³"
+    },
+    {
+      "value": 320.8508,
+      "color": "#6baed6",
+      "label": "320.851 万m³"
+    },
+    {
+      "value": 669.8979999999999,
+      "color": "#3182bd",
+      "label": "669.898 万m³"
+    },
+    {
+      "value": 1273.6988,
+      "color": "#08519c",
+      "label": "1273.699 万m³"
+    },
+    {
+      "value": 4180.808,
+      "color": "#042d60",
+      "label": "4180.808 万m³"
+    }
+  ]
+}

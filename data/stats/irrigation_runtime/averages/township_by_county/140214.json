@@ -1,0 +1,208 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140214001000",
+      "name": "新胜街道",
+      "average": 37.6
+    },
+    {
+      "regionId": "140214002000",
+      "name": "新平旺街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214003000",
+      "name": "煤峪口街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214004000",
+      "name": "永定庄街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214005000",
+      "name": "同家梁街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214006000",
+      "name": "四老沟街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214007000",
+      "name": "忻州窑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214008000",
+      "name": "白洞街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214009000",
+      "name": "雁崖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214010000",
+      "name": "挖金湾街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214011000",
+      "name": "晋华宫街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214012000",
+      "name": "马脊梁街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214013000",
+      "name": "大斗沟街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214014000",
+      "name": "王村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214015000",
+      "name": "姜家湾街道",
+      "average": 23.2
+    },
+    {
+      "regionId": "140214016000",
+      "name": "新泉路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214017000",
+      "name": "民胜街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214018000",
+      "name": "口泉街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214020000",
+      "name": "燕子山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214022000",
+      "name": "青磁窑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214023000",
+      "name": "平泉路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214024000",
+      "name": "四台沟街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140214025000",
+      "name": "和顺街道",
+      "average": 66.7
+    },
+    {
+      "regionId": "140214026000",
+      "name": "和瑞街道",
+      "average": 175.4
+    },
+    {
+      "regionId": "140214027000",
+      "name": "平盛路街道",
+      "average": 13.0
+    },
+    {
+      "regionId": "140214028000",
+      "name": "清泉街街道",
+      "average": 48.1
+    },
+    {
+      "regionId": "140214029000",
+      "name": "西花园街道",
+      "average": 21.5
+    },
+    {
+      "regionId": "140214030000",
+      "name": "老平旺街道",
+      "average": 28.5
+    },
+    {
+      "regionId": "140214101000",
+      "name": "高山镇",
+      "average": 196.6
+    },
+    {
+      "regionId": "140214102000",
+      "name": "云冈镇",
+      "average": 80.7
+    },
+    {
+      "regionId": "140214200000",
+      "name": "口泉乡",
+      "average": 9882.6
+    },
+    {
+      "regionId": "140214206000",
+      "name": "西韩岭乡",
+      "average": 15099.3
+    },
+    {
+      "regionId": "140214207000",
+      "name": "平旺乡",
+      "average": 669.7
+    },
+    {
+      "regionId": "140214210000",
+      "name": "鸦儿崖乡",
+      "average": 671.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540235100000",
+      "name": "聂拉木镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540235101000",
+      "name": "樟木镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540235200000",
+      "name": "亚来乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540235201000",
+      "name": "锁作乡",
+      "average": 25.1
+    },
+    {
+      "regionId": "540235202000",
+      "name": "门布乡",
+      "average": 24.7
+    },
+    {
+      "regionId": "540235203000",
+      "name": "乃龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540235204000",
+      "name": "波绒乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

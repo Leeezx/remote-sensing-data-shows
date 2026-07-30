@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "360826101000",
+      "name": "碧溪镇",
+      "average": 12517.0
+    },
+    {
+      "regionId": "360881002000",
+      "name": "红星街道",
+      "average": 514.7
+    },
+    {
+      "regionId": "360881100000",
+      "name": "厦坪镇",
+      "average": 6770.9
+    },
+    {
+      "regionId": "360881101000",
+      "name": "龙市镇",
+      "average": 8276.2
+    },
+    {
+      "regionId": "360881102000",
+      "name": "古城镇",
+      "average": 11034.4
+    },
+    {
+      "regionId": "360881103000",
+      "name": "新城镇",
+      "average": 3336.5
+    },
+    {
+      "regionId": "360881104000",
+      "name": "大陇镇",
+      "average": 2262.1
+    },
+    {
+      "regionId": "360881105000",
+      "name": "茨坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "360881200000",
+      "name": "拿山乡",
+      "average": 11981.1
+    },
+    {
+      "regionId": "360881201000",
+      "name": "黄垇乡",
+      "average": 2627.2
+    },
+    {
+      "regionId": "360881202000",
+      "name": "下七乡",
+      "average": 1106.4
+    },
+    {
+      "regionId": "360881203000",
+      "name": "长坪乡",
+      "average": 213.1
+    },
+    {
+      "regionId": "360881204000",
+      "name": "坳里乡",
+      "average": 5688.1
+    },
+    {
+      "regionId": "360881205000",
+      "name": "鹅岭乡",
+      "average": 5811.7
+    },
+    {
+      "regionId": "360881206000",
+      "name": "柏露乡",
+      "average": 887.7
+    },
+    {
+      "regionId": "360881207000",
+      "name": "茅坪乡",
+      "average": 2558.4
+    },
+    {
+      "regionId": "360881208000",
+      "name": "葛田乡",
+      "average": 3042.1
+    },
+    {
+      "regionId": "360881209000",
+      "name": "荷花乡",
+      "average": 2142.2
+    },
+    {
+      "regionId": "360881210000",
+      "name": "睦村乡",
+      "average": 2526.9
+    },
+    {
+      "regionId": "360881211000",
+      "name": "东上乡",
+      "average": 7015.2
+    },
+    {
+      "regionId": "360881400000",
+      "name": "井企集团",
+      "average": 1054.1
+    },
+    {
+      "regionId": "360881401000",
+      "name": "井冈山自然保护区",
+      "average": 3995.3
+    },
+    {
+      "regionId": "360881403000",
+      "name": "井冈山市工业园区",
+      "average": 724.7
+    },
+    {
+      "regionId": "360881501000",
+      "name": "白石垦殖场",
+      "average": 709.9
+    },
+    {
+      "regionId": "430224113000",
+      "name": "严塘镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "430225102000",
+      "name": "十都镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "430225401000",
+      "name": "炎陵县桃源洞管理局",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 614.6424,
+      "color": "#bdd7e7",
+      "label": "614.642 万m³"
+    },
+    {
+      "value": 1628.4431999999995,
+      "color": "#6baed6",
+      "label": "1628.443 万m³"
+    },
+    {
+      "value": 2832.990399999999,
+      "color": "#3182bd",
+      "label": "2832.990 万m³"
+    },
+    {
+      "value": 6279.789599999999,
+      "color": "#08519c",
+      "label": "6279.790 万m³"
+    },
+    {
+      "value": 12238.332,
+      "color": "#042d60",
+      "label": "12238.332 万m³"
+    }
+  ]
+}

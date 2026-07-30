@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "431125102000",
+      "name": "允山镇",
+      "average": 51871.5
+    },
+    {
+      "regionId": "431125202000",
+      "name": "千家峒瑶族乡",
+      "average": 8357.6
+    },
+    {
+      "regionId": "450327100000",
+      "name": "灌阳镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "450327101000",
+      "name": "黄关镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "450327102000",
+      "name": "文市镇",
+      "average": 362.8
+    },
+    {
+      "regionId": "450327103000",
+      "name": "新街镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "450327200000",
+      "name": "洞井瑶族乡",
+      "average": 8115.6
+    },
+    {
+      "regionId": "450327201000",
+      "name": "观音阁乡",
+      "average": 11119.3
+    },
+    {
+      "regionId": "450327202000",
+      "name": "西山瑶族乡",
+      "average": 431.3
+    },
+    {
+      "regionId": "450327204000",
+      "name": "新圩乡",
+      "average": 10427.5
+    },
+    {
+      "regionId": "450327205000",
+      "name": "水车乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

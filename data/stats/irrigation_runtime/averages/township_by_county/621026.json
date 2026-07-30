@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610428101000",
+      "name": "相公镇",
+      "average": 1855.1
+    },
+    {
+      "regionId": "610428106000",
+      "name": "彭公镇",
+      "average": 1028.6
+    },
+    {
+      "regionId": "610428107000",
+      "name": "地掌镇",
+      "average": 1335.3
+    },
+    {
+      "regionId": "610632105000",
+      "name": "双龙镇",
+      "average": 3196.0
+    },
+    {
+      "regionId": "621026100000",
+      "name": "新宁镇",
+      "average": 954.6
+    },
+    {
+      "regionId": "621026101000",
+      "name": "平子镇",
+      "average": 1374.1
+    },
+    {
+      "regionId": "621026102000",
+      "name": "早胜镇",
+      "average": 1331.7
+    },
+    {
+      "regionId": "621026103000",
+      "name": "长庆桥镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "621026104000",
+      "name": "和盛镇",
+      "average": 5998.4
+    },
+    {
+      "regionId": "621026105000",
+      "name": "湘乐镇",
+      "average": 6380.4
+    },
+    {
+      "regionId": "621026106000",
+      "name": "新庄镇",
+      "average": 8.6
+    },
+    {
+      "regionId": "621026107000",
+      "name": "盘克镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "621026200000",
+      "name": "米桥乡",
+      "average": 2864.2
+    },
+    {
+      "regionId": "621026201000",
+      "name": "良平乡",
+      "average": 630.2
+    },
+    {
+      "regionId": "621026202000",
+      "name": "中村乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621026203000",
+      "name": "太昌乡",
+      "average": 3302.2
+    },
+    {
+      "regionId": "621026204000",
+      "name": "焦村乡",
+      "average": 7832.8
+    },
+    {
+      "regionId": "621026205000",
+      "name": "南义乡",
+      "average": 632.5
+    },
+    {
+      "regionId": "621026206000",
+      "name": "瓦斜乡",
+      "average": 379.8
+    },
+    {
+      "regionId": "621026207000",
+      "name": "金村乡",
+      "average": 42.3
+    },
+    {
+      "regionId": "621026208000",
+      "name": "九岘乡",
+      "average": 6.8
+    },
+    {
+      "regionId": "621026209000",
+      "name": "春荣乡",
+      "average": 7605.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 23.832399999999996,
+      "color": "#bdd7e7",
+      "label": "23.832 万m³"
+    },
+    {
+      "value": 788.3964,
+      "color": "#6baed6",
+      "label": "788.396 万m³"
+    },
+    {
+      "value": 1355.3208,
+      "color": "#3182bd",
+      "label": "1355.321 万m³"
+    },
+    {
+      "value": 3254.1975999999995,
+      "color": "#08519c",
+      "label": "3254.198 万m³"
+    },
+    {
+      "value": 7737.376,
+      "color": "#042d60",
+      "label": "7737.376 万m³"
+    }
+  ]
+}

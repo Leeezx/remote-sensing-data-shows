@@ -1,0 +1,138 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "360725100000",
+      "name": "横水镇",
+      "average": 9531.2
+    },
+    {
+      "regionId": "360725101000",
+      "name": "扬眉镇",
+      "average": 8421.9
+    },
+    {
+      "regionId": "360725102000",
+      "name": "过埠镇",
+      "average": 3912.0
+    },
+    {
+      "regionId": "360725103000",
+      "name": "铅厂镇",
+      "average": 13991.9
+    },
+    {
+      "regionId": "360725104000",
+      "name": "长龙镇",
+      "average": 4068.7
+    },
+    {
+      "regionId": "360725105000",
+      "name": "关田镇",
+      "average": 5433.5
+    },
+    {
+      "regionId": "360725200000",
+      "name": "龙勾乡",
+      "average": 6460.1
+    },
+    {
+      "regionId": "360725201000",
+      "name": "杰坝乡",
+      "average": 792.1
+    },
+    {
+      "regionId": "360725202000",
+      "name": "金坑乡",
+      "average": 1629.0
+    },
+    {
+      "regionId": "360725203000",
+      "name": "思顺乡",
+      "average": 5434.7
+    },
+    {
+      "regionId": "360725204000",
+      "name": "麟潭乡",
+      "average": 2738.3
+    },
+    {
+      "regionId": "360725205000",
+      "name": "上堡乡",
+      "average": 7409.4
+    },
+    {
+      "regionId": "360725206000",
+      "name": "聂都乡",
+      "average": 8098.2
+    },
+    {
+      "regionId": "360725207000",
+      "name": "文英乡",
+      "average": 7565.7
+    },
+    {
+      "regionId": "360725208000",
+      "name": "乐洞乡",
+      "average": 759.2
+    },
+    {
+      "regionId": "360725209000",
+      "name": "丰州乡",
+      "average": 6854.9
+    },
+    {
+      "regionId": "360725500000",
+      "name": "天台山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "431026209000",
+      "name": "濠头乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "431026216000",
+      "name": "集益乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "431027210000",
+      "name": "东洛乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 760.1212,
+      "color": "#bdd7e7",
+      "label": "760.121 万m³"
+    },
+    {
+      "value": 3531.721199999999,
+      "color": "#6baed6",
+      "label": "3531.721 万m³"
+    },
+    {
+      "value": 5766.9295999999995,
+      "color": "#3182bd",
+      "label": "5766.930 万m³"
+    },
+    {
+      "value": 7561.3236,
+      "color": "#08519c",
+      "label": "7561.324 万m³"
+    },
+    {
+      "value": 12296.834000000004,
+      "color": "#042d60",
+      "label": "12296.834 万m³"
+    }
+  ]
+}

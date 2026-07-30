@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "431125106000",
+      "name": "回龙圩镇",
+      "average": 8740.1
+    },
+    {
+      "regionId": "451123100000",
+      "name": "富阳镇",
+      "average": 62929.0
+    },
+    {
+      "regionId": "451123101000",
+      "name": "白沙镇",
+      "average": 139.4
+    },
+    {
+      "regionId": "451123102000",
+      "name": "莲山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451123103000",
+      "name": "古城镇",
+      "average": 17549.4
+    },
+    {
+      "regionId": "451123104000",
+      "name": "福利镇",
+      "average": 107.3
+    },
+    {
+      "regionId": "451123105000",
+      "name": "麦岭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451123106000",
+      "name": "葛坡镇",
+      "average": 13445.4
+    },
+    {
+      "regionId": "451123107000",
+      "name": "城北镇",
+      "average": 13925.2
+    },
+    {
+      "regionId": "451123108000",
+      "name": "朝东镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451123200000",
+      "name": "新华乡",
+      "average": 551.5
+    },
+    {
+      "regionId": "451123201000",
+      "name": "石家乡",
+      "average": 565.6
+    },
+    {
+      "regionId": "451123203000",
+      "name": "柳家乡",
+      "average": 20929.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 58.3712,
+      "color": "#bdd7e7",
+      "label": "58.371 万m³"
+    },
+    {
+      "value": 488.8607999999999,
+      "color": "#6baed6",
+      "label": "488.861 万m³"
+    },
+    {
+      "value": 9455.305599999996,
+      "color": "#3182bd",
+      "label": "9455.306 万m³"
+    },
+    {
+      "value": 15577.8352,
+      "color": "#08519c",
+      "label": "15577.835 万m³"
+    },
+    {
+      "value": 52849.21599999999,
+      "color": "#042d60",
+      "label": "52849.216 万m³"
+    }
+  ]
+}

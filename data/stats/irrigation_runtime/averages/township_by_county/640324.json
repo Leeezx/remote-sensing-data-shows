@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "621022209000",
+      "name": "南湫乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621022212000",
+      "name": "小南沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640324100000",
+      "name": "豫海镇",
+      "average": 18741.8
+    },
+    {
+      "regionId": "640324101000",
+      "name": "河西镇",
+      "average": 58996.3
+    },
+    {
+      "regionId": "640324102000",
+      "name": "韦州镇",
+      "average": 831.0
+    },
+    {
+      "regionId": "640324103000",
+      "name": "下马关镇",
+      "average": 112.7
+    },
+    {
+      "regionId": "640324104000",
+      "name": "预旺镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "640324105000",
+      "name": "王团镇",
+      "average": 16843.7
+    },
+    {
+      "regionId": "640324106000",
+      "name": "丁塘镇",
+      "average": 43300.2
+    },
+    {
+      "regionId": "640324201000",
+      "name": "田老庄乡",
+      "average": 19.2
+    },
+    {
+      "regionId": "640324202000",
+      "name": "马高庄乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640324203000",
+      "name": "张家塬乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640324204000",
+      "name": "兴隆乡",
+      "average": 1124.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

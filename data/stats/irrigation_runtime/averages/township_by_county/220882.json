@@ -1,0 +1,218 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "220882001000",
+      "name": "慧阳街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220882002000",
+      "name": "临江街道",
+      "average": 11.4
+    },
+    {
+      "regionId": "220882003000",
+      "name": "长虹街道",
+      "average": 3.0
+    },
+    {
+      "regionId": "220882004000",
+      "name": "锦华街道",
+      "average": 40.1
+    },
+    {
+      "regionId": "220882005000",
+      "name": "安北街道",
+      "average": 286.5
+    },
+    {
+      "regionId": "220882100000",
+      "name": "月亮泡镇",
+      "average": 7102.6
+    },
+    {
+      "regionId": "220882101000",
+      "name": "安广镇",
+      "average": 8788.6
+    },
+    {
+      "regionId": "220882102000",
+      "name": "丰收镇",
+      "average": 7776.6
+    },
+    {
+      "regionId": "220882103000",
+      "name": "新平安镇",
+      "average": 1407.9
+    },
+    {
+      "regionId": "220882104000",
+      "name": "两家子镇",
+      "average": 5801.5
+    },
+    {
+      "regionId": "220882105000",
+      "name": "舍力镇",
+      "average": 27353.8
+    },
+    {
+      "regionId": "220882106000",
+      "name": "大岗子镇",
+      "average": 2446.4
+    },
+    {
+      "regionId": "220882107000",
+      "name": "叉干镇",
+      "average": 11905.1
+    },
+    {
+      "regionId": "220882108000",
+      "name": "龙沼镇",
+      "average": 8374.1
+    },
+    {
+      "regionId": "220882109000",
+      "name": "太山镇",
+      "average": 20637.0
+    },
+    {
+      "regionId": "220882110000",
+      "name": "烧锅镇",
+      "average": 14791.5
+    },
+    {
+      "regionId": "220882111000",
+      "name": "乐胜镇",
+      "average": 27090.7
+    },
+    {
+      "regionId": "220882200000",
+      "name": "四棵树乡",
+      "average": 12810.8
+    },
+    {
+      "regionId": "220882201000",
+      "name": "联合乡",
+      "average": 12103.4
+    },
+    {
+      "regionId": "220882202000",
+      "name": "大赉乡",
+      "average": 866.3
+    },
+    {
+      "regionId": "220882203000",
+      "name": "红岗子乡",
+      "average": 7069.9
+    },
+    {
+      "regionId": "220882204000",
+      "name": "海坨乡",
+      "average": 4452.3
+    },
+    {
+      "regionId": "220882205000",
+      "name": "新艾里蒙古族乡",
+      "average": 9243.2
+    },
+    {
+      "regionId": "220882400000",
+      "name": "大安经济开发区（省级）",
+      "average": 38.6
+    },
+    {
+      "regionId": "220882401000",
+      "name": "新荒渔场",
+      "average": 389.7
+    },
+    {
+      "regionId": "220882402000",
+      "name": "东方红农场",
+      "average": 4523.0
+    },
+    {
+      "regionId": "220882403000",
+      "name": "舍力林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "220882404000",
+      "name": "五间房水库",
+      "average": 43.5
+    },
+    {
+      "regionId": "220882405000",
+      "name": "大岗子林场",
+      "average": 50.4
+    },
+    {
+      "regionId": "220882406000",
+      "name": "风水山牧场",
+      "average": 70.5
+    },
+    {
+      "regionId": "220882407000",
+      "name": "东风马场",
+      "average": 377.0
+    },
+    {
+      "regionId": "220882408000",
+      "name": "良种繁育场",
+      "average": 3.2
+    },
+    {
+      "regionId": "220882409000",
+      "name": "大安马场",
+      "average": 22.2
+    },
+    {
+      "regionId": "220882410000",
+      "name": "安广猪场",
+      "average": 111.6
+    },
+    {
+      "regionId": "220882411000",
+      "name": "红旗饲养场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230622500000",
+      "name": "肇源农场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 29.088,
+      "color": "#bdd7e7",
+      "label": "29.088 万m³"
+    },
+    {
+      "value": 299.1699999999999,
+      "color": "#6baed6",
+      "label": "299.170 万m³"
+    },
+    {
+      "value": 4513.102,
+      "color": "#3182bd",
+      "label": "4513.102 万m³"
+    },
+    {
+      "value": 9052.268,
+      "color": "#08519c",
+      "label": "9052.268 万m³"
+    },
+    {
+      "value": 27169.63,
+      "color": "#042d60",
+      "label": "27169.630 万m³"
+    }
+  ]
+}

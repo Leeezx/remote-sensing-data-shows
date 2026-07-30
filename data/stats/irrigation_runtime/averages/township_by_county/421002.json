@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "421002001000",
+      "name": "中山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "421002002000",
+      "name": "崇文街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "421002003000",
+      "name": "解放街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "421002004000",
+      "name": "胜利街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "421002005000",
+      "name": "朝阳街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "421002033000",
+      "name": "联合街道",
+      "average": 7565.3
+    },
+    {
+      "regionId": "421002100000",
+      "name": "锣场镇",
+      "average": 8374.0
+    },
+    {
+      "regionId": "421002101000",
+      "name": "岑河镇",
+      "average": 114520.7
+    },
+    {
+      "regionId": "421002102000",
+      "name": "观音当镇",
+      "average": 70763.3
+    },
+    {
+      "regionId": "421002103000",
+      "name": "关沮镇",
+      "average": 4745.8
+    },
+    {
+      "regionId": "421002200000",
+      "name": "立新乡",
+      "average": 1942.8
+    },
+    {
+      "regionId": "421002500000",
+      "name": "岑河原种场",
+      "average": 11710.4
+    },
+    {
+      "regionId": "421002571000",
+      "name": "沙市农场",
+      "average": 10382.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

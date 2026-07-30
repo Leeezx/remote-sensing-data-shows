@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230707409000",
+      "name": "结源林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230707410000",
+      "name": "北沟林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230707411000",
+      "name": "南沟林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230707412000",
+      "name": "乌拉嘎经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230707413000",
+      "name": "柳树河林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230712406000",
+      "name": "守虎山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230712407000",
+      "name": "泉石林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230712409000",
+      "name": "育林经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230712410000",
+      "name": "团结经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230712411000",
+      "name": "磨石山经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230714411000",
+      "name": "前卫林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230722100000",
+      "name": "朝阳镇",
+      "average": 12.6
+    },
+    {
+      "regionId": "230722101000",
+      "name": "乌云镇",
+      "average": 2748.8
+    },
+    {
+      "regionId": "230722102000",
+      "name": "乌拉嘎镇",
+      "average": 133.0
+    },
+    {
+      "regionId": "230722200000",
+      "name": "常胜乡",
+      "average": 539.6
+    },
+    {
+      "regionId": "230722201000",
+      "name": "向阳乡",
+      "average": 926.4
+    },
+    {
+      "regionId": "230722202000",
+      "name": "沪嘉乡",
+      "average": 262.4
+    },
+    {
+      "regionId": "230722203000",
+      "name": "红光乡",
+      "average": 241.4
+    },
+    {
+      "regionId": "230722204000",
+      "name": "保兴乡",
+      "average": 753.5
+    },
+    {
+      "regionId": "230722205000",
+      "name": "青山乡",
+      "average": 7.8
+    },
+    {
+      "regionId": "230722400000",
+      "name": "太平林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230722402000",
+      "name": "清河林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230722404000",
+      "name": "马连林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230722500000",
+      "name": "嘉荫农场",
+      "average": 3930.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

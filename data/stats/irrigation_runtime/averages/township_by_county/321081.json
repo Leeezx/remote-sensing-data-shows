@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "321003152000",
+      "name": "朴席镇",
+      "average": 38825.4
+    },
+    {
+      "regionId": "321081100000",
+      "name": "真州镇",
+      "average": 15655.5
+    },
+    {
+      "regionId": "321081103000",
+      "name": "新集镇",
+      "average": 35690.8
+    },
+    {
+      "regionId": "321081104000",
+      "name": "新城镇",
+      "average": 40311.9
+    },
+    {
+      "regionId": "321081105000",
+      "name": "马集镇",
+      "average": 32545.1
+    },
+    {
+      "regionId": "321081106000",
+      "name": "刘集镇",
+      "average": 42541.5
+    },
+    {
+      "regionId": "321081107000",
+      "name": "陈集镇",
+      "average": 40949.7
+    },
+    {
+      "regionId": "321081108000",
+      "name": "大仪镇",
+      "average": 44837.4
+    },
+    {
+      "regionId": "321081109000",
+      "name": "月塘镇",
+      "average": 47461.5
+    },
+    {
+      "regionId": "321081150000",
+      "name": "青山镇",
+      "average": 10952.7
+    },
+    {
+      "regionId": "321081401000",
+      "name": "原种场",
+      "average": 121.5
+    },
+    {
+      "regionId": "321081402000",
+      "name": "蚕种场",
+      "average": 568.9
+    },
+    {
+      "regionId": "321081403000",
+      "name": "园艺试验场",
+      "average": 2108.4
+    },
+    {
+      "regionId": "321081404000",
+      "name": "水产试验场",
+      "average": 0.0
+    },
+    {
+      "regionId": "321081405000",
+      "name": "捺山茶场",
+      "average": 0.0
+    },
+    {
+      "regionId": "321081407000",
+      "name": "汽车工业园",
+      "average": 1743.7
+    },
+    {
+      "regionId": "321081408000",
+      "name": "十二圩办事处",
+      "average": 24586.1
+    },
+    {
+      "regionId": "321081409000",
+      "name": "铜山办事处",
+      "average": 26238.3
+    },
+    {
+      "regionId": "321081410000",
+      "name": "开发区",
+      "average": 2013.0
+    },
+    {
+      "regionId": "321081454000",
+      "name": "化学工业园区",
+      "average": 4632.1
+    },
+    {
+      "regionId": "341181102000",
+      "name": "秦栏镇",
+      "average": 633.5
+    },
+    {
+      "regionId": "341181106000",
+      "name": "金集镇",
+      "average": 76.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 598.0992,
+      "color": "#bdd7e7",
+      "label": "598.099 万m³"
+    },
+    {
+      "value": 3329.8708,
+      "color": "#6baed6",
+      "label": "3329.871 万m³"
+    },
+    {
+      "value": 25438.6352,
+      "color": "#3182bd",
+      "label": "25438.635 万m³"
+    },
+    {
+      "value": 39640.002,
+      "color": "#08519c",
+      "label": "39640.002 万m³"
+    },
+    {
+      "value": 46359.378,
+      "color": "#042d60",
+      "label": "46359.378 万m³"
+    }
+  ]
+}

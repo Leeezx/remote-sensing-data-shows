@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350823102000",
+      "name": "中都镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350824206000",
+      "name": "象洞乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "441427103000",
+      "name": "三圳镇",
+      "average": 21660.5
+    },
+    {
+      "regionId": "441427106000",
+      "name": "文福镇",
+      "average": 22270.0
+    },
+    {
+      "regionId": "441427107000",
+      "name": "广福镇",
+      "average": 22017.7
+    },
+    {
+      "regionId": "441427112000",
+      "name": "新铺镇",
+      "average": 38206.8
+    },
+    {
+      "regionId": "441427113000",
+      "name": "蓝坊镇",
+      "average": 7271.8
+    },
+    {
+      "regionId": "441427114000",
+      "name": "南礤镇",
+      "average": 6044.3
+    },
+    {
+      "regionId": "441427115000",
+      "name": "蕉城镇",
+      "average": 20696.6
+    },
+    {
+      "regionId": "441427116000",
+      "name": "长潭镇",
+      "average": 29894.6
+    },
+    {
+      "regionId": "441427450000",
+      "name": "华侨农场",
+      "average": 4880.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 5019.892,
+      "color": "#bdd7e7",
+      "label": "5019.892 万m³"
+    },
+    {
+      "value": 7808.792,
+      "color": "#6baed6",
+      "label": "7808.792 万m³"
+    },
+    {
+      "value": 21621.944,
+      "color": "#3182bd",
+      "label": "21621.944 万m³"
+    },
+    {
+      "value": 22239.724,
+      "color": "#08519c",
+      "label": "22239.724 万m³"
+    },
+    {
+      "value": 36544.36000000001,
+      "color": "#042d60",
+      "label": "36544.360 万m³"
+    }
+  ]
+}

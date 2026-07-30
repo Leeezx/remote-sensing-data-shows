@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451222100000",
+      "name": "六排镇",
+      "average": 1992.5
+    },
+    {
+      "regionId": "451222101000",
+      "name": "向阳镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451222200000",
+      "name": "岜暮乡",
+      "average": 346.9
+    },
+    {
+      "regionId": "451222201000",
+      "name": "八腊瑶族乡",
+      "average": 4714.9
+    },
+    {
+      "regionId": "451222203000",
+      "name": "纳直乡",
+      "average": 1296.8
+    },
+    {
+      "regionId": "451222204000",
+      "name": "更新乡",
+      "average": 3327.1
+    },
+    {
+      "regionId": "451222206000",
+      "name": "下老乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451222207000",
+      "name": "坡结乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451222208000",
+      "name": "三堡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "522728106000",
+      "name": "红水河镇",
+      "average": 6122.5
+    },
+    {
+      "regionId": "522728212000",
+      "name": "凤亭乡",
+      "average": 2236.9
+    },
+    {
+      "regionId": "522728213000",
+      "name": "大亭乡",
+      "average": 1272.5
+    },
+    {
+      "regionId": "522728214000",
+      "name": "班仁乡",
+      "average": 2040.9
+    },
+    {
+      "regionId": "522728218000",
+      "name": "罗妥乡",
+      "average": 4274.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

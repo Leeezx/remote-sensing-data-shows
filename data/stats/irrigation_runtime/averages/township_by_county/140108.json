@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140108001000",
+      "name": "尖草坪街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140108002000",
+      "name": "光社街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140108003000",
+      "name": "上兰街道",
+      "average": 2833.8
+    },
+    {
+      "regionId": "140108004000",
+      "name": "南寨街道",
+      "average": 819.2
+    },
+    {
+      "regionId": "140108005000",
+      "name": "迎新街道",
+      "average": 249.0
+    },
+    {
+      "regionId": "140108006000",
+      "name": "古城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140108007000",
+      "name": "汇丰街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140108008000",
+      "name": "柴村街道",
+      "average": 11567.8
+    },
+    {
+      "regionId": "140108009000",
+      "name": "新城街道",
+      "average": 99.0
+    },
+    {
+      "regionId": "140108100000",
+      "name": "向阳镇",
+      "average": 8468.7
+    },
+    {
+      "regionId": "140108101000",
+      "name": "阳曲镇",
+      "average": 670.4
+    },
+    {
+      "regionId": "140108200000",
+      "name": "马头水乡",
+      "average": 4003.1
+    },
+    {
+      "regionId": "140108201000",
+      "name": "柏板乡",
+      "average": 4857.4
+    },
+    {
+      "regionId": "140108202000",
+      "name": "西焉乡",
+      "average": 2595.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

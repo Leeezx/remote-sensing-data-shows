@@ -6,9 +6,17 @@ from backend import readiness
 
 
 def install_complete_runtime(monkeypatch, tmp_path):
-    series = tmp_path / "stats" / "irrigation_region_series.json"
-    series.parent.mkdir()
-    series.write_text('{"county": {}}', encoding="utf-8")
+    runtime = tmp_path / "stats" / "irrigation_runtime"
+    runtime.mkdir(parents=True)
+    for relative_path in (
+        "manifest.json",
+        "averages/county.json",
+        "series/county.json",
+        "series/township_index.json",
+    ):
+        target = runtime / relative_path
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text("{}", encoding="utf-8")
     county = tmp_path / "vectors" / "county" / "china_county.shp"
     county.parent.mkdir(parents=True)
     for suffix in (".shp", ".shx", ".dbf"):
@@ -31,7 +39,7 @@ def install_complete_runtime(monkeypatch, tmp_path):
         root.mkdir(parents=True)
         (root / "sample.tif").write_bytes(b"x")
         raster_roots.append((name, root))
-    monkeypatch.setattr(readiness, "IRRIGATION_REGION_SERIES_PATH", series)
+    monkeypatch.setattr(readiness, "IRRIGATION_RUNTIME_STATS_ROOT", runtime)
     monkeypatch.setattr(readiness, "COUNTY_VECTOR_PATH", county)
     monkeypatch.setattr(readiness, "TOWNSHIP_CHUNK_ROOT", township)
     monkeypatch.setattr(readiness, "required_raster_roots", lambda: raster_roots)
@@ -44,18 +52,41 @@ def test_complete_runtime_is_ready(monkeypatch, tmp_path):
 
 def test_readiness_uses_identifiers_not_host_paths(monkeypatch, tmp_path):
     install_complete_runtime(monkeypatch, tmp_path)
-    readiness.IRRIGATION_REGION_SERIES_PATH.unlink()
+    (readiness.IRRIGATION_RUNTIME_STATS_ROOT / "manifest.json").unlink()
     failures = readiness.collect_readiness_failures()
-    assert failures == ["irrigation_region_series"]
+    assert failures == ["irrigation_runtime_stats"]
     assert str(tmp_path) not in json.dumps(failures)
 
 
-def test_malformed_series_json_is_not_ready(monkeypatch, tmp_path):
+def test_malformed_runtime_manifest_is_not_ready(monkeypatch, tmp_path):
     install_complete_runtime(monkeypatch, tmp_path)
-    readiness.IRRIGATION_REGION_SERIES_PATH.write_text("{", encoding="utf-8")
+    (
+        readiness.IRRIGATION_RUNTIME_STATS_ROOT / "manifest.json"
+    ).write_text("{", encoding="utf-8")
 
     assert readiness.collect_readiness_failures() == [
-        "irrigation_region_series"
+        "irrigation_runtime_stats"
+    ]
+
+
+@pytest.mark.parametrize(
+    "relative_path",
+    (
+        "averages/county.json",
+        "series/county.json",
+        "series/township_index.json",
+    ),
+)
+def test_missing_runtime_core_artifact_is_not_ready(
+    monkeypatch,
+    tmp_path,
+    relative_path,
+):
+    install_complete_runtime(monkeypatch, tmp_path)
+    (readiness.IRRIGATION_RUNTIME_STATS_ROOT / relative_path).unlink()
+
+    assert readiness.collect_readiness_failures() == [
+        "irrigation_runtime_stats"
     ]
 
 

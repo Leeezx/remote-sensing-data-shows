@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140725100000",
+      "name": "朝阳镇",
+      "average": 1756.8
+    },
+    {
+      "regionId": "140725101000",
+      "name": "南燕竹镇",
+      "average": 873.1
+    },
+    {
+      "regionId": "140725102000",
+      "name": "宗艾镇",
+      "average": 5130.1
+    },
+    {
+      "regionId": "140725103000",
+      "name": "平头镇",
+      "average": 5787.0
+    },
+    {
+      "regionId": "140725104000",
+      "name": "松塔镇",
+      "average": 3165.5
+    },
+    {
+      "regionId": "140725105000",
+      "name": "西洛镇",
+      "average": 4749.4
+    },
+    {
+      "regionId": "140725106000",
+      "name": "尹灵芝镇",
+      "average": 537.8
+    },
+    {
+      "regionId": "140725200000",
+      "name": "平舒乡",
+      "average": 10134.2
+    },
+    {
+      "regionId": "140725201000",
+      "name": "解愁乡",
+      "average": 787.6
+    },
+    {
+      "regionId": "140725202000",
+      "name": "温家庄乡",
+      "average": 263.2
+    },
+    {
+      "regionId": "140725203000",
+      "name": "景尚乡",
+      "average": 4299.9
+    },
+    {
+      "regionId": "140725204000",
+      "name": "上湖乡",
+      "average": 76.4
+    },
+    {
+      "regionId": "140725205000",
+      "name": "羊头崖乡",
+      "average": 225.5
+    },
+    {
+      "regionId": "140725206000",
+      "name": "马首乡",
+      "average": 607.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 115.166,
+      "color": "#eff3ff",
+      "label": "115.166 万m³"
+    },
+    {
+      "value": 470.7975999999999,
+      "color": "#bdd7e7",
+      "label": "470.798 万m³"
+    },
+    {
+      "value": 809.146,
+      "color": "#6baed6",
+      "label": "809.146 万m³"
+    },
+    {
+      "value": 2810.507599999999,
+      "color": "#3182bd",
+      "label": "2810.508 万m³"
+    },
+    {
+      "value": 4842.2908,
+      "color": "#08519c",
+      "label": "4842.291 万m³"
+    },
+    {
+      "value": 9003.928000000002,
+      "color": "#042d60",
+      "label": "9003.928 万m³"
+    }
+  ]
+}

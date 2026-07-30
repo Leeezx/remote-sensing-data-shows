@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500118001000",
+      "name": "中山路街道",
+      "average": 1203.9
+    },
+    {
+      "regionId": "500118002000",
+      "name": "胜利路街道",
+      "average": 3467.1
+    },
+    {
+      "regionId": "500118003000",
+      "name": "南大街街道",
+      "average": 5241.8
+    },
+    {
+      "regionId": "500118004000",
+      "name": "茶山竹海街道",
+      "average": 1215.1
+    },
+    {
+      "regionId": "500118005000",
+      "name": "大安街道",
+      "average": 14277.8
+    },
+    {
+      "regionId": "500118006000",
+      "name": "陈食街道",
+      "average": 7396.5
+    },
+    {
+      "regionId": "500118007000",
+      "name": "卫星湖街道",
+      "average": 2764.8
+    },
+    {
+      "regionId": "500118100000",
+      "name": "青峰镇",
+      "average": 2191.0
+    },
+    {
+      "regionId": "500118102000",
+      "name": "金龙镇",
+      "average": 15147.7
+    },
+    {
+      "regionId": "500118104000",
+      "name": "临江镇",
+      "average": 3345.3
+    },
+    {
+      "regionId": "500118106000",
+      "name": "何埂镇",
+      "average": 5726.8
+    },
+    {
+      "regionId": "500118107000",
+      "name": "松溉镇",
+      "average": 170.2
+    },
+    {
+      "regionId": "500118108000",
+      "name": "仙龙镇",
+      "average": 5430.1
+    },
+    {
+      "regionId": "500118109000",
+      "name": "吉安镇",
+      "average": 2880.3
+    },
+    {
+      "regionId": "500118110000",
+      "name": "五间镇",
+      "average": 4458.0
+    },
+    {
+      "regionId": "500118111000",
+      "name": "来苏镇",
+      "average": 5410.4
+    },
+    {
+      "regionId": "500118112000",
+      "name": "宝峰镇",
+      "average": 5049.1
+    },
+    {
+      "regionId": "500118113000",
+      "name": "双石镇",
+      "average": 4401.5
+    },
+    {
+      "regionId": "500118114000",
+      "name": "红炉镇",
+      "average": 3291.7
+    },
+    {
+      "regionId": "500118115000",
+      "name": "永荣镇",
+      "average": 799.4
+    },
+    {
+      "regionId": "500118116000",
+      "name": "三教镇",
+      "average": 3970.2
+    },
+    {
+      "regionId": "500118117000",
+      "name": "板桥镇",
+      "average": 5929.7
+    },
+    {
+      "regionId": "500118118000",
+      "name": "朱沱镇",
+      "average": 9228.0
+    },
+    {
+      "regionId": "510521111000",
+      "name": "毗卢镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510521115000",
+      "name": "立石镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510522203000",
+      "name": "参宝乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1207.26,
+      "color": "#bdd7e7",
+      "label": "1207.260 万m³"
+    },
+    {
+      "value": 3297.06,
+      "color": "#6baed6",
+      "label": "3297.060 万m³"
+    },
+    {
+      "value": 4452.35,
+      "color": "#3182bd",
+      "label": "4452.350 万m³"
+    },
+    {
+      "value": 5637.79,
+      "color": "#08519c",
+      "label": "5637.790 万m³"
+    },
+    {
+      "value": 14712.75,
+      "color": "#042d60",
+      "label": "14712.750 万m³"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "360722109000",
+      "name": "油山镇",
+      "average": 5888.4
+    },
+    {
+      "regionId": "360722202000",
+      "name": "万隆乡",
+      "average": 11538.3
+    },
+    {
+      "regionId": "360723100000",
+      "name": "南安镇",
+      "average": 6893.7
+    },
+    {
+      "regionId": "360723103000",
+      "name": "池江镇",
+      "average": 24987.3
+    },
+    {
+      "regionId": "360723106000",
+      "name": "黄龙镇",
+      "average": 10612.6
+    },
+    {
+      "regionId": "360723107000",
+      "name": "吉村镇",
+      "average": 20269.2
+    },
+    {
+      "regionId": "360723201000",
+      "name": "河洞乡",
+      "average": 2988.4
+    },
+    {
+      "regionId": "360729102000",
+      "name": "陂头镇",
+      "average": 27386.3
+    },
+    {
+      "regionId": "360729105000",
+      "name": "龙源坝镇",
+      "average": 6709.4
+    },
+    {
+      "regionId": "440282001000",
+      "name": "雄州街道",
+      "average": 44756.3
+    },
+    {
+      "regionId": "440282100000",
+      "name": "乌迳镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440282103000",
+      "name": "界址镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440282104000",
+      "name": "坪田镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440282105000",
+      "name": "黄坑镇",
+      "average": 27932.1
+    },
+    {
+      "regionId": "440282106000",
+      "name": "邓坊镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440282107000",
+      "name": "油山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440282109000",
+      "name": "南亩镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440282110000",
+      "name": "水口镇",
+      "average": 25820.4
+    },
+    {
+      "regionId": "440282111000",
+      "name": "江头镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440282112000",
+      "name": "湖口镇",
+      "average": 47016.4
+    },
+    {
+      "regionId": "440282113000",
+      "name": "珠玑镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440282115000",
+      "name": "主田镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440282116000",
+      "name": "古市镇",
+      "average": 29174.6
+    },
+    {
+      "regionId": "440282118000",
+      "name": "全安镇",
+      "average": 26311.8
+    },
+    {
+      "regionId": "440282120000",
+      "name": "百顺镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440282121000",
+      "name": "澜河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440282122000",
+      "name": "帽子峰镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440282400000",
+      "name": "东莞大岭山（南雄）产业转移工业园",
+      "average": 1246.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

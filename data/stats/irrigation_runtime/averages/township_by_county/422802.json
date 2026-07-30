@@ -1,0 +1,178 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "422802001000",
+      "name": "都亭街道",
+      "average": 5541.4
+    },
+    {
+      "regionId": "422802002000",
+      "name": "东城街道",
+      "average": 5934.7
+    },
+    {
+      "regionId": "422802100000",
+      "name": "谋道镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "422802101000",
+      "name": "柏杨坝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "422802102000",
+      "name": "汪营镇",
+      "average": 148.0
+    },
+    {
+      "regionId": "422802103000",
+      "name": "建南镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "422802104000",
+      "name": "忠路镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "422802105000",
+      "name": "团堡镇",
+      "average": 10060.3
+    },
+    {
+      "regionId": "422802106000",
+      "name": "毛坝镇",
+      "average": 5753.4
+    },
+    {
+      "regionId": "422802200000",
+      "name": "凉雾乡",
+      "average": 15821.4
+    },
+    {
+      "regionId": "422802201000",
+      "name": "元堡乡",
+      "average": 6589.8
+    },
+    {
+      "regionId": "422802202000",
+      "name": "南坪乡",
+      "average": 24745.3
+    },
+    {
+      "regionId": "422802203000",
+      "name": "文斗乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "422802205000",
+      "name": "沙溪乡",
+      "average": 3037.1
+    },
+    {
+      "regionId": "422802400000",
+      "name": "佛宝山生态综合开发区",
+      "average": 1719.1
+    },
+    {
+      "regionId": "500101151000",
+      "name": "龙驹镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500114108000",
+      "name": "黄溪镇",
+      "average": 2119.1
+    },
+    {
+      "regionId": "500114109000",
+      "name": "黎水镇",
+      "average": 713.8
+    },
+    {
+      "regionId": "500114248000",
+      "name": "白石乡",
+      "average": 4517.9
+    },
+    {
+      "regionId": "500235242000",
+      "name": "清水土家族自治乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500240104000",
+      "name": "临溪镇",
+      "average": 2030.4
+    },
+    {
+      "regionId": "500240105000",
+      "name": "黄水镇",
+      "average": 1582.1
+    },
+    {
+      "regionId": "500240116000",
+      "name": "冷水镇",
+      "average": 457.2
+    },
+    {
+      "regionId": "500240212000",
+      "name": "枫木乡",
+      "average": 1125.4
+    },
+    {
+      "regionId": "500240214000",
+      "name": "洗新乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500240218000",
+      "name": "金铃乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500243109000",
+      "name": "连湖镇",
+      "average": 4455.8
+    },
+    {
+      "regionId": "500243206000",
+      "name": "三义乡",
+      "average": 477.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

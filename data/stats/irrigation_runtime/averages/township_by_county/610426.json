@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610426100000",
+      "name": "监军镇",
+      "average": 16406.8
+    },
+    {
+      "regionId": "610426101000",
+      "name": "店头镇",
+      "average": 19016.8
+    },
+    {
+      "regionId": "610426102000",
+      "name": "常宁镇",
+      "average": 8225.1
+    },
+    {
+      "regionId": "610426103000",
+      "name": "仪井镇",
+      "average": 19281.5
+    },
+    {
+      "regionId": "610426104000",
+      "name": "甘井镇",
+      "average": 17835.9
+    },
+    {
+      "regionId": "610426105000",
+      "name": "马坊镇",
+      "average": 3616.4
+    },
+    {
+      "regionId": "610426106000",
+      "name": "豆家镇",
+      "average": 5073.5
+    },
+    {
+      "regionId": "610426107000",
+      "name": "御驾宫镇",
+      "average": 8955.8
+    },
+    {
+      "regionId": "610426108000",
+      "name": "渠子镇",
+      "average": 3710.5
+    },
+    {
+      "regionId": "610426109000",
+      "name": "永太镇",
+      "average": 1564.3
+    },
+    {
+      "regionId": "610426110000",
+      "name": "永平镇",
+      "average": 1032.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 1138.46,
+      "color": "#eff3ff",
+      "label": "1138.460 万m³"
+    },
+    {
+      "value": 3627.692,
+      "color": "#bdd7e7",
+      "label": "3627.692 万m³"
+    },
+    {
+      "value": 5199.564,
+      "color": "#6baed6",
+      "label": "5199.564 万m³"
+    },
+    {
+      "value": 8926.572,
+      "color": "#3182bd",
+      "label": "8926.572 万m³"
+    },
+    {
+      "value": 17664.408,
+      "color": "#08519c",
+      "label": "17664.408 万m³"
+    },
+    {
+      "value": 19228.56,
+      "color": "#042d60",
+      "label": "19228.560 万m³"
+    }
+  ]
+}
