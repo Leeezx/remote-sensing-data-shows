@@ -72,13 +72,18 @@ data/stats/irrigation_runtime/
       110102.json
   series/
     county.json
-    township_by_county/
+    township_index.json
+    township_by_source_code/
       110101.json
       110102.json
+      misc.json
 ```
 
-县代码使用现有 `backend.township_chunks.county_code_from_id` 规则。
-目录名称和值排序必须稳定，相同输入重复构建得到相同业务内容。
+averages 的县代码使用现有
+`backend.township_chunks.county_code_from_id` 规则，并以已发布乡镇
+矢量分片中的县-乡镇关系为准。series 分片使用十二位乡镇源 ID 的
+前六位；非十二位历史 ID 写入 `misc.json`。目录名称和值排序必须
+稳定，相同输入重复构建得到相同业务内容。
 
 现有 `.dockerignore` 已排除
 `data/stats/irrigation_region_series.json`。后端镜像继续复制
@@ -96,17 +101,24 @@ data/stats/irrigation_runtime/
   "unit": "万m³",
   "sourceSha256": "<64 位十六进制摘要>",
   "countyCount": 2893,
-  "townshipCount": 43726,
-  "townshipShardCount": 2865,
+  "sourceTownshipCount": 43726,
+  "mappedTownshipCount": 43669,
+  "mappedTownshipPairCount": 46021,
+  "crossCountyTownshipCount": 2308,
+  "unmappedTownshipCount": 57,
+  "averageShardCount": 2865,
+  "seriesShardCount": 2862,
   "artifacts": {
     "countyAverages": "averages/county.json",
-    "countySeries": "series/county.json"
+    "countySeries": "series/county.json",
+    "townshipIndex": "series/township_index.json"
   }
 }
 ```
 
-`townshipShardCount` 取真实构建结果，不硬编码为示例值。Manifest
-不写入当前时间，避免相同输入生成不必要的差异。
+所有数量取真实构建结果，不硬编码为示例值。`seriesShardCount` 包含
+`misc.json`。Manifest 不写入当前时间，避免相同输入生成不必要的
+差异。
 
 ### 县级平均值
 
@@ -132,8 +144,14 @@ data/stats/irrigation_runtime/
 ### 乡镇平均值分片
 
 每个 `averages/township_by_county/<县代码>.json` 直接等于该县的
-乡镇 averages API 响应。平均值分布和六级图例只使用该县乡镇，
-保持当前 `countyId` 查询语义。
+乡镇 averages API 响应。区域集合取同名乡镇矢量分片中唯一的
+`properties.id`，因此空间重分配后的乡镇与地图可见要素一致。同一
+乡镇 ID 可以因跨县几何出现在多个县分片；各县图例只使用本县可见的
+唯一乡镇 ID。
+
+当前真实数据包含 43,669 个可见唯一乡镇 ID、46,021 个县-乡镇唯一
+对和 2,308 个跨县乡镇 ID。另有 57 个序列 ID 没有可选矢量，不加入
+averages 分片，但仍保留在 series 产物中。
 
 ### 县级明细
 
@@ -155,11 +173,16 @@ data/stats/irrigation_runtime/
 
 县级文件使用紧凑 JSON，真实数据预计约 6 MiB。
 
-### 乡镇明细分片
+### 乡镇明细索引与分片
 
-每个 `series/township_by_county/<县代码>.json` 使用与县级文件相同
-的结构，只包含该父县的乡镇。条目中的 `parentId` 必须是当前县级
-区域 ID。
+`series/township_index.json` 将每个乡镇 `regionId` 映射到唯一的
+series 分片名。标准十二位数字 ID 使用前六位，例如
+`130521001000 -> 130521.json`；其他历史 ID 使用 `misc.json`。
+
+每个 `series/township_by_source_code/<分片名>` 使用与县级文件相同
+的结构，每个源序列 ID 在全部 series 分片中恰好出现一次。条目的
+`parentId` 保留区域目录中的原值；当前真实目录没有可靠的单一
+`parentId`，不得从跨县矢量关系中随意选择一个父县。
 
 ## 构建器
 
@@ -168,6 +191,8 @@ data/stats/irrigation_runtime/
 - `data/stats/irrigation_region_series.json`
 - `data/stats/irrigation_regions.json`
 - `data/metadata/irrigation_layer.json`
+- `data/vectors/irrigation/township_by_county/manifest.json`
+- `data/vectors/irrigation/township_by_county/*.geojson`
 
 默认输出为 `data/stats/irrigation_runtime/`。
 
@@ -175,13 +200,15 @@ data/stats/irrigation_runtime/
 
 1. 流程开始时读取并校验源序列、区域目录和基础图例。
 2. 计算源序列文件 SHA-256。
-3. 使用区域目录补充每个条目的稳定名称和 `parentId`。
-4. 生成县级平均值、县级明细和按县乡镇分片。
-5. 使用当前 `build_dynamic_legend` 生成县级及各县乡镇六级图例。
-6. 在同级临时目录写入全部紧凑 JSON 和 manifest。
-7. 重新读取临时产物并执行完整审计。
-8. 审计全部通过后，复用乡镇矢量构建器的备份/替换模式事务式发布。
-9. 发布失败时恢复旧目录；不留下半套正式产物。
+3. 使用区域目录补充每个条目的稳定名称，并保留目录 `parentId`。
+4. 逐个读取乡镇矢量分片，建立 46,021 个县-乡镇唯一对；同一县内
+   的重复几何只计一个 ID，跨县 ID 在各县分别保留。
+5. 生成县级平均值、按可见矢量关系分组的乡镇平均值和六级图例。
+6. 生成县级 series、按源 ID 前六位分组的乡镇 series 和全量索引。
+7. 在同级临时目录写入全部紧凑 JSON 和 manifest。
+8. 重新读取临时产物并执行完整审计。
+9. 审计全部通过后，复用乡镇矢量构建器的备份/替换模式事务式发布。
+10. 发布失败时恢复旧目录；不留下半套正式产物。
 
 构建器必须拒绝：
 
@@ -189,10 +216,16 @@ data/stats/irrigation_runtime/
 - 缺少 `unit`、县级或乡镇级数据；
 - 区域 ID 重复或序列条目不是对象；
 - 年度/月度序列不是数组，或点缺少有限数值；
-- 乡镇缺少父县、父县不存在或县代码不一致；
-- 同一区域出现在多个分片；
+- 矢量分片引用不存在的乡镇序列，或要素声明的 `parentId` 与分片县
+  代码不一致；
+- 同一乡镇在同一 averages 县分片重复计数；
+- 同一序列 ID 在多个 series 分片出现，或索引与分片不一致；
 - 图例不是六项、阈值非有限数或颜色顺序与基础图例不同；
-- 生成数量与源数据、区域目录不一致。
+- 生成数量与源数据、区域目录、矢量 manifest 不一致。
+
+跨县出现的同一乡镇 ID 是经空间对齐后的允许情况，不属于重复错误。
+没有矢量的 57 个当前源序列写入 series 并在 manifest 计为 unmapped，
+不阻止发布。
 
 旧大文件继续由 `backend/precompute_irrigation.py` 生成。该脚本在完成
 大文件和区域目录发布后调用运行时构建器；也允许单独运行新构建器，
@@ -209,7 +242,7 @@ data/stats/irrigation_runtime/
 - 读取县级 averages；
 - 根据 `countyId` 读取乡镇 averages 分片；
 - 读取县级 series；
-- 根据乡镇 `regionId` 和区域元数据读取对应父县 series 分片。
+- 根据 `township_index.json` 定位乡镇 series 分片。
 
 缓存版本使用规范化路径、`mtime_ns` 和文件大小。文件被原子替换后，
 下一次请求自动加载新版本。
@@ -217,7 +250,7 @@ data/stats/irrigation_runtime/
 缓存边界：
 
 - manifest、县级 averages 和县级 series 各缓存一份；
-- 乡镇 averages 与 series 使用按县代码键控、最多 64 个县的 LRU；
+- 乡镇 averages 与源代码 series 分片分别使用最多 64 项的 LRU；
 - 返回给调用方的数据不得允许修改共享缓存。
 
 运行时模块不得导入旧大文件路径，也不得调用
@@ -238,7 +271,7 @@ data/stats/irrigation_runtime/
 `GET /api/irrigation/series`
 
 - `level=county`：从县级 series 缓存取目标区域。
-- `level=township`：先从区域目录确定父县，再读取目标县分片。
+- `level=township`：从小型全量索引取得分片名，再读取目标源代码分片。
 - summary 继续在请求时按目标 period 计算，舍入和空序列语义不变。
 - 不存在的区域或 period 继续返回 404。
 
@@ -299,7 +332,10 @@ Nginx 在通用 `/api/` location 之前增加两个精确匹配 location：
 - 小型县/乡镇夹具生成预期目录、manifest、均值和明细。
 - 相同输入重复生成得到相同业务内容和 SHA。
 - 平均值和六级图例与当前算法一致。
-- 无父县、错误父县、重复区域、损坏序列和数量不一致阻止发布。
+- 矢量引用未知序列、同县重复计数、series 重复、损坏序列和数量
+  不一致阻止发布。
+- 跨县乡镇 ID 可进入多个 averages 分片，但在 series 中只出现一次。
+- 无矢量序列进入 series 和 unmapped 审计，不进入 averages。
 - 临时目录校验或替换失败时旧正式目录保持可用。
 
 ### 后端测试
@@ -324,11 +360,15 @@ Nginx 在通用 `/api/` location 之前增加两个精确匹配 location：
 
 构建完成后执行独立审计：
 
-1. 新旧数据逐区域比较名称、父县、年度序列和月度序列。
-2. 重新计算并比较县级和每县乡镇平均值及图例。
-3. 校验 2,893 个县和 43,726 个乡镇，最终以真实源计数为准。
-4. 校验所有乡镇恰好归属一个县，所有 manifest 数量与文件一致。
-5. 校验后端镜像构建上下文不包含旧大文件。
+1. 新旧数据逐区域比较名称、年度序列和月度序列。
+2. 重新计算并比较县级和每县可见乡镇平均值及图例。
+3. 校验 2,893 个县和 43,726 个乡镇源序列，最终以真实源计数为准。
+4. 校验 43,669 个可见唯一乡镇、46,021 个县-乡镇对、2,308 个跨县
+   ID 和 57 个无矢量 ID；最终数量由真实矢量 manifest 与分片审计
+   共同确认。
+5. 校验每个源序列在 series 中恰好出现一次，每个可见县-乡镇对在
+   对应 averages 中恰好出现一次。
+6. 校验后端镜像构建上下文不包含旧大文件。
 
 性能验收从新的 Python 进程启动真实 FastAPI TestClient，分别测量：
 
