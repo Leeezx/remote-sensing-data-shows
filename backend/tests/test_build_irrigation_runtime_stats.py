@@ -1,8 +1,16 @@
 import math
+import json
+import subprocess
+import sys
+from pathlib import Path
 
 import pytest
 
-from scripts.build_irrigation_runtime_stats import build_runtime_payloads
+from scripts.build_irrigation_runtime_stats import (
+    build_runtime_payloads,
+    build_runtime_stats,
+    main,
+)
 
 
 BASE_LEGEND = [
@@ -20,6 +28,72 @@ def entry(name: str, *values: float) -> dict:
         ],
         "monthly": [],
     }
+
+
+def write_json(path: Path, payload: object) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(payload, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+
+def install_build_inputs(tmp_path: Path) -> tuple[Path, Path, Path, Path]:
+    source = tmp_path / "irrigation_region_series.json"
+    regions = tmp_path / "irrigation_regions.json"
+    layer = tmp_path / "irrigation_layer.json"
+    chunks = tmp_path / "township_by_county"
+    write_json(
+        source,
+        {
+            "unit": "万m³",
+            "county": {"130502": entry("桥东区", 10)},
+            "township": {"130521001000": entry("旧编码街道", 4)},
+        },
+    )
+    write_json(
+        regions,
+        [
+            {"id": "130502", "name": "桥东区", "level": "county"},
+            {
+                "id": "130521001000",
+                "name": "旧编码街道",
+                "level": "township",
+            },
+        ],
+    )
+    write_json(layer, {"legend": BASE_LEGEND})
+    write_json(
+        chunks / "manifest.json",
+        {
+            "chunkCount": 1,
+            "chunks": {
+                "130502": {
+                    "countyId": "156130502",
+                    "featureCount": 1,
+                    "bytes": 1,
+                    "tolerance": 0.0005,
+                }
+            },
+        },
+    )
+    write_json(
+        chunks / "130502.geojson",
+        {
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "geometry": None,
+                    "properties": {
+                        "id": "130521001000",
+                        "parentId": "156130502",
+                    },
+                }
+            ],
+        },
+    )
+    return source, regions, layer, chunks
 
 
 def test_runtime_payloads_follow_current_vector_ownership():
@@ -136,3 +210,109 @@ def test_runtime_payloads_reject_non_finite_value():
             {},
             "digest",
         )
+
+
+def test_build_runtime_stats_publishes_valid_tree(tmp_path):
+    source, regions, layer, chunks = install_build_inputs(tmp_path)
+    output = tmp_path / "runtime"
+
+    manifest = build_runtime_stats(
+        source,
+        regions,
+        layer,
+        chunks,
+        output,
+    )
+
+    assert manifest["sourceTownshipCount"] == 1
+    assert (output / "manifest.json").is_file()
+    township_averages = json.loads(
+        (
+            output / "averages/township_by_county/130502.json"
+        ).read_text(encoding="utf-8")
+    )
+    assert township_averages["averages"][0]["regionId"] == "130521001000"
+
+
+def test_build_runtime_stats_keeps_previous_tree_when_validation_fails(tmp_path):
+    source, regions, layer, chunks = install_build_inputs(tmp_path)
+    output = tmp_path / "runtime"
+    build_runtime_stats(source, regions, layer, chunks, output)
+    before = {
+        path.relative_to(output).as_posix(): path.read_bytes()
+        for path in output.rglob("*")
+        if path.is_file()
+    }
+    chunk = json.loads(
+        (chunks / "130502.geojson").read_text(encoding="utf-8")
+    )
+    chunk["features"][0]["properties"]["id"] = "130502001000"
+    write_json(chunks / "130502.geojson", chunk)
+
+    with pytest.raises(ValueError, match="missing from township series"):
+        build_runtime_stats(source, regions, layer, chunks, output)
+
+    after = {
+        path.relative_to(output).as_posix(): path.read_bytes()
+        for path in output.rglob("*")
+        if path.is_file()
+    }
+    assert after == before
+
+
+def test_build_runtime_stats_rejects_parent_id_mismatch(tmp_path):
+    source, regions, layer, chunks = install_build_inputs(tmp_path)
+    output = tmp_path / "runtime"
+    chunk = json.loads(
+        (chunks / "130502.geojson").read_text(encoding="utf-8")
+    )
+    chunk["features"][0]["properties"]["parentId"] = "156130503"
+    write_json(chunks / "130502.geojson", chunk)
+
+    with pytest.raises(ValueError, match="parentId"):
+        build_runtime_stats(source, regions, layer, chunks, output)
+
+
+def test_check_mode_detects_artifact_drift(tmp_path):
+    source, regions, layer, chunks = install_build_inputs(tmp_path)
+    output = tmp_path / "runtime"
+    build_runtime_stats(source, regions, layer, chunks, output)
+    common_args = [
+        "--source",
+        str(source),
+        "--regions",
+        str(regions),
+        "--layer",
+        str(layer),
+        "--township-root",
+        str(chunks),
+        "--output",
+        str(output),
+        "--check",
+    ]
+
+    assert main(common_args) == 0
+
+    county_path = output / "averages/county.json"
+    county_path.write_text('{"drift": true}', encoding="utf-8")
+
+    assert main(common_args) == 1
+
+
+def test_builder_cli_can_run_directly_from_project_root():
+    project_root = Path(__file__).resolve().parents[2]
+
+    result = subprocess.run(
+        [
+            sys.executable,
+            "scripts/build_irrigation_runtime_stats.py",
+            "--help",
+        ],
+        cwd=project_root,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+    assert result.returncode == 0, result.stderr
+    assert "--township-root" in result.stdout
