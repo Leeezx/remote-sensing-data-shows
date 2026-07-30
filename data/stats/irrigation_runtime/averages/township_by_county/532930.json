@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "532930101000",
+      "name": "茈碧湖镇",
+      "average": 19274.4
+    },
+    {
+      "regionId": "532930102000",
+      "name": "邓川镇",
+      "average": 3546.6
+    },
+    {
+      "regionId": "532930103000",
+      "name": "右所镇",
+      "average": 15674.6
+    },
+    {
+      "regionId": "532930104000",
+      "name": "三营镇",
+      "average": 15092.2
+    },
+    {
+      "regionId": "532930105000",
+      "name": "凤羽镇",
+      "average": 15230.8
+    },
+    {
+      "regionId": "532930106000",
+      "name": "乔后镇",
+      "average": 16768.7
+    },
+    {
+      "regionId": "532930201000",
+      "name": "牛街乡",
+      "average": 12024.7
+    },
+    {
+      "regionId": "532930202000",
+      "name": "炼铁乡",
+      "average": 29647.6
+    },
+    {
+      "regionId": "532930203000",
+      "name": "西山乡",
+      "average": 1160.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 1542.192,
+      "color": "#eff3ff",
+      "label": "1542.192 万m³"
+    },
+    {
+      "value": 9447.3576,
+      "color": "#bdd7e7",
+      "label": "9447.358 万m³"
+    },
+    {
+      "value": 15124.3552,
+      "color": "#6baed6",
+      "label": "15124.355 万m³"
+    },
+    {
+      "value": 15571.6384,
+      "color": "#3182bd",
+      "label": "15571.638 万m³"
+    },
+    {
+      "value": 17530.4328,
+      "color": "#08519c",
+      "label": "17530.433 万m³"
+    },
+    {
+      "value": 27987.888,
+      "color": "#042d60",
+      "label": "27987.888 万m³"
+    }
+  ]
+}

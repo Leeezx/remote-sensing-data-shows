@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "533324102000",
+      "name": "丙中洛镇",
+      "average": 2884.4
+    },
+    {
+      "regionId": "533324204000",
+      "name": "独龙江乡",
+      "average": 1832.0
+    },
+    {
+      "regionId": "533422003000",
+      "name": "云岭乡",
+      "average": 672.6
+    },
+    {
+      "regionId": "540425100000",
+      "name": "竹瓦根镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540425101000",
+      "name": "上察隅镇",
+      "average": 2666.6
+    },
+    {
+      "regionId": "540425102000",
+      "name": "下察隅镇",
+      "average": 8059.9
+    },
+    {
+      "regionId": "540425200000",
+      "name": "古玉乡",
+      "average": 226.6
+    },
+    {
+      "regionId": "540425201000",
+      "name": "古拉乡",
+      "average": 27.1
+    },
+    {
+      "regionId": "540425202000",
+      "name": "察瓦龙乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 18.8616,
+      "color": "#bdd7e7",
+      "label": "18.862 万m³"
+    },
+    {
+      "value": 330.0719999999999,
+      "color": "#6baed6",
+      "label": "330.072 万m³"
+    },
+    {
+      "value": 1563.0191999999997,
+      "color": "#3182bd",
+      "label": "1563.019 万m³"
+    },
+    {
+      "value": 2732.8111999999996,
+      "color": "#08519c",
+      "label": "2732.811 万m³"
+    },
+    {
+      "value": 7231.819999999999,
+      "color": "#042d60",
+      "label": "7231.820 万m³"
+    }
+  ]
+}

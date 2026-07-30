@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "320213001000",
+      "name": "崇安寺街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320213002000",
+      "name": "通江街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320213003000",
+      "name": "广瑞路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320213004000",
+      "name": "上马墩街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320213005000",
+      "name": "江海街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320213006000",
+      "name": "广益街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320213007000",
+      "name": "迎龙桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320213009000",
+      "name": "清名桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320213010000",
+      "name": "金星街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320213011000",
+      "name": "金匮街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320213012000",
+      "name": "扬名街道",
+      "average": 92.9
+    },
+    {
+      "regionId": "320213013000",
+      "name": "黄巷街道",
+      "average": 419.3
+    },
+    {
+      "regionId": "320213014000",
+      "name": "山北街道",
+      "average": 103.7
+    },
+    {
+      "regionId": "320213015000",
+      "name": "北大街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320213016000",
+      "name": "惠山街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "211281001000",
+      "name": "兀术街街道",
+      "average": 129.4
+    },
+    {
+      "regionId": "211281002000",
+      "name": "调兵山街道",
+      "average": 100.8
+    },
+    {
+      "regionId": "211281102000",
+      "name": "晓明镇",
+      "average": 5127.2
+    },
+    {
+      "regionId": "211281103000",
+      "name": "大明镇",
+      "average": 3958.3
+    },
+    {
+      "regionId": "211281105000",
+      "name": "晓南镇",
+      "average": 4816.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 103.088,
+      "color": "#eff3ff",
+      "label": "103.088 万m³"
+    },
+    {
+      "value": 125.0528,
+      "color": "#bdd7e7",
+      "label": "125.053 万m³"
+    },
+    {
+      "value": 2488.0023999999994,
+      "color": "#6baed6",
+      "label": "2488.002 万m³"
+    },
+    {
+      "value": 4287.9256,
+      "color": "#3182bd",
+      "label": "4287.926 万m³"
+    },
+    {
+      "value": 4863.896,
+      "color": "#08519c",
+      "label": "4863.896 万m³"
+    },
+    {
+      "value": 5102.36,
+      "color": "#042d60",
+      "label": "5102.360 万m³"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "653022100000",
+      "name": "阿克陶镇",
+      "average": 18687.5
+    },
+    {
+      "regionId": "653022200000",
+      "name": "玉麦乡",
+      "average": 48174.5
+    },
+    {
+      "regionId": "653022201000",
+      "name": "皮拉勒乡",
+      "average": 100816.0
+    },
+    {
+      "regionId": "653022202000",
+      "name": "巴仁乡",
+      "average": 27976.6
+    },
+    {
+      "regionId": "653022203000",
+      "name": "喀热克其克乡",
+      "average": 6360.7
+    },
+    {
+      "regionId": "653022204000",
+      "name": "加马铁热克乡",
+      "average": 22153.8
+    },
+    {
+      "regionId": "653022205000",
+      "name": "木吉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "653022206000",
+      "name": "布伦口乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "653022207000",
+      "name": "克孜勒陶乡",
+      "average": 5.4
+    },
+    {
+      "regionId": "653022208000",
+      "name": "恰尔隆乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "653022209000",
+      "name": "库斯拉甫乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "653022210000",
+      "name": "塔尔塔吉克族乡",
+      "average": 1907.8
+    },
+    {
+      "regionId": "653022400000",
+      "name": "托尔塔依农场",
+      "average": 13682.7
+    },
+    {
+      "regionId": "653022401000",
+      "name": "阿克达拉牧场",
+      "average": 0.0
+    },
+    {
+      "regionId": "653022402000",
+      "name": "原种场",
+      "average": 732.9
+    },
+    {
+      "regionId": "653022403000",
+      "name": "克孜勒苏柯尔克孜自治州林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "653022404000",
+      "name": "苗圃",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

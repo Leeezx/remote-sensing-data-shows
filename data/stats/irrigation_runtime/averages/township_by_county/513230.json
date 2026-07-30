@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513230100000",
+      "name": "壤柯镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513230200000",
+      "name": "蒲西乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513230201000",
+      "name": "宗科乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513230202000",
+      "name": "石里乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513230203000",
+      "name": "吾伊乡",
+      "average": 2.3
+    },
+    {
+      "regionId": "513230204000",
+      "name": "岗木达乡",
+      "average": 17.1
+    },
+    {
+      "regionId": "513230205000",
+      "name": "上杜柯乡",
+      "average": 11.3
+    },
+    {
+      "regionId": "513230206000",
+      "name": "茸木达乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513230207000",
+      "name": "南木达乡",
+      "average": 28.0
+    },
+    {
+      "regionId": "513230208000",
+      "name": "尕多乡",
+      "average": 24.1
+    },
+    {
+      "regionId": "513230209000",
+      "name": "中壤塘乡",
+      "average": 5.9
+    },
+    {
+      "regionId": "513230210000",
+      "name": "上壤塘乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632622100000",
+      "name": "赛来塘镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632622204000",
+      "name": "知钦乡",
+      "average": 26.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451227100000",
+      "name": "巴马镇",
+      "average": 10929.4
+    },
+    {
+      "regionId": "451227200000",
+      "name": "燕洞乡",
+      "average": 3053.5
+    },
+    {
+      "regionId": "451227201000",
+      "name": "甲篆乡",
+      "average": 11283.8
+    },
+    {
+      "regionId": "451227202000",
+      "name": "那社乡",
+      "average": 1628.1
+    },
+    {
+      "regionId": "451227203000",
+      "name": "所略乡",
+      "average": 6480.4
+    },
+    {
+      "regionId": "451227205000",
+      "name": "西山乡",
+      "average": 3381.0
+    },
+    {
+      "regionId": "451227207000",
+      "name": "东山乡",
+      "average": 9456.9
+    },
+    {
+      "regionId": "451227208000",
+      "name": "凤凰乡",
+      "average": 2911.1
+    },
+    {
+      "regionId": "451227209000",
+      "name": "百林乡",
+      "average": 5292.3
+    },
+    {
+      "regionId": "451227210000",
+      "name": "那桃乡",
+      "average": 10276.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 1859.04,
+      "color": "#eff3ff",
+      "label": "1859.040 万m³"
+    },
+    {
+      "value": 3040.3992,
+      "color": "#bdd7e7",
+      "label": "3040.399 万m³"
+    },
+    {
+      "value": 4596.586799999999,
+      "color": "#6baed6",
+      "label": "4596.587 万m³"
+    },
+    {
+      "value": 7563.846,
+      "color": "#3182bd",
+      "label": "7563.846 万m³"
+    },
+    {
+      "value": 10336.93,
+      "color": "#08519c",
+      "label": "10336.930 万m³"
+    },
+    {
+      "value": 11220.008,
+      "color": "#042d60",
+      "label": "11220.008 万m³"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451030100000",
+      "name": "八达镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451030101000",
+      "name": "古障镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451030204000",
+      "name": "西平乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451030206000",
+      "name": "那佐苗族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "532627101000",
+      "name": "莲城镇",
+      "average": 34272.9
+    },
+    {
+      "regionId": "532627102000",
+      "name": "八宝镇",
+      "average": 43202.1
+    },
+    {
+      "regionId": "532627103000",
+      "name": "南屏镇",
+      "average": 21293.8
+    },
+    {
+      "regionId": "532627104000",
+      "name": "珠街镇",
+      "average": 9473.3
+    },
+    {
+      "regionId": "532627105000",
+      "name": "那洒镇",
+      "average": 11819.5
+    },
+    {
+      "regionId": "532627106000",
+      "name": "珠琳镇",
+      "average": 41118.3
+    },
+    {
+      "regionId": "532627107000",
+      "name": "坝美镇",
+      "average": 41933.0
+    },
+    {
+      "regionId": "532627201000",
+      "name": "董堡乡",
+      "average": 6776.4
+    },
+    {
+      "regionId": "532627202000",
+      "name": "旧莫乡",
+      "average": 31116.8
+    },
+    {
+      "regionId": "532627203000",
+      "name": "杨柳井乡",
+      "average": 13476.5
+    },
+    {
+      "regionId": "532627204000",
+      "name": "板蚌乡",
+      "average": 1914.2
+    },
+    {
+      "regionId": "532627205000",
+      "name": "曙光乡",
+      "average": 9277.7
+    },
+    {
+      "regionId": "532627206000",
+      "name": "黑支果乡",
+      "average": 22500.1
+    },
+    {
+      "regionId": "532627207000",
+      "name": "篆角乡",
+      "average": 5565.5
+    },
+    {
+      "regionId": "532627208000",
+      "name": "五珠乡",
+      "average": 4776.8
+    },
+    {
+      "regionId": "532627209000",
+      "name": "者兔乡",
+      "average": 12650.6
+    },
+    {
+      "regionId": "532627210000",
+      "name": "者太乡",
+      "average": 1790.7
+    },
+    {
+      "regionId": "532627211000",
+      "name": "底圩乡",
+      "average": 15472.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1846.522,
+      "color": "#bdd7e7",
+      "label": "1846.522 万m³"
+    },
+    {
+      "value": 7987.0292,
+      "color": "#6baed6",
+      "label": "7987.029 万m³"
+    },
+    {
+      "value": 13076.7644,
+      "color": "#3182bd",
+      "label": "13076.764 万m³"
+    },
+    {
+      "value": 27222.051599999984,
+      "color": "#08519c",
+      "label": "27222.052 万m³"
+    },
+    {
+      "value": 42669.077999999994,
+      "color": "#042d60",
+      "label": "42669.078 万m³"
+    }
+  ]
+}

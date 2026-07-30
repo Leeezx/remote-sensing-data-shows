@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451030100000",
+      "name": "八达镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451030101000",
+      "name": "古障镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451030102000",
+      "name": "那劳镇",
+      "average": 4742.2
+    },
+    {
+      "regionId": "451030200000",
+      "name": "马蚌乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451030203000",
+      "name": "普合苗族乡",
+      "average": 3160.6
+    },
+    {
+      "regionId": "451030204000",
+      "name": "西平乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451030206000",
+      "name": "那佐苗族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451030208000",
+      "name": "足别瑶族苗族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "522301105000",
+      "name": "三江口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522301202000",
+      "name": "洛万乡",
+      "average": 6591.8
+    },
+    {
+      "regionId": "530324202000",
+      "name": "鲁布革乡",
+      "average": 11897.7
+    },
+    {
+      "regionId": "532626209000",
+      "name": "温浏乡",
+      "average": 9871.0
+    },
+    {
+      "regionId": "532627204000",
+      "name": "板蚌乡",
+      "average": 1914.2
+    },
+    {
+      "regionId": "532627210000",
+      "name": "者太乡",
+      "average": 1790.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

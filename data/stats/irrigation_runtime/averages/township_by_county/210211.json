@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210211001000",
+      "name": "周水子街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210211002000",
+      "name": "椒金山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210211004000",
+      "name": "甘井子街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210211006000",
+      "name": "南关岭街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210211007000",
+      "name": "泡崖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210211008000",
+      "name": "中华路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210211009000",
+      "name": "兴华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210211010000",
+      "name": "机场街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210211014000",
+      "name": "辛寨子街道",
+      "average": 36.3
+    },
+    {
+      "regionId": "210211015000",
+      "name": "红旗街道",
+      "average": 20.0
+    },
+    {
+      "regionId": "210211016000",
+      "name": "凌水街道",
+      "average": 32.3
+    },
+    {
+      "regionId": "210211017000",
+      "name": "大连湾街道",
+      "average": 228.0
+    },
+    {
+      "regionId": "210211018000",
+      "name": "泉水街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210211019000",
+      "name": "革镇堡街道",
+      "average": 311.8
+    },
+    {
+      "regionId": "210211020000",
+      "name": "营城子街道",
+      "average": 1033.4
+    },
+    {
+      "regionId": "210211400000",
+      "name": "大连华侨果树农场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

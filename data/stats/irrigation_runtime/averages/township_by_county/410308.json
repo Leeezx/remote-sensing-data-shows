@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410306001000",
+      "name": "大庆路街道",
+      "average": 163.0
+    },
+    {
+      "regionId": "410306200000",
+      "name": "吉利乡",
+      "average": 6498.0
+    },
+    {
+      "regionId": "410322100000",
+      "name": "城关镇",
+      "average": 10672.2
+    },
+    {
+      "regionId": "410322101000",
+      "name": "会盟镇",
+      "average": 28067.5
+    },
+    {
+      "regionId": "410322102000",
+      "name": "平乐镇",
+      "average": 15826.4
+    },
+    {
+      "regionId": "410322103000",
+      "name": "送庄镇",
+      "average": 7096.1
+    },
+    {
+      "regionId": "410322104000",
+      "name": "白鹤镇",
+      "average": 26605.6
+    },
+    {
+      "regionId": "410322105000",
+      "name": "朝阳镇",
+      "average": 7351.2
+    },
+    {
+      "regionId": "410322106000",
+      "name": "小浪底镇",
+      "average": 17822.4
+    },
+    {
+      "regionId": "410322107000",
+      "name": "麻屯镇",
+      "average": 8045.0
+    },
+    {
+      "regionId": "410322108000",
+      "name": "横水镇",
+      "average": 13990.0
+    },
+    {
+      "regionId": "410322109000",
+      "name": "常袋镇",
+      "average": 7807.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 1556.7,
+      "color": "#eff3ff",
+      "label": "1556.700 万m³"
+    },
+    {
+      "value": 7180.7932,
+      "color": "#bdd7e7",
+      "label": "7180.793 万m³"
+    },
+    {
+      "value": 7913.1168,
+      "color": "#6baed6",
+      "label": "7913.117 万m³"
+    },
+    {
+      "value": 12516.8968,
+      "color": "#3182bd",
+      "label": "12516.897 万m³"
+    },
+    {
+      "value": 17159.728,
+      "color": "#08519c",
+      "label": "17159.728 万m³"
+    },
+    {
+      "value": 27745.881999999998,
+      "color": "#042d60",
+      "label": "27745.882 万m³"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "711500010000",
+      "name": "太保市",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500020000",
+      "name": "朴子市",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500030000",
+      "name": "布袋鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500040000",
+      "name": "大林鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500050000",
+      "name": "民雄鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500060000",
+      "name": "溪口鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500070000",
+      "name": "新港鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500080000",
+      "name": "六腳鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500090000",
+      "name": "東石鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500100000",
+      "name": "義竹鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500110000",
+      "name": "鹿草鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500120000",
+      "name": "水上鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500130000",
+      "name": "中埔鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500140000",
+      "name": "竹崎鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500150000",
+      "name": "梅山鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500160000",
+      "name": "番路鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500170000",
+      "name": "大埔鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711500180000",
+      "name": "阿里山鄉",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

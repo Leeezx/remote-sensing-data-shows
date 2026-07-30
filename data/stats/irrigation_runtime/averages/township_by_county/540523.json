@@ -1,0 +1,58 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540523100000",
+      "name": "桑日镇",
+      "average": 3526.0
+    },
+    {
+      "regionId": "540523200000",
+      "name": "增期乡",
+      "average": 1134.8
+    },
+    {
+      "regionId": "540523201000",
+      "name": "白堆乡",
+      "average": 545.2
+    },
+    {
+      "regionId": "540523202000",
+      "name": "绒乡",
+      "average": 1199.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 580.576,
+      "color": "#eff3ff",
+      "label": "580.576 万m³"
+    },
+    {
+      "value": 920.1856,
+      "color": "#bdd7e7",
+      "label": "920.186 万m³"
+    },
+    {
+      "value": 1148.5164,
+      "color": "#6baed6",
+      "label": "1148.516 万m³"
+    },
+    {
+      "value": 1185.7836,
+      "color": "#3182bd",
+      "label": "1185.784 万m³"
+    },
+    {
+      "value": 2046.3459999999995,
+      "color": "#08519c",
+      "label": "2046.346 万m³"
+    },
+    {
+      "value": 3386.41,
+      "color": "#042d60",
+      "label": "3386.410 万m³"
+    }
+  ]
+}

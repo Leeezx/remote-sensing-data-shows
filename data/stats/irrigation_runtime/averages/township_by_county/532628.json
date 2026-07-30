@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451002203000",
+      "name": "大楞乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451026100000",
+      "name": "城厢镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451029103000",
+      "name": "六隆镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451029204000",
+      "name": "八桂瑶族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451029206000",
+      "name": "那比乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451029207000",
+      "name": "高龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451030208000",
+      "name": "足别瑶族苗族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451081215000",
+      "name": "魁圩乡",
+      "average": 456.1
+    },
+    {
+      "regionId": "532628101000",
+      "name": "新华镇",
+      "average": 8734.7
+    },
+    {
+      "regionId": "532628102000",
+      "name": "归朝镇",
+      "average": 33930.5
+    },
+    {
+      "regionId": "532628103000",
+      "name": "剥隘镇",
+      "average": 3421.8
+    },
+    {
+      "regionId": "532628104000",
+      "name": "里达镇",
+      "average": 6736.2
+    },
+    {
+      "regionId": "532628105000",
+      "name": "田蓬镇",
+      "average": 22249.8
+    },
+    {
+      "regionId": "532628106000",
+      "name": "木央镇",
+      "average": 26864.2
+    },
+    {
+      "regionId": "532628201000",
+      "name": "板仑乡",
+      "average": 5704.3
+    },
+    {
+      "regionId": "532628202000",
+      "name": "谷拉乡",
+      "average": 3519.2
+    },
+    {
+      "regionId": "532628203000",
+      "name": "者桑乡",
+      "average": 9810.8
+    },
+    {
+      "regionId": "532628204000",
+      "name": "那能乡",
+      "average": 7540.9
+    },
+    {
+      "regionId": "532628205000",
+      "name": "洞波瑶族乡",
+      "average": 19795.2
+    },
+    {
+      "regionId": "532628206000",
+      "name": "阿用乡",
+      "average": 4383.0
+    },
+    {
+      "regionId": "532628207000",
+      "name": "花甲乡",
+      "average": 4386.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

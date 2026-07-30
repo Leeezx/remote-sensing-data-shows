@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230904001000",
+      "name": "东风街道",
+      "average": 2.8
+    },
+    {
+      "regionId": "230904002000",
+      "name": "向阳街道",
+      "average": 3.7
+    },
+    {
+      "regionId": "230904003000",
+      "name": "富强街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230904004000",
+      "name": "新富街道",
+      "average": 3.1
+    },
+    {
+      "regionId": "230904005000",
+      "name": "龙湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230904100000",
+      "name": "茄子河镇",
+      "average": 157.3
+    },
+    {
+      "regionId": "230904101000",
+      "name": "宏伟镇",
+      "average": 246.9
+    },
+    {
+      "regionId": "230904200000",
+      "name": "铁山乡",
+      "average": 1381.1
+    },
+    {
+      "regionId": "230904201000",
+      "name": "中心河乡",
+      "average": 575.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1.9487999999999999,
+      "color": "#bdd7e7",
+      "label": "1.949 万m³"
+    },
+    {
+      "value": 3.2392,
+      "color": "#6baed6",
+      "label": "3.239 万m³"
+    },
+    {
+      "value": 121.66479999999997,
+      "color": "#3182bd",
+      "label": "121.665 万m³"
+    },
+    {
+      "value": 346.7943999999998,
+      "color": "#08519c",
+      "label": "346.794 万m³"
+    },
+    {
+      "value": 1252.2039999999997,
+      "color": "#042d60",
+      "label": "1252.204 万m³"
+    }
+  ]
+}

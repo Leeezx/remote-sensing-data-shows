@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500110116000",
+      "name": "郭扶镇",
+      "average": 9584.4
+    },
+    {
+      "regionId": "500110118000",
+      "name": "丁山镇",
+      "average": 2231.7
+    },
+    {
+      "regionId": "500110123000",
+      "name": "中峰镇",
+      "average": 1920.9
+    },
+    {
+      "regionId": "500116112000",
+      "name": "蔡家镇",
+      "average": 11609.1
+    },
+    {
+      "regionId": "500116115000",
+      "name": "柏林镇",
+      "average": 4519.1
+    },
+    {
+      "regionId": "510525102000",
+      "name": "永乐镇",
+      "average": 6779.5
+    },
+    {
+      "regionId": "510525216000",
+      "name": "黄荆乡",
+      "average": 28.3
+    },
+    {
+      "regionId": "520330100000",
+      "name": "东皇镇",
+      "average": 5439.7
+    },
+    {
+      "regionId": "520330101000",
+      "name": "土城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520330102000",
+      "name": "同民镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520330103000",
+      "name": "醒民镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520330104000",
+      "name": "隆兴镇",
+      "average": 1462.9
+    },
+    {
+      "regionId": "520330105000",
+      "name": "习酒镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520330106000",
+      "name": "回龙镇",
+      "average": 1257.4
+    },
+    {
+      "regionId": "520330107000",
+      "name": "桑木镇",
+      "average": 1075.4
+    },
+    {
+      "regionId": "520330108000",
+      "name": "永安镇",
+      "average": 721.7
+    },
+    {
+      "regionId": "520330109000",
+      "name": "良村镇",
+      "average": 13797.6
+    },
+    {
+      "regionId": "520330110000",
+      "name": "温水镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520330111000",
+      "name": "仙源镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520330112000",
+      "name": "官店镇",
+      "average": 6030.8
+    },
+    {
+      "regionId": "520330113000",
+      "name": "寨坝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520330200000",
+      "name": "民化乡",
+      "average": 2741.2
+    },
+    {
+      "regionId": "520330201000",
+      "name": "二郎乡",
+      "average": 369.9
+    },
+    {
+      "regionId": "520330202000",
+      "name": "二里乡",
+      "average": 2195.2
+    },
+    {
+      "regionId": "520330203000",
+      "name": "三岔河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520330204000",
+      "name": "大坡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520330205000",
+      "name": "双龙乡",
+      "average": 6011.1
+    },
+    {
+      "regionId": "520330206000",
+      "name": "桃林乡",
+      "average": 3326.3
+    },
+    {
+      "regionId": "520330207000",
+      "name": "坭坝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520330208000",
+      "name": "程寨乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

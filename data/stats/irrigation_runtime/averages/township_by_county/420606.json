@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420606001000",
+      "name": "汉江街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420606002000",
+      "name": "王寨街道",
+      "average": 99.9
+    },
+    {
+      "regionId": "420606003000",
+      "name": "中原街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420606004000",
+      "name": "定中门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420606005000",
+      "name": "清河口街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420606006000",
+      "name": "屏襄门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420606007000",
+      "name": "米公街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420606008000",
+      "name": "柿铺街道",
+      "average": 1283.3
+    },
+    {
+      "regionId": "420606070000",
+      "name": "高新区紫贞街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420606071000",
+      "name": "高新区七里河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420606100000",
+      "name": "牛首镇",
+      "average": 34439.7
+    },
+    {
+      "regionId": "420606101000",
+      "name": "太平店镇",
+      "average": 74714.9
+    },
+    {
+      "regionId": "420606170000",
+      "name": "高新区团山镇",
+      "average": 10189.1
+    },
+    {
+      "regionId": "420606400000",
+      "name": "经济开发区",
+      "average": 3490.3
+    },
+    {
+      "regionId": "420606571000",
+      "name": "高新区高新技术产业园",
+      "average": 901.5
+    },
+    {
+      "regionId": "420606572000",
+      "name": "高新区高新技术创业服务中心",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

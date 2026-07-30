@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620403203000",
+      "name": "种田乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620403204000",
+      "name": "复兴乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620422223000",
+      "name": "刘家寨子乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640402101000",
+      "name": "七营镇",
+      "average": 1112.0
+    },
+    {
+      "regionId": "640402102000",
+      "name": "黑城镇",
+      "average": 1039.5
+    },
+    {
+      "regionId": "640402203000",
+      "name": "甘城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640522100000",
+      "name": "海城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "640522101000",
+      "name": "李旺镇",
+      "average": 629.2
+    },
+    {
+      "regionId": "640522103000",
+      "name": "西安镇",
+      "average": 15.5
+    },
+    {
+      "regionId": "640522104000",
+      "name": "三河镇",
+      "average": 1038.6
+    },
+    {
+      "regionId": "640522105000",
+      "name": "七营镇",
+      "average": 1099.7
+    },
+    {
+      "regionId": "640522200000",
+      "name": "史店乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640522201000",
+      "name": "树台乡",
+      "average": 53.3
+    },
+    {
+      "regionId": "640522202000",
+      "name": "关桥乡",
+      "average": 154.4
+    },
+    {
+      "regionId": "640522206000",
+      "name": "高崖乡",
+      "average": 2526.9
+    },
+    {
+      "regionId": "640522207000",
+      "name": "郑旗乡",
+      "average": 15.9
+    },
+    {
+      "regionId": "640522208000",
+      "name": "贾塘乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640522209000",
+      "name": "曹洼乡",
+      "average": 51.2
+    },
+    {
+      "regionId": "640522210000",
+      "name": "九彩乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640522211000",
+      "name": "李俊乡",
+      "average": 10.4
+    },
+    {
+      "regionId": "640522212000",
+      "name": "红羊乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640522213000",
+      "name": "关庄乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640522214000",
+      "name": "甘城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640522400000",
+      "name": "种羊场",
+      "average": 0.0
+    },
+    {
+      "regionId": "640522401000",
+      "name": "涵养林总场",
+      "average": 0.0
+    },
+    {
+      "regionId": "640522402000",
+      "name": "老城管理办公室",
+      "average": 0.0
+    },
+    {
+      "regionId": "640522406000",
+      "name": "海原县工业物流园区",
+      "average": 13.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

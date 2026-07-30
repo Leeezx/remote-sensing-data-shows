@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "152523100000",
+      "name": "满都拉图镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "152523101000",
+      "name": "查干敖包镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "152523102000",
+      "name": "巴彦淖尔镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "152523200000",
+      "name": "巴彦乌拉苏木",
+      "average": 0.0
+    },
+    {
+      "regionId": "152523201000",
+      "name": "赛罕高毕苏木",
+      "average": 0.0
+    },
+    {
+      "regionId": "152523202000",
+      "name": "洪格尔苏木",
+      "average": 0.0
+    },
+    {
+      "regionId": "152523203000",
+      "name": "达来苏木",
+      "average": 0.0
+    },
+    {
+      "regionId": "152523400000",
+      "name": "苏尼特左旗芒来循环经济产业园区",
+      "average": 0.0
+    },
+    {
+      "regionId": "152523500000",
+      "name": "恩格尔河灌区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

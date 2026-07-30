@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610925100000",
+      "name": "城关镇",
+      "average": 1587.7
+    },
+    {
+      "regionId": "610925101000",
+      "name": "佐龙镇",
+      "average": 205.5
+    },
+    {
+      "regionId": "610925102000",
+      "name": "花里镇",
+      "average": 4357.7
+    },
+    {
+      "regionId": "610925103000",
+      "name": "滔河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610925104000",
+      "name": "官元镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610925105000",
+      "name": "石门镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610925106000",
+      "name": "民主镇",
+      "average": 2157.3
+    },
+    {
+      "regionId": "610925107000",
+      "name": "大道河镇",
+      "average": 58.0
+    },
+    {
+      "regionId": "610925108000",
+      "name": "铁炉镇",
+      "average": 857.7
+    },
+    {
+      "regionId": "610925109000",
+      "name": "堰门镇",
+      "average": 1371.4
+    },
+    {
+      "regionId": "610925110000",
+      "name": "溢河镇",
+      "average": 3069.3
+    },
+    {
+      "regionId": "610925111000",
+      "name": "蔺河镇",
+      "average": 2268.9
+    },
+    {
+      "regionId": "610925112000",
+      "name": "四季镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610925113000",
+      "name": "横溪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610925114000",
+      "name": "孟石岭镇",
+      "average": 3753.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511502001000",
+      "name": "北城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511502002000",
+      "name": "东城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511502003000",
+      "name": "南城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511502004000",
+      "name": "西城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511502006000",
+      "name": "西郊街道",
+      "average": 113.5
+    },
+    {
+      "regionId": "511502007000",
+      "name": "安阜街道",
+      "average": 101.4
+    },
+    {
+      "regionId": "511502008000",
+      "name": "白沙湾街道",
+      "average": 371.3
+    },
+    {
+      "regionId": "511502010000",
+      "name": "象鼻街道",
+      "average": 2399.3
+    },
+    {
+      "regionId": "511502011000",
+      "name": "沙坪街道",
+      "average": 1751.0
+    },
+    {
+      "regionId": "511502101000",
+      "name": "李庄镇",
+      "average": 2211.7
+    },
+    {
+      "regionId": "511502102000",
+      "name": "菜坝镇",
+      "average": 3307.6
+    },
+    {
+      "regionId": "511502104000",
+      "name": "金坪镇",
+      "average": 1868.2
+    },
+    {
+      "regionId": "511502106000",
+      "name": "高店镇",
+      "average": 2114.0
+    },
+    {
+      "regionId": "511502108000",
+      "name": "牟坪镇",
+      "average": 5035.0
+    },
+    {
+      "regionId": "511502109000",
+      "name": "李端镇",
+      "average": 2698.3
+    },
+    {
+      "regionId": "511502110000",
+      "name": "邱场镇",
+      "average": 1813.5
+    },
+    {
+      "regionId": "511502111000",
+      "name": "宗场镇",
+      "average": 1526.0
+    },
+    {
+      "regionId": "511502116000",
+      "name": "白花镇",
+      "average": 4686.8
+    },
+    {
+      "regionId": "511502117000",
+      "name": "孔滩镇",
+      "average": 3257.6
+    },
+    {
+      "regionId": "511502118000",
+      "name": "双谊镇",
+      "average": 2396.0
+    },
+    {
+      "regionId": "511502119000",
+      "name": "王场镇",
+      "average": 1811.5
+    },
+    {
+      "regionId": "511502120000",
+      "name": "永兴镇",
+      "average": 2895.6
+    },
+    {
+      "regionId": "511502200000",
+      "name": "宋家乡",
+      "average": 3347.2
+    },
+    {
+      "regionId": "511502201000",
+      "name": "明威乡",
+      "average": 1087.5
+    },
+    {
+      "regionId": "511502202000",
+      "name": "凉姜乡",
+      "average": 1857.5
+    },
+    {
+      "regionId": "511502204000",
+      "name": "思坡乡",
+      "average": 1283.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 190.83999999999997,
+      "color": "#bdd7e7",
+      "label": "190.840 万m³"
+    },
+    {
+      "value": 1757.05,
+      "color": "#6baed6",
+      "label": "1757.050 万m³"
+    },
+    {
+      "value": 2089.4199999999996,
+      "color": "#3182bd",
+      "label": "2089.420 万m³"
+    },
+    {
+      "value": 2836.41,
+      "color": "#08519c",
+      "label": "2836.410 万m³"
+    },
+    {
+      "value": 4860.9,
+      "color": "#042d60",
+      "label": "4860.900 万m³"
+    }
+  ]
+}

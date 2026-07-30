@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511126100000",
+      "name": "焉城镇",
+      "average": 3575.1
+    },
+    {
+      "regionId": "511126101000",
+      "name": "黄土镇",
+      "average": 6704.3
+    },
+    {
+      "regionId": "511126102000",
+      "name": "甘江镇",
+      "average": 14037.6
+    },
+    {
+      "regionId": "511126103000",
+      "name": "界牌镇",
+      "average": 1679.7
+    },
+    {
+      "regionId": "511126104000",
+      "name": "中兴镇",
+      "average": 764.1
+    },
+    {
+      "regionId": "511126105000",
+      "name": "三洞镇",
+      "average": 6076.2
+    },
+    {
+      "regionId": "511126106000",
+      "name": "吴场镇",
+      "average": 5238.3
+    },
+    {
+      "regionId": "511126107000",
+      "name": "木城镇",
+      "average": 3538.5
+    },
+    {
+      "regionId": "511126108000",
+      "name": "华头镇",
+      "average": 533.0
+    },
+    {
+      "regionId": "511126109000",
+      "name": "甘霖镇",
+      "average": 6924.5
+    },
+    {
+      "regionId": "511126110000",
+      "name": "新场镇",
+      "average": 3568.8
+    },
+    {
+      "regionId": "511126200000",
+      "name": "顺河乡",
+      "average": 3615.0
+    },
+    {
+      "regionId": "511126201000",
+      "name": "马村乡",
+      "average": 1211.5
+    },
+    {
+      "regionId": "511126202000",
+      "name": "土门乡",
+      "average": 3430.1
+    },
+    {
+      "regionId": "511126203000",
+      "name": "青州乡",
+      "average": 4464.0
+    },
+    {
+      "regionId": "511126204000",
+      "name": "梧凤乡",
+      "average": 2925.1
+    },
+    {
+      "regionId": "511126205000",
+      "name": "永青乡",
+      "average": 2581.2
+    },
+    {
+      "regionId": "511126206000",
+      "name": "迎江乡",
+      "average": 1941.7
+    },
+    {
+      "regionId": "511126207000",
+      "name": "龙沱乡",
+      "average": 651.5
+    },
+    {
+      "regionId": "511126208000",
+      "name": "南安乡",
+      "average": 1344.5
+    },
+    {
+      "regionId": "511126209000",
+      "name": "歇马乡",
+      "average": 2951.8
+    },
+    {
+      "regionId": "511126210000",
+      "name": "麻柳乡",
+      "average": 475.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 499.476,
+      "color": "#eff3ff",
+      "label": "499.476 万m³"
+    },
+    {
+      "value": 1271.616,
+      "color": "#bdd7e7",
+      "label": "1271.616 万m³"
+    },
+    {
+      "value": 2747.6476,
+      "color": "#6baed6",
+      "label": "2747.648 万m³"
+    },
+    {
+      "value": 3554.1348000000003,
+      "color": "#3182bd",
+      "label": "3554.135 万m³"
+    },
+    {
+      "value": 4888.316399999999,
+      "color": "#08519c",
+      "label": "4888.316 万m³"
+    },
+    {
+      "value": 11050.097999999987,
+      "color": "#042d60",
+      "label": "11050.098 万m³"
+    }
+  ]
+}

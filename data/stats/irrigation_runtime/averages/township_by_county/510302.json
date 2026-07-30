@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510302001000",
+      "name": "五星街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510302002000",
+      "name": "东兴寺街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510302003000",
+      "name": "新街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510302004000",
+      "name": "郭家坳街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510302005000",
+      "name": "丹桂街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510302006000",
+      "name": "学苑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510302101000",
+      "name": "仲权镇",
+      "average": 835.9
+    },
+    {
+      "regionId": "510302102000",
+      "name": "舒坪镇",
+      "average": 1421.1
+    },
+    {
+      "regionId": "510302103000",
+      "name": "荣边镇",
+      "average": 2426.3
+    },
+    {
+      "regionId": "510302201000",
+      "name": "红旗乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510302202000",
+      "name": "高峰乡",
+      "average": 1499.0
+    },
+    {
+      "regionId": "510302203000",
+      "name": "农团乡",
+      "average": 107.4
+    },
+    {
+      "regionId": "510302204000",
+      "name": "漆树乡",
+      "average": 1131.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

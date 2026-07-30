@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410603001000",
+      "name": "红旗街道",
+      "average": 8.3
+    },
+    {
+      "regionId": "410603002000",
+      "name": "长风中路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410603003000",
+      "name": "山城路街道",
+      "average": 71.9
+    },
+    {
+      "regionId": "410603004000",
+      "name": "汤河街街道",
+      "average": 3.5
+    },
+    {
+      "regionId": "410603005000",
+      "name": "鹿楼街道",
+      "average": 7.6
+    },
+    {
+      "regionId": "410603006000",
+      "name": "宝山街道",
+      "average": 1807.4
+    },
+    {
+      "regionId": "410603007000",
+      "name": "大胡街道",
+      "average": 1654.4
+    },
+    {
+      "regionId": "410603100000",
+      "name": "石林镇",
+      "average": 23647.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.49000000000000005,
+      "color": "#eff3ff",
+      "label": "0.490 万m³"
+    },
+    {
+      "value": 5.4844,
+      "color": "#bdd7e7",
+      "label": "5.484 万m³"
+    },
+    {
+      "value": 8.1796,
+      "color": "#6baed6",
+      "label": "8.180 万m³"
+    },
+    {
+      "value": 344.0899999999996,
+      "color": "#3182bd",
+      "label": "344.090 万m³"
+    },
+    {
+      "value": 1733.348,
+      "color": "#08519c",
+      "label": "1733.348 万m³"
+    },
+    {
+      "value": 20589.79999999999,
+      "color": "#042d60",
+      "label": "20589.800 万m³"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451321100000",
+      "name": "城关镇",
+      "average": 12172.6
+    },
+    {
+      "regionId": "451321101000",
+      "name": "大塘镇",
+      "average": 15234.0
+    },
+    {
+      "regionId": "451321102000",
+      "name": "思练镇",
+      "average": 18642.3
+    },
+    {
+      "regionId": "451321103000",
+      "name": "红渡镇",
+      "average": 15728.4
+    },
+    {
+      "regionId": "451321104000",
+      "name": "古蓬镇",
+      "average": 6391.8
+    },
+    {
+      "regionId": "451321201000",
+      "name": "马泗乡",
+      "average": 2399.4
+    },
+    {
+      "regionId": "451321202000",
+      "name": "欧洞乡",
+      "average": 2134.3
+    },
+    {
+      "regionId": "451321203000",
+      "name": "安东乡",
+      "average": 6826.1
+    },
+    {
+      "regionId": "451321204000",
+      "name": "果遂乡",
+      "average": 358.6
+    },
+    {
+      "regionId": "451321205000",
+      "name": "新圩乡",
+      "average": 1752.0
+    },
+    {
+      "regionId": "451321206000",
+      "name": "遂意乡",
+      "average": 3420.3
+    },
+    {
+      "regionId": "451321207000",
+      "name": "北更乡",
+      "average": 4.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 82.012,
+      "color": "#eff3ff",
+      "label": "82.012 万m³"
+    },
+    {
+      "value": 1878.9236,
+      "color": "#bdd7e7",
+      "label": "1878.924 万m³"
+    },
+    {
+      "value": 2852.6796,
+      "color": "#6baed6",
+      "label": "2852.680 万m³"
+    },
+    {
+      "value": 6633.2708,
+      "color": "#3182bd",
+      "label": "6633.271 万m³"
+    },
+    {
+      "value": 14217.615199999998,
+      "color": "#08519c",
+      "label": "14217.615 万m³"
+    },
+    {
+      "value": 18001.242,
+      "color": "#042d60",
+      "label": "18001.242 万m³"
+    }
+  ]
+}

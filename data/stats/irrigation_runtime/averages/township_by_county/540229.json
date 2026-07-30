@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540229100000",
+      "name": "德吉林镇",
+      "average": 431.8
+    },
+    {
+      "regionId": "540229200000",
+      "name": "帕当乡",
+      "average": 2118.2
+    },
+    {
+      "regionId": "540229201000",
+      "name": "康雄乡",
+      "average": 228.2
+    },
+    {
+      "regionId": "540229202000",
+      "name": "普松乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540229203000",
+      "name": "然巴乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540229204000",
+      "name": "茶巴乡",
+      "average": 1634.5
+    },
+    {
+      "regionId": "540229205000",
+      "name": "切洼乡",
+      "average": 1312.1
+    },
+    {
+      "regionId": "540229206000",
+      "name": "母乡",
+      "average": 69.4
+    },
+    {
+      "regionId": "540229207000",
+      "name": "仁布乡",
+      "average": 343.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 48.302400000000006,
+      "color": "#bdd7e7",
+      "label": "48.302 万m³"
+    },
+    {
+      "value": 254.87999999999997,
+      "color": "#6baed6",
+      "label": "254.880 万m³"
+    },
+    {
+      "value": 411.2448,
+      "color": "#3182bd",
+      "label": "411.245 万m³"
+    },
+    {
+      "value": 1410.1095999999998,
+      "color": "#08519c",
+      "label": "1410.110 万m³"
+    },
+    {
+      "value": 2040.8079999999998,
+      "color": "#042d60",
+      "label": "2040.808 万m³"
+    }
+  ]
+}

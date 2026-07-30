@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350128100000",
+      "name": "潭城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350128101000",
+      "name": "苏澳镇",
+      "average": 11643.8
+    },
+    {
+      "regionId": "350128102000",
+      "name": "流水镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350128103000",
+      "name": "澳前镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350128104000",
+      "name": "北厝镇",
+      "average": 188.5
+    },
+    {
+      "regionId": "350128105000",
+      "name": "平原镇",
+      "average": 14292.3
+    },
+    {
+      "regionId": "350128106000",
+      "name": "敖东镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350128200000",
+      "name": "白青乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350128201000",
+      "name": "屿头乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350128202000",
+      "name": "大练乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350128203000",
+      "name": "芦洋乡",
+      "average": 891.5
+    },
+    {
+      "regionId": "350128204000",
+      "name": "中楼乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350128206000",
+      "name": "岚城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350128207000",
+      "name": "南海乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

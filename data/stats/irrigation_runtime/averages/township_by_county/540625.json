@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540625100000",
+      "name": "申扎镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540625101000",
+      "name": "雄梅镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540625200000",
+      "name": "马跃乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540625201000",
+      "name": "买巴乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540625202000",
+      "name": "塔尔玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540625203000",
+      "name": "下过乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540625204000",
+      "name": "卡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540625205000",
+      "name": "巴扎乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

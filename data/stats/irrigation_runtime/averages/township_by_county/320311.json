@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "320311001000",
+      "name": "王陵街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320311002000",
+      "name": "七里沟街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320311003000",
+      "name": "永安街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320311004000",
+      "name": "湖滨街道",
+      "average": 84.6
+    },
+    {
+      "regionId": "320311005000",
+      "name": "段庄街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320311006000",
+      "name": "翟山街道",
+      "average": 105.4
+    },
+    {
+      "regionId": "320311007000",
+      "name": "奎山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320311008000",
+      "name": "和平街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320311009000",
+      "name": "金山街道",
+      "average": 108.0
+    },
+    {
+      "regionId": "320311010000",
+      "name": "泰山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320311011000",
+      "name": "庞庄街道",
+      "average": 3090.8
+    },
+    {
+      "regionId": "320311012000",
+      "name": "火花街道",
+      "average": 1425.7
+    },
+    {
+      "regionId": "320311013000",
+      "name": "桃园街道",
+      "average": 1531.9
+    },
+    {
+      "regionId": "320311014000",
+      "name": "苏山街道",
+      "average": 4314.4
+    },
+    {
+      "regionId": "320311401000",
+      "name": "徐州泉山经济开发区",
+      "average": 385.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

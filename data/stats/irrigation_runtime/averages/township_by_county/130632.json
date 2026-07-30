@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130632100000",
+      "name": "安新镇",
+      "average": 11542.5
+    },
+    {
+      "regionId": "130632101000",
+      "name": "大王镇",
+      "average": 34212.0
+    },
+    {
+      "regionId": "130632102000",
+      "name": "三台镇",
+      "average": 18559.9
+    },
+    {
+      "regionId": "130632103000",
+      "name": "端村镇",
+      "average": 24945.5
+    },
+    {
+      "regionId": "130632104000",
+      "name": "赵北口镇",
+      "average": 1552.5
+    },
+    {
+      "regionId": "130632105000",
+      "name": "同口镇",
+      "average": 23860.2
+    },
+    {
+      "regionId": "130632106000",
+      "name": "刘李庄镇",
+      "average": 12065.5
+    },
+    {
+      "regionId": "130632107000",
+      "name": "安州镇",
+      "average": 32487.9
+    },
+    {
+      "regionId": "130632108000",
+      "name": "老河头镇",
+      "average": 14947.8
+    },
+    {
+      "regionId": "130632200000",
+      "name": "圈头乡",
+      "average": 217.2
+    },
+    {
+      "regionId": "130632201000",
+      "name": "寨里乡",
+      "average": 25733.4
+    },
+    {
+      "regionId": "130632202000",
+      "name": "芦庄乡",
+      "average": 20080.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 510.966,
+      "color": "#eff3ff",
+      "label": "510.966 万m³"
+    },
+    {
+      "value": 11716.136,
+      "color": "#bdd7e7",
+      "label": "11716.136 万m³"
+    },
+    {
+      "value": 16551.5724,
+      "color": "#6baed6",
+      "label": "16551.572 万m³"
+    },
+    {
+      "value": 22182.1464,
+      "color": "#3182bd",
+      "label": "22182.146 万m³"
+    },
+    {
+      "value": 25471.8172,
+      "color": "#08519c",
+      "label": "25471.817 万m³"
+    },
+    {
+      "value": 33832.698,
+      "color": "#042d60",
+      "label": "33832.698 万m³"
+    }
+  ]
+}

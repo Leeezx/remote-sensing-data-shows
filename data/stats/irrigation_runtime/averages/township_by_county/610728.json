@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511781109000",
+      "name": "官渡镇",
+      "average": 1987.6
+    },
+    {
+      "regionId": "511781201000",
+      "name": "长石乡",
+      "average": 1201.0
+    },
+    {
+      "regionId": "511781221000",
+      "name": "永宁乡",
+      "average": 558.8
+    },
+    {
+      "regionId": "511781222000",
+      "name": "虹桥乡",
+      "average": 780.4
+    },
+    {
+      "regionId": "511781230000",
+      "name": "梨树乡",
+      "average": 117.5
+    },
+    {
+      "regionId": "511921111000",
+      "name": "铁溪镇",
+      "average": 1693.5
+    },
+    {
+      "regionId": "511921227000",
+      "name": "空山乡",
+      "average": 221.5
+    },
+    {
+      "regionId": "610728101000",
+      "name": "渔渡镇",
+      "average": 2699.9
+    },
+    {
+      "regionId": "610728102000",
+      "name": "盐场镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610728103000",
+      "name": "观音镇",
+      "average": 724.8
+    },
+    {
+      "regionId": "610728104000",
+      "name": "巴庙镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610728105000",
+      "name": "兴隆镇",
+      "average": 990.5
+    },
+    {
+      "regionId": "610728106000",
+      "name": "长岭镇",
+      "average": 1043.9
+    },
+    {
+      "regionId": "610728107000",
+      "name": "三元镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610728108000",
+      "name": "简池镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610728109000",
+      "name": "碾子镇",
+      "average": 698.4
+    },
+    {
+      "regionId": "610728110000",
+      "name": "小洋乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610728200000",
+      "name": "青水乡",
+      "average": 329.7
+    },
+    {
+      "regionId": "610728201000",
+      "name": "永乐乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610728202000",
+      "name": "陈家滩乡",
+      "average": 3171.2
+    },
+    {
+      "regionId": "610728203000",
+      "name": "杨家河乡",
+      "average": 143.0
+    },
+    {
+      "regionId": "610728204000",
+      "name": "赤南乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610728205000",
+      "name": "巴山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610728206000",
+      "name": "大池乡",
+      "average": 1324.7
+    },
+    {
+      "regionId": "610728209000",
+      "name": "平安乡",
+      "average": 1587.5
+    },
+    {
+      "regionId": "610728210000",
+      "name": "仁村乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610728211000",
+      "name": "黎坝乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

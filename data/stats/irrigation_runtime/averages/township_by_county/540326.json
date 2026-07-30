@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540326100000",
+      "name": "白玛镇",
+      "average": 373.2
+    },
+    {
+      "regionId": "540326101000",
+      "name": "然乌镇",
+      "average": 68.1
+    },
+    {
+      "regionId": "540326102000",
+      "name": "帮达镇",
+      "average": 6.3
+    },
+    {
+      "regionId": "540326103000",
+      "name": "同卡镇",
+      "average": 43.2
+    },
+    {
+      "regionId": "540326200000",
+      "name": "林卡乡",
+      "average": 192.1
+    },
+    {
+      "regionId": "540326201000",
+      "name": "夏里乡",
+      "average": 58.7
+    },
+    {
+      "regionId": "540326202000",
+      "name": "拥乡",
+      "average": 83.0
+    },
+    {
+      "regionId": "540326203000",
+      "name": "瓦乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540326204000",
+      "name": "吉达乡",
+      "average": 126.0
+    },
+    {
+      "regionId": "540326205000",
+      "name": "卡瓦白庆乡",
+      "average": 88.0
+    },
+    {
+      "regionId": "540326206000",
+      "name": "集中乡",
+      "average": 19.9
+    },
+    {
+      "regionId": "540326207000",
+      "name": "益庆乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540326208000",
+      "name": "拉根乡",
+      "average": 120.5
+    },
+    {
+      "regionId": "540326209000",
+      "name": "郭庆乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 4.762799999999999,
+      "color": "#bdd7e7",
+      "label": "4.763 万m³"
+    },
+    {
+      "value": 47.106,
+      "color": "#6baed6",
+      "label": "47.106 万m³"
+    },
+    {
+      "value": 79.24519999999998,
+      "color": "#3182bd",
+      "label": "79.245 万m³"
+    },
+    {
+      "value": 121.842,
+      "color": "#08519c",
+      "label": "121.842 万m³"
+    },
+    {
+      "value": 326.11400000000003,
+      "color": "#042d60",
+      "label": "326.114 万m³"
+    }
+  ]
+}

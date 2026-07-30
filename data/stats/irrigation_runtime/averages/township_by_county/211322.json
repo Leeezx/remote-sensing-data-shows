@@ -1,0 +1,233 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150403100000",
+      "name": "风水沟镇",
+      "average": 11672.8
+    },
+    {
+      "regionId": "150403101000",
+      "name": "元宝山镇",
+      "average": 14605.0
+    },
+    {
+      "regionId": "150403102000",
+      "name": "美丽河镇",
+      "average": 11988.4
+    },
+    {
+      "regionId": "150428105000",
+      "name": "乃林镇",
+      "average": 45820.6
+    },
+    {
+      "regionId": "150429100000",
+      "name": "天义镇",
+      "average": 77691.7
+    },
+    {
+      "regionId": "150429109000",
+      "name": "忙农镇",
+      "average": 69824.1
+    },
+    {
+      "regionId": "150430100000",
+      "name": "新惠镇",
+      "average": 9700.5
+    },
+    {
+      "regionId": "211321212000",
+      "name": "北沟门子乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322001000",
+      "name": "叶柏寿街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322002000",
+      "name": "红山街道",
+      "average": 196.7
+    },
+    {
+      "regionId": "211322003000",
+      "name": "铁南街道",
+      "average": 198.4
+    },
+    {
+      "regionId": "211322004000",
+      "name": "万寿街道",
+      "average": 2324.4
+    },
+    {
+      "regionId": "211322005000",
+      "name": "富山街道",
+      "average": 1993.8
+    },
+    {
+      "regionId": "211322101000",
+      "name": "朱碌科镇",
+      "average": 24446.9
+    },
+    {
+      "regionId": "211322102000",
+      "name": "建平镇",
+      "average": 22495.1
+    },
+    {
+      "regionId": "211322103000",
+      "name": "黑水镇",
+      "average": 18085.4
+    },
+    {
+      "regionId": "211322104000",
+      "name": "喀喇沁镇",
+      "average": 102.3
+    },
+    {
+      "regionId": "211322105000",
+      "name": "北二十家子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322106000",
+      "name": "沙海镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322108000",
+      "name": "哈拉道口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322109000",
+      "name": "榆树林子镇",
+      "average": 35149.2
+    },
+    {
+      "regionId": "211322110000",
+      "name": "老官地镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322111000",
+      "name": "深井镇",
+      "average": 3860.7
+    },
+    {
+      "regionId": "211322112000",
+      "name": "奎德素镇",
+      "average": 16088.6
+    },
+    {
+      "regionId": "211322113000",
+      "name": "小塘镇",
+      "average": 12570.2
+    },
+    {
+      "regionId": "211322114000",
+      "name": "马场镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322115000",
+      "name": "昌隆镇",
+      "average": 16341.1
+    },
+    {
+      "regionId": "211322117000",
+      "name": "张家营子镇",
+      "average": 11220.9
+    },
+    {
+      "regionId": "211322118000",
+      "name": "青峰山镇",
+      "average": 756.8
+    },
+    {
+      "regionId": "211322205000",
+      "name": "青松岭乡",
+      "average": 6003.2
+    },
+    {
+      "regionId": "211322206000",
+      "name": "杨树岭乡",
+      "average": 8463.7
+    },
+    {
+      "regionId": "211322209000",
+      "name": "罗福沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322211000",
+      "name": "烧锅营子乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322213000",
+      "name": "太平庄乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322214000",
+      "name": "白山乡",
+      "average": 16618.8
+    },
+    {
+      "regionId": "211322218000",
+      "name": "三家蒙古族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322220000",
+      "name": "义成功乡",
+      "average": 3669.5
+    },
+    {
+      "regionId": "211322400000",
+      "name": "八家国营农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322401000",
+      "name": "热水国营畜牧农场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

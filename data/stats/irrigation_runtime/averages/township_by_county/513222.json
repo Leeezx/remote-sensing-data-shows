@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513222100000",
+      "name": "杂谷脑镇",
+      "average": 88.5
+    },
+    {
+      "regionId": "513222101000",
+      "name": "米亚罗镇",
+      "average": 24.4
+    },
+    {
+      "regionId": "513222102000",
+      "name": "古尔沟镇",
+      "average": 19.1
+    },
+    {
+      "regionId": "513222103000",
+      "name": "薛城镇",
+      "average": 480.8
+    },
+    {
+      "regionId": "513222200000",
+      "name": "夹壁乡",
+      "average": 15.7
+    },
+    {
+      "regionId": "513222201000",
+      "name": "朴头乡",
+      "average": 166.5
+    },
+    {
+      "regionId": "513222202000",
+      "name": "甘堡乡",
+      "average": 494.2
+    },
+    {
+      "regionId": "513222203000",
+      "name": "蒲溪乡",
+      "average": 48.7
+    },
+    {
+      "regionId": "513222204000",
+      "name": "上孟乡",
+      "average": 113.5
+    },
+    {
+      "regionId": "513222205000",
+      "name": "下孟乡",
+      "average": 129.4
+    },
+    {
+      "regionId": "513222206000",
+      "name": "木卡乡",
+      "average": 202.5
+    },
+    {
+      "regionId": "513222207000",
+      "name": "通化乡",
+      "average": 98.4
+    },
+    {
+      "regionId": "513222208000",
+      "name": "桃坪乡",
+      "average": 87.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 16.516,
+      "color": "#eff3ff",
+      "label": "16.516 万m³"
+    },
+    {
+      "value": 37.6192,
+      "color": "#bdd7e7",
+      "label": "37.619 万m³"
+    },
+    {
+      "value": 88.3784,
+      "color": "#6baed6",
+      "label": "88.378 万m³"
+    },
+    {
+      "value": 115.9168,
+      "color": "#3182bd",
+      "label": "115.917 万m³"
+    },
+    {
+      "value": 182.916,
+      "color": "#08519c",
+      "label": "182.916 万m³"
+    },
+    {
+      "value": 490.984,
+      "color": "#042d60",
+      "label": "490.984 万m³"
+    }
+  ]
+}

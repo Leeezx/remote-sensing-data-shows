@@ -1,0 +1,183 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510524100000",
+      "name": "叙永镇",
+      "average": 8122.7
+    },
+    {
+      "regionId": "510524101000",
+      "name": "江门镇",
+      "average": 7057.7
+    },
+    {
+      "regionId": "510524102000",
+      "name": "马岭镇",
+      "average": 7688.5
+    },
+    {
+      "regionId": "510524103000",
+      "name": "天池镇",
+      "average": 4725.8
+    },
+    {
+      "regionId": "510524104000",
+      "name": "水尾镇",
+      "average": 3741.3
+    },
+    {
+      "regionId": "510524105000",
+      "name": "两河镇",
+      "average": 6505.7
+    },
+    {
+      "regionId": "510524106000",
+      "name": "落卜镇",
+      "average": 5985.2
+    },
+    {
+      "regionId": "510524107000",
+      "name": "后山镇",
+      "average": 5168.3
+    },
+    {
+      "regionId": "510524108000",
+      "name": "分水镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510524109000",
+      "name": "摩尼镇",
+      "average": 712.5
+    },
+    {
+      "regionId": "510524110000",
+      "name": "赤水镇",
+      "average": 5545.5
+    },
+    {
+      "regionId": "510524200000",
+      "name": "向林乡",
+      "average": 3484.3
+    },
+    {
+      "regionId": "510524201000",
+      "name": "大石乡",
+      "average": 3394.6
+    },
+    {
+      "regionId": "510524202000",
+      "name": "兴隆乡",
+      "average": 7753.2
+    },
+    {
+      "regionId": "510524203000",
+      "name": "龙凤乡",
+      "average": 9277.8
+    },
+    {
+      "regionId": "510524204000",
+      "name": "震东乡",
+      "average": 5157.4
+    },
+    {
+      "regionId": "510524206000",
+      "name": "黄坭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510524207000",
+      "name": "营山乡",
+      "average": 2219.3
+    },
+    {
+      "regionId": "510524208000",
+      "name": "麻城乡",
+      "average": 973.0
+    },
+    {
+      "regionId": "510524209000",
+      "name": "观兴乡",
+      "average": 2572.8
+    },
+    {
+      "regionId": "510524210000",
+      "name": "合乐苗族乡",
+      "average": 1522.7
+    },
+    {
+      "regionId": "510524211000",
+      "name": "白腊苗族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510524212000",
+      "name": "枧槽苗族乡",
+      "average": 1482.4
+    },
+    {
+      "regionId": "510524213000",
+      "name": "水潦彝族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510524214000",
+      "name": "石坝彝族乡",
+      "average": 430.0
+    },
+    {
+      "regionId": "520502115000",
+      "name": "生机镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520502116000",
+      "name": "清水铺镇",
+      "average": 16.1
+    },
+    {
+      "regionId": "530629201000",
+      "name": "双河苗族彝族乡",
+      "average": 4598.2
+    },
+    {
+      "regionId": "530629202000",
+      "name": "高田乡",
+      "average": 2612.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 403.5104,
+      "color": "#bdd7e7",
+      "label": "403.510 万m³"
+    },
+    {
+      "value": 2329.592,
+      "color": "#6baed6",
+      "label": "2329.592 万m³"
+    },
+    {
+      "value": 4330.847199999999,
+      "color": "#3182bd",
+      "label": "4330.847 万m³"
+    },
+    {
+      "value": 6018.511999999998,
+      "color": "#08519c",
+      "label": "6018.512 万m³"
+    },
+    {
+      "value": 8630.943999999998,
+      "color": "#042d60",
+      "label": "8630.944 万m³"
+    }
+  ]
+}

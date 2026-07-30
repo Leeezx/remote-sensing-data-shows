@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "371326001000",
+      "name": "平邑街道",
+      "average": 26733.6
+    },
+    {
+      "regionId": "371326101000",
+      "name": "仲村镇",
+      "average": 21395.2
+    },
+    {
+      "regionId": "371326102000",
+      "name": "武台镇",
+      "average": 2943.9
+    },
+    {
+      "regionId": "371326103000",
+      "name": "保太镇",
+      "average": 11272.9
+    },
+    {
+      "regionId": "371326104000",
+      "name": "柏林镇",
+      "average": 7883.6
+    },
+    {
+      "regionId": "371326105000",
+      "name": "卞桥镇",
+      "average": 9722.6
+    },
+    {
+      "regionId": "371326106000",
+      "name": "地方镇",
+      "average": 8114.2
+    },
+    {
+      "regionId": "371326107000",
+      "name": "铜石镇",
+      "average": 8610.2
+    },
+    {
+      "regionId": "371326108000",
+      "name": "温水镇",
+      "average": 11863.0
+    },
+    {
+      "regionId": "371326109000",
+      "name": "流峪镇",
+      "average": 3276.9
+    },
+    {
+      "regionId": "371326110000",
+      "name": "郑城镇",
+      "average": 6394.4
+    },
+    {
+      "regionId": "371326111000",
+      "name": "白彦镇",
+      "average": 6533.3
+    },
+    {
+      "regionId": "371326112000",
+      "name": "临涧镇",
+      "average": 5851.1
+    },
+    {
+      "regionId": "371326113000",
+      "name": "丰阳镇",
+      "average": 6024.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 3030.48,
+      "color": "#eff3ff",
+      "label": "3030.480 万m³"
+    },
+    {
+      "value": 5982.4172,
+      "color": "#bdd7e7",
+      "label": "5982.417 万m³"
+    },
+    {
+      "value": 6873.5756,
+      "color": "#6baed6",
+      "label": "6873.576 万m³"
+    },
+    {
+      "value": 8485.208,
+      "color": "#3182bd",
+      "label": "8485.208 万m³"
+    },
+    {
+      "value": 11416.884399999999,
+      "color": "#08519c",
+      "label": "11416.884 万m³"
+    },
+    {
+      "value": 25345.616,
+      "color": "#042d60",
+      "label": "25345.616 万m³"
+    }
+  ]
+}

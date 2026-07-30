@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140927100000",
+      "name": "龙泉镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "140927101000",
+      "name": "义井镇",
+      "average": 691.4
+    },
+    {
+      "regionId": "140927102000",
+      "name": "八角镇",
+      "average": 88.1
+    },
+    {
+      "regionId": "140927200000",
+      "name": "东湖乡",
+      "average": 728.2
+    },
+    {
+      "regionId": "140927201000",
+      "name": "太平庄乡",
+      "average": 364.5
+    },
+    {
+      "regionId": "140927202000",
+      "name": "虎北乡",
+      "average": 792.6
+    },
+    {
+      "regionId": "140927203000",
+      "name": "贺职乡",
+      "average": 3413.2
+    },
+    {
+      "regionId": "140927204000",
+      "name": "长畛乡",
+      "average": 19.1
+    },
+    {
+      "regionId": "140927205000",
+      "name": "烈堡乡",
+      "average": 94.7
+    },
+    {
+      "regionId": "140927206000",
+      "name": "大严备乡",
+      "average": 145.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 3.438,
+      "color": "#eff3ff",
+      "label": "3.438 万m³"
+    },
+    {
+      "value": 81.75199999999998,
+      "color": "#bdd7e7",
+      "label": "81.752 万m³"
+    },
+    {
+      "value": 126.94519999999999,
+      "color": "#6baed6",
+      "label": "126.945 万m³"
+    },
+    {
+      "value": 483.49159999999995,
+      "color": "#3182bd",
+      "label": "483.492 万m³"
+    },
+    {
+      "value": 734.1248,
+      "color": "#08519c",
+      "label": "734.125 万m³"
+    },
+    {
+      "value": 2941.4920000000006,
+      "color": "#042d60",
+      "label": "2941.492 万m³"
+    }
+  ]
+}

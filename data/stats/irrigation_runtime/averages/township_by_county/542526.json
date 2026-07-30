@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "542526100000",
+      "name": "改则镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "542526200000",
+      "name": "物玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "542526201000",
+      "name": "先遣乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "542526202000",
+      "name": "麻米乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "542526203000",
+      "name": "洞措乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "542526204000",
+      "name": "古姆乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "542526205000",
+      "name": "察布乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "652825208000",
+      "name": "阿羌乡",
+      "average": 189.6
+    },
+    {
+      "regionId": "653226209000",
+      "name": "阿羌乡",
+      "average": 1284.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

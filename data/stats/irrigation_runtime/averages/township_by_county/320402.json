@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "320402001000",
+      "name": "雕庄街道",
+      "average": 147.8
+    },
+    {
+      "regionId": "320402002000",
+      "name": "青龙街道",
+      "average": 451.6
+    },
+    {
+      "regionId": "320402003000",
+      "name": "茶山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320402004000",
+      "name": "红梅街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320402005000",
+      "name": "天宁街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320402006000",
+      "name": "兰陵街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320402109000",
+      "name": "郑陆镇",
+      "average": 20752.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350430204000",
+      "name": "客坊乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350430205000",
+      "name": "黄埠乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "361030002000",
+      "name": "甘竹镇",
+      "average": 31437.4
+    },
+    {
+      "regionId": "361030003000",
+      "name": "长桥乡",
+      "average": 15844.8
+    },
+    {
+      "regionId": "361030004000",
+      "name": "水南圩乡",
+      "average": 4357.6
+    },
+    {
+      "regionId": "361030005000",
+      "name": "尖峰乡",
+      "average": 14608.9
+    },
+    {
+      "regionId": "361030006000",
+      "name": "千善乡",
+      "average": 15955.1
+    },
+    {
+      "regionId": "361030007000",
+      "name": "头陂镇",
+      "average": 42951.6
+    },
+    {
+      "regionId": "361030009000",
+      "name": "赤水镇",
+      "average": 11373.0
+    },
+    {
+      "regionId": "361030010000",
+      "name": "驿前镇",
+      "average": 25895.9
+    },
+    {
+      "regionId": "361030012000",
+      "name": "塘坊乡",
+      "average": 13263.6
+    },
+    {
+      "regionId": "361030014000",
+      "name": "杨溪乡",
+      "average": 5768.0
+    },
+    {
+      "regionId": "361030016000",
+      "name": "旴江镇",
+      "average": 36904.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 5124.8576,
+      "color": "#bdd7e7",
+      "label": "5124.858 万m³"
+    },
+    {
+      "value": 12976.2288,
+      "color": "#6baed6",
+      "label": "12976.229 万m³"
+    },
+    {
+      "value": 15861.5656,
+      "color": "#3182bd",
+      "label": "15861.566 万m³"
+    },
+    {
+      "value": 28422.824,
+      "color": "#08519c",
+      "label": "28422.824 万m³"
+    },
+    {
+      "value": 41500.248,
+      "color": "#042d60",
+      "label": "41500.248 万m³"
+    }
+  ]
+}

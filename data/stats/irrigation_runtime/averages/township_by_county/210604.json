@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210604001000",
+      "name": "鸭绿江街道",
+      "average": 6.0
+    },
+    {
+      "regionId": "210604003000",
+      "name": "金矿街道",
+      "average": 21.2
+    },
+    {
+      "regionId": "210604004000",
+      "name": "珍珠街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210604005000",
+      "name": "太平湾街道",
+      "average": 0.5
+    },
+    {
+      "regionId": "210604102000",
+      "name": "同兴镇",
+      "average": 122.1
+    },
+    {
+      "regionId": "210604104000",
+      "name": "五龙背镇",
+      "average": 357.0
+    },
+    {
+      "regionId": "210604105000",
+      "name": "楼房镇",
+      "average": 383.0
+    },
+    {
+      "regionId": "210604106000",
+      "name": "九连城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "210604107000",
+      "name": "汤山城镇",
+      "average": 807.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 0.348,
+      "color": "#bdd7e7",
+      "label": "0.348 万m³"
+    },
+    {
+      "value": 9.526399999999995,
+      "color": "#6baed6",
+      "label": "9.526 万m³"
+    },
+    {
+      "value": 98.69119999999998,
+      "color": "#3182bd",
+      "label": "98.691 万m³"
+    },
+    {
+      "value": 364.904,
+      "color": "#08519c",
+      "label": "364.904 万m³"
+    },
+    {
+      "value": 739.4119999999999,
+      "color": "#042d60",
+      "label": "739.412 万m³"
+    }
+  ]
+}

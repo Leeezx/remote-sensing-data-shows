@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150202001000",
+      "name": "和平街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150202002000",
+      "name": "财神庙街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150202003000",
+      "name": "西脑包街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150202004000",
+      "name": "南门外街道",
+      "average": 16.6
+    },
+    {
+      "regionId": "150202005000",
+      "name": "南圪洞街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150202006000",
+      "name": "东站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150202007000",
+      "name": "回民街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150202008000",
+      "name": "二里半街道",
+      "average": 64.2
+    },
+    {
+      "regionId": "150202009000",
+      "name": "河东街道",
+      "average": 66.3
+    },
+    {
+      "regionId": "150202010000",
+      "name": "铁西街道",
+      "average": 22.6
+    },
+    {
+      "regionId": "150202011000",
+      "name": "东兴街道",
+      "average": 187.6
+    },
+    {
+      "regionId": "150202012000",
+      "name": "杨圪楞街道",
+      "average": 46.0
+    },
+    {
+      "regionId": "150202100000",
+      "name": "河东镇",
+      "average": 1055.2
+    },
+    {
+      "regionId": "150202101000",
+      "name": "沙尔沁镇",
+      "average": 48491.1
+    },
+    {
+      "regionId": "150202400000",
+      "name": "铝业工业园区",
+      "average": 12.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

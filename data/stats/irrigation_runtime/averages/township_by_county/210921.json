@@ -1,0 +1,258 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150524101000",
+      "name": "扣河子镇",
+      "average": 363.5
+    },
+    {
+      "regionId": "150524102000",
+      "name": "白音花镇",
+      "average": 235.2
+    },
+    {
+      "regionId": "150524201000",
+      "name": "先进苏木",
+      "average": 2010.8
+    },
+    {
+      "regionId": "150524202000",
+      "name": "水泉乡",
+      "average": 318.9
+    },
+    {
+      "regionId": "150525102000",
+      "name": "青龙山镇",
+      "average": 722.8
+    },
+    {
+      "regionId": "210902011000",
+      "name": "东梁街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210905003000",
+      "name": "艾友街道",
+      "average": 176.4
+    },
+    {
+      "regionId": "210921001000",
+      "name": "城区街道",
+      "average": 154.9
+    },
+    {
+      "regionId": "210921100000",
+      "name": "阜新镇",
+      "average": 1903.4
+    },
+    {
+      "regionId": "210921102000",
+      "name": "东梁镇",
+      "average": 8378.2
+    },
+    {
+      "regionId": "210921103000",
+      "name": "佛寺镇",
+      "average": 3370.6
+    },
+    {
+      "regionId": "210921104000",
+      "name": "伊吗图镇",
+      "average": 11840.2
+    },
+    {
+      "regionId": "210921105000",
+      "name": "旧庙镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "210921106000",
+      "name": "务欢池镇",
+      "average": 4280.4
+    },
+    {
+      "regionId": "210921107000",
+      "name": "建设镇",
+      "average": 9241.7
+    },
+    {
+      "regionId": "210921108000",
+      "name": "大巴镇",
+      "average": 602.4
+    },
+    {
+      "regionId": "210921109000",
+      "name": "泡子镇",
+      "average": 10524.9
+    },
+    {
+      "regionId": "210921110000",
+      "name": "十家子镇",
+      "average": 8250.9
+    },
+    {
+      "regionId": "210921111000",
+      "name": "王府镇",
+      "average": 3697.7
+    },
+    {
+      "regionId": "210921112000",
+      "name": "于寺镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "210921113000",
+      "name": "富荣镇",
+      "average": 4105.6
+    },
+    {
+      "regionId": "210921114000",
+      "name": "新民镇",
+      "average": 4928.7
+    },
+    {
+      "regionId": "210921115000",
+      "name": "福兴地镇",
+      "average": 8.2
+    },
+    {
+      "regionId": "210921116000",
+      "name": "平安地镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "210921117000",
+      "name": "沙拉镇",
+      "average": 360.8
+    },
+    {
+      "regionId": "210921118000",
+      "name": "大固本镇",
+      "average": 16935.1
+    },
+    {
+      "regionId": "210921119000",
+      "name": "大五家子镇",
+      "average": 8730.5
+    },
+    {
+      "regionId": "210921120000",
+      "name": "大板镇",
+      "average": 1066.8
+    },
+    {
+      "regionId": "210921121000",
+      "name": "招束沟镇",
+      "average": 1541.6
+    },
+    {
+      "regionId": "210921122000",
+      "name": "八家子镇",
+      "average": 1385.2
+    },
+    {
+      "regionId": "210921123000",
+      "name": "蜘蛛山镇",
+      "average": 5673.1
+    },
+    {
+      "regionId": "210921124000",
+      "name": "塔营子镇",
+      "average": 2933.7
+    },
+    {
+      "regionId": "210921125000",
+      "name": "扎兰营子镇",
+      "average": 191.8
+    },
+    {
+      "regionId": "210921126000",
+      "name": "七家子镇",
+      "average": 1013.2
+    },
+    {
+      "regionId": "210921127000",
+      "name": "红帽子镇",
+      "average": 1125.6
+    },
+    {
+      "regionId": "210921128000",
+      "name": "紫都台镇",
+      "average": 1042.7
+    },
+    {
+      "regionId": "210921129000",
+      "name": "化石戈镇",
+      "average": 3648.8
+    },
+    {
+      "regionId": "210921130000",
+      "name": "哈达户稍镇",
+      "average": 686.5
+    },
+    {
+      "regionId": "210921131000",
+      "name": "老河土镇",
+      "average": 4029.4
+    },
+    {
+      "regionId": "210921203000",
+      "name": "卧凤沟乡",
+      "average": 6509.6
+    },
+    {
+      "regionId": "210921211000",
+      "name": "苍土乡",
+      "average": 2472.7
+    },
+    {
+      "regionId": "210921220000",
+      "name": "太平乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "210921222000",
+      "name": "国华乡",
+      "average": 1414.6
+    },
+    {
+      "regionId": "210921401000",
+      "name": "泡子农场办事处",
+      "average": 12.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 196.8344,
+      "color": "#bdd7e7",
+      "label": "196.834 万m³"
+    },
+    {
+      "value": 1024.174,
+      "color": "#6baed6",
+      "label": "1024.174 万m³"
+    },
+    {
+      "value": 2300.8732,
+      "color": "#3182bd",
+      "label": "2300.873 万m³"
+    },
+    {
+      "value": 4853.497199999995,
+      "color": "#08519c",
+      "label": "4853.497 万m³"
+    },
+    {
+      "value": 12553.486000000003,
+      "color": "#042d60",
+      "label": "12553.486 万m³"
+    }
+  ]
+}

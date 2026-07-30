@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "530902001000",
+      "name": "凤翔街道",
+      "average": 7402.5
+    },
+    {
+      "regionId": "530902002000",
+      "name": "忙畔街道",
+      "average": 6253.4
+    },
+    {
+      "regionId": "530902102000",
+      "name": "博尚镇",
+      "average": 24770.7
+    },
+    {
+      "regionId": "530902202000",
+      "name": "南美乡",
+      "average": 1069.4
+    },
+    {
+      "regionId": "530902203000",
+      "name": "蚂蚁堆乡",
+      "average": 454.8
+    },
+    {
+      "regionId": "530902204000",
+      "name": "章驮乡",
+      "average": 3356.3
+    },
+    {
+      "regionId": "530902206000",
+      "name": "圈内乡",
+      "average": 7066.6
+    },
+    {
+      "regionId": "530902207000",
+      "name": "马台乡",
+      "average": 3061.0
+    },
+    {
+      "regionId": "530902208000",
+      "name": "邦东乡",
+      "average": 4660.0
+    },
+    {
+      "regionId": "530902209000",
+      "name": "平村乡",
+      "average": 279.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 310.89,
+      "color": "#eff3ff",
+      "label": "310.890 万m³"
+    },
+    {
+      "value": 1012.8568,
+      "color": "#bdd7e7",
+      "label": "1012.857 万m³"
+    },
+    {
+      "value": 3248.8108,
+      "color": "#6baed6",
+      "label": "3248.811 万m³"
+    },
+    {
+      "value": 5239.9976,
+      "color": "#3182bd",
+      "label": "5239.998 万m³"
+    },
+    {
+      "value": 7097.5028,
+      "color": "#08519c",
+      "label": "7097.503 万m³"
+    },
+    {
+      "value": 21644.424000000006,
+      "color": "#042d60",
+      "label": "21644.424 万m³"
+    }
+  ]
+}

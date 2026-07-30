@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "640402100000",
+      "name": "三营镇",
+      "average": 1002.0
+    },
+    {
+      "regionId": "640402103000",
+      "name": "清河镇",
+      "average": 1340.9
+    },
+    {
+      "regionId": "640402104000",
+      "name": "开城乡",
+      "average": 2186.6
+    },
+    {
+      "regionId": "640402105000",
+      "name": "张易乡",
+      "average": 1734.9
+    },
+    {
+      "regionId": "640402106000",
+      "name": "彭堡乡",
+      "average": 3410.1
+    },
+    {
+      "regionId": "640402107000",
+      "name": "头营乡",
+      "average": 3583.3
+    },
+    {
+      "regionId": "640402200000",
+      "name": "中河乡",
+      "average": 176.3
+    },
+    {
+      "regionId": "640402201000",
+      "name": "河川乡",
+      "average": 404.8
+    },
+    {
+      "regionId": "640402202000",
+      "name": "官厅乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640402204000",
+      "name": "炭山乡",
+      "average": 134.8
+    },
+    {
+      "regionId": "640402205000",
+      "name": "寨科乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 139.78000000000003,
+      "color": "#bdd7e7",
+      "label": "139.780 万m³"
+    },
+    {
+      "value": 428.68800000000005,
+      "color": "#6baed6",
+      "label": "428.688 万m³"
+    },
+    {
+      "value": 1327.344,
+      "color": "#3182bd",
+      "label": "1327.344 万m³"
+    },
+    {
+      "value": 2132.3959999999993,
+      "color": "#08519c",
+      "label": "2132.396 万m³"
+    },
+    {
+      "value": 3548.6600000000003,
+      "color": "#042d60",
+      "label": "3548.660 万m³"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "320282102000",
+      "name": "太华镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "320481106000",
+      "name": "天目湖镇",
+      "average": 108190.9
+    },
+    {
+      "regionId": "330523111000",
+      "name": "天子湖镇",
+      "average": 96853.7
+    },
+    {
+      "regionId": "341822100000",
+      "name": "桃州镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341822101000",
+      "name": "柏垫镇",
+      "average": 12343.5
+    },
+    {
+      "regionId": "341822102000",
+      "name": "誓节镇",
+      "average": 62631.4
+    },
+    {
+      "regionId": "341822103000",
+      "name": "邱村镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341822104000",
+      "name": "新杭镇",
+      "average": 194.0
+    },
+    {
+      "regionId": "341822200000",
+      "name": "卢村乡",
+      "average": 17.1
+    },
+    {
+      "regionId": "341822201000",
+      "name": "东亭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341822202000",
+      "name": "杨滩乡",
+      "average": 15620.8
+    },
+    {
+      "regionId": "341822203000",
+      "name": "四合乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341822500000",
+      "name": "祠山岗茶场",
+      "average": 935.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

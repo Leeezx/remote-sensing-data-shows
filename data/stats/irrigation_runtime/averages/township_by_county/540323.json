@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540323100000",
+      "name": "桑多镇",
+      "average": 7.9
+    },
+    {
+      "regionId": "540323101000",
+      "name": "类乌齐镇",
+      "average": 23.9
+    },
+    {
+      "regionId": "540323200000",
+      "name": "吉多乡",
+      "average": 1.4
+    },
+    {
+      "regionId": "540323201000",
+      "name": "岗色乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540323202000",
+      "name": "宾达乡",
+      "average": 5.3
+    },
+    {
+      "regionId": "540323203000",
+      "name": "卡玛多乡",
+      "average": 35.9
+    },
+    {
+      "regionId": "540323204000",
+      "name": "尚卡乡",
+      "average": 11.1
+    },
+    {
+      "regionId": "540323205000",
+      "name": "伊日乡",
+      "average": 0.4
+    },
+    {
+      "regionId": "540323206000",
+      "name": "甲桑卡乡",
+      "average": 0.6
+    },
+    {
+      "regionId": "540323207000",
+      "name": "长毛岭乡",
+      "average": 89.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.072,
+      "color": "#eff3ff",
+      "label": "0.072 万m³"
+    },
+    {
+      "value": 0.5816,
+      "color": "#bdd7e7",
+      "label": "0.582 万m³"
+    },
+    {
+      "value": 3.8803999999999985,
+      "color": "#6baed6",
+      "label": "3.880 万m³"
+    },
+    {
+      "value": 9.0648,
+      "color": "#3182bd",
+      "label": "9.065 万m³"
+    },
+    {
+      "value": 25.003999999999994,
+      "color": "#08519c",
+      "label": "25.004 万m³"
+    },
+    {
+      "value": 80.09800000000001,
+      "color": "#042d60",
+      "label": "80.098 万m³"
+    }
+  ]
+}

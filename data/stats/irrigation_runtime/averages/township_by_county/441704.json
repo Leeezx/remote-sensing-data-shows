@@ -1,0 +1,133 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "441704100000",
+      "name": "东城镇",
+      "average": 13805.3
+    },
+    {
+      "regionId": "441704101000",
+      "name": "北惯镇",
+      "average": 39272.6
+    },
+    {
+      "regionId": "441704102000",
+      "name": "那龙镇",
+      "average": 24228.4
+    },
+    {
+      "regionId": "441704103000",
+      "name": "东平镇",
+      "average": 24562.3
+    },
+    {
+      "regionId": "441704104000",
+      "name": "雅韶镇",
+      "average": 23716.8
+    },
+    {
+      "regionId": "441704105000",
+      "name": "大沟镇",
+      "average": 29369.5
+    },
+    {
+      "regionId": "441704106000",
+      "name": "新洲镇",
+      "average": 70362.0
+    },
+    {
+      "regionId": "441704107000",
+      "name": "合山镇",
+      "average": 28317.2
+    },
+    {
+      "regionId": "441704108000",
+      "name": "塘坪镇",
+      "average": 46312.9
+    },
+    {
+      "regionId": "441704109000",
+      "name": "大八镇",
+      "average": 31532.1
+    },
+    {
+      "regionId": "441704110000",
+      "name": "红丰镇",
+      "average": 33736.5
+    },
+    {
+      "regionId": "441704400000",
+      "name": "阳江监狱",
+      "average": 0.0
+    },
+    {
+      "regionId": "441704401000",
+      "name": "红五月农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "441704402000",
+      "name": "鸡山农场",
+      "average": 122.4
+    },
+    {
+      "regionId": "441704501000",
+      "name": "阳江林场宝山分场",
+      "average": 0.0
+    },
+    {
+      "regionId": "441704502000",
+      "name": "阳江林场田畔分场",
+      "average": 0.0
+    },
+    {
+      "regionId": "441704503000",
+      "name": "阳东原种场",
+      "average": 0.0
+    },
+    {
+      "regionId": "441704504000",
+      "name": "阳东林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "441704505000",
+      "name": "阳江林场东岸分场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "310101002000",
+      "name": "南京东路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310101013000",
+      "name": "外滩街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310101015000",
+      "name": "半淞园路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310101017000",
+      "name": "小东门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310101018000",
+      "name": "豫园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310101019000",
+      "name": "老西门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310101020000",
+      "name": "五里桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310101021000",
+      "name": "打浦桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310101022000",
+      "name": "淮海中路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310101023000",
+      "name": "瑞金二路街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

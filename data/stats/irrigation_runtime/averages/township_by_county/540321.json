@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513330204000",
+      "name": "龚垭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330209000",
+      "name": "俄南乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513331100000",
+      "name": "建设镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513331201000",
+      "name": "绒盖乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513332101000",
+      "name": "洛须镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540321100000",
+      "name": "江达镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540321101000",
+      "name": "岗托镇",
+      "average": 21.5
+    },
+    {
+      "regionId": "540321200000",
+      "name": "邓柯乡",
+      "average": 48.4
+    },
+    {
+      "regionId": "540321201000",
+      "name": "岩比乡",
+      "average": 64.7
+    },
+    {
+      "regionId": "540321202000",
+      "name": "卡贡乡",
+      "average": 14.7
+    },
+    {
+      "regionId": "540321203000",
+      "name": "生达乡",
+      "average": 289.9
+    },
+    {
+      "regionId": "540321204000",
+      "name": "娘西乡",
+      "average": 39.4
+    },
+    {
+      "regionId": "540321205000",
+      "name": "字呷乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540321206000",
+      "name": "青泥洞乡",
+      "average": 36.4
+    },
+    {
+      "regionId": "540321207000",
+      "name": "汪布顶乡",
+      "average": 25.7
+    },
+    {
+      "regionId": "540321208000",
+      "name": "德登乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540321209000",
+      "name": "同普乡",
+      "average": 34.8
+    },
+    {
+      "regionId": "540321210000",
+      "name": "波罗乡",
+      "average": 316.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

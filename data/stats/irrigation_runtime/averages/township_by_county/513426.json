@@ -1,0 +1,283 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513426100000",
+      "name": "会东镇",
+      "average": 2852.5
+    },
+    {
+      "regionId": "513426101000",
+      "name": "铅锌镇",
+      "average": 3159.3
+    },
+    {
+      "regionId": "513426102000",
+      "name": "堵格镇",
+      "average": 2745.2
+    },
+    {
+      "regionId": "513426103000",
+      "name": "姜州镇",
+      "average": 7906.0
+    },
+    {
+      "regionId": "513426104000",
+      "name": "乌东德镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513426105000",
+      "name": "淌塘镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513426200000",
+      "name": "小岔河乡",
+      "average": 2539.5
+    },
+    {
+      "regionId": "513426201000",
+      "name": "撒者邑乡",
+      "average": 148.8
+    },
+    {
+      "regionId": "513426202000",
+      "name": "新云乡",
+      "average": 3584.7
+    },
+    {
+      "regionId": "513426203000",
+      "name": "长新乡",
+      "average": 1016.3
+    },
+    {
+      "regionId": "513426209000",
+      "name": "小坝乡",
+      "average": 4643.7
+    },
+    {
+      "regionId": "513426210000",
+      "name": "火石乡",
+      "average": 1049.3
+    },
+    {
+      "regionId": "513426211000",
+      "name": "铁柳乡",
+      "average": 5614.7
+    },
+    {
+      "regionId": "513426212000",
+      "name": "龙树乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513426213000",
+      "name": "可河乡",
+      "average": 2439.1
+    },
+    {
+      "regionId": "513426214000",
+      "name": "嘎吉乡",
+      "average": 4151.7
+    },
+    {
+      "regionId": "513426215000",
+      "name": "柏岩乡",
+      "average": 5299.7
+    },
+    {
+      "regionId": "513426216000",
+      "name": "海坝乡",
+      "average": 323.4
+    },
+    {
+      "regionId": "513426221000",
+      "name": "岩坝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513426223000",
+      "name": "新田乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513426224000",
+      "name": "江西街乡",
+      "average": 1930.4
+    },
+    {
+      "regionId": "513426225000",
+      "name": "岔河乡",
+      "average": 2095.5
+    },
+    {
+      "regionId": "513426226000",
+      "name": "双堰乡",
+      "average": 8571.5
+    },
+    {
+      "regionId": "513426227000",
+      "name": "发箐乡",
+      "average": 103.9
+    },
+    {
+      "regionId": "513426228000",
+      "name": "铁厂沟乡",
+      "average": 91.5
+    },
+    {
+      "regionId": "513426229000",
+      "name": "新街乡",
+      "average": 494.3
+    },
+    {
+      "regionId": "513426230000",
+      "name": "马龙乡",
+      "average": 2634.7
+    },
+    {
+      "regionId": "513426231000",
+      "name": "新龙乡",
+      "average": 768.0
+    },
+    {
+      "regionId": "513426232000",
+      "name": "红岩乡",
+      "average": 4095.1
+    },
+    {
+      "regionId": "513426233000",
+      "name": "红果乡",
+      "average": 4659.6
+    },
+    {
+      "regionId": "513426234000",
+      "name": "鲁吉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513426235000",
+      "name": "溜姑乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513426236000",
+      "name": "大崇乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513426237000",
+      "name": "黑嘎乡",
+      "average": 1337.9
+    },
+    {
+      "regionId": "513426238000",
+      "name": "文箐乡",
+      "average": 1662.9
+    },
+    {
+      "regionId": "513426239000",
+      "name": "野牛坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513426240000",
+      "name": "松坪乡",
+      "average": 521.6
+    },
+    {
+      "regionId": "513426241000",
+      "name": "新山乡",
+      "average": 49.2
+    },
+    {
+      "regionId": "513426242000",
+      "name": "小街乡",
+      "average": 406.1
+    },
+    {
+      "regionId": "513426243000",
+      "name": "老口乡",
+      "average": 813.0
+    },
+    {
+      "regionId": "513426244000",
+      "name": "干海子乡",
+      "average": 857.2
+    },
+    {
+      "regionId": "513426245000",
+      "name": "黄坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513426246000",
+      "name": "野租乡",
+      "average": 29.2
+    },
+    {
+      "regionId": "513426247000",
+      "name": "拉马乡",
+      "average": 64.5
+    },
+    {
+      "regionId": "513426248000",
+      "name": "鲁南乡",
+      "average": 30.3
+    },
+    {
+      "regionId": "513426249000",
+      "name": "雪山乡",
+      "average": 135.1
+    },
+    {
+      "regionId": "513426250000",
+      "name": "柏杉乡",
+      "average": 99.3
+    },
+    {
+      "regionId": "530128108000",
+      "name": "乌东德镇",
+      "average": 229.1
+    },
+    {
+      "regionId": "530128211000",
+      "name": "则黑乡",
+      "average": 3723.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 29.3936,
+      "color": "#bdd7e7",
+      "label": "29.394 万m³"
+    },
+    {
+      "value": 266.06559999999996,
+      "color": "#6baed6",
+      "label": "266.066 万m³"
+    },
+    {
+      "value": 1224.7687999999991,
+      "color": "#3182bd",
+      "label": "1224.769 万m³"
+    },
+    {
+      "value": 3105.3031999999994,
+      "color": "#08519c",
+      "label": "3105.303 万m³"
+    },
+    {
+      "value": 7932.619999999999,
+      "color": "#042d60",
+      "label": "7932.620 万m³"
+    }
+  ]
+}

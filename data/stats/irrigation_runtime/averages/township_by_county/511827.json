@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511827100000",
+      "name": "穆坪镇",
+      "average": 82.3
+    },
+    {
+      "regionId": "511827101000",
+      "name": "灵关镇",
+      "average": 2202.2
+    },
+    {
+      "regionId": "511827102000",
+      "name": "陇东镇",
+      "average": 106.8
+    },
+    {
+      "regionId": "511827201000",
+      "name": "蜂桶寨乡",
+      "average": 344.2
+    },
+    {
+      "regionId": "511827202000",
+      "name": "硗碛乡",
+      "average": 132.6
+    },
+    {
+      "regionId": "511827203000",
+      "name": "永富乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511827204000",
+      "name": "明礼乡",
+      "average": 214.5
+    },
+    {
+      "regionId": "511827205000",
+      "name": "五龙乡",
+      "average": 212.9
+    },
+    {
+      "regionId": "511827206000",
+      "name": "大溪乡",
+      "average": 340.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 13.168,
+      "color": "#eff3ff",
+      "label": "13.168 万m³"
+    },
+    {
+      "value": 99.35199999999999,
+      "color": "#bdd7e7",
+      "label": "99.352 万m³"
+    },
+    {
+      "value": 151.22959999999998,
+      "color": "#6baed6",
+      "label": "151.230 万m³"
+    },
+    {
+      "value": 214.1288,
+      "color": "#3182bd",
+      "label": "214.129 万m³"
+    },
+    {
+      "value": 341.3464,
+      "color": "#08519c",
+      "label": "341.346 万m³"
+    },
+    {
+      "value": 1904.9199999999996,
+      "color": "#042d60",
+      "label": "1904.920 万m³"
+    }
+  ]
+}

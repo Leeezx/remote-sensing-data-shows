@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "320303001000",
+      "name": "彭城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320303002000",
+      "name": "子房街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320303003000",
+      "name": "黄山街道",
+      "average": 58.4
+    },
+    {
+      "regionId": "320303004000",
+      "name": "骆驼山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320303005000",
+      "name": "大郭庄街道",
+      "average": 674.2
+    },
+    {
+      "regionId": "320303006000",
+      "name": "翠屏山街道",
+      "average": 541.3
+    },
+    {
+      "regionId": "320303007000",
+      "name": "大龙湖街道",
+      "average": 15231.9
+    },
+    {
+      "regionId": "320303008000",
+      "name": "潘塘街道",
+      "average": 8563.8
+    },
+    {
+      "regionId": "320303400000",
+      "name": "淮海食品城",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511113100000",
+      "name": "永和镇",
+      "average": 518.3
+    },
+    {
+      "regionId": "511113101000",
+      "name": "金河镇",
+      "average": 109.9
+    },
+    {
+      "regionId": "511113200000",
+      "name": "和平彝族乡",
+      "average": 231.9
+    },
+    {
+      "regionId": "511113201000",
+      "name": "共安彝族乡",
+      "average": 136.5
+    },
+    {
+      "regionId": "511113202000",
+      "name": "吉星乡",
+      "average": 102.4
+    },
+    {
+      "regionId": "511113203000",
+      "name": "永胜乡",
+      "average": 16.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 25.45,
+      "color": "#eff3ff",
+      "label": "25.450 万m³"
+    },
+    {
+      "value": 102.85000000000001,
+      "color": "#bdd7e7",
+      "label": "102.850 万m³"
+    },
+    {
+      "value": 110.432,
+      "color": "#6baed6",
+      "label": "110.432 万m³"
+    },
+    {
+      "value": 135.968,
+      "color": "#3182bd",
+      "label": "135.968 万m³"
+    },
+    {
+      "value": 226.17599999999996,
+      "color": "#08519c",
+      "label": "226.176 万m³"
+    },
+    {
+      "value": 489.6600000000001,
+      "color": "#042d60",
+      "label": "489.660 万m³"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510727213000",
+      "name": "白马藏族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510727214000",
+      "name": "木座藏族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510822100000",
+      "name": "乔庄镇",
+      "average": 1113.4
+    },
+    {
+      "regionId": "510822106000",
+      "name": "木鱼镇",
+      "average": 1210.7
+    },
+    {
+      "regionId": "510822107000",
+      "name": "沙州镇",
+      "average": 1706.0
+    },
+    {
+      "regionId": "510822202000",
+      "name": "孔溪乡",
+      "average": 52.4
+    },
+    {
+      "regionId": "510822206000",
+      "name": "三锅乡",
+      "average": 881.9
+    },
+    {
+      "regionId": "510822207000",
+      "name": "蒿溪回族乡",
+      "average": 118.6
+    },
+    {
+      "regionId": "510822223000",
+      "name": "板桥乡",
+      "average": 4671.8
+    },
+    {
+      "regionId": "513225200000",
+      "name": "永丰乡",
+      "average": 138.1
+    },
+    {
+      "regionId": "513225207000",
+      "name": "勿角乡",
+      "average": 198.6
+    },
+    {
+      "regionId": "513225209000",
+      "name": "郭元乡",
+      "average": 465.5
+    },
+    {
+      "regionId": "621222100000",
+      "name": "城关镇",
+      "average": 2288.8
+    },
+    {
+      "regionId": "621222101000",
+      "name": "碧口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "621222102000",
+      "name": "尚德镇",
+      "average": 1525.7
+    },
+    {
+      "regionId": "621222103000",
+      "name": "中寨镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "621222200000",
+      "name": "铁楼藏族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621222203000",
+      "name": "丹堡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621222205000",
+      "name": "刘家坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621222206000",
+      "name": "玉垒乡",
+      "average": 374.0
+    },
+    {
+      "regionId": "621222207000",
+      "name": "范坝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621222210000",
+      "name": "中庙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621222211000",
+      "name": "口头坝乡",
+      "average": 564.9
+    },
+    {
+      "regionId": "621222212000",
+      "name": "尖山乡",
+      "average": 437.5
+    },
+    {
+      "regionId": "621222213000",
+      "name": "临江乡",
+      "average": 372.5
+    },
+    {
+      "regionId": "621222214000",
+      "name": "黎坪乡",
+      "average": 581.1
+    },
+    {
+      "regionId": "621222215000",
+      "name": "舍书乡",
+      "average": 237.5
+    },
+    {
+      "regionId": "621222216000",
+      "name": "天池乡",
+      "average": 615.2
+    },
+    {
+      "regionId": "621222217000",
+      "name": "桥头乡",
+      "average": 1444.8
+    },
+    {
+      "regionId": "621222218000",
+      "name": "堡子坝乡",
+      "average": 576.6
+    },
+    {
+      "regionId": "621222219000",
+      "name": "石坊乡",
+      "average": 2251.5
+    },
+    {
+      "regionId": "621222220000",
+      "name": "石鸡坝乡",
+      "average": 11.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "411323001000",
+      "name": "白羽街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411323002000",
+      "name": "紫金街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411323003000",
+      "name": "莲花街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411323101000",
+      "name": "丹水镇",
+      "average": 20576.3
+    },
+    {
+      "regionId": "411323102000",
+      "name": "西坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411323103000",
+      "name": "双龙镇",
+      "average": 1675.0
+    },
+    {
+      "regionId": "411323104000",
+      "name": "回车镇",
+      "average": 15280.1
+    },
+    {
+      "regionId": "411323105000",
+      "name": "丁河镇",
+      "average": 8354.8
+    },
+    {
+      "regionId": "411323106000",
+      "name": "桑坪镇",
+      "average": 2909.9
+    },
+    {
+      "regionId": "411323107000",
+      "name": "米坪镇",
+      "average": 1402.6
+    },
+    {
+      "regionId": "411323108000",
+      "name": "五里桥镇",
+      "average": 19935.6
+    },
+    {
+      "regionId": "411323109000",
+      "name": "重阳镇",
+      "average": 4858.8
+    },
+    {
+      "regionId": "411323110000",
+      "name": "太平镇",
+      "average": 39.5
+    },
+    {
+      "regionId": "411323111000",
+      "name": "阳城镇",
+      "average": 4024.9
+    },
+    {
+      "regionId": "411323112000",
+      "name": "二郎坪镇",
+      "average": 200.1
+    },
+    {
+      "regionId": "411323113000",
+      "name": "石界河镇",
+      "average": 1149.8
+    },
+    {
+      "regionId": "411323114000",
+      "name": "军马河镇",
+      "average": 2117.7
+    },
+    {
+      "regionId": "411323300000",
+      "name": "田关乡",
+      "average": 19230.2
+    },
+    {
+      "regionId": "411323307000",
+      "name": "寨根乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "611023101000",
+      "name": "富水镇",
+      "average": 5130.2
+    },
+    {
+      "regionId": "611023112000",
+      "name": "青山镇",
+      "average": 1715.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 9.480000000000008,
+      "color": "#bdd7e7",
+      "label": "9.480 万m³"
+    },
+    {
+      "value": 1424.3919999999998,
+      "color": "#6baed6",
+      "label": "1424.392 万m³"
+    },
+    {
+      "value": 2846.524,
+      "color": "#3182bd",
+      "label": "2846.524 万m³"
+    },
+    {
+      "value": 7580.895999999993,
+      "color": "#08519c",
+      "label": "7580.896 万m³"
+    },
+    {
+      "value": 20320.02,
+      "color": "#042d60",
+      "label": "20320.020 万m³"
+    }
+  ]
+}

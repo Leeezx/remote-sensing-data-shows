@@ -1,0 +1,258 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510781001000",
+      "name": "长城办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "510781002000",
+      "name": "武都长钢街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510781003000",
+      "name": "含增长钢街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510781004000",
+      "name": "华坪街道",
+      "average": 115.2
+    },
+    {
+      "regionId": "510781100000",
+      "name": "中坝镇",
+      "average": 30.2
+    },
+    {
+      "regionId": "510781101000",
+      "name": "太平镇",
+      "average": 19073.7
+    },
+    {
+      "regionId": "510781102000",
+      "name": "三合镇",
+      "average": 15484.5
+    },
+    {
+      "regionId": "510781103000",
+      "name": "含增镇",
+      "average": 484.5
+    },
+    {
+      "regionId": "510781104000",
+      "name": "青莲镇",
+      "average": 5585.2
+    },
+    {
+      "regionId": "510781105000",
+      "name": "彰明镇",
+      "average": 7824.0
+    },
+    {
+      "regionId": "510781106000",
+      "name": "龙凤镇",
+      "average": 7283.7
+    },
+    {
+      "regionId": "510781107000",
+      "name": "武都镇",
+      "average": 10268.3
+    },
+    {
+      "regionId": "510781108000",
+      "name": "大康镇",
+      "average": 6178.0
+    },
+    {
+      "regionId": "510781109000",
+      "name": "新安镇",
+      "average": 9508.0
+    },
+    {
+      "regionId": "510781110000",
+      "name": "战旗镇",
+      "average": 11238.1
+    },
+    {
+      "regionId": "510781111000",
+      "name": "双河镇",
+      "average": 7649.3
+    },
+    {
+      "regionId": "510781112000",
+      "name": "永胜镇",
+      "average": 15223.6
+    },
+    {
+      "regionId": "510781113000",
+      "name": "小溪坝镇",
+      "average": 6815.2
+    },
+    {
+      "regionId": "510781114000",
+      "name": "河口镇",
+      "average": 13095.7
+    },
+    {
+      "regionId": "510781115000",
+      "name": "重华镇",
+      "average": 9148.6
+    },
+    {
+      "regionId": "510781116000",
+      "name": "厚坝镇",
+      "average": 7091.9
+    },
+    {
+      "regionId": "510781117000",
+      "name": "二郎庙镇",
+      "average": 7405.2
+    },
+    {
+      "regionId": "510781118000",
+      "name": "马角镇",
+      "average": 7970.7
+    },
+    {
+      "regionId": "510781119000",
+      "name": "雁门镇",
+      "average": 3517.2
+    },
+    {
+      "regionId": "510781120000",
+      "name": "九岭镇",
+      "average": 12382.0
+    },
+    {
+      "regionId": "510781200000",
+      "name": "八一乡",
+      "average": 6636.4
+    },
+    {
+      "regionId": "510781201000",
+      "name": "方水乡",
+      "average": 12202.0
+    },
+    {
+      "regionId": "510781202000",
+      "name": "西屏乡",
+      "average": 4421.6
+    },
+    {
+      "regionId": "510781203000",
+      "name": "香水乡",
+      "average": 1962.8
+    },
+    {
+      "regionId": "510781204000",
+      "name": "大堰乡",
+      "average": 7718.1
+    },
+    {
+      "regionId": "510781205000",
+      "name": "东兴乡",
+      "average": 4809.9
+    },
+    {
+      "regionId": "510781207000",
+      "name": "义新乡",
+      "average": 7376.9
+    },
+    {
+      "regionId": "510781208000",
+      "name": "贯山乡",
+      "average": 7218.7
+    },
+    {
+      "regionId": "510781209000",
+      "name": "新兴乡",
+      "average": 7840.6
+    },
+    {
+      "regionId": "510781210000",
+      "name": "新春乡",
+      "average": 7914.8
+    },
+    {
+      "regionId": "510781211000",
+      "name": "东安乡",
+      "average": 9424.6
+    },
+    {
+      "regionId": "510781212000",
+      "name": "铜星乡",
+      "average": 7755.8
+    },
+    {
+      "regionId": "510781213000",
+      "name": "文胜乡",
+      "average": 4212.3
+    },
+    {
+      "regionId": "510781214000",
+      "name": "重兴乡",
+      "average": 12111.6
+    },
+    {
+      "regionId": "510781215000",
+      "name": "云集乡",
+      "average": 6952.7
+    },
+    {
+      "regionId": "510781216000",
+      "name": "石元乡",
+      "average": 1969.9
+    },
+    {
+      "regionId": "510781217000",
+      "name": "敬元乡",
+      "average": 5062.1
+    },
+    {
+      "regionId": "510781218000",
+      "name": "六合乡",
+      "average": 4354.2
+    },
+    {
+      "regionId": "510781219000",
+      "name": "枫顺乡",
+      "average": 774.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 3597.8315999999995,
+      "color": "#bdd7e7",
+      "label": "3597.832 万m³"
+    },
+    {
+      "value": 6702.9136,
+      "color": "#6baed6",
+      "label": "6702.914 万m³"
+    },
+    {
+      "value": 7692.5064,
+      "color": "#3182bd",
+      "label": "7692.506 万m³"
+    },
+    {
+      "value": 9498.3256,
+      "color": "#08519c",
+      "label": "9498.326 万m³"
+    },
+    {
+      "value": 15986.988000000003,
+      "color": "#042d60",
+      "label": "15986.988 万m³"
+    }
+  ]
+}

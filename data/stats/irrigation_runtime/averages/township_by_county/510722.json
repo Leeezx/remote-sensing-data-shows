@@ -1,0 +1,353 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510722100000",
+      "name": "北坝镇",
+      "average": 956.8
+    },
+    {
+      "regionId": "510722101000",
+      "name": "潼川镇",
+      "average": 6576.1
+    },
+    {
+      "regionId": "510722102000",
+      "name": "东塔镇",
+      "average": 2790.0
+    },
+    {
+      "regionId": "510722103000",
+      "name": "百顷镇",
+      "average": 1569.7
+    },
+    {
+      "regionId": "510722104000",
+      "name": "塔山镇",
+      "average": 15954.0
+    },
+    {
+      "regionId": "510722105000",
+      "name": "柳池镇",
+      "average": 4958.7
+    },
+    {
+      "regionId": "510722106000",
+      "name": "龙树镇",
+      "average": 10714.4
+    },
+    {
+      "regionId": "510722107000",
+      "name": "石安镇",
+      "average": 8363.5
+    },
+    {
+      "regionId": "510722108000",
+      "name": "富顺镇",
+      "average": 3430.2
+    },
+    {
+      "regionId": "510722109000",
+      "name": "三元镇",
+      "average": 1946.1
+    },
+    {
+      "regionId": "510722110000",
+      "name": "秋林镇",
+      "average": 3796.5
+    },
+    {
+      "regionId": "510722111000",
+      "name": "永新镇",
+      "average": 2892.3
+    },
+    {
+      "regionId": "510722112000",
+      "name": "新德镇",
+      "average": 4188.1
+    },
+    {
+      "regionId": "510722113000",
+      "name": "新生镇",
+      "average": 2381.8
+    },
+    {
+      "regionId": "510722114000",
+      "name": "鲁班镇",
+      "average": 6874.6
+    },
+    {
+      "regionId": "510722115000",
+      "name": "景福镇",
+      "average": 5681.1
+    },
+    {
+      "regionId": "510722116000",
+      "name": "紫河镇",
+      "average": 2853.4
+    },
+    {
+      "regionId": "510722117000",
+      "name": "安居镇",
+      "average": 231.5
+    },
+    {
+      "regionId": "510722118000",
+      "name": "观桥镇",
+      "average": 3794.3
+    },
+    {
+      "regionId": "510722119000",
+      "name": "郪江镇",
+      "average": 259.2
+    },
+    {
+      "regionId": "510722120000",
+      "name": "中新镇",
+      "average": 3435.9
+    },
+    {
+      "regionId": "510722121000",
+      "name": "古井镇",
+      "average": 9388.8
+    },
+    {
+      "regionId": "510722122000",
+      "name": "万安镇",
+      "average": 716.2
+    },
+    {
+      "regionId": "510722123000",
+      "name": "西平镇",
+      "average": 12003.9
+    },
+    {
+      "regionId": "510722124000",
+      "name": "八洞镇",
+      "average": 7387.6
+    },
+    {
+      "regionId": "510722125000",
+      "name": "凯河镇",
+      "average": 10944.3
+    },
+    {
+      "regionId": "510722126000",
+      "name": "乐安镇",
+      "average": 10283.1
+    },
+    {
+      "regionId": "510722127000",
+      "name": "建平镇",
+      "average": 9431.3
+    },
+    {
+      "regionId": "510722128000",
+      "name": "前锋镇",
+      "average": 6987.1
+    },
+    {
+      "regionId": "510722129000",
+      "name": "建设镇",
+      "average": 7627.9
+    },
+    {
+      "regionId": "510722130000",
+      "name": "光辉镇",
+      "average": 6922.7
+    },
+    {
+      "regionId": "510722131000",
+      "name": "中太镇",
+      "average": 15433.4
+    },
+    {
+      "regionId": "510722132000",
+      "name": "金石镇",
+      "average": 9841.6
+    },
+    {
+      "regionId": "510722133000",
+      "name": "新鲁镇",
+      "average": 14542.4
+    },
+    {
+      "regionId": "510722134000",
+      "name": "黎曙镇",
+      "average": 4688.4
+    },
+    {
+      "regionId": "510722135000",
+      "name": "刘营镇",
+      "average": 21837.3
+    },
+    {
+      "regionId": "510722136000",
+      "name": "灵兴镇",
+      "average": 3237.5
+    },
+    {
+      "regionId": "510722137000",
+      "name": "芦溪镇",
+      "average": 23620.7
+    },
+    {
+      "regionId": "510722138000",
+      "name": "立新镇",
+      "average": 14237.0
+    },
+    {
+      "regionId": "510722139000",
+      "name": "花园镇",
+      "average": 14045.4
+    },
+    {
+      "regionId": "510722140000",
+      "name": "永明镇",
+      "average": 14753.1
+    },
+    {
+      "regionId": "510722200000",
+      "name": "高堰乡",
+      "average": 6421.2
+    },
+    {
+      "regionId": "510722201000",
+      "name": "忠孝乡",
+      "average": 1520.7
+    },
+    {
+      "regionId": "510722202000",
+      "name": "双胜乡",
+      "average": 4275.5
+    },
+    {
+      "regionId": "510722203000",
+      "name": "金鼓乡",
+      "average": 3405.7
+    },
+    {
+      "regionId": "510722204000",
+      "name": "断石乡",
+      "average": 1020.4
+    },
+    {
+      "regionId": "510722205000",
+      "name": "玉林乡",
+      "average": 4339.5
+    },
+    {
+      "regionId": "510722206000",
+      "name": "乐加乡",
+      "average": 1912.1
+    },
+    {
+      "regionId": "510722207000",
+      "name": "曙光乡",
+      "average": 1127.8
+    },
+    {
+      "regionId": "510722208000",
+      "name": "建中乡",
+      "average": 1270.5
+    },
+    {
+      "regionId": "510722209000",
+      "name": "宝泉乡",
+      "average": 579.3
+    },
+    {
+      "regionId": "510722210000",
+      "name": "广利乡",
+      "average": 2107.1
+    },
+    {
+      "regionId": "510722211000",
+      "name": "协和乡",
+      "average": 2029.4
+    },
+    {
+      "regionId": "510722212000",
+      "name": "双乐乡",
+      "average": 3533.4
+    },
+    {
+      "regionId": "510722213000",
+      "name": "菊河乡",
+      "average": 1043.7
+    },
+    {
+      "regionId": "510722214000",
+      "name": "幸福乡",
+      "average": 2668.2
+    },
+    {
+      "regionId": "510722215000",
+      "name": "下新乡",
+      "average": 1110.1
+    },
+    {
+      "regionId": "510722216000",
+      "name": "进都乡",
+      "average": 2349.9
+    },
+    {
+      "regionId": "510722217000",
+      "name": "上新乡",
+      "average": 5638.0
+    },
+    {
+      "regionId": "510722218000",
+      "name": "老马乡",
+      "average": 7211.9
+    },
+    {
+      "regionId": "510722219000",
+      "name": "里程乡",
+      "average": 5602.3
+    },
+    {
+      "regionId": "510722220000",
+      "name": "争胜乡",
+      "average": 5352.3
+    },
+    {
+      "regionId": "510722221000",
+      "name": "云同乡",
+      "average": 3865.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 336.024,
+      "color": "#eff3ff",
+      "label": "336.024 万m³"
+    },
+    {
+      "value": 1958.0952,
+      "color": "#bdd7e7",
+      "label": "1958.095 万m³"
+    },
+    {
+      "value": 3440.58,
+      "color": "#6baed6",
+      "label": "3440.580 万m³"
+    },
+    {
+      "value": 5636.2864,
+      "color": "#3182bd",
+      "label": "5636.286 万m³"
+    },
+    {
+      "value": 9425.179999999998,
+      "color": "#08519c",
+      "label": "9425.180 万m³"
+    },
+    {
+      "value": 20425.307999999986,
+      "color": "#042d60",
+      "label": "20425.308 万m³"
+    }
+  ]
+}

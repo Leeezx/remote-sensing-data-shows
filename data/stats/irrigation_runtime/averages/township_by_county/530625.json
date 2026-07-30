@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513430201000",
+      "name": "热水河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513430219000",
+      "name": "向岭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513430223000",
+      "name": "德溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437200000",
+      "name": "南田镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437209000",
+      "name": "渡口乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437213000",
+      "name": "谷米乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437227000",
+      "name": "千万贯乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437228000",
+      "name": "五官乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437241000",
+      "name": "卡哈洛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437242000",
+      "name": "元宝山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437244000",
+      "name": "岩脚乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "530625101000",
+      "name": "溪洛渡镇",
+      "average": 17426.4
+    },
+    {
+      "regionId": "530625102000",
+      "name": "桧溪镇",
+      "average": 1190.4
+    },
+    {
+      "regionId": "530625103000",
+      "name": "黄华镇",
+      "average": 13819.2
+    },
+    {
+      "regionId": "530625104000",
+      "name": "茂林镇",
+      "average": 2324.0
+    },
+    {
+      "regionId": "530625105000",
+      "name": "大兴镇",
+      "average": 2131.3
+    },
+    {
+      "regionId": "530625106000",
+      "name": "莲峰镇",
+      "average": 9288.0
+    },
+    {
+      "regionId": "530625107000",
+      "name": "务基镇",
+      "average": 5590.8
+    },
+    {
+      "regionId": "530625108000",
+      "name": "码口镇",
+      "average": 2416.8
+    },
+    {
+      "regionId": "530625201000",
+      "name": "团结乡",
+      "average": 633.1
+    },
+    {
+      "regionId": "530625202000",
+      "name": "细沙乡",
+      "average": 2733.4
+    },
+    {
+      "regionId": "530625203000",
+      "name": "青胜乡",
+      "average": 723.6
+    },
+    {
+      "regionId": "530625205000",
+      "name": "马楠苗族彝族乡",
+      "average": 8722.1
+    },
+    {
+      "regionId": "530625206000",
+      "name": "水竹乡",
+      "average": 247.9
+    },
+    {
+      "regionId": "530625207000",
+      "name": "墨翰乡",
+      "average": 3798.7
+    },
+    {
+      "regionId": "530625208000",
+      "name": "伍寨彝族苗族乡",
+      "average": 357.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

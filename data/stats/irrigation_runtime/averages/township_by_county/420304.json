@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420304100000",
+      "name": "城关镇",
+      "average": 3838.1
+    },
+    {
+      "regionId": "420304101000",
+      "name": "安阳镇",
+      "average": 10895.0
+    },
+    {
+      "regionId": "420304102000",
+      "name": "杨溪铺镇",
+      "average": 3151.4
+    },
+    {
+      "regionId": "420304103000",
+      "name": "青曲镇",
+      "average": 2571.4
+    },
+    {
+      "regionId": "420304104000",
+      "name": "白桑关镇",
+      "average": 7941.7
+    },
+    {
+      "regionId": "420304105000",
+      "name": "南化塘镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420304106000",
+      "name": "白浪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420304107000",
+      "name": "刘洞镇",
+      "average": 3158.3
+    },
+    {
+      "regionId": "420304108000",
+      "name": "谭山镇",
+      "average": 11699.3
+    },
+    {
+      "regionId": "420304109000",
+      "name": "梅铺镇",
+      "average": 7639.4
+    },
+    {
+      "regionId": "420304110000",
+      "name": "青山镇",
+      "average": 6383.6
+    },
+    {
+      "regionId": "420304111000",
+      "name": "郧县经济开发区（茶店镇）",
+      "average": 9840.6
+    },
+    {
+      "regionId": "420304112000",
+      "name": "柳陂镇",
+      "average": 5529.9
+    },
+    {
+      "regionId": "420304113000",
+      "name": "鲍峡镇",
+      "average": 3714.6
+    },
+    {
+      "regionId": "420304114000",
+      "name": "胡家营镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420304115000",
+      "name": "谭家湾镇",
+      "average": 2296.7
+    },
+    {
+      "regionId": "420304200000",
+      "name": "大柳乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420304201000",
+      "name": "五峰乡",
+      "average": 3293.6
+    },
+    {
+      "regionId": "420304202000",
+      "name": "叶大乡",
+      "average": 2351.6
+    },
+    {
+      "regionId": "420304400000",
+      "name": "红岩背林场",
+      "average": 100.1
+    },
+    {
+      "regionId": "611023104000",
+      "name": "赵川镇",
+      "average": 868.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 284.5400000000002,
+      "color": "#bdd7e7",
+      "label": "284.540 万m³"
+    },
+    {
+      "value": 2617.8,
+      "color": "#6baed6",
+      "label": "2617.800 万m³"
+    },
+    {
+      "value": 3680.92,
+      "color": "#3182bd",
+      "label": "3680.920 万m³"
+    },
+    {
+      "value": 7338.007999999997,
+      "color": "#08519c",
+      "label": "7338.008 万m³"
+    },
+    {
+      "value": 11377.58,
+      "color": "#042d60",
+      "label": "11377.580 万m³"
+    }
+  ]
+}

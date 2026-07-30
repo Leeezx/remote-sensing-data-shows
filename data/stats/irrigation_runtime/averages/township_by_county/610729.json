@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610729100000",
+      "name": "市区",
+      "average": 30.9
+    },
+    {
+      "regionId": "610729101000",
+      "name": "马道镇",
+      "average": 144.1
+    },
+    {
+      "regionId": "610729102000",
+      "name": "武关驿镇",
+      "average": 321.5
+    },
+    {
+      "regionId": "610729103000",
+      "name": "留侯镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610729104000",
+      "name": "江口镇",
+      "average": 615.1
+    },
+    {
+      "regionId": "610729200000",
+      "name": "青桥驿乡",
+      "average": 790.4
+    },
+    {
+      "regionId": "610729201000",
+      "name": "火烧店乡",
+      "average": 34.7
+    },
+    {
+      "regionId": "610729202000",
+      "name": "玉皇庙乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 14.955599999999999,
+      "color": "#bdd7e7",
+      "label": "14.956 万m³"
+    },
+    {
+      "value": 34.0464,
+      "color": "#6baed6",
+      "label": "34.046 万m³"
+    },
+    {
+      "value": 174.61279999999994,
+      "color": "#3182bd",
+      "label": "174.613 万m³"
+    },
+    {
+      "value": 472.99759999999975,
+      "color": "#08519c",
+      "label": "472.998 万m³"
+    },
+    {
+      "value": 765.8579999999998,
+      "color": "#042d60",
+      "label": "765.858 万m³"
+    }
+  ]
+}

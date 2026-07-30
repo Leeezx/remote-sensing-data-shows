@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140502001000",
+      "name": "东街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140502002000",
+      "name": "西街街道",
+      "average": 9.8
+    },
+    {
+      "regionId": "140502003000",
+      "name": "南街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "140502004000",
+      "name": "北街街道",
+      "average": 19.4
+    },
+    {
+      "regionId": "140502005000",
+      "name": "矿区街道",
+      "average": 90.2
+    },
+    {
+      "regionId": "140502006000",
+      "name": "钟家庄办事处",
+      "average": 5592.1
+    },
+    {
+      "regionId": "140502007000",
+      "name": "西上庄办事处",
+      "average": 8457.3
+    },
+    {
+      "regionId": "140502100000",
+      "name": "北石店镇",
+      "average": 10222.0
+    },
+    {
+      "regionId": "140502400000",
+      "name": "开发区",
+      "average": 154.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 6.8208,
+      "color": "#bdd7e7",
+      "label": "6.821 万m³"
+    },
+    {
+      "value": 35.82559999999998,
+      "color": "#6baed6",
+      "label": "35.826 万m³"
+    },
+    {
+      "value": 139.8896,
+      "color": "#3182bd",
+      "label": "139.890 万m³"
+    },
+    {
+      "value": 6463.120799999998,
+      "color": "#08519c",
+      "label": "6463.121 万m³"
+    },
+    {
+      "value": 9939.648,
+      "color": "#042d60",
+      "label": "9939.648 万m³"
+    }
+  ]
+}

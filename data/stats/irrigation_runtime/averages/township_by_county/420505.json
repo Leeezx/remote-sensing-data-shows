@@ -1,0 +1,53 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420505001000",
+      "name": "古老背街道",
+      "average": 1629.6
+    },
+    {
+      "regionId": "420505002000",
+      "name": "虎牙街道",
+      "average": 6726.8
+    },
+    {
+      "regionId": "420505003000",
+      "name": "云池街道",
+      "average": 5219.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 1773.1999999999998,
+      "color": "#eff3ff",
+      "label": "1773.200 万m³"
+    },
+    {
+      "value": 3151.76,
+      "color": "#bdd7e7",
+      "label": "3151.760 万m³"
+    },
+    {
+      "value": 4530.32,
+      "color": "#6baed6",
+      "label": "4530.320 万m³"
+    },
+    {
+      "value": 5508.9824,
+      "color": "#3182bd",
+      "label": "5508.982 万m³"
+    },
+    {
+      "value": 6087.7472,
+      "color": "#08519c",
+      "label": "6087.747 万m³"
+    },
+    {
+      "value": 6666.512,
+      "color": "#042d60",
+      "label": "6666.512 万m³"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150623102000",
+      "name": "城川镇",
+      "average": 35.7
+    },
+    {
+      "regionId": "610825100000",
+      "name": "定边镇",
+      "average": 653.7
+    },
+    {
+      "regionId": "610825101000",
+      "name": "贺圈镇",
+      "average": 2064.1
+    },
+    {
+      "regionId": "610825102000",
+      "name": "红柳沟镇",
+      "average": 1308.0
+    },
+    {
+      "regionId": "610825103000",
+      "name": "砖井镇",
+      "average": 7762.9
+    },
+    {
+      "regionId": "610825104000",
+      "name": "白泥井镇",
+      "average": 27096.1
+    },
+    {
+      "regionId": "610825105000",
+      "name": "安边镇",
+      "average": 7598.3
+    },
+    {
+      "regionId": "610825106000",
+      "name": "堆子梁镇",
+      "average": 15903.0
+    },
+    {
+      "regionId": "610825107000",
+      "name": "白湾子镇",
+      "average": 151.0
+    },
+    {
+      "regionId": "610825108000",
+      "name": "姬塬镇",
+      "average": 546.3
+    },
+    {
+      "regionId": "610825109000",
+      "name": "杨井镇",
+      "average": 972.6
+    },
+    {
+      "regionId": "610825110000",
+      "name": "新安边镇",
+      "average": 194.5
+    },
+    {
+      "regionId": "610825200000",
+      "name": "盐场堡镇",
+      "average": 1504.6
+    },
+    {
+      "regionId": "610825202000",
+      "name": "石洞沟乡",
+      "average": 15136.3
+    },
+    {
+      "regionId": "610825203000",
+      "name": "郝滩镇",
+      "average": 10938.3
+    },
+    {
+      "regionId": "610825204000",
+      "name": "油房庄乡",
+      "average": 2228.6
+    },
+    {
+      "regionId": "610825205000",
+      "name": "纪畔乡",
+      "average": 592.4
+    },
+    {
+      "regionId": "610825207000",
+      "name": "冯地坑乡",
+      "average": 88.4
+    },
+    {
+      "regionId": "610825210000",
+      "name": "学庄乡",
+      "average": 473.6
+    },
+    {
+      "regionId": "610825211000",
+      "name": "张崾先镇",
+      "average": 1610.9
+    },
+    {
+      "regionId": "610825213000",
+      "name": "樊学镇",
+      "average": 325.5
+    },
+    {
+      "regionId": "621022207000",
+      "name": "秦团庄乡",
+      "average": 28.3
+    },
+    {
+      "regionId": "640323100000",
+      "name": "花马池镇",
+      "average": 3.0
+    },
+    {
+      "regionId": "640323101000",
+      "name": "大水坑镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "640323202000",
+      "name": "青山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640323203000",
+      "name": "麻黄山乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 51.50999999999999,
+      "color": "#bdd7e7",
+      "label": "51.510 万m³"
+    },
+    {
+      "value": 480.87,
+      "color": "#6baed6",
+      "label": "480.870 万m³"
+    },
+    {
+      "value": 1274.4599999999996,
+      "color": "#3182bd",
+      "label": "1274.460 万m³"
+    },
+    {
+      "value": 5987.389999999996,
+      "color": "#08519c",
+      "label": "5987.390 万m³"
+    },
+    {
+      "value": 21499.55,
+      "color": "#042d60",
+      "label": "21499.550 万m³"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "370602001000",
+      "name": "向阳街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370602003000",
+      "name": "毓璜顶街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370602004000",
+      "name": "通伸街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370602005000",
+      "name": "凤凰台街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370602006000",
+      "name": "奇山街道",
+      "average": 103.7
+    },
+    {
+      "regionId": "370602007000",
+      "name": "白石街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370602009000",
+      "name": "黄务街道",
+      "average": 2102.7
+    },
+    {
+      "regionId": "370602010000",
+      "name": "只楚街道",
+      "average": 446.1
+    },
+    {
+      "regionId": "370602011000",
+      "name": "世回尧街道",
+      "average": 27.0
+    },
+    {
+      "regionId": "370602012000",
+      "name": "幸福街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

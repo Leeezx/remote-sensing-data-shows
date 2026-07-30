@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510105002000",
+      "name": "草市街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510105003000",
+      "name": "西御河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510105004000",
+      "name": "汪家拐街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510105005000",
+      "name": "少城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510105006000",
+      "name": "新华西路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510105007000",
+      "name": "草堂街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510105008000",
+      "name": "府南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510105009000",
+      "name": "光华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510105010000",
+      "name": "东坡街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510105011000",
+      "name": "金沙街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510105012000",
+      "name": "黄田坝街道",
+      "average": 638.1
+    },
+    {
+      "regionId": "510105013000",
+      "name": "苏坡街道",
+      "average": 523.2
+    },
+    {
+      "regionId": "510105014000",
+      "name": "文家街道",
+      "average": 5139.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

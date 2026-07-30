@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513231100000",
+      "name": "阿坝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513231200000",
+      "name": "哇尔玛乡",
+      "average": 0.6
+    },
+    {
+      "regionId": "513231201000",
+      "name": "麦昆乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513231202000",
+      "name": "河支乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513231203000",
+      "name": "龙藏乡",
+      "average": 11.2
+    },
+    {
+      "regionId": "513231204000",
+      "name": "求吉玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513231205000",
+      "name": "甲尔多乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513231206000",
+      "name": "各莫乡",
+      "average": 10.1
+    },
+    {
+      "regionId": "513231207000",
+      "name": "德格乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513231208000",
+      "name": "四洼乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513231209000",
+      "name": "安斗乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513231210000",
+      "name": "柯河乡",
+      "average": 10.6
+    },
+    {
+      "regionId": "513231211000",
+      "name": "垮沙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513231212000",
+      "name": "安羌乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513231213000",
+      "name": "查理乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513231214000",
+      "name": "茸安乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513231215000",
+      "name": "洛尔达乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513231216000",
+      "name": "麦尔玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513231217000",
+      "name": "贾洛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623025202000",
+      "name": "阿万仓乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623025204000",
+      "name": "齐哈玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632622206000",
+      "name": "亚尔堂乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632625203000",
+      "name": "白玉乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

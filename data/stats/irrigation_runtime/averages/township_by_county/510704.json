@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510704001000",
+      "name": "涪江街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510704003000",
+      "name": "富乐街道",
+      "average": 66.6
+    },
+    {
+      "regionId": "510704006000",
+      "name": "春雷街道",
+      "average": 272.1
+    },
+    {
+      "regionId": "510704007000",
+      "name": "松林街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510704008000",
+      "name": "华丰街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510704100000",
+      "name": "游仙镇",
+      "average": 5177.1
+    },
+    {
+      "regionId": "510704101000",
+      "name": "石马镇",
+      "average": 5827.2
+    },
+    {
+      "regionId": "510704102000",
+      "name": "新桥镇",
+      "average": 6920.1
+    },
+    {
+      "regionId": "510704103000",
+      "name": "小枧沟镇",
+      "average": 9237.3
+    },
+    {
+      "regionId": "510704104000",
+      "name": "魏城镇",
+      "average": 15679.5
+    },
+    {
+      "regionId": "510704105000",
+      "name": "沉抗镇",
+      "average": 8601.1
+    },
+    {
+      "regionId": "510704106000",
+      "name": "忠兴镇",
+      "average": 5750.3
+    },
+    {
+      "regionId": "510704107000",
+      "name": "柏林镇",
+      "average": 4096.6
+    },
+    {
+      "regionId": "510704108000",
+      "name": "徐家镇",
+      "average": 9636.6
+    },
+    {
+      "regionId": "510704109000",
+      "name": "石板镇",
+      "average": 8532.7
+    },
+    {
+      "regionId": "510704110000",
+      "name": "刘家镇",
+      "average": 8822.9
+    },
+    {
+      "regionId": "510704111000",
+      "name": "玉河镇",
+      "average": 6342.3
+    },
+    {
+      "regionId": "510704112000",
+      "name": "松垭镇",
+      "average": 6688.9
+    },
+    {
+      "regionId": "510704200000",
+      "name": "白蝉乡",
+      "average": 4565.3
+    },
+    {
+      "regionId": "510704201000",
+      "name": "观太乡",
+      "average": 3600.5
+    },
+    {
+      "regionId": "510704202000",
+      "name": "建华乡",
+      "average": 6190.6
+    },
+    {
+      "regionId": "510704203000",
+      "name": "云凤乡",
+      "average": 2296.7
+    },
+    {
+      "regionId": "510704204000",
+      "name": "东林乡",
+      "average": 3905.6
+    },
+    {
+      "regionId": "510704205000",
+      "name": "太平乡",
+      "average": 4256.2
+    },
+    {
+      "regionId": "510704206000",
+      "name": "梓棉乡",
+      "average": 6051.7
+    },
+    {
+      "regionId": "510704207000",
+      "name": "朝真乡",
+      "average": 3582.6
+    },
+    {
+      "regionId": "510704208000",
+      "name": "东宣乡",
+      "average": 5276.2
+    },
+    {
+      "regionId": "510704209000",
+      "name": "街子乡",
+      "average": 4356.7
+    },
+    {
+      "regionId": "510704210000",
+      "name": "凤凰乡",
+      "average": 3069.0
+    },
+    {
+      "regionId": "510704400000",
+      "name": "四川省新华劳动教育管理所",
+      "average": 994.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2411.0003999999994,
+      "color": "#bdd7e7",
+      "label": "2411.000 万m³"
+    },
+    {
+      "value": 4210.8736,
+      "color": "#6baed6",
+      "label": "4210.874 万m³"
+    },
+    {
+      "value": 5772.1396,
+      "color": "#3182bd",
+      "label": "5772.140 万m³"
+    },
+    {
+      "value": 6885.8823999999995,
+      "color": "#08519c",
+      "label": "6885.882 万m³"
+    },
+    {
+      "value": 12174.61799999999,
+      "color": "#042d60",
+      "label": "12174.618 万m³"
+    }
+  ]
+}

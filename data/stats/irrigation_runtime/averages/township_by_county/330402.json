@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "330402007000",
+      "name": "建设街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330402008000",
+      "name": "解放街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330402009000",
+      "name": "新嘉街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330402010000",
+      "name": "南湖街道",
+      "average": 326.5
+    },
+    {
+      "regionId": "330402011000",
+      "name": "新兴街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330402012000",
+      "name": "城南街道",
+      "average": 16553.8
+    },
+    {
+      "regionId": "330402013000",
+      "name": "东栅街道",
+      "average": 8520.7
+    },
+    {
+      "regionId": "330402014000",
+      "name": "长水街道",
+      "average": 14438.2
+    },
+    {
+      "regionId": "330402100000",
+      "name": "凤桥镇",
+      "average": 52829.1
+    },
+    {
+      "regionId": "330402101000",
+      "name": "余新镇",
+      "average": 31454.2
+    },
+    {
+      "regionId": "330402103000",
+      "name": "新丰镇",
+      "average": 43107.7
+    },
+    {
+      "regionId": "330402104000",
+      "name": "七星镇",
+      "average": 12704.6
+    },
+    {
+      "regionId": "330402105000",
+      "name": "大桥镇",
+      "average": 42804.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130324100000",
+      "name": "卢龙镇",
+      "average": 8206.3
+    },
+    {
+      "regionId": "130324101000",
+      "name": "潘庄镇",
+      "average": 6110.7
+    },
+    {
+      "regionId": "130324102000",
+      "name": "燕河营镇",
+      "average": 11846.1
+    },
+    {
+      "regionId": "130324103000",
+      "name": "双望镇",
+      "average": 8542.2
+    },
+    {
+      "regionId": "130324104000",
+      "name": "刘田各庄镇",
+      "average": 7866.1
+    },
+    {
+      "regionId": "130324105000",
+      "name": "石门镇",
+      "average": 4438.6
+    },
+    {
+      "regionId": "130324106000",
+      "name": "木井镇",
+      "average": 11520.1
+    },
+    {
+      "regionId": "130324200000",
+      "name": "下寨乡",
+      "average": 4093.6
+    },
+    {
+      "regionId": "130324201000",
+      "name": "刘家营乡",
+      "average": 4154.2
+    },
+    {
+      "regionId": "130324202000",
+      "name": "陈官屯乡",
+      "average": 10488.2
+    },
+    {
+      "regionId": "130324203000",
+      "name": "印庄乡",
+      "average": 15120.6
+    },
+    {
+      "regionId": "130324204000",
+      "name": "蛤泊乡",
+      "average": 6482.5
+    },
+    {
+      "regionId": "130324400000",
+      "name": "河北卢龙经济开发区",
+      "average": 1292.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 1964.992,
+      "color": "#eff3ff",
+      "label": "1964.992 万m³"
+    },
+    {
+      "value": 4308.9136,
+      "color": "#bdd7e7",
+      "label": "4308.914 万m³"
+    },
+    {
+      "value": 6425.9864,
+      "color": "#6baed6",
+      "label": "6425.986 万m³"
+    },
+    {
+      "value": 8257.3568,
+      "color": "#3182bd",
+      "label": "8257.357 万m³"
+    },
+    {
+      "value": 10958.7464,
+      "color": "#08519c",
+      "label": "10958.746 万m³"
+    },
+    {
+      "value": 14334.72,
+      "color": "#042d60",
+      "label": "14334.720 万m³"
+    }
+  ]
+}

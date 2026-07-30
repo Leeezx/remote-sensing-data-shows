@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500118108000",
+      "name": "仙龙镇",
+      "average": 5430.1
+    },
+    {
+      "regionId": "500118111000",
+      "name": "来苏镇",
+      "average": 5410.4
+    },
+    {
+      "regionId": "500118112000",
+      "name": "宝峰镇",
+      "average": 5049.1
+    },
+    {
+      "regionId": "500153004000",
+      "name": "双河街道",
+      "average": 1882.2
+    },
+    {
+      "regionId": "500153117000",
+      "name": "清升镇",
+      "average": 1895.0
+    },
+    {
+      "regionId": "510521100000",
+      "name": "福集镇",
+      "average": 12863.3
+    },
+    {
+      "regionId": "510521101000",
+      "name": "嘉明镇",
+      "average": 2898.5
+    },
+    {
+      "regionId": "510521102000",
+      "name": "喻寺镇",
+      "average": 5712.1
+    },
+    {
+      "regionId": "510521103000",
+      "name": "得胜镇",
+      "average": 8261.0
+    },
+    {
+      "regionId": "510521105000",
+      "name": "牛滩镇",
+      "average": 3691.3
+    },
+    {
+      "regionId": "510521106000",
+      "name": "兆雅镇",
+      "average": 6243.0
+    },
+    {
+      "regionId": "510521107000",
+      "name": "玄滩镇",
+      "average": 11046.4
+    },
+    {
+      "regionId": "510521108000",
+      "name": "太伏镇",
+      "average": 17012.0
+    },
+    {
+      "regionId": "510521109000",
+      "name": "云龙镇",
+      "average": 5889.6
+    },
+    {
+      "regionId": "510521110000",
+      "name": "石桥镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510521111000",
+      "name": "毗卢镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510521112000",
+      "name": "奇峰镇",
+      "average": 3685.1
+    },
+    {
+      "regionId": "510521113000",
+      "name": "潮河镇",
+      "average": 7282.6
+    },
+    {
+      "regionId": "510521114000",
+      "name": "云锦镇",
+      "average": 10021.6
+    },
+    {
+      "regionId": "510521115000",
+      "name": "立石镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510521116000",
+      "name": "百和镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510521117000",
+      "name": "天兴镇",
+      "average": 2735.5
+    },
+    {
+      "regionId": "510521118000",
+      "name": "方洞镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510521123000",
+      "name": "海潮镇",
+      "average": 4235.6
+    },
+    {
+      "regionId": "510521400000",
+      "name": "泸县城西工业园区",
+      "average": 57.0
+    },
+    {
+      "regionId": "510521401000",
+      "name": "泸县城北工业园区",
+      "average": 15.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 28.08999999999999,
+      "color": "#bdd7e7",
+      "label": "28.090 万m³"
+    },
+    {
+      "value": 2977.16,
+      "color": "#6baed6",
+      "label": "2977.160 万m³"
+    },
+    {
+      "value": 5374.2699999999995,
+      "color": "#3182bd",
+      "label": "5374.270 万m³"
+    },
+    {
+      "value": 6970.719999999999,
+      "color": "#08519c",
+      "label": "6970.720 万m³"
+    },
+    {
+      "value": 14937.65,
+      "color": "#042d60",
+      "label": "14937.650 万m³"
+    }
+  ]
+}

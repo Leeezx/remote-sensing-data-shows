@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "340102001000",
+      "name": "明光路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340102002000",
+      "name": "车站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340102003000",
+      "name": "胜利路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340102004000",
+      "name": "三里街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340102005000",
+      "name": "铜陵路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340102006000",
+      "name": "七里站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340102007000",
+      "name": "红光街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340102008000",
+      "name": "和平路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340102009000",
+      "name": "大通路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340102010000",
+      "name": "城东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340102011000",
+      "name": "长淮街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340102012000",
+      "name": "方庙街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340102013000",
+      "name": "七里塘街道",
+      "average": 254.1
+    },
+    {
+      "regionId": "340102100000",
+      "name": "大兴镇",
+      "average": 285.4
+    },
+    {
+      "regionId": "340102101000",
+      "name": "三十头镇",
+      "average": 7689.7
+    },
+    {
+      "regionId": "340102200000",
+      "name": "磨店乡",
+      "average": 13862.1
+    },
+    {
+      "regionId": "340102400000",
+      "name": "瑶海区工业园",
+      "average": 460.0
+    },
+    {
+      "regionId": "340102401000",
+      "name": "合肥龙岗综合经济开发区",
+      "average": 696.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

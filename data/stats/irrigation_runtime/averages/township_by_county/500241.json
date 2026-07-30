@@ -1,0 +1,213 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "433124018000",
+      "name": "边城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "433125019000",
+      "name": "清水坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "433125021000",
+      "name": "毛沟镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500241001000",
+      "name": "中和街道",
+      "average": 108.8
+    },
+    {
+      "regionId": "500241002000",
+      "name": "乌杨街道",
+      "average": 9169.2
+    },
+    {
+      "regionId": "500241003000",
+      "name": "平凯街道",
+      "average": 2493.2
+    },
+    {
+      "regionId": "500241102000",
+      "name": "清溪场镇",
+      "average": 9787.5
+    },
+    {
+      "regionId": "500241103000",
+      "name": "隘口镇",
+      "average": 1543.2
+    },
+    {
+      "regionId": "500241104000",
+      "name": "溶溪镇",
+      "average": 359.1
+    },
+    {
+      "regionId": "500241105000",
+      "name": "官庄镇",
+      "average": 1015.1
+    },
+    {
+      "regionId": "500241106000",
+      "name": "龙池镇",
+      "average": 6212.5
+    },
+    {
+      "regionId": "500241107000",
+      "name": "石堤镇",
+      "average": 1437.1
+    },
+    {
+      "regionId": "500241108000",
+      "name": "峨溶镇",
+      "average": 1860.1
+    },
+    {
+      "regionId": "500241109000",
+      "name": "洪安镇",
+      "average": 1067.5
+    },
+    {
+      "regionId": "500241110000",
+      "name": "雅江镇",
+      "average": 227.1
+    },
+    {
+      "regionId": "500241111000",
+      "name": "石耶镇",
+      "average": 166.6
+    },
+    {
+      "regionId": "500241112000",
+      "name": "梅江镇",
+      "average": 1493.4
+    },
+    {
+      "regionId": "500241113000",
+      "name": "兰桥镇",
+      "average": 3532.3
+    },
+    {
+      "regionId": "500241114000",
+      "name": "膏田镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500241115000",
+      "name": "溪口镇",
+      "average": 1366.5
+    },
+    {
+      "regionId": "500241116000",
+      "name": "妙泉镇",
+      "average": 829.2
+    },
+    {
+      "regionId": "500241117000",
+      "name": "宋农镇",
+      "average": 1027.1
+    },
+    {
+      "regionId": "500241118000",
+      "name": "里仁镇",
+      "average": 4368.2
+    },
+    {
+      "regionId": "500241119000",
+      "name": "钟灵镇",
+      "average": 301.0
+    },
+    {
+      "regionId": "500241201000",
+      "name": "孝溪乡",
+      "average": 373.7
+    },
+    {
+      "regionId": "500241207000",
+      "name": "海洋乡",
+      "average": 1573.6
+    },
+    {
+      "regionId": "500241208000",
+      "name": "大溪乡",
+      "average": 1029.1
+    },
+    {
+      "regionId": "500241211000",
+      "name": "涌洞乡",
+      "average": 322.0
+    },
+    {
+      "regionId": "500241214000",
+      "name": "中平乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500241215000",
+      "name": "岑溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628110000",
+      "name": "迓驾镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628207000",
+      "name": "妙隘乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628208000",
+      "name": "冷水溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628209000",
+      "name": "石梁乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628211000",
+      "name": "永安乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

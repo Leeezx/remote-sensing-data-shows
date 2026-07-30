@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540325100000",
+      "name": "烟多镇",
+      "average": 268.8
+    },
+    {
+      "regionId": "540325101000",
+      "name": "吉塘镇",
+      "average": 371.9
+    },
+    {
+      "regionId": "540325102000",
+      "name": "香堆镇",
+      "average": 550.4
+    },
+    {
+      "regionId": "540325200000",
+      "name": "宗沙乡",
+      "average": 746.6
+    },
+    {
+      "regionId": "540325201000",
+      "name": "肯通乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540325202000",
+      "name": "扩达乡",
+      "average": 9.3
+    },
+    {
+      "regionId": "540325203000",
+      "name": "新卡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540325204000",
+      "name": "王卡乡",
+      "average": 150.7
+    },
+    {
+      "regionId": "540325205000",
+      "name": "阿孜乡",
+      "average": 583.5
+    },
+    {
+      "regionId": "540325206000",
+      "name": "巴日乡",
+      "average": 385.8
+    },
+    {
+      "regionId": "540325207000",
+      "name": "荣周乡",
+      "average": 235.6
+    },
+    {
+      "regionId": "540325208000",
+      "name": "卡贡乡",
+      "average": 110.0
+    },
+    {
+      "regionId": "540325209000",
+      "name": "察拉乡",
+      "average": 13.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 11.476,
+      "color": "#bdd7e7",
+      "label": "11.476 万m³"
+    },
+    {
+      "value": 144.5136,
+      "color": "#6baed6",
+      "label": "144.514 万m³"
+    },
+    {
+      "value": 284.47119999999995,
+      "color": "#3182bd",
+      "label": "284.471 万m³"
+    },
+    {
+      "value": 460.85759999999993,
+      "color": "#08519c",
+      "label": "460.858 万m³"
+    },
+    {
+      "value": 707.456,
+      "color": "#042d60",
+      "label": "707.456 万m³"
+    }
+  ]
+}

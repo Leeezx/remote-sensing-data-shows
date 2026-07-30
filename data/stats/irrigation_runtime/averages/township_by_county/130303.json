@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130303001000",
+      "name": "南关街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130303002000",
+      "name": "东街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130303003000",
+      "name": "西街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130303004000",
+      "name": "路南街道",
+      "average": 14.8
+    },
+    {
+      "regionId": "130303005000",
+      "name": "船厂路街道",
+      "average": 17.9
+    },
+    {
+      "regionId": "130303100000",
+      "name": "第一关镇",
+      "average": 476.4
+    },
+    {
+      "regionId": "130303101000",
+      "name": "石河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130303102000",
+      "name": "孟姜镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130303200000",
+      "name": "渤海乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "211421212000",
+      "name": "李家堡乡",
+      "average": 1610.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

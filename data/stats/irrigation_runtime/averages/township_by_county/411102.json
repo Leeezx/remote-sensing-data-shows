@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "411102001000",
+      "name": "老街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411102002000",
+      "name": "马路街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411102003000",
+      "name": "顺河街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411102004000",
+      "name": "干河陈街道",
+      "average": 140.7
+    },
+    {
+      "regionId": "411102100000",
+      "name": "大刘镇",
+      "average": 893.5
+    },
+    {
+      "regionId": "411102101000",
+      "name": "阴阳赵镇",
+      "average": 4647.8
+    },
+    {
+      "regionId": "411102102000",
+      "name": "空冢郭镇",
+      "average": 1915.3
+    },
+    {
+      "regionId": "411102202000",
+      "name": "问十乡",
+      "average": 3175.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

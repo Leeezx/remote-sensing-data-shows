@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130724501000",
+      "name": "榆树沟",
+      "average": 0.0
+    },
+    {
+      "regionId": "152530100000",
+      "name": "上都镇",
+      "average": 1040.6
+    },
+    {
+      "regionId": "152530101000",
+      "name": "桑根达来镇",
+      "average": 14.3
+    },
+    {
+      "regionId": "152530102000",
+      "name": "哈毕日嘎镇",
+      "average": 1015.3
+    },
+    {
+      "regionId": "152530200000",
+      "name": "宝绍代苏木乡",
+      "average": 2.8
+    },
+    {
+      "regionId": "152530201000",
+      "name": "那日图苏木乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "152530202000",
+      "name": "赛音呼都嘎苏木乡",
+      "average": 55.8
+    },
+    {
+      "regionId": "152530203000",
+      "name": "扎格斯台苏木",
+      "average": 0.0
+    },
+    {
+      "regionId": "152530500000",
+      "name": "五一种畜场总场",
+      "average": 5330.8
+    },
+    {
+      "regionId": "152530501000",
+      "name": "黑城子示范区",
+      "average": 10946.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

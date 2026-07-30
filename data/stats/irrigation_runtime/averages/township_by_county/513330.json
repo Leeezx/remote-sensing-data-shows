@@ -1,0 +1,178 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513330100000",
+      "name": "更庆镇",
+      "average": 21.5
+    },
+    {
+      "regionId": "513330101000",
+      "name": "马尼干戈镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330103000",
+      "name": "阿须镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330200000",
+      "name": "达马乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330201000",
+      "name": "普马乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330202000",
+      "name": "岳巴乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330203000",
+      "name": "八帮乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330204000",
+      "name": "龚垭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330205000",
+      "name": "白垭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330206000",
+      "name": "汪布顶乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330207000",
+      "name": "柯洛洞乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330208000",
+      "name": "卡松渡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330209000",
+      "name": "俄南乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330211000",
+      "name": "俄支乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330213000",
+      "name": "玉隆乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330214000",
+      "name": "错阿乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330215000",
+      "name": "中扎科乡",
+      "average": 21.4
+    },
+    {
+      "regionId": "513330216000",
+      "name": "然姑乡",
+      "average": 13.3
+    },
+    {
+      "regionId": "513330217000",
+      "name": "窝公乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330218000",
+      "name": "温拖乡",
+      "average": 51.1
+    },
+    {
+      "regionId": "513330219000",
+      "name": "年古乡",
+      "average": 11.9
+    },
+    {
+      "regionId": "513330220000",
+      "name": "浪多乡",
+      "average": 12.0
+    },
+    {
+      "regionId": "513330222000",
+      "name": "打滚乡",
+      "average": 33.8
+    },
+    {
+      "regionId": "513330223000",
+      "name": "亚丁乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513330224000",
+      "name": "所巴乡",
+      "average": 26.3
+    },
+    {
+      "regionId": "540321101000",
+      "name": "岗托镇",
+      "average": 21.5
+    },
+    {
+      "regionId": "540321200000",
+      "name": "邓柯乡",
+      "average": 48.4
+    },
+    {
+      "regionId": "540321207000",
+      "name": "汪布顶乡",
+      "average": 25.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

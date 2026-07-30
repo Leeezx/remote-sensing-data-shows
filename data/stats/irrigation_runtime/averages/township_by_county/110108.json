@@ -1,0 +1,183 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "110108001000",
+      "name": "万寿路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108002000",
+      "name": "永定路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108003000",
+      "name": "羊坊店街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108004000",
+      "name": "甘家口街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108005000",
+      "name": "八里庄街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108006000",
+      "name": "紫竹院街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108007000",
+      "name": "北下关街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108008000",
+      "name": "北太平庄街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108010000",
+      "name": "学院路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108011000",
+      "name": "中关村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108012000",
+      "name": "海淀街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108013000",
+      "name": "青龙桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108014000",
+      "name": "清华园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108015000",
+      "name": "燕园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108016000",
+      "name": "香山街道",
+      "average": 190.7
+    },
+    {
+      "regionId": "110108017000",
+      "name": "清河街道",
+      "average": 151.3
+    },
+    {
+      "regionId": "110108018000",
+      "name": "花园路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108019000",
+      "name": "西三旗街道",
+      "average": 25.5
+    },
+    {
+      "regionId": "110108020000",
+      "name": "马连洼街道",
+      "average": 362.7
+    },
+    {
+      "regionId": "110108021000",
+      "name": "田村路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108022000",
+      "name": "上地街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108023000",
+      "name": "万柳地区办事处",
+      "average": 61.1
+    },
+    {
+      "regionId": "110108024000",
+      "name": "东升地区办事处",
+      "average": 301.6
+    },
+    {
+      "regionId": "110108025000",
+      "name": "曙光街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110108026000",
+      "name": "温泉地区办事处",
+      "average": 3625.9
+    },
+    {
+      "regionId": "110108027000",
+      "name": "四季青地区办事处",
+      "average": 1133.9
+    },
+    {
+      "regionId": "110108028000",
+      "name": "西北旺地区办事处",
+      "average": 6984.5
+    },
+    {
+      "regionId": "110108029000",
+      "name": "苏家坨地区办事处",
+      "average": 10602.1
+    },
+    {
+      "regionId": "110108030000",
+      "name": "上庄地区办事处",
+      "average": 10484.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "650205001000",
+      "name": "柳树街街道",
+      "average": 140.8
+    },
+    {
+      "regionId": "650205200000",
+      "name": "乌尔禾乡",
+      "average": 497.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 147.93200000000002,
+      "color": "#eff3ff",
+      "label": "147.932 万m³"
+    },
+    {
+      "value": 216.3992,
+      "color": "#bdd7e7",
+      "label": "216.399 万m³"
+    },
+    {
+      "value": 284.8664,
+      "color": "#6baed6",
+      "label": "284.866 万m³"
+    },
+    {
+      "value": 353.3336,
+      "color": "#3182bd",
+      "label": "353.334 万m³"
+    },
+    {
+      "value": 421.8008,
+      "color": "#08519c",
+      "label": "421.801 万m³"
+    },
+    {
+      "value": 490.268,
+      "color": "#042d60",
+      "label": "490.268 万m³"
+    }
+  ]
+}

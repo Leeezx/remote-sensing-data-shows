@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "211004001000",
+      "name": "工农街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211004002000",
+      "name": "光华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211004003000",
+      "name": "新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211004004000",
+      "name": "长征街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211004101000",
+      "name": "曙光镇",
+      "average": 586.3
+    },
+    {
+      "regionId": "211004102000",
+      "name": "兰家镇",
+      "average": 117.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

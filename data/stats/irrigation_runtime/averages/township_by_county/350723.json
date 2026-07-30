@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350723100000",
+      "name": "杭川镇",
+      "average": 1815.5
+    },
+    {
+      "regionId": "350723101000",
+      "name": "寨里镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350723102000",
+      "name": "止马镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350723200000",
+      "name": "鸾风乡",
+      "average": 60261.3
+    },
+    {
+      "regionId": "350723201000",
+      "name": "崇仁乡",
+      "average": 36209.7
+    },
+    {
+      "regionId": "350723202000",
+      "name": "李坊乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350723203000",
+      "name": "华桥乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350723204000",
+      "name": "司前乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "360681204000",
+      "name": "樟坪畲族乡",
+      "average": 1302.7
+    },
+    {
+      "regionId": "360681503000",
+      "name": "双圳林场",
+      "average": 251.6
+    },
+    {
+      "regionId": "360681505000",
+      "name": "冷水林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "361022006000",
+      "name": "湖坊乡",
+      "average": 16658.9
+    },
+    {
+      "regionId": "361022011000",
+      "name": "洵口镇",
+      "average": 17748.5
+    },
+    {
+      "regionId": "361022015000",
+      "name": "厚村乡",
+      "average": 18356.9
+    },
+    {
+      "regionId": "361028001000",
+      "name": "鹤城镇",
+      "average": 22742.0
+    },
+    {
+      "regionId": "361028017000",
+      "name": "马头山镇",
+      "average": 23602.5
+    },
+    {
+      "regionId": "361124208000",
+      "name": "太源畲族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "361124210000",
+      "name": "篁碧畲族乡",
+      "average": 4748.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130924100000",
+      "name": "苏基镇",
+      "average": 5067.1
+    },
+    {
+      "regionId": "130924101000",
+      "name": "辛集镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130924102000",
+      "name": "高湾镇",
+      "average": 11299.5
+    },
+    {
+      "regionId": "130924200000",
+      "name": "赵毛陶乡",
+      "average": 12651.8
+    },
+    {
+      "regionId": "130924201000",
+      "name": "香坊乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130924202000",
+      "name": "小山乡",
+      "average": 3375.3
+    },
+    {
+      "regionId": "130924203000",
+      "name": "张会亭乡",
+      "average": 64.4
+    },
+    {
+      "regionId": "130924400000",
+      "name": "海兴县农场",
+      "average": 3353.2
+    },
+    {
+      "regionId": "130924401000",
+      "name": "青先农场",
+      "average": 138.8
+    },
+    {
+      "regionId": "130924402000",
+      "name": "青锋农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "371623103000",
+      "name": "小泊头镇",
+      "average": 9472.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 7.728000000000008,
+      "color": "#bdd7e7",
+      "label": "7.728 万m³"
+    },
+    {
+      "value": 267.3760000000001,
+      "color": "#6baed6",
+      "label": "267.376 万m³"
+    },
+    {
+      "value": 3374.416,
+      "color": "#3182bd",
+      "label": "3374.416 万m³"
+    },
+    {
+      "value": 8943.499999999996,
+      "color": "#08519c",
+      "label": "8943.500 万m³"
+    },
+    {
+      "value": 12381.34,
+      "color": "#042d60",
+      "label": "12381.340 万m³"
+    }
+  ]
+}

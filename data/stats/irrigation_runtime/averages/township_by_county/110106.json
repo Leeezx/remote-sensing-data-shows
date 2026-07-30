@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "110106001000",
+      "name": "右安门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110106002000",
+      "name": "太平桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110106003000",
+      "name": "西罗园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110106004000",
+      "name": "大红门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110106005000",
+      "name": "南苑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110106006000",
+      "name": "东高地街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110106007000",
+      "name": "东铁匠营街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110106008000",
+      "name": "卢沟桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110106009000",
+      "name": "丰台街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110106010000",
+      "name": "新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110106011000",
+      "name": "长辛店街道",
+      "average": 153.8
+    },
+    {
+      "regionId": "110106012000",
+      "name": "云岗街道",
+      "average": 317.0
+    },
+    {
+      "regionId": "110106013000",
+      "name": "方庄地区办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "110106014000",
+      "name": "宛平城地区办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "110106015000",
+      "name": "马家堡街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110106016000",
+      "name": "和义街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110106017000",
+      "name": "卢沟桥地区办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "110106018000",
+      "name": "花乡地区办事处",
+      "average": 17.0
+    },
+    {
+      "regionId": "110106019000",
+      "name": "南苑地区办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "110106100000",
+      "name": "长辛店镇",
+      "average": 1348.9
+    },
+    {
+      "regionId": "110106101000",
+      "name": "王佐镇",
+      "average": 3597.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

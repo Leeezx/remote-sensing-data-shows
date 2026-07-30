@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130821213000",
+      "name": "磴上乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130881109000",
+      "name": "北五十家子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130881202000",
+      "name": "柳溪满族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "150429100000",
+      "name": "天义镇",
+      "average": 77691.7
+    },
+    {
+      "regionId": "150429101000",
+      "name": "小城子镇",
+      "average": 12522.4
+    },
+    {
+      "regionId": "150429102000",
+      "name": "大城子镇",
+      "average": 4471.0
+    },
+    {
+      "regionId": "150429103000",
+      "name": "八里罕镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150429104000",
+      "name": "黑里河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150429105000",
+      "name": "甸子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150429106000",
+      "name": "大双庙镇",
+      "average": 25274.7
+    },
+    {
+      "regionId": "150429107000",
+      "name": "汐子镇",
+      "average": 96788.4
+    },
+    {
+      "regionId": "150429108000",
+      "name": "大明镇",
+      "average": 67997.9
+    },
+    {
+      "regionId": "150429109000",
+      "name": "忙农镇",
+      "average": 69824.1
+    },
+    {
+      "regionId": "150429110000",
+      "name": "五化镇",
+      "average": 13389.8
+    },
+    {
+      "regionId": "150429200000",
+      "name": "三座店乡",
+      "average": 399.5
+    },
+    {
+      "regionId": "150429201000",
+      "name": "必斯营子乡",
+      "average": 24520.4
+    },
+    {
+      "regionId": "150429202000",
+      "name": "一肯中乡",
+      "average": 57006.3
+    },
+    {
+      "regionId": "150429203000",
+      "name": "存金沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322213000",
+      "name": "太平庄乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "211322218000",
+      "name": "三家蒙古族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "211382006000",
+      "name": "热水汤街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211382110000",
+      "name": "小城子镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

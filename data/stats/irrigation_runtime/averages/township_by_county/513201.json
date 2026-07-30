@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513201100000",
+      "name": "马尔康镇",
+      "average": 192.9
+    },
+    {
+      "regionId": "513201101000",
+      "name": "卓克基镇",
+      "average": 70.4
+    },
+    {
+      "regionId": "513201102000",
+      "name": "松岗镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513201200000",
+      "name": "梭磨乡",
+      "average": 190.8
+    },
+    {
+      "regionId": "513201201000",
+      "name": "白湾乡",
+      "average": 17.3
+    },
+    {
+      "regionId": "513201202000",
+      "name": "党坝乡",
+      "average": 84.3
+    },
+    {
+      "regionId": "513201203000",
+      "name": "木尔宗乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513201204000",
+      "name": "脚木足乡",
+      "average": 49.8
+    },
+    {
+      "regionId": "513201205000",
+      "name": "沙尔宗乡",
+      "average": 5.7
+    },
+    {
+      "regionId": "513201206000",
+      "name": "龙尔甲乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513201207000",
+      "name": "大藏乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513201208000",
+      "name": "康山乡",
+      "average": 23.7
+    },
+    {
+      "regionId": "513201209000",
+      "name": "草登乡",
+      "average": 2.3
+    },
+    {
+      "regionId": "513201210000",
+      "name": "日部乡",
+      "average": 44.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

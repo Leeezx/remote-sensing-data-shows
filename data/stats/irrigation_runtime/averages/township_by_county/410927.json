@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "370832101000",
+      "name": "小路口镇",
+      "average": 32955.5
+    },
+    {
+      "regionId": "370832110000",
+      "name": "黑虎庙镇",
+      "average": 21458.7
+    },
+    {
+      "regionId": "370923108000",
+      "name": "斑鸠店镇",
+      "average": 13745.0
+    },
+    {
+      "regionId": "370923113000",
+      "name": "戴庙镇",
+      "average": 26417.3
+    },
+    {
+      "regionId": "371521108000",
+      "name": "李台镇",
+      "average": 20450.3
+    },
+    {
+      "regionId": "371521207000",
+      "name": "金斗营乡",
+      "average": 9511.8
+    },
+    {
+      "regionId": "410927100000",
+      "name": "城关镇",
+      "average": 99.8
+    },
+    {
+      "regionId": "410927101000",
+      "name": "侯庙镇",
+      "average": 195.0
+    },
+    {
+      "regionId": "410927102000",
+      "name": "孙口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "410927103000",
+      "name": "打渔陈镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "410927104000",
+      "name": "马楼镇",
+      "average": 76.6
+    },
+    {
+      "regionId": "410927105000",
+      "name": "吴坝镇",
+      "average": 124.8
+    },
+    {
+      "regionId": "410927200000",
+      "name": "后方乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "410927201000",
+      "name": "清水河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "410927205000",
+      "name": "夹河乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "430203001000",
+      "name": "贺家土街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430203002000",
+      "name": "建设街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430203003000",
+      "name": "建宁街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430203004000",
+      "name": "董家段街道",
+      "average": 668.5
+    },
+    {
+      "regionId": "430203005000",
+      "name": "庆云街道",
+      "average": 585.0
+    },
+    {
+      "regionId": "430203006000",
+      "name": "枫溪街道",
+      "average": 7155.3
+    },
+    {
+      "regionId": "430203007000",
+      "name": "龙泉街道",
+      "average": 1757.7
+    },
+    {
+      "regionId": "430203100000",
+      "name": "白关镇",
+      "average": 23590.1
+    },
+    {
+      "regionId": "430203201000",
+      "name": "五里墩乡",
+      "average": 7849.2
+    },
+    {
+      "regionId": "430203202000",
+      "name": "姚家坝乡",
+      "average": 23519.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

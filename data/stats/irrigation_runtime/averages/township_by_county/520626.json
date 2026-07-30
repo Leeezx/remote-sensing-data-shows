@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "520626001000",
+      "name": "青龙街道",
+      "average": 5332.6
+    },
+    {
+      "regionId": "520626002000",
+      "name": "玉水街道",
+      "average": 3388.0
+    },
+    {
+      "regionId": "520626101000",
+      "name": "煎茶镇",
+      "average": 17175.9
+    },
+    {
+      "regionId": "520626102000",
+      "name": "潮砥镇",
+      "average": 8550.9
+    },
+    {
+      "regionId": "520626103000",
+      "name": "枫香溪镇",
+      "average": 13557.5
+    },
+    {
+      "regionId": "520626104000",
+      "name": "稳坪镇",
+      "average": 5507.9
+    },
+    {
+      "regionId": "520626105000",
+      "name": "复兴镇",
+      "average": 11037.9
+    },
+    {
+      "regionId": "520626106000",
+      "name": "合兴镇",
+      "average": 9361.4
+    },
+    {
+      "regionId": "520626107000",
+      "name": "高山镇",
+      "average": 1893.2
+    },
+    {
+      "regionId": "520626108000",
+      "name": "泉口镇",
+      "average": 6666.8
+    },
+    {
+      "regionId": "520626109000",
+      "name": "长堡镇",
+      "average": 2779.1
+    },
+    {
+      "regionId": "520626110000",
+      "name": "共和镇",
+      "average": 4525.6
+    },
+    {
+      "regionId": "520626111000",
+      "name": "平原镇",
+      "average": 3205.1
+    },
+    {
+      "regionId": "520626200000",
+      "name": "荆角乡",
+      "average": 3430.8
+    },
+    {
+      "regionId": "520626201000",
+      "name": "堰塘乡",
+      "average": 3386.5
+    },
+    {
+      "regionId": "520626202000",
+      "name": "龙泉乡",
+      "average": 10770.4
+    },
+    {
+      "regionId": "520626203000",
+      "name": "钱家乡",
+      "average": 5302.7
+    },
+    {
+      "regionId": "520626204000",
+      "name": "沙溪乡",
+      "average": 7419.3
+    },
+    {
+      "regionId": "520626205000",
+      "name": "楠杆乡",
+      "average": 5254.2
+    },
+    {
+      "regionId": "520626206000",
+      "name": "长丰乡",
+      "average": 8092.2
+    },
+    {
+      "regionId": "520626207000",
+      "name": "桶井乡",
+      "average": 3410.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 2247.56,
+      "color": "#eff3ff",
+      "label": "2247.560 万m³"
+    },
+    {
+      "value": 3393.472,
+      "color": "#bdd7e7",
+      "label": "3393.472 万m³"
+    },
+    {
+      "value": 5258.08,
+      "color": "#6baed6",
+      "label": "5258.080 万m³"
+    },
+    {
+      "value": 6574.088,
+      "color": "#3182bd",
+      "label": "6574.088 万m³"
+    },
+    {
+      "value": 9166.879999999997,
+      "color": "#08519c",
+      "label": "9166.880 万m³"
+    },
+    {
+      "value": 15728.540000000006,
+      "color": "#042d60",
+      "label": "15728.540 万m³"
+    }
+  ]
+}

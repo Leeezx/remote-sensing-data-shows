@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "330205001000",
+      "name": "中马街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330205002000",
+      "name": "白沙街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330205003000",
+      "name": "孔浦街道",
+      "average": 401.1
+    },
+    {
+      "regionId": "330205004000",
+      "name": "文教街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "330205005000",
+      "name": "甬江街道",
+      "average": 849.5
+    },
+    {
+      "regionId": "330205006000",
+      "name": "庄桥街道",
+      "average": 19147.7
+    },
+    {
+      "regionId": "330205007000",
+      "name": "洪塘街道",
+      "average": 18840.4
+    },
+    {
+      "regionId": "330205103000",
+      "name": "慈城镇",
+      "average": 68412.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

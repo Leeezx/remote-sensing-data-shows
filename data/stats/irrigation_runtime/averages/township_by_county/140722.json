@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130426108000",
+      "name": "偏城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130481207000",
+      "name": "管陶乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130521204000",
+      "name": "白岸乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "140722001000",
+      "name": "城区街道管理委员会",
+      "average": 0.0
+    },
+    {
+      "regionId": "140722100000",
+      "name": "辽阳镇",
+      "average": 232.3
+    },
+    {
+      "regionId": "140722101000",
+      "name": "桐峪镇",
+      "average": 2745.2
+    },
+    {
+      "regionId": "140722102000",
+      "name": "麻田镇",
+      "average": 1714.9
+    },
+    {
+      "regionId": "140722103000",
+      "name": "芹泉镇",
+      "average": 6489.4
+    },
+    {
+      "regionId": "140722104000",
+      "name": "拐儿镇",
+      "average": 3781.4
+    },
+    {
+      "regionId": "140722200000",
+      "name": "寒王乡",
+      "average": 2564.2
+    },
+    {
+      "regionId": "140722201000",
+      "name": "石匣乡",
+      "average": 3252.7
+    },
+    {
+      "regionId": "140722202000",
+      "name": "龙泉乡",
+      "average": 1664.7
+    },
+    {
+      "regionId": "140722203000",
+      "name": "粟城乡",
+      "average": 1964.7
+    },
+    {
+      "regionId": "140722204000",
+      "name": "羊角乡",
+      "average": 3049.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "370613001000",
+      "name": "黄海路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370613002000",
+      "name": "初家街道",
+      "average": 772.5
+    },
+    {
+      "regionId": "370613003000",
+      "name": "滨海路街道",
+      "average": 900.8
+    },
+    {
+      "regionId": "370613004000",
+      "name": "解甲庄街道",
+      "average": 5915.3
+    },
+    {
+      "regionId": "370613005000",
+      "name": "莱山街道",
+      "average": 3036.6
+    },
+    {
+      "regionId": "370613006000",
+      "name": "院格庄街道",
+      "average": 3367.5
+    },
+    {
+      "regionId": "370613007000",
+      "name": "马山街道",
+      "average": 1987.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 92.7,
+      "color": "#eff3ff",
+      "label": "92.700 万m³"
+    },
+    {
+      "value": 807.3976,
+      "color": "#bdd7e7",
+      "label": "807.398 万m³"
+    },
+    {
+      "value": 1361.4335999999998,
+      "color": "#6baed6",
+      "label": "1361.434 万m³"
+    },
+    {
+      "value": 2591.6543999999994,
+      "color": "#3182bd",
+      "label": "2591.654 万m³"
+    },
+    {
+      "value": 3277.4952,
+      "color": "#08519c",
+      "label": "3277.495 万m³"
+    },
+    {
+      "value": 5609.564,
+      "color": "#042d60",
+      "label": "5609.564 万m³"
+    }
+  ]
+}

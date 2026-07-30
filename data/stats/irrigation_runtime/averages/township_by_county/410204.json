@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410204001000",
+      "name": "相国寺街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410204002000",
+      "name": "新华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410204003000",
+      "name": "卧龙街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410204004000",
+      "name": "州桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410204005000",
+      "name": "西司门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410204006000",
+      "name": "南苑街道",
+      "average": 2390.1
+    },
+    {
+      "regionId": "410204007000",
+      "name": "五一街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410204008000",
+      "name": "仙人庄街道",
+      "average": 15150.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

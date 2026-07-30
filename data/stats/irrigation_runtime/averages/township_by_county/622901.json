@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "622901001000",
+      "name": "城南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "622901002000",
+      "name": "城北街道",
+      "average": 25.1
+    },
+    {
+      "regionId": "622901003000",
+      "name": "东关街道",
+      "average": 32.6
+    },
+    {
+      "regionId": "622901004000",
+      "name": "西关街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "622901005000",
+      "name": "八坊街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "622901006000",
+      "name": "红园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "622901100000",
+      "name": "城郊镇",
+      "average": 201.2
+    },
+    {
+      "regionId": "622901101000",
+      "name": "枹罕镇",
+      "average": 5107.9
+    },
+    {
+      "regionId": "622901102000",
+      "name": "南龙镇",
+      "average": 1898.5
+    },
+    {
+      "regionId": "622901103000",
+      "name": "折桥镇",
+      "average": 1611.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

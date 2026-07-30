@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "441781001000",
+      "name": "春城街道",
+      "average": 89973.4
+    },
+    {
+      "regionId": "441781101000",
+      "name": "河朗镇",
+      "average": 15598.5
+    },
+    {
+      "regionId": "441781102000",
+      "name": "松柏镇",
+      "average": 79797.5
+    },
+    {
+      "regionId": "441781103000",
+      "name": "石望镇",
+      "average": 36662.3
+    },
+    {
+      "regionId": "441781105000",
+      "name": "春湾镇",
+      "average": 93039.8
+    },
+    {
+      "regionId": "441781106000",
+      "name": "合水镇",
+      "average": 69583.8
+    },
+    {
+      "regionId": "441781107000",
+      "name": "陂面镇",
+      "average": 116539.0
+    },
+    {
+      "regionId": "441781108000",
+      "name": "圭岗镇",
+      "average": 2913.2
+    },
+    {
+      "regionId": "441781109000",
+      "name": "永宁镇",
+      "average": 18740.6
+    },
+    {
+      "regionId": "441781110000",
+      "name": "马水镇",
+      "average": 73393.7
+    },
+    {
+      "regionId": "441781111000",
+      "name": "岗美镇",
+      "average": 57218.7
+    },
+    {
+      "regionId": "441781112000",
+      "name": "河口镇",
+      "average": 38437.8
+    },
+    {
+      "regionId": "441781113000",
+      "name": "潭水镇",
+      "average": 100601.7
+    },
+    {
+      "regionId": "441781114000",
+      "name": "三甲镇",
+      "average": 16156.3
+    },
+    {
+      "regionId": "441781116000",
+      "name": "双窖镇",
+      "average": 1032.6
+    },
+    {
+      "regionId": "441781117000",
+      "name": "八甲镇",
+      "average": 30987.2
+    },
+    {
+      "regionId": "441781401000",
+      "name": "岗桥管理区",
+      "average": 0.0
+    },
+    {
+      "regionId": "441781402000",
+      "name": "三叶农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "441781403000",
+      "name": "石录矿区",
+      "average": 0.0
+    },
+    {
+      "regionId": "441781404000",
+      "name": "花滩林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "441781405000",
+      "name": "东湖林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "441781406000",
+      "name": "河尾山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "441781407000",
+      "name": "南山矿",
+      "average": 0.0
+    },
+    {
+      "regionId": "441781408000",
+      "name": "阳春监狱",
+      "average": 0.0
+    },
+    {
+      "regionId": "441781410000",
+      "name": "硫铁矿",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

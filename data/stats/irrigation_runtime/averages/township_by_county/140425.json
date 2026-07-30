@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140425100000",
+      "name": "青羊镇",
+      "average": 897.6
+    },
+    {
+      "regionId": "140425101000",
+      "name": "龙溪镇",
+      "average": 116.0
+    },
+    {
+      "regionId": "140425102000",
+      "name": "石城镇",
+      "average": 3215.4
+    },
+    {
+      "regionId": "140425103000",
+      "name": "苗庄镇",
+      "average": 320.8
+    },
+    {
+      "regionId": "140425104000",
+      "name": "杏城镇",
+      "average": 871.5
+    },
+    {
+      "regionId": "140425200000",
+      "name": "西沟乡",
+      "average": 205.4
+    },
+    {
+      "regionId": "140425201000",
+      "name": "东寺头乡",
+      "average": 1027.4
+    },
+    {
+      "regionId": "140425202000",
+      "name": "虹梯关乡",
+      "average": 2203.8
+    },
+    {
+      "regionId": "140425203000",
+      "name": "阳高乡",
+      "average": 1154.9
+    },
+    {
+      "regionId": "140425204000",
+      "name": "北耽车乡",
+      "average": 935.4
+    },
+    {
+      "regionId": "140425205000",
+      "name": "中五井乡",
+      "average": 17.0
+    },
+    {
+      "regionId": "140425206000",
+      "name": "北社乡",
+      "average": 1093.9
+    },
+    {
+      "regionId": "410581101000",
+      "name": "合涧镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "410581203000",
+      "name": "石板岩镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 91.84399999999998,
+      "color": "#bdd7e7",
+      "label": "91.844 万m³"
+    },
+    {
+      "value": 459.5763999999999,
+      "color": "#6baed6",
+      "label": "459.576 万m³"
+    },
+    {
+      "value": 925.8743999999999,
+      "color": "#3182bd",
+      "label": "925.874 万m³"
+    },
+    {
+      "value": 1108.784,
+      "color": "#08519c",
+      "label": "1108.784 万m³"
+    },
+    {
+      "value": 2952.3840000000005,
+      "color": "#042d60",
+      "label": "2952.384 万m³"
+    }
+  ]
+}

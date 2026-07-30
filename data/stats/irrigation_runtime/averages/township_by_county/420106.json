@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420106001000",
+      "name": "积玉桥街办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "420106002000",
+      "name": "杨园街办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "420106003000",
+      "name": "徐家棚街办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "420106005000",
+      "name": "粮道街办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "420106006000",
+      "name": "中华路街办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "420106007000",
+      "name": "黄鹤楼街办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "420106008000",
+      "name": "紫阳街办事处",
+      "average": 85.3
+    },
+    {
+      "regionId": "420106010000",
+      "name": "首义路街办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "420106011000",
+      "name": "中南路街办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "420106012000",
+      "name": "水果湖街办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "420106013000",
+      "name": "珞珈山街办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "420106015000",
+      "name": "南湖街办事处",
+      "average": 77.0
+    },
+    {
+      "regionId": "420106092000",
+      "name": "东湖风景区街道（武昌）",
+      "average": 412.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

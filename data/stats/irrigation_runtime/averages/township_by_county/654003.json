@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "654003001000",
+      "name": "团结路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "654003002000",
+      "name": "乌东路街道",
+      "average": 775.0
+    },
+    {
+      "regionId": "654003003000",
+      "name": "北京路街道",
+      "average": 68.4
+    },
+    {
+      "regionId": "654003004000",
+      "name": "乌鲁木齐西路街道",
+      "average": 13.4
+    },
+    {
+      "regionId": "654003005000",
+      "name": "火车站街道",
+      "average": 4.0
+    },
+    {
+      "regionId": "654003201000",
+      "name": "开干齐乡",
+      "average": 27020.9
+    },
+    {
+      "regionId": "654003508000",
+      "name": "兵团一三一团",
+      "average": 21532.8
+    },
+    {
+      "regionId": "654003510000",
+      "name": "天北新区",
+      "average": 1483.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.56,
+      "color": "#eff3ff",
+      "label": "0.560 万m³"
+    },
+    {
+      "value": 8.5496,
+      "color": "#bdd7e7",
+      "label": "8.550 万m³"
+    },
+    {
+      "value": 58.94,
+      "color": "#6baed6",
+      "label": "58.940 万m³"
+    },
+    {
+      "value": 896.8791999999997,
+      "color": "#3182bd",
+      "label": "896.879 万m³"
+    },
+    {
+      "value": 11828.987199999981,
+      "color": "#08519c",
+      "label": "11828.987 万m³"
+    },
+    {
+      "value": 26252.566,
+      "color": "#042d60",
+      "label": "26252.566 万m³"
+    }
+  ]
+}

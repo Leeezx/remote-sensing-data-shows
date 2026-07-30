@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130427107000",
+      "name": "白土镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130427204000",
+      "name": "时村营乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130434106000",
+      "name": "回隆镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "410502102000",
+      "name": "高庄镇",
+      "average": 30640.9
+    },
+    {
+      "regionId": "410505002000",
+      "name": "李珍街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410522102000",
+      "name": "铜冶镇",
+      "average": 4258.3
+    },
+    {
+      "regionId": "410522103000",
+      "name": "善应镇",
+      "average": 3505.5
+    },
+    {
+      "regionId": "410522106000",
+      "name": "白璧镇",
+      "average": 30164.9
+    },
+    {
+      "regionId": "410522108000",
+      "name": "吕村镇",
+      "average": 37202.2
+    },
+    {
+      "regionId": "410522109000",
+      "name": "伦掌镇",
+      "average": 16897.6
+    },
+    {
+      "regionId": "410522111000",
+      "name": "崔家桥镇",
+      "average": 37980.1
+    },
+    {
+      "regionId": "410522112000",
+      "name": "辛村镇",
+      "average": 50305.4
+    },
+    {
+      "regionId": "410522113000",
+      "name": "韩陵镇",
+      "average": 21768.4
+    },
+    {
+      "regionId": "410522114000",
+      "name": "永和镇",
+      "average": 27164.5
+    },
+    {
+      "regionId": "410522115000",
+      "name": "都里镇",
+      "average": 1349.8
+    },
+    {
+      "regionId": "410522203000",
+      "name": "磊口乡",
+      "average": 2331.8
+    },
+    {
+      "regionId": "410522204000",
+      "name": "许家沟乡",
+      "average": 5887.2
+    },
+    {
+      "regionId": "410522205000",
+      "name": "马家乡",
+      "average": 1493.1
+    },
+    {
+      "regionId": "410522210000",
+      "name": "安丰乡",
+      "average": 45370.6
+    },
+    {
+      "regionId": "410522211000",
+      "name": "洪河屯乡",
+      "average": 22023.3
+    },
+    {
+      "regionId": "410522214000",
+      "name": "瓦店乡",
+      "average": 34964.8
+    },
+    {
+      "regionId": "410522216000",
+      "name": "北郭乡",
+      "average": 34389.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1414.5716,
+      "color": "#bdd7e7",
+      "label": "1414.572 万m³"
+    },
+    {
+      "value": 5046.6876,
+      "color": "#6baed6",
+      "label": "5046.688 万m³"
+    },
+    {
+      "value": 24676.1592,
+      "color": "#3182bd",
+      "label": "24676.159 万m³"
+    },
+    {
+      "value": 34704.7192,
+      "color": "#08519c",
+      "label": "34704.719 万m³"
+    },
+    {
+      "value": 48232.78399999999,
+      "color": "#042d60",
+      "label": "48232.784 万m³"
+    }
+  ]
+}

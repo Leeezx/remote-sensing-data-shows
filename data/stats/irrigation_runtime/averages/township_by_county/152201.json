@@ -1,0 +1,138 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "152201001000",
+      "name": "爱国办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "152201002000",
+      "name": "和平办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "152201003000",
+      "name": "兴安办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "152201004000",
+      "name": "胜利办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "152201005000",
+      "name": "铁西办事处",
+      "average": 3.6
+    },
+    {
+      "regionId": "152201006000",
+      "name": "都林办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "152201007000",
+      "name": "五一办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "152201008000",
+      "name": "城郊办事处",
+      "average": 3148.4
+    },
+    {
+      "regionId": "152201100000",
+      "name": "乌兰哈达镇",
+      "average": 25446.8
+    },
+    {
+      "regionId": "152201101000",
+      "name": "葛根庙镇",
+      "average": 52134.9
+    },
+    {
+      "regionId": "152201102000",
+      "name": "太本站镇",
+      "average": 13387.6
+    },
+    {
+      "regionId": "152201103000",
+      "name": "义勒力特镇",
+      "average": 16876.6
+    },
+    {
+      "regionId": "152201400000",
+      "name": "乌兰哈达原种场",
+      "average": 327.6
+    },
+    {
+      "regionId": "152201401000",
+      "name": "呼和马场",
+      "average": 4157.3
+    },
+    {
+      "regionId": "152201402000",
+      "name": "乌兰浩特工业经济开发区",
+      "average": 268.6
+    },
+    {
+      "regionId": "152201403000",
+      "name": "乌兰浩特经济技术开发区",
+      "average": 20.7
+    },
+    {
+      "regionId": "220802101000",
+      "name": "青山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220802170000",
+      "name": "岭下镇（查干浩特旅游经济开发区）（省级）",
+      "average": 0.0
+    },
+    {
+      "regionId": "220802403000",
+      "name": "白城牧场",
+      "average": 0.0
+    },
+    {
+      "regionId": "220881103000",
+      "name": "那金镇",
+      "average": 28.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

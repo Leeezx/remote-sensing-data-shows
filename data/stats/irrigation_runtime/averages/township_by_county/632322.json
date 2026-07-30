@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "632322100000",
+      "name": "马克堂镇",
+      "average": 423.0
+    },
+    {
+      "regionId": "632322101000",
+      "name": "康扬镇",
+      "average": 449.2
+    },
+    {
+      "regionId": "632322102000",
+      "name": "坎布拉镇",
+      "average": 511.5
+    },
+    {
+      "regionId": "632322200000",
+      "name": "贾加乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632322201000",
+      "name": "措周乡",
+      "average": 65.1
+    },
+    {
+      "regionId": "632322202000",
+      "name": "昂拉乡",
+      "average": 205.3
+    },
+    {
+      "regionId": "632322203000",
+      "name": "能科乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632322204000",
+      "name": "当顺乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632322205000",
+      "name": "尖扎滩乡",
+      "average": 4.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

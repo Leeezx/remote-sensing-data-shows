@@ -1,0 +1,138 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230703002000",
+      "name": "西水街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230703004000",
+      "name": "联合街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230703005000",
+      "name": "东升街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230703101000",
+      "name": "晨明镇",
+      "average": 65.6
+    },
+    {
+      "regionId": "230703102000",
+      "name": "浩良河镇",
+      "average": 190.9
+    },
+    {
+      "regionId": "230703200000",
+      "name": "迎春乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "230703400000",
+      "name": "三岔河林场",
+      "average": 25.9
+    },
+    {
+      "regionId": "230703401000",
+      "name": "四合营林场",
+      "average": 7.3
+    },
+    {
+      "regionId": "230703402000",
+      "name": "亮子河林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230703403000",
+      "name": "石头河林场",
+      "average": 4.5
+    },
+    {
+      "regionId": "230703405000",
+      "name": "岩石经营所",
+      "average": 0.5
+    },
+    {
+      "regionId": "230703406000",
+      "name": "奋斗经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230703407000",
+      "name": "桦阳经营所",
+      "average": 3.0
+    },
+    {
+      "regionId": "230703408000",
+      "name": "浩良河经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230703409000",
+      "name": "太平经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230703410000",
+      "name": "南岔经营所",
+      "average": 2.5
+    },
+    {
+      "regionId": "230703411000",
+      "name": "威岭经营所",
+      "average": 3.2
+    },
+    {
+      "regionId": "230703413000",
+      "name": "松青经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230703414000",
+      "name": "柳树经营所",
+      "average": 15.8
+    },
+    {
+      "regionId": "230703579000",
+      "name": "浩良河化肥厂",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

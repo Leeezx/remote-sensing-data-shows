@@ -1,0 +1,218 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513436100000",
+      "name": "巴普镇",
+      "average": 95.3
+    },
+    {
+      "regionId": "513436200000",
+      "name": "觉洛乡",
+      "average": 77.0
+    },
+    {
+      "regionId": "513436201000",
+      "name": "井叶特西乡",
+      "average": 116.7
+    },
+    {
+      "regionId": "513436202000",
+      "name": "合姑洛乡",
+      "average": 116.5
+    },
+    {
+      "regionId": "513436203000",
+      "name": "巴古乡",
+      "average": 507.4
+    },
+    {
+      "regionId": "513436204000",
+      "name": "农作乡",
+      "average": 229.0
+    },
+    {
+      "regionId": "513436205000",
+      "name": "佐戈依达乡",
+      "average": 263.0
+    },
+    {
+      "regionId": "513436206000",
+      "name": "子威乡",
+      "average": 71.9
+    },
+    {
+      "regionId": "513436207000",
+      "name": "依洛拉达乡",
+      "average": 89.5
+    },
+    {
+      "regionId": "513436208000",
+      "name": "典补乡",
+      "average": 32.5
+    },
+    {
+      "regionId": "513436209000",
+      "name": "哈洛乡",
+      "average": 22.3
+    },
+    {
+      "regionId": "513436210000",
+      "name": "牛牛坝乡",
+      "average": 2121.6
+    },
+    {
+      "regionId": "513436211000",
+      "name": "尔合乡",
+      "average": 135.6
+    },
+    {
+      "regionId": "513436212000",
+      "name": "竹库乡",
+      "average": 149.2
+    },
+    {
+      "regionId": "513436213000",
+      "name": "候古莫乡",
+      "average": 1557.7
+    },
+    {
+      "regionId": "513436214000",
+      "name": "候播乃拖乡",
+      "average": 621.8
+    },
+    {
+      "regionId": "513436215000",
+      "name": "采红乡",
+      "average": 151.6
+    },
+    {
+      "regionId": "513436216000",
+      "name": "苏洛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513436217000",
+      "name": "九口乡",
+      "average": 460.8
+    },
+    {
+      "regionId": "513436218000",
+      "name": "洛俄依甘乡",
+      "average": 1155.9
+    },
+    {
+      "regionId": "513436219000",
+      "name": "拉木阿觉乡",
+      "average": 397.7
+    },
+    {
+      "regionId": "513436220000",
+      "name": "洛莫依达乡",
+      "average": 65.8
+    },
+    {
+      "regionId": "513436221000",
+      "name": "柳洪乡",
+      "average": 218.8
+    },
+    {
+      "regionId": "513436222000",
+      "name": "乐约乡",
+      "average": 11.8
+    },
+    {
+      "regionId": "513436223000",
+      "name": "尔其乡",
+      "average": 90.3
+    },
+    {
+      "regionId": "513436224000",
+      "name": "瓦古乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513436225000",
+      "name": "峨曲古乡",
+      "average": 64.2
+    },
+    {
+      "regionId": "513436226000",
+      "name": "炳途乡",
+      "average": 20.1
+    },
+    {
+      "regionId": "513436227000",
+      "name": "拖木乡",
+      "average": 93.0
+    },
+    {
+      "regionId": "513436228000",
+      "name": "尼哈乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513436229000",
+      "name": "龙门乡",
+      "average": 84.3
+    },
+    {
+      "regionId": "513436230000",
+      "name": "依果觉乡",
+      "average": 22.7
+    },
+    {
+      "regionId": "513436231000",
+      "name": "洒库乡",
+      "average": 74.4
+    },
+    {
+      "regionId": "513436232000",
+      "name": "瓦西乡",
+      "average": 62.0
+    },
+    {
+      "regionId": "513436233000",
+      "name": "树窝乡",
+      "average": 18.6
+    },
+    {
+      "regionId": "513436234000",
+      "name": "龙窝乡",
+      "average": 322.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 26.816,
+      "color": "#bdd7e7",
+      "label": "26.816 万m³"
+    },
+    {
+      "value": 78.02199999999999,
+      "color": "#6baed6",
+      "label": "78.022 万m³"
+    },
+    {
+      "value": 116.672,
+      "color": "#3182bd",
+      "label": "116.672 万m³"
+    },
+    {
+      "value": 297.5099999999999,
+      "color": "#08519c",
+      "label": "297.510 万m³"
+    },
+    {
+      "value": 1726.8699999999985,
+      "color": "#042d60",
+      "label": "1726.870 万m³"
+    }
+  ]
+}

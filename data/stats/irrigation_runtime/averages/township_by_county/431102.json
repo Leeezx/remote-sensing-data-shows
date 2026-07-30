@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "431102001000",
+      "name": "朝阳街道",
+      "average": 5946.6
+    },
+    {
+      "regionId": "431102002000",
+      "name": "南津渡街道",
+      "average": 5558.7
+    },
+    {
+      "regionId": "431102003000",
+      "name": "七里店街道",
+      "average": 5140.0
+    },
+    {
+      "regionId": "431102004000",
+      "name": "徐家井街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "431102101000",
+      "name": "水口山镇",
+      "average": 38624.8
+    },
+    {
+      "regionId": "431102102000",
+      "name": "珠山镇",
+      "average": 49577.2
+    },
+    {
+      "regionId": "431102103000",
+      "name": "黄田铺镇",
+      "average": 41008.1
+    },
+    {
+      "regionId": "431102104000",
+      "name": "富家桥镇",
+      "average": 38970.8
+    },
+    {
+      "regionId": "431102105000",
+      "name": "菱角塘镇",
+      "average": 42946.0
+    },
+    {
+      "regionId": "431102106000",
+      "name": "邮亭圩镇",
+      "average": 75272.2
+    },
+    {
+      "regionId": "431102107000",
+      "name": "接履桥镇",
+      "average": 71871.7
+    },
+    {
+      "regionId": "431102108000",
+      "name": "石岩头镇",
+      "average": 38435.2
+    },
+    {
+      "regionId": "431102200000",
+      "name": "大庆坪乡",
+      "average": 18907.5
+    },
+    {
+      "regionId": "431102201000",
+      "name": "梳子铺乡",
+      "average": 38466.5
+    },
+    {
+      "regionId": "431102202000",
+      "name": "石山脚乡",
+      "average": 36325.3
+    },
+    {
+      "regionId": "431102203000",
+      "name": "凼底乡",
+      "average": 20083.0
+    },
+    {
+      "regionId": "450324200000",
+      "name": "永岁乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "450324207000",
+      "name": "白宝乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 5392.8948,
+      "color": "#bdd7e7",
+      "label": "5392.895 万m³"
+    },
+    {
+      "value": 19927.834,
+      "color": "#6baed6",
+      "label": "19927.834 万m³"
+    },
+    {
+      "value": 38487.3956,
+      "color": "#3182bd",
+      "label": "38487.396 万m³"
+    },
+    {
+      "value": 41775.5084,
+      "color": "#08519c",
+      "label": "41775.508 万m³"
+    },
+    {
+      "value": 74116.03,
+      "color": "#042d60",
+      "label": "74116.030 万m³"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540423100000",
+      "name": "墨脱镇",
+      "average": 59390.5
+    },
+    {
+      "regionId": "540423200000",
+      "name": "甘登乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540423201000",
+      "name": "加热萨乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540423202000",
+      "name": "达木珞巴民族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540423203000",
+      "name": "帮辛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540423204000",
+      "name": "格当乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540423205000",
+      "name": "德兴乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540423206000",
+      "name": "背崩乡",
+      "average": 205.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

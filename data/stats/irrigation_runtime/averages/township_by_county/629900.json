@@ -1,0 +1,53 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "622925104000",
+      "name": "买家集镇",
+      "average": 1732.0
+    },
+    {
+      "regionId": "622925105000",
+      "name": "松鸣镇",
+      "average": 1696.9
+    },
+    {
+      "regionId": "622925204000",
+      "name": "新营乡",
+      "average": 669.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 710.5,
+      "color": "#eff3ff",
+      "label": "710.500 万m³"
+    },
+    {
+      "value": 1105.06,
+      "color": "#bdd7e7",
+      "label": "1105.060 万m³"
+    },
+    {
+      "value": 1499.6200000000001,
+      "color": "#6baed6",
+      "label": "1499.620 万m³"
+    },
+    {
+      "value": 1703.6392,
+      "color": "#3182bd",
+      "label": "1703.639 万m³"
+    },
+    {
+      "value": 1717.1176,
+      "color": "#08519c",
+      "label": "1717.118 万m³"
+    },
+    {
+      "value": 1730.596,
+      "color": "#042d60",
+      "label": "1730.596 万m³"
+    }
+  ]
+}

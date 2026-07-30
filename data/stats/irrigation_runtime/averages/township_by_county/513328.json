@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513328100000",
+      "name": "甘孜镇",
+      "average": 42.1
+    },
+    {
+      "regionId": "513328200000",
+      "name": "呷拉乡",
+      "average": 15.8
+    },
+    {
+      "regionId": "513328201000",
+      "name": "色西底乡",
+      "average": 39.7
+    },
+    {
+      "regionId": "513328202000",
+      "name": "南多乡",
+      "average": 9.6
+    },
+    {
+      "regionId": "513328203000",
+      "name": "生康乡",
+      "average": 18.5
+    },
+    {
+      "regionId": "513328204000",
+      "name": "贡隆乡",
+      "average": 1.0
+    },
+    {
+      "regionId": "513328205000",
+      "name": "扎科乡",
+      "average": 13.2
+    },
+    {
+      "regionId": "513328206000",
+      "name": "来马镇",
+      "average": 21.1
+    },
+    {
+      "regionId": "513328207000",
+      "name": "昔色乡",
+      "average": 68.1
+    },
+    {
+      "regionId": "513328208000",
+      "name": "卡攻乡",
+      "average": 17.8
+    },
+    {
+      "regionId": "513328209000",
+      "name": "仁果乡",
+      "average": 8.2
+    },
+    {
+      "regionId": "513328210000",
+      "name": "拖坝乡",
+      "average": 73.4
+    },
+    {
+      "regionId": "513328211000",
+      "name": "斯俄乡",
+      "average": 38.5
+    },
+    {
+      "regionId": "513328212000",
+      "name": "庭卡乡",
+      "average": 321.8
+    },
+    {
+      "regionId": "513328213000",
+      "name": "下雄乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513328214000",
+      "name": "四通达乡",
+      "average": 15.1
+    },
+    {
+      "regionId": "513328215000",
+      "name": "夺多乡",
+      "average": 2.5
+    },
+    {
+      "regionId": "513328216000",
+      "name": "泥柯乡",
+      "average": 67.4
+    },
+    {
+      "regionId": "513328217000",
+      "name": "茶扎乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513328218000",
+      "name": "大德乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513328219000",
+      "name": "卡龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513328220000",
+      "name": "查龙镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 0.45199999999999996,
+      "color": "#bdd7e7",
+      "label": "0.452 万m³"
+    },
+    {
+      "value": 11.3424,
+      "color": "#6baed6",
+      "label": "11.342 万m³"
+    },
+    {
+      "value": 18.1612,
+      "color": "#3182bd",
+      "label": "18.161 万m³"
+    },
+    {
+      "value": 41.0152,
+      "color": "#08519c",
+      "label": "41.015 万m³"
+    },
+    {
+      "value": 217.47199999999958,
+      "color": "#042d60",
+      "label": "217.472 万m³"
+    }
+  ]
+}

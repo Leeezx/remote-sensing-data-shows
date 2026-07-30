@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513334100000",
+      "name": "高城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513334200000",
+      "name": "君坝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513334201000",
+      "name": "哈依乡",
+      "average": 40.5
+    },
+    {
+      "regionId": "513334202000",
+      "name": "觉吾乡",
+      "average": 159.3
+    },
+    {
+      "regionId": "513334203000",
+      "name": "莫坝乡",
+      "average": 25.5
+    },
+    {
+      "regionId": "513334204000",
+      "name": "亚火乡",
+      "average": 26.6
+    },
+    {
+      "regionId": "513334205000",
+      "name": "绒坝乡",
+      "average": 35.8
+    },
+    {
+      "regionId": "513334206000",
+      "name": "呷柯乡",
+      "average": 6.0
+    },
+    {
+      "regionId": "513334207000",
+      "name": "奔戈乡",
+      "average": 12.6
+    },
+    {
+      "regionId": "513334208000",
+      "name": "村戈乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513334209000",
+      "name": "禾尼乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513334210000",
+      "name": "曲登乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513334211000",
+      "name": "喇嘛垭乡",
+      "average": 55.0
+    },
+    {
+      "regionId": "513334212000",
+      "name": "章纳乡",
+      "average": 17.6
+    },
+    {
+      "regionId": "513334213000",
+      "name": "上木拉乡",
+      "average": 28.6
+    },
+    {
+      "regionId": "513334214000",
+      "name": "下木拉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513334215000",
+      "name": "中木拉乡",
+      "average": 32.2
+    },
+    {
+      "regionId": "513334216000",
+      "name": "雄坝乡",
+      "average": 168.5
+    },
+    {
+      "regionId": "513334217000",
+      "name": "甲洼乡",
+      "average": 2.5
+    },
+    {
+      "regionId": "513334218000",
+      "name": "藏坝乡",
+      "average": 20.9
+    },
+    {
+      "regionId": "513334219000",
+      "name": "格木乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513334220000",
+      "name": "拉波乡",
+      "average": 28.4
+    },
+    {
+      "regionId": "513334221000",
+      "name": "麦洼乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513334222000",
+      "name": "德巫乡",
+      "average": 11.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

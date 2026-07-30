@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "141034100000",
+      "name": "永安镇",
+      "average": 643.0
+    },
+    {
+      "regionId": "141034101000",
+      "name": "对竹镇",
+      "average": 1352.4
+    },
+    {
+      "regionId": "141034102000",
+      "name": "勍香镇",
+      "average": 2541.6
+    },
+    {
+      "regionId": "141034103000",
+      "name": "和平镇",
+      "average": 244.2
+    },
+    {
+      "regionId": "141034104000",
+      "name": "僧念镇",
+      "average": 508.7
+    },
+    {
+      "regionId": "141034200000",
+      "name": "佃坪乡",
+      "average": 2424.1
+    },
+    {
+      "regionId": "141034201000",
+      "name": "团柏乡",
+      "average": 439.3
+    },
+    {
+      "regionId": "141034202000",
+      "name": "邢家要乡",
+      "average": 4927.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 271.514,
+      "color": "#eff3ff",
+      "label": "271.514 万m³"
+    },
+    {
+      "value": 472.8896,
+      "color": "#bdd7e7",
+      "label": "472.890 万m³"
+    },
+    {
+      "value": 619.9004,
+      "color": "#6baed6",
+      "label": "619.900 万m³"
+    },
+    {
+      "value": 1536.7323999999999,
+      "color": "#3182bd",
+      "label": "1536.732 万m³"
+    },
+    {
+      "value": 2484.73,
+      "color": "#08519c",
+      "label": "2484.730 万m³"
+    },
+    {
+      "value": 4593.129999999999,
+      "color": "#042d60",
+      "label": "4593.130 万m³"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540624203000",
+      "name": "岗尼乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540624206000",
+      "name": "玛荣乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540624208000",
+      "name": "帮麦乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632801001000",
+      "name": "昆仑路街道",
+      "average": 24.9
+    },
+    {
+      "regionId": "632801002000",
+      "name": "黄河路街道",
+      "average": 65.8
+    },
+    {
+      "regionId": "632801003000",
+      "name": "金峰路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "632801004000",
+      "name": "河西街道",
+      "average": 57.6
+    },
+    {
+      "regionId": "632801005000",
+      "name": "西藏路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "632801100000",
+      "name": "郭勒木德镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632801101000",
+      "name": "唐古拉镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632801200000",
+      "name": "大格勒乡",
+      "average": 1611.0
+    },
+    {
+      "regionId": "632801201000",
+      "name": "乌图美仁乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "652824204000",
+      "name": "祁曼塔克乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

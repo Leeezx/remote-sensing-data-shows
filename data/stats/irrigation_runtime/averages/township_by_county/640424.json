@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620802101000",
+      "name": "崆峒镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620802499000",
+      "name": "甘肃平凉工业园区管理委员会",
+      "average": 31.0
+    },
+    {
+      "regionId": "620825104000",
+      "name": "韩店镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620825215000",
+      "name": "郑河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620881203000",
+      "name": "河西乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640424100000",
+      "name": "惠台乡",
+      "average": 1437.0
+    },
+    {
+      "regionId": "640424101000",
+      "name": "白面镇",
+      "average": 1842.2
+    },
+    {
+      "regionId": "640424102000",
+      "name": "什字路镇",
+      "average": 1743.9
+    },
+    {
+      "regionId": "640424200000",
+      "name": "新民乡",
+      "average": 1372.8
+    },
+    {
+      "regionId": "640424201000",
+      "name": "兴盛乡",
+      "average": 1959.5
+    },
+    {
+      "regionId": "640424202000",
+      "name": "黄花乡",
+      "average": 1751.9
+    },
+    {
+      "regionId": "640424203000",
+      "name": "大湾乡",
+      "average": 837.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

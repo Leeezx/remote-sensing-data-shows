@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230921001000",
+      "name": "新起街道",
+      "average": 5.6
+    },
+    {
+      "regionId": "230921002000",
+      "name": "新华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230921003000",
+      "name": "元明街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230921004000",
+      "name": "铁西街道",
+      "average": 51.2
+    },
+    {
+      "regionId": "230921005000",
+      "name": "城西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230921100000",
+      "name": "勃利镇",
+      "average": 1009.5
+    },
+    {
+      "regionId": "230921101000",
+      "name": "小五站镇",
+      "average": 1276.4
+    },
+    {
+      "regionId": "230921102000",
+      "name": "大四站镇",
+      "average": 4731.5
+    },
+    {
+      "regionId": "230921103000",
+      "name": "双河镇",
+      "average": 5338.6
+    },
+    {
+      "regionId": "230921104000",
+      "name": "倭肯镇",
+      "average": 5095.0
+    },
+    {
+      "regionId": "230921200000",
+      "name": "青山乡",
+      "average": 6862.5
+    },
+    {
+      "regionId": "230921202000",
+      "name": "永恒乡",
+      "average": 7634.1
+    },
+    {
+      "regionId": "230921203000",
+      "name": "抢垦乡",
+      "average": 4267.8
+    },
+    {
+      "regionId": "230921204000",
+      "name": "杏树朝鲜族乡",
+      "average": 4855.3
+    },
+    {
+      "regionId": "230921205000",
+      "name": "吉兴朝鲜族满族乡",
+      "average": 10335.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 5.4208,
+      "color": "#bdd7e7",
+      "label": "5.421 万m³"
+    },
+    {
+      "value": 1184.5864,
+      "color": "#6baed6",
+      "label": "1184.586 万m³"
+    },
+    {
+      "value": 4774.0872,
+      "color": "#3182bd",
+      "label": "4774.087 万m³"
+    },
+    {
+      "value": 5387.364799999998,
+      "color": "#08519c",
+      "label": "5387.365 万m³"
+    },
+    {
+      "value": 9579.251999999997,
+      "color": "#042d60",
+      "label": "9579.252 万m³"
+    }
+  ]
+}

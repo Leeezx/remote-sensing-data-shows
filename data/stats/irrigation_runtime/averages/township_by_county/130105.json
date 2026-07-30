@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130105001000",
+      "name": "革新街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130105003000",
+      "name": "新华路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130105004000",
+      "name": "宁安街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130105005000",
+      "name": "东焦街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130105006000",
+      "name": "西苑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130105007000",
+      "name": "合作路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130105008000",
+      "name": "联盟街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130105009000",
+      "name": "石岗街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130105010000",
+      "name": "五七街道",
+      "average": 2471.7
+    },
+    {
+      "regionId": "130105011000",
+      "name": "天苑街道",
+      "average": 8.5
+    },
+    {
+      "regionId": "130105012000",
+      "name": "北苑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130105100000",
+      "name": "大郭镇",
+      "average": 1769.3
+    },
+    {
+      "regionId": "130105101000",
+      "name": "赵陵铺镇",
+      "average": 140.1
+    },
+    {
+      "regionId": "130105201000",
+      "name": "西三庄乡",
+      "average": 875.6
+    },
+    {
+      "regionId": "130105202000",
+      "name": "杜北乡",
+      "average": 11760.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

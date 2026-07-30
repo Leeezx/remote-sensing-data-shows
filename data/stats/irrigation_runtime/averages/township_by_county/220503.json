@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "220503001000",
+      "name": "桃园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220503002000",
+      "name": "东通化街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220503100000",
+      "name": "鸭园镇",
+      "average": 1175.5
+    },
+    {
+      "regionId": "220503101000",
+      "name": "铁厂镇",
+      "average": 191.2
+    },
+    {
+      "regionId": "220503102000",
+      "name": "五道江镇",
+      "average": 168.3
+    },
+    {
+      "regionId": "220503200000",
+      "name": "二道江乡",
+      "average": 23.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1.3920000000000012,
+      "color": "#bdd7e7",
+      "label": "1.392 万m³"
+    },
+    {
+      "value": 26.102000000000004,
+      "color": "#6baed6",
+      "label": "26.102 万m³"
+    },
+    {
+      "value": 165.398,
+      "color": "#3182bd",
+      "label": "165.398 万m³"
+    },
+    {
+      "value": 189.82599999999996,
+      "color": "#08519c",
+      "label": "189.826 万m³"
+    },
+    {
+      "value": 1077.0700000000004,
+      "color": "#042d60",
+      "label": "1077.070 万m³"
+    }
+  ]
+}

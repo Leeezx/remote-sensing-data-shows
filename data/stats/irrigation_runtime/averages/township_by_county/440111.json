@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "440111002000",
+      "name": "三元里街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440111003000",
+      "name": "松洲街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440111004000",
+      "name": "景泰街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440111005000",
+      "name": "同德街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440111006000",
+      "name": "黄石街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440111007000",
+      "name": "棠景街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440111008000",
+      "name": "新市街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440111009000",
+      "name": "同和街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440111010000",
+      "name": "京溪街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440111011000",
+      "name": "永平街道",
+      "average": 1146.3
+    },
+    {
+      "regionId": "440111012000",
+      "name": "嘉禾街道",
+      "average": 1235.1
+    },
+    {
+      "regionId": "440111013000",
+      "name": "均禾街道",
+      "average": 1502.3
+    },
+    {
+      "regionId": "440111014000",
+      "name": "石井街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440111015000",
+      "name": "金沙街道",
+      "average": 227.0
+    },
+    {
+      "regionId": "440111016000",
+      "name": "云城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440111017000",
+      "name": "鹤龙街道",
+      "average": 336.7
+    },
+    {
+      "regionId": "440111018000",
+      "name": "白云湖街道",
+      "average": 220.4
+    },
+    {
+      "regionId": "440111019000",
+      "name": "石门街道",
+      "average": 2438.3
+    },
+    {
+      "regionId": "440111103000",
+      "name": "人和镇",
+      "average": 59432.4
+    },
+    {
+      "regionId": "440111107000",
+      "name": "太和镇",
+      "average": 32097.5
+    },
+    {
+      "regionId": "440111108000",
+      "name": "钟落潭镇",
+      "average": 142250.0
+    },
+    {
+      "regionId": "440111113000",
+      "name": "江高镇",
+      "average": 60857.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

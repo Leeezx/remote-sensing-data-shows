@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "220103001000",
+      "name": "新发街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220103002000",
+      "name": "站前街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220103003000",
+      "name": "南广街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220103004000",
+      "name": "东广街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220103005000",
+      "name": "群英街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220103006000",
+      "name": "兴业街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220103007000",
+      "name": "凯旋街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220103008000",
+      "name": "团山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220103009000",
+      "name": "柳影街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220103010000",
+      "name": "欣园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220103100000",
+      "name": "兰家镇",
+      "average": 307.0
+    },
+    {
+      "regionId": "220103101000",
+      "name": "米沙子镇",
+      "average": 10071.0
+    },
+    {
+      "regionId": "220103102000",
+      "name": "万宝镇",
+      "average": 5747.1
+    },
+    {
+      "regionId": "220103170000",
+      "name": "兴隆山镇",
+      "average": 17.1
+    },
+    {
+      "regionId": "220103171000",
+      "name": "合隆镇",
+      "average": 82.2
+    },
+    {
+      "regionId": "220103200000",
+      "name": "奋进乡",
+      "average": 1809.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

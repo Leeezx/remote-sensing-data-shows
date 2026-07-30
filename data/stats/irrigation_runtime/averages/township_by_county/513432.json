@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513432100000",
+      "name": "光明镇",
+      "average": 818.6
+    },
+    {
+      "regionId": "513432101000",
+      "name": "冕山镇",
+      "average": 436.5
+    },
+    {
+      "regionId": "513432102000",
+      "name": "红莫镇",
+      "average": 1200.1
+    },
+    {
+      "regionId": "513432103000",
+      "name": "两河口镇",
+      "average": 1455.9
+    },
+    {
+      "regionId": "513432104000",
+      "name": "米市镇",
+      "average": 266.6
+    },
+    {
+      "regionId": "513432105000",
+      "name": "洛哈镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513432106000",
+      "name": "尼波镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513432200000",
+      "name": "拉克乡",
+      "average": 579.7
+    },
+    {
+      "regionId": "513432201000",
+      "name": "则约乡",
+      "average": 220.7
+    },
+    {
+      "regionId": "513432202000",
+      "name": "贺波洛乡",
+      "average": 3.3
+    },
+    {
+      "regionId": "513432203000",
+      "name": "鲁基乡",
+      "average": 1246.9
+    },
+    {
+      "regionId": "513432204000",
+      "name": "李子乡",
+      "average": 442.6
+    },
+    {
+      "regionId": "513432205000",
+      "name": "北山乡",
+      "average": 11.9
+    },
+    {
+      "regionId": "513432206000",
+      "name": "西河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513432207000",
+      "name": "东河乡",
+      "average": 614.2
+    },
+    {
+      "regionId": "513432208000",
+      "name": "且拖乡",
+      "average": 224.7
+    },
+    {
+      "regionId": "513432209000",
+      "name": "博洛拉达乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513432210000",
+      "name": "沙马拉达乡",
+      "average": 89.7
+    },
+    {
+      "regionId": "513432211000",
+      "name": "巴久乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513432212000",
+      "name": "洛莫乡",
+      "average": 0.2
+    },
+    {
+      "regionId": "513432213000",
+      "name": "依洛乡",
+      "average": 1.8
+    },
+    {
+      "regionId": "513432214000",
+      "name": "热柯依达乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513432215000",
+      "name": "额尼乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513432216000",
+      "name": "乐武乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

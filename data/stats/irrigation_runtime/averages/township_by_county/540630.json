@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540630100000",
+      "name": "措折罗玛镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540630200000",
+      "name": "协德乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540630201000",
+      "name": "雅曲乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540630202000",
+      "name": "嘎措乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540630203000",
+      "name": "措折强玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540630204000",
+      "name": "多玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540630205000",
+      "name": "巴岭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "652824204000",
+      "name": "祁曼塔克乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

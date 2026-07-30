@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610922100000",
+      "name": "城关镇",
+      "average": 21053.3
+    },
+    {
+      "regionId": "610922101000",
+      "name": "饶峰镇",
+      "average": 18982.0
+    },
+    {
+      "regionId": "610922102000",
+      "name": "两河镇",
+      "average": 7289.5
+    },
+    {
+      "regionId": "610922103000",
+      "name": "迎丰镇",
+      "average": 10490.8
+    },
+    {
+      "regionId": "610922104000",
+      "name": "池河镇",
+      "average": 5414.7
+    },
+    {
+      "regionId": "610922105000",
+      "name": "后柳镇",
+      "average": 416.2
+    },
+    {
+      "regionId": "610922106000",
+      "name": "喜河镇",
+      "average": 287.4
+    },
+    {
+      "regionId": "610922107000",
+      "name": "熨斗镇",
+      "average": 3026.7
+    },
+    {
+      "regionId": "610922108000",
+      "name": "云雾山镇",
+      "average": 16252.0
+    },
+    {
+      "regionId": "610922109000",
+      "name": "中池镇",
+      "average": 6546.0
+    },
+    {
+      "regionId": "610922110000",
+      "name": "曾溪镇",
+      "average": 3863.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 313.15999999999997,
+      "color": "#eff3ff",
+      "label": "313.160 万m³"
+    },
+    {
+      "value": 3127.056,
+      "color": "#bdd7e7",
+      "label": "3127.056 万m³"
+    },
+    {
+      "value": 5459.952,
+      "color": "#6baed6",
+      "label": "5459.952 万m³"
+    },
+    {
+      "value": 7259.76,
+      "color": "#3182bd",
+      "label": "7259.760 万m³"
+    },
+    {
+      "value": 15560.655999999994,
+      "color": "#08519c",
+      "label": "15560.656 万m³"
+    },
+    {
+      "value": 20639.04,
+      "color": "#042d60",
+      "label": "20639.040 万m³"
+    }
+  ]
+}

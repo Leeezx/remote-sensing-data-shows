@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "441821100000",
+      "name": "石角镇",
+      "average": 63669.7
+    },
+    {
+      "regionId": "441821101000",
+      "name": "水头镇",
+      "average": 23206.6
+    },
+    {
+      "regionId": "441821102000",
+      "name": "汤塘镇",
+      "average": 62775.8
+    },
+    {
+      "regionId": "441821103000",
+      "name": "龙山镇",
+      "average": 57170.4
+    },
+    {
+      "regionId": "441821104000",
+      "name": "高岗镇",
+      "average": 40045.0
+    },
+    {
+      "regionId": "441821107000",
+      "name": "迳头镇",
+      "average": 25149.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 23400.92,
+      "color": "#eff3ff",
+      "label": "23400.920 万m³"
+    },
+    {
+      "value": 26043.512,
+      "color": "#bdd7e7",
+      "label": "26043.512 万m³"
+    },
+    {
+      "value": 40387.508,
+      "color": "#6baed6",
+      "label": "40387.508 万m³"
+    },
+    {
+      "value": 56827.892,
+      "color": "#3182bd",
+      "label": "56827.892 万m³"
+    },
+    {
+      "value": 62439.476,
+      "color": "#08519c",
+      "label": "62439.476 万m³"
+    },
+    {
+      "value": 63580.31,
+      "color": "#042d60",
+      "label": "63580.310 万m³"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230702001000",
+      "name": "旭日街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230702004000",
+      "name": "红升街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230702006000",
+      "name": "前进街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230702007000",
+      "name": "朝阳街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230702008000",
+      "name": "东升街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230708001000",
+      "name": "美溪街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230708400000",
+      "name": "大西林林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230708401000",
+      "name": "五道库经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230708402000",
+      "name": "缓岭经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230708403000",
+      "name": "对青山经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230708404000",
+      "name": "群峦经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230708405000",
+      "name": "兰新经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230708406000",
+      "name": "顺利河林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230708407000",
+      "name": "松岭经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230708408000",
+      "name": "青山口林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230708409000",
+      "name": "金沙河林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230708410000",
+      "name": "桦皮羌子林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230708411000",
+      "name": "碧仓库林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230708412000",
+      "name": "三股流经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230708413000",
+      "name": "卧龙河林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230711401000",
+      "name": "伊东经营所",
+      "average": 296.3
+    },
+    {
+      "regionId": "230711408000",
+      "name": "伊青经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230711411000",
+      "name": "伊林经营所",
+      "average": 159.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

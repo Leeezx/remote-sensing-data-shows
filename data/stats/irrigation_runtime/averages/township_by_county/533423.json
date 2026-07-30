@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "533423001000",
+      "name": "保和镇",
+      "average": 205.2
+    },
+    {
+      "regionId": "533423002000",
+      "name": "永春乡",
+      "average": 5300.8
+    },
+    {
+      "regionId": "533423003000",
+      "name": "攀天阁乡",
+      "average": 1970.7
+    },
+    {
+      "regionId": "533423004000",
+      "name": "塔城镇",
+      "average": 5598.2
+    },
+    {
+      "regionId": "533423005000",
+      "name": "中路乡",
+      "average": 7039.1
+    },
+    {
+      "regionId": "533423006000",
+      "name": "维登乡",
+      "average": 6170.3
+    },
+    {
+      "regionId": "533423007000",
+      "name": "白济汛乡",
+      "average": 11032.2
+    },
+    {
+      "regionId": "533423008000",
+      "name": "康普乡",
+      "average": 9489.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 452.37,
+      "color": "#eff3ff",
+      "label": "452.370 万m³"
+    },
+    {
+      "value": 3582.4684,
+      "color": "#bdd7e7",
+      "label": "3582.468 万m³"
+    },
+    {
+      "value": 5547.0472,
+      "color": "#6baed6",
+      "label": "5547.047 万m³"
+    },
+    {
+      "value": 6319.7336,
+      "color": "#3182bd",
+      "label": "6319.734 万m³"
+    },
+    {
+      "value": 8303.557999999997,
+      "color": "#08519c",
+      "label": "8303.558 万m³"
+    },
+    {
+      "value": 10816.235999999999,
+      "color": "#042d60",
+      "label": "10816.236 万m³"
+    }
+  ]
+}

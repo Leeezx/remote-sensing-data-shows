@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230603001000",
+      "name": "龙凤街道",
+      "average": 8.8
+    },
+    {
+      "regionId": "230603002000",
+      "name": "兴化街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230603007000",
+      "name": "卧里屯街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230603008000",
+      "name": "东光街道",
+      "average": 12.2
+    },
+    {
+      "regionId": "230603009000",
+      "name": "三永街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230603010000",
+      "name": "开发区黎明街道",
+      "average": 1028.8
+    },
+    {
+      "regionId": "230603100000",
+      "name": "龙凤镇",
+      "average": 1048.8
+    },
+    {
+      "regionId": "230603580000",
+      "name": "高新区农场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350782001000",
+      "name": "崇安街道",
+      "average": 8561.9
+    },
+    {
+      "regionId": "350782002000",
+      "name": "新丰街道",
+      "average": 13390.2
+    },
+    {
+      "regionId": "350782003000",
+      "name": "武夷街道",
+      "average": 93160.4
+    },
+    {
+      "regionId": "350782100000",
+      "name": "星村镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350782101000",
+      "name": "兴田镇",
+      "average": 101616.2
+    },
+    {
+      "regionId": "350782102000",
+      "name": "五夫镇",
+      "average": 49300.8
+    },
+    {
+      "regionId": "350782200000",
+      "name": "上梅乡",
+      "average": 38313.5
+    },
+    {
+      "regionId": "350782201000",
+      "name": "吴屯乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350782202000",
+      "name": "岚谷乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350782203000",
+      "name": "洋庄乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "361121110000",
+      "name": "五府山镇",
+      "average": 31359.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

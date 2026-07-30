@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "411104001000",
+      "name": "天桥街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411104002000",
+      "name": "翟庄办事处",
+      "average": 31.1
+    },
+    {
+      "regionId": "411104100000",
+      "name": "召陵镇",
+      "average": 1792.8
+    },
+    {
+      "regionId": "411104101000",
+      "name": "邓襄镇",
+      "average": 2827.3
+    },
+    {
+      "regionId": "411104102000",
+      "name": "万金镇",
+      "average": 5470.3
+    },
+    {
+      "regionId": "411104103000",
+      "name": "老窝镇",
+      "average": 4046.7
+    },
+    {
+      "regionId": "411104104000",
+      "name": "姬石镇",
+      "average": 1052.5
+    },
+    {
+      "regionId": "411104201000",
+      "name": "后谢乡",
+      "average": 178.3
+    },
+    {
+      "regionId": "411104203000",
+      "name": "青年村乡",
+      "average": 7004.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 4.976,
+      "color": "#eff3ff",
+      "label": "4.976 万m³"
+    },
+    {
+      "value": 133.5512,
+      "color": "#bdd7e7",
+      "label": "133.551 万m³"
+    },
+    {
+      "value": 1224.2495999999999,
+      "color": "#6baed6",
+      "label": "1224.250 万m³"
+    },
+    {
+      "value": 2587.296,
+      "color": "#3182bd",
+      "label": "2587.296 万m³"
+    },
+    {
+      "value": 4479.474399999999,
+      "color": "#08519c",
+      "label": "4479.474 万m³"
+    },
+    {
+      "value": 6758.9439999999995,
+      "color": "#042d60",
+      "label": "6758.944 万m³"
+    }
+  ]
+}

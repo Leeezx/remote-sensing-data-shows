@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130108001000",
+      "name": "裕兴街道",
+      "average": 49.6
+    },
+    {
+      "regionId": "130108002000",
+      "name": "裕强街道",
+      "average": 899.3
+    },
+    {
+      "regionId": "130108003000",
+      "name": "东苑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130108004000",
+      "name": "建通街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130108005000",
+      "name": "槐底街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130108006000",
+      "name": "裕华路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130108007000",
+      "name": "裕东街道",
+      "average": 126.9
+    },
+    {
+      "regionId": "130108008000",
+      "name": "裕翔街道",
+      "average": 519.0
+    },
+    {
+      "regionId": "130108009000",
+      "name": "建华南街道",
+      "average": 222.3
+    },
+    {
+      "regionId": "130108010000",
+      "name": "长江街道",
+      "average": 515.2
+    },
+    {
+      "regionId": "130108011000",
+      "name": "太行街道",
+      "average": 1469.5
+    },
+    {
+      "regionId": "130108100000",
+      "name": "宋营镇",
+      "average": 10067.5
+    },
+    {
+      "regionId": "130108101000",
+      "name": "方村镇",
+      "average": 4548.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

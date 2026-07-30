@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "530425001000",
+      "name": "龙泉街道",
+      "average": 10275.7
+    },
+    {
+      "regionId": "530425002000",
+      "name": "六街街道",
+      "average": 7233.4
+    },
+    {
+      "regionId": "530425100000",
+      "name": "绿汁镇",
+      "average": 3076.5
+    },
+    {
+      "regionId": "530425201000",
+      "name": "浦贝彝族乡",
+      "average": 3664.3
+    },
+    {
+      "regionId": "530425202000",
+      "name": "十街彝族乡",
+      "average": 3183.6
+    },
+    {
+      "regionId": "530425203000",
+      "name": "铜厂彝族乡",
+      "average": 3461.9
+    },
+    {
+      "regionId": "530425204000",
+      "name": "小街乡",
+      "average": 1945.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 2080.868,
+      "color": "#eff3ff",
+      "label": "2080.868 万m³"
+    },
+    {
+      "value": 3105.6312,
+      "color": "#bdd7e7",
+      "label": "3105.631 万m³"
+    },
+    {
+      "value": 3301.5992,
+      "color": "#6baed6",
+      "label": "3301.599 万m³"
+    },
+    {
+      "value": 3578.4824,
+      "color": "#3182bd",
+      "label": "3578.482 万m³"
+    },
+    {
+      "value": 6262.604799999999,
+      "color": "#08519c",
+      "label": "6262.605 万m³"
+    },
+    {
+      "value": 9910.624,
+      "color": "#042d60",
+      "label": "9910.624 万m³"
+    }
+  ]
+}

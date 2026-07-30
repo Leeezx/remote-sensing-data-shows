@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610327110000",
+      "name": "火烧寨镇",
+      "average": 376.2
+    },
+    {
+      "regionId": "610327111000",
+      "name": "李家河镇",
+      "average": 374.3
+    },
+    {
+      "regionId": "610327113000",
+      "name": "新集川镇",
+      "average": 327.7
+    },
+    {
+      "regionId": "620881001000",
+      "name": "东华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620881100000",
+      "name": "东华镇",
+      "average": 428.7
+    },
+    {
+      "regionId": "620881101000",
+      "name": "安口镇",
+      "average": 496.8
+    },
+    {
+      "regionId": "620881102000",
+      "name": "西华镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620881103000",
+      "name": "马峡镇",
+      "average": 1781.2
+    },
+    {
+      "regionId": "620881104000",
+      "name": "策底镇",
+      "average": 489.6
+    },
+    {
+      "regionId": "620881200000",
+      "name": "上关乡",
+      "average": 8.9
+    },
+    {
+      "regionId": "620881201000",
+      "name": "神峪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620881202000",
+      "name": "山寨乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620881203000",
+      "name": "河西乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620881204000",
+      "name": "砚峡乡",
+      "average": 142.8
+    },
+    {
+      "regionId": "620881400000",
+      "name": "石堡子开发区管委会",
+      "average": 363.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

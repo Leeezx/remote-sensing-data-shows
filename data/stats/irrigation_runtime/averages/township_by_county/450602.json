@@ -1,0 +1,58 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "450602002000",
+      "name": "白沙万街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450602100000",
+      "name": "企沙镇",
+      "average": 6040.2
+    },
+    {
+      "regionId": "450602101000",
+      "name": "光坡镇",
+      "average": 6683.9
+    },
+    {
+      "regionId": "450602102000",
+      "name": "公车镇",
+      "average": 8178.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 362.412,
+      "color": "#eff3ff",
+      "label": "362.412 万m³"
+    },
+    {
+      "value": 3841.5672,
+      "color": "#bdd7e7",
+      "label": "3841.567 万m³"
+    },
+    {
+      "value": 6176.6644,
+      "color": "#6baed6",
+      "label": "6176.664 万m³"
+    },
+    {
+      "value": 6547.4356,
+      "color": "#3182bd",
+      "label": "6547.436 万m³"
+    },
+    {
+      "value": 7227.752399999999,
+      "color": "#08519c",
+      "label": "7227.752 万m³"
+    },
+    {
+      "value": 8088.354,
+      "color": "#042d60",
+      "label": "8088.354 万m³"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "532624101000",
+      "name": "麻栗镇",
+      "average": 3026.4
+    },
+    {
+      "regionId": "532624102000",
+      "name": "大坪镇",
+      "average": 2467.7
+    },
+    {
+      "regionId": "532624103000",
+      "name": "董干镇",
+      "average": 4402.6
+    },
+    {
+      "regionId": "532624104000",
+      "name": "天保镇",
+      "average": 401.4
+    },
+    {
+      "regionId": "532624201000",
+      "name": "猛硐瑶族乡",
+      "average": 1224.8
+    },
+    {
+      "regionId": "532624202000",
+      "name": "下金厂乡",
+      "average": 768.9
+    },
+    {
+      "regionId": "532624203000",
+      "name": "八布乡",
+      "average": 81.8
+    },
+    {
+      "regionId": "532624204000",
+      "name": "六河乡",
+      "average": 3295.9
+    },
+    {
+      "regionId": "532624205000",
+      "name": "杨万乡",
+      "average": 699.7
+    },
+    {
+      "regionId": "532624206000",
+      "name": "铁厂乡",
+      "average": 1848.5
+    },
+    {
+      "regionId": "532624207000",
+      "name": "马街乡",
+      "average": 2833.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 145.72,
+      "color": "#eff3ff",
+      "label": "145.720 万m³"
+    },
+    {
+      "value": 708.004,
+      "color": "#bdd7e7",
+      "label": "708.004 万m³"
+    },
+    {
+      "value": 1249.748,
+      "color": "#6baed6",
+      "label": "1249.748 万m³"
+    },
+    {
+      "value": 2442.932,
+      "color": "#3182bd",
+      "label": "2442.932 万m³"
+    },
+    {
+      "value": 3003.2639999999997,
+      "color": "#08519c",
+      "label": "3003.264 万m³"
+    },
+    {
+      "value": 4181.260000000001,
+      "color": "#042d60",
+      "label": "4181.260 万m³"
+    }
+  ]
+}

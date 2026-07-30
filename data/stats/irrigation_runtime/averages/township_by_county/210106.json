@@ -1,0 +1,138 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210106001000",
+      "name": "昆明湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210106003000",
+      "name": "工人村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210106005000",
+      "name": "七路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210106007000",
+      "name": "启工街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210106013000",
+      "name": "笃工街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210106015000",
+      "name": "兴华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210106018000",
+      "name": "兴工街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210106019000",
+      "name": "霁虹街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210106020000",
+      "name": "凌空街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210106021000",
+      "name": "重工街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210106022000",
+      "name": "艳粉街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210106023000",
+      "name": "保工街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210106024000",
+      "name": "兴顺街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210106025000",
+      "name": "贵和街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210106026000",
+      "name": "大青中朝友谊街道",
+      "average": 628.9
+    },
+    {
+      "regionId": "210106027000",
+      "name": "翟家街道",
+      "average": 1025.7
+    },
+    {
+      "regionId": "210106028000",
+      "name": "西三环街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210106029000",
+      "name": "大潘街道",
+      "average": 4852.9
+    },
+    {
+      "regionId": "210106030000",
+      "name": "彭驿站街道",
+      "average": 1724.9
+    },
+    {
+      "regionId": "210106031000",
+      "name": "高花街道",
+      "average": 6515.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

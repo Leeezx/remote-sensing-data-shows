@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510727100000",
+      "name": "龙安镇",
+      "average": 3823.9
+    },
+    {
+      "regionId": "510727101000",
+      "name": "古城镇",
+      "average": 3507.5
+    },
+    {
+      "regionId": "510727102000",
+      "name": "南坝镇",
+      "average": 3534.0
+    },
+    {
+      "regionId": "510727103000",
+      "name": "响岩镇",
+      "average": 3911.5
+    },
+    {
+      "regionId": "510727104000",
+      "name": "平通镇",
+      "average": 1385.0
+    },
+    {
+      "regionId": "510727105000",
+      "name": "豆叩镇",
+      "average": 1221.7
+    },
+    {
+      "regionId": "510727106000",
+      "name": "大印镇",
+      "average": 300.9
+    },
+    {
+      "regionId": "510727107000",
+      "name": "大桥镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510727108000",
+      "name": "水晶镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510727200000",
+      "name": "高村乡",
+      "average": 3254.6
+    },
+    {
+      "regionId": "510727201000",
+      "name": "水田羌族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510727202000",
+      "name": "坝子乡",
+      "average": 231.7
+    },
+    {
+      "regionId": "510727203000",
+      "name": "水观乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510727204000",
+      "name": "平南羌族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510727205000",
+      "name": "徐塘羌族乡",
+      "average": 310.0
+    },
+    {
+      "regionId": "510727206000",
+      "name": "锁江羌族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510727207000",
+      "name": "土城藏族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510727208000",
+      "name": "旧堡羌族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510727209000",
+      "name": "阔达藏族乡",
+      "average": 59.5
+    },
+    {
+      "regionId": "510727210000",
+      "name": "黄羊关藏族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510727211000",
+      "name": "虎牙藏族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510727212000",
+      "name": "泗耳藏族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510727213000",
+      "name": "白马藏族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510727214000",
+      "name": "木座藏族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510727215000",
+      "name": "木皮藏族乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

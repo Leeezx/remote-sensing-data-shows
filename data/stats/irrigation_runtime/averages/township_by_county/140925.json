@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140925100000",
+      "name": "凤凰镇",
+      "average": 278.5
+    },
+    {
+      "regionId": "140925101000",
+      "name": "阳方口镇",
+      "average": 142.8
+    },
+    {
+      "regionId": "140925102000",
+      "name": "东寨镇",
+      "average": 783.9
+    },
+    {
+      "regionId": "140925103000",
+      "name": "石家庄镇",
+      "average": 676.1
+    },
+    {
+      "regionId": "140925200000",
+      "name": "薛家洼乡",
+      "average": 68.5
+    },
+    {
+      "regionId": "140925201000",
+      "name": "余庄乡",
+      "average": 258.1
+    },
+    {
+      "regionId": "140925202000",
+      "name": "涔山乡",
+      "average": 715.7
+    },
+    {
+      "regionId": "140925203000",
+      "name": "化北屯乡",
+      "average": 1421.5
+    },
+    {
+      "regionId": "140925204000",
+      "name": "西马坊乡",
+      "average": 557.1
+    },
+    {
+      "regionId": "140925205000",
+      "name": "新堡乡",
+      "average": 913.3
+    },
+    {
+      "regionId": "140925206000",
+      "name": "迭台寺乡",
+      "average": 837.1
+    },
+    {
+      "regionId": "140925207000",
+      "name": "圪廖乡",
+      "average": 230.3
+    },
+    {
+      "regionId": "140925208000",
+      "name": "怀道乡",
+      "average": 97.9
+    },
+    {
+      "regionId": "140925209000",
+      "name": "东马坊乡",
+      "average": 1.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 18.994000000000003,
+      "color": "#eff3ff",
+      "label": "18.994 万m³"
+    },
+    {
+      "value": 131.8444,
+      "color": "#bdd7e7",
+      "label": "131.844 万m³"
+    },
+    {
+      "value": 263.24080000000004,
+      "color": "#6baed6",
+      "label": "263.241 万m³"
+    },
+    {
+      "value": 646.112,
+      "color": "#3182bd",
+      "label": "646.112 万m³"
+    },
+    {
+      "value": 796.8808,
+      "color": "#08519c",
+      "label": "796.881 万m³"
+    },
+    {
+      "value": 1289.3680000000002,
+      "color": "#042d60",
+      "label": "1289.368 万m³"
+    }
+  ]
+}

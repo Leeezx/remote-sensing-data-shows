@@ -1,0 +1,233 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "310115004000",
+      "name": "潍坊新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310115005000",
+      "name": "陆家嘴街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310115007000",
+      "name": "周家渡街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310115008000",
+      "name": "塘桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310115009000",
+      "name": "上钢新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310115010000",
+      "name": "南码头路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310115011000",
+      "name": "沪东新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310115012000",
+      "name": "金杨新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310115013000",
+      "name": "洋泾街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310115014000",
+      "name": "浦兴路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310115015000",
+      "name": "东明路街道",
+      "average": 12.8
+    },
+    {
+      "regionId": "310115016000",
+      "name": "花木街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310115103000",
+      "name": "川沙新镇",
+      "average": 30618.8
+    },
+    {
+      "regionId": "310115104000",
+      "name": "高桥镇",
+      "average": 4055.9
+    },
+    {
+      "regionId": "310115105000",
+      "name": "北蔡镇",
+      "average": 1571.2
+    },
+    {
+      "regionId": "310115110000",
+      "name": "合庆镇",
+      "average": 5952.1
+    },
+    {
+      "regionId": "310115114000",
+      "name": "唐镇",
+      "average": 5378.1
+    },
+    {
+      "regionId": "310115117000",
+      "name": "曹路镇",
+      "average": 6993.0
+    },
+    {
+      "regionId": "310115120000",
+      "name": "金桥镇",
+      "average": 789.1
+    },
+    {
+      "regionId": "310115121000",
+      "name": "高行镇",
+      "average": 927.2
+    },
+    {
+      "regionId": "310115123000",
+      "name": "高东镇",
+      "average": 1414.7
+    },
+    {
+      "regionId": "310115125000",
+      "name": "张江镇",
+      "average": 6182.6
+    },
+    {
+      "regionId": "310115130000",
+      "name": "三林镇",
+      "average": 4200.8
+    },
+    {
+      "regionId": "310115131000",
+      "name": "惠南镇",
+      "average": 19649.6
+    },
+    {
+      "regionId": "310115132000",
+      "name": "周浦镇",
+      "average": 10556.5
+    },
+    {
+      "regionId": "310115133000",
+      "name": "新场镇",
+      "average": 18657.2
+    },
+    {
+      "regionId": "310115134000",
+      "name": "大团镇",
+      "average": 10653.2
+    },
+    {
+      "regionId": "310115136000",
+      "name": "康桥镇",
+      "average": 11309.3
+    },
+    {
+      "regionId": "310115137000",
+      "name": "航头镇",
+      "average": 20843.4
+    },
+    {
+      "regionId": "310115139000",
+      "name": "祝桥镇",
+      "average": 26329.2
+    },
+    {
+      "regionId": "310115140000",
+      "name": "泥城镇",
+      "average": 29375.2
+    },
+    {
+      "regionId": "310115141000",
+      "name": "宣桥镇",
+      "average": 11677.2
+    },
+    {
+      "regionId": "310115142000",
+      "name": "书院镇",
+      "average": 35588.0
+    },
+    {
+      "regionId": "310115143000",
+      "name": "万祥镇",
+      "average": 12048.2
+    },
+    {
+      "regionId": "310115144000",
+      "name": "老港镇",
+      "average": 15252.2
+    },
+    {
+      "regionId": "310115145000",
+      "name": "南汇新城镇",
+      "average": 2232.7
+    },
+    {
+      "regionId": "310115501000",
+      "name": "外高桥保税区",
+      "average": 610.7
+    },
+    {
+      "regionId": "310115502000",
+      "name": "金桥经济技术开发区",
+      "average": 721.6
+    },
+    {
+      "regionId": "310115503000",
+      "name": "张江高科技园区",
+      "average": 721.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

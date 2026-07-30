@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610623100000",
+      "name": "瓦窑堡镇",
+      "average": 1603.3
+    },
+    {
+      "regionId": "610623101000",
+      "name": "杨家园子镇",
+      "average": 1109.3
+    },
+    {
+      "regionId": "610623102000",
+      "name": "玉家湾镇",
+      "average": 88.8
+    },
+    {
+      "regionId": "610623103000",
+      "name": "安定镇",
+      "average": 616.6
+    },
+    {
+      "regionId": "610623104000",
+      "name": "马家砭镇",
+      "average": 379.3
+    },
+    {
+      "regionId": "610623105000",
+      "name": "南沟岔镇",
+      "average": 114.3
+    },
+    {
+      "regionId": "610623106000",
+      "name": "涧峪岔镇",
+      "average": 443.1
+    },
+    {
+      "regionId": "610623107000",
+      "name": "李家岔镇",
+      "average": 265.1
+    },
+    {
+      "regionId": "610623108000",
+      "name": "余家坪镇",
+      "average": 3961.8
+    },
+    {
+      "regionId": "610623201000",
+      "name": "史家畔乡",
+      "average": 439.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 93.39,
+      "color": "#eff3ff",
+      "label": "93.390 万m³"
+    },
+    {
+      "value": 251.2264,
+      "color": "#bdd7e7",
+      "label": "251.226 万m³"
+    },
+    {
+      "value": 417.6508,
+      "color": "#6baed6",
+      "label": "417.651 万m³"
+    },
+    {
+      "value": 506.254,
+      "color": "#3182bd",
+      "label": "506.254 万m³"
+    },
+    {
+      "value": 1154.7479999999998,
+      "color": "#08519c",
+      "label": "1154.748 万m³"
+    },
+    {
+      "value": 3537.270000000001,
+      "color": "#042d60",
+      "label": "3537.270 万m³"
+    }
+  ]
+}

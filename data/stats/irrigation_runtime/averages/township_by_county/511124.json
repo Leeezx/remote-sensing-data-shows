@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511124100000",
+      "name": "研城镇",
+      "average": 4539.0
+    },
+    {
+      "regionId": "511124101000",
+      "name": "马踏镇",
+      "average": 4386.6
+    },
+    {
+      "regionId": "511124102000",
+      "name": "竹园镇",
+      "average": 2300.0
+    },
+    {
+      "regionId": "511124103000",
+      "name": "研经镇",
+      "average": 4294.0
+    },
+    {
+      "regionId": "511124104000",
+      "name": "周坡镇",
+      "average": 5794.9
+    },
+    {
+      "regionId": "511124105000",
+      "name": "千佛镇",
+      "average": 3667.9
+    },
+    {
+      "regionId": "511124106000",
+      "name": "王村镇",
+      "average": 2482.4
+    },
+    {
+      "regionId": "511124107000",
+      "name": "三江镇",
+      "average": 2028.1
+    },
+    {
+      "regionId": "511124108000",
+      "name": "东林镇",
+      "average": 2563.8
+    },
+    {
+      "regionId": "511124109000",
+      "name": "磨池镇",
+      "average": 1689.5
+    },
+    {
+      "regionId": "511124200000",
+      "name": "集益乡",
+      "average": 4003.3
+    },
+    {
+      "regionId": "511124201000",
+      "name": "纯复乡",
+      "average": 3833.3
+    },
+    {
+      "regionId": "511124202000",
+      "name": "三教乡",
+      "average": 2070.9
+    },
+    {
+      "regionId": "511124203000",
+      "name": "高滩乡",
+      "average": 2741.2
+    },
+    {
+      "regionId": "511124204000",
+      "name": "宝五乡",
+      "average": 4898.8
+    },
+    {
+      "regionId": "511124205000",
+      "name": "四合乡",
+      "average": 2348.5
+    },
+    {
+      "regionId": "511124206000",
+      "name": "黄钵乡",
+      "average": 1751.2
+    },
+    {
+      "regionId": "511124207000",
+      "name": "胜泉乡",
+      "average": 1248.0
+    },
+    {
+      "regionId": "511124208000",
+      "name": "门坎乡",
+      "average": 1739.3
+    },
+    {
+      "regionId": "511124209000",
+      "name": "石牛乡",
+      "average": 983.1
+    },
+    {
+      "regionId": "511124210000",
+      "name": "高凤乡",
+      "average": 3108.2
+    },
+    {
+      "regionId": "511124211000",
+      "name": "金峰乡",
+      "average": 2211.8
+    },
+    {
+      "regionId": "511124212000",
+      "name": "分全乡",
+      "average": 1659.1
+    },
+    {
+      "regionId": "511124213000",
+      "name": "镇阳乡",
+      "average": 2152.4
+    },
+    {
+      "regionId": "511124214000",
+      "name": "天云乡",
+      "average": 1448.5
+    },
+    {
+      "regionId": "511124215000",
+      "name": "乌抛乡",
+      "average": 1692.3
+    },
+    {
+      "regionId": "511124216000",
+      "name": "大佛乡",
+      "average": 3998.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 1120.848,
+      "color": "#eff3ff",
+      "label": "1120.848 万m³"
+    },
+    {
+      "value": 1716.364,
+      "color": "#bdd7e7",
+      "label": "1716.364 万m³"
+    },
+    {
+      "value": 2182.3376000000003,
+      "color": "#6baed6",
+      "label": "2182.338 万m³"
+    },
+    {
+      "value": 2651.7904,
+      "color": "#3182bd",
+      "label": "2651.790 万m³"
+    },
+    {
+      "value": 4000.6376,
+      "color": "#08519c",
+      "label": "4000.638 万m³"
+    },
+    {
+      "value": 5328.928,
+      "color": "#042d60",
+      "label": "5328.928 万m³"
+    }
+  ]
+}

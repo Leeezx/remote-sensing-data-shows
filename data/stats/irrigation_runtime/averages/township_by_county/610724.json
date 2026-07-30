@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610724100000",
+      "name": "城关镇",
+      "average": 21932.7
+    },
+    {
+      "regionId": "610724101000",
+      "name": "杨河镇",
+      "average": 10510.8
+    },
+    {
+      "regionId": "610724102000",
+      "name": "柳树镇",
+      "average": 13142.6
+    },
+    {
+      "regionId": "610724103000",
+      "name": "沙河镇",
+      "average": 18496.1
+    },
+    {
+      "regionId": "610724104000",
+      "name": "私渡镇",
+      "average": 6010.6
+    },
+    {
+      "regionId": "610724105000",
+      "name": "桑园镇",
+      "average": 6913.9
+    },
+    {
+      "regionId": "610724106000",
+      "name": "白龙塘镇",
+      "average": 9655.1
+    },
+    {
+      "regionId": "610724108000",
+      "name": "峡口镇",
+      "average": 9992.8
+    },
+    {
+      "regionId": "610724109000",
+      "name": "堰口镇",
+      "average": 22313.1
+    },
+    {
+      "regionId": "610724110000",
+      "name": "茶镇",
+      "average": 9.0
+    },
+    {
+      "regionId": "610724111000",
+      "name": "高川镇",
+      "average": 3535.5
+    },
+    {
+      "regionId": "610724112000",
+      "name": "两河口镇",
+      "average": 318.1
+    },
+    {
+      "regionId": "610724113000",
+      "name": "五里坝镇",
+      "average": 925.7
+    },
+    {
+      "regionId": "610724114000",
+      "name": "大河乡",
+      "average": 919.1
+    },
+    {
+      "regionId": "610724200000",
+      "name": "钟家沟乡",
+      "average": 5664.1
+    },
+    {
+      "regionId": "610724202000",
+      "name": "罗镇乡",
+      "average": 973.4
+    },
+    {
+      "regionId": "610724206000",
+      "name": "子午乡",
+      "average": 5914.7
+    },
+    {
+      "regionId": "610724207000",
+      "name": "白勉峡乡",
+      "average": 195.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 72.444,
+      "color": "#eff3ff",
+      "label": "72.444 万m³"
+    },
+    {
+      "value": 923.0864,
+      "color": "#bdd7e7",
+      "label": "923.086 万m³"
+    },
+    {
+      "value": 5383.1248,
+      "color": "#6baed6",
+      "label": "5383.125 万m³"
+    },
+    {
+      "value": 7275.738399999998,
+      "color": "#3182bd",
+      "label": "7275.738 万m³"
+    },
+    {
+      "value": 11552.992799999996,
+      "color": "#08519c",
+      "label": "11552.993 万m³"
+    },
+    {
+      "value": 22183.764,
+      "color": "#042d60",
+      "label": "22183.764 万m³"
+    }
+  ]
+}

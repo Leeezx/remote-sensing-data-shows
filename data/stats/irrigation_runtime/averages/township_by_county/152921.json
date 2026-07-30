@@ -1,0 +1,193 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150624403000",
+      "name": "蒙西工业园区",
+      "average": 35.7
+    },
+    {
+      "regionId": "152921102000",
+      "name": "温都尔勒图镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921104000",
+      "name": "乌斯太镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921105000",
+      "name": "巴润别立镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921110000",
+      "name": "巴彦浩特镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921111000",
+      "name": "嘉尔嘎勒赛汉镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921112000",
+      "name": "吉兰泰镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921113000",
+      "name": "宗别立镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921114000",
+      "name": "敖伦布拉格镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921115000",
+      "name": "腾格里额里斯镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921203000",
+      "name": "巴彦木仁苏木乡",
+      "average": 18.0
+    },
+    {
+      "regionId": "152921213000",
+      "name": "乌力吉苏木乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921214000",
+      "name": "巴彦诺日公苏木乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921215000",
+      "name": "额尔克哈什哈苏木乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921216000",
+      "name": "银根苏木",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921217000",
+      "name": "超格图呼热苏木",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921402000",
+      "name": "巴彦浩特额鲁特街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921403000",
+      "name": "巴彦浩特南环路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921404000",
+      "name": "巴彦浩特新华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "152921405000",
+      "name": "巴彦浩特王府街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620602204000",
+      "name": "长城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620621104000",
+      "name": "东湖镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620622105000",
+      "name": "海子滩镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "640105101000",
+      "name": "镇北堡镇",
+      "average": 34298.6
+    },
+    {
+      "regionId": "640121104000",
+      "name": "闽宁镇",
+      "average": 8005.4
+    },
+    {
+      "regionId": "640122103000",
+      "name": "洪广镇",
+      "average": 76193.3
+    },
+    {
+      "regionId": "640202007000",
+      "name": "白芨沟街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "640221105000",
+      "name": "崇岗镇",
+      "average": 63620.4
+    },
+    {
+      "regionId": "640381101000",
+      "name": "大坝镇",
+      "average": 132085.6
+    },
+    {
+      "regionId": "640381102000",
+      "name": "青铜峡镇",
+      "average": 68009.0
+    },
+    {
+      "regionId": "640502108000",
+      "name": "迎水桥镇",
+      "average": 33103.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

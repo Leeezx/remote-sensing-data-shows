@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "141125100000",
+      "name": "柳林镇",
+      "average": 959.3
+    },
+    {
+      "regionId": "141125101000",
+      "name": "穆村镇",
+      "average": 130.5
+    },
+    {
+      "regionId": "141125102000",
+      "name": "薛村镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "141125103000",
+      "name": "庄上镇",
+      "average": 3325.1
+    },
+    {
+      "regionId": "141125104000",
+      "name": "留誉镇",
+      "average": 4659.4
+    },
+    {
+      "regionId": "141125105000",
+      "name": "三交镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "141125106000",
+      "name": "成家庄镇",
+      "average": 281.8
+    },
+    {
+      "regionId": "141125107000",
+      "name": "孟门镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "141125200000",
+      "name": "李家湾乡",
+      "average": 1254.1
+    },
+    {
+      "regionId": "141125201000",
+      "name": "贾家垣乡",
+      "average": 785.7
+    },
+    {
+      "regionId": "141125202000",
+      "name": "陈家湾乡",
+      "average": 6151.7
+    },
+    {
+      "regionId": "141125203000",
+      "name": "金家庄乡",
+      "average": 7253.5
+    },
+    {
+      "regionId": "141125204000",
+      "name": "高家沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "141125205000",
+      "name": "石西乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "141125206000",
+      "name": "王家沟乡",
+      "average": 620.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

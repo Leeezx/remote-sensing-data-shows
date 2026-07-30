@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "330329100000",
+      "name": "罗阳镇",
+      "average": 29272.0
+    },
+    {
+      "regionId": "330329101000",
+      "name": "司前畲族镇",
+      "average": 8486.0
+    },
+    {
+      "regionId": "330329102000",
+      "name": "百丈镇",
+      "average": 2619.3
+    },
+    {
+      "regionId": "330329103000",
+      "name": "筱村镇",
+      "average": 9214.4
+    },
+    {
+      "regionId": "330329104000",
+      "name": "泗溪镇",
+      "average": 12623.2
+    },
+    {
+      "regionId": "330329105000",
+      "name": "彭溪镇",
+      "average": 6040.4
+    },
+    {
+      "regionId": "330329106000",
+      "name": "雅阳镇",
+      "average": 19734.5
+    },
+    {
+      "regionId": "330329107000",
+      "name": "仕阳镇",
+      "average": 19822.0
+    },
+    {
+      "regionId": "330329109000",
+      "name": "三魁镇",
+      "average": 19480.9
+    },
+    {
+      "regionId": "330329204000",
+      "name": "竹里畲族乡",
+      "average": 293.8
+    },
+    {
+      "regionId": "330329400000",
+      "name": "乌岩岭自然保护区",
+      "average": 0.0
+    },
+    {
+      "regionId": "350924104000",
+      "name": "犀溪镇",
+      "average": 184.1
+    },
+    {
+      "regionId": "350926200000",
+      "name": "城郊乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350926206000",
+      "name": "英山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350981202000",
+      "name": "范坑乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350982201000",
+      "name": "叠石乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140829100000",
+      "name": "圣人涧镇",
+      "average": 19953.7
+    },
+    {
+      "regionId": "140829105000",
+      "name": "三门镇",
+      "average": 4859.0
+    },
+    {
+      "regionId": "411202001000",
+      "name": "湖滨街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411202002000",
+      "name": "前进街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411202003000",
+      "name": "车站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411202004000",
+      "name": "涧河街道",
+      "average": 78.2
+    },
+    {
+      "regionId": "411202006000",
+      "name": "会兴街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411202007000",
+      "name": "崖底街道",
+      "average": 1396.9
+    },
+    {
+      "regionId": "411202201000",
+      "name": "交口乡",
+      "average": 10896.2
+    },
+    {
+      "regionId": "411202202000",
+      "name": "磁钟乡",
+      "average": 3496.0
+    },
+    {
+      "regionId": "411202203000",
+      "name": "高庙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "411202560000",
+      "name": "河南三门峡经济开发区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

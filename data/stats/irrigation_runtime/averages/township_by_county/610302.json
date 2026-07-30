@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610302001000",
+      "name": "金陵街道",
+      "average": 90.7
+    },
+    {
+      "regionId": "610302002000",
+      "name": "经二路街道",
+      "average": 10.4
+    },
+    {
+      "regionId": "610302003000",
+      "name": "清姜街道",
+      "average": 3.2
+    },
+    {
+      "regionId": "610302004000",
+      "name": "姜谭街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610302005000",
+      "name": "桥南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610302100000",
+      "name": "马营镇",
+      "average": 3139.4
+    },
+    {
+      "regionId": "610302101000",
+      "name": "石鼓镇",
+      "average": 1302.7
+    },
+    {
+      "regionId": "610302102000",
+      "name": "神农镇",
+      "average": 316.5
+    },
+    {
+      "regionId": "610302103000",
+      "name": "高家镇",
+      "average": 829.0
+    },
+    {
+      "regionId": "610302104000",
+      "name": "八鱼镇",
+      "average": 3529.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2.9055999999999997,
+      "color": "#bdd7e7",
+      "label": "2.906 万m³"
+    },
+    {
+      "value": 61.47079999999998,
+      "color": "#6baed6",
+      "label": "61.471 万m³"
+    },
+    {
+      "value": 503.04999999999995,
+      "color": "#3182bd",
+      "label": "503.050 万m³"
+    },
+    {
+      "value": 1471.6763999999994,
+      "color": "#08519c",
+      "label": "1471.676 万m³"
+    },
+    {
+      "value": 3459.446,
+      "color": "#042d60",
+      "label": "3459.446 万m³"
+    }
+  ]
+}

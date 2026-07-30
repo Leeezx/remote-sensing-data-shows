@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230202001000",
+      "name": "五龙街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230202002000",
+      "name": "湖滨街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230202003000",
+      "name": "江安街道",
+      "average": 40.3
+    },
+    {
+      "regionId": "230202004000",
+      "name": "正阳街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230202005000",
+      "name": "彩虹街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230202006000",
+      "name": "南航街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230202007000",
+      "name": "大民街道",
+      "average": 2457.3
+    },
+    {
+      "regionId": "230202579000",
+      "name": "齐齐哈尔局直",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

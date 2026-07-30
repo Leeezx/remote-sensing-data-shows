@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513322100000",
+      "name": "泸桥镇",
+      "average": 344.2
+    },
+    {
+      "regionId": "513322101000",
+      "name": "冷碛镇",
+      "average": 287.6
+    },
+    {
+      "regionId": "513322102000",
+      "name": "兴隆镇",
+      "average": 48.9
+    },
+    {
+      "regionId": "513322103000",
+      "name": "磨西镇",
+      "average": 1554.9
+    },
+    {
+      "regionId": "513322200000",
+      "name": "岚安乡",
+      "average": 18.3
+    },
+    {
+      "regionId": "513322201000",
+      "name": "烹坝乡",
+      "average": 109.1
+    },
+    {
+      "regionId": "513322202000",
+      "name": "田坝乡",
+      "average": 1230.6
+    },
+    {
+      "regionId": "513322203000",
+      "name": "杵坭乡",
+      "average": 793.4
+    },
+    {
+      "regionId": "513322204000",
+      "name": "加郡乡",
+      "average": 46.4
+    },
+    {
+      "regionId": "513322205000",
+      "name": "德威乡",
+      "average": 530.1
+    },
+    {
+      "regionId": "513322206000",
+      "name": "新兴乡",
+      "average": 794.3
+    },
+    {
+      "regionId": "513322207000",
+      "name": "得妥乡",
+      "average": 1013.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 24.482,
+      "color": "#eff3ff",
+      "label": "24.482 万m³"
+    },
+    {
+      "value": 68.88639999999998,
+      "color": "#bdd7e7",
+      "label": "68.886 万m³"
+    },
+    {
+      "value": 312.73040000000003,
+      "color": "#6baed6",
+      "label": "312.730 万m³"
+    },
+    {
+      "value": 676.4948,
+      "color": "#3182bd",
+      "label": "676.495 万m³"
+    },
+    {
+      "value": 940.7255999999999,
+      "color": "#08519c",
+      "label": "940.726 万m³"
+    },
+    {
+      "value": 1483.5539999999999,
+      "color": "#042d60",
+      "label": "1483.554 万m³"
+    }
+  ]
+}

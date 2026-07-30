@@ -1,0 +1,198 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510725100000",
+      "name": "文昌镇",
+      "average": 8252.3
+    },
+    {
+      "regionId": "510725101000",
+      "name": "长卿镇",
+      "average": 6474.4
+    },
+    {
+      "regionId": "510725102000",
+      "name": "许州镇",
+      "average": 10876.8
+    },
+    {
+      "regionId": "510725103000",
+      "name": "黎雅镇",
+      "average": 4290.6
+    },
+    {
+      "regionId": "510725104000",
+      "name": "白云镇",
+      "average": 8386.8
+    },
+    {
+      "regionId": "510725105000",
+      "name": "卧龙镇",
+      "average": 6475.8
+    },
+    {
+      "regionId": "510725106000",
+      "name": "观义镇",
+      "average": 6045.3
+    },
+    {
+      "regionId": "510725107000",
+      "name": "玛瑙镇",
+      "average": 4431.3
+    },
+    {
+      "regionId": "510725108000",
+      "name": "石牛镇",
+      "average": 9593.5
+    },
+    {
+      "regionId": "510725109000",
+      "name": "自强镇",
+      "average": 3939.4
+    },
+    {
+      "regionId": "510725110000",
+      "name": "仁和镇",
+      "average": 2493.0
+    },
+    {
+      "regionId": "510725200000",
+      "name": "东石乡",
+      "average": 3918.2
+    },
+    {
+      "regionId": "510725201000",
+      "name": "三泉乡",
+      "average": 4844.1
+    },
+    {
+      "regionId": "510725202000",
+      "name": "宏仁乡",
+      "average": 6812.4
+    },
+    {
+      "regionId": "510725203000",
+      "name": "小垭乡",
+      "average": 6939.5
+    },
+    {
+      "regionId": "510725204000",
+      "name": "演武乡",
+      "average": 5178.6
+    },
+    {
+      "regionId": "510725205000",
+      "name": "仙峰乡",
+      "average": 4497.4
+    },
+    {
+      "regionId": "510725206000",
+      "name": "双板乡",
+      "average": 7219.7
+    },
+    {
+      "regionId": "510725207000",
+      "name": "豢龙乡",
+      "average": 2326.4
+    },
+    {
+      "regionId": "510725208000",
+      "name": "双峰乡",
+      "average": 6112.4
+    },
+    {
+      "regionId": "510725209000",
+      "name": "交泰乡",
+      "average": 5217.1
+    },
+    {
+      "regionId": "510725210000",
+      "name": "金龙场乡",
+      "average": 5149.1
+    },
+    {
+      "regionId": "510725211000",
+      "name": "石台乡",
+      "average": 7037.5
+    },
+    {
+      "regionId": "510725212000",
+      "name": "仙鹅乡",
+      "average": 2348.7
+    },
+    {
+      "regionId": "510725213000",
+      "name": "马鸣乡",
+      "average": 9769.3
+    },
+    {
+      "regionId": "510725214000",
+      "name": "马迎乡",
+      "average": 4387.1
+    },
+    {
+      "regionId": "510725215000",
+      "name": "二洞乡",
+      "average": 3811.0
+    },
+    {
+      "regionId": "510725216000",
+      "name": "建兴乡",
+      "average": 6206.0
+    },
+    {
+      "regionId": "510725217000",
+      "name": "宝石乡",
+      "average": 6970.2
+    },
+    {
+      "regionId": "510725218000",
+      "name": "定远乡",
+      "average": 11738.6
+    },
+    {
+      "regionId": "510725219000",
+      "name": "大新乡",
+      "average": 2851.7
+    },
+    {
+      "regionId": "510725220000",
+      "name": "文兴乡",
+      "average": 7144.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 2340.226,
+      "color": "#eff3ff",
+      "label": "2340.226 万m³"
+    },
+    {
+      "value": 4140.2864,
+      "color": "#bdd7e7",
+      "label": "4140.286 万m³"
+    },
+    {
+      "value": 5164.558,
+      "color": "#6baed6",
+      "label": "5164.558 万m³"
+    },
+    {
+      "value": 6475.0664,
+      "color": "#3182bd",
+      "label": "6475.066 万m³"
+    },
+    {
+      "value": 7176.9144,
+      "color": "#08519c",
+      "label": "7176.914 万m³"
+    },
+    {
+      "value": 11204.284,
+      "color": "#042d60",
+      "label": "11204.284 万m³"
+    }
+  ]
+}

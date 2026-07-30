@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350624100000",
+      "name": "南诏镇",
+      "average": 4924.5
+    },
+    {
+      "regionId": "350624101000",
+      "name": "四都镇",
+      "average": 33074.0
+    },
+    {
+      "regionId": "350624102000",
+      "name": "梅岭镇",
+      "average": 21862.0
+    },
+    {
+      "regionId": "350624103000",
+      "name": "桥东镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350624104000",
+      "name": "深桥镇",
+      "average": 56633.4
+    },
+    {
+      "regionId": "350624106000",
+      "name": "霞葛镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350624107000",
+      "name": "官陂镇",
+      "average": 35683.2
+    },
+    {
+      "regionId": "350624108000",
+      "name": "秀篆镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350624200000",
+      "name": "金星乡",
+      "average": 19802.2
+    },
+    {
+      "regionId": "350624201000",
+      "name": "西潭乡",
+      "average": 32655.6
+    },
+    {
+      "regionId": "350624202000",
+      "name": "白洋乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350624203000",
+      "name": "建设乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350624204000",
+      "name": "红星乡",
+      "average": 13045.4
+    },
+    {
+      "regionId": "350624205000",
+      "name": "梅洲乡",
+      "average": 10435.8
+    },
+    {
+      "regionId": "350624401000",
+      "name": "国营西山农场",
+      "average": 126.9
+    },
+    {
+      "regionId": "350624402000",
+      "name": "国营湖内林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "350624403000",
+      "name": "岭下溪国有防护林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "350624501000",
+      "name": "诏安工业园区管委会",
+      "average": 0.0
+    },
+    {
+      "regionId": "350624502000",
+      "name": "诏安金都工业集中区管委会",
+      "average": 3646.8
+    },
+    {
+      "regionId": "445122100000",
+      "name": "黄冈镇",
+      "average": 19598.2
+    },
+    {
+      "regionId": "445122106000",
+      "name": "建饶镇",
+      "average": 1831.9
+    },
+    {
+      "regionId": "445122114000",
+      "name": "新圩镇",
+      "average": 35528.3
+    },
+    {
+      "regionId": "445122119000",
+      "name": "联饶镇",
+      "average": 52640.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

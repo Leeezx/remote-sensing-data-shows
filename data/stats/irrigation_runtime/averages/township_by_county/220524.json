@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210423106000",
+      "name": "南山城镇",
+      "average": 6641.6
+    },
+    {
+      "regionId": "210423107000",
+      "name": "湾甸子镇",
+      "average": 698.6
+    },
+    {
+      "regionId": "220524100000",
+      "name": "柳河镇",
+      "average": 7265.5
+    },
+    {
+      "regionId": "220524101000",
+      "name": "三源浦朝鲜族镇",
+      "average": 7154.5
+    },
+    {
+      "regionId": "220524102000",
+      "name": "五道沟镇",
+      "average": 6438.4
+    },
+    {
+      "regionId": "220524103000",
+      "name": "驼腰岭镇",
+      "average": 3616.6
+    },
+    {
+      "regionId": "220524104000",
+      "name": "孤山子镇",
+      "average": 7026.9
+    },
+    {
+      "regionId": "220524105000",
+      "name": "圣水河子镇",
+      "average": 4750.5
+    },
+    {
+      "regionId": "220524106000",
+      "name": "罗通山镇",
+      "average": 2582.8
+    },
+    {
+      "regionId": "220524107000",
+      "name": "安口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220524108000",
+      "name": "向阳镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220524109000",
+      "name": "红石镇",
+      "average": 3272.7
+    },
+    {
+      "regionId": "220524110000",
+      "name": "凉水河子镇",
+      "average": 5196.5
+    },
+    {
+      "regionId": "220524111000",
+      "name": "亨通镇",
+      "average": 2847.7
+    },
+    {
+      "regionId": "220524200000",
+      "name": "柳南乡",
+      "average": 1791.8
+    },
+    {
+      "regionId": "220524201000",
+      "name": "时家店乡",
+      "average": 4095.4
+    },
+    {
+      "regionId": "220524202000",
+      "name": "姜家店朝鲜族乡",
+      "average": 5829.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2101.872,
+      "color": "#bdd7e7",
+      "label": "2101.872 万m³"
+    },
+    {
+      "value": 3432.2695999999996,
+      "color": "#6baed6",
+      "label": "3432.270 万m³"
+    },
+    {
+      "value": 4989.556,
+      "color": "#3182bd",
+      "label": "4989.556 万m³"
+    },
+    {
+      "value": 6561.9456,
+      "color": "#08519c",
+      "label": "6561.946 万m³"
+    },
+    {
+      "value": 7229.98,
+      "color": "#042d60",
+      "label": "7229.980 万m³"
+    }
+  ]
+}

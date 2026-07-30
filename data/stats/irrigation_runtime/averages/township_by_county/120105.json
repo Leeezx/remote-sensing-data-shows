@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "120105001000",
+      "name": "光复道街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120105002000",
+      "name": "望海楼街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120105003000",
+      "name": "鸿顺里街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120105004000",
+      "name": "新开河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120105005000",
+      "name": "铁东路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120105006000",
+      "name": "建昌道街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120105007000",
+      "name": "宁园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120105008000",
+      "name": "王串场街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120105009000",
+      "name": "江都路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120105010000",
+      "name": "月牙河街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

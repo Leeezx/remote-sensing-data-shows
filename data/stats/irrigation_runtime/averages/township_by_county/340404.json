@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "340404001000",
+      "name": "谢家集街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340404002000",
+      "name": "蔡家岗街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340404003000",
+      "name": "立新街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340404004000",
+      "name": "谢三村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340404005000",
+      "name": "平山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340404100000",
+      "name": "望峰岗镇",
+      "average": 6399.6
+    },
+    {
+      "regionId": "340404101000",
+      "name": "李郢孜镇",
+      "average": 7491.7
+    },
+    {
+      "regionId": "340404102000",
+      "name": "唐山镇",
+      "average": 2741.9
+    },
+    {
+      "regionId": "340404103000",
+      "name": "杨公镇",
+      "average": 51372.9
+    },
+    {
+      "regionId": "340404200000",
+      "name": "孙庙乡",
+      "average": 29427.4
+    },
+    {
+      "regionId": "340404201000",
+      "name": "孤堆回族乡",
+      "average": 23976.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

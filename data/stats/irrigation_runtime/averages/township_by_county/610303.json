@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610303001000",
+      "name": "中山东路街道",
+      "average": 87.2
+    },
+    {
+      "regionId": "610303002000",
+      "name": "西关街道",
+      "average": 103.7
+    },
+    {
+      "regionId": "610303003000",
+      "name": "中山西路街道",
+      "average": 172.7
+    },
+    {
+      "regionId": "610303004000",
+      "name": "群众路街道",
+      "average": 438.1
+    },
+    {
+      "regionId": "610303006000",
+      "name": "东风路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610303007000",
+      "name": "十里铺街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "610303008000",
+      "name": "卧龙寺街道",
+      "average": 723.5
+    },
+    {
+      "regionId": "610303100000",
+      "name": "陈仓镇",
+      "average": 441.8
+    },
+    {
+      "regionId": "610303101000",
+      "name": "蟠龙镇",
+      "average": 29332.0
+    },
+    {
+      "regionId": "610303102000",
+      "name": "金河镇",
+      "average": 11524.6
+    },
+    {
+      "regionId": "610303103000",
+      "name": "硖石镇",
+      "average": 3154.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 89.18,
+      "color": "#bdd7e7",
+      "label": "89.180 万m³"
+    },
+    {
+      "value": 183.316,
+      "color": "#6baed6",
+      "label": "183.316 万m³"
+    },
+    {
+      "value": 441.652,
+      "color": "#3182bd",
+      "label": "441.652 万m³"
+    },
+    {
+      "value": 2863.131999999998,
+      "color": "#08519c",
+      "label": "2863.132 万m³"
+    },
+    {
+      "value": 25770.52000000001,
+      "color": "#042d60",
+      "label": "25770.520 万m³"
+    }
+  ]
+}

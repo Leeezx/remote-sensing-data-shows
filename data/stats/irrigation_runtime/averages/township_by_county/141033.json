@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "141033100000",
+      "name": "蒲城镇",
+      "average": 1277.3
+    },
+    {
+      "regionId": "141033101000",
+      "name": "薛关镇",
+      "average": 2089.3
+    },
+    {
+      "regionId": "141033102000",
+      "name": "黑龙关镇",
+      "average": 1961.2
+    },
+    {
+      "regionId": "141033103000",
+      "name": "克城镇",
+      "average": 4993.1
+    },
+    {
+      "regionId": "141033200000",
+      "name": "山中乡",
+      "average": 1917.7
+    },
+    {
+      "regionId": "141033201000",
+      "name": "古县乡",
+      "average": 1345.9
+    },
+    {
+      "regionId": "141033202000",
+      "name": "红道乡",
+      "average": 2039.9
+    },
+    {
+      "regionId": "141033203000",
+      "name": "乔家湾乡",
+      "average": 900.8
+    },
+    {
+      "regionId": "141033204000",
+      "name": "太林乡",
+      "average": 1828.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 961.04,
+      "color": "#eff3ff",
+      "label": "961.040 万m³"
+    },
+    {
+      "value": 1325.0456000000001,
+      "color": "#bdd7e7",
+      "label": "1325.046 万m³"
+    },
+    {
+      "value": 1849.2712,
+      "color": "#6baed6",
+      "label": "1849.271 万m³"
+    },
+    {
+      "value": 1951.108,
+      "color": "#3182bd",
+      "label": "1951.108 万m³"
+    },
+    {
+      "value": 2054.9176,
+      "color": "#08519c",
+      "label": "2054.918 万m³"
+    },
+    {
+      "value": 4528.492,
+      "color": "#042d60",
+      "label": "4528.492 万m³"
+    }
+  ]
+}

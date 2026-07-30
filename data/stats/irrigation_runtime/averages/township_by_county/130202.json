@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "120116135000",
+      "name": "杨家泊镇",
+      "average": 8007.3
+    },
+    {
+      "regionId": "120117103000",
+      "name": "苗庄镇",
+      "average": 13185.4
+    },
+    {
+      "regionId": "130202001000",
+      "name": "学院南路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130202002000",
+      "name": "友谊街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130202003000",
+      "name": "广场街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130202004000",
+      "name": "永红桥街道",
+      "average": 23.8
+    },
+    {
+      "regionId": "130202005000",
+      "name": "小山街道",
+      "average": 66.3
+    },
+    {
+      "regionId": "130202006000",
+      "name": "文北街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130202008000",
+      "name": "惠民道街道",
+      "average": 728.7
+    },
+    {
+      "regionId": "130202009000",
+      "name": "梁家屯路街道",
+      "average": 827.6
+    },
+    {
+      "regionId": "130202101000",
+      "name": "汉沽管理区汉丰镇",
+      "average": 7.3
+    },
+    {
+      "regionId": "130202200000",
+      "name": "女织寨乡",
+      "average": 6026.5
+    },
+    {
+      "regionId": "130202451000",
+      "name": "汉沽管理区兴农办事处",
+      "average": 25.9
+    },
+    {
+      "regionId": "130202452000",
+      "name": "汉沽管理区振兴街道",
+      "average": 1449.8
+    },
+    {
+      "regionId": "130207110000",
+      "name": "柳树酄镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

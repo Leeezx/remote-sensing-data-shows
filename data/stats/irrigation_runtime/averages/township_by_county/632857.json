@@ -1,0 +1,48 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "632802103000",
+      "name": "柴旦镇",
+      "average": 296.8
+    },
+    {
+      "regionId": "632802104000",
+      "name": "锡铁山镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 5.936,
+      "color": "#eff3ff",
+      "label": "5.936 万m³"
+    },
+    {
+      "value": 62.9216,
+      "color": "#bdd7e7",
+      "label": "62.922 万m³"
+    },
+    {
+      "value": 119.90719999999999,
+      "color": "#6baed6",
+      "label": "119.907 万m³"
+    },
+    {
+      "value": 176.8928,
+      "color": "#3182bd",
+      "label": "176.893 万m³"
+    },
+    {
+      "value": 233.8784,
+      "color": "#08519c",
+      "label": "233.878 万m³"
+    },
+    {
+      "value": 290.86400000000003,
+      "color": "#042d60",
+      "label": "290.864 万m³"
+    }
+  ]
+}

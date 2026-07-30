@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "220284001000",
+      "name": "福安街道",
+      "average": 3639.2
+    },
+    {
+      "regionId": "220284002000",
+      "name": "东宁街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220284003000",
+      "name": "河南街道",
+      "average": 6.5
+    },
+    {
+      "regionId": "220284070000",
+      "name": "磐石经济开发区（省级）（特殊街道）",
+      "average": 1422.3
+    },
+    {
+      "regionId": "220284100000",
+      "name": "烟筒山镇",
+      "average": 9594.2
+    },
+    {
+      "regionId": "220284101000",
+      "name": "红旗岭镇",
+      "average": 3875.6
+    },
+    {
+      "regionId": "220284102000",
+      "name": "明城镇",
+      "average": 3447.1
+    },
+    {
+      "regionId": "220284103000",
+      "name": "石嘴镇",
+      "average": 7057.4
+    },
+    {
+      "regionId": "220284104000",
+      "name": "驿马镇",
+      "average": 2522.3
+    },
+    {
+      "regionId": "220284105000",
+      "name": "牛心镇",
+      "average": 5365.4
+    },
+    {
+      "regionId": "220284106000",
+      "name": "呼兰镇",
+      "average": 6313.8
+    },
+    {
+      "regionId": "220284107000",
+      "name": "吉昌镇",
+      "average": 6690.9
+    },
+    {
+      "regionId": "220284108000",
+      "name": "松山镇",
+      "average": 2998.6
+    },
+    {
+      "regionId": "220284109000",
+      "name": "黑石镇",
+      "average": 4887.7
+    },
+    {
+      "regionId": "220284110000",
+      "name": "朝阳山镇",
+      "average": 5074.4
+    },
+    {
+      "regionId": "220284111000",
+      "name": "富太镇",
+      "average": 5072.6
+    },
+    {
+      "regionId": "220284112000",
+      "name": "取柴河镇",
+      "average": 2645.3
+    },
+    {
+      "regionId": "220284200000",
+      "name": "宝山乡",
+      "average": 7594.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 2.21,
+      "color": "#eff3ff",
+      "label": "2.210 万m³"
+    },
+    {
+      "value": 2596.592,
+      "color": "#bdd7e7",
+      "label": "2596.592 万m³"
+    },
+    {
+      "value": 3613.8428,
+      "color": "#6baed6",
+      "label": "3613.843 万m³"
+    },
+    {
+      "value": 5072.8376,
+      "color": "#3182bd",
+      "label": "5072.838 万m³"
+    },
+    {
+      "value": 6463.1316,
+      "color": "#08519c",
+      "label": "6463.132 万m³"
+    },
+    {
+      "value": 8914.132000000001,
+      "color": "#042d60",
+      "label": "8914.132 万m³"
+    }
+  ]
+}

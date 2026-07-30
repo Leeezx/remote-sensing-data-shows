@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "152923101000",
+      "name": "额济纳旗东风镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620921100000",
+      "name": "中东镇",
+      "average": 26799.1
+    },
+    {
+      "regionId": "620921101000",
+      "name": "鼎新镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620921102000",
+      "name": "金塔镇",
+      "average": 32333.4
+    },
+    {
+      "regionId": "620921103000",
+      "name": "东坝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620921105000",
+      "name": "航天镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620921203000",
+      "name": "大庄子乡",
+      "average": 11365.5
+    },
+    {
+      "regionId": "620921204000",
+      "name": "古城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620921205000",
+      "name": "西坝乡",
+      "average": 15413.4
+    },
+    {
+      "regionId": "620921209000",
+      "name": "羊井子湾乡",
+      "average": 1096.9
+    },
+    {
+      "regionId": "620921400000",
+      "name": "甘肃亚盛农工商集团有限责任公司",
+      "average": 10448.5
+    },
+    {
+      "regionId": "620921401000",
+      "name": "工业园区管委会",
+      "average": 0.0
+    },
+    {
+      "regionId": "620921402000",
+      "name": "农林场站",
+      "average": 1629.5
+    },
+    {
+      "regionId": "620921403000",
+      "name": "三合乡",
+      "average": 30508.3
+    },
+    {
+      "regionId": "620921404000",
+      "name": "城市社区管理委员会",
+      "average": 341.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

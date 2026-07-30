@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "360734106000",
+      "name": "桂竹帽镇",
+      "average": 8006.8
+    },
+    {
+      "regionId": "441622100000",
+      "name": "老隆镇",
+      "average": 22228.2
+    },
+    {
+      "regionId": "441622102000",
+      "name": "义都镇",
+      "average": 21667.4
+    },
+    {
+      "regionId": "441622103000",
+      "name": "佗城镇",
+      "average": 45449.8
+    },
+    {
+      "regionId": "441622104000",
+      "name": "鹤市镇",
+      "average": 28484.7
+    },
+    {
+      "regionId": "441622105000",
+      "name": "黄布镇",
+      "average": 15463.8
+    },
+    {
+      "regionId": "441622106000",
+      "name": "紫市镇",
+      "average": 26899.3
+    },
+    {
+      "regionId": "441622107000",
+      "name": "通衢镇",
+      "average": 38793.1
+    },
+    {
+      "regionId": "441622109000",
+      "name": "登云镇",
+      "average": 15107.6
+    },
+    {
+      "regionId": "441622110000",
+      "name": "丰稔镇",
+      "average": 22541.8
+    },
+    {
+      "regionId": "441622111000",
+      "name": "四都镇",
+      "average": 10005.2
+    },
+    {
+      "regionId": "441622112000",
+      "name": "铁场镇",
+      "average": 47756.6
+    },
+    {
+      "regionId": "441622114000",
+      "name": "龙母镇",
+      "average": 30345.6
+    },
+    {
+      "regionId": "441622115000",
+      "name": "田心镇",
+      "average": 29056.0
+    },
+    {
+      "regionId": "441622116000",
+      "name": "黎咀镇",
+      "average": 13463.4
+    },
+    {
+      "regionId": "441622117000",
+      "name": "黄石镇",
+      "average": 5298.0
+    },
+    {
+      "regionId": "441622118000",
+      "name": "赤光镇",
+      "average": 17177.6
+    },
+    {
+      "regionId": "441622119000",
+      "name": "回龙镇",
+      "average": 44599.7
+    },
+    {
+      "regionId": "441622120000",
+      "name": "新田镇",
+      "average": 9376.0
+    },
+    {
+      "regionId": "441622121000",
+      "name": "车田镇",
+      "average": 34806.8
+    },
+    {
+      "regionId": "441622123000",
+      "name": "岩镇镇",
+      "average": 11561.6
+    },
+    {
+      "regionId": "441622124000",
+      "name": "麻布岗镇",
+      "average": 30149.6
+    },
+    {
+      "regionId": "441622125000",
+      "name": "贝岭镇",
+      "average": 7676.4
+    },
+    {
+      "regionId": "441622126000",
+      "name": "细坳镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "441622127000",
+      "name": "上坪镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 9431.3696,
+      "color": "#bdd7e7",
+      "label": "9431.370 万m³"
+    },
+    {
+      "value": 15355.5152,
+      "color": "#6baed6",
+      "label": "15355.515 万m³"
+    },
+    {
+      "value": 23866.479999999992,
+      "color": "#3182bd",
+      "label": "23866.480 万m³"
+    },
+    {
+      "value": 30328.352,
+      "color": "#08519c",
+      "label": "30328.352 万m³"
+    },
+    {
+      "value": 46649.336,
+      "color": "#042d60",
+      "label": "46649.336 万m³"
+    }
+  ]
+}

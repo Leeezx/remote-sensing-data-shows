@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "411081001000",
+      "name": "颍川街道",
+      "average": 2481.9
+    },
+    {
+      "regionId": "411081002000",
+      "name": "夏都街道",
+      "average": 3344.5
+    },
+    {
+      "regionId": "411081003000",
+      "name": "韩城街道",
+      "average": 3918.7
+    },
+    {
+      "regionId": "411081004000",
+      "name": "钧台街道",
+      "average": 2715.5
+    },
+    {
+      "regionId": "411081100000",
+      "name": "火龙镇",
+      "average": 19528.4
+    },
+    {
+      "regionId": "411081101000",
+      "name": "顺店镇",
+      "average": 41058.0
+    },
+    {
+      "regionId": "411081102000",
+      "name": "方山镇",
+      "average": 17362.1
+    },
+    {
+      "regionId": "411081103000",
+      "name": "神垕镇",
+      "average": 8981.9
+    },
+    {
+      "regionId": "411081104000",
+      "name": "鸿畅镇",
+      "average": 35692.6
+    },
+    {
+      "regionId": "411081105000",
+      "name": "梁北镇",
+      "average": 22694.9
+    },
+    {
+      "regionId": "411081106000",
+      "name": "古城镇",
+      "average": 9098.6
+    },
+    {
+      "regionId": "411081107000",
+      "name": "无梁镇",
+      "average": 9050.9
+    },
+    {
+      "regionId": "411081108000",
+      "name": "文殊镇",
+      "average": 33087.5
+    },
+    {
+      "regionId": "411081109000",
+      "name": "鸠山镇",
+      "average": 10598.9
+    },
+    {
+      "regionId": "411081110000",
+      "name": "褚河镇",
+      "average": 39452.9
+    },
+    {
+      "regionId": "411081111000",
+      "name": "范坡镇",
+      "average": 39614.4
+    },
+    {
+      "regionId": "411081112000",
+      "name": "郭连镇",
+      "average": 18334.5
+    },
+    {
+      "regionId": "411081113000",
+      "name": "朱阁镇",
+      "average": 21612.6
+    },
+    {
+      "regionId": "411081114000",
+      "name": "浅井镇",
+      "average": 3622.1
+    },
+    {
+      "regionId": "411081115000",
+      "name": "方岗镇",
+      "average": 17842.2
+    },
+    {
+      "regionId": "411081116000",
+      "name": "花石镇",
+      "average": 30134.6
+    },
+    {
+      "regionId": "411081201000",
+      "name": "苌庄乡",
+      "average": 12103.2
+    },
+    {
+      "regionId": "411081204000",
+      "name": "磨街乡",
+      "average": 2954.1
+    },
+    {
+      "regionId": "411081205000",
+      "name": "张得乡",
+      "average": 37746.8
+    },
+    {
+      "regionId": "411081206000",
+      "name": "小吕乡",
+      "average": 45778.4
+    },
+    {
+      "regionId": "411081210000",
+      "name": "山货回族乡",
+      "average": 3900.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 2598.7,
+      "color": "#eff3ff",
+      "label": "2598.700 万m³"
+    },
+    {
+      "value": 3906.24,
+      "color": "#bdd7e7",
+      "label": "3906.240 万m³"
+    },
+    {
+      "value": 10749.33,
+      "color": "#6baed6",
+      "label": "10749.330 万m³"
+    },
+    {
+      "value": 19409.01,
+      "color": "#3182bd",
+      "label": "19409.010 万m³"
+    },
+    {
+      "value": 34911.07,
+      "color": "#08519c",
+      "label": "34911.070 万m³"
+    },
+    {
+      "value": 43418.2,
+      "color": "#042d60",
+      "label": "43418.200 万m³"
+    }
+  ]
+}

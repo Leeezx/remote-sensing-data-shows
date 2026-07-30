@@ -1,0 +1,258 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511923001000",
+      "name": "同州街道",
+      "average": 20507.9
+    },
+    {
+      "regionId": "511923100000",
+      "name": "江口镇",
+      "average": 23901.5
+    },
+    {
+      "regionId": "511923101000",
+      "name": "响滩镇",
+      "average": 8835.9
+    },
+    {
+      "regionId": "511923102000",
+      "name": "西兴镇",
+      "average": 14416.2
+    },
+    {
+      "regionId": "511923103000",
+      "name": "佛楼镇",
+      "average": 2583.4
+    },
+    {
+      "regionId": "511923104000",
+      "name": "白衣镇",
+      "average": 23038.4
+    },
+    {
+      "regionId": "511923105000",
+      "name": "涵水镇",
+      "average": 16732.4
+    },
+    {
+      "regionId": "511923106000",
+      "name": "岳家镇",
+      "average": 19783.8
+    },
+    {
+      "regionId": "511923107000",
+      "name": "兰草镇",
+      "average": 12608.4
+    },
+    {
+      "regionId": "511923108000",
+      "name": "驷马镇",
+      "average": 24937.0
+    },
+    {
+      "regionId": "511923109000",
+      "name": "坦溪镇",
+      "average": 17406.1
+    },
+    {
+      "regionId": "511923110000",
+      "name": "元山镇",
+      "average": 18676.8
+    },
+    {
+      "regionId": "511923111000",
+      "name": "云台镇",
+      "average": 9095.3
+    },
+    {
+      "regionId": "511923112000",
+      "name": "邱家镇",
+      "average": 3336.1
+    },
+    {
+      "regionId": "511923113000",
+      "name": "笔山镇",
+      "average": 3716.5
+    },
+    {
+      "regionId": "511923114000",
+      "name": "镇龙镇",
+      "average": 6006.9
+    },
+    {
+      "regionId": "511923115000",
+      "name": "得胜镇",
+      "average": 361.6
+    },
+    {
+      "regionId": "511923116000",
+      "name": "鹿鸣镇",
+      "average": 6819.2
+    },
+    {
+      "regionId": "511923200000",
+      "name": "青云乡",
+      "average": 7728.5
+    },
+    {
+      "regionId": "511923201000",
+      "name": "元石乡",
+      "average": 6456.4
+    },
+    {
+      "regionId": "511923202000",
+      "name": "六门乡",
+      "average": 17825.5
+    },
+    {
+      "regionId": "511923203000",
+      "name": "大寨乡",
+      "average": 6940.1
+    },
+    {
+      "regionId": "511923204000",
+      "name": "龙岗乡",
+      "average": 4496.7
+    },
+    {
+      "regionId": "511923205000",
+      "name": "土兴镇",
+      "average": 26663.0
+    },
+    {
+      "regionId": "511923206000",
+      "name": "板庙乡",
+      "average": 5638.6
+    },
+    {
+      "regionId": "511923207000",
+      "name": "泥龙乡",
+      "average": 3065.8
+    },
+    {
+      "regionId": "511923208000",
+      "name": "岩口乡",
+      "average": 2986.8
+    },
+    {
+      "regionId": "511923209000",
+      "name": "望京镇",
+      "average": 2228.5
+    },
+    {
+      "regionId": "511923210000",
+      "name": "喜神乡",
+      "average": 1421.0
+    },
+    {
+      "regionId": "511923211000",
+      "name": "土垭乡",
+      "average": 6081.8
+    },
+    {
+      "regionId": "511923212000",
+      "name": "石垭乡",
+      "average": 1800.1
+    },
+    {
+      "regionId": "511923213000",
+      "name": "青凤镇",
+      "average": 3059.5
+    },
+    {
+      "regionId": "511923214000",
+      "name": "澌岸乡",
+      "average": 6679.3
+    },
+    {
+      "regionId": "511923215000",
+      "name": "马鞍乡",
+      "average": 1926.4
+    },
+    {
+      "regionId": "511923216000",
+      "name": "五木乡",
+      "average": 1482.4
+    },
+    {
+      "regionId": "511923217000",
+      "name": "灵山镇",
+      "average": 2396.6
+    },
+    {
+      "regionId": "511923218000",
+      "name": "界牌乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511923219000",
+      "name": "粉壁乡",
+      "average": 7450.4
+    },
+    {
+      "regionId": "511923220000",
+      "name": "澌滩乡",
+      "average": 5641.0
+    },
+    {
+      "regionId": "511923221000",
+      "name": "高峰乡",
+      "average": 8439.4
+    },
+    {
+      "regionId": "511923222000",
+      "name": "南风乡",
+      "average": 5568.5
+    },
+    {
+      "regionId": "511923223000",
+      "name": "福申乡",
+      "average": 3867.5
+    },
+    {
+      "regionId": "511923224000",
+      "name": "双鹿乡",
+      "average": 10317.5
+    },
+    {
+      "regionId": "511923225000",
+      "name": "黑水乡",
+      "average": 1718.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 310.976,
+      "color": "#eff3ff",
+      "label": "310.976 万m³"
+    },
+    {
+      "value": 2630.1944,
+      "color": "#bdd7e7",
+      "label": "2630.194 万m³"
+    },
+    {
+      "value": 5594.5772,
+      "color": "#6baed6",
+      "label": "5594.577 万m³"
+    },
+    {
+      "value": 7260.5684,
+      "color": "#3182bd",
+      "label": "7260.568 万m³"
+    },
+    {
+      "value": 16463.720799999985,
+      "color": "#08519c",
+      "label": "16463.721 万m³"
+    },
+    {
+      "value": 25178.64,
+      "color": "#042d60",
+      "label": "25178.640 万m³"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "340403001000",
+      "name": "田东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340403002000",
+      "name": "新淮街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340403003000",
+      "name": "国庆街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340403004000",
+      "name": "淮滨街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340403005000",
+      "name": "朝阳街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340403006000",
+      "name": "公园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340403007000",
+      "name": "洞山街道",
+      "average": 259.2
+    },
+    {
+      "regionId": "340403008000",
+      "name": "龙泉街道",
+      "average": 899.9
+    },
+    {
+      "regionId": "340403009000",
+      "name": "泉山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340403100000",
+      "name": "舜耕镇",
+      "average": 154.6
+    },
+    {
+      "regionId": "340403101000",
+      "name": "安成镇",
+      "average": 4701.2
+    },
+    {
+      "regionId": "340403102000",
+      "name": "曹庵镇",
+      "average": 52218.9
+    },
+    {
+      "regionId": "340403200000",
+      "name": "三和乡",
+      "average": 28766.3
+    },
+    {
+      "regionId": "340403201000",
+      "name": "史院乡",
+      "average": 38468.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

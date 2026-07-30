@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610603100000",
+      "name": "真武洞镇",
+      "average": 1098.6
+    },
+    {
+      "regionId": "610603101000",
+      "name": "砖窑湾镇",
+      "average": 1417.9
+    },
+    {
+      "regionId": "610603102000",
+      "name": "沿河湾镇",
+      "average": 1390.4
+    },
+    {
+      "regionId": "610603103000",
+      "name": "招安镇",
+      "average": 1980.9
+    },
+    {
+      "regionId": "610603104000",
+      "name": "化子坪镇",
+      "average": 651.2
+    },
+    {
+      "regionId": "610603105000",
+      "name": "坪桥镇",
+      "average": 342.3
+    },
+    {
+      "regionId": "610603106000",
+      "name": "建华镇",
+      "average": 1693.5
+    },
+    {
+      "regionId": "610603107000",
+      "name": "高桥镇",
+      "average": 2465.2
+    },
+    {
+      "regionId": "610603203000",
+      "name": "镰刀湾乡",
+      "average": 135.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 168.756,
+      "color": "#eff3ff",
+      "label": "168.756 万m³"
+    },
+    {
+      "value": 557.2944,
+      "color": "#bdd7e7",
+      "label": "557.294 万m³"
+    },
+    {
+      "value": 1166.2975999999999,
+      "color": "#6baed6",
+      "label": "1166.298 万m³"
+    },
+    {
+      "value": 1411.52,
+      "color": "#3182bd",
+      "label": "1411.520 万m³"
+    },
+    {
+      "value": 1780.8695999999998,
+      "color": "#08519c",
+      "label": "1780.870 万m³"
+    },
+    {
+      "value": 2387.712,
+      "color": "#042d60",
+      "label": "2387.712 万m³"
+    }
+  ]
+}

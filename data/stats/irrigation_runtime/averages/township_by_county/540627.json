@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540627100000",
+      "name": "普保镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540627101000",
+      "name": "北拉镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540627102000",
+      "name": "佳琼镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540627103000",
+      "name": "德庆镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540627200000",
+      "name": "马前乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540627201000",
+      "name": "门当乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540627202000",
+      "name": "保吉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540627203000",
+      "name": "青龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540627204000",
+      "name": "新吉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540627205000",
+      "name": "尼玛乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

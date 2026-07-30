@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410481001000",
+      "name": "垭口街道",
+      "average": 15.2
+    },
+    {
+      "regionId": "410481002000",
+      "name": "寺坡街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410481003000",
+      "name": "朱兰街道",
+      "average": 72.5
+    },
+    {
+      "regionId": "410481004000",
+      "name": "院岭街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410481005000",
+      "name": "矿建街道",
+      "average": 609.3
+    },
+    {
+      "regionId": "410481100000",
+      "name": "尚店镇",
+      "average": 35806.9
+    },
+    {
+      "regionId": "410481101000",
+      "name": "八台镇",
+      "average": 10139.1
+    },
+    {
+      "regionId": "410481102000",
+      "name": "尹集镇",
+      "average": 7872.0
+    },
+    {
+      "regionId": "410481103000",
+      "name": "枣林镇",
+      "average": 22344.7
+    },
+    {
+      "regionId": "410481202000",
+      "name": "庙街乡",
+      "average": 5447.4
+    },
+    {
+      "regionId": "410481203000",
+      "name": "铁山乡",
+      "average": 2496.3
+    },
+    {
+      "regionId": "410481204000",
+      "name": "武功乡",
+      "average": 11716.8
+    },
+    {
+      "regionId": "410481205000",
+      "name": "杨庄乡",
+      "average": 9791.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 46.3712,
+      "color": "#bdd7e7",
+      "label": "46.371 万m³"
+    },
+    {
+      "value": 2209.4759999999997,
+      "color": "#6baed6",
+      "label": "2209.476 万m³"
+    },
+    {
+      "value": 8163.809599999999,
+      "color": "#3182bd",
+      "label": "8163.810 万m³"
+    },
+    {
+      "value": 10858.5312,
+      "color": "#08519c",
+      "label": "10858.531 万m³"
+    },
+    {
+      "value": 32575.971999999998,
+      "color": "#042d60",
+      "label": "32575.972 万m³"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150303001000",
+      "name": "拉僧仲街道",
+      "average": 179.9
+    },
+    {
+      "regionId": "150303002000",
+      "name": "西卓子山街道",
+      "average": 292.3
+    },
+    {
+      "regionId": "150303102000",
+      "name": "公乌素镇",
+      "average": 6.4
+    },
+    {
+      "regionId": "150303103000",
+      "name": "拉僧庙镇",
+      "average": 202.9
+    },
+    {
+      "regionId": "150303104000",
+      "name": "巴音陶亥镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "640205004000",
+      "name": "北街街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 0.38400000000000034,
+      "color": "#bdd7e7",
+      "label": "0.384 万m³"
+    },
+    {
+      "value": 9.870000000000005,
+      "color": "#6baed6",
+      "label": "9.870 万m³"
+    },
+    {
+      "value": 176.43,
+      "color": "#3182bd",
+      "label": "176.430 万m³"
+    },
+    {
+      "value": 201.51999999999998,
+      "color": "#08519c",
+      "label": "201.520 万m³"
+    },
+    {
+      "value": 283.36,
+      "color": "#042d60",
+      "label": "283.360 万m³"
+    }
+  ]
+}

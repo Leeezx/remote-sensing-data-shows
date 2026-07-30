@@ -1,0 +1,133 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "340104001000",
+      "name": "三里庵街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340104002000",
+      "name": "稻香村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340104003000",
+      "name": "琥珀街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340104004000",
+      "name": "南七街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340104005000",
+      "name": "西园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340104006000",
+      "name": "五里墩街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340104007000",
+      "name": "荷叶地街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340104008000",
+      "name": "笔架山街道",
+      "average": 395.0
+    },
+    {
+      "regionId": "340104100000",
+      "name": "井岗镇",
+      "average": 294.6
+    },
+    {
+      "regionId": "340104101000",
+      "name": "南岗镇",
+      "average": 3170.1
+    },
+    {
+      "regionId": "340104102000",
+      "name": "小庙镇",
+      "average": 55724.1
+    },
+    {
+      "regionId": "340104400000",
+      "name": "蜀山新产业园区",
+      "average": 758.5
+    },
+    {
+      "regionId": "340104401000",
+      "name": "高新技术产业开发区",
+      "average": 10580.0
+    },
+    {
+      "regionId": "340104402000",
+      "name": "莲花社区管理委员会",
+      "average": 390.9
+    },
+    {
+      "regionId": "340104403000",
+      "name": "芙蓉社区管理委员会",
+      "average": 460.9
+    },
+    {
+      "regionId": "340104404000",
+      "name": "锦绣社区管理委员会",
+      "average": 1692.1
+    },
+    {
+      "regionId": "340104405000",
+      "name": "海恒社区管理委员会",
+      "average": 1322.6
+    },
+    {
+      "regionId": "340104406000",
+      "name": "临湖社区管理管委会",
+      "average": 783.6
+    },
+    {
+      "regionId": "340123102000",
+      "name": "高刘镇",
+      "average": 48204.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

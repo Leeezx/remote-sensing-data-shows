@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210381001000",
+      "name": "海州街道",
+      "average": 14.2
+    },
+    {
+      "regionId": "210381002000",
+      "name": "兴海街道",
+      "average": 7.0
+    },
+    {
+      "regionId": "210381003000",
+      "name": "响堂街道",
+      "average": 613.1
+    },
+    {
+      "regionId": "210381004000",
+      "name": "东四街道",
+      "average": 2600.6
+    },
+    {
+      "regionId": "210381005000",
+      "name": "验军街道",
+      "average": 1813.7
+    },
+    {
+      "regionId": "210381006000",
+      "name": "温泉街道",
+      "average": 3256.5
+    },
+    {
+      "regionId": "210381101000",
+      "name": "孤山镇",
+      "average": 76.3
+    },
+    {
+      "regionId": "210381102000",
+      "name": "岔沟镇",
+      "average": 55.1
+    },
+    {
+      "regionId": "210381103000",
+      "name": "接文镇",
+      "average": 206.8
+    },
+    {
+      "regionId": "210381104000",
+      "name": "析木镇",
+      "average": 635.2
+    },
+    {
+      "regionId": "210381105000",
+      "name": "马风镇",
+      "average": 263.4
+    },
+    {
+      "regionId": "210381107000",
+      "name": "牌楼镇",
+      "average": 30.6
+    },
+    {
+      "regionId": "210381108000",
+      "name": "八里镇",
+      "average": 1741.6
+    },
+    {
+      "regionId": "210381109000",
+      "name": "毛祁镇",
+      "average": 608.4
+    },
+    {
+      "regionId": "210381110000",
+      "name": "英落镇",
+      "average": 78.9
+    },
+    {
+      "regionId": "210381111000",
+      "name": "感王镇",
+      "average": 5650.5
+    },
+    {
+      "regionId": "210381112000",
+      "name": "西柳镇",
+      "average": 1898.5
+    },
+    {
+      "regionId": "210381113000",
+      "name": "中小镇",
+      "average": 6527.6
+    },
+    {
+      "regionId": "210381114000",
+      "name": "王石镇",
+      "average": 50.8
+    },
+    {
+      "regionId": "210381115000",
+      "name": "南台镇",
+      "average": 1123.2
+    },
+    {
+      "regionId": "210381118000",
+      "name": "腾鳌镇",
+      "average": 11570.2
+    },
+    {
+      "regionId": "210381121000",
+      "name": "耿庄镇",
+      "average": 6149.3
+    },
+    {
+      "regionId": "210381123000",
+      "name": "牛庄镇",
+      "average": 4395.2
+    },
+    {
+      "regionId": "210381124000",
+      "name": "西四镇",
+      "average": 17850.6
+    },
+    {
+      "regionId": "210381125000",
+      "name": "望台镇",
+      "average": 8873.1
+    },
+    {
+      "regionId": "210381126000",
+      "name": "温香镇",
+      "average": 17377.5
+    },
+    {
+      "regionId": "210381127000",
+      "name": "高坨镇",
+      "average": 11123.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 10.744,
+      "color": "#eff3ff",
+      "label": "10.744 万m³"
+    },
+    {
+      "value": 77.6312,
+      "color": "#bdd7e7",
+      "label": "77.631 万m³"
+    },
+    {
+      "value": 624.2384000000001,
+      "color": "#6baed6",
+      "label": "624.238 万m³"
+    },
+    {
+      "value": 2246.741599999999,
+      "color": "#3182bd",
+      "label": "2246.742 万m³"
+    },
+    {
+      "value": 6333.9104,
+      "color": "#08519c",
+      "label": "6333.910 万m³"
+    },
+    {
+      "value": 17604.588,
+      "color": "#042d60",
+      "label": "17604.588 万m³"
+    }
+  ]
+}

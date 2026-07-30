@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130522100000",
+      "name": "临城镇",
+      "average": 13338.6
+    },
+    {
+      "regionId": "130522101000",
+      "name": "东镇镇",
+      "average": 26370.6
+    },
+    {
+      "regionId": "130522102000",
+      "name": "西竖镇",
+      "average": 905.2
+    },
+    {
+      "regionId": "130522103000",
+      "name": "郝庄镇",
+      "average": 392.7
+    },
+    {
+      "regionId": "130522200000",
+      "name": "黑城乡",
+      "average": 15969.2
+    },
+    {
+      "regionId": "130522201000",
+      "name": "鸭鸽营乡",
+      "average": 27098.9
+    },
+    {
+      "regionId": "130522203000",
+      "name": "石城乡",
+      "average": 847.6
+    },
+    {
+      "regionId": "130522205000",
+      "name": "赵庄乡",
+      "average": 828.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 453.698,
+      "color": "#eff3ff",
+      "label": "453.698 万m³"
+    },
+    {
+      "value": 837.6928,
+      "color": "#bdd7e7",
+      "label": "837.693 万m³"
+    },
+    {
+      "value": 895.2928,
+      "color": "#6baed6",
+      "label": "895.293 万m³"
+    },
+    {
+      "value": 13791.0632,
+      "color": "#3182bd",
+      "label": "13791.063 万m³"
+    },
+    {
+      "value": 21336.32239999999,
+      "color": "#08519c",
+      "label": "21336.322 万m³"
+    },
+    {
+      "value": 26996.938000000002,
+      "color": "#042d60",
+      "label": "26996.938 万m³"
+    }
+  ]
+}

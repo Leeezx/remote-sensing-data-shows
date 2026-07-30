@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540226100000",
+      "name": "卡嘎镇",
+      "average": 55.3
+    },
+    {
+      "regionId": "540226101000",
+      "name": "桑桑镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540226200000",
+      "name": "切热乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540226201000",
+      "name": "秋窝乡",
+      "average": 1519.6
+    },
+    {
+      "regionId": "540226202000",
+      "name": "达居乡",
+      "average": 391.5
+    },
+    {
+      "regionId": "540226203000",
+      "name": "亚木乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540226204000",
+      "name": "贡久布乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540226205000",
+      "name": "达若乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540226206000",
+      "name": "措迈乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540226207000",
+      "name": "尼果乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540226208000",
+      "name": "孔隆乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540226209000",
+      "name": "如萨乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540226210000",
+      "name": "阿木雄乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540226211000",
+      "name": "查孜乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540226212000",
+      "name": "日吾其乡",
+      "average": 425.7
+    },
+    {
+      "regionId": "540226213000",
+      "name": "多白乡",
+      "average": 362.1
+    },
+    {
+      "regionId": "540226214000",
+      "name": "雄巴乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

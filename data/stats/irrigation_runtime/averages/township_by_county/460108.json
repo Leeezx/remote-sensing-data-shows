@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "460108001000",
+      "name": "海府街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "460108002000",
+      "name": "蓝天街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "460108003000",
+      "name": "博爱街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "460108004000",
+      "name": "海甸街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "460108005000",
+      "name": "人民路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "460108006000",
+      "name": "白龙街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "460108007000",
+      "name": "和平南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "460108008000",
+      "name": "白沙街道",
+      "average": 224.5
+    },
+    {
+      "regionId": "460108101000",
+      "name": "灵山镇",
+      "average": 29031.9
+    },
+    {
+      "regionId": "460108102000",
+      "name": "演丰镇",
+      "average": 8559.9
+    },
+    {
+      "regionId": "460108103000",
+      "name": "三江镇",
+      "average": 13852.8
+    },
+    {
+      "regionId": "460108104000",
+      "name": "大致坡镇",
+      "average": 15969.7
+    },
+    {
+      "regionId": "460108401000",
+      "name": "国营三江农场",
+      "average": 7676.3
+    },
+    {
+      "regionId": "460108500000",
+      "name": "罗牛山农场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

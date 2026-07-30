@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500108001000",
+      "name": "铜元局街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500108002000",
+      "name": "花园路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500108003000",
+      "name": "南坪街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500108004000",
+      "name": "海棠溪街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500108005000",
+      "name": "龙门浩街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500108006000",
+      "name": "弹子石街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500108007000",
+      "name": "南山街道",
+      "average": 647.4
+    },
+    {
+      "regionId": "500108008000",
+      "name": "天文街道",
+      "average": 1589.3
+    },
+    {
+      "regionId": "500108101000",
+      "name": "南坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500108102000",
+      "name": "涂山镇",
+      "average": 2.8
+    },
+    {
+      "regionId": "500108103000",
+      "name": "鸡冠石镇",
+      "average": 989.8
+    },
+    {
+      "regionId": "500108105000",
+      "name": "峡口镇",
+      "average": 4228.7
+    },
+    {
+      "regionId": "500108106000",
+      "name": "长生桥镇",
+      "average": 10187.7
+    },
+    {
+      "regionId": "500108107000",
+      "name": "迎龙镇",
+      "average": 13387.6
+    },
+    {
+      "regionId": "500108108000",
+      "name": "广阳镇",
+      "average": 5393.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

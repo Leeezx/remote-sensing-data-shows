@@ -1,0 +1,278 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500154002000",
+      "name": "镇东街道",
+      "average": 2466.7
+    },
+    {
+      "regionId": "500154003000",
+      "name": "丰乐街道",
+      "average": 3376.0
+    },
+    {
+      "regionId": "500154004000",
+      "name": "白鹤街道",
+      "average": 24228.2
+    },
+    {
+      "regionId": "500154005000",
+      "name": "汉丰街道",
+      "average": 1271.5
+    },
+    {
+      "regionId": "500154006000",
+      "name": "文峰街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500154007000",
+      "name": "云枫街道",
+      "average": 615.5
+    },
+    {
+      "regionId": "500154008000",
+      "name": "赵家街道",
+      "average": 2981.3
+    },
+    {
+      "regionId": "500154103000",
+      "name": "郭家镇",
+      "average": 3595.2
+    },
+    {
+      "regionId": "500154106000",
+      "name": "温泉镇",
+      "average": 6815.1
+    },
+    {
+      "regionId": "500154107000",
+      "name": "铁桥镇",
+      "average": 14224.1
+    },
+    {
+      "regionId": "500154112000",
+      "name": "南雅镇",
+      "average": 6546.2
+    },
+    {
+      "regionId": "500154114000",
+      "name": "和谦镇",
+      "average": 6784.1
+    },
+    {
+      "regionId": "500154116000",
+      "name": "镇安镇",
+      "average": 1697.3
+    },
+    {
+      "regionId": "500154118000",
+      "name": "竹溪镇",
+      "average": 3040.0
+    },
+    {
+      "regionId": "500154119000",
+      "name": "渠口镇",
+      "average": 10807.1
+    },
+    {
+      "regionId": "500154120000",
+      "name": "厚坝镇",
+      "average": 8913.8
+    },
+    {
+      "regionId": "500154122000",
+      "name": "高桥镇",
+      "average": 12978.6
+    },
+    {
+      "regionId": "500154127000",
+      "name": "义和镇",
+      "average": 5098.3
+    },
+    {
+      "regionId": "500154128000",
+      "name": "大进镇",
+      "average": 17994.2
+    },
+    {
+      "regionId": "500154129000",
+      "name": "长沙镇",
+      "average": 6896.0
+    },
+    {
+      "regionId": "500154130000",
+      "name": "临江镇",
+      "average": 13149.9
+    },
+    {
+      "regionId": "500154132000",
+      "name": "敦好镇",
+      "average": 7237.2
+    },
+    {
+      "regionId": "500154133000",
+      "name": "中和镇",
+      "average": 7465.2
+    },
+    {
+      "regionId": "500154134000",
+      "name": "岳溪镇",
+      "average": 31439.9
+    },
+    {
+      "regionId": "500154135000",
+      "name": "南门镇",
+      "average": 18835.2
+    },
+    {
+      "regionId": "500154136000",
+      "name": "河堰镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500154137000",
+      "name": "九龙山镇",
+      "average": 8493.3
+    },
+    {
+      "regionId": "500154138000",
+      "name": "白桥镇",
+      "average": 8530.0
+    },
+    {
+      "regionId": "500154139000",
+      "name": "天和镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500154140000",
+      "name": "金峰镇",
+      "average": 5336.3
+    },
+    {
+      "regionId": "500154141000",
+      "name": "谭家镇",
+      "average": 2343.7
+    },
+    {
+      "regionId": "500154142000",
+      "name": "巫山镇",
+      "average": 11807.9
+    },
+    {
+      "regionId": "500154143000",
+      "name": "大德镇",
+      "average": 14581.8
+    },
+    {
+      "regionId": "500154202000",
+      "name": "白泉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500154203000",
+      "name": "关面乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500154204000",
+      "name": "满月乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500154211000",
+      "name": "五通乡",
+      "average": 3081.8
+    },
+    {
+      "regionId": "500154215000",
+      "name": "麻柳乡",
+      "average": 19761.6
+    },
+    {
+      "regionId": "500154216000",
+      "name": "紫水乡",
+      "average": 19843.7
+    },
+    {
+      "regionId": "500154225000",
+      "name": "三汇口乡",
+      "average": 1189.9
+    },
+    {
+      "regionId": "511722110000",
+      "name": "土黄镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511722212000",
+      "name": "上峡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511722213000",
+      "name": "塔河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511722221000",
+      "name": "漆碑乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511722223000",
+      "name": "漆树土家族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511723105000",
+      "name": "讲治镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511723205000",
+      "name": "梅家乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511723209000",
+      "name": "拔妙乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

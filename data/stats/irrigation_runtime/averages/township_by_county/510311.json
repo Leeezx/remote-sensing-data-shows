@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510311100000",
+      "name": "沿滩镇",
+      "average": 1644.5
+    },
+    {
+      "regionId": "510311101000",
+      "name": "卫坪镇",
+      "average": 2317.7
+    },
+    {
+      "regionId": "510311102000",
+      "name": "兴隆镇",
+      "average": 1215.9
+    },
+    {
+      "regionId": "510311105000",
+      "name": "富全镇",
+      "average": 2066.5
+    },
+    {
+      "regionId": "510311106000",
+      "name": "永安镇",
+      "average": 1354.5
+    },
+    {
+      "regionId": "510311107000",
+      "name": "联络镇",
+      "average": 3540.0
+    },
+    {
+      "regionId": "510311108000",
+      "name": "邓关镇",
+      "average": 755.5
+    },
+    {
+      "regionId": "510311109000",
+      "name": "王井镇",
+      "average": 2345.1
+    },
+    {
+      "regionId": "510311110000",
+      "name": "黄市镇",
+      "average": 1461.0
+    },
+    {
+      "regionId": "510311111000",
+      "name": "瓦市镇",
+      "average": 7923.4
+    },
+    {
+      "regionId": "510311112000",
+      "name": "仙市镇",
+      "average": 5762.6
+    },
+    {
+      "regionId": "510311203000",
+      "name": "刘山乡",
+      "average": 1535.1
+    },
+    {
+      "regionId": "510311204000",
+      "name": "九洪乡",
+      "average": 3271.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 865.996,
+      "color": "#eff3ff",
+      "label": "865.996 万m³"
+    },
+    {
+      "value": 1412.436,
+      "color": "#bdd7e7",
+      "label": "1412.436 万m³"
+    },
+    {
+      "value": 1627.8712,
+      "color": "#6baed6",
+      "label": "1627.871 万m³"
+    },
+    {
+      "value": 2321.8648,
+      "color": "#3182bd",
+      "label": "2321.865 万m³"
+    },
+    {
+      "value": 3394.0447999999997,
+      "color": "#08519c",
+      "label": "3394.045 万m³"
+    },
+    {
+      "value": 7404.807999999999,
+      "color": "#042d60",
+      "label": "7404.808 万m³"
+    }
+  ]
+}

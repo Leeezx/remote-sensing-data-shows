@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "522327100000",
+      "name": "者楼镇",
+      "average": 4149.8
+    },
+    {
+      "regionId": "522327101000",
+      "name": "坡妹镇",
+      "average": 3411.2
+    },
+    {
+      "regionId": "522327102000",
+      "name": "冗渡镇",
+      "average": 1334.4
+    },
+    {
+      "regionId": "522327103000",
+      "name": "丫他镇",
+      "average": 2493.5
+    },
+    {
+      "regionId": "522327104000",
+      "name": "巧马镇",
+      "average": 5012.4
+    },
+    {
+      "regionId": "522327105000",
+      "name": "秧坝镇",
+      "average": 339.6
+    },
+    {
+      "regionId": "522327106000",
+      "name": "双江镇",
+      "average": 1778.4
+    },
+    {
+      "regionId": "522327107000",
+      "name": "岩架镇",
+      "average": 1707.6
+    },
+    {
+      "regionId": "522327108000",
+      "name": "八渡镇",
+      "average": 1428.5
+    },
+    {
+      "regionId": "522327200000",
+      "name": "庆坪乡",
+      "average": 1643.7
+    },
+    {
+      "regionId": "522327201000",
+      "name": "达央乡",
+      "average": 954.6
+    },
+    {
+      "regionId": "522327202000",
+      "name": "威旁乡",
+      "average": 3444.4
+    },
+    {
+      "regionId": "522327203000",
+      "name": "弼佑乡",
+      "average": 1214.3
+    },
+    {
+      "regionId": "522327204000",
+      "name": "百口乡",
+      "average": 417.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 359.906,
+      "color": "#eff3ff",
+      "label": "359.906 万m³"
+    },
+    {
+      "value": 1150.9332,
+      "color": "#bdd7e7",
+      "label": "1150.933 万m³"
+    },
+    {
+      "value": 1482.7304,
+      "color": "#6baed6",
+      "label": "1482.730 万m³"
+    },
+    {
+      "value": 1760.5584,
+      "color": "#3182bd",
+      "label": "1760.558 万m³"
+    },
+    {
+      "value": 3419.3008,
+      "color": "#08519c",
+      "label": "3419.301 万m³"
+    },
+    {
+      "value": 4788.124,
+      "color": "#042d60",
+      "label": "4788.124 万m³"
+    }
+  ]
+}

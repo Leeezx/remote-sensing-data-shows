@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230231100000",
+      "name": "拜泉镇",
+      "average": 4777.7
+    },
+    {
+      "regionId": "230231101000",
+      "name": "三道镇",
+      "average": 18087.1
+    },
+    {
+      "regionId": "230231102000",
+      "name": "兴农镇",
+      "average": 11837.7
+    },
+    {
+      "regionId": "230231103000",
+      "name": "长春镇",
+      "average": 13020.2
+    },
+    {
+      "regionId": "230231104000",
+      "name": "龙泉镇",
+      "average": 11302.3
+    },
+    {
+      "regionId": "230231105000",
+      "name": "国富镇",
+      "average": 8316.8
+    },
+    {
+      "regionId": "230231106000",
+      "name": "富强镇",
+      "average": 5655.6
+    },
+    {
+      "regionId": "230231200000",
+      "name": "新生乡",
+      "average": 9736.2
+    },
+    {
+      "regionId": "230231201000",
+      "name": "兴国乡",
+      "average": 6240.9
+    },
+    {
+      "regionId": "230231203000",
+      "name": "上升乡",
+      "average": 7813.1
+    },
+    {
+      "regionId": "230231204000",
+      "name": "兴华乡",
+      "average": 7312.2
+    },
+    {
+      "regionId": "230231206000",
+      "name": "大众乡",
+      "average": 8340.5
+    },
+    {
+      "regionId": "230231209000",
+      "name": "丰产乡",
+      "average": 17320.5
+    },
+    {
+      "regionId": "230231210000",
+      "name": "永勤乡",
+      "average": 6251.9
+    },
+    {
+      "regionId": "230231212000",
+      "name": "爱农乡",
+      "average": 8950.5
+    },
+    {
+      "regionId": "230231214000",
+      "name": "时中乡",
+      "average": 5664.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 5041.07,
+      "color": "#eff3ff",
+      "label": "5041.070 万m³"
+    },
+    {
+      "value": 6242.879999999999,
+      "color": "#bdd7e7",
+      "label": "6242.880 万m³"
+    },
+    {
+      "value": 7843.322,
+      "color": "#6baed6",
+      "label": "7843.322 万m³"
+    },
+    {
+      "value": 8913.9,
+      "color": "#3182bd",
+      "label": "8913.900 万m³"
+    },
+    {
+      "value": 11741.328,
+      "color": "#08519c",
+      "label": "11741.328 万m³"
+    },
+    {
+      "value": 17857.12,
+      "color": "#042d60",
+      "label": "17857.120 万m³"
+    }
+  ]
+}

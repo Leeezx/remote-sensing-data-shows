@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150302001000",
+      "name": "凤凰岭街道",
+      "average": 31.8
+    },
+    {
+      "regionId": "150302002000",
+      "name": "海北街道",
+      "average": 5.1
+    },
+    {
+      "regionId": "150302003000",
+      "name": "新华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150302004000",
+      "name": "新华西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150302005000",
+      "name": "卡布其街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150302101000",
+      "name": "千里山镇",
+      "average": 3902.0
+    },
+    {
+      "regionId": "150302400000",
+      "name": "乌海市海勃湾千里山工业园区",
+      "average": 16.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

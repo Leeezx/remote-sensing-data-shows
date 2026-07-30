@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "330881112000",
+      "name": "廿八都镇",
+      "average": 15640.1
+    },
+    {
+      "regionId": "330881211000",
+      "name": "双溪口乡",
+      "average": 1769.8
+    },
+    {
+      "regionId": "331181202000",
+      "name": "宝溪乡",
+      "average": 11133.5
+    },
+    {
+      "regionId": "350722001000",
+      "name": "南浦街道",
+      "average": 17813.9
+    },
+    {
+      "regionId": "350722002000",
+      "name": "河滨街道",
+      "average": 5477.6
+    },
+    {
+      "regionId": "350722101000",
+      "name": "富岭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350722102000",
+      "name": "石陂镇",
+      "average": 138030.7
+    },
+    {
+      "regionId": "350722103000",
+      "name": "临江镇",
+      "average": 68094.6
+    },
+    {
+      "regionId": "350722104000",
+      "name": "仙阳镇",
+      "average": 123016.4
+    },
+    {
+      "regionId": "350722105000",
+      "name": "水北街镇",
+      "average": 60613.8
+    },
+    {
+      "regionId": "350722106000",
+      "name": "永兴镇",
+      "average": 73882.4
+    },
+    {
+      "regionId": "350722107000",
+      "name": "忠信镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350722108000",
+      "name": "莲塘镇",
+      "average": 79580.3
+    },
+    {
+      "regionId": "350722109000",
+      "name": "九牧镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350722200000",
+      "name": "万安乡",
+      "average": 34816.6
+    },
+    {
+      "regionId": "350722201000",
+      "name": "古楼乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350722202000",
+      "name": "山下乡",
+      "average": 24493.7
+    },
+    {
+      "regionId": "350722203000",
+      "name": "枫溪乡",
+      "average": 6067.4
+    },
+    {
+      "regionId": "350722204000",
+      "name": "濠村乡",
+      "average": 23966.3
+    },
+    {
+      "regionId": "350722205000",
+      "name": "管厝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350722206000",
+      "name": "盘亭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350722207000",
+      "name": "官路乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350722400000",
+      "name": "水南农场",
+      "average": 2925.5
+    },
+    {
+      "regionId": "361103104000",
+      "name": "桐畈镇",
+      "average": 48367.1
+    },
+    {
+      "regionId": "361103116000",
+      "name": "铜钹山镇",
+      "average": 12669.7
+    },
+    {
+      "regionId": "361103500000",
+      "name": "铜拔山垦殖场",
+      "average": 611.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

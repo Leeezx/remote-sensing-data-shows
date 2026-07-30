@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "320830101000",
+      "name": "马坝镇",
+      "average": 88437.3
+    },
+    {
+      "regionId": "320830108000",
+      "name": "黄花塘镇",
+      "average": 43413.0
+    },
+    {
+      "regionId": "320830201000",
+      "name": "穆店乡",
+      "average": 57764.8
+    },
+    {
+      "regionId": "320831402000",
+      "name": "粮棉原种场",
+      "average": 2177.4
+    },
+    {
+      "regionId": "321081107000",
+      "name": "陈集镇",
+      "average": 40949.7
+    },
+    {
+      "regionId": "341122101000",
+      "name": "半塔镇",
+      "average": 75.7
+    },
+    {
+      "regionId": "341181001000",
+      "name": "天长街道",
+      "average": 27708.8
+    },
+    {
+      "regionId": "341181100000",
+      "name": "铜城镇",
+      "average": 640.6
+    },
+    {
+      "regionId": "341181101000",
+      "name": "汊涧镇",
+      "average": 220.4
+    },
+    {
+      "regionId": "341181102000",
+      "name": "秦栏镇",
+      "average": 633.5
+    },
+    {
+      "regionId": "341181103000",
+      "name": "大通镇",
+      "average": 57318.4
+    },
+    {
+      "regionId": "341181104000",
+      "name": "杨村镇",
+      "average": 233.8
+    },
+    {
+      "regionId": "341181105000",
+      "name": "石梁镇",
+      "average": 41851.6
+    },
+    {
+      "regionId": "341181106000",
+      "name": "金集镇",
+      "average": 76.2
+    },
+    {
+      "regionId": "341181107000",
+      "name": "永丰镇",
+      "average": 36459.4
+    },
+    {
+      "regionId": "341181108000",
+      "name": "仁和集镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341181109000",
+      "name": "冶山镇",
+      "average": 101.2
+    },
+    {
+      "regionId": "341181110000",
+      "name": "郑集镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341181111000",
+      "name": "张铺镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341181112000",
+      "name": "新街镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341181113000",
+      "name": "万寿镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341181400000",
+      "name": "城东新区",
+      "average": 0.0
+    },
+    {
+      "regionId": "341181500000",
+      "name": "安徽省大圹圩农场",
+      "average": 11979.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

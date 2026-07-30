@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540528100000",
+      "name": "加查镇",
+      "average": 1271.5
+    },
+    {
+      "regionId": "540528101000",
+      "name": "安绕镇",
+      "average": 3200.8
+    },
+    {
+      "regionId": "540528200000",
+      "name": "拉绥乡",
+      "average": 1203.3
+    },
+    {
+      "regionId": "540528201000",
+      "name": "崔久乡",
+      "average": 7.6
+    },
+    {
+      "regionId": "540528202000",
+      "name": "坝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540528203000",
+      "name": "冷达乡",
+      "average": 46.6
+    },
+    {
+      "regionId": "540528204000",
+      "name": "洛林乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2.0672,
+      "color": "#bdd7e7",
+      "label": "2.067 万m³"
+    },
+    {
+      "value": 24.135999999999996,
+      "color": "#6baed6",
+      "label": "24.136 万m³"
+    },
+    {
+      "value": 712.8591999999994,
+      "color": "#3182bd",
+      "label": "712.859 万m³"
+    },
+    {
+      "value": 1252.9496,
+      "color": "#08519c",
+      "label": "1252.950 万m³"
+    },
+    {
+      "value": 2969.284,
+      "color": "#042d60",
+      "label": "2969.284 万m³"
+    }
+  ]
+}

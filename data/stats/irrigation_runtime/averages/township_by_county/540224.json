@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540224100000",
+      "name": "萨迦镇",
+      "average": 161.5
+    },
+    {
+      "regionId": "540224101000",
+      "name": "吉定镇",
+      "average": 1417.9
+    },
+    {
+      "regionId": "540224200000",
+      "name": "木拉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540224201000",
+      "name": "查荣乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540224202000",
+      "name": "拉洛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540224203000",
+      "name": "赛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540224204000",
+      "name": "扯休乡",
+      "average": 490.5
+    },
+    {
+      "regionId": "540224205000",
+      "name": "扎西岗乡",
+      "average": 1393.8
+    },
+    {
+      "regionId": "540224206000",
+      "name": "雄玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540224207000",
+      "name": "麻布加乡",
+      "average": 468.9
+    },
+    {
+      "regionId": "540224208000",
+      "name": "雄麦乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513224100000",
+      "name": "进安镇",
+      "average": 6.5
+    },
+    {
+      "regionId": "513224101000",
+      "name": "川主寺镇",
+      "average": 26.5
+    },
+    {
+      "regionId": "513224200000",
+      "name": "进安回族乡",
+      "average": 50.0
+    },
+    {
+      "regionId": "513224201000",
+      "name": "十里回族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513224202000",
+      "name": "青云乡",
+      "average": 15.3
+    },
+    {
+      "regionId": "513224203000",
+      "name": "安宏乡",
+      "average": 20.1
+    },
+    {
+      "regionId": "513224204000",
+      "name": "大寨乡",
+      "average": 4.7
+    },
+    {
+      "regionId": "513224205000",
+      "name": "牟尼乡",
+      "average": 26.6
+    },
+    {
+      "regionId": "513224206000",
+      "name": "镇江关乡",
+      "average": 18.6
+    },
+    {
+      "regionId": "513224207000",
+      "name": "镇坪乡",
+      "average": 179.2
+    },
+    {
+      "regionId": "513224208000",
+      "name": "岷江乡",
+      "average": 35.3
+    },
+    {
+      "regionId": "513224209000",
+      "name": "大姓乡",
+      "average": 4.2
+    },
+    {
+      "regionId": "513224210000",
+      "name": "白羊乡",
+      "average": 194.4
+    },
+    {
+      "regionId": "513224211000",
+      "name": "红土乡",
+      "average": 73.9
+    },
+    {
+      "regionId": "513224212000",
+      "name": "红扎乡",
+      "average": 24.1
+    },
+    {
+      "regionId": "513224213000",
+      "name": "小姓乡",
+      "average": 15.7
+    },
+    {
+      "regionId": "513224214000",
+      "name": "燕云乡",
+      "average": 8.6
+    },
+    {
+      "regionId": "513224215000",
+      "name": "山巴乡",
+      "average": 5.1
+    },
+    {
+      "regionId": "513224216000",
+      "name": "水晶乡",
+      "average": 12.8
+    },
+    {
+      "regionId": "513224217000",
+      "name": "小河乡",
+      "average": 357.4
+    },
+    {
+      "regionId": "513224218000",
+      "name": "施家堡乡",
+      "average": 51.3
+    },
+    {
+      "regionId": "513224219000",
+      "name": "黄龙乡",
+      "average": 4.9
+    },
+    {
+      "regionId": "513224220000",
+      "name": "上八寨乡",
+      "average": 40.5
+    },
+    {
+      "regionId": "513224221000",
+      "name": "下八寨乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513224222000",
+      "name": "草原乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 4.9176,
+      "color": "#bdd7e7",
+      "label": "4.918 万m³"
+    },
+    {
+      "value": 14.54,
+      "color": "#6baed6",
+      "label": "14.540 万m³"
+    },
+    {
+      "value": 24.829599999999996,
+      "color": "#3182bd",
+      "label": "24.830 万m³"
+    },
+    {
+      "value": 49.16399999999999,
+      "color": "#08519c",
+      "label": "49.164 万m³"
+    },
+    {
+      "value": 279.1599999999999,
+      "color": "#042d60",
+      "label": "279.160 万m³"
+    }
+  ]
+}

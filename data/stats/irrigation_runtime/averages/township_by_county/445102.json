@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "445102001000",
+      "name": "湘桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "445102002000",
+      "name": "西湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "445102003000",
+      "name": "金山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "445102004000",
+      "name": "太平街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "445102005000",
+      "name": "南春街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "445102006000",
+      "name": "西新街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "445102007000",
+      "name": "桥东街道",
+      "average": 1805.2
+    },
+    {
+      "regionId": "445102008000",
+      "name": "城西街道",
+      "average": 617.1
+    },
+    {
+      "regionId": "445102009000",
+      "name": "凤新街道",
+      "average": 1829.4
+    },
+    {
+      "regionId": "445102100000",
+      "name": "意溪镇",
+      "average": 14811.6
+    },
+    {
+      "regionId": "445102111000",
+      "name": "磷溪镇",
+      "average": 18172.3
+    },
+    {
+      "regionId": "445102112000",
+      "name": "铁铺镇",
+      "average": 6697.9
+    },
+    {
+      "regionId": "445102113000",
+      "name": "官塘镇",
+      "average": 17232.2
+    },
+    {
+      "regionId": "445102400000",
+      "name": "红山林场",
+      "average": 510.2
+    },
+    {
+      "regionId": "445102401000",
+      "name": "开发区",
+      "average": 861.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "520221108000",
+      "name": "都格镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520221110000",
+      "name": "鸡场镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520221214000",
+      "name": "坪寨彝族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520281117000",
+      "name": "柏果镇",
+      "average": 87.7
+    },
+    {
+      "regionId": "520281208000",
+      "name": "坪地彝族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520526101000",
+      "name": "么站镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520526102000",
+      "name": "金钟镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520526104000",
+      "name": "龙场镇",
+      "average": 125.6
+    },
+    {
+      "regionId": "520526106000",
+      "name": "哲觉镇",
+      "average": 149.5
+    },
+    {
+      "regionId": "520526203000",
+      "name": "麻乍镇",
+      "average": 48.8
+    },
+    {
+      "regionId": "530381001000",
+      "name": "宛水街道",
+      "average": 2386.7
+    },
+    {
+      "regionId": "530381002000",
+      "name": "西宁街道",
+      "average": 5140.5
+    },
+    {
+      "regionId": "530381003000",
+      "name": "双龙街道",
+      "average": 478.8
+    },
+    {
+      "regionId": "530381004000",
+      "name": "虹桥街道",
+      "average": 1381.5
+    },
+    {
+      "regionId": "530381101000",
+      "name": "来宾镇",
+      "average": 13171.3
+    },
+    {
+      "regionId": "530381102000",
+      "name": "格宜镇",
+      "average": 4362.1
+    },
+    {
+      "regionId": "530381103000",
+      "name": "田坝镇",
+      "average": 4786.9
+    },
+    {
+      "regionId": "530381104000",
+      "name": "羊场镇",
+      "average": 10339.1
+    },
+    {
+      "regionId": "530381105000",
+      "name": "板桥镇",
+      "average": 19178.2
+    },
+    {
+      "regionId": "530381106000",
+      "name": "倘塘镇",
+      "average": 4947.4
+    },
+    {
+      "regionId": "530381107000",
+      "name": "落水镇",
+      "average": 3154.7
+    },
+    {
+      "regionId": "530381108000",
+      "name": "务德镇",
+      "average": 6249.4
+    },
+    {
+      "regionId": "530381109000",
+      "name": "海岱镇",
+      "average": 12900.7
+    },
+    {
+      "regionId": "530381110000",
+      "name": "龙场镇",
+      "average": 4355.4
+    },
+    {
+      "regionId": "530381111000",
+      "name": "龙潭镇",
+      "average": 2511.1
+    },
+    {
+      "regionId": "530381112000",
+      "name": "热水镇",
+      "average": 17926.6
+    },
+    {
+      "regionId": "530381113000",
+      "name": "宝山镇",
+      "average": 5244.1
+    },
+    {
+      "regionId": "530381114000",
+      "name": "东山镇",
+      "average": 3273.9
+    },
+    {
+      "regionId": "530381201000",
+      "name": "普立乡",
+      "average": 544.8
+    },
+    {
+      "regionId": "530381202000",
+      "name": "西泽乡",
+      "average": 4562.2
+    },
+    {
+      "regionId": "530381203000",
+      "name": "得禄乡",
+      "average": 2012.7
+    },
+    {
+      "regionId": "530381204000",
+      "name": "杨柳乡",
+      "average": 826.1
+    },
+    {
+      "regionId": "530381205000",
+      "name": "双河乡",
+      "average": 982.9
+    },
+    {
+      "regionId": "530381206000",
+      "name": "乐丰乡",
+      "average": 810.5
+    },
+    {
+      "regionId": "530381207000",
+      "name": "文兴乡",
+      "average": 2689.1
+    },
+    {
+      "regionId": "530381208000",
+      "name": "阿都乡",
+      "average": 2753.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 103.618,
+      "color": "#bdd7e7",
+      "label": "103.618 万m³"
+    },
+    {
+      "value": 1038.7039999999995,
+      "color": "#6baed6",
+      "label": "1038.704 万m³"
+    },
+    {
+      "value": 3098.5879999999997,
+      "color": "#3182bd",
+      "label": "3098.588 万m³"
+    },
+    {
+      "value": 5059.397999999999,
+      "color": "#08519c",
+      "label": "5059.398 万m³"
+    },
+    {
+      "value": 18302.079999999994,
+      "color": "#042d60",
+      "label": "18302.080 万m³"
+    }
+  ]
+}

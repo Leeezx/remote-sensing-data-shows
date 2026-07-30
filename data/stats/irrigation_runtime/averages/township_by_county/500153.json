@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500153001000",
+      "name": "昌元街道",
+      "average": 7539.9
+    },
+    {
+      "regionId": "500153002000",
+      "name": "昌洲街道",
+      "average": 3074.8
+    },
+    {
+      "regionId": "500153003000",
+      "name": "广顺街道",
+      "average": 2687.8
+    },
+    {
+      "regionId": "500153004000",
+      "name": "双河街道",
+      "average": 1882.2
+    },
+    {
+      "regionId": "500153005000",
+      "name": "安富街道",
+      "average": 9206.7
+    },
+    {
+      "regionId": "500153006000",
+      "name": "峰高街道",
+      "average": 1398.3
+    },
+    {
+      "regionId": "500153103000",
+      "name": "直升镇",
+      "average": 241.7
+    },
+    {
+      "regionId": "500153104000",
+      "name": "路孔镇",
+      "average": 1316.1
+    },
+    {
+      "regionId": "500153106000",
+      "name": "清江镇",
+      "average": 3597.1
+    },
+    {
+      "regionId": "500153107000",
+      "name": "仁义镇",
+      "average": 12853.1
+    },
+    {
+      "regionId": "500153108000",
+      "name": "河包镇",
+      "average": 7552.3
+    },
+    {
+      "regionId": "500153109000",
+      "name": "古昌镇",
+      "average": 3607.3
+    },
+    {
+      "regionId": "500153110000",
+      "name": "吴家镇",
+      "average": 7219.9
+    },
+    {
+      "regionId": "500153111000",
+      "name": "观胜镇",
+      "average": 2073.5
+    },
+    {
+      "regionId": "500153112000",
+      "name": "铜鼓镇",
+      "average": 2229.8
+    },
+    {
+      "regionId": "500153113000",
+      "name": "清流镇",
+      "average": 363.4
+    },
+    {
+      "regionId": "500153114000",
+      "name": "盘龙镇",
+      "average": 9326.9
+    },
+    {
+      "regionId": "500153115000",
+      "name": "远觉镇",
+      "average": 684.3
+    },
+    {
+      "regionId": "500153117000",
+      "name": "清升镇",
+      "average": 1895.0
+    },
+    {
+      "regionId": "500153118000",
+      "name": "荣隆镇",
+      "average": 6002.6
+    },
+    {
+      "regionId": "500153119000",
+      "name": "龙集镇",
+      "average": 4262.8
+    },
+    {
+      "regionId": "510521110000",
+      "name": "石桥镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510521118000",
+      "name": "方洞镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511011111000",
+      "name": "石子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511011209000",
+      "name": "平坦乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511083108000",
+      "name": "界市镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511083110000",
+      "name": "周兴镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511083111000",
+      "name": "渔箭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511083112000",
+      "name": "石燕桥镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511083113000",
+      "name": "李市镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

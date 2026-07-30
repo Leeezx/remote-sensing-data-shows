@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510303001000",
+      "name": "筱溪街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510303002000",
+      "name": "贡井街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510303100000",
+      "name": "艾叶镇",
+      "average": 529.3
+    },
+    {
+      "regionId": "510303101000",
+      "name": "建设镇",
+      "average": 1890.5
+    },
+    {
+      "regionId": "510303102000",
+      "name": "长土镇",
+      "average": 885.6
+    },
+    {
+      "regionId": "510303104000",
+      "name": "龙潭镇",
+      "average": 4719.4
+    },
+    {
+      "regionId": "510303105000",
+      "name": "桥头镇",
+      "average": 1759.6
+    },
+    {
+      "regionId": "510303106000",
+      "name": "五宝镇",
+      "average": 3722.0
+    },
+    {
+      "regionId": "510303107000",
+      "name": "莲花镇",
+      "average": 2416.6
+    },
+    {
+      "regionId": "510303108000",
+      "name": "成佳镇",
+      "average": 9202.4
+    },
+    {
+      "regionId": "510303109000",
+      "name": "白庙镇",
+      "average": 3285.5
+    },
+    {
+      "regionId": "510303200000",
+      "name": "章佳乡",
+      "average": 1810.7
+    },
+    {
+      "regionId": "510303201000",
+      "name": "牛尾乡",
+      "average": 2267.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 723.1272,
+      "color": "#bdd7e7",
+      "label": "723.127 万m³"
+    },
+    {
+      "value": 1802.9328,
+      "color": "#6baed6",
+      "label": "1802.933 万m³"
+    },
+    {
+      "value": 2289.8239999999996,
+      "color": "#3182bd",
+      "label": "2289.824 万m³"
+    },
+    {
+      "value": 3484.544,
+      "color": "#08519c",
+      "label": "3484.544 万m³"
+    },
+    {
+      "value": 8126.479999999999,
+      "color": "#042d60",
+      "label": "8126.480 万m³"
+    }
+  ]
+}

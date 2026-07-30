@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130927100000",
+      "name": "南皮镇",
+      "average": 8303.6
+    },
+    {
+      "regionId": "130927101000",
+      "name": "冯家口镇",
+      "average": 23164.5
+    },
+    {
+      "regionId": "130927102000",
+      "name": "寨子镇",
+      "average": 20847.3
+    },
+    {
+      "regionId": "130927103000",
+      "name": "鲍官屯镇",
+      "average": 22935.1
+    },
+    {
+      "regionId": "130927104000",
+      "name": "王寺镇",
+      "average": 21225.2
+    },
+    {
+      "regionId": "130927105000",
+      "name": "乌马营镇",
+      "average": 15621.7
+    },
+    {
+      "regionId": "130927200000",
+      "name": "大浪淀乡",
+      "average": 15970.9
+    },
+    {
+      "regionId": "130927201000",
+      "name": "刘八里乡",
+      "average": 15422.3
+    },
+    {
+      "regionId": "130927202000",
+      "name": "潞灌乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "371481201000",
+      "name": "大孙乡",
+      "average": 11896.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 1494.648,
+      "color": "#eff3ff",
+      "label": "1494.648 万m³"
+    },
+    {
+      "value": 11566.044,
+      "color": "#bdd7e7",
+      "label": "11566.044 万m³"
+    },
+    {
+      "value": 15549.1184,
+      "color": "#6baed6",
+      "label": "15549.118 万m³"
+    },
+    {
+      "value": 17745.9096,
+      "color": "#3182bd",
+      "label": "17745.910 万m³"
+    },
+    {
+      "value": 21382.5108,
+      "color": "#08519c",
+      "label": "21382.511 万m³"
+    },
+    {
+      "value": 23123.208,
+      "color": "#042d60",
+      "label": "23123.208 万m³"
+    }
+  ]
+}

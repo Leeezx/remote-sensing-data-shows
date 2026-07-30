@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130433100000",
+      "name": "馆陶镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130433101000",
+      "name": "房寨镇",
+      "average": 23075.0
+    },
+    {
+      "regionId": "130433102000",
+      "name": "柴堡镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130433103000",
+      "name": "魏僧寨镇",
+      "average": 253.3
+    },
+    {
+      "regionId": "130433200000",
+      "name": "寿山寺乡",
+      "average": 21417.9
+    },
+    {
+      "regionId": "130433201000",
+      "name": "王桥乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130433202000",
+      "name": "南徐村乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130433203000",
+      "name": "路桥乡",
+      "average": 49727.8
+    },
+    {
+      "regionId": "371525105000",
+      "name": "东古城镇",
+      "average": 51586.4
+    },
+    {
+      "regionId": "371525106000",
+      "name": "北馆陶镇",
+      "average": 31806.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

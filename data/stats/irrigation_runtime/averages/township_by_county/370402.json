@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "370402001000",
+      "name": "中心街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370402002000",
+      "name": "各塔埠街道",
+      "average": 183.9
+    },
+    {
+      "regionId": "370402003000",
+      "name": "矿区街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370402004000",
+      "name": "文化路街道办事",
+      "average": 0.0
+    },
+    {
+      "regionId": "370402005000",
+      "name": "龙山路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370402006000",
+      "name": "光明路街道办事",
+      "average": 1993.8
+    },
+    {
+      "regionId": "370402101000",
+      "name": "税郭镇",
+      "average": 14644.8
+    },
+    {
+      "regionId": "370402102000",
+      "name": "孟庄镇",
+      "average": 5693.5
+    },
+    {
+      "regionId": "370402103000",
+      "name": "齐村镇",
+      "average": 9740.2
+    },
+    {
+      "regionId": "370402201000",
+      "name": "永安乡",
+      "average": 8258.0
+    },
+    {
+      "regionId": "370402202000",
+      "name": "西王庄乡",
+      "average": 13231.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

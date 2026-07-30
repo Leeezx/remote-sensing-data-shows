@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410402001000",
+      "name": "曙光街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410402002000",
+      "name": "光明路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410402003000",
+      "name": "中兴路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410402004000",
+      "name": "矿工路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410402005000",
+      "name": "西市场街道",
+      "average": 527.0
+    },
+    {
+      "regionId": "410402006000",
+      "name": "新新街街道",
+      "average": 688.0
+    },
+    {
+      "regionId": "410402007000",
+      "name": "青石山街道",
+      "average": 467.0
+    },
+    {
+      "regionId": "410402008000",
+      "name": "湛河北路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410402009000",
+      "name": "湖滨路街道",
+      "average": 105.2
+    },
+    {
+      "regionId": "410402010000",
+      "name": "西高皇街道",
+      "average": 9.7
+    },
+    {
+      "regionId": "410402100000",
+      "name": "焦店镇",
+      "average": 1635.4
+    },
+    {
+      "regionId": "410402101000",
+      "name": "滍阳镇",
+      "average": 19743.0
+    },
+    {
+      "regionId": "410402400000",
+      "name": "香山管委会",
+      "average": 3774.3
+    },
+    {
+      "regionId": "410402402000",
+      "name": "应滨管委会",
+      "average": 4073.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511102001000",
+      "name": "张公桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511102002000",
+      "name": "泊水街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511102003000",
+      "name": "上河街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511102004000",
+      "name": "大佛街道",
+      "average": 156.0
+    },
+    {
+      "regionId": "511102005000",
+      "name": "肖坝街道",
+      "average": 428.8
+    },
+    {
+      "regionId": "511102006000",
+      "name": "通江街道",
+      "average": 284.9
+    },
+    {
+      "regionId": "511102007000",
+      "name": "柏杨街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "511102101000",
+      "name": "牟子镇",
+      "average": 3465.5
+    },
+    {
+      "regionId": "511102102000",
+      "name": "土主镇",
+      "average": 2324.9
+    },
+    {
+      "regionId": "511102103000",
+      "name": "白马镇",
+      "average": 3095.5
+    },
+    {
+      "regionId": "511102104000",
+      "name": "茅桥镇",
+      "average": 4098.6
+    },
+    {
+      "regionId": "511102105000",
+      "name": "青平镇",
+      "average": 4498.6
+    },
+    {
+      "regionId": "511102106000",
+      "name": "苏稽镇",
+      "average": 3188.4
+    },
+    {
+      "regionId": "511102107000",
+      "name": "水口镇",
+      "average": 1672.9
+    },
+    {
+      "regionId": "511102108000",
+      "name": "安谷镇",
+      "average": 4708.5
+    },
+    {
+      "regionId": "511102109000",
+      "name": "棉竹镇",
+      "average": 1525.0
+    },
+    {
+      "regionId": "511102110000",
+      "name": "全福镇",
+      "average": 3193.4
+    },
+    {
+      "regionId": "511102111000",
+      "name": "童家镇",
+      "average": 4855.5
+    },
+    {
+      "regionId": "511102112000",
+      "name": "九峰镇",
+      "average": 137.6
+    },
+    {
+      "regionId": "511102113000",
+      "name": "罗汉镇",
+      "average": 1992.4
+    },
+    {
+      "regionId": "511102114000",
+      "name": "临江镇",
+      "average": 2682.6
+    },
+    {
+      "regionId": "511102115000",
+      "name": "车子镇",
+      "average": 1193.2
+    },
+    {
+      "regionId": "511102200000",
+      "name": "悦来乡",
+      "average": 2507.3
+    },
+    {
+      "regionId": "511102201000",
+      "name": "关庙乡",
+      "average": 1754.5
+    },
+    {
+      "regionId": "511102202000",
+      "name": "石龙乡",
+      "average": 1621.6
+    },
+    {
+      "regionId": "511102203000",
+      "name": "剑峰乡",
+      "average": 3930.3
+    },
+    {
+      "regionId": "511102204000",
+      "name": "凌云乡",
+      "average": 2669.5
+    },
+    {
+      "regionId": "511102205000",
+      "name": "迎阳乡",
+      "average": 1366.3
+    },
+    {
+      "regionId": "511102206000",
+      "name": "九龙乡",
+      "average": 1809.0
+    },
+    {
+      "regionId": "511102207000",
+      "name": "普仁乡",
+      "average": 1182.4
+    },
+    {
+      "regionId": "511102208000",
+      "name": "平兴乡",
+      "average": 1599.2
+    },
+    {
+      "regionId": "511102209000",
+      "name": "杨湾乡",
+      "average": 1909.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 367.2108,
+      "color": "#bdd7e7",
+      "label": "367.211 万m³"
+    },
+    {
+      "value": 1610.9376,
+      "color": "#6baed6",
+      "label": "1610.938 万m³"
+    },
+    {
+      "value": 2150.6699999999996,
+      "color": "#3182bd",
+      "label": "2150.670 万m³"
+    },
+    {
+      "value": 3190.54,
+      "color": "#08519c",
+      "label": "3190.540 万m³"
+    },
+    {
+      "value": 4764.36,
+      "color": "#042d60",
+      "label": "4764.360 万m³"
+    }
+  ]
+}

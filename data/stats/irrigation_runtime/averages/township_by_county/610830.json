@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "141126103000",
+      "name": "小蒜镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "141126202000",
+      "name": "前山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "141126203000",
+      "name": "曹家垣乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610826103000",
+      "name": "定仙墕镇",
+      "average": 1983.4
+    },
+    {
+      "regionId": "610830101000",
+      "name": "石咀驿镇",
+      "average": 5214.3
+    },
+    {
+      "regionId": "610830102000",
+      "name": "折家坪镇",
+      "average": 2428.6
+    },
+    {
+      "regionId": "610830103000",
+      "name": "玉家河镇",
+      "average": 444.8
+    },
+    {
+      "regionId": "610830104000",
+      "name": "高杰村镇",
+      "average": 1010.8
+    },
+    {
+      "regionId": "610830105000",
+      "name": "李家塔镇",
+      "average": 4012.6
+    },
+    {
+      "regionId": "610830107000",
+      "name": "解家沟镇",
+      "average": 1594.2
+    },
+    {
+      "regionId": "610830201000",
+      "name": "师家园则乡",
+      "average": 6536.4
+    },
+    {
+      "regionId": "610830202000",
+      "name": "下廿里铺乡",
+      "average": 1770.9
+    },
+    {
+      "regionId": "610830203000",
+      "name": "双庙河乡",
+      "average": 1429.0
+    },
+    {
+      "regionId": "610830206000",
+      "name": "石盘乡",
+      "average": 114.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 86.56199999999998,
+      "color": "#bdd7e7",
+      "label": "86.562 万m³"
+    },
+    {
+      "value": 1116.1863999999998,
+      "color": "#6baed6",
+      "label": "1116.186 万m³"
+    },
+    {
+      "value": 1726.3716,
+      "color": "#3182bd",
+      "label": "1726.372 万m³"
+    },
+    {
+      "value": 2815.0959999999995,
+      "color": "#08519c",
+      "label": "2815.096 万m³"
+    },
+    {
+      "value": 6192.654,
+      "color": "#042d60",
+      "label": "6192.654 万m³"
+    }
+  ]
+}

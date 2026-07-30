@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "630103001000",
+      "name": "人民街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "630103002000",
+      "name": "南滩街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "630103003000",
+      "name": "仓门街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "630103004000",
+      "name": "礼让街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "630103005000",
+      "name": "饮马街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "630103006000",
+      "name": "南川东路街道",
+      "average": 20.3
+    },
+    {
+      "regionId": "630103007000",
+      "name": "南川西路街道",
+      "average": 33.7
+    },
+    {
+      "regionId": "630103100000",
+      "name": "总寨镇",
+      "average": 914.5
+    },
+    {
+      "regionId": "630103400000",
+      "name": "南川工业园",
+      "average": 255.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

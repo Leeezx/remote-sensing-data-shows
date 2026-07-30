@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "141002001000",
+      "name": "解放路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "141002002000",
+      "name": "鼓楼西街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "141002003000",
+      "name": "水塔街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "141002004000",
+      "name": "南街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "141002005000",
+      "name": "乡贤街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "141002006000",
+      "name": "辛寺街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "141002007000",
+      "name": "铁路东街道",
+      "average": 99.3
+    },
+    {
+      "regionId": "141002008000",
+      "name": "车站街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "141002009000",
+      "name": "汾河街道",
+      "average": 2774.2
+    },
+    {
+      "regionId": "141002010000",
+      "name": "滨河办事处",
+      "average": 223.0
+    },
+    {
+      "regionId": "141002100000",
+      "name": "屯里镇",
+      "average": 9206.0
+    },
+    {
+      "regionId": "141002101000",
+      "name": "乔李镇",
+      "average": 13815.8
+    },
+    {
+      "regionId": "141002102000",
+      "name": "大阳镇",
+      "average": 19413.6
+    },
+    {
+      "regionId": "141002103000",
+      "name": "县底镇",
+      "average": 34569.0
+    },
+    {
+      "regionId": "141002104000",
+      "name": "刘村镇",
+      "average": 20261.5
+    },
+    {
+      "regionId": "141002105000",
+      "name": "金殿镇",
+      "average": 44886.3
+    },
+    {
+      "regionId": "141002106000",
+      "name": "吴村镇",
+      "average": 38518.4
+    },
+    {
+      "regionId": "141002107000",
+      "name": "土门镇",
+      "average": 27348.4
+    },
+    {
+      "regionId": "141002108000",
+      "name": "魏村镇",
+      "average": 3301.8
+    },
+    {
+      "regionId": "141002109000",
+      "name": "尧庙镇",
+      "average": 7207.6
+    },
+    {
+      "regionId": "141002200000",
+      "name": "段店乡",
+      "average": 25082.9
+    },
+    {
+      "regionId": "141002201000",
+      "name": "贾得乡",
+      "average": 26135.0
+    },
+    {
+      "regionId": "141002202000",
+      "name": "贺家庄乡",
+      "average": 5058.9
+    },
+    {
+      "regionId": "141002203000",
+      "name": "一平垣乡",
+      "average": 3560.2
+    },
+    {
+      "regionId": "141002204000",
+      "name": "枕头乡",
+      "average": 5276.0
+    },
+    {
+      "regionId": "141002205000",
+      "name": "河底乡",
+      "average": 1072.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

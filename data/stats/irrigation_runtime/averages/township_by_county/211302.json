@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "211302001000",
+      "name": "南塔街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211302002000",
+      "name": "北塔街道",
+      "average": 45.2
+    },
+    {
+      "regionId": "211302003000",
+      "name": "前进街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211302004000",
+      "name": "凌河街道",
+      "average": 110.7
+    },
+    {
+      "regionId": "211302005000",
+      "name": "光明街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211302006000",
+      "name": "凌凤街道",
+      "average": 884.5
+    },
+    {
+      "regionId": "211302007000",
+      "name": "龙山街道",
+      "average": 1107.9
+    },
+    {
+      "regionId": "211302008000",
+      "name": "站南街道",
+      "average": 139.5
+    },
+    {
+      "regionId": "211302009000",
+      "name": "红旗街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211302010000",
+      "name": "燕北街道",
+      "average": 45.2
+    },
+    {
+      "regionId": "211302011000",
+      "name": "燕都街道",
+      "average": 2139.0
+    },
+    {
+      "regionId": "211302100000",
+      "name": "桃花吐镇",
+      "average": 9587.9
+    },
+    {
+      "regionId": "211302101000",
+      "name": "他拉皋镇",
+      "average": 6015.4
+    },
+    {
+      "regionId": "211302102000",
+      "name": "孙家湾镇",
+      "average": 7498.1
+    },
+    {
+      "regionId": "211302205000",
+      "name": "长宝营子乡",
+      "average": 1537.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

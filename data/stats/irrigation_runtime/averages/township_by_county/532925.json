@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "532925101000",
+      "name": "弥城镇",
+      "average": 23281.4
+    },
+    {
+      "regionId": "532925102000",
+      "name": "红岩镇",
+      "average": 19541.3
+    },
+    {
+      "regionId": "532925103000",
+      "name": "新街镇",
+      "average": 19192.1
+    },
+    {
+      "regionId": "532925104000",
+      "name": "寅街镇",
+      "average": 17625.3
+    },
+    {
+      "regionId": "532925105000",
+      "name": "苴力镇",
+      "average": 10077.4
+    },
+    {
+      "regionId": "532925202000",
+      "name": "密祉乡",
+      "average": 4831.1
+    },
+    {
+      "regionId": "532925203000",
+      "name": "德苴乡",
+      "average": 5149.9
+    },
+    {
+      "regionId": "532925204000",
+      "name": "牛街彝族乡",
+      "average": 6763.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 4875.732,
+      "color": "#eff3ff",
+      "label": "4875.732 万m³"
+    },
+    {
+      "value": 5930.7856,
+      "color": "#bdd7e7",
+      "label": "5930.786 万m³"
+    },
+    {
+      "value": 9507.3748,
+      "color": "#6baed6",
+      "label": "9507.375 万m³"
+    },
+    {
+      "value": 17894.7896,
+      "color": "#3182bd",
+      "label": "17894.790 万m³"
+    },
+    {
+      "value": 19372.2872,
+      "color": "#08519c",
+      "label": "19372.287 万m³"
+    },
+    {
+      "value": 22757.786,
+      "color": "#042d60",
+      "label": "22757.786 万m³"
+    }
+  ]
+}

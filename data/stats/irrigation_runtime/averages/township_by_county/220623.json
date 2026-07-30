@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "220623100000",
+      "name": "长白镇",
+      "average": 66.9
+    },
+    {
+      "regionId": "220623101000",
+      "name": "八道沟镇",
+      "average": 68.6
+    },
+    {
+      "regionId": "220623102000",
+      "name": "十四道沟镇",
+      "average": 453.9
+    },
+    {
+      "regionId": "220623103000",
+      "name": "马鹿沟镇",
+      "average": 373.5
+    },
+    {
+      "regionId": "220623104000",
+      "name": "宝泉山镇",
+      "average": 44.6
+    },
+    {
+      "regionId": "220623105000",
+      "name": "新房子镇",
+      "average": 605.7
+    },
+    {
+      "regionId": "220623200000",
+      "name": "金华乡",
+      "average": 353.9
+    },
+    {
+      "regionId": "220623201000",
+      "name": "十二道沟乡",
+      "average": 128.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 47.722,
+      "color": "#eff3ff",
+      "label": "47.722 万m³"
+    },
+    {
+      "value": 67.7228,
+      "color": "#bdd7e7",
+      "label": "67.723 万m³"
+    },
+    {
+      "value": 118.4456,
+      "color": "#6baed6",
+      "label": "118.446 万m³"
+    },
+    {
+      "value": 357.27119999999996,
+      "color": "#3182bd",
+      "label": "357.271 万m³"
+    },
+    {
+      "value": 414.9863999999999,
+      "color": "#08519c",
+      "label": "414.986 万m³"
+    },
+    {
+      "value": 584.448,
+      "color": "#042d60",
+      "label": "584.448 万m³"
+    }
+  ]
+}

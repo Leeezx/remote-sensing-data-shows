@@ -1,0 +1,228 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "231102001000",
+      "name": "花园街道",
+      "average": 5.2
+    },
+    {
+      "regionId": "231102002000",
+      "name": "兴安街道",
+      "average": 111.2
+    },
+    {
+      "regionId": "231102003000",
+      "name": "海兰街道",
+      "average": 10.6
+    },
+    {
+      "regionId": "231102004000",
+      "name": "西兴街道",
+      "average": 3.0
+    },
+    {
+      "regionId": "231102101000",
+      "name": "西岗子镇",
+      "average": 8312.7
+    },
+    {
+      "regionId": "231102102000",
+      "name": "爱辉镇",
+      "average": 31055.5
+    },
+    {
+      "regionId": "231102103000",
+      "name": "罕达汽镇",
+      "average": 624.2
+    },
+    {
+      "regionId": "231102200000",
+      "name": "幸福乡",
+      "average": 7752.8
+    },
+    {
+      "regionId": "231102201000",
+      "name": "四嘉子乡",
+      "average": 11820.4
+    },
+    {
+      "regionId": "231102202000",
+      "name": "坤河乡",
+      "average": 9528.8
+    },
+    {
+      "regionId": "231102203000",
+      "name": "上马厂乡",
+      "average": 3915.5
+    },
+    {
+      "regionId": "231102204000",
+      "name": "张地营子乡",
+      "average": 3085.5
+    },
+    {
+      "regionId": "231102205000",
+      "name": "西峰山乡",
+      "average": 15.3
+    },
+    {
+      "regionId": "231102206000",
+      "name": "新生乡",
+      "average": 11.9
+    },
+    {
+      "regionId": "231102207000",
+      "name": "二站乡",
+      "average": 113.6
+    },
+    {
+      "regionId": "231102407000",
+      "name": "大平林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231102408000",
+      "name": "七二七林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231102409000",
+      "name": "望峰林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231102410000",
+      "name": "卡伦山林场",
+      "average": 19.5
+    },
+    {
+      "regionId": "231102411000",
+      "name": "胜山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231102412000",
+      "name": "二站林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231102413000",
+      "name": "三站林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231102414000",
+      "name": "大岭林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231102415000",
+      "name": "桦皮窑林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231102416000",
+      "name": "滨南林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231102417000",
+      "name": "江防林场",
+      "average": 379.6
+    },
+    {
+      "regionId": "231102418000",
+      "name": "河南屯林场",
+      "average": 8.8
+    },
+    {
+      "regionId": "231102421000",
+      "name": "西岗子试验林场",
+      "average": 5.6
+    },
+    {
+      "regionId": "231102425000",
+      "name": "大新屯储木场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231102480000",
+      "name": "宋集屯煤矿",
+      "average": 0.0
+    },
+    {
+      "regionId": "231102481000",
+      "name": "西岗子煤矿",
+      "average": 1092.5
+    },
+    {
+      "regionId": "231102482000",
+      "name": "东方红煤矿",
+      "average": 153.6
+    },
+    {
+      "regionId": "231102500000",
+      "name": "锦河农场",
+      "average": 2156.7
+    },
+    {
+      "regionId": "231102580000",
+      "name": "奶牛场",
+      "average": 31.3
+    },
+    {
+      "regionId": "231102581000",
+      "name": "种畜场",
+      "average": 222.9
+    },
+    {
+      "regionId": "231102582000",
+      "name": "第二良种场",
+      "average": 456.0
+    },
+    {
+      "regionId": "231102583000",
+      "name": "第一良种场",
+      "average": 1.0
+    },
+    {
+      "regionId": "231124500000",
+      "name": "红色边疆农场",
+      "average": 11638.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

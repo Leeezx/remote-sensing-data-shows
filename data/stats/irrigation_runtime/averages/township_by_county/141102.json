@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "141102001000",
+      "name": "滨河街道",
+      "average": 410.8
+    },
+    {
+      "regionId": "141102002000",
+      "name": "凤山街道",
+      "average": 417.1
+    },
+    {
+      "regionId": "141102003000",
+      "name": "莲花池街道",
+      "average": 121.9
+    },
+    {
+      "regionId": "141102004000",
+      "name": "城北街道",
+      "average": 873.8
+    },
+    {
+      "regionId": "141102005000",
+      "name": "田家会街道",
+      "average": 2380.9
+    },
+    {
+      "regionId": "141102006000",
+      "name": "交口街道",
+      "average": 752.7
+    },
+    {
+      "regionId": "141102007000",
+      "name": "西属巴街道",
+      "average": 1158.0
+    },
+    {
+      "regionId": "141102100000",
+      "name": "吴城镇",
+      "average": 5749.3
+    },
+    {
+      "regionId": "141102101000",
+      "name": "信义镇",
+      "average": 3409.9
+    },
+    {
+      "regionId": "141102200000",
+      "name": "红眼川乡",
+      "average": 451.4
+    },
+    {
+      "regionId": "141102201000",
+      "name": "枣林乡",
+      "average": 2745.6
+    },
+    {
+      "regionId": "141102202000",
+      "name": "坪头乡",
+      "average": 2032.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 185.458,
+      "color": "#eff3ff",
+      "label": "185.458 万m³"
+    },
+    {
+      "value": 428.4876,
+      "color": "#bdd7e7",
+      "label": "428.488 万m³"
+    },
+    {
+      "value": 806.4684,
+      "color": "#6baed6",
+      "label": "806.468 万m³"
+    },
+    {
+      "value": 1644.4444,
+      "color": "#3182bd",
+      "label": "1644.444 万m³"
+    },
+    {
+      "value": 2624.5195999999996,
+      "color": "#08519c",
+      "label": "2624.520 万m³"
+    },
+    {
+      "value": 5234.631999999999,
+      "color": "#042d60",
+      "label": "5234.632 万m³"
+    }
+  ]
+}

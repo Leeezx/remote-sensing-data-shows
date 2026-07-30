@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230506001000",
+      "name": "红旗街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230506002000",
+      "name": "跃进街道",
+      "average": 9.3
+    },
+    {
+      "regionId": "230506003000",
+      "name": "东保卫街道",
+      "average": 2946.7
+    },
+    {
+      "regionId": "230506004000",
+      "name": "七星街道",
+      "average": 231.2
+    },
+    {
+      "regionId": "230506101000",
+      "name": "七星镇",
+      "average": 1337.2
+    },
+    {
+      "regionId": "230522102000",
+      "name": "龙山镇",
+      "average": 3333.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.9300000000000002,
+      "color": "#eff3ff",
+      "label": "0.930 万m³"
+    },
+    {
+      "value": 22.61400000000001,
+      "color": "#bdd7e7",
+      "label": "22.614 万m³"
+    },
+    {
+      "value": 253.32,
+      "color": "#6baed6",
+      "label": "253.320 万m³"
+    },
+    {
+      "value": 1315.08,
+      "color": "#3182bd",
+      "label": "1315.080 万m³"
+    },
+    {
+      "value": 2850.129999999999,
+      "color": "#08519c",
+      "label": "2850.130 万m³"
+    },
+    {
+      "value": 3294.91,
+      "color": "#042d60",
+      "label": "3294.910 万m³"
+    }
+  ]
+}

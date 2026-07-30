@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540624205000",
+      "name": "色务乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540630201000",
+      "name": "雅曲乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620982105000",
+      "name": "阳关镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632802107000",
+      "name": "茫崖镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "652824100000",
+      "name": "若羌镇",
+      "average": 83.3
+    },
+    {
+      "regionId": "652824102000",
+      "name": "罗布泊镇",
+      "average": 51572.6
+    },
+    {
+      "regionId": "652824103000",
+      "name": "瓦石峡镇",
+      "average": 8442.3
+    },
+    {
+      "regionId": "652824200000",
+      "name": "铁干里克乡",
+      "average": 9508.4
+    },
+    {
+      "regionId": "652824201000",
+      "name": "吾塔木乡",
+      "average": 8965.4
+    },
+    {
+      "regionId": "652824203000",
+      "name": "铁木里克乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "652824204000",
+      "name": "祁曼塔克乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "652824501000",
+      "name": "兵团三十六团",
+      "average": 24112.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

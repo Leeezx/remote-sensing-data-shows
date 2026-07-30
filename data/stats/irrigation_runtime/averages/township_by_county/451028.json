@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451028100000",
+      "name": "同乐镇",
+      "average": 9723.6
+    },
+    {
+      "regionId": "451028101000",
+      "name": "甘田镇",
+      "average": 5107.8
+    },
+    {
+      "regionId": "451028102000",
+      "name": "新化镇",
+      "average": 10063.9
+    },
+    {
+      "regionId": "451028103000",
+      "name": "花坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451028201000",
+      "name": "逻沙乡",
+      "average": 6993.5
+    },
+    {
+      "regionId": "451028203000",
+      "name": "逻西乡",
+      "average": 5569.1
+    },
+    {
+      "regionId": "451028204000",
+      "name": "幼平乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451028205000",
+      "name": "雅长乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "522326108000",
+      "name": "蔗香镇",
+      "average": 6687.6
+    },
+    {
+      "regionId": "522326205000",
+      "name": "昂武乡",
+      "average": 6366.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

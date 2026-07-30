@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540628100000",
+      "name": "雅安镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540628101000",
+      "name": "拉西镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540628102000",
+      "name": "杂色镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540628200000",
+      "name": "江绵乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540628201000",
+      "name": "岗切乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540628202000",
+      "name": "巴青乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540628203000",
+      "name": "阿秀乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540628204000",
+      "name": "玛如乡",
+      "average": 5.3
+    },
+    {
+      "regionId": "540628205000",
+      "name": "本塔乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540628206000",
+      "name": "贡日乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632722201000",
+      "name": "结多乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

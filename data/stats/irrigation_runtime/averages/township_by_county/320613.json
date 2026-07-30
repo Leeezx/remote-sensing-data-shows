@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "320602001000",
+      "name": "城东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320602002000",
+      "name": "和平桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320602003000",
+      "name": "任港街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320602004000",
+      "name": "新城桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320602005000",
+      "name": "虹桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320602006000",
+      "name": "学田街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320602007000",
+      "name": "钟秀街道",
+      "average": 247.1
+    },
+    {
+      "regionId": "320602008000",
+      "name": "文峰街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320602009000",
+      "name": "观音山街道",
+      "average": 7586.0
+    },
+    {
+      "regionId": "320602010000",
+      "name": "狼山镇街道",
+      "average": 1041.8
+    },
+    {
+      "regionId": "320602050000",
+      "name": "中兴街道",
+      "average": 3031.6
+    },
+    {
+      "regionId": "320602051000",
+      "name": "新开街道",
+      "average": 6230.3
+    },
+    {
+      "regionId": "320602052000",
+      "name": "竹行街道",
+      "average": 10567.7
+    },
+    {
+      "regionId": "320602053000",
+      "name": "小海街道",
+      "average": 6100.5
+    },
+    {
+      "regionId": "320602450000",
+      "name": "江海镇区",
+      "average": 24197.1
+    },
+    {
+      "regionId": "320602451000",
+      "name": "南通市富民港良种场",
+      "average": 524.9
+    },
+    {
+      "regionId": "320602452000",
+      "name": "南通市富民港种畜场",
+      "average": 351.9
+    },
+    {
+      "regionId": "320602453000",
+      "name": "南通苏通科技产业园",
+      "average": 11993.1
+    },
+    {
+      "regionId": "320611001000",
+      "name": "永兴街道",
+      "average": 114.9
+    },
+    {
+      "regionId": "320611002000",
+      "name": "唐闸镇街道",
+      "average": 1126.9
+    },
+    {
+      "regionId": "320611003000",
+      "name": "天生港镇街道",
+      "average": 3469.8
+    },
+    {
+      "regionId": "320611004000",
+      "name": "秦灶街道",
+      "average": 7611.1
+    },
+    {
+      "regionId": "320611005000",
+      "name": "陈桥街道",
+      "average": 17272.7
+    },
+    {
+      "regionId": "320611006000",
+      "name": "幸福街道",
+      "average": 15638.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

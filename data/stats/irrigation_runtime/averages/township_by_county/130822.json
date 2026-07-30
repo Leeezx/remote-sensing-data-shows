@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "110117006000",
+      "name": "金海湖地区办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "110117114000",
+      "name": "镇罗营镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110117213000",
+      "name": "黄松峪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "110118107000",
+      "name": "太师屯镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110118112000",
+      "name": "大城子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110118114000",
+      "name": "北庄镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130822100000",
+      "name": "兴隆镇",
+      "average": 3216.7
+    },
+    {
+      "regionId": "130822101000",
+      "name": "半壁山镇",
+      "average": 1348.8
+    },
+    {
+      "regionId": "130822102000",
+      "name": "挂兰峪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130822103000",
+      "name": "青松岭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130822104000",
+      "name": "六道河镇",
+      "average": 749.7
+    },
+    {
+      "regionId": "130822105000",
+      "name": "平安堡镇",
+      "average": 1101.9
+    },
+    {
+      "regionId": "130822106000",
+      "name": "北营房镇",
+      "average": 843.2
+    },
+    {
+      "regionId": "130822107000",
+      "name": "孤山子镇",
+      "average": 315.1
+    },
+    {
+      "regionId": "130822108000",
+      "name": "蓝旗营镇",
+      "average": 904.2
+    },
+    {
+      "regionId": "130822200000",
+      "name": "南天门满族乡",
+      "average": 1059.7
+    },
+    {
+      "regionId": "130822202000",
+      "name": "八卦岭满族乡",
+      "average": 460.9
+    },
+    {
+      "regionId": "130822203000",
+      "name": "陡子峪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130822204000",
+      "name": "上石洞乡",
+      "average": 57.6
+    },
+    {
+      "regionId": "130822205000",
+      "name": "雾灵山乡",
+      "average": 1292.0
+    },
+    {
+      "regionId": "130822206000",
+      "name": "李家营乡",
+      "average": 685.1
+    },
+    {
+      "regionId": "130822207000",
+      "name": "大杖子乡",
+      "average": 984.0
+    },
+    {
+      "regionId": "130822208000",
+      "name": "蘑菇峪乡",
+      "average": 1558.9
+    },
+    {
+      "regionId": "130822209000",
+      "name": "三道河乡",
+      "average": 1402.8
+    },
+    {
+      "regionId": "130822211000",
+      "name": "安子岭乡",
+      "average": 370.3
+    },
+    {
+      "regionId": "130822212000",
+      "name": "大水泉乡",
+      "average": 2422.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

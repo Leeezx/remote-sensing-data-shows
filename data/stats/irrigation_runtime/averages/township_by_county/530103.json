@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "530103001000",
+      "name": "拓东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "530103002000",
+      "name": "鼓楼街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "530103003000",
+      "name": "东华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "530103004000",
+      "name": "联盟街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "530103005000",
+      "name": "金辰街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "530103006000",
+      "name": "青云街道",
+      "average": 658.7
+    },
+    {
+      "regionId": "530103007000",
+      "name": "龙泉街道",
+      "average": 1359.6
+    },
+    {
+      "regionId": "530103008000",
+      "name": "茨坝街道",
+      "average": 670.8
+    },
+    {
+      "regionId": "530103009000",
+      "name": "双龙街道",
+      "average": 3186.5
+    },
+    {
+      "regionId": "530103010000",
+      "name": "松华街道",
+      "average": 5328.8
+    },
+    {
+      "regionId": "530103011000",
+      "name": "盘龙区滇源街道",
+      "average": 25031.0
+    },
+    {
+      "regionId": "530103012000",
+      "name": "盘龙区阿子营街道",
+      "average": 15332.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

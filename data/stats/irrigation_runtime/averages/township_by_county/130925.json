@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130925100000",
+      "name": "盐山镇",
+      "average": 5170.9
+    },
+    {
+      "regionId": "130925101000",
+      "name": "望树镇",
+      "average": 9429.2
+    },
+    {
+      "regionId": "130925102000",
+      "name": "庆云镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130925103000",
+      "name": "韩集镇",
+      "average": 8927.9
+    },
+    {
+      "regionId": "130925104000",
+      "name": "千童镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130925105000",
+      "name": "圣佛镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130925200000",
+      "name": "边务乡",
+      "average": 4753.3
+    },
+    {
+      "regionId": "130925201000",
+      "name": "小营乡",
+      "average": 7120.0
+    },
+    {
+      "regionId": "130925202000",
+      "name": "杨集乡",
+      "average": 34.9
+    },
+    {
+      "regionId": "130925203000",
+      "name": "孟店乡",
+      "average": 16844.9
+    },
+    {
+      "regionId": "130925204000",
+      "name": "常庄乡",
+      "average": 8105.4
+    },
+    {
+      "regionId": "130925205000",
+      "name": "小庄乡",
+      "average": 13744.2
+    },
+    {
+      "regionId": "371423100000",
+      "name": "庆云镇",
+      "average": 9747.5
+    },
+    {
+      "regionId": "371481102000",
+      "name": "黄夹镇",
+      "average": 37657.6
+    },
+    {
+      "regionId": "371481200000",
+      "name": "西段乡",
+      "average": 8880.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 33.7832,
+      "color": "#bdd7e7",
+      "label": "33.783 万m³"
+    },
+    {
+      "value": 6449.509599999999,
+      "color": "#6baed6",
+      "label": "6449.510 万m³"
+    },
+    {
+      "value": 8896.6088,
+      "color": "#3182bd",
+      "label": "8896.609 万m³"
+    },
+    {
+      "value": 9875.394399999994,
+      "color": "#08519c",
+      "label": "9875.394 万m³"
+    },
+    {
+      "value": 31830.043999999976,
+      "color": "#042d60",
+      "label": "31830.044 万m³"
+    }
+  ]
+}

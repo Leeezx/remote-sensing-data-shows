@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420324105000",
+      "name": "泉溪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324203000",
+      "name": "鄂坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324501000",
+      "name": "国营竹溪综合农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420324508000",
+      "name": "八卦山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "610927100000",
+      "name": "城关镇",
+      "average": 125.2
+    },
+    {
+      "regionId": "610927101000",
+      "name": "曾家镇",
+      "average": 658.6
+    },
+    {
+      "regionId": "610927102000",
+      "name": "牛头店镇",
+      "average": 2340.1
+    },
+    {
+      "regionId": "610927103000",
+      "name": "钟宝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610927104000",
+      "name": "洪石镇",
+      "average": 513.8
+    },
+    {
+      "regionId": "610927105000",
+      "name": "上竹镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610927106000",
+      "name": "华坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610927107000",
+      "name": "小曙河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610927108000",
+      "name": "曙坪镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

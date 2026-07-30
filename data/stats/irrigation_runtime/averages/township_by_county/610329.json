@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610329100000",
+      "name": "九成宫镇",
+      "average": 1899.3
+    },
+    {
+      "regionId": "610329101000",
+      "name": "崔木镇",
+      "average": 985.6
+    },
+    {
+      "regionId": "610329102000",
+      "name": "招贤镇",
+      "average": 1403.4
+    },
+    {
+      "regionId": "610329103000",
+      "name": "两亭镇",
+      "average": 1664.9
+    },
+    {
+      "regionId": "610329105000",
+      "name": "常丰镇",
+      "average": 6511.4
+    },
+    {
+      "regionId": "610329106000",
+      "name": "丈八镇",
+      "average": 557.2
+    },
+    {
+      "regionId": "610329107000",
+      "name": "酒房镇",
+      "average": 618.5
+    },
+    {
+      "regionId": "620822100000",
+      "name": "中台镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620822208000",
+      "name": "蒲窝乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 387.8112,
+      "color": "#bdd7e7",
+      "label": "387.811 万m³"
+    },
+    {
+      "value": 703.6671999999999,
+      "color": "#6baed6",
+      "label": "703.667 万m³"
+    },
+    {
+      "value": 1306.4704,
+      "color": "#3182bd",
+      "label": "1306.470 万m³"
+    },
+    {
+      "value": 1736.1576,
+      "color": "#08519c",
+      "label": "1736.158 万m³"
+    },
+    {
+      "value": 5773.463999999999,
+      "color": "#042d60",
+      "label": "5773.464 万m³"
+    }
+  ]
+}

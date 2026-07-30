@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420107001000",
+      "name": "红卫路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420107002000",
+      "name": "冶金街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420107003000",
+      "name": "新沟桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420107004000",
+      "name": "红钢城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420107005000",
+      "name": "工人村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420107006000",
+      "name": "青山镇街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420107007000",
+      "name": "厂前街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420107009000",
+      "name": "白玉山街道",
+      "average": 6084.8
+    },
+    {
+      "regionId": "420107010000",
+      "name": "钢花村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420107400000",
+      "name": "武钢集团公司",
+      "average": 1854.1
+    },
+    {
+      "regionId": "420107401000",
+      "name": "中国一冶有限责任公司",
+      "average": 0.0
+    },
+    {
+      "regionId": "420107402000",
+      "name": "武钢实业公司",
+      "average": 0.0
+    },
+    {
+      "regionId": "420107403000",
+      "name": "中国一冶集体企业管理处",
+      "average": 0.0
+    },
+    {
+      "regionId": "420107404000",
+      "name": "开发区",
+      "average": 0.0
+    },
+    {
+      "regionId": "420107405000",
+      "name": "钢都花园管理委员会",
+      "average": 0.0
+    },
+    {
+      "regionId": "420107406000",
+      "name": "北湖工业园管理办公室",
+      "average": 791.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

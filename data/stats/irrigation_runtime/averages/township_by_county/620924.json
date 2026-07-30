@@ -1,0 +1,63 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620924100000",
+      "name": "红柳湾镇",
+      "average": 2094.0
+    },
+    {
+      "regionId": "620924200000",
+      "name": "阿克旗乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620924203000",
+      "name": "阿勒腾乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632802103000",
+      "name": "柴旦镇",
+      "average": 296.8
+    },
+    {
+      "regionId": "632802105000",
+      "name": "冷湖镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

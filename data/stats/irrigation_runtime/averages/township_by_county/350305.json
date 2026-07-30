@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350305100000",
+      "name": "笏石镇",
+      "average": 79831.3
+    },
+    {
+      "regionId": "350305101000",
+      "name": "东庄镇",
+      "average": 50391.9
+    },
+    {
+      "regionId": "350305102000",
+      "name": "忠门镇",
+      "average": 20357.7
+    },
+    {
+      "regionId": "350305103000",
+      "name": "东埔镇",
+      "average": 17274.3
+    },
+    {
+      "regionId": "350305104000",
+      "name": "东峤镇",
+      "average": 49378.7
+    },
+    {
+      "regionId": "350305105000",
+      "name": "埭头镇",
+      "average": 46554.9
+    },
+    {
+      "regionId": "350305106000",
+      "name": "平海镇",
+      "average": 47262.2
+    },
+    {
+      "regionId": "350305107000",
+      "name": "南日镇",
+      "average": 29128.0
+    },
+    {
+      "regionId": "350305108000",
+      "name": "湄洲镇",
+      "average": 6768.4
+    },
+    {
+      "regionId": "350305109000",
+      "name": "山亭镇",
+      "average": 53076.2
+    },
+    {
+      "regionId": "350305200000",
+      "name": "月塘乡",
+      "average": 27673.8
+    },
+    {
+      "regionId": "350305400000",
+      "name": "前沁农场",
+      "average": 621.6
+    },
+    {
+      "regionId": "350305401000",
+      "name": "后海管理局",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 149.184,
+      "color": "#eff3ff",
+      "label": "149.184 万m³"
+    },
+    {
+      "value": 12483.6096,
+      "color": "#bdd7e7",
+      "label": "12483.610 万m³"
+    },
+    {
+      "value": 26561.7528,
+      "color": "#6baed6",
+      "label": "26561.753 万m³"
+    },
+    {
+      "value": 46662.4096,
+      "color": "#3182bd",
+      "label": "46662.410 万m³"
+    },
+    {
+      "value": 49840.7192,
+      "color": "#08519c",
+      "label": "49840.719 万m³"
+    },
+    {
+      "value": 73410.076,
+      "color": "#042d60",
+      "label": "73410.076 万m³"
+    }
+  ]
+}

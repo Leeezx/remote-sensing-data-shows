@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230805001000",
+      "name": "晓云街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230805002000",
+      "name": "佳东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230805003000",
+      "name": "造纸街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230805004000",
+      "name": "佳南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230805005000",
+      "name": "建国街道",
+      "average": 15.1
+    },
+    {
+      "regionId": "230805100000",
+      "name": "建国镇",
+      "average": 17931.5
+    },
+    {
+      "regionId": "230805200000",
+      "name": "松江乡",
+      "average": 6604.6
+    },
+    {
+      "regionId": "230805579000",
+      "name": "东风区农垦",
+      "average": 1834.0
+    },
+    {
+      "regionId": "230826207000",
+      "name": "星火乡",
+      "average": 16198.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

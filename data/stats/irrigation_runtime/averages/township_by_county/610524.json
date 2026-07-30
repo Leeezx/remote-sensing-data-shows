@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610524100000",
+      "name": "平政乡",
+      "average": 3605.5
+    },
+    {
+      "regionId": "610524101000",
+      "name": "甘井镇",
+      "average": 25715.3
+    },
+    {
+      "regionId": "610524102000",
+      "name": "坊镇",
+      "average": 24507.3
+    },
+    {
+      "regionId": "610524103000",
+      "name": "洽川镇",
+      "average": 2192.3
+    },
+    {
+      "regionId": "610524104000",
+      "name": "新池镇",
+      "average": 20470.0
+    },
+    {
+      "regionId": "610524105000",
+      "name": "黑池镇",
+      "average": 36953.7
+    },
+    {
+      "regionId": "610524106000",
+      "name": "路井镇",
+      "average": 44758.4
+    },
+    {
+      "regionId": "610524107000",
+      "name": "和家庄乡",
+      "average": 783.1
+    },
+    {
+      "regionId": "610524108000",
+      "name": "王村镇",
+      "average": 973.2
+    },
+    {
+      "regionId": "610524109000",
+      "name": "皇甫庄镇",
+      "average": 11252.0
+    },
+    {
+      "regionId": "610524111000",
+      "name": "百良镇",
+      "average": 2273.0
+    },
+    {
+      "regionId": "610524203000",
+      "name": "杨家庄乡",
+      "average": 11621.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 824.922,
+      "color": "#eff3ff",
+      "label": "824.922 万m³"
+    },
+    {
+      "value": 2219.0924,
+      "color": "#bdd7e7",
+      "label": "2219.092 万m³"
+    },
+    {
+      "value": 7000.546,
+      "color": "#6baed6",
+      "label": "7000.546 万m³"
+    },
+    {
+      "value": 16541.4436,
+      "color": "#3182bd",
+      "label": "16541.444 万m³"
+    },
+    {
+      "value": 25314.244,
+      "color": "#08519c",
+      "label": "25314.244 万m³"
+    },
+    {
+      "value": 43041.365999999995,
+      "color": "#042d60",
+      "label": "43041.366 万m³"
+    }
+  ]
+}

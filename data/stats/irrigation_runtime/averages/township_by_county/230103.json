@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230103001000",
+      "name": "花园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103002000",
+      "name": "奋斗路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103003000",
+      "name": "革新街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103004000",
+      "name": "文化街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103005000",
+      "name": "大成街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103006000",
+      "name": "芦家街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103007000",
+      "name": "荣市街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103009000",
+      "name": "燎原街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103010000",
+      "name": "松花江街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103011000",
+      "name": "曲线街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103012000",
+      "name": "通达街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103013000",
+      "name": "七政街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103015000",
+      "name": "和兴路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103016000",
+      "name": "哈西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103017000",
+      "name": "保健路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103018000",
+      "name": "先锋路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103019000",
+      "name": "新春街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103020000",
+      "name": "跃进街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103101000",
+      "name": "王岗镇",
+      "average": 486.8
+    },
+    {
+      "regionId": "230103201000",
+      "name": "红旗满族乡",
+      "average": 398.3
+    },
+    {
+      "regionId": "230103500000",
+      "name": "红旗农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230103579000",
+      "name": "南岗区农垦",
+      "average": 13.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

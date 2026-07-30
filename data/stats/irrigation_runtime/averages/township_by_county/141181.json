@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "141181001000",
+      "name": "新义街道",
+      "average": 1300.0
+    },
+    {
+      "regionId": "141181002000",
+      "name": "中阳楼街道",
+      "average": 1255.2
+    },
+    {
+      "regionId": "141181003000",
+      "name": "振兴街道",
+      "average": 6566.2
+    },
+    {
+      "regionId": "141181004000",
+      "name": "东许街道",
+      "average": 8836.2
+    },
+    {
+      "regionId": "141181005000",
+      "name": "崇文街道",
+      "average": 1651.7
+    },
+    {
+      "regionId": "141181100000",
+      "name": "兑镇镇",
+      "average": 9212.9
+    },
+    {
+      "regionId": "141181101000",
+      "name": "阳泉曲镇",
+      "average": 7114.2
+    },
+    {
+      "regionId": "141181102000",
+      "name": "下堡镇",
+      "average": 8048.0
+    },
+    {
+      "regionId": "141181103000",
+      "name": "西辛庄镇",
+      "average": 4079.1
+    },
+    {
+      "regionId": "141181104000",
+      "name": "高阳镇",
+      "average": 8666.0
+    },
+    {
+      "regionId": "141181105000",
+      "name": "梧桐镇",
+      "average": 8843.2
+    },
+    {
+      "regionId": "141181106000",
+      "name": "柱濮镇",
+      "average": 9019.3
+    },
+    {
+      "regionId": "141181200000",
+      "name": "大孝堡乡",
+      "average": 27164.6
+    },
+    {
+      "regionId": "141181201000",
+      "name": "下栅乡",
+      "average": 14221.0
+    },
+    {
+      "regionId": "141181202000",
+      "name": "驿马乡",
+      "average": 6310.6
+    },
+    {
+      "regionId": "141181203000",
+      "name": "南阳乡",
+      "average": 3386.6
+    },
+    {
+      "regionId": "141181204000",
+      "name": "杜村乡",
+      "average": 4637.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 1269.536,
+      "color": "#eff3ff",
+      "label": "1269.536 万m³"
+    },
+    {
+      "value": 3658.06,
+      "color": "#bdd7e7",
+      "label": "3658.060 万m³"
+    },
+    {
+      "value": 6429.1984,
+      "color": "#6baed6",
+      "label": "6429.198 万m³"
+    },
+    {
+      "value": 8379.248,
+      "color": "#3182bd",
+      "label": "8379.248 万m³"
+    },
+    {
+      "value": 8950.2688,
+      "color": "#08519c",
+      "label": "8950.269 万m³"
+    },
+    {
+      "value": 23022.647999999994,
+      "color": "#042d60",
+      "label": "23022.648 万m³"
+    }
+  ]
+}

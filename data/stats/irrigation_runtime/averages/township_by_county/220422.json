@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "211223101000",
+      "name": "平岗镇",
+      "average": 5538.3
+    },
+    {
+      "regionId": "211223105000",
+      "name": "安民镇",
+      "average": 2368.2
+    },
+    {
+      "regionId": "211223109000",
+      "name": "陶然镇",
+      "average": 995.3
+    },
+    {
+      "regionId": "220422100000",
+      "name": "白泉镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220422101000",
+      "name": "渭津镇",
+      "average": 1133.1
+    },
+    {
+      "regionId": "220422102000",
+      "name": "安石镇",
+      "average": 3917.6
+    },
+    {
+      "regionId": "220422103000",
+      "name": "辽河源镇",
+      "average": 2874.1
+    },
+    {
+      "regionId": "220422104000",
+      "name": "泉太镇",
+      "average": 30.2
+    },
+    {
+      "regionId": "220422105000",
+      "name": "建安镇",
+      "average": 1193.8
+    },
+    {
+      "regionId": "220422106000",
+      "name": "安恕镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220422107000",
+      "name": "平岗镇",
+      "average": 31.6
+    },
+    {
+      "regionId": "220422108000",
+      "name": "云顶镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220422200000",
+      "name": "凌云乡",
+      "average": 1133.0
+    },
+    {
+      "regionId": "220422201000",
+      "name": "甲山乡",
+      "average": 1110.9
+    },
+    {
+      "regionId": "220422202000",
+      "name": "足民乡",
+      "average": 335.8
+    },
+    {
+      "regionId": "220422203000",
+      "name": "金洲乡",
+      "average": 952.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 30.451999999999998,
+      "color": "#bdd7e7",
+      "label": "30.452 万m³"
+    },
+    {
+      "value": 955.162,
+      "color": "#6baed6",
+      "label": "955.162 万m³"
+    },
+    {
+      "value": 1131.674,
+      "color": "#3182bd",
+      "label": "1131.674 万m³"
+    },
+    {
+      "value": 2156.807999999998,
+      "color": "#08519c",
+      "label": "2156.808 万m³"
+    },
+    {
+      "value": 5052.089999999999,
+      "color": "#042d60",
+      "label": "5052.090 万m³"
+    }
+  ]
+}

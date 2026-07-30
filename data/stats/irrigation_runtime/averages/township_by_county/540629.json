@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540629100000",
+      "name": "尼玛镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540629200000",
+      "name": "文布乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540629201000",
+      "name": "中仓乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540629202000",
+      "name": "卓瓦乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540629203000",
+      "name": "卓尼乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540629204000",
+      "name": "吉瓦乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540629205000",
+      "name": "甲谷乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540629206000",
+      "name": "阿索乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540629207000",
+      "name": "俄久乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540629208000",
+      "name": "荣玛乡",
+      "average": 22.6
+    },
+    {
+      "regionId": "540629209000",
+      "name": "达果乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540629210000",
+      "name": "申亚乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540629211000",
+      "name": "来多乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540629212000",
+      "name": "军仓乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

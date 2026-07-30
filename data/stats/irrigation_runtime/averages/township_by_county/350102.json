@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350102001000",
+      "name": "鼓东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350102002000",
+      "name": "鼓西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350102003000",
+      "name": "温泉街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350102004000",
+      "name": "东街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350102005000",
+      "name": "南街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350102006000",
+      "name": "安泰街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350102007000",
+      "name": "华大街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350102008000",
+      "name": "水部街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350102009000",
+      "name": "五凤街道",
+      "average": 512.7
+    },
+    {
+      "regionId": "350102100000",
+      "name": "洪山镇",
+      "average": 579.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

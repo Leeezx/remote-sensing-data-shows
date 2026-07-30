@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "711300010000",
+      "name": "南投市",
+      "average": 0.0
+    },
+    {
+      "regionId": "711300020000",
+      "name": "埔里鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711300030000",
+      "name": "草屯鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711300040000",
+      "name": "竹山鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711300050000",
+      "name": "集集鎮",
+      "average": 0.0
+    },
+    {
+      "regionId": "711300060000",
+      "name": "名間鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711300070000",
+      "name": "鹿谷鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711300080000",
+      "name": "中寮鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711300090000",
+      "name": "魚池鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711300100000",
+      "name": "國姓鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711300110000",
+      "name": "水里鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711300120000",
+      "name": "信義鄉",
+      "average": 0.0
+    },
+    {
+      "regionId": "711300130000",
+      "name": "仁愛鄉",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

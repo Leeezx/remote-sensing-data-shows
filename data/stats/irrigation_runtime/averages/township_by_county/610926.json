@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610926100000",
+      "name": "城关镇",
+      "average": 22086.9
+    },
+    {
+      "regionId": "610926101000",
+      "name": "兴隆镇",
+      "average": 4918.1
+    },
+    {
+      "regionId": "610926102000",
+      "name": "老县镇",
+      "average": 6845.8
+    },
+    {
+      "regionId": "610926103000",
+      "name": "大贵镇",
+      "average": 3358.5
+    },
+    {
+      "regionId": "610926104000",
+      "name": "三阳镇",
+      "average": 4358.1
+    },
+    {
+      "regionId": "610926105000",
+      "name": "洛河镇",
+      "average": 8901.2
+    },
+    {
+      "regionId": "610926106000",
+      "name": "广佛镇",
+      "average": 9054.8
+    },
+    {
+      "regionId": "610926107000",
+      "name": "八仙镇",
+      "average": 1341.9
+    },
+    {
+      "regionId": "610926108000",
+      "name": "长安镇",
+      "average": 9441.5
+    },
+    {
+      "regionId": "610926109000",
+      "name": "正阳镇",
+      "average": 347.2
+    },
+    {
+      "regionId": "610926110000",
+      "name": "西河镇",
+      "average": 2600.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 546.14,
+      "color": "#eff3ff",
+      "label": "546.140 万m³"
+    },
+    {
+      "value": 2691.02,
+      "color": "#bdd7e7",
+      "label": "2691.020 万m³"
+    },
+    {
+      "value": 4380.5,
+      "color": "#6baed6",
+      "label": "4380.500 万m³"
+    },
+    {
+      "value": 6768.692,
+      "color": "#3182bd",
+      "label": "6768.692 万m³"
+    },
+    {
+      "value": 9036.367999999999,
+      "color": "#08519c",
+      "label": "9036.368 万m³"
+    },
+    {
+      "value": 19557.82000000001,
+      "color": "#042d60",
+      "label": "19557.820 万m³"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610203200000",
+      "name": "印台镇",
+      "average": 1535.2
+    },
+    {
+      "regionId": "610222100000",
+      "name": "城关镇",
+      "average": 2317.2
+    },
+    {
+      "regionId": "610222101000",
+      "name": "彭镇",
+      "average": 4385.4
+    },
+    {
+      "regionId": "610222102000",
+      "name": "五里镇",
+      "average": 986.9
+    },
+    {
+      "regionId": "610222103000",
+      "name": "太安镇",
+      "average": 5827.0
+    },
+    {
+      "regionId": "610222104000",
+      "name": "棋盘镇",
+      "average": 4271.3
+    },
+    {
+      "regionId": "610222200000",
+      "name": "哭泉乡",
+      "average": 5054.5
+    },
+    {
+      "regionId": "610222201000",
+      "name": "云梦乡",
+      "average": 3946.1
+    },
+    {
+      "regionId": "610222203000",
+      "name": "尧生乡",
+      "average": 1778.9
+    },
+    {
+      "regionId": "610222204000",
+      "name": "西村乡",
+      "average": 165.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 312.942,
+      "color": "#eff3ff",
+      "label": "312.942 万m³"
+    },
+    {
+      "value": 1484.7564,
+      "color": "#bdd7e7",
+      "label": "1484.756 万m³"
+    },
+    {
+      "value": 2121.2587999999996,
+      "color": "#6baed6",
+      "label": "2121.259 万m³"
+    },
+    {
+      "value": 4064.4728,
+      "color": "#3182bd",
+      "label": "4064.473 万m³"
+    },
+    {
+      "value": 4446.9572,
+      "color": "#08519c",
+      "label": "4446.957 万m³"
+    },
+    {
+      "value": 5687.95,
+      "color": "#042d60",
+      "label": "5687.950 万m³"
+    }
+  ]
+}

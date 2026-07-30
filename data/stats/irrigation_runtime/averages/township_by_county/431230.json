@@ -1,0 +1,183 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "431230100000",
+      "name": "双江镇",
+      "average": 6787.8
+    },
+    {
+      "regionId": "431230101000",
+      "name": "县溪镇",
+      "average": 8511.1
+    },
+    {
+      "regionId": "431230102000",
+      "name": "播阳镇",
+      "average": 11539.1
+    },
+    {
+      "regionId": "431230103000",
+      "name": "临口镇",
+      "average": 11417.7
+    },
+    {
+      "regionId": "431230104000",
+      "name": "牙屯堡镇",
+      "average": 11455.7
+    },
+    {
+      "regionId": "431230105000",
+      "name": "菁芜洲镇",
+      "average": 7531.7
+    },
+    {
+      "regionId": "431230106000",
+      "name": "溪口镇",
+      "average": 4263.5
+    },
+    {
+      "regionId": "431230107000",
+      "name": "陇城镇",
+      "average": 5801.0
+    },
+    {
+      "regionId": "431230200000",
+      "name": "江口乡",
+      "average": 399.3
+    },
+    {
+      "regionId": "431230201000",
+      "name": "锅冲苗族乡",
+      "average": 396.1
+    },
+    {
+      "regionId": "431230203000",
+      "name": "大高坪苗族乡",
+      "average": 1145.2
+    },
+    {
+      "regionId": "431230204000",
+      "name": "独坡乡",
+      "average": 9606.7
+    },
+    {
+      "regionId": "431230209000",
+      "name": "杉木桥乡",
+      "average": 1464.8
+    },
+    {
+      "regionId": "431230210000",
+      "name": "木脚乡",
+      "average": 2713.8
+    },
+    {
+      "regionId": "431230211000",
+      "name": "下乡乡",
+      "average": 6139.8
+    },
+    {
+      "regionId": "431230212000",
+      "name": "马龙乡",
+      "average": 5656.6
+    },
+    {
+      "regionId": "431230214000",
+      "name": "传素瑶族乡",
+      "average": 826.6
+    },
+    {
+      "regionId": "431230215000",
+      "name": "黄土乡",
+      "average": 4071.2
+    },
+    {
+      "regionId": "431230216000",
+      "name": "坪坦乡",
+      "average": 2261.6
+    },
+    {
+      "regionId": "431230218000",
+      "name": "坪阳乡",
+      "average": 4862.0
+    },
+    {
+      "regionId": "431230219000",
+      "name": "甘溪乡",
+      "average": 1289.4
+    },
+    {
+      "regionId": "431230400000",
+      "name": "通道县地连林场",
+      "average": 87.3
+    },
+    {
+      "regionId": "431230401000",
+      "name": "通道县播阳农场",
+      "average": 338.7
+    },
+    {
+      "regionId": "450226100000",
+      "name": "古宜镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "450226101000",
+      "name": "斗江镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "450226202000",
+      "name": "林溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "450328101000",
+      "name": "瓢里镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "450328206000",
+      "name": "乐江乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "522631108000",
+      "name": "洪州镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 81.71279999999999,
+      "color": "#bdd7e7",
+      "label": "81.713 万m³"
+    },
+    {
+      "value": 1190.1904,
+      "color": "#6baed6",
+      "label": "1190.190 万m³"
+    },
+    {
+      "value": 4203.502399999999,
+      "color": "#3182bd",
+      "label": "4203.502 万m³"
+    },
+    {
+      "value": 6835.409599999997,
+      "color": "#08519c",
+      "label": "6835.410 万m³"
+    },
+    {
+      "value": 11492.396,
+      "color": "#042d60",
+      "label": "11492.396 万m³"
+    }
+  ]
+}

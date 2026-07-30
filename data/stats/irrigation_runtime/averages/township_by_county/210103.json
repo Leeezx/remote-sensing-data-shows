@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210103004000",
+      "name": "大西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210103005000",
+      "name": "滨河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210103006000",
+      "name": "万莲街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210103010000",
+      "name": "大南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210103011000",
+      "name": "山东庙街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210103013000",
+      "name": "朱剪炉街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210103014000",
+      "name": "新北站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210103015000",
+      "name": "风雨坛街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210103017000",
+      "name": "皇城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210103018000",
+      "name": "五里河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210103019000",
+      "name": "南塔街道",
+      "average": 39.9
+    },
+    {
+      "regionId": "210103020000",
+      "name": "泉园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210103021000",
+      "name": "丰乐街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210103022000",
+      "name": "马官桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210103023000",
+      "name": "东陵街道",
+      "average": 8.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

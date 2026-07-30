@@ -1,0 +1,133 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "231225100000",
+      "name": "明水镇",
+      "average": 3543.6
+    },
+    {
+      "regionId": "231225101000",
+      "name": "兴仁镇",
+      "average": 3182.3
+    },
+    {
+      "regionId": "231225102000",
+      "name": "永兴镇",
+      "average": 4782.7
+    },
+    {
+      "regionId": "231225103000",
+      "name": "崇德镇",
+      "average": 5315.9
+    },
+    {
+      "regionId": "231225104000",
+      "name": "通达镇",
+      "average": 10362.1
+    },
+    {
+      "regionId": "231225201000",
+      "name": "双兴乡",
+      "average": 17629.3
+    },
+    {
+      "regionId": "231225203000",
+      "name": "永久乡",
+      "average": 4945.7
+    },
+    {
+      "regionId": "231225204000",
+      "name": "树人乡",
+      "average": 6435.8
+    },
+    {
+      "regionId": "231225205000",
+      "name": "光荣乡",
+      "average": 3007.4
+    },
+    {
+      "regionId": "231225206000",
+      "name": "繁荣乡",
+      "average": 3840.2
+    },
+    {
+      "regionId": "231225207000",
+      "name": "通泉乡",
+      "average": 3659.4
+    },
+    {
+      "regionId": "231225208000",
+      "name": "育林乡",
+      "average": 3475.8
+    },
+    {
+      "regionId": "231225400000",
+      "name": "国营林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231225580000",
+      "name": "县联社马场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231225581000",
+      "name": "明水种畜场",
+      "average": 78.5
+    },
+    {
+      "regionId": "231225582000",
+      "name": "育林畜牧场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231225583000",
+      "name": "国营第一良种",
+      "average": 0.0
+    },
+    {
+      "regionId": "231225584000",
+      "name": "国营第二良种",
+      "average": 35.9
+    },
+    {
+      "regionId": "231225585000",
+      "name": "国营第三良种",
+      "average": 20.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 16.727999999999998,
+      "color": "#bdd7e7",
+      "label": "16.728 万m³"
+    },
+    {
+      "value": 3054.9728,
+      "color": "#6baed6",
+      "label": "3054.973 万m³"
+    },
+    {
+      "value": 3627.9024,
+      "color": "#3182bd",
+      "label": "3627.902 万m³"
+    },
+    {
+      "value": 5013.8168,
+      "color": "#08519c",
+      "label": "5013.817 万m³"
+    },
+    {
+      "value": 15013.108000000004,
+      "color": "#042d60",
+      "label": "15013.108 万m³"
+    }
+  ]
+}

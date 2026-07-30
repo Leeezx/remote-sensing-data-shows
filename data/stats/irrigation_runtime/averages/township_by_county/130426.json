@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130426001000",
+      "name": "平安街道",
+      "average": 295.6
+    },
+    {
+      "regionId": "130426100000",
+      "name": "涉城镇",
+      "average": 4676.2
+    },
+    {
+      "regionId": "130426101000",
+      "name": "河南店镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130426102000",
+      "name": "索堡镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130426103000",
+      "name": "西戌镇",
+      "average": 1032.1
+    },
+    {
+      "regionId": "130426104000",
+      "name": "井店镇",
+      "average": 1645.8
+    },
+    {
+      "regionId": "130426105000",
+      "name": "更乐镇",
+      "average": 1465.5
+    },
+    {
+      "regionId": "130426106000",
+      "name": "固新镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130426107000",
+      "name": "西达镇",
+      "average": 2591.0
+    },
+    {
+      "regionId": "130426108000",
+      "name": "偏城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130426200000",
+      "name": "神头乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130426201000",
+      "name": "辽城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130426202000",
+      "name": "偏店乡",
+      "average": 1187.4
+    },
+    {
+      "regionId": "130426203000",
+      "name": "龙虎乡",
+      "average": 1657.6
+    },
+    {
+      "regionId": "130426204000",
+      "name": "木井乡",
+      "average": 1048.0
+    },
+    {
+      "regionId": "130426205000",
+      "name": "关防乡",
+      "average": 2366.6
+    },
+    {
+      "regionId": "130426206000",
+      "name": "合漳乡",
+      "average": 252.9
+    },
+    {
+      "regionId": "130426207000",
+      "name": "鹿头乡",
+      "average": 3765.6
+    },
+    {
+      "regionId": "140426103000",
+      "name": "西井镇",
+      "average": 26951.6
+    },
+    {
+      "regionId": "140426104000",
+      "name": "黄崖洞镇",
+      "average": 5683.5
+    },
+    {
+      "regionId": "410581106000",
+      "name": "任村镇",
+      "average": 16872.2
+    },
+    {
+      "regionId": "410581112000",
+      "name": "东岗镇",
+      "average": 14119.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

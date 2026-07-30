@@ -1,0 +1,233 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "422827100000",
+      "name": "翔凤镇",
+      "average": 655.4
+    },
+    {
+      "regionId": "422827101000",
+      "name": "百福司镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "422827200000",
+      "name": "漫水乡",
+      "average": 140.0
+    },
+    {
+      "regionId": "433130001000",
+      "name": "民安街道",
+      "average": 3697.2
+    },
+    {
+      "regionId": "433130002000",
+      "name": "石羔镇",
+      "average": 15471.2
+    },
+    {
+      "regionId": "433130003000",
+      "name": "华塘街道",
+      "average": 15794.0
+    },
+    {
+      "regionId": "433130004000",
+      "name": "新城街道",
+      "average": 8455.6
+    },
+    {
+      "regionId": "433130005000",
+      "name": "洗洛乡",
+      "average": 6939.3
+    },
+    {
+      "regionId": "433130006000",
+      "name": "湾塘乡",
+      "average": 5859.1
+    },
+    {
+      "regionId": "433130007000",
+      "name": "白羊乡",
+      "average": 9049.0
+    },
+    {
+      "regionId": "433130008000",
+      "name": "兴隆街乡",
+      "average": 11054.1
+    },
+    {
+      "regionId": "433130009000",
+      "name": "三元乡",
+      "average": 4031.8
+    },
+    {
+      "regionId": "433130010000",
+      "name": "桶车乡",
+      "average": 7352.8
+    },
+    {
+      "regionId": "433130011000",
+      "name": "石牌镇",
+      "average": 6773.7
+    },
+    {
+      "regionId": "433130012000",
+      "name": "茨岩塘镇",
+      "average": 10458.9
+    },
+    {
+      "regionId": "433130013000",
+      "name": "大安乡",
+      "average": 3242.1
+    },
+    {
+      "regionId": "433130014000",
+      "name": "水田坝乡",
+      "average": 6406.6
+    },
+    {
+      "regionId": "433130015000",
+      "name": "乌鸦乡",
+      "average": 3183.1
+    },
+    {
+      "regionId": "433130016000",
+      "name": "猛必乡",
+      "average": 4015.7
+    },
+    {
+      "regionId": "433130018000",
+      "name": "红岩溪镇",
+      "average": 14726.6
+    },
+    {
+      "regionId": "433130019000",
+      "name": "茅坪乡",
+      "average": 9511.3
+    },
+    {
+      "regionId": "433130022000",
+      "name": "塔泥乡",
+      "average": 4087.3
+    },
+    {
+      "regionId": "433130023000",
+      "name": "农车乡",
+      "average": 17006.6
+    },
+    {
+      "regionId": "433130026000",
+      "name": "洗车河镇",
+      "average": 8469.0
+    },
+    {
+      "regionId": "433130027000",
+      "name": "隆头镇",
+      "average": 2572.8
+    },
+    {
+      "regionId": "433130028000",
+      "name": "苗儿滩镇",
+      "average": 28047.1
+    },
+    {
+      "regionId": "433130029000",
+      "name": "洛塔乡",
+      "average": 24785.6
+    },
+    {
+      "regionId": "433130032000",
+      "name": "他砂乡",
+      "average": 8419.1
+    },
+    {
+      "regionId": "433130035000",
+      "name": "靛房镇",
+      "average": 16456.8
+    },
+    {
+      "regionId": "433130036000",
+      "name": "里耶镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "433130037000",
+      "name": "内溪乡",
+      "average": 5947.6
+    },
+    {
+      "regionId": "433130038000",
+      "name": "贾市乡",
+      "average": 5410.6
+    },
+    {
+      "regionId": "433130042000",
+      "name": "召市镇",
+      "average": 21773.5
+    },
+    {
+      "regionId": "433130043000",
+      "name": "桂塘镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "433130047000",
+      "name": "老兴乡",
+      "average": 9073.6
+    },
+    {
+      "regionId": "433130048000",
+      "name": "贾坝乡",
+      "average": 5481.2
+    },
+    {
+      "regionId": "433130049000",
+      "name": "咱果乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500242103000",
+      "name": "酉酬镇",
+      "average": 3516.1
+    },
+    {
+      "regionId": "500242204000",
+      "name": "可大乡",
+      "average": 2219.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 3186.404,
+      "color": "#bdd7e7",
+      "label": "3186.404 万m³"
+    },
+    {
+      "value": 5435.4512,
+      "color": "#6baed6",
+      "label": "5435.451 万m³"
+    },
+    {
+      "value": 8043.7624,
+      "color": "#3182bd",
+      "label": "8043.762 万m³"
+    },
+    {
+      "value": 11020.768799999998,
+      "color": "#08519c",
+      "label": "11020.769 万m³"
+    },
+    {
+      "value": 25568.360000000004,
+      "color": "#042d60",
+      "label": "25568.360 万m³"
+    }
+  ]
+}

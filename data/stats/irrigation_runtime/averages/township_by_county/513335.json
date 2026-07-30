@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513335100000",
+      "name": "夏邛镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513335101000",
+      "name": "中咱镇",
+      "average": 264.7
+    },
+    {
+      "regionId": "513335200000",
+      "name": "拉哇乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513335201000",
+      "name": "党巴乡",
+      "average": 330.8
+    },
+    {
+      "regionId": "513335202000",
+      "name": "竹巴龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513335203000",
+      "name": "中心绒乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513335204000",
+      "name": "苏哇龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513335205000",
+      "name": "昌波乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513335206000",
+      "name": "地巫乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513335208000",
+      "name": "亚日贡乡",
+      "average": 122.0
+    },
+    {
+      "regionId": "513335209000",
+      "name": "波密乡",
+      "average": 626.9
+    },
+    {
+      "regionId": "513335210000",
+      "name": "莫多乡",
+      "average": 218.0
+    },
+    {
+      "regionId": "513335211000",
+      "name": "松多乡",
+      "average": 31.0
+    },
+    {
+      "regionId": "513335212000",
+      "name": "波戈溪乡",
+      "average": 301.1
+    },
+    {
+      "regionId": "513335213000",
+      "name": "甲英乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513335214000",
+      "name": "措拉乡",
+      "average": 366.8
+    },
+    {
+      "regionId": "513335215000",
+      "name": "茶洛乡",
+      "average": 350.0
+    },
+    {
+      "regionId": "513335216000",
+      "name": "列衣乡",
+      "average": 101.6
+    },
+    {
+      "regionId": "513335217000",
+      "name": "德达乡",
+      "average": 397.4
+    },
+    {
+      "regionId": "540328203000",
+      "name": "朱巴龙乡",
+      "average": 209.3
+    },
+    {
+      "regionId": "540328207000",
+      "name": "戈波乡",
+      "average": 131.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

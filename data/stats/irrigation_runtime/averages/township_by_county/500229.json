@@ -1,0 +1,203 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500229001000",
+      "name": "葛城街道",
+      "average": 409.8
+    },
+    {
+      "regionId": "500229002000",
+      "name": "复兴街道",
+      "average": 320.4
+    },
+    {
+      "regionId": "500229102000",
+      "name": "巴山镇",
+      "average": 2033.4
+    },
+    {
+      "regionId": "500229103000",
+      "name": "坪坝镇",
+      "average": 474.8
+    },
+    {
+      "regionId": "500229104000",
+      "name": "庙坝镇",
+      "average": 1746.5
+    },
+    {
+      "regionId": "500229105000",
+      "name": "明通镇",
+      "average": 904.5
+    },
+    {
+      "regionId": "500229106000",
+      "name": "修齐镇",
+      "average": 953.7
+    },
+    {
+      "regionId": "500229107000",
+      "name": "高观镇",
+      "average": 140.5
+    },
+    {
+      "regionId": "500229108000",
+      "name": "高燕镇",
+      "average": 1307.6
+    },
+    {
+      "regionId": "500229201000",
+      "name": "龙田乡",
+      "average": 335.1
+    },
+    {
+      "regionId": "500229202000",
+      "name": "北屏乡",
+      "average": 882.6
+    },
+    {
+      "regionId": "500229204000",
+      "name": "高楠乡",
+      "average": 3442.5
+    },
+    {
+      "regionId": "500229205000",
+      "name": "左岚乡",
+      "average": 1268.2
+    },
+    {
+      "regionId": "500229208000",
+      "name": "沿河乡",
+      "average": 34.1
+    },
+    {
+      "regionId": "500229210000",
+      "name": "双河乡",
+      "average": 578.1
+    },
+    {
+      "regionId": "500229211000",
+      "name": "蓼子乡",
+      "average": 920.0
+    },
+    {
+      "regionId": "500229212000",
+      "name": "鸡鸣乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500229213000",
+      "name": "咸宜乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500229214000",
+      "name": "周溪乡",
+      "average": 572.3
+    },
+    {
+      "regionId": "500229216000",
+      "name": "明中乡",
+      "average": 455.9
+    },
+    {
+      "regionId": "500229217000",
+      "name": "治平乡",
+      "average": 357.3
+    },
+    {
+      "regionId": "500229219000",
+      "name": "岚天乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500229220000",
+      "name": "厚坪乡",
+      "average": 624.9
+    },
+    {
+      "regionId": "500229221000",
+      "name": "河鱼乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500229223000",
+      "name": "东安乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511722224000",
+      "name": "龙泉土家族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511781107000",
+      "name": "大竹镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511781226000",
+      "name": "庙子乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610924117000",
+      "name": "界岭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610925103000",
+      "name": "滔河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610925104000",
+      "name": "官元镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610925105000",
+      "name": "石门镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610927108000",
+      "name": "曙坪镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

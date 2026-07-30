@@ -1,0 +1,203 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "110111001000",
+      "name": "城关街道",
+      "average": 2260.0
+    },
+    {
+      "regionId": "110111002000",
+      "name": "新镇街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110111004000",
+      "name": "向阳街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110111005000",
+      "name": "东风街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110111006000",
+      "name": "迎风街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110111007000",
+      "name": "星城街道",
+      "average": 35.2
+    },
+    {
+      "regionId": "110111008000",
+      "name": "良乡地区办事处",
+      "average": 4986.0
+    },
+    {
+      "regionId": "110111009000",
+      "name": "周口店地区办事处",
+      "average": 1801.8
+    },
+    {
+      "regionId": "110111010000",
+      "name": "琉璃河地区办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "110111011000",
+      "name": "拱辰街道",
+      "average": 1573.7
+    },
+    {
+      "regionId": "110111012000",
+      "name": "西潞街道",
+      "average": 631.6
+    },
+    {
+      "regionId": "110111101000",
+      "name": "阎村镇",
+      "average": 4450.6
+    },
+    {
+      "regionId": "110111103000",
+      "name": "窦店镇",
+      "average": 18213.6
+    },
+    {
+      "regionId": "110111104000",
+      "name": "石楼镇",
+      "average": 23017.8
+    },
+    {
+      "regionId": "110111105000",
+      "name": "长阳镇",
+      "average": 8656.6
+    },
+    {
+      "regionId": "110111107000",
+      "name": "河北镇",
+      "average": 4.2
+    },
+    {
+      "regionId": "110111108000",
+      "name": "长沟镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110111109000",
+      "name": "大石窝镇",
+      "average": 72.6
+    },
+    {
+      "regionId": "110111110000",
+      "name": "张坊镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110111111000",
+      "name": "十渡镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110111112000",
+      "name": "青龙湖镇",
+      "average": 3938.0
+    },
+    {
+      "regionId": "110111115000",
+      "name": "韩村河镇",
+      "average": 181.6
+    },
+    {
+      "regionId": "110111208000",
+      "name": "霞云岭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "110111209000",
+      "name": "南窖乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "110111210000",
+      "name": "佛子庄乡",
+      "average": 392.4
+    },
+    {
+      "regionId": "110111211000",
+      "name": "大安山乡",
+      "average": 179.0
+    },
+    {
+      "regionId": "110111212000",
+      "name": "史家营乡",
+      "average": 104.6
+    },
+    {
+      "regionId": "110111213000",
+      "name": "蒲洼乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130623103000",
+      "name": "石亭镇",
+      "average": 10304.9
+    },
+    {
+      "regionId": "130623106000",
+      "name": "三坡镇",
+      "average": 592.0
+    },
+    {
+      "regionId": "130681101000",
+      "name": "码头镇",
+      "average": 27816.8
+    },
+    {
+      "regionId": "130681102000",
+      "name": "东城坊镇",
+      "average": 38668.1
+    },
+    {
+      "regionId": "130681105000",
+      "name": "百尺竿镇",
+      "average": 27254.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

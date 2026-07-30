@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "421223100000",
+      "name": "天城镇",
+      "average": 30297.0
+    },
+    {
+      "regionId": "421223101000",
+      "name": "沙坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "421223102000",
+      "name": "石城镇",
+      "average": 43312.1
+    },
+    {
+      "regionId": "421223103000",
+      "name": "桂花泉镇",
+      "average": 10765.6
+    },
+    {
+      "regionId": "421223104000",
+      "name": "白霓镇",
+      "average": 36181.6
+    },
+    {
+      "regionId": "421223105000",
+      "name": "路口镇",
+      "average": 26427.9
+    },
+    {
+      "regionId": "421223106000",
+      "name": "金塘镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "421223107000",
+      "name": "青山镇",
+      "average": 39493.7
+    },
+    {
+      "regionId": "421223200000",
+      "name": "肖岭乡",
+      "average": 27838.6
+    },
+    {
+      "regionId": "421223201000",
+      "name": "铜钟乡",
+      "average": 20810.4
+    },
+    {
+      "regionId": "421223202000",
+      "name": "港口乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "421223203000",
+      "name": "高枧乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "421223570000",
+      "name": "崇阳县工业园区",
+      "average": 1101.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

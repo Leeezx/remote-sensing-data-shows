@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410326100000",
+      "name": "城关镇",
+      "average": 6766.2
+    },
+    {
+      "regionId": "410326101000",
+      "name": "上店镇",
+      "average": 4495.9
+    },
+    {
+      "regionId": "410326102000",
+      "name": "付店镇",
+      "average": 186.6
+    },
+    {
+      "regionId": "410326103000",
+      "name": "小店镇",
+      "average": 14706.6
+    },
+    {
+      "regionId": "410326104000",
+      "name": "三屯镇",
+      "average": 7655.7
+    },
+    {
+      "regionId": "410326105000",
+      "name": "刘店镇",
+      "average": 7897.6
+    },
+    {
+      "regionId": "410326106000",
+      "name": "内埠镇",
+      "average": 17446.6
+    },
+    {
+      "regionId": "410326107000",
+      "name": "陶营镇",
+      "average": 29083.1
+    },
+    {
+      "regionId": "410326200000",
+      "name": "柏树乡",
+      "average": 6553.2
+    },
+    {
+      "regionId": "410326202000",
+      "name": "十八盘乡",
+      "average": 2521.9
+    },
+    {
+      "regionId": "410326203000",
+      "name": "靳村乡",
+      "average": 762.9
+    },
+    {
+      "regionId": "410326204000",
+      "name": "王坪乡",
+      "average": 260.5
+    },
+    {
+      "regionId": "410326209000",
+      "name": "蔡店乡",
+      "average": 29693.1
+    },
+    {
+      "regionId": "410326400000",
+      "name": "大安工业园区",
+      "average": 11371.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 205.814,
+      "color": "#eff3ff",
+      "label": "205.814 万m³"
+    },
+    {
+      "value": 2092.7039999999997,
+      "color": "#bdd7e7",
+      "label": "2092.704 万m³"
+    },
+    {
+      "value": 6606.876,
+      "color": "#6baed6",
+      "label": "6606.876 万m³"
+    },
+    {
+      "value": 7836.6412,
+      "color": "#3182bd",
+      "label": "7836.641 万m³"
+    },
+    {
+      "value": 15375.16,
+      "color": "#08519c",
+      "label": "15375.160 万m³"
+    },
+    {
+      "value": 29534.5,
+      "color": "#042d60",
+      "label": "29534.500 万m³"
+    }
+  ]
+}

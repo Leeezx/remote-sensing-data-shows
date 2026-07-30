@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610726105000",
+      "name": "燕子砭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610726107000",
+      "name": "青木川镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610726210000",
+      "name": "安乐河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610727110000",
+      "name": "郭镇",
+      "average": 1367.7
+    },
+    {
+      "regionId": "610727202000",
+      "name": "西淮坝乡",
+      "average": 609.3
+    },
+    {
+      "regionId": "621224100000",
+      "name": "城关镇",
+      "average": 1567.6
+    },
+    {
+      "regionId": "621224101000",
+      "name": "平洛镇",
+      "average": 4638.3
+    },
+    {
+      "regionId": "621224102000",
+      "name": "大堡镇",
+      "average": 789.6
+    },
+    {
+      "regionId": "621224103000",
+      "name": "岸门口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "621224104000",
+      "name": "两河镇",
+      "average": 28.8
+    },
+    {
+      "regionId": "621224105000",
+      "name": "长坝镇",
+      "average": 1281.6
+    },
+    {
+      "regionId": "621224106000",
+      "name": "云台镇",
+      "average": 2418.3
+    },
+    {
+      "regionId": "621224107000",
+      "name": "阳坝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "621224200000",
+      "name": "望关乡",
+      "average": 977.2
+    },
+    {
+      "regionId": "621224202000",
+      "name": "寺台乡",
+      "average": 2196.3
+    },
+    {
+      "regionId": "621224203000",
+      "name": "大南峪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621224204000",
+      "name": "迷坝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621224206000",
+      "name": "王坝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621224207000",
+      "name": "碾坝乡",
+      "average": 613.0
+    },
+    {
+      "regionId": "621224208000",
+      "name": "豆坝乡",
+      "average": 215.4
+    },
+    {
+      "regionId": "621224209000",
+      "name": "店子乡",
+      "average": 328.9
+    },
+    {
+      "regionId": "621224210000",
+      "name": "豆坪乡",
+      "average": 2208.6
+    },
+    {
+      "regionId": "621224212000",
+      "name": "白杨乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621224214000",
+      "name": "太石乡",
+      "average": 1055.4
+    },
+    {
+      "regionId": "621224215000",
+      "name": "铜钱乡",
+      "average": 2417.0
+    },
+    {
+      "regionId": "621224218000",
+      "name": "三河坝乡",
+      "average": 2167.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

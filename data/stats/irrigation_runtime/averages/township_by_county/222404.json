@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "222404001000",
+      "name": "靖和街道",
+      "average": 361.8
+    },
+    {
+      "regionId": "222404002000",
+      "name": "新安街道",
+      "average": 27.1
+    },
+    {
+      "regionId": "222404003000",
+      "name": "河南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "222404060000",
+      "name": "近海街道",
+      "average": 1952.5
+    },
+    {
+      "regionId": "222404100000",
+      "name": "春化镇",
+      "average": 2535.6
+    },
+    {
+      "regionId": "222404101000",
+      "name": "敬信镇",
+      "average": 4544.5
+    },
+    {
+      "regionId": "222404102000",
+      "name": "板石镇",
+      "average": 5670.5
+    },
+    {
+      "regionId": "222404103000",
+      "name": "英安镇",
+      "average": 4784.1
+    },
+    {
+      "regionId": "222404200000",
+      "name": "马川子乡",
+      "average": 7179.0
+    },
+    {
+      "regionId": "222404201000",
+      "name": "杨泡满族乡",
+      "average": 2123.9
+    },
+    {
+      "regionId": "222404202000",
+      "name": "三家子满族乡",
+      "average": 3874.3
+    },
+    {
+      "regionId": "222404203000",
+      "name": "密江乡",
+      "average": 733.3
+    },
+    {
+      "regionId": "222404204000",
+      "name": "哈达门乡",
+      "average": 4091.1
+    },
+    {
+      "regionId": "222404401000",
+      "name": "双新果树场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231086102000",
+      "name": "大肚川镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 26.2328,
+      "color": "#bdd7e7",
+      "label": "26.233 万m³"
+    },
+    {
+      "value": 1533.0951999999997,
+      "color": "#6baed6",
+      "label": "1533.095 万m³"
+    },
+    {
+      "value": 2996.112799999999,
+      "color": "#3182bd",
+      "label": "2996.113 万m³"
+    },
+    {
+      "value": 4552.1672,
+      "color": "#08519c",
+      "label": "4552.167 万m³"
+    },
+    {
+      "value": 6756.619999999998,
+      "color": "#042d60",
+      "label": "6756.620 万m³"
+    }
+  ]
+}

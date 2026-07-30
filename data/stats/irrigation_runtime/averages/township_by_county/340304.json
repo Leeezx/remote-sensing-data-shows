@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "340304100000",
+      "name": "秦集镇",
+      "average": 34039.3
+    },
+    {
+      "regionId": "340304101000",
+      "name": "马城镇",
+      "average": 58948.3
+    },
+    {
+      "regionId": "340304198000",
+      "name": "禹会虚镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "340304200000",
+      "name": "长青乡",
+      "average": 865.0
+    },
+    {
+      "regionId": "340304400000",
+      "name": "高新技术开发区",
+      "average": 4427.7
+    },
+    {
+      "regionId": "340304401000",
+      "name": "安徽怀远马城经济开发区",
+      "average": 685.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 68.55,
+      "color": "#eff3ff",
+      "label": "68.550 万m³"
+    },
+    {
+      "value": 696.27,
+      "color": "#bdd7e7",
+      "label": "696.270 万m³"
+    },
+    {
+      "value": 936.254,
+      "color": "#6baed6",
+      "label": "936.254 万m³"
+    },
+    {
+      "value": 4356.446,
+      "color": "#3182bd",
+      "label": "4356.446 万m³"
+    },
+    {
+      "value": 32262.60399999999,
+      "color": "#08519c",
+      "label": "32262.604 万m³"
+    },
+    {
+      "value": 56457.40000000001,
+      "color": "#042d60",
+      "label": "56457.400 万m³"
+    }
+  ]
+}

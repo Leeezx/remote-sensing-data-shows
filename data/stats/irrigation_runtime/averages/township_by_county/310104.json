@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "310104003000",
+      "name": "天平路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310104004000",
+      "name": "湖南路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310104007000",
+      "name": "斜土路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310104008000",
+      "name": "枫林路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310104010000",
+      "name": "长桥街道",
+      "average": 46.4
+    },
+    {
+      "regionId": "310104011000",
+      "name": "田林街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310104012000",
+      "name": "虹梅路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310104013000",
+      "name": "康健新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310104014000",
+      "name": "徐家汇街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310104015000",
+      "name": "凌云路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310104016000",
+      "name": "龙华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310104017000",
+      "name": "漕河泾街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310104103000",
+      "name": "华泾镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "310104501000",
+      "name": "漕河泾新兴技术开发区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

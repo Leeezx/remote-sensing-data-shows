@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513324100000",
+      "name": "呷尔镇",
+      "average": 74.2
+    },
+    {
+      "regionId": "513324101000",
+      "name": "烟袋镇",
+      "average": 697.1
+    },
+    {
+      "regionId": "513324200000",
+      "name": "汤古乡",
+      "average": 8.6
+    },
+    {
+      "regionId": "513324201000",
+      "name": "斜卡乡",
+      "average": 1.4
+    },
+    {
+      "regionId": "513324202000",
+      "name": "三岩龙乡",
+      "average": 127.0
+    },
+    {
+      "regionId": "513324203000",
+      "name": "上团乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513324204000",
+      "name": "八窝龙乡",
+      "average": 24.8
+    },
+    {
+      "regionId": "513324205000",
+      "name": "乃渠乡",
+      "average": 83.9
+    },
+    {
+      "regionId": "513324206000",
+      "name": "乌拉溪乡",
+      "average": 315.0
+    },
+    {
+      "regionId": "513324208000",
+      "name": "魁多乡",
+      "average": 549.0
+    },
+    {
+      "regionId": "513324209000",
+      "name": "子耳彝族乡",
+      "average": 91.6
+    },
+    {
+      "regionId": "513324210000",
+      "name": "三垭彝族乡",
+      "average": 15.2
+    },
+    {
+      "regionId": "513324211000",
+      "name": "俄尔彝族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513324212000",
+      "name": "小金彝族乡",
+      "average": 9.2
+    },
+    {
+      "regionId": "513324213000",
+      "name": "朵洛彝族乡",
+      "average": 11.0
+    },
+    {
+      "regionId": "513324214000",
+      "name": "踏卡彝族乡",
+      "average": 33.6
+    },
+    {
+      "regionId": "513324215000",
+      "name": "湾坝彝族乡",
+      "average": 133.2
+    },
+    {
+      "regionId": "513324216000",
+      "name": "洪坝乡",
+      "average": 45.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 8.962399999999999,
+      "color": "#bdd7e7",
+      "label": "8.962 万m³"
+    },
+    {
+      "value": 23.532799999999995,
+      "color": "#6baed6",
+      "label": "23.533 万m³"
+    },
+    {
+      "value": 75.4804,
+      "color": "#3182bd",
+      "label": "75.480 万m³"
+    },
+    {
+      "value": 129.4552,
+      "color": "#08519c",
+      "label": "129.455 万m³"
+    },
+    {
+      "value": 646.7460000000001,
+      "color": "#042d60",
+      "label": "646.746 万m³"
+    }
+  ]
+}

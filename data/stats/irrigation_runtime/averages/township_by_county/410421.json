@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410421001000",
+      "name": "铁路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410421100000",
+      "name": "城关镇",
+      "average": 1742.1
+    },
+    {
+      "regionId": "410421101000",
+      "name": "周庄镇",
+      "average": 27696.8
+    },
+    {
+      "regionId": "410421102000",
+      "name": "闹店镇",
+      "average": 37654.9
+    },
+    {
+      "regionId": "410421103000",
+      "name": "石桥镇",
+      "average": 37060.8
+    },
+    {
+      "regionId": "410421104000",
+      "name": "商酒务镇",
+      "average": 38170.6
+    },
+    {
+      "regionId": "410421105000",
+      "name": "大营镇",
+      "average": 12845.8
+    },
+    {
+      "regionId": "410421106000",
+      "name": "张八桥镇",
+      "average": 23655.5
+    },
+    {
+      "regionId": "410421107000",
+      "name": "杨庄镇",
+      "average": 21430.4
+    },
+    {
+      "regionId": "410421200000",
+      "name": "肖旗乡",
+      "average": 36484.7
+    },
+    {
+      "regionId": "410421201000",
+      "name": "赵庄乡",
+      "average": 25582.9
+    },
+    {
+      "regionId": "410421202000",
+      "name": "前营乡",
+      "average": 14863.6
+    },
+    {
+      "regionId": "410421203000",
+      "name": "李庄乡",
+      "average": 24906.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 418.104,
+      "color": "#eff3ff",
+      "label": "418.104 万m³"
+    },
+    {
+      "value": 13943.4832,
+      "color": "#bdd7e7",
+      "label": "13943.483 万m³"
+    },
+    {
+      "value": 23317.2848,
+      "color": "#6baed6",
+      "label": "23317.285 万m³"
+    },
+    {
+      "value": 25904.2128,
+      "color": "#3182bd",
+      "label": "25904.213 万m³"
+    },
+    {
+      "value": 36747.4016,
+      "color": "#08519c",
+      "label": "36747.402 万m³"
+    },
+    {
+      "value": 38046.832,
+      "color": "#042d60",
+      "label": "38046.832 万m³"
+    }
+  ]
+}

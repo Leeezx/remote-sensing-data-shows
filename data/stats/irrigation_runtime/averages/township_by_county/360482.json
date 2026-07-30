@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "360482001000",
+      "name": "茶山街道",
+      "average": 2816.6
+    },
+    {
+      "regionId": "360482100000",
+      "name": "甘露镇",
+      "average": 15483.0
+    },
+    {
+      "regionId": "360482101000",
+      "name": "江益镇",
+      "average": 21120.6
+    },
+    {
+      "regionId": "360482200000",
+      "name": "金湖乡",
+      "average": 15551.0
+    },
+    {
+      "regionId": "360482201000",
+      "name": "苏家垱乡",
+      "average": 14924.3
+    },
+    {
+      "regionId": "360482202000",
+      "name": "泽泉乡",
+      "average": 17400.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 4027.37,
+      "color": "#eff3ff",
+      "label": "4027.370 万m³"
+    },
+    {
+      "value": 14957.822,
+      "color": "#bdd7e7",
+      "label": "14957.822 万m³"
+    },
+    {
+      "value": 15484.36,
+      "color": "#6baed6",
+      "label": "15484.360 万m³"
+    },
+    {
+      "value": 15549.64,
+      "color": "#3182bd",
+      "label": "15549.640 万m³"
+    },
+    {
+      "value": 17289.718,
+      "color": "#08519c",
+      "label": "17289.718 万m³"
+    },
+    {
+      "value": 20748.61,
+      "color": "#042d60",
+      "label": "20748.610 万m³"
+    }
+  ]
+}

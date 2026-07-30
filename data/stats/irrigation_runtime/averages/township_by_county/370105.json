@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "370105001000",
+      "name": "无影山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370105003000",
+      "name": "天桥东街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370105004000",
+      "name": "北村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370105005000",
+      "name": "南村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370105006000",
+      "name": "堤口路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370105007000",
+      "name": "北坦街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370105009000",
+      "name": "制锦市街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370105010000",
+      "name": "宝华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370105011000",
+      "name": "官扎营街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370105012000",
+      "name": "纬北路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370105013000",
+      "name": "药山街道",
+      "average": 880.3
+    },
+    {
+      "regionId": "370105014000",
+      "name": "北园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370105015000",
+      "name": "泺口街道",
+      "average": 1632.4
+    },
+    {
+      "regionId": "370105101000",
+      "name": "桑梓店镇",
+      "average": 28437.9
+    },
+    {
+      "regionId": "370105102000",
+      "name": "大桥镇",
+      "average": 34640.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

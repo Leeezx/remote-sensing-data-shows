@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511112100000",
+      "name": "竹根镇",
+      "average": 483.7
+    },
+    {
+      "regionId": "511112101000",
+      "name": "牛华镇",
+      "average": 1747.5
+    },
+    {
+      "regionId": "511112102000",
+      "name": "杨柳镇",
+      "average": 1165.6
+    },
+    {
+      "regionId": "511112103000",
+      "name": "桥沟镇",
+      "average": 1547.6
+    },
+    {
+      "regionId": "511112104000",
+      "name": "金粟镇",
+      "average": 2030.8
+    },
+    {
+      "regionId": "511112105000",
+      "name": "金山镇",
+      "average": 4004.4
+    },
+    {
+      "regionId": "511112106000",
+      "name": "辉山镇",
+      "average": 2654.5
+    },
+    {
+      "regionId": "511112107000",
+      "name": "西坝镇",
+      "average": 3027.0
+    },
+    {
+      "regionId": "511112108000",
+      "name": "冠英镇",
+      "average": 4140.5
+    },
+    {
+      "regionId": "511112109000",
+      "name": "蔡金镇",
+      "average": 3157.0
+    },
+    {
+      "regionId": "511112110000",
+      "name": "石麟镇",
+      "average": 2761.4
+    },
+    {
+      "regionId": "511112200000",
+      "name": "新云乡",
+      "average": 2674.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 633.718,
+      "color": "#eff3ff",
+      "label": "633.718 万m³"
+    },
+    {
+      "value": 1613.9668,
+      "color": "#bdd7e7",
+      "label": "1613.967 万m³"
+    },
+    {
+      "value": 2307.7228,
+      "color": "#6baed6",
+      "label": "2307.723 万m³"
+    },
+    {
+      "value": 2722.994,
+      "color": "#3182bd",
+      "label": "2722.994 万m³"
+    },
+    {
+      "value": 3113.8399999999997,
+      "color": "#08519c",
+      "label": "3113.840 万m³"
+    },
+    {
+      "value": 4110.558,
+      "color": "#042d60",
+      "label": "4110.558 万m³"
+    }
+  ]
+}

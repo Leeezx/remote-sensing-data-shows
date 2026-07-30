@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513424100000",
+      "name": "德州镇",
+      "average": 10988.1
+    },
+    {
+      "regionId": "513424101000",
+      "name": "永郎镇",
+      "average": 5440.0
+    },
+    {
+      "regionId": "513424102000",
+      "name": "乐跃镇",
+      "average": 5087.7
+    },
+    {
+      "regionId": "513424103000",
+      "name": "麻栗镇",
+      "average": 3229.3
+    },
+    {
+      "regionId": "513424104000",
+      "name": "阿月镇",
+      "average": 4932.4
+    },
+    {
+      "regionId": "513424202000",
+      "name": "王所乡",
+      "average": 5773.9
+    },
+    {
+      "regionId": "513424203000",
+      "name": "六所镇",
+      "average": 8628.6
+    },
+    {
+      "regionId": "513424204000",
+      "name": "巴洞乡",
+      "average": 5390.9
+    },
+    {
+      "regionId": "513424205000",
+      "name": "宽裕乡",
+      "average": 7492.1
+    },
+    {
+      "regionId": "513424206000",
+      "name": "茨达镇",
+      "average": 4665.9
+    },
+    {
+      "regionId": "513424207000",
+      "name": "小高镇",
+      "average": 3299.7
+    },
+    {
+      "regionId": "513424208000",
+      "name": "锦川乡",
+      "average": 4492.9
+    },
+    {
+      "regionId": "513424209000",
+      "name": "老碾乡",
+      "average": 1618.4
+    },
+    {
+      "regionId": "513424210000",
+      "name": "大湾乡",
+      "average": 569.7
+    },
+    {
+      "regionId": "513424211000",
+      "name": "马安乡",
+      "average": 130.2
+    },
+    {
+      "regionId": "513424212000",
+      "name": "铁炉乡",
+      "average": 674.2
+    },
+    {
+      "regionId": "513424213000",
+      "name": "前山乡",
+      "average": 514.3
+    },
+    {
+      "regionId": "513424214000",
+      "name": "大山乡",
+      "average": 245.3
+    },
+    {
+      "regionId": "513424215000",
+      "name": "大六槽乡",
+      "average": 756.3
+    },
+    {
+      "regionId": "513424216000",
+      "name": "热河乡",
+      "average": 1358.5
+    },
+    {
+      "regionId": "513424217000",
+      "name": "南山傈僳族乡",
+      "average": 255.7
+    },
+    {
+      "regionId": "513424218000",
+      "name": "金沙傈僳族乡",
+      "average": 1476.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 178.542,
+      "color": "#eff3ff",
+      "label": "178.542 万m³"
+    },
+    {
+      "value": 616.9340000000001,
+      "color": "#bdd7e7",
+      "label": "616.934 万m³"
+    },
+    {
+      "value": 1545.2828,
+      "color": "#6baed6",
+      "label": "1545.283 万m³"
+    },
+    {
+      "value": 4582.168,
+      "color": "#3182bd",
+      "label": "4582.168 万m³"
+    },
+    {
+      "value": 5417.806799999999,
+      "color": "#08519c",
+      "label": "5417.807 万m³"
+    },
+    {
+      "value": 9997.109999999997,
+      "color": "#042d60",
+      "label": "9997.110 万m³"
+    }
+  ]
+}

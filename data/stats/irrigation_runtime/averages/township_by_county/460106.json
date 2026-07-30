@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "460106001000",
+      "name": "中山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "460106002000",
+      "name": "滨海街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "460106003000",
+      "name": "金贸街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "460106004000",
+      "name": "大同街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "460106005000",
+      "name": "海垦街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "460106006000",
+      "name": "金宇街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "460106100000",
+      "name": "城西镇",
+      "average": 2896.0
+    },
+    {
+      "regionId": "460106101000",
+      "name": "龙桥镇",
+      "average": 954.1
+    },
+    {
+      "regionId": "460106102000",
+      "name": "新坡镇",
+      "average": 9823.4
+    },
+    {
+      "regionId": "460106103000",
+      "name": "遵谭镇",
+      "average": 1828.6
+    },
+    {
+      "regionId": "460106104000",
+      "name": "龙泉镇",
+      "average": 6257.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

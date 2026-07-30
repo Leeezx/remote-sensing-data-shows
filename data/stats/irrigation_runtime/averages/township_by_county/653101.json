@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "653101001000",
+      "name": "恰萨街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "653101002000",
+      "name": "亚瓦格街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "653101003000",
+      "name": "吾斯塘博依街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "653101004000",
+      "name": "库木德尔瓦扎街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "653101100000",
+      "name": "乃则尔巴格镇",
+      "average": 2424.3
+    },
+    {
+      "regionId": "653101101000",
+      "name": "夏马勒巴格镇",
+      "average": 705.7
+    },
+    {
+      "regionId": "653101202000",
+      "name": "多来特巴格乡",
+      "average": 9838.6
+    },
+    {
+      "regionId": "653101203000",
+      "name": "浩罕乡",
+      "average": 8976.0
+    },
+    {
+      "regionId": "653101204000",
+      "name": "色满乡",
+      "average": 1492.5
+    },
+    {
+      "regionId": "653101205000",
+      "name": "荒地乡",
+      "average": 2006.0
+    },
+    {
+      "regionId": "653101206000",
+      "name": "帕哈太克里乡",
+      "average": 11333.0
+    },
+    {
+      "regionId": "653101207000",
+      "name": "伯什克然木乡",
+      "average": 18730.0
+    },
+    {
+      "regionId": "653101208000",
+      "name": "阿瓦提乡",
+      "average": 40292.3
+    },
+    {
+      "regionId": "653121214000",
+      "name": "英吾斯塘乡",
+      "average": 50675.2
+    },
+    {
+      "regionId": "653121215000",
+      "name": "阿克喀什乡",
+      "average": 13191.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

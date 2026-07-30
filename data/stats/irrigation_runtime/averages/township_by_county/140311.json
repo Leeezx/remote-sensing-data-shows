@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140303198000",
+      "name": "县区直属镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "140311100000",
+      "name": "荫营镇",
+      "average": 2791.1
+    },
+    {
+      "regionId": "140311101000",
+      "name": "河底镇",
+      "average": 5288.1
+    },
+    {
+      "regionId": "140311102000",
+      "name": "义井镇",
+      "average": 792.9
+    },
+    {
+      "regionId": "140311103000",
+      "name": "平坦镇",
+      "average": 3167.9
+    },
+    {
+      "regionId": "140311200000",
+      "name": "西南舁乡",
+      "average": 3099.5
+    },
+    {
+      "regionId": "140311201000",
+      "name": "杨家庄乡",
+      "average": 1408.4
+    },
+    {
+      "regionId": "140311202000",
+      "name": "李家庄乡",
+      "average": 659.6
+    },
+    {
+      "regionId": "140311203000",
+      "name": "旧街乡",
+      "average": 934.1
+    },
+    {
+      "regionId": "140311450000",
+      "name": "开发区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 598.9168,
+      "color": "#bdd7e7",
+      "label": "598.917 万m³"
+    },
+    {
+      "value": 882.7031999999999,
+      "color": "#6baed6",
+      "label": "882.703 万m³"
+    },
+    {
+      "value": 1911.7027999999998,
+      "color": "#3182bd",
+      "label": "1911.703 万m³"
+    },
+    {
+      "value": 3105.7928,
+      "color": "#08519c",
+      "label": "3105.793 万m³"
+    },
+    {
+      "value": 4906.464000000001,
+      "color": "#042d60",
+      "label": "4906.464 万m³"
+    }
+  ]
+}

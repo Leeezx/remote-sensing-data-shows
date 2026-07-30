@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210502001000",
+      "name": "南地街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210502002000",
+      "name": "工人街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210502003000",
+      "name": "平山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210502004000",
+      "name": "东明街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210502005000",
+      "name": "崔东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210502007000",
+      "name": "站前街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210502008000",
+      "name": "千金街道",
+      "average": 184.1
+    },
+    {
+      "regionId": "210502010000",
+      "name": "北台街道",
+      "average": 155.0
+    },
+    {
+      "regionId": "210502011000",
+      "name": "桥头街道",
+      "average": 603.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "512002001000",
+      "name": "莲花街道",
+      "average": 173.4
+    },
+    {
+      "regionId": "512002002000",
+      "name": "三贤祠街道",
+      "average": 213.3
+    },
+    {
+      "regionId": "512002003000",
+      "name": "资溪街道",
+      "average": 38.1
+    },
+    {
+      "regionId": "512002004000",
+      "name": "狮子山街道",
+      "average": 43.2
+    },
+    {
+      "regionId": "512002100000",
+      "name": "雁江镇",
+      "average": 2161.2
+    },
+    {
+      "regionId": "512002101000",
+      "name": "松涛镇",
+      "average": 2533.4
+    },
+    {
+      "regionId": "512002102000",
+      "name": "宝台镇",
+      "average": 3132.6
+    },
+    {
+      "regionId": "512002103000",
+      "name": "临江镇",
+      "average": 4913.6
+    },
+    {
+      "regionId": "512002104000",
+      "name": "保和镇",
+      "average": 8667.8
+    },
+    {
+      "regionId": "512002105000",
+      "name": "老君镇",
+      "average": 10999.9
+    },
+    {
+      "regionId": "512002106000",
+      "name": "中和镇",
+      "average": 11677.7
+    },
+    {
+      "regionId": "512002107000",
+      "name": "丹山镇",
+      "average": 10602.3
+    },
+    {
+      "regionId": "512002108000",
+      "name": "小院镇",
+      "average": 7125.4
+    },
+    {
+      "regionId": "512002109000",
+      "name": "堪嘉镇",
+      "average": 3052.3
+    },
+    {
+      "regionId": "512002110000",
+      "name": "伍隍镇",
+      "average": 4619.9
+    },
+    {
+      "regionId": "512002111000",
+      "name": "石岭镇",
+      "average": 2244.4
+    },
+    {
+      "regionId": "512002112000",
+      "name": "东峰镇",
+      "average": 6501.7
+    },
+    {
+      "regionId": "512002113000",
+      "name": "南津镇",
+      "average": 4214.9
+    },
+    {
+      "regionId": "512002114000",
+      "name": "忠义镇",
+      "average": 1703.5
+    },
+    {
+      "regionId": "512002115000",
+      "name": "碑记镇",
+      "average": 2265.0
+    },
+    {
+      "regionId": "512002116000",
+      "name": "丰裕镇",
+      "average": 4047.9
+    },
+    {
+      "regionId": "512002117000",
+      "name": "迎接镇",
+      "average": 5997.0
+    },
+    {
+      "regionId": "512002118000",
+      "name": "祥符镇",
+      "average": 4549.5
+    },
+    {
+      "regionId": "512002200000",
+      "name": "新场乡",
+      "average": 7542.1
+    },
+    {
+      "regionId": "512002201000",
+      "name": "回龙乡",
+      "average": 5366.0
+    },
+    {
+      "regionId": "512002202000",
+      "name": "清水乡",
+      "average": 3042.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 40.650000000000006,
+      "color": "#eff3ff",
+      "label": "40.650 万m³"
+    },
+    {
+      "value": 2186.16,
+      "color": "#bdd7e7",
+      "label": "2186.160 万m³"
+    },
+    {
+      "value": 3060.33,
+      "color": "#6baed6",
+      "label": "3060.330 万m³"
+    },
+    {
+      "value": 4612.86,
+      "color": "#3182bd",
+      "label": "4612.860 万m³"
+    },
+    {
+      "value": 6938.289999999999,
+      "color": "#08519c",
+      "label": "6938.290 万m³"
+    },
+    {
+      "value": 11338.8,
+      "color": "#042d60",
+      "label": "11338.800 万m³"
+    }
+  ]
+}

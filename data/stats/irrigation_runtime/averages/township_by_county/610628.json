@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610628101000",
+      "name": "羊泉镇",
+      "average": 17786.7
+    },
+    {
+      "regionId": "610628102000",
+      "name": "张村驿镇",
+      "average": 3358.8
+    },
+    {
+      "regionId": "610628103000",
+      "name": "张家湾镇",
+      "average": 6971.7
+    },
+    {
+      "regionId": "610628104000",
+      "name": "直罗镇",
+      "average": 5222.7
+    },
+    {
+      "regionId": "610628105000",
+      "name": "茶坊镇",
+      "average": 17143.7
+    },
+    {
+      "regionId": "610628106000",
+      "name": "牛武镇",
+      "average": 4863.3
+    },
+    {
+      "regionId": "610628107000",
+      "name": "交道镇",
+      "average": 4395.1
+    },
+    {
+      "regionId": "610628108000",
+      "name": "吉子现镇",
+      "average": 2512.8
+    },
+    {
+      "regionId": "610628109000",
+      "name": "寺仙镇",
+      "average": 2646.8
+    },
+    {
+      "regionId": "610628204000",
+      "name": "北道德乡",
+      "average": 3788.1
+    },
+    {
+      "regionId": "621024102000",
+      "name": "太白镇",
+      "average": 98.9
+    },
+    {
+      "regionId": "621026107000",
+      "name": "盘克镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 21.758000000000003,
+      "color": "#eff3ff",
+      "label": "21.758 万m³"
+    },
+    {
+      "value": 2557.288,
+      "color": "#bdd7e7",
+      "label": "2557.288 万m³"
+    },
+    {
+      "value": 3549.4092,
+      "color": "#6baed6",
+      "label": "3549.409 万m³"
+    },
+    {
+      "value": 4655.4192,
+      "color": "#3182bd",
+      "label": "4655.419 万m³"
+    },
+    {
+      "value": 6391.031999999998,
+      "color": "#08519c",
+      "label": "6391.032 万m³"
+    },
+    {
+      "value": 17645.24,
+      "color": "#042d60",
+      "label": "17645.240 万m³"
+    }
+  ]
+}

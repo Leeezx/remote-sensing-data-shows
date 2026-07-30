@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "222405001000",
+      "name": "安民街道",
+      "average": 640.2
+    },
+    {
+      "regionId": "222405002000",
+      "name": "龙门街道",
+      "average": 866.2
+    },
+    {
+      "regionId": "222405100000",
+      "name": "开山屯镇",
+      "average": 1280.2
+    },
+    {
+      "regionId": "222405102000",
+      "name": "老头沟镇",
+      "average": 7189.9
+    },
+    {
+      "regionId": "222405103000",
+      "name": "三合镇",
+      "average": 1915.4
+    },
+    {
+      "regionId": "222405104000",
+      "name": "东盛涌镇",
+      "average": 7922.1
+    },
+    {
+      "regionId": "222405105000",
+      "name": "智新镇",
+      "average": 3561.7
+    },
+    {
+      "regionId": "222405200000",
+      "name": "德新乡",
+      "average": 737.3
+    },
+    {
+      "regionId": "222405201000",
+      "name": "白金乡",
+      "average": 351.7
+    },
+    {
+      "regionId": "222405400000",
+      "name": "龙井市林业局",
+      "average": 0.0
+    },
+    {
+      "regionId": "222405401000",
+      "name": "龙井大苏果树农场",
+      "average": 16.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 3.2,
+      "color": "#eff3ff",
+      "label": "3.200 万m³"
+    },
+    {
+      "value": 386.32000000000005,
+      "color": "#bdd7e7",
+      "label": "386.320 万m³"
+    },
+    {
+      "value": 742.456,
+      "color": "#6baed6",
+      "label": "742.456 万m³"
+    },
+    {
+      "value": 1263.64,
+      "color": "#3182bd",
+      "label": "1263.640 万m³"
+    },
+    {
+      "value": 3364.1439999999984,
+      "color": "#08519c",
+      "label": "3364.144 万m³"
+    },
+    {
+      "value": 7775.660000000001,
+      "color": "#042d60",
+      "label": "7775.660 万m³"
+    }
+  ]
+}

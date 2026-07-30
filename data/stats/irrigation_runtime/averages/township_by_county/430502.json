@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "430502001000",
+      "name": "兴隆街道",
+      "average": 775.9
+    },
+    {
+      "regionId": "430502002000",
+      "name": "龙须塘街道",
+      "average": 133.2
+    },
+    {
+      "regionId": "430502003000",
+      "name": "汽车站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430502004000",
+      "name": "小江湖街道",
+      "average": 160.4
+    },
+    {
+      "regionId": "430502005000",
+      "name": "东风路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430502006000",
+      "name": "桥头街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430502100000",
+      "name": "高崇山镇",
+      "average": 14854.5
+    },
+    {
+      "regionId": "430502101000",
+      "name": "渡头桥镇",
+      "average": 18724.0
+    },
+    {
+      "regionId": "430502200000",
+      "name": "城东乡",
+      "average": 1996.4
+    },
+    {
+      "regionId": "430502201000",
+      "name": "石桥乡",
+      "average": 6161.7
+    },
+    {
+      "regionId": "430502202000",
+      "name": "火车站乡",
+      "average": 9273.6
+    },
+    {
+      "regionId": "430502203000",
+      "name": "云水乡",
+      "average": 9820.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 44.22239999999998,
+      "color": "#bdd7e7",
+      "label": "44.222 万m³"
+    },
+    {
+      "value": 433.682,
+      "color": "#6baed6",
+      "label": "433.682 万m³"
+    },
+    {
+      "value": 4312.3068,
+      "color": "#3182bd",
+      "label": "4312.307 万m³"
+    },
+    {
+      "value": 9638.996,
+      "color": "#08519c",
+      "label": "9638.996 万m³"
+    },
+    {
+      "value": 17872.71,
+      "color": "#042d60",
+      "label": "17872.710 万m³"
+    }
+  ]
+}

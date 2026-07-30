@@ -1,0 +1,138 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420323100000",
+      "name": "城关镇",
+      "average": 729.5
+    },
+    {
+      "regionId": "420323101000",
+      "name": "溢水镇",
+      "average": 3029.6
+    },
+    {
+      "regionId": "420323102000",
+      "name": "麻家渡镇",
+      "average": 3860.2
+    },
+    {
+      "regionId": "420323103000",
+      "name": "宝丰镇",
+      "average": 11041.9
+    },
+    {
+      "regionId": "420323104000",
+      "name": "擂鼓镇",
+      "average": 3724.2
+    },
+    {
+      "regionId": "420323105000",
+      "name": "秦古镇",
+      "average": 6610.3
+    },
+    {
+      "regionId": "420323106000",
+      "name": "得胜镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420323107000",
+      "name": "上庸镇",
+      "average": 3672.3
+    },
+    {
+      "regionId": "420323108000",
+      "name": "官渡镇",
+      "average": 135.5
+    },
+    {
+      "regionId": "420323200000",
+      "name": "潘口乡",
+      "average": 1052.6
+    },
+    {
+      "regionId": "420323201000",
+      "name": "竹坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420323202000",
+      "name": "大庙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420323203000",
+      "name": "双台乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420323204000",
+      "name": "楼台乡",
+      "average": 2796.2
+    },
+    {
+      "regionId": "420323205000",
+      "name": "文峰乡",
+      "average": 813.2
+    },
+    {
+      "regionId": "420323206000",
+      "name": "深河乡",
+      "average": 1338.2
+    },
+    {
+      "regionId": "420323207000",
+      "name": "柳林乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610928121000",
+      "name": "铜钱关镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610929103000",
+      "name": "卡子镇",
+      "average": 713.8
+    },
+    {
+      "regionId": "610929105000",
+      "name": "宋家镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

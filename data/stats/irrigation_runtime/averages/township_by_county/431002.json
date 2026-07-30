@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "431002001000",
+      "name": "人民路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "431002002000",
+      "name": "北湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "431002003000",
+      "name": "燕泉街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "431002004000",
+      "name": "下湄桥街道",
+      "average": 594.5
+    },
+    {
+      "regionId": "431002005000",
+      "name": "骆仙街道",
+      "average": 2380.6
+    },
+    {
+      "regionId": "431002006000",
+      "name": "增福街道",
+      "average": 3001.7
+    },
+    {
+      "regionId": "431002007000",
+      "name": "郴江街道",
+      "average": 5898.0
+    },
+    {
+      "regionId": "431002008000",
+      "name": "涌泉街道",
+      "average": 694.6
+    },
+    {
+      "regionId": "431002100000",
+      "name": "石盖塘镇",
+      "average": 11690.9
+    },
+    {
+      "regionId": "431002101000",
+      "name": "华塘镇",
+      "average": 26861.4
+    },
+    {
+      "regionId": "431002102000",
+      "name": "鲁塘镇",
+      "average": 20886.1
+    },
+    {
+      "regionId": "431002105000",
+      "name": "保和镇",
+      "average": 17851.8
+    },
+    {
+      "regionId": "431002202000",
+      "name": "大塘瑶族乡",
+      "average": 1195.0
+    },
+    {
+      "regionId": "431002205000",
+      "name": "月峰瑶族乡",
+      "average": 5928.4
+    },
+    {
+      "regionId": "431002206000",
+      "name": "芙蓉乡",
+      "average": 2561.7
+    },
+    {
+      "regionId": "431002207000",
+      "name": "永春乡",
+      "average": 3832.1
+    },
+    {
+      "regionId": "431021114000",
+      "name": "正和镇",
+      "average": 12562.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 633.7392,
+      "color": "#bdd7e7",
+      "label": "633.739 万m³"
+    },
+    {
+      "value": 2464.6304,
+      "color": "#6baed6",
+      "label": "2464.630 万m³"
+    },
+    {
+      "value": 4939.4223999999995,
+      "color": "#3182bd",
+      "label": "4939.422 万m³"
+    },
+    {
+      "value": 12220.711199999998,
+      "color": "#08519c",
+      "label": "12220.711 万m³"
+    },
+    {
+      "value": 24949.304,
+      "color": "#042d60",
+      "label": "24949.304 万m³"
+    }
+  ]
+}

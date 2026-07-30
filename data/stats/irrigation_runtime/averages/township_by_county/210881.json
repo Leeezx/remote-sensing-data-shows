@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210881001000",
+      "name": "鼓楼街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210881002000",
+      "name": "西城街道",
+      "average": 6.0
+    },
+    {
+      "regionId": "210881003000",
+      "name": "东城街道",
+      "average": 1831.4
+    },
+    {
+      "regionId": "210881004000",
+      "name": "太阳升街道",
+      "average": 757.0
+    },
+    {
+      "regionId": "210881005000",
+      "name": "团山街道",
+      "average": 2065.4
+    },
+    {
+      "regionId": "210881006000",
+      "name": "西海街道",
+      "average": 6734.4
+    },
+    {
+      "regionId": "210881007000",
+      "name": "九垄地街道",
+      "average": 557.6
+    },
+    {
+      "regionId": "210881008000",
+      "name": "归州街道",
+      "average": 597.3
+    },
+    {
+      "regionId": "210881102000",
+      "name": "高屯镇",
+      "average": 2921.5
+    },
+    {
+      "regionId": "210881105000",
+      "name": "沙岗镇",
+      "average": 921.4
+    },
+    {
+      "regionId": "210881109000",
+      "name": "九寨镇",
+      "average": 427.9
+    },
+    {
+      "regionId": "210881110000",
+      "name": "万福镇",
+      "average": 2773.5
+    },
+    {
+      "regionId": "210881111000",
+      "name": "卧龙泉镇",
+      "average": 1021.5
+    },
+    {
+      "regionId": "210881112000",
+      "name": "青石岭镇",
+      "average": 5452.5
+    },
+    {
+      "regionId": "210881113000",
+      "name": "暖泉镇",
+      "average": 1426.9
+    },
+    {
+      "regionId": "210881116000",
+      "name": "榜式堡镇",
+      "average": 574.5
+    },
+    {
+      "regionId": "210881117000",
+      "name": "团甸镇",
+      "average": 2235.5
+    },
+    {
+      "regionId": "210881118000",
+      "name": "双台镇",
+      "average": 390.2
+    },
+    {
+      "regionId": "210881119000",
+      "name": "杨运镇",
+      "average": 453.3
+    },
+    {
+      "regionId": "210881120000",
+      "name": "徐屯镇",
+      "average": 580.1
+    },
+    {
+      "regionId": "210881121000",
+      "name": "什字街镇",
+      "average": 1729.7
+    },
+    {
+      "regionId": "210881122000",
+      "name": "矿洞沟镇",
+      "average": 2264.0
+    },
+    {
+      "regionId": "210881123000",
+      "name": "陈屯镇",
+      "average": 55.2
+    },
+    {
+      "regionId": "210881124000",
+      "name": "梁屯镇",
+      "average": 2376.6
+    },
+    {
+      "regionId": "210881216000",
+      "name": "小石棚乡",
+      "average": 853.3
+    },
+    {
+      "regionId": "210881218000",
+      "name": "二台乡",
+      "average": 49.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 3.0,
+      "color": "#eff3ff",
+      "label": "3.000 万m³"
+    },
+    {
+      "value": 435.52,
+      "color": "#bdd7e7",
+      "label": "435.520 万m³"
+    },
+    {
+      "value": 613.2699999999999,
+      "color": "#6baed6",
+      "label": "613.270 万m³"
+    },
+    {
+      "value": 1386.3599999999994,
+      "color": "#3182bd",
+      "label": "1386.360 万m³"
+    },
+    {
+      "value": 2255.45,
+      "color": "#08519c",
+      "label": "2255.450 万m³"
+    },
+    {
+      "value": 6093.45,
+      "color": "#042d60",
+      "label": "6093.450 万m³"
+    }
+  ]
+}

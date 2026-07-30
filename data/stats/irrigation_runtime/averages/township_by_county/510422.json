@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510422100000",
+      "name": "桐子林镇",
+      "average": 4516.3
+    },
+    {
+      "regionId": "510422101000",
+      "name": "红格镇",
+      "average": 6172.7
+    },
+    {
+      "regionId": "510422102000",
+      "name": "渔门镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510422103000",
+      "name": "永兴镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510422200000",
+      "name": "益民乡",
+      "average": 6048.5
+    },
+    {
+      "regionId": "510422201000",
+      "name": "新九乡",
+      "average": 11083.7
+    },
+    {
+      "regionId": "510422202000",
+      "name": "和爱彝族乡",
+      "average": 1599.9
+    },
+    {
+      "regionId": "510422203000",
+      "name": "红果彝族乡",
+      "average": 2361.4
+    },
+    {
+      "regionId": "510422204000",
+      "name": "鳡鱼彝族乡",
+      "average": 4317.8
+    },
+    {
+      "regionId": "510422205000",
+      "name": "共和乡",
+      "average": 10155.1
+    },
+    {
+      "regionId": "510422206000",
+      "name": "国胜乡",
+      "average": 10641.5
+    },
+    {
+      "regionId": "510422207000",
+      "name": "红宝苗族彝族乡",
+      "average": 1235.4
+    },
+    {
+      "regionId": "510422208000",
+      "name": "惠民乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510422209000",
+      "name": "箐河傈僳族乡",
+      "average": 5313.3
+    },
+    {
+      "regionId": "510422210000",
+      "name": "温泉彝族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510422211000",
+      "name": "格萨拉彝族乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

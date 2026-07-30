@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "120118103000",
+      "name": "王口镇",
+      "average": 17785.7
+    },
+    {
+      "regionId": "131026100000",
+      "name": "文安镇",
+      "average": 10926.1
+    },
+    {
+      "regionId": "131026101000",
+      "name": "新镇镇",
+      "average": 6533.0
+    },
+    {
+      "regionId": "131026102000",
+      "name": "苏桥镇",
+      "average": 13644.0
+    },
+    {
+      "regionId": "131026103000",
+      "name": "大柳河镇",
+      "average": 9170.4
+    },
+    {
+      "regionId": "131026104000",
+      "name": "左各庄镇",
+      "average": 3324.2
+    },
+    {
+      "regionId": "131026105000",
+      "name": "滩里镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "131026106000",
+      "name": "史各庄镇",
+      "average": 3711.2
+    },
+    {
+      "regionId": "131026107000",
+      "name": "赵各庄镇",
+      "average": 7415.1
+    },
+    {
+      "regionId": "131026108000",
+      "name": "兴隆宫镇",
+      "average": 8271.0
+    },
+    {
+      "regionId": "131026109000",
+      "name": "大留镇镇",
+      "average": 12215.6
+    },
+    {
+      "regionId": "131026110000",
+      "name": "孙氏镇",
+      "average": 15023.4
+    },
+    {
+      "regionId": "131026111000",
+      "name": "德归镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "131026200000",
+      "name": "大围河回族满族乡",
+      "average": 10597.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 3616.772,
+      "color": "#bdd7e7",
+      "label": "3616.772 万m³"
+    },
+    {
+      "value": 7630.7868,
+      "color": "#6baed6",
+      "label": "7630.787 万m³"
+    },
+    {
+      "value": 10237.721199999998,
+      "color": "#3182bd",
+      "label": "10237.721 万m³"
+    },
+    {
+      "value": 12564.1296,
+      "color": "#08519c",
+      "label": "12564.130 万m³"
+    },
+    {
+      "value": 17067.502,
+      "color": "#042d60",
+      "label": "17067.502 万m³"
+    }
+  ]
+}

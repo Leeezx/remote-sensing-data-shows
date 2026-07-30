@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620982100000",
+      "name": "七里镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620982101000",
+      "name": "沙州镇",
+      "average": 9.0
+    },
+    {
+      "regionId": "620982102000",
+      "name": "肃州镇",
+      "average": 36710.1
+    },
+    {
+      "regionId": "620982103000",
+      "name": "莫高镇",
+      "average": 20498.9
+    },
+    {
+      "regionId": "620982104000",
+      "name": "转渠口镇",
+      "average": 43081.0
+    },
+    {
+      "regionId": "620982105000",
+      "name": "阳关镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620982106000",
+      "name": "月牙泉镇",
+      "average": 7166.5
+    },
+    {
+      "regionId": "620982201000",
+      "name": "郭家堡乡",
+      "average": 22175.4
+    },
+    {
+      "regionId": "620982204000",
+      "name": "黄渠乡",
+      "average": 23175.6
+    },
+    {
+      "regionId": "620982400000",
+      "name": "国营敦煌农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "620982401000",
+      "name": "青海石油管理局生活基地",
+      "average": 188.6
+    },
+    {
+      "regionId": "650502100000",
+      "name": "雅满苏镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "650502203000",
+      "name": "大泉湾乡",
+      "average": 80310.0
+    },
+    {
+      "regionId": "652824102000",
+      "name": "罗布泊镇",
+      "average": 51572.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

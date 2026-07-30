@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "331127001000",
+      "name": "红星街道",
+      "average": 9380.9
+    },
+    {
+      "regionId": "331127002000",
+      "name": "鹤溪街道",
+      "average": 8165.7
+    },
+    {
+      "regionId": "331127101000",
+      "name": "渤海镇",
+      "average": 4551.1
+    },
+    {
+      "regionId": "331127102000",
+      "name": "东坑镇",
+      "average": 8034.9
+    },
+    {
+      "regionId": "331127103000",
+      "name": "英川镇",
+      "average": 6383.1
+    },
+    {
+      "regionId": "331127104000",
+      "name": "沙湾镇",
+      "average": 4793.5
+    },
+    {
+      "regionId": "331127201000",
+      "name": "大均乡",
+      "average": 2870.4
+    },
+    {
+      "regionId": "331127202000",
+      "name": "澄照乡",
+      "average": 7996.3
+    },
+    {
+      "regionId": "331127203000",
+      "name": "梅岐乡",
+      "average": 1963.7
+    },
+    {
+      "regionId": "331127205000",
+      "name": "郑坑乡",
+      "average": 2171.1
+    },
+    {
+      "regionId": "331127208000",
+      "name": "大漈乡",
+      "average": 3482.5
+    },
+    {
+      "regionId": "331127209000",
+      "name": "景南乡",
+      "average": 2702.9
+    },
+    {
+      "regionId": "331127210000",
+      "name": "雁溪乡",
+      "average": 2094.6
+    },
+    {
+      "regionId": "331127212000",
+      "name": "鸬鹚乡",
+      "average": 2588.2
+    },
+    {
+      "regionId": "331127213000",
+      "name": "梧桐乡",
+      "average": 979.7
+    },
+    {
+      "regionId": "331127214000",
+      "name": "标溪乡",
+      "average": 275.5
+    },
+    {
+      "regionId": "331127215000",
+      "name": "毛垟乡",
+      "average": 1582.3
+    },
+    {
+      "regionId": "331127216000",
+      "name": "秋炉乡",
+      "average": 1951.1
+    },
+    {
+      "regionId": "331127217000",
+      "name": "大地乡",
+      "average": 1116.8
+    },
+    {
+      "regionId": "331127218000",
+      "name": "家地乡",
+      "average": 235.8
+    },
+    {
+      "regionId": "331127219000",
+      "name": "九龙乡",
+      "average": 4873.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 251.68,
+      "color": "#eff3ff",
+      "label": "251.680 万m³"
+    },
+    {
+      "value": 1670.8120000000001,
+      "color": "#bdd7e7",
+      "label": "1670.812 万m³"
+    },
+    {
+      "value": 2204.468,
+      "color": "#6baed6",
+      "label": "2204.468 万m³"
+    },
+    {
+      "value": 3433.532,
+      "color": "#3182bd",
+      "label": "3433.532 万m³"
+    },
+    {
+      "value": 6020.795999999998,
+      "color": "#08519c",
+      "label": "6020.796 万m³"
+    },
+    {
+      "value": 8894.820000000002,
+      "color": "#042d60",
+      "label": "8894.820 万m³"
+    }
+  ]
+}

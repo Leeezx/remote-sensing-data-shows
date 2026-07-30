@@ -1,0 +1,63 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610403001000",
+      "name": "杨陵街道",
+      "average": 5888.3
+    },
+    {
+      "regionId": "610403002000",
+      "name": "李台街道",
+      "average": 1868.9
+    },
+    {
+      "regionId": "610403100000",
+      "name": "五泉镇",
+      "average": 12618.9
+    },
+    {
+      "regionId": "610403101000",
+      "name": "大寨镇",
+      "average": 5542.7
+    },
+    {
+      "regionId": "610403102000",
+      "name": "揉谷镇",
+      "average": 12451.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 2162.804,
+      "color": "#eff3ff",
+      "label": "2162.804 万m³"
+    },
+    {
+      "value": 4984.2824,
+      "color": "#bdd7e7",
+      "label": "4984.282 万m³"
+    },
+    {
+      "value": 5755.5896,
+      "color": "#6baed6",
+      "label": "5755.590 万m³"
+    },
+    {
+      "value": 8408.3768,
+      "color": "#3182bd",
+      "label": "8408.377 万m³"
+    },
+    {
+      "value": 12476.5208,
+      "color": "#08519c",
+      "label": "12476.521 万m³"
+    },
+    {
+      "value": 12605.467999999999,
+      "color": "#042d60",
+      "label": "12605.468 万m³"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150627100000",
+      "name": "阿勒腾席热镇",
+      "average": 2390.0
+    },
+    {
+      "regionId": "150627101000",
+      "name": "札萨克镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150627102000",
+      "name": "乌兰木伦镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150627103000",
+      "name": "纳林陶亥镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150627104000",
+      "name": "苏布尔嘎镇",
+      "average": 9019.8
+    },
+    {
+      "regionId": "150627105000",
+      "name": "红庆河镇",
+      "average": 4829.0
+    },
+    {
+      "regionId": "150627106000",
+      "name": "伊金霍洛镇",
+      "average": 5229.7
+    },
+    {
+      "regionId": "610881104000",
+      "name": "大柳塔镇",
+      "average": 892.4
+    },
+    {
+      "regionId": "610881106000",
+      "name": "中鸡镇",
+      "average": 2221.3
+    },
+    {
+      "regionId": "610881108000",
+      "name": "尔林兔镇",
+      "average": 7509.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

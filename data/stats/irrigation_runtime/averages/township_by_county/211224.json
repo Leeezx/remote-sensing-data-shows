@@ -1,0 +1,243 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "211224100000",
+      "name": "昌图镇",
+      "average": 3412.6
+    },
+    {
+      "regionId": "211224101000",
+      "name": "老城镇",
+      "average": 4512.2
+    },
+    {
+      "regionId": "211224102000",
+      "name": "八面城镇",
+      "average": 5511.9
+    },
+    {
+      "regionId": "211224103000",
+      "name": "三江口镇",
+      "average": 5.0
+    },
+    {
+      "regionId": "211224104000",
+      "name": "金家镇",
+      "average": 3581.7
+    },
+    {
+      "regionId": "211224105000",
+      "name": "宝力镇",
+      "average": 16323.0
+    },
+    {
+      "regionId": "211224106000",
+      "name": "泉头镇",
+      "average": 1367.5
+    },
+    {
+      "regionId": "211224107000",
+      "name": "双庙子镇",
+      "average": 2190.6
+    },
+    {
+      "regionId": "211224108000",
+      "name": "亮中桥镇",
+      "average": 7899.0
+    },
+    {
+      "regionId": "211224109000",
+      "name": "马仲河镇",
+      "average": 3849.3
+    },
+    {
+      "regionId": "211224110000",
+      "name": "毛家店镇",
+      "average": 2589.9
+    },
+    {
+      "regionId": "211224111000",
+      "name": "老四平镇",
+      "average": 3302.1
+    },
+    {
+      "regionId": "211224112000",
+      "name": "大洼镇",
+      "average": 3844.6
+    },
+    {
+      "regionId": "211224113000",
+      "name": "头道镇",
+      "average": 1830.2
+    },
+    {
+      "regionId": "211224114000",
+      "name": "鴜鷺树镇",
+      "average": 2307.6
+    },
+    {
+      "regionId": "211224115000",
+      "name": "傅家镇",
+      "average": 7915.1
+    },
+    {
+      "regionId": "211224117000",
+      "name": "四合镇",
+      "average": 1412.7
+    },
+    {
+      "regionId": "211224118000",
+      "name": "朝阳镇",
+      "average": 3078.7
+    },
+    {
+      "regionId": "211224119000",
+      "name": "古榆树镇",
+      "average": 32.9
+    },
+    {
+      "regionId": "211224120000",
+      "name": "七家子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "211224121000",
+      "name": "东嘎镇",
+      "average": 3386.2
+    },
+    {
+      "regionId": "211224122000",
+      "name": "四面城镇",
+      "average": 2251.2
+    },
+    {
+      "regionId": "211224123000",
+      "name": "前双井镇",
+      "average": 8873.1
+    },
+    {
+      "regionId": "211224124000",
+      "name": "通江口镇",
+      "average": 8225.8
+    },
+    {
+      "regionId": "211224125000",
+      "name": "大四家子镇",
+      "average": 6418.0
+    },
+    {
+      "regionId": "211224126000",
+      "name": "曲家店镇",
+      "average": 8609.5
+    },
+    {
+      "regionId": "211224127000",
+      "name": "十八家子镇",
+      "average": 2988.0
+    },
+    {
+      "regionId": "211224128000",
+      "name": "太平镇",
+      "average": 3137.6
+    },
+    {
+      "regionId": "211224129000",
+      "name": "下二台镇",
+      "average": 2334.4
+    },
+    {
+      "regionId": "211224130000",
+      "name": "平安堡镇",
+      "average": 4050.8
+    },
+    {
+      "regionId": "211224131000",
+      "name": "大兴镇",
+      "average": 2116.3
+    },
+    {
+      "regionId": "211224132000",
+      "name": "后窑镇",
+      "average": 6036.1
+    },
+    {
+      "regionId": "211224133000",
+      "name": "长发镇",
+      "average": 3847.9
+    },
+    {
+      "regionId": "211224401000",
+      "name": "三江口农场",
+      "average": 2719.7
+    },
+    {
+      "regionId": "211224402000",
+      "name": "宝力农场",
+      "average": 8743.1
+    },
+    {
+      "regionId": "211224403000",
+      "name": "新乡农场",
+      "average": 183.7
+    },
+    {
+      "regionId": "211224404000",
+      "name": "付家林场",
+      "average": 1625.8
+    },
+    {
+      "regionId": "211224405000",
+      "name": "牤牛马场",
+      "average": 5.5
+    },
+    {
+      "regionId": "211224406000",
+      "name": "两家子农场",
+      "average": 6826.3
+    },
+    {
+      "regionId": "220303100000",
+      "name": "山门镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220322100000",
+      "name": "梨树镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1514.988,
+      "color": "#bdd7e7",
+      "label": "1514.988 万m³"
+    },
+    {
+      "value": 2610.668,
+      "color": "#6baed6",
+      "label": "2610.668 万m³"
+    },
+    {
+      "value": 3554.644,
+      "color": "#3182bd",
+      "label": "3554.644 万m³"
+    },
+    {
+      "value": 6234.687999999998,
+      "color": "#08519c",
+      "label": "6234.688 万m³"
+    },
+    {
+      "value": 10363.080000000022,
+      "color": "#042d60",
+      "label": "10363.080 万m³"
+    }
+  ]
+}

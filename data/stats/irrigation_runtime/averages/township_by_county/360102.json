@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "360102001000",
+      "name": "公园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "360102002000",
+      "name": "滕王阁街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "360102003000",
+      "name": "八一桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "360102004000",
+      "name": "百花洲街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "360102005000",
+      "name": "墩子塘街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "360102006000",
+      "name": "大院街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "360102007000",
+      "name": "豫章街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "360102008000",
+      "name": "董家窑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "360102009000",
+      "name": "彭家桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "360102400000",
+      "name": "贤士湖管理处",
+      "average": 0.0
+    },
+    {
+      "regionId": "360111106000",
+      "name": "扬子洲镇",
+      "average": 19206.1
+    },
+    {
+      "regionId": "360111402000",
+      "name": "扬农管理处",
+      "average": 3796.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

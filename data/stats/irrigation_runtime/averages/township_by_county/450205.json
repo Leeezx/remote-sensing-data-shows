@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "450205001000",
+      "name": "解放街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450205002000",
+      "name": "雅儒街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450205003000",
+      "name": "胜利街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450205004000",
+      "name": "雀儿山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450205005000",
+      "name": "钢城街道",
+      "average": 1835.4
+    },
+    {
+      "regionId": "450205006000",
+      "name": "锦绣街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450205007000",
+      "name": "白露街道",
+      "average": 12198.0
+    },
+    {
+      "regionId": "450205100000",
+      "name": "石碑坪镇",
+      "average": 31832.8
+    },
+    {
+      "regionId": "450205101000",
+      "name": "沙塘镇",
+      "average": 24809.4
+    },
+    {
+      "regionId": "450205102000",
+      "name": "长塘镇",
+      "average": 13670.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

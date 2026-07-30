@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410811001000",
+      "name": "东方红街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410811002000",
+      "name": "焦东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410811003000",
+      "name": "百间房街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410811004000",
+      "name": "太行街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410811005000",
+      "name": "艺新街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410811006000",
+      "name": "光亚街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410811008000",
+      "name": "中星街道",
+      "average": 180.3
+    },
+    {
+      "regionId": "410811009000",
+      "name": "新城街道",
+      "average": 865.0
+    },
+    {
+      "regionId": "410811060000",
+      "name": "李万街道",
+      "average": 1602.9
+    },
+    {
+      "regionId": "410811061000",
+      "name": "文苑街道",
+      "average": 941.4
+    },
+    {
+      "regionId": "410811062000",
+      "name": "文昌街道",
+      "average": 31415.1
+    },
+    {
+      "regionId": "410811100000",
+      "name": "阳庙镇",
+      "average": 7554.5
+    },
+    {
+      "regionId": "410811101000",
+      "name": "宁郭镇",
+      "average": 14579.8
+    },
+    {
+      "regionId": "410811203000",
+      "name": "苏家作乡",
+      "average": 11421.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

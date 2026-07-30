@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150103001000",
+      "name": "新华西路办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "150103002000",
+      "name": "中山西路办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "150103003000",
+      "name": "光明路办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "150103004000",
+      "name": "海拉尔西路办事处",
+      "average": 11.3
+    },
+    {
+      "regionId": "150103005000",
+      "name": "环河街办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "150103006000",
+      "name": "通道街办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "150103007000",
+      "name": "钢铁路办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "150103100000",
+      "name": "攸攸板镇",
+      "average": 536.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

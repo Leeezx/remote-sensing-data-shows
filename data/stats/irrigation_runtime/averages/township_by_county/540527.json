@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540527100000",
+      "name": "洛扎镇",
+      "average": 963.6
+    },
+    {
+      "regionId": "540527101000",
+      "name": "拉康镇",
+      "average": 395.0
+    },
+    {
+      "regionId": "540527200000",
+      "name": "生格乡",
+      "average": 960.7
+    },
+    {
+      "regionId": "540527201000",
+      "name": "边巴乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540527202000",
+      "name": "扎日乡",
+      "average": 5103.5
+    },
+    {
+      "regionId": "540527203000",
+      "name": "色乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540527204000",
+      "name": "拉郊乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

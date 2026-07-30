@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610803100000",
+      "name": "横山镇",
+      "average": 11684.9
+    },
+    {
+      "regionId": "610803101000",
+      "name": "石湾镇",
+      "average": 331.2
+    },
+    {
+      "regionId": "610803102000",
+      "name": "高镇",
+      "average": 1265.7
+    },
+    {
+      "regionId": "610803103000",
+      "name": "武镇",
+      "average": 2151.5
+    },
+    {
+      "regionId": "610803104000",
+      "name": "党岔镇",
+      "average": 18249.4
+    },
+    {
+      "regionId": "610803105000",
+      "name": "响水镇",
+      "average": 2751.8
+    },
+    {
+      "regionId": "610803106000",
+      "name": "波罗镇",
+      "average": 9577.2
+    },
+    {
+      "regionId": "610803107000",
+      "name": "殿市镇",
+      "average": 1457.7
+    },
+    {
+      "regionId": "610803108000",
+      "name": "塔湾镇",
+      "average": 723.4
+    },
+    {
+      "regionId": "610803109000",
+      "name": "赵石畔镇",
+      "average": 3197.1
+    },
+    {
+      "regionId": "610803200000",
+      "name": "魏家楼乡",
+      "average": 427.5
+    },
+    {
+      "regionId": "610803203000",
+      "name": "白界乡",
+      "average": 4006.6
+    },
+    {
+      "regionId": "610803205000",
+      "name": "韩岔乡",
+      "average": 2954.3
+    },
+    {
+      "regionId": "610803207000",
+      "name": "雷龙湾乡",
+      "average": 3564.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 356.238,
+      "color": "#eff3ff",
+      "label": "356.238 万m³"
+    },
+    {
+      "value": 1133.3788,
+      "color": "#bdd7e7",
+      "label": "1133.379 万m³"
+    },
+    {
+      "value": 2302.7756,
+      "color": "#6baed6",
+      "label": "2302.776 万m³"
+    },
+    {
+      "value": 3135.9143999999997,
+      "color": "#3182bd",
+      "label": "3135.914 万m³"
+    },
+    {
+      "value": 5365.826399999999,
+      "color": "#08519c",
+      "label": "5365.826 万m³"
+    },
+    {
+      "value": 16542.63,
+      "color": "#042d60",
+      "label": "16542.630 万m³"
+    }
+  ]
+}

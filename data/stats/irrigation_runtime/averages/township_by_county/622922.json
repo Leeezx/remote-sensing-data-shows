@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "622922100000",
+      "name": "附城镇",
+      "average": 2832.6
+    },
+    {
+      "regionId": "622922101000",
+      "name": "苏集镇",
+      "average": 3203.4
+    },
+    {
+      "regionId": "622922102000",
+      "name": "胭脂镇",
+      "average": 3492.8
+    },
+    {
+      "regionId": "622922103000",
+      "name": "景古镇",
+      "average": 1360.1
+    },
+    {
+      "regionId": "622922200000",
+      "name": "康丰乡",
+      "average": 1719.7
+    },
+    {
+      "regionId": "622922201000",
+      "name": "虎关乡",
+      "average": 1990.9
+    },
+    {
+      "regionId": "622922202000",
+      "name": "流川乡",
+      "average": 648.7
+    },
+    {
+      "regionId": "622922203000",
+      "name": "白王乡",
+      "average": 1087.9
+    },
+    {
+      "regionId": "622922205000",
+      "name": "八松乡",
+      "average": 3036.4
+    },
+    {
+      "regionId": "622922206000",
+      "name": "鸣鹿乡",
+      "average": 1872.5
+    },
+    {
+      "regionId": "622922207000",
+      "name": "八丹乡",
+      "average": 2128.1
+    },
+    {
+      "regionId": "622922208000",
+      "name": "上湾乡",
+      "average": 1477.6
+    },
+    {
+      "regionId": "622922211000",
+      "name": "草滩乡",
+      "average": 2362.9
+    },
+    {
+      "regionId": "622922212000",
+      "name": "五户乡",
+      "average": 2611.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 762.892,
+      "color": "#eff3ff",
+      "label": "762.892 万m³"
+    },
+    {
+      "value": 1448.9299999999998,
+      "color": "#bdd7e7",
+      "label": "1448.930 万m³"
+    },
+    {
+      "value": 1902.3368,
+      "color": "#6baed6",
+      "label": "1902.337 万m³"
+    },
+    {
+      "value": 2303.7304,
+      "color": "#3182bd",
+      "label": "2303.730 万m³"
+    },
+    {
+      "value": 2882.3271999999997,
+      "color": "#08519c",
+      "label": "2882.327 万m³"
+    },
+    {
+      "value": 3417.556,
+      "color": "#042d60",
+      "label": "3417.556 万m³"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "211202001000",
+      "name": "红旗街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211202002000",
+      "name": "工人街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211202003000",
+      "name": "铁西街道",
+      "average": 168.0
+    },
+    {
+      "regionId": "211202004000",
+      "name": "铜钟街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211202005000",
+      "name": "柴河街道",
+      "average": 10.6
+    },
+    {
+      "regionId": "211202006000",
+      "name": "岭东街道",
+      "average": 129.7
+    },
+    {
+      "regionId": "211202007000",
+      "name": "辽海街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211202201000",
+      "name": "龙山乡",
+      "average": 2914.0
+    },
+    {
+      "regionId": "211202401000",
+      "name": "铁岭经济开发区",
+      "average": 1513.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

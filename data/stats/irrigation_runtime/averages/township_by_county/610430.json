@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610430100000",
+      "name": "城关镇",
+      "average": 10296.9
+    },
+    {
+      "regionId": "610430101000",
+      "name": "官庄镇",
+      "average": 2778.1
+    },
+    {
+      "regionId": "610430102000",
+      "name": "马家镇",
+      "average": 4460.8
+    },
+    {
+      "regionId": "610430103000",
+      "name": "方里镇",
+      "average": 19758.8
+    },
+    {
+      "regionId": "610430104000",
+      "name": "润镇",
+      "average": 6129.2
+    },
+    {
+      "regionId": "610430105000",
+      "name": "车坞镇",
+      "average": 10830.0
+    },
+    {
+      "regionId": "610430106000",
+      "name": "铁王镇",
+      "average": 4516.5
+    },
+    {
+      "regionId": "610430107000",
+      "name": "石桥镇",
+      "average": 11044.7
+    },
+    {
+      "regionId": "610430108000",
+      "name": "胡家庙镇",
+      "average": 2651.7
+    },
+    {
+      "regionId": "610430109000",
+      "name": "十里塬镇",
+      "average": 3464.3
+    },
+    {
+      "regionId": "610430110000",
+      "name": "固贤镇",
+      "average": 8634.0
+    },
+    {
+      "regionId": "610430111000",
+      "name": "卜家镇",
+      "average": 2004.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 2146.884,
+      "color": "#eff3ff",
+      "label": "2146.884 万m³"
+    },
+    {
+      "value": 3005.9184,
+      "color": "#bdd7e7",
+      "label": "3005.918 万m³"
+    },
+    {
+      "value": 4485.5308,
+      "color": "#6baed6",
+      "label": "4485.531 万m³"
+    },
+    {
+      "value": 7521.8688,
+      "color": "#3182bd",
+      "label": "7521.869 万m³"
+    },
+    {
+      "value": 10653.0108,
+      "color": "#08519c",
+      "label": "10653.011 万m³"
+    },
+    {
+      "value": 17841.697999999993,
+      "color": "#042d60",
+      "label": "17841.698 万m³"
+    }
+  ]
+}

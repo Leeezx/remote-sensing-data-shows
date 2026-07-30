@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140931100000",
+      "name": "东关镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "140931101000",
+      "name": "义门镇",
+      "average": 654.4
+    },
+    {
+      "regionId": "140931102000",
+      "name": "桥头镇",
+      "average": 248.4
+    },
+    {
+      "regionId": "140931103000",
+      "name": "杨家湾镇",
+      "average": 128.9
+    },
+    {
+      "regionId": "140931200000",
+      "name": "腰庄乡",
+      "average": 34.5
+    },
+    {
+      "regionId": "140931201000",
+      "name": "韩家川乡",
+      "average": 6.6
+    },
+    {
+      "regionId": "140931202000",
+      "name": "林遮峪乡",
+      "average": 168.8
+    },
+    {
+      "regionId": "140931203000",
+      "name": "冯家川乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "140931204000",
+      "name": "土崖塔乡",
+      "average": 86.7
+    },
+    {
+      "regionId": "140931205000",
+      "name": "孙家沟乡",
+      "average": 132.8
+    },
+    {
+      "regionId": "140931206000",
+      "name": "窑洼乡",
+      "average": 280.0
+    },
+    {
+      "regionId": "140931207000",
+      "name": "窑圪台乡",
+      "average": 34.3
+    },
+    {
+      "regionId": "140931208000",
+      "name": "南河沟乡",
+      "average": 2091.6
+    },
+    {
+      "regionId": "610822211000",
+      "name": "武家庄镇",
+      "average": 366.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 27.541199999999993,
+      "color": "#bdd7e7",
+      "label": "27.541 万m³"
+    },
+    {
+      "value": 97.33439999999999,
+      "color": "#6baed6",
+      "label": "97.334 万m³"
+    },
+    {
+      "value": 159.72799999999998,
+      "color": "#3182bd",
+      "label": "159.728 万m³"
+    },
+    {
+      "value": 301.1792,
+      "color": "#08519c",
+      "label": "301.179 万m³"
+    },
+    {
+      "value": 1717.9280000000003,
+      "color": "#042d60",
+      "label": "1717.928 万m³"
+    }
+  ]
+}

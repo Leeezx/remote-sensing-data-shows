@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "220605001000",
+      "name": "孙家堡子街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220605002000",
+      "name": "江源街道",
+      "average": 17.2
+    },
+    {
+      "regionId": "220605003000",
+      "name": "正岔街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220605004000",
+      "name": "城墙街道",
+      "average": 15.5
+    },
+    {
+      "regionId": "220605102000",
+      "name": "湾沟镇",
+      "average": 59.8
+    },
+    {
+      "regionId": "220605103000",
+      "name": "松树镇",
+      "average": 45.4
+    },
+    {
+      "regionId": "220605104000",
+      "name": "砟子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220605105000",
+      "name": "石人镇",
+      "average": 3.4
+    },
+    {
+      "regionId": "220605106000",
+      "name": "大阳岔镇",
+      "average": 5.2
+    },
+    {
+      "regionId": "220605107000",
+      "name": "大石人镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

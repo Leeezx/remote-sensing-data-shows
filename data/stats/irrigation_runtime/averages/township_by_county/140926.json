@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140926100000",
+      "name": "鹅城镇",
+      "average": 201.1
+    },
+    {
+      "regionId": "140926101000",
+      "name": "杜家村镇",
+      "average": 996.9
+    },
+    {
+      "regionId": "140926102000",
+      "name": "康家会镇",
+      "average": 280.4
+    },
+    {
+      "regionId": "140926103000",
+      "name": "丰润镇",
+      "average": 92.0
+    },
+    {
+      "regionId": "140926201000",
+      "name": "堂尔上乡",
+      "average": 84.6
+    },
+    {
+      "regionId": "140926202000",
+      "name": "中庄乡",
+      "average": 7.6
+    },
+    {
+      "regionId": "140926203000",
+      "name": "双路乡",
+      "average": 160.3
+    },
+    {
+      "regionId": "140926204000",
+      "name": "段家寨乡",
+      "average": 742.0
+    },
+    {
+      "regionId": "140926205000",
+      "name": "辛村乡",
+      "average": 109.3
+    },
+    {
+      "regionId": "140926206000",
+      "name": "王村乡",
+      "average": 174.9
+    },
+    {
+      "regionId": "140926207000",
+      "name": "神峪沟乡",
+      "average": 155.1
+    },
+    {
+      "regionId": "140926208000",
+      "name": "娘子神乡",
+      "average": 202.2
+    },
+    {
+      "regionId": "140926209000",
+      "name": "娑婆乡",
+      "average": 296.3
+    },
+    {
+      "regionId": "140926210000",
+      "name": "赤泥洼乡",
+      "average": 1087.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 27.619999999999997,
+      "color": "#eff3ff",
+      "label": "27.620 万m³"
+    },
+    {
+      "value": 105.0788,
+      "color": "#bdd7e7",
+      "label": "105.079 万m³"
+    },
+    {
+      "value": 163.97920000000002,
+      "color": "#6baed6",
+      "label": "163.979 万m³"
+    },
+    {
+      "value": 201.9228,
+      "color": "#3182bd",
+      "label": "201.923 万m³"
+    },
+    {
+      "value": 405.0507999999999,
+      "color": "#08519c",
+      "label": "405.051 万m³"
+    },
+    {
+      "value": 1063.796,
+      "color": "#042d60",
+      "label": "1063.796 万m³"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540127100000",
+      "name": "工卡镇",
+      "average": 4012.2
+    },
+    {
+      "regionId": "540127200000",
+      "name": "扎雪乡",
+      "average": 728.9
+    },
+    {
+      "regionId": "540127201000",
+      "name": "门巴乡",
+      "average": 138.5
+    },
+    {
+      "regionId": "540127202000",
+      "name": "扎西岗乡",
+      "average": 4921.2
+    },
+    {
+      "regionId": "540127203000",
+      "name": "日多乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540127204000",
+      "name": "尼玛江热乡",
+      "average": 2163.9
+    },
+    {
+      "regionId": "540127205000",
+      "name": "甲玛乡",
+      "average": 1867.7
+    },
+    {
+      "regionId": "540127206000",
+      "name": "唐加乡",
+      "average": 3741.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 19.39,
+      "color": "#eff3ff",
+      "label": "19.390 万m³"
+    },
+    {
+      "value": 424.2536,
+      "color": "#bdd7e7",
+      "label": "424.254 万m³"
+    },
+    {
+      "value": 1671.8264,
+      "color": "#6baed6",
+      "label": "1671.826 万m³"
+    },
+    {
+      "value": 2435.2643999999996,
+      "color": "#3182bd",
+      "label": "2435.264 万m³"
+    },
+    {
+      "value": 3881.2295999999997,
+      "color": "#08519c",
+      "label": "3881.230 万m³"
+    },
+    {
+      "value": 4793.94,
+      "color": "#042d60",
+      "label": "4793.940 万m³"
+    }
+  ]
+}

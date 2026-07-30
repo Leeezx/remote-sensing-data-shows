@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210522104000",
+      "name": "五里甸子镇",
+      "average": 155.2
+    },
+    {
+      "regionId": "220582001000",
+      "name": "团结街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220582002000",
+      "name": "黎明街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220582003000",
+      "name": "通胜街道",
+      "average": 146.0
+    },
+    {
+      "regionId": "220582100000",
+      "name": "青石镇",
+      "average": 210.7
+    },
+    {
+      "regionId": "220582101000",
+      "name": "榆林镇",
+      "average": 266.2
+    },
+    {
+      "regionId": "220582102000",
+      "name": "花甸镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220582103000",
+      "name": "头道镇",
+      "average": 3656.7
+    },
+    {
+      "regionId": "220582104000",
+      "name": "清河镇",
+      "average": 812.2
+    },
+    {
+      "regionId": "220582105000",
+      "name": "台上镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220582106000",
+      "name": "财源镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220582107000",
+      "name": "大路镇",
+      "average": 5.3
+    },
+    {
+      "regionId": "220582108000",
+      "name": "太王镇",
+      "average": 328.3
+    },
+    {
+      "regionId": "220582200000",
+      "name": "麻线乡",
+      "average": 54.9
+    },
+    {
+      "regionId": "220582201000",
+      "name": "凉水朝鲜族乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

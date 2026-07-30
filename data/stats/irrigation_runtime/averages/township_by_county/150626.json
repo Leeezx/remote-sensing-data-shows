@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150626100000",
+      "name": "嘎鲁图镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150626101000",
+      "name": "乌审召镇",
+      "average": 1266.2
+    },
+    {
+      "regionId": "150626102000",
+      "name": "图克镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150626103000",
+      "name": "乌兰陶勒盖镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150626104000",
+      "name": "无定河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150626200000",
+      "name": "苏力德苏木乡",
+      "average": 1354.9
+    },
+    {
+      "regionId": "610802108000",
+      "name": "马合镇",
+      "average": 10016.3
+    },
+    {
+      "regionId": "610802206000",
+      "name": "小壕兔乡",
+      "average": 3446.2
+    },
+    {
+      "regionId": "610802207000",
+      "name": "岔河则乡",
+      "average": 4846.4
+    },
+    {
+      "regionId": "610802208000",
+      "name": "补浪河乡",
+      "average": 6149.0
+    },
+    {
+      "regionId": "610802209000",
+      "name": "红石桥乡",
+      "average": 9120.6
+    },
+    {
+      "regionId": "610802210000",
+      "name": "小纪汗乡",
+      "average": 7665.4
+    },
+    {
+      "regionId": "610803207000",
+      "name": "雷龙湾乡",
+      "average": 3564.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

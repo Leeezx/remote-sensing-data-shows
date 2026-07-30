@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "430503001000",
+      "name": "中心路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430503002000",
+      "name": "红旗路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430503003000",
+      "name": "城北路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430503004000",
+      "name": "城西路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430503005000",
+      "name": "翠园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430503006000",
+      "name": "百春园街道",
+      "average": 79.0
+    },
+    {
+      "regionId": "430503007000",
+      "name": "城南街道",
+      "average": 2461.7
+    },
+    {
+      "regionId": "430503008000",
+      "name": "火车南站街道",
+      "average": 172.4
+    },
+    {
+      "regionId": "430503009000",
+      "name": "学院路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430503100000",
+      "name": "雨溪镇",
+      "average": 14368.0
+    },
+    {
+      "regionId": "430503101000",
+      "name": "罗市镇",
+      "average": 34892.8
+    },
+    {
+      "regionId": "430503202000",
+      "name": "檀江乡",
+      "average": 18612.8
+    },
+    {
+      "regionId": "430503203000",
+      "name": "蔡锷乡",
+      "average": 13707.1
+    },
+    {
+      "regionId": "430503204000",
+      "name": "板桥乡",
+      "average": 15721.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

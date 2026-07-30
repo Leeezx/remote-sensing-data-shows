@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "341102001000",
+      "name": "琅琊街道",
+      "average": 2133.5
+    },
+    {
+      "regionId": "341102002000",
+      "name": "东门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "341102003000",
+      "name": "西门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "341102004000",
+      "name": "南门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "341102005000",
+      "name": "北门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "341102006000",
+      "name": "清流街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "341102007000",
+      "name": "扬子街道",
+      "average": 6439.0
+    },
+    {
+      "regionId": "341102009000",
+      "name": "城北新区办事处",
+      "average": 13118.6
+    },
+    {
+      "regionId": "341102010000",
+      "name": "西涧街道",
+      "average": 38813.1
+    },
+    {
+      "regionId": "341102400000",
+      "name": "安徽滁州琅琊经济开发区",
+      "average": 0.0
+    },
+    {
+      "regionId": "341102401000",
+      "name": "滁州市经济技术开发区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540324100000",
+      "name": "丁青镇",
+      "average": 163.2
+    },
+    {
+      "regionId": "540324101000",
+      "name": "尺犊镇",
+      "average": 2.5
+    },
+    {
+      "regionId": "540324200000",
+      "name": "木塔乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540324201000",
+      "name": "布塔乡",
+      "average": 1.3
+    },
+    {
+      "regionId": "540324202000",
+      "name": "巴达乡",
+      "average": 4.5
+    },
+    {
+      "regionId": "540324203000",
+      "name": "甘岩乡",
+      "average": 12.4
+    },
+    {
+      "regionId": "540324204000",
+      "name": "嘎塔乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540324205000",
+      "name": "色扎乡",
+      "average": 10.3
+    },
+    {
+      "regionId": "540324206000",
+      "name": "协雄乡",
+      "average": 440.6
+    },
+    {
+      "regionId": "540324207000",
+      "name": "桑多乡",
+      "average": 247.3
+    },
+    {
+      "regionId": "540324208000",
+      "name": "当堆乡",
+      "average": 386.2
+    },
+    {
+      "regionId": "540324209000",
+      "name": "沙贡乡",
+      "average": 466.6
+    },
+    {
+      "regionId": "540324210000",
+      "name": "觉恩乡",
+      "average": 456.1
+    },
+    {
+      "regionId": "632725206000",
+      "name": "尕羊乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 0.9827999999999997,
+      "color": "#bdd7e7",
+      "label": "0.983 万m³"
+    },
+    {
+      "value": 5.961599999999999,
+      "color": "#6baed6",
+      "label": "5.962 万m³"
+    },
+    {
+      "value": 125.19839999999989,
+      "color": "#3182bd",
+      "label": "125.198 万m³"
+    },
+    {
+      "value": 399.4736,
+      "color": "#08519c",
+      "label": "399.474 万m³"
+    },
+    {
+      "value": 463.87,
+      "color": "#042d60",
+      "label": "463.870 万m³"
+    }
+  ]
+}

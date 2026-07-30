@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420322101000",
+      "name": "土门镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322102000",
+      "name": "上津镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322200000",
+      "name": "香口乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "611024101000",
+      "name": "高坝店镇",
+      "average": 2206.9
+    },
+    {
+      "regionId": "611024102000",
+      "name": "天竺山镇",
+      "average": 536.2
+    },
+    {
+      "regionId": "611024103000",
+      "name": "中村镇",
+      "average": 2171.5
+    },
+    {
+      "regionId": "611024104000",
+      "name": "银花镇",
+      "average": 2757.0
+    },
+    {
+      "regionId": "611024105000",
+      "name": "西照川镇",
+      "average": 1256.1
+    },
+    {
+      "regionId": "611024106000",
+      "name": "漫川关镇",
+      "average": 2272.1
+    },
+    {
+      "regionId": "611024107000",
+      "name": "南宽坪镇",
+      "average": 2032.9
+    },
+    {
+      "regionId": "611024108000",
+      "name": "户家塬镇",
+      "average": 3399.6
+    },
+    {
+      "regionId": "611024109000",
+      "name": "杨地镇",
+      "average": 1644.6
+    },
+    {
+      "regionId": "611024110000",
+      "name": "牛耳川镇",
+      "average": 144.4
+    },
+    {
+      "regionId": "611024111000",
+      "name": "小河口镇",
+      "average": 1162.1
+    },
+    {
+      "regionId": "611024112000",
+      "name": "色河铺镇",
+      "average": 686.0
+    },
+    {
+      "regionId": "611024113000",
+      "name": "板岩镇",
+      "average": 2523.7
+    },
+    {
+      "regionId": "611024114000",
+      "name": "元子街镇",
+      "average": 700.4
+    },
+    {
+      "regionId": "611024118000",
+      "name": "王阎乡",
+      "average": 213.1
+    },
+    {
+      "regionId": "611024200000",
+      "name": "伍竹乡",
+      "average": 6298.0
+    },
+    {
+      "regionId": "611024201000",
+      "name": "十里铺乡",
+      "average": 5721.5
+    },
+    {
+      "regionId": "611024204000",
+      "name": "申家垤乡",
+      "average": 319.9
+    },
+    {
+      "regionId": "611024205000",
+      "name": "两岭乡",
+      "average": 324.2
+    },
+    {
+      "regionId": "611024208000",
+      "name": "天桥乡",
+      "average": 107.0
+    },
+    {
+      "regionId": "611024209000",
+      "name": "石佛寺乡",
+      "average": 390.0
+    },
+    {
+      "regionId": "611024210000",
+      "name": "法官乡",
+      "average": 2385.2
+    },
+    {
+      "regionId": "611024211000",
+      "name": "延坪乡",
+      "average": 513.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 245.14,
+      "color": "#bdd7e7",
+      "label": "245.140 万m³"
+    },
+    {
+      "value": 551.18,
+      "color": "#6baed6",
+      "label": "551.180 万m³"
+    },
+    {
+      "value": 1605.7499999999993,
+      "color": "#3182bd",
+      "label": "1605.750 万m³"
+    },
+    {
+      "value": 2351.27,
+      "color": "#08519c",
+      "label": "2351.270 万m³"
+    },
+    {
+      "value": 6009.75,
+      "color": "#042d60",
+      "label": "6009.750 万m³"
+    }
+  ]
+}

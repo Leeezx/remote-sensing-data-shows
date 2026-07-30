@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540225100000",
+      "name": "曲下镇",
+      "average": 2523.1
+    },
+    {
+      "regionId": "540225101000",
+      "name": "拉孜镇",
+      "average": 797.1
+    },
+    {
+      "regionId": "540225200000",
+      "name": "扎西宗乡",
+      "average": 517.1
+    },
+    {
+      "regionId": "540225201000",
+      "name": "曲玛乡",
+      "average": 1644.4
+    },
+    {
+      "regionId": "540225202000",
+      "name": "彭措林乡",
+      "average": 548.2
+    },
+    {
+      "regionId": "540225203000",
+      "name": "扎西岗乡",
+      "average": 1492.1
+    },
+    {
+      "regionId": "540225204000",
+      "name": "柳乡",
+      "average": 629.6
+    },
+    {
+      "regionId": "540225205000",
+      "name": "热萨乡",
+      "average": 31.5
+    },
+    {
+      "regionId": "540225206000",
+      "name": "芒普乡",
+      "average": 638.7
+    },
+    {
+      "regionId": "540225207000",
+      "name": "锡钦乡",
+      "average": 2213.9
+    },
+    {
+      "regionId": "540225208000",
+      "name": "查务乡",
+      "average": 1667.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 128.62,
+      "color": "#eff3ff",
+      "label": "128.620 万m³"
+    },
+    {
+      "value": 557.9680000000001,
+      "color": "#bdd7e7",
+      "label": "557.968 万m³"
+    },
+    {
+      "value": 645.0360000000001,
+      "color": "#6baed6",
+      "label": "645.036 万m³"
+    },
+    {
+      "value": 1464.3,
+      "color": "#3182bd",
+      "label": "1464.300 万m³"
+    },
+    {
+      "value": 1664.552,
+      "color": "#08519c",
+      "label": "1664.552 万m³"
+    },
+    {
+      "value": 2461.26,
+      "color": "#042d60",
+      "label": "2461.260 万m³"
+    }
+  ]
+}

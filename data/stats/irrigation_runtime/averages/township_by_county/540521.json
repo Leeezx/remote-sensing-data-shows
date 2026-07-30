@@ -1,0 +1,63 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540521100000",
+      "name": "扎唐镇",
+      "average": 1813.8
+    },
+    {
+      "regionId": "540521101000",
+      "name": "桑耶镇",
+      "average": 2810.1
+    },
+    {
+      "regionId": "540521200000",
+      "name": "阿扎乡",
+      "average": 666.9
+    },
+    {
+      "regionId": "540521201000",
+      "name": "扎其乡",
+      "average": 3508.4
+    },
+    {
+      "regionId": "540521202000",
+      "name": "吉汝乡",
+      "average": 1045.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 697.196,
+      "color": "#eff3ff",
+      "label": "697.196 万m³"
+    },
+    {
+      "value": 988.0375999999999,
+      "color": "#bdd7e7",
+      "label": "988.038 万m³"
+    },
+    {
+      "value": 1518.8111999999999,
+      "color": "#6baed6",
+      "label": "1518.811 万m³"
+    },
+    {
+      "value": 2196.3792,
+      "color": "#3182bd",
+      "label": "2196.379 万m³"
+    },
+    {
+      "value": 2916.2416,
+      "color": "#08519c",
+      "label": "2916.242 万m³"
+    },
+    {
+      "value": 3452.536,
+      "color": "#042d60",
+      "label": "3452.536 万m³"
+    }
+  ]
+}

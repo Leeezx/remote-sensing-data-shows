@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210114001000",
+      "name": "迎宾路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210114003000",
+      "name": "陵西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210114005000",
+      "name": "于洪街道",
+      "average": 2429.8
+    },
+    {
+      "regionId": "210114007000",
+      "name": "北陵街道",
+      "average": 572.7
+    },
+    {
+      "regionId": "210114009000",
+      "name": "沙岭街道",
+      "average": 7421.5
+    },
+    {
+      "regionId": "210114010000",
+      "name": "南阳湖街道",
+      "average": 1.3
+    },
+    {
+      "regionId": "210114011000",
+      "name": "城东湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210114012000",
+      "name": "平罗街道",
+      "average": 6423.3
+    },
+    {
+      "regionId": "210114013000",
+      "name": "马三家街道",
+      "average": 15058.3
+    },
+    {
+      "regionId": "210114014000",
+      "name": "造化街道",
+      "average": 4559.3
+    },
+    {
+      "regionId": "210114015000",
+      "name": "大兴街道",
+      "average": 6627.4
+    },
+    {
+      "regionId": "210114016000",
+      "name": "光辉街道",
+      "average": 19519.8
+    },
+    {
+      "regionId": "210114401000",
+      "name": "马三家劳动教养院",
+      "average": 826.8
+    },
+    {
+      "regionId": "210114402000",
+      "name": "光辉农场",
+      "average": 4720.6
+    },
+    {
+      "regionId": "210114404000",
+      "name": "监狱城",
+      "average": 16.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1.2584,
+      "color": "#bdd7e7",
+      "label": "1.258 万m³"
+    },
+    {
+      "value": 739.3895999999999,
+      "color": "#6baed6",
+      "label": "739.390 万m³"
+    },
+    {
+      "value": 4614.7872,
+      "color": "#3182bd",
+      "label": "4614.787 万m³"
+    },
+    {
+      "value": 6652.811199999998,
+      "color": "#08519c",
+      "label": "6652.811 万m³"
+    },
+    {
+      "value": 18270.579999999994,
+      "color": "#042d60",
+      "label": "18270.580 万m³"
+    }
+  ]
+}

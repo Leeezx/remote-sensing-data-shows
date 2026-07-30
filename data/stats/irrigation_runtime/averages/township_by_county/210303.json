@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210303002000",
+      "name": "繁荣街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210303003000",
+      "name": "八家子街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210303004000",
+      "name": "兴盛街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210303005000",
+      "name": "共和街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210303006000",
+      "name": "永乐街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210303007000",
+      "name": "北陶官街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210303008000",
+      "name": "南华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210303009000",
+      "name": "大陆街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210303010000",
+      "name": "新陶官街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210303011000",
+      "name": "新城街道",
+      "average": 291.9
+    },
+    {
+      "regionId": "210303012000",
+      "name": "永发街道",
+      "average": 178.4
+    },
+    {
+      "regionId": "210303013000",
+      "name": "宁远街道",
+      "average": 3344.5
+    },
+    {
+      "regionId": "210303014000",
+      "name": "达道湾街道",
+      "average": 7013.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

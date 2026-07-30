@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540426100000",
+      "name": "朗镇",
+      "average": 326.8
+    },
+    {
+      "regionId": "540426101000",
+      "name": "仲达镇",
+      "average": 51.9
+    },
+    {
+      "regionId": "540426102000",
+      "name": "洞嘎镇",
+      "average": 368.7
+    },
+    {
+      "regionId": "540426200000",
+      "name": "金东乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540426201000",
+      "name": "拉多乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540426202000",
+      "name": "登木乡",
+      "average": 33.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 2.022000000000002,
+      "color": "#bdd7e7",
+      "label": "2.022 万m³"
+    },
+    {
+      "value": 34.064,
+      "color": "#6baed6",
+      "label": "34.064 万m³"
+    },
+    {
+      "value": 51.536,
+      "color": "#3182bd",
+      "label": "51.536 万m³"
+    },
+    {
+      "value": 310.30599999999987,
+      "color": "#08519c",
+      "label": "310.306 万m³"
+    },
+    {
+      "value": 364.51,
+      "color": "#042d60",
+      "label": "364.510 万m³"
+    }
+  ]
+}

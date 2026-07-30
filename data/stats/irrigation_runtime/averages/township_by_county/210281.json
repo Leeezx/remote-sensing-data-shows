@@ -1,0 +1,198 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210281001000",
+      "name": "新华办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "210281002000",
+      "name": "文兰办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "210281003000",
+      "name": "岭东办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "210281004000",
+      "name": "共济办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "210281005000",
+      "name": "铁东办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "210281006000",
+      "name": "祝华办事处",
+      "average": 85.9
+    },
+    {
+      "regionId": "210281007000",
+      "name": "岗店办事处",
+      "average": 465.5
+    },
+    {
+      "regionId": "210281008000",
+      "name": "太阳街道",
+      "average": 1154.5
+    },
+    {
+      "regionId": "210281009000",
+      "name": "长兴岛办事处",
+      "average": 1319.8
+    },
+    {
+      "regionId": "210281010000",
+      "name": "九龙办事处",
+      "average": 717.1
+    },
+    {
+      "regionId": "210281011000",
+      "name": "交流岛街道",
+      "average": 2530.9
+    },
+    {
+      "regionId": "210281101000",
+      "name": "复州城镇",
+      "average": 442.9
+    },
+    {
+      "regionId": "210281103000",
+      "name": "松树镇",
+      "average": 114.8
+    },
+    {
+      "regionId": "210281105000",
+      "name": "得利寺镇",
+      "average": 121.2
+    },
+    {
+      "regionId": "210281106000",
+      "name": "万家岭镇",
+      "average": 95.9
+    },
+    {
+      "regionId": "210281107000",
+      "name": "许屯镇",
+      "average": 170.1
+    },
+    {
+      "regionId": "210281108000",
+      "name": "永宁镇",
+      "average": 1398.6
+    },
+    {
+      "regionId": "210281109000",
+      "name": "谢屯镇",
+      "average": 1533.2
+    },
+    {
+      "regionId": "210281112000",
+      "name": "老虎屯镇",
+      "average": 836.6
+    },
+    {
+      "regionId": "210281113000",
+      "name": "红沿河镇",
+      "average": 506.2
+    },
+    {
+      "regionId": "210281115000",
+      "name": "李官镇",
+      "average": 267.5
+    },
+    {
+      "regionId": "210281116000",
+      "name": "仙浴湾镇",
+      "average": 1811.5
+    },
+    {
+      "regionId": "210281117000",
+      "name": "元台镇",
+      "average": 5630.8
+    },
+    {
+      "regionId": "210281118000",
+      "name": "瓦窝镇",
+      "average": 271.8
+    },
+    {
+      "regionId": "210281201000",
+      "name": "赵屯乡",
+      "average": 227.9
+    },
+    {
+      "regionId": "210281203000",
+      "name": "土城乡",
+      "average": 246.9
+    },
+    {
+      "regionId": "210281204000",
+      "name": "阎店乡",
+      "average": 742.9
+    },
+    {
+      "regionId": "210281205000",
+      "name": "西杨乡",
+      "average": 784.0
+    },
+    {
+      "regionId": "210281206000",
+      "name": "驼山乡",
+      "average": 510.3
+    },
+    {
+      "regionId": "210281208000",
+      "name": "三台满族乡",
+      "average": 6303.9
+    },
+    {
+      "regionId": "210281210000",
+      "name": "泡崖乡",
+      "average": 1392.6
+    },
+    {
+      "regionId": "210281212000",
+      "name": "杨家满族乡",
+      "average": 4320.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 106.7108,
+      "color": "#bdd7e7",
+      "label": "106.711 万m³"
+    },
+    {
+      "value": 269.7532,
+      "color": "#6baed6",
+      "label": "269.753 万m³"
+    },
+    {
+      "value": 729.3808,
+      "color": "#3182bd",
+      "label": "729.381 万m³"
+    },
+    {
+      "value": 1395.168,
+      "color": "#08519c",
+      "label": "1395.168 万m³"
+    },
+    {
+      "value": 5886.5779999999995,
+      "color": "#042d60",
+      "label": "5886.578 万m³"
+    }
+  ]
+}

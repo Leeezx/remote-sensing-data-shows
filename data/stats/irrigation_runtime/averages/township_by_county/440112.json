@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "440112001000",
+      "name": "黄埔街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440112002000",
+      "name": "红山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440112003000",
+      "name": "鱼珠街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440112005000",
+      "name": "大沙街道",
+      "average": 1358.2
+    },
+    {
+      "regionId": "440112006000",
+      "name": "文冲街道",
+      "average": 52.6
+    },
+    {
+      "regionId": "440112007000",
+      "name": "穗东街道",
+      "average": 207.8
+    },
+    {
+      "regionId": "440112008000",
+      "name": "南岗街道",
+      "average": 1527.6
+    },
+    {
+      "regionId": "440112009000",
+      "name": "荔联街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440112010000",
+      "name": "长洲街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440112011000",
+      "name": "夏港街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440112012000",
+      "name": "萝岗街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440112013000",
+      "name": "云埔街道",
+      "average": 2800.6
+    },
+    {
+      "regionId": "440112014000",
+      "name": "联和街道",
+      "average": 2047.4
+    },
+    {
+      "regionId": "440112015000",
+      "name": "永和街道",
+      "average": 647.4
+    },
+    {
+      "regionId": "440112101000",
+      "name": "九龙镇",
+      "average": 69466.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

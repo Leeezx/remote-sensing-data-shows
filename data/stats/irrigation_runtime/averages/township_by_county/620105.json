@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620105001000",
+      "name": "培黎街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620105002000",
+      "name": "西路街道",
+      "average": 65.2
+    },
+    {
+      "regionId": "620105003000",
+      "name": "沙井驿街道",
+      "average": 270.9
+    },
+    {
+      "regionId": "620105004000",
+      "name": "十里店街道",
+      "average": 52.4
+    },
+    {
+      "regionId": "620105005000",
+      "name": "孔家崖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620105006000",
+      "name": "银滩路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620105007000",
+      "name": "刘家堡街道",
+      "average": 21.3
+    },
+    {
+      "regionId": "620105008000",
+      "name": "安宁堡街道",
+      "average": 1633.3
+    },
+    {
+      "regionId": "620122102000",
+      "name": "忠和镇",
+      "average": 2842.2
+    },
+    {
+      "regionId": "620122104000",
+      "name": "九合镇",
+      "average": 2015.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140427100000",
+      "name": "龙泉镇",
+      "average": 782.6
+    },
+    {
+      "regionId": "140427101000",
+      "name": "百尺镇",
+      "average": 163.7
+    },
+    {
+      "regionId": "140427102000",
+      "name": "店上镇",
+      "average": 287.7
+    },
+    {
+      "regionId": "140427103000",
+      "name": "晋庄镇",
+      "average": 166.5
+    },
+    {
+      "regionId": "140427104000",
+      "name": "树掌镇",
+      "average": 369.6
+    },
+    {
+      "regionId": "140427200000",
+      "name": "集店乡",
+      "average": 622.3
+    },
+    {
+      "regionId": "140427201000",
+      "name": "黄山乡",
+      "average": 2031.9
+    },
+    {
+      "regionId": "140427202000",
+      "name": "东井岭乡",
+      "average": 287.2
+    },
+    {
+      "regionId": "140427203000",
+      "name": "石坡乡",
+      "average": 158.8
+    },
+    {
+      "regionId": "140427204000",
+      "name": "五龙山乡",
+      "average": 11.0
+    },
+    {
+      "regionId": "140427205000",
+      "name": "鹅屋乡",
+      "average": 152.3
+    },
+    {
+      "regionId": "140427206000",
+      "name": "桥上乡",
+      "average": 77.2
+    },
+    {
+      "regionId": "140427400000",
+      "name": "常平经济开发区",
+      "average": 0.0
+    },
+    {
+      "regionId": "410782108000",
+      "name": "南寨镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 61.04719999999999,
+      "color": "#bdd7e7",
+      "label": "61.047 万m³"
+    },
+    {
+      "value": 160.03480000000002,
+      "color": "#6baed6",
+      "label": "160.035 万m³"
+    },
+    {
+      "value": 256.7835999999999,
+      "color": "#3182bd",
+      "label": "256.784 万m³"
+    },
+    {
+      "value": 431.25879999999995,
+      "color": "#08519c",
+      "label": "431.259 万m³"
+    },
+    {
+      "value": 1707.0820000000003,
+      "color": "#042d60",
+      "label": "1707.082 万m³"
+    }
+  ]
+}

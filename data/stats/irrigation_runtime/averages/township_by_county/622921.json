@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "622921100000",
+      "name": "韩集镇",
+      "average": 357.0
+    },
+    {
+      "regionId": "622921101000",
+      "name": "土桥镇",
+      "average": 2421.2
+    },
+    {
+      "regionId": "622921102000",
+      "name": "马集镇",
+      "average": 1804.4
+    },
+    {
+      "regionId": "622921103000",
+      "name": "莲花镇",
+      "average": 158.8
+    },
+    {
+      "regionId": "622921104000",
+      "name": "新集镇",
+      "average": 1001.3
+    },
+    {
+      "regionId": "622921105000",
+      "name": "尹集镇",
+      "average": 3784.2
+    },
+    {
+      "regionId": "622921200000",
+      "name": "营滩乡",
+      "average": 2442.7
+    },
+    {
+      "regionId": "622921201000",
+      "name": "掌子沟乡",
+      "average": 1616.6
+    },
+    {
+      "regionId": "622921202000",
+      "name": "麻尼寺沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "622921204000",
+      "name": "漠泥沟乡",
+      "average": 1321.1
+    },
+    {
+      "regionId": "622921205000",
+      "name": "刁祁乡",
+      "average": 4733.8
+    },
+    {
+      "regionId": "622921208000",
+      "name": "漫路乡",
+      "average": 3999.7
+    },
+    {
+      "regionId": "622921209000",
+      "name": "榆林乡",
+      "average": 1994.2
+    },
+    {
+      "regionId": "622921210000",
+      "name": "井沟乡",
+      "average": 5055.1
+    },
+    {
+      "regionId": "622921211000",
+      "name": "北塬乡",
+      "average": 3711.2
+    },
+    {
+      "regionId": "622921213000",
+      "name": "坡头乡",
+      "average": 1485.7
+    },
+    {
+      "regionId": "622921214000",
+      "name": "桥寺乡",
+      "average": 1272.3
+    },
+    {
+      "regionId": "622921215000",
+      "name": "先锋乡",
+      "average": 2274.1
+    },
+    {
+      "regionId": "622921216000",
+      "name": "河西乡",
+      "average": 1325.2
+    },
+    {
+      "regionId": "622921217000",
+      "name": "安家坡乡",
+      "average": 2444.7
+    },
+    {
+      "regionId": "622921218000",
+      "name": "南塬乡",
+      "average": 1025.2
+    },
+    {
+      "regionId": "622921220000",
+      "name": "红台乡",
+      "average": 4794.8
+    },
+    {
+      "regionId": "622921222000",
+      "name": "黄泥湾乡",
+      "average": 1432.0
+    },
+    {
+      "regionId": "622921223000",
+      "name": "路盘乡",
+      "average": 2792.2
+    },
+    {
+      "regionId": "622921224000",
+      "name": "民主乡",
+      "average": 1337.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 76.224,
+      "color": "#eff3ff",
+      "label": "76.224 万m³"
+    },
+    {
+      "value": 1276.5944,
+      "color": "#bdd7e7",
+      "label": "1276.594 万m³"
+    },
+    {
+      "value": 1469.3752,
+      "color": "#6baed6",
+      "label": "1469.375 万m³"
+    },
+    {
+      "value": 2318.8183999999997,
+      "color": "#3182bd",
+      "label": "2318.818 万m³"
+    },
+    {
+      "value": 3630.327999999999,
+      "color": "#08519c",
+      "label": "3630.328 万m³"
+    },
+    {
+      "value": 4930.156,
+      "color": "#042d60",
+      "label": "4930.156 万m³"
+    }
+  ]
+}

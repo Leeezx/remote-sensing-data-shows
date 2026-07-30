@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "440307003000",
+      "name": "平湖街道",
+      "average": 781.9
+    },
+    {
+      "regionId": "440307006000",
+      "name": "坪地街道",
+      "average": 9731.9
+    },
+    {
+      "regionId": "440307009000",
+      "name": "葵涌街道",
+      "average": 1193.9
+    },
+    {
+      "regionId": "440307010000",
+      "name": "大鹏街道",
+      "average": 6156.7
+    },
+    {
+      "regionId": "440307011000",
+      "name": "南澳街道",
+      "average": 7811.5
+    },
+    {
+      "regionId": "440307012000",
+      "name": "南湾街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440307013000",
+      "name": "坂田街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440307014000",
+      "name": "布吉街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440307015000",
+      "name": "龙城街道",
+      "average": 997.5
+    },
+    {
+      "regionId": "440307016000",
+      "name": "龙岗街道",
+      "average": 4732.7
+    },
+    {
+      "regionId": "440307017000",
+      "name": "横岗街道",
+      "average": 547.0
+    },
+    {
+      "regionId": "440307018000",
+      "name": "吉华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440307019000",
+      "name": "宝龙街道",
+      "average": 1234.1
+    },
+    {
+      "regionId": "440307020000",
+      "name": "园山街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

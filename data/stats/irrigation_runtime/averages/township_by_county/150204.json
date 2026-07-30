@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150204001000",
+      "name": "先锋道街道",
+      "average": 258.9
+    },
+    {
+      "regionId": "150204002000",
+      "name": "幸福路街道",
+      "average": 127.8
+    },
+    {
+      "regionId": "150204003000",
+      "name": "万青路街道",
+      "average": 248.5
+    },
+    {
+      "regionId": "150204004000",
+      "name": "富强路街道",
+      "average": 97.6
+    },
+    {
+      "regionId": "150204005000",
+      "name": "科学路街道",
+      "average": 16.6
+    },
+    {
+      "regionId": "150204006000",
+      "name": "青山路街道",
+      "average": 126.7
+    },
+    {
+      "regionId": "150204007000",
+      "name": "自由路街道",
+      "average": 267.2
+    },
+    {
+      "regionId": "150204008000",
+      "name": "乌素图街道",
+      "average": 40.6
+    },
+    {
+      "regionId": "150204100000",
+      "name": "青福镇",
+      "average": 166.0
+    },
+    {
+      "regionId": "150204101000",
+      "name": "兴胜镇",
+      "average": 211.7
+    },
+    {
+      "regionId": "150204401000",
+      "name": "包头市装备制造产业园区",
+      "average": 41.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 21.400000000000002,
+      "color": "#eff3ff",
+      "label": "21.400 万m³"
+    },
+    {
+      "value": 48.584,
+      "color": "#bdd7e7",
+      "label": "48.584 万m³"
+    },
+    {
+      "value": 126.744,
+      "color": "#6baed6",
+      "label": "126.744 万m³"
+    },
+    {
+      "value": 164.472,
+      "color": "#3182bd",
+      "label": "164.472 万m³"
+    },
+    {
+      "value": 244.08399999999997,
+      "color": "#08519c",
+      "label": "244.084 万m³"
+    },
+    {
+      "value": 265.54,
+      "color": "#042d60",
+      "label": "265.540 万m³"
+    }
+  ]
+}

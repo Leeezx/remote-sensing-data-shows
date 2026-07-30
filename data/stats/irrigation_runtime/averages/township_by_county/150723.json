@@ -1,0 +1,223 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150723100000",
+      "name": "阿里河镇",
+      "average": 309.2
+    },
+    {
+      "regionId": "150723101000",
+      "name": "大杨树镇",
+      "average": 9962.1
+    },
+    {
+      "regionId": "150723102000",
+      "name": "甘河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150723103000",
+      "name": "吉文镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150723104000",
+      "name": "诺敏镇",
+      "average": 2695.4
+    },
+    {
+      "regionId": "150723105000",
+      "name": "乌鲁布铁镇",
+      "average": 7129.1
+    },
+    {
+      "regionId": "150723106000",
+      "name": "宜里镇",
+      "average": 10528.8
+    },
+    {
+      "regionId": "150723107000",
+      "name": "克一河镇",
+      "average": 138.1
+    },
+    {
+      "regionId": "150723200000",
+      "name": "古里乡",
+      "average": 2852.9
+    },
+    {
+      "regionId": "150723201000",
+      "name": "托扎敏乡",
+      "average": 1071.8
+    },
+    {
+      "regionId": "150723400000",
+      "name": "大兴安岭管理局诺敏河农场",
+      "average": 1648.9
+    },
+    {
+      "regionId": "150723401000",
+      "name": "大兴安岭农场宜里农场",
+      "average": 565.5
+    },
+    {
+      "regionId": "150723402000",
+      "name": "大兴安岭农场管理局扎赉河农场",
+      "average": 641.7
+    },
+    {
+      "regionId": "150723403000",
+      "name": "大兴安岭农场管理局古里农场",
+      "average": 2455.1
+    },
+    {
+      "regionId": "150723406000",
+      "name": "大杨树林业局",
+      "average": 1082.8
+    },
+    {
+      "regionId": "150723407000",
+      "name": "甘河林业局",
+      "average": 0.0
+    },
+    {
+      "regionId": "150723408000",
+      "name": "克一河林业局",
+      "average": 0.0
+    },
+    {
+      "regionId": "150723409000",
+      "name": "吉文林业局",
+      "average": 1598.1
+    },
+    {
+      "regionId": "150723410000",
+      "name": "阿里河林业局",
+      "average": 495.2
+    },
+    {
+      "regionId": "150723411000",
+      "name": "大兴安岭农工商联合公司",
+      "average": 2605.5
+    },
+    {
+      "regionId": "150723412000",
+      "name": "大兴安岭农场管理局东方红农场",
+      "average": 3089.8
+    },
+    {
+      "regionId": "150723413000",
+      "name": "大兴安岭农场管理局欧肯河农场",
+      "average": 8857.9
+    },
+    {
+      "regionId": "150723414000",
+      "name": "大兴安岭林管局毕拉河林业局",
+      "average": 866.6
+    },
+    {
+      "regionId": "150723415000",
+      "name": "大兴安岭林管局伊图里河林业局",
+      "average": 0.0
+    },
+    {
+      "regionId": "150723416000",
+      "name": "大兴安岭林管局库都尔林业局",
+      "average": 0.0
+    },
+    {
+      "regionId": "150723417000",
+      "name": "大兴安岭林管局乌尔其汗林业局",
+      "average": 159.8
+    },
+    {
+      "regionId": "231121510000",
+      "name": "建边农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "232701001000",
+      "name": "东山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "232701002000",
+      "name": "卫东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "232701003000",
+      "name": "红旗街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "232701004000",
+      "name": "长虹街道",
+      "average": 46.4
+    },
+    {
+      "regionId": "232701005000",
+      "name": "曙光街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "232701006000",
+      "name": "光明街道",
+      "average": 6.2
+    },
+    {
+      "regionId": "232701201000",
+      "name": "白桦镇",
+      "average": 7140.9
+    },
+    {
+      "regionId": "232721205000",
+      "name": "北疆乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "232762101000",
+      "name": "劲松镇",
+      "average": 9.2
+    },
+    {
+      "regionId": "232762102000",
+      "name": "古源镇",
+      "average": 1333.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

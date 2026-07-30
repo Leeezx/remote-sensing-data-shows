@@ -1,0 +1,133 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540222100000",
+      "name": "江孜镇",
+      "average": 7699.9
+    },
+    {
+      "regionId": "540222200000",
+      "name": "纳如乡",
+      "average": 1083.9
+    },
+    {
+      "regionId": "540222201000",
+      "name": "卡麦乡",
+      "average": 1760.8
+    },
+    {
+      "regionId": "540222202000",
+      "name": "卡堆乡",
+      "average": 3136.9
+    },
+    {
+      "regionId": "540222203000",
+      "name": "藏改乡",
+      "average": 3176.8
+    },
+    {
+      "regionId": "540222204000",
+      "name": "日朗乡",
+      "average": 3445.0
+    },
+    {
+      "regionId": "540222205000",
+      "name": "达孜乡",
+      "average": 1784.6
+    },
+    {
+      "regionId": "540222206000",
+      "name": "热索乡",
+      "average": 7297.3
+    },
+    {
+      "regionId": "540222207000",
+      "name": "重孜乡",
+      "average": 15936.4
+    },
+    {
+      "regionId": "540222208000",
+      "name": "龙马乡",
+      "average": 633.5
+    },
+    {
+      "regionId": "540222209000",
+      "name": "紫金乡",
+      "average": 4919.9
+    },
+    {
+      "regionId": "540222210000",
+      "name": "江热乡",
+      "average": 5938.3
+    },
+    {
+      "regionId": "540222211000",
+      "name": "年堆乡",
+      "average": 7864.2
+    },
+    {
+      "regionId": "540222212000",
+      "name": "康卓乡",
+      "average": 2344.3
+    },
+    {
+      "regionId": "540222213000",
+      "name": "金嘎乡",
+      "average": 241.2
+    },
+    {
+      "regionId": "540222214000",
+      "name": "日星乡",
+      "average": 2871.9
+    },
+    {
+      "regionId": "540222215000",
+      "name": "热龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540222216000",
+      "name": "车仁乡",
+      "average": 7154.6
+    },
+    {
+      "regionId": "540222217000",
+      "name": "加克西乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1001.0264,
+      "color": "#bdd7e7",
+      "label": "1001.026 万m³"
+    },
+    {
+      "value": 2487.8071999999997,
+      "color": "#6baed6",
+      "label": "2487.807 万m³"
+    },
+    {
+      "value": 3372.0496,
+      "color": "#3182bd",
+      "label": "3372.050 万m³"
+    },
+    {
+      "value": 7180.8568000000005,
+      "color": "#08519c",
+      "label": "7180.857 万m³"
+    },
+    {
+      "value": 13030.408000000005,
+      "color": "#042d60",
+      "label": "13030.408 万m³"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410622001000",
+      "name": "朝歌街道",
+      "average": 7342.6
+    },
+    {
+      "regionId": "410622002000",
+      "name": "桥盟街道",
+      "average": 9048.1
+    },
+    {
+      "regionId": "410622003000",
+      "name": "卫都街道",
+      "average": 5382.1
+    },
+    {
+      "regionId": "410622004000",
+      "name": "灵山街道",
+      "average": 653.9
+    },
+    {
+      "regionId": "410622101000",
+      "name": "高村镇",
+      "average": 37879.0
+    },
+    {
+      "regionId": "410622102000",
+      "name": "北阳镇",
+      "average": 39211.4
+    },
+    {
+      "regionId": "410622103000",
+      "name": "西岗镇",
+      "average": 36695.4
+    },
+    {
+      "regionId": "410622104000",
+      "name": "庙口镇",
+      "average": 20040.7
+    },
+    {
+      "regionId": "410622202000",
+      "name": "黄洞乡",
+      "average": 1227.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 745.644,
+      "color": "#eff3ff",
+      "label": "745.644 万m³"
+    },
+    {
+      "value": 4119.040800000001,
+      "color": "#bdd7e7",
+      "label": "4119.041 万m³"
+    },
+    {
+      "value": 7738.276,
+      "color": "#6baed6",
+      "label": "7738.276 万m³"
+    },
+    {
+      "value": 17490.4168,
+      "color": "#3182bd",
+      "label": "17490.417 万m³"
+    },
+    {
+      "value": 37055.2144,
+      "color": "#08519c",
+      "label": "37055.214 万m³"
+    },
+    {
+      "value": 38998.216,
+      "color": "#042d60",
+      "label": "38998.216 万m³"
+    }
+  ]
+}

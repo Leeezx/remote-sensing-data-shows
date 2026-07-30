@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "110117001000",
+      "name": "滨河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110117002000",
+      "name": "兴谷街道",
+      "average": 272.8
+    },
+    {
+      "regionId": "110117003000",
+      "name": "渔阳地区办事处",
+      "average": 2060.2
+    },
+    {
+      "regionId": "110117004000",
+      "name": "峪口地区办事处",
+      "average": 10174.2
+    },
+    {
+      "regionId": "110117005000",
+      "name": "马坊地区办事处",
+      "average": 318.6
+    },
+    {
+      "regionId": "110117006000",
+      "name": "金海湖地区办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "110117101000",
+      "name": "东高村镇",
+      "average": 11.7
+    },
+    {
+      "regionId": "110117102000",
+      "name": "山东庄镇",
+      "average": 2689.1
+    },
+    {
+      "regionId": "110117104000",
+      "name": "南独乐河镇",
+      "average": 54.6
+    },
+    {
+      "regionId": "110117105000",
+      "name": "大华山镇",
+      "average": 8532.0
+    },
+    {
+      "regionId": "110117106000",
+      "name": "夏各庄镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110117108000",
+      "name": "马昌营镇",
+      "average": 10182.2
+    },
+    {
+      "regionId": "110117110000",
+      "name": "王辛庄镇",
+      "average": 6642.2
+    },
+    {
+      "regionId": "110117111000",
+      "name": "大兴庄镇",
+      "average": 5464.9
+    },
+    {
+      "regionId": "110117112000",
+      "name": "刘家店镇",
+      "average": 5616.5
+    },
+    {
+      "regionId": "110117114000",
+      "name": "镇罗营镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110117213000",
+      "name": "黄松峪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "110117214000",
+      "name": "熊儿寨乡",
+      "average": 844.4
+    },
+    {
+      "regionId": "120119104000",
+      "name": "下营镇",
+      "average": 2566.3
+    },
+    {
+      "regionId": "120119112000",
+      "name": "罗庄子镇",
+      "average": 672.4
+    },
+    {
+      "regionId": "130822203000",
+      "name": "陡子峪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "131082100000",
+      "name": "泃阳镇",
+      "average": 18644.1
+    },
+    {
+      "regionId": "131082105000",
+      "name": "段甲岭镇",
+      "average": 40.0
+    },
+    {
+      "regionId": "131082106000",
+      "name": "黄土庄镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "131082108000",
+      "name": "齐心庄镇",
+      "average": 15476.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

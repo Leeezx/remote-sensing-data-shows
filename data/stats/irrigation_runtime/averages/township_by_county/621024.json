@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610625105000",
+      "name": "永宁镇",
+      "average": 673.2
+    },
+    {
+      "regionId": "621024100000",
+      "name": "西华池镇",
+      "average": 4793.2
+    },
+    {
+      "regionId": "621024101000",
+      "name": "老城镇",
+      "average": 3515.9
+    },
+    {
+      "regionId": "621024102000",
+      "name": "太白镇",
+      "average": 98.9
+    },
+    {
+      "regionId": "621024200000",
+      "name": "吉岘乡",
+      "average": 4618.3
+    },
+    {
+      "regionId": "621024201000",
+      "name": "肖咀乡",
+      "average": 6743.2
+    },
+    {
+      "regionId": "621024202000",
+      "name": "段家集乡",
+      "average": 3966.5
+    },
+    {
+      "regionId": "621024203000",
+      "name": "固城乡",
+      "average": 135.8
+    },
+    {
+      "regionId": "621024204000",
+      "name": "太莪乡",
+      "average": 1481.0
+    },
+    {
+      "regionId": "621024205000",
+      "name": "店子乡",
+      "average": 2242.8
+    },
+    {
+      "regionId": "621024206000",
+      "name": "何家畔乡",
+      "average": 1253.8
+    },
+    {
+      "regionId": "621024207000",
+      "name": "板桥乡",
+      "average": 2270.4
+    },
+    {
+      "regionId": "621024208000",
+      "name": "蒿咀铺乡",
+      "average": 920.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 107.756,
+      "color": "#eff3ff",
+      "label": "107.756 万m³"
+    },
+    {
+      "value": 807.9488,
+      "color": "#bdd7e7",
+      "label": "807.949 万m³"
+    },
+    {
+      "value": 1446.4656,
+      "color": "#6baed6",
+      "label": "1446.466 万m³"
+    },
+    {
+      "value": 2459.715999999999,
+      "color": "#3182bd",
+      "label": "2459.716 万m³"
+    },
+    {
+      "value": 4263.7208,
+      "color": "#08519c",
+      "label": "4263.721 万m³"
+    },
+    {
+      "value": 6275.2,
+      "color": "#042d60",
+      "label": "6275.200 万m³"
+    }
+  ]
+}

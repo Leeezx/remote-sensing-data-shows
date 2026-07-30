@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "120106002000",
+      "name": "双环村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120113001000",
+      "name": "果园新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120113002000",
+      "name": "集贤里街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120113003000",
+      "name": "普东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120113004000",
+      "name": "瑞景街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120113005000",
+      "name": "佳荣里街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120113100000",
+      "name": "天穆镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "120113101000",
+      "name": "北仓镇",
+      "average": 530.5
+    },
+    {
+      "regionId": "120113102000",
+      "name": "双街镇",
+      "average": 2926.8
+    },
+    {
+      "regionId": "120113103000",
+      "name": "双口镇",
+      "average": 2288.3
+    },
+    {
+      "regionId": "120113104000",
+      "name": "青光镇",
+      "average": 1730.6
+    },
+    {
+      "regionId": "120113106000",
+      "name": "宜兴埠镇",
+      "average": 436.1
+    },
+    {
+      "regionId": "120113107000",
+      "name": "小淀镇",
+      "average": 1839.8
+    },
+    {
+      "regionId": "120113108000",
+      "name": "大张庄镇",
+      "average": 6757.8
+    },
+    {
+      "regionId": "120113111000",
+      "name": "西堤头镇",
+      "average": 4844.3
+    },
+    {
+      "regionId": "120113400000",
+      "name": "科技园区北区",
+      "average": 0.0
+    },
+    {
+      "regionId": "120113401000",
+      "name": "科技园区南区",
+      "average": 242.3
+    },
+    {
+      "regionId": "120113402000",
+      "name": "天津医药医疗器械工业园",
+      "average": 384.0
+    },
+    {
+      "regionId": "120113403000",
+      "name": "天津陆路港物流装备产业园",
+      "average": 408.5
+    },
+    {
+      "regionId": "120113404000",
+      "name": "天津风电产业园",
+      "average": 1187.7
+    },
+    {
+      "regionId": "120113500000",
+      "name": "红旗农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "120113501000",
+      "name": "曙光农场",
+      "average": 5.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

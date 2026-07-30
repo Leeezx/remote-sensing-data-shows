@@ -1,0 +1,63 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "370117001000",
+      "name": "艾山街道",
+      "average": 3741.6
+    },
+    {
+      "regionId": "370117002000",
+      "name": "里辛街道",
+      "average": 4148.7
+    },
+    {
+      "regionId": "370117003000",
+      "name": "汶源街道",
+      "average": 4946.5
+    },
+    {
+      "regionId": "370117100000",
+      "name": "颜庄镇",
+      "average": 3539.2
+    },
+    {
+      "regionId": "370117103000",
+      "name": "辛庄镇",
+      "average": 5819.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 3555.392,
+      "color": "#eff3ff",
+      "label": "3555.392 万m³"
+    },
+    {
+      "value": 3710.8352,
+      "color": "#bdd7e7",
+      "label": "3710.835 万m³"
+    },
+    {
+      "value": 3992.3736,
+      "color": "#6baed6",
+      "label": "3992.374 万m³"
+    },
+    {
+      "value": 4455.0552,
+      "color": "#3182bd",
+      "label": "4455.055 万m³"
+    },
+    {
+      "value": 5079.2568,
+      "color": "#08519c",
+      "label": "5079.257 万m³"
+    },
+    {
+      "value": 5750.027999999999,
+      "color": "#042d60",
+      "label": "5750.028 万m³"
+    }
+  ]
+}

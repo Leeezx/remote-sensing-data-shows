@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620402001000",
+      "name": "人民路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620402002000",
+      "name": "公园路街道",
+      "average": 51.5
+    },
+    {
+      "regionId": "620402003000",
+      "name": "四龙路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620402004000",
+      "name": "工农路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620402005000",
+      "name": "纺织路街道",
+      "average": 486.1
+    },
+    {
+      "regionId": "620402100000",
+      "name": "水川镇",
+      "average": 7674.6
+    },
+    {
+      "regionId": "620402101000",
+      "name": "四龙镇",
+      "average": 8989.4
+    },
+    {
+      "regionId": "620402102000",
+      "name": "王岘镇",
+      "average": 1293.4
+    },
+    {
+      "regionId": "620402201000",
+      "name": "强湾乡",
+      "average": 1415.5
+    },
+    {
+      "regionId": "620402202000",
+      "name": "武川乡",
+      "average": 715.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

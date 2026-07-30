@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "371328001000",
+      "name": "蒙阴街道",
+      "average": 7760.0
+    },
+    {
+      "regionId": "371328101000",
+      "name": "常路镇",
+      "average": 5451.6
+    },
+    {
+      "regionId": "371328102000",
+      "name": "岱崮镇",
+      "average": 3918.2
+    },
+    {
+      "regionId": "371328103000",
+      "name": "坦埠镇",
+      "average": 2072.7
+    },
+    {
+      "regionId": "371328104000",
+      "name": "垛庄镇",
+      "average": 11920.3
+    },
+    {
+      "regionId": "371328105000",
+      "name": "高都镇",
+      "average": 5632.4
+    },
+    {
+      "regionId": "371328106000",
+      "name": "野店镇",
+      "average": 3680.4
+    },
+    {
+      "regionId": "371328107000",
+      "name": "桃墟镇",
+      "average": 8119.3
+    },
+    {
+      "regionId": "371328109000",
+      "name": "联城镇",
+      "average": 6479.3
+    },
+    {
+      "regionId": "371328201000",
+      "name": "旧寨乡",
+      "average": 3256.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 2285.73,
+      "color": "#eff3ff",
+      "label": "2285.730 万m³"
+    },
+    {
+      "value": 3641.3736,
+      "color": "#bdd7e7",
+      "label": "3641.374 万m³"
+    },
+    {
+      "value": 4893.4424,
+      "color": "#6baed6",
+      "label": "4893.442 万m³"
+    },
+    {
+      "value": 5940.6716,
+      "color": "#3182bd",
+      "label": "5940.672 万m³"
+    },
+    {
+      "value": 7793.0556,
+      "color": "#08519c",
+      "label": "7793.056 万m³"
+    },
+    {
+      "value": 11236.12,
+      "color": "#042d60",
+      "label": "11236.120 万m³"
+    }
+  ]
+}

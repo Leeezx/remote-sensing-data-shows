@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420303001000",
+      "name": "花果街道",
+      "average": 625.6
+    },
+    {
+      "regionId": "420303002000",
+      "name": "红卫街道",
+      "average": 811.2
+    },
+    {
+      "regionId": "420303003000",
+      "name": "车城路街道",
+      "average": 284.3
+    },
+    {
+      "regionId": "420303004000",
+      "name": "汉江路街道",
+      "average": 1214.1
+    },
+    {
+      "regionId": "420303100000",
+      "name": "黄龙镇",
+      "average": 1669.3
+    },
+    {
+      "regionId": "420303101000",
+      "name": "柏林镇",
+      "average": 1384.4
+    },
+    {
+      "regionId": "420303200000",
+      "name": "方滩乡",
+      "average": 300.8
+    },
+    {
+      "regionId": "420303201000",
+      "name": "西沟乡",
+      "average": 504.9
+    },
+    {
+      "regionId": "420303400000",
+      "name": "西城开发区",
+      "average": 1347.1
+    },
+    {
+      "regionId": "420303401000",
+      "name": "十堰工业新区",
+      "average": 147.5
+    },
+    {
+      "regionId": "420303500000",
+      "name": "秦家坪林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "420303501000",
+      "name": "凤凰山茶场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 192.9176,
+      "color": "#bdd7e7",
+      "label": "192.918 万m³"
+    },
+    {
+      "value": 391.4204,
+      "color": "#6baed6",
+      "label": "391.420 万m³"
+    },
+    {
+      "value": 728.7936000000001,
+      "color": "#3182bd",
+      "label": "728.794 万m³"
+    },
+    {
+      "value": 1302.9439999999997,
+      "color": "#08519c",
+      "label": "1302.944 万m³"
+    },
+    {
+      "value": 1606.6219999999998,
+      "color": "#042d60",
+      "label": "1606.622 万m³"
+    }
+  ]
+}

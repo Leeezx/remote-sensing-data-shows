@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510502001000",
+      "name": "南城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510502002000",
+      "name": "北城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510502003000",
+      "name": "大山坪街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510502004000",
+      "name": "邻玉街道",
+      "average": 1022.6
+    },
+    {
+      "regionId": "510502005000",
+      "name": "蓝田街道",
+      "average": 5495.1
+    },
+    {
+      "regionId": "510502006000",
+      "name": "茜草街道",
+      "average": 824.8
+    },
+    {
+      "regionId": "510502007000",
+      "name": "华阳街道",
+      "average": 1890.4
+    },
+    {
+      "regionId": "510502008000",
+      "name": "张坝景区办事处",
+      "average": 262.1
+    },
+    {
+      "regionId": "510502102000",
+      "name": "泰安镇",
+      "average": 6199.1
+    },
+    {
+      "regionId": "510502103000",
+      "name": "黄舣镇",
+      "average": 5444.9
+    },
+    {
+      "regionId": "510502104000",
+      "name": "弥陀镇",
+      "average": 6314.1
+    },
+    {
+      "regionId": "510502105000",
+      "name": "况场镇",
+      "average": 4256.8
+    },
+    {
+      "regionId": "510502106000",
+      "name": "通滩镇",
+      "average": 5902.3
+    },
+    {
+      "regionId": "510502107000",
+      "name": "江北镇",
+      "average": 3731.0
+    },
+    {
+      "regionId": "510502108000",
+      "name": "方山镇",
+      "average": 4061.8
+    },
+    {
+      "regionId": "510502109000",
+      "name": "丹林镇",
+      "average": 4347.4
+    },
+    {
+      "regionId": "510502110000",
+      "name": "分水岭镇",
+      "average": 8915.0
+    },
+    {
+      "regionId": "510502111000",
+      "name": "石寨镇",
+      "average": 2662.7
+    },
+    {
+      "regionId": "510502400000",
+      "name": "高新技术开发区",
+      "average": 0.0
+    },
+    {
+      "regionId": "510502401000",
+      "name": "酒业集中发展区",
+      "average": 0.0
+    },
+    {
+      "regionId": "510502402000",
+      "name": "轻工业园区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

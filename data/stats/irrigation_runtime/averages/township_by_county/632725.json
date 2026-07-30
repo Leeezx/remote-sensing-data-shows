@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540302208000",
+      "name": "嘎玛乡",
+      "average": 26.5
+    },
+    {
+      "regionId": "540323200000",
+      "name": "吉多乡",
+      "average": 1.4
+    },
+    {
+      "regionId": "540323201000",
+      "name": "岗色乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540324201000",
+      "name": "布塔乡",
+      "average": 1.3
+    },
+    {
+      "regionId": "632725100000",
+      "name": "香达镇",
+      "average": 105.8
+    },
+    {
+      "regionId": "632725200000",
+      "name": "白扎乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632725201000",
+      "name": "吉曲乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632725202000",
+      "name": "娘拉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632725203000",
+      "name": "毛庄乡",
+      "average": 133.7
+    },
+    {
+      "regionId": "632725204000",
+      "name": "觉拉乡",
+      "average": 65.8
+    },
+    {
+      "regionId": "632725205000",
+      "name": "东坝乡",
+      "average": 55.0
+    },
+    {
+      "regionId": "632725206000",
+      "name": "尕羊乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632725207000",
+      "name": "吉尼赛乡",
+      "average": 56.2
+    },
+    {
+      "regionId": "632725208000",
+      "name": "着晓乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

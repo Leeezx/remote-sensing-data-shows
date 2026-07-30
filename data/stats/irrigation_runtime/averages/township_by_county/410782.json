@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140524206000",
+      "name": "马圪当乡",
+      "average": 522.4
+    },
+    {
+      "regionId": "140524209000",
+      "name": "六泉乡",
+      "average": 223.5
+    },
+    {
+      "regionId": "410782001000",
+      "name": "城关街道",
+      "average": 42.3
+    },
+    {
+      "regionId": "410782002000",
+      "name": "胡桥街道",
+      "average": 14106.3
+    },
+    {
+      "regionId": "410782101000",
+      "name": "薄壁镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "410782102000",
+      "name": "峪河镇",
+      "average": 38691.1
+    },
+    {
+      "regionId": "410782103000",
+      "name": "百泉镇",
+      "average": 9957.9
+    },
+    {
+      "regionId": "410782104000",
+      "name": "孟庄镇",
+      "average": 11864.0
+    },
+    {
+      "regionId": "410782105000",
+      "name": "常村镇",
+      "average": 12215.8
+    },
+    {
+      "regionId": "410782106000",
+      "name": "吴村镇",
+      "average": 46928.2
+    },
+    {
+      "regionId": "410782107000",
+      "name": "南村镇",
+      "average": 14268.0
+    },
+    {
+      "regionId": "410782108000",
+      "name": "南寨镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "410782109000",
+      "name": "上八里镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "410782110000",
+      "name": "北云门镇",
+      "average": 22614.0
+    },
+    {
+      "regionId": "410782111000",
+      "name": "占城镇",
+      "average": 30307.7
+    },
+    {
+      "regionId": "410782112000",
+      "name": "冀屯镇",
+      "average": 43515.8
+    },
+    {
+      "regionId": "410782200000",
+      "name": "黄水乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "410782201000",
+      "name": "拍石头乡",
+      "average": 1435.0
+    },
+    {
+      "regionId": "410782202000",
+      "name": "高庄乡",
+      "average": 31513.4
+    },
+    {
+      "regionId": "410782203000",
+      "name": "张村乡",
+      "average": 4344.9
+    },
+    {
+      "regionId": "410782205000",
+      "name": "赵固乡",
+      "average": 31421.4
+    },
+    {
+      "regionId": "410782206000",
+      "name": "西平罗乡",
+      "average": 10799.1
+    },
+    {
+      "regionId": "410782207000",
+      "name": "洪洲乡",
+      "average": 8979.0
+    },
+    {
+      "regionId": "410782208000",
+      "name": "沙窑乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 37.05479999999997,
+      "color": "#bdd7e7",
+      "label": "37.055 万m³"
+    },
+    {
+      "value": 5698.057199999999,
+      "color": "#6baed6",
+      "label": "5698.057 万m³"
+    },
+    {
+      "value": 12113.0744,
+      "color": "#3182bd",
+      "label": "12113.074 万m³"
+    },
+    {
+      "value": 30445.7988,
+      "color": "#08519c",
+      "label": "30445.799 万m³"
+    },
+    {
+      "value": 45358.496,
+      "color": "#042d60",
+      "label": "45358.496 万m³"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540104100000",
+      "name": "德庆镇",
+      "average": 1956.8
+    },
+    {
+      "regionId": "540104200000",
+      "name": "塔杰乡",
+      "average": 1053.6
+    },
+    {
+      "regionId": "540104201000",
+      "name": "章多乡",
+      "average": 1094.0
+    },
+    {
+      "regionId": "540104202000",
+      "name": "唐嘎乡",
+      "average": 1490.7
+    },
+    {
+      "regionId": "540104203000",
+      "name": "雪乡",
+      "average": 363.6
+    },
+    {
+      "regionId": "540104204000",
+      "name": "帮堆乡",
+      "average": 736.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 400.88,
+      "color": "#eff3ff",
+      "label": "400.880 万m³"
+    },
+    {
+      "value": 755.432,
+      "color": "#bdd7e7",
+      "label": "755.432 万m³"
+    },
+    {
+      "value": 1054.408,
+      "color": "#6baed6",
+      "label": "1054.408 万m³"
+    },
+    {
+      "value": 1093.192,
+      "color": "#3182bd",
+      "label": "1093.192 万m³"
+    },
+    {
+      "value": 1466.898,
+      "color": "#08519c",
+      "label": "1466.898 万m³"
+    },
+    {
+      "value": 1910.19,
+      "color": "#042d60",
+      "label": "1910.190 万m³"
+    }
+  ]
+}

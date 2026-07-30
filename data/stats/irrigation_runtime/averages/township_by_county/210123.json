@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150522104000",
+      "name": "查日苏镇",
+      "average": 56093.3
+    },
+    {
+      "regionId": "150522203000",
+      "name": "散都苏木",
+      "average": 20222.2
+    },
+    {
+      "regionId": "210123001000",
+      "name": "北三家子街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210123002000",
+      "name": "胜利街道",
+      "average": 805.7
+    },
+    {
+      "regionId": "210123003000",
+      "name": "东关街道",
+      "average": 1890.1
+    },
+    {
+      "regionId": "210123101000",
+      "name": "小城子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "210123102000",
+      "name": "张强镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "210123103000",
+      "name": "方家屯镇",
+      "average": 4185.3
+    },
+    {
+      "regionId": "210123105000",
+      "name": "郝官屯镇",
+      "average": 5069.7
+    },
+    {
+      "regionId": "210123106000",
+      "name": "二牛所口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "210123203000",
+      "name": "北四家子乡",
+      "average": 2493.2
+    },
+    {
+      "regionId": "210123204000",
+      "name": "两家子乡",
+      "average": 4658.0
+    },
+    {
+      "regionId": "210123206000",
+      "name": "海洲窝堡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "210123208000",
+      "name": "沙金台蒙古族满族乡",
+      "average": 3.3
+    },
+    {
+      "regionId": "210123209000",
+      "name": "柳树屯蒙古族满族乡",
+      "average": 1202.5
+    },
+    {
+      "regionId": "210123210000",
+      "name": "西关屯蒙古族满族乡",
+      "average": 2637.7
+    },
+    {
+      "regionId": "210123211000",
+      "name": "东升满族蒙古族乡",
+      "average": 3417.0
+    },
+    {
+      "regionId": "210123404000",
+      "name": "三台子畜牧场",
+      "average": 1156.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

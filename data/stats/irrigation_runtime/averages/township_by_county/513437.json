@@ -1,0 +1,288 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513437100000",
+      "name": "锦城镇",
+      "average": 230.7
+    },
+    {
+      "regionId": "513437101000",
+      "name": "西宁镇",
+      "average": 593.2
+    },
+    {
+      "regionId": "513437102000",
+      "name": "汶水镇",
+      "average": 1942.9
+    },
+    {
+      "regionId": "513437103000",
+      "name": "黄琅镇",
+      "average": 419.7
+    },
+    {
+      "regionId": "513437200000",
+      "name": "南田镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437201000",
+      "name": "海湾乡",
+      "average": 1113.1
+    },
+    {
+      "regionId": "513437202000",
+      "name": "杉树堡乡",
+      "average": 1871.9
+    },
+    {
+      "regionId": "513437203000",
+      "name": "箐口乡",
+      "average": 877.6
+    },
+    {
+      "regionId": "513437204000",
+      "name": "帕哈乡",
+      "average": 439.3
+    },
+    {
+      "regionId": "513437205000",
+      "name": "永盛乡",
+      "average": 538.8
+    },
+    {
+      "regionId": "513437206000",
+      "name": "溪洛米乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437208000",
+      "name": "顺河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437209000",
+      "name": "渡口乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437210000",
+      "name": "回龙场乡",
+      "average": 95.0
+    },
+    {
+      "regionId": "513437211000",
+      "name": "马湖乡",
+      "average": 194.9
+    },
+    {
+      "regionId": "513437212000",
+      "name": "中田乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437213000",
+      "name": "谷米乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437214000",
+      "name": "柑子乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437215000",
+      "name": "双河口乡",
+      "average": 88.8
+    },
+    {
+      "regionId": "513437216000",
+      "name": "罗山溪乡",
+      "average": 58.6
+    },
+    {
+      "regionId": "513437217000",
+      "name": "桂花乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437218000",
+      "name": "烂坝子乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437219000",
+      "name": "沙沱乡",
+      "average": 12.5
+    },
+    {
+      "regionId": "513437220000",
+      "name": "山棱岗乡",
+      "average": 532.6
+    },
+    {
+      "regionId": "513437221000",
+      "name": "长河乡",
+      "average": 192.8
+    },
+    {
+      "regionId": "513437222000",
+      "name": "谷堆乡",
+      "average": 81.7
+    },
+    {
+      "regionId": "513437223000",
+      "name": "八寨乡",
+      "average": 247.4
+    },
+    {
+      "regionId": "513437224000",
+      "name": "拉咪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437225000",
+      "name": "松树乡",
+      "average": 571.8
+    },
+    {
+      "regionId": "513437226000",
+      "name": "曲依乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437227000",
+      "name": "千万贯乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437228000",
+      "name": "五官乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437229000",
+      "name": "上田坝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437230000",
+      "name": "大坪子乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437231000",
+      "name": "簸箕梁子乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437232000",
+      "name": "小沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437233000",
+      "name": "莫红乡",
+      "average": 47.2
+    },
+    {
+      "regionId": "513437234000",
+      "name": "克觉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437235000",
+      "name": "坪头乡",
+      "average": 15.9
+    },
+    {
+      "regionId": "513437236000",
+      "name": "雷池乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437237000",
+      "name": "巴姑乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437238000",
+      "name": "咪姑乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437239000",
+      "name": "一车乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437240000",
+      "name": "斯古溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437241000",
+      "name": "卡哈洛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437242000",
+      "name": "元宝山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437243000",
+      "name": "大岩洞乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513437244000",
+      "name": "岩脚乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "530625101000",
+      "name": "溪洛渡镇",
+      "average": 17426.4
+    },
+    {
+      "regionId": "530625103000",
+      "name": "黄华镇",
+      "average": 13819.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

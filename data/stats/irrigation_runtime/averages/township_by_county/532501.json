@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "532501001000",
+      "name": "城区街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "532501101000",
+      "name": "锡城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "532501102000",
+      "name": "沙甸镇",
+      "average": 2145.4
+    },
+    {
+      "regionId": "532501103000",
+      "name": "鸡街镇",
+      "average": 17247.1
+    },
+    {
+      "regionId": "532501104000",
+      "name": "大屯镇",
+      "average": 25629.3
+    },
+    {
+      "regionId": "532501106000",
+      "name": "老厂镇",
+      "average": 14.8
+    },
+    {
+      "regionId": "532501107000",
+      "name": "卡房镇",
+      "average": 4161.7
+    },
+    {
+      "regionId": "532501108000",
+      "name": "蔓耗镇",
+      "average": 722.9
+    },
+    {
+      "regionId": "532501202000",
+      "name": "贾沙乡",
+      "average": 1040.8
+    },
+    {
+      "regionId": "532501203000",
+      "name": "保和乡",
+      "average": 293.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 13.4384,
+      "color": "#bdd7e7",
+      "label": "13.438 万m³"
+    },
+    {
+      "value": 566.4527999999998,
+      "color": "#6baed6",
+      "label": "566.453 万m³"
+    },
+    {
+      "value": 1442.8744,
+      "color": "#3182bd",
+      "label": "1442.874 万m³"
+    },
+    {
+      "value": 5365.556799999995,
+      "color": "#08519c",
+      "label": "5365.557 万m³"
+    },
+    {
+      "value": 24120.504,
+      "color": "#042d60",
+      "label": "24120.504 万m³"
+    }
+  ]
+}

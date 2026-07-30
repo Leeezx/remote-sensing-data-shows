@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620802001000",
+      "name": "东关街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620802002000",
+      "name": "中街街道",
+      "average": 74.0
+    },
+    {
+      "regionId": "620802003000",
+      "name": "西郊街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620802100000",
+      "name": "四十里铺镇",
+      "average": 8182.8
+    },
+    {
+      "regionId": "620802101000",
+      "name": "崆峒镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620802102000",
+      "name": "白水镇",
+      "average": 7355.9
+    },
+    {
+      "regionId": "620802103000",
+      "name": "草峰镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620802200000",
+      "name": "安国乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620802201000",
+      "name": "柳湖乡",
+      "average": 2353.2
+    },
+    {
+      "regionId": "620802202000",
+      "name": "花所乡",
+      "average": 2613.8
+    },
+    {
+      "regionId": "620802203000",
+      "name": "索罗乡",
+      "average": 2002.8
+    },
+    {
+      "regionId": "620802204000",
+      "name": "香莲乡",
+      "average": 665.5
+    },
+    {
+      "regionId": "620802205000",
+      "name": "西阳乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620802206000",
+      "name": "大秦乡",
+      "average": 1492.6
+    },
+    {
+      "regionId": "620802207000",
+      "name": "白庙乡",
+      "average": 1285.1
+    },
+    {
+      "regionId": "620802208000",
+      "name": "寨河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620802209000",
+      "name": "大寨乡",
+      "average": 12287.4
+    },
+    {
+      "regionId": "620802210000",
+      "name": "上杨乡",
+      "average": 888.0
+    },
+    {
+      "regionId": "620802211000",
+      "name": "麻武乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620802212000",
+      "name": "峡门乡",
+      "average": 7846.6
+    },
+    {
+      "regionId": "620802498000",
+      "name": "平凉市崆峒区西郊经济开发区管理委员会",
+      "average": 57.2
+    },
+    {
+      "regionId": "620802499000",
+      "name": "甘肃平凉工业园区管理委员会",
+      "average": 31.0
+    },
+    {
+      "regionId": "640424202000",
+      "name": "黄花乡",
+      "average": 1751.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

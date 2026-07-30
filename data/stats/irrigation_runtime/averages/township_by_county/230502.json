@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230502001000",
+      "name": "二马路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230502002000",
+      "name": "八马路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230502003000",
+      "name": "中心站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230502004000",
+      "name": "富安街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230502005000",
+      "name": "窑地街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230502006000",
+      "name": "长安街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230502007000",
+      "name": "铁西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230502200000",
+      "name": "安邦乡",
+      "average": 22.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "310109009000",
+      "name": "欧阳路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310109010000",
+      "name": "曲阳路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310109011000",
+      "name": "广中路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310109014000",
+      "name": "嘉兴路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310109016000",
+      "name": "凉城新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310109017000",
+      "name": "四川北路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310109018000",
+      "name": "提篮桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310109019000",
+      "name": "江湾镇街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

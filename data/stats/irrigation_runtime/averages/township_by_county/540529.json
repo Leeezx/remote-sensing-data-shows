@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540529100000",
+      "name": "隆子镇",
+      "average": 3744.0
+    },
+    {
+      "regionId": "540529101000",
+      "name": "日当镇",
+      "average": 2218.8
+    },
+    {
+      "regionId": "540529200000",
+      "name": "加玉乡",
+      "average": 143.8
+    },
+    {
+      "regionId": "540529201000",
+      "name": "列麦乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540529202000",
+      "name": "热荣乡",
+      "average": 1142.4
+    },
+    {
+      "regionId": "540529203000",
+      "name": "三安曲林乡",
+      "average": 12.3
+    },
+    {
+      "regionId": "540529204000",
+      "name": "准巴乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540529205000",
+      "name": "斗玉珞巴民族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540529206000",
+      "name": "雪沙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540529207000",
+      "name": "扎日乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540529208000",
+      "name": "玉麦乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

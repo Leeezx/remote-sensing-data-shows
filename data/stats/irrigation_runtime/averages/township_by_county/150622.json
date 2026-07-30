@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140930100000",
+      "name": "文笔镇",
+      "average": 37.2
+    },
+    {
+      "regionId": "140930101000",
+      "name": "楼子营镇",
+      "average": 567.8
+    },
+    {
+      "regionId": "140930102000",
+      "name": "刘家塔镇",
+      "average": 109.5
+    },
+    {
+      "regionId": "140932101000",
+      "name": "天峰坪镇",
+      "average": 23.2
+    },
+    {
+      "regionId": "150622001000",
+      "name": "兴隆街道",
+      "average": 680.4
+    },
+    {
+      "regionId": "150622002000",
+      "name": "迎泽街道",
+      "average": 637.6
+    },
+    {
+      "regionId": "150622003000",
+      "name": "蓝天街道",
+      "average": 104.3
+    },
+    {
+      "regionId": "150622004000",
+      "name": "友谊街道",
+      "average": 2964.5
+    },
+    {
+      "regionId": "150622100000",
+      "name": "薛家湾镇",
+      "average": 22561.9
+    },
+    {
+      "regionId": "150622101000",
+      "name": "沙圪堵镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150622102000",
+      "name": "大路镇",
+      "average": 3953.7
+    },
+    {
+      "regionId": "150622103000",
+      "name": "纳日松镇",
+      "average": 42.7
+    },
+    {
+      "regionId": "150622104000",
+      "name": "龙口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150622105000",
+      "name": "准格尔召镇",
+      "average": 1072.8
+    },
+    {
+      "regionId": "150622200000",
+      "name": "暖水乡",
+      "average": 7853.8
+    },
+    {
+      "regionId": "150622201000",
+      "name": "十二连城乡",
+      "average": 19474.2
+    },
+    {
+      "regionId": "150622202000",
+      "name": "布尔陶亥苏木乡",
+      "average": 3951.4
+    },
+    {
+      "regionId": "150622400000",
+      "name": "准格尔经济开发区",
+      "average": 0.0
+    },
+    {
+      "regionId": "150622401000",
+      "name": "大路煤化工基地",
+      "average": 0.0
+    },
+    {
+      "regionId": "610822102000",
+      "name": "麻镇",
+      "average": 185.1
+    },
+    {
+      "regionId": "610822103000",
+      "name": "哈镇",
+      "average": 34.8
+    },
+    {
+      "regionId": "610822108000",
+      "name": "大昌汗镇",
+      "average": 623.7
+    },
+    {
+      "regionId": "610822203000",
+      "name": "古城乡",
+      "average": 613.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 30.902399999999993,
+      "color": "#bdd7e7",
+      "label": "30.902 万m³"
+    },
+    {
+      "value": 108.9176,
+      "color": "#6baed6",
+      "label": "108.918 万m³"
+    },
+    {
+      "value": 625.2568,
+      "color": "#3182bd",
+      "label": "625.257 万m³"
+    },
+    {
+      "value": 3296.0983999999985,
+      "color": "#08519c",
+      "label": "3296.098 万m³"
+    },
+    {
+      "value": 21203.311999999998,
+      "color": "#042d60",
+      "label": "21203.312 万m³"
+    }
+  ]
+}

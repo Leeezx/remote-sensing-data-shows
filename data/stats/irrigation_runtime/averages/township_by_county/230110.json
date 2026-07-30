@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230108579000",
+      "name": "平房农垦",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110001000",
+      "name": "香坊大街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110002000",
+      "name": "安埠街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110003000",
+      "name": "通天街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110004000",
+      "name": "新香坊街道",
+      "average": 81.5
+    },
+    {
+      "regionId": "230110005000",
+      "name": "铁东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110006000",
+      "name": "新成街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110007000",
+      "name": "红旗街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110008000",
+      "name": "六顺街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110009000",
+      "name": "建筑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110010000",
+      "name": "哈平路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110011000",
+      "name": "安乐街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110012000",
+      "name": "健康路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110013000",
+      "name": "大庆路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110014000",
+      "name": "进乡街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110015000",
+      "name": "通乡街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110016000",
+      "name": "和平路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110017000",
+      "name": "民生路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110018000",
+      "name": "文政街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110019000",
+      "name": "王兆街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230110020000",
+      "name": "黎明街道",
+      "average": 124.6
+    },
+    {
+      "regionId": "230110101000",
+      "name": "成高子镇",
+      "average": 3893.1
+    },
+    {
+      "regionId": "230110102000",
+      "name": "幸福镇",
+      "average": 1066.8
+    },
+    {
+      "regionId": "230110103000",
+      "name": "朝阳镇",
+      "average": 121.0
+    },
+    {
+      "regionId": "230110201000",
+      "name": "向阳乡",
+      "average": 5816.4
+    },
+    {
+      "regionId": "230110500000",
+      "name": "香坊实验农场",
+      "average": 27.3
+    },
+    {
+      "regionId": "230110579000",
+      "name": "香坊区农垦",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513433100000",
+      "name": "城厢镇",
+      "average": 3091.9
+    },
+    {
+      "regionId": "513433101000",
+      "name": "漫水湾镇",
+      "average": 843.3
+    },
+    {
+      "regionId": "513433102000",
+      "name": "大桥镇",
+      "average": 297.9
+    },
+    {
+      "regionId": "513433103000",
+      "name": "复兴镇",
+      "average": 2252.3
+    },
+    {
+      "regionId": "513433104000",
+      "name": "泸沽镇",
+      "average": 1137.8
+    },
+    {
+      "regionId": "513433105000",
+      "name": "沙坝镇",
+      "average": 1899.0
+    },
+    {
+      "regionId": "513433106000",
+      "name": "彝海镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513433107000",
+      "name": "石龙镇",
+      "average": 1022.7
+    },
+    {
+      "regionId": "513433108000",
+      "name": "回龙镇",
+      "average": 2514.7
+    },
+    {
+      "regionId": "513433109000",
+      "name": "河边镇",
+      "average": 1330.2
+    },
+    {
+      "regionId": "513433200000",
+      "name": "回坪乡",
+      "average": 2164.1
+    },
+    {
+      "regionId": "513433202000",
+      "name": "哈哈乡",
+      "average": 696.8
+    },
+    {
+      "regionId": "513433203000",
+      "name": "森荣乡",
+      "average": 106.8
+    },
+    {
+      "regionId": "513433204000",
+      "name": "林里乡",
+      "average": 824.2
+    },
+    {
+      "regionId": "513433206000",
+      "name": "铁厂乡",
+      "average": 265.6
+    },
+    {
+      "regionId": "513433208000",
+      "name": "河里乡",
+      "average": 1516.3
+    },
+    {
+      "regionId": "513433209000",
+      "name": "冶勒乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513433210000",
+      "name": "拖乌乡",
+      "average": 3.0
+    },
+    {
+      "regionId": "513433212000",
+      "name": "曹古乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513433213000",
+      "name": "惠安乡",
+      "average": 892.4
+    },
+    {
+      "regionId": "513433214000",
+      "name": "后山乡",
+      "average": 1105.6
+    },
+    {
+      "regionId": "513433215000",
+      "name": "宏模乡",
+      "average": 1650.4
+    },
+    {
+      "regionId": "513433216000",
+      "name": "先锋乡",
+      "average": 1895.3
+    },
+    {
+      "regionId": "513433217000",
+      "name": "泽远乡",
+      "average": 1041.8
+    },
+    {
+      "regionId": "513433218000",
+      "name": "里庄乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513433219000",
+      "name": "金林乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513433220000",
+      "name": "腊窝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513433221000",
+      "name": "联合乡",
+      "average": 25.1
+    },
+    {
+      "regionId": "513433222000",
+      "name": "麦地沟乡",
+      "average": 43.5
+    },
+    {
+      "regionId": "513433223000",
+      "name": "锦屏乡",
+      "average": 303.8
+    },
+    {
+      "regionId": "513433224000",
+      "name": "南河乡",
+      "average": 773.0
+    },
+    {
+      "regionId": "513433225000",
+      "name": "青纳乡",
+      "average": 2399.8
+    },
+    {
+      "regionId": "513433226000",
+      "name": "和爱藏族乡",
+      "average": 358.2
+    },
+    {
+      "regionId": "513433227000",
+      "name": "棉沙湾乡",
+      "average": 47.7
+    },
+    {
+      "regionId": "513433228000",
+      "name": "马头乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513433229000",
+      "name": "窝堡乡",
+      "average": 13.0
+    },
+    {
+      "regionId": "513433230000",
+      "name": "新兴乡",
+      "average": 121.6
+    },
+    {
+      "regionId": "513433231000",
+      "name": "健美乡",
+      "average": 29.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 11.439999999999994,
+      "color": "#bdd7e7",
+      "label": "11.440 万m³"
+    },
+    {
+      "value": 258.1119999999998,
+      "color": "#6baed6",
+      "label": "258.112 万m³"
+    },
+    {
+      "value": 845.8531999999999,
+      "color": "#3182bd",
+      "label": "845.853 万m³"
+    },
+    {
+      "value": 1537.2196,
+      "color": "#08519c",
+      "label": "1537.220 万m³"
+    },
+    {
+      "value": 2664.7719999999986,
+      "color": "#042d60",
+      "label": "2664.772 万m³"
+    }
+  ]
+}

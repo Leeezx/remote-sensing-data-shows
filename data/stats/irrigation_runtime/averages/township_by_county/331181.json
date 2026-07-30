@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "331181001000",
+      "name": "龙渊街道",
+      "average": 7923.4
+    },
+    {
+      "regionId": "331181002000",
+      "name": "西街街道",
+      "average": 7908.2
+    },
+    {
+      "regionId": "331181003000",
+      "name": "剑池街道",
+      "average": 9611.1
+    },
+    {
+      "regionId": "331181004000",
+      "name": "石达石街道",
+      "average": 9968.6
+    },
+    {
+      "regionId": "331181100000",
+      "name": "八都镇",
+      "average": 25005.8
+    },
+    {
+      "regionId": "331181101000",
+      "name": "上垟镇",
+      "average": 10160.7
+    },
+    {
+      "regionId": "331181102000",
+      "name": "小梅镇",
+      "average": 15809.0
+    },
+    {
+      "regionId": "331181103000",
+      "name": "查田镇",
+      "average": 17525.5
+    },
+    {
+      "regionId": "331181104000",
+      "name": "安仁镇",
+      "average": 11462.6
+    },
+    {
+      "regionId": "331181105000",
+      "name": "锦溪镇",
+      "average": 7330.2
+    },
+    {
+      "regionId": "331181106000",
+      "name": "住龙镇",
+      "average": 2934.5
+    },
+    {
+      "regionId": "331181107000",
+      "name": "屏南镇",
+      "average": 3932.1
+    },
+    {
+      "regionId": "331181200000",
+      "name": "兰巨乡",
+      "average": 22985.0
+    },
+    {
+      "regionId": "331181202000",
+      "name": "宝溪乡",
+      "average": 11133.5
+    },
+    {
+      "regionId": "331181203000",
+      "name": "竹垟畲族乡",
+      "average": 8678.4
+    },
+    {
+      "regionId": "331181204000",
+      "name": "道太乡",
+      "average": 12888.9
+    },
+    {
+      "regionId": "331181205000",
+      "name": "岩樟乡",
+      "average": 3260.8
+    },
+    {
+      "regionId": "331181206000",
+      "name": "城北乡",
+      "average": 7369.7
+    },
+    {
+      "regionId": "331181207000",
+      "name": "龙南乡",
+      "average": 8588.6
+    },
+    {
+      "regionId": "350722107000",
+      "name": "忠信镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350722205000",
+      "name": "管厝乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 4747.644,
+      "color": "#bdd7e7",
+      "label": "4747.644 万m³"
+    },
+    {
+      "value": 7976.616,
+      "color": "#6baed6",
+      "label": "7976.616 万m³"
+    },
+    {
+      "value": 9940.0,
+      "color": "#3182bd",
+      "label": "9940.000 万m³"
+    },
+    {
+      "value": 12546.587999999996,
+      "color": "#08519c",
+      "label": "12546.588 万m³"
+    },
+    {
+      "value": 24197.480000000003,
+      "color": "#042d60",
+      "label": "24197.480 万m³"
+    }
+  ]
+}

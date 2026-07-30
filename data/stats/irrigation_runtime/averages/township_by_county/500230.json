@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500230001000",
+      "name": "三合街道",
+      "average": 4869.7
+    },
+    {
+      "regionId": "500230002000",
+      "name": "名山街道",
+      "average": 4647.2
+    },
+    {
+      "regionId": "500230101000",
+      "name": "虎威镇",
+      "average": 6413.0
+    },
+    {
+      "regionId": "500230102000",
+      "name": "社坛镇",
+      "average": 13417.1
+    },
+    {
+      "regionId": "500230103000",
+      "name": "三元镇",
+      "average": 3386.5
+    },
+    {
+      "regionId": "500230104000",
+      "name": "许明寺镇",
+      "average": 6650.0
+    },
+    {
+      "regionId": "500230105000",
+      "name": "董家镇",
+      "average": 11185.9
+    },
+    {
+      "regionId": "500230106000",
+      "name": "树人镇",
+      "average": 3738.0
+    },
+    {
+      "regionId": "500230107000",
+      "name": "十直镇",
+      "average": 4890.0
+    },
+    {
+      "regionId": "500230109000",
+      "name": "高家镇",
+      "average": 2227.1
+    },
+    {
+      "regionId": "500230110000",
+      "name": "兴义镇",
+      "average": 4581.0
+    },
+    {
+      "regionId": "500230111000",
+      "name": "双路镇",
+      "average": 1457.8
+    },
+    {
+      "regionId": "500230112000",
+      "name": "江池镇",
+      "average": 1839.0
+    },
+    {
+      "regionId": "500230113000",
+      "name": "龙河镇",
+      "average": 9124.2
+    },
+    {
+      "regionId": "500230114000",
+      "name": "武平镇",
+      "average": 3745.5
+    },
+    {
+      "regionId": "500230115000",
+      "name": "包鸾镇",
+      "average": 4466.3
+    },
+    {
+      "regionId": "500230116000",
+      "name": "湛普镇",
+      "average": 906.4
+    },
+    {
+      "regionId": "500230118000",
+      "name": "南天湖镇",
+      "average": 1106.2
+    },
+    {
+      "regionId": "500230119000",
+      "name": "保合镇",
+      "average": 13314.6
+    },
+    {
+      "regionId": "500230120000",
+      "name": "兴龙镇",
+      "average": 6594.4
+    },
+    {
+      "regionId": "500230121000",
+      "name": "仁沙镇",
+      "average": 14016.1
+    },
+    {
+      "regionId": "500230122000",
+      "name": "龙孔镇",
+      "average": 1267.4
+    },
+    {
+      "regionId": "500230123000",
+      "name": "暨龙镇",
+      "average": 383.9
+    },
+    {
+      "regionId": "500230124000",
+      "name": "双龙镇",
+      "average": 5762.6
+    },
+    {
+      "regionId": "500230125000",
+      "name": "仙女湖镇",
+      "average": 1155.5
+    },
+    {
+      "regionId": "500230202000",
+      "name": "青龙乡",
+      "average": 5147.2
+    },
+    {
+      "regionId": "500230206000",
+      "name": "太平坝乡",
+      "average": 5761.1
+    },
+    {
+      "regionId": "500230207000",
+      "name": "都督乡",
+      "average": 531.2
+    },
+    {
+      "regionId": "500230209000",
+      "name": "栗子乡",
+      "average": 2849.1
+    },
+    {
+      "regionId": "500230210000",
+      "name": "三建乡",
+      "average": 1019.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 469.334,
+      "color": "#eff3ff",
+      "label": "469.334 万m³"
+    },
+    {
+      "value": 1295.5792,
+      "color": "#bdd7e7",
+      "label": "1295.579 万m³"
+    },
+    {
+      "value": 3638.174,
+      "color": "#6baed6",
+      "label": "3638.174 万m³"
+    },
+    {
+      "value": 4875.4652,
+      "color": "#3182bd",
+      "label": "4875.465 万m³"
+    },
+    {
+      "value": 6567.5527999999995,
+      "color": "#08519c",
+      "label": "6567.553 万m³"
+    },
+    {
+      "value": 13668.679999999998,
+      "color": "#042d60",
+      "label": "13668.680 万m³"
+    }
+  ]
+}

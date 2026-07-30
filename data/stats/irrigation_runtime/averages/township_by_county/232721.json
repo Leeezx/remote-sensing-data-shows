@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "232721100000",
+      "name": "呼玛镇",
+      "average": 1364.9
+    },
+    {
+      "regionId": "232721101000",
+      "name": "韩家园镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "232721200000",
+      "name": "三卡乡",
+      "average": 3304.8
+    },
+    {
+      "regionId": "232721201000",
+      "name": "金山乡",
+      "average": 1279.1
+    },
+    {
+      "regionId": "232721202000",
+      "name": "兴华乡",
+      "average": 288.1
+    },
+    {
+      "regionId": "232721203000",
+      "name": "鸥浦乡",
+      "average": 1356.9
+    },
+    {
+      "regionId": "232721204000",
+      "name": "白银纳鄂伦春族民族乡",
+      "average": 639.3
+    },
+    {
+      "regionId": "232721205000",
+      "name": "北疆乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "232762101000",
+      "name": "劲松镇",
+      "average": 9.2
+    },
+    {
+      "regionId": "232762102000",
+      "name": "古源镇",
+      "average": 1333.8
+    },
+    {
+      "regionId": "232763100000",
+      "name": "新林镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "232763101000",
+      "name": "翠岗镇",
+      "average": 10.9
+    },
+    {
+      "regionId": "232763102000",
+      "name": "塔源镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "232763103000",
+      "name": "大乌苏镇",
+      "average": 626.4
+    },
+    {
+      "regionId": "232763104000",
+      "name": "塔尔根镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "232763105000",
+      "name": "碧洲镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "232763106000",
+      "name": "宏图镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "232764100000",
+      "name": "呼中镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "232764101000",
+      "name": "碧水镇",
+      "average": 176.0
+    },
+    {
+      "regionId": "232764102000",
+      "name": "呼源镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "232764103000",
+      "name": "宏伟镇",
+      "average": 53.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140623100000",
+      "name": "新城镇",
+      "average": 248.6
+    },
+    {
+      "regionId": "140623101000",
+      "name": "右卫镇",
+      "average": 3031.9
+    },
+    {
+      "regionId": "140623102000",
+      "name": "威远镇",
+      "average": 466.5
+    },
+    {
+      "regionId": "140623103000",
+      "name": "元堡子镇",
+      "average": 121.2
+    },
+    {
+      "regionId": "140623200000",
+      "name": "牛心堡乡",
+      "average": 171.8
+    },
+    {
+      "regionId": "140623201000",
+      "name": "白头里乡",
+      "average": 1127.0
+    },
+    {
+      "regionId": "140623202000",
+      "name": "高家堡乡",
+      "average": 138.0
+    },
+    {
+      "regionId": "140623203000",
+      "name": "丁家窑乡",
+      "average": 15.9
+    },
+    {
+      "regionId": "140623204000",
+      "name": "杨千河乡",
+      "average": 416.7
+    },
+    {
+      "regionId": "140623205000",
+      "name": "李达窑乡",
+      "average": 611.8
+    },
+    {
+      "regionId": "150123102000",
+      "name": "新店子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150123206000",
+      "name": "羊群沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "150925104000",
+      "name": "六苏木镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 8.6496,
+      "color": "#bdd7e7",
+      "label": "8.650 万m³"
+    },
+    {
+      "value": 135.4464,
+      "color": "#6baed6",
+      "label": "135.446 万m³"
+    },
+    {
+      "value": 274.15119999999985,
+      "color": "#3182bd",
+      "label": "274.151 万m³"
+    },
+    {
+      "value": 532.7567999999999,
+      "color": "#08519c",
+      "label": "532.757 万m³"
+    },
+    {
+      "value": 2574.7239999999997,
+      "color": "#042d60",
+      "label": "2574.724 万m³"
+    }
+  ]
+}

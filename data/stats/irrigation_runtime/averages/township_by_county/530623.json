@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511504209000",
+      "name": "凤仪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511527100000",
+      "name": "筠连镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511527203000",
+      "name": "龙镇乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "530623101000",
+      "name": "盐井镇",
+      "average": 2350.8
+    },
+    {
+      "regionId": "530623102000",
+      "name": "普洱镇",
+      "average": 2275.1
+    },
+    {
+      "regionId": "530623103000",
+      "name": "豆沙镇",
+      "average": 1226.4
+    },
+    {
+      "regionId": "530623104000",
+      "name": "中和镇",
+      "average": 2908.3
+    },
+    {
+      "regionId": "530623105000",
+      "name": "庙坝镇",
+      "average": 6991.4
+    },
+    {
+      "regionId": "530623106000",
+      "name": "柿子镇",
+      "average": 2638.1
+    },
+    {
+      "regionId": "530623201000",
+      "name": "兴隆乡",
+      "average": 2310.4
+    },
+    {
+      "regionId": "530623202000",
+      "name": "落雁乡",
+      "average": 716.4
+    },
+    {
+      "regionId": "530623203000",
+      "name": "滩头乡",
+      "average": 1980.4
+    },
+    {
+      "regionId": "530623204000",
+      "name": "牛寨乡",
+      "average": 2963.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 389.7216,
+      "color": "#bdd7e7",
+      "label": "389.722 万m³"
+    },
+    {
+      "value": 1865.792,
+      "color": "#6baed6",
+      "label": "1865.792 万m³"
+    },
+    {
+      "value": 2316.5408,
+      "color": "#3182bd",
+      "label": "2316.541 万m³"
+    },
+    {
+      "value": 2761.3112,
+      "color": "#08519c",
+      "label": "2761.311 万m³"
+    },
+    {
+      "value": 6024.703999999999,
+      "color": "#042d60",
+      "label": "6024.704 万m³"
+    }
+  ]
+}

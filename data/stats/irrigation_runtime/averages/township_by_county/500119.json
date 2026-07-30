@@ -1,0 +1,213 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500119001000",
+      "name": "东城街道",
+      "average": 2040.1
+    },
+    {
+      "regionId": "500119002000",
+      "name": "南城街道",
+      "average": 2040.8
+    },
+    {
+      "regionId": "500119003000",
+      "name": "西城街道",
+      "average": 323.4
+    },
+    {
+      "regionId": "500119100000",
+      "name": "三泉镇",
+      "average": 200.9
+    },
+    {
+      "regionId": "500119101000",
+      "name": "南平镇",
+      "average": 8574.6
+    },
+    {
+      "regionId": "500119102000",
+      "name": "神童镇",
+      "average": 5451.7
+    },
+    {
+      "regionId": "500119103000",
+      "name": "鸣玉镇",
+      "average": 724.1
+    },
+    {
+      "regionId": "500119104000",
+      "name": "大观镇",
+      "average": 5077.8
+    },
+    {
+      "regionId": "500119105000",
+      "name": "兴隆镇",
+      "average": 2474.4
+    },
+    {
+      "regionId": "500119106000",
+      "name": "太平场镇",
+      "average": 8517.5
+    },
+    {
+      "regionId": "500119107000",
+      "name": "白沙镇",
+      "average": 2879.3
+    },
+    {
+      "regionId": "500119108000",
+      "name": "水江镇",
+      "average": 5682.6
+    },
+    {
+      "regionId": "500119109000",
+      "name": "石墙镇",
+      "average": 3576.8
+    },
+    {
+      "regionId": "500119110000",
+      "name": "金山镇",
+      "average": 1696.6
+    },
+    {
+      "regionId": "500119111000",
+      "name": "头渡镇",
+      "average": 544.9
+    },
+    {
+      "regionId": "500119112000",
+      "name": "大有镇",
+      "average": 1694.9
+    },
+    {
+      "regionId": "500119113000",
+      "name": "合溪镇",
+      "average": 119.0
+    },
+    {
+      "regionId": "500119114000",
+      "name": "黎香湖镇",
+      "average": 3811.0
+    },
+    {
+      "regionId": "500119115000",
+      "name": "山王坪镇",
+      "average": 391.5
+    },
+    {
+      "regionId": "500119200000",
+      "name": "石莲乡",
+      "average": 3252.9
+    },
+    {
+      "regionId": "500119201000",
+      "name": "木凉乡",
+      "average": 998.3
+    },
+    {
+      "regionId": "500119202000",
+      "name": "河图乡",
+      "average": 478.3
+    },
+    {
+      "regionId": "500119204000",
+      "name": "乾丰乡",
+      "average": 1870.4
+    },
+    {
+      "regionId": "500119205000",
+      "name": "骑龙乡",
+      "average": 467.0
+    },
+    {
+      "regionId": "500119207000",
+      "name": "中桥乡",
+      "average": 1206.1
+    },
+    {
+      "regionId": "500119208000",
+      "name": "铁村乡",
+      "average": 260.3
+    },
+    {
+      "regionId": "500119209000",
+      "name": "德隆乡",
+      "average": 1717.0
+    },
+    {
+      "regionId": "500119210000",
+      "name": "庆元乡",
+      "average": 373.7
+    },
+    {
+      "regionId": "500119211000",
+      "name": "古花乡",
+      "average": 1280.4
+    },
+    {
+      "regionId": "500119212000",
+      "name": "峰岩乡",
+      "average": 447.6
+    },
+    {
+      "regionId": "500119213000",
+      "name": "民主乡",
+      "average": 1186.8
+    },
+    {
+      "regionId": "500119214000",
+      "name": "冷水关乡",
+      "average": 2556.3
+    },
+    {
+      "regionId": "500119215000",
+      "name": "石溪乡",
+      "average": 1822.5
+    },
+    {
+      "regionId": "500119216000",
+      "name": "福寿乡",
+      "average": 174.0
+    },
+    {
+      "regionId": "520322115000",
+      "name": "狮溪镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 80.92000000000002,
+      "color": "#eff3ff",
+      "label": "80.920 万m³"
+    },
+    {
+      "value": 403.16880000000003,
+      "color": "#bdd7e7",
+      "label": "403.169 万m³"
+    },
+    {
+      "value": 1137.0359999999998,
+      "color": "#6baed6",
+      "label": "1137.036 万m³"
+    },
+    {
+      "value": 1835.1456,
+      "color": "#3182bd",
+      "label": "1835.146 万m³"
+    },
+    {
+      "value": 3175.1911999999993,
+      "color": "#08519c",
+      "label": "3175.191 万m³"
+    },
+    {
+      "value": 8535.772,
+      "color": "#042d60",
+      "label": "8535.772 万m³"
+    }
+  ]
+}

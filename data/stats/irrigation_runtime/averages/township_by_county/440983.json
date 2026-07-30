@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "440983001000",
+      "name": "东镇街道",
+      "average": 47812.9
+    },
+    {
+      "regionId": "440983101000",
+      "name": "镇隆镇",
+      "average": 26145.3
+    },
+    {
+      "regionId": "440983102000",
+      "name": "水口镇",
+      "average": 32163.3
+    },
+    {
+      "regionId": "440983105000",
+      "name": "丁堡镇",
+      "average": 18452.1
+    },
+    {
+      "regionId": "440983106000",
+      "name": "池洞镇",
+      "average": 24522.1
+    },
+    {
+      "regionId": "440983112000",
+      "name": "贵子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440983113000",
+      "name": "怀乡镇",
+      "average": 37184.7
+    },
+    {
+      "regionId": "440983114000",
+      "name": "茶山镇",
+      "average": 30143.8
+    },
+    {
+      "regionId": "440983115000",
+      "name": "洪冠镇",
+      "average": 22376.6
+    },
+    {
+      "regionId": "440983116000",
+      "name": "白石镇",
+      "average": 27200.2
+    },
+    {
+      "regionId": "440983117000",
+      "name": "大成镇",
+      "average": 23986.9
+    },
+    {
+      "regionId": "440983118000",
+      "name": "钱排镇",
+      "average": 20510.2
+    },
+    {
+      "regionId": "440983119000",
+      "name": "合水镇",
+      "average": 7087.4
+    },
+    {
+      "regionId": "440983120000",
+      "name": "新宝镇",
+      "average": 27251.8
+    },
+    {
+      "regionId": "440983121000",
+      "name": "平塘镇",
+      "average": 38280.9
+    },
+    {
+      "regionId": "440983122000",
+      "name": "思贺镇",
+      "average": 27987.1
+    },
+    {
+      "regionId": "440983123000",
+      "name": "金垌镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440983124000",
+      "name": "朱砂镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440983125000",
+      "name": "北界镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440983400000",
+      "name": "信宜市国营红旗农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "450481105000",
+      "name": "水汶镇",
+      "average": 29787.4
+    },
+    {
+      "regionId": "450921105000",
+      "name": "黎村镇",
+      "average": 49687.0
+    },
+    {
+      "regionId": "450981116000",
+      "name": "白马镇",
+      "average": 3218.7
+    },
+    {
+      "regionId": "450981117000",
+      "name": "大伦镇",
+      "average": 5753.5
+    },
+    {
+      "regionId": "450981118000",
+      "name": "扶新镇",
+      "average": 8555.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 3441.7624,
+      "color": "#bdd7e7",
+      "label": "3441.762 万m³"
+    },
+    {
+      "value": 19884.5376,
+      "color": "#6baed6",
+      "label": "19884.538 万m³"
+    },
+    {
+      "value": 26465.989599999997,
+      "color": "#3182bd",
+      "label": "26465.990 万m³"
+    },
+    {
+      "value": 30112.4368,
+      "color": "#08519c",
+      "label": "30112.437 万m³"
+    },
+    {
+      "value": 48787.432,
+      "color": "#042d60",
+      "label": "48787.432 万m³"
+    }
+  ]
+}

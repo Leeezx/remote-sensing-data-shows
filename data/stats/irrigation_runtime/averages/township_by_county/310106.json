@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "310106006000",
+      "name": "江宁路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310106011000",
+      "name": "石门二路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310106012000",
+      "name": "南京西路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310106013000",
+      "name": "静安寺街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310106014000",
+      "name": "曹家渡街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310106015000",
+      "name": "天目西路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310106016000",
+      "name": "北站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310106017000",
+      "name": "宝山路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310106018000",
+      "name": "共和新路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310106019000",
+      "name": "大宁路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310106020000",
+      "name": "彭浦新村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310106021000",
+      "name": "临汾路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310106022000",
+      "name": "芷江西路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "310106101000",
+      "name": "彭浦镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540102002000",
+      "name": "八廓街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "540102003000",
+      "name": "吉日街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "540102004000",
+      "name": "吉崩岗街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "540102005000",
+      "name": "扎细街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "540102006000",
+      "name": "公德林街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "540102007000",
+      "name": "嘎玛贡桑街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "540102008000",
+      "name": "两岛街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "540102009000",
+      "name": "金珠西路街道",
+      "average": 92.3
+    },
+    {
+      "regionId": "540102200000",
+      "name": "蔡公堂乡",
+      "average": 333.7
+    },
+    {
+      "regionId": "540102201000",
+      "name": "纳金乡",
+      "average": 20.9
+    },
+    {
+      "regionId": "540102202000",
+      "name": "娘热乡",
+      "average": 602.3
+    },
+    {
+      "regionId": "540102203000",
+      "name": "夺底乡",
+      "average": 18.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

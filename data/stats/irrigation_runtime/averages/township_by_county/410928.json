@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "371726108000",
+      "name": "临濮镇",
+      "average": 27701.6
+    },
+    {
+      "regionId": "410928100000",
+      "name": "城关镇",
+      "average": 14899.0
+    },
+    {
+      "regionId": "410928101000",
+      "name": "濮阳县柳屯镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "410928102000",
+      "name": "濮阳县文留镇",
+      "average": 16078.3
+    },
+    {
+      "regionId": "410928103000",
+      "name": "濮阳县庆祖镇",
+      "average": 43851.3
+    },
+    {
+      "regionId": "410928104000",
+      "name": "濮阳县八公桥镇",
+      "average": 27886.7
+    },
+    {
+      "regionId": "410928106000",
+      "name": "濮阳县徐镇镇",
+      "average": 35454.2
+    },
+    {
+      "regionId": "410928107000",
+      "name": "濮阳县户部寨镇",
+      "average": 23588.7
+    },
+    {
+      "regionId": "410928108000",
+      "name": "濮阳县鲁河镇",
+      "average": 35798.8
+    },
+    {
+      "regionId": "410928109000",
+      "name": "濮阳县子岸镇",
+      "average": 47801.2
+    },
+    {
+      "regionId": "410928110000",
+      "name": "濮阳县胡状镇",
+      "average": 27951.6
+    },
+    {
+      "regionId": "410928202000",
+      "name": "濮阳县清河头乡",
+      "average": 22351.8
+    },
+    {
+      "regionId": "410928204000",
+      "name": "濮阳县梁庄乡",
+      "average": 20795.5
+    },
+    {
+      "regionId": "410928205000",
+      "name": "濮阳县王称固乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "410928206000",
+      "name": "濮阳县白罡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "410928207000",
+      "name": "濮阳县梨园乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "410928208000",
+      "name": "濮阳县五星乡",
+      "average": 33532.6
+    },
+    {
+      "regionId": "410928211000",
+      "name": "濮阳县郎中乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "410928212000",
+      "name": "濮阳县海通乡",
+      "average": 41924.6
+    },
+    {
+      "regionId": "410928213000",
+      "name": "濮阳县渠村乡",
+      "average": 152.7
+    },
+    {
+      "regionId": "410928214000",
+      "name": "濮阳县习城乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

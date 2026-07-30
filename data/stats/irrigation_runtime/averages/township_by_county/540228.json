@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540228100000",
+      "name": "洛江镇",
+      "average": 4134.5
+    },
+    {
+      "regionId": "540228101000",
+      "name": "嘎东镇",
+      "average": 6177.4
+    },
+    {
+      "regionId": "540228200000",
+      "name": "巴扎乡",
+      "average": 5387.3
+    },
+    {
+      "regionId": "540228201000",
+      "name": "玛乡",
+      "average": 1479.0
+    },
+    {
+      "regionId": "540228202000",
+      "name": "旺丹乡",
+      "average": 1501.4
+    },
+    {
+      "regionId": "540228203000",
+      "name": "曲奴乡",
+      "average": 1091.1
+    },
+    {
+      "regionId": "540228204000",
+      "name": "杜琼乡",
+      "average": 2462.2
+    },
+    {
+      "regionId": "540228205000",
+      "name": "强堆乡",
+      "average": 1108.6
+    },
+    {
+      "regionId": "540228206000",
+      "name": "嘎普乡",
+      "average": 199.6
+    },
+    {
+      "regionId": "540228207000",
+      "name": "者下乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540228208000",
+      "name": "东喜乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 306.58000000000004,
+      "color": "#bdd7e7",
+      "label": "306.580 万m³"
+    },
+    {
+      "value": 1123.416,
+      "color": "#6baed6",
+      "label": "1123.416 万m³"
+    },
+    {
+      "value": 1500.5040000000001,
+      "color": "#3182bd",
+      "label": "1500.504 万m³"
+    },
+    {
+      "value": 3933.8239999999983,
+      "color": "#08519c",
+      "label": "3933.824 万m³"
+    },
+    {
+      "value": 6019.38,
+      "color": "#042d60",
+      "label": "6019.380 万m³"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410205001000",
+      "name": "三里堡街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410205002000",
+      "name": "新门关街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410205003000",
+      "name": "繁塔街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410205004000",
+      "name": "官坊街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410205005000",
+      "name": "菜市街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410205200000",
+      "name": "南郊乡",
+      "average": 1862.2
+    },
+    {
+      "regionId": "410205201000",
+      "name": "汪屯乡",
+      "average": 10174.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

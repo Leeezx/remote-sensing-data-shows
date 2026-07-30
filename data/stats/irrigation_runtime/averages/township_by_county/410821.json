@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140524204000",
+      "name": "夺火乡",
+      "average": 267.7
+    },
+    {
+      "regionId": "140525112000",
+      "name": "柳树口镇",
+      "average": 5210.9
+    },
+    {
+      "regionId": "410804003000",
+      "name": "冯营街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410821100000",
+      "name": "城关镇",
+      "average": 14385.3
+    },
+    {
+      "regionId": "410821101000",
+      "name": "七贤镇",
+      "average": 21867.9
+    },
+    {
+      "regionId": "410821102000",
+      "name": "郇封镇",
+      "average": 58880.5
+    },
+    {
+      "regionId": "410821202000",
+      "name": "高村乡",
+      "average": 17348.4
+    },
+    {
+      "regionId": "410821203000",
+      "name": "周庄乡",
+      "average": 14870.9
+    },
+    {
+      "regionId": "410821204000",
+      "name": "五里源乡",
+      "average": 46841.0
+    },
+    {
+      "regionId": "410821205000",
+      "name": "岸上乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "410821206000",
+      "name": "西村乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "410821400000",
+      "name": "小营工贸区",
+      "average": 3775.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 88.87639999999996,
+      "color": "#bdd7e7",
+      "label": "88.876 万m³"
+    },
+    {
+      "value": 4413.04,
+      "color": "#6baed6",
+      "label": "4413.040 万m³"
+    },
+    {
+      "value": 14655.293599999999,
+      "color": "#3182bd",
+      "label": "14655.294 万m³"
+    },
+    {
+      "value": 20367.426,
+      "color": "#08519c",
+      "label": "20367.426 万m³"
+    },
+    {
+      "value": 56231.80999999999,
+      "color": "#042d60",
+      "label": "56231.810 万m³"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "120104001000",
+      "name": "长虹街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120104002000",
+      "name": "鼓楼街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120104003000",
+      "name": "兴南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120104004000",
+      "name": "广开街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120104005000",
+      "name": "万兴街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120104006000",
+      "name": "学府街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120104007000",
+      "name": "向阳路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120104008000",
+      "name": "嘉陵道街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120104009000",
+      "name": "王顶堤街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120104010000",
+      "name": "水上公园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120104011000",
+      "name": "体育中心街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120104012000",
+      "name": "华苑街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

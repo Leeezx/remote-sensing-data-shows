@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "630122001000",
+      "name": "康川街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "630122100000",
+      "name": "鲁沙尔镇",
+      "average": 4635.8
+    },
+    {
+      "regionId": "630122101000",
+      "name": "西堡镇",
+      "average": 2764.2
+    },
+    {
+      "regionId": "630122102000",
+      "name": "上新庄镇",
+      "average": 4604.8
+    },
+    {
+      "regionId": "630122103000",
+      "name": "田家寨镇",
+      "average": 2598.0
+    },
+    {
+      "regionId": "630122104000",
+      "name": "甘河滩镇",
+      "average": 1436.8
+    },
+    {
+      "regionId": "630122105000",
+      "name": "共和镇",
+      "average": 2974.3
+    },
+    {
+      "regionId": "630122106000",
+      "name": "多巴镇",
+      "average": 6072.8
+    },
+    {
+      "regionId": "630122107000",
+      "name": "拦隆口镇",
+      "average": 5936.5
+    },
+    {
+      "regionId": "630122108000",
+      "name": "上五庄镇",
+      "average": 7424.7
+    },
+    {
+      "regionId": "630122109000",
+      "name": "李家山镇",
+      "average": 3444.8
+    },
+    {
+      "regionId": "630122200000",
+      "name": "群加乡",
+      "average": 252.8
+    },
+    {
+      "regionId": "630122201000",
+      "name": "土门关乡",
+      "average": 663.9
+    },
+    {
+      "regionId": "630122202000",
+      "name": "汉东乡",
+      "average": 406.7
+    },
+    {
+      "regionId": "630122203000",
+      "name": "大才乡",
+      "average": 1891.7
+    },
+    {
+      "regionId": "630122204000",
+      "name": "海子沟乡",
+      "average": 839.3
+    },
+    {
+      "regionId": "630122400000",
+      "name": "甘河工业园",
+      "average": 1154.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 80.896,
+      "color": "#eff3ff",
+      "label": "80.896 万m³"
+    },
+    {
+      "value": 732.6568,
+      "color": "#bdd7e7",
+      "label": "732.657 万m³"
+    },
+    {
+      "value": 1647.8736,
+      "color": "#6baed6",
+      "label": "1647.874 万m³"
+    },
+    {
+      "value": 2876.8136,
+      "color": "#3182bd",
+      "label": "2876.814 万m³"
+    },
+    {
+      "value": 4623.648,
+      "color": "#08519c",
+      "label": "4623.648 万m³"
+    },
+    {
+      "value": 6992.092,
+      "color": "#042d60",
+      "label": "6992.092 万m³"
+    }
+  ]
+}

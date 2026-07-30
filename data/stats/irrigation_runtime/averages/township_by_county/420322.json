@@ -1,0 +1,193 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420304200000",
+      "name": "大柳乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322100000",
+      "name": "城关镇",
+      "average": 8140.1
+    },
+    {
+      "regionId": "420322101000",
+      "name": "土门镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322102000",
+      "name": "上津镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322103000",
+      "name": "店子镇",
+      "average": 283.3
+    },
+    {
+      "regionId": "420322104000",
+      "name": "夹河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322105000",
+      "name": "羊尾镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322106000",
+      "name": "观音镇",
+      "average": 1624.8
+    },
+    {
+      "regionId": "420322107000",
+      "name": "马鞍镇",
+      "average": 1165.6
+    },
+    {
+      "regionId": "420322108000",
+      "name": "河夹镇",
+      "average": 2690.7
+    },
+    {
+      "regionId": "420322200000",
+      "name": "香口乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322201000",
+      "name": "关防乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322202000",
+      "name": "湖北口回族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322203000",
+      "name": "景阳乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322204000",
+      "name": "六郎乡",
+      "average": 1553.5
+    },
+    {
+      "regionId": "420322205000",
+      "name": "涧池乡",
+      "average": 720.6
+    },
+    {
+      "regionId": "420322206000",
+      "name": "安家乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322400000",
+      "name": "槐树林特场管委会",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322401000",
+      "name": "三官洞林区",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322402000",
+      "name": "工业园区",
+      "average": 260.6
+    },
+    {
+      "regionId": "610928104000",
+      "name": "双河镇",
+      "average": 9065.0
+    },
+    {
+      "regionId": "610929100000",
+      "name": "城关镇",
+      "average": 79.8
+    },
+    {
+      "regionId": "610929108000",
+      "name": "冷水镇",
+      "average": 566.6
+    },
+    {
+      "regionId": "611023110000",
+      "name": "十里坪镇",
+      "average": 271.3
+    },
+    {
+      "regionId": "611024105000",
+      "name": "西照川镇",
+      "average": 1256.1
+    },
+    {
+      "regionId": "611024106000",
+      "name": "漫川关镇",
+      "average": 2272.1
+    },
+    {
+      "regionId": "611024107000",
+      "name": "南宽坪镇",
+      "average": 2032.9
+    },
+    {
+      "regionId": "611024109000",
+      "name": "杨地镇",
+      "average": 1644.6
+    },
+    {
+      "regionId": "611024209000",
+      "name": "石佛寺乡",
+      "average": 390.0
+    },
+    {
+      "regionId": "611025104000",
+      "name": "米粮镇",
+      "average": 970.7
+    },
+    {
+      "regionId": "611025105000",
+      "name": "茅坪回族镇",
+      "average": 284.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610330100000",
+      "name": "双石铺镇",
+      "average": 1642.6
+    },
+    {
+      "regionId": "610330101000",
+      "name": "凤州镇",
+      "average": 905.4
+    },
+    {
+      "regionId": "610330102000",
+      "name": "黄牛铺镇",
+      "average": 269.0
+    },
+    {
+      "regionId": "610330103000",
+      "name": "红花铺镇",
+      "average": 217.7
+    },
+    {
+      "regionId": "610330104000",
+      "name": "河口镇",
+      "average": 242.1
+    },
+    {
+      "regionId": "610330105000",
+      "name": "唐藏镇",
+      "average": 137.2
+    },
+    {
+      "regionId": "610330106000",
+      "name": "平木镇",
+      "average": 540.2
+    },
+    {
+      "regionId": "610330107000",
+      "name": "坪坎镇",
+      "average": 17.2
+    },
+    {
+      "regionId": "610330110000",
+      "name": "留凤关镇",
+      "average": 473.7
+    },
+    {
+      "regionId": "610330400000",
+      "name": "马头滩林业局",
+      "average": 0.0
+    },
+    {
+      "regionId": "610330401000",
+      "name": "辛家山林业场",
+      "average": 0.0
+    },
+    {
+      "regionId": "621228102000",
+      "name": "西坡镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "621228207000",
+      "name": "张家乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621228209000",
+      "name": "云屏乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621228210000",
+      "name": "泰山乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

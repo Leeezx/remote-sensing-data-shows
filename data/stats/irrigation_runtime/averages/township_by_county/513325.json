@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513325100000",
+      "name": "河口镇",
+      "average": 1.8
+    },
+    {
+      "regionId": "513325200000",
+      "name": "呷拉乡",
+      "average": 14.9
+    },
+    {
+      "regionId": "513325201000",
+      "name": "八角楼乡",
+      "average": 3.6
+    },
+    {
+      "regionId": "513325202000",
+      "name": "普巴绒乡",
+      "average": 14.3
+    },
+    {
+      "regionId": "513325203000",
+      "name": "祝桑乡",
+      "average": 18.3
+    },
+    {
+      "regionId": "513325204000",
+      "name": "米龙乡",
+      "average": 21.8
+    },
+    {
+      "regionId": "513325205000",
+      "name": "八衣绒乡",
+      "average": 55.3
+    },
+    {
+      "regionId": "513325206000",
+      "name": "波斯河乡",
+      "average": 14.6
+    },
+    {
+      "regionId": "513325207000",
+      "name": "恶古乡",
+      "average": 176.3
+    },
+    {
+      "regionId": "513325208000",
+      "name": "牙衣河乡",
+      "average": 42.8
+    },
+    {
+      "regionId": "513325209000",
+      "name": "西俄洛乡",
+      "average": 16.6
+    },
+    {
+      "regionId": "513325210000",
+      "name": "麻郎错乡",
+      "average": 55.3
+    },
+    {
+      "regionId": "513325211000",
+      "name": "德差乡",
+      "average": 10.3
+    },
+    {
+      "regionId": "513325212000",
+      "name": "红龙乡",
+      "average": 0.2
+    },
+    {
+      "regionId": "513325213000",
+      "name": "柯拉乡",
+      "average": 2.4
+    },
+    {
+      "regionId": "513325214000",
+      "name": "瓦多乡",
+      "average": 29.3
+    },
+    {
+      "regionId": "513325215000",
+      "name": "木绒乡",
+      "average": 20.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.712,
+      "color": "#eff3ff",
+      "label": "0.712 万m³"
+    },
+    {
+      "value": 6.2264,
+      "color": "#bdd7e7",
+      "label": "6.226 万m³"
+    },
+    {
+      "value": 14.7392,
+      "color": "#6baed6",
+      "label": "14.739 万m³"
+    },
+    {
+      "value": 19.4792,
+      "color": "#3182bd",
+      "label": "19.479 万m³"
+    },
+    {
+      "value": 37.50799999999998,
+      "color": "#08519c",
+      "label": "37.508 万m³"
+    },
+    {
+      "value": 137.57999999999998,
+      "color": "#042d60",
+      "label": "137.580 万m³"
+    }
+  ]
+}

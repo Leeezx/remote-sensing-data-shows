@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "411224100000",
+      "name": "城关镇",
+      "average": 214.0
+    },
+    {
+      "regionId": "411224101000",
+      "name": "杜关镇",
+      "average": 1322.2
+    },
+    {
+      "regionId": "411224102000",
+      "name": "五里川镇",
+      "average": 2208.1
+    },
+    {
+      "regionId": "411224103000",
+      "name": "官道口镇",
+      "average": 2785.9
+    },
+    {
+      "regionId": "411224104000",
+      "name": "朱阳关镇",
+      "average": 786.6
+    },
+    {
+      "regionId": "411224105000",
+      "name": "官坡镇",
+      "average": 16.8
+    },
+    {
+      "regionId": "411224106000",
+      "name": "范里镇",
+      "average": 5645.1
+    },
+    {
+      "regionId": "411224107000",
+      "name": "东明镇",
+      "average": 7823.9
+    },
+    {
+      "regionId": "411224108000",
+      "name": "双龙湾镇",
+      "average": 1299.4
+    },
+    {
+      "regionId": "411224200000",
+      "name": "文峪乡",
+      "average": 3828.7
+    },
+    {
+      "regionId": "411224201000",
+      "name": "横涧乡",
+      "average": 6997.1
+    },
+    {
+      "regionId": "411224203000",
+      "name": "双槐树乡",
+      "average": 59.5
+    },
+    {
+      "regionId": "411224204000",
+      "name": "汤河乡",
+      "average": 237.1
+    },
+    {
+      "regionId": "411224205000",
+      "name": "瓦窑沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "411224206000",
+      "name": "狮子坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "411224207000",
+      "name": "沙河乡",
+      "average": 3390.5
+    },
+    {
+      "regionId": "411224208000",
+      "name": "徐家湾乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "411224209000",
+      "name": "潘河乡",
+      "average": 448.5
+    },
+    {
+      "regionId": "411224210000",
+      "name": "木桐乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "611021104000",
+      "name": "灵口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "611023109000",
+      "name": "清油河镇",
+      "average": 1876.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 4.032000000000004,
+      "color": "#bdd7e7",
+      "label": "4.032 万m³"
+    },
+    {
+      "value": 254.012,
+      "color": "#6baed6",
+      "label": "254.012 万m³"
+    },
+    {
+      "value": 1320.376,
+      "color": "#3182bd",
+      "label": "1320.376 万m³"
+    },
+    {
+      "value": 3245.395999999999,
+      "color": "#08519c",
+      "label": "3245.396 万m³"
+    },
+    {
+      "value": 7493.180000000001,
+      "color": "#042d60",
+      "label": "7493.180 万m³"
+    }
+  ]
+}

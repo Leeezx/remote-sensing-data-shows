@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140425104000",
+      "name": "杏城镇",
+      "average": 871.5
+    },
+    {
+      "regionId": "140425201000",
+      "name": "东寺头乡",
+      "average": 1027.4
+    },
+    {
+      "regionId": "140425202000",
+      "name": "虹梯关乡",
+      "average": 2203.8
+    },
+    {
+      "regionId": "140427205000",
+      "name": "鹅屋乡",
+      "average": 152.3
+    },
+    {
+      "regionId": "410581001000",
+      "name": "开元街道",
+      "average": 1463.2
+    },
+    {
+      "regionId": "410581002000",
+      "name": "振林街道",
+      "average": 8.7
+    },
+    {
+      "regionId": "410581003000",
+      "name": "龙山街道",
+      "average": 1144.2
+    },
+    {
+      "regionId": "410581004000",
+      "name": "桂园街道",
+      "average": 824.0
+    },
+    {
+      "regionId": "410581101000",
+      "name": "合涧镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "410581102000",
+      "name": "临淇镇",
+      "average": 53609.5
+    },
+    {
+      "regionId": "410581103000",
+      "name": "东姚镇",
+      "average": 22381.9
+    },
+    {
+      "regionId": "410581104000",
+      "name": "横水镇",
+      "average": 22656.0
+    },
+    {
+      "regionId": "410581105000",
+      "name": "河顺镇",
+      "average": 21320.5
+    },
+    {
+      "regionId": "410581106000",
+      "name": "任村镇",
+      "average": 16872.2
+    },
+    {
+      "regionId": "410581107000",
+      "name": "姚村镇",
+      "average": 48852.1
+    },
+    {
+      "regionId": "410581108000",
+      "name": "陵阳镇",
+      "average": 4270.0
+    },
+    {
+      "regionId": "410581109000",
+      "name": "原康镇",
+      "average": 11572.2
+    },
+    {
+      "regionId": "410581110000",
+      "name": "五龙镇",
+      "average": 25249.6
+    },
+    {
+      "regionId": "410581111000",
+      "name": "采桑镇",
+      "average": 10066.9
+    },
+    {
+      "regionId": "410581112000",
+      "name": "东岗镇",
+      "average": 14119.4
+    },
+    {
+      "regionId": "410581113000",
+      "name": "桂林镇",
+      "average": 9688.0
+    },
+    {
+      "regionId": "410581200000",
+      "name": "城郊乡",
+      "average": 48555.5
+    },
+    {
+      "regionId": "410581202000",
+      "name": "茶店乡",
+      "average": 12885.1
+    },
+    {
+      "regionId": "410581203000",
+      "name": "石板岩镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 865.61,
+      "color": "#bdd7e7",
+      "label": "865.610 万m³"
+    },
+    {
+      "value": 2807.1304,
+      "color": "#6baed6",
+      "label": "2807.130 万m³"
+    },
+    {
+      "value": 12501.7332,
+      "color": "#3182bd",
+      "label": "12501.733 万m³"
+    },
+    {
+      "value": 22415.8884,
+      "color": "#08519c",
+      "label": "22415.888 万m³"
+    },
+    {
+      "value": 51421.096,
+      "color": "#042d60",
+      "label": "51421.096 万m³"
+    }
+  ]
+}

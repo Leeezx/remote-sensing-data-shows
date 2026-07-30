@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "440306017000",
+      "name": "新安街道",
+      "average": 3694.2
+    },
+    {
+      "regionId": "440306018000",
+      "name": "西乡街道",
+      "average": 3908.2
+    },
+    {
+      "regionId": "440306019000",
+      "name": "航城街道",
+      "average": 1276.8
+    },
+    {
+      "regionId": "440306020000",
+      "name": "福永街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440306021000",
+      "name": "福海街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440306022000",
+      "name": "沙井街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440306023000",
+      "name": "新桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440306024000",
+      "name": "松岗街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440306025000",
+      "name": "燕罗街道",
+      "average": 1725.1
+    },
+    {
+      "regionId": "440306026000",
+      "name": "石岩街道",
+      "average": 3352.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "320113001000",
+      "name": "尧化街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320113002000",
+      "name": "马群街道",
+      "average": 113.1
+    },
+    {
+      "regionId": "320113003000",
+      "name": "迈皋桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320113004000",
+      "name": "燕子矶街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320113005000",
+      "name": "栖霞街道",
+      "average": 1958.2
+    },
+    {
+      "regionId": "320113006000",
+      "name": "龙潭街道",
+      "average": 52904.8
+    },
+    {
+      "regionId": "320113007000",
+      "name": "仙林街道",
+      "average": 365.8
+    },
+    {
+      "regionId": "320113009000",
+      "name": "八卦洲街道",
+      "average": 41732.4
+    },
+    {
+      "regionId": "320113010000",
+      "name": "西岗街道",
+      "average": 8506.8
+    },
+    {
+      "regionId": "320113401000",
+      "name": "栖霞经济开发区",
+      "average": 3715.3
+    },
+    {
+      "regionId": "320113402000",
+      "name": "南京龙潭物流园",
+      "average": 4467.1
+    },
+    {
+      "regionId": "320113403000",
+      "name": "南京市靖安三江口工业园",
+      "average": 1378.8
+    },
+    {
+      "regionId": "320113404000",
+      "name": "南京迈皋桥创业园",
+      "average": 0.0
+    },
+    {
+      "regionId": "320113405000",
+      "name": "南京市马群科技园",
+      "average": 69.0
+    },
+    {
+      "regionId": "320113407000",
+      "name": "江苏生命科技创新园",
+      "average": 0.0
+    },
+    {
+      "regionId": "320113409000",
+      "name": "南京大学科学园",
+      "average": 0.0
+    },
+    {
+      "regionId": "320113410000",
+      "name": "南京紫东国际创意园",
+      "average": 0.0
+    },
+    {
+      "regionId": "320113411000",
+      "name": "南京金港科技创业中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "320113450000",
+      "name": "南京经济技术开发区",
+      "average": 1505.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

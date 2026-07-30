@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "710100010000",
+      "name": "松山區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710100020000",
+      "name": "信義區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710100030000",
+      "name": "大安區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710100040000",
+      "name": "中山區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710100050000",
+      "name": "中正區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710100060000",
+      "name": "大同區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710100070000",
+      "name": "萬華區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710100080000",
+      "name": "文山區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710100090000",
+      "name": "南港區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710100100000",
+      "name": "內湖區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710100110000",
+      "name": "士林區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710100120000",
+      "name": "北投區",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

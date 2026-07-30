@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230822400000",
+      "name": "桦南林业局",
+      "average": 171.9
+    },
+    {
+      "regionId": "230902001000",
+      "name": "兴华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230902002000",
+      "name": "新城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230902003000",
+      "name": "新立街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230902004000",
+      "name": "新建街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230902005000",
+      "name": "北山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230902006000",
+      "name": "河南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230902007000",
+      "name": "新合街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230902008000",
+      "name": "缸窑沟街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230902009000",
+      "name": "新安街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230902010000",
+      "name": "越秀街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230902011000",
+      "name": "兴安社区服务站",
+      "average": 0.0
+    },
+    {
+      "regionId": "230902012000",
+      "name": "兴乐社区服务站",
+      "average": 0.0
+    },
+    {
+      "regionId": "230902014000",
+      "name": "兴秀社区服务站",
+      "average": 0.0
+    },
+    {
+      "regionId": "230902015000",
+      "name": "兴平社区服务站",
+      "average": 0.0
+    },
+    {
+      "regionId": "230902016000",
+      "name": "兴和社区服务站",
+      "average": 0.0
+    },
+    {
+      "regionId": "230902017000",
+      "name": "兴城社区服务站",
+      "average": 0.0
+    },
+    {
+      "regionId": "230902100000",
+      "name": "红旗镇",
+      "average": 80.8
+    },
+    {
+      "regionId": "230902200000",
+      "name": "长兴乡",
+      "average": 3218.3
+    },
+    {
+      "regionId": "230902480000",
+      "name": "种畜场",
+      "average": 373.1
+    },
+    {
+      "regionId": "230902500000",
+      "name": "北兴农场",
+      "average": 1265.6
+    },
+    {
+      "regionId": "230902579000",
+      "name": "黑龙江红兴隆农垦宝利采金",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

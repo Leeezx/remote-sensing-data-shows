@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "451026100000",
+      "name": "城厢镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451026101000",
+      "name": "平孟镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451026200000",
+      "name": "坡荷乡",
+      "average": 14.5
+    },
+    {
+      "regionId": "451026201000",
+      "name": "龙合乡",
+      "average": 148.8
+    },
+    {
+      "regionId": "451026203000",
+      "name": "德隆乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451026204000",
+      "name": "百合乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451026205000",
+      "name": "百南乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451026207000",
+      "name": "百省乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451026208000",
+      "name": "百都乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "532628105000",
+      "name": "田蓬镇",
+      "average": 22249.8
+    },
+    {
+      "regionId": "532628201000",
+      "name": "板仑乡",
+      "average": 5704.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "222424003000",
+      "name": "南山社区工作委员会",
+      "average": 0.0
+    },
+    {
+      "regionId": "222424004000",
+      "name": "大明社区工作委员会",
+      "average": 0.0
+    },
+    {
+      "regionId": "222424005000",
+      "name": "大川社区工作委员会",
+      "average": 0.0
+    },
+    {
+      "regionId": "222424006000",
+      "name": "幸福社区工作委员会",
+      "average": 0.0
+    },
+    {
+      "regionId": "222424007000",
+      "name": "新民社区工作委员会",
+      "average": 0.0
+    },
+    {
+      "regionId": "222424008000",
+      "name": "新华社区工作委员会",
+      "average": 0.0
+    },
+    {
+      "regionId": "222424009000",
+      "name": "东振社区工作委员会",
+      "average": 0.8
+    },
+    {
+      "regionId": "222424010000",
+      "name": "江北社区工作委员会",
+      "average": 54.0
+    },
+    {
+      "regionId": "222424100000",
+      "name": "汪清镇",
+      "average": 2545.5
+    },
+    {
+      "regionId": "222424101000",
+      "name": "大兴沟镇",
+      "average": 11055.9
+    },
+    {
+      "regionId": "222424102000",
+      "name": "天桥岭镇",
+      "average": 3735.9
+    },
+    {
+      "regionId": "222424103000",
+      "name": "罗子沟镇",
+      "average": 5796.0
+    },
+    {
+      "regionId": "222424104000",
+      "name": "百草沟镇",
+      "average": 7762.1
+    },
+    {
+      "regionId": "222424105000",
+      "name": "春阳镇",
+      "average": 1801.6
+    },
+    {
+      "regionId": "222424106000",
+      "name": "复兴镇",
+      "average": 799.9
+    },
+    {
+      "regionId": "222424107000",
+      "name": "东光镇",
+      "average": 1176.4
+    },
+    {
+      "regionId": "222424200000",
+      "name": "鸡冠乡",
+      "average": 2073.5
+    },
+    {
+      "regionId": "222424400000",
+      "name": "汪清林业局",
+      "average": 42.2
+    },
+    {
+      "regionId": "222424401000",
+      "name": "天桥岭林业局",
+      "average": 194.2
+    },
+    {
+      "regionId": "222424402000",
+      "name": "大兴沟林业局",
+      "average": 129.0
+    },
+    {
+      "regionId": "222424404000",
+      "name": "八人沟农场",
+      "average": 223.1
+    },
+    {
+      "regionId": "222424407000",
+      "name": "罗子沟农场",
+      "average": 313.5
+    },
+    {
+      "regionId": "222424408000",
+      "name": "复兴农场",
+      "average": 385.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

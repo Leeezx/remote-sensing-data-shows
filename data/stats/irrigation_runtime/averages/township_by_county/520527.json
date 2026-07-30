@@ -1,0 +1,193 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "520527100000",
+      "name": "城关镇",
+      "average": 1827.5
+    },
+    {
+      "regionId": "520527101000",
+      "name": "白果镇",
+      "average": 2279.0
+    },
+    {
+      "regionId": "520527102000",
+      "name": "妈姑镇",
+      "average": 2628.2
+    },
+    {
+      "regionId": "520527103000",
+      "name": "财神镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520527104000",
+      "name": "六曲河镇",
+      "average": 1767.3
+    },
+    {
+      "regionId": "520527105000",
+      "name": "野马川镇",
+      "average": 2693.3
+    },
+    {
+      "regionId": "520527200000",
+      "name": "达依乡",
+      "average": 1610.4
+    },
+    {
+      "regionId": "520527201000",
+      "name": "水塘堡乡",
+      "average": 1079.6
+    },
+    {
+      "regionId": "520527202000",
+      "name": "兴发乡",
+      "average": 2114.8
+    },
+    {
+      "regionId": "520527203000",
+      "name": "松林坡乡",
+      "average": 4063.6
+    },
+    {
+      "regionId": "520527204000",
+      "name": "雉街乡",
+      "average": 3793.8
+    },
+    {
+      "regionId": "520527205000",
+      "name": "珠市乡",
+      "average": 4075.8
+    },
+    {
+      "regionId": "520527206000",
+      "name": "罗州乡",
+      "average": 1857.0
+    },
+    {
+      "regionId": "520527207000",
+      "name": "双坪乡",
+      "average": 3160.5
+    },
+    {
+      "regionId": "520527208000",
+      "name": "铁匠乡",
+      "average": 1526.7
+    },
+    {
+      "regionId": "520527209000",
+      "name": "辅处乡",
+      "average": 1559.1
+    },
+    {
+      "regionId": "520527210000",
+      "name": "可乐乡",
+      "average": 4986.0
+    },
+    {
+      "regionId": "520527211000",
+      "name": "河镇乡",
+      "average": 41.1
+    },
+    {
+      "regionId": "520527212000",
+      "name": "德卓乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520527213000",
+      "name": "安乐溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520527214000",
+      "name": "朱明乡",
+      "average": 4254.6
+    },
+    {
+      "regionId": "520527215000",
+      "name": "结构乡",
+      "average": 1.4
+    },
+    {
+      "regionId": "520527216000",
+      "name": "古基乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520527217000",
+      "name": "哲庄乡",
+      "average": 49.0
+    },
+    {
+      "regionId": "520527218000",
+      "name": "平山乡",
+      "average": 1542.0
+    },
+    {
+      "regionId": "520527219000",
+      "name": "古达乡",
+      "average": 725.8
+    },
+    {
+      "regionId": "520527220000",
+      "name": "威奢乡",
+      "average": 495.3
+    },
+    {
+      "regionId": "530627114000",
+      "name": "以古镇",
+      "average": 1238.4
+    },
+    {
+      "regionId": "530627209000",
+      "name": "花山乡",
+      "average": 1088.0
+    },
+    {
+      "regionId": "530628202000",
+      "name": "奎香苗族彝族乡",
+      "average": 5708.8
+    },
+    {
+      "regionId": "530628203000",
+      "name": "树林彝族苗族乡",
+      "average": 1348.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 209.66799999999975,
+      "color": "#bdd7e7",
+      "label": "209.668 万m³"
+    },
+    {
+      "value": 1369.444,
+      "color": "#6baed6",
+      "label": "1369.444 万m³"
+    },
+    {
+      "value": 1820.2759999999998,
+      "color": "#3182bd",
+      "label": "1820.276 万m³"
+    },
+    {
+      "value": 2992.3079999999986,
+      "color": "#08519c",
+      "label": "2992.308 万m³"
+    },
+    {
+      "value": 5275.119999999999,
+      "color": "#042d60",
+      "label": "5275.120 万m³"
+    }
+  ]
+}

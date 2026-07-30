@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610825211000",
+      "name": "张崾先镇",
+      "average": 1610.9
+    },
+    {
+      "regionId": "621022100000",
+      "name": "环城镇",
+      "average": 1365.3
+    },
+    {
+      "regionId": "621022101000",
+      "name": "曲子镇",
+      "average": 9822.2
+    },
+    {
+      "regionId": "621022102000",
+      "name": "甜水镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "621022103000",
+      "name": "木钵镇",
+      "average": 4128.2
+    },
+    {
+      "regionId": "621022200000",
+      "name": "天池乡",
+      "average": 7043.8
+    },
+    {
+      "regionId": "621022201000",
+      "name": "演武乡",
+      "average": 4003.1
+    },
+    {
+      "regionId": "621022202000",
+      "name": "合道乡",
+      "average": 3062.7
+    },
+    {
+      "regionId": "621022203000",
+      "name": "樊家川乡",
+      "average": 704.2
+    },
+    {
+      "regionId": "621022204000",
+      "name": "八珠乡",
+      "average": 2247.7
+    },
+    {
+      "regionId": "621022205000",
+      "name": "洪德乡",
+      "average": 972.3
+    },
+    {
+      "regionId": "621022206000",
+      "name": "耿湾乡",
+      "average": 28.3
+    },
+    {
+      "regionId": "621022207000",
+      "name": "秦团庄乡",
+      "average": 28.3
+    },
+    {
+      "regionId": "621022208000",
+      "name": "山城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621022209000",
+      "name": "南湫乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621022210000",
+      "name": "罗山川乡",
+      "average": 662.0
+    },
+    {
+      "regionId": "621022211000",
+      "name": "虎洞乡",
+      "average": 907.2
+    },
+    {
+      "regionId": "621022212000",
+      "name": "小南沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621022213000",
+      "name": "车道乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621022214000",
+      "name": "毛井乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621022215000",
+      "name": "芦家湾乡",
+      "average": 2.9
+    },
+    {
+      "regionId": "640323102000",
+      "name": "惠安堡镇",
+      "average": 397.5
+    },
+    {
+      "regionId": "640323203000",
+      "name": "麻黄山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640324102000",
+      "name": "韦州镇",
+      "average": 831.0
+    },
+    {
+      "regionId": "640324103000",
+      "name": "下马关镇",
+      "average": 112.7
+    },
+    {
+      "regionId": "640402203000",
+      "name": "甘城乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

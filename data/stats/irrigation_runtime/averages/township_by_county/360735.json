@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350424103000",
+      "name": "石壁镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350424105000",
+      "name": "安远镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350424203000",
+      "name": "淮土乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350821201000",
+      "name": "铁长乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "360735100000",
+      "name": "琴江镇",
+      "average": 50478.4
+    },
+    {
+      "regionId": "360735101000",
+      "name": "小松镇",
+      "average": 40585.6
+    },
+    {
+      "regionId": "360735102000",
+      "name": "屏山镇",
+      "average": 22821.3
+    },
+    {
+      "regionId": "360735103000",
+      "name": "横江镇",
+      "average": 21921.5
+    },
+    {
+      "regionId": "360735104000",
+      "name": "高田镇",
+      "average": 22568.0
+    },
+    {
+      "regionId": "360735200000",
+      "name": "木兰乡",
+      "average": 8415.2
+    },
+    {
+      "regionId": "360735201000",
+      "name": "丰山乡",
+      "average": 27640.3
+    },
+    {
+      "regionId": "360735202000",
+      "name": "大由乡",
+      "average": 29787.5
+    },
+    {
+      "regionId": "360735203000",
+      "name": "龙岗乡",
+      "average": 6703.9
+    },
+    {
+      "regionId": "360735204000",
+      "name": "珠坑乡",
+      "average": 7172.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

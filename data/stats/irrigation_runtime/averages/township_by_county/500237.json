@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "422822200000",
+      "name": "长梁乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "422823103000",
+      "name": "官渡口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "429021007000",
+      "name": "下谷坪土家族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "429021008000",
+      "name": "大九湖镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237001000",
+      "name": "高唐街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237002000",
+      "name": "龙门街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237101000",
+      "name": "庙宇镇",
+      "average": 4475.8
+    },
+    {
+      "regionId": "500237102000",
+      "name": "大昌镇",
+      "average": 1293.0
+    },
+    {
+      "regionId": "500237103000",
+      "name": "福田镇",
+      "average": 4322.9
+    },
+    {
+      "regionId": "500237104000",
+      "name": "龙溪镇",
+      "average": 296.0
+    },
+    {
+      "regionId": "500237105000",
+      "name": "双龙镇",
+      "average": 928.1
+    },
+    {
+      "regionId": "500237106000",
+      "name": "官阳镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237107000",
+      "name": "骡坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237108000",
+      "name": "抱龙镇",
+      "average": 110.7
+    },
+    {
+      "regionId": "500237109000",
+      "name": "官渡镇",
+      "average": 3077.0
+    },
+    {
+      "regionId": "500237110000",
+      "name": "铜鼓镇",
+      "average": 5246.7
+    },
+    {
+      "regionId": "500237111000",
+      "name": "巫峡镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237200000",
+      "name": "红椿乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237207000",
+      "name": "两坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237208000",
+      "name": "曲尺乡",
+      "average": 1815.1
+    },
+    {
+      "regionId": "500237210000",
+      "name": "建坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237211000",
+      "name": "大溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237214000",
+      "name": "金坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237216000",
+      "name": "平河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237219000",
+      "name": "当阳乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237222000",
+      "name": "竹贤乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237225000",
+      "name": "三溪乡",
+      "average": 82.4
+    },
+    {
+      "regionId": "500237227000",
+      "name": "培石乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237229000",
+      "name": "笃坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "500237231000",
+      "name": "邓家乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

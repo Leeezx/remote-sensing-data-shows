@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "141032200000",
+      "name": "阁底乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "141032201000",
+      "name": "南庄乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "141126201000",
+      "name": "和合乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610622100000",
+      "name": "延川镇",
+      "average": 1753.0
+    },
+    {
+      "regionId": "610622101000",
+      "name": "永坪镇",
+      "average": 3303.3
+    },
+    {
+      "regionId": "610622102000",
+      "name": "延水关镇",
+      "average": 848.8
+    },
+    {
+      "regionId": "610622103000",
+      "name": "文安驿镇",
+      "average": 868.6
+    },
+    {
+      "regionId": "610622104000",
+      "name": "杨家圪台镇",
+      "average": 2565.7
+    },
+    {
+      "regionId": "610622105000",
+      "name": "贾家坪镇",
+      "average": 385.0
+    },
+    {
+      "regionId": "610622106000",
+      "name": "禹居镇",
+      "average": 2430.4
+    },
+    {
+      "regionId": "610622107000",
+      "name": "关庄镇",
+      "average": 1401.8
+    },
+    {
+      "regionId": "610622203000",
+      "name": "马家河乡",
+      "average": 3382.5
+    },
+    {
+      "regionId": "610622205000",
+      "name": "土岗乡",
+      "average": 2069.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 209.44000000000003,
+      "color": "#bdd7e7",
+      "label": "209.440 万m³"
+    },
+    {
+      "value": 865.5904,
+      "color": "#6baed6",
+      "label": "865.590 万m³"
+    },
+    {
+      "value": 1801.1231999999998,
+      "color": "#3182bd",
+      "label": "1801.123 万m³"
+    },
+    {
+      "value": 2492.0968,
+      "color": "#08519c",
+      "label": "2492.097 万m³"
+    },
+    {
+      "value": 3363.492,
+      "color": "#042d60",
+      "label": "3363.492 万m³"
+    }
+  ]
+}

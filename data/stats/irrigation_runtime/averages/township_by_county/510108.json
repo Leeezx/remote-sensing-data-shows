@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510108002000",
+      "name": "猛追湾街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510108004000",
+      "name": "双桥子街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510108005000",
+      "name": "建设路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510108006000",
+      "name": "府青路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510108007000",
+      "name": "二仙桥街道",
+      "average": 17.4
+    },
+    {
+      "regionId": "510108008000",
+      "name": "跳蹬河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510108009000",
+      "name": "新鸿路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510108010000",
+      "name": "双水碾街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510108011000",
+      "name": "万年场街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510108012000",
+      "name": "桃蹊路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "510108013000",
+      "name": "圣灯街道",
+      "average": 480.0
+    },
+    {
+      "regionId": "510108014000",
+      "name": "保和街道",
+      "average": 770.7
+    },
+    {
+      "regionId": "510108015000",
+      "name": "青龙街道",
+      "average": 4024.4
+    },
+    {
+      "regionId": "510108016000",
+      "name": "龙潭街道",
+      "average": 3819.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

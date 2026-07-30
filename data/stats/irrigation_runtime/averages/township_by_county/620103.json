@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620103001000",
+      "name": "西园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620103002000",
+      "name": "西湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620103003000",
+      "name": "建兰路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620103004000",
+      "name": "敦煌路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620103005000",
+      "name": "西站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620103006000",
+      "name": "晏家坪街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620103007000",
+      "name": "龚家湾街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620103008000",
+      "name": "土门墩街道",
+      "average": 48.3
+    },
+    {
+      "regionId": "620103009000",
+      "name": "秀川街道",
+      "average": 968.7
+    },
+    {
+      "regionId": "620103100000",
+      "name": "阿干镇",
+      "average": 914.0
+    },
+    {
+      "regionId": "620103101000",
+      "name": "八里镇",
+      "average": 2265.8
+    },
+    {
+      "regionId": "620103102000",
+      "name": "彭家坪镇",
+      "average": 1192.2
+    },
+    {
+      "regionId": "620103103000",
+      "name": "西果园镇",
+      "average": 1780.0
+    },
+    {
+      "regionId": "620103200000",
+      "name": "魏岭乡",
+      "average": 1938.6
+    },
+    {
+      "regionId": "620103201000",
+      "name": "黄峪乡",
+      "average": 2712.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

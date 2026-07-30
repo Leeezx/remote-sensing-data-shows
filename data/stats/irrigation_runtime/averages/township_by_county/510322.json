@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510322100000",
+      "name": "富世镇",
+      "average": 1627.7
+    },
+    {
+      "regionId": "510322101000",
+      "name": "东湖镇",
+      "average": 5489.1
+    },
+    {
+      "regionId": "510322102000",
+      "name": "琵琶镇",
+      "average": 4311.7
+    },
+    {
+      "regionId": "510322103000",
+      "name": "狮市镇",
+      "average": 2855.3
+    },
+    {
+      "regionId": "510322104000",
+      "name": "骑龙镇",
+      "average": 6835.0
+    },
+    {
+      "regionId": "510322107000",
+      "name": "互助镇",
+      "average": 2811.4
+    },
+    {
+      "regionId": "510322111000",
+      "name": "代寺镇",
+      "average": 8503.1
+    },
+    {
+      "regionId": "510322112000",
+      "name": "中石镇",
+      "average": 3706.5
+    },
+    {
+      "regionId": "510322113000",
+      "name": "童寺镇",
+      "average": 2260.3
+    },
+    {
+      "regionId": "510322114000",
+      "name": "古佛镇",
+      "average": 1602.2
+    },
+    {
+      "regionId": "510322115000",
+      "name": "永年镇",
+      "average": 5486.0
+    },
+    {
+      "regionId": "510322116000",
+      "name": "彭庙镇",
+      "average": 6846.8
+    },
+    {
+      "regionId": "510322117000",
+      "name": "兜山镇",
+      "average": 6709.3
+    },
+    {
+      "regionId": "510322118000",
+      "name": "板桥镇",
+      "average": 5553.9
+    },
+    {
+      "regionId": "510322119000",
+      "name": "福善镇",
+      "average": 5505.3
+    },
+    {
+      "regionId": "510322120000",
+      "name": "李桥镇",
+      "average": 7000.2
+    },
+    {
+      "regionId": "510322121000",
+      "name": "赵化镇",
+      "average": 6584.0
+    },
+    {
+      "regionId": "510322122000",
+      "name": "安溪镇",
+      "average": 8619.1
+    },
+    {
+      "regionId": "510322123000",
+      "name": "万寿镇",
+      "average": 5468.8
+    },
+    {
+      "regionId": "510322124000",
+      "name": "飞龙镇",
+      "average": 14480.9
+    },
+    {
+      "regionId": "510322125000",
+      "name": "怀德镇",
+      "average": 2730.0
+    },
+    {
+      "regionId": "510322126000",
+      "name": "长滩镇",
+      "average": 3126.1
+    },
+    {
+      "regionId": "510322200000",
+      "name": "龙万乡",
+      "average": 2963.2
+    },
+    {
+      "regionId": "510322201000",
+      "name": "宝庆乡",
+      "average": 1930.3
+    },
+    {
+      "regionId": "510322202000",
+      "name": "富和乡",
+      "average": 1884.6
+    },
+    {
+      "regionId": "510322203000",
+      "name": "石道乡",
+      "average": 5185.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 1614.95,
+      "color": "#eff3ff",
+      "label": "1614.950 万m³"
+    },
+    {
+      "value": 2754.42,
+      "color": "#bdd7e7",
+      "label": "2754.420 万m³"
+    },
+    {
+      "value": 3767.02,
+      "color": "#6baed6",
+      "label": "3767.020 万m³"
+    },
+    {
+      "value": 5488.79,
+      "color": "#3182bd",
+      "label": "5488.790 万m³"
+    },
+    {
+      "value": 6797.29,
+      "color": "#08519c",
+      "label": "6797.290 万m³"
+    },
+    {
+      "value": 11550.0,
+      "color": "#042d60",
+      "label": "11550.000 万m³"
+    }
+  ]
+}

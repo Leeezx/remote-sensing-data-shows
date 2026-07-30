@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "120115101000",
+      "name": "大口屯镇",
+      "average": 44965.6
+    },
+    {
+      "regionId": "120115113000",
+      "name": "新开口镇",
+      "average": 19307.9
+    },
+    {
+      "regionId": "120115119000",
+      "name": "牛道口镇",
+      "average": 27767.7
+    },
+    {
+      "regionId": "120115120000",
+      "name": "史各庄镇",
+      "average": 13233.8
+    },
+    {
+      "regionId": "131024100000",
+      "name": "淑阳镇",
+      "average": 11373.6
+    },
+    {
+      "regionId": "131024101000",
+      "name": "蒋辛屯镇",
+      "average": 14529.5
+    },
+    {
+      "regionId": "131024102000",
+      "name": "渠口镇",
+      "average": 519.4
+    },
+    {
+      "regionId": "131024103000",
+      "name": "安头屯镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "131024104000",
+      "name": "安平镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "131024105000",
+      "name": "刘宋镇",
+      "average": 322.8
+    },
+    {
+      "regionId": "131024106000",
+      "name": "五百户镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "131024200000",
+      "name": "钱旺乡",
+      "average": 13466.3
+    },
+    {
+      "regionId": "131024201000",
+      "name": "钳屯乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "131024500000",
+      "name": "香河开发区",
+      "average": 760.3
+    },
+    {
+      "regionId": "131024501000",
+      "name": "香河现代产业园",
+      "average": 8068.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

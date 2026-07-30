@@ -1,0 +1,63 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210505001000",
+      "name": "南芬街道",
+      "average": 18.1
+    },
+    {
+      "regionId": "210505002000",
+      "name": "铁山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210505003000",
+      "name": "郭家街道",
+      "average": 80.1
+    },
+    {
+      "regionId": "210505004000",
+      "name": "思山岭街道",
+      "average": 273.3
+    },
+    {
+      "regionId": "210505005000",
+      "name": "下马塘街道",
+      "average": 254.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 1.4480000000000002,
+      "color": "#eff3ff",
+      "label": "1.448 万m³"
+    },
+    {
+      "value": 15.3488,
+      "color": "#bdd7e7",
+      "label": "15.349 万m³"
+    },
+    {
+      "value": 56.29199999999999,
+      "color": "#6baed6",
+      "label": "56.292 万m³"
+    },
+    {
+      "value": 147.03119999999998,
+      "color": "#3182bd",
+      "label": "147.031 万m³"
+    },
+    {
+      "value": 257.2728,
+      "color": "#08519c",
+      "label": "257.273 万m³"
+    },
+    {
+      "value": 271.788,
+      "color": "#042d60",
+      "label": "271.788 万m³"
+    }
+  ]
+}

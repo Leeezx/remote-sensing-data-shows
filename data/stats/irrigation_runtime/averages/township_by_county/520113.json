@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "520113100000",
+      "name": "艳山红镇",
+      "average": 8815.5
+    },
+    {
+      "regionId": "520113101000",
+      "name": "麦架镇",
+      "average": 16896.9
+    },
+    {
+      "regionId": "520113102000",
+      "name": "沙文镇",
+      "average": 15278.8
+    },
+    {
+      "regionId": "520113200000",
+      "name": "都拉布依族乡",
+      "average": 5676.1
+    },
+    {
+      "regionId": "520113201000",
+      "name": "牛场布依族乡",
+      "average": 9075.8
+    },
+    {
+      "regionId": "520113400000",
+      "name": "红云社区服务中心",
+      "average": 252.9
+    },
+    {
+      "regionId": "520113401000",
+      "name": "大山洞社区服务中心",
+      "average": 15.2
+    },
+    {
+      "regionId": "520113402000",
+      "name": "艳山红社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520113403000",
+      "name": "铝兴社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520113404000",
+      "name": "白沙关社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520113405000",
+      "name": "都新社区服务中心",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

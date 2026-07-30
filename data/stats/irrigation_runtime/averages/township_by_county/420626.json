@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420626100000",
+      "name": "城关镇",
+      "average": 2010.4
+    },
+    {
+      "regionId": "420626101000",
+      "name": "黄堡镇",
+      "average": 2050.0
+    },
+    {
+      "regionId": "420626102000",
+      "name": "后坪镇",
+      "average": 856.9
+    },
+    {
+      "regionId": "420626103000",
+      "name": "龙坪镇",
+      "average": 79.0
+    },
+    {
+      "regionId": "420626104000",
+      "name": "店垭镇",
+      "average": 2756.9
+    },
+    {
+      "regionId": "420626105000",
+      "name": "马良镇",
+      "average": 6435.1
+    },
+    {
+      "regionId": "420626106000",
+      "name": "歇马镇",
+      "average": 7862.0
+    },
+    {
+      "regionId": "420626107000",
+      "name": "马桥镇",
+      "average": 2395.7
+    },
+    {
+      "regionId": "420626108000",
+      "name": "寺坪镇",
+      "average": 6474.8
+    },
+    {
+      "regionId": "420626109000",
+      "name": "过渡湾镇",
+      "average": 455.6
+    },
+    {
+      "regionId": "420626200000",
+      "name": "两峪乡",
+      "average": 1069.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 154.32,
+      "color": "#eff3ff",
+      "label": "154.320 万m³"
+    },
+    {
+      "value": 882.364,
+      "color": "#bdd7e7",
+      "label": "882.364 万m³"
+    },
+    {
+      "value": 2011.9840000000002,
+      "color": "#6baed6",
+      "label": "2011.984 万m³"
+    },
+    {
+      "value": 2381.872,
+      "color": "#3182bd",
+      "label": "2381.872 万m³"
+    },
+    {
+      "value": 5993.715999999997,
+      "color": "#08519c",
+      "label": "5993.716 万m³"
+    },
+    {
+      "value": 7584.560000000001,
+      "color": "#042d60",
+      "label": "7584.560 万m³"
+    }
+  ]
+}

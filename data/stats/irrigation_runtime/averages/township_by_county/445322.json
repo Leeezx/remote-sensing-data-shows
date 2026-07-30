@@ -1,0 +1,138 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "445322100000",
+      "name": "都城镇",
+      "average": 20957.7
+    },
+    {
+      "regionId": "445322101000",
+      "name": "平台镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "445322102000",
+      "name": "桂圩镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "445322104000",
+      "name": "通门镇",
+      "average": 9341.4
+    },
+    {
+      "regionId": "445322105000",
+      "name": "建城镇",
+      "average": 28431.8
+    },
+    {
+      "regionId": "445322106000",
+      "name": "宝珠镇",
+      "average": 13699.7
+    },
+    {
+      "regionId": "445322108000",
+      "name": "大方镇",
+      "average": 21548.0
+    },
+    {
+      "regionId": "445322110000",
+      "name": "千官镇",
+      "average": 33298.5
+    },
+    {
+      "regionId": "445322111000",
+      "name": "大湾镇",
+      "average": 12942.5
+    },
+    {
+      "regionId": "445322112000",
+      "name": "河口镇",
+      "average": 59505.3
+    },
+    {
+      "regionId": "445322113000",
+      "name": "宋桂镇",
+      "average": 15664.5
+    },
+    {
+      "regionId": "445322114000",
+      "name": "东坝镇",
+      "average": 38488.2
+    },
+    {
+      "regionId": "445322115000",
+      "name": "连滩镇",
+      "average": 40491.8
+    },
+    {
+      "regionId": "445322116000",
+      "name": "历洞镇",
+      "average": 15267.0
+    },
+    {
+      "regionId": "445322117000",
+      "name": "南江口镇",
+      "average": 11447.3
+    },
+    {
+      "regionId": "445322400000",
+      "name": "西江林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "445322401000",
+      "name": "通门林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "445322402000",
+      "name": "大历林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "445322403000",
+      "name": "同乐林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "450406102000",
+      "name": "广平镇",
+      "average": 40195.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

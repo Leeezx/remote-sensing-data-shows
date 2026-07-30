@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513323100000",
+      "name": "章谷镇",
+      "average": 11.8
+    },
+    {
+      "regionId": "513323101000",
+      "name": "巴底镇",
+      "average": 100.7
+    },
+    {
+      "regionId": "513323201000",
+      "name": "巴旺乡",
+      "average": 95.8
+    },
+    {
+      "regionId": "513323202000",
+      "name": "聂呷乡",
+      "average": 325.6
+    },
+    {
+      "regionId": "513323203000",
+      "name": "革什扎乡",
+      "average": 110.5
+    },
+    {
+      "regionId": "513323204000",
+      "name": "边耳乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513323205000",
+      "name": "丹东乡",
+      "average": 38.4
+    },
+    {
+      "regionId": "513323206000",
+      "name": "东谷乡",
+      "average": 63.3
+    },
+    {
+      "regionId": "513323207000",
+      "name": "水子乡",
+      "average": 57.6
+    },
+    {
+      "regionId": "513323208000",
+      "name": "格宗乡",
+      "average": 112.9
+    },
+    {
+      "regionId": "513323209000",
+      "name": "梭坡乡",
+      "average": 435.5
+    },
+    {
+      "regionId": "513323210000",
+      "name": "中路乡",
+      "average": 130.3
+    },
+    {
+      "regionId": "513323211000",
+      "name": "岳扎乡",
+      "average": 69.4
+    },
+    {
+      "regionId": "513323212000",
+      "name": "半扇门乡",
+      "average": 123.7
+    },
+    {
+      "regionId": "513323213000",
+      "name": "太平桥乡",
+      "average": 248.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 3.3040000000000007,
+      "color": "#eff3ff",
+      "label": "3.304 万m³"
+    },
+    {
+      "value": 56.9856,
+      "color": "#bdd7e7",
+      "label": "56.986 万m³"
+    },
+    {
+      "value": 86.71839999999999,
+      "color": "#6baed6",
+      "label": "86.718 万m³"
+    },
+    {
+      "value": 111.3256,
+      "color": "#3182bd",
+      "label": "111.326 万m³"
+    },
+    {
+      "value": 134.06639999999982,
+      "color": "#08519c",
+      "label": "134.066 万m³"
+    },
+    {
+      "value": 404.7279999999999,
+      "color": "#042d60",
+      "label": "404.728 万m³"
+    }
+  ]
+}

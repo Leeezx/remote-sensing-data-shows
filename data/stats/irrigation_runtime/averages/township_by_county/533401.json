@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513336206000",
+      "name": "洞松乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513337211000",
+      "name": "吉呷乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513337212000",
+      "name": "俄牙同乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513338204000",
+      "name": "奔都乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513422204000",
+      "name": "俄亚纳西族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "533401001000",
+      "name": "建塘镇",
+      "average": 2210.4
+    },
+    {
+      "regionId": "533401002000",
+      "name": "五境乡",
+      "average": 1046.2
+    },
+    {
+      "regionId": "533401003000",
+      "name": "上江乡",
+      "average": 4597.2
+    },
+    {
+      "regionId": "533401004000",
+      "name": "金江镇",
+      "average": 6368.7
+    },
+    {
+      "regionId": "533401005000",
+      "name": "虎跳峡镇",
+      "average": 7971.0
+    },
+    {
+      "regionId": "533401007000",
+      "name": "小中甸镇",
+      "average": 829.4
+    },
+    {
+      "regionId": "533401008000",
+      "name": "尼西乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "533401009000",
+      "name": "格咱乡",
+      "average": 649.0
+    },
+    {
+      "regionId": "533401010000",
+      "name": "东旺乡",
+      "average": 86.3
+    },
+    {
+      "regionId": "533401011000",
+      "name": "三坝纳西族乡",
+      "average": 4285.2
+    },
+    {
+      "regionId": "533401012000",
+      "name": "洛吉乡",
+      "average": 1554.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

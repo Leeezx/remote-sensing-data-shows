@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "621223100000",
+      "name": "城关镇",
+      "average": 1934.2
+    },
+    {
+      "regionId": "621223101000",
+      "name": "哈达铺镇",
+      "average": 487.5
+    },
+    {
+      "regionId": "621223102000",
+      "name": "理川镇",
+      "average": 457.9
+    },
+    {
+      "regionId": "621223103000",
+      "name": "南阳镇",
+      "average": 979.7
+    },
+    {
+      "regionId": "621223104000",
+      "name": "官亭镇",
+      "average": 1416.8
+    },
+    {
+      "regionId": "621223105000",
+      "name": "沙湾镇",
+      "average": 4068.5
+    },
+    {
+      "regionId": "621223200000",
+      "name": "阿坞乡",
+      "average": 104.2
+    },
+    {
+      "regionId": "621223204000",
+      "name": "南河乡",
+      "average": 647.2
+    },
+    {
+      "regionId": "621223205000",
+      "name": "八力乡",
+      "average": 67.4
+    },
+    {
+      "regionId": "621223206000",
+      "name": "木耳乡",
+      "average": 5.8
+    },
+    {
+      "regionId": "621223207000",
+      "name": "庞家乡",
+      "average": 21.7
+    },
+    {
+      "regionId": "621223209000",
+      "name": "何家堡乡",
+      "average": 835.6
+    },
+    {
+      "regionId": "621223211000",
+      "name": "贾河乡",
+      "average": 159.8
+    },
+    {
+      "regionId": "621223212000",
+      "name": "将台乡",
+      "average": 4.3
+    },
+    {
+      "regionId": "621223213000",
+      "name": "车拉乡",
+      "average": 338.7
+    },
+    {
+      "regionId": "621223214000",
+      "name": "新城子藏族乡",
+      "average": 996.5
+    },
+    {
+      "regionId": "621223215000",
+      "name": "临江乡",
+      "average": 2119.7
+    },
+    {
+      "regionId": "621223216000",
+      "name": "好梯乡",
+      "average": 604.7
+    },
+    {
+      "regionId": "621223217000",
+      "name": "韩院乡",
+      "average": 1251.1
+    },
+    {
+      "regionId": "621223218000",
+      "name": "竹院乡",
+      "average": 1295.4
+    },
+    {
+      "regionId": "621223219000",
+      "name": "兴化乡",
+      "average": 381.7
+    },
+    {
+      "regionId": "621223220000",
+      "name": "甘江头乡",
+      "average": 876.0
+    },
+    {
+      "regionId": "621223223000",
+      "name": "新寨乡",
+      "average": 672.6
+    },
+    {
+      "regionId": "621223224000",
+      "name": "狮子乡",
+      "average": 552.4
+    },
+    {
+      "regionId": "621223225000",
+      "name": "两河口乡",
+      "average": 1564.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 5.02,
+      "color": "#eff3ff",
+      "label": "5.020 万m³"
+    },
+    {
+      "value": 175.5432,
+      "color": "#bdd7e7",
+      "label": "175.543 万m³"
+    },
+    {
+      "value": 532.6704,
+      "color": "#6baed6",
+      "label": "532.670 万m³"
+    },
+    {
+      "value": 847.8815999999999,
+      "color": "#3182bd",
+      "label": "847.882 万m³"
+    },
+    {
+      "value": 1291.5016,
+      "color": "#08519c",
+      "label": "1291.502 万m³"
+    },
+    {
+      "value": 3133.075999999999,
+      "color": "#042d60",
+      "label": "3133.076 万m³"
+    }
+  ]
+}

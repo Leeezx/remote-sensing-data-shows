@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "120106001000",
+      "name": "西于庄街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120106003000",
+      "name": "咸阳北路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120106004000",
+      "name": "丁字沽街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120106005000",
+      "name": "西沽街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120106006000",
+      "name": "三条石街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120106008000",
+      "name": "邵公庄街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120106009000",
+      "name": "芥园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120106010000",
+      "name": "铃铛阁街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120106011000",
+      "name": "大胡同街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "120111001000",
+      "name": "西营门街道",
+      "average": 103.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

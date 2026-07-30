@@ -1,0 +1,263 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "520526100000",
+      "name": "草海镇",
+      "average": 14718.3
+    },
+    {
+      "regionId": "520526101000",
+      "name": "么站镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520526102000",
+      "name": "金钟镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520526103000",
+      "name": "炉山镇",
+      "average": 6074.2
+    },
+    {
+      "regionId": "520526104000",
+      "name": "龙场镇",
+      "average": 125.6
+    },
+    {
+      "regionId": "520526105000",
+      "name": "黑石头镇",
+      "average": 5402.4
+    },
+    {
+      "regionId": "520526106000",
+      "name": "哲觉镇",
+      "average": 149.5
+    },
+    {
+      "regionId": "520526107000",
+      "name": "观风海镇",
+      "average": 7214.1
+    },
+    {
+      "regionId": "520526108000",
+      "name": "牛棚镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520526109000",
+      "name": "迤那镇",
+      "average": 8252.1
+    },
+    {
+      "regionId": "520526110000",
+      "name": "中水镇",
+      "average": 66.8
+    },
+    {
+      "regionId": "520526111000",
+      "name": "龙街镇",
+      "average": 6739.3
+    },
+    {
+      "regionId": "520526112000",
+      "name": "雪山镇",
+      "average": 7073.2
+    },
+    {
+      "regionId": "520526113000",
+      "name": "羊街镇",
+      "average": 5420.1
+    },
+    {
+      "regionId": "520526114000",
+      "name": "小海镇",
+      "average": 11534.2
+    },
+    {
+      "regionId": "520526115000",
+      "name": "盐仓镇",
+      "average": 1956.8
+    },
+    {
+      "regionId": "520526116000",
+      "name": "东风镇",
+      "average": 5873.3
+    },
+    {
+      "regionId": "520526117000",
+      "name": "二塘镇",
+      "average": 5096.4
+    },
+    {
+      "regionId": "520526118000",
+      "name": "猴场镇",
+      "average": 5557.4
+    },
+    {
+      "regionId": "520526200000",
+      "name": "金斗乡",
+      "average": 86.9
+    },
+    {
+      "regionId": "520526201000",
+      "name": "新发布依族乡",
+      "average": 20.0
+    },
+    {
+      "regionId": "520526202000",
+      "name": "岔河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520526203000",
+      "name": "麻乍镇",
+      "average": 48.8
+    },
+    {
+      "regionId": "520526204000",
+      "name": "海拉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520526205000",
+      "name": "哈喇河乡",
+      "average": 1350.4
+    },
+    {
+      "regionId": "520526206000",
+      "name": "秀水镇",
+      "average": 7624.1
+    },
+    {
+      "regionId": "520526207000",
+      "name": "斗古乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520526208000",
+      "name": "玉龙乡",
+      "average": 364.0
+    },
+    {
+      "regionId": "520526209000",
+      "name": "黑土河乡",
+      "average": 1119.8
+    },
+    {
+      "regionId": "520526210000",
+      "name": "石门乡",
+      "average": 114.8
+    },
+    {
+      "regionId": "520526211000",
+      "name": "云贵乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520526212000",
+      "name": "兔街乡",
+      "average": 1554.7
+    },
+    {
+      "regionId": "520526213000",
+      "name": "双龙乡",
+      "average": 5125.0
+    },
+    {
+      "regionId": "520526214000",
+      "name": "板底乡",
+      "average": 1732.5
+    },
+    {
+      "regionId": "520526215000",
+      "name": "大街乡",
+      "average": 1301.0
+    },
+    {
+      "regionId": "530326105000",
+      "name": "矿山镇",
+      "average": 263.0
+    },
+    {
+      "regionId": "530326107000",
+      "name": "大井镇",
+      "average": 1669.0
+    },
+    {
+      "regionId": "530326206000",
+      "name": "马路乡",
+      "average": 4897.8
+    },
+    {
+      "regionId": "530326207000",
+      "name": "火红乡",
+      "average": 609.8
+    },
+    {
+      "regionId": "530381203000",
+      "name": "得禄乡",
+      "average": 2012.7
+    },
+    {
+      "regionId": "530381204000",
+      "name": "杨柳乡",
+      "average": 826.1
+    },
+    {
+      "regionId": "530381205000",
+      "name": "双河乡",
+      "average": 982.9
+    },
+    {
+      "regionId": "530602201000",
+      "name": "布嘎回族乡",
+      "average": 25850.6
+    },
+    {
+      "regionId": "530621105000",
+      "name": "江底镇",
+      "average": 4235.7
+    },
+    {
+      "regionId": "530628102000",
+      "name": "洛泽河镇",
+      "average": 6370.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 73.3928,
+      "color": "#bdd7e7",
+      "label": "73.393 万m³"
+    },
+    {
+      "value": 947.7768,
+      "color": "#6baed6",
+      "label": "947.777 万m³"
+    },
+    {
+      "value": 2510.6520000000005,
+      "color": "#3182bd",
+      "label": "2510.652 万m³"
+    },
+    {
+      "value": 6008.304799999999,
+      "color": "#08519c",
+      "label": "6008.305 万m³"
+    },
+    {
+      "value": 16054.17599999997,
+      "color": "#042d60",
+      "label": "16054.176 万m³"
+    }
+  ]
+}

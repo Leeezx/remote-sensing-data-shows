@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620104001000",
+      "name": "陈坪街道",
+      "average": 666.6
+    },
+    {
+      "regionId": "620104002000",
+      "name": "先锋路街道",
+      "average": 22.0
+    },
+    {
+      "regionId": "620104003000",
+      "name": "福利路街道",
+      "average": 11.9
+    },
+    {
+      "regionId": "620104004000",
+      "name": "西固城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620104005000",
+      "name": "四季青街道",
+      "average": 466.0
+    },
+    {
+      "regionId": "620104006000",
+      "name": "临洮街街道",
+      "average": 34.4
+    },
+    {
+      "regionId": "620104007000",
+      "name": "西柳沟街道",
+      "average": 361.6
+    },
+    {
+      "regionId": "620104100000",
+      "name": "新城镇",
+      "average": 919.8
+    },
+    {
+      "regionId": "620104101000",
+      "name": "东川镇",
+      "average": 1354.9
+    },
+    {
+      "regionId": "620104200000",
+      "name": "达川乡",
+      "average": 1429.0
+    },
+    {
+      "regionId": "620104201000",
+      "name": "河口乡",
+      "average": 879.8
+    },
+    {
+      "regionId": "620104203000",
+      "name": "柳泉乡",
+      "average": 1127.6
+    },
+    {
+      "regionId": "620104204000",
+      "name": "金沟乡",
+      "average": 1339.2
+    },
+    {
+      "regionId": "620104400000",
+      "name": "新安路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620104401000",
+      "name": "新和路街道",
+      "average": 50.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 21.6768,
+      "color": "#bdd7e7",
+      "label": "21.677 万m³"
+    },
+    {
+      "value": 254.40959999999993,
+      "color": "#6baed6",
+      "label": "254.410 万m³"
+    },
+    {
+      "value": 739.9407999999999,
+      "color": "#3182bd",
+      "label": "739.941 万m³"
+    },
+    {
+      "value": 1134.3711999999996,
+      "color": "#08519c",
+      "label": "1134.371 万m³"
+    },
+    {
+      "value": 1408.252,
+      "color": "#042d60",
+      "label": "1408.252 万m³"
+    }
+  ]
+}

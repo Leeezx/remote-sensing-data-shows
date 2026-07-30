@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540502100000",
+      "name": "泽当镇",
+      "average": 5498.3
+    },
+    {
+      "regionId": "540502101000",
+      "name": "昌珠镇",
+      "average": 6757.2
+    },
+    {
+      "regionId": "540502200000",
+      "name": "颇章乡",
+      "average": 5993.5
+    },
+    {
+      "regionId": "540502201000",
+      "name": "结巴乡",
+      "average": 3603.8
+    },
+    {
+      "regionId": "540502202000",
+      "name": "多颇章乡",
+      "average": 1185.5
+    },
+    {
+      "regionId": "540502203000",
+      "name": "索珠乡",
+      "average": 2509.5
+    },
+    {
+      "regionId": "540502204000",
+      "name": "亚堆乡",
+      "average": 1889.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 1269.92,
+      "color": "#eff3ff",
+      "label": "1269.920 万m³"
+    },
+    {
+      "value": 2057.776,
+      "color": "#bdd7e7",
+      "label": "2057.776 万m³"
+    },
+    {
+      "value": 2973.4832,
+      "color": "#6baed6",
+      "label": "2973.483 万m³"
+    },
+    {
+      "value": 4695.031999999999,
+      "color": "#3182bd",
+      "label": "4695.032 万m³"
+    },
+    {
+      "value": 5858.8056,
+      "color": "#08519c",
+      "label": "5858.806 万m³"
+    },
+    {
+      "value": 6665.556,
+      "color": "#042d60",
+      "label": "6665.556 万m³"
+    }
+  ]
+}

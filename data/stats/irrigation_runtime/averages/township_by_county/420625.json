@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420625100000",
+      "name": "城关镇",
+      "average": 20381.6
+    },
+    {
+      "regionId": "420625101000",
+      "name": "石花镇",
+      "average": 33186.2
+    },
+    {
+      "regionId": "420625102000",
+      "name": "盛康镇",
+      "average": 22356.1
+    },
+    {
+      "regionId": "420625103000",
+      "name": "庙滩镇",
+      "average": 28304.5
+    },
+    {
+      "regionId": "420625104000",
+      "name": "五山镇",
+      "average": 8546.6
+    },
+    {
+      "regionId": "420625105000",
+      "name": "茨河镇",
+      "average": 9349.0
+    },
+    {
+      "regionId": "420625106000",
+      "name": "南河镇",
+      "average": 1442.8
+    },
+    {
+      "regionId": "420625107000",
+      "name": "紫金镇",
+      "average": 2747.6
+    },
+    {
+      "regionId": "420625108000",
+      "name": "冷集镇",
+      "average": 24001.1
+    },
+    {
+      "regionId": "420625200000",
+      "name": "赵湾乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420625500000",
+      "name": "薤山林场",
+      "average": 188.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 37.72,
+      "color": "#eff3ff",
+      "label": "37.720 万m³"
+    },
+    {
+      "value": 1599.3760000000002,
+      "color": "#bdd7e7",
+      "label": "1599.376 万m³"
+    },
+    {
+      "value": 8578.696,
+      "color": "#6baed6",
+      "label": "8578.696 万m³"
+    },
+    {
+      "value": 19940.296,
+      "color": "#3182bd",
+      "label": "19940.296 万m³"
+    },
+    {
+      "value": 23803.699999999997,
+      "color": "#08519c",
+      "label": "23803.700 万m³"
+    },
+    {
+      "value": 32209.86,
+      "color": "#042d60",
+      "label": "32209.860 万m³"
+    }
+  ]
+}

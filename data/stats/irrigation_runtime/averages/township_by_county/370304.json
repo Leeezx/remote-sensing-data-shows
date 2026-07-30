@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "370304001000",
+      "name": "城东街道",
+      "average": 63.9
+    },
+    {
+      "regionId": "370304002000",
+      "name": "城西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370304004000",
+      "name": "山头街道",
+      "average": 480.2
+    },
+    {
+      "regionId": "370304102000",
+      "name": "域城镇",
+      "average": 1255.7
+    },
+    {
+      "regionId": "370304103000",
+      "name": "白塔镇",
+      "average": 527.2
+    },
+    {
+      "regionId": "370304106000",
+      "name": "八陡镇",
+      "average": 159.1
+    },
+    {
+      "regionId": "370304108000",
+      "name": "石马镇",
+      "average": 1566.7
+    },
+    {
+      "regionId": "370304111000",
+      "name": "源泉镇",
+      "average": 4007.3
+    },
+    {
+      "regionId": "370304112000",
+      "name": "池上镇",
+      "average": 4418.3
+    },
+    {
+      "regionId": "370304113000",
+      "name": "博山镇",
+      "average": 7633.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 11.501999999999999,
+      "color": "#eff3ff",
+      "label": "11.502 万m³"
+    },
+    {
+      "value": 150.3416,
+      "color": "#bdd7e7",
+      "label": "150.342 万m³"
+    },
+    {
+      "value": 510.092,
+      "color": "#6baed6",
+      "label": "510.092 万m³"
+    },
+    {
+      "value": 1368.904,
+      "color": "#3182bd",
+      "label": "1368.904 万m³"
+    },
+    {
+      "value": 4045.112,
+      "color": "#08519c",
+      "label": "4045.112 万m³"
+    },
+    {
+      "value": 7054.518000000001,
+      "color": "#042d60",
+      "label": "7054.518 万m³"
+    }
+  ]
+}

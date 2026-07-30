@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513301100000",
+      "name": "炉城镇",
+      "average": 54.7
+    },
+    {
+      "regionId": "513301101000",
+      "name": "姑咱镇",
+      "average": 37.5
+    },
+    {
+      "regionId": "513301102000",
+      "name": "新都桥镇",
+      "average": 3.2
+    },
+    {
+      "regionId": "513301201000",
+      "name": "雅拉乡",
+      "average": 60.7
+    },
+    {
+      "regionId": "513301202000",
+      "name": "时济乡",
+      "average": 16.1
+    },
+    {
+      "regionId": "513301203000",
+      "name": "前溪乡",
+      "average": 106.3
+    },
+    {
+      "regionId": "513301204000",
+      "name": "舍联乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513301205000",
+      "name": "麦崩乡",
+      "average": 107.5
+    },
+    {
+      "regionId": "513301206000",
+      "name": "三合乡",
+      "average": 38.2
+    },
+    {
+      "regionId": "513301207000",
+      "name": "金汤镇",
+      "average": 84.3
+    },
+    {
+      "regionId": "513301208000",
+      "name": "捧塔乡",
+      "average": 20.5
+    },
+    {
+      "regionId": "513301209000",
+      "name": "沙德镇",
+      "average": 31.5
+    },
+    {
+      "regionId": "513301210000",
+      "name": "贡嘎山乡",
+      "average": 132.3
+    },
+    {
+      "regionId": "513301211000",
+      "name": "普沙绒乡",
+      "average": 119.2
+    },
+    {
+      "regionId": "513301212000",
+      "name": "吉居乡",
+      "average": 2.1
+    },
+    {
+      "regionId": "513301213000",
+      "name": "瓦泽乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513301214000",
+      "name": "呷巴乡",
+      "average": 43.0
+    },
+    {
+      "regionId": "513301215000",
+      "name": "甲根坝乡",
+      "average": 80.4
+    },
+    {
+      "regionId": "513301216000",
+      "name": "朋布西乡",
+      "average": 47.8
+    },
+    {
+      "regionId": "513301217000",
+      "name": "塔公镇",
+      "average": 2.6
+    },
+    {
+      "regionId": "513301218000",
+      "name": "孔玉乡",
+      "average": 166.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 6.296000000000003,
+      "color": "#bdd7e7",
+      "label": "6.296 万m³"
+    },
+    {
+      "value": 37.556,
+      "color": "#6baed6",
+      "label": "37.556 万m³"
+    },
+    {
+      "value": 54.148,
+      "color": "#3182bd",
+      "label": "54.148 万m³"
+    },
+    {
+      "value": 101.01999999999995,
+      "color": "#08519c",
+      "label": "101.020 万m³"
+    },
+    {
+      "value": 152.94000000000005,
+      "color": "#042d60",
+      "label": "152.940 万m³"
+    }
+  ]
+}

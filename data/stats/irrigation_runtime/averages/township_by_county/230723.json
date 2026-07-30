@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230712002000",
+      "name": "河北街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230712400000",
+      "name": "日新林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230712401000",
+      "name": "石林林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230712402000",
+      "name": "东升林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230712403000",
+      "name": "二龙山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230712404000",
+      "name": "高峰林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230712405000",
+      "name": "二清河林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230712408000",
+      "name": "峻岭林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230712412000",
+      "name": "中心苗卜",
+      "average": 0.0
+    },
+    {
+      "regionId": "230714001000",
+      "name": "乌伊岭街道",
+      "average": 5.6
+    },
+    {
+      "regionId": "230714400000",
+      "name": "上游林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230714401000",
+      "name": "美峰林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230714403000",
+      "name": "建新林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230714404000",
+      "name": "移山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230714405000",
+      "name": "林海林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230714406000",
+      "name": "桔源经营所",
+      "average": 0.0
+    },
+    {
+      "regionId": "230714410000",
+      "name": "永胜经营所",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

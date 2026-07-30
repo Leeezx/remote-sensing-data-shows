@@ -1,0 +1,158 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "330112002000",
+      "name": "玲珑街道",
+      "average": 13245.0
+    },
+    {
+      "regionId": "330112005000",
+      "name": "锦南街道",
+      "average": 4359.0
+    },
+    {
+      "regionId": "330112006000",
+      "name": "锦城街道",
+      "average": 12259.4
+    },
+    {
+      "regionId": "330112007000",
+      "name": "锦北街道",
+      "average": 15072.3
+    },
+    {
+      "regionId": "330112008000",
+      "name": "青山湖街道",
+      "average": 35274.6
+    },
+    {
+      "regionId": "330112102000",
+      "name": "高虹镇",
+      "average": 13504.9
+    },
+    {
+      "regionId": "330112103000",
+      "name": "太湖源镇",
+      "average": 27325.2
+    },
+    {
+      "regionId": "330112104000",
+      "name": "於潜镇",
+      "average": 34655.0
+    },
+    {
+      "regionId": "330112106000",
+      "name": "太阳镇",
+      "average": 19629.5
+    },
+    {
+      "regionId": "330112107000",
+      "name": "潜川镇",
+      "average": 25299.0
+    },
+    {
+      "regionId": "330112108000",
+      "name": "昌化镇",
+      "average": 17150.8
+    },
+    {
+      "regionId": "330112109000",
+      "name": "河桥镇",
+      "average": 34927.8
+    },
+    {
+      "regionId": "330112111000",
+      "name": "湍口镇",
+      "average": 13643.9
+    },
+    {
+      "regionId": "330112112000",
+      "name": "清凉峰镇",
+      "average": 25354.0
+    },
+    {
+      "regionId": "330112113000",
+      "name": "岛石镇",
+      "average": 15735.6
+    },
+    {
+      "regionId": "330112115000",
+      "name": "板桥镇",
+      "average": 11348.0
+    },
+    {
+      "regionId": "330112116000",
+      "name": "天目山镇",
+      "average": 26221.1
+    },
+    {
+      "regionId": "330112117000",
+      "name": "龙岗镇",
+      "average": 31236.2
+    },
+    {
+      "regionId": "341021205000",
+      "name": "三阳乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341824203000",
+      "name": "荆州乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341881105000",
+      "name": "甲路镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341881106000",
+      "name": "胡乐镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341881201000",
+      "name": "南极乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341881202000",
+      "name": "万家乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "520103100000",
+      "name": "黔灵镇",
+      "average": 676.2
+    },
+    {
+      "regionId": "520103400000",
+      "name": "中华社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103401000",
+      "name": "中环社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103402000",
+      "name": "中东社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103403000",
+      "name": "东山社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103404000",
+      "name": "延中社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103405000",
+      "name": "市西社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103406000",
+      "name": "威清社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103407000",
+      "name": "普陀社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103408000",
+      "name": "北京路社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103409000",
+      "name": "栖霞社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103410000",
+      "name": "黔东社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103411000",
+      "name": "宅吉社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103412000",
+      "name": "省府社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103413000",
+      "name": "金狮社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103414000",
+      "name": "中天社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103415000",
+      "name": "贵乌社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103416000",
+      "name": "头桥社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103417000",
+      "name": "金龙社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103418000",
+      "name": "圣泉社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103419000",
+      "name": "三桥社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103420000",
+      "name": "金关社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103421000",
+      "name": "蔡关社区服务中心",
+      "average": 165.9
+    },
+    {
+      "regionId": "520103422000",
+      "name": "荷塘社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103423000",
+      "name": "普天社区服务中心",
+      "average": 17.4
+    },
+    {
+      "regionId": "520103424000",
+      "name": "金鸭社区服务中心",
+      "average": 0.0
+    },
+    {
+      "regionId": "520103425000",
+      "name": "金惠社区服务中心",
+      "average": 1729.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

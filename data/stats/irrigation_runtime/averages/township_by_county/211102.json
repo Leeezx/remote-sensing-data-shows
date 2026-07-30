@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "211102001000",
+      "name": "东风街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211102002000",
+      "name": "胜利街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211102003000",
+      "name": "建设街道",
+      "average": 14.6
+    },
+    {
+      "regionId": "211102004000",
+      "name": "红旗街道",
+      "average": 11.0
+    },
+    {
+      "regionId": "211102005000",
+      "name": "辽河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211102007000",
+      "name": "化工街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "211102008000",
+      "name": "铁东街道",
+      "average": 4910.4
+    },
+    {
+      "regionId": "211102009000",
+      "name": "双盛街道",
+      "average": 879.2
+    },
+    {
+      "regionId": "211102201000",
+      "name": "陆家乡",
+      "average": 2324.2
+    },
+    {
+      "regionId": "211102400000",
+      "name": "双台子区良种场",
+      "average": 274.0
+    },
+    {
+      "regionId": "211122400000",
+      "name": "盘山县林场",
+      "average": 26.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

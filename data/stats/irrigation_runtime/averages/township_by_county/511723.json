@@ -1,0 +1,163 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500101145000",
+      "name": "余家镇",
+      "average": 31085.5
+    },
+    {
+      "regionId": "500154112000",
+      "name": "南雅镇",
+      "average": 6546.2
+    },
+    {
+      "regionId": "500154142000",
+      "name": "巫山镇",
+      "average": 11807.9
+    },
+    {
+      "regionId": "500155107000",
+      "name": "新盛镇",
+      "average": 14774.2
+    },
+    {
+      "regionId": "500155119000",
+      "name": "文化镇",
+      "average": 8742.1
+    },
+    {
+      "regionId": "511723100000",
+      "name": "新宁镇",
+      "average": 9182.0
+    },
+    {
+      "regionId": "511723101000",
+      "name": "普安镇",
+      "average": 14004.1
+    },
+    {
+      "regionId": "511723102000",
+      "name": "回龙镇",
+      "average": 5004.6
+    },
+    {
+      "regionId": "511723103000",
+      "name": "天师镇",
+      "average": 4621.9
+    },
+    {
+      "regionId": "511723104000",
+      "name": "永兴镇",
+      "average": 7978.9
+    },
+    {
+      "regionId": "511723105000",
+      "name": "讲治镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511723106000",
+      "name": "甘棠镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511723107000",
+      "name": "任市镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511723108000",
+      "name": "广福镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511723109000",
+      "name": "长岭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511723200000",
+      "name": "长田乡",
+      "average": 6877.1
+    },
+    {
+      "regionId": "511723201000",
+      "name": "骑龙乡",
+      "average": 5014.0
+    },
+    {
+      "regionId": "511723202000",
+      "name": "新太乡",
+      "average": 5704.8
+    },
+    {
+      "regionId": "511723203000",
+      "name": "灵岩乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511723204000",
+      "name": "沙坝场乡",
+      "average": 2610.7
+    },
+    {
+      "regionId": "511723205000",
+      "name": "梅家乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511723206000",
+      "name": "宝石乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511723207000",
+      "name": "靖安乡",
+      "average": 15334.8
+    },
+    {
+      "regionId": "511723208000",
+      "name": "新街乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511723209000",
+      "name": "拔妙乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

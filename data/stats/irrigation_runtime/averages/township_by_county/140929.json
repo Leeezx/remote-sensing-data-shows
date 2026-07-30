@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140929100000",
+      "name": "岚漪镇",
+      "average": 577.2
+    },
+    {
+      "regionId": "140929101000",
+      "name": "三井镇",
+      "average": 887.1
+    },
+    {
+      "regionId": "140929200000",
+      "name": "神堂坪乡",
+      "average": 543.5
+    },
+    {
+      "regionId": "140929201000",
+      "name": "高家会乡",
+      "average": 307.2
+    },
+    {
+      "regionId": "140929202000",
+      "name": "李家沟乡",
+      "average": 224.8
+    },
+    {
+      "regionId": "140929203000",
+      "name": "水峪贯乡",
+      "average": 372.3
+    },
+    {
+      "regionId": "140929204000",
+      "name": "西豹峪乡",
+      "average": 821.5
+    },
+    {
+      "regionId": "140929205000",
+      "name": "温泉乡",
+      "average": 236.3
+    },
+    {
+      "regionId": "140929206000",
+      "name": "阳坪乡",
+      "average": 127.2
+    },
+    {
+      "regionId": "140929207000",
+      "name": "大涧乡",
+      "average": 114.6
+    },
+    {
+      "regionId": "140929209000",
+      "name": "王家岔乡",
+      "average": 271.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 117.11999999999999,
+      "color": "#eff3ff",
+      "label": "117.120 万m³"
+    },
+    {
+      "value": 226.18,
+      "color": "#bdd7e7",
+      "label": "226.180 万m³"
+    },
+    {
+      "value": 273.216,
+      "color": "#6baed6",
+      "label": "273.216 万m³"
+    },
+    {
+      "value": 369.696,
+      "color": "#3182bd",
+      "label": "369.696 万m³"
+    },
+    {
+      "value": 573.1560000000001,
+      "color": "#08519c",
+      "label": "573.156 万m³"
+    },
+    {
+      "value": 873.98,
+      "color": "#042d60",
+      "label": "873.980 万m³"
+    }
+  ]
+}

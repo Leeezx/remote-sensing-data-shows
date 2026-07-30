@@ -1,0 +1,148 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130302001000",
+      "name": "文化路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130302002000",
+      "name": "海滨路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130302003000",
+      "name": "北环路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130302004000",
+      "name": "建设大街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130302005000",
+      "name": "河东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130302006000",
+      "name": "西港路街道",
+      "average": 46.3
+    },
+    {
+      "regionId": "130302007000",
+      "name": "燕山大街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130302008000",
+      "name": "港城大街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130302009000",
+      "name": "东环路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130302010000",
+      "name": "白塔岭街道",
+      "average": 23.9
+    },
+    {
+      "regionId": "130302011000",
+      "name": "珠江道街道",
+      "average": 17.0
+    },
+    {
+      "regionId": "130302012000",
+      "name": "黄河道街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130302100000",
+      "name": "东港镇",
+      "average": 255.8
+    },
+    {
+      "regionId": "130302101000",
+      "name": "海港镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130302102000",
+      "name": "西港镇",
+      "average": 418.0
+    },
+    {
+      "regionId": "130302103000",
+      "name": "海阳镇",
+      "average": 887.1
+    },
+    {
+      "regionId": "130302104000",
+      "name": "北港镇",
+      "average": 1128.8
+    },
+    {
+      "regionId": "130302402000",
+      "name": "北部工业区",
+      "average": 91.6
+    },
+    {
+      "regionId": "130302403000",
+      "name": "临港物流园区",
+      "average": 94.6
+    },
+    {
+      "regionId": "130306104000",
+      "name": "石门寨镇",
+      "average": 1951.9
+    },
+    {
+      "regionId": "130306107000",
+      "name": "驻操营镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130306108000",
+      "name": "杜庄镇",
+      "average": 2137.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

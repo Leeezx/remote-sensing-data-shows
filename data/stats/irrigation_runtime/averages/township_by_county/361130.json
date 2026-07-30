@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "341022103000",
+      "name": "五城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341022108000",
+      "name": "汪村镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341022204000",
+      "name": "板桥乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341022205000",
+      "name": "陈霞乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "361130001000",
+      "name": "蚺城街道",
+      "average": 7779.7
+    },
+    {
+      "regionId": "361130100000",
+      "name": "紫阳镇",
+      "average": 99054.8
+    },
+    {
+      "regionId": "361130101000",
+      "name": "清华镇",
+      "average": 9276.4
+    },
+    {
+      "regionId": "361130102000",
+      "name": "秋口镇",
+      "average": 25650.3
+    },
+    {
+      "regionId": "361130103000",
+      "name": "江湾镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "361130104000",
+      "name": "思口镇",
+      "average": 10679.8
+    },
+    {
+      "regionId": "361130106000",
+      "name": "赋春镇",
+      "average": 48512.7
+    },
+    {
+      "regionId": "361130107000",
+      "name": "镇头镇",
+      "average": 31991.6
+    },
+    {
+      "regionId": "361130109000",
+      "name": "太白镇",
+      "average": 45060.7
+    },
+    {
+      "regionId": "361130110000",
+      "name": "中云镇",
+      "average": 45057.9
+    },
+    {
+      "regionId": "361130111000",
+      "name": "许村镇",
+      "average": 44924.9
+    },
+    {
+      "regionId": "361130200000",
+      "name": "溪头乡",
+      "average": 9350.3
+    },
+    {
+      "regionId": "361130201000",
+      "name": "段莘乡",
+      "average": 12009.6
+    },
+    {
+      "regionId": "361130204000",
+      "name": "浙源乡",
+      "average": 7426.4
+    },
+    {
+      "regionId": "361130205000",
+      "name": "沱川乡",
+      "average": 2404.9
+    },
+    {
+      "regionId": "361130206000",
+      "name": "大鄣山乡",
+      "average": 9348.8
+    },
+    {
+      "regionId": "361130208000",
+      "name": "珍珠山乡",
+      "average": 16779.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 577.1760000000005,
+      "color": "#bdd7e7",
+      "label": "577.176 万m³"
+    },
+    {
+      "value": 9282.192,
+      "color": "#6baed6",
+      "label": "9282.192 万m³"
+    },
+    {
+      "value": 11903.216,
+      "color": "#3182bd",
+      "label": "11903.216 万m³"
+    },
+    {
+      "value": 41820.907999999974,
+      "color": "#08519c",
+      "label": "41820.908 万m³"
+    },
+    {
+      "value": 78837.96000000008,
+      "color": "#042d60",
+      "label": "78837.960 万m³"
+    }
+  ]
+}

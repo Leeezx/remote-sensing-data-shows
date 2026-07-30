@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "469029100000",
+      "name": "保城镇",
+      "average": 8969.1
+    },
+    {
+      "regionId": "469029101000",
+      "name": "什玲镇",
+      "average": 4912.0
+    },
+    {
+      "regionId": "469029102000",
+      "name": "加茂镇",
+      "average": 11502.6
+    },
+    {
+      "regionId": "469029103000",
+      "name": "响水镇",
+      "average": 7698.0
+    },
+    {
+      "regionId": "469029104000",
+      "name": "新政镇",
+      "average": 6144.8
+    },
+    {
+      "regionId": "469029105000",
+      "name": "三道镇",
+      "average": 10709.2
+    },
+    {
+      "regionId": "469029200000",
+      "name": "六弓乡",
+      "average": 1359.7
+    },
+    {
+      "regionId": "469029201000",
+      "name": "南林乡",
+      "average": 1839.8
+    },
+    {
+      "regionId": "469029202000",
+      "name": "毛感乡",
+      "average": 2207.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 1436.516,
+      "color": "#eff3ff",
+      "label": "1436.516 万m³"
+    },
+    {
+      "value": 2095.7192,
+      "color": "#bdd7e7",
+      "label": "2095.719 万m³"
+    },
+    {
+      "value": 5198.009599999999,
+      "color": "#6baed6",
+      "label": "5198.010 万m³"
+    },
+    {
+      "value": 7337.6576,
+      "color": "#3182bd",
+      "label": "7337.658 万m³"
+    },
+    {
+      "value": 9498.0904,
+      "color": "#08519c",
+      "label": "9498.090 万m³"
+    },
+    {
+      "value": 11375.656,
+      "color": "#042d60",
+      "label": "11375.656 万m³"
+    }
+  ]
+}

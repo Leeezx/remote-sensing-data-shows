@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513335203000",
+      "name": "中心绒乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513335206000",
+      "name": "地巫乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513338201000",
+      "name": "徐龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513338202000",
+      "name": "日龙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513338203000",
+      "name": "曲雅贡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "533422001000",
+      "name": "升平镇",
+      "average": 707.8
+    },
+    {
+      "regionId": "533422002000",
+      "name": "奔子栏镇",
+      "average": 152.0
+    },
+    {
+      "regionId": "533422003000",
+      "name": "云岭乡",
+      "average": 672.6
+    },
+    {
+      "regionId": "533422004000",
+      "name": "霞若傈僳族乡",
+      "average": 3063.0
+    },
+    {
+      "regionId": "533422005000",
+      "name": "佛山乡",
+      "average": 148.5
+    },
+    {
+      "regionId": "533422006000",
+      "name": "拖顶傈僳族乡",
+      "average": 1608.3
+    },
+    {
+      "regionId": "533422007000",
+      "name": "燕门乡",
+      "average": 2960.1
+    },
+    {
+      "regionId": "533422008000",
+      "name": "羊拉乡",
+      "average": 700.4
+    },
+    {
+      "regionId": "533423009000",
+      "name": "叶枝镇",
+      "average": 6716.4
+    },
+    {
+      "regionId": "533423010000",
+      "name": "巴迪乡",
+      "average": 6410.0
+    },
+    {
+      "regionId": "540328202000",
+      "name": "纳西民族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540328205000",
+      "name": "徐中乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540328213000",
+      "name": "索多西乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

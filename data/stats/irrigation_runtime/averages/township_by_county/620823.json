@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620823001000",
+      "name": "锦屏街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "620823100000",
+      "name": "锦屏镇",
+      "average": 2307.2
+    },
+    {
+      "regionId": "620823101000",
+      "name": "新窑镇",
+      "average": 23.6
+    },
+    {
+      "regionId": "620823200000",
+      "name": "柏树乡",
+      "average": 773.7
+    },
+    {
+      "regionId": "620823201000",
+      "name": "黄寨乡",
+      "average": 1327.5
+    },
+    {
+      "regionId": "620823202000",
+      "name": "黄花乡",
+      "average": 1780.6
+    },
+    {
+      "regionId": "620823203000",
+      "name": "木林乡",
+      "average": 140.1
+    },
+    {
+      "regionId": "620823400000",
+      "name": "崇信县新窑工业园区管理委员会",
+      "average": 22.2
+    },
+    {
+      "regionId": "620823401000",
+      "name": "五举农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "620823402000",
+      "name": "崇信县铜城工业园区管理委员会",
+      "average": 1557.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 20.1576,
+      "color": "#bdd7e7",
+      "label": "20.158 万m³"
+    },
+    {
+      "value": 97.69399999999996,
+      "color": "#6baed6",
+      "label": "97.694 万m³"
+    },
+    {
+      "value": 975.2832,
+      "color": "#3182bd",
+      "label": "975.283 万m³"
+    },
+    {
+      "value": 1577.9344,
+      "color": "#08519c",
+      "label": "1577.934 万m³"
+    },
+    {
+      "value": 2212.412,
+      "color": "#042d60",
+      "label": "2212.412 万m³"
+    }
+  ]
+}

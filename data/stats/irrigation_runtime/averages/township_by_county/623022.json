@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "623022100000",
+      "name": "柳林镇",
+      "average": 18.3
+    },
+    {
+      "regionId": "623022101000",
+      "name": "木耳镇",
+      "average": 220.5
+    },
+    {
+      "regionId": "623022102000",
+      "name": "扎古录镇",
+      "average": 203.6
+    },
+    {
+      "regionId": "623022200000",
+      "name": "纳浪乡",
+      "average": 75.5
+    },
+    {
+      "regionId": "623022201000",
+      "name": "喀尔钦乡",
+      "average": 421.3
+    },
+    {
+      "regionId": "623022202000",
+      "name": "刀告乡",
+      "average": 113.4
+    },
+    {
+      "regionId": "623022203000",
+      "name": "尼巴乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623022204000",
+      "name": "完冒乡",
+      "average": 3.0
+    },
+    {
+      "regionId": "623022205000",
+      "name": "阿子塘乡",
+      "average": 24.8
+    },
+    {
+      "regionId": "623022206000",
+      "name": "申藏乡",
+      "average": 29.2
+    },
+    {
+      "regionId": "623022207000",
+      "name": "恰盖乡",
+      "average": 345.2
+    },
+    {
+      "regionId": "623022208000",
+      "name": "康多乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623022209000",
+      "name": "勺哇土族乡",
+      "average": 51.8
+    },
+    {
+      "regionId": "623022210000",
+      "name": "洮砚乡",
+      "average": 194.6
+    },
+    {
+      "regionId": "623022211000",
+      "name": "藏巴哇乡",
+      "average": 109.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 17.8104,
+      "color": "#bdd7e7",
+      "label": "17.810 万m³"
+    },
+    {
+      "value": 44.02559999999999,
+      "color": "#6baed6",
+      "label": "44.026 万m³"
+    },
+    {
+      "value": 111.0384,
+      "color": "#3182bd",
+      "label": "111.038 万m³"
+    },
+    {
+      "value": 204.14079999999996,
+      "color": "#08519c",
+      "label": "204.141 万m³"
+    },
+    {
+      "value": 399.9919999999999,
+      "color": "#042d60",
+      "label": "399.992 万m³"
+    }
+  ]
+}

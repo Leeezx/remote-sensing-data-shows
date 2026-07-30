@@ -1,0 +1,138 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "340828204000",
+      "name": "古坊乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341524104000",
+      "name": "天堂寨镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341524203000",
+      "name": "长岭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "341525111000",
+      "name": "上士市镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "341525202000",
+      "name": "太平畈乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "421124100000",
+      "name": "温泉镇",
+      "average": 30614.2
+    },
+    {
+      "regionId": "421124101000",
+      "name": "南河镇",
+      "average": 11044.6
+    },
+    {
+      "regionId": "421124102000",
+      "name": "红山镇",
+      "average": 8950.3
+    },
+    {
+      "regionId": "421124103000",
+      "name": "金家铺镇",
+      "average": 22333.0
+    },
+    {
+      "regionId": "421124104000",
+      "name": "石头咀镇",
+      "average": 24380.0
+    },
+    {
+      "regionId": "421124105000",
+      "name": "草盘地镇",
+      "average": 10988.8
+    },
+    {
+      "regionId": "421124106000",
+      "name": "雷家店镇",
+      "average": 17022.9
+    },
+    {
+      "regionId": "421124107000",
+      "name": "杨柳湾镇",
+      "average": 22536.5
+    },
+    {
+      "regionId": "421124200000",
+      "name": "方家咀乡",
+      "average": 8568.9
+    },
+    {
+      "regionId": "421124201000",
+      "name": "孔家坊乡",
+      "average": 18848.2
+    },
+    {
+      "regionId": "421124202000",
+      "name": "陶家河乡",
+      "average": 3980.8
+    },
+    {
+      "regionId": "421124400000",
+      "name": "桃花冲林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "421124401000",
+      "name": "吴家山林场",
+      "average": 550.6
+    },
+    {
+      "regionId": "421124402000",
+      "name": "五峰山林场",
+      "average": 15.9
+    },
+    {
+      "regionId": "421124403000",
+      "name": "英山县经济开发区",
+      "average": 833.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

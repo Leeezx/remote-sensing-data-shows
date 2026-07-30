@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "520122100000",
+      "name": "永靖镇",
+      "average": 10035.3
+    },
+    {
+      "regionId": "520122101000",
+      "name": "温泉镇",
+      "average": 4275.1
+    },
+    {
+      "regionId": "520122102000",
+      "name": "九庄镇",
+      "average": 10956.0
+    },
+    {
+      "regionId": "520122103000",
+      "name": "小寨坝镇",
+      "average": 11904.6
+    },
+    {
+      "regionId": "520122104000",
+      "name": "西山镇",
+      "average": 10898.4
+    },
+    {
+      "regionId": "520122105000",
+      "name": "养龙司镇",
+      "average": 9044.9
+    },
+    {
+      "regionId": "520122106000",
+      "name": "石硐镇",
+      "average": 12307.8
+    },
+    {
+      "regionId": "520122200000",
+      "name": "青山苗族乡",
+      "average": 1206.5
+    },
+    {
+      "regionId": "520122204000",
+      "name": "鹿窝乡",
+      "average": 6334.4
+    },
+    {
+      "regionId": "520122205000",
+      "name": "流长乡",
+      "average": 14177.5
+    },
+    {
+      "regionId": "520122400000",
+      "name": "新华社区服务中心",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 241.3,
+      "color": "#eff3ff",
+      "label": "241.300 万m³"
+    },
+    {
+      "value": 4522.216,
+      "color": "#bdd7e7",
+      "label": "4522.216 万m³"
+    },
+    {
+      "value": 9084.516,
+      "color": "#6baed6",
+      "label": "9084.516 万m³"
+    },
+    {
+      "value": 10863.876,
+      "color": "#3182bd",
+      "label": "10863.876 万m³"
+    },
+    {
+      "value": 11790.768,
+      "color": "#08519c",
+      "label": "11790.768 万m³"
+    },
+    {
+      "value": 13803.560000000001,
+      "color": "#042d60",
+      "label": "13803.560 万m³"
+    }
+  ]
+}

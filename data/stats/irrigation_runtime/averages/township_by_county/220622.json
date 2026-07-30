@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "220622100000",
+      "name": "靖宇镇",
+      "average": 46.3
+    },
+    {
+      "regionId": "220622101000",
+      "name": "三道湖镇",
+      "average": 3.4
+    },
+    {
+      "regionId": "220622102000",
+      "name": "龙泉镇",
+      "average": 9.6
+    },
+    {
+      "regionId": "220622103000",
+      "name": "那尔轰镇",
+      "average": 13.7
+    },
+    {
+      "regionId": "220622104000",
+      "name": "花园口镇",
+      "average": 281.9
+    },
+    {
+      "regionId": "220622105000",
+      "name": "景山镇",
+      "average": 119.9
+    },
+    {
+      "regionId": "220622106000",
+      "name": "赤松镇",
+      "average": 15.4
+    },
+    {
+      "regionId": "220622201000",
+      "name": "蒙江乡",
+      "average": 6.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 3.792,
+      "color": "#eff3ff",
+      "label": "3.792 万m³"
+    },
+    {
+      "value": 7.8456,
+      "color": "#bdd7e7",
+      "label": "7.846 万m³"
+    },
+    {
+      "value": 12.994799999999998,
+      "color": "#6baed6",
+      "label": "12.995 万m³"
+    },
+    {
+      "value": 20.71479999999999,
+      "color": "#3182bd",
+      "label": "20.715 万m³"
+    },
+    {
+      "value": 84.27759999999994,
+      "color": "#08519c",
+      "label": "84.278 万m³"
+    },
+    {
+      "value": 259.2199999999999,
+      "color": "#042d60",
+      "label": "259.220 万m³"
+    }
+  ]
+}

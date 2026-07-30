@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510411201000",
+      "name": "啊喇彝族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513425218000",
+      "name": "金雨乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "532327101000",
+      "name": "永定镇",
+      "average": 10437.3
+    },
+    {
+      "regionId": "532327102000",
+      "name": "宜就镇",
+      "average": 7486.1
+    },
+    {
+      "regionId": "532327103000",
+      "name": "中和镇",
+      "average": 5248.5
+    },
+    {
+      "regionId": "532327201000",
+      "name": "莲池乡",
+      "average": 6589.8
+    },
+    {
+      "regionId": "532327202000",
+      "name": "维的乡",
+      "average": 8430.8
+    },
+    {
+      "regionId": "532327203000",
+      "name": "猛虎乡",
+      "average": 5899.0
+    },
+    {
+      "regionId": "532327204000",
+      "name": "永兴乡",
+      "average": 4601.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 3202.4352,
+      "color": "#bdd7e7",
+      "label": "3202.435 万m³"
+    },
+    {
+      "value": 5399.416,
+      "color": "#6baed6",
+      "label": "5399.416 万m³"
+    },
+    {
+      "value": 6429.5344000000005,
+      "color": "#3182bd",
+      "label": "6429.534 万m³"
+    },
+    {
+      "value": 7773.288799999999,
+      "color": "#08519c",
+      "label": "7773.289 万m³"
+    },
+    {
+      "value": 10116.259999999998,
+      "color": "#042d60",
+      "label": "10116.260 万m³"
+    }
+  ]
+}

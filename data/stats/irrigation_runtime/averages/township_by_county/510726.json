@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510726100000",
+      "name": "曲山镇",
+      "average": 229.9
+    },
+    {
+      "regionId": "510726101000",
+      "name": "擂鼓镇",
+      "average": 501.1
+    },
+    {
+      "regionId": "510726102000",
+      "name": "通口镇",
+      "average": 158.4
+    },
+    {
+      "regionId": "510726103000",
+      "name": "永昌镇",
+      "average": 2373.7
+    },
+    {
+      "regionId": "510726104000",
+      "name": "安昌镇",
+      "average": 4217.5
+    },
+    {
+      "regionId": "510726105000",
+      "name": "永安镇",
+      "average": 439.4
+    },
+    {
+      "regionId": "510726200000",
+      "name": "香泉乡",
+      "average": 431.4
+    },
+    {
+      "regionId": "510726201000",
+      "name": "陈家坝乡",
+      "average": 1158.5
+    },
+    {
+      "regionId": "510726202000",
+      "name": "桂溪乡",
+      "average": 547.4
+    },
+    {
+      "regionId": "510726203000",
+      "name": "贯岭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510726204000",
+      "name": "禹里乡",
+      "average": 67.3
+    },
+    {
+      "regionId": "510726205000",
+      "name": "漩坪乡",
+      "average": 6.1
+    },
+    {
+      "regionId": "510726206000",
+      "name": "白坭乡",
+      "average": 465.3
+    },
+    {
+      "regionId": "510726207000",
+      "name": "小坝乡",
+      "average": 7.4
+    },
+    {
+      "regionId": "510726208000",
+      "name": "片口乡",
+      "average": 101.2
+    },
+    {
+      "regionId": "510726209000",
+      "name": "开坪乡",
+      "average": 372.7
+    },
+    {
+      "regionId": "510726210000",
+      "name": "坝底乡",
+      "average": 488.5
+    },
+    {
+      "regionId": "510726211000",
+      "name": "白什乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510726212000",
+      "name": "青片乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510726213000",
+      "name": "都坝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510726214000",
+      "name": "桃龙藏族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510726215000",
+      "name": "墩上乡",
+      "average": 562.8
+    },
+    {
+      "regionId": "510726216000",
+      "name": "马槽乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

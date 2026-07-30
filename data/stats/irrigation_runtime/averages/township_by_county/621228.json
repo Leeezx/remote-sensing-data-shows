@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610330100000",
+      "name": "双石铺镇",
+      "average": 1642.6
+    },
+    {
+      "regionId": "610330105000",
+      "name": "唐藏镇",
+      "average": 137.2
+    },
+    {
+      "regionId": "610330110000",
+      "name": "留凤关镇",
+      "average": 473.7
+    },
+    {
+      "regionId": "610330401000",
+      "name": "辛家山林业场",
+      "average": 0.0
+    },
+    {
+      "regionId": "610725207000",
+      "name": "张家河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610727204000",
+      "name": "仙台坝乡",
+      "average": 2462.0
+    },
+    {
+      "regionId": "621228100000",
+      "name": "城关镇",
+      "average": 715.3
+    },
+    {
+      "regionId": "621228101000",
+      "name": "站儿巷镇",
+      "average": 2439.2
+    },
+    {
+      "regionId": "621228102000",
+      "name": "西坡镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "621228200000",
+      "name": "杨店乡",
+      "average": 47.5
+    },
+    {
+      "regionId": "621228201000",
+      "name": "左家乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621228202000",
+      "name": "显龙乡",
+      "average": 962.5
+    },
+    {
+      "regionId": "621228203000",
+      "name": "鱼池乡",
+      "average": 635.2
+    },
+    {
+      "regionId": "621228204000",
+      "name": "兴化乡",
+      "average": 747.9
+    },
+    {
+      "regionId": "621228207000",
+      "name": "张家乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621228209000",
+      "name": "云屏乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621228210000",
+      "name": "泰山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621228212000",
+      "name": "金洞乡",
+      "average": 5459.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

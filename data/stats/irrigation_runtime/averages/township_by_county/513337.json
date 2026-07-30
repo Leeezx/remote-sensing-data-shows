@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513337100000",
+      "name": "金珠镇",
+      "average": 30.1
+    },
+    {
+      "regionId": "513337101000",
+      "name": "香格里拉镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513337200000",
+      "name": "桑堆镇",
+      "average": 164.8
+    },
+    {
+      "regionId": "513337201000",
+      "name": "省母乡",
+      "average": 7.0
+    },
+    {
+      "regionId": "513337202000",
+      "name": "傍河乡",
+      "average": 14.2
+    },
+    {
+      "regionId": "513337203000",
+      "name": "色拉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513337204000",
+      "name": "巨龙乡",
+      "average": 369.6
+    },
+    {
+      "regionId": "513337205000",
+      "name": "邓波乡",
+      "average": 202.8
+    },
+    {
+      "regionId": "513337206000",
+      "name": "木拉乡",
+      "average": 66.5
+    },
+    {
+      "regionId": "513337207000",
+      "name": "赤土乡",
+      "average": 78.2
+    },
+    {
+      "regionId": "513337209000",
+      "name": "蒙自乡",
+      "average": 132.0
+    },
+    {
+      "regionId": "513337210000",
+      "name": "各卡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513337211000",
+      "name": "吉呷乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513337212000",
+      "name": "俄牙同乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

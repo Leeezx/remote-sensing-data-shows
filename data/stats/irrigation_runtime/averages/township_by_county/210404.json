@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210404001000",
+      "name": "田屯街道",
+      "average": 116.5
+    },
+    {
+      "regionId": "210404002000",
+      "name": "工农街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210404003000",
+      "name": "建设街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210404004000",
+      "name": "和平街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210404005000",
+      "name": "光明街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210404006000",
+      "name": "朴屯街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210404007000",
+      "name": "演武街道",
+      "average": 26.4
+    },
+    {
+      "regionId": "210404008000",
+      "name": "五老屯街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210404009000",
+      "name": "古城子街道",
+      "average": 25.7
+    },
+    {
+      "regionId": "210404010000",
+      "name": "新民街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210404011000",
+      "name": "李石街道",
+      "average": 4295.1
+    },
+    {
+      "regionId": "210404101000",
+      "name": "塔峪镇",
+      "average": 2859.8
+    },
+    {
+      "regionId": "210404201000",
+      "name": "拉古满族乡",
+      "average": 2795.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

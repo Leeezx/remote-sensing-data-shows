@@ -1,0 +1,153 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "110118001000",
+      "name": "鼓楼街道",
+      "average": 21.9
+    },
+    {
+      "regionId": "110118002000",
+      "name": "果园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110118003000",
+      "name": "檀营地区办事处",
+      "average": 0.0
+    },
+    {
+      "regionId": "110118100000",
+      "name": "密云镇",
+      "average": 220.2
+    },
+    {
+      "regionId": "110118101000",
+      "name": "溪翁庄镇",
+      "average": 2425.2
+    },
+    {
+      "regionId": "110118102000",
+      "name": "西田各庄镇",
+      "average": 11467.6
+    },
+    {
+      "regionId": "110118103000",
+      "name": "十里堡镇",
+      "average": 2839.4
+    },
+    {
+      "regionId": "110118104000",
+      "name": "河南寨镇",
+      "average": 7762.0
+    },
+    {
+      "regionId": "110118105000",
+      "name": "巨各庄镇",
+      "average": 1718.0
+    },
+    {
+      "regionId": "110118106000",
+      "name": "穆家峪镇",
+      "average": 2254.6
+    },
+    {
+      "regionId": "110118107000",
+      "name": "太师屯镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110118108000",
+      "name": "高岭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110118109000",
+      "name": "不老屯镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110118110000",
+      "name": "冯家峪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110118111000",
+      "name": "古北口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110118112000",
+      "name": "大城子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110118113000",
+      "name": "东邵渠镇",
+      "average": 7697.1
+    },
+    {
+      "regionId": "110118114000",
+      "name": "北庄镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110118115000",
+      "name": "新城子镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "110118116000",
+      "name": "石城镇",
+      "average": 472.9
+    },
+    {
+      "regionId": "110118400000",
+      "name": "北京密云经济开发区",
+      "average": 288.8
+    },
+    {
+      "regionId": "130822205000",
+      "name": "雾灵山乡",
+      "average": 1292.0
+    },
+    {
+      "regionId": "130824209000",
+      "name": "马营子满族乡",
+      "average": 1159.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "650103001000",
+      "name": "长江路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650103002000",
+      "name": "和田街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650103003000",
+      "name": "扬子江路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650103004000",
+      "name": "友好南路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650103005000",
+      "name": "友好北路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650103006000",
+      "name": "八一街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650103007000",
+      "name": "炉院街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650103008000",
+      "name": "西山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650103009000",
+      "name": "雅玛里克山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650103010000",
+      "name": "红庙子街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650103011000",
+      "name": "长胜东街道",
+      "average": 1108.4
+    },
+    {
+      "regionId": "650103012000",
+      "name": "长胜西街道",
+      "average": 47.6
+    },
+    {
+      "regionId": "650103013000",
+      "name": "长胜南街道",
+      "average": 4049.8
+    },
+    {
+      "regionId": "650103014000",
+      "name": "火车南站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "650103015000",
+      "name": "仓房沟片区街道",
+      "average": 98.8
+    },
+    {
+      "regionId": "650103501000",
+      "name": "兵团农十二师一零四团",
+      "average": 1580.9
+    },
+    {
+      "regionId": "650103502000",
+      "name": "兵团十二师西山农场",
+      "average": 10094.5
+    },
+    {
+      "regionId": "650104008000",
+      "name": "乌鲁木齐经济技术开发区街道",
+      "average": 237.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

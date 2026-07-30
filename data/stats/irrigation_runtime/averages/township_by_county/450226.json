@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "431230104000",
+      "name": "牙屯堡镇",
+      "average": 11455.7
+    },
+    {
+      "regionId": "431230216000",
+      "name": "坪坦乡",
+      "average": 2261.6
+    },
+    {
+      "regionId": "450226100000",
+      "name": "古宜镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "450226101000",
+      "name": "斗江镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "450226102000",
+      "name": "丹洲镇",
+      "average": 430.3
+    },
+    {
+      "regionId": "450226200000",
+      "name": "独峒乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "450226201000",
+      "name": "八江乡",
+      "average": 3472.2
+    },
+    {
+      "regionId": "450226202000",
+      "name": "林溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "450226203000",
+      "name": "同乐苗族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "450226204000",
+      "name": "梅林乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "450226205000",
+      "name": "富禄苗族乡",
+      "average": 772.8
+    },
+    {
+      "regionId": "450226206000",
+      "name": "洋溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "450226207000",
+      "name": "良口乡",
+      "average": 7098.4
+    },
+    {
+      "regionId": "450226208000",
+      "name": "老堡乡",
+      "average": 172.6
+    },
+    {
+      "regionId": "450226209000",
+      "name": "高基瑶族乡",
+      "average": 415.0
+    },
+    {
+      "regionId": "450226210000",
+      "name": "和平乡",
+      "average": 104.5
+    },
+    {
+      "regionId": "450226211000",
+      "name": "程村乡",
+      "average": 30.4
+    },
+    {
+      "regionId": "522631108000",
+      "name": "洪州镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "522631210000",
+      "name": "地坪乡",
+      "average": 20162.6
+    },
+    {
+      "regionId": "522633200000",
+      "name": "高增乡",
+      "average": 19251.1
+    },
+    {
+      "regionId": "522633203000",
+      "name": "庆云乡",
+      "average": 25863.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

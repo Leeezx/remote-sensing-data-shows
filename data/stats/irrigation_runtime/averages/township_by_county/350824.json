@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350824100000",
+      "name": "平川镇",
+      "average": 10247.9
+    },
+    {
+      "regionId": "350824101000",
+      "name": "中山镇",
+      "average": 26338.3
+    },
+    {
+      "regionId": "350824102000",
+      "name": "岩前镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "350824103000",
+      "name": "十方镇",
+      "average": 25823.0
+    },
+    {
+      "regionId": "350824104000",
+      "name": "中堡镇",
+      "average": 18770.4
+    },
+    {
+      "regionId": "350824105000",
+      "name": "桃溪镇",
+      "average": 11060.8
+    },
+    {
+      "regionId": "350824106000",
+      "name": "城厢镇",
+      "average": 23379.4
+    },
+    {
+      "regionId": "350824201000",
+      "name": "万安乡",
+      "average": 10636.1
+    },
+    {
+      "regionId": "350824202000",
+      "name": "东留乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350824203000",
+      "name": "民主乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350824204000",
+      "name": "下坝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350824205000",
+      "name": "中赤乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350824206000",
+      "name": "象洞乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350824207000",
+      "name": "武东乡",
+      "average": 16542.1
+    },
+    {
+      "regionId": "350824208000",
+      "name": "永平乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "350824209000",
+      "name": "湘店乡",
+      "average": 8337.6
+    },
+    {
+      "regionId": "350824210000",
+      "name": "大禾乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "360733205000",
+      "name": "洞头乡",
+      "average": 6492.4
+    },
+    {
+      "regionId": "360733208000",
+      "name": "永隆乡",
+      "average": 2540.4
+    },
+    {
+      "regionId": "360734205000",
+      "name": "项山乡",
+      "average": 9629.6
+    },
+    {
+      "regionId": "441426109000",
+      "name": "上举镇",
+      "average": 6482.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

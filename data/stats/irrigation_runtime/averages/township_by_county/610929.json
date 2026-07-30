@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420304114000",
+      "name": "胡家营镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322104000",
+      "name": "夹河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322105000",
+      "name": "羊尾镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420322203000",
+      "name": "景阳乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420323203000",
+      "name": "双台乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610929100000",
+      "name": "城关镇",
+      "average": 79.8
+    },
+    {
+      "regionId": "610929101000",
+      "name": "中厂镇",
+      "average": 1925.0
+    },
+    {
+      "regionId": "610929102000",
+      "name": "构扒镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610929103000",
+      "name": "卡子镇",
+      "average": 713.8
+    },
+    {
+      "regionId": "610929104000",
+      "name": "茅坪镇",
+      "average": 1582.5
+    },
+    {
+      "regionId": "610929105000",
+      "name": "宋家镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610929106000",
+      "name": "西营镇",
+      "average": 633.5
+    },
+    {
+      "regionId": "610929107000",
+      "name": "仓上镇",
+      "average": 254.5
+    },
+    {
+      "regionId": "610929108000",
+      "name": "冷水镇",
+      "average": 566.6
+    },
+    {
+      "regionId": "610929109000",
+      "name": "双丰镇",
+      "average": 412.9
+    },
+    {
+      "regionId": "610929110000",
+      "name": "麻虎镇",
+      "average": 39.6
+    },
+    {
+      "regionId": "610929111000",
+      "name": "小双镇",
+      "average": 442.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

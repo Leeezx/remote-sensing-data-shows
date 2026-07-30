@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "420104001000",
+      "name": "古田街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420104002000",
+      "name": "韩家墩街道",
+      "average": 309.5
+    },
+    {
+      "regionId": "420104003000",
+      "name": "宗关街道",
+      "average": 309.5
+    },
+    {
+      "regionId": "420104004000",
+      "name": "汉水桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420104005000",
+      "name": "宝丰街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420104006000",
+      "name": "荣华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420104008000",
+      "name": "汉中街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420104009000",
+      "name": "汉正街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420104010000",
+      "name": "六角亭街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "420104011000",
+      "name": "长丰街道",
+      "average": 925.7
+    },
+    {
+      "regionId": "420104012000",
+      "name": "易家街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

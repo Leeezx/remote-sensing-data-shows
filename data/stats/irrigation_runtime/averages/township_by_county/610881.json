@@ -1,0 +1,138 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "141123102000",
+      "name": "瓦塘镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "141123104000",
+      "name": "高家村镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "141123209000",
+      "name": "圪垯上乡",
+      "average": 6.5
+    },
+    {
+      "regionId": "150627102000",
+      "name": "乌兰木伦镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150627103000",
+      "name": "纳林陶亥镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610881100000",
+      "name": "神木镇",
+      "average": 2126.4
+    },
+    {
+      "regionId": "610881101000",
+      "name": "高家堡镇",
+      "average": 5275.8
+    },
+    {
+      "regionId": "610881102000",
+      "name": "店塔镇",
+      "average": 330.1
+    },
+    {
+      "regionId": "610881103000",
+      "name": "孙家岔镇",
+      "average": 657.7
+    },
+    {
+      "regionId": "610881104000",
+      "name": "大柳塔镇",
+      "average": 892.4
+    },
+    {
+      "regionId": "610881105000",
+      "name": "花石崖镇",
+      "average": 3153.0
+    },
+    {
+      "regionId": "610881106000",
+      "name": "中鸡镇",
+      "average": 2221.3
+    },
+    {
+      "regionId": "610881107000",
+      "name": "贺家川镇",
+      "average": 2182.5
+    },
+    {
+      "regionId": "610881108000",
+      "name": "尔林兔镇",
+      "average": 7509.3
+    },
+    {
+      "regionId": "610881109000",
+      "name": "万镇镇",
+      "average": 447.9
+    },
+    {
+      "regionId": "610881110000",
+      "name": "大保当镇",
+      "average": 10480.3
+    },
+    {
+      "regionId": "610881111000",
+      "name": "马镇",
+      "average": 406.5
+    },
+    {
+      "regionId": "610881112000",
+      "name": "栏杆堡镇",
+      "average": 892.2
+    },
+    {
+      "regionId": "610881113000",
+      "name": "沙峁镇",
+      "average": 698.2
+    },
+    {
+      "regionId": "610881114000",
+      "name": "锦界镇",
+      "average": 4954.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 15.560799999999865,
+      "color": "#bdd7e7",
+      "label": "15.561 万m³"
+    },
+    {
+      "value": 589.7247999999998,
+      "color": "#6baed6",
+      "label": "589.725 万m³"
+    },
+    {
+      "value": 1292.216,
+      "color": "#3182bd",
+      "label": "1292.216 万m³"
+    },
+    {
+      "value": 3126.912399999998,
+      "color": "#08519c",
+      "label": "3126.912 万m³"
+    },
+    {
+      "value": 9351.320000000003,
+      "color": "#042d60",
+      "label": "9351.320 万m³"
+    }
+  ]
+}

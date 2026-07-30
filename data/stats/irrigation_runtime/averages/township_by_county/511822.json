@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511822100000",
+      "name": "严道镇",
+      "average": 782.7
+    },
+    {
+      "regionId": "511822101000",
+      "name": "花滩镇",
+      "average": 795.0
+    },
+    {
+      "regionId": "511822102000",
+      "name": "龙苍沟镇",
+      "average": 539.5
+    },
+    {
+      "regionId": "511822200000",
+      "name": "六合乡",
+      "average": 1008.5
+    },
+    {
+      "regionId": "511822201000",
+      "name": "烈太乡",
+      "average": 941.8
+    },
+    {
+      "regionId": "511822202000",
+      "name": "安靖乡",
+      "average": 162.8
+    },
+    {
+      "regionId": "511822203000",
+      "name": "民建彝族乡",
+      "average": 206.5
+    },
+    {
+      "regionId": "511822204000",
+      "name": "烈士乡",
+      "average": 250.7
+    },
+    {
+      "regionId": "511822205000",
+      "name": "荥河乡",
+      "average": 244.3
+    },
+    {
+      "regionId": "511822206000",
+      "name": "新建乡",
+      "average": 350.9
+    },
+    {
+      "regionId": "511822207000",
+      "name": "泗坪乡",
+      "average": 115.1
+    },
+    {
+      "regionId": "511822208000",
+      "name": "新庙乡",
+      "average": 442.6
+    },
+    {
+      "regionId": "511822209000",
+      "name": "三合乡",
+      "average": 27.3
+    },
+    {
+      "regionId": "511822210000",
+      "name": "大田坝乡",
+      "average": 1114.6
+    },
+    {
+      "regionId": "511822211000",
+      "name": "天凤乡",
+      "average": 298.7
+    },
+    {
+      "regionId": "511822212000",
+      "name": "宝峰彝族乡",
+      "average": 162.5
+    },
+    {
+      "regionId": "511822213000",
+      "name": "新添乡",
+      "average": 2122.0
+    },
+    {
+      "regionId": "511822214000",
+      "name": "附城乡",
+      "average": 363.0
+    },
+    {
+      "regionId": "511822215000",
+      "name": "五宪乡",
+      "average": 406.8
+    },
+    {
+      "regionId": "511822216000",
+      "name": "烟竹乡",
+      "average": 459.1
+    },
+    {
+      "regionId": "511822217000",
+      "name": "青龙乡",
+      "average": 346.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 62.42,
+      "color": "#eff3ff",
+      "label": "62.420 万m³"
+    },
+    {
+      "value": 215.572,
+      "color": "#bdd7e7",
+      "label": "215.572 万m³"
+    },
+    {
+      "value": 347.128,
+      "color": "#6baed6",
+      "label": "347.128 万m³"
+    },
+    {
+      "value": 439.73600000000005,
+      "color": "#3182bd",
+      "label": "439.736 万m³"
+    },
+    {
+      "value": 792.048,
+      "color": "#08519c",
+      "label": "792.048 万m³"
+    },
+    {
+      "value": 1719.0400000000013,
+      "color": "#042d60",
+      "label": "1719.040 万m³"
+    }
+  ]
+}

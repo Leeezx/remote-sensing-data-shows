@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140829100000",
+      "name": "圣人涧镇",
+      "average": 19953.7
+    },
+    {
+      "regionId": "140829101000",
+      "name": "常乐镇",
+      "average": 25952.4
+    },
+    {
+      "regionId": "140829102000",
+      "name": "张店镇",
+      "average": 10881.0
+    },
+    {
+      "regionId": "140829103000",
+      "name": "张村镇",
+      "average": 10246.9
+    },
+    {
+      "regionId": "140829104000",
+      "name": "曹川镇",
+      "average": 20938.5
+    },
+    {
+      "regionId": "140829105000",
+      "name": "三门镇",
+      "average": 4859.0
+    },
+    {
+      "regionId": "140829200000",
+      "name": "洪池乡",
+      "average": 9257.3
+    },
+    {
+      "regionId": "140829201000",
+      "name": "杜马乡",
+      "average": 11298.1
+    },
+    {
+      "regionId": "140829202000",
+      "name": "部官乡",
+      "average": 11082.8
+    },
+    {
+      "regionId": "140829203000",
+      "name": "坡底乡",
+      "average": 15766.0
+    },
+    {
+      "regionId": "411202005000",
+      "name": "大安街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411202006000",
+      "name": "会兴街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411202203000",
+      "name": "高庙乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "411202560000",
+      "name": "河南三门峡经济开发区",
+      "average": 0.0
+    },
+    {
+      "regionId": "411221207000",
+      "name": "陈村乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150602009000",
+      "name": "哈巴格希街道",
+      "average": 952.9
+    },
+    {
+      "regionId": "150602014000",
+      "name": "青春山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150602015000",
+      "name": "滨河街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150602402000",
+      "name": "鄂尔多斯市康巴什产业园",
+      "average": 529.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

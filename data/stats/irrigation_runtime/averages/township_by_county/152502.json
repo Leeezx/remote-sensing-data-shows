@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "152502001000",
+      "name": "希日塔拉街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "152502002000",
+      "name": "宝力根街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "152502003000",
+      "name": "杭盖街道",
+      "average": 6028.1
+    },
+    {
+      "regionId": "152502004000",
+      "name": "楚古兰街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "152502005000",
+      "name": "额尔敦街道",
+      "average": 15.9
+    },
+    {
+      "regionId": "152502006000",
+      "name": "南郊街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "152502007000",
+      "name": "巴彦查干街道",
+      "average": 21.9
+    },
+    {
+      "regionId": "152502100000",
+      "name": "阿尔善宝拉格镇",
+      "average": 320.0
+    },
+    {
+      "regionId": "152502200000",
+      "name": "宝力根苏木",
+      "average": 750.8
+    },
+    {
+      "regionId": "152502201000",
+      "name": "朝克乌拉苏木",
+      "average": 13.9
+    },
+    {
+      "regionId": "152502202000",
+      "name": "巴彦锡勒办事处乡",
+      "average": 3495.4
+    },
+    {
+      "regionId": "152502203000",
+      "name": "巴彦宝拉格苏木",
+      "average": 0.0
+    },
+    {
+      "regionId": "152502400000",
+      "name": "锡林郭勒盟经济技术开发区",
+      "average": 0.0
+    },
+    {
+      "regionId": "152502500000",
+      "name": "白音库伦牧场",
+      "average": 2946.8
+    },
+    {
+      "regionId": "152502501000",
+      "name": "贝力克牧场",
+      "average": 0.0
+    },
+    {
+      "regionId": "152502502000",
+      "name": "毛登牧场",
+      "average": 1855.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

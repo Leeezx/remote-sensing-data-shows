@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540230100000",
+      "name": "康马镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540230200000",
+      "name": "涅如麦乡",
+      "average": 142.9
+    },
+    {
+      "regionId": "540230201000",
+      "name": "涅如堆乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540230202000",
+      "name": "嘎拉乡",
+      "average": 875.4
+    },
+    {
+      "regionId": "540230203000",
+      "name": "萨玛达乡",
+      "average": 134.6
+    },
+    {
+      "regionId": "540230204000",
+      "name": "康如乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540230205000",
+      "name": "少岗乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540230206000",
+      "name": "南尼乡",
+      "average": 1186.6
+    },
+    {
+      "regionId": "540230207000",
+      "name": "雄章乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

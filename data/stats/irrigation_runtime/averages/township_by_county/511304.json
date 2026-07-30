@@ -1,0 +1,263 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511304001000",
+      "name": "火花街道",
+      "average": 113.0
+    },
+    {
+      "regionId": "511304002000",
+      "name": "凤垭街道",
+      "average": 699.1
+    },
+    {
+      "regionId": "511304003000",
+      "name": "都尉街道",
+      "average": 1315.4
+    },
+    {
+      "regionId": "511304004000",
+      "name": "文峰街道",
+      "average": 1361.1
+    },
+    {
+      "regionId": "511304101000",
+      "name": "曲水镇",
+      "average": 5075.8
+    },
+    {
+      "regionId": "511304102000",
+      "name": "李渡镇",
+      "average": 3135.4
+    },
+    {
+      "regionId": "511304103000",
+      "name": "吉安镇",
+      "average": 2325.6
+    },
+    {
+      "regionId": "511304104000",
+      "name": "龙岭镇",
+      "average": 2424.1
+    },
+    {
+      "regionId": "511304105000",
+      "name": "金凤镇",
+      "average": 3278.4
+    },
+    {
+      "regionId": "511304106000",
+      "name": "安福镇",
+      "average": 1782.0
+    },
+    {
+      "regionId": "511304107000",
+      "name": "安平镇",
+      "average": 4860.4
+    },
+    {
+      "regionId": "511304108000",
+      "name": "世阳镇",
+      "average": 4851.6
+    },
+    {
+      "regionId": "511304109000",
+      "name": "大通镇",
+      "average": 5315.6
+    },
+    {
+      "regionId": "511304110000",
+      "name": "一立镇",
+      "average": 2101.4
+    },
+    {
+      "regionId": "511304111000",
+      "name": "龙蟠镇",
+      "average": 3589.7
+    },
+    {
+      "regionId": "511304112000",
+      "name": "里坝镇",
+      "average": 1670.8
+    },
+    {
+      "regionId": "511304113000",
+      "name": "集凤镇",
+      "average": 1819.3
+    },
+    {
+      "regionId": "511304114000",
+      "name": "金宝镇",
+      "average": 2765.6
+    },
+    {
+      "regionId": "511304115000",
+      "name": "三会镇",
+      "average": 1231.5
+    },
+    {
+      "regionId": "511304116000",
+      "name": "西兴镇",
+      "average": 2204.6
+    },
+    {
+      "regionId": "511304117000",
+      "name": "双桂镇",
+      "average": 3517.9
+    },
+    {
+      "regionId": "511304119000",
+      "name": "七宝寺镇",
+      "average": 2175.3
+    },
+    {
+      "regionId": "511304120000",
+      "name": "龙泉镇",
+      "average": 1473.9
+    },
+    {
+      "regionId": "511304201000",
+      "name": "河西乡",
+      "average": 2149.0
+    },
+    {
+      "regionId": "511304202000",
+      "name": "移山乡",
+      "average": 2808.7
+    },
+    {
+      "regionId": "511304203000",
+      "name": "木老乡",
+      "average": 1273.5
+    },
+    {
+      "regionId": "511304205000",
+      "name": "新场乡",
+      "average": 1374.3
+    },
+    {
+      "regionId": "511304207000",
+      "name": "土门乡",
+      "average": 1214.8
+    },
+    {
+      "regionId": "511304208000",
+      "name": "临江乡",
+      "average": 1590.0
+    },
+    {
+      "regionId": "511304209000",
+      "name": "双店乡",
+      "average": 2743.6
+    },
+    {
+      "regionId": "511304211000",
+      "name": "白家乡",
+      "average": 1655.8
+    },
+    {
+      "regionId": "511304212000",
+      "name": "华兴乡",
+      "average": 2219.4
+    },
+    {
+      "regionId": "511304213000",
+      "name": "大同乡",
+      "average": 1766.3
+    },
+    {
+      "regionId": "511304215000",
+      "name": "盐溪乡",
+      "average": 1704.5
+    },
+    {
+      "regionId": "511304216000",
+      "name": "桥龙乡",
+      "average": 593.3
+    },
+    {
+      "regionId": "511304218000",
+      "name": "天星乡",
+      "average": 1583.6
+    },
+    {
+      "regionId": "511304219000",
+      "name": "大观乡",
+      "average": 2572.2
+    },
+    {
+      "regionId": "511304220000",
+      "name": "大兴乡",
+      "average": 2552.2
+    },
+    {
+      "regionId": "511304221000",
+      "name": "新庙乡",
+      "average": 2023.3
+    },
+    {
+      "regionId": "511304222000",
+      "name": "桃园乡",
+      "average": 3049.2
+    },
+    {
+      "regionId": "511304223000",
+      "name": "太和乡",
+      "average": 1250.2
+    },
+    {
+      "regionId": "511304226000",
+      "name": "积善乡",
+      "average": 1708.8
+    },
+    {
+      "regionId": "511304228000",
+      "name": "石楼乡",
+      "average": 2295.0
+    },
+    {
+      "regionId": "511304229000",
+      "name": "礼乐乡",
+      "average": 2249.5
+    },
+    {
+      "regionId": "511304230000",
+      "name": "花园乡",
+      "average": 1330.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 535.664,
+      "color": "#eff3ff",
+      "label": "535.664 万m³"
+    },
+    {
+      "value": 1365.4296,
+      "color": "#bdd7e7",
+      "label": "1365.430 万m³"
+    },
+    {
+      "value": 1753.4199999999998,
+      "color": "#6baed6",
+      "label": "1753.420 万m³"
+    },
+    {
+      "value": 2226.1424,
+      "color": "#3182bd",
+      "label": "2226.142 万m³"
+    },
+    {
+      "value": 2794.5631999999996,
+      "color": "#08519c",
+      "label": "2794.563 万m³"
+    },
+    {
+      "value": 5104.576,
+      "color": "#042d60",
+      "label": "5104.576 万m³"
+    }
+  ]
+}

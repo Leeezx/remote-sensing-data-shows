@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210882001000",
+      "name": "石桥街道",
+      "average": 53.0
+    },
+    {
+      "regionId": "210882002000",
+      "name": "青花街道",
+      "average": 48.1
+    },
+    {
+      "regionId": "210882003000",
+      "name": "金桥街道",
+      "average": 3019.3
+    },
+    {
+      "regionId": "210882004000",
+      "name": "钢都街道",
+      "average": 831.5
+    },
+    {
+      "regionId": "210882005000",
+      "name": "南楼街道",
+      "average": 1217.1
+    },
+    {
+      "regionId": "210882101000",
+      "name": "水源镇",
+      "average": 25526.3
+    },
+    {
+      "regionId": "210882102000",
+      "name": "沟沿镇",
+      "average": 17122.2
+    },
+    {
+      "regionId": "210882103000",
+      "name": "石佛镇",
+      "average": 13413.0
+    },
+    {
+      "regionId": "210882104000",
+      "name": "高坎镇",
+      "average": 31164.5
+    },
+    {
+      "regionId": "210882105000",
+      "name": "旗口镇",
+      "average": 31100.1
+    },
+    {
+      "regionId": "210882106000",
+      "name": "虎庄镇",
+      "average": 12744.2
+    },
+    {
+      "regionId": "210882107000",
+      "name": "官屯镇",
+      "average": 2221.9
+    },
+    {
+      "regionId": "210882112000",
+      "name": "博洛铺镇",
+      "average": 3796.6
+    },
+    {
+      "regionId": "210882113000",
+      "name": "永安镇",
+      "average": 3914.3
+    },
+    {
+      "regionId": "210882114000",
+      "name": "汤池镇",
+      "average": 3688.8
+    },
+    {
+      "regionId": "210882115000",
+      "name": "建一镇",
+      "average": 881.4
+    },
+    {
+      "regionId": "210882116000",
+      "name": "黄土岭镇",
+      "average": 1032.1
+    },
+    {
+      "regionId": "210882117000",
+      "name": "周家镇",
+      "average": 744.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 49.766,
+      "color": "#eff3ff",
+      "label": "49.766 万m³"
+    },
+    {
+      "value": 861.6396,
+      "color": "#bdd7e7",
+      "label": "861.640 万m³"
+    },
+    {
+      "value": 2089.2663999999995,
+      "color": "#6baed6",
+      "label": "2089.266 万m³"
+    },
+    {
+      "value": 3812.1364,
+      "color": "#3182bd",
+      "label": "3812.136 万m³"
+    },
+    {
+      "value": 14881.843199999996,
+      "color": "#08519c",
+      "label": "14881.843 万m³"
+    },
+    {
+      "value": 31142.604,
+      "color": "#042d60",
+      "label": "31142.604 万m³"
+    }
+  ]
+}

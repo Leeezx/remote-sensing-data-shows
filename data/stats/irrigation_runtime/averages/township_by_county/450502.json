@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "450502001000",
+      "name": "中街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450502002000",
+      "name": "东街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450502003000",
+      "name": "西街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450502004000",
+      "name": "海角街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450502005000",
+      "name": "地角街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450502006000",
+      "name": "高德街道",
+      "average": 30953.9
+    },
+    {
+      "regionId": "450502007000",
+      "name": "驿马街道",
+      "average": 1024.4
+    },
+    {
+      "regionId": "450502100000",
+      "name": "涠洲镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

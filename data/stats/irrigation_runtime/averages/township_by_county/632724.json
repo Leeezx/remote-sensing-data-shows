@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540624205000",
+      "name": "色务乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632724100000",
+      "name": "加吉博洛格镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632724200000",
+      "name": "索加乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632724201000",
+      "name": "扎河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632724202000",
+      "name": "多彩乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632724203000",
+      "name": "治渠乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632724204000",
+      "name": "立新乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

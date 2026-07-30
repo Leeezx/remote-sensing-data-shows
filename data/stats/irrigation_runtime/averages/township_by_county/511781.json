@@ -1,0 +1,348 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500229103000",
+      "name": "坪坝镇",
+      "average": 474.8
+    },
+    {
+      "regionId": "500229205000",
+      "name": "左岚乡",
+      "average": 1268.2
+    },
+    {
+      "regionId": "500229210000",
+      "name": "双河乡",
+      "average": 578.1
+    },
+    {
+      "regionId": "511781100000",
+      "name": "太平镇",
+      "average": 2685.7
+    },
+    {
+      "regionId": "511781101000",
+      "name": "青花镇",
+      "average": 983.2
+    },
+    {
+      "regionId": "511781102000",
+      "name": "旧院镇",
+      "average": 133.0
+    },
+    {
+      "regionId": "511781103000",
+      "name": "罗文镇",
+      "average": 3193.6
+    },
+    {
+      "regionId": "511781104000",
+      "name": "河口镇",
+      "average": 469.6
+    },
+    {
+      "regionId": "511781105000",
+      "name": "草坝镇",
+      "average": 867.0
+    },
+    {
+      "regionId": "511781106000",
+      "name": "竹峪镇",
+      "average": 3611.9
+    },
+    {
+      "regionId": "511781107000",
+      "name": "大竹镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "511781108000",
+      "name": "黄钟镇",
+      "average": 1442.6
+    },
+    {
+      "regionId": "511781109000",
+      "name": "官渡镇",
+      "average": 1987.6
+    },
+    {
+      "regionId": "511781110000",
+      "name": "白沙镇",
+      "average": 2881.7
+    },
+    {
+      "regionId": "511781111000",
+      "name": "沙滩镇",
+      "average": 250.1
+    },
+    {
+      "regionId": "511781200000",
+      "name": "茶垭乡",
+      "average": 468.6
+    },
+    {
+      "regionId": "511781201000",
+      "name": "长石乡",
+      "average": 1201.0
+    },
+    {
+      "regionId": "511781202000",
+      "name": "白羊乡",
+      "average": 1612.4
+    },
+    {
+      "regionId": "511781203000",
+      "name": "铁矿乡",
+      "average": 1009.2
+    },
+    {
+      "regionId": "511781204000",
+      "name": "固军乡",
+      "average": 995.5
+    },
+    {
+      "regionId": "511781205000",
+      "name": "井溪乡",
+      "average": 337.8
+    },
+    {
+      "regionId": "511781206000",
+      "name": "堰塘乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511781207000",
+      "name": "蜂桶乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511781208000",
+      "name": "花楼乡",
+      "average": 2079.6
+    },
+    {
+      "regionId": "511781209000",
+      "name": "长坝乡",
+      "average": 4143.0
+    },
+    {
+      "regionId": "511781210000",
+      "name": "曾家乡",
+      "average": 910.9
+    },
+    {
+      "regionId": "511781211000",
+      "name": "大沙乡",
+      "average": 556.0
+    },
+    {
+      "regionId": "511781212000",
+      "name": "秦河乡",
+      "average": 326.0
+    },
+    {
+      "regionId": "511781213000",
+      "name": "庙垭乡",
+      "average": 615.6
+    },
+    {
+      "regionId": "511781214000",
+      "name": "鹰背乡",
+      "average": 609.7
+    },
+    {
+      "regionId": "511781215000",
+      "name": "石窝乡",
+      "average": 1002.3
+    },
+    {
+      "regionId": "511781216000",
+      "name": "玉带乡",
+      "average": 574.3
+    },
+    {
+      "regionId": "511781217000",
+      "name": "新店乡",
+      "average": 2765.3
+    },
+    {
+      "regionId": "511781218000",
+      "name": "魏家乡",
+      "average": 3403.7
+    },
+    {
+      "regionId": "511781219000",
+      "name": "柳黄乡",
+      "average": 3293.2
+    },
+    {
+      "regionId": "511781220000",
+      "name": "溪口乡",
+      "average": 1325.9
+    },
+    {
+      "regionId": "511781221000",
+      "name": "永宁乡",
+      "average": 558.8
+    },
+    {
+      "regionId": "511781222000",
+      "name": "虹桥乡",
+      "average": 780.4
+    },
+    {
+      "regionId": "511781223000",
+      "name": "康乐乡",
+      "average": 201.4
+    },
+    {
+      "regionId": "511781224000",
+      "name": "白果乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511781225000",
+      "name": "钟亭乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511781226000",
+      "name": "庙子乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511781228000",
+      "name": "紫溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511781229000",
+      "name": "庙坡乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511781230000",
+      "name": "梨树乡",
+      "average": 117.5
+    },
+    {
+      "regionId": "511781231000",
+      "name": "皮窝乡",
+      "average": 25.3
+    },
+    {
+      "regionId": "511781232000",
+      "name": "丝罗乡",
+      "average": 827.8
+    },
+    {
+      "regionId": "511781233000",
+      "name": "罐坝乡",
+      "average": 751.8
+    },
+    {
+      "regionId": "511781234000",
+      "name": "石人乡",
+      "average": 989.6
+    },
+    {
+      "regionId": "511781235000",
+      "name": "赵塘乡",
+      "average": 823.0
+    },
+    {
+      "regionId": "511781236000",
+      "name": "中坪乡",
+      "average": 2534.1
+    },
+    {
+      "regionId": "511781237000",
+      "name": "八台乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511781238000",
+      "name": "花萼乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511781239000",
+      "name": "曹家乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511781240000",
+      "name": "石塘乡",
+      "average": 1062.3
+    },
+    {
+      "regionId": "610728205000",
+      "name": "巴山乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "610924109000",
+      "name": "高桥镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610924112000",
+      "name": "毛坝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610924114000",
+      "name": "麻柳镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610924117000",
+      "name": "界岭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610924119000",
+      "name": "绕溪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "610924120000",
+      "name": "联合镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130825202000",
+      "name": "茅荆坝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828102000",
+      "name": "克勒沟镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828205000",
+      "name": "兰旗卡伦乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130828207000",
+      "name": "新地乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "150428100000",
+      "name": "锦山镇",
+      "average": 119.4
+    },
+    {
+      "regionId": "150428101000",
+      "name": "美林镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150428102000",
+      "name": "王爷府镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150428103000",
+      "name": "小牛群镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150428104000",
+      "name": "牛家营子镇",
+      "average": 5973.3
+    },
+    {
+      "regionId": "150428105000",
+      "name": "乃林镇",
+      "average": 45820.6
+    },
+    {
+      "regionId": "150428106000",
+      "name": "西桥镇",
+      "average": 25362.2
+    },
+    {
+      "regionId": "150428200000",
+      "name": "十家满族乡",
+      "average": 3305.8
+    },
+    {
+      "regionId": "150428201000",
+      "name": "南台子乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "150428400000",
+      "name": "乃林果树农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "150428401000",
+      "name": "马鞍山羊场",
+      "average": 0.0
+    },
+    {
+      "regionId": "150428402000",
+      "name": "赤峰市和美工贸园区",
+      "average": 376.2
+    },
+    {
+      "regionId": "150428403000",
+      "name": "锦山工业园区",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

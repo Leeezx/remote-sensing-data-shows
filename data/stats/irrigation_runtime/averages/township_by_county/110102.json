@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "110102001000",
+      "name": "西长安街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110102003000",
+      "name": "新街口街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110102007000",
+      "name": "月坛街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110102009000",
+      "name": "展览路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110102010000",
+      "name": "德胜街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110102011000",
+      "name": "金融街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110102012000",
+      "name": "什刹海街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110102013000",
+      "name": "大栅栏街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110102014000",
+      "name": "天桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110102015000",
+      "name": "椿树街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110102016000",
+      "name": "陶然亭街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110102017000",
+      "name": "广安门内街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110102018000",
+      "name": "牛街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110102019000",
+      "name": "白纸坊街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "110102020000",
+      "name": "广安门外街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

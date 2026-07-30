@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410108001000",
+      "name": "新城街道",
+      "average": 25673.5
+    },
+    {
+      "regionId": "410108002000",
+      "name": "刘寨街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410108003000",
+      "name": "老鸦陈街道",
+      "average": 4889.4
+    },
+    {
+      "regionId": "410108004000",
+      "name": "长兴路街道",
+      "average": 391.9
+    },
+    {
+      "regionId": "410108005000",
+      "name": "迎宾路街道",
+      "average": 2245.4
+    },
+    {
+      "regionId": "410108006000",
+      "name": "大河路街道",
+      "average": 10720.0
+    },
+    {
+      "regionId": "410108100000",
+      "name": "花园口镇",
+      "average": 8879.2
+    },
+    {
+      "regionId": "410108101000",
+      "name": "古荥镇",
+      "average": 30811.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 54.866,
+      "color": "#eff3ff",
+      "label": "54.866 万m³"
+    },
+    {
+      "value": 1288.994,
+      "color": "#bdd7e7",
+      "label": "1288.994 万m³"
+    },
+    {
+      "value": 4434.632,
+      "color": "#6baed6",
+      "label": "4434.632 万m³"
+    },
+    {
+      "value": 9195.8176,
+      "color": "#3182bd",
+      "label": "9195.818 万m³"
+    },
+    {
+      "value": 18436.005999999987,
+      "color": "#08519c",
+      "label": "18436.006 万m³"
+    },
+    {
+      "value": 30092.352,
+      "color": "#042d60",
+      "label": "30092.352 万m³"
+    }
+  ]
+}

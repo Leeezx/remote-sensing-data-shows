@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210703001000",
+      "name": "正大街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210703002000",
+      "name": "石桥子街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210703003000",
+      "name": "龙江街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210703004000",
+      "name": "榴花街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210703005000",
+      "name": "铁新街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210703006000",
+      "name": "凌安街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210703007000",
+      "name": "菊园街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210703008000",
+      "name": "康宁街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210703009000",
+      "name": "锦铁街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210703010000",
+      "name": "马家街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "210703011000",
+      "name": "紫荆街道",
+      "average": 3.0
+    },
+    {
+      "regionId": "210703402000",
+      "name": "锦州北山农工商总公司",
+      "average": 25.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140932100000",
+      "name": "新关镇",
+      "average": 430.8
+    },
+    {
+      "regionId": "140932101000",
+      "name": "天峰坪镇",
+      "average": 23.2
+    },
+    {
+      "regionId": "140932102000",
+      "name": "老营镇",
+      "average": 215.8
+    },
+    {
+      "regionId": "140932103000",
+      "name": "万家寨镇",
+      "average": 87.8
+    },
+    {
+      "regionId": "140932200000",
+      "name": "窑头乡",
+      "average": 207.1
+    },
+    {
+      "regionId": "140932201000",
+      "name": "楼沟乡",
+      "average": 912.9
+    },
+    {
+      "regionId": "140932202000",
+      "name": "尚峪乡",
+      "average": 1826.6
+    },
+    {
+      "regionId": "140932203000",
+      "name": "南堡子乡",
+      "average": 352.6
+    },
+    {
+      "regionId": "140932204000",
+      "name": "水泉乡",
+      "average": 92.0
+    },
+    {
+      "regionId": "140932205000",
+      "name": "陈家营乡",
+      "average": 460.3
+    },
+    {
+      "regionId": "150622104000",
+      "name": "龙口镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 4.64,
+      "color": "#eff3ff",
+      "label": "4.640 万m³"
+    },
+    {
+      "value": 88.304,
+      "color": "#bdd7e7",
+      "label": "88.304 万m³"
+    },
+    {
+      "value": 207.448,
+      "color": "#6baed6",
+      "label": "207.448 万m³"
+    },
+    {
+      "value": 347.12800000000004,
+      "color": "#3182bd",
+      "label": "347.128 万m³"
+    },
+    {
+      "value": 456.76,
+      "color": "#08519c",
+      "label": "456.760 万m³"
+    },
+    {
+      "value": 1643.8600000000006,
+      "color": "#042d60",
+      "label": "1643.860 万m³"
+    }
+  ]
+}

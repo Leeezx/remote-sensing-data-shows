@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "441825100000",
+      "name": "永和镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "441825104000",
+      "name": "吉田镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "441825105000",
+      "name": "太保镇",
+      "average": 19148.2
+    },
+    {
+      "regionId": "441825106000",
+      "name": "禾洞镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "441825108000",
+      "name": "福堂镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "441825109000",
+      "name": "小三江镇",
+      "average": 35789.6
+    },
+    {
+      "regionId": "441825111000",
+      "name": "上帅镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "441825450000",
+      "name": "连山林场",
+      "average": 1710.1
+    },
+    {
+      "regionId": "441825451000",
+      "name": "禾洞农林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "451102104000",
+      "name": "大宁镇",
+      "average": 21313.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

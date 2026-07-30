@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "360725207000",
+      "name": "文英乡",
+      "average": 7565.7
+    },
+    {
+      "regionId": "360725208000",
+      "name": "乐洞乡",
+      "average": 759.2
+    },
+    {
+      "regionId": "431026101000",
+      "name": "小垣瑶族镇",
+      "average": 2752.7
+    },
+    {
+      "regionId": "431026102000",
+      "name": "热水镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "431026103000",
+      "name": "土桥镇",
+      "average": 29348.2
+    },
+    {
+      "regionId": "431026104000",
+      "name": "泉水镇",
+      "average": 29778.9
+    },
+    {
+      "regionId": "431026105000",
+      "name": "暖水镇",
+      "average": 17005.1
+    },
+    {
+      "regionId": "431026106000",
+      "name": "大坪镇",
+      "average": 30210.0
+    },
+    {
+      "regionId": "431026107000",
+      "name": "三江口瑶族镇",
+      "average": 5817.6
+    },
+    {
+      "regionId": "431026108000",
+      "name": "卢阳镇",
+      "average": 33721.5
+    },
+    {
+      "regionId": "431026109000",
+      "name": "马桥镇",
+      "average": 27329.7
+    },
+    {
+      "regionId": "431026110000",
+      "name": "文明镇",
+      "average": 13030.1
+    },
+    {
+      "regionId": "431026202000",
+      "name": "井坡乡",
+      "average": 28127.7
+    },
+    {
+      "regionId": "431026204000",
+      "name": "盈洞瑶族乡",
+      "average": 150.9
+    },
+    {
+      "regionId": "431026205000",
+      "name": "岭秀瑶族乡",
+      "average": 1044.8
+    },
+    {
+      "regionId": "431026206000",
+      "name": "田庄乡",
+      "average": 12614.0
+    },
+    {
+      "regionId": "431026207000",
+      "name": "南洞乡",
+      "average": 10752.9
+    },
+    {
+      "regionId": "431026208000",
+      "name": "永丰乡",
+      "average": 11016.7
+    },
+    {
+      "regionId": "431026209000",
+      "name": "濠头乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "431026214000",
+      "name": "延寿瑶族乡",
+      "average": 11093.4
+    },
+    {
+      "regionId": "431026216000",
+      "name": "集益乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "431026400000",
+      "name": "大坪国有林场",
+      "average": 892.2
+    },
+    {
+      "regionId": "440224104000",
+      "name": "长江镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440281103000",
+      "name": "九峰镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440281111000",
+      "name": "五山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440281112000",
+      "name": "两江镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440281119000",
+      "name": "白石镇",
+      "average": 194.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

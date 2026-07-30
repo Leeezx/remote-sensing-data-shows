@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "532532101000",
+      "name": "河口镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "532532102000",
+      "name": "南溪镇",
+      "average": 2210.0
+    },
+    {
+      "regionId": "532532201000",
+      "name": "老范寨乡",
+      "average": 32.0
+    },
+    {
+      "regionId": "532532202000",
+      "name": "桥头苗族壮族乡",
+      "average": 1608.9
+    },
+    {
+      "regionId": "532532203000",
+      "name": "瑶山乡",
+      "average": 27.2
+    },
+    {
+      "regionId": "532532204000",
+      "name": "莲花滩乡",
+      "average": 19.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 1.99,
+      "color": "#eff3ff",
+      "label": "1.990 万m³"
+    },
+    {
+      "value": 20.337999999999997,
+      "color": "#bdd7e7",
+      "label": "20.338 万m³"
+    },
+    {
+      "value": 27.296,
+      "color": "#6baed6",
+      "label": "27.296 万m³"
+    },
+    {
+      "value": 31.904,
+      "color": "#3182bd",
+      "label": "31.904 万m³"
+    },
+    {
+      "value": 1514.2859999999994,
+      "color": "#08519c",
+      "label": "1514.286 万m³"
+    },
+    {
+      "value": 2149.8900000000003,
+      "color": "#042d60",
+      "label": "2149.890 万m³"
+    }
+  ]
+}

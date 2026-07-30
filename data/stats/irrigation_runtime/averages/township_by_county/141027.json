@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "141027100000",
+      "name": "天坛镇",
+      "average": 4126.8
+    },
+    {
+      "regionId": "141027101000",
+      "name": "响水河镇",
+      "average": 2286.2
+    },
+    {
+      "regionId": "141027200000",
+      "name": "张庄乡",
+      "average": 4197.0
+    },
+    {
+      "regionId": "141027201000",
+      "name": "东张乡",
+      "average": 1956.8
+    },
+    {
+      "regionId": "141027202000",
+      "name": "槐埝乡",
+      "average": 1234.9
+    },
+    {
+      "regionId": "141027203000",
+      "name": "北王乡",
+      "average": 1677.8
+    },
+    {
+      "regionId": "141027204000",
+      "name": "北韩乡",
+      "average": 466.6
+    },
+    {
+      "regionId": "141027205000",
+      "name": "米家垣乡",
+      "average": 3679.8
+    },
+    {
+      "regionId": "141027206000",
+      "name": "寨圪塔乡",
+      "average": 5471.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 589.528,
+      "color": "#eff3ff",
+      "label": "589.528 万m³"
+    },
+    {
+      "value": 1543.1584,
+      "color": "#bdd7e7",
+      "label": "1543.158 万m³"
+    },
+    {
+      "value": 2033.2207999999998,
+      "color": "#6baed6",
+      "label": "2033.221 万m³"
+    },
+    {
+      "value": 3356.4847999999997,
+      "color": "#3182bd",
+      "label": "3356.485 万m³"
+    },
+    {
+      "value": 4148.1408,
+      "color": "#08519c",
+      "label": "4148.141 万m³"
+    },
+    {
+      "value": 5267.58,
+      "color": "#042d60",
+      "label": "5267.580 万m³"
+    }
+  ]
+}

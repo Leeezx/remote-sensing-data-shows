@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350602001000",
+      "name": "东铺头街道",
+      "average": 77.5
+    },
+    {
+      "regionId": "350602002000",
+      "name": "西桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350602003000",
+      "name": "新桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350602004000",
+      "name": "巷口街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350602005000",
+      "name": "南坑街道",
+      "average": 3474.3
+    },
+    {
+      "regionId": "350602006000",
+      "name": "通北街道",
+      "average": 451.1
+    },
+    {
+      "regionId": "350602100000",
+      "name": "浦南镇",
+      "average": 36901.5
+    },
+    {
+      "regionId": "350602101000",
+      "name": "天宝镇",
+      "average": 21189.1
+    },
+    {
+      "regionId": "350602102000",
+      "name": "芝山镇",
+      "average": 5848.5
+    },
+    {
+      "regionId": "350602103000",
+      "name": "石亭镇",
+      "average": 38536.5
+    },
+    {
+      "regionId": "350602400000",
+      "name": "芗城区奶牛场",
+      "average": 0.0
+    },
+    {
+      "regionId": "350602401000",
+      "name": "后房农场",
+      "average": 8070.8
+    },
+    {
+      "regionId": "350602402000",
+      "name": "天宝林场",
+      "average": 772.6
+    },
+    {
+      "regionId": "350602404000",
+      "name": "五峰农场",
+      "average": 6857.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

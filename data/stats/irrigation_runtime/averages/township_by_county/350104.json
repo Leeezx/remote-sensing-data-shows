@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350104001000",
+      "name": "仓前街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350104002000",
+      "name": "东升街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350104003000",
+      "name": "对湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350104004000",
+      "name": "临江街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350104005000",
+      "name": "三叉街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350104006000",
+      "name": "上渡街道",
+      "average": 375.5
+    },
+    {
+      "regionId": "350104007000",
+      "name": "下渡街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350104008000",
+      "name": "金山街道",
+      "average": 4313.2
+    },
+    {
+      "regionId": "350104100000",
+      "name": "仓山镇",
+      "average": 301.8
+    },
+    {
+      "regionId": "350104101000",
+      "name": "城门镇",
+      "average": 39006.7
+    },
+    {
+      "regionId": "350104102000",
+      "name": "盖山镇",
+      "average": 19132.0
+    },
+    {
+      "regionId": "350104103000",
+      "name": "建新镇",
+      "average": 19546.2
+    },
+    {
+      "regionId": "350104104000",
+      "name": "螺洲镇",
+      "average": 4805.8
+    },
+    {
+      "regionId": "350104400000",
+      "name": "红星农场",
+      "average": 124.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "450107001000",
+      "name": "衡阳街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450107002000",
+      "name": "北湖街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450107003000",
+      "name": "西乡塘街道",
+      "average": 1044.1
+    },
+    {
+      "regionId": "450107004000",
+      "name": "安吉街道",
+      "average": 1176.3
+    },
+    {
+      "regionId": "450107005000",
+      "name": "华强街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450107006000",
+      "name": "新阳街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450107007000",
+      "name": "上尧街道",
+      "average": 540.3
+    },
+    {
+      "regionId": "450107008000",
+      "name": "安宁街道",
+      "average": 4077.6
+    },
+    {
+      "regionId": "450107009000",
+      "name": "石埠街道",
+      "average": 12663.9
+    },
+    {
+      "regionId": "450107010000",
+      "name": "心圩街道",
+      "average": 5008.4
+    },
+    {
+      "regionId": "450107100000",
+      "name": "金陵镇",
+      "average": 28895.7
+    },
+    {
+      "regionId": "450107101000",
+      "name": "双定镇",
+      "average": 33235.0
+    },
+    {
+      "regionId": "450107105000",
+      "name": "坛洛镇",
+      "average": 67505.9
+    },
+    {
+      "regionId": "450107450000",
+      "name": "那龙矿务局",
+      "average": 0.0
+    },
+    {
+      "regionId": "450107453000",
+      "name": "金光农场",
+      "average": 4632.0
+    },
+    {
+      "regionId": "450107454000",
+      "name": "高新技术开发区管委会",
+      "average": 5045.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

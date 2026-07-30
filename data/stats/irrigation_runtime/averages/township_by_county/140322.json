@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130121205000",
+      "name": "辛庄乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130131207000",
+      "name": "北冶乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "140322100000",
+      "name": "秀水镇",
+      "average": 274.8
+    },
+    {
+      "regionId": "140322101000",
+      "name": "孙家庄镇",
+      "average": 336.6
+    },
+    {
+      "regionId": "140322102000",
+      "name": "路家村镇",
+      "average": 15.8
+    },
+    {
+      "regionId": "140322103000",
+      "name": "南娄镇",
+      "average": 505.8
+    },
+    {
+      "regionId": "140322104000",
+      "name": "牛村镇",
+      "average": 260.6
+    },
+    {
+      "regionId": "140322105000",
+      "name": "苌池镇",
+      "average": 1196.1
+    },
+    {
+      "regionId": "140322106000",
+      "name": "上社镇",
+      "average": 77.9
+    },
+    {
+      "regionId": "140322107000",
+      "name": "西烟镇",
+      "average": 11139.9
+    },
+    {
+      "regionId": "140322200000",
+      "name": "仙人乡",
+      "average": 94.3
+    },
+    {
+      "regionId": "140322201000",
+      "name": "北下庄乡",
+      "average": 465.5
+    },
+    {
+      "regionId": "140322202000",
+      "name": "下社乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "140322203000",
+      "name": "梁家寨乡",
+      "average": 23.8
+    },
+    {
+      "regionId": "140322204000",
+      "name": "西潘乡",
+      "average": 59.9
+    },
+    {
+      "regionId": "140322205000",
+      "name": "东梁乡",
+      "average": 4845.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 17.24,
+      "color": "#bdd7e7",
+      "label": "17.240 万m³"
+    },
+    {
+      "value": 78.884,
+      "color": "#6baed6",
+      "label": "78.884 万m³"
+    },
+    {
+      "value": 273.948,
+      "color": "#3182bd",
+      "label": "273.948 万m³"
+    },
+    {
+      "value": 498.54599999999994,
+      "color": "#08519c",
+      "label": "498.546 万m³"
+    },
+    {
+      "value": 9251.699999999995,
+      "color": "#042d60",
+      "label": "9251.700 万m³"
+    }
+  ]
+}

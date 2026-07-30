@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "450204001000",
+      "name": "河西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450204002000",
+      "name": "南站街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450204003000",
+      "name": "鹅山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450204004000",
+      "name": "柳南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450204005000",
+      "name": "柳石街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450204006000",
+      "name": "银山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450204007000",
+      "name": "潭西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "450204008000",
+      "name": "南环街道",
+      "average": 2804.1
+    },
+    {
+      "regionId": "450204100000",
+      "name": "太阳村镇",
+      "average": 26382.5
+    },
+    {
+      "regionId": "450206104000",
+      "name": "洛满镇",
+      "average": 26515.5
+    },
+    {
+      "regionId": "450206105000",
+      "name": "流山镇",
+      "average": 7210.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540422100000",
+      "name": "米林镇",
+      "average": 1082.9
+    },
+    {
+      "regionId": "540422101000",
+      "name": "卧龙镇",
+      "average": 1388.0
+    },
+    {
+      "regionId": "540422102000",
+      "name": "派镇",
+      "average": 112.8
+    },
+    {
+      "regionId": "540422200000",
+      "name": "丹娘乡",
+      "average": 863.7
+    },
+    {
+      "regionId": "540422201000",
+      "name": "南伊珞巴民族乡",
+      "average": 0.6
+    },
+    {
+      "regionId": "540422202000",
+      "name": "羌纳乡",
+      "average": 1507.1
+    },
+    {
+      "regionId": "540422203000",
+      "name": "里龙乡",
+      "average": 112.8
+    },
+    {
+      "regionId": "540422204000",
+      "name": "扎西绕登乡",
+      "average": 587.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 16.308000000000003,
+      "color": "#eff3ff",
+      "label": "16.308 万m³"
+    },
+    {
+      "value": 112.8,
+      "color": "#bdd7e7",
+      "label": "112.800 万m³"
+    },
+    {
+      "value": 505.76879999999994,
+      "color": "#6baed6",
+      "label": "505.769 万m³"
+    },
+    {
+      "value": 901.4024,
+      "color": "#3182bd",
+      "label": "901.402 万m³"
+    },
+    {
+      "value": 1240.3315999999998,
+      "color": "#08519c",
+      "label": "1240.332 万m³"
+    },
+    {
+      "value": 1490.426,
+      "color": "#042d60",
+      "label": "1490.426 万m³"
+    }
+  ]
+}

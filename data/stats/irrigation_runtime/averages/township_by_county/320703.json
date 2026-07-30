@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "320703001000",
+      "name": "墟沟街道",
+      "average": 85.7
+    },
+    {
+      "regionId": "320703003000",
+      "name": "连云街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320703004000",
+      "name": "云山街道",
+      "average": 62.7
+    },
+    {
+      "regionId": "320703005000",
+      "name": "板桥街道",
+      "average": 516.7
+    },
+    {
+      "regionId": "320703006000",
+      "name": "连岛街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320703007000",
+      "name": "徐圩街道",
+      "average": 1648.6
+    },
+    {
+      "regionId": "320703008000",
+      "name": "海州湾街道",
+      "average": 230.6
+    },
+    {
+      "regionId": "320703009000",
+      "name": "宿城街道",
+      "average": 619.3
+    },
+    {
+      "regionId": "320703010000",
+      "name": "高公岛街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "320703050000",
+      "name": "中云街道",
+      "average": 1301.5
+    },
+    {
+      "regionId": "320703051000",
+      "name": "猴嘴街道",
+      "average": 1052.1
+    },
+    {
+      "regionId": "320703052000",
+      "name": "朝阳街道",
+      "average": 506.2
+    },
+    {
+      "regionId": "320703401000",
+      "name": "东辛农场",
+      "average": 114743.3
+    },
+    {
+      "regionId": "320703450000",
+      "name": "青口盐场",
+      "average": 242.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 47.40119999999999,
+      "color": "#bdd7e7",
+      "label": "47.401 万m³"
+    },
+    {
+      "value": 233.498,
+      "color": "#6baed6",
+      "label": "233.498 万m³"
+    },
+    {
+      "value": 514.054,
+      "color": "#3182bd",
+      "label": "514.054 万m³"
+    },
+    {
+      "value": 1112.9535999999998,
+      "color": "#08519c",
+      "label": "1112.954 万m³"
+    },
+    {
+      "value": 85338.67800000003,
+      "color": "#042d60",
+      "label": "85338.678 万m³"
+    }
+  ]
+}

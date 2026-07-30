@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620725101000",
+      "name": "清泉镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620725102000",
+      "name": "位奇镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620725103000",
+      "name": "霍城镇",
+      "average": 5060.8
+    },
+    {
+      "regionId": "620725200000",
+      "name": "东乐乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620725201000",
+      "name": "大马营乡",
+      "average": 2463.5
+    },
+    {
+      "regionId": "620725202000",
+      "name": "陈户乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "620725203000",
+      "name": "老军乡",
+      "average": 1567.8
+    },
+    {
+      "regionId": "620725204000",
+      "name": "李桥乡",
+      "average": 3011.7
+    },
+    {
+      "regionId": "620725400000",
+      "name": "国营山丹农场",
+      "average": 7345.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "431125100000",
+      "name": "潇浦镇",
+      "average": 29939.9
+    },
+    {
+      "regionId": "431125101000",
+      "name": "上江圩镇",
+      "average": 19036.2
+    },
+    {
+      "regionId": "431125102000",
+      "name": "允山镇",
+      "average": 51871.5
+    },
+    {
+      "regionId": "431125103000",
+      "name": "夏层铺镇",
+      "average": 40161.5
+    },
+    {
+      "regionId": "431125104000",
+      "name": "桃川镇",
+      "average": 88078.5
+    },
+    {
+      "regionId": "431125105000",
+      "name": "粗石江镇",
+      "average": 42579.5
+    },
+    {
+      "regionId": "431125106000",
+      "name": "回龙圩镇",
+      "average": 8740.1
+    },
+    {
+      "regionId": "431125200000",
+      "name": "松柏瑶族乡",
+      "average": 4805.9
+    },
+    {
+      "regionId": "431125201000",
+      "name": "黄甲岭乡",
+      "average": 20657.2
+    },
+    {
+      "regionId": "431125202000",
+      "name": "千家峒瑶族乡",
+      "average": 8357.6
+    },
+    {
+      "regionId": "431125203000",
+      "name": "兰溪瑶族乡",
+      "average": 5932.8
+    },
+    {
+      "regionId": "431125204000",
+      "name": "源口瑶族乡",
+      "average": 13549.7
+    },
+    {
+      "regionId": "450327100000",
+      "name": "灌阳镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "450332201000",
+      "name": "三江乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "450332204000",
+      "name": "观音乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "450332205000",
+      "name": "龙虎乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "451123105000",
+      "name": "麦岭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "451123108000",
+      "name": "朝东镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

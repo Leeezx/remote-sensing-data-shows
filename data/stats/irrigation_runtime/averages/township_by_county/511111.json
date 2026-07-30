@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "511111100000",
+      "name": "沙湾镇",
+      "average": 383.2
+    },
+    {
+      "regionId": "511111101000",
+      "name": "嘉农镇",
+      "average": 2518.8
+    },
+    {
+      "regionId": "511111102000",
+      "name": "太平镇",
+      "average": 865.0
+    },
+    {
+      "regionId": "511111103000",
+      "name": "福禄镇",
+      "average": 2086.4
+    },
+    {
+      "regionId": "511111104000",
+      "name": "牛石镇",
+      "average": 699.7
+    },
+    {
+      "regionId": "511111105000",
+      "name": "龚嘴镇",
+      "average": 270.1
+    },
+    {
+      "regionId": "511111106000",
+      "name": "葫芦镇",
+      "average": 1471.4
+    },
+    {
+      "regionId": "511111107000",
+      "name": "踏水镇",
+      "average": 631.1
+    },
+    {
+      "regionId": "511111200000",
+      "name": "谭坝乡",
+      "average": 478.3
+    },
+    {
+      "regionId": "511111201000",
+      "name": "轸溪乡",
+      "average": 655.9
+    },
+    {
+      "regionId": "511111202000",
+      "name": "范店乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "511111203000",
+      "name": "铜茨乡",
+      "average": 979.9
+    },
+    {
+      "regionId": "511111204000",
+      "name": "碧山乡",
+      "average": 901.8
+    },
+    {
+      "regionId": "511111400000",
+      "name": "沫江办事处",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 355.6036,
+      "color": "#bdd7e7",
+      "label": "355.604 万m³"
+    },
+    {
+      "value": 637.3496,
+      "color": "#6baed6",
+      "label": "637.350 万m³"
+    },
+    {
+      "value": 823.3444,
+      "color": "#3182bd",
+      "label": "823.344 万m³"
+    },
+    {
+      "value": 1099.8259999999998,
+      "color": "#08519c",
+      "label": "1099.826 万m³"
+    },
+    {
+      "value": 2406.376,
+      "color": "#042d60",
+      "label": "2406.376 万m³"
+    }
+  ]
+}

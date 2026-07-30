@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "211103001000",
+      "name": "振兴街道",
+      "average": 278.6
+    },
+    {
+      "regionId": "211103002000",
+      "name": "兴隆街道",
+      "average": 76.0
+    },
+    {
+      "regionId": "211103003000",
+      "name": "渤海街道",
+      "average": 22.5
+    },
+    {
+      "regionId": "211103004000",
+      "name": "新工街道",
+      "average": 80.7
+    },
+    {
+      "regionId": "211103007000",
+      "name": "曙光街道",
+      "average": 1901.3
+    },
+    {
+      "regionId": "211103010000",
+      "name": "新生街道",
+      "average": 8132.9
+    },
+    {
+      "regionId": "211103016000",
+      "name": "创新街道",
+      "average": 50.7
+    },
+    {
+      "regionId": "211103017000",
+      "name": "兴盛街道",
+      "average": 7499.2
+    },
+    {
+      "regionId": "211103018000",
+      "name": "兴海街道",
+      "average": 3314.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 27.012,
+      "color": "#eff3ff",
+      "label": "27.012 万m³"
+    },
+    {
+      "value": 68.3088,
+      "color": "#bdd7e7",
+      "label": "68.309 万m³"
+    },
+    {
+      "value": 126.61279999999996,
+      "color": "#6baed6",
+      "label": "126.613 万m³"
+    },
+    {
+      "value": 1524.8335999999997,
+      "color": "#3182bd",
+      "label": "1524.834 万m³"
+    },
+    {
+      "value": 4586.509599999998,
+      "color": "#08519c",
+      "label": "4586.510 万m³"
+    },
+    {
+      "value": 8031.508,
+      "color": "#042d60",
+      "label": "8031.508 万m³"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "152223101000",
+      "name": "新林镇",
+      "average": 26761.5
+    },
+    {
+      "regionId": "230208501000",
+      "name": "哈拉海农场",
+      "average": 9751.6
+    },
+    {
+      "regionId": "230221100000",
+      "name": "龙江镇",
+      "average": 27545.4
+    },
+    {
+      "regionId": "230221101000",
+      "name": "景星镇",
+      "average": 67.8
+    },
+    {
+      "regionId": "230221102000",
+      "name": "龙兴镇",
+      "average": 88.7
+    },
+    {
+      "regionId": "230221103000",
+      "name": "山泉镇",
+      "average": 184.9
+    },
+    {
+      "regionId": "230221104000",
+      "name": "七棵树镇",
+      "average": 36618.9
+    },
+    {
+      "regionId": "230221105000",
+      "name": "杏山镇",
+      "average": 92.9
+    },
+    {
+      "regionId": "230221200000",
+      "name": "白山乡",
+      "average": 60177.7
+    },
+    {
+      "regionId": "230221201000",
+      "name": "黑岗乡",
+      "average": 35160.7
+    },
+    {
+      "regionId": "230221202000",
+      "name": "广厚乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "230221203000",
+      "name": "华民乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "230221204000",
+      "name": "哈拉海乡",
+      "average": 9140.0
+    },
+    {
+      "regionId": "230221214000",
+      "name": "头站乡",
+      "average": 55.0
+    },
+    {
+      "regionId": "230221215000",
+      "name": "鲁河乡",
+      "average": 25024.9
+    },
+    {
+      "regionId": "230221217000",
+      "name": "济沁河乡",
+      "average": 13.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 57.303999999999995,
+      "color": "#bdd7e7",
+      "label": "57.304 万m³"
+    },
+    {
+      "value": 98.41999999999997,
+      "color": "#6baed6",
+      "label": "98.420 万m³"
+    },
+    {
+      "value": 9714.904,
+      "color": "#3182bd",
+      "label": "9714.904 万m³"
+    },
+    {
+      "value": 27404.298,
+      "color": "#08519c",
+      "label": "27404.298 万m³"
+    },
+    {
+      "value": 53110.05999999998,
+      "color": "#042d60",
+      "label": "53110.060 万m³"
+    }
+  ]
+}

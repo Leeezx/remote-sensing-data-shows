@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150725100000",
+      "name": "陈旗巴彦库仁镇",
+      "average": 125.1
+    },
+    {
+      "regionId": "150725101000",
+      "name": "陈旗宝日希勒镇",
+      "average": 49.4
+    },
+    {
+      "regionId": "150725102000",
+      "name": "陈旗呼和诺尔镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "150725200000",
+      "name": "陈旗西乌珠尔苏木",
+      "average": 0.0
+    },
+    {
+      "regionId": "150725201000",
+      "name": "陈旗鄂温克民族苏木",
+      "average": 2846.7
+    },
+    {
+      "regionId": "150725202000",
+      "name": "陈旗东乌珠尔苏木",
+      "average": 0.0
+    },
+    {
+      "regionId": "150725203000",
+      "name": "陈旗巴彦哈达苏木",
+      "average": 37.1
+    },
+    {
+      "regionId": "150725501000",
+      "name": "陈巴尔虎旗国营哈图达牧场",
+      "average": 2178.4
+    },
+    {
+      "regionId": "150725502000",
+      "name": "陈旗国营浩特陶海农牧场",
+      "average": 4608.0
+    },
+    {
+      "regionId": "150725503000",
+      "name": "陈旗国营特泥河牧场",
+      "average": 6276.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "141129100000",
+      "name": "宁乡镇",
+      "average": 1577.7
+    },
+    {
+      "regionId": "141129101000",
+      "name": "金罗镇",
+      "average": 245.5
+    },
+    {
+      "regionId": "141129102000",
+      "name": "枝柯镇",
+      "average": 912.4
+    },
+    {
+      "regionId": "141129103000",
+      "name": "武家庄镇",
+      "average": 1025.2
+    },
+    {
+      "regionId": "141129104000",
+      "name": "暖泉镇",
+      "average": 447.0
+    },
+    {
+      "regionId": "141129200000",
+      "name": "张子山乡",
+      "average": 804.8
+    },
+    {
+      "regionId": "141129201000",
+      "name": "下枣林乡",
+      "average": 682.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 269.68,
+      "color": "#eff3ff",
+      "label": "269.680 万m³"
+    },
+    {
+      "value": 511.08320000000003,
+      "color": "#bdd7e7",
+      "label": "511.083 万m³"
+    },
+    {
+      "value": 734.4128,
+      "color": "#6baed6",
+      "label": "734.413 万m³"
+    },
+    {
+      "value": 866.7775999999999,
+      "color": "#3182bd",
+      "label": "866.778 万m³"
+    },
+    {
+      "value": 994.5184,
+      "color": "#08519c",
+      "label": "994.518 万m³"
+    },
+    {
+      "value": 1511.4,
+      "color": "#042d60",
+      "label": "1511.400 万m³"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150105001000",
+      "name": "人民路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150105002000",
+      "name": "大学西路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150105003000",
+      "name": "乌兰察布东路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150105004000",
+      "name": "大学东路街道",
+      "average": 5.4
+    },
+    {
+      "regionId": "150105005000",
+      "name": "中专路街道",
+      "average": 41.3
+    },
+    {
+      "regionId": "150105006000",
+      "name": "昭乌达路街道",
+      "average": 1357.2
+    },
+    {
+      "regionId": "150105007000",
+      "name": "巴彦街道",
+      "average": 6272.4
+    },
+    {
+      "regionId": "150105008000",
+      "name": "敕勒川路街道",
+      "average": 13660.2
+    },
+    {
+      "regionId": "150105101000",
+      "name": "榆林镇",
+      "average": 10083.7
+    },
+    {
+      "regionId": "150105103000",
+      "name": "黄合少镇",
+      "average": 35996.2
+    },
+    {
+      "regionId": "150105104000",
+      "name": "金河镇",
+      "average": 23153.8
+    },
+    {
+      "regionId": "150105400000",
+      "name": "金桥经济技术开发区",
+      "average": 53.0
+    },
+    {
+      "regionId": "150105401000",
+      "name": "呼和浩特市如意开发区",
+      "average": 0.0
+    },
+    {
+      "regionId": "150105402000",
+      "name": "呼和浩特留学人员创业园",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

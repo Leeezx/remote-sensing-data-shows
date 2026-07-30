@@ -514,7 +514,7 @@ def main(argv: list[str] | None = None) -> int:
         args.township_root,
         args.output,
     )
-    print(json.dumps(manifest, ensure_ascii=False, indent=2))
+    print(json.dumps(manifest, ensure_ascii=True, indent=2))
     return 0
 
 

@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "350702001000",
+      "name": "梅山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "350702002000",
+      "name": "黄墩街道",
+      "average": 6127.3
+    },
+    {
+      "regionId": "350702003000",
+      "name": "紫云街道",
+      "average": 231.7
+    },
+    {
+      "regionId": "350702004000",
+      "name": "四鹤街道",
+      "average": 5324.1
+    },
+    {
+      "regionId": "350702005000",
+      "name": "水南街道",
+      "average": 9194.9
+    },
+    {
+      "regionId": "350702006000",
+      "name": "水东街道",
+      "average": 4305.8
+    },
+    {
+      "regionId": "350702100000",
+      "name": "来舟镇",
+      "average": 3865.4
+    },
+    {
+      "regionId": "350702101000",
+      "name": "樟湖镇",
+      "average": 11101.0
+    },
+    {
+      "regionId": "350702102000",
+      "name": "夏道镇",
+      "average": 29758.0
+    },
+    {
+      "regionId": "350702103000",
+      "name": "西芹镇",
+      "average": 31524.9
+    },
+    {
+      "regionId": "350702104000",
+      "name": "峡阳镇",
+      "average": 37927.0
+    },
+    {
+      "regionId": "350702105000",
+      "name": "南山镇",
+      "average": 40380.3
+    },
+    {
+      "regionId": "350702106000",
+      "name": "大横镇",
+      "average": 41713.0
+    },
+    {
+      "regionId": "350702107000",
+      "name": "王台镇",
+      "average": 35447.4
+    },
+    {
+      "regionId": "350702108000",
+      "name": "太平镇",
+      "average": 18146.2
+    },
+    {
+      "regionId": "350702109000",
+      "name": "塔前镇",
+      "average": 31895.8
+    },
+    {
+      "regionId": "350702110000",
+      "name": "茫荡镇",
+      "average": 26274.8
+    },
+    {
+      "regionId": "350702111000",
+      "name": "洋后镇",
+      "average": 8639.6
+    },
+    {
+      "regionId": "350702112000",
+      "name": "炉下镇",
+      "average": 18262.1
+    },
+    {
+      "regionId": "350702200000",
+      "name": "巨口乡",
+      "average": 11720.0
+    },
+    {
+      "regionId": "350702202000",
+      "name": "赤门乡",
+      "average": 21271.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 92.68,
+      "color": "#eff3ff",
+      "label": "92.680 万m³"
+    },
+    {
+      "value": 5516.868,
+      "color": "#bdd7e7",
+      "label": "5516.868 万m³"
+    },
+    {
+      "value": 11150.52,
+      "color": "#6baed6",
+      "label": "11150.520 万m³"
+    },
+    {
+      "value": 21030.288,
+      "color": "#3182bd",
+      "label": "21030.288 万m³"
+    },
+    {
+      "value": 31806.784,
+      "color": "#08519c",
+      "label": "31806.784 万m³"
+    },
+    {
+      "value": 41179.920000000006,
+      "color": "#042d60",
+      "label": "41179.920 万m³"
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620922101000",
+      "name": "柳园镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620982100000",
+      "name": "七里镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620982400000",
+      "name": "国营敦煌农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "650502001000",
+      "name": "东河街道",
+      "average": 166.2
+    },
+    {
+      "regionId": "650502002000",
+      "name": "西河街道",
+      "average": 535.1
+    },
+    {
+      "regionId": "650502003000",
+      "name": "城北街道",
+      "average": 296.0
+    },
+    {
+      "regionId": "650502004000",
+      "name": "丽园街道",
+      "average": 1663.7
+    },
+    {
+      "regionId": "650502005000",
+      "name": "石油新城街道",
+      "average": 22991.4
+    },
+    {
+      "regionId": "650502100000",
+      "name": "雅满苏镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "650502101000",
+      "name": "七角井镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "650502102000",
+      "name": "星星峡镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "650502103000",
+      "name": "二堡镇",
+      "average": 53271.9
+    },
+    {
+      "regionId": "650502104000",
+      "name": "陶家宫镇",
+      "average": 45190.2
+    },
+    {
+      "regionId": "650502105000",
+      "name": "五堡镇",
+      "average": 11752.2
+    },
+    {
+      "regionId": "650502106000",
+      "name": "三道岭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "650502200000",
+      "name": "沁城乡",
+      "average": 17176.2
+    },
+    {
+      "regionId": "650502201000",
+      "name": "乌拉台哈萨克民族乡",
+      "average": 2042.0
+    },
+    {
+      "regionId": "650502202000",
+      "name": "双井子乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "650502203000",
+      "name": "大泉湾乡",
+      "average": 80310.0
+    },
+    {
+      "regionId": "650502205000",
+      "name": "回城乡",
+      "average": 19011.4
+    },
+    {
+      "regionId": "650502206000",
+      "name": "花园乡",
+      "average": 40842.5
+    },
+    {
+      "regionId": "650502207000",
+      "name": "南湖乡",
+      "average": 1977.9
+    },
+    {
+      "regionId": "650502209000",
+      "name": "德外里都如克哈萨克乡",
+      "average": 111.4
+    },
+    {
+      "regionId": "650502210000",
+      "name": "西山乡",
+      "average": 4347.8
+    },
+    {
+      "regionId": "650502211000",
+      "name": "天山乡",
+      "average": 5260.7
+    },
+    {
+      "regionId": "650502212000",
+      "name": "白石头乡",
+      "average": 4752.3
+    },
+    {
+      "regionId": "650502214000",
+      "name": "柳树沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "650502406000",
+      "name": "哈密工业园区",
+      "average": 158.8
+    },
+    {
+      "regionId": "650502501000",
+      "name": "兵团红星二场",
+      "average": 53299.6
+    },
+    {
+      "regionId": "650502504000",
+      "name": "兵团火箭农场",
+      "average": 58986.7
+    },
+    {
+      "regionId": "650502505000",
+      "name": "兵团柳树泉农场",
+      "average": 15879.6
+    },
+    {
+      "regionId": "650521402000",
+      "name": "巴里坤县山南开发区",
+      "average": 2272.6
+    },
+    {
+      "regionId": "650522403000",
+      "name": "伊吾县山南开发区管委会",
+      "average": 1970.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

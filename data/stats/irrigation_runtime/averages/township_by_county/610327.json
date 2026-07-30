@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610327100000",
+      "name": "城关镇",
+      "average": 6568.9
+    },
+    {
+      "regionId": "610327101000",
+      "name": "东风镇",
+      "average": 9324.6
+    },
+    {
+      "regionId": "610327102000",
+      "name": "八渡镇",
+      "average": 811.8
+    },
+    {
+      "regionId": "610327104000",
+      "name": "东南镇",
+      "average": 9672.5
+    },
+    {
+      "regionId": "610327106000",
+      "name": "温水镇",
+      "average": 1262.1
+    },
+    {
+      "regionId": "610327107000",
+      "name": "天成镇",
+      "average": 807.2
+    },
+    {
+      "regionId": "610327108000",
+      "name": "曹家湾镇",
+      "average": 1586.4
+    },
+    {
+      "regionId": "610327109000",
+      "name": "固关镇",
+      "average": 342.2
+    },
+    {
+      "regionId": "610327110000",
+      "name": "火烧寨镇",
+      "average": 376.2
+    },
+    {
+      "regionId": "610327111000",
+      "name": "李家河镇",
+      "average": 374.3
+    },
+    {
+      "regionId": "610327112000",
+      "name": "河北镇",
+      "average": 1395.6
+    },
+    {
+      "regionId": "610327113000",
+      "name": "新集川镇",
+      "average": 327.7
+    },
+    {
+      "regionId": "620521104000",
+      "name": "秦亭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "620823101000",
+      "name": "新窑镇",
+      "average": 23.6
+    },
+    {
+      "regionId": "620823401000",
+      "name": "五举农场",
+      "average": 0.0
+    },
+    {
+      "regionId": "620881200000",
+      "name": "上关乡",
+      "average": 8.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 78.33799999999991,
+      "color": "#bdd7e7",
+      "label": "78.338 万m³"
+    },
+    {
+      "value": 374.414,
+      "color": "#6baed6",
+      "label": "374.414 万m³"
+    },
+    {
+      "value": 811.524,
+      "color": "#3182bd",
+      "label": "811.524 万m³"
+    },
+    {
+      "value": 1552.0559999999998,
+      "color": "#08519c",
+      "label": "1552.056 万m³"
+    },
+    {
+      "value": 9568.13,
+      "color": "#042d60",
+      "label": "9568.130 万m³"
+    }
+  ]
+}

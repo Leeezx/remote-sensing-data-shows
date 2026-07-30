@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "440311001000",
+      "name": "光明街道",
+      "average": 3491.2
+    },
+    {
+      "regionId": "440311002000",
+      "name": "公明街道",
+      "average": 2511.6
+    },
+    {
+      "regionId": "440311003000",
+      "name": "新湖街道",
+      "average": 5435.0
+    },
+    {
+      "regionId": "440311004000",
+      "name": "凤凰街道",
+      "average": 4932.6
+    },
+    {
+      "regionId": "440311005000",
+      "name": "玉塘街道",
+      "average": 2675.7
+    },
+    {
+      "regionId": "440311006000",
+      "name": "马田街道",
+      "average": 568.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 762.36,
+      "color": "#eff3ff",
+      "label": "762.360 万m³"
+    },
+    {
+      "value": 2521.446,
+      "color": "#bdd7e7",
+      "label": "2521.446 万m³"
+    },
+    {
+      "value": 2692.0099999999998,
+      "color": "#6baed6",
+      "label": "2692.010 万m³"
+    },
+    {
+      "value": 3474.89,
+      "color": "#3182bd",
+      "label": "3474.890 万m³"
+    },
+    {
+      "value": 4846.116,
+      "color": "#08519c",
+      "label": "4846.116 万m³"
+    },
+    {
+      "value": 5384.76,
+      "color": "#042d60",
+      "label": "5384.760 万m³"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513225100000",
+      "name": "永乐镇",
+      "average": 430.6
+    },
+    {
+      "regionId": "513225101000",
+      "name": "漳扎镇",
+      "average": 453.9
+    },
+    {
+      "regionId": "513225200000",
+      "name": "永丰乡",
+      "average": 138.1
+    },
+    {
+      "regionId": "513225201000",
+      "name": "永和乡",
+      "average": 151.2
+    },
+    {
+      "regionId": "513225202000",
+      "name": "安乐乡",
+      "average": 116.6
+    },
+    {
+      "regionId": "513225203000",
+      "name": "白河乡",
+      "average": 406.9
+    },
+    {
+      "regionId": "513225204000",
+      "name": "双河乡",
+      "average": 704.4
+    },
+    {
+      "regionId": "513225205000",
+      "name": "保华乡",
+      "average": 217.1
+    },
+    {
+      "regionId": "513225206000",
+      "name": "罗依乡",
+      "average": 204.8
+    },
+    {
+      "regionId": "513225207000",
+      "name": "勿角乡",
+      "average": 198.6
+    },
+    {
+      "regionId": "513225208000",
+      "name": "马家乡",
+      "average": 142.2
+    },
+    {
+      "regionId": "513225209000",
+      "name": "郭元乡",
+      "average": 465.5
+    },
+    {
+      "regionId": "513225210000",
+      "name": "草地乡",
+      "average": 289.0
+    },
+    {
+      "regionId": "513225211000",
+      "name": "陵江乡",
+      "average": 224.6
+    },
+    {
+      "regionId": "513225212000",
+      "name": "黑河乡",
+      "average": 486.5
+    },
+    {
+      "regionId": "513225213000",
+      "name": "玉瓦乡",
+      "average": 214.3
+    },
+    {
+      "regionId": "513225214000",
+      "name": "大录乡",
+      "average": 233.0
+    },
+    {
+      "regionId": "621222103000",
+      "name": "中寨镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "621222220000",
+      "name": "石鸡坝乡",
+      "average": 11.1
+    },
+    {
+      "regionId": "623023211000",
+      "name": "武坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "623023215000",
+      "name": "博峪乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 121.76,
+      "color": "#bdd7e7",
+      "label": "121.760 万m³"
+    },
+    {
+      "value": 199.096,
+      "color": "#6baed6",
+      "label": "199.096 万m³"
+    },
+    {
+      "value": 224.0,
+      "color": "#3182bd",
+      "label": "224.000 万m³"
+    },
+    {
+      "value": 424.912,
+      "color": "#08519c",
+      "label": "424.912 万m³"
+    },
+    {
+      "value": 617.2400000000002,
+      "color": "#042d60",
+      "label": "617.240 万m³"
+    }
+  ]
+}

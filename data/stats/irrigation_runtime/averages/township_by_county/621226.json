@@ -1,0 +1,183 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "621226100000",
+      "name": "城关镇",
+      "average": 4033.3
+    },
+    {
+      "regionId": "621226101000",
+      "name": "盐官镇",
+      "average": 3852.0
+    },
+    {
+      "regionId": "621226102000",
+      "name": "石桥镇",
+      "average": 3321.2
+    },
+    {
+      "regionId": "621226103000",
+      "name": "白河镇",
+      "average": 2747.8
+    },
+    {
+      "regionId": "621226200000",
+      "name": "宽川乡",
+      "average": 4517.9
+    },
+    {
+      "regionId": "621226201000",
+      "name": "永兴乡",
+      "average": 4997.9
+    },
+    {
+      "regionId": "621226202000",
+      "name": "祁山乡",
+      "average": 1828.7
+    },
+    {
+      "regionId": "621226203000",
+      "name": "马河乡",
+      "average": 2404.0
+    },
+    {
+      "regionId": "621226204000",
+      "name": "红河乡",
+      "average": 1799.5
+    },
+    {
+      "regionId": "621226208000",
+      "name": "永坪乡",
+      "average": 4837.5
+    },
+    {
+      "regionId": "621226209000",
+      "name": "固城乡",
+      "average": 1247.3
+    },
+    {
+      "regionId": "621226210000",
+      "name": "崖城乡",
+      "average": 1728.5
+    },
+    {
+      "regionId": "621226211000",
+      "name": "罗坝乡",
+      "average": 1171.5
+    },
+    {
+      "regionId": "621226212000",
+      "name": "湫山乡",
+      "average": 1500.7
+    },
+    {
+      "regionId": "621226214000",
+      "name": "洮坪乡",
+      "average": 1694.3
+    },
+    {
+      "regionId": "621226215000",
+      "name": "上坪乡",
+      "average": 2300.3
+    },
+    {
+      "regionId": "621226218000",
+      "name": "江口乡",
+      "average": 553.0
+    },
+    {
+      "regionId": "621226219000",
+      "name": "雷王乡",
+      "average": 876.6
+    },
+    {
+      "regionId": "621226220000",
+      "name": "龙林乡",
+      "average": 1365.1
+    },
+    {
+      "regionId": "621226221000",
+      "name": "中坝乡",
+      "average": 2208.1
+    },
+    {
+      "regionId": "621226222000",
+      "name": "白关乡",
+      "average": 1498.8
+    },
+    {
+      "regionId": "621226224000",
+      "name": "沙金乡",
+      "average": 985.4
+    },
+    {
+      "regionId": "621226227000",
+      "name": "桥头乡",
+      "average": 1834.7
+    },
+    {
+      "regionId": "621226228000",
+      "name": "草坪乡",
+      "average": 1189.3
+    },
+    {
+      "regionId": "621226229000",
+      "name": "雷坝乡",
+      "average": 662.3
+    },
+    {
+      "regionId": "621226230000",
+      "name": "王坝乡",
+      "average": 2380.8
+    },
+    {
+      "regionId": "621226231000",
+      "name": "肖良乡",
+      "average": 2346.0
+    },
+    {
+      "regionId": "621226232000",
+      "name": "三峪乡",
+      "average": 1606.2
+    },
+    {
+      "regionId": "621226233000",
+      "name": "滩坪乡",
+      "average": 1996.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 614.208,
+      "color": "#eff3ff",
+      "label": "614.208 万m³"
+    },
+    {
+      "value": 1243.588,
+      "color": "#bdd7e7",
+      "label": "1243.588 万m³"
+    },
+    {
+      "value": 1704.9704,
+      "color": "#6baed6",
+      "label": "1704.970 万m³"
+    },
+    {
+      "value": 2142.0183999999995,
+      "color": "#3182bd",
+      "label": "2142.018 万m³"
+    },
+    {
+      "value": 2784.4975999999983,
+      "color": "#08519c",
+      "label": "2784.498 万m³"
+    },
+    {
+      "value": 4908.075999999999,
+      "color": "#042d60",
+      "label": "4908.076 万m³"
+    }
+  ]
+}

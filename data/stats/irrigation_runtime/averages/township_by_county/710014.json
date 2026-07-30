@@ -1,0 +1,223 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "710500010000",
+      "name": "新營區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500020000",
+      "name": "鹽水區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500030000",
+      "name": "白河區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500040000",
+      "name": "柳營區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500050000",
+      "name": "後壁區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500060000",
+      "name": "東山區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500070000",
+      "name": "麻豆區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500080000",
+      "name": "下營區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500090000",
+      "name": "六甲區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500100000",
+      "name": "官田區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500110000",
+      "name": "大內區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500120000",
+      "name": "佳里區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500130000",
+      "name": "學甲區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500140000",
+      "name": "西港區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500150000",
+      "name": "七股區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500160000",
+      "name": "將軍區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500170000",
+      "name": "北門區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500180000",
+      "name": "新化區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500190000",
+      "name": "善化區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500200000",
+      "name": "新市區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500210000",
+      "name": "安定區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500220000",
+      "name": "山上區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500230000",
+      "name": "玉井區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500240000",
+      "name": "楠西區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500250000",
+      "name": "南化區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500260000",
+      "name": "左鎮區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500270000",
+      "name": "仁德區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500280000",
+      "name": "歸仁區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500290000",
+      "name": "關廟區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500300000",
+      "name": "龍崎區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500310000",
+      "name": "永康區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500320000",
+      "name": "東區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500330000",
+      "name": "南區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500340000",
+      "name": "北區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500350000",
+      "name": "安南區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500360000",
+      "name": "安平區",
+      "average": 0.0
+    },
+    {
+      "regionId": "710500370000",
+      "name": "中西區",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

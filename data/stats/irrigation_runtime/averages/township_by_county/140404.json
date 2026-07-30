@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "140404100000",
+      "name": "韩店镇",
+      "average": 4794.9
+    },
+    {
+      "regionId": "140404101000",
+      "name": "苏店镇",
+      "average": 3099.0
+    },
+    {
+      "regionId": "140404102000",
+      "name": "荫城镇",
+      "average": 10981.9
+    },
+    {
+      "regionId": "140404103000",
+      "name": "西火镇",
+      "average": 6077.0
+    },
+    {
+      "regionId": "140404104000",
+      "name": "八义镇",
+      "average": 3985.5
+    },
+    {
+      "regionId": "140404105000",
+      "name": "贾掌镇",
+      "average": 2782.9
+    },
+    {
+      "regionId": "140404200000",
+      "name": "郝家庄乡",
+      "average": 3175.8
+    },
+    {
+      "regionId": "140404201000",
+      "name": "西池乡",
+      "average": 5171.1
+    },
+    {
+      "regionId": "140404202000",
+      "name": "北呈乡",
+      "average": 10756.3
+    },
+    {
+      "regionId": "140404203000",
+      "name": "东和乡",
+      "average": 3571.0
+    },
+    {
+      "regionId": "140404204000",
+      "name": "南宋乡",
+      "average": 6291.7
+    },
+    {
+      "regionId": "140404400000",
+      "name": "振兴新区",
+      "average": 232.8
+    },
+    {
+      "regionId": "140404406000",
+      "name": "工业园区",
+      "average": 887.7
+    }
+  ],
+  "legend": [
+    {
+      "value": 389.976,
+      "color": "#eff3ff",
+      "label": "389.976 万m³"
+    },
+    {
+      "value": 2954.8584,
+      "color": "#bdd7e7",
+      "label": "2954.858 万m³"
+    },
+    {
+      "value": 3510.9296,
+      "color": "#6baed6",
+      "label": "3510.930 万m³"
+    },
+    {
+      "value": 4852.082399999999,
+      "color": "#3182bd",
+      "label": "4852.082 万m³"
+    },
+    {
+      "value": 6174.9032,
+      "color": "#08519c",
+      "label": "6174.903 万m³"
+    },
+    {
+      "value": 10927.756,
+      "color": "#042d60",
+      "label": "10927.756 万m³"
+    }
+  ]
+}

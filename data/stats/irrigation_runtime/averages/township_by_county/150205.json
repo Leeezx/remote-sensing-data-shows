@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "150205001000",
+      "name": "石拐街道",
+      "average": 7.3
+    },
+    {
+      "regionId": "150205002000",
+      "name": "大发街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150205003000",
+      "name": "大磁街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150205004000",
+      "name": "五当沟街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "150205005000",
+      "name": "白狐沟街道",
+      "average": 2.9
+    },
+    {
+      "regionId": "150205006000",
+      "name": "大德恒办事处",
+      "average": 153.0
+    },
+    {
+      "regionId": "150205101000",
+      "name": "五当召镇",
+      "average": 649.8
+    },
+    {
+      "regionId": "150205202000",
+      "name": "吉忽伦图苏木",
+      "average": 283.7
+    },
+    {
+      "regionId": "150205400000",
+      "name": "工业园区管理委员会",
+      "average": 78.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

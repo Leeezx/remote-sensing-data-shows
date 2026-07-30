@@ -1,0 +1,138 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "621225100000",
+      "name": "汉源镇",
+      "average": 173.7
+    },
+    {
+      "regionId": "621225101000",
+      "name": "长道镇",
+      "average": 2627.7
+    },
+    {
+      "regionId": "621225102000",
+      "name": "何坝镇",
+      "average": 3293.2
+    },
+    {
+      "regionId": "621225103000",
+      "name": "姜席镇",
+      "average": 2483.8
+    },
+    {
+      "regionId": "621225104000",
+      "name": "石峡镇",
+      "average": 1480.5
+    },
+    {
+      "regionId": "621225105000",
+      "name": "洛峪镇",
+      "average": 2836.8
+    },
+    {
+      "regionId": "621225201000",
+      "name": "石堡乡",
+      "average": 1823.6
+    },
+    {
+      "regionId": "621225202000",
+      "name": "西峪乡",
+      "average": 321.5
+    },
+    {
+      "regionId": "621225203000",
+      "name": "苏河乡",
+      "average": 1800.8
+    },
+    {
+      "regionId": "621225204000",
+      "name": "卢河乡",
+      "average": 482.6
+    },
+    {
+      "regionId": "621225205000",
+      "name": "兴隆乡",
+      "average": 151.3
+    },
+    {
+      "regionId": "621225206000",
+      "name": "稍峪乡",
+      "average": 278.1
+    },
+    {
+      "regionId": "621225207000",
+      "name": "马元乡",
+      "average": 435.1
+    },
+    {
+      "regionId": "621225208000",
+      "name": "晒经乡",
+      "average": 1037.0
+    },
+    {
+      "regionId": "621225211000",
+      "name": "十里乡",
+      "average": 2148.3
+    },
+    {
+      "regionId": "621225216000",
+      "name": "大桥乡",
+      "average": 750.6
+    },
+    {
+      "regionId": "621225217000",
+      "name": "蒿林乡",
+      "average": 497.0
+    },
+    {
+      "regionId": "621225218000",
+      "name": "太石河乡",
+      "average": 975.6
+    },
+    {
+      "regionId": "621225220000",
+      "name": "六巷乡",
+      "average": 833.5
+    },
+    {
+      "regionId": "621225221000",
+      "name": "西高山乡",
+      "average": 3799.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 159.812,
+      "color": "#eff3ff",
+      "label": "159.812 万m³"
+    },
+    {
+      "value": 436.43,
+      "color": "#bdd7e7",
+      "label": "436.430 万m³"
+    },
+    {
+      "value": 806.6404,
+      "color": "#6baed6",
+      "label": "806.640 万m³"
+    },
+    {
+      "value": 1584.2772,
+      "color": "#3182bd",
+      "label": "1584.277 万m³"
+    },
+    {
+      "value": 2474.4059999999995,
+      "color": "#08519c",
+      "label": "2474.406 万m³"
+    },
+    {
+      "value": 3606.7960000000003,
+      "color": "#042d60",
+      "label": "3606.796 万m³"
+    }
+  ]
+}

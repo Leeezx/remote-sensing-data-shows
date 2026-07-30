@@ -1,0 +1,118 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513327100000",
+      "name": "新都镇",
+      "average": 199.1
+    },
+    {
+      "regionId": "513327200000",
+      "name": "泥巴乡",
+      "average": 23.1
+    },
+    {
+      "regionId": "513327201000",
+      "name": "雅德乡",
+      "average": 9.8
+    },
+    {
+      "regionId": "513327202000",
+      "name": "洛秋乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513327203000",
+      "name": "斯木乡",
+      "average": 54.2
+    },
+    {
+      "regionId": "513327204000",
+      "name": "宜木乡",
+      "average": 21.9
+    },
+    {
+      "regionId": "513327205000",
+      "name": "仁达乡",
+      "average": 3.1
+    },
+    {
+      "regionId": "513327206000",
+      "name": "朱倭乡",
+      "average": 19.4
+    },
+    {
+      "regionId": "513327207000",
+      "name": "旦都乡",
+      "average": 21.2
+    },
+    {
+      "regionId": "513327208000",
+      "name": "充古乡",
+      "average": 5.6
+    },
+    {
+      "regionId": "513327209000",
+      "name": "更知乡",
+      "average": 2.4
+    },
+    {
+      "regionId": "513327210000",
+      "name": "卡娘乡",
+      "average": 0.9
+    },
+    {
+      "regionId": "513327211000",
+      "name": "宗塔乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513327212000",
+      "name": "宗麦乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513327213000",
+      "name": "上罗柯马乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513327214000",
+      "name": "下罗柯马乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

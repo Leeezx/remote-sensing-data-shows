@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "410703001000",
+      "name": "胜利路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410703002000",
+      "name": "解放路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410703003000",
+      "name": "中同街街道",
+      "average": 227.2
+    },
+    {
+      "regionId": "410703004000",
+      "name": "健康路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410703007000",
+      "name": "自由路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410703008000",
+      "name": "南桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "410703009000",
+      "name": "铁西街道",
+      "average": 110.8
+    },
+    {
+      "regionId": "410703200000",
+      "name": "平原乡",
+      "average": 20001.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

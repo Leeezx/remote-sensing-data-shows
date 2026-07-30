@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510403100000",
+      "name": "格里坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510411203000",
+      "name": "太平乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510422102000",
+      "name": "渔门镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510422103000",
+      "name": "永兴镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510422208000",
+      "name": "惠民乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "530723101000",
+      "name": "中心镇",
+      "average": 12517.3
+    },
+    {
+      "regionId": "530723102000",
+      "name": "荣将镇",
+      "average": 20451.8
+    },
+    {
+      "regionId": "530723103000",
+      "name": "兴泉镇",
+      "average": 10726.5
+    },
+    {
+      "regionId": "530723104000",
+      "name": "石龙坝镇",
+      "average": 13596.9
+    },
+    {
+      "regionId": "530723202000",
+      "name": "新庄傈僳族傣族乡",
+      "average": 12044.7
+    },
+    {
+      "regionId": "530723203000",
+      "name": "通达傈僳族乡",
+      "average": 6522.0
+    },
+    {
+      "regionId": "530723204000",
+      "name": "永兴傈僳族乡",
+      "average": 8085.6
+    },
+    {
+      "regionId": "530723205000",
+      "name": "船房傈僳族傣族乡",
+      "average": 5442.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

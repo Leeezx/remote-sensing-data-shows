@@ -1,0 +1,93 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "370213001000",
+      "name": "振华路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370213002000",
+      "name": "永清路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370213003000",
+      "name": "永安路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370213004000",
+      "name": "兴华路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370213005000",
+      "name": "兴城路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370213006000",
+      "name": "李村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370213007000",
+      "name": "虎山路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370213008000",
+      "name": "浮山路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370213009000",
+      "name": "九水路街道",
+      "average": 28.6
+    },
+    {
+      "regionId": "370213010000",
+      "name": "湘潭路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "370213011000",
+      "name": "楼山街道",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

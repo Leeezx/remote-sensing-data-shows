@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "522323100000",
+      "name": "盘水镇",
+      "average": 2562.2
+    },
+    {
+      "regionId": "522323101000",
+      "name": "龙吟镇",
+      "average": 10321.0
+    },
+    {
+      "regionId": "522323102000",
+      "name": "罐子窑镇",
+      "average": 4081.8
+    },
+    {
+      "regionId": "522323103000",
+      "name": "江西坡镇",
+      "average": 29760.8
+    },
+    {
+      "regionId": "522323104000",
+      "name": "三板桥镇",
+      "average": 3504.4
+    },
+    {
+      "regionId": "522323105000",
+      "name": "地瓜镇",
+      "average": 12619.2
+    },
+    {
+      "regionId": "522323106000",
+      "name": "青山镇",
+      "average": 25366.5
+    },
+    {
+      "regionId": "522323107000",
+      "name": "楼下镇",
+      "average": 19805.0
+    },
+    {
+      "regionId": "522323200000",
+      "name": "白沙乡",
+      "average": 9500.5
+    },
+    {
+      "regionId": "522323201000",
+      "name": "高棉乡",
+      "average": 19257.9
+    },
+    {
+      "regionId": "522323202000",
+      "name": "窝沿乡",
+      "average": 12112.6
+    },
+    {
+      "regionId": "522323203000",
+      "name": "罗汉乡",
+      "average": 5005.3
+    },
+    {
+      "regionId": "522323204000",
+      "name": "新店乡",
+      "average": 22566.1
+    },
+    {
+      "regionId": "522323205000",
+      "name": "雪浦乡",
+      "average": 11567.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 2807.172,
+      "color": "#eff3ff",
+      "label": "2807.172 万m³"
+    },
+    {
+      "value": 4779.966,
+      "color": "#bdd7e7",
+      "label": "4779.966 万m³"
+    },
+    {
+      "value": 10635.0928,
+      "color": "#6baed6",
+      "label": "10635.093 万m³"
+    },
+    {
+      "value": 12491.5368,
+      "color": "#3182bd",
+      "label": "12491.537 万m³"
+    },
+    {
+      "value": 20478.7084,
+      "color": "#08519c",
+      "label": "20478.708 万m³"
+    },
+    {
+      "value": 28618.282,
+      "color": "#042d60",
+      "label": "28618.282 万m³"
+    }
+  ]
+}

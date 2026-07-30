@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "340802001000",
+      "name": "宜城路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340802002000",
+      "name": "新河路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340802003000",
+      "name": "华中路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340802004000",
+      "name": "人民路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340802005000",
+      "name": "孝肃路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340802006000",
+      "name": "建设路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340802100000",
+      "name": "老峰镇",
+      "average": 25149.1
+    },
+    {
+      "regionId": "340802200000",
+      "name": "龙狮桥乡",
+      "average": 1694.2
+    },
+    {
+      "regionId": "340802201000",
+      "name": "长风乡",
+      "average": 38655.7
+    },
+    {
+      "regionId": "340802202000",
+      "name": "新洲乡",
+      "average": 10715.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

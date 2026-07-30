@@ -1,0 +1,228 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "433123013000",
+      "name": "山江镇",
+      "average": 16504.5
+    },
+    {
+      "regionId": "433123018000",
+      "name": "腊尔山镇",
+      "average": 13245.9
+    },
+    {
+      "regionId": "433123019000",
+      "name": "两林乡",
+      "average": 24230.6
+    },
+    {
+      "regionId": "433124018000",
+      "name": "边城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500241102000",
+      "name": "清溪场镇",
+      "average": 9787.5
+    },
+    {
+      "regionId": "500241112000",
+      "name": "梅江镇",
+      "average": 1493.4
+    },
+    {
+      "regionId": "500241113000",
+      "name": "兰桥镇",
+      "average": 3532.3
+    },
+    {
+      "regionId": "500241114000",
+      "name": "膏田镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "500241119000",
+      "name": "钟灵镇",
+      "average": 301.0
+    },
+    {
+      "regionId": "500241214000",
+      "name": "中平乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628001000",
+      "name": "大兴街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628100000",
+      "name": "蓼皋镇",
+      "average": 5632.2
+    },
+    {
+      "regionId": "520628101000",
+      "name": "盘石镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628102000",
+      "name": "盘信镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628103000",
+      "name": "大坪场镇",
+      "average": 14701.3
+    },
+    {
+      "regionId": "520628104000",
+      "name": "普觉镇",
+      "average": 16521.9
+    },
+    {
+      "regionId": "520628105000",
+      "name": "寨英镇",
+      "average": 16395.3
+    },
+    {
+      "regionId": "520628106000",
+      "name": "孟溪镇",
+      "average": 10503.5
+    },
+    {
+      "regionId": "520628107000",
+      "name": "乌罗镇",
+      "average": 11062.0
+    },
+    {
+      "regionId": "520628108000",
+      "name": "甘龙镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628109000",
+      "name": "长兴堡镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628110000",
+      "name": "迓驾镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628112000",
+      "name": "牛郎镇",
+      "average": 13776.2
+    },
+    {
+      "regionId": "520628200000",
+      "name": "九江乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628201000",
+      "name": "世昌乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628202000",
+      "name": "正大乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628203000",
+      "name": "长坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628204000",
+      "name": "太平营乡",
+      "average": 8153.6
+    },
+    {
+      "regionId": "520628205000",
+      "name": "平头乡",
+      "average": 11741.7
+    },
+    {
+      "regionId": "520628206000",
+      "name": "大路乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628207000",
+      "name": "妙隘乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628208000",
+      "name": "冷水溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628209000",
+      "name": "石梁乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628210000",
+      "name": "瓦溪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628211000",
+      "name": "永安乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628212000",
+      "name": "木树乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628213000",
+      "name": "黄板乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "520628214000",
+      "name": "沙坝河乡",
+      "average": 4786.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

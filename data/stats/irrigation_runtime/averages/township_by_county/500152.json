@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500152001000",
+      "name": "桂林街道",
+      "average": 8655.7
+    },
+    {
+      "regionId": "500152002000",
+      "name": "梓潼街道",
+      "average": 13179.8
+    },
+    {
+      "regionId": "500152101000",
+      "name": "上和镇",
+      "average": 5412.7
+    },
+    {
+      "regionId": "500152102000",
+      "name": "龙形镇",
+      "average": 16113.9
+    },
+    {
+      "regionId": "500152103000",
+      "name": "古溪镇",
+      "average": 15489.1
+    },
+    {
+      "regionId": "500152104000",
+      "name": "宝龙镇",
+      "average": 6070.3
+    },
+    {
+      "regionId": "500152107000",
+      "name": "玉溪镇",
+      "average": 5493.6
+    },
+    {
+      "regionId": "500152108000",
+      "name": "米心镇",
+      "average": 5556.6
+    },
+    {
+      "regionId": "500152109000",
+      "name": "群力镇",
+      "average": 4278.6
+    },
+    {
+      "regionId": "500152110000",
+      "name": "双江镇",
+      "average": 14744.5
+    },
+    {
+      "regionId": "500152112000",
+      "name": "花岩镇",
+      "average": 4085.0
+    },
+    {
+      "regionId": "500152113000",
+      "name": "柏梓镇",
+      "average": 21229.9
+    },
+    {
+      "regionId": "500152114000",
+      "name": "崇龛镇",
+      "average": 14039.0
+    },
+    {
+      "regionId": "500152115000",
+      "name": "塘坝镇",
+      "average": 20046.9
+    },
+    {
+      "regionId": "500152116000",
+      "name": "新胜镇",
+      "average": 3549.4
+    },
+    {
+      "regionId": "500152117000",
+      "name": "太安镇",
+      "average": 13649.3
+    },
+    {
+      "regionId": "500152119000",
+      "name": "小渡镇",
+      "average": 15013.9
+    },
+    {
+      "regionId": "500152120000",
+      "name": "卧佛镇",
+      "average": 9939.4
+    },
+    {
+      "regionId": "500152121000",
+      "name": "五桂镇",
+      "average": 2428.3
+    },
+    {
+      "regionId": "500152122000",
+      "name": "田家镇",
+      "average": 10688.4
+    },
+    {
+      "regionId": "500152123000",
+      "name": "别口镇",
+      "average": 4302.1
+    },
+    {
+      "regionId": "500152124000",
+      "name": "寿桥镇",
+      "average": 5762.1
+    },
+    {
+      "regionId": "510903201000",
+      "name": "老池乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510904112000",
+      "name": "西眉镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "510921115000",
+      "name": "群利镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "512021104000",
+      "name": "龙台镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "512021107000",
+      "name": "毛家镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "512021211000",
+      "name": "白水乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "512021212000",
+      "name": "云峰乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "512021222000",
+      "name": "双龙街乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

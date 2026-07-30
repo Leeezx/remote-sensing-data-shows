@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "422827100000",
+      "name": "翔凤镇",
+      "average": 655.4
+    },
+    {
+      "regionId": "422827101000",
+      "name": "百福司镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "422827102000",
+      "name": "大河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "422827103000",
+      "name": "绿水镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "422827104000",
+      "name": "旧司镇",
+      "average": 14781.8
+    },
+    {
+      "regionId": "422827200000",
+      "name": "漫水乡",
+      "average": 140.0
+    },
+    {
+      "regionId": "422827201000",
+      "name": "革勒车乡",
+      "average": 2349.7
+    },
+    {
+      "regionId": "422827202000",
+      "name": "三胡乡",
+      "average": 11475.5
+    },
+    {
+      "regionId": "433130002000",
+      "name": "石羔镇",
+      "average": 15471.2
+    },
+    {
+      "regionId": "433130003000",
+      "name": "华塘街道",
+      "average": 15794.0
+    },
+    {
+      "regionId": "433130006000",
+      "name": "湾塘乡",
+      "average": 5859.1
+    },
+    {
+      "regionId": "500242206000",
+      "name": "五福乡",
+      "average": 4604.0
+    },
+    {
+      "regionId": "500242218000",
+      "name": "车田乡",
+      "average": 1975.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 76.16,
+      "color": "#bdd7e7",
+      "label": "76.160 万m³"
+    },
+    {
+      "value": 1774.76,
+      "color": "#6baed6",
+      "label": "1774.760 万m³"
+    },
+    {
+      "value": 4794.775199999999,
+      "color": "#3182bd",
+      "label": "4794.775 万m³"
+    },
+    {
+      "value": 12983.172799999998,
+      "color": "#08519c",
+      "label": "12983.173 万m³"
+    },
+    {
+      "value": 15716.528,
+      "color": "#042d60",
+      "label": "15716.528 万m³"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import math
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -316,3 +317,37 @@ def test_builder_cli_can_run_directly_from_project_root():
 
     assert result.returncode == 0, result.stderr
     assert "--township-root" in result.stdout
+
+
+def test_builder_cli_prints_manifest_on_gbk_console(tmp_path):
+    source, regions, layer, chunks = install_build_inputs(tmp_path)
+    output = tmp_path / "runtime"
+    project_root = Path(__file__).resolve().parents[2]
+    environment = dict(os.environ)
+    environment["PYTHONIOENCODING"] = "gbk"
+
+    result = subprocess.run(
+        [
+            sys.executable,
+            "scripts/build_irrigation_runtime_stats.py",
+            "--source",
+            str(source),
+            "--regions",
+            str(regions),
+            "--layer",
+            str(layer),
+            "--township-root",
+            str(chunks),
+            "--output",
+            str(output),
+        ],
+        cwd=project_root,
+        capture_output=True,
+        text=True,
+        encoding="gbk",
+        env=environment,
+        check=False,
+    )
+
+    assert result.returncode == 0, result.stderr
+    assert '"countyCount": 1' in result.stdout

@@ -1,0 +1,88 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540626100000",
+      "name": "亚拉镇",
+      "average": 3.6
+    },
+    {
+      "regionId": "540626101000",
+      "name": "荣布镇",
+      "average": 9.4
+    },
+    {
+      "regionId": "540626200000",
+      "name": "若达乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540626201000",
+      "name": "热瓦乡",
+      "average": 4.0
+    },
+    {
+      "regionId": "540626202000",
+      "name": "西昌乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540626203000",
+      "name": "嘎木乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540626204000",
+      "name": "赤多乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540626205000",
+      "name": "嘎美乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540626206000",
+      "name": "加勒乡",
+      "average": 12.8
+    },
+    {
+      "regionId": "540626207000",
+      "name": "江达乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

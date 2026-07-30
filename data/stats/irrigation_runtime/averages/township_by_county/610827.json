@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610827100000",
+      "name": "银州镇",
+      "average": 7407.7
+    },
+    {
+      "regionId": "610827101000",
+      "name": "桃镇",
+      "average": 6172.0
+    },
+    {
+      "regionId": "610827102000",
+      "name": "龙镇",
+      "average": 5963.0
+    },
+    {
+      "regionId": "610827103000",
+      "name": "杨家沟镇",
+      "average": 1869.6
+    },
+    {
+      "regionId": "610827104000",
+      "name": "杜家石沟镇",
+      "average": 2626.8
+    },
+    {
+      "regionId": "610827105000",
+      "name": "沙家店镇",
+      "average": 3355.6
+    },
+    {
+      "regionId": "610827106000",
+      "name": "印斗镇",
+      "average": 3599.4
+    },
+    {
+      "regionId": "610827201000",
+      "name": "桥河岔乡",
+      "average": 1943.4
+    },
+    {
+      "regionId": "610827204000",
+      "name": "十里铺乡",
+      "average": 6229.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 1881.408,
+      "color": "#eff3ff",
+      "label": "1881.408 万m³"
+    },
+    {
+      "value": 2419.0464,
+      "color": "#bdd7e7",
+      "label": "2419.046 万m³"
+    },
+    {
+      "value": 3412.1616,
+      "color": "#6baed6",
+      "label": "3412.162 万m³"
+    },
+    {
+      "value": 5414.6448,
+      "color": "#3182bd",
+      "label": "5414.645 万m³"
+    },
+    {
+      "value": 6189.5712,
+      "color": "#08519c",
+      "label": "6189.571 万m³"
+    },
+    {
+      "value": 7219.236,
+      "color": "#042d60",
+      "label": "7219.236 万m³"
+    }
+  ]
+}

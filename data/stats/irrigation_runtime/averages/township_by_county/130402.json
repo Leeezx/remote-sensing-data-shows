@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130402001000",
+      "name": "火磨街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130402002000",
+      "name": "陵园路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130402003000",
+      "name": "光明路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130402004000",
+      "name": "滏东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130402005000",
+      "name": "罗城头街道",
+      "average": 34.9
+    },
+    {
+      "regionId": "130402006000",
+      "name": "渚河路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130402007000",
+      "name": "浴新南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130402008000",
+      "name": "农林路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130402009000",
+      "name": "贸东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130402010000",
+      "name": "贸西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "130402100000",
+      "name": "马头镇",
+      "average": 2472.3
+    },
+    {
+      "regionId": "130402101000",
+      "name": "北张庄镇",
+      "average": 5965.5
+    },
+    {
+      "regionId": "130402102000",
+      "name": "河沙镇镇",
+      "average": 17957.4
+    },
+    {
+      "regionId": "130402200000",
+      "name": "马庄乡",
+      "average": 34.9
+    },
+    {
+      "regionId": "130402201000",
+      "name": "南堡乡",
+      "average": 11552.2
+    },
+    {
+      "regionId": "130402202000",
+      "name": "代召乡",
+      "average": 10153.7
+    },
+    {
+      "regionId": "130427101000",
+      "name": "高臾镇",
+      "average": 28163.9
+    },
+    {
+      "regionId": "130427102000",
+      "name": "西光禄镇",
+      "average": 10566.0
+    },
+    {
+      "regionId": "130427202000",
+      "name": "辛庄营乡",
+      "average": 14065.9
+    },
+    {
+      "regionId": "130427203000",
+      "name": "花官营乡",
+      "average": 17811.9
+    },
+    {
+      "regionId": "130427206000",
+      "name": "台城乡",
+      "average": 6142.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

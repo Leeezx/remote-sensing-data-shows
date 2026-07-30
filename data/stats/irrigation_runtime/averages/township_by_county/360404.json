@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "360404100000",
+      "name": "沙河街镇",
+      "average": 5426.6
+    },
+    {
+      "regionId": "360404101000",
+      "name": "马回岭镇",
+      "average": 54859.5
+    },
+    {
+      "regionId": "360404102000",
+      "name": "江洲镇",
+      "average": 34326.6
+    },
+    {
+      "regionId": "360404103000",
+      "name": "城子镇",
+      "average": 5207.0
+    },
+    {
+      "regionId": "360404104000",
+      "name": "港口街镇",
+      "average": 25924.2
+    },
+    {
+      "regionId": "360404105000",
+      "name": "新合镇",
+      "average": 12973.1
+    },
+    {
+      "regionId": "360404106000",
+      "name": "狮子镇",
+      "average": 34463.6
+    },
+    {
+      "regionId": "360404200000",
+      "name": "永安乡",
+      "average": 1888.1
+    },
+    {
+      "regionId": "360404201000",
+      "name": "涌泉乡",
+      "average": 22219.0
+    },
+    {
+      "regionId": "360404202000",
+      "name": "新塘乡",
+      "average": 25858.9
+    },
+    {
+      "regionId": "360404203000",
+      "name": "城门乡",
+      "average": 37081.8
+    },
+    {
+      "regionId": "360404204000",
+      "name": "岷山乡",
+      "average": 43594.6
+    },
+    {
+      "regionId": "360404403000",
+      "name": "沙河经济技术开发区",
+      "average": 24838.5
+    },
+    {
+      "regionId": "360404501000",
+      "name": "新洲垦殖场",
+      "average": 8133.5
+    },
+    {
+      "regionId": "360404502000",
+      "name": "赛城湖水产场",
+      "average": 197.6
+    },
+    {
+      "regionId": "360404503000",
+      "name": "岷山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "421127109000",
+      "name": "新开镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "421127111000",
+      "name": "分路镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 1218.662,
+      "color": "#bdd7e7",
+      "label": "1218.662 万m³"
+    },
+    {
+      "value": 7776.189199999999,
+      "color": "#6baed6",
+      "label": "7776.189 万m³"
+    },
+    {
+      "value": 24973.1928,
+      "color": "#3182bd",
+      "label": "24973.193 万m³"
+    },
+    {
+      "value": 34380.852,
+      "color": "#08519c",
+      "label": "34380.852 万m³"
+    },
+    {
+      "value": 51029.434,
+      "color": "#042d60",
+      "label": "51029.434 万m³"
+    }
+  ]
+}

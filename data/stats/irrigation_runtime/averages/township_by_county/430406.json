@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "430406001000",
+      "name": "先锋街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430406002000",
+      "name": "雁峰街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430406003000",
+      "name": "天马山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "430406004000",
+      "name": "黄茶岭街道",
+      "average": 414.9
+    },
+    {
+      "regionId": "430406005000",
+      "name": "白沙洲街道",
+      "average": 2385.8
+    },
+    {
+      "regionId": "430406100000",
+      "name": "岳屏镇",
+      "average": 13951.3
+    },
+    {
+      "regionId": "430406200000",
+      "name": "湘江乡",
+      "average": 1599.6
+    },
+    {
+      "regionId": "430406400000",
+      "name": "白沙洲工业园",
+      "average": 3590.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

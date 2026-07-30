@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "340203001000",
+      "name": "弋江桥街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340203002000",
+      "name": "中山南路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340203003000",
+      "name": "利民路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "340203004000",
+      "name": "马塘街道",
+      "average": 4311.8
+    },
+    {
+      "regionId": "340203005000",
+      "name": "瀂港街道",
+      "average": 419.7
+    },
+    {
+      "regionId": "340203006000",
+      "name": "火龙街道",
+      "average": 17517.0
+    },
+    {
+      "regionId": "340203007000",
+      "name": "白马街道",
+      "average": 26023.5
+    },
+    {
+      "regionId": "340203098000",
+      "name": "南瑞社区公共服务委员会",
+      "average": 0.0
+    },
+    {
+      "regionId": "340203400000",
+      "name": "芜湖高新技术产业开发区",
+      "average": 1565.9
+    },
+    {
+      "regionId": "340208001000",
+      "name": "三山街道",
+      "average": 17943.7
+    },
+    {
+      "regionId": "340208002000",
+      "name": "保定街道",
+      "average": 367.3
+    },
+    {
+      "regionId": "340208003000",
+      "name": "龙湖街道",
+      "average": 16197.7
+    },
+    {
+      "regionId": "340208004000",
+      "name": "高安街道",
+      "average": 27453.4
+    },
+    {
+      "regionId": "340208100000",
+      "name": "峨桥镇",
+      "average": 46481.3
+    },
+    {
+      "regionId": "340208400000",
+      "name": "安徽芜湖三山经济开发区",
+      "average": 771.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

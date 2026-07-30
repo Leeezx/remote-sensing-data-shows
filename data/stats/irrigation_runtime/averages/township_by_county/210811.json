@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "210811001000",
+      "name": "老边街道",
+      "average": 62.2
+    },
+    {
+      "regionId": "210811002000",
+      "name": "城东街道",
+      "average": 1036.2
+    },
+    {
+      "regionId": "210811101000",
+      "name": "路南镇",
+      "average": 6778.5
+    },
+    {
+      "regionId": "210811102000",
+      "name": "柳树镇",
+      "average": 7552.2
+    },
+    {
+      "regionId": "210811103000",
+      "name": "边城镇",
+      "average": 5514.1
+    },
+    {
+      "regionId": "210811400000",
+      "name": "营口市中小企业创业园区",
+      "average": 153.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 71.37,
+      "color": "#eff3ff",
+      "label": "71.370 万m³"
+    },
+    {
+      "value": 206.83800000000005,
+      "color": "#bdd7e7",
+      "label": "206.838 万m³"
+    },
+    {
+      "value": 1125.758,
+      "color": "#6baed6",
+      "label": "1125.758 万m³"
+    },
+    {
+      "value": 5424.542,
+      "color": "#3182bd",
+      "label": "5424.542 万m³"
+    },
+    {
+      "value": 6702.6359999999995,
+      "color": "#08519c",
+      "label": "6702.636 万m³"
+    },
+    {
+      "value": 7474.83,
+      "color": "#042d60",
+      "label": "7474.830 万m³"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "530681001000",
+      "name": "云富街道",
+      "average": 1193.1
+    },
+    {
+      "regionId": "530681101000",
+      "name": "向家坝镇",
+      "average": 3542.0
+    },
+    {
+      "regionId": "530681102000",
+      "name": "太平镇",
+      "average": 2101.6
+    },
+    {
+      "regionId": "530681103000",
+      "name": "两碗镇",
+      "average": 3394.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 1247.61,
+      "color": "#eff3ff",
+      "label": "1247.610 万m³"
+    },
+    {
+      "value": 1770.906,
+      "color": "#bdd7e7",
+      "label": "1770.906 万m³"
+    },
+    {
+      "value": 2375.5888,
+      "color": "#6baed6",
+      "label": "2375.589 万m³"
+    },
+    {
+      "value": 3120.0112,
+      "color": "#3182bd",
+      "label": "3120.011 万m³"
+    },
+    {
+      "value": 3447.872,
+      "color": "#08519c",
+      "label": "3447.872 万m³"
+    },
+    {
+      "value": 3533.12,
+      "color": "#042d60",
+      "label": "3533.120 万m³"
+    }
+  ]
+}

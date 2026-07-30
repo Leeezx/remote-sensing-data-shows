@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610202200000",
+      "name": "王家河乡",
+      "average": 770.6
+    },
+    {
+      "regionId": "610204003000",
+      "name": "下高埝乡",
+      "average": 13458.9
+    },
+    {
+      "regionId": "610204101000",
+      "name": "董家河镇",
+      "average": 2548.2
+    },
+    {
+      "regionId": "610204102000",
+      "name": "庙湾镇",
+      "average": 1306.2
+    },
+    {
+      "regionId": "610204103000",
+      "name": "瑶曲镇",
+      "average": 3574.1
+    },
+    {
+      "regionId": "610204104000",
+      "name": "照金镇",
+      "average": 972.5
+    },
+    {
+      "regionId": "610204105000",
+      "name": "寺沟镇",
+      "average": 7495.2
+    },
+    {
+      "regionId": "610204106000",
+      "name": "坡头镇",
+      "average": 8834.8
+    },
+    {
+      "regionId": "610204107000",
+      "name": "小丘镇",
+      "average": 19391.1
+    },
+    {
+      "regionId": "610204108000",
+      "name": "孙塬镇",
+      "average": 4471.2
+    },
+    {
+      "regionId": "610204109000",
+      "name": "关庄镇",
+      "average": 14509.4
+    },
+    {
+      "regionId": "610204110000",
+      "name": "安里乡",
+      "average": 5643.1
+    },
+    {
+      "regionId": "610204200000",
+      "name": "演池乡",
+      "average": 1012.2
+    },
+    {
+      "regionId": "610204201000",
+      "name": "石柱镇",
+      "average": 6486.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 823.094,
+      "color": "#eff3ff",
+      "label": "823.094 万m³"
+    },
+    {
+      "value": 1234.464,
+      "color": "#bdd7e7",
+      "label": "1234.464 万m³"
+    },
+    {
+      "value": 3800.1692,
+      "color": "#6baed6",
+      "label": "3800.169 万m³"
+    },
+    {
+      "value": 6273.738799999999,
+      "color": "#3182bd",
+      "label": "6273.739 万m³"
+    },
+    {
+      "value": 9963.080399999999,
+      "color": "#08519c",
+      "label": "9963.080 万m³"
+    },
+    {
+      "value": 18121.858,
+      "color": "#042d60",
+      "label": "18121.858 万m³"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "360729100000",
+      "name": "城厢镇",
+      "average": 13069.0
+    },
+    {
+      "regionId": "360729101000",
+      "name": "大吉山镇",
+      "average": 15681.6
+    },
+    {
+      "regionId": "360729102000",
+      "name": "陂头镇",
+      "average": 27386.3
+    },
+    {
+      "regionId": "360729103000",
+      "name": "金龙镇",
+      "average": 32765.8
+    },
+    {
+      "regionId": "360729104000",
+      "name": "南迳镇",
+      "average": 18086.2
+    },
+    {
+      "regionId": "360729105000",
+      "name": "龙源坝镇",
+      "average": 6709.4
+    },
+    {
+      "regionId": "360729200000",
+      "name": "中寨乡",
+      "average": 17092.6
+    },
+    {
+      "regionId": "360729201000",
+      "name": "社迳乡",
+      "average": 16886.9
+    },
+    {
+      "regionId": "360729202000",
+      "name": "龙下乡",
+      "average": 12166.3
+    },
+    {
+      "regionId": "360729402000",
+      "name": "全南县工业园",
+      "average": 494.4
+    },
+    {
+      "regionId": "440222102000",
+      "name": "澄江镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440222104000",
+      "name": "罗坝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440222105000",
+      "name": "司前镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440229104000",
+      "name": "坝仔镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "440282115000",
+      "name": "主田镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

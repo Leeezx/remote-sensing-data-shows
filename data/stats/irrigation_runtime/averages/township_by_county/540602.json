@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "540602100000",
+      "name": "那曲镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540602101000",
+      "name": "罗玛镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540602102000",
+      "name": "古露镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "540602200000",
+      "name": "香茂乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540602201000",
+      "name": "油恰乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540602202000",
+      "name": "那么切乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540602203000",
+      "name": "孔玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540602204000",
+      "name": "达萨乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540602205000",
+      "name": "劳麦乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540602206000",
+      "name": "色雄乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540602207000",
+      "name": "尼玛乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "540602208000",
+      "name": "达前乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

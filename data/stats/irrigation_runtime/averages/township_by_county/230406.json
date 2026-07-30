@@ -1,0 +1,108 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "230405100000",
+      "name": "红旗镇",
+      "average": 4012.8
+    },
+    {
+      "regionId": "230406001000",
+      "name": "工人村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230406002000",
+      "name": "新一街道",
+      "average": 6.8
+    },
+    {
+      "regionId": "230406003000",
+      "name": "三街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230406004000",
+      "name": "东山街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "230406005000",
+      "name": "蔬园乡街道",
+      "average": 143.9
+    },
+    {
+      "regionId": "230406100000",
+      "name": "新华镇",
+      "average": 14066.9
+    },
+    {
+      "regionId": "230406201000",
+      "name": "蔬园乡",
+      "average": 3702.0
+    },
+    {
+      "regionId": "230406202000",
+      "name": "东方红乡",
+      "average": 51660.6
+    },
+    {
+      "regionId": "230406400000",
+      "name": "鹤岗市林业局",
+      "average": 7841.9
+    },
+    {
+      "regionId": "230406500000",
+      "name": "新华农场",
+      "average": 98037.0
+    },
+    {
+      "regionId": "230707404000",
+      "name": "水源林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230707405000",
+      "name": "笑山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "230707414000",
+      "name": "北影林场",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

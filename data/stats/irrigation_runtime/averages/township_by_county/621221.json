@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610727106000",
+      "name": "白水江镇",
+      "average": 170.8
+    },
+    {
+      "regionId": "621221100000",
+      "name": "城关镇",
+      "average": 4833.0
+    },
+    {
+      "regionId": "621221101000",
+      "name": "黄渚镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "621221102000",
+      "name": "红川镇",
+      "average": 1137.6
+    },
+    {
+      "regionId": "621221103000",
+      "name": "小川镇",
+      "average": 2050.6
+    },
+    {
+      "regionId": "621221104000",
+      "name": "纸坊镇",
+      "average": 530.7
+    },
+    {
+      "regionId": "621221105000",
+      "name": "抛沙镇",
+      "average": 5779.2
+    },
+    {
+      "regionId": "621221107000",
+      "name": "店村镇",
+      "average": 4691.6
+    },
+    {
+      "regionId": "621221108000",
+      "name": "王磨镇",
+      "average": 1454.8
+    },
+    {
+      "regionId": "621221109000",
+      "name": "陈院镇",
+      "average": 3266.0
+    },
+    {
+      "regionId": "621221110000",
+      "name": "沙坝镇",
+      "average": 219.3
+    },
+    {
+      "regionId": "621221111000",
+      "name": "黄陈镇",
+      "average": 1365.1
+    },
+    {
+      "regionId": "621221112000",
+      "name": "鸡峰镇",
+      "average": 577.4
+    },
+    {
+      "regionId": "621221203000",
+      "name": "宋坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621221206000",
+      "name": "二郎乡",
+      "average": 10.4
+    },
+    {
+      "regionId": "621221209000",
+      "name": "苏元乡",
+      "average": 899.1
+    },
+    {
+      "regionId": "621221210000",
+      "name": "索池乡",
+      "average": 621.6
+    },
+    {
+      "regionId": "621221213000",
+      "name": "镡河乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 107.28160000000003,
+      "color": "#bdd7e7",
+      "label": "107.282 万m³"
+    },
+    {
+      "value": 571.2356,
+      "color": "#6baed6",
+      "label": "571.236 万m³"
+    },
+    {
+      "value": 1167.6299999999999,
+      "color": "#3182bd",
+      "label": "1167.630 万m³"
+    },
+    {
+      "value": 2531.8983999999987,
+      "color": "#08519c",
+      "label": "2531.898 万m³"
+    },
+    {
+      "value": 5457.492,
+      "color": "#042d60",
+      "label": "5457.492 万m³"
+    }
+  ]
+}

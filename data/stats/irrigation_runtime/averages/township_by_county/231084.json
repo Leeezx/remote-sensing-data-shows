@@ -1,0 +1,128 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "222403108000",
+      "name": "雁鸣湖镇",
+      "average": 1074.7
+    },
+    {
+      "regionId": "222403400000",
+      "name": "丹峰林业有限公司",
+      "average": 215.4
+    },
+    {
+      "regionId": "222403403000",
+      "name": "敦化市林业局",
+      "average": 611.5
+    },
+    {
+      "regionId": "231084001000",
+      "name": "城区街道",
+      "average": 56.7
+    },
+    {
+      "regionId": "231084100000",
+      "name": "宁安镇",
+      "average": 4731.3
+    },
+    {
+      "regionId": "231084101000",
+      "name": "东京城镇",
+      "average": 12619.9
+    },
+    {
+      "regionId": "231084102000",
+      "name": "渤海镇",
+      "average": 17394.1
+    },
+    {
+      "regionId": "231084103000",
+      "name": "石岩镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "231084104000",
+      "name": "沙兰镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "231084105000",
+      "name": "海浪镇",
+      "average": 19575.2
+    },
+    {
+      "regionId": "231084106000",
+      "name": "兰岗镇",
+      "average": 6659.0
+    },
+    {
+      "regionId": "231084202000",
+      "name": "江南朝鲜族满族乡",
+      "average": 14205.8
+    },
+    {
+      "regionId": "231084206000",
+      "name": "卧龙朝鲜族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "231084208000",
+      "name": "马河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "231084210000",
+      "name": "镜泊乡",
+      "average": 15.6
+    },
+    {
+      "regionId": "231084211000",
+      "name": "三陵乡",
+      "average": 13303.5
+    },
+    {
+      "regionId": "231084400000",
+      "name": "东京城林业局",
+      "average": 0.0
+    },
+    {
+      "regionId": "231084500000",
+      "name": "宁安农场",
+      "average": 599.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

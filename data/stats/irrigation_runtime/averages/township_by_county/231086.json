@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "231086100000",
+      "name": "东宁镇",
+      "average": 1046.9
+    },
+    {
+      "regionId": "231086101000",
+      "name": "三岔口镇",
+      "average": 9440.4
+    },
+    {
+      "regionId": "231086102000",
+      "name": "大肚川镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "231086103000",
+      "name": "老黑山镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "231086104000",
+      "name": "道河镇",
+      "average": 325.6
+    },
+    {
+      "regionId": "231086105000",
+      "name": "绥阳镇",
+      "average": 36.3
+    },
+    {
+      "regionId": "231086400000",
+      "name": "绥阳林业局",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

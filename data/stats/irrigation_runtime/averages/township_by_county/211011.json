@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "211011002000",
+      "name": "望水台街道",
+      "average": 562.5
+    },
+    {
+      "regionId": "211011003000",
+      "name": "铁西街道",
+      "average": 443.4
+    },
+    {
+      "regionId": "211011101000",
+      "name": "祁家镇",
+      "average": 3612.5
+    },
+    {
+      "regionId": "211011102000",
+      "name": "沙岭镇",
+      "average": 19617.5
+    },
+    {
+      "regionId": "211011103000",
+      "name": "王家镇",
+      "average": 10292.9
+    },
+    {
+      "regionId": "211011204000",
+      "name": "东宁卫乡",
+      "average": 59.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 97.62,
+      "color": "#eff3ff",
+      "label": "97.620 万m³"
+    },
+    {
+      "value": 450.546,
+      "color": "#bdd7e7",
+      "label": "450.546 万m³"
+    },
+    {
+      "value": 623.5,
+      "color": "#6baed6",
+      "label": "623.500 万m³"
+    },
+    {
+      "value": 3551.5,
+      "color": "#3182bd",
+      "label": "3551.500 万m³"
+    },
+    {
+      "value": 9892.075999999995,
+      "color": "#08519c",
+      "label": "9892.076 万m³"
+    },
+    {
+      "value": 18685.040000000005,
+      "color": "#042d60",
+      "label": "18685.040 万m³"
+    }
+  ]
+}

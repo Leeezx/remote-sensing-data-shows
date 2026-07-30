@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "610627100000",
+      "name": "城关镇",
+      "average": 9939.1
+    },
+    {
+      "regionId": "610627101000",
+      "name": "下寺湾镇",
+      "average": 2953.2
+    },
+    {
+      "regionId": "610627102000",
+      "name": "道镇",
+      "average": 17972.6
+    },
+    {
+      "regionId": "610627200000",
+      "name": "桥镇乡",
+      "average": 1636.2
+    },
+    {
+      "regionId": "610627201000",
+      "name": "石门乡",
+      "average": 4574.4
+    },
+    {
+      "regionId": "610627203000",
+      "name": "劳山乡",
+      "average": 4173.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 1767.9,
+      "color": "#eff3ff",
+      "label": "1767.900 万m³"
+    },
+    {
+      "value": 3026.4359999999997,
+      "color": "#bdd7e7",
+      "label": "3026.436 万m³"
+    },
+    {
+      "value": 4181.812,
+      "color": "#6baed6",
+      "label": "4181.812 万m³"
+    },
+    {
+      "value": 4566.388,
+      "color": "#3182bd",
+      "label": "4566.388 万m³"
+    },
+    {
+      "value": 9617.217999999997,
+      "color": "#08519c",
+      "label": "9617.218 万m³"
+    },
+    {
+      "value": 17169.25,
+      "color": "#042d60",
+      "label": "17169.250 万m³"
+    }
+  ]
+}

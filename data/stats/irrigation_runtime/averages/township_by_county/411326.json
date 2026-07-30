@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "411326001000",
+      "name": "龙城街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411326002000",
+      "name": "商圣街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "411326101000",
+      "name": "荆紫关镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411326102000",
+      "name": "老城镇",
+      "average": 5400.8
+    },
+    {
+      "regionId": "411326103000",
+      "name": "香花镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411326104000",
+      "name": "厚坡镇",
+      "average": 75178.1
+    },
+    {
+      "regionId": "411326105000",
+      "name": "丹阳镇",
+      "average": 29433.0
+    },
+    {
+      "regionId": "411326106000",
+      "name": "盛湾镇",
+      "average": 7981.1
+    },
+    {
+      "regionId": "411326107000",
+      "name": "金河镇",
+      "average": 2418.0
+    },
+    {
+      "regionId": "411326108000",
+      "name": "寺湾镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411326109000",
+      "name": "仓房镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "411326110000",
+      "name": "上集镇",
+      "average": 4088.4
+    },
+    {
+      "regionId": "411326111000",
+      "name": "马蹬镇",
+      "average": 6383.3
+    },
+    {
+      "regionId": "411326301000",
+      "name": "西簧乡",
+      "average": 204.5
+    },
+    {
+      "regionId": "411326302000",
+      "name": "毛堂乡",
+      "average": 1193.4
+    },
+    {
+      "regionId": "411326303000",
+      "name": "大石桥乡",
+      "average": 1488.3
+    },
+    {
+      "regionId": "411326304000",
+      "name": "滔河乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "420304106000",
+      "name": "白浪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "420304107000",
+      "name": "刘洞镇",
+      "average": 3158.3
+    },
+    {
+      "regionId": "420304108000",
+      "name": "谭山镇",
+      "average": 11699.3
+    },
+    {
+      "regionId": "420304109000",
+      "name": "梅铺镇",
+      "average": 7639.4
+    },
+    {
+      "regionId": "420381003000",
+      "name": "丹赵路街道",
+      "average": 26.2
+    },
+    {
+      "regionId": "420381107000",
+      "name": "蒿坪镇",
+      "average": 12237.8
+    },
+    {
+      "regionId": "420381108000",
+      "name": "石鼓镇",
+      "average": 5896.6
+    },
+    {
+      "regionId": "420381403000",
+      "name": "大沟林业开发管理区",
+      "average": 437.1
+    },
+    {
+      "regionId": "611023102000",
+      "name": "湘河镇",
+      "average": 1609.1
+    },
+    {
+      "regionId": "611023104000",
+      "name": "赵川镇",
+      "average": 868.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

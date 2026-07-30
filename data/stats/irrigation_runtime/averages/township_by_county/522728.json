@@ -1,0 +1,168 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "522728100000",
+      "name": "龙坪镇",
+      "average": 8207.1
+    },
+    {
+      "regionId": "522728101000",
+      "name": "边阳镇",
+      "average": 4588.7
+    },
+    {
+      "regionId": "522728102000",
+      "name": "逢亭镇",
+      "average": 4466.8
+    },
+    {
+      "regionId": "522728103000",
+      "name": "沫阳镇",
+      "average": 7706.8
+    },
+    {
+      "regionId": "522728104000",
+      "name": "茂井镇",
+      "average": 6593.3
+    },
+    {
+      "regionId": "522728105000",
+      "name": "罗悃镇",
+      "average": 1921.9
+    },
+    {
+      "regionId": "522728106000",
+      "name": "红水河镇",
+      "average": 6122.5
+    },
+    {
+      "regionId": "522728200000",
+      "name": "板庚乡",
+      "average": 2349.9
+    },
+    {
+      "regionId": "522728201000",
+      "name": "云干乡",
+      "average": 3300.8
+    },
+    {
+      "regionId": "522728202000",
+      "name": "八总乡",
+      "average": 4051.2
+    },
+    {
+      "regionId": "522728203000",
+      "name": "栗木乡",
+      "average": 4886.5
+    },
+    {
+      "regionId": "522728204000",
+      "name": "罗沙乡",
+      "average": 3038.9
+    },
+    {
+      "regionId": "522728205000",
+      "name": "交砚乡",
+      "average": 2999.8
+    },
+    {
+      "regionId": "522728206000",
+      "name": "董王乡",
+      "average": 861.7
+    },
+    {
+      "regionId": "522728207000",
+      "name": "木引乡",
+      "average": 6152.0
+    },
+    {
+      "regionId": "522728208000",
+      "name": "纳坪乡",
+      "average": 1024.7
+    },
+    {
+      "regionId": "522728209000",
+      "name": "董当乡",
+      "average": 9209.1
+    },
+    {
+      "regionId": "522728210000",
+      "name": "董架乡",
+      "average": 2025.2
+    },
+    {
+      "regionId": "522728211000",
+      "name": "平岩乡",
+      "average": 1079.5
+    },
+    {
+      "regionId": "522728212000",
+      "name": "凤亭乡",
+      "average": 2236.9
+    },
+    {
+      "regionId": "522728213000",
+      "name": "大亭乡",
+      "average": 1272.5
+    },
+    {
+      "regionId": "522728214000",
+      "name": "班仁乡",
+      "average": 2040.9
+    },
+    {
+      "regionId": "522728215000",
+      "name": "罗苏乡",
+      "average": 981.2
+    },
+    {
+      "regionId": "522728216000",
+      "name": "罗暮乡",
+      "average": 5572.3
+    },
+    {
+      "regionId": "522728217000",
+      "name": "沟亭乡",
+      "average": 1272.3
+    },
+    {
+      "regionId": "522728218000",
+      "name": "罗妥乡",
+      "average": 4274.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 921.45,
+      "color": "#eff3ff",
+      "label": "921.450 万m³"
+    },
+    {
+      "value": 1467.32,
+      "color": "#bdd7e7",
+      "label": "1467.320 万m³"
+    },
+    {
+      "value": 2414.89,
+      "color": "#6baed6",
+      "label": "2414.890 万m³"
+    },
+    {
+      "value": 4251.99,
+      "color": "#3182bd",
+      "label": "4251.990 万m³"
+    },
+    {
+      "value": 5957.44,
+      "color": "#08519c",
+      "label": "5957.440 万m³"
+    },
+    {
+      "value": 8708.1,
+      "color": "#042d60",
+      "label": "8708.100 万m³"
+    }
+  ]
+}

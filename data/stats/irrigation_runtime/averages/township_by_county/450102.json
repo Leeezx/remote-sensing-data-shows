@@ -1,0 +1,68 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "450102001000",
+      "name": "民生街道",
+      "average": 126.5
+    },
+    {
+      "regionId": "450102002000",
+      "name": "朝阳街道",
+      "average": 1159.3
+    },
+    {
+      "regionId": "450102101000",
+      "name": "三塘镇",
+      "average": 35283.7
+    },
+    {
+      "regionId": "450102102000",
+      "name": "五塘镇",
+      "average": 75394.9
+    },
+    {
+      "regionId": "450102104000",
+      "name": "昆仑镇",
+      "average": 1942.7
+    },
+    {
+      "regionId": "450102450000",
+      "name": "九曲湾农场",
+      "average": 611.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 174.97,
+      "color": "#eff3ff",
+      "label": "174.970 万m³"
+    },
+    {
+      "value": 644.086,
+      "color": "#bdd7e7",
+      "label": "644.086 万m³"
+    },
+    {
+      "value": 1174.968,
+      "color": "#6baed6",
+      "label": "1174.968 万m³"
+    },
+    {
+      "value": 1927.032,
+      "color": "#3182bd",
+      "label": "1927.032 万m³"
+    },
+    {
+      "value": 33283.23999999998,
+      "color": "#08519c",
+      "label": "33283.240 万m³"
+    },
+    {
+      "value": 71383.78000000001,
+      "color": "#042d60",
+      "label": "71383.780 万m³"
+    }
+  ]
+}

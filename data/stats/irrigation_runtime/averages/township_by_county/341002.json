@@ -1,0 +1,83 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "341002001000",
+      "name": "昱东街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "341002002000",
+      "name": "昱中街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "341002003000",
+      "name": "昱西街道",
+      "average": 296.3
+    },
+    {
+      "regionId": "341002004000",
+      "name": "老街街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "341002100000",
+      "name": "屯光镇",
+      "average": 8209.6
+    },
+    {
+      "regionId": "341002101000",
+      "name": "阳湖镇",
+      "average": 4996.0
+    },
+    {
+      "regionId": "341002102000",
+      "name": "黎阳镇",
+      "average": 8558.0
+    },
+    {
+      "regionId": "341002103000",
+      "name": "新潭镇",
+      "average": 9489.3
+    },
+    {
+      "regionId": "341002104000",
+      "name": "奕棋镇",
+      "average": 14343.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

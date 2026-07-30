@@ -1,0 +1,188 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513426234000",
+      "name": "鲁吉乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513426235000",
+      "name": "溜姑乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513426236000",
+      "name": "大崇乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513427104000",
+      "name": "白鹤滩镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513427213000",
+      "name": "大同乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513427216000",
+      "name": "骑骡沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513427218000",
+      "name": "跑马乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513429101000",
+      "name": "龙潭镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513429209000",
+      "name": "拉果乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513429213000",
+      "name": "合井乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513429214000",
+      "name": "罗家坪乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513429215000",
+      "name": "牛角湾乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513430103000",
+      "name": "对坪镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513430217000",
+      "name": "山江乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "530622101000",
+      "name": "白鹤滩镇",
+      "average": 14825.4
+    },
+    {
+      "regionId": "530622102000",
+      "name": "大寨镇",
+      "average": 16849.0
+    },
+    {
+      "regionId": "530622103000",
+      "name": "小河镇",
+      "average": 3637.3
+    },
+    {
+      "regionId": "530622104000",
+      "name": "药山镇",
+      "average": 8798.6
+    },
+    {
+      "regionId": "530622105000",
+      "name": "马树镇",
+      "average": 835.5
+    },
+    {
+      "regionId": "530622106000",
+      "name": "老店镇",
+      "average": 4358.7
+    },
+    {
+      "regionId": "530622107000",
+      "name": "茂租镇",
+      "average": 2533.5
+    },
+    {
+      "regionId": "530622108000",
+      "name": "东坪镇",
+      "average": 11024.2
+    },
+    {
+      "regionId": "530622109000",
+      "name": "新店镇",
+      "average": 1227.7
+    },
+    {
+      "regionId": "530622110000",
+      "name": "崇溪镇",
+      "average": 2516.2
+    },
+    {
+      "regionId": "530622111000",
+      "name": "金塘镇",
+      "average": 2398.6
+    },
+    {
+      "regionId": "530622112000",
+      "name": "蒙姑镇",
+      "average": 1018.7
+    },
+    {
+      "regionId": "530622203000",
+      "name": "红山乡",
+      "average": 12199.4
+    },
+    {
+      "regionId": "530622205000",
+      "name": "包谷垴乡",
+      "average": 1896.7
+    },
+    {
+      "regionId": "530622206000",
+      "name": "中寨乡",
+      "average": 1795.7
+    },
+    {
+      "regionId": "530622209000",
+      "name": "炉房乡",
+      "average": 1062.4
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

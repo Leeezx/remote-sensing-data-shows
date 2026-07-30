@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "220602001000",
+      "name": "新建街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220602002000",
+      "name": "通沟街道",
+      "average": 1.9
+    },
+    {
+      "regionId": "220602003000",
+      "name": "东兴街道",
+      "average": 7.1
+    },
+    {
+      "regionId": "220602004000",
+      "name": "红旗街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220602005000",
+      "name": "城南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220602006000",
+      "name": "江北街道",
+      "average": 159.8
+    },
+    {
+      "regionId": "220602007000",
+      "name": "河口街道",
+      "average": 88.4
+    },
+    {
+      "regionId": "220602008000",
+      "name": "板石街道",
+      "average": 2.8
+    },
+    {
+      "regionId": "220602100000",
+      "name": "七道江镇",
+      "average": 58.0
+    },
+    {
+      "regionId": "220602101000",
+      "name": "六道江镇",
+      "average": 289.0
+    },
+    {
+      "regionId": "220602102000",
+      "name": "红土崖镇",
+      "average": 5.3
+    },
+    {
+      "regionId": "220602103000",
+      "name": "三道沟镇",
+      "average": 4.3
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 0.6307999999999997,
+      "color": "#bdd7e7",
+      "label": "0.631 万m³"
+    },
+    {
+      "value": 3.4659999999999997,
+      "color": "#6baed6",
+      "label": "3.466 万m³"
+    },
+    {
+      "value": 6.3008,
+      "color": "#3182bd",
+      "label": "6.301 万m³"
+    },
+    {
+      "value": 78.30719999999998,
+      "color": "#08519c",
+      "label": "78.307 万m³"
+    },
+    {
+      "value": 260.5759999999999,
+      "color": "#042d60",
+      "label": "260.576 万m³"
+    }
+  ]
+}

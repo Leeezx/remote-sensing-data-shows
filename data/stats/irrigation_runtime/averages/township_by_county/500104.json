@@ -1,0 +1,78 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "500104001000",
+      "name": "新山村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500104002000",
+      "name": "跃进村街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500104003000",
+      "name": "九宫庙街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500104004000",
+      "name": "茄子溪街道",
+      "average": 225.3
+    },
+    {
+      "regionId": "500104005000",
+      "name": "春晖路街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "500104101000",
+      "name": "八桥镇",
+      "average": 635.4
+    },
+    {
+      "regionId": "500104102000",
+      "name": "建胜镇",
+      "average": 1471.5
+    },
+    {
+      "regionId": "500104103000",
+      "name": "跳磴镇",
+      "average": 2029.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

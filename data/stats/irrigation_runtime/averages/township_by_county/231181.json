@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "231181001000",
+      "name": "兆麟街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231181002000",
+      "name": "和平街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231181003000",
+      "name": "北岗街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231181004000",
+      "name": "庆华街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231181005000",
+      "name": "铁西街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231181006000",
+      "name": "铁南街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "231181101000",
+      "name": "通北镇",
+      "average": 3013.9
+    },
+    {
+      "regionId": "231181102000",
+      "name": "赵光镇",
+      "average": 8013.6
+    },
+    {
+      "regionId": "231181103000",
+      "name": "海星镇",
+      "average": 7951.6
+    },
+    {
+      "regionId": "231181104000",
+      "name": "石泉镇",
+      "average": 4776.6
+    },
+    {
+      "regionId": "231181105000",
+      "name": "二井镇",
+      "average": 1495.3
+    },
+    {
+      "regionId": "231181200000",
+      "name": "城郊乡",
+      "average": 637.5
+    },
+    {
+      "regionId": "231181201000",
+      "name": "东胜乡",
+      "average": 3576.7
+    },
+    {
+      "regionId": "231181203000",
+      "name": "杨家乡",
+      "average": 6349.8
+    },
+    {
+      "regionId": "231181207000",
+      "name": "主星乡",
+      "average": 3784.9
+    },
+    {
+      "regionId": "231181400000",
+      "name": "通北林业局",
+      "average": 1265.3
+    },
+    {
+      "regionId": "231181500000",
+      "name": "北安管理局局直",
+      "average": 0.0
+    },
+    {
+      "regionId": "231181501000",
+      "name": "长水河农场",
+      "average": 5479.5
+    },
+    {
+      "regionId": "231181502000",
+      "name": "赵光农场",
+      "average": 11096.0
+    },
+    {
+      "regionId": "231181503000",
+      "name": "红星农场",
+      "average": 8299.4
+    },
+    {
+      "regionId": "231181504000",
+      "name": "建设农场",
+      "average": 8477.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

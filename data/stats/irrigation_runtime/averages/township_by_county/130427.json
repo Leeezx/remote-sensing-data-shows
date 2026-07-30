@@ -1,0 +1,103 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "130427100000",
+      "name": "磁州镇",
+      "average": 59459.7
+    },
+    {
+      "regionId": "130427103000",
+      "name": "讲武城镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130427104000",
+      "name": "岳城镇",
+      "average": 87.5
+    },
+    {
+      "regionId": "130427105000",
+      "name": "观台镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130427107000",
+      "name": "白土镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "130427108000",
+      "name": "黄沙镇",
+      "average": 6658.0
+    },
+    {
+      "regionId": "130427200000",
+      "name": "路村营乡",
+      "average": 18147.9
+    },
+    {
+      "regionId": "130427204000",
+      "name": "时村营乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "130427207000",
+      "name": "陶泉乡",
+      "average": 10233.7
+    },
+    {
+      "regionId": "130427208000",
+      "name": "都党乡",
+      "average": 8107.8
+    },
+    {
+      "regionId": "130427209000",
+      "name": "北贾壁乡",
+      "average": 15087.8
+    },
+    {
+      "regionId": "410522102000",
+      "name": "铜冶镇",
+      "average": 4258.3
+    },
+    {
+      "regionId": "410522115000",
+      "name": "都里镇",
+      "average": 1349.8
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513336100000",
+      "name": "香巴拉镇",
+      "average": 152.1
+    },
+    {
+      "regionId": "513336200000",
+      "name": "尼斯乡",
+      "average": 556.4
+    },
+    {
+      "regionId": "513336201000",
+      "name": "沙贡乡",
+      "average": 319.5
+    },
+    {
+      "regionId": "513336202000",
+      "name": "水洼乡",
+      "average": 232.2
+    },
+    {
+      "regionId": "513336203000",
+      "name": "青德乡",
+      "average": 291.0
+    },
+    {
+      "regionId": "513336204000",
+      "name": "青麦乡",
+      "average": 169.6
+    },
+    {
+      "regionId": "513336205000",
+      "name": "然乌乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513336206000",
+      "name": "洞松乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513336207000",
+      "name": "热打乡",
+      "average": 144.0
+    },
+    {
+      "regionId": "513336208000",
+      "name": "定波乡",
+      "average": 175.9
+    },
+    {
+      "regionId": "513336209000",
+      "name": "正斗乡",
+      "average": 286.4
+    },
+    {
+      "regionId": "513336210000",
+      "name": "白依乡",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 47.80799999999998,
+      "color": "#bdd7e7",
+      "label": "47.808 万m³"
+    },
+    {
+      "value": 159.87,
+      "color": "#6baed6",
+      "label": "159.870 万m³"
+    },
+    {
+      "value": 207.2028,
+      "color": "#3182bd",
+      "label": "207.203 万m³"
+    },
+    {
+      "value": 289.4728,
+      "color": "#08519c",
+      "label": "289.473 万m³"
+    },
+    {
+      "value": 504.2819999999998,
+      "color": "#042d60",
+      "label": "504.282 万m³"
+    }
+  ]
+}

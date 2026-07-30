@@ -1,0 +1,138 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "510422210000",
+      "name": "温泉彝族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "510422211000",
+      "name": "格萨拉彝族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513423211000",
+      "name": "巫木乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513423219000",
+      "name": "桃子乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513423221000",
+      "name": "前所乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "530724101000",
+      "name": "大兴镇",
+      "average": 10215.5
+    },
+    {
+      "regionId": "530724201000",
+      "name": "拉伯乡",
+      "average": 4866.1
+    },
+    {
+      "regionId": "530724202000",
+      "name": "永宁乡",
+      "average": 4992.4
+    },
+    {
+      "regionId": "530724203000",
+      "name": "翠玉傈僳族普米族乡",
+      "average": 3035.0
+    },
+    {
+      "regionId": "530724204000",
+      "name": "红桥乡",
+      "average": 6330.4
+    },
+    {
+      "regionId": "530724205000",
+      "name": "宁利乡",
+      "average": 3563.2
+    },
+    {
+      "regionId": "530724206000",
+      "name": "金棉乡",
+      "average": 4161.6
+    },
+    {
+      "regionId": "530724207000",
+      "name": "西川乡",
+      "average": 6772.8
+    },
+    {
+      "regionId": "530724208000",
+      "name": "西布河乡",
+      "average": 9192.5
+    },
+    {
+      "regionId": "530724209000",
+      "name": "战河乡",
+      "average": 6346.1
+    },
+    {
+      "regionId": "530724210000",
+      "name": "永宁坪乡",
+      "average": 1348.2
+    },
+    {
+      "regionId": "530724211000",
+      "name": "跑马坪乡",
+      "average": 3907.3
+    },
+    {
+      "regionId": "530724212000",
+      "name": "蝉战河乡",
+      "average": 2710.9
+    },
+    {
+      "regionId": "530724213000",
+      "name": "新营盘乡",
+      "average": 7908.2
+    },
+    {
+      "regionId": "530724214000",
+      "name": "烂泥箐乡",
+      "average": 5371.2
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 37.74959999999944,
+      "color": "#bdd7e7",
+      "label": "37.750 万m³"
+    },
+    {
+      "value": 3392.0631999999996,
+      "color": "#6baed6",
+      "label": "3392.063 万m³"
+    },
+    {
+      "value": 4907.0212,
+      "color": "#3182bd",
+      "label": "4907.021 万m³"
+    },
+    {
+      "value": 6345.660400000001,
+      "color": "#08519c",
+      "label": "6345.660 万m³"
+    },
+    {
+      "value": 9826.76,
+      "color": "#042d60",
+      "label": "9826.760 万m³"
+    }
+  ]
+}

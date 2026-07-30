@@ -1,0 +1,173 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "513332100000",
+      "name": "尼呷镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513332101000",
+      "name": "洛须镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513332102000",
+      "name": "色须镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513332200000",
+      "name": "真达乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513332201000",
+      "name": "奔达乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513332202000",
+      "name": "正科乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513332203000",
+      "name": "麻呷乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513332204000",
+      "name": "德荣马乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513332206000",
+      "name": "长沙贡马乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513332207000",
+      "name": "呷衣乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513332208000",
+      "name": "格孟乡",
+      "average": 10.2
+    },
+    {
+      "regionId": "513332209000",
+      "name": "蒙宜乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513332210000",
+      "name": "新荣乡",
+      "average": 20.4
+    },
+    {
+      "regionId": "513332211000",
+      "name": "宜牛乡",
+      "average": 3.9
+    },
+    {
+      "regionId": "513332212000",
+      "name": "虾扎镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "513332213000",
+      "name": "起坞乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513332214000",
+      "name": "阿日扎乡",
+      "average": 27.8
+    },
+    {
+      "regionId": "513332215000",
+      "name": "长须贡马乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513332216000",
+      "name": "长沙干马乡",
+      "average": 10.4
+    },
+    {
+      "regionId": "513332217000",
+      "name": "长须干马乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "513332218000",
+      "name": "温波镇",
+      "average": 19.3
+    },
+    {
+      "regionId": "513332219000",
+      "name": "瓦须乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632624204000",
+      "name": "上红科乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632624207000",
+      "name": "桑日麻乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632624208000",
+      "name": "特合土乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "632723103000",
+      "name": "清水河镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "632723104000",
+      "name": "珍秦镇",
+      "average": 0.0
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

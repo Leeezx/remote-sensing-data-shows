@@ -1,0 +1,193 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "152221100000",
+      "name": "科尔沁镇",
+      "average": 13752.9
+    },
+    {
+      "regionId": "152221108000",
+      "name": "俄体镇",
+      "average": 9056.6
+    },
+    {
+      "regionId": "152224102000",
+      "name": "东杜尔基镇",
+      "average": 16380.1
+    },
+    {
+      "regionId": "152224104000",
+      "name": "水泉镇",
+      "average": 8139.0
+    },
+    {
+      "regionId": "220881001000",
+      "name": "团结街道",
+      "average": 16.3
+    },
+    {
+      "regionId": "220881002000",
+      "name": "富文街道",
+      "average": 41.2
+    },
+    {
+      "regionId": "220881003000",
+      "name": "光明街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "220881004000",
+      "name": "兴隆街道",
+      "average": 62.9
+    },
+    {
+      "regionId": "220881005000",
+      "name": "永康街道",
+      "average": 51.4
+    },
+    {
+      "regionId": "220881006000",
+      "name": "通达街道",
+      "average": 21.3
+    },
+    {
+      "regionId": "220881007000",
+      "name": "洮府街道",
+      "average": 10745.3
+    },
+    {
+      "regionId": "220881008000",
+      "name": "向阳街道",
+      "average": 12714.1
+    },
+    {
+      "regionId": "220881100000",
+      "name": "瓦房镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220881101000",
+      "name": "万宝镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "220881102000",
+      "name": "黑水镇",
+      "average": 53044.1
+    },
+    {
+      "regionId": "220881103000",
+      "name": "那金镇",
+      "average": 28.4
+    },
+    {
+      "regionId": "220881104000",
+      "name": "安定镇",
+      "average": 48898.1
+    },
+    {
+      "regionId": "220881105000",
+      "name": "福顺镇",
+      "average": 101393.2
+    },
+    {
+      "regionId": "220881200000",
+      "name": "胡力吐蒙古族乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "220881201000",
+      "name": "万宝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "220881202000",
+      "name": "聚宝乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "220881203000",
+      "name": "东升乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "220881204000",
+      "name": "野马乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "220881205000",
+      "name": "永茂乡",
+      "average": 40448.5
+    },
+    {
+      "regionId": "220881206000",
+      "name": "蛟流河乡",
+      "average": 59787.0
+    },
+    {
+      "regionId": "220881207000",
+      "name": "大通乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "220881209000",
+      "name": "二龙乡",
+      "average": 11269.2
+    },
+    {
+      "regionId": "220881210000",
+      "name": "呼和车力蒙古族乡",
+      "average": 8140.6
+    },
+    {
+      "regionId": "220881400000",
+      "name": "东方红畜牧场",
+      "average": 2879.4
+    },
+    {
+      "regionId": "220881401000",
+      "name": "永茂林场",
+      "average": 434.9
+    },
+    {
+      "regionId": "220881402000",
+      "name": "市原种场",
+      "average": 1685.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0,
+      "color": "#eff3ff",
+      "label": "0 万m³"
+    },
+    {
+      "value": 20,
+      "color": "#bdd7e7",
+      "label": "20 万m³"
+    },
+    {
+      "value": 50,
+      "color": "#6baed6",
+      "label": "50 万m³"
+    },
+    {
+      "value": 90,
+      "color": "#3182bd",
+      "label": "90 万m³"
+    },
+    {
+      "value": 150,
+      "color": "#08519c",
+      "label": "150 万m³"
+    },
+    {
+      "value": 220,
+      "color": "#042d60",
+      "label": "220 万m³"
+    }
+  ]
+}

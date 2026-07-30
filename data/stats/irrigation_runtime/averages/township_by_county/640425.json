@@ -1,0 +1,113 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "620802103000",
+      "name": "草峰镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "621022213000",
+      "name": "车道乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621027211000",
+      "name": "新城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640425100000",
+      "name": "彭阳乡",
+      "average": 1942.1
+    },
+    {
+      "regionId": "640425101000",
+      "name": "王洼乡",
+      "average": 355.9
+    },
+    {
+      "regionId": "640425102000",
+      "name": "古城镇",
+      "average": 2513.9
+    },
+    {
+      "regionId": "640425200000",
+      "name": "新集乡",
+      "average": 5782.7
+    },
+    {
+      "regionId": "640425201000",
+      "name": "城阳乡",
+      "average": 4251.5
+    },
+    {
+      "regionId": "640425202000",
+      "name": "红河乡",
+      "average": 5454.8
+    },
+    {
+      "regionId": "640425203000",
+      "name": "冯庄乡",
+      "average": 95.8
+    },
+    {
+      "regionId": "640425204000",
+      "name": "小岔乡",
+      "average": 85.3
+    },
+    {
+      "regionId": "640425205000",
+      "name": "孟塬乡",
+      "average": 1334.5
+    },
+    {
+      "regionId": "640425206000",
+      "name": "罗洼乡",
+      "average": 15.4
+    },
+    {
+      "regionId": "640425207000",
+      "name": "交岔乡",
+      "average": 8.4
+    },
+    {
+      "regionId": "640425208000",
+      "name": "草庙乡",
+      "average": 513.9
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 8.1312,
+      "color": "#bdd7e7",
+      "label": "8.131 万m³"
+    },
+    {
+      "value": 92.18799999999999,
+      "color": "#6baed6",
+      "label": "92.188 万m³"
+    },
+    {
+      "value": 796.1863999999995,
+      "color": "#3182bd",
+      "label": "796.186 万m³"
+    },
+    {
+      "value": 2569.503199999997,
+      "color": "#08519c",
+      "label": "2569.503 万m³"
+    },
+    {
+      "value": 5690.888,
+      "color": "#042d60",
+      "label": "5690.888 万m³"
+    }
+  ]
+}

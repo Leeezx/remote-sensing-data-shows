@@ -1,0 +1,73 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "440507001000",
+      "name": "金霞街道",
+      "average": 0.0
+    },
+    {
+      "regionId": "440507003000",
+      "name": "珠池街道",
+      "average": 3374.0
+    },
+    {
+      "regionId": "440507004000",
+      "name": "新津街道",
+      "average": 1835.2
+    },
+    {
+      "regionId": "440507005000",
+      "name": "鸥汀街道",
+      "average": 22110.9
+    },
+    {
+      "regionId": "440507008000",
+      "name": "龙祥街道",
+      "average": 14398.1
+    },
+    {
+      "regionId": "440507100000",
+      "name": "外砂镇",
+      "average": 15611.8
+    },
+    {
+      "regionId": "440507101000",
+      "name": "新溪镇",
+      "average": 34945.1
+    }
+  ],
+  "legend": [
+    {
+      "value": 220.224,
+      "color": "#eff3ff",
+      "label": "220.224 万m³"
+    },
+    {
+      "value": 2253.7536,
+      "color": "#bdd7e7",
+      "label": "2253.754 万m³"
+    },
+    {
+      "value": 8048.2184,
+      "color": "#6baed6",
+      "label": "8048.218 万m³"
+    },
+    {
+      "value": 15097.1912,
+      "color": "#3182bd",
+      "label": "15097.191 万m³"
+    },
+    {
+      "value": 20343.1448,
+      "color": "#08519c",
+      "label": "20343.145 万m³"
+    },
+    {
+      "value": 33404.996,
+      "color": "#042d60",
+      "label": "33404.996 万m³"
+    }
+  ]
+}

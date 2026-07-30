@@ -1,0 +1,138 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "231226100000",
+      "name": "绥棱镇",
+      "average": 5.3
+    },
+    {
+      "regionId": "231226101000",
+      "name": "上集镇",
+      "average": 11183.3
+    },
+    {
+      "regionId": "231226102000",
+      "name": "四海店镇",
+      "average": 2709.7
+    },
+    {
+      "regionId": "231226103000",
+      "name": "双岔河镇",
+      "average": 6349.5
+    },
+    {
+      "regionId": "231226200000",
+      "name": "靠山乡",
+      "average": 2328.3
+    },
+    {
+      "regionId": "231226201000",
+      "name": "后头乡",
+      "average": 4121.6
+    },
+    {
+      "regionId": "231226203000",
+      "name": "长山乡",
+      "average": 19685.5
+    },
+    {
+      "regionId": "231226205000",
+      "name": "克音河乡",
+      "average": 3542.1
+    },
+    {
+      "regionId": "231226206000",
+      "name": "绥中乡",
+      "average": 2116.5
+    },
+    {
+      "regionId": "231226207000",
+      "name": "泥尔河乡",
+      "average": 17052.7
+    },
+    {
+      "regionId": "231226210000",
+      "name": "阁山乡",
+      "average": 10570.1
+    },
+    {
+      "regionId": "231226400000",
+      "name": "阁山林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231226401000",
+      "name": "四海店林场",
+      "average": 0.0
+    },
+    {
+      "regionId": "231226402000",
+      "name": "三吉台林场",
+      "average": 190.8
+    },
+    {
+      "regionId": "231226403000",
+      "name": "半截河林场",
+      "average": 5.9
+    },
+    {
+      "regionId": "231226404000",
+      "name": "绥棱林业局",
+      "average": 1874.2
+    },
+    {
+      "regionId": "231226500000",
+      "name": "绥棱农场",
+      "average": 1436.5
+    },
+    {
+      "regionId": "231226580000",
+      "name": "种马场",
+      "average": 357.7
+    },
+    {
+      "regionId": "231226581000",
+      "name": "良种场",
+      "average": 652.6
+    },
+    {
+      "regionId": "231226582000",
+      "name": "奶山羊场",
+      "average": 251.6
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 192.5024,
+      "color": "#bdd7e7",
+      "label": "192.502 万m³"
+    },
+    {
+      "value": 1182.5163999999995,
+      "color": "#6baed6",
+      "label": "1182.516 万m³"
+    },
+    {
+      "value": 2451.8736,
+      "color": "#3182bd",
+      "label": "2451.874 万m³"
+    },
+    {
+      "value": 6287.118799999995,
+      "color": "#08519c",
+      "label": "6287.119 万m³"
+    },
+    {
+      "value": 18685.036000000004,
+      "color": "#042d60",
+      "label": "18685.036 万m³"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "level": "township",
+  "unit": "万m³",
+  "averages": [
+    {
+      "regionId": "621027100000",
+      "name": "城关镇",
+      "average": 1975.9
+    },
+    {
+      "regionId": "621027101000",
+      "name": "屯字镇",
+      "average": 7699.6
+    },
+    {
+      "regionId": "621027102000",
+      "name": "孟坝镇",
+      "average": 4754.8
+    },
+    {
+      "regionId": "621027103000",
+      "name": "三岔镇",
+      "average": 0.0
+    },
+    {
+      "regionId": "621027104000",
+      "name": "平泉镇",
+      "average": 6952.5
+    },
+    {
+      "regionId": "621027105000",
+      "name": "开边镇",
+      "average": 4211.2
+    },
+    {
+      "regionId": "621027106000",
+      "name": "太平镇",
+      "average": 4990.4
+    },
+    {
+      "regionId": "621027200000",
+      "name": "临泾乡",
+      "average": 2593.6
+    },
+    {
+      "regionId": "621027201000",
+      "name": "南川乡",
+      "average": 2168.9
+    },
+    {
+      "regionId": "621027202000",
+      "name": "上肖乡",
+      "average": 7234.6
+    },
+    {
+      "regionId": "621027203000",
+      "name": "新集乡",
+      "average": 2378.8
+    },
+    {
+      "regionId": "621027204000",
+      "name": "方山乡",
+      "average": 1953.5
+    },
+    {
+      "regionId": "621027205000",
+      "name": "殷家城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621027206000",
+      "name": "马渠乡",
+      "average": 19.2
+    },
+    {
+      "regionId": "621027207000",
+      "name": "庙渠乡",
+      "average": 2306.0
+    },
+    {
+      "regionId": "621027208000",
+      "name": "武沟乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621027209000",
+      "name": "郭原乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "621027210000",
+      "name": "中原乡",
+      "average": 3733.1
+    },
+    {
+      "regionId": "621027211000",
+      "name": "新城乡",
+      "average": 0.0
+    },
+    {
+      "regionId": "640425203000",
+      "name": "冯庄乡",
+      "average": 95.8
+    },
+    {
+      "regionId": "640425205000",
+      "name": "孟塬乡",
+      "average": 1334.5
+    }
+  ],
+  "legend": [
+    {
+      "value": 0.0,
+      "color": "#eff3ff",
+      "label": "0.000 万m³"
+    },
+    {
+      "value": 4.608000000000004,
+      "color": "#bdd7e7",
+      "label": "4.608 万m³"
+    },
+    {
+      "value": 1955.292,
+      "color": "#6baed6",
+      "label": "1955.292 万m³"
+    },
+    {
+      "value": 2372.976,
+      "color": "#3182bd",
+      "label": "2372.976 万m³"
+    },
+    {
+      "value": 4624.335999999999,
+      "color": "#08519c",
+      "label": "4624.336 万m³"
+    },
+    {
+      "value": 7513.600000000001,
+      "color": "#042d60",
+      "label": "7513.600 万m³"
+    }
+  ]
+}
