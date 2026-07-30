@@ -185,6 +185,7 @@ export default function IrrigationPage() {
   const [countyAverages, setCountyAverages] = useState<IrrigationRegionAverage[]>([])
   const [countyLegend, setCountyLegend] = useState<LegendItem[]>([])
   const [countyLegendStatus, setCountyLegendStatus] = useState<LegendStatus>('loading')
+  const [countyVectorLoading, setCountyVectorLoading] = useState(false)
   const [adminStatsLoading, setAdminStatsLoading] = useState(false)
   const isAdminStatsMode = regionLevel !== null
 
@@ -321,38 +322,44 @@ export default function IrrigationPage() {
       setTownshipVector(null)
       setTownshipCounty(null)
       setSelectedRegion(null)
+      setCountyVectorLoading(false)
+      setAdminStatsLoading(false)
 
       return
     }
 
     let cancelled = false
-    setAdminStatsLoading(true)
+    setCountyVectorLoading(true)
     setCountyLegendStatus('loading')
-    const vectorRequest = getIrrigationVectorStatus('county').then(async (status) => {
-      if (cancelled) return
-      setVectorStatus(status)
-      if (!status.available) return
-      const vector = await loadVector('county')
-      if (!cancelled) setCountyVector(vector)
-    }).catch(() => {
-      if (!cancelled) setVectorStatus({
-        level: 'county',
-        available: false,
-        url: null,
-        message: '行政区矢量暂不可用',
+    void getIrrigationVectorStatus('county')
+      .then(async (status) => {
+        if (cancelled) return
+        setVectorStatus(status)
+        if (!status.available) return
+        const vector = await loadVector('county')
+        if (!cancelled) setCountyVector(vector)
       })
-    })
-    const averagesRequest = getIrrigationRegionAverages('county').then((result) => {
-      if (cancelled) return
-      setCountyAverages(result.averages)
-      setCountyLegend(result.legend)
-      setCountyLegendStatus('ready')
-    }).catch(() => {
-      if (!cancelled) setCountyLegendStatus('error')
-    })
-    void Promise.all([vectorRequest, averagesRequest]).finally(() => {
-      if (!cancelled) setAdminStatsLoading(false)
-    })
+      .catch(() => {
+        if (!cancelled) setVectorStatus({
+          level: 'county',
+          available: false,
+          url: null,
+          message: '行政区矢量暂不可用',
+        })
+      })
+      .finally(() => {
+        if (!cancelled) setCountyVectorLoading(false)
+      })
+    void getIrrigationRegionAverages('county')
+      .then((result) => {
+        if (cancelled) return
+        setCountyAverages(result.averages)
+        setCountyLegend(result.legend)
+        setCountyLegendStatus('ready')
+      })
+      .catch(() => {
+        if (!cancelled) setCountyLegendStatus('error')
+      })
     return () => { cancelled = true }
   }, [isAdminStatsMode, loadVector])
 
@@ -672,8 +679,16 @@ export default function IrrigationPage() {
           </>
         ) : selectedRegion ? (
           <div className="loading">加载统计数据...</div>
-        ) : (regionLevel && adminStatsLoading) ? (
-          <div className="loading">加载行政区统计数据...</div>
+        ) : regionLevel === 'county' && countyVectorLoading && !countyVector ? (
+          <div className="loading">加载县级行政区...</div>
+        ) : regionLevel === 'county' && !countyVector && vectorStatus?.available === false ? (
+          <div className="chart-empty">{vectorStatus.message}</div>
+        ) : regionLevel === 'county' && countyLegendStatus === 'loading' ? (
+          <div className="loading">加载统计着色...</div>
+        ) : regionLevel === 'county' && countyLegendStatus === 'error' ? (
+          <div className="chart-empty">行政区已加载，统计着色暂不可用</div>
+        ) : regionLevel === 'township' && adminStatsLoading ? (
+          <div className="loading">加载乡镇行政区统计数据...</div>
         ) : !regionLevel ? (
           <div className="chart-empty">未开启行政区统计</div>
         ) : (
