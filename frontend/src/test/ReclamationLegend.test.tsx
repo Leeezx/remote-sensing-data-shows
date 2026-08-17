@@ -34,6 +34,6 @@ describe('ReclamationLegend', () => {
     const swatch = swatchFor('不可复耕')
     expect(swatch).toHaveClass('reclamation-legend-dot-hollow')
     expect((swatch as HTMLElement).style.backgroundColor).toBe('transparent')
-    expect((swatch as HTMLElement).style.borderColor).toBe('rgb(255, 255, 255)')
+    expect((swatch as HTMLElement).style.borderColor).toBe('rgb(100, 116, 139)')
   })
 })
