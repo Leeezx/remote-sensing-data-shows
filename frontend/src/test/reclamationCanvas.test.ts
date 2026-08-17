@@ -145,14 +145,18 @@ describe('reclamation Canvas engine', () => {
     expect(context.fill).toHaveBeenCalledTimes(1)
     expect(context.stroke).toHaveBeenCalledTimes(2)
     expect(context.fillStyle).toBe('rgba(34, 197, 94, 0.4)')
-    expect(context.strokeStyle).toBe('rgba(22, 163, 74, 0.95)')
+    expect(context.strokeStyle).toBe('#FFFFFF')
     expect(context.lineWidth).toBe(1.25)
   })
 
   it('maps valid value classes to distinguishable opacity while retaining the scenario hue', () => {
     expect(reclamationValueStyle('non-reclaimable', '#16A34A')).toEqual({
       fill: null,
-      stroke: 'rgba(22, 163, 74, 0.95)',
+      stroke: '#FFFFFF',
+    })
+    expect(reclamationValueStyle('non-reclaimable', '#2563EB')).toEqual({
+      fill: null,
+      stroke: '#FFFFFF',
     })
     expect(reclamationValueStyle('general', '#16A34A').fill).toBe('rgba(34, 197, 94, 0.4)')
     expect(reclamationValueStyle('recommended', '#16A34A').fill).toBe('rgba(245, 158, 11, 0.64)')
@@ -184,10 +188,10 @@ describe('reclamation Canvas engine', () => {
     )
   })
 
-  it('keeps non-reclaimable points hollow with the scenario-colored stroke', () => {
+  it('keeps non-reclaimable points hollow with a white stroke', () => {
     expect(reclamationValueStyle('non-reclaimable', '#2563EB')).toEqual({
       fill: null,
-      stroke: 'rgba(37, 99, 235, 0.95)',
+      stroke: '#FFFFFF',
     })
   })
 

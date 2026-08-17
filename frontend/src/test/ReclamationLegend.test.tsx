@@ -9,10 +9,14 @@ function swatchFor(label: string) {
 describe('ReclamationLegend', () => {
   it('uses the same three class colors for current and future scenarios', () => {
     const { rerender } = render(<ReclamationLegend scenario="current" />)
+    const currentMarkup = document.querySelector('.reclamation-legend')?.innerHTML
     const currentStyles = ['0-5 一般复耕区', '5-10 建议复耕区', '>10 优先复耕区']
       .map((label) => swatchFor(label)?.getAttribute('style'))
 
     rerender(<ReclamationLegend scenario="future" />)
+    expect(document.querySelector('.reclamation-legend')?.innerHTML).toBe(currentMarkup)
+    expect(screen.queryByText('当前情景')).not.toBeInTheDocument()
+    expect(screen.queryByText('未来情景')).not.toBeInTheDocument()
     const futureStyles = ['0-5 一般复耕区', '5-10 建议复耕区', '>10 优先复耕区']
       .map((label) => swatchFor(label)?.getAttribute('style'))
 
@@ -29,6 +33,7 @@ describe('ReclamationLegend', () => {
 
     const swatch = swatchFor('不可复耕')
     expect(swatch).toHaveClass('reclamation-legend-dot-hollow')
-    expect(swatch).not.toHaveStyle({ backgroundColor: '#16A34A' })
+    expect((swatch as HTMLElement).style.backgroundColor).toBe('transparent')
+    expect((swatch as HTMLElement).style.borderColor).toBe('rgb(255, 255, 255)')
   })
 })

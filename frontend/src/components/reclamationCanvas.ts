@@ -9,6 +9,7 @@ export const MIN_RADIUS_PX = 3
 export const SCREEN_BUCKET_PX = 32
 export const CURRENT_SCENARIO_COLOR = '#16A34A'
 export const FUTURE_SCENARIO_COLOR = '#2563EB'
+export const NON_RECLAIMABLE_COLOR = '#FFFFFF'
 
 const EARTH_PIXEL_METERS_AT_ZOOM_ZERO = 156543.03392
 const FULL_CIRCLE_RADIANS = Math.PI * 2
@@ -146,7 +147,7 @@ function rgba(hexColor: string, alpha: number): string {
 
 export function reclamationValueStyle(
   valueClass: ReclamationValueClass,
-  color: string,
+  _color: string,
 ): { fill: string | null; stroke: string } {
   const opacityByValueClass: Partial<Record<ReclamationValueClass, number>> = {
     general: 0.4,
@@ -154,11 +155,13 @@ export function reclamationValueStyle(
     priority: 0.82,
   }
   const opacity = opacityByValueClass[valueClass]
-  const classColor = RECLAMATION_CLASS_COLORS[valueClass] ?? color
+  const classColor = RECLAMATION_CLASS_COLORS[valueClass] ?? NON_RECLAIMABLE_COLOR
 
   return {
     fill: opacity === undefined ? null : rgba(classColor, opacity),
-    stroke: rgba(classColor, 0.95),
+    stroke: valueClass === 'non-reclaimable'
+      ? NON_RECLAIMABLE_COLOR
+      : rgba(classColor, 0.95),
   }
 }
 

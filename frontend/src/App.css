@@ -915,7 +915,7 @@
 .reclamation-legend ul { display: grid; gap: 4px; margin: 0; padding: 0; list-style: none; }
 .reclamation-legend li { display: flex; align-items: center; gap: 6px; }
 .reclamation-legend-dot { width: 11px; height: 11px; border-radius: 50%; flex: 0 0 auto; }
-.reclamation-legend-dot-hollow { box-sizing: border-box; border: 2px solid #64748b; background: transparent; }
+.reclamation-legend-dot-hollow { box-sizing: border-box; border: 2px solid #FFFFFF; background: transparent; }
 
 .reclamation-state {
   display: flex;
