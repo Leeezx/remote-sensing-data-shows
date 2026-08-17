@@ -144,7 +144,7 @@ describe('reclamation Canvas engine', () => {
 
     expect(context.fill).toHaveBeenCalledTimes(1)
     expect(context.stroke).toHaveBeenCalledTimes(2)
-    expect(context.fillStyle).toBe('rgba(22, 163, 74, 0.4)')
+    expect(context.fillStyle).toBe('rgba(34, 197, 94, 0.4)')
     expect(context.strokeStyle).toBe('rgba(22, 163, 74, 0.95)')
     expect(context.lineWidth).toBe(1.25)
   })
@@ -154,9 +154,41 @@ describe('reclamation Canvas engine', () => {
       fill: null,
       stroke: 'rgba(22, 163, 74, 0.95)',
     })
-    expect(reclamationValueStyle('general', '#16A34A').fill).toBe('rgba(22, 163, 74, 0.4)')
-    expect(reclamationValueStyle('recommended', '#16A34A').fill).toBe('rgba(22, 163, 74, 0.64)')
-    expect(reclamationValueStyle('priority', '#2563EB').fill).toBe('rgba(37, 99, 235, 0.82)')
+    expect(reclamationValueStyle('general', '#16A34A').fill).toBe('rgba(34, 197, 94, 0.4)')
+    expect(reclamationValueStyle('recommended', '#16A34A').fill).toBe('rgba(245, 158, 11, 0.64)')
+    expect(reclamationValueStyle('priority', '#2563EB').fill).toBe('rgba(220, 38, 38, 0.82)')
+  })
+
+  it('uses fixed colors for reclaimable classes in both scenarios', () => {
+    expect(reclamationValueStyle('general', '#16A34A')).toEqual({
+      fill: 'rgba(34, 197, 94, 0.4)',
+      stroke: 'rgba(34, 197, 94, 0.95)',
+    })
+    expect(reclamationValueStyle('recommended', '#16A34A')).toEqual({
+      fill: 'rgba(245, 158, 11, 0.64)',
+      stroke: 'rgba(245, 158, 11, 0.95)',
+    })
+    expect(reclamationValueStyle('priority', '#16A34A')).toEqual({
+      fill: 'rgba(220, 38, 38, 0.82)',
+      stroke: 'rgba(220, 38, 38, 0.95)',
+    })
+
+    expect(reclamationValueStyle('general', '#2563EB')).toEqual(
+      reclamationValueStyle('general', '#16A34A'),
+    )
+    expect(reclamationValueStyle('recommended', '#2563EB')).toEqual(
+      reclamationValueStyle('recommended', '#16A34A'),
+    )
+    expect(reclamationValueStyle('priority', '#2563EB')).toEqual(
+      reclamationValueStyle('priority', '#16A34A'),
+    )
+  })
+
+  it('keeps non-reclaimable points hollow with the scenario-colored stroke', () => {
+    expect(reclamationValueStyle('non-reclaimable', '#2563EB')).toEqual({
+      fill: null,
+      stroke: 'rgba(37, 99, 235, 0.95)',
+    })
   })
 
   it('clears and outlines a reclaimable hover point', () => {

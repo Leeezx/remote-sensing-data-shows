@@ -37,6 +37,12 @@ export type ReclamationValueClass =
   | 'recommended'
   | 'priority'
 
+const RECLAMATION_CLASS_COLORS: Partial<Record<ReclamationValueClass, string>> = {
+  general: '#22C55E',
+  recommended: '#F59E0B',
+  priority: '#DC2626',
+}
+
 export function scenarioMetrics(
   point: ReclamationPoint,
   scenario: ReclamationScenario,
@@ -148,10 +154,11 @@ export function reclamationValueStyle(
     priority: 0.82,
   }
   const opacity = opacityByValueClass[valueClass]
+  const classColor = RECLAMATION_CLASS_COLORS[valueClass] ?? color
 
   return {
-    fill: opacity === undefined ? null : rgba(color, opacity),
-    stroke: rgba(color, 0.95),
+    fill: opacity === undefined ? null : rgba(classColor, opacity),
+    stroke: rgba(classColor, 0.95),
   }
 }
 
