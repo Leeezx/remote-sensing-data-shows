@@ -12,7 +12,7 @@ interface ReclamationLegendProps {
 export default function ReclamationLegend({ scenario }: ReclamationLegendProps) {
   const color = scenario === 'current' ? CURRENT_SCENARIO_COLOR : FUTURE_SCENARIO_COLOR
   const dotStyle = (valueClass: 'general' | 'recommended' | 'priority') => ({
-    backgroundColor: reclamationValueStyle(valueClass, color).fill ?? color,
+    backgroundColor: reclamationValueStyle(valueClass, CURRENT_SCENARIO_COLOR).fill ?? CURRENT_SCENARIO_COLOR,
   })
 
   return (
