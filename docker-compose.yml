@@ -55,6 +55,12 @@ services:
       - type: volume
         source: nginx_tile_cache
         target: /tmp/nginx-cache
+      - type: bind
+        source: ./data/videos
+        target: /usr/share/nginx/html/videos
+        read_only: true
+        bind:
+          create_host_path: false
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8080/"]
       interval: 30s
