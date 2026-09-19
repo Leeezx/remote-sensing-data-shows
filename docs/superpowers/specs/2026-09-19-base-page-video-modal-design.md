@@ -17,12 +17,12 @@
 location /videos/ {
     root /usr/share/nginx/html;
     try_files $uri =404;
-    add_header Cache-Control "public, max-age=86400";
-    add_header X-Content-Type-Options "nosniff" always;
 }
 ```
 
 `try_files $uri =404` 是必需的：`location /` 的 `try_files ... /index.html` 会把缺失的视频请求也回退成 HTML，`<video>` 收到 HTML 后静默失败，用户只看到黑框，难以排查。
+
+该 location 刻意不写 `add_header`。nginx 的 `add_header` 继承规则是"当前层只要出现一条 `add_header`，上一层的全部不再继承"，一旦加缓存头就必须把服务级的 `X-Frame-Options`、`X-Content-Type-Options`、`Referrer-Policy` 三条全部重复一遍；而 nginx 对静态文件默认发送 `Last-Modified`/`ETag` 并支持协商缓存，对一个会被替换的文件正是合适的策略（长缓存反而与验收标准 5 冲突）。`nginx.conf` 中 `X-Content-Type-Options` 的出现次数保持为 5，现有部署测试无需修改。
 
 进度条拖拽依赖 HTTP Range（206），nginx 对静态文件原生支持，无需额外配置。Caddy 与后端不改动。
 
@@ -60,7 +60,7 @@ ffmpeg -i in.mp4 -c:v libx264 -crf 23 -preset medium -pix_fmt yuv420p \
 
 - `frontend/src/test/VideoModal.test.tsx`（新增）：验证点击侧边栏入口后 dialog 打开且 `<video>` 存在；关闭后 `<video>` 从文档移除。
 - 验证 `<video>` 触发 error 事件时渲染失败提示文案。
-- 如 jsdom 29 未实现 `HTMLDialogElement.showModal()`，在 `src/test/setup.ts` 补充最小 polyfill（仅测试夹具，不影响生产代码）。
+- jsdom 29.1.1 实测未实现 `HTMLDialogElement.showModal()` 与 `close()`，需在 `src/test/setup.ts` 补充最小 polyfill（仅测试夹具，不影响生产代码）。
 - 完成后运行前端测试、构建与 lint。
 
 ## 验收标准
