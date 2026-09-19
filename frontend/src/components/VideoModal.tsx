@@ -11,7 +11,7 @@ export default function VideoModal({ onClose }: VideoModalProps) {
   const [failed, setFailed] = useState(false)
 
   useEffect(() => {
-    dialogRef.current?.showModal()
+    if (!dialogRef.current?.open) dialogRef.current?.showModal()
   }, [])
 
   return (

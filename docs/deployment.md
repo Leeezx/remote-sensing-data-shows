@@ -68,10 +68,13 @@ ffmpeg -i in.mp4 -c:v libx264 -crf 23 -preset medium -pix_fmt yuv420p \
        -c:a aac -b:a 128k -movflags +faststart data/videos/demo.mp4
 ```
 
+3. **本地开发**：`/videos/` 只由 nginx 提供，Vite 开发服务器只代理 `/api`、`/data`、`/cog`。因此 `npm run dev` 下该请求返回 404，弹窗显示加载失败文案，这是预期行为而非缺陷。需要在本地检查播放时，可临时把文件放到 `frontend/public/videos/`，验证完不要提交。
+4. **备份**：第 7 节的 `tar` 命令只列出 `data/rasters data/vectors data/stats`，`data/videos` 有意不在其中。视频是手工提供的静态资源，体积大，纳入每次备份会显著增大归档。从备份恢复后需要重新上传视频文件。
+
 验证服务是否正常（应返回 200，403 表示权限问题，404 表示文件未挂载到位）：
 
 ```bash
-docker compose exec frontend wget -S -O /dev/null http://127.0.0.1:8080/videos/demo.mp4
+docker compose exec frontend wget --spider -S http://127.0.0.1:8080/videos/demo.mp4
 ```
 
 ## 4. 配置与数据预检
@@ -160,8 +163,11 @@ git fetch origin
 git switch main
 git pull --ff-only
 python3 scripts/check_deployment_data.py
+mkdir -p data/videos
 docker compose up -d --build
 ```
+
+Compose 使用 `create_host_path: false`，新增的数据目录（如 `data/videos`）必须在升级前手动创建，否则 `docker compose up` 会因绑定源路径不存在而直接失败。
 
 若新版本异常，切回已记录的提交并重建；数据目录和命名卷不会随 Git 切换删除：
 
