@@ -63,6 +63,7 @@ docs/改进.md
 temp_ssm/
 
 # Large data files (local only)
+data/videos/
 data/rasters/
 data/tiles/
 data/vectors/irrigation/township_by_county/

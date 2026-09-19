@@ -275,3 +275,25 @@ def test_frontend_healthchecks_use_explicit_ipv4_loopback():
     dockerfile = (ROOT / "Dockerfile.frontend").read_text(encoding="utf-8")
     assert "wget -qO- http://127.0.0.1:8080/" in dockerfile
     assert "http://localhost:8080/" not in dockerfile
+
+
+def test_frontend_serves_videos_from_a_read_only_bind_mount():
+    frontend_volumes = compose()["services"]["frontend"]["volumes"]
+
+    assert {
+        "type": "bind",
+        "source": "./data/videos",
+        "target": "/usr/share/nginx/html/videos",
+        "read_only": True,
+        "bind": {"create_host_path": False},
+    } in frontend_volumes
+
+
+def test_nginx_serves_videos_without_the_spa_fallback():
+    nginx = (ROOT / "nginx.conf").read_text(encoding="utf-8")
+
+    block = nginx_location_block(nginx, "/videos/")
+
+    assert "root /usr/share/nginx/html;" in block
+    assert "try_files $uri =404;" in block
+    assert "index.html" not in block

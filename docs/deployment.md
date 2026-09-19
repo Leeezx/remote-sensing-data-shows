@@ -26,6 +26,7 @@ mkdir -p \
   data/rasters/{ssm,et,sm_10cm,sm_30cm,sm_60cm,sm_100cm,irrigation_annual,irrigation_8day} \
   data/vectors/irrigation/county \
   data/vectors/irrigation/township_by_county \
+  data/videos \
   data/stats
 ```
 
@@ -50,6 +51,31 @@ python scripts/build_irrigation_runtime_stats.py --check
 ```
 
 校验通过后提交生成的 `data/stats/irrigation_runtime/`。该目录随代码部署，FastAPI 运行时只读取其中的小型分片。
+
+### 视频文件
+
+基础数据展示页的视频入口读取 `data/videos/demo.mp4`。上传时注意两点：
+
+```bash
+rsync -av --chmod=D755,F644 data/videos/ user@server:/opt/remote-sensing/app/data/videos/
+```
+
+1. **权限**：frontend 容器以 uid 101（`nginx-unprivileged`）运行。目录需为 `755`、文件需为 `644`，否则 nginx 返回 403。用 rsync 时带上 `--chmod=D755,F644`。
+2. **编码**：必须是 H.264 视频轨 + AAC 音频轨的 mp4。H.265/HEVC 的文件扩展名同样是 `.mp4`，但 Chrome/Firefox/Edge 默认无法解码。用 `ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=nw=1 demo.mp4` 确认；需要转码时：
+
+```bash
+ffmpeg -i in.mp4 -c:v libx264 -crf 23 -preset medium -pix_fmt yuv420p \
+       -c:a aac -b:a 128k -movflags +faststart data/videos/demo.mp4
+```
+
+3. **本地开发**：`/videos/` 只由 nginx 提供，Vite 开发服务器只代理 `/api`、`/data`、`/cog`。因此 `npm run dev` 下该请求返回 404，弹窗显示加载失败文案，这是预期行为而非缺陷。需要在本地检查播放时，可临时把文件放到 `frontend/public/videos/`，验证完不要提交。
+4. **备份**：第 7 节的 `tar` 命令只列出 `data/rasters data/vectors data/stats`，`data/videos` 有意不在其中。视频是手工提供的静态资源，体积大，纳入每次备份会显著增大归档。从备份恢复后需要重新上传视频文件。
+
+验证服务是否正常（应返回 200，403 表示权限问题，404 表示文件未挂载到位）：
+
+```bash
+docker compose exec frontend wget --spider -S http://127.0.0.1:8080/videos/demo.mp4
+```
 
 ## 4. 配置与数据预检
 
@@ -137,8 +163,11 @@ git fetch origin
 git switch main
 git pull --ff-only
 python3 scripts/check_deployment_data.py
+mkdir -p data/videos
 docker compose up -d --build
 ```
+
+Compose 使用 `create_host_path: false`，新增的数据目录（如 `data/videos`）必须在升级前手动创建，否则 `docker compose up` 会因绑定源路径不存在而直接失败。
 
 若新版本异常，切回已记录的提交并重建；数据目录和命名卷不会随 Git 切换删除：
 
