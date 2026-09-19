@@ -938,4 +938,25 @@ describe('App', () => {
       screen.getByText('行政区已加载，统计着色暂不可用'),
     ).toBeInTheDocument()
   })
+
+  it('opens the video modal from the sidebar entry', async () => {
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(await screen.findByRole('button', { name: '播放介绍视频' }))
+
+    const dialog = document.querySelector('dialog')
+    expect(dialog).toHaveAttribute('open')
+    expect(dialog?.querySelector('video')).toHaveAttribute('src', '/videos/demo.mp4')
+  })
+
+  it('removes the video modal from the DOM when it closes', async () => {
+    const user = userEvent.setup()
+    render(<App />)
+
+    await user.click(await screen.findByRole('button', { name: '播放介绍视频' }))
+    await user.click(screen.getByRole('button', { name: '关闭' }))
+
+    expect(document.querySelector('dialog')).not.toBeInTheDocument()
+  })
 })

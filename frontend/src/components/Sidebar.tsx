@@ -13,6 +13,7 @@ interface SidebarProps {
   onTimeResolutionChange: (r: 'month' | '8day') => void
   isPlaying: boolean
   onPlayToggle: () => void
+  onOpenVideo: () => void
 }
 
 function formatTime(t: string): string {
@@ -41,6 +42,7 @@ export default function Sidebar({
   onTimeResolutionChange,
   isPlaying,
   onPlayToggle,
+  onOpenVideo,
 }: SidebarProps) {
   const activeLayer = layers.find((l) => l.id === activeLayerId)
 
@@ -158,6 +160,14 @@ export default function Sidebar({
         <p className="hint">
           点击地图查询像元值；按住 Shift 拖拽框选区域
         </p>
+      </section>
+
+      {/* Video */}
+      <section className="sidebar-section">
+        <h3>🎬 视频演示</h3>
+        <button className="btn" onClick={onOpenVideo}>
+          播放介绍视频
+        </button>
       </section>
 
       {/* Layer Info */}

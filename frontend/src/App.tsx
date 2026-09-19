@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import MapView from './components/MapView'
 import Legend from './components/Legend'
+import VideoModal from './components/VideoModal'
 import IrrigationPage from './pages/IrrigationPage'
 import ReclamationPage from './pages/ReclamationPage'
 import PlaceholderPage from './pages/PlaceholderPage'
@@ -53,6 +54,9 @@ function MainPage() {
   // Tile loading overlay
   const [tileLoading, setTileLoading] = useState(false)
   const tileLoadTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  // Video modal
+  const [videoOpen, setVideoOpen] = useState(false)
 
   // Load layers on mount
   useEffect(() => {
@@ -203,6 +207,7 @@ function MainPage() {
             onTimeResolutionChange={handleTimeResolutionChange}
             isPlaying={isPlaying}
             onPlayToggle={handlePlayToggle}
+            onOpenVideo={() => setVideoOpen(true)}
           />
         </div>
 
@@ -233,6 +238,8 @@ function MainPage() {
             status={legendStatus}
           />
         </div>
+
+        {videoOpen && <VideoModal onClose={() => setVideoOpen(false)} />}
       </main>
   )
 }
