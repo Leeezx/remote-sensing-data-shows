@@ -209,3 +209,91 @@ export type MapQueryState =
   | { status: 'error'; kind: 'point' | 'area'; message: string }
   | { status: 'point'; result: PointQueryResult }
   | { status: 'area'; result: AreaQueryResult }
+
+// ===== Water Demand & Replenishment Assessment =====
+
+export type WaterDemandScenario = 'current' | 'future'
+export type WaterDemandUnit = 'mm'
+
+/** Water-replenishment tier carried on every sample point. */
+export type WaterDemandClass = 1 | 2 | 3
+
+export interface WaterDemandMetrics {
+  ecologicalWaterConsumption: number
+  ecologicalWaterDemand: number
+  ecologicalWaterReplenishment: number
+}
+
+export interface WaterDemandPoint {
+  id: string
+  longitude: number
+  latitude: number
+  class: WaterDemandClass
+  current: WaterDemandMetrics
+  future: WaterDemandMetrics
+}
+
+export interface WaterDemandRegionProperties {
+  id: string
+  name: string
+  pointCount: number
+  /** Leaflet order: [[south, west], [north, east]]. */
+  bounds: [[number, number], [number, number]]
+}
+
+export interface WaterDemandFeature<P> {
+  type: 'Feature'
+  properties: P
+  geometry: { type: string; coordinates: unknown }
+}
+
+export interface WaterDemandFeatureCollection<P> {
+  type: 'FeatureCollection'
+  features: WaterDemandFeature<P>[]
+}
+
+export interface WaterDemandGeometry {
+  type: string
+  coordinates: unknown
+}
+
+export interface WaterDemandMetricDefinition {
+  field: keyof WaterDemandMetrics
+  label: string
+  unit: WaterDemandUnit
+}
+
+export interface WaterDemandLegendEntry {
+  value: WaterDemandClass
+  color: string
+  label: string
+}
+
+export interface WaterDemandOverviewResponse {
+  schemaVersion: 1
+  unit: WaterDemandUnit
+  metrics: WaterDemandMetricDefinition[]
+  valueFields: string[]
+  legend: WaterDemandLegendEntry[]
+  chinaOutline: WaterDemandGeometry
+  regions: WaterDemandFeatureCollection<WaterDemandRegionProperties>
+}
+
+/**
+ * Columnar, quantised point transport.
+ *
+ * `gx`/`gy` index into `lonAxis`/`latAxis`; `values` holds six metric columns in
+ * `valueFields` order, laid out as `values[column * pointCount + point]`.
+ * Points are sorted by `(gy, gx)` so hit-testing can binary-search latitude rows.
+ */
+export interface WaterDemandPointGrid {
+  pointCount: number
+  lonAxis: Float64Array
+  latAxis: Float64Array
+  gx: Uint16Array
+  gy: Uint16Array
+  values: Uint16Array
+  classes: Uint8Array
+  minimums: Float64Array
+  maximums: Float64Array
+}

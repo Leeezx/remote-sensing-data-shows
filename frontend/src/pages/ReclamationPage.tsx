@@ -28,6 +28,9 @@ function isAbort(error: unknown) {
   return axios.isCancel(error) || (error instanceof Error && error.name === 'AbortError')
 }
 
+/** Delay before the demo region is entered automatically on page load. */
+export const AUTO_DRILL_DELAY_MS = 1000
+
 const OVERALL_REGION_ID = 'DEMO'
 
 function buildOverallRegion(
@@ -51,7 +54,14 @@ function buildOverallRegion(
   }
 }
 
-export default function ReclamationPage() {
+interface ReclamationPageProps {
+  /** Milliseconds before the demo region is entered automatically. */
+  autoDrillDelayMs?: number
+}
+
+export default function ReclamationPage({
+  autoDrillDelayMs = AUTO_DRILL_DELAY_MS,
+}: ReclamationPageProps = {}) {
   const [overview, setOverview] = useState<ReclamationOverviewWireResponse | null>(null)
   const [overviewStatus, setOverviewStatus] = useState<'loading' | 'ready' | 'error'>('loading')
   const [overviewError, setOverviewError] = useState('')
@@ -132,11 +142,25 @@ export default function ReclamationPage() {
       })
   }, [overview])
 
+  // Entering the section highlights the demo region, then drills in automatically
+  // so visitors do not have to click the highlight first.
+  const autoDrilledRef = useRef(false)
+  useEffect(() => {
+    if (overviewStatus !== 'ready' || !overview || autoDrilledRef.current) return undefined
+    const region = buildOverallRegion(overview)
+    const timer = setTimeout(() => {
+      autoDrilledRef.current = true
+      selectRegion(region)
+    }, autoDrillDelayMs)
+    return () => clearTimeout(timer)
+  }, [overviewStatus, overview, selectRegion, autoDrillDelayMs])
+
   const retryPoints = useCallback(() => {
     if (selectedRegion) selectRegion(selectedRegion)
   }, [selectRegion, selectedRegion])
 
   const returnToOverview = useCallback(() => {
+    autoDrilledRef.current = true
     requestRef.current?.controller.abort()
     requestRef.current = null
     setSelectedRegion(null)
@@ -205,7 +229,7 @@ export default function ReclamationPage() {
         </div>
       ) : (
         <>
-          <p className="reclamation-overview-instruction">点击高亮区域查看复耕潜力</p>
+          <p className="reclamation-overview-instruction">正在定位示范区...</p>
           <nav className="reclamation-region-selector" aria-label="选择复耕评估区域">
             <button
               type="button"

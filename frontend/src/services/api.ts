@@ -18,6 +18,8 @@ import type {
   ReclamationPoint,
   ReclamationPointsResponse,
   ReclamationPointsWireResponse,
+  WaterDemandOverviewResponse,
+  WaterDemandPointGrid,
 } from '../types'
 
 const client = axios.create({
@@ -195,6 +197,92 @@ export async function getReclamationPoints(
       ...parseReclamationPointTuple(tuple),
     })),
   }
+}
+
+// ===== Water Demand & Replenishment Assessment =====
+
+const WATER_DEMAND_MAGIC = 'WDPT'
+const WATER_DEMAND_VERSION = 1
+const WATER_DEMAND_HEADER_BYTES = 120
+const WATER_DEMAND_METRIC_COUNT = 6
+
+export async function getWaterDemandOverview(
+  signal?: AbortSignal,
+): Promise<WaterDemandOverviewResponse> {
+  const { data } = await client.get<WaterDemandOverviewResponse>(
+    '/water-demand/overview',
+    { signal },
+  )
+  return data
+}
+
+/**
+ * Decode the columnar binary point transport.
+ *
+ * Layout (little endian): 120-byte header, longitude axis (float64),
+ * latitude axis (float64), longitude indices (uint16), latitude indices
+ * (uint16), six metric columns (uint16, column major), tier codes (uint8).
+ */
+export function parseWaterDemandPointGrid(buffer: ArrayBuffer): WaterDemandPointGrid {
+  if (buffer.byteLength < WATER_DEMAND_HEADER_BYTES) {
+    throw new Error('Water-demand transport is shorter than its header')
+  }
+
+  const view = new DataView(buffer)
+  const magic = String.fromCharCode(
+    view.getUint8(0), view.getUint8(1), view.getUint8(2), view.getUint8(3),
+  )
+  if (magic !== WATER_DEMAND_MAGIC) {
+    throw new Error('Water-demand transport has an unexpected magic value')
+  }
+  const version = view.getUint16(4, true)
+  if (version !== WATER_DEMAND_VERSION) {
+    throw new Error(`Unsupported water-demand transport version ${version}`)
+  }
+
+  const pointCount = view.getUint32(8, true)
+  const lonCount = view.getUint32(12, true)
+  const latCount = view.getUint32(16, true)
+  const columnCount = view.getUint32(20, true)
+  if (columnCount !== WATER_DEMAND_METRIC_COUNT) {
+    throw new Error(`Expected ${WATER_DEMAND_METRIC_COUNT} metric columns, found ${columnCount}`)
+  }
+
+  const expectedBytes = WATER_DEMAND_HEADER_BYTES
+    + 8 * (lonCount + latCount)
+    + 4 * pointCount
+    + 2 * pointCount * columnCount
+    + pointCount
+  if (buffer.byteLength !== expectedBytes) {
+    throw new Error('Water-demand transport length does not match its header')
+  }
+
+  const minimums = new Float64Array(buffer, 24, WATER_DEMAND_METRIC_COUNT).slice()
+  const maximums = new Float64Array(buffer, 72, WATER_DEMAND_METRIC_COUNT).slice()
+  let offset = WATER_DEMAND_HEADER_BYTES
+  const lonAxis = new Float64Array(buffer, offset, lonCount).slice()
+  offset += 8 * lonCount
+  const latAxis = new Float64Array(buffer, offset, latCount).slice()
+  offset += 8 * latCount
+  const gx = new Uint16Array(buffer, offset, pointCount).slice()
+  offset += 2 * pointCount
+  const gy = new Uint16Array(buffer, offset, pointCount).slice()
+  offset += 2 * pointCount
+  const values = new Uint16Array(buffer, offset, pointCount * columnCount).slice()
+  offset += 2 * pointCount * columnCount
+  const classes = new Uint8Array(buffer, offset, pointCount).slice()
+
+  return { pointCount, lonAxis, latAxis, gx, gy, values, classes, minimums, maximums }
+}
+
+export async function getWaterDemandPoints(
+  signal?: AbortSignal,
+): Promise<WaterDemandPointGrid> {
+  const { data } = await client.get<ArrayBuffer>('/water-demand/points', {
+    signal,
+    responseType: 'arraybuffer',
+  })
+  return parseWaterDemandPointGrid(data)
 }
 
 // ===== Spatial Queries =====

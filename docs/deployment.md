@@ -52,6 +52,8 @@ python scripts/build_irrigation_runtime_stats.py --check
 
 校验通过后提交生成的 `data/stats/irrigation_runtime/`。该目录随代码部署，FastAPI 运行时只读取其中的小型分片。
 
+`data/reclamation/` 与 `data/water_demand/` 保存第三、第四板块的点位传输制品，同样由 Git 跟踪并随镜像打包，不需要通过 rsync 上传。前者由 `scripts/build_reclamation_data.py` 生成，后者由 `scripts/build_water_demand_data.py` 生成。
+
 ### 视频文件
 
 基础数据展示页的视频入口读取 `data/videos/demo.mp4`。上传时注意两点：

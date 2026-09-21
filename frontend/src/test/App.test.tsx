@@ -24,6 +24,8 @@ const apiMocks = vi.hoisted(() => ({
   getIrrigationRegionAverages: vi.fn(),
   getReclamationOverview: vi.fn(),
   getReclamationPoints: vi.fn(),
+  getWaterDemandOverview: vi.fn(),
+  getWaterDemandPoints: vi.fn(),
 }))
 
 const mapViewMocks = vi.hoisted(() => ({
@@ -85,6 +87,10 @@ vi.mock('../components/MapView', () => ({
 
 vi.mock('../components/ReclamationMap', () => ({
   default: () => <div data-testid="reclamation-map">复耕地图</div>,
+}))
+
+vi.mock('../components/WaterDemandMap', () => ({
+  default: () => <div data-testid="water-demand-map">需水地图</div>,
 }))
 
 const layers = [
@@ -287,6 +293,37 @@ describe('App', () => {
         ],
       }),
     )
+    apiMocks.getWaterDemandOverview.mockResolvedValue({
+      schemaVersion: 1,
+      unit: 'mm',
+      metrics: [],
+      valueFields: [],
+      legend: [
+        { value: 1, color: '#F08A85', label: '立即补水' },
+        { value: 2, color: '#F2C744', label: '优先补水' },
+        { value: 3, color: '#7BC47F', label: '观察复核' },
+      ],
+      chinaOutline: { type: 'Polygon', coordinates: [] },
+      regions: {
+        type: 'FeatureCollection',
+        features: [{
+          type: 'Feature',
+          properties: { id: 'WR-DEMO-1', name: '半干旱区', pointCount: 0, bounds: [[27, 73], [50, 121]] },
+          geometry: { type: 'Polygon', coordinates: [] },
+        }],
+      },
+    })
+    apiMocks.getWaterDemandPoints.mockResolvedValue({
+      pointCount: 0,
+      lonAxis: new Float64Array(0),
+      latAxis: new Float64Array(0),
+      gx: new Uint16Array(0),
+      gy: new Uint16Array(0),
+      values: new Uint16Array(0),
+      classes: new Uint8Array(0),
+      minimums: new Float64Array(6),
+      maximums: new Float64Array(6),
+    })
     apiMocks.getReclamationOverview.mockResolvedValue({
       schemaVersion: 1,
       unit: 'thousand_usd',
@@ -314,13 +351,13 @@ describe('App', () => {
     expect(screen.queryByText('该板块暂未实现。')).not.toBeInTheDocument()
   })
 
-  it('keeps the water-demand route on its placeholder', async () => {
+  it('loads the water-demand page instead of its placeholder', async () => {
     window.history.pushState({}, '', '/water-demand')
 
     render(<App />)
 
     expect(await screen.findByRole('heading', { name: '需水补水计算与评估' })).toBeInTheDocument()
-    expect(screen.getByText('该板块暂未实现。')).toBeInTheDocument()
+    expect(screen.queryByText('该板块暂未实现。')).not.toBeInTheDocument()
   })
 
   it('loads the irrigation page with annual/monthly timeline and leaves statistics off by default', async () => {
