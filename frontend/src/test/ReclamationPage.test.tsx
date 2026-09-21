@@ -117,6 +117,14 @@ function deferred<T>() {
   return { promise, resolve, reject }
 }
 
+/** Longest setTimeout delay, so automatic drill-in never fires during a test. */
+const NEVER = 2_147_483_647
+
+/** Render the page with automatic drill-in disabled for manual-interaction tests. */
+function renderManuallyDrilled() {
+  return render(<ReclamationPage autoDrillDelayMs={NEVER} />)
+}
+
 async function selectRegion() {
   await userEvent.setup().click(screen.getByRole('button', { name: '选择示范区域' }))
 }
@@ -128,8 +136,8 @@ async function backAndSelectRegion() {
 
 async function renderLoadedRegionAndSelectPoint() {
   const user = userEvent.setup()
-  render(<ReclamationPage />)
-  await screen.findByText('点击高亮区域查看复耕潜力')
+  renderManuallyDrilled()
+  await screen.findByText('正在定位示范区...')
   expect(screen.getByRole('heading', { name: '复耕潜力评估' })).toBeInTheDocument()
   await user.click(screen.getByRole('button', { name: '选择示范区域' }))
   await screen.findByRole('button', { name: '返回全国' })
@@ -149,8 +157,8 @@ describe('ReclamationPage', () => {
 
   it('loads only the overview and merges all demo regions after one overall click', async () => {
     const user = userEvent.setup()
-    render(<ReclamationPage />)
-    expect(await screen.findByText('点击高亮区域查看复耕潜力')).toBeInTheDocument()
+    renderManuallyDrilled()
+    expect(await screen.findByText('正在定位示范区...')).toBeInTheDocument()
     expect(apiMocks.getReclamationPoints).not.toHaveBeenCalled()
 
     await user.click(screen.getByRole('button', { name: '选择示范区域' }))
@@ -162,8 +170,8 @@ describe('ReclamationPage', () => {
 
   it('lets keyboard users select an overview region from the region selector', async () => {
     const user = userEvent.setup()
-    render(<ReclamationPage />)
-    await screen.findByText('点击高亮区域查看复耕潜力')
+    renderManuallyDrilled()
+    await screen.findByText('正在定位示范区...')
 
     const regionButton = screen.getByRole('button', { name: '选择示范区域' })
     regionButton.focus()
@@ -195,8 +203,8 @@ describe('ReclamationPage', () => {
       requests.push({ id, signal, deferred: pending })
       return pending.promise
     })
-    render(<ReclamationPage />)
-    await screen.findByText('点击高亮区域查看复耕潜力')
+    renderManuallyDrilled()
+    await screen.findByText('正在定位示范区...')
     await selectRegion()
     await userEvent.setup().click(screen.getByRole('button', { name: '返回全国' }))
     await selectRegion()
@@ -220,8 +228,8 @@ describe('ReclamationPage', () => {
       observedSignal = signal
       return pending.promise
     })
-    const { unmount } = render(<ReclamationPage />)
-    await screen.findByText('点击高亮区域查看复耕潜力')
+    const { unmount } = renderManuallyDrilled()
+    await screen.findByText('正在定位示范区...')
     await selectRegion()
 
     unmount()
@@ -234,10 +242,10 @@ describe('ReclamationPage', () => {
     apiMocks.getReclamationOverview
       .mockRejectedValueOnce(new Error('概览失败'))
       .mockResolvedValueOnce(overview)
-    render(<ReclamationPage />)
+    renderManuallyDrilled()
     expect(await screen.findByText('概览失败')).toBeInTheDocument()
     await user.click(screen.getByRole('button', { name: '重试' }))
-    expect(await screen.findByText('点击高亮区域查看复耕潜力')).toBeInTheDocument()
+    expect(await screen.findByText('正在定位示范区...')).toBeInTheDocument()
   })
 
   it('retries points while retaining the selected region border', async () => {
@@ -245,8 +253,8 @@ describe('ReclamationPage', () => {
     apiMocks.getReclamationPoints
       .mockRejectedValueOnce(new Error('点位失败'))
       .mockResolvedValueOnce(pointsFor(regionA))
-    render(<ReclamationPage />)
-    await screen.findByText('点击高亮区域查看复耕潜力')
+    renderManuallyDrilled()
+    await screen.findByText('正在定位示范区...')
     await user.click(screen.getByRole('button', { name: '选择示范区域' }))
     expect(await screen.findByText('点位失败')).toBeInTheDocument()
     expect(mapMocks.props?.selectedRegion).toMatchObject({ id: 'DEMO', name: '示范区域' })
@@ -263,8 +271,8 @@ describe('ReclamationPage', () => {
 
   it('lets keyboard users cycle valid points without rendering an option for every point', async () => {
     const user = userEvent.setup()
-    render(<ReclamationPage />)
-    await screen.findByText('点击高亮区域查看复耕潜力')
+    renderManuallyDrilled()
+    await screen.findByText('正在定位示范区...')
     await user.click(screen.getByRole('button', { name: '选择示范区域' }))
 
     const nextPoint = await screen.findByRole('button', { name: '下一个可复耕点位' })
@@ -290,7 +298,34 @@ describe('ReclamationPage', () => {
     expect(screen.getByText('情景：当前情景')).toBeInTheDocument()
 
     await user.click(screen.getByRole('button', { name: '返回全国' }))
-    expect(await screen.findByText('点击高亮区域查看复耕潜力')).toBeInTheDocument()
+    expect(await screen.findByText('正在定位示范区...')).toBeInTheDocument()
+    expect(mapMocks.props?.selectedRegion).toBeNull()
+  })
+
+  it('keeps the national view and defers point loading until the delay elapses', async () => {
+    render(<ReclamationPage autoDrillDelayMs={NEVER} />)
+
+    await screen.findByText('正在定位示范区...')
+    expect(apiMocks.getReclamationPoints).not.toHaveBeenCalled()
+    expect(mapMocks.props?.selectedRegion).toBeNull()
+  })
+
+  it('drills into the demo region automatically without a user click', async () => {
+    render(<ReclamationPage autoDrillDelayMs={0} />)
+
+    expect(await screen.findByRole('button', { name: '返回全国' })).toBeInTheDocument()
+    expect(apiMocks.getReclamationPoints).toHaveBeenCalledTimes(2)
+  })
+
+  it('stays on the national view after returning from a drilled region', async () => {
+    const user = userEvent.setup()
+    render(<ReclamationPage autoDrillDelayMs={0} />)
+    await screen.findByRole('button', { name: '返回全国' })
+
+    await user.click(screen.getByRole('button', { name: '返回全国' }))
+    await act(async () => { await new Promise((resolve) => setTimeout(resolve, 80)) })
+
+    expect(screen.getByText('正在定位示范区...')).toBeInTheDocument()
     expect(mapMocks.props?.selectedRegion).toBeNull()
   })
 })
