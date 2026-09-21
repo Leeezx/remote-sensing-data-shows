@@ -8,6 +8,7 @@ from backend.routers import (
     query,
     reclamation,
     regions,
+    water_demand,
     series,
     tiles,
 )
@@ -49,6 +50,7 @@ def create_app(
     application.include_router(regions.router, prefix="/api")
     application.include_router(irrigation.router, prefix="/api")
     application.include_router(reclamation.router, prefix="/api")
+    application.include_router(water_demand.router, prefix="/api")
     application.include_router(tiles.cog_tiler, prefix="/cog")
     application.include_router(tiles.router, prefix="/data")
 
