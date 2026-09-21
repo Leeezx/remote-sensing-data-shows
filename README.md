@@ -65,6 +65,7 @@ git check-ignore -v data/stats/irrigation_region_series.json
 - `data/vectors/irrigation/county/china_county.{shp,shx,dbf}`
 - `data/vectors/irrigation/township_by_county/manifest.json` 及县级 GeoJSON 分块
 - `data/stats/irrigation_runtime/`（由 Git 跟踪的运行时统计分片）
+- `data/reclamation/`、`data/water_demand/`（由 Git 跟踪的专题地图制品，构建阶段随镜像打包）
 
 在拥有大型统计源文件和乡镇矢量分块的构建工作站生成并校验运行时统计：
 
@@ -74,6 +75,14 @@ python scripts/build_irrigation_runtime_stats.py --check
 ```
 
 生成目录 `data/stats/irrigation_runtime/` 随代码发布；服务请求不会读取大型统计源文件。
+
+复耕潜力与需水补水两个板块的点位制品同样在构建工作站离线生成并随代码提交，由 `Dockerfile.backend` 打包进镜像：
+
+```powershell
+python scripts/build_reclamation_data.py --help
+python scripts/build_water_demand_data.py --help
+```
+
 
 上传后运行：
 
