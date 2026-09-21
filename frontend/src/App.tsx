@@ -9,7 +9,7 @@ import Legend from './components/Legend'
 import VideoModal from './components/VideoModal'
 import IrrigationPage from './pages/IrrigationPage'
 import ReclamationPage from './pages/ReclamationPage'
-import PlaceholderPage from './pages/PlaceholderPage'
+import WaterDemandPage from './pages/WaterDemandPage'
 import './App.css'
 
 interface DynamicLegendState {
@@ -254,10 +254,7 @@ function App() {
           <Route path="/base" element={<MainPage />} />
           <Route path="/irrigation" element={<IrrigationPage />} />
           <Route path="/reclamation" element={<ReclamationPage />} />
-          <Route
-            path="/water-demand"
-            element={<PlaceholderPage title="需水补水计算与评估" />}
-          />
+          <Route path="/water-demand" element={<WaterDemandPage />} />
           <Route path="*" element={<MainPage />} />
         </Routes>
       </div>
