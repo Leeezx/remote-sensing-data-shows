@@ -24,17 +24,21 @@ import math
 import os
 from pathlib import Path
 import struct
+import sys
 import tempfile
 from uuid import uuid4
 
 import numpy as np
-from openpyxl import load_workbook
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from openpyxl import load_workbook  # noqa: E402
 from pyproj import CRS, Transformer
 from shapely.geometry import mapping, shape
 from shapely.ops import unary_union
 
-from backend.shapefile_geojson import iter_shapefile_geojson_features
-
+from backend.shapefile_geojson import iter_shapefile_geojson_features  # noqa: E402
 
 SCHEMA_VERSION = 1
 UNIT = 'mm'

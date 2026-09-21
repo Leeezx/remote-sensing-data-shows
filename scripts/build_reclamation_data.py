@@ -12,6 +12,7 @@ import math
 import os
 from pathlib import Path
 import shutil
+import sys
 import tempfile
 from uuid import uuid4
 
@@ -23,8 +24,11 @@ except ImportError:
 from shapely.geometry import mapping, shape
 from shapely.ops import unary_union
 
-from backend.shapefile_geojson import iter_shapefile_geojson_features
-from scripts.build_township_chunks import point_in_geometry
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(PROJECT_ROOT))
+
+from backend.shapefile_geojson import iter_shapefile_geojson_features  # noqa: E402
+from scripts.build_township_chunks import point_in_geometry  # noqa: E402
 
 
 EXPECTED_COLUMNS = [
