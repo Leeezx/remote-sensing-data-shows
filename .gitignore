@@ -49,6 +49,7 @@ htmlcov/
 .agents/
 
 # Codex runtime/planning artifacts
+.codex/
 .codex-runtime/
 .planning/
 test_tile*.png
