@@ -10,6 +10,14 @@ export const WATER_DEMAND_MIN_RADIUS_PX = 1.2
 export const WATER_DEMAND_MAX_RADIUS_PX = 6
 /** Extra screen pixels treated as a hit around a cell centre. */
 export const HIT_RADIUS_PX = 6
+/**
+ * Maximum number of sample circles accumulated in one canvas path.
+ *
+ * Browsers silently drop `fill()` calls whose path holds hundreds of thousands
+ * of arcs, which hid every point at the demo-region fit zoom; flushing the path
+ * in bounded chunks keeps each rasterisation request inside engine limits.
+ */
+export const WATER_DEMAND_FILL_CHUNK = 20000
 /** Hard cap on how many rows/columns a single hit test scans. */
 export const MAX_HIT_WINDOW = 48
 
@@ -236,7 +244,14 @@ export function projectPoints(
   return { positions, rowY, rowRadius, rowSpacing, columnSpacing }
 }
 
-/** Draw all points as one batched path per tier, skipping off-screen samples. */
+/**
+ * Draw all points as batched paths per tier, skipping off-screen samples.
+ *
+ * Each tier is flushed at most `WATER_DEMAND_FILL_CHUNK` circles at a time:
+ * one unbounded path for the whole artifact rasterises to nothing in Chromium
+ * whenever the demo region fits the viewport, so points only appeared after
+ * zooming in far enough to shrink the visible sample count.
+ */
 export function drawBasePoints(
   context: CanvasRenderingContext2D,
   grid: WaterDemandPointGrid,
@@ -249,8 +264,8 @@ export function drawBasePoints(
   const { positions, rowRadius } = projected
   for (const value of WATER_DEMAND_CLASSES) {
     const indices = tier[value]
-    context.beginPath()
-    let drew = false
+    context.fillStyle = classStyle(value, colors[value])
+    let pending = 0
     for (let cursor = 0; cursor < indices.length; cursor += 1) {
       const index = indices[cursor]
       const x = positions[index * 2]
@@ -258,13 +273,16 @@ export function drawBasePoints(
       const radius = rowRadius[grid.gy[index]]
       if (x < -radius || x > width + radius) continue
       if (y < -radius || y > height + radius) continue
+      if (pending === 0) context.beginPath()
       context.moveTo(x + radius, y)
       context.arc(x, y, radius, 0, FULL_CIRCLE_RADIANS)
-      drew = true
+      pending += 1
+      if (pending === WATER_DEMAND_FILL_CHUNK) {
+        context.fill()
+        pending = 0
+      }
     }
-    if (!drew) continue
-    context.fillStyle = classStyle(value, colors[value])
-    context.fill()
+    if (pending > 0) context.fill()
   }
 }
 

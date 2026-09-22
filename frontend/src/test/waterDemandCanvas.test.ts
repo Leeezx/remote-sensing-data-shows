@@ -13,6 +13,7 @@ import {
   projectPoints,
   scenarioMetrics,
   typicalSpacingDegrees,
+  WATER_DEMAND_FILL_CHUNK,
   WATER_DEMAND_MAX_RADIUS_PX,
   WATER_DEMAND_MIN_RADIUS_PX,
 } from '../components/waterDemandCanvas'
@@ -262,7 +263,7 @@ describe('drawing', () => {
     return { context: context as unknown as CanvasRenderingContext2D, calls }
   }
 
-  it('batches each tier into a single fill call', () => {
+  it('batches each tier below the chunk cap into a single fill call', () => {
     const grid = makeGrid()
     const projected = projectPoints(grid, projectToPlane, DEGREES, 10)
     const tier = buildTierIndex(grid.classes)
@@ -286,6 +287,48 @@ describe('drawing', () => {
     ])
     // 16 points, so 16 arcs and moveTo pairs across the three tiers.
     expect(calls.filter((call) => call.startsWith('arc:'))).toHaveLength(16)
+  })
+
+  it('flushes oversized tiers in bounded chunks instead of one giant path', () => {
+    // One tier holding more circles than a single canvas path may carry:
+    // Chromium rasterises nothing for such a path, which hid every point at
+    // the demo-region fit zoom before chunked fills landed.
+    const pointCount = WATER_DEMAND_FILL_CHUNK + 2
+    const lonAxis = Float64Array.from({ length: pointCount }, (_unused, index) => 100 + index * DEGREES)
+    const latAxis = new Float64Array([30])
+    const grid: WaterDemandPointGrid = {
+      pointCount,
+      lonAxis,
+      latAxis,
+      gx: Uint16Array.from({ length: pointCount }, (_unused, index) => index),
+      gy: new Uint16Array(pointCount),
+      values: new Uint16Array(6 * pointCount),
+      classes: new Uint8Array(pointCount).fill(1),
+      minimums: new Float64Array(6),
+      maximums: new Float64Array(6).fill(1),
+    }
+    const projected = projectPoints(grid, projectToPlane, DEGREES, 10)
+    const tier = buildTierIndex(grid.classes)
+    const { context, calls } = recordingContext()
+
+    // Absurd viewport so no sample is culled and every circle reaches a path.
+    drawBasePoints(
+      context,
+      grid,
+      projected,
+      tier,
+      { 1: '#F08A85', 2: '#F2C744', 3: '#7BC47F' },
+      Number.POSITIVE_INFINITY,
+      Number.POSITIVE_INFINITY,
+    )
+
+    const fills = calls.filter((call) => call.startsWith('fill:'))
+    expect(fills).toEqual([
+      'fill:rgba(240, 138, 133, 0.7)',
+      'fill:rgba(240, 138, 133, 0.7)',
+    ])
+    expect(calls.filter((call) => call.startsWith('arc:'))).toHaveLength(pointCount)
+    expect(calls.filter((call) => call === 'beginPath')).toHaveLength(2)
   })
 
   it('skips off-screen points instead of drawing them', () => {
