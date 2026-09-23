@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
   MapContainer,
+  ImageOverlay,
   TileLayer,
   useMap,
   useMapEvents,
@@ -380,6 +381,9 @@ interface MapViewProps {
   activeLayerId: string | null
   opacity: number
   currentTime: string
+  playbackImage?: string | null
+  onPlaybackImageLoad?: () => void
+  onPlaybackImageError?: () => void
   regionVector?: IrrigationVectorGeoJSON | null
   selectedRegionId?: string | null
   onRegionSelect?: (region: { id: string; name: string }) => void
@@ -399,6 +403,9 @@ export default function MapView({
   activeLayerId,
   opacity,
   currentTime,
+  playbackImage = null,
+  onPlaybackImageLoad,
+  onPlaybackImageError,
   regionVector = null,
   selectedRegionId = null,
   onRegionSelect,
@@ -477,7 +484,17 @@ export default function MapView({
         />
 
         {/* Remote sensing overlay */}
-        {!hideRaster && (
+        {playbackImage ? (
+          <ImageOverlay
+            url={playbackImage}
+            bounds={CHINA_BOUNDS}
+            opacity={opacity}
+            eventHandlers={{
+              load: () => onPlaybackImageLoad?.(),
+              error: () => onPlaybackImageError?.(),
+            }}
+          />
+        ) : !hideRaster && (
           <TileOverlay layer={activeLayer} time={currentTime} opacity={opacity} />
         )}
 
