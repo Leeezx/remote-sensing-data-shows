@@ -216,6 +216,98 @@ def external_raster_tile(
     )
 
 
+@router.get("/playback-images/{layer_id}/{time}.png")
+def playback_image(layer_id: str, time: str):
+    """Render one view-sized transparent PNG frame for lightweight playback."""
+    layer = get_layer(layer_id)
+    if layer is None:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Layer '{layer_id}' not found",
+        )
+
+    band = 1
+    if layer_id == "ssm":
+        try:
+            raster_path = ssm_time_to_cog_path(RASTER_ROOT / "ssm", time)
+        except ValueError as exc:
+            raise HTTPException(
+                status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail=str(exc)
+            ) from exc
+        if not raster_path.is_file():
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"COG file not found for time '{time}'",
+            )
+        # Playback frames use the checked-in palette stops. Computing per-time
+        # SSM percentiles would require reading the full raster for every frame.
+        legend = layer.get("legend") or []
+    elif layer_id in EXTERNAL_RASTERS:
+        try:
+            source = resolve_external_raster(layer_id, time)
+        except ValueError as exc:
+            raise HTTPException(
+                status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail=str(exc)
+            ) from exc
+        except FileNotFoundError as exc:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)
+            ) from exc
+        raster_path, band = source.path, source.band
+        legend = layer.get("legend") or []
+    else:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Playback images are unavailable for layer '{layer_id}'",
+        )
+
+    nodata_color_hex = layer.get("nodataColor", "#e8e8e8")
+    nodata_opacity = float(layer.get("nodataOpacity", 0.5))
+    try:
+        nodata_rgb = tuple(bytes.fromhex(nodata_color_hex.lstrip("#")))
+        nodata_color = (*nodata_rgb, int(round(nodata_opacity * 255)))
+    except (ValueError, TypeError):
+        nodata_color = (0xE8, 0xE8, 0xE8, 128)
+
+    try:
+        with COGReader(str(raster_path)) as reader:
+            image = reader.part(
+                (73, 18, 135, 54),
+                dst_crs="EPSG:4326",
+                max_size=4096,
+                indexes=band,
+            )
+    except TileOutsideBounds:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Raster has no data in the playback extent for '{time}'",
+        )
+
+    values = image.data[0]
+    if layer_id == "ssm":
+        source_mask = image.mask
+    else:
+        if layer_id in EXTERNAL_RASTERS:
+            source_mask = external_valid_data_mask(
+                layer_id, values, source_mask=image.mask
+            )
+            values = values * external_value_scale(layer_id)
+        else:
+            source_mask = image.mask
+    rgba = colorize(
+        values,
+        legend,
+        source_mask=source_mask,
+        nodata_color=nodata_color,
+    )
+    png = render_png(rgba)
+    return Response(
+        content=png,
+        media_type="image/png",
+        headers=TILE_CACHE_HEADERS,
+    )
+
+
 # ===== Irrigation water tiles =====
 
 

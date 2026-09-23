@@ -12,7 +12,9 @@ interface SidebarProps {
   timeResolution: 'month' | '8day'
   onTimeResolutionChange: (r: 'month' | '8day') => void
   isPlaying: boolean
+  isPlaybackMode: boolean
   onPlayToggle: () => void
+  onPlayEnd: () => void
   onOpenVideo: () => void
 }
 
@@ -41,7 +43,9 @@ export default function Sidebar({
   timeResolution,
   onTimeResolutionChange,
   isPlaying,
+  isPlaybackMode,
   onPlayToggle,
+  onPlayEnd,
   onOpenVideo,
 }: SidebarProps) {
   const activeLayer = layers.find((l) => l.id === activeLayerId)
@@ -149,9 +153,16 @@ export default function Sidebar({
             </button>
           </div>
         </div>
-        <button className={`btn btn-play ${isPlaying ? 'playing' : ''}`} onClick={onPlayToggle}>
-          {isPlaying ? '⏸ 暂停' : '▶ 播放'}
-        </button>
+        <div className="playback-actions">
+          <button className={`btn btn-play ${isPlaying ? 'playing' : ''}`} onClick={onPlayToggle}>
+            {isPlaying ? '⏸ 暂停' : '▶ 播放'}
+          </button>
+          {isPlaybackMode && (
+            <button className="btn btn-play-end" onClick={onPlayEnd}>
+              ■ 结束
+            </button>
+          )}
+        </div>
       </section>
 
       {/* Query Actions */}

@@ -35,7 +35,11 @@ function MainPage() {
   const [times, setTimes] = useState<string[]>([])
   const [timeResolution, setTimeResolution] = useState<'month' | '8day'>('8day')
   const [isPlaying, setIsPlaying] = useState(false)
-  const playIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null)
+  const [isPlaybackMode, setIsPlaybackMode] = useState(false)
+  const [playbackImageReady, setPlaybackImageReady] = useState(false)
+  const playbackStartTimeRef = useRef('')
+  const isPlayingRef = useRef(false)
+  const playbackStepTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const activeLayer = layers.find((layer) => layer.id === activeLayerId) ?? null
   const dynamicLayerId = activeLayer?.id === 'ssm' || activeLayer?.id === 'et'
@@ -50,6 +54,10 @@ function MainPage() {
     status: 'loading',
     items: [],
   })
+  const playbackImage = isPlaybackMode && activeLayerId && currentTime
+    ? `/data/playback-images/${encodeURIComponent(activeLayerId)}/${encodeURIComponent(currentTime)}.png`
+    : null
+  isPlayingRef.current = isPlaying
 
   // Tile loading overlay
   const [tileLoading, setTileLoading] = useState(false)
@@ -114,6 +122,7 @@ function MainPage() {
 
   // SSM and ET thresholds depend on the selected acquisition time.
   useEffect(() => {
+    if (isPlaybackMode) return
     if (!dynamicLayerId) {
       setDynamicLegend({ key: null, status: 'ready', items: [] })
       return
@@ -142,52 +151,96 @@ function MainPage() {
     return () => {
       cancelled = true
     }
-  }, [dynamicLayerId, currentTime, legendKey])
+  }, [dynamicLayerId, currentTime, legendKey, isPlaybackMode])
 
-  // Play/pause animation
+  const clearPlaybackStep = useCallback(() => {
+    if (playbackStepTimeoutRef.current) {
+      clearTimeout(playbackStepTimeoutRef.current)
+      playbackStepTimeoutRef.current = null
+    }
+  }, [])
+
+  const schedulePlaybackStep = useCallback(() => {
+    clearPlaybackStep()
+    if (!isPlayingRef.current || times.length === 0) return
+    playbackStepTimeoutRef.current = setTimeout(() => {
+      setPlaybackImageReady(false)
+      setCurrentTime((prev) => {
+        const idx = times.indexOf(prev)
+        return times[(idx + 1 + times.length) % times.length]
+      })
+    }, 800)
+  }, [clearPlaybackStep, times])
+
+  useEffect(() => () => clearPlaybackStep(), [clearPlaybackStep])
+
+  // Advance only after the current JPEG frame has loaded.
   useEffect(() => {
-    if (isPlaying && times.length > 0) {
-      playIntervalRef.current = setInterval(() => {
-        setCurrentTime((prev) => {
-          const idx = times.indexOf(prev)
-          return times[(idx + 1) % times.length]
-        })
-      }, 800)
-    }
-    return () => {
-      if (playIntervalRef.current) {
-        clearInterval(playIntervalRef.current)
-        playIntervalRef.current = null
-      }
-    }
-  }, [isPlaying, times])
+    if (!isPlaying) clearPlaybackStep()
+  }, [isPlaying, clearPlaybackStep])
+
+  const stopPlayback = useCallback((restoreTime: boolean) => {
+    clearPlaybackStep()
+    setIsPlaying(false)
+    setIsPlaybackMode(false)
+    setPlaybackImageReady(false)
+    if (restoreTime) setCurrentTime(playbackStartTimeRef.current)
+  }, [clearPlaybackStep])
 
   const handleLayerChange = useCallback((id: string) => {
+    stopPlayback(false)
     setActiveLayerId(id)
     setTileLoading(true)
     if (tileLoadTimerRef.current) clearTimeout(tileLoadTimerRef.current)
     tileLoadTimerRef.current = setTimeout(() => setTileLoading(false), 2000)
-  }, [])
+  }, [stopPlayback])
 
   const handleTimeChange = useCallback((t: string) => {
+    if (isPlaybackMode) stopPlayback(false)
     setCurrentTime(t)
-  }, [])
+  }, [isPlaybackMode, stopPlayback])
 
   const handleTimeResolutionChange = useCallback((resolution: 'month' | '8day') => {
     if (resolution === timeResolution) return
+    stopPlayback(false)
     setCurrentTime('')
     setTimes([])
     setTimeResolution(resolution)
-  }, [timeResolution])
+  }, [stopPlayback, timeResolution])
 
   const handlePlayToggle = useCallback(() => {
-    setIsPlaying((p) => !p)
-  }, [])
+    if (isPlaying) {
+      clearPlaybackStep()
+      setIsPlaying(false)
+      return
+    }
+    if (!isPlaybackMode) {
+      playbackStartTimeRef.current = currentTime
+      setIsPlaybackMode(true)
+      setPlaybackImageReady(false)
+    } else if (playbackImageReady) {
+      schedulePlaybackStep()
+    }
+    setIsPlaying(true)
+  }, [clearPlaybackStep, currentTime, isPlaybackMode, isPlaying, playbackImageReady, schedulePlaybackStep])
 
-  const legendItems = hasDynamicLegend
+  const handlePlaybackImageLoad = useCallback(() => {
+    setPlaybackImageReady(true)
+    if (isPlayingRef.current) schedulePlaybackStep()
+  }, [schedulePlaybackStep])
+
+  const handlePlaybackImageError = useCallback(() => {
+    if (isPlayingRef.current) schedulePlaybackStep()
+  }, [schedulePlaybackStep])
+
+  const legendItems = isPlaybackMode
+    ? activeLayer?.legend ?? []
+    : hasDynamicLegend
     ? dynamicLegend.key === legendKey ? dynamicLegend.items : []
     : activeLayer?.legend ?? []
-  const legendStatus: LegendStatus = hasDynamicLegend
+  const legendStatus: LegendStatus = isPlaybackMode
+    ? 'ready'
+    : hasDynamicLegend
     ? dynamicLegend.key === legendKey ? dynamicLegend.status : 'loading'
     : 'ready'
 
@@ -206,7 +259,9 @@ function MainPage() {
             timeResolution={timeResolution}
             onTimeResolutionChange={handleTimeResolutionChange}
             isPlaying={isPlaying}
+            isPlaybackMode={isPlaybackMode}
             onPlayToggle={handlePlayToggle}
+            onPlayEnd={() => stopPlayback(true)}
             onOpenVideo={() => setVideoOpen(true)}
           />
         </div>
@@ -229,6 +284,9 @@ function MainPage() {
                 activeLayerId={activeLayerId}
                 opacity={opacity}
                 currentTime={currentTime}
+                playbackImage={playbackImage}
+                onPlaybackImageLoad={handlePlaybackImageLoad}
+                onPlaybackImageError={handlePlaybackImageError}
               />
             </div>
           )}

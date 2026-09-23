@@ -172,7 +172,18 @@
 }
 
 .btn-play {
-  width: 100%;
+  flex: 1;
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.playback-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-play-end {
+  flex: 1;
   margin-top: 6px;
   font-size: 13px;
 }
